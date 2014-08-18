@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--www.opensearch.org description for sagemath.org/search.html-->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>SageMath.org Search</ShortName>
+  <LongName>Search SageMath.org Resources</LongName>
+  <Description>Search Help, Documentation, Discussions and More on SageMath.org</Description>
+  <Tags>sage sagemath mathematics software cas</Tags>
+  <Contact>harald.schilly@gmail.com</Contact>
+  <Url type="text/html" 
+       template="http://www.sagemath.org/search.html?q={searchTerms}"/>
+  <Query role="example" searchTerms="sage"/>
+  <AdultContent>false</AdultContent>
+  <Language>en-us</Language>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <InputEncoding>UTF-8</InputEncoding>
+</OpenSearchDescription>
+

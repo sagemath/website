@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+<!--#set var="trademark" value="1"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Download Binaries</title><!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="download" -->
+
+ <h1 class="narrow">Download Binaries and Media</h1>
+
+ <div class="narrow txt">
+  <form action="http://groups.google.com/group/sage-announce/boxsubscribe">
+   There is a low traffic <a href="http://groups.google.com/group/sage-announce"
+         target="_blank">announcement mailing list</a> and an <a href=
+         "http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS feed</a> to
+         stay informed about new releases. <span class="nowrap">Email: <input type="text"
+          name="email" />&#160;<input type="submit"
+          name="sub"
+          value="Subscribe" /></span>
+  </form>
+ </div>
+
+<!--#set var="mirrordir" value=""-->
+ <div class="narrow txt border bluebg round">
+  <div  class="large txt">  
+    <!--#include virtual="./inc/mirrorselector.shtml"-->
+  </div>
+ </div>
+
+ <div class="narrow txt">
+   Not sure what to download? Follow the
+   <a href="http://wiki.sagemath.org/DownloadAndInstallationGuide">
+   <strong>download and install guide</strong></a>.
+ </div>
+
+ <table class="narrow justify top"
+        id="download">
+  <colgroup>
+   <col width="25%" />
+   <col width="75%" />
+  </colgroup>
+
+  <tbody>
+   <tr>
+    <th>Microsoft Windows</th>
+
+    <td>
+     <div class="txt">
+      To run Sage on Microsoft Windows you need the following:
+      <ol>
+       <li><a href="./download-windows.html">Image of a Sage installation for virtualization</a></li>
+       <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
+      </ol>
+     </div>
+
+     <div class="">
+      The current VirtualBox solution provides you with an encapsulated
+      and tested system. It allows to use the Sage notebook in your web
+      browser with no noticable speed loss compared to a native Linux
+      install.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th class="right">Linux</th>
+
+    <td>
+     <div class="txt">
+      <a href="./download-linux.html">Download Linux binaries</a>
+     </div>
+
+     <div class="txt">
+      Usage:
+
+      <ol>
+       <li>Select the one that suits your setup and extract it in your file-browser by right
+       clicking &quot;extract&quot; or on the command-line using: <span class="code nowrap">tar
+       xvzf sage...tar.gz</span>.</li>
+
+       <li>Run sage by calling the command: <span class="code">sage</span>.</li>
+      </ol>
+     </div>
+
+     <div class="">
+      At the moment there are no distribution-specific packages available. Progress is being made
+      for <a href="http://wiki.sagemath.org/DebianSAGE"
+           target="_blank">Debian</a> 
+           <!--(later maybe in <a href="" target="_blank">Scientific Ubuntu</a>)--> and <a href=
+           "http://fedoraproject.org/wiki/SIGs/SciTech/SAGE"
+           target="_blank">Fedora</a>.
+     </div>
+    </td>
+   </tr>
+
+<!--#if expr="$version-solaris-bin == NONE" -->
+   <tr>
+     <th>Solaris</th>
+     <td>
+       <div class="txt">
+	 <a href="./download-solaris.html">Download version <!--#echo var="version-solaris-bin"--></a>
+       </div>
+
+       <div class="txt">
+ See the 
+	 <a href="http://wiki.sagemath.org/solaris-binaries">Sage wiki</a> 
+	 for information about how to install the Sage binary distribution for SPARC based systems running Solaris 10. 
+       </div>
+     </td>
+   </tr>
+<!--#endif -->
+
+   <tr>
+    <th>Apple Mac OS X</th>
+
+    <td>
+     <div class="txt">
+      <a href="./download-mac.html">Download Mac OS X binaries</a>
+     </div>
+
+     <div>
+      These binaries are only for OS X 10.4 - 10.6. They will not work on OS X 10.3. For more
+      information <a href="./mirror/osx/README.txt"
+           target="_blank">read the installation instructions</a> and watch the <a href=
+           "http://dennisstein.com/sage_video/"
+           target="_blank">installation tutorial</a>.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th>Source</th>
+
+    <td>
+     <div class="txt">
+      <a href="./download-source.html">Download complete source</a>
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th>Development</th>
+
+    <td>
+     <div class="txt">
+       The <a href="./download-latest.html">latest development release</a>.
+     </div>
+     <div>
+       To get the source of the latest development release, choose a download mirror and follow relevant instructions on the mirror page.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th>Sage LiveCD</th>
+
+    <td>
+     <div class="txt">
+      <a href="./download-livecd.html">Download Sage Live CD</a>
+     </div>
+
+     <div>
+      This LiveCD lets you run Sage directly from a bootable CD.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th>Additional Packages</th>
+
+    <td>
+     <div class="txt">
+      <a href="./download-packages.html">Download additional packages</a>
+     </div>
+
+     <div>
+      Sage consists of a selected set of packages which are well tested and integrated into the
+      Sage framework. There are also other less integrated or unstable packages additionally
+      available. Click <a href="./download-packages.html">here</a> to get an overview of all
+      available packages.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th>Utilities</th>
+
+    <td>
+     <div class="txt">
+      Useful utilities when working with Sage
+     </div>
+
+     <div>
+      <ul>
+       <li><a href="http://wiki.sagemath.org/sage-mode">Sage Emacs Mode</a> — helps to work with
+       Sage in Emacs.</li>
+
+       <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">SageTex LaTeX
+       style</a> — this LaTeX style file allows to embed and process Sage code inside TeX files.
+       <a href="./tour-research.html#latex">read more</a></li>
+      </ul>
+     </div>
+    </td>
+   </tr>
+  </tbody>
+ </table><!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

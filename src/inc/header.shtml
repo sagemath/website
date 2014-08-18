@@ -1,0 +1,172 @@
+
+<div id="header" class="small">
+
+<div id="header-logo">
+<a href="./index.html"><img width="250px" height="65px" alt="Sage Logo" src="./pix/sage_logo_new.png" title="Sage Computer Algebra System" /></a>
+</div>
+
+<div id="header-text">
+<form action="./search.html" method="get">
+<a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS</a>
+&middot;
+<a href="http://planet.sagemath.org/">Blog</a>
+&middot;
+<a href="http://trac.sagemath.org/sage_trac">Trac</a>
+&middot;
+<a href="http://wiki.sagemath.org/support/ReportingBugs">Report Bugs</a>
+&middot;
+<a href="http://wiki.sagemath.org/">Wiki</a>
+&middot;
+<a href="http://ask.sagemath.org/">Ask</a>
+&middot;
+<a href="http://interact.sagemath.org/">Interact</a>
+<!--
+<a href="http://spreadsheets.google.com/viewform?formkey=dDY2V092c2R4b3F3c0hSNFMycTFobWc6MA">Feedback</a>
+-->
+&middot;
+<a href="./search.html">Search</a>: <input onmouseover="javascript:this.focus();" class="small"  type="text" name="search" size="15" />
+</form>
+Online: 
+<a href="http://www.sagenb.org/">sagenb</a>
+<!--&middot; 
+<a href="http://sage.milnix.org">Milnix.org</a>-->,
+<a href="http://sagenb.kaist.ac.kr/">KAIST</a>,
+<a href="https://cloud.sagemath.com/">Cloud</a>
+&middot; 
+<a href="https://sagecell.sagemath.org/">SageCell</a>
+or 
+<a <!--#include virtual="./download-link.shtml"-->>Download</a>,
+<a href="http://git.sagemath.org/">Source Code</a>
+<br/>
+<a <!--#include virtual="download-link.shtml"-->>v<!--#echo var="version"--> (<!--#echo var="releasedate"-->)</a>
+&middot;
+
+<a href="https://plus.google.com/113421169347512599264/?prsrc=3" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" width="16" height="16" style="border: 0;"/></a>
+
+<a href="http://www.facebook.com/pages/Sage-Math/26593144945"><img alt="facebook" src="pix/facebook-favicon.ico" width="16" height="16"></img></a> 
+<!--
+<a href="http://www.linkedin.com/groups?gid=2010654"><img alt="linkedin" src="pix/linkedin-favicon.ico" width="16" height="16"></img></a>
+-->
+<a href="http://twitter.com/sagemath"><img alt="twitter" src="pix/twitter-favicon.ico" width="16" height="16"></img></a>
+<!--
+<a href="http://friendfeed.com/sagemath"><img alt="friendfeed" src="pix/friendfeed-favicon.ico" width="16" height="16"></img></a>
+-->
+<strong>&middot;</strong>
+<form name="i18n" style="display:inline">
+<select style="" name="menu" onChange="location='http://www.sagemath.org/' + document.i18n.menu.options[document.i18n.menu.selectedIndex].value;">
+<option>Language</option>
+<option value="">English</option>
+<option value="es">Español</option>
+<option value="zh">Chinese</option>
+<option value="fr">French</option>
+<option value="de">German</option>
+<option value="pt">Português</option>
+<option value="ru">Russian</option>
+</select>
+</form>
+</div>
+
+</div>
+
+<ul id="sage-nav">
+<li><a href="./index.html">Home</a>
+<ul>                               
+<li><a href="./search.html">Search</a></li>
+<li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG">Donate</a></li>
+<li><a href="./development-ack.html">Acknowledgments</a></li>
+<li><a href="http://wiki.sagemath.org/gsoc10">Get Involved</a></li>
+<li><a href="http://wiki.sagemath.org/Workshops">Sage Days</a></li>
+<li class="section"><a href="legal.html">Legal Notice</a></li>
+</ul>
+</li>
+
+<li><a href="./tour.html">Tour</a>
+<ul>
+<li><a href="./tour.html">Overview</a></li>
+<li><a href="./tour-quickstart.html">Quickstart</a></li>
+<li><a href="./tour-graphics.html">Graphics</a></li>
+<li><a href="./tour-research.html">Research</a></li>
+<li><a href="./tour-benchmarks.html">Benchmarks</a></li>
+<li class="section"><a href="http://wiki.sagemath.org/interact/">Interactive Plots (wiki)</a></li>
+<li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of Sage</a></li>
+<li class="section"><a href="http://interact.sagemath.org">Sage Interact Community</a></li>
+</ul>
+</li>
+
+<li><a href="./help.html">Support</a>
+<ul>
+<li><a href="./help.html">Help &amp; Documentation</a></li>
+<li><a href="./help-groups.html">Mailing lists</a></li>
+<li><a href="./help-uSage.html">uSage User Groups</a></li>
+<li><a href="http://ask.sagemath.org">AskSage</a></li>
+<li><a href="./help-irc.html">IRC</a></li>
+<li><a href="./help-video.html">Video</a></li>
+<li class="section"><a href="http://www.sagemath.org/doc/tutorial/">Tutorial</a></li>
+<li><a href="http://www.sagemath.org/doc/constructions/">Constructions</a></li>
+<li><a href="http://www.sagemath.org/doc/reference/">Sage Reference</a></li>
+</ul>
+</li>
+
+<li><a href="./library.html">Library</a>
+<ul>
+<li><a href="./library.html">Overview</a></li>
+<li><a href="./library-stories.html">Testimonials</a></li>
+<li><a href="./library-publications.html" >Publications</a></li>
+<li><a href="./library-publications-combinat.html">Publications Combinat</a></li>
+<li><a href="./library-publications-mupad.html">Publications Mupad</a></li>
+<li><a href="./library-publications.html#books" >Books</a></li>
+<li><a href="./library-why.html">Why?</a></li>
+<li><a href="./library-marketing.html">Marketing</a></li>
+<li><a href="./library-press.html">Press Kit</a></li>
+</ul>
+</li>
+
+<li><a href="./download.html">Download</a>
+<ul>
+<li><a href="./download-windows.html">Windows</a></li>
+<li><a href="./download-mac.html">Mac OSX</a></li>
+<li><a href="./download-linux.html">Linux</a></li>
+<li class="section"><a href="./download-source.html"><b>Source</b></a></li>
+<li><a href="./src-old/">Old Source</a></li>
+<li><a href="./download-latest.html">Development Release</a></li>
+<li class="section"><a href="./download-livecd.html">Live CD</a></li>
+<li class="section"><a href="./download-packages.html">Packages (SPKG)</a></li>
+<li><a href="http://wiki.sagemath.org/InstallingGapPackages">GAP Packages</a></li>
+<li class="section"><a href="http://www.sagemath.org/doc/installation">Install Guide</a></li>
+<li><a href="./mirror/src/changelogs/">Release Notes</a></li>
+<li><a href="./mirrors.html">Mirrors</a></li>
+<li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG">Donate</a></li>
+</ul>
+</li>
+
+<li><a href="./development.html">Development</a>
+<ul>
+<li><a href="./development.html">Info for Developers</a></li>
+<li><a href="./development-groups.html">Mailing Lists</a></li>
+<li><a href="./development-map.html">Developer Map</a></li>
+<li><a href="./development-status.html">Status</a></li>
+<li><a href="./development-search.html">Search</a></li>
+<li><a href="./development-prize.html">Prize</a></li>
+<li><a href="./development-ack.html">Acknowledgment</a></li>
+<li class="section"><a href="http://git.sagemath.org">Source Code</a></li>
+<li><a href="http://www.sagemath.org/doc/developer/">Developer Guide</a></li>
+</ul>
+</li>
+
+<li><a href="./links.html">Links</a>
+<ul>
+<li><a href="./links.html">Projects &amp; Software</a></li>
+<li><a href="./links-components.html">Sage Components</a></li>
+<li class="section"><a href="http://interact.sagemath.org">Sage Interact Community</a></li>
+<li><a href="http://sagecell.sagemath.org/">Sage Cell Server</a></li>
+<li class="section"><a href="http://planet.sagemath.org/">Sage Blog</a></li>
+<li><a href="http://wiki.sagemath.org/">Sage Wiki</a></li>
+<li><a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA">Report a Problem</a></li>
+<li><a href="http://wiki.sagemath.org/support/ReportingBugs">About Bugreporting</a></li>
+<li><a href="http://trac.sagemath.org/">Sage Bugtracker</a></li>
+<li><a href="http://git.sagemath.org/">Sage Code Repository</a></li>
+<li class="section"><a href="./contact.html">Contact</a></li>
+</ul>
+</li>
+</ul>
+

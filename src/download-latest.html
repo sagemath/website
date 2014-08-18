@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta content="text/html; charset=utf-8"
+       http-equiv="content-type" /><!--#include virtual="inc/variables.shtml"-->
+
+ <title><!--#echo var="title"--> - Development Release</title><!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="source" -->
+
+ <h1 class="narrow">Development Release</h1>
+<!--#set var="mirrordir" value="devel/"-->
+
+<div class="txt large narrow bluebg round border" style="font-size:200%; background: red; font-color: white;">
+  Unstable release for development only. Do <strong>not</strong> use for your
+  every day work.
+</div>
+
+ <div class="txt large narrow bluebg round">
+ <div class="txt border">
+  <strong>The latest development version is <!--#echo var="version-devel"-->
+    released on <!--#echo var="develreleasedate"-->. 
+  </strong>   
+  <br/>
+   <!--#include virtual="./inc/mirrorselector-src.shtml"-->
+ </div>
+ </div>
+
+<div>&nbsp;</div>
+
+ <h2 class="narrow">Warning</h2>
+
+ <div class="narrow txt">
+  Here you can download the source code of the latest development release.
+  This release is for development only and should <strong>not</strong> be used
+  for your every day work.
+ </div>
+ <!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

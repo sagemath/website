@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - Limits</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>Limits</h1>
+  <p>
+  Before we discuss exactly what a limit is, let's take a moment to become
+  familiarized with the Sage Notebook, which you will be using throughout these
+  lessons. Assuming that you have the Notebook open, go ahead and create a new
+  worksheet. Our work for each section will be kept in its own separate worksheet,
+  which will make it easier to find and review past exercises. Click on File...
+  Rename, and in the dialog box that pops up, call the worksheet 01-Limits.
+  </p>
+  <p>
+  A limit, to be concise, is the value that a function approaches as a
+  variable (such as x) approaches a certain value. Most of the time, this is
+  fairly straightforward. For a function f(x) = 2*x, for example, the limit of f(x)
+  as x approaches 4 would simply be 8, since 2 times 4 is 8. The notation for
+  this, as you will surely see in a calculus book, in a calculus classroom or
+  on a calculus test, looks like:
+  </p>
+  <img src="pix-calctut/limits01.png" />
+  <p>
+  Where limits will come in handy, though, is in situations where there is some
+  ambiguity as to the value of a function at a point. As an example of this
+  ambiguity, let's look at the graph of f(x) = (x<sup>2</sup> - 1)/(x - 1). In the first cell
+  of your worksheet, copy the following code, then press SHIFT-ENTER or click on
+  "evaluate".
+  </p>
+<pre class="tutcode">
+p = plot((x^2 - 1)/(x - 1), x, -1, 3)
+pt = point((1, 2), rgbcolor='white', pointsize=30, faceted=True)
+g = p+pt
+g.show(xmin=0, xmax=3, ymin=0, ymax=4)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+   Here is a breakdown of what the code does:<br />
+   1) Create a plot of our function using variable 'x' on the domain -1 &lt; x &lt; 3.<br />
+   2) Create an open (faceted) point at (1, 2), with a 'white' interior and the given point size.<br />
+   3) Combine the plot and the point (the plus sign indicates 'combine these elements').<br />
+   4) Show the combined plot and the point, using the given x and y bounds (similar to
+   a graphing calculator).
+  </p>
+  <p>
+  The graph that appears should look something like this:
+  </p>
+  <img src="pix-calctut/limits02.png" />
+  <p>
+  Looking at f(x), one can see that setting x equal to 1 would make both the
+  numerator and the denominator equal to zero, which is why there is a circle
+  at that point on the graph. Even though f(1) is undefined, however, we can
+  still analyze, by way of limits, what f(1) would equal if it
+  <em>did</em> exist. The notation for this would be:
+  </p>
+  <img src="pix-calctut/limits03.png" />
+  <p>
+  Just by looking at the graph, one can see that as x approaches 1, the y-value for
+  f(x) approaches 2. To find this value algebraically, we can <strong>remove the
+  discontinuity</strong> by factoring the numerator, then dividing both the top
+  and the bottom by (x - 1) to obtain:
+  </p>
+  <img src="pix-calctut/limits04.png" />
+  <p>
+  Thus, both graphically and analytically, we can see that the limit of f(x) as
+  x approaches 1 is equal to 2. To verify this result, we can actually use the
+  following code to have Sage compute the limit for us:
+  </p>
+<pre class="tutcode">
+limit((x^2 - 1)/(x - 1), x=1)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(2);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain2">
+   1) Evaluate the limit of (x<sup>2</sup> - 1)/(x - 1) as x approaches 1 (designated by 'x=1').
+  </p>
+  <p>
+  Copying the code into an empty cell of your worksheet and evaluating it will
+  verify the result. You can use the limit function to check your answers to
+  the following practice problems, as well.
+  </p>
+  <p>
+  On your own, now, try evaluating the following three limits first graphically,
+  then by algebraic simplification. To aid this pursuit, I have included Sage code
+  to plot the first two functions, though it won't circle the discontinuities
+  for you this time. Simply copy the code for each into a new cell on your
+  worksheet and evaluate it. For the last three, see if you can manipulate the code
+  from one of the other examples to graph the function. On a sidenote, use "pi"
+  without the quotes to reference &pi; from Sage.
+  </p>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Evaluate each limit graphically and analytically.
+  <br />
+  1)<img class="vmiddle qimg" src="pix-calctut/limits05.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'Limit evaluates to 6');">Toggle answer</a>
+<pre class="tutcode">
+plot((x^2 - 2*x - 8)/(x - 4), x, -1, 5).show(xmin=0, ymin=0)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a><br />
+  2)<img class="vmiddle qimg" src="pix-calctut/limits06.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'Limit evaluates to 0');">Toggle answer</a>
+<pre class="tutcode">
+plot((1 - cos(x)^2)/sin(x), x, -1, 5).show(xmin=0, ymin=0)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a><br />
+  3)<img class="vmiddle qimg" src="pix-calctut/limits07.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'Limit evaluates to 0');">Toggle answer</a>
+  <br />
+  4)<img class="vmiddle qimg" src="pix-calctut/limits08.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer4" href="javascript:void(0);" onclick="calctut.ansToggle(4, 'Limit evaluates to 1 (graph it to see)');">Toggle answer</a>
+  <br />
+  5)<img class="vmiddle qimg" src="pix-calctut/limits09.png" />
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer5" href="javascript:void(0);" onclick="calctut.ansToggle(5, 'Limit evaluates to 0 (graph it to see)');">Toggle answer</a>
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<div id="footer" class="center">
+<table><tr>
+<td><a id="footer-webmaster" href="mailto:harald.schilly@gmail.com"></a></td><td>&middot;</td>
+<td><a id="footer-cc" title="Content is Creative Commons 3.0 licensed" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund" href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+</tr></table>
+</div>
+
+</body>
+</html>

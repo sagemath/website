@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Download for Linux</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="download" -->
+
+ <h1 class="narrow">Binaries for Linux</h1>
+
+ <div class="narrow txt small">
+ Click <a href="./download.html">here for other systems</a>
+ or <a href="./download-source.html">here to download source distribution</a>.
+ </div>
+
+ <!--#set var="mirrordir" value="linux/"-->
+ 
+ <div class="txt large narrow bluebg round">
+<!--  <a href="./bin/linux/">Download Linux Binaries</a> -->
+ <div class="txt border ">
+  <!--#include virtual="./inc/mirrorselector.shtml"-->
+ </div>
+ </div>
+
+ <h2 class="narrow">Usage</h2>
+
+ <div class="txt narrow">
+  <ol>
+   <li>Select the one that suits your setup and extract it in your file-browser by right clicking
+   &quot;extract&quot; or on the command-line using: <span class="code nowrap">tar xvzf
+   sage...tar.gz</span> or <span class="code nowrap">tar --lzma -xvf sage...tar.gz</span>.</li>
+
+   <li>Run sage by calling the command: <span class="code">sage</span>.</li>
+  </ol>
+ </div>
+
+ <h2 class="narrow">Ubuntu PPA</h2>
+
+ <div class="txt narrow">
+ There is also a 
+ <a href="https://launchpad.net/~aims/+archive/sagemath">PPA for Ubuntu</a>
+ available. Install Sage this way:<br/>
+ <span class="code nowrap">apt-add-repository -y ppa:aims/sagemath</span><br/>
+ <span class="code nowrap">apt-get update</span><br/>
+ <span class="code nowrap">apt-get install sagemath-upstream-binary</span>
+ </div>
+
+<!--
+ <div class="narrow">
+  At the moment there are no distribution-specific packages available. Progress is being made for
+  <a href="http://wiki.sagemath.org/devel/DebianSage"
+       target="_blank">Debian</a> 
+       and <a href=
+       "http://fedoraproject.org/wiki/SIGs/SciTech/SAGE"
+       target="_blank">Fedora</a>.
+-->
+ </div><!--#include virtual="inc/download-common.shtml"-->
+ <!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

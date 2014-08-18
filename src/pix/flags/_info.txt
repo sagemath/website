@@ -1,0 +1,18 @@
+Flag Icons
+
+Flag icons in this package are public domain.
+Graphic effects were created by Phoca.cz in GIMP.
+
+For more info see:
+
+    * Phoca.cz - http://www.phoca.cz
+    * Flag Icons - http://www.phoca.cz/flag-icons
+
+or contact:
+
+    * info [at] phoca [dot] cz
+
+If you find some bug, please report it to info [at] phoca [dot] cz
+
+Thank you. 
+

@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+Sage contributors
+
++ mandatory / - optional
+
+contributor
+ + name
+ - location = something which returns the correct location when entered in maps.google.com
+ - work = university, institute, ...
+ - description = <item>[;<item>]* ... delimiter ";" is converted into a break or list
+ - url = webpage, when clicking on name
+ - size = default:100, inserts a font-size:xxx% into the style, so, choose values between 80 and 130 here.
+ - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/" should store them locally
+ - jitter = float as string, multiplicated in jitter function, 0 to disable
+ - trac = trac nickname for the search (also searched for the name, but the trac name is often different!)
+-->
+<contributors>
+<contributor
+ name="Tim Abbott"
+ work="MIT"
+ description="Full debianization of Sage"
+ location="Massachusetts, USA"
+ trac="tabbott"/>
+<contributor
+ name="Michael Abshoff"
+ work="Universität Dortmund"
+ location="Dortmund, Germany"
+ description="contributed to release management; work on build system for Windows, OS X, and Linux; OS X installer; tons of general advice; valgrind support; Solaris and Linux PPC port"
+ url="http://wiki.sagemath.org/MichaelAbshoff"
+ trac="mabshoff"/>
+<contributor
+ name="Antti Ajanki" />
+<contributor
+ name="Martin Albrecht"
+ work="graduate student, Information Security Group, Royal Holloway, University of London"
+ location="London, UK"
+ description="release manager; sage.crypto.mq; commutative algebra (Singular interface, libSingular, PolyBoRi); efficient low-level arithmetic; dense linear algebra, especially over GF(2)"
+ trac="malb"/>
+<contributor
+ name="Nick Alexander"
+ work="UC Irvine graduate student"
+ location="Irvine, CA 92697, USA"
+ trac="ncalexan"/>
+<contributor
+ name="Bill Allombert"
+ description="help with PARI and GP2C integration" />
+<contributor
+ name="Ethan Van Andel"
+ work="Calvin College, MI"
+ location="3201 Burton Street, Southeast Grand Rapids, MI 49546, USA"
+ description="calculus"
+ trac="evanandel"/>
+<contributor
+ name="Ivan Andrus"
+ work="PhD student; Adobe Systems Inc."
+ location="Billings, Montana, USA"
+ description="OS X app; iPhone app; sage-mode for Emacs"
+ trac="iandrus" />
+<contributor
+ name="Pablo Angulo"
+ work="Professor, Department of Mathematics, Universidad Autónoma de Madrid"
+ location="Madrid, Spain"
+ description="calculus"
+ trac="pang"
+ url="http://www.uam.es/personal_pdi/ciencias/pangulo/"/>
+<contributor
+ name="Benjamin Antieau"
+ description="bug fixes" />
+<contributor
+ name="André Apitzsch"
+ work="Otto-von-Guericke-Universität Magdeburg"
+ location="Magdeburg, Germany"
+ description="commutative algebra; documentation; number theory"
+ trac="aapitzsch"/>
+<contributor
+ name="Maite Aranes"
+ work="graduate student, Warwick Mathematics Institute, University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="number field ideal utilities"
+ trac="mtaranes"/>
+<contributor
+ name="Oscar Gerardo Lazo Arjona"
+ work="Student, Universidad Autónoma de Yucatán"
+ location="21.0488082, -89.6416569"
+ description="3-D plotting"
+ trac="olazo"/>
+<contributor
+ name="Eviatar Bach"
+ location="Vancouver, Canada"
+ description="Combinatorics; bug fixes"
+ trac="eviatarbach" />
+<contributor
+ name="Jennifer Balakrishnan"
+ work="PhD student, MIT"
+ location="Cambridge, USA"
+ description="LaTeX mode for MAGMA; work on computation of p-adic heights" />
+<contributor
+  name="Serge Ballif"
+  work="Nevada State College"
+  location="Nevada State College, NV, USA"
+  description="latin square functions"
+  trac="sergeballif" />
+<contributor
+ name="Jason Bandlow"
+ work="Postdoctoral fellow, UC-Davis"
+ location="Davis, CA, USA"
+ description="combinat package"
+ url="http://www.math.ucdavis.edu/~jbandlow/" pix="./pix/bandlow.png"
+ trac="jbandlow"/>
+<contributor
+ name="Gregory Bard"
+ description="dense linear algebra over GF(2)" />
+<contributor
+ name="Sébastien Barthélemy"
+ work="UPMC - Université Pierre et Marie Curie"
+ location="4 place jussieu, 75005 Paris, France"
+ description="documentation; cddlib update; bug fixes"
+ trac="sbarthelemy"/>
+<contributor
+ name="Rob Beezer"
+ work="Professor, University of Puget Sound"
+ location="1500 N Warner, Tacoma, WA, 98416 USA"
+ description="linear algebra; graph theory; group theory; education"
+ url="http://buzzard.ups.edu"
+ trac="rbeezer"/>
+<contributor
+ name="Karim Belabas" />
+<contributor
+ name="Arnaud Bergeron"
+ work="Université de Montréal"
+ location="Montreal, QC, Canada"
+ description="bug fixes;plotting improvements"
+ trac="abergeron"/>
+<contributor
+ name="Luis Berlioz"
+ description="bug fix; optimize basis matrix for ambient modules"/>
+<contributor
+ name="Erin Beyerstedt"
+ work="PhD student, Mathematics Department, Tulane University"
+ location="823 St Charles Ave, New Orleans, LA 70118, United States"
+ description="elliptic curves"
+ url="http://math.tulane.edu/~ebeyerstedt"
+ trac="ebeyerstedt"/>
+<contributor
+ name="Francois Bissey"
+ work="University of Canterbury, New Zealand"
+ location="University of Canterbury, New Zealand"
+ description="various QA; sage-on-gentoo"
+ trac="fbissey"/>
+<contributor
+ name="Jonathan Bober"
+ work="graduate student, University of Michigan"
+ location="MI 48109, USA"
+ description="highly optimized partition function" />
+<contributor
+ name="Tom Boothby"
+ work="undergraduate student employee, University of Washington"
+ location="University of Washington, WA, USA"
+ description="the Sage Notebook; fast polynomial evaluation"
+ trac="boothby"/>
+<contributor
+ name="Nicolas Borie"
+ work="PhD student, Universite Paris-Sud"
+ location="France"
+ description="combinat (Root system, invariant theory)"
+ url="http://www.math.u-psud.fr/~borie/"
+ trac="nborie"/>
+<contributor
+ name="Johan Bosman"
+ work="Postdoctoral fellow, Mathematics Institute, University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom"
+ description="algebra"
+ url="http://www.warwick.ac.uk/~masjam/"
+ trac="johanbosman"/>
+<contributor
+ name="Robert Bradshaw"
+ work="University of Washington"
+ location="University of Washington, WA, USA"
+ description="Cython; number theory; linear algebra; coercion; basic arithmetic"
+ url="http://www.math.washington.edu/~robertwb/"
+ trac="robertwb" />
+<contributor
+ name="Volker Braun"
+ work="Dublin Institute for Advanced Studies"
+ location="Dublin, Ireland"
+ description="Toric geometry package; polyhedra and PPL interface; triangulations" />
+<contributor
+ name="Michael Brickenstein"
+ work="Mathematisches Forschungsinstitut Oberwolfach"
+ location="Oberwolfach-Walke, Germany"
+ description="PolyBoRi author (high-level algorithms, primary designer)"
+ url="http://www.mfo.de/organisation/institute/brickenstein/" />
+<contributor
+ name="Nils Bruin"
+ description="miscellaneous useful code snippets" />
+<contributor
+ name="André-Patrick Bubel"
+ work="student, Universität Heidelberg"
+ location="Maybachstr. 14, 68169 Mannheim, Germany"
+ description="documentation"
+ url="http://www.andre-bubel.de"
+ trac="Moredread"/>
+<contributor
+ name="Stanislav Bulygin"
+ work="Postdoctoral fellow, Center for Advanced Security Research Darmstadt (CASED)"
+ location="64293 Darmstadt, Germany"
+ description="cryptography"
+ url="http://www.cased.de/personen/s_bulygin.html"
+ trac="sbulygin"/>
+<contributor
+ name="Dan Bump"
+ work="Stanford University"
+ location="Stanford, CA, USA"
+ description="combinatorics and representation theory"
+ trac="bump"/>
+<contributor
+ name="Iftikhar Burhanuddin"
+ work="Postdoctoral fellow, UCLA"
+ location="Westwood Village, Los Angeles, California, USA"
+ description="feedback; code; examples; supersingular module"
+ trac="burhanud"/>
+<contributor
+ name="Paul Butler"
+ work="University of Waterloo"
+ location="200 University Avenue West, Waterloo, Ontario, Canada"
+ description="indefinite integration for piecewise functions; calculus bug fixes"
+ url="http://www.paulbutler.org"
+ trac="pbutler"/>
+<contributor
+ name="Oriol Castejón"
+ work="Universitat Politècnica de Catalunya"
+ location="C/ Jordi Girona, 31 08034 Barcelona, Spain"
+ description="calculus; packaging"
+ trac="uri"/>
+<contributor
+ name="Ondrej Certik"
+ work="graduate physics student, Charles University"
+ location="Prague, Czech Republic"
+ description="Sympy Integration; founder of Sympy project"
+ url="http://ondrej.certik.cz/"
+ trac="certik"/>
+<contributor
+ name="Wilson Cheung"
+ work="sysadmin, UCSD"
+ location="San Diego, CA 92093, USA"
+ description="compilation of Sage on Solaris; discussion of Sage build process" />
+<contributor
+ name="Dan Christensen"
+ work="Associate Professor, Department of Mathematics, The University of Western Ontario"
+ location="London, Ontario N6A 5B7, Canada"
+ description="optimize certain combinatorial constructions"
+ url="http://jdc.math.uwo.ca"
+ trac="jdc"/>
+<contributor
+ name="Craig Citro"
+ work="UCLA"
+ location="Los Angeles, CA, USA"
+ description="fast computation of Eisenstein series; code and bug fixes in modular forms; number theory; the NTL and PARI interfaces"
+ trac="craigcitro"/>
+<contributor
+ name="Anders Claesson"
+ work="Associate Professor, The Mathematics Institute, Reykjavík University"
+ location="Kringlan 1, 103 Reykjavik, Iceland"
+ description="optimizing certain combinatorial operations"
+ url="http://www.math.ru.is/anders/"
+ trac="aclaesson"/>
+<contributor
+ name="Francis Clarke"
+ work="Department of Mathematics, University of Wales"
+ location="Swansea, UK"
+ description="bug fixes"
+ url="http://www-maths.swan.ac.uk/staff/fwc/"
+ trac="fwclarke"/>
+<contributor
+ name="Timothy Clemans"
+ work="high school student"
+ location="Seattle, WA, USA"
+ description="Notebook; misc."
+ url="http://timothyclemans.com/" pix="./pix/tclemans.jpg"/>
+<contributor
+ name="Alex Clemesha"
+ work="employee, University of Washington"
+ location="University of Washington, WA, USA"
+ description="Sage's 2-D plotting functionality; design; examples; constants.py" />
+<contributor
+ name="Nathann Cohen"
+ work="CNRS researcher"
+ location="LRI, Universite Paris Sud, France"
+ url="http://www-sop.inria.fr/members/Nathann.Cohen/"
+ description="Graph Theory;Linear Programming;documentation"
+ trac="ncohen" />
+<contributor 
+ name="Jenny Cooley" 
+ work="undergraduate student, University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="elliptic curves" />
+<contributor
+ name="David Coudert"
+ work="Researcher, INRIA"
+ location="Sophia Antipolis, France"
+ description="Graph Theory; Linear programming"
+ url="http://www-sop.inria.fr/members/David.Coudert"
+ trac="dcoudert" />
+<contributor
+ name="John Cremona"
+ work="Professor, University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="many contributions to elliptic curve code; C++ part of Sage interface to mwrank, Tables; extensive design discussions; documentation fixes; bug fixes; organize Sage Days 6"
+ url="http://www.warwick.ac.uk/staff/J.E.Cremona"
+ trac="cremona"/>
+<contributor
+ name="Karl-Dieter Crisman"
+ work="Gordon College"
+ location="Wenham, MA, USA"
+ description="Documentation; Symbolics"
+ trac="kcrisman"/>
+<contributor
+ name="Fidel Barrera Cruz"
+ work="graduate student, Department of Combinatorics and Optimization, University of Waterloo"
+ location="200 University Avenue, West Waterloo, Ontario, Canada"
+ description="LaTeX output for combinatorial graphs"
+ trac="fidelbarrera"/>
+<contributor
+ name="Doug Cutrell"
+ work="graduate student, UCSD"
+ location="San Diego, CA, USA"
+ description="created the Sage Microsoft Windows installer" />
+<contributor
+ name="Alyson Deines" />
+<contributor
+ name="Vincent Delecroix"
+ work="PhD student, Institut de Mathématiques de Luminy, Université Aix-Marseille"
+ location="163 Avenue de Luminy 13009 Marseille, France"
+ description="combinatorics, documentation"
+ url="http://iml.univ-mrs.fr/~delecroi"
+ trac="vdelecroix"/>
+<contributor
+ name="Jeroen Demeyer"
+ work="Postdoc, Ghent University"
+ location="Galglaan 2, Gent, Belgium"
+ description="PARI interface; Integer factorisation; c_lib, interrupt handling"
+ url="http://cage.ugent.be/~jdemeyer/"
+ trac="jdemeyer" />
+<contributor
+ name="Tom Denton"
+ work="graduate student, Department of Mathematics, UC Davis"
+ location="One Shields Avenue, Davis, CA 95616, USA"
+ description="non-symmetric Macdonald polynomials with permuted basements"
+ url="http://www.math.ucdavis.edu/~sdenton"/>
+<contributor
+ name="Maarten Derickx"
+ work="University of Leiden"
+ location="Rapenburg 70 2311 EZ Leiden, Netherlands"
+ description="algebra"
+ url="http://www.math.leidenuniv.nl/~mderickx/"
+ trac="mderickx"/>
+<contributor
+ name="Didier Deshommes"
+ location="Cary, NC, USA"
+ description="documentation; optimizations; quaddouble wrapper; spkg restructuring; porting Sage to NexentasOS"
+ trac="dfdeshom"/>
+<contributor
+ name="Ryan Dingman"
+ work="University of Washington"
+ location="University of Washington, WA, USA"
+ description="graph theory"
+ trac="rdingman"/>
+<contributor
+ name="Dan Drake"
+ work="Korea Advanced Institute of Science and Technology (KAIST)"
+ location="Daejeon, South Korea"
+ description="Rencontres numbers; inverse trigonometry; Wronskian function; docstrings; logging; SageTex"
+ trac="ddrake"/>
+<contributor
+ name="Tom Draper"
+ description="support is_primitive() method for polynomials over Finite Fields"/>
+<contributor
+ name="Alexander Dreyer"
+ work="Fraunhofer ITWM"
+ location="Kaiserslautern, Germany"
+ description="PolyBoRi author (low-level routines, project infrastructure)"
+ url="http://www.itwm.fhg.de/de/as__asemployees__dreyer/dreyer/"/>
+<contributor
+ name="Tim Dumol"
+ work="HS Student"
+ location="Manila, Philippines"
+ description="Sage Notebook improvements; Reviews; Minor fixes"
+ trac="timdumol"
+ url="http://timdumol.com" pix="http://gravatar.com/avatar/7009e6e9ae26c2b3119e97531ef2cc12&amp;s=512"  />
+<contributor
+ name="Nathan Dunfield"
+ description="small patches; improvements to algdep; documentation"
+ trac="dunfield"/>
+<contributor
+ name="Gabriel Ebner"
+ work="undergraduate student, Technical University of Vienna"
+ location="Vienna, Austria"
+ description="multinomial coefficient"
+ url="http://gabrielebner.at/"
+ trac="gebner"/>
+<contributor
+ name="Ben Edwards"
+ work="PhD student, Department of Computer Science, University of New Mexico"
+ location="Albuquerque, NM 87131, United States"
+ description="graph theory"
+ trac="bedwards"/>
+<contributor
+ name="Dana Ernst"
+ work="Assistant Professor, Mathematics Department, Plymouth State University"
+ location="17 High Street, Plymouth, NH 03264-1595, United States"
+ description="calculus"
+ url="http://oz.plymouth.edu/~dcernst/"
+ trac="DanaErnst"/>
+<contributor
+ name="Burcin Erocal"
+ work="PhD student, RISC - Linz"
+ location="48.366126, 14.513884"
+ description="integrating the PolyBoRi framework"
+ trac="burcin"/>
+<contributor
+ name="Ron Evans"
+ work="University of California, San Diego"
+ location="9500 Gilman Drive, La Jolla, San Diego, California, USA"
+ description="bug fix; documentation"
+ url="http://math.ucsd.edu/~revans"/>
+<contributor
+ name="Richard J. Fateman"
+ work="Professor Emeritus, Department of Electrical Engineering and Computer Sciences, University of California at Berkeley"
+ location="Berkeley, California 94720-1776, USA"/>
+<contributor
+ name="Lars Fischer"
+ trac="lars.fischer"/>
+<contributor
+ name="Jean-Pierre Flori"
+ work="Telecom ParisTech"
+ location="46 Rue Barrault, 75013 Paris, France"
+ description="documentation"
+ url="http://perso.telecom-paristech.fr/~flori/"
+ trac="jpflori"/>
+<contributor
+ name="Evan Fosmark"
+ location="Amity, Oregon, USA"
+ description="Sage notebook"
+ url="http://www.evanfosmark.com"/>
+<contributor
+ name="Laurent Fousse"
+ work="Debian Project"
+ location="Grenoble, France"
+ description="calculus"
+ url="http://komite.net/laurent/"/>
+<contributor
+ name="Gary Furnish"
+ work="University of Utah"
+ location="Utah, USA"
+ description="Cython; symbolics; miscellaneous"
+ trac="gfurnish"/>
+<contributor
+ name="Alex Ghitza"
+ work="The University of Melbourne"
+ location="Parkville, Melbourne, Australia"
+ description="pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation"/>
+<contributor
+ name="Andrzej Giniewicz"
+ url="http://www.im.pwr.wroc.pl/~giniew/" 
+ work="Ph.D. student, Institute of Mathematics and Computer Science, Wroclaw University of Technology"
+ location="Wroclaw, Poland"
+ description="small build fixes" pix="http://www.sagemath.org/pix/aginiewicz.jpg"
+ trac="aginiewicz"/>
+<contributor
+ name="Alain Giorgetti"
+ description="documentation"
+ trac="agiorgetti"/>
+<contributor
+ name="Samuele Giraudo"
+ work="PhD student, Université de Paris-Est (Marne-la-Vallée)"
+ location="6 Bd DesCartes, 77420 CHAMPS SUR MARNE, France"
+ description="combinatorics"
+ url="http://igm.univ-mlv.fr/~giraudo/"
+ trac="giraudo"/>
+<contributor
+ name="Amy Glen"
+ work="Lecturer in Mathematics, School of Chemical and Mathematical Sciences, Murdoch University"
+ location="90 South Street, Murdoch, Western Australia, Australia"
+ description="SageWords co-author"
+ url="http://wwwstaff.murdoch.edu.au/~aglen"
+ trac="amyglen"/>
+<contributor
+ name="Daniel Gordon"
+ work="researcher, IDA Center For Communications Research"
+ location="San Diego, CA, USA"
+ description="covering design"
+ url="http://www.ccrwest.org/gordon/dan.html"
+ trac="dgordon"/>
+<contributor
+ name="Chris Gorecki"
+ work="University of Washington"
+ location="University of Washington, WA, USA"
+ description="Sage's logic package"
+ trac="goreckc"/>
+<contributor
+ name="Jan Groenewald"
+ work="IT Manager; African Institute for Mathematical Sciences"
+ location="AIMS; Muizenberg; Cape Town; South Africa"
+ description="Advocacy; Bug fixes; Build; Documentation; Feedback; Ubuntu support"/>
+<contributor
+ name="Rob Gross" />
+<contributor
+ name="Jason Grout"
+ work="Postdoctoral fellow, Iowa State University"
+ location="Ames, Iowa, USA"
+ description="graph theory; tidbits of the notebook; linear algebra; various other things"
+ trac="jason"/>
+<contributor
+ name="Ryan Grout"
+ work="undergraduate student"
+ location="Provo, UT, USA"
+ description="graphics"
+ trac="ryan"/>
+<contributor
+ name="Mathieu Guay-Paquet"
+ work="University of Waterloo"
+ location="200 University Avenue, West Waterloo, ON N2L 3G1, Canada"
+ description="algebra; combinatorics"
+ trac="mguaypaq"/>
+<contributor
+ name="Alexey U. Gudchenko"
+ location="107241, 19-18, Amurskaya street, Moscow, Russia"
+ description="interfaces"
+ trac="goodok.alex"/>
+<contributor
+ name="Harold Gutch"
+ work="PhD student, Department of Nonlinear Dynamics, Max Planck Institute for Dynamics and Self-Organization"
+ location="Goettingen, Germany"
+ description="build system"
+ trac="logix"/>
+<contributor
+ name="Jonathan Gutow"
+ work="Chemistry Department, University of Wisconsin Oshkosh"
+ location="Oshkosh, Wisconsin, USA"
+ description="graphics"
+ trac="gutow"
+ url="http://www.uwosh.edu/facstaff/gutow"/>
+<contributor
+ name="Jose Guzman"
+ work="Institute of Science and Technology Austria"
+ location="Am Campus 1, 3400 Klosterneuburg, Austria"
+ description="documentation"/>
+<contributor
+ name="Anna Haensch"
+ location="70 Wyllys Avenue, Middletown, CT 06457-3226, United States"
+ work="graduate student, Department of Mathematics and Computer Science, Wesleyan University"
+ description="documentation"
+ url="http://ahaensch.web.wesleyan.edu"
+ trac="annahaensch"/>
+<contributor
+ name="Carlo Hamalainen"
+ url="http://carlo-hamalainen.net"
+ work="Eduard Čech Center, Charles University, Prague"
+ location="Prague, Czech Republic"
+ description="Latin squares; dancing links C++ code; bug fixes; bug reports"
+ trac="carlohamalainen"/>
+<contributor
+ name="Marshall Hampton"
+ work="Minnesota Duluth"
+ location="Duluth, MN, USA" 
+ description="gfan interface; polyhedra; phcpack interface and spkg; biopython package maintainer"
+ url="http://www.d.umn.edu/~mhampton/index.html" pix="./pix/mhampton.jpeg"
+ trac="mhampton"/>
+<contributor
+ name="Jon Hanke"
+ work="UGA Faculty"
+ location="Athens, GA, USA"
+ description="quadratic forms package; quadratic_forms directory"
+ trac="jonhanke"/>
+<contributor
+ name="David Møllerller Hansen"
+ work="Masters graduate, Technical University of Denmark"
+ location="Copenhagen, Denmark"
+ description="Weil pairing framework"
+ url="http://www.mollerhansen.com/"
+ trac="dmhansen"/>
+<contributor
+ name="Mike Hansen"
+ location="Seattle, WA, USA"
+ work="University of Washington"
+ description="Combinatorics package; bug fixes"
+ trac="mhansen"/>
+<contributor
+ name="Bill Hart"
+ work="University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="complete implementation of quadratic sieve; created FLINT (fast arithmetic library)" />
+<contributor
+ name="David Harvey"
+ work="NYU"
+ location="NYU, NY, USA" 
+ description="p-adic heights; arithmetic architecture; Bernoulli numbers mod p; FLINT; other random things"
+ trac="dmharvey"/>
+<contributor
+ name="Jason B Hill"
+ work="University of Colorado Boulder"
+ location="Boulder, Colorado, USA"
+ description="permutation groups; notebook; shell scripting"
+ trac="jasonbhill" />
+<contributor
+ name="Leif Hille" />
+<contributor
+ name="Florent Hivert"
+ work="Professor, Laboratoire de Recherche en Informatique"
+ location="LRI, Universite Paris Sud, France"
+ description="combinatorics (design and code); various bug fixes"
+ trac="hivert" />
+<contributor
+ name="Ryan Hinton"
+ trac="rhinton"/>
+<contributor
+ name="Neal Holtz"
+ work="Carleton University"
+ location="Ottawa, ON, Canada"
+ description="Newton-Raphson Root Finding interact demonstration" />
+<contributor
+ name="Golam Mortuza Hossain"
+ work="Postdoctoral fellow, Indian Institute of Science Education and Research"
+ location="IISER, Kolkata, India"
+ description="symbolics"
+ url="http:///www.math.unb.ca/~ghossain"
+ trac="gmhossain"/>
+<contributor
+ name="Sean Howe"
+ work="University of Washington REU"
+ location="University of Washington, WA, USA"
+ description="Bruhat ordering of the symmetric group" />
+<contributor
+ name="Alexander Hupfer"
+ work="Universität Regensburg"
+ location="Universitaetsstr. 31, 93053 Regensburg, Germany"
+ description="notebook enhancements"
+ url="http://sonium.blogspot.com"
+ trac="ahupfer"/>
+<contributor
+ name="Wilfried Huss"
+ work="PhD student, Graz University of Technology"
+ location="TU Gratz, Austria"
+ description="calculus bug fixes; additions to the Maxima interface"
+ trac="whuss"/>
+<contributor
+  name="Benjamin Hutz"
+  work="Assistant Professor of Mathematics, Florida Institute of Technology"
+  location="Melbourne, FL USA"
+  description="arithmetic dynamics; complex dynamics; projective/affine schemes"
+  url="http://www.fit.edu/~bhutz"
+  trac="bhutz" />
+<contributor
+ name="Hamish Ivey-Law"
+ work="Université de la Méditerranée, France; University of Sydney, Australia"
+ description="bug fixes"
+ trac="hlaw"/>
+<contributor
+ name="Naqi Jaffery"
+ work="UCSD undergraduate student"
+ location="San Diego, CA 92093, USA"
+ description="Examples" />
+<contributor
+ name="Peter Jeremy"
+ location="Sydney, Australia"
+ description="porting packages to FreeBSD"
+ trac="pjeremy" />
+<contributor
+ name="Peter Jipsen"
+ work="Professor, Chapman University"
+ location="Orange, California, USA"
+ description="posets package" />
+<contributor
+ name="Fredrik Johansson"
+ work="Chalmers University of Technology"
+ location="Sven Hultins gata 6, 41258 Goeteborg, Sweden"
+ description="bug fixes; basic arithmetics"
+ url="http://www.dd.chalmers.se/~frejohl"
+ trac="fredrik.johansson"/>
+<contributor
+ name="Niles Johnson"
+ location="Athens, Clarke County, Georgia 30602, United States"
+ description="algebra; basic arithmetic; documentation; symbolics"
+ url="http://www.nilesjohnson.net"
+ trac="niles"/>
+<contributor
+ name="Timo Jolivet"
+ work="PhD student: LIAFA, Paris, France; University of Turku, Finland"
+ location="Turku, Finland"
+ description="combinatorics"
+ url="http://www.liafa.jussieu.fr/~jolivet/"
+ trac="tjolivet"/>
+<contributor
+ name="Benjamin Jones"
+ work="Reasearch and Engineering at Galois Inc."
+ location="Portland, OR, USA"
+ description="symbolics; group theory; doctest; documentation; plot3d"
+ url="https://bluedrive.uwstout.edu/users/facultystaff/jonesbe/"
+ trac="benjaminfjones"/>
+<contributor
+ name="David Joyner"
+ work="Professor, US Naval Academy"
+ location="Annapolis, MD, USA"
+ description="feedback; documentation (tutorial, install guide) and code"
+ trac="wdj"/>
+<contributor
+ name="Michael Kallweit"
+ url="http://www.ruhr-uni-bochum.de/lmi/kallweit/"
+ work="Ruhr-Universität Bochum, Deutschland"
+ location="Bochum, Germany"
+ description="Graph Theory fixes; miscellaneous bug fixes" pix="./pix/michael_kallweit.jpg" />
+<contributor
+ name="Josh Kantor"
+ url="http://www.math.washington.edu/~jkantor/"
+ work="graduate student, University of Washington"
+ location="University of Washington, WA, USA"
+ description="3-D interactive graphics (via soya3d); integrating Fortran software"
+ trac="jkantor"/>
+<contributor
+ name="Kiran Kedlaya"
+ work="Professor, MIT"
+ location="Cambridge, USA"
+ description="Macaulay 2 interface; item for install guide; p-adics"
+ trac="kedlaya"/>
+<contributor
+ name="Lloyd Kilford"
+ work="Research Fellow, University of Bristol"
+ location="Tyndall Avenue, Bristol BS8 1TH, UK"
+ description="bug fix; modular forms"
+ url="http://www.maths.bris.ac.uk/~maljpk"
+ trac="ljpk"/>
+<contributor
+ name="Simon King"
+ work="Friedrich-Schiller-Universität Jena"
+ location="Friedrich-Schiller-University Jena, Germany"
+ description="&lt;a href='http://sage.math.washington.edu/home/SimonKing/Cohomology/'&gt;Modular group cohomology&lt;/a&gt; ; Infinite polynomial rings; (lib) Singular; Fast linear algebra; Categories and Coercion"
+ url="http://users.minet.uni-jena.de/~king/"
+ trac="SimonKing" />
+<contributor
+ name="Keshav Kini"
+ work="Research Assistant, School of Physical and Mathematical Sciences, Nanyang Technological University"
+ location="21 Nanyang Link, Singapore"
+ description="documentation"
+ url="http://www1.spms.ntu.edu.sg/~krkini/"
+ trac="kini"/>
+<contributor
+ name="David Kirkby"
+ description="Compilation of Sage on Solaris; much help on general Sage build process"
+ trac="drkirkby"/>
+<contributor
+ name="Emily Kirkman"
+ work="undergraduate student employee, University of Washington"
+ location="University of Washington, WA, USA"
+ description="documentation; graph theory"
+ trac="ekirkman"/>
+<contributor
+ name="David Kohel"
+ work="Professor, University of Sydney"
+ location="163 Avenue de Luminy 13009 Marseille, France"
+ description="substantial design discussion and code"
+ trac="kohel"/>
+<contributor
+   name="Przemysław Koprowski"
+   work="University of Silesia, Faculty of Mathematics"
+   location="Poland, Katowice"
+   description="(computational) theory of quadratic forms; real algebraic geometry; computational number theory"
+   trac="pkoprowski" />
+<contributor
+ name="Ted Kosan"
+ location="Ohio, USA"
+ work="Shawnee State University"
+ description="Sage/Java/Applet integration; Sage for newbies book; marketing"
+ trac="tkosan"/>
+<contributor name="Daniel Krenn"
+ work="TU Graz, Austria"
+ location="Graz, Austria"
+ description="misc; bug fixes"
+ url="http://www.danielkrenn.at"
+ trac="dkrenn" />
+<contributor
+ name="Ross Kyprianou"
+ work="PhD student, The University of Melbourne"
+ location="Parkville, Melbourne, Australia"
+ description="documentation"
+ trac="rossk"/>
+<contributor
+  name="Sébastien Labbé"
+  work="Postdoctoral fellow, LIAFA, University Paris-Diderot Paris 7"
+  location="48.82715, 2.3809"
+  description="combinatorics; discrete geometry; words; quantumino
+solver; bug fixes; visualization"
+  url="www.liafa.univ-paris-diderot.fr/~labbe/"
+trac="slabbe" />
+<contributor
+ name="Yann Laigle-Chapuy"
+ work=" PhD student, INRIA"
+ location="Rocquencourt, Paris, France"
+ description="Pohlig-Hellman algorithm for discrete logarithms, optimized gcd"
+ url="http://www-rocq.inria.fr/secret/Yann.Laigle-Chapuy"
+ trac="ylchapuy"/>
+<contributor
+ name="Lukáš Lánský"
+ work="Charles University, Prague"
+ location="Hradec Kralove, Czech Republic"
+ trac="brunellus"
+ url="http://kam.mff.cuni.cz/~lansky/"
+ description="graph theory; combinatorial game theory" />
+<contributor
+ name="Kwankyu Lee"
+ work="Chosun University"
+ location="Gwangju, Korea"
+ description="bug fixes"
+ trac="klee"/>
+<contributor
+ name="Julien Leroy"
+ work="LAMFA, Université de Picardie Jules Verne"
+ location="80000 Amiens, France"
+ description="combinatorics"
+ trac="jleroy"/>
+<contributor
+ name="Richard Lindner"
+ work="Technische Universität Darmstadt"
+ location="Karolinenplatz 5, 64289 Darmstadt, Germany"
+ description="cryptography"
+ url="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/rlindner.html"
+ trac="rlindner"/>
+<contributor
+ name="David Loeffler"
+ work="University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="additions and improvements to modular forms code; bug fixes"
+ url="http://www.warwick.ac.uk/~masiao/"
+ trac="davidloeffler"/>
+<contributor
+ name="Miguel Marco"
+ location="Leibniz University"
+ work="Leibniz University, Germany"
+ description="linear algebra; polynomial rings; free and finitely presented
+groups; braid groups"
+ url="http://riemann.unizar.es/~mmarco"
+ trac="mmarco"/>
+<contributor
+ name="Michael Mardaus"
+ work="Universität Mainz"
+ location="55122, Mainz, Germany"
+ description="point counting code"
+ trac="mardaus"/>
+<contributor
+ name="Robert Mařík"
+ work="Department of Mathematics, Mendel University in Brno"
+ location="61300 Brno, Czech Republic"
+ description="basic arithmetic; calculus; Sage notebook; standard packages; symbolics"
+ url="http://user.mendelu.cz/marik"
+ trac="robert.marik"/>
+<contributor
+ name="Jason Martin"
+ work="James Madison University"
+ location="Harrisonburg, VA, USA"
+ description="GMP assembly code improvements; linear algebra; work on Sage 64-bit build" />
+<contributor
+ name="Alexandre Blondin Massé"
+ work="PhD student; Laboratoire de combinatoire et d'informatique mathématique (LaCIM), Université du Québec à Montréal; Laboratoire de mathématique (LAMA), Université de Savoie"
+ location="201 Avenue Du President-Kennedy, Montreal, QC, Canada"
+ description="combinatorics"
+ trac="abmasse"
+ url="http://www.thales.math.uqam.ca/~blondin"/>
+<contributor
+ name="Andrew Mathas"
+ description="algebraic combinatorics; partitions; tableaux; Specht modules; ..."
+ work="University of Sydney"
+ location="Sydney, Australia"
+ url="http://www.maths.usyd.edu.au/u/mathas/"
+ trac="andrew.mathas" />
+<contributor
+ name="Peter McNamara"
+ work="Department of Mathematics, Bucknell University"
+ location="Lewisburg, PA 17837, USA"
+ description="combinatorics"
+ url="http://www.facstaff.bucknell.edu/pm040"
+ trac="pmcnamara"/>
+<contributor
+ name="Gregory McWhirter"
+ work="graduate student, Department of Logic and Philosophy of Science, University of California at Irvine"
+ location="University Dr, Irvine, CA 92697, United States"
+ description="graph theory"
+ url="https://webfiles.uci.edu/gmcwhirt/www/"
+ trac="gsmcwhirter"/>
+<contributor
+ name="Jason Merrill"
+ work="Yale University"
+ location="Kansas, USA"
+ description="calculus improvements; bug fixes"
+ trac="jwmerrill"/>
+<contributor
+ name="Matthias Meulien"
+ work="Research engineer, XLIM"
+ location="123, avenue Albert Thomas, 87060 Limoges Cedex, France"
+ description="GAP interface bug fix"
+ url="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html"
+ trac="mmeulien"/>
+<contributor
+ name="Robert Miller"
+ url="http://www.rlmiller.org/"
+ work="graduate student, University of Washington"
+ location="University of Washington, WA, USA"
+ description="graph theory"
+ trac="rlm"/>
+<contributor
+ name="Kate Minola"
+ work="University of Maryland"
+ location="College Park, MD, USA"
+ description="improvement on building Sage components" />
+<contributor
+ name="Moritz Minzlaff"
+ work="PhD student, Technische Universität Berlin"
+ location="Berlin, Germany"
+ description="algebraic geometry"
+ trac="minz"
+ url="http://www.math.tu-berlin.de/~minzlaff/"/>
+<contributor
+ name="Joel Mohler"
+ work="Lehigh"
+ location="Bethlehem, PA, USA"
+ description="extensive improvements all over; especially to basic arithmetic, number theory; etc"
+ trac="jbmohler"/>
+<contributor
+ name="Thierry Monteil"
+ work="research fellow, CNRS"
+ location="Montpellier, France"
+ description="bug fixes; combinatorics (words, graphs); dynamics (translation surfaces, tilings); organized Sage Days 20 and Sage Days 28"
+ url="http://www.lirmm.fr/~monteil/"
+ trac="tmonteil"/>
+<contributor
+ name="Peter Mora"
+ work="PhD student, Institute of Mathematics, Budapest University of Technology and Economics"
+ location="Budafoki ut 3 1117 XI. kerulet, Budapest, Hungary"
+ description="internationalization bug fixes"
+ url="http://www.math.bme.hu/~morap"
+ trac="mora"/>
+<contributor
+ name="Bobby Moretti"
+ work="undergraduate student employee, University of Washington"
+ location="University of Washington, WA, USA"
+ description="Sage library distribution; Sage chroot jail; Sage .deb; Calculus package"
+ trac="moretti"/>
+<contributor
+ name="Rich Morin" />
+<contributor
+ name="Guillaume Moroz"
+ work="LIP6/INRIA"
+ location="France"
+ description="Singular interface improvements"
+ trac="gmoroz"/>
+<contributor
+ name="Gregg Musiker"
+ work="graduate student, UCSD"
+ location="San Diego, CA 92093, USA"
+ description="Maple interface; documentation; design" />
+<contributor
+ name="Tobias Nagel"
+ work="Universität Mainz"
+ location="55122, Mainz, Germany"
+ description="point counting code"
+ trac="tnagel"/>
+<contributor
+ name="Brett Nakashima"
+ work="University of Washington"
+ location="Seattle, USA"
+ description="contributions to the finance module"
+ trac="brettnak"/>
+<contributor
+ name="Pablo De Nápoli"
+ work="University of Buenos Aires"
+ location="Buenos Aires, Argentina"
+ description="bug fixes"
+ trac="pdenapo"/>
+<contributor
+ name="Johan Sebastian Rosenkilde Nielsen"
+ work="Technical University of Denmark"
+ location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark"
+ description="algebra; documentation; miscellaneous"
+ url="http://www.mat.dtu.dk/English/Service/Phonebook.aspx&#63;lg=showcommon&amp;id=27218&amp;type=person"
+ trac="jsrn"/>
+<contributor
+ name="Minh Van Nguyen"
+ location="Melbourne, Australia"
+ description="cryptography; graph theory; release management; website maintainer; miscellaneous bug fixes; documentation work"
+ url="http://sage.math.washington.edu/home/mvngu/"
+ trac="mvngu"/>
+<contributor 
+  name="Andrey Novoseltsev" 
+  work="University of Alberta, postdoc" 
+  location="Edmonton, Canada" 
+  description="toric geometry" 
+  url="http://www.math.ualberta.ca/~novoseltsev/" 
+  trac="novoselt" />
+<contributor
+ name="Christopher Olah"
+ work="hacklab.to"
+ location="Toronto, Canada"
+ description="miscellaneous"
+ trac="colah"
+ url="http://christopherolah.wordpress.com"/>
+<contributor
+ name="Johan Oudinet"
+ work="Karlsruhe Institute of Technology"
+ location="Karlsruhe, Germany"
+ description="documentation"
+ trac="joudinet"
+ url="http://johan.oudinet.fr"/>
+<contributor
+ name="Bill Page"
+ description="Sage's AXIOM interface"
+ trac="bill.p"/>
+<contributor
+ name="Ronan Paixão"
+ location="Brazil"
+ description="author of the Sage-Scilab interface"
+ trac="ronanpaixao"/>
+<contributor
+ name="Willem Jan Palenstijn"
+ work="graduate student, Leiden"
+ location="Leiden, Netherlands"
+ description="Benchmarking parser; doctest timing; difficult fpLLL bug fix; and much more"
+ trac="wjp"/>
+<contributor
+ name="John Palmieri"
+ work="Department of Mathematics, University of Washington"
+ location="University of Washington, WA, USA"
+ description="bug fixes"
+ url="http://www.math.washington.edu/~palmieri/"
+ trac="jhpalmieri"/>
+<contributor
+ name="Dmitrii Pasechnik"
+ work="Assistant Professor, School of Physical &amp; Mathematical Sciences, Nanyang Technological University"
+ location="21 Nanyang Link, Singapore"
+ description="packaging; commutative algebra; group theory"
+ url="http://www.ntu.edu.sg/home/dima/"
+ trac="dimpase"/>
+<contributor
+ name="Javier López Peña"
+ work="Mathematics Research Centre, Queen Mary University of London"
+ location="London E1 4NS UK"
+ description="categories"
+ url="http://www.maths.qmul.ac.uk/~jlopez"/>
+<contributor
+ name="Paulo César Pereira de Andrade"
+ work="Mandriva Linux"
+ location="Curitiba, Brazil"
+ description="packages"
+ trac="pcpa"/>
+<contributor
+ name="David Perkinson"
+ work="Professor, Department of Mathematics, Reed College"
+ location="Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA"
+ description="bug fix for Laplacian matrix"
+ url="http://people.reed.edu/~davidp"/>
+<contributor
+ name="Clement Pernet"
+ work="University of Washington"
+ location="University of Washington, WA, USA"
+ description="LinBox maintainer; LinBox and Givaro integration; bug fixes"
+ url="http://www.math.washington.edu/~pernet/"
+ trac="cpernet"/>
+<contributor
+ name="John Perry"
+ work="University of Southern Mississippi"
+ location="Hattiesburg, MS, USA"
+ description="bug fixes; the Sage wiki"
+ url="http://www.math.usm.edu/perry/"
+ trac="john_perry"/>
+<contributor
+ name="Pearu Peterson"
+ work="Senior Researcher, Laboratory of Systems Biology, Institute of Cybernetics at TUT"
+ location="Tallinn, Estonia"
+ description="optimized multinomial coefficient computation"
+ url="http://cens.ioc.ee/~pearu"/>
+<contributor
+ name="David Poetzsch-Heffter"
+ description="notebook"/>
+<contributor
+ name="Viviane Pons"
+ work="PhD student, Paris-Est Marne-la-Vallée University"
+ location="6 Bd DesCartes, 77420 Champs Sur Marne, France"
+ description="combinatorics; multivariate polynomials algebra"
+ url="http://www-igm.univ-mlv.fr/~pons/"
+ trac="VivianePons"/>
+<contributor
+ name="Amritanshu Prasad"
+ location="Chennai, India"
+ url="http://www.imsc.res.in"
+ work="The Institute of Mathematical Sciences"
+ trac="amri"
+ description="contributed vector partitions and similarity class types to sage.combinat"
+ pix="http://sagemath.org/pix/prasad.jpeg" />
+<contributor
+    name="Punarbasu Purkayastha"
+    work="Research Fellow, Nanyang Technological University, Singapore"
+    location="Singapore, SG"
+    description="plot; coding theory"
+    url="http://punarbasu.appspot.com"
+    trac="ppurka" />
+<contributor
+ name="Bill Purvis" />
+<contributor
+ name="Julien Puydt"
+ location="Grenoble, France"
+ description="porting"
+ trac="Snark"/>
+<contributor
+ name="Yi Qiang"
+ work="undergraduate student employee, University of Washington" 
+ location="University of Washington, WA, USA"
+ description="Distributed Sage (in progress)"/>
+<contributor
+ name="Jordi Quer"
+ location="Barcelona, Spain"
+ work="Universitat Politecnica de Catalunya"
+ description="modular symbols and dimension formulas for congruence subgroups Gamma_H(N)"
+ url="http://www-ma2.upc.es/~quer/" />
+<contributor
+ name="Alex Raichev"
+ work="University of Auckland"
+ location="Auckland, New Zealand"
+ url="http://www.cs.auckland.ac.nz/~raichev"
+ description="Analytic combinatorics"
+ trac="araichev" />
+<contributor
+ name="Gustavo Rama"
+ work="Universidad de la República"
+ location="Eduardo Acevedo, Montevideo, Uruguay"
+ description="quadratic forms"
+ trac="gdrama"/>
+<contributor
+ name="Jens Rasch"
+ description="calculus"
+ trac="jrasch"
+ url="http://6dime.blogspot.com"/>
+<contributor
+ name="Martin Raum"
+ work="ETH Zürich"
+ location="Zurich, Switzerland"
+ description="algebra; modular forms; psage"
+ url="http://www.raum-brothers.eu/martin/"
+ trac="mraum"/>
+<contributor
+ name="Dorian Raymer"
+ work="UCSD"
+ location="San Diego, CA 92093, USA"
+ description="The notebook's documentation browser" />
+<contributor
+ name="Stefan Reiterer"
+ work="University of Graz"
+ location="Graz, Austria"
+ description="packaging"
+ trac="maldun"/>
+<contributor
+ name="Risan"
+ work="Nanyang Technological University, Singapore"
+ location="Tangerang, Indonesia"
+ description="Arbitrary Precision LP Solver Backend"
+ trac="ptrrsn_1" />
+<contributor
+ name="R. Rishikesh"
+ work="University of Waterloo"
+ location="Waterloo, Ontario, Canada"
+ description="automated testing of SAGE_ROOT/examples; bug fixes, etc" />
+<contributor
+ name="David Roe"
+ work="graduate student, Harvard University"
+ location="Cambridge, MA, USA"
+ description="Macaulay 2 interface; optimized p-adics; and so so much more"
+ trac="roed"/>
+<contributor
+ name="Bjarke Hammersholt Roune"
+ work="PhD student, Department of Computer Science, University of Aarhus"
+ location="Aarhus, Denmark"
+ description="Integrator; author of Frobby (Monomial ideals)"
+ url="http://www.broune.com/"
+ trac="broune"/>
+<contributor
+ name="Gordon Royle" />
+<contributor
+ name="Serge A. Salamanka"
+ work="National Academy of Sciences, UIIP"
+ location="Minsk, Belarus"
+ description="Sage-Grid project http://groups.google.com/group/sage-grid"
+ url="http://sageworldmath.blogspot.com"/>
+<contributor
+ name="Franco Saliola"
+ work="Postdoctoral fellow, Université du Québec à Montréal"
+ location="Montreal, Quebec, Canada"
+ description="posets package"
+ url="http://www.lacim.uqam.ca/~saliola/index.html"
+ trac="saliola"/>
+<contributor
+ name="Ben Salisbury"
+ work="Assistant Professor, Central Michigan University"
+ location="Mount Pleasant, MI, USA"
+ description="crystals; representation theory; combinatorics"
+ trac="bsalisbury1" />
+<contributor
+ name="Leonardo Sampaio"
+ work="PhD student, INRIA/I3S (CNRS, UNS)"
+ location="Sophia Antipolis, 06560 Valbonne, France"
+ description="graph theory; linear programming"
+ url="http://www-sop.inria.fr/members/Leonardo.Sampaio_Rocha/"
+ trac="lsampaio"/>
+<contributor
+ name="Kyle Schalm"
+ work="graduate student, University of Texas at Austin"
+ location="Austin, TX, USA"
+ description="feedback; bugs (and fixes); MPFR integration" />
+<contributor
+ name="Ed Scheinerman"
+ work="Professor, Department of Applied Mathematics &amp; Statistics, Johns Hopkins University"
+ location="Shaffer Hall 102,
+3400 North Charles Street, Baltimore, MD 21218, United States"
+ description="graph theory"
+ url="http://www.ams.jhu.edu/~ers/"
+ trac="edward.scheinerman"/>
+<contributor
+ name="Anne Schilling"
+ work="Professor, UC-Davis"
+ location="Davis, CA, USA"
+ description="Crystals code"
+ trac="aschilling"/>
+<contributor
+ name="Harald Schilly"
+ work="University of Vienna"
+ location="Vienna, Austria"
+ description="webmaster; R/Sage interface; marketing;management"
+ pix="./pix/schilly.jpeg"
+ trac="schilly" />
+<contributor
+ name="Jack Schmidt"
+ work="University of Kentucky"
+ location="Lexington, Kentucky, USA"
+ description="group theory"
+ url="http://www.ms.uky.edu/~jack/" />
+<contributor
+ name="Michael Schneider"
+ work="PhD student, Technische Universität Darmstadt"
+ location="Karolinenplatz 5, 64289 Darmstadt, Germany"
+ description="cryptography"
+ url="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/mischnei.html"/>
+<contributor
+ name="Christopher Schwan"
+ work="Theoretical High Energy Physics (THEP), Johannes-Gutenberg-Universität Mainz"
+ location="Staudingerweg 9, 55122 Mainz, Germany"
+ description="build system; notebook"
+ url="http://wwwthep.physik.uni-mainz.de/site/people/cschwan/"
+ trac="cschwan"/>
+<contributor
+  name="Travis Scrimshaw"
+  work="UC Davis - PhD student"
+  location="Tracy, CA, USA"
+  description="Crystals; representation theory; programming"
+  url="http://www.math.ucdavis.edu/~scrimsha"
+  trac="tscrim" />
+<contributor
+ name="Dag Sverre Seljebotn"
+ work="Master's student, Institute of Theoretical Astrophysics, University of Oslo"
+ location="0313 Oslo, Norway"
+ description="interface between NumPy and Cython; linear algebra"
+ url="http://heim.ifi.uio.no/~dagss"
+ trac="dagss"/>
+<contributor
+ name="Dan Shumow"
+ work="University of Washington"
+ location="University of Washington, WA, USA"
+ description="bug fixes"
+ trac="shumow"/>
+<contributor
+ name="Denis Simone" />
+<contributor
+ name="Steven Sivek"
+ work="graduate student, Princeton University"
+ location="Princeton, NJ, USA"
+ description="interface to Sloane's Tables; algebraic number fields" />
+<contributor
+ name="Nils-Peter Skoruppa"
+ work="Universität Siegen"
+ location="Universitaet Siegen, Germany"
+ description="optimized binary quadratic forms computation; bug fixes"
+ url="http://www.countnumber.de"/>
+<contributor name="Juan Viu Sos"
+ work="PhD Student, Université de Pau et des Pays de l'Adour"
+ location="64000 Pau, France"
+ description="polynomial rings; polyhedron; algebraic geometry"
+ url="http://jviusos.perso.univ-pau.fr/"
+ trac="jviusos"/>
+<contributor
+ name="Jaap Spies"
+ location="Emmen, Netherlands"
+ description="permanents of general matrices; Sloane functions; bug fixes"
+ trac="jsp"/>
+<contributor
+ name="Jonathan Spreer"
+ work="University of Stuttgart"
+ location="Stuttgart, Germany"
+ description="documentation"
+ trac="spreerjn"
+ url="http://www.igt.uni-stuttgart.de/LstDiffgeo/Spreer/"/>
+<contributor
+ name="Hayden Stainsby"
+ work="PhD student, Universitat Autònoma de Barcelona"
+ location="Barcelona, Spain"
+ description="algorithmic number theory; I'm actually from australia"
+ url="http://theoriginaltakeaway.com/"
+ trac="hds" />
+<contributor
+ name="Štěpán Starosta"
+ work="Faculty of Information Technology, Czech Technical University in Prague"
+ location="Prague, Czech Republic"
+ description="combinatorics"/>
+<contributor
+ name="William Stein"
+ work="Professor, University of Washington"
+ location="1212 E Barclay Ct, Seattle, WA 98122, USA"
+ description="project leader; community manager; software architect; started Sage project"
+ url="http://modular.math.washington.edu" size="130" pix="http://www.math.washington.edu/People/Photos/wsteinSM.jpg" jitter="0"
+ trac="was"/>
+<contributor
+ name="Armin Straub"
+ work="Tulane University"
+ location="6823 St. Charles Avenue, New Orleans, LA 70118, United States"
+ description="basic arithmetic; elliptic curves"
+ url="http://arminstraub.com"
+ trac="arminstraub"/>
+<contributor
+ name="Marco Streng"
+ work="DIAMANT-postdoc"
+ location="VU University, Amsterdam"
+ description="number fields;algebraic curves"
+ url="http://www.few.vu.nl/~streng"
+ trac="mstreng"/>
+<contributor
+ name="Kevin Stueve"
+ work="undergraduate student, University of Washington"
+ location="University of Washington, WA, USA"
+ description="number theory"
+ url="http://sage.math.washington.edu/home/kstueve"
+ trac="kevin.stueve"/>
+<contributor
+ name="Christian Stump"
+ work="Postdoctoral Fellow, Centre de Recherches Mathématiques (Université de Montréal) and Laboratoire de Combinatoire et d'Informatique Mathématique (Université du Québec à Montréal)"
+ description="combinatorics; graph theory"
+ url="http://homepage.univie.ac.at/christian.stump/"
+ trac="stumpc5"/>
+<contributor
+ name="Blair Sutton"
+ location="London, UK"
+ description="Bell polynomials"
+ url="http://www.google.com/s2/profiles/115382656960629166023"
+ trac="bsutton"/>
+<contributor
+ name="Chris Swierczewski"
+ work="Graduate student in applied mathematics, University of Washington"
+ location="University of Washington, WA, USA"
+ description="algebraic curves; integrable systems; Riemann theta functions"
+ url="http://www.cswiercz.info"
+ trac="cswiercz"/>
+<contributor
+ name="Luis Felipe Tabera Alonso"
+ work="Universidad de Cantabria"
+ location="Santander, Spain"
+ description="algebra; basic arithmetic; number fields"
+ url="http://personales.unican.es/taberalf/"
+ trac="lftabera"/>
+<contributor
+ name="Glenn Tarbox"
+ work="THG Holdings"
+ location="Seattle, USA"
+ description="bug fixes"
+ url="http://www.tarbox.org"
+ trac="ghtdak"/>
+<contributor
+ name="Philippe Theveny"
+ work="LORIA"
+ location="Nancy, France"
+ description="mpc.spkg, mpc bindings"
+ url="http://www.loria.fr/~thevenyp/"
+ trac="thevenyp"/>
+<contributor
+ name="Nicolas Thiery"
+ work="Université Paris Sud, Faculty"
+ location="LRI, Universite Paris Sud, France"
+ description="Crystals code, combinatorics design"
+ trac="nthiery"/>
+<contributor
+ name="Griffen Thoma"
+ description="plotting bug fix"/>
+<contributor
+ name="Hugh Thomas"
+ work="Department of Mathematics, University of New Brunswick"
+ location="University of New Brunswick, Fredericton, New Brunswick, Canada"
+ trac="hthomas" />
+<contributor
+ name="Emmanuel Thomé"
+ work="Researcher, INRIA"
+ location="Nancy, France"
+ description="number fields"
+ url="http://www.loria.fr/~thome/"
+ trac="thome"/>
+<contributor
+ name="John Thurber"
+ work="Eastern Oregon University"
+ location="La Grande, Oregon, USA"
+ description="documentation; graph theory"
+ trac="jthurber"/>
+<contributor
+ name="Igor Tolkov"
+ work="University of Washington"
+ location="Seattle, USA"
+ description="work on Interact"
+ trac="itolkov"/>
+<contributor
+ name="Gonzalo Tornaria"
+ location="Montevideo, Uruguay"
+ description="sage/latex style; extensive feedback; design; use of darcs system; tons of tricky C code related to the PARI interface; hashing of GMP types; etc"
+ trac="tornaria"/>
+<contributor
+  name="Adam Towsley"
+  work="Visiting Assistant Professor, Department of Mathematics, CUNY Graduate Center"
+  location="365 5th Avenue, New York, NY"
+  description="Arithmetic Dynamics; Algebraic Number Theory; Arithmetic Geometry" />
+<contributor
+ name="Kiminori Tsukazaki"
+ work="University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom"
+ description="elliptic curves"
+ trac="kimi"/>
+<contributor
+ name="Charlie Turner"
+ work="University of Warwick"
+ location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
+ description="algebraic geometry"
+ trac="cturner"/>
+<contributor
+ name="Michel Vandenbergh"
+ description="multivariate polynomials; bug fixes, other improvements" />
+<contributor
+ name="Joris Vankerschaver"
+ location="9500 Gilman Drive, San Diego, CA 92093, United States"
+ work="Department of Mathematics, University of California at San Diego"
+ description="doctesting; numerical methods; symbolics"
+ url="http://www.math.ucsd.edu/~jvankers/"
+ trac="jvkersch"/>
+<contributor
+ name="Soledad Villar"
+ work="Universidad de la República"
+ location="Eduardo Acevedo, Montevideo, Uruguay"
+ description="algebra"/>
+<contributor
+ name="John Voight"
+ work="University of Vermont"
+ location="Burlington, VT, USA"
+ description="Totally Real Fields"
+ url="http://www.cems.uvm.edu/~voight/"
+ trac="jvoight"/>
+<contributor
+ name="Felipe Voloch"
+ work="Professor, Department of Mathematics, University of Texas at Austin"
+ location="2100 San Jacinto Boulevard, Austin, TX 78712-1047, United States"
+ description="elliptic curves"
+ url="http://www.ma.utexas.edu/users/voloch/"/>
+<contributor
+ name="Steve Vonn" />
+<contributor
+ name="Justin Walker"
+ work="retired Apple OS X kernel developer"
+ location="Stanford, CA, USA"
+ description="extensive feedback; PARI lib wrapping; use of his G5"
+ trac="justin"/>
+<contributor
+ name="Mark Watkins"
+ work="University of Sydney"
+ location="University Road, 2006, NSW, Australia"
+ description="ec (modular degrees); sympow (symmetric powers); feedback" />
+<contributor
+ name="Georg S. Weber"
+ location="Nuernberg, Germany"
+ description="reviews, bug fixing, documentation"
+ trac="GeorgSWeber"/>
+<contributor
+ name="Eric Webster"
+ description="combinatorics"
+ trac="QuantumKing"/>
+<contributor
+ name="Ralf-Philipp Weinmann"
+ trac="rpw"/>
+<contributor
+ name="Joe Wetherell"
+ work="CCR"
+ location="Bethesda, MD, USA"
+ description="design discussion; bug reports; code (e.g., for MAGMA-like constructors)" />
+<contributor
+ name="Carl Witty"
+ work="Newton Labs"
+ location="Renton, WA 98057, USA"
+ description="release manager; interval arithmetic (wrapping mpfi); complete package for real root isolation; algebraic reals"
+ url="http://www.newtonlabs.com/"
+ trac="cwitty"/>
+<contributor
+ name="Cristian Wuthrich"
+ work="Nottingham"
+ location="Nottingham, UK"
+ description="p-adic L-functions; Tate curves"
+ trac="wuthrich"/>
+<contributor
+ name="Soroosh Yazdani"
+ trac="syazdani"/>
+<contributor
+ name="Dal S. Yu"
+ location="Austin, TX, USA"
+ url="http://dalsyu.org/"
+ description="Athlon binary build" />
+<contributor
+ name="Gary Zablackis"
+ description="created all Sage binaries for MS windows from March through November 2006; numerous bug reports and fixes" />
+<contributor
+ name="Mike Zabrocki"
+ work="Dept. Maths and Statistics, York University"
+ location="Toronto, Ontario, Canada"
+ description="bug fixes"
+ url="http://www.math.yorku.ca/new/people/zabrocki.html" />
+<contributor
+ name="Bin Zhang"
+ location="France"
+ description="ATLAS.spkg fixes for Linux and PPC"/>
+<contributor
+ name="Paul Zimmermann"
+ work="Research Fellow, INRIA Nancy"
+ location="Villers les Nancy, France"
+ description="MPFR integration; calculus bug fixes; general fixes"
+ url="http://www.loria.fr/~zimmerma/"
+ trac="zimmerma"/>
+<contributor
+ name="Mao Ziyang"
+ location="Changsha, Hunan, China"
+ description="documentation"
+ url="http://www.ai7.org" />
+</contributors>

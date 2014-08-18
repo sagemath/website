@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Help IRC</title><!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="irc" -->
+
+ <h1 class="narrow">Sage IRC Help Channel</h1>
+
+ <div class="padding narrow txt">
+  If you want to connect directly: <a href="irc://irc.freenode.net/sagemath">#sagemath is
+  on freenode.net</a>
+ </div>
+
+ <div class="padding txt narrow">
+  To use you own nickname, just enter <span class="code">/nick &lt;nickname&gt;</span> on the input
+  line!
+ </div>
+
+ <div class="padding txt narrow">
+  If you want to join another channel, type <span class="code">/join &lt;#channel&gt;</span>. 
+  <!-- For example if nobody answers, you can try <a href="irc://irc.freenode.net/sagemath">#sagemath</a>
+  by entering <span class="code">/join #sagemath</span> on the input
+  line!<br />-->
+ </div>
+
+<div class="center txt">
+<iframe src="http://webchat.freenode.net?channels=sagemath&uio=OT10cnVlJjExPTI0Ng32" width="750" height="450"></iframe>
+</div>
+
+<!--
+ <div class="center txt">
+  <applet code="IRCApplet.class" archive="./res/irc/irc.jar,./res/irc/pixx.jar" width="700" height="500">
+   <param name="CABINETS" value="./res/irc/irc.cab,./res/irc/securedirc.cab,./res/irc/pixx.cab" />
+   <param name="nick" value="SageWWW" />
+   <param name="alternatenick" value="SageWWW??" />
+   <param name="name" value="Sage IRC Help Channel" />
+   <param name="host" value="irc.freenode.net" />
+   <param name="gui" value="pixx" />
+   <param name="coding" value="2">
+   <param name="quitmessage" value="sagehelp user has quit." />
+   <param name="authorizedcommandlist" value="none+me+j+hop+part+leave+echo+join+nick+msg" />
+   <param name="autoconnection" value="true" />
+   <param name="language" value="./res/irc/english" />
+   <param name="pixx:language" value="./res/irc/pixx-english" />
+   <param name="command1" value="/join #sagemath" />
+  </applet>
+ </div>
+-->
+
+<!--#include virtual="inc/footer.shtml"    -->
+</body>
+</html>

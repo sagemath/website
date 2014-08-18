@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<XML_DIZ_INFO>
+	<MASTER_PAD_VERSION_INFO>
+		<MASTER_PAD_VERSION>2.011</MASTER_PAD_VERSION>
+		<MASTER_PAD_EDITOR>Online PAD Generator 1.33 - http://www.padbuilder.com</MASTER_PAD_EDITOR>
+		<MASTER_PAD_INFO>Portable Application Description, or PAD for short, is a data set that is used by shareware authors to disseminate information to anyone interested in their software products. To find out more go to http://www.asp-shareware.org/pad</MASTER_PAD_INFO>
+	</MASTER_PAD_VERSION_INFO>
+	<Company_Info>
+		<Company_Name>SAGE Foundation</Company_Name>
+		<Address_1>University of Washington </Address_1>
+		<Address_2> Department of Mathematics</Address_2>
+		<City_Town>Seattle</City_Town>
+		<State_Province>WA</State_Province>
+		<Zip_Postal_Code>98195-4350</Zip_Postal_Code>
+		<Country>USA</Country>
+		<Company_WebSite_URL>http://www.sagemath.org/</Company_WebSite_URL>
+		<Contact_Info>
+			<Author_First_Name>William</Author_First_Name>
+			<Author_Last_Name>Stein</Author_Last_Name>
+			<Author_Email>wstein@gmail.com</Author_Email>
+			<Contact_First_Name>Harald</Contact_First_Name>
+			<Contact_Last_Name>Schilly</Contact_Last_Name>
+			<Contact_Email>harald.schilly@gmail.com</Contact_Email>
+		</Contact_Info>
+		<Support_Info>
+			<Sales_Email>harald.schilly@gmail.com</Sales_Email>
+			<Support_Email>sage-support@googlegroups.com</Support_Email> 
+			<General_Email>harald.schilly@gmail.com</General_Email>
+			<Sales_Phone />
+			<Support_Phone />
+			<General_Phone />
+			<Fax_Phone />
+		</Support_Info>
+	</Company_Info>
+	<Program_Info>
+		<Program_Name>Sage</Program_Name>
+		<Program_Version>4.4.4</Program_Version>
+		<Program_Release_Month>06</Program_Release_Month>
+		<Program_Release_Day>24</Program_Release_Day>
+		<Program_Release_Year>2010</Program_Release_Year>
+		<Program_Cost_Dollars>0</Program_Cost_Dollars>
+		<Program_Type>Freeware</Program_Type>
+		<Program_Release_Status>New Release</Program_Release_Status>
+		<Program_Install_Support>No Install Support</Program_Install_Support>
+		<Program_OS_Support>WinXP,Unix,Linux,Linux GPL,Linux Open Source,Mac OS X</Program_OS_Support>
+		<Program_Language>English</Program_Language>
+		<Program_Change_Info />
+		<Program_Specific_Category>Education</Program_Specific_Category>
+		<Program_Category_Class>Education::Mathematics</Program_Category_Class>
+		<Program_Categories>Mathematics</Program_Categories>
+		<Program_System_Requirements />
+		<Includes_JAVA_VM>N</Includes_JAVA_VM>
+		<Includes_VB_Runtime>N</Includes_VB_Runtime>
+		<Includes_DirectX>N</Includes_DirectX>
+		<File_Info>
+			<Filename_Versioned />
+			<Filename_Previous />
+			<Filename_Generic />
+			<Filename_Long />
+			<File_Size_Bytes>300000000</File_Size_Bytes>
+			<File_Size_K>292968.75</File_Size_K>
+			<File_Size_MB>286.1</File_Size_MB>
+		</File_Info>
+		<Expire_Info>
+			<Has_Expire_Info>N</Has_Expire_Info>
+			<Expire_Count />
+			<Expire_Based_On />
+			<Expire_Other_Info />
+			<Expire_Month />
+			<Expire_Day />
+			<Expire_Year />
+		</Expire_Info>
+	</Program_Info>
+	<Program_Descriptions>
+		<English>
+			<Keywords>maths, mathematics, computer algebra system, cas, mathematical software environment, </Keywords>
+			<Char_Desc_45>Sage is open-source mathematics software.</Char_Desc_45>
+			<Char_Desc_80>Sage is a free open-source mathematics software system licensed under the GPL.</Char_Desc_80>
+			<Char_Desc_250> Sage is a free open-source  mathematics software system licensed under the GPL. It combines the power of many existing open-source packages into a common Python-based interface. Mission: Creating a viable free open source alternative to Magma, Maple</Char_Desc_250>
+			<Char_Desc_450>Sage is a free open-source  mathematics software system licensed under the GPL. It combines the power of many existing open-source packages into a common Python-based interface. Mission: Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab.   Sage can be used to study general and advanced, pure and applied mathematics. This includes a huge range of mathematics, including algebra, calculus, elementary to very adva</Char_Desc_450>
+			<Char_Desc_2000>Sage can be used to study general and advanced, pure and applied mathematics. This includes a huge range of mathematics, including algebra, calculus, elementary to very advanced number theory, cryptography, numerical computation, commutative algebra, group theory, combinatorics, graph theory, exact linear algebra and much more. It combines various software packages and seamlessly integrates their functionality into a common experience. It is well suited  for education, studying and research.  The interface is a notebook in a web-browser or the command-line. Using the notebook, Sage connects either locally to your own Sage installation or to a Sage server on the network. Inside the Sage notebook you can create embedded graphics, beautifully typeset mathematical expressions, add and delete input, and share your work across the network. </Char_Desc_2000>
+		</English>
+	</Program_Descriptions>
+	<Web_Info>
+		<Application_URLs>
+			<Application_Info_URL>http://www.sagemath.org/</Application_Info_URL>
+			<Application_Order_URL />
+			<Application_Screenshot_URL>http://www.sagemath.org/pix/interact_ani_sage.gif</Application_Screenshot_URL>
+			<Application_Icon_URL>http://www.sagemath.org/pix/sagepin.png</Application_Icon_URL>
+			<Application_XML_File_URL>http://www.sagemath.org/sage-pad.xml</Application_XML_File_URL>
+		</Application_URLs>
+		<Download_URLs>
+			<Primary_Download_URL>http://www.sagemath.org/download.zip</Primary_Download_URL>
+		</Download_URLs>
+	</Web_Info>
+	<Permissions>
+		<Distribution_Permissions>Distributed under the terms of the GPL (GNU General Public License). Therefore it is open-source software, no license fees, rights to modify and redistribute.</Distribution_Permissions>
+		<EULA />
+	</Permissions>
+</XML_DIZ_INFO>
+

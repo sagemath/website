@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+<!--#set var="jsmath" value="0" -->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Cell Server</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+
+<script type="text/javascript" src="http://aleph.sagemath.org/static/jquery.min.js"></script>
+<script type="text/javascript" src="http://aleph.sagemath.org/embedded_sagecell.js"></script>
+<script type="text/javascript" src="./eval/eval.js"></script>
+
+<style type="text/css">
+.sagecell_evalButton {
+  font-size: 150%;
+  background: #d9d9f9;
+}
+
+.CodeMirror-scroll {/* Slightly shorter input box */
+    height: 6em;
+}
+
+#db tbody { -webkit-user-select: none; -moz-user-select:none; user-select: none; }
+#db div div, #db th { font-size: 80%; }
+#db tr { vertical-align: top; }
+#db tr th { background: #C9C9F9; color: #0f0fff; text-align: left; }
+#db td>div { overflow-y: auto; height: 6em;  margin: 0; padding: 0; }
+#db td div div { margin: 0; padding: 1px;}
+#db td { padding: 0; }
+#db div.hover { background: #e9e9ff; cursor: pointer; }
+#db div.selected { background: #d9d9f9; }
+#db td, #db th { min-width: 150px; border: 1px solid #C9C9F9; }
+#db th:nth-child(3) { min-width: 250px; }
+#db span.loading { font-style: italic; color: grey; }
+#db-descr { min-height: 35px; font-size: 90%; }
+</style>
+</head>
+
+<body> 
+<!--#include virtual="inc/header.shtml" -->
+
+<h1>Sage Cell Server</h1>
+
+<div class="bodypadding txt">
+This web page contains an interactive Sage widget and a collection of 
+<span id="nb-examples">?</span> examples.
+You can edit it however you want. Interacts, graphics and plotting, etc., should all work.
+</div>
+
+<div class="bodypadding txt" id="db">
+<table id="db"> 
+<thead><tr><th>Topic</th><th>Subtopic</th><th>Examples</th></tr></thead>
+<tbody><tr>
+<td><div id="db1"><span class="loading">loading ...</span></div></td>
+<td><div id="db2"><span class="loading">loading ...</span></div></td>
+<td><div id="exs"><span class="loading">loading ...</span></div></td>
+</tr></tbody>
+</table>
+</div>
+
+<div class="bodypadding txt" id="db-descr"></div>
+
+<div id="sageInput" class="bodypadding"><script type="text/code">
+html("<h3>an interactive calculation</h3>")
+@interact
+def f1(year=slider(1900,2100,1)):
+  k1 = year
+  k2 = factor(year)
+  print "%s = %s" % (k1, k2)
+
+html("<h3>and a static plot</h3>")
+var('x')
+plot(sin(x)/(2+cos(pi*x)), (-2*pi, 3*pi)).show()
+</script></div>
+
+<div id="sageOutput" class="bodypadding">
+</div>
+
+<h2>Links</h2>
+<div class="bodypadding">
+<ul>
+<li><a href="https://github.com/sagemath/sagecell">Sage Cell
+Server</a> is open source, so you can also install your own server.</li>
+<li>The evaluations are done by <a href="http://aleph.sagemath.org/">Aleph Server</a>.</li>
+<li><a href="doc">Sage Documentation</a></li>
+<li><a href="./help.html">Sage Help</a></li>
+</ul>
+Do you want to contribute some additional examples? Extend or add the existing ones
+located in  e.g. 
+<a href="./eval/db1.json">./eval/db1.json</a> 
+and mail it to the  <a href="./contact.html">webmaster</a>!
+</div>
+
+ 
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+<div id="header">
+
+<div id="header-logo">
+<a href="http://www.sagemath.org/index.html"><img width="250px" height="65px" alt="Sage Logo" src="/pix/sage_logo_new.png" title="Sage Computer Algebra System" /></a>
+</div>
+
+<div id="header-text">
+open source mathematics software<br/>
+<a href="http://www.sagemath.org/download.html">v<!--#echo var="version"--> &middot <!--#echo var="releasedate"--></a><br/>
+<a href="http://sagenb.org/" target="_blank">Try Sage online!</a>
+</div>
+
+</div>
+
+<div id="header-navbar">
+<ul id="navbar">
+<li id="sage"><a class="active" href="http://www.sagemath.org/index.html" title="">Sage homepage</a></ul>
+</div>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Press</title><!--#include virtual="inc/htmlhead.shtml"-->
+<style type="text/css">
+/*<![CDATA[*/
+ #poster img {border: 2px solid #7f7fff; padding: 5px;}
+ td {padding-top: 5px; padding-bottom: 5px;}
+/*]]>*/
+</style>
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="press" -->
+
+ <h1 class="narrow">Press Kit</h1>
+<h2 class="narrow">Naming</h2>
+<div class="narrow">
+<ul>
+<li>short: <em>Sage</em> <span style="color:grey;">[exactly this capitalization]</span></li>
+<li>full: <em>Sage open-source mathematical software system</em></li>
+</ul>
+</div>
+
+<h2 class="narrow">About Sage</h2>
+<div class="txt narrow">
+William Stein started the Sage project in 2004 and still leads the
+project. His frustration with proprietary mathematical software was
+his main motivation to create a viable open-source alternative. Just
+as Firefox is an alternative to Internet Explorer or OpenOffice.org is
+an alternative to Microsoft Office, Sage is a comprehensive open
+source alternative to Magma, Maple, Mathematica, and Matlab.
+</div>
+<div class="txt narrow">
+Sage consists of a collection of <a href="./links-components.html">mathematical software</a>
+and a core library bundling the functionality of these components into one consistent experience.
+Additionally to that it provides a framework to express mathematical calculations
+and a library of mathematical algorithms.
+</div>
+<div class="txt narrow">
+Mathematics is very old and encompasses many very different topics. 
+It is hard to come up with one unique approach that suites beginners as well as experts.
+Sage tries to solve this and 
+<em>"is doing remarkably well at keeping a balance between ease-of-use for beginners and high-end users."</em> 
+as <a href="http://groups.google.com/group/sage-devel/msg/38cb807fd76c59a1">David Kohel once said</a>.
+</div>
+<div class="narrow">
+Read more:
+<ul> 
+<li><a href="./tour.html">Tour</a>, <a href="./tour-benchmarks.html">Benchmarks</a>,
+<a href="./tour-graphics.html">some plots</a>;
+<a href="./library-why.html">Why?</a>; 
+<a href="http://www.sagemath.org/doc/tutorial/tour.html">Sage Tutorial, Guided Tour</a>;
+<a href="http://wiki.sagemath.org/interact">Interact Examples</a>.
+</li><li>
+For a personal report what has motivated Prof. Stein to build Sage read
+<a href="http://sagemath.blogspot.com/2009/12/mathematical-software-and-me-very.html">Mathematical Software and Me: A Very Personal Recollection</a>
+(<a href="http://wstein.org/mathsoftbio/history.pdf">PDF</a>).
+</li>
+</ul>
+</div>
+
+<h2 class="narrow">Key Points</h2>
+<div class="narrow">
+<ol>
+<li>Sage aims to provide everything mathematicians, researchers and students need
+to do their calculations.
+The basic concept is to combine <a href="./links-components.html">many established software packages</a> under one umbrella.
+Even more than that, it provides powerful and unique algorithms in it's own library.
+Sage's mission is to "create a viable free open source alternative to Magma, Maple, Mathematica and Matlab".
+</li>
+<li><em>Open Source</em>: Sage is built upon open-source software and it is fully open-source by itself.
+It is free to use worldwide for private, commercial, governmental, etc. use. 
+Its license is the well known GPL and everyone is allowed to download it, install it on 
+an unlimited number of computers and redistribute copies.
+</li>
+<li><em>Open Development</em>:
+Sage loves curious students and researchers to examine its source code and
+it is possible to understand how each calculation is done.
+Sage fosters a community of developers and encourages them to 
+<a href="./development-map.html'">take part in its development</a>.
+A vital community of people not only using but also participating in development 
+is key to a healthy ecosystem in the field of mathematical software.
+Additionally, Sage utilizes the scientific method of peer-review to double check
+each line of new source code in addition to its strict testing policies to ensure
+a certain level of quality.
+</li>
+<li><em>Leverages Existing Software</em>: Sage does not reinvent the wheel for every known calculation.
+When possible, it uses existing tools to solve the problem and combine all of them in one unique interface.
+This concept not only exposes software packages to a wider audience,
+but also helps to increase the quality by submitting bugs upstream.
+</li>
+<li>Sage uses <em>Python</em> as its "glue language" to interface with all its components.
+Python is also Sages primary interface language and hence Sage does not invent a new programming language
+as other mathematical software systems do.
+Python is well 
+established among research communities and makes
+interfacing even less complicated.
+</li>
+<li><em>Interface</em>: There are three basic ways how the user can interact with Sage:
+a web-interface, accessible through a web-browser while Sage is running on your local machine
+or <a href="http://www.sagenb.org/">on a server</a>, a rich command-line interface and as a Python library.
+Additionally, for example it is possible to <a href="http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html">embedd Sage in LaTeX documents</a>.
+</li>
+</ol>
+</div>
+
+<h2 class="narrow">Quick Facts</h2>
+<div class="txt narrow">
+<table cellspacing="15" style="width:100%">
+<tr>
+<td>First Release 2005</td>
+<td colspan="2">Latest version <!--#echo var="version"-->
+    released <!--#echo var="releasedate"--></td>
+</tr>
+<tr>
+<td>License: GPLv2+</td>
+<td colspan="2">Distributed as source and precompiled binary archive</td>
+</tr>
+<tr>
+<td>&gt; 300 <a href="http://sagemath.org/src-old/">Releases</a></td>
+<td colspan="2">Accessed via command-line, <a href="http://www.sagenb.org/">Webbrowser</a> (GUI) and as a library</td>
+<tr>
+<td>&gt; 180 <a href="./development-map.html">Developers</a></td>
+<td>~ 100 <a href="./links-components.html">Components</a></td>
+<td>~ 300 MB Source Code in total</td>
+</tr>
+<tr>
+<td>&gt; 100 <a href="./library-publications.html">papers cite</a>, <a href="./library-publications-combinat.html">Sage</a></td>
+<td>&gt; 1700 <a href="http://groups.google.com/group/sage-support/about">subscribers sage-support</a></td>
+<td>&gt; 1200 <a href="http://groups.google.com/group/sage-devel/about">subscribers sage-devel</a></td>
+</tr>
+<tr>
+<td>&gt; 100,000 website visitors/month</td>
+<td>&gt; 6,500 downloads/month</td>
+<td>&gt; 40,000 users on <a href="http://www.sagenb.org/">sagenb.org</a></td>
+</tr>
+</table>
+</div>
+
+<h2 class="narrow">History</h2>
+<div class="txt narrow">
+In 2005 <a href="http://wstein.org">William Stein</a> released the first version of Sage.
+</div>
+<div class="narrow txt">
+For a personal report what has motivated Prof. Stein to build Sage read
+<a href="http://sagemath.blogspot.com/2009/12/mathematical-software-and-me-very.html">Mathematical Software and Me: A Very Personal Recollection</a>
+(<a href="http://wstein.org/mathsoftbio/history.pdf">PDF</a>).
+</div>
+
+<h1 class="narrow">Press Releases</h1>
+<div class="txt narrow">
+<ul>
+<li><a href=""> </a></li>
+</ul>
+</div>
+
+<h1 class="narrow">Links</h1>
+<div class="narrow txt">
+<ul>
+<li><a href="http://groups.google.com/group/sage-announce">Sage Announcements Mailing list</a> and 
+    <a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">Atom/Rss Feed</a>.
+<li><a href="http://www.facebook.com/pages/Sage-Math/26593144945">Sage Facebook group</a>, 
+    <a href="http://www.twitter.com/sagemath">Sage Twitter page</a>.
+<li><a href="./library-marketing.html">Marketing Material</a></li>
+<li><a href="./library-stories.html">Quotes, Testimonials and Stories about Sage</a></li>
+<li><a href="http://wiki.sagemath.org/SAGE_in_the_News">Sage in the News, on Blogs, ...</a></li>
+</ul>
+</div>
+
+<h2 class="narrow">Terms of Use</h2>
+<div class="narrow">
+<em>All graphics, files and texts on this page are dedicated to
+  promote Sage. You are authorized to copy, distribute and share them as you
+  like. If you have questions or additional request, please
+  contact the <a href="./contact.html">press officer</a>.</em>
+</div>
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

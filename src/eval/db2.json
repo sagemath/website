@@ -1,0 +1,127 @@
+{
+"Simple Plot" : {
+  "cat" : ["Calculus", "Plot"],
+  "code" : [ "plot(sin(x), x, (-10, 10))" ],
+  "descr" : "a simple sin plot"
+},
+
+"Funny Plot" : {
+  "cat" : ["Calculus", "Plot"],
+  "code" : [ "plot(sin(x) / (2+cos(pi*x)), (-2*pi, 6*pi))" ],
+  "descr" : "this is just a funny plot"
+},
+
+"ODE Plot" : {
+  "cat" : [ "Calculus", "Plot"],
+  "descr" : "A plot of an ODE",
+  "code" : [
+    "x, y, t = var('x y t')",
+    "P=desolve_system_rk4([x+y, x-y], [x,y], ics=[0,1,-1], ivar=t, end_points=2)",
+    "p1 = list_plot([[i,j] for i,j,k in P], plotjoined=True)", 
+    "p2 = list_plot([[i,k] for i,j,k in P], plotjoined=True, color='red')",
+    "show(p1+p2)"
+  ]
+},
+
+"Gaussian Distribution" : {
+ "cat" : [ "Statistics", "Distributions" ],
+ "descr" : "A plot of (x,y) gaussian distributed points.",
+ "code" : [
+   "N = RealDistribution('gaussian', 5)",
+   "re = N.get_random_element",
+   "list_plot([(re(), re()) for _ in range(5000)])"
+ ]
+},
+
+"Differential EQ" :{
+  "cat" : [ "Calculus", "ODE" ],
+  "descr" : "These examples solve ordinary differential equations. <a href='http://sagemath.org/doc/constructions/calculus.html#ordinary-differential-equations'>see documentation</a>",
+  "code" : [
+    "y=function('y',x)",
+    "print desolve(diff(y,x,2) + 3*x == y, dvar = y, ics = [1,1,1])",
+    "print desolve(diff(y,x,2) + 3*x == y, dvar = y)",
+    "print desolve(diff(y,x) + 3*x == y, dvar = y)",
+    "",
+    "f=function('f',x);",
+    "print desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f, ics = [0,1,2])",
+    "print desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f)"
+  ]
+},
+
+"Sympy Basics" : {
+  "cat" : [ "Libs", "Sympy" ],
+  "descr" : "You can also access <a href='http://www.sympy.org/'>SymPy</a>",
+  "code" : [
+    "import sympy",
+    "from sympy import exp,log,Symbol,Rational,sin,limit,oo",
+    "x=sympy.Symbol('x')",
+    "y=sympy.Symbol('y')",
+    "print 'Limit:', limit(sqrt(x**2-5*x+6)-x, x, oo)",
+    "print 'Differentiate:', ((x**2+2*y*sin(x))**2).diff(x)",
+    "print 'Expansion:', ((x**2+y**3)**4).expand()"
+  ]
+}, 
+
+"MILP Program": {
+  "cat" : [ "Numerics", "Optimization" ],
+  "descr": "Mixed Integer Linear Program. <a href='http://sagemath.org/doc/reference/sage/numerical/mip.html'>see documentation</a>",
+  "code" : [
+    "@interact",
+    "def _(w3min = slider(-5,15,1,1), f2=slider(10,30,1,14)):",
+    "  p = MixedIntegerLinearProgram(maximization=False) ",
+    "  w = p.new_variable(integer=True) ",
+    "  p.add_constraint(w[0] + w[1] + w[2] - f2*w[3] == 0) ",
+    "  p.add_constraint(w[1] + 2*w[2] - 8*w[3] == 0) ",
+    "  p.add_constraint(2*w[2] - 3*w[3] == 0) ",
+    "  p.add_constraint(w[0] - w[1] - w[2] >= 0)",
+    "  p.add_constraint(w[3] >= w3min) ",
+    "  # default min is 0 !",
+    "  _ = [ p.set_min(w[i], None) for i in range(1,4) ] ",
+    "  p.set_objective(w[3]) ",
+    "  p.show() ",
+    "  try:",
+    "    sol = p.solve()",
+    "    print 'Objective Value:', sol",
+    "    for i, v in p.get_values(w).iteritems():",
+    "      print 'w_%s = %s' % (i, int(round(v)))",
+    "  except Exception as e:",
+    "    print 'ERROR:', e"
+  ]
+},
+
+"Arbitrary Precision": {
+  "cat" : [ "Numerics", "Numbers" ],
+  "descr" : "Example for arbitrary precision real numbers. <a href='http://sagemath.org/doc/reference/sage/rings/real_mpfr.html'>documentation</a>",
+  "code" : [
+    "R = RealField(300)",
+    "x = R(1) + R(10)^-50",
+    "print 'x:   ', x",
+    "print 'x*pi:', x * R.pi()",
+    "y = x.sin() / R(1e25) + 1",
+    "print 'y:   ', y",
+    "print 'precision of y:', y.prec()",
+    "z = y^1000",
+    "print 'z:   ', z",
+    "a = z.nth_root(1000)",
+    "print 'a:   ', a",
+    "print 'y-a: ', y-a"
+  ]
+},
+
+"Hidden Markov Model" : {
+ "cat" : [ "Statistics" , "Baysian Network" ],
+ "descr" : "Some fun with <a href='http://sagemath.org/doc/reference/sage/stats/hmm/hmm.html'>HMMs</a>",
+ "code" : [
+  "A = random_matrix(RDF,4,min=.1, max=.9)",
+  "B = random_matrix(RDF,4,2,min=.1, max=.9)",
+  "m = hmm.DiscreteHiddenMarkovModel(A, B, [.2,.1,.1,.6])",
+  "print m",
+  "print 'Log Likelihood:', m.log_likelihood([0,1,0,1,0,1])",
+  "print 'Viterbi:', m.viterbi([1,1,0,1])",
+  "print 'Baum-Welch:', m.baum_welch([1,1,0,1])",
+  "print '20 Samples:', m.sample(20)",
+  "print m",
+  "m.graph().show()"
+ ]
+}
+}

@@ -1,0 +1,6379 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html
+  PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN'
+  'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!--#include virtual="inc/variables.shtml"-->
+<head>
+ 
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+ 
+<title>
+Sage developers around the world
+</title>
+ 
+<script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA">
+</script>
+
+<script src="http://gmaps-samples-v3.googlecode.com/svn/trunk/xmlparsing/util.js" type="text/javascript"></script>
+
+ 
+<script src="http://google-maps-utility-library-v3.googlecode.com/svn/tags/markermanager/1.0/src/markermanager.js" type="text/javascript">
+</script>
+ 
+<script src="./res/devmap.js" type="text/javascript">
+</script>
+<!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+<body onload="load();navbarjs.init();"> 
+<!--  onunload="GUnload();navbarjs.cleanUp();"> -->
+ 
+<!--#include virtual="inc/header.shtml" -->
+ 
+<!--#set var="sub" value="map" -->
+ 
+<h1>
+Sage developers around the world
+</h1>
+ 
+<div class="padding center narrow">
+  This is a map of all contributors to the Sage project. There are currently 
+<span id="contrib-nb">
+261
+</span>
+ contributors in 
+<span id="contrib-places">
+178
+</span>
+ different places from
+  all around the world.
+ 
+</div>
+ 
+<div class="mapzoom" id="mapzoom">
+  Map Zoom: 
+<a href="#" id="map" name="map" onclick="zoomTo(&quot;ALL&quot;);return false;">
+Earth
+</a>
+ - 
+<a href="#" onclick="zoomTo(&quot;USA&quot;);return false;">
+USA
+</a>
+ (
+<a href="#" onclick="zoomTo(&quot;UW&quot;);return false;">
+UW
+</a>
+, 
+<a href="#" onclick="zoomTo(&quot;USAW&quot;);return false;">
+West
+</a>
+, 
+<a href="#" onclick="zoomTo(&quot;USAE&quot;);return false;">
+East
+</a>
+) - 
+<a href="#" onclick="zoomTo(&quot;Europe&quot;);return false;">
+Europe
+</a>
+ - 
+<a href="#" onclick="zoomTo(&quot;Africa&quot;);return false;">
+Africa
+</a>
+ -
+<a href="#" onclick="zoomTo(&quot;Asia&quot;);return false;">
+Asia
+</a>
+ - 
+<a href="#" onclick="zoomTo(&quot;SAM&quot;);return false;">
+S. America
+</a>
+ - 
+<a href="#" onclick="zoomTo(&quot;Australia&quot;);return false;">
+Australia
+</a>
+ 
+</div>
+ 
+<div class="center" id="devmap">
+  
+<noscript>
+  
+<div class="center large narrow">
+   Sorry, here would be an interactive map, but it seems that you have disabled Java-Script. Please
+   enable it and reload!
+  
+</div>
+</noscript>
+ 
+</div>
+ 
+<div id="devcloudp">
+  
+<div id="devcloud">
+                                                                                                                                                                                                      
+ 
+ 
+</div>
+ 
+</div>
+ 
+<h2>
+Sage Developers
+</h2>
+<!--
+ <div class="center txt small">
+  click on row to show in map
+ </div>
+-->
+ 
+<table class="devlist">
+  
+<colgroup>
+     
+<col width="25%"/>
+     
+<col width="25%"/>
+     
+<col width="25%"/>
+     
+<col width="25%"/>
+  
+</colgroup>
+  
+<thead>
+   
+<tr>
+    
+<th>
+Name
+</th>
+    
+<th>
+Uni/Work
+</th>
+    
+<th>
+Location
+</th>
+    
+<th>
+Description
+</th>
+   
+</tr>
+  
+</thead>
+  
+ 
+<tbody id="devlist">
+<tr>
+<td class="name">
+Tim Abbott
+</td>
+<td>
+MIT
+</td>
+<td>
+Massachusetts, USA
+</td>
+<td class="description">
+<span>
+Full debianization of Sage
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tabbott" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://wiki.sagemath.org/MichaelAbshoff">
+Michael Abshoff
+</a>
+</td>
+<td>
+Universität Dortmund
+</td>
+<td>
+Dortmund, Germany
+</td>
+<td class="description">
+<span>
+contributed to release management
+</span>
+<br/>
+<span>
+work on build system for Windows, OS X, and Linux
+</span>
+<br/>
+<span>
+OS X installer
+</span>
+<br/>
+<span>
+tons of general advice
+</span>
+<br/>
+<span>
+valgrind support
+</span>
+<br/>
+<span>
+Solaris and Linux PPC port
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mabshoff" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Antti Ajanki
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Antti%20Ajanki" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Martin Albrecht
+</td>
+<td>
+graduate student, Information Security Group, Royal Holloway, University of London
+</td>
+<td>
+London, UK
+</td>
+<td class="description">
+<span>
+release manager
+</span>
+<br/>
+<span>
+sage.crypto.mq
+</span>
+<br/>
+<span>
+commutative algebra (Singular interface, libSingular, PolyBoRi)
+</span>
+<br/>
+<span>
+efficient low-level arithmetic
+</span>
+<br/>
+<span>
+dense linear algebra, especially over GF(2)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=malb" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Nick Alexander
+</td>
+<td>
+UC Irvine graduate student
+</td>
+<td>
+Irvine, CA 92697, USA
+</td>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ncalexan" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bill Allombert
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+help with PARI and GP2C integration
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Bill%20Allombert" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ethan Van Andel
+</td>
+<td>
+Calvin College, MI
+</td>
+<td>
+3201 Burton Street, Southeast Grand Rapids, MI 49546, USA
+</td>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=evanandel" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ivan Andrus
+</td>
+<td>
+PhD student; Adobe Systems Inc.
+</td>
+<td>
+Billings, Montana, USA
+</td>
+<td class="description">
+<span>
+OS X app
+</span>
+<br/>
+<span>
+iPhone app
+</span>
+<br/>
+<span>
+sage-mode for Emacs
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=iandrus" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.uam.es/personal_pdi/ciencias/pangulo/">
+Pablo Angulo
+</a>
+</td>
+<td>
+Professor, Department of Mathematics, Universidad Autónoma de Madrid
+</td>
+<td>
+Madrid, Spain
+</td>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pang" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Benjamin Antieau
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Benjamin%20Antieau" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+André Apitzsch
+</td>
+<td>
+Otto-von-Guericke-Universität Magdeburg
+</td>
+<td>
+Magdeburg, Germany
+</td>
+<td class="description">
+<span>
+commutative algebra
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<span>
+number theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=aapitzsch" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Maite Aranes
+</td>
+<td>
+graduate student, Warwick Mathematics Institute, University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+number field ideal utilities
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mtaranes" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Oscar Gerardo Lazo Arjona
+</td>
+<td>
+Student, Universidad Autónoma de Yucatán
+</td>
+<td>
+21.0488082, -89.6416569
+</td>
+<td class="description">
+<span>
+3-D plotting
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=olazo" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Eviatar Bach
+</td>
+<td/>
+<td>
+Vancouver, Canada
+</td>
+<td class="description">
+<span>
+Combinatorics
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=eviatarbach" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jennifer Balakrishnan
+</td>
+<td>
+PhD student, MIT
+</td>
+<td>
+Cambridge, USA
+</td>
+<td class="description">
+<span>
+LaTeX mode for MAGMA
+</span>
+<br/>
+<span>
+work on computation of p-adic heights
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jennifer%20Balakrishnan" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Serge Ballif
+</td>
+<td>
+Nevada State College
+</td>
+<td>
+Nevada State College, NV, USA
+</td>
+<td class="description">
+<span>
+latin square functions
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=sergeballif" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ucdavis.edu/~jbandlow/">
+Jason Bandlow
+</a>
+</td>
+<td>
+Postdoctoral fellow, UC-Davis
+</td>
+<td>
+Davis, CA, USA
+</td>
+<td class="description">
+<span>
+combinat package
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jbandlow" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gregory Bard
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+dense linear algebra over GF(2)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Gregory%20Bard" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Sébastien Barthélemy
+</td>
+<td>
+UPMC - Université Pierre et Marie Curie
+</td>
+<td>
+4 place jussieu, 75005 Paris, France
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<span>
+cddlib update
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=sbarthelemy" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://buzzard.ups.edu">
+Rob Beezer
+</a>
+</td>
+<td>
+Professor, University of Puget Sound
+</td>
+<td>
+1500 N Warner, Tacoma, WA, 98416 USA
+</td>
+<td class="description">
+<span>
+linear algebra
+</span>
+<br/>
+<span>
+graph theory
+</span>
+<br/>
+<span>
+group theory
+</span>
+<br/>
+<span>
+education
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rbeezer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Karim Belabas
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Karim%20Belabas" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Arnaud Bergeron
+</td>
+<td>
+Université de Montréal
+</td>
+<td>
+Montreal, QC, Canada
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+plotting improvements
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=abergeron" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Luis Berlioz
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+bug fix
+</span>
+<br/>
+<span>
+optimize basis matrix for ambient modules
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Luis%20Berlioz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://math.tulane.edu/~ebeyerstedt">
+Erin Beyerstedt
+</a>
+</td>
+<td>
+PhD student, Mathematics Department, Tulane University
+</td>
+<td>
+823 St Charles Ave, New Orleans, LA 70118, United States
+</td>
+<td class="description">
+<span>
+elliptic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ebeyerstedt" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Francois Bissey
+</td>
+<td>
+University of Canterbury, New Zealand
+</td>
+<td>
+University of Canterbury, New Zealand
+</td>
+<td class="description">
+<span>
+various QA
+</span>
+<br/>
+<span>
+sage-on-gentoo
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=fbissey" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jonathan Bober
+</td>
+<td>
+graduate student, University of Michigan
+</td>
+<td>
+MI 48109, USA
+</td>
+<td class="description">
+<span>
+highly optimized partition function
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jonathan%20Bober" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Tom Boothby
+</td>
+<td>
+undergraduate student employee, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+the Sage Notebook
+</span>
+<br/>
+<span>
+fast polynomial evaluation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=boothby" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.u-psud.fr/~borie/">
+Nicolas Borie
+</a>
+</td>
+<td>
+PhD student, Universite Paris-Sud
+</td>
+<td>
+France
+</td>
+<td class="description">
+<span>
+combinat (Root system, invariant theory)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=nborie" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.warwick.ac.uk/~masjam/">
+Johan Bosman
+</a>
+</td>
+<td>
+Postdoctoral fellow, Mathematics Institute, University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=johanbosman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.washington.edu/~robertwb/">
+Robert Bradshaw
+</a>
+</td>
+<td>
+University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Cython
+</span>
+<br/>
+<span>
+number theory
+</span>
+<br/>
+<span>
+linear algebra
+</span>
+<br/>
+<span>
+coercion
+</span>
+<br/>
+<span>
+basic arithmetic
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=robertwb" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Volker Braun
+</td>
+<td>
+Dublin Institute for Advanced Studies
+</td>
+<td>
+Dublin, Ireland
+</td>
+<td class="description">
+<span>
+Toric geometry package
+</span>
+<br/>
+<span>
+polyhedra and PPL interface
+</span>
+<br/>
+<span>
+triangulations
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Volker%20Braun" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.mfo.de/organisation/institute/brickenstein/">
+Michael Brickenstein
+</a>
+</td>
+<td>
+Mathematisches Forschungsinstitut Oberwolfach
+</td>
+<td>
+Oberwolfach-Walke, Germany
+</td>
+<td class="description">
+<span>
+PolyBoRi author (high-level algorithms, primary designer)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Michael%20Brickenstein" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Nils Bruin
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+miscellaneous useful code snippets
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Nils%20Bruin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.andre-bubel.de">
+André-Patrick Bubel
+</a>
+</td>
+<td>
+student, Universität Heidelberg
+</td>
+<td>
+Maybachstr. 14, 68169 Mannheim, Germany
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Moredread" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cased.de/personen/s_bulygin.html">
+Stanislav Bulygin
+</a>
+</td>
+<td>
+Postdoctoral fellow, Center for Advanced Security Research Darmstadt (CASED)
+</td>
+<td>
+64293 Darmstadt, Germany
+</td>
+<td class="description">
+<span>
+cryptography
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=sbulygin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Dan Bump
+</td>
+<td>
+Stanford University
+</td>
+<td>
+Stanford, CA, USA
+</td>
+<td class="description">
+<span>
+combinatorics and representation theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bump" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Iftikhar Burhanuddin
+</td>
+<td>
+Postdoctoral fellow, UCLA
+</td>
+<td>
+Westwood Village, Los Angeles, California, USA
+</td>
+<td class="description">
+<span>
+feedback
+</span>
+<br/>
+<span>
+code
+</span>
+<br/>
+<span>
+examples
+</span>
+<br/>
+<span>
+supersingular module
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=burhanud" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.paulbutler.org">
+Paul Butler
+</a>
+</td>
+<td>
+University of Waterloo
+</td>
+<td>
+200 University Avenue West, Waterloo, Ontario, Canada
+</td>
+<td class="description">
+<span>
+indefinite integration for piecewise functions
+</span>
+<br/>
+<span>
+calculus bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pbutler" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Oriol Castejón
+</td>
+<td>
+Universitat Politècnica de Catalunya
+</td>
+<td>
+C/ Jordi Girona, 31 08034 Barcelona, Spain
+</td>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<span>
+packaging
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=uri" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://ondrej.certik.cz/">
+Ondrej Certik
+</a>
+</td>
+<td>
+graduate physics student, Charles University
+</td>
+<td>
+Prague, Czech Republic
+</td>
+<td class="description">
+<span>
+Sympy Integration
+</span>
+<br/>
+<span>
+founder of Sympy project
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=certik" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Wilson Cheung
+</td>
+<td>
+sysadmin, UCSD
+</td>
+<td>
+San Diego, CA 92093, USA
+</td>
+<td class="description">
+<span>
+compilation of Sage on Solaris
+</span>
+<br/>
+<span>
+discussion of Sage build process
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Wilson%20Cheung" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://jdc.math.uwo.ca">
+Dan Christensen
+</a>
+</td>
+<td>
+Associate Professor, Department of Mathematics, The University of Western Ontario
+</td>
+<td>
+London, Ontario N6A 5B7, Canada
+</td>
+<td class="description">
+<span>
+optimize certain combinatorial constructions
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jdc" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Craig Citro
+</td>
+<td>
+UCLA
+</td>
+<td>
+Los Angeles, CA, USA
+</td>
+<td class="description">
+<span>
+fast computation of Eisenstein series
+</span>
+<br/>
+<span>
+code and bug fixes in modular forms
+</span>
+<br/>
+<span>
+number theory
+</span>
+<br/>
+<span>
+the NTL and PARI interfaces
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=craigcitro" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ru.is/anders/">
+Anders Claesson
+</a>
+</td>
+<td>
+Associate Professor, The Mathematics Institute, Reykjavík University
+</td>
+<td>
+Kringlan 1, 103 Reykjavik, Iceland
+</td>
+<td class="description">
+<span>
+optimizing certain combinatorial operations
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=aclaesson" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-maths.swan.ac.uk/staff/fwc/">
+Francis Clarke
+</a>
+</td>
+<td>
+Department of Mathematics, University of Wales
+</td>
+<td>
+Swansea, UK
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=fwclarke" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://timothyclemans.com/">
+Timothy Clemans
+</a>
+</td>
+<td>
+high school student
+</td>
+<td>
+Seattle, WA, USA
+</td>
+<td class="description">
+<span>
+Notebook
+</span>
+<br/>
+<span>
+misc.
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Timothy%20Clemans" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Alex Clemesha
+</td>
+<td>
+employee, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Sage's 2-D plotting functionality
+</span>
+<br/>
+<span>
+design
+</span>
+<br/>
+<span>
+examples
+</span>
+<br/>
+<span>
+constants.py
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Alex%20Clemesha" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-sop.inria.fr/members/Nathann.Cohen/">
+Nathann Cohen
+</a>
+</td>
+<td>
+CNRS researcher
+</td>
+<td>
+LRI, Universite Paris Sud, France
+</td>
+<td class="description">
+<span>
+Graph Theory
+</span>
+<br/>
+<span>
+Linear Programming
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ncohen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jenny Cooley
+</td>
+<td>
+undergraduate student, University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+elliptic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jenny%20Cooley" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-sop.inria.fr/members/David.Coudert">
+David Coudert
+</a>
+</td>
+<td>
+Researcher, INRIA
+</td>
+<td>
+Sophia Antipolis, France
+</td>
+<td class="description">
+<span>
+Graph Theory
+</span>
+<br/>
+<span>
+Linear programming
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dcoudert" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.warwick.ac.uk/staff/J.E.Cremona">
+John Cremona
+</a>
+</td>
+<td>
+Professor, University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+many contributions to elliptic curve code
+</span>
+<br/>
+<span>
+C++ part of Sage interface to mwrank, Tables
+</span>
+<br/>
+<span>
+extensive design discussions
+</span>
+<br/>
+<span>
+documentation fixes
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+organize Sage Days 6
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cremona" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Karl-Dieter Crisman
+</td>
+<td>
+Gordon College
+</td>
+<td>
+Wenham, MA, USA
+</td>
+<td class="description">
+<span>
+Documentation
+</span>
+<br/>
+<span>
+Symbolics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kcrisman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Fidel Barrera Cruz
+</td>
+<td>
+graduate student, Department of Combinatorics and Optimization, University of Waterloo
+</td>
+<td>
+200 University Avenue, West Waterloo, Ontario, Canada
+</td>
+<td class="description">
+<span>
+LaTeX output for combinatorial graphs
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=fidelbarrera" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Doug Cutrell
+</td>
+<td>
+graduate student, UCSD
+</td>
+<td>
+San Diego, CA, USA
+</td>
+<td class="description">
+<span>
+created the Sage Microsoft Windows installer
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Doug%20Cutrell" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Alyson Deines
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Alyson%20Deines" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://iml.univ-mrs.fr/~delecroi">
+Vincent Delecroix
+</a>
+</td>
+<td>
+PhD student, Institut de Mathématiques de Luminy, Université Aix-Marseille
+</td>
+<td>
+163 Avenue de Luminy 13009 Marseille, France
+</td>
+<td class="description">
+<span>
+combinatorics, documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=vdelecroix" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://cage.ugent.be/~jdemeyer/">
+Jeroen Demeyer
+</a>
+</td>
+<td>
+Postdoc, Ghent University
+</td>
+<td>
+Galglaan 2, Gent, Belgium
+</td>
+<td class="description">
+<span>
+PARI interface
+</span>
+<br/>
+<span>
+Integer factorisation
+</span>
+<br/>
+<span>
+c_lib, interrupt handling
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jdemeyer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ucdavis.edu/~sdenton">
+Tom Denton
+</a>
+</td>
+<td>
+graduate student, Department of Mathematics, UC Davis
+</td>
+<td>
+One Shields Avenue, Davis, CA 95616, USA
+</td>
+<td class="description">
+<span>
+non-symmetric Macdonald polynomials with permuted basements
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Tom%20Denton" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.leidenuniv.nl/~mderickx/">
+Maarten Derickx
+</a>
+</td>
+<td>
+University of Leiden
+</td>
+<td>
+Rapenburg 70 2311 EZ Leiden, Netherlands
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mderickx" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Didier Deshommes
+</td>
+<td/>
+<td>
+Cary, NC, USA
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<span>
+optimizations
+</span>
+<br/>
+<span>
+quaddouble wrapper
+</span>
+<br/>
+<span>
+spkg restructuring
+</span>
+<br/>
+<span>
+porting Sage to NexentasOS
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dfdeshom" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ryan Dingman
+</td>
+<td>
+University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rdingman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Dan Drake
+</td>
+<td>
+Korea Advanced Institute of Science and Technology (KAIST)
+</td>
+<td>
+Daejeon, South Korea
+</td>
+<td class="description">
+<span>
+Rencontres numbers
+</span>
+<br/>
+<span>
+inverse trigonometry
+</span>
+<br/>
+<span>
+Wronskian function
+</span>
+<br/>
+<span>
+docstrings
+</span>
+<br/>
+<span>
+logging
+</span>
+<br/>
+<span>
+SageTex
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ddrake" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Tom Draper
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+support is_primitive() method for polynomials over Finite Fields
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Tom%20Draper" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.itwm.fhg.de/de/as__asemployees__dreyer/dreyer/">
+Alexander Dreyer
+</a>
+</td>
+<td>
+Fraunhofer ITWM
+</td>
+<td>
+Kaiserslautern, Germany
+</td>
+<td class="description">
+<span>
+PolyBoRi author (low-level routines, project infrastructure)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Alexander%20Dreyer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://timdumol.com">
+Tim Dumol
+</a>
+</td>
+<td>
+HS Student
+</td>
+<td>
+Manila, Philippines
+</td>
+<td class="description">
+<span>
+Sage Notebook improvements
+</span>
+<br/>
+<span>
+Reviews
+</span>
+<br/>
+<span>
+Minor fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=timdumol" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Nathan Dunfield
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+small patches
+</span>
+<br/>
+<span>
+improvements to algdep
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dunfield" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://gabrielebner.at/">
+Gabriel Ebner
+</a>
+</td>
+<td>
+undergraduate student, Technical University of Vienna
+</td>
+<td>
+Vienna, Austria
+</td>
+<td class="description">
+<span>
+multinomial coefficient
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gebner" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ben Edwards
+</td>
+<td>
+PhD student, Department of Computer Science, University of New Mexico
+</td>
+<td>
+Albuquerque, NM 87131, United States
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bedwards" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://oz.plymouth.edu/~dcernst/">
+Dana Ernst
+</a>
+</td>
+<td>
+Assistant Professor, Mathematics Department, Plymouth State University
+</td>
+<td>
+17 High Street, Plymouth, NH 03264-1595, United States
+</td>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=DanaErnst" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Burcin Erocal
+</td>
+<td>
+PhD student, RISC - Linz
+</td>
+<td>
+48.366126, 14.513884
+</td>
+<td class="description">
+<span>
+integrating the PolyBoRi framework
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=burcin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://math.ucsd.edu/~revans">
+Ron Evans
+</a>
+</td>
+<td>
+University of California, San Diego
+</td>
+<td>
+9500 Gilman Drive, La Jolla, San Diego, California, USA
+</td>
+<td class="description">
+<span>
+bug fix
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Ron%20Evans" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Richard J. Fateman
+</td>
+<td>
+Professor Emeritus, Department of Electrical Engineering and Computer Sciences, University of California at Berkeley
+</td>
+<td>
+Berkeley, California 94720-1776, USA
+</td>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Richard%20J.%20Fateman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Lars Fischer
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=lars.fischer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://perso.telecom-paristech.fr/~flori/">
+Jean-Pierre Flori
+</a>
+</td>
+<td>
+Telecom ParisTech
+</td>
+<td>
+46 Rue Barrault, 75013 Paris, France
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jpflori" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.evanfosmark.com">
+Evan Fosmark
+</a>
+</td>
+<td/>
+<td>
+Amity, Oregon, USA
+</td>
+<td class="description">
+<span>
+Sage notebook
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Evan%20Fosmark" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://komite.net/laurent/">
+Laurent Fousse
+</a>
+</td>
+<td>
+Debian Project
+</td>
+<td>
+Grenoble, France
+</td>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Laurent%20Fousse" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gary Furnish
+</td>
+<td>
+University of Utah
+</td>
+<td>
+Utah, USA
+</td>
+<td class="description">
+<span>
+Cython
+</span>
+<br/>
+<span>
+symbolics
+</span>
+<br/>
+<span>
+miscellaneous
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gfurnish" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Alex Ghitza
+</td>
+<td>
+The University of Melbourne
+</td>
+<td>
+Parkville, Melbourne, Australia
+</td>
+<td class="description">
+<span>
+pari interface
+</span>
+<br/>
+<span>
+modular forms, elliptic curves, number fields
+</span>
+<br/>
+<span>
+miscellaneous algebra
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Alex%20Ghitza" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.im.pwr.wroc.pl/~giniew/">
+Andrzej Giniewicz
+</a>
+</td>
+<td>
+Ph.D. student, Institute of Mathematics and Computer Science, Wroclaw University of Technology
+</td>
+<td>
+Wroclaw, Poland
+</td>
+<td class="description">
+<span>
+small build fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=aginiewicz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Alain Giorgetti
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=agiorgetti" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://igm.univ-mlv.fr/~giraudo/">
+Samuele Giraudo
+</a>
+</td>
+<td>
+PhD student, Université de Paris-Est (Marne-la-Vallée)
+</td>
+<td>
+6 Bd DesCartes, 77420 CHAMPS SUR MARNE, France
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=giraudo" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://wwwstaff.murdoch.edu.au/~aglen">
+Amy Glen
+</a>
+</td>
+<td>
+Lecturer in Mathematics, School of Chemical and Mathematical Sciences, Murdoch University
+</td>
+<td>
+90 South Street, Murdoch, Western Australia, Australia
+</td>
+<td class="description">
+<span>
+SageWords co-author
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=amyglen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ccrwest.org/gordon/dan.html">
+Daniel Gordon
+</a>
+</td>
+<td>
+researcher, IDA Center For Communications Research
+</td>
+<td>
+San Diego, CA, USA
+</td>
+<td class="description">
+<span>
+covering design
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dgordon" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Chris Gorecki
+</td>
+<td>
+University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Sage's logic package
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=goreckc" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jan Groenewald
+</td>
+<td>
+IT Manager; African Institute for Mathematical Sciences
+</td>
+<td>
+AIMS; Muizenberg; Cape Town; South Africa
+</td>
+<td class="description">
+<span>
+Advocacy
+</span>
+<br/>
+<span>
+Bug fixes
+</span>
+<br/>
+<span>
+Build
+</span>
+<br/>
+<span>
+Documentation
+</span>
+<br/>
+<span>
+Feedback
+</span>
+<br/>
+<span>
+Ubuntu support
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jan%20Groenewald" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Rob Gross
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Rob%20Gross" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jason Grout
+</td>
+<td>
+Postdoctoral fellow, Iowa State University
+</td>
+<td>
+Ames, Iowa, USA
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<span>
+tidbits of the notebook
+</span>
+<br/>
+<span>
+linear algebra
+</span>
+<br/>
+<span>
+various other things
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jason" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ryan Grout
+</td>
+<td>
+undergraduate student
+</td>
+<td>
+Provo, UT, USA
+</td>
+<td class="description">
+<span>
+graphics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ryan" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Mathieu Guay-Paquet
+</td>
+<td>
+University of Waterloo
+</td>
+<td>
+200 University Avenue, West Waterloo, ON N2L 3G1, Canada
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mguaypaq" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Alexey U. Gudchenko
+</td>
+<td/>
+<td>
+107241, 19-18, Amurskaya street, Moscow, Russia
+</td>
+<td class="description">
+<span>
+interfaces
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=goodok.alex" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Harold Gutch
+</td>
+<td>
+PhD student, Department of Nonlinear Dynamics, Max Planck Institute for Dynamics and Self-Organization
+</td>
+<td>
+Goettingen, Germany
+</td>
+<td class="description">
+<span>
+build system
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=logix" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.uwosh.edu/facstaff/gutow">
+Jonathan Gutow
+</a>
+</td>
+<td>
+Chemistry Department, University of Wisconsin Oshkosh
+</td>
+<td>
+Oshkosh, Wisconsin, USA
+</td>
+<td class="description">
+<span>
+graphics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gutow" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jose Guzman
+</td>
+<td>
+Institute of Science and Technology Austria
+</td>
+<td>
+Am Campus 1, 3400 Klosterneuburg, Austria
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jose%20Guzman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://ahaensch.web.wesleyan.edu">
+Anna Haensch
+</a>
+</td>
+<td>
+graduate student, Department of Mathematics and Computer Science, Wesleyan University
+</td>
+<td>
+70 Wyllys Avenue, Middletown, CT 06457-3226, United States
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=annahaensch" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://carlo-hamalainen.net">
+Carlo Hamalainen
+</a>
+</td>
+<td>
+Eduard Čech Center, Charles University, Prague
+</td>
+<td>
+Prague, Czech Republic
+</td>
+<td class="description">
+<span>
+Latin squares
+</span>
+<br/>
+<span>
+dancing links C++ code
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+bug reports
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=carlohamalainen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.d.umn.edu/~mhampton/index.html">
+Marshall Hampton
+</a>
+</td>
+<td>
+Minnesota Duluth
+</td>
+<td>
+Duluth, MN, USA
+</td>
+<td class="description">
+<span>
+gfan interface
+</span>
+<br/>
+<span>
+polyhedra
+</span>
+<br/>
+<span>
+phcpack interface and spkg
+</span>
+<br/>
+<span>
+biopython package maintainer
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mhampton" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jon Hanke
+</td>
+<td>
+UGA Faculty
+</td>
+<td>
+Athens, GA, USA
+</td>
+<td class="description">
+<span>
+quadratic forms package
+</span>
+<br/>
+<span>
+quadratic_forms directory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jonhanke" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.mollerhansen.com/">
+David Møllerller Hansen
+</a>
+</td>
+<td>
+Masters graduate, Technical University of Denmark
+</td>
+<td>
+Copenhagen, Denmark
+</td>
+<td class="description">
+<span>
+Weil pairing framework
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dmhansen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Mike Hansen
+</td>
+<td>
+University of Washington
+</td>
+<td>
+Seattle, WA, USA
+</td>
+<td class="description">
+<span>
+Combinatorics package
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mhansen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bill Hart
+</td>
+<td>
+University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+complete implementation of quadratic sieve
+</span>
+<br/>
+<span>
+created FLINT (fast arithmetic library)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Bill%20Hart" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Harvey
+</td>
+<td>
+NYU
+</td>
+<td>
+NYU, NY, USA
+</td>
+<td class="description">
+<span>
+p-adic heights
+</span>
+<br/>
+<span>
+arithmetic architecture
+</span>
+<br/>
+<span>
+Bernoulli numbers mod p
+</span>
+<br/>
+<span>
+FLINT
+</span>
+<br/>
+<span>
+other random things
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dmharvey" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jason B Hill
+</td>
+<td>
+University of Colorado Boulder
+</td>
+<td>
+Boulder, Colorado, USA
+</td>
+<td class="description">
+<span>
+permutation groups
+</span>
+<br/>
+<span>
+notebook
+</span>
+<br/>
+<span>
+shell scripting
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jasonbhill" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Leif Hille
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Leif%20Hille" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Florent Hivert
+</td>
+<td>
+Professor, Laboratoire de Recherche en Informatique
+</td>
+<td>
+LRI, Universite Paris Sud, France
+</td>
+<td class="description">
+<span>
+combinatorics (design and code)
+</span>
+<br/>
+<span>
+various bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=hivert" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ryan Hinton
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rhinton" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Neal Holtz
+</td>
+<td>
+Carleton University
+</td>
+<td>
+Ottawa, ON, Canada
+</td>
+<td class="description">
+<span>
+Newton-Raphson Root Finding interact demonstration
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Neal%20Holtz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http:///www.math.unb.ca/~ghossain">
+Golam Mortuza Hossain
+</a>
+</td>
+<td>
+Postdoctoral fellow, Indian Institute of Science Education and Research
+</td>
+<td>
+IISER, Kolkata, India
+</td>
+<td class="description">
+<span>
+symbolics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gmhossain" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Sean Howe
+</td>
+<td>
+University of Washington REU
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Bruhat ordering of the symmetric group
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Sean%20Howe" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://sonium.blogspot.com">
+Alexander Hupfer
+</a>
+</td>
+<td>
+Universität Regensburg
+</td>
+<td>
+Universitaetsstr. 31, 93053 Regensburg, Germany
+</td>
+<td class="description">
+<span>
+notebook enhancements
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ahupfer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Wilfried Huss
+</td>
+<td>
+PhD student, Graz University of Technology
+</td>
+<td>
+TU Gratz, Austria
+</td>
+<td class="description">
+<span>
+calculus bug fixes
+</span>
+<br/>
+<span>
+additions to the Maxima interface
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=whuss" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.fit.edu/~bhutz">
+Benjamin Hutz
+</a>
+</td>
+<td>
+Assistant Professor of Mathematics, Florida Institute of Technology
+</td>
+<td>
+Melbourne, FL USA
+</td>
+<td class="description">
+<span>
+arithmetic dynamics
+</span>
+<br/>
+<span>
+complex dynamics
+</span>
+<br/>
+<span>
+projective/affine schemes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bhutz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Hamish Ivey-Law
+</td>
+<td>
+Université de la Méditerranée, France; University of Sydney, Australia
+</td>
+<td/>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=hlaw" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Naqi Jaffery
+</td>
+<td>
+UCSD undergraduate student
+</td>
+<td>
+San Diego, CA 92093, USA
+</td>
+<td class="description">
+<span>
+Examples
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Naqi%20Jaffery" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Peter Jeremy
+</td>
+<td/>
+<td>
+Sydney, Australia
+</td>
+<td class="description">
+<span>
+porting packages to FreeBSD
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pjeremy" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Peter Jipsen
+</td>
+<td>
+Professor, Chapman University
+</td>
+<td>
+Orange, California, USA
+</td>
+<td class="description">
+<span>
+posets package
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Peter%20Jipsen" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.dd.chalmers.se/~frejohl">
+Fredrik Johansson
+</a>
+</td>
+<td>
+Chalmers University of Technology
+</td>
+<td>
+Sven Hultins gata 6, 41258 Goeteborg, Sweden
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+basic arithmetics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=fredrik.johansson" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.nilesjohnson.net">
+Niles Johnson
+</a>
+</td>
+<td/>
+<td>
+Athens, Clarke County, Georgia 30602, United States
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<span>
+basic arithmetic
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<span>
+symbolics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=niles" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.liafa.jussieu.fr/~jolivet/">
+Timo Jolivet
+</a>
+</td>
+<td>
+PhD student: LIAFA, Paris, France; University of Turku, Finland
+</td>
+<td>
+Turku, Finland
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tjolivet" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="https://bluedrive.uwstout.edu/users/facultystaff/jonesbe/">
+Benjamin Jones
+</a>
+</td>
+<td>
+Reasearch and Engineering at Galois Inc.
+</td>
+<td>
+Portland, OR, USA
+</td>
+<td class="description">
+<span>
+symbolics
+</span>
+<br/>
+<span>
+group theory
+</span>
+<br/>
+<span>
+doctest
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<span>
+plot3d
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=benjaminfjones" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Joyner
+</td>
+<td>
+Professor, US Naval Academy
+</td>
+<td>
+Annapolis, MD, USA
+</td>
+<td class="description">
+<span>
+feedback
+</span>
+<br/>
+<span>
+documentation (tutorial, install guide) and code
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=wdj" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ruhr-uni-bochum.de/lmi/kallweit/">
+Michael Kallweit
+</a>
+</td>
+<td>
+Ruhr-Universität Bochum, Deutschland
+</td>
+<td>
+Bochum, Germany
+</td>
+<td class="description">
+<span>
+Graph Theory fixes
+</span>
+<br/>
+<span>
+miscellaneous bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Michael%20Kallweit" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.washington.edu/~jkantor/">
+Josh Kantor
+</a>
+</td>
+<td>
+graduate student, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+3-D interactive graphics (via soya3d)
+</span>
+<br/>
+<span>
+integrating Fortran software
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jkantor" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Kiran Kedlaya
+</td>
+<td>
+Professor, MIT
+</td>
+<td>
+Cambridge, USA
+</td>
+<td class="description">
+<span>
+Macaulay 2 interface
+</span>
+<br/>
+<span>
+item for install guide
+</span>
+<br/>
+<span>
+p-adics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kedlaya" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.maths.bris.ac.uk/~maljpk">
+Lloyd Kilford
+</a>
+</td>
+<td>
+Research Fellow, University of Bristol
+</td>
+<td>
+Tyndall Avenue, Bristol BS8 1TH, UK
+</td>
+<td class="description">
+<span>
+bug fix
+</span>
+<br/>
+<span>
+modular forms
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ljpk" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://users.minet.uni-jena.de/~king/">
+Simon King
+</a>
+</td>
+<td>
+Friedrich-Schiller-Universität Jena
+</td>
+<td>
+Friedrich-Schiller-University Jena, Germany
+</td>
+<td class="description">
+<span>
+<a href="http://sage.math.washington.edu/home/SimonKing/Cohomology/">
+Modular group cohomology
+</a>
+</span>
+<br/>
+<span>
+Infinite polynomial rings
+</span>
+<br/>
+<span>
+(lib) Singular
+</span>
+<br/>
+<span>
+Fast linear algebra
+</span>
+<br/>
+<span>
+Categories and Coercion
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=SimonKing" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www1.spms.ntu.edu.sg/~krkini/">
+Keshav Kini
+</a>
+</td>
+<td>
+Research Assistant, School of Physical and Mathematical Sciences, Nanyang Technological University
+</td>
+<td>
+21 Nanyang Link, Singapore
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kini" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Kirkby
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+Compilation of Sage on Solaris
+</span>
+<br/>
+<span>
+much help on general Sage build process
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=drkirkby" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Emily Kirkman
+</td>
+<td>
+undergraduate student employee, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ekirkman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Kohel
+</td>
+<td>
+Professor, University of Sydney
+</td>
+<td>
+163 Avenue de Luminy 13009 Marseille, France
+</td>
+<td class="description">
+<span>
+substantial design discussion and code
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kohel" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Przemysław Koprowski
+</td>
+<td>
+University of Silesia, Faculty of Mathematics
+</td>
+<td>
+Poland, Katowice
+</td>
+<td class="description">
+<span>
+(computational) theory of quadratic forms
+</span>
+<br/>
+<span>
+real algebraic geometry
+</span>
+<br/>
+<span>
+computational number theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pkoprowski" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ted Kosan
+</td>
+<td>
+Shawnee State University
+</td>
+<td>
+Ohio, USA
+</td>
+<td class="description">
+<span>
+Sage/Java/Applet integration
+</span>
+<br/>
+<span>
+Sage for newbies book
+</span>
+<br/>
+<span>
+marketing
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tkosan" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.danielkrenn.at">
+Daniel Krenn
+</a>
+</td>
+<td>
+TU Graz, Austria
+</td>
+<td>
+Graz, Austria
+</td>
+<td class="description">
+<span>
+misc
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dkrenn" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ross Kyprianou
+</td>
+<td>
+PhD student, The University of Melbourne
+</td>
+<td>
+Parkville, Melbourne, Australia
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rossk" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="www.liafa.univ-paris-diderot.fr/~labbe/">
+Sébastien Labbé
+</a>
+</td>
+<td>
+Postdoctoral fellow, LIAFA, University Paris-Diderot Paris 7
+</td>
+<td>
+48.82715, 2.3809
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<span>
+discrete geometry
+</span>
+<br/>
+<span>
+words
+</span>
+<br/>
+<span>
+quantumino solver
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+visualization
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=slabbe" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-rocq.inria.fr/secret/Yann.Laigle-Chapuy">
+Yann Laigle-Chapuy
+</a>
+</td>
+<td>
+ PhD student, INRIA
+</td>
+<td>
+Rocquencourt, Paris, France
+</td>
+<td class="description">
+<span>
+Pohlig-Hellman algorithm for discrete logarithms, optimized gcd
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ylchapuy" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://kam.mff.cuni.cz/~lansky/">
+Lukáš Lánský
+</a>
+</td>
+<td>
+Charles University, Prague
+</td>
+<td>
+Hradec Kralove, Czech Republic
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<span>
+combinatorial game theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=brunellus" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Kwankyu Lee
+</td>
+<td>
+Chosun University
+</td>
+<td>
+Gwangju, Korea
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=klee" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Julien Leroy
+</td>
+<td>
+LAMFA, Université de Picardie Jules Verne
+</td>
+<td>
+80000 Amiens, France
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jleroy" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/rlindner.html">
+Richard Lindner
+</a>
+</td>
+<td>
+Technische Universität Darmstadt
+</td>
+<td>
+Karolinenplatz 5, 64289 Darmstadt, Germany
+</td>
+<td class="description">
+<span>
+cryptography
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rlindner" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.warwick.ac.uk/~masiao/">
+David Loeffler
+</a>
+</td>
+<td>
+University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+additions and improvements to modular forms code
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=davidloeffler" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://riemann.unizar.es/~mmarco">
+Miguel Marco
+</a>
+</td>
+<td>
+Leibniz University
+</td>
+<td>
+Leibniz University, Hannover, Germany
+</td>
+<td class="description">
+<span>
+linear algebra
+</span>
+<br/>
+<span>
+polynomial rings
+</span>
+<br/>
+<span>
+free and finitely presented groups
+</span>
+<br/>
+<span>
+braid groups
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mmarco" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Michael Mardaus
+</td>
+<td>
+Universität Mainz
+</td>
+<td>
+55122, Mainz, Germany
+</td>
+<td class="description">
+<span>
+point counting code
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mardaus" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://user.mendelu.cz/marik">
+Robert Mařík
+</a>
+</td>
+<td>
+Department of Mathematics, Mendel University in Brno
+</td>
+<td>
+61300 Brno, Czech Republic
+</td>
+<td class="description">
+<span>
+basic arithmetic
+</span>
+<br/>
+<span>
+calculus
+</span>
+<br/>
+<span>
+Sage notebook
+</span>
+<br/>
+<span>
+standard packages
+</span>
+<br/>
+<span>
+symbolics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=robert.marik" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jason Martin
+</td>
+<td>
+James Madison University
+</td>
+<td>
+Harrisonburg, VA, USA
+</td>
+<td class="description">
+<span>
+GMP assembly code improvements
+</span>
+<br/>
+<span>
+linear algebra
+</span>
+<br/>
+<span>
+work on Sage 64-bit build
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jason%20Martin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.thales.math.uqam.ca/~blondin">
+Alexandre Blondin Massé
+</a>
+</td>
+<td>
+PhD student; Laboratoire de combinatoire et d'informatique mathématique (LaCIM), Université du Québec à Montréal; Laboratoire de mathématique (LAMA), Université de Savoie
+</td>
+<td>
+201 Avenue Du President-Kennedy, Montreal, QC, Canada
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=abmasse" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.maths.usyd.edu.au/u/mathas/">
+Andrew Mathas
+</a>
+</td>
+<td>
+University of Sydney
+</td>
+<td>
+Sydney, Australia
+</td>
+<td class="description">
+<span>
+algebraic combinatorics
+</span>
+<br/>
+<span>
+partitions
+</span>
+<br/>
+<span>
+tableaux
+</span>
+<br/>
+<span>
+Specht modules
+</span>
+<br/>
+<span>
+...
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=andrew.mathas" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.facstaff.bucknell.edu/pm040">
+Peter McNamara
+</a>
+</td>
+<td>
+Department of Mathematics, Bucknell University
+</td>
+<td>
+Lewisburg, PA 17837, USA
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pmcnamara" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="https://webfiles.uci.edu/gmcwhirt/www/">
+Gregory McWhirter
+</a>
+</td>
+<td>
+graduate student, Department of Logic and Philosophy of Science, University of California at Irvine
+</td>
+<td>
+University Dr, Irvine, CA 92697, United States
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gsmcwhirter" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jason Merrill
+</td>
+<td>
+Yale University
+</td>
+<td>
+Kansas, USA
+</td>
+<td class="description">
+<span>
+calculus improvements
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jwmerrill" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html">
+Matthias Meulien
+</a>
+</td>
+<td>
+Research engineer, XLIM
+</td>
+<td>
+123, avenue Albert Thomas, 87060 Limoges Cedex, France
+</td>
+<td class="description">
+<span>
+GAP interface bug fix
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mmeulien" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.rlmiller.org/">
+Robert Miller
+</a>
+</td>
+<td>
+graduate student, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rlm" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Kate Minola
+</td>
+<td>
+University of Maryland
+</td>
+<td>
+College Park, MD, USA
+</td>
+<td class="description">
+<span>
+improvement on building Sage components
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Kate%20Minola" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.tu-berlin.de/~minzlaff/">
+Moritz Minzlaff
+</a>
+</td>
+<td>
+PhD student, Technische Universität Berlin
+</td>
+<td>
+Berlin, Germany
+</td>
+<td class="description">
+<span>
+algebraic geometry
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=minz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Joel Mohler
+</td>
+<td>
+Lehigh
+</td>
+<td>
+Bethlehem, PA, USA
+</td>
+<td class="description">
+<span>
+extensive improvements all over
+</span>
+<br/>
+<span>
+especially to basic arithmetic, number theory
+</span>
+<br/>
+<span>
+etc
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jbmohler" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.lirmm.fr/~monteil/">
+Thierry Monteil
+</a>
+</td>
+<td>
+research fellow, CNRS
+</td>
+<td>
+Montpellier, France
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+combinatorics (words, graphs)
+</span>
+<br/>
+<span>
+dynamics (translation surfaces, tilings)
+</span>
+<br/>
+<span>
+organized Sage Days 20 and Sage Days 28
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tmonteil" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.bme.hu/~morap">
+Peter Mora
+</a>
+</td>
+<td>
+PhD student, Institute of Mathematics, Budapest University of Technology and Economics
+</td>
+<td>
+Budafoki ut 3 1117 XI. kerulet, Budapest, Hungary
+</td>
+<td class="description">
+<span>
+internationalization bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mora" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bobby Moretti
+</td>
+<td>
+undergraduate student employee, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Sage library distribution
+</span>
+<br/>
+<span>
+Sage chroot jail
+</span>
+<br/>
+<span>
+Sage .deb
+</span>
+<br/>
+<span>
+Calculus package
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=moretti" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Rich Morin
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Rich%20Morin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Guillaume Moroz
+</td>
+<td>
+LIP6/INRIA
+</td>
+<td>
+France
+</td>
+<td class="description">
+<span>
+Singular interface improvements
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gmoroz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gregg Musiker
+</td>
+<td>
+graduate student, UCSD
+</td>
+<td>
+San Diego, CA 92093, USA
+</td>
+<td class="description">
+<span>
+Maple interface
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<span>
+design
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Gregg%20Musiker" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Tobias Nagel
+</td>
+<td>
+Universität Mainz
+</td>
+<td>
+55122, Mainz, Germany
+</td>
+<td class="description">
+<span>
+point counting code
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tnagel" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Brett Nakashima
+</td>
+<td>
+University of Washington
+</td>
+<td>
+Seattle, USA
+</td>
+<td class="description">
+<span>
+contributions to the finance module
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=brettnak" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Pablo De Nápoli
+</td>
+<td>
+University of Buenos Aires
+</td>
+<td>
+Buenos Aires, Argentina
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pdenapo" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.mat.dtu.dk/English/Service/Phonebook.aspx?lg=showcommon&amp;id=27218&amp;type=person">
+Johan Sebastian Rosenkilde Nielsen
+</a>
+</td>
+<td>
+Technical University of Denmark
+</td>
+<td>
+Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<span>
+documentation
+</span>
+<br/>
+<span>
+miscellaneous
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jsrn" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://sage.math.washington.edu/home/mvngu/">
+Minh Van Nguyen
+</a>
+</td>
+<td/>
+<td>
+Melbourne, Australia
+</td>
+<td class="description">
+<span>
+cryptography
+</span>
+<br/>
+<span>
+graph theory
+</span>
+<br/>
+<span>
+release management
+</span>
+<br/>
+<span>
+website maintainer
+</span>
+<br/>
+<span>
+miscellaneous bug fixes
+</span>
+<br/>
+<span>
+documentation work
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mvngu" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ualberta.ca/~novoseltsev/">
+Andrey Novoseltsev
+</a>
+</td>
+<td>
+University of Alberta, postdoc
+</td>
+<td>
+Edmonton, Canada
+</td>
+<td class="description">
+<span>
+toric geometry
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=novoselt" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://christopherolah.wordpress.com">
+Christopher Olah
+</a>
+</td>
+<td>
+hacklab.to
+</td>
+<td>
+Toronto, Canada
+</td>
+<td class="description">
+<span>
+miscellaneous
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=colah" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://johan.oudinet.fr">
+Johan Oudinet
+</a>
+</td>
+<td>
+Karlsruhe Institute of Technology
+</td>
+<td>
+Karlsruhe, Germany
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=joudinet" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bill Page
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+Sage's AXIOM interface
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bill.p" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ronan Paixão
+</td>
+<td/>
+<td>
+Brazil
+</td>
+<td class="description">
+<span>
+author of the Sage-Scilab interface
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ronanpaixao" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Willem Jan Palenstijn
+</td>
+<td>
+graduate student, Leiden
+</td>
+<td>
+Leiden, Netherlands
+</td>
+<td class="description">
+<span>
+Benchmarking parser
+</span>
+<br/>
+<span>
+doctest timing
+</span>
+<br/>
+<span>
+difficult fpLLL bug fix
+</span>
+<br/>
+<span>
+and much more
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=wjp" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.washington.edu/~palmieri/">
+John Palmieri
+</a>
+</td>
+<td>
+Department of Mathematics, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jhpalmieri" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ntu.edu.sg/home/dima/">
+Dmitrii Pasechnik
+</a>
+</td>
+<td>
+Assistant Professor, School of Physical &amp; Mathematical Sciences, Nanyang Technological University
+</td>
+<td>
+21 Nanyang Link, Singapore
+</td>
+<td class="description">
+<span>
+packaging
+</span>
+<br/>
+<span>
+commutative algebra
+</span>
+<br/>
+<span>
+group theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dimpase" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.maths.qmul.ac.uk/~jlopez">
+Javier López Peña
+</a>
+</td>
+<td>
+Mathematics Research Centre, Queen Mary University of London
+</td>
+<td>
+London E1 4NS UK
+</td>
+<td class="description">
+<span>
+categories
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Javier%20López%20Peña" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Paulo César Pereira de Andrade
+</td>
+<td>
+Mandriva Linux
+</td>
+<td>
+Curitiba, Brazil
+</td>
+<td class="description">
+<span>
+packages
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=pcpa" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://people.reed.edu/~davidp">
+David Perkinson
+</a>
+</td>
+<td>
+Professor, Department of Mathematics, Reed College
+</td>
+<td>
+Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA
+</td>
+<td class="description">
+<span>
+bug fix for Laplacian matrix
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=David%20Perkinson" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.washington.edu/~pernet/">
+Clement Pernet
+</a>
+</td>
+<td>
+University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+LinBox maintainer
+</span>
+<br/>
+<span>
+LinBox and Givaro integration
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cpernet" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.usm.edu/perry/">
+John Perry
+</a>
+</td>
+<td>
+University of Southern Mississippi
+</td>
+<td>
+Hattiesburg, MS, USA
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<span>
+the Sage wiki
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=john_perry" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://cens.ioc.ee/~pearu">
+Pearu Peterson
+</a>
+</td>
+<td>
+Senior Researcher, Laboratory of Systems Biology, Institute of Cybernetics at TUT
+</td>
+<td>
+Tallinn, Estonia
+</td>
+<td class="description">
+<span>
+optimized multinomial coefficient computation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Pearu%20Peterson" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Poetzsch-Heffter
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+notebook
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=David%20Poetzsch-Heffter" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-igm.univ-mlv.fr/~pons/">
+Viviane Pons
+</a>
+</td>
+<td>
+PhD student, Paris-Est Marne-la-Vallée University
+</td>
+<td>
+6 Bd DesCartes, 77420 Champs Sur Marne, France
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<span>
+multivariate polynomials algebra
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=VivianePons" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.imsc.res.in">
+Amritanshu Prasad
+</a>
+</td>
+<td>
+The Institute of Mathematical Sciences
+</td>
+<td>
+Chennai, India
+</td>
+<td class="description">
+<span>
+contributed vector partitions and similarity class types to sage.combinat
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=amri" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://punarbasu.appspot.com">
+Punarbasu Purkayastha
+</a>
+</td>
+<td>
+Research Fellow, Nanyang Technological University, Singapore
+</td>
+<td>
+Singapore, SG
+</td>
+<td class="description">
+<span>
+plot
+</span>
+<br/>
+<span>
+coding theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ppurka" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bill Purvis
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Bill%20Purvis" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Julien Puydt
+</td>
+<td/>
+<td>
+Grenoble, France
+</td>
+<td class="description">
+<span>
+porting
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Snark" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Yi Qiang
+</td>
+<td>
+undergraduate student employee, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+Distributed Sage (in progress)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Yi%20Qiang" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-ma2.upc.es/~quer/">
+Jordi Quer
+</a>
+</td>
+<td>
+Universitat Politecnica de Catalunya
+</td>
+<td>
+Barcelona, Spain
+</td>
+<td class="description">
+<span>
+modular symbols and dimension formulas for congruence subgroups Gamma_H(N)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jordi%20Quer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cs.auckland.ac.nz/~raichev">
+Alex Raichev
+</a>
+</td>
+<td>
+University of Auckland
+</td>
+<td>
+Auckland, New Zealand
+</td>
+<td class="description">
+<span>
+Analytic combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=araichev" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gustavo Rama
+</td>
+<td>
+Universidad de la República
+</td>
+<td>
+Eduardo Acevedo, Montevideo, Uruguay
+</td>
+<td class="description">
+<span>
+quadratic forms
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=gdrama" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://6dime.blogspot.com">
+Jens Rasch
+</a>
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+calculus
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jrasch" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.raum-brothers.eu/martin/">
+Martin Raum
+</a>
+</td>
+<td>
+ETH Zürich
+</td>
+<td>
+Zurich, Switzerland
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<span>
+modular forms
+</span>
+<br/>
+<span>
+psage
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mraum" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Dorian Raymer
+</td>
+<td>
+UCSD
+</td>
+<td>
+San Diego, CA 92093, USA
+</td>
+<td class="description">
+<span>
+The notebook's documentation browser
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Dorian%20Raymer" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Stefan Reiterer
+</td>
+<td>
+University of Graz
+</td>
+<td>
+Graz, Austria
+</td>
+<td class="description">
+<span>
+packaging
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=maldun" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Risan
+</td>
+<td>
+Nanyang Technological University, Singapore
+</td>
+<td>
+Tangerang, Indonesia
+</td>
+<td class="description">
+<span>
+Arbitrary Precision LP Solver Backend
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ptrrsn_1" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+R. Rishikesh
+</td>
+<td>
+University of Waterloo
+</td>
+<td>
+Waterloo, Ontario, Canada
+</td>
+<td class="description">
+<span>
+automated testing of SAGE_ROOT/examples
+</span>
+<br/>
+<span>
+bug fixes, etc
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=R.%20Rishikesh" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+David Roe
+</td>
+<td>
+graduate student, Harvard University
+</td>
+<td>
+Cambridge, MA, USA
+</td>
+<td class="description">
+<span>
+Macaulay 2 interface
+</span>
+<br/>
+<span>
+optimized p-adics
+</span>
+<br/>
+<span>
+and so so much more
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=roed" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.broune.com/">
+Bjarke Hammersholt Roune
+</a>
+</td>
+<td>
+PhD student, Department of Computer Science, University of Aarhus
+</td>
+<td>
+Aarhus, Denmark
+</td>
+<td class="description">
+<span>
+Integrator
+</span>
+<br/>
+<span>
+author of Frobby (Monomial ideals)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=broune" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gordon Royle
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Gordon%20Royle" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://sageworldmath.blogspot.com">
+Serge A. Salamanka
+</a>
+</td>
+<td>
+National Academy of Sciences, UIIP
+</td>
+<td>
+Minsk, Belarus
+</td>
+<td class="description">
+<span>
+Sage-Grid project http://groups.google.com/group/sage-grid
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Serge%20A.%20Salamanka" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.lacim.uqam.ca/~saliola/index.html">
+Franco Saliola
+</a>
+</td>
+<td>
+Postdoctoral fellow, Université du Québec à Montréal
+</td>
+<td>
+Montreal, Quebec, Canada
+</td>
+<td class="description">
+<span>
+posets package
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=saliola" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ben Salisbury
+</td>
+<td>
+Assistant Professor, Central Michigan University
+</td>
+<td>
+Mount Pleasant, MI, USA
+</td>
+<td class="description">
+<span>
+crystals
+</span>
+<br/>
+<span>
+representation theory
+</span>
+<br/>
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bsalisbury1" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www-sop.inria.fr/members/Leonardo.Sampaio_Rocha/">
+Leonardo Sampaio
+</a>
+</td>
+<td>
+PhD student, INRIA/I3S (CNRS, UNS)
+</td>
+<td>
+Sophia Antipolis, 06560 Valbonne, France
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<span>
+linear programming
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=lsampaio" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Kyle Schalm
+</td>
+<td>
+graduate student, University of Texas at Austin
+</td>
+<td>
+Austin, TX, USA
+</td>
+<td class="description">
+<span>
+feedback
+</span>
+<br/>
+<span>
+bugs (and fixes)
+</span>
+<br/>
+<span>
+MPFR integration
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Kyle%20Schalm" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ams.jhu.edu/~ers/">
+Ed Scheinerman
+</a>
+</td>
+<td>
+Professor, Department of Applied Mathematics &amp; Statistics, Johns Hopkins University
+</td>
+<td>
+Shaffer Hall 102, 3400 North Charles Street, Baltimore, MD 21218, United States
+</td>
+<td class="description">
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=edward.scheinerman" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Anne Schilling
+</td>
+<td>
+Professor, UC-Davis
+</td>
+<td>
+Davis, CA, USA
+</td>
+<td class="description">
+<span>
+Crystals code
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=aschilling" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Harald Schilly
+</td>
+<td>
+University of Vienna
+</td>
+<td>
+Vienna, Austria
+</td>
+<td class="description">
+<span>
+webmaster
+</span>
+<br/>
+<span>
+R/Sage interface
+</span>
+<br/>
+<span>
+marketing
+</span>
+<br/>
+<span>
+management
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=schilly" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ms.uky.edu/~jack/">
+Jack Schmidt
+</a>
+</td>
+<td>
+University of Kentucky
+</td>
+<td>
+Lexington, Kentucky, USA
+</td>
+<td class="description">
+<span>
+group theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Jack%20Schmidt" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/mischnei.html">
+Michael Schneider
+</a>
+</td>
+<td>
+PhD student, Technische Universität Darmstadt
+</td>
+<td>
+Karolinenplatz 5, 64289 Darmstadt, Germany
+</td>
+<td class="description">
+<span>
+cryptography
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Michael%20Schneider" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://wwwthep.physik.uni-mainz.de/site/people/cschwan/">
+Christopher Schwan
+</a>
+</td>
+<td>
+Theoretical High Energy Physics (THEP), Johannes-Gutenberg-Universität Mainz
+</td>
+<td>
+Staudingerweg 9, 55122 Mainz, Germany
+</td>
+<td class="description">
+<span>
+build system
+</span>
+<br/>
+<span>
+notebook
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cschwan" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ucdavis.edu/~scrimsha">
+Travis Scrimshaw
+</a>
+</td>
+<td>
+UC Davis - PhD student
+</td>
+<td>
+Tracy, CA, USA
+</td>
+<td class="description">
+<span>
+Crystals
+</span>
+<br/>
+<span>
+representation theory
+</span>
+<br/>
+<span>
+programming
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tscrim" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://heim.ifi.uio.no/~dagss">
+Dag Sverre Seljebotn
+</a>
+</td>
+<td>
+Master's student, Institute of Theoretical Astrophysics, University of Oslo
+</td>
+<td>
+0313 Oslo, Norway
+</td>
+<td class="description">
+<span>
+interface between NumPy and Cython
+</span>
+<br/>
+<span>
+linear algebra
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=dagss" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Dan Shumow
+</td>
+<td>
+University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=shumow" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Denis Simone
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Denis%20Simone" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Steven Sivek
+</td>
+<td>
+graduate student, Princeton University
+</td>
+<td>
+Princeton, NJ, USA
+</td>
+<td class="description">
+<span>
+interface to Sloane's Tables
+</span>
+<br/>
+<span>
+algebraic number fields
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Steven%20Sivek" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.countnumber.de">
+Nils-Peter Skoruppa
+</a>
+</td>
+<td>
+Universität Siegen
+</td>
+<td>
+Universitaet Siegen, Germany
+</td>
+<td class="description">
+<span>
+optimized binary quadratic forms computation
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Nils-Peter%20Skoruppa" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://jviusos.perso.univ-pau.fr/">
+Juan Viu Sos
+</a>
+</td>
+<td>
+PhD Student, Université de Pau et des Pays de l'Adour
+</td>
+<td>
+64000 Pau, France
+</td>
+<td class="description">
+<span>
+polynomial rings
+</span>
+<br/>
+<span>
+polyhedron
+</span>
+<br/>
+<span>
+algebraic geometry
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jviusos" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Jaap Spies
+</td>
+<td/>
+<td>
+Emmen, Netherlands
+</td>
+<td class="description">
+<span>
+permanents of general matrices
+</span>
+<br/>
+<span>
+Sloane functions
+</span>
+<br/>
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jsp" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.igt.uni-stuttgart.de/LstDiffgeo/Spreer/">
+Jonathan Spreer
+</a>
+</td>
+<td>
+University of Stuttgart
+</td>
+<td>
+Stuttgart, Germany
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=spreerjn" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://theoriginaltakeaway.com/">
+Hayden Stainsby
+</a>
+</td>
+<td>
+PhD student, Universitat Autònoma de Barcelona
+</td>
+<td>
+Barcelona, Spain
+</td>
+<td class="description">
+<span>
+algorithmic number theory
+</span>
+<br/>
+<span>
+I'm actually from australia
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=hds" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Štěpán Starosta
+</td>
+<td>
+Faculty of Information Technology, Czech Technical University in Prague
+</td>
+<td>
+Prague, Czech Republic
+</td>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Štěpán%20Starosta" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://modular.math.washington.edu">
+William Stein
+</a>
+</td>
+<td>
+Professor, University of Washington
+</td>
+<td>
+1212 E Barclay Ct, Seattle, WA 98122, USA
+</td>
+<td class="description">
+<span>
+project leader
+</span>
+<br/>
+<span>
+community manager
+</span>
+<br/>
+<span>
+software architect
+</span>
+<br/>
+<span>
+started Sage project
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=was" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://arminstraub.com">
+Armin Straub
+</a>
+</td>
+<td>
+Tulane University
+</td>
+<td>
+6823 St. Charles Avenue, New Orleans, LA 70118, United States
+</td>
+<td class="description">
+<span>
+basic arithmetic
+</span>
+<br/>
+<span>
+elliptic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=arminstraub" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.few.vu.nl/~streng">
+Marco Streng
+</a>
+</td>
+<td>
+DIAMANT-postdoc
+</td>
+<td>
+VU University, Amsterdam
+</td>
+<td class="description">
+<span>
+number fields
+</span>
+<br/>
+<span>
+algebraic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=mstreng" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://sage.math.washington.edu/home/kstueve">
+Kevin Stueve
+</a>
+</td>
+<td>
+undergraduate student, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+number theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kevin.stueve" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://homepage.univie.ac.at/christian.stump/">
+Christian Stump
+</a>
+</td>
+<td>
+Postdoctoral Fellow, Centre de Recherches Mathématiques (Université de Montréal) and Laboratoire de Combinatoire et d'Informatique Mathématique (Université du Québec à Montréal)
+</td>
+<td/>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=stumpc5" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.google.com/s2/profiles/115382656960629166023">
+Blair Sutton
+</a>
+</td>
+<td/>
+<td>
+London, UK
+</td>
+<td class="description">
+<span>
+Bell polynomials
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=bsutton" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cswiercz.info">
+Chris Swierczewski
+</a>
+</td>
+<td>
+Graduate student in applied mathematics, University of Washington
+</td>
+<td>
+University of Washington, WA, USA
+</td>
+<td class="description">
+<span>
+algebraic curves
+</span>
+<br/>
+<span>
+integrable systems
+</span>
+<br/>
+<span>
+Riemann theta functions
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cswiercz" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://personales.unican.es/taberalf/">
+Luis Felipe Tabera Alonso
+</a>
+</td>
+<td>
+Universidad de Cantabria
+</td>
+<td>
+Santander, Spain
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<span>
+basic arithmetic
+</span>
+<br/>
+<span>
+number fields
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=lftabera" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.tarbox.org">
+Glenn Tarbox
+</a>
+</td>
+<td>
+THG Holdings
+</td>
+<td>
+Seattle, USA
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=ghtdak" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.loria.fr/~thevenyp/">
+Philippe Theveny
+</a>
+</td>
+<td>
+LORIA
+</td>
+<td>
+Nancy, France
+</td>
+<td class="description">
+<span>
+mpc.spkg, mpc bindings
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=thevenyp" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Nicolas Thiery
+</td>
+<td>
+Université Paris Sud, Faculty
+</td>
+<td>
+LRI, Universite Paris Sud, France
+</td>
+<td class="description">
+<span>
+Crystals code, combinatorics design
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=nthiery" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Griffen Thoma
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+plotting bug fix
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Griffen%20Thoma" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Hugh Thomas
+</td>
+<td>
+Department of Mathematics, University of New Brunswick
+</td>
+<td>
+University of New Brunswick, Fredericton, New Brunswick, Canada
+</td>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=hthomas" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.loria.fr/~thome/">
+Emmanuel Thomé
+</a>
+</td>
+<td>
+Researcher, INRIA
+</td>
+<td>
+Nancy, France
+</td>
+<td class="description">
+<span>
+number fields
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=thome" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+John Thurber
+</td>
+<td>
+Eastern Oregon University
+</td>
+<td>
+La Grande, Oregon, USA
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<span>
+graph theory
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jthurber" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Igor Tolkov
+</td>
+<td>
+University of Washington
+</td>
+<td>
+Seattle, USA
+</td>
+<td class="description">
+<span>
+work on Interact
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=itolkov" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gonzalo Tornaria
+</td>
+<td/>
+<td>
+Montevideo, Uruguay
+</td>
+<td class="description">
+<span>
+sage/latex style
+</span>
+<br/>
+<span>
+extensive feedback
+</span>
+<br/>
+<span>
+design
+</span>
+<br/>
+<span>
+use of darcs system
+</span>
+<br/>
+<span>
+tons of tricky C code related to the PARI interface
+</span>
+<br/>
+<span>
+hashing of GMP types
+</span>
+<br/>
+<span>
+etc
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=tornaria" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Adam Towsley
+</td>
+<td>
+Visiting Assistant Professor, Department of Mathematics, CUNY Graduate Center
+</td>
+<td>
+365 5th Avenue, New York, NY
+</td>
+<td class="description">
+<span>
+Arithmetic Dynamics
+</span>
+<br/>
+<span>
+Algebraic Number Theory
+</span>
+<br/>
+<span>
+Arithmetic Geometry
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Adam%20Towsley" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Kiminori Tsukazaki
+</td>
+<td>
+University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom
+</td>
+<td class="description">
+<span>
+elliptic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=kimi" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Charlie Turner
+</td>
+<td>
+University of Warwick
+</td>
+<td>
+Gibbet Hill Rd, Coventry CV4 7AL, UK
+</td>
+<td class="description">
+<span>
+algebraic geometry
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cturner" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Michel Vandenbergh
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+multivariate polynomials
+</span>
+<br/>
+<span>
+bug fixes, other improvements
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Michel%20Vandenbergh" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.ucsd.edu/~jvankers/">
+Joris Vankerschaver
+</a>
+</td>
+<td>
+Department of Mathematics, University of California at San Diego
+</td>
+<td>
+9500 Gilman Drive, San Diego, CA 92093, United States
+</td>
+<td class="description">
+<span>
+doctesting
+</span>
+<br/>
+<span>
+numerical methods
+</span>
+<br/>
+<span>
+symbolics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jvkersch" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Soledad Villar
+</td>
+<td>
+Universidad de la República
+</td>
+<td>
+Eduardo Acevedo, Montevideo, Uruguay
+</td>
+<td class="description">
+<span>
+algebra
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Soledad%20Villar" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.cems.uvm.edu/~voight/">
+John Voight
+</a>
+</td>
+<td>
+University of Vermont
+</td>
+<td>
+Burlington, VT, USA
+</td>
+<td class="description">
+<span>
+Totally Real Fields
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=jvoight" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ma.utexas.edu/users/voloch/">
+Felipe Voloch
+</a>
+</td>
+<td>
+Professor, Department of Mathematics, University of Texas at Austin
+</td>
+<td>
+2100 San Jacinto Boulevard, Austin, TX 78712-1047, United States
+</td>
+<td class="description">
+<span>
+elliptic curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Felipe%20Voloch" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Steve Vonn
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Steve%20Vonn" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Justin Walker
+</td>
+<td>
+retired Apple OS X kernel developer
+</td>
+<td>
+Stanford, CA, USA
+</td>
+<td class="description">
+<span>
+extensive feedback
+</span>
+<br/>
+<span>
+PARI lib wrapping
+</span>
+<br/>
+<span>
+use of his G5
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=justin" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Mark Watkins
+</td>
+<td>
+University of Sydney
+</td>
+<td>
+University Road, 2006, NSW, Australia
+</td>
+<td class="description">
+<span>
+ec (modular degrees)
+</span>
+<br/>
+<span>
+sympow (symmetric powers)
+</span>
+<br/>
+<span>
+feedback
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Mark%20Watkins" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Georg S. Weber
+</td>
+<td/>
+<td>
+Nuernberg, Germany
+</td>
+<td class="description">
+<span>
+reviews, bug fixing, documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=GeorgSWeber" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Eric Webster
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+combinatorics
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=QuantumKing" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Ralf-Philipp Weinmann
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=rpw" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Joe Wetherell
+</td>
+<td>
+CCR
+</td>
+<td>
+Bethesda, MD, USA
+</td>
+<td class="description">
+<span>
+design discussion
+</span>
+<br/>
+<span>
+bug reports
+</span>
+<br/>
+<span>
+code (e.g., for MAGMA-like constructors)
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Joe%20Wetherell" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.newtonlabs.com/">
+Carl Witty
+</a>
+</td>
+<td>
+Newton Labs
+</td>
+<td>
+Renton, WA 98057, USA
+</td>
+<td class="description">
+<span>
+release manager
+</span>
+<br/>
+<span>
+interval arithmetic (wrapping mpfi)
+</span>
+<br/>
+<span>
+complete package for real root isolation
+</span>
+<br/>
+<span>
+algebraic reals
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=cwitty" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Cristian Wuthrich
+</td>
+<td>
+Nottingham
+</td>
+<td>
+Nottingham, UK
+</td>
+<td class="description">
+<span>
+p-adic L-functions
+</span>
+<br/>
+<span>
+Tate curves
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=wuthrich" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Soroosh Yazdani
+</td>
+<td/>
+<td/>
+<td class="description">
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=syazdani" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://dalsyu.org/">
+Dal S. Yu
+</a>
+</td>
+<td/>
+<td>
+Austin, TX, USA
+</td>
+<td class="description">
+<span>
+Athlon binary build
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Dal%20S.%20Yu" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Gary Zablackis
+</td>
+<td/>
+<td/>
+<td class="description">
+<span>
+created all Sage binaries for MS windows from March through November 2006
+</span>
+<br/>
+<span>
+numerous bug reports and fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Gary%20Zablackis" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.math.yorku.ca/new/people/zabrocki.html">
+Mike Zabrocki
+</a>
+</td>
+<td>
+Dept. Maths and Statistics, York University
+</td>
+<td>
+Toronto, Ontario, Canada
+</td>
+<td class="description">
+<span>
+bug fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Mike%20Zabrocki" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+Bin Zhang
+</td>
+<td/>
+<td>
+France
+</td>
+<td class="description">
+<span>
+ATLAS.spkg fixes for Linux and PPC
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Bin%20Zhang" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.loria.fr/~zimmerma/">
+Paul Zimmermann
+</a>
+</td>
+<td>
+Research Fellow, INRIA Nancy
+</td>
+<td>
+Villers les Nancy, France
+</td>
+<td class="description">
+<span>
+MPFR integration
+</span>
+<br/>
+<span>
+calculus bug fixes
+</span>
+<br/>
+<span>
+general fixes
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=zimmerma" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+<tr>
+<td class="name">
+<a href="http://www.ai7.org">
+Mao Ziyang
+</a>
+</td>
+<td/>
+<td>
+Changsha, Hunan, China
+</td>
+<td class="description">
+<span>
+documentation
+</span>
+<br/>
+<a class="trac" href="http://trac.sagemath.org/sage_trac/search?q=Mao%20Ziyang" target="_blank">
+contributions
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+ 
+<div class="narrow small center">
+  If you are missing, please email the webmaster your name, location, university/work, what you
+  did, perhaps your homepage and a small picture.
+ 
+</div>
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

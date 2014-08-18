@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Tour Quickstart</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="quickstart" -->
+
+ <h1>Quickstart</h1>
+
+ <div class="bodypadding">
+  This is a short introduction in how to interact with Sage. Make sure you have installed it
+  according to the <a href="./doc/installation">installation guide</a>. There are also nice
+  <a href="./help-video.html">Screencasts</a> for introduction available. Make sure to read
+  more about Sage in the <a href="http://sagemath.org/doc/tutorial/index.html">Sage Tutorial</a>!
+ </div>
+
+ <table class="top">
+  <colgroup>
+   <col width="50%" />
+   <col width="50%" />
+  </colgroup>
+
+  <tbody>
+   <tr>
+    <th colspan="2">
+     <h3>Basics</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+sage: <strong>1+1</strong>
+2
+sage: <strong>V = QQ^3</strong>
+sage: <strong>V.[tab key]</strong>
+...
+V.base_ring
+V.basis
+V.coordinates
+...
+</pre>
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Sage uses the basic user-interface principle of &quot;question and answer&quot; found in many
+      other software systems. You enter an expression and after pressing the <span class=
+      "code">Return</span> key in the command line interface or hitting <span class=
+      "code">Shift+Return</span> in the notebook interface, Sage evaluates your expression and
+      returns the answer. – <a href="./doc/tutorial/interactive_shell.html"
+           target="_blank">read more</a>
+     </div>
+
+     <div class="justify">
+      Tab-completion helps you enter commands. On the command-line, it also provides history and
+      reverse lookup search. – <a href="./doc/tutorial/interactive_shell.html#reverse-search-and-tab-completion"
+           target="_blank">read more</a>
+     </div>
+    </td>
+   </tr><!--
+</tbody>
+  </table>
+-->
+
+   <tr>
+    <th colspan="2">
+     <h3>Classes of Objects</h3>
+    </th>
+   </tr><!--
+  <table class="top ">
+   <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+   </colgroup>
+
+   <tbody>
+   -->
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+sage: <strong>R = RealIntervalField(100)</strong>
+sage: <strong>R</strong>
+Real Interval Field with 100 bits of precision
+sage: <strong>a = R((-1,0)); a</strong>
+[-1.0000000000000000000000000000000 ..
+           0.00000000000000000000000000000000]
+sage: <strong>b = sin(a); b</strong>
+[-0.84147098480789650665250232163084 ..
+           0.00000000000000000000000000000000]
+sage: <strong>c = a*b; c.diameter()</strong>
+0.84147098480789650665250232163
+</pre>
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      As you can see in the previous example, Sage knows about mathematical objects embedded into
+      the Python language. Every quantity - a real number, a polynomial, a matrix, and so on -
+      belongs to a <em>parent</em>, and this tells Sage how to perform operations on the quantity.
+     </div>
+
+     <div class="justify">
+      In the example on the left, R is defined as the class of all intervals of real values with
+      100 bits of precision. Then an interval is created and stored in <span class=
+      "code">a</span>, the function <span class="code">sin</span> is applied and stored in
+      <span class="code">b</span>. In the end they are multiplied and the diameter is calculated.
+      <span class="code">sin</span> is a function that &quot;knows&quot; about intervals, as well
+      as the multiplication does, and <span class="code">diameter()</span> is a method of an
+      interval instance object.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th colspan="2">
+     <h3>Interactive Help</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+sage: <strong>c.diameter?</strong>
+Type:        builtin_function_or_method
+Base Class:  &lt;type &#39;builtin_function_or_method&#39;&gt;
+String Form: &lt;built-in method diameter ...&gt;
+Namespace:   Interactive
+Docstring:
+  If (0 in self), returns self.absolute_diameter(),
+  otherwise self.relative_diameter().
+  EXAMPLES:
+    sage: RIF(1, 2).diameter()
+    0.666666666666667
+    ...
+</pre>
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      The example above shows that there are thousands of functions and methods. Sage comes with
+      <a href="./doc/tutorial/interactive_shell.html#integrated-help-system"
+           target="_blank">a built-in help system</a> and you don&#39;t have to memorize them all.
+           Entering a question mark after a method shows the description and additional information
+           about that method. The example on the left shows the documentation for the <span class=
+           "code">diameter</span> method from the previous example.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th colspan="2">
+     <h3>Symbolic Maths</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+sage: <strong>f = 1 - sin(x)^2</strong>
+sage: <strong>print f</strong>
+-sin(x)^2 + 1
+sage: <strong>print maxima(f)  # pretty printing</strong>
+                                         2
+                                  1 - sin (x)
+sage: <strong>f.simplify_trig()</strong>
+cos(x)^2
+sage: <strong>f(x=pi/2)</strong>
+0
+sage: <strong>f(x=pi/3)</strong>
+1/4
+sage: <strong>integrate(f, x).simplify_trig()</strong>
+1/2*sin(x)*cos(x) + 1/2*x
+sage: <strong>print maxima(integrate(f, x).simplify_trig())</strong>
+                               cos(x) sin(x)   x
+                               ------------- + -
+                                     2         2
+sage: <strong>f.differentiate(2).substitute({x: 3/pi})</strong>
+2*sin(3/pi)^2 - 2*cos(3/pi)^2
+sage: <strong>print maxima(f.differentiate(2).substitute({x: 3/pi}))</strong>
+                                2  3          2  3
+                           2 sin (---) - 2 cos (---)
+                                  %pi           %pi
+</pre>
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Here we define a function $$f$$, simplify it, evaluate it at $$\pi/2$$ and $$\pi/3$$ and
+      integrate it with simplification. After that, $$f$$ is differentiated two times and $$x$$ is
+      substituted by $$3/\pi$$.
+     </div>
+    </td>
+   </tr>
+
+   <tr>
+    <th colspan="2">
+     <h3>Numerical Maths</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+sage: <strong>g = sin(x) + (1- x^2)</strong>
+
+sage: <strong>find_root(g, 0, 2)</strong>
+1.4096240040025754
+
+sage: <strong>var(&#39;x y z&#39;)</strong>
+(x, y, z)
+
+sage: <strong>f= (1 + (y+x^2)^2 + (1+z+y^2)^2)^2</strong>
+sage: <strong>print f</strong>
+
+            2     2         2 2     2
+     ((z + y  + 1)  + (y + x )  + 1)
+
+sage: <strong>minimize(f,[1,2,3],disp=1,algorithm=&#39;powell&#39;)</strong>
+Optimization terminated successfully.
+     Current function value: 1.000059
+     Iterations: 2
+     Function evaluations: 84
+(-0.000607497243458, 0.00486816565959, -1.00243223164)
+</pre>
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      On the left side, a root of the function<br />
+      $$g(x) = sin(x) + (1-x^2)$$<br />
+      is found numerically.
+     </div>
+
+     <div class="justify txt">
+      Below, the function<br />
+      $$f(x,y,z) = (1 + (y + x^2)^2 + (1+z+y^2)^2)^2$$<br />
+      is minimized using the &quot;powell&quot; algorithm.
+     </div>
+    </td>
+   </tr>
+  </tbody>
+ </table>
+
+ <div class="txt"></div>
+
+ <div class="narrow center txt">
+  <a href="./tour-research.html">Tour Research</a>  &middot;  <a href="./tour-graphics.html">Tour
+  Graphics</a>
+ </div><!--#include virtual="inc/footer.shtml" -->
+</body>
+</html>

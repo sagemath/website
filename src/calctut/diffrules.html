@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - Differentiation Rules</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>The Rules of Differentiation</h1>
+  <div class="proof rule">
+  <h3>Constant Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules01.png" /> and a is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules02.png" />.
+  </div>
+  <div class="proof rule">
+  <h3>Constant Multiple Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules03.png" /> and a is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules04.png" />.
+  </div>
+  <div class="proof rule">
+  <h3>Power Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules05.png" /> and n is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules06.png" />.
+  </div>
+  <div class="proof rule">
+  <h3>Product Rule</h3>
+  If f and g are differentiable at x, then<br />
+  <img src="pix-calctut/diffrules07.png" />
+  </div>
+  <div class="proof rule">
+  <h3>Quotient Rule</h3>
+  If f is the quotient g(x)/h(x) and h(x) &ne; 0, then<br />
+  <img src="pix-calctut/diffrules08.png" />
+  </div>
+  <div class="proof rule">
+  <h3>Chain Rule</h3>
+  If g is differentiable at x and f is differentiable at g(x), then<br />
+  <img src="pix-calctut/diffrules09.png" />
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

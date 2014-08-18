@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Download Live CD</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="livecd" -->
+
+ <h1 class="narrow">Download Live CD</h1>
+ <!--#set var="mirrordir" value="livecd/"-->
+
+ <div class="narrow large txt bluebg round">
+ <div class="txt border ">
+  <!--#include virtual="./inc/mirrorselector.shtml"-->
+ </div>
+ </div>
+
+ <div class="narrow txt center small">
+ Click <a href="./download.html">here for other systems</a>
+ or <a href="./download-source.html">here to download source distribution</a>.
+ </div>
+
+ <h2 class="narrow">Usage</h2>
+
+ <div class="txt narrow">
+This is the Sage Live CD. Please read the Readme.txt file for more information.
+ </div>
+
+ <!--#include virtual="inc/download-common.shtml"-->
+ <!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

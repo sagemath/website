@@ -1,0 +1,253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - Continuity</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>Continuity</h1>
+  <p>
+  Much of limit analysis relates to a concept known as <strong>continuity</strong>.
+  A function is said to be <strong>continuous</strong> on an interval when the
+  function is defined at every point on that interval and undergoes no
+  interruptions, jumps, or breaks. If some function f(x) satisfies these criteria
+  from x=a to x=b, for example, we say that f(x) is continuous on the interval
+  [a, b]. The brackets mean that the interval is <strong>closed</strong> -- that
+  it includes the endpoints a and b. In other words, that the interval is defined as
+  a &le; x &le; b. An <strong>open</strong> interval (a, b), on the other hand, would
+  not include endpoints a and b, and would be defined as a &lt; x &lt; b.
+  </p>
+  <p>
+  For an example of continuity, start a new worksheet called 02-Continuity, then
+  recreate the following graph using the provided code. (The f(x)=... is superimposed).
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/continuity01.png" />
+  </div>
+<pre class="tutcode">
+p1 = plot(x^2, x, 0, 1)
+p2 = plot(-x+2, x, 1, 2)
+p3 = plot(x^2-3*x+2, x, 2, 3)
+pt1 = point((0, 0), rgbcolor='black', pointsize=30)
+pt2 = point((3, 2), rgbcolor='black', pointsize=30)
+(p1+p2+p3+pt1+pt2).show(xmin=0, xmax=3, ymin=0, ymax=2)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+   1) Plot x<sup>2</sup> from x=0 to x=1<br />
+   2) Plot -x+2 from x=1 to x=2<br />
+   3) Plot x<sup>2</sup>-3*x+2 from x=2 to x=3<br />
+   4) Create a black point at (0, 0)<br />
+   5) Create another black point at (3, 2)<br />
+   6) Combine the plots and points into a single graph with the given bounds
+  </p>
+  <p>
+  The function f(x) in the graph is known as a <strong>piecewise</strong> function,
+  or one that has multiple, well, pieces. As you can see, the function travels
+  from x=0 to x=3 without interruption, and since the two endpoints are closed
+  (designated by the filled-in black circles), f(x) is continuous on the closed
+  interval [0, 3]. To think of it another way, if you can trace a function on an
+  interval without picking up your pen (and without running over any holes), the
+  function is continuous on that interval.
+  </p>
+  <p>
+  Using our knowledge of limits from the previous lesson, we can say that:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/continuity02.png" class="vmiddle" /> and
+  <img src="pix-calctut/continuity03.png" class="vmiddle" />
+  </div>
+  <h1>The Intermediate Value Theorem</h1>
+  <p>
+  One of the more important theorems relating to continuous functions is
+  the <strong>Intermediate Value Theorem</strong>, which states that if a function
+  f is continuous on a closed interval [a, b] and k is any number between f(a) and
+  f(b), then there must exist at least one number c such that f(c) = k. In other
+  words, if f is continuous on [a, b], it must pass through every y-value bounded
+  by f(a) and f(b). In the continuous function graphed above, for example,
+  f(0) = 0 and f(3) = 2, so f(x) must pass through all y-values bounded by and
+  including 0 and 2 on the interval [0, 3], which as one can see, it does.
+  </p>
+  <p>
+  Look at this example, now, of a function that is <em>not</em> continuous on the
+  interval for which it is shown.
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/continuity04.png" />
+  </div>
+<pre class="tutcode">
+p1 = plot(2*x, x, 0, 1)
+p2 = plot(-x+3, x, 1, 2)
+p3 = plot(-(x-3)^3+2, x, 2, 3)
+l1 = line([(1, 2.1), (1, 2.9)], linestyle='--')
+pt1 = point((0, 0), rgbcolor='black', pointsize=30)
+pt2 = point((1, 2), rgbcolor='white', faceted=True, pointsize=30)
+pt3 = point((1, 3), rgbcolor='black', pointsize=30)
+pt4 = point((2, 1), rgbcolor='black', pointsize=30)
+pt5 = point((2, 3), rgbcolor='white', faceted=True, pointsize=30)
+pt6 = point((3, 2), rgbcolor='black', pointsize=30)
+(p1+p2+p3+l1+pt1+pt2+pt3+pt4+pt5+pt6).show(xmin=0, xmax=3, ymin=0, ymax=3)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(2);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain2">
+  1) Plot 2*x from x=0 to x=1<br />
+  2) Plot -x+3 from x=1 to x=2<br />
+  3) Plot -(x-3)<sup>3</sup>+2 from x=2 to x=3<br />
+  4) Create a dashed line to indicate that the function jumps to a y-value of 3
+  when x is equal to 1<br />
+  5-10) Create open (faceted) or closed (filled-in) points to indicate whether the intervals are open
+  or closed<br />
+  11) Combine the plots, line, and points into a graph with the given bounds
+  </p>
+  <p>
+  The function shown in the graph is <em>not</em> continuous on the closed interval
+  [0, 3], since it has <strong>discontinuities</strong> at both x=1 and x=2. A
+  discontinuity is any x-value at which a function has an interruption, break or
+  jump -- something that would require you to pick up your pen if you were tracing
+  the function. The filled-in black circles, again, indicate that
+  the interval includes that point, while the open circles indicate that the
+  interval excludes that point. The dashed line at x=1 shows that f(1) = 3, not 2.
+  </p>
+  <p>
+  Since the above graph has at least one discontinuity, it does not satisfy the
+  requirements of the Intermediate Value Theorem and therefore <em>does not</em>
+  have to pass through every y-value between f(0) and f(3). 
+  </p>
+  <p>
+  Even though f(1) = 3, however, the limit of f(x) as x approaches 1 does <em>not</em>
+  equal 3, since the function approaches a value of 2 from both sides of x=1. But
+  what about the limit of f(x) as x approaches 2? The function does not approach
+  one specific value from either side of x=2, but we can still describe its behavior
+  from the right or the left. This is the basis of one-sided limits, which is the
+  topic of the next section.
+  </p>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Determine which of the following functions are continuous on the closed intervals
+  for which they are shown. For functions that are not continuous, determine the
+  x-coordinates of their discontinuities.
+  <br />
+  1) <img src="pix-calctut/continuity05.png" class="vtop qimg" />
+<pre class="tutcode">
+# Just a note -- sin(x) transformed doesn't actually follow the same curve as x<sup>2</sup>
+p1 = plot((x+1)^2-1, x, -2, 0)
+p2 = plot(5/4*sin(pi*x/2), x, 0, 2)
+p3 = plot((x-3)^2-1, x, 2, 4)
+pt1 = point((-2, 0), rgbcolor='black', pointsize=30)
+pt2 = point((4, 0), rgbcolor='black', pointsize=30)
+(p1+p2+p3+pt1+pt2).show()
+</pre>
+  <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'The function is continuous on the closed interval [-2, 4] for which it is shown');">Toggle answer</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <br />
+  2) <img src="pix-calctut/continuity06.png" class="vtop qimg" />
+<pre class="tutcode">
+p = plot(tan(x), x, -pi, pi, randomize=False, plot_points=101)
+pt1 = point((-pi, 0), rgbcolor='black', pointsize=30)
+pt2 = point((pi, 0), rgbcolor='black', pointsize=30)
+(p+pt1+pt2).show(xmin=-pi, xmax=pi, ymin=-10, ymax=10)
+</pre>
+  <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'The function is not continuous on the closed interval [-&pi;, &pi;]. There are discontinuities at x=-&pi;/2 and x=&pi;/2');">Toggle answer</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <br />
+  3) <img src="pix-calctut/continuity07.png" class="vtop qimg" />
+  <pre class="tutcode">
+# exp() means 'e to the ___'
+p1 = plot(exp(x/5)-1, x, 0, e)
+p2 = plot(ln(x), x, e, e^2)
+pt1 = point((0, 0), rgbcolor='black', pointsize=30)
+pt2 = point((e, exp(e/5)-1), rgbcolor='black', pointsize=30)
+pt3 = point((e, 1), faceted=True, rgbcolor='white', pointsize=30)
+pt4 = point((e^2, 2), rgbcolor='black', pointsize=30)
+(p1+p2+pt1+pt2+pt3+pt4).show(ymin=0, ymax=2)
+</pre>
+  <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'The function is not continuous on the closed interval [0, e&sup2;], as it has a discontinuity at x=e');">Toggle answer</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <br />
+  <hr />
+  <br />
+  Determine the value or values of k that will make each function continuous on the given interval.*
+  <br />
+  4) <img class="vtop qimg" src="pix-calctut/continuity08.png" />
+  <br />
+  <a id="answer4" href="javascript:void(0);" onclick="calctut.ansToggle(4, 'k=5; both sides converge at (5, 13)');">Toggle answer</a>
+  <br />
+  5) <img class="vtop qimg" src="pix-calctut/continuity09.png" />
+  <br />
+  <a id="answer5" href="javascript:void(0);" onclick="calctut.ansToggle(5, 'k=a*&pi;/2, where a is any odd integer. Convergence at (a*&pi;/2, 0)');">Toggle answer</a>
+  <br />
+  6) <img class="vtop qimg" src="pix-calctut/continuity10.png" />
+  <br />
+  <a id="answer6" href="javascript:void(0);" onclick="calctut.ansToggle(6, 'k=11; convergence at (4, 6)');">Toggle answer</a>
+  <br />
+  <hr />
+  <br />
+  Use the Intermediate Value Theorem to demonstrate that a solution exists to each
+  equation on the interval given.
+  <br />
+  7) <img class="vmiddle qimg" src="pix-calctut/continuity11.png" />;&nbsp;&nbsp;&nbsp;[1, 3]
+  <br />
+  <a id="answer7" href="javascript:void(0);" onclick="calctut.ansToggle(7, 'f(1) &lt; 0 and f(3) &gt; 0, so a number c must exist in [1, 3] such that f(c) = 0');">Toggle answer</a>
+  <br />
+  8) <img class="vmiddle qimg" src="pix-calctut/continuity12.png" />;&nbsp;&nbsp;&nbsp;[-1, 1]
+  <br />
+  <a id="answer8" href="javascript:void(0);" onclick="calctut.ansToggle(8, 'f(-1) &gt; 2 and f(1) &lt; 2, so a number c must exist in [-1, 1] such that f(c) = 2');">Toggle answer</a>
+  <br />
+  9) <img class="vmiddle qimg" src="pix-calctut/continuity13.png" />;&nbsp;&nbsp;&nbsp;[1, 2]
+  <br />
+  <a id="answer9" href="javascript:void(0);" onclick="calctut.ansToggle(9, 'Rewrite the equation so that the square root is on the same side as x<sup>5<\/sup> to find that f(1) &lt; 0 and f(2) &gt; 0, so a number c must exist in [1, 1] such that f(c) = 0');">Toggle answer</a>
+  <br /><br />
+  *As a Sage-based way of checking your answers, you can use solve(...==..., k)
+  to solve the given equation for k. For example, to solve for x when the expression
+  x<sup>2</sup>-4*x+4 is equal to 0, you would use:
+<pre class="tutcode">
+solve(x^2-4*x+4==0, x)
+</pre>
+  Two equals signs (as used here) signifies a test for equality, while a single equals
+  sign signifies assignment. For example, x==1 means 'does x equal 1?' whereas
+  x=1 means 'assign 1 to x'.
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<div id="footer" class="center">
+<table><tr>
+<td><a id="footer-webmaster" href="mailto:harald.schilly@gmail.com"></a></td><td>&middot;</td>
+<td><a id="footer-cc" title="Content is Creative Commons 3.0 licensed" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund" href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+</tr></table>
+</div>
+
+
+</body>
+</html>
+

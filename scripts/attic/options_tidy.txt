@@ -1,0 +1,37 @@
+//tidy config file
+
+// HTML XHTML options
+clean:                        yes
+doctype:                      transitional
+drop-empty-paras:             no
+drop-font-tags:               yes
+drop-proprietary-attributes:  yes
+enclose-text:                 yes
+fix-backslash:                yes
+fix-uri:                      yes
+join-styles:                  yes
+logical-emphasis:             yes
+numeric-entities:             yes
+output-xhtml:                 yes
+quote-ampersand:              yes
+quote-marks:                  yes
+quote-nbsp:                   yes
+
+// character encoding options
+ascii-chars:                  no
+char-encoding:                utf8
+escape-cdata:                 yes
+
+// pretty print options
+indent:                       auto
+indent-cdata:                 yes
+indent-attributes:            yes
+indent-spaces:                1
+vertical-space:               no
+break-before-br:              no
+wrap:                         100
+wrap-attributes:              no
+punctuation-wrap:             yes
+
+// misc
+tidy-mark:                    no

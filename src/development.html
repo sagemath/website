@@ -1,0 +1,199 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+<!--#set var="trademark" value="1"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Development</title><!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="main" -->
+
+ <h1 class="narrow">Information for Developers</h1>
+
+ <div class="narrow txt">
+  Sage is an <em>open-source project</em> and has a very welcoming developer community. We invite
+  newcomers to help improve the code or contribute in other ways. A good start is the Sage <a href=
+  "doc/developer/">Developer's Guide</a><!-- (<a href="doc-pdf/prog.pdf">PDF</a>) -->
+  and the <a href="./doc/faq/">Sage FAQ</a>.<br/>
+  <br/>Our mission is:
+ </div>
+
+ <div class="narrow center large txt">
+  <strong><em>Creating a viable free open source alternative to<br />
+  Magma, Maple, Mathematica and Matlab.</em></strong>
+ </div>
+
+
+<div class="narrow center txt">
+<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object><p><a href="http://vimeo.com/14044496">Contributing to Sage</a> from <a href="http://vimeo.com/user1449175">William Stein</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>This is a video that describes how to contribute to the Sage (http://sagemath.org) project, and includes many sources of ideas.
+[<a href="http://wiki.sagemath.org/daysindia25/schedule?action=AttachFile&do=view&target=stein-contrib.pdf">download presentation (pdf)</a>,
+<a href="http://sage.math.washington.edu/home/wstein/video/sagedays25/Contributing%20to%20Sage.m4v">download video (m4v)]</p>
+</div>
+
+ <div class="txt narrow">
+  Development and discussion happen in three places:
+
+  <ol>
+   <li>
+    <a name="mailingList" href="./development-groups.html">Mailing Lists</a> – new features,
+    technical issues and bugs are discussed here
+
+    <ul>
+      <li>General lists
+      <ul>
+	<li><a href="http://groups.google.com.au/group/sage-support"
+	       target="_blank">sage-support</a> – general help and support on
+	  using Sage, e.g. installation, usage, functions, syntax, etc.</li>
+
+	<li><a href="http://groups.google.com/group/sage-edu"
+               target="_blank">sage-edu</a> – discussion about using Sage in
+	  education</li>
+
+	<li><a href="http://groups.google.com/group/sage-devel"
+               target="_blank">sage-devel</a> – general development discussion,
+	  e.g. programming, design, technical issues, etc.</li>
+      </ul>
+   </li>
+
+      <li>Special interest groups
+      <ul>
+	<li><a href="http://groups.google.com.au/group/sage-algebra"
+	       target="_blank">sage-algebra</a> – discussion and development
+	of algebraic functionalities</li>
+
+	<li><a href="http://groups.google.com.au/group/sage-announce"
+	       target="_blank">sage-announce</a> – release announcement</li>
+
+	<li><a href="http://groups.google.com/group/sage-combinat-devel"
+	       target="_blank">sage-combinat-devel</a> – combinatorics</li>
+
+	<li><a href="http://groups.google.com.au/group/debian-sage"
+	       target="_blank">debian-sage</a> – Debian port</li>
+
+	<li><a href="http://groups.google.com/group/sage-finance"
+	       target="_blank">sage-finance</a> – finance</li>
+
+	<li><a href="http://groups.google.com/group/sage-flame"
+	       target="_blank">sage-flame</a> – flame wars</li>
+
+	<li><a href="http://groups.google.com/group/sage-grid"
+	       target="_blank">sage-grid</a> – scientific grid computing</li>
+
+	<li><a href="http://groups.google.com.au/group/sage-marketing"
+	       target="_blank">sage-marketing</a> – coordinates promotion
+	  efforts, marketing materials, posters, information sheets, etc.</li>
+
+	<li><a href="http://groups.google.com.au/group/sage-notebook"
+	       target="_blank">sage-notebook</a> – development of a standalone
+	  notebook server</li>
+
+	<li><a href="http://groups.google.com/group/sage-nt"
+	       target="_blank">sage-nt</a> – number theory</li>
+
+	<li><a href="http://groups.google.com/group/sage-padics"
+	       target="_blank">sage-padics</a> – p-adics and more generally
+	  polynomials, matrices and modules over local rings (such as p-adics
+	  and power series rings)</li>
+
+	<li><a href="http://groups.google.com/group/sage-release"
+	       target="_blank">sage-release</a> – release management</li>
+
+	<li><a href="http://groups.google.com.au/group/sage-solaris"
+	       target="_blank">sage-solaris</a> – Solaris port</li>
+
+	<li><a href="https://groups.google.com/group/sage-trac-account"
+	       target="_blank">sage-trac-account</a> – Creating and managing
+          accounts on the <a href="http://trac.sagemath.org/sage_trac/"
+			     target="_blank">Sage trac</a></li>
+
+	<li><a href="http://groups.google.com/group/sage-windows"
+	       target="_blank">sage-windows</a> – Microsoft Windows Port</li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+
+   <li>
+     Forums:
+     <ul>
+       <li>
+	 <a href="irc://irc.freenode.net/#sagemath">IRC channel</a> – an active place to chat about
+	 development in real-time.<br />
+	 Server: <span class="code">irc.freenode.net</span> — Room: <span class="code">#sagemath</span>
+       </li>
+
+       <li>
+	 <a href="http://ask.sagemath.org" target="_blank">AskSage</a> – 
+	 a merit-based question and answer forum.
+       </li>
+     </ul>
+   </li>
+
+   <li><a href="http://trac.sagemath.org/sage_trac">Trac</a> — all code ends up here. (<a href=
+   "./development-status.html">Status</a>, <a href=
+   "http://wiki.sagemath.org/devel/TracGuidelines">Guidelines</a>)</li>
+  </ol>
+ </div>
+
+ <h2 class="narrow">Introduction</h2>
+
+ <div class="narrow txt">
+  Sage can give students and other contributors a wonderful experience in developing in a
+  large-scale, supportive, and rigorous environment. All code is peer-reviewed, all functions must
+  be documented and unit-tested on a variety of platforms and systems. Python is used as a base
+  language, Mercurial is used as the source code revision system, and Trac is used to <a href=
+  "./development-status.html">track all support/development issues</a>. All of these tools are very
+  capable and used in many other small and large-scale projects. The mailing lists are
+  <em>extremely</em> supportive and responsive, as is the highly active IRC channel. There are
+  <a href="./development-map.html">around 150 people</a> that have contributed code directly to
+  Sage, including many leaders in mathematics, as well as professionals (e.g., one main developer
+  is a retired Apple kernel engineer, another works at machine vision company in Seattle, etc.),
+  graduate students, and undergraduate students. There are releases about every 3-4 weeks, under
+  the attitude of &quot;release early, release often&quot;, so students could see their code in the
+  real live software several times before the semester is over. Contributions of all sorts are
+  heartily welcomed, but attention is paid to making sure that the system does not become bloated
+  and disorganized. The mission statement allows for a very wide variety of contributions. From a
+  software engineering standpoint, Sage is a wonderful project to be engaged in.
+</div>
+<div class="narrow">
+  Links:
+<ul>
+<li><a href= "./doc/developer/">Sage Developer Guide</a></li>
+<li><a href="./doc/faq/">Sage FAQ</a></li>
+<li><a href="./doc/faq/faq-contribute.html">How to contribute to Sage</a></li>
+<li><a href="./mirror/src/changelogs/">Release Notes</a></li>
+</ul>
+ </div>
+
+ <h2 class="narrow">Source Code</h2>
+
+ <div class="narrow">
+  <ul>
+   <li>You can <a href="http://git.sagemath.org/"
+      target="_blank">browse the Sage source code online</a>.</li>
+
+   <li>Read the Changelogs: <a href="./mirror/src/changelogs/">Release Notes</a></li>
+
+   <li>Here is the <a href="https://www.ohloh.net/projects/sage/analyses/latest">Source Code
+   Analysis by Ohloh.net</a>.</li>
+
+   <li><a href="http://www.sagemath.org/doc/reference/"
+      target="_blank">Sage API Documentation</a></li>
+  </ul>
+
+<div>Translation of this page to
+<a href="http://science.webhostinggeeks.com/sage-informacije-za-programere">serbo-croatian</a>.
+</div>
+ </div><!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

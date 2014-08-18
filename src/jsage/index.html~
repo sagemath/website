@@ -1,0 +1,63 @@
+<head>
+<title>SAGE: Software for Algebra and Geometry Experimentation -- JSAGE publishing refereed mathematical software in SAGE</title>
+<link rel="STYLESHEET" type="text/css" href="../style.css" title="sagecont">
+ </head>
+
+<body>
+
+<div align=center>
+<font color="darkred" size=+5><a href="../index.html">SAGE</a></font><br>
+<br>
+<font size=+3>Submission of Refereed Code to SAGE</font>
+<br>
+<br><br>
+</div>
+
+
+<table align=center bgcolor=white cellpadding=15 width=90%>
+<tr><td bgcolor="#FFFFFF">
+
+<p><b><font color="darkred">JSAGE</font></b>
+publishes high quality <i>free open source refereed
+implementations</i> of mathematical software as part of <a
+href="../index.html">SAGE</a>.    To publish in JSAGE means
+that software you write becomes part of SAGE.
+
+<p>Submissions from all areas
+of pure and applied mathematics are encouraged. 
+<!--When possible, we strongly encourage JSAGE authors
+to also  contribute corresponding mathematical research
+articles to <a href="journals.html">these endorsed journals</a>.  
+-->
+<br>
+<br>
+
+<table align=center bgcolor=black cellpadding=15 width=90%>
+<tr><td bgcolor="#FFFFF0">
+
+<h3>
+<ul>
+<li> <a href="editors.html">Editorial Board</a>
+<br><br>
+ <li> <a href="guidelines.html">Guidelines</a>
+<br><br>
+ <li> <a href="ref.html">Publication Procedure</a>
+</ul>
+</h3>
+
+</td></tr>
+
+</td>
+</table>
+<br>
+
+SAGE is endorsed by <a href="http://www.acm.org/sigsam/">SIGSAM</a>,
+and is primarily funded by the 
+<a href="http://www.nsf.gov/">National Science Foundation</a>, the
+<a href="http://www.math.washington.edu/">University of Washington</a>, 
+and supported by extensive 
+<a href="../ack.html">volunteer contributions</a>.
+
+</body>
+
+</html>

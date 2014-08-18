@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Download Binaries for Microsoft Windows</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="download" -->
+
+ <h1 class="narrow">Download Binaries for Microsoft Windows</h1>
+ <div class="narrow txt small">
+ Click <a href="./download.html">here for other systems</a>
+ or <a href="./download-source.html">here to download source distribution</a>.
+ </div>
+
+ <!--#set var="mirrordir" value="win/"-->
+
+ <div class="narrow large txt bluebg round">
+<!-- <a href="./bin/microsoft_windows/">Download VM-Ware Image of Sage</a> -->
+ <div class="txt border ">
+  <!--#include virtual="./inc/mirrorselector.shtml"-->
+ </div>
+ </div>
+
+ <h2 class="narrow">Usage</h2>
+   <div class="txt narrow"> To run Sage on Microsoft Windows you need
+      the following:<br>
+      <ol>
+      <li><a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a>
+      for Windows </li>
+      <li>Download the "Sage" .ova file from one of the
+      Download Mirrors</li>
+      <li>Follow these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>.</li>
+     </ol>
+      The current VirtualBox solution provides you with an encapsulated
+      and tested system. It allows to use the Sage notebook in your web
+      browser with no noticable speed loss compared to a native Linux
+      install.<br>
+      <br>
+   </div>
+   <h3 class="narrow">System requirements:</h3>
+   <div class="txt narrow">
+     <ul>
+        <li>512 MB RAM</li>
+        <li>7 GB free disk space</li>
+      </ul>
+    </div>
+ 
+<!--#include virtual="inc/download-common.shtml"-->
+ <!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

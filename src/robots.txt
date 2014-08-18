@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /inc/
+Disallow: /sandbox/
+Disallow: /SAGEbin/
+Disallow: /old/
+Disallow: /mirror/
+Disallow: /bin/
+Disallow: /src/
+Disallow: /spkg/
+Disallow: /packages/
+

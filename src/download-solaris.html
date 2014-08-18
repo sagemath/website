@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Download Binaries for Solaris</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="solaris" -->
+
+ <h1 class="narrow">Download Binaries for Solaris</h1>
+
+ <div class="narrow txt small">
+ Click <a href="./download.html">here for other systems</a>
+ or <a href="./download-source.html">here to download source distribution</a>.
+ </div>
+<!--#set var="mirrordir" value="solaris/"-->
+
+ <div class="narrow txt">
+ <!--   This is the latest version that builds on Solaris 10 (SPARC).
+   We are also working on a 64-bit port to OpenSolaris on x64. -->
+   See the 
+   <a href="http://wiki.sagemath.org/solaris-binary">Sage wiki</a>
+   for detailed and up to date instructions on installing the Solaris binaries.
+ </div>
+ 
+ <div class="txt large narrow bluebg round">
+<!--  <a href="./bin/solaris/">Download Solaris Binaries</a> -->
+ <div class="txt border ">
+<!--#if expr="$version-solaris-bin == NONE" -->
+  <strong>The current version of the Solaris build is <!--#echo var="version-solaris-bin"-->.</strong> <br/>
+<!--#endif -->
+  <!--#include virtual="./inc/mirrorselector.shtml"-->
+ </div>
+ </div>
+
+ <h2 class="narrow">Usage</h2>
+
+ <div class="txt narrow">
+The Solaris binaries are compressed and are available in two forms. If your SPARC system has the 'p7zip' command, which is standard on recent Solaris 10 releases, then it is recommended you download sage-...tar.7z as it is considerably smaller than the gzip compressed file. Otherwise you can download the .gz file, build pk7zip yourself, or install Sun patch 137477.
+
+<pre>
+$ p7zip -d sage-....tar.7z (if you used the recommended .7z file) 
+$ gzip -d sage-....tar.gz (if you downloaded the larger .gz file)
+</pre>
+
+Sun's version of tar will not extract the binaries, so use the GNU tar.
+
+<pre>
+$ /usr/sfw/bin/gtar xf sage-..tar 
+$ LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/sfw/lib 
+$ export LD_LIBRARY_PATH
+</pre>
+Change to the directory where the files were extracted, then run
+<pre>
+$ ./sage 
+</pre> 
+
+More detailed instructions can be found on the Sage Wiki at 
+<a href="http://wiki.sagemath.org/solaris-binaries">solaris-binaries</a>.
+</div>
+
+<!--
+<h2 class="narrow">Try online</h2>
+
+<div class="txt narrow">
+You can try  <a href="http://t2nb.math.washington.edu:8000/">Sage on a Sun T5240 running Solaris 10</a> online.
+This was kindly donated by Sun to the Sage project.  
+</div>
+-->
+
+ <!--#include virtual="inc/download-common.shtml"-->
+ <!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="/inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - 404 Error</title><!--#include virtual="/inc/htmlhead.shtml"-->
+ <link href="/res/sage.css"
+       type="text/css"
+       rel="stylesheet" />
+<style type="text/css">
+/*<![CDATA[*/
+ input.c1 {font-size:85%;vertical-align:middle;}
+ /*]]>*/
+</style>
+<style type="text/css">
+/*<![CDATA[*/
+#goog-wm { }
+#goog-wm h3.closest-match { }
+#goog-wm h3.closest-match a { }
+#goog-wm h3.other-things { visibility: hidden; font-size:0; height: 0;}
+#goog-wm ul li { }
+#goog-wm li.search-goog { display: block; }
+/*]]>*/
+</style>
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="/inc/header-404.shtml" -->
+ <!--#include virtual="/inc/empty-menu.shtml" -->
+
+ <h1 class="narrow">404 Error: page not found</h1>
+
+ <div class="narrow">
+  Requested page <span class="code"><!--#echo var="REQUEST_URI"--></span> could not be found.
+  <script type="text/javascript">
+//<![CDATA[
+  var GOOG_FIXURL_LANG = 'en';
+  var GOOG_FIXURL_SITE = 'http://www.sagemath.org/';
+//]]>
+</script> <script type="text/javascript"
+     src="http://linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+</script>
+
+  <ul>
+   <li><a href="http://www.sagemath.org/index.html">Sage</a></li>
+
+   <li><a href="http://www.sagemath.org/download.html">Download</a></li>
+
+   <li><a href="http://www.sagemath.org/tour.html">Tour</a></li>
+
+   <li><a href="http://www.sagemath.org/library.html">Library</a></li>
+
+   <li>
+    <form action="http://www.sagemath.org/search.html"
+          method="get">
+     <a href="/search.html">Search</a> – <input class="c1"
+           type="text"
+           name="search" /> <input value="search"
+           type="submit" />
+    </form>
+   </li>
+  </ul>
+ </div><!--#set var="track404" value="1"-->
+ <!--#include virtual="/inc/footer.shtml"-->
+</body>
+</html>

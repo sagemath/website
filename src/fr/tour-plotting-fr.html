@@ -1,0 +1,673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="fr"
+      xml:lang="fr">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - French</title><!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header-fr.shtml" -->
+
+
+
+<h1>Désignation d'une fonction</h1>
+
+<div class="bodypadding">
+  Il existe plusieurs façons de définir une fonction dans Sage. Nous allons présenter chacune d'elles et exposer les avantages et inconvénients, selon qu'il s'agit d'une fonction d'une ou plusieurs variables, et que la fonction comporte ou non des paramètres.
+ </div>
+
+<h1>Le cas particulier des fonctions usuelles</h1>
+
+
+ <table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+
+  <tbody>
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Fonctions usuelles</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>plot(atan,(-2,2))</strong>
+
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Les fonctions usuelles existent en tant qu'objet dans Sage et peuvent être utilisées sans indiquer de variable.     
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+
+  <img src="./cells/4/sage0.png" alt="Tracé de la fonction tangente, sans variable" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+</tbody>
+</table>
+
+
+<div class="bodypadding">
+  Les fonctions usuelles se notent :
+<span class="code">abs</span>,
+<span class="code">acos</span> ou <span class="code">arccos</span>,
+<span class="code">acosh</span> ou <span class="code">arccosh</span>,
+<span class="code">acot</span> ou <span class="code">arccot</span>,
+<span class="code">acoth</span> ou <span class="code">arccoth</span>,
+<span class="code">acsc</span> ou <span class="code">arccsc</span>,
+<span class="code">acsch</span> ou <span class="code">arccsch</span>,
+<span class="code">asec</span> ou <span class="code">arcsec</span>,
+<span class="code">asech</span> ou <span class="code">arcsech</span>,
+<span class="code">asin</span> ou <span class="code">arcsin</span>,
+<span class="code">asinh</span> ou <span class="code">arcsinh</span>,
+<span class="code">atan</span> ou <span class="code">arctan</span>,
+<span class="code">atanh</span> ou <span class="code">arctanh</span>,
+<span class="code">ceil</span>,
+<span class="code">cos</span>,
+<span class="code">cosh</span>,
+<span class="code">cot</span>,
+<span class="code">coth</span>,
+<span class="code">csc</span>,
+<span class="code">csch</span>,
+<span class="code">erf</span>,
+<span class="code">exp</span>,
+<span class="code">floor</span>,
+<span class="code">log</span>,
+<span class="code">sec</span>,
+<span class="code">sech</span>,
+<span class="code">sin</span>,
+<span class="code">sinh</span>,
+<span class="code">sqrt</span>,
+<span class="code">tan</span>,
+<span class="code">tanh</span>.
+ </div>
+
+
+
+
+
+<h1>Fonction d'une variable, sans paramètre</h1>
+<div class="bodypadding">
+  <em>Remarque</em> : il faut déclarer au préalable la variable utilisée.
+ </div>
+
+
+
+ <table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+
+  <tbody>
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Utilisation d'une expression pour manipuler la fonction</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('t')</strong>
+sage: <strong>f = 2^t</strong>
+sage: <strong>plot(f)</strong>
+
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      La fonction peut être utilisée comme une expression. Dans ce cas, la variable ne figure pas dans le nom de la fonction.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/0/sage0.png" alt="Fonction d'une  variable définie par une expression" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition fonctionnelle abrégée</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('x')</strong>
+sage: <strong>f(x) = x^2 - 0.5</strong>
+sage: <strong>plot(f)</strong>
+
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      La fonction peut être définie de façon implicite comme <em>application</em> en faisant figurer dans son nom la variable choisie, entre parenthèse, comme dans la notation mathématique $$ f(x) $$.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/1/sage0.png" alt="Définition fonctionnelle abrégée d'une fonction d'une variable" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition fonctionnelle explicite</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>g = lambda x: -x^2 + 0.3*cos(20*x)</strong>
+sage: <strong>plot(g)</strong>
+
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      La fonction peut être définie de façon explicite comme un objet dont l'évaluation nécessite un élément en entrée. On utilise pour cela le mot clef <span class="code">lambda</span> de Python.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/2/sage0.png" alt="Définition fonctionnelle explicite d'une fonction d'une variable" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+</tbody>
+</table>
+
+
+
+<h1>Fonction d'une variable avec paramètre</h1>
+
+
+ <table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+
+  <tbody>
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition fonctionnelle explicite</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('k, t')</strong>
+sage: <strong>f = lambda t: k^t</strong>
+sage: <strong>k = 0.5</strong>
+sage: <strong>p1 = plot(f(t), (0.2,3), rgbcolor='red')</strong>
+sage: <strong>k = 2</strong>
+sage: <strong>p2 = plot(f(t), (0.2,3), rgbcolor='purple')</strong>
+sage: <strong>show(p1 + p2)</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      C'est la méthode la moins ambiguë pour distinguer la variable du paramètre. On constate que dans notre exemple, les modifications du paramètre sont bien prises en compte.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/11/sage0.png" alt="Définition fonctionnelle explicite d'une fonction d'une variable avec paramètre" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition par une expression</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>k = 2  # DANGER</strong>
+sage: <strong>var('t')</strong>
+sage: <strong>f = k^t</strong>
+sage: <strong>k = 0.5</strong>
+sage: <strong>plot(f,(t,0.2,3))</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      C'est une définition qui comporte des risques et que nous déconseillons.<br />
+      Premier piège : le paramètre $$k$$ a déjà une valeur lors de la définition de $$f$$. Celle-ci n'est plus modifiable par la suite.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/3/sage0.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+
+<!--Un example-->
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>k = 2  # DANGER</strong>
+sage: <strong>var('t, k')</strong>
+sage: <strong>f = k^t</strong>
+sage: <strong>k = 0.5</strong>
+sage: <strong>plot(f(t),(t,0.2,3))</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Deuxième piège : bien que le paramètre $$k$$ soit explicitement déclaré comme étant une inconnue, la définition de $$f$$ ne précise pas qui de $$k$$ et de $$t$$ est la variable. Sage considère alors qu'il s'agit de la première inconnue rencontrée. De ce fait, l'expression $$f(t)$$ dans le <span class="code">plot</span> devient $$t^t$$, ce qui justifie le tracé mais surprendra certainement l'utilisateur.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/9/sage0.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+</tbody>
+</table>
+
+
+
+
+
+
+<h1>Fonction de plusieurs variables</h1>
+
+
+ <table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+
+  <tbody>
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition fonctionnelle explicite</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('u, v')</strong>
+sage: <strong>h = lambda u,v: u^2 + 2*v^2</strong>
+sage: <strong>plot3d(h, (u,-1,1), (v,-1,1))</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Cette notation généralise celle rencontrée pour une variable.<br />
+      <em>Remarque</em> : les deux variables ne doivent pas être encadrées par des parenthèses !
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/25/sage0.png" alt="" height="600" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('u, v')</strong>
+sage: <strong>h = lambda u,v: u^2 + 2*v^2</strong>
+sage: <strong>h(2,1)</strong>
+6
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      La distinction entre les deux variables est parfaite.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition fonctionnelle abrégée</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('u, v')</strong>
+sage: <strong>h(u,v) = u^2 - v^2</strong>
+sage: <strong>plot3d(h, (u,-1,1), (v,-1,1))</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Lorsque la fonction ne comporte pas de paramètres, ce mode de définition ne présente aucun danger. C'est certainement ce qui s'approche le plus des notations mathématiques standards.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/10/sage0.png" alt="" height="600" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <th colspan="2">
+     <h3>Définition par une expression</h3>
+    </th>
+   </tr>
+
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('u, v')</strong>
+sage: <strong>f1=(4+(3+cos(v))*sin(u),
+     4+(3+cos(v))*cos(u), 4+sin(v))</strong>
+sage: <strong>f2=(8+(3+cos(v))*cos(u),
+     3+sin(v), 4+(3+cos(v))*sin(u))</strong>
+sage: <strong>p1=parametric_plot3d(f1,(u,0,2*pi),(v,0,2*pi),
+     color="red", opacity=0.5, aspect_ratio=[1,1,1])</strong>
+sage: <strong>p2=parametric_plot3d(f2,(u,0,2*pi),(v,0,2*pi),
+     color="blue", opacity=0.5)</strong>
+sage: <strong>p1+p2</strong>
+</pre>
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      
+     </div>
+      Encore une fois, nous déconseillons vivement l'utilisation de ce mode de définition de fonctions.<br />
+      Parfois, l'absence de paramètre permet l'utilisation de cette notation pour les tracés de surfaces, à condition de préciser la variable affectée à chaque intervalle.
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+<!--- WIDER FOR IMAGES --->
+<tr><th colspan="2><h3>Header</h3></th></tr>
+
+<tr>
+<td class="bodypadding" colspan="2">
+
+ <div class="txt center">
+  <img src="./cells/13/sage0.png" alt="" height="600" width="600">
+</div>
+
+</td>
+</tr>
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+<!--Un example-->
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">sage: <strong>var('u, v')</strong>
+sage: <strong>f1=(4+(3+cos(v))*sin(u),
+    4+(3+cos(v))*cos(u),4+sin(v))</strong>
+sage: <strong>f1(0,0)</strong></pre>
+Traceback (most recent call last):
+  File "&lt;stdin&gt;", line 1, in &lt;module&gt;
+  File "/home/phil/.sage/sage_notebook/worksheets/admin/30/code/36.py", line 8, in &lt;module&gt;
+    exec compile(ur'f1(Integer(0),Integer(0))' + '\n', '', 'single')
+  File "/donnees/SAGE-MATH/sage-3.1.1-debian32-intel-i686-Linux/local/lib/python2.5/site-packages/sympy/thirdparty/pyglet/", line 1, in &lt;module&gt;
+    
+TypeError: 'tuple' object is not callable
+
+
+    </td>
+
+    <td class="rightpadding">
+     <div class="justify txt">
+      Mais il devient impossible de distinguer une variable d'une autre et, à cause de cette ambiguïté, certains calculs simples sont interdits.
+     </div>
+
+    </td>
+   </tr>
+<!--Fin de l'exemple-->
+
+
+<!-- UNTIL HERE -->
+
+
+
+
+
+
+
+
+
+</tbody>
+</table>
+
+
+ <!--#include virtual="inc/footer.shtml"-->
+
+
+</body></html>

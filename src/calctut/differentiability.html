@@ -1,0 +1,319 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - Differentiability</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>Differentiability</h1>
+  <p>
+  So far we have looked at derivatives outside of the notion of differentiability.
+  The problem with this approach, though, is that some functions have one or many
+  points or intervals where their derivatives are undefined. A function f is 
+  <strong>differentiable</strong> at a point c if
+  </p>
+  <div class="proof">
+  <img class="vmiddle" src="calctut-pix/differentiability01.png" /> exists.
+  </div>
+  <p>
+  Similarly, f is differentiable on an open interval (a, b) if
+  </p>
+  <div class="proof">
+  <img class="vmiddle" src="calctut-pix/differentiability01.png" /> exists for every c in (a, b).
+  </div>
+  <p>
+  Basically, f is differentiable at c if f'(c) is defined, by the above definition.
+  Another point of note is that if f is differentiable at c, then f is continuous
+  at c.
+  </p>
+  <p>
+  Let's go through a few examples and discuss their differentiability. First,
+  consider the following function.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability02.png" />
+  </div>
+<pre class="tutcode">
+plot(1/x^2, x, -5, 5).show(ymin=0, ymax=10)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  To find the limit of the function's slope when the change in x is 0, we can
+  either use the true definition of the derivative and do
+  </p>
+<pre class="tutcode">
+def f(x):
+    return 1/x^2
+
+var('h')
+((f(x+h)-f(x))/h).rational_simplify().subs(h=0)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  or we can simply use the rules of differentiation by calling 'derivative(1/x^2, x)'.
+  In any case, we find that
+  <div class="proof">
+  <img src="calctut-pix/differentiability03.png" />
+  </div>
+  <p>
+  Since f'(x) is undefined when x = 0 (-2/0<sup>2</sup> = ?), we say that f is
+  not differentiable at x = 0. Since f'(x) is defined for every other x, we can
+  say that f' is continuous on (-&infin;, 0) U (0, &infin;), where "U" denotes
+  the union of two intervals.
+  </p>
+  <p>
+  How about a function that is everywhere continuous but <em>is not</em> everywhere
+  differentiable? This occurs quite often with piecewise functions, since even
+  though two intervals might be connected, the slope can change radically at their
+  junction. Take a look at the function g(x) = |x|.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability04.png" />
+  </div>
+<pre class="tutcode">
+plot(abs(x), x, -5, 5)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+  1) Plot the absolute value of x from -5 to 5.
+  </p>
+  <p>
+  Using our knowledge of what "absolute value" means, we can rewrite g(x) in the
+  expanded form
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability05.png" />
+  </div>
+  <p>
+  This should be easy to differentiate now; we get
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability06.png" />
+  </div>
+  <p>
+  What about at x = 0? The "logical" response would be to see that g(0) = 0 and
+  say that g'(0) must therefore equal 0. Careful, though...looking back at the
+  limit definition of the derivative, the derivative of f at a point c is the
+  <em>limit</em> of the slope of f as the change in its independent variable
+  approaches 0. Really, the only relevant piece of information is the behavior of
+  function's slope <em>close to c</em>. Referring back to the example, since the
+  limit of g'(x) as x approaches 0 from the left &ne; the limit of g'(x) as x
+  approaches 0 from the right, g'(0) does not exist. We can use the limit definition
+  of the derivative to prove this:
+  </p>
+  <div class="proof" style="line-height:500%">
+  <img class="vmiddle" src="calctut-pix/differentiability07.png" />
+  <img class="vmiddle" src="calctut-pix/differentiability08.png" />
+  <img class="vmiddle" src="calctut-pix/differentiability09.png" />
+  <img class="vmiddle" src="calctut-pix/differentiability10.png" />,&nbsp;
+  so&nbsp;<img class="vmiddle" src="calctut-pix/differentiability11.png" />,&nbsp;
+  which is undefined.
+  </div>
+  <p>
+  In this form, it makes far more sense why g'(0) is undefined. By simply looking
+  at the graph of g, too, one can see that the sudden "twist" at x = 0 is responsible
+  for our inability to evaluate g' there. We can now justly pronounce that g
+  is differentiable on (-&infin;, 0) U (0, &infin;), so g' is continuous on that
+  same interval.
+  </p>
+  <p>
+  The third function of discussion has a couple of quirks--take a look.
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability12.png" />
+  </div>
+<pre class="tutcode">
+p = plot(sqrt(x-2), x, 2, 5)
+pt1 = point((3, 1), rgbcolor="white", pointsize=30, faceted=True)
+pt2 = point((3, 2), rgbcolor="black", pointsize=30)
+l = line([(3, 1), (3, 2)], linestyle="--")
+(p+pt1+pt2+l).show(xmin=0)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  Not only is v(t) defined solely on [2, &infin;), it has a jump discontinuity
+  at t = 3. The jump discontinuity causes v'(t) to be undefined at t = 3; do you
+  see why? Using a slightly modified limit definition of the derivative, think of
+  what
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability13.png" />
+  </div>
+  <p>
+  would be for c = 3 and some x very close to 3. The resulting slope would be
+  astronomically large either negatively or positively, right? In fact, the dashed
+  line connecting v(t) for t &ne; 3 and v(3) is what the tangent line will look
+  like at that point. Since a function's derivative cannot be infinitely large
+  and still be considered to "exist" at that point, v is not differentiable at t=3.
+  </p>
+  <h2>The Mean Value Theorem</h2>
+  <p>
+  The Mean Value Theorem is very important for the discussion of derivatives; even
+  though it might seem somewhat obvious, it is actually very important to many
+  other concepts in calculus. We'll start with an example.
+  </p>
+  <p>
+  Consider the vast, seemingly endless state of Montana. Now, pretend that you
+  are driving across Montana so that you can get to Washington, and you want to
+  do so as quickly as possible. The problem, however, is that the signs posted
+  every few miles explicitly state that the speed limit is 70 miles per hour.
+  "Oh well," you tell yourself. "When I'm on the open road, I will go as fast as
+  I want. When I approach a town, though, I will slow down so that the police are
+  none the wiser."
+  </p>
+  <p>
+  Since you had been staying with some relatives in the town of Springdale, you
+  first head east at the brisk pace of 90 miles per hour until, feeling your stomach
+  rumble (you really aren't cut out for these long drives), you stop in Livingston
+  for some lunch. When you arrive, however, a policeman signals you to pull over!
+  "What did I do wrong?" you sweetly ask the officer. Giving you a hard look, the
+  policeman responds, "Though I didn't <em>actually</em> see you speeding at any
+  point on your way here, I know that you must have, since one of my buddies back
+  in Livingston tells me that you left there only 10 minutes ago, and our two towns
+  are about 15 miles apart. I won't cite you for it this time, but you'd better
+  drive slower in the future."
+  </p>
+  <p>
+  The question is: How did the policeman know you had been speeding? Well, since
+  it took you 10 minutes to travel 15 miles, your average speed was 90 miles per
+  hour. So either you traveled at exactly 90 miles per hour the entire time, or
+  you traveled at more than 90 part of the way and less than ninety part of the
+  way. In either case, you were going faster than the speed limit at some point
+  in time.
+  </p>
+  <p>
+  The <strong>Mean Value Theorem</strong> has a very similar message: if a function
+  f is continuous on the closed interval [a, b] and is differentiable on the open
+  interval (a, b), then there is some c in (a, b) such that
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability14.png" />
+  </div>
+  <p>
+  Basically, the average slope of f between a and b will equal the actual slope
+  of f at some point between a and b. To illustrate the Mean Value Theorem,
+  consider the function f(x) = x*sin(x) for x in [0, 9&pi;/2]. Assume that f is
+  differentiable on (0, 9&pi;/2) (it is) and continuous on [0, 9&pi;/2] (it is).
+  By the Mean Value Theorem, there is at least one c in (0, 9&pi;/2) such that
+  </p>
+  <div class="proof">
+  <img src="calctut-pix/differentiability15.png" />.
+  </div>
+  <p>
+  And such a c does exist, in fact. You can use Sage's solve function to verify
+  this:
+<pre class="tutcode">
+solve(derivative(x*sin(x), x) == 0, x)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  From the code's output, you can see that this is true whenever -sin(x)/cos(x)
+  is 0. Thus c = 0, &pi;, 2&pi;, 3&pi;, and 4&pi;, so the Mean Value Theorem is
+  satisfied for f on the interval [0, 9&pi;/2].
+  </p>
+  <h2>Rolle's Theorem</h2>
+  <p>
+  <strong>Rolle's Theorem</strong> states that if a function g is differentiable
+  on (a, b), continuous [a, b], and g(a) = g(b), then there is at least one number
+  c in (a, b) such that g'(c) = 0. To see this, consider the everywhere differentiable
+  and everywhere continuous function g(x) = (x-3)*(x+2)*(x^2+4). To prove that
+  g' has at least one zero for x in (-&infin;, &infin;), notice that g(3) = g(-2)
+  = 0. By Rolle's Theorem, there must be at least one c in (-2, 3) such that g'(c)
+  = 0.
+  </p>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Determine the interval(s) on which the following functions are continuous and
+  the interval(s) on which they are differentiable.
+  <br />
+  1) <img class="vmiddle qimg" src="calctut-pix/differentiability16.png" />
+  <br />
+  <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'f is continuous on (-&infin;, &infin;) and is differentiable on (-&infin;, 3) U (3, &infin;).');">Toggle answer</a>
+<pre class="tutcode">
+plot((x-3)^(1/3)+3, x, 3, 6) + plot(-(-x+3)^(1/3)+3, x, 0, 3)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(2);">Toggle Explanation</a>  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain2">
+  1) Taking the cube root (or any odd root) of a negative number does not work
+  well in Python, so one has to use multiple plot commands for functions such as
+  x^(1/3) to compensate for the intervals on which x is negative.
+  </p>
+  <br />
+  2) <img class="vmiddle qimg" src="calctut-pix/differentiability17.png" />
+  <br />
+  Hint: so both pieces of f match at &pi;/2? Do the derivatives of the two pieces match there?
+  <br />
+  <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'f is continuous on [0, &pi;] and is differentiable on (0, &pi;/2) U (&pi/2, &pi;).');">Toggle answer</a>
+<pre class="tutcode">
+plot(sin(x), x, 0, pi/2)+plot(cos(2*x)+2, x, pi/2, pi)
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <br />
+  3) <img class="vmiddle qimg" src="calctut-pix/differentiability18.png" />
+  <br />
+  <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'h is neither continuous nor differentiable at 1, since both require that an open interval about the point in question be defined.');">Toggle answer</a>
+<pre class="tutcode">
+point((1, ln(1)+2), rgbcolor='black').show()
+</pre>
+  <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <br />
+  <hr />
+  Use the Mean Value Theorem to answer the following questions.
+  <br />
+  <br />
+  4) Marvin claims that he is a speed-walker and that he always walks at 6 miles per
+  hour. He tells you that it took him only 12 minutes to walk one mile this morning.
+  Prove that Marvin was not actually speed-walking at some point during his walk.
+  <br />
+  <a id="answer4" href="javascript:void(0);" onclick="calctut.ansToggle(4, 'By the Mean Value Theorem, there was some point during Marvin\'s walk at which he was moving (1 - 0)/(12/60 - 0) = 5 miles per hour, so he did not actually speed-walk the entire time.');">Toggle answer</a>
+  <br />
+  <br />
+  5) Jessica plays for a recreational basketball team, and has noticed an interesting
+  trend: the number of points she scores each game has increased linearly for the
+  first five games of the season. If she scored 10 points in the first game, must
+  there be some game of the last five in which she scored 14 points?
+  <br />
+  <a id="answer5" href="javascript:void(0);" onclick="calctut.ansToggle(5, 'To apply the Mean Value Theorem to a function, the function must be both continuous and differentiable on an interval. The function that models Jessica\'s points per game (its exact definition is unknown) does not necessarily include the number 14, since it could increase at a rate of 3 points per game, 5 points per game, etc. and therefore not pass through 14.');">Toggle answer</a>
+  <br />
+  <br />
+  6) Suppose that f'(x) &lt; 1 for x in (0, 4). If f(0) = 1, can f(4) = 5?
+  <br />
+  <a id="answer6" href="javascript:void(0);" onclick="calctut.ansToggle(6, 'By the Mean Value Theorem, there exists a c in (0, 4) such that (f(4)-f(0))/(4-0) = f\'(c). Thus f(4)-f(0) = f\'(c)*4, 5-1 = f\'(c)*4, and 0 = f\'(c). Since f\'(c) is necessarily less than 1, the statement does not hold and therefore f(4) cannot equal 5.');">Toggle answer</a>
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+ 
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

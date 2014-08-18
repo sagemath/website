@@ -1,0 +1,309 @@
+{
+"Taylor Series" : {
+  "cat"   : [ "Calculus", "Basics" ],
+  "descr" : "Interactive Taylor Series",
+  "code": [
+    "var('x')",
+    "x0  = 0",
+    "f   = sin(x)*e^(-x)",
+    "p   = plot(f,-1,5, thickness=2)",
+    "dot = point((x0,f(x=x0)),pointsize=80,rgbcolor=(1,0,0))",
+    "@interact",
+    "def _(order=(1..12)):",
+    "  ft = f.taylor(x,x0,order)",
+    "  pt = plot(ft,-1, 5, color='green', thickness=2)",
+    "  html('$f(x)\\;=\\;%s$'%latex(f))",
+    "  html('$\\hat{f}(x;%s)\\;=\\;%s+\\mathcal{O}(x^{%s})$'%(x0,latex(ft),order+1))",
+    "  show(dot + p + pt, ymin = -.5, ymax = 1)"
+    ]
+ },
+
+"Integral" : {
+  "cat" : ["Calculus", "Basics"],
+  "descr" : "Integration example",
+  "code" : [ 
+    "f = sin(2*x)*(x+cos(x))",
+    "g = integrate(f, x)",
+    "html('$f(x) = %s$' % latex(f))",
+    "print",
+    "html('$\\int f(x) d\\mathrm{x} = %s$' % latex(g))",
+    "",
+    "iv = (-2*pi,4*pi)",
+    "p1 = plot(f, x, iv)",
+    "p2 = plot(g, x, iv, color='red')",
+    "show(p1+p2)"
+  ]
+},
+
+"Differential" : {
+  "cat" : ["Calculus", "Basics"],
+  "descr" : "differentiation",
+  "code" : [ 
+    "f = sin(2*x)*(x+cos(x))",
+    "g = diff(f, x)",
+    "html('$f(x) = %s$' % latex(f))",
+    "print",
+    "html('$\\\\frac{\\partial}{\\partial x} f(x) = %s$' % latex(g))",
+    "",
+    "iv = (-2*pi,4*pi)",
+    "p1 = plot(f, x, iv)",
+    "p2 = plot(g, x, iv, color='red')",
+    "show(p1+p2)"
+  ]
+},
+
+"RPy2" : {
+  "cat" : [ "Statistics", "R" ],
+  "descr":"Just a generic rpy2 test, see <a href='http://rpy.sourceforge.net/'>RPy2</a>",
+  "code" : [
+    "import rpy2.robjects as robjects",
+    "r = robjects.r",
+    "ctl = robjects.FloatVector([4.17,5.58,5.18,6.11,4.50,4.61,5.17,4.53,5.33,5.14])",
+    "trt = robjects.FloatVector([4.81,4.17,4.41,3.59,5.87,3.83,6.03,4.89,4.32,4.69])",
+    "group = r.gl(2r, 10r, 20r, labels = ['Ctl','Trt'])",
+    "weight = ctl + trt",
+    "robjects.globalEnv['weight'] = weight",
+    "robjects.globalEnv['group'] = group",
+    "lm_D9 = r.lm('weight ~ group')",
+    "print r.anova(lm_D9)",
+    "print",
+    "print lm_D9.r['fitted.values']"
+  ]
+ }, 
+
+"Normal Subgroup?" : {
+  "cat" : [ "Algebra", "Groups" ],
+  "descr" : "Checking normality (<a href='http://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups'>read more here</a>)",
+  "code" : [
+   "# see http://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups",
+   "A4 = AlternatingGroup(4)",
+   "print A4",
+   "print 'Elements of A4:'",
+   "print A4.list()",
+   "r1 = A4('(1,2) (3,4)')",
+   "r2 = A4('(1,3) (2,4)')",
+   "r3 = A4('(1,4) (2,3)')",
+   "H = A4.subgroup([r1, r2, r3])",
+   "print H",
+   "print 'Elements of H:'", 
+   "print H.list()",
+   "H.is_normal(A4)"
+  ]
+ },
+
+"Wheel Graph" : {
+ "cat" : [ "Graph Theory", "Graph" ],
+ "descr" : "Order of a modified Wheel-Graph and neighbors of a vertex.",
+ "code" : [
+   "N = 20",
+   "G = graphs.WheelGraph(N)",
+   "for idx, i in enumerate(range(0, N, 2)):",
+   "  G.add_edge(idx + 1, i)",
+   "print 'order:', G.order()",
+   "ngbs = sorted(G.neighbors(N-1))",
+   "print 'neighbors of %d: %s' % (N-1, ngbs)",
+   "G.show()"
+ ]
+},
+"Density Plot" : {
+  "cat" : [ "Graphics", "Plot 2D" ],
+  "descr" : "This is a density plot.",
+  "code" : [
+    "var('x, y')",
+    "f = sin(x^2 + y^2) * cos(x+y^2) * sin(y)",
+    "p = density_plot(f, (x, -4, 4), (y, -4, 4), cmap='jet', plot_points=100)",
+    "p.show(figsize=(6,6), frame=True)"
+  ]
+},
+"Induced Subgraph": {
+  "cat" : [ "Graph Theory", "Interact" ],
+  "descr" : "by Jason Grout",
+  "code" : [
+    "m=random_matrix(ZZ,10,density=.5)",
+    "a=DiGraph(m) ",
+    "",
+    "@interact",
+    "def show_subgraph(to_delete=selector(range(10),buttons=True)):",
+    "    vertices=set(range(10))",
+    "    subgraph_vertices=vertices.difference([to_delete])",
+    "    plot(a,save_pos=True,aspect_ratio=1).show(figsize=[3,3])",
+    "    plot(a.subgraph(subgraph_vertices),aspect_ratio=1).show(figsize=[3,3])"
+  ]
+},
+"Mandelbrot" : {
+ "cat" : [ "Graphics", "Fractals" ],
+ "descr" : "This is an interactive complex plot of the mandelbrot fractal. Make sure to play around with the first slider 'expo'!",
+ "code" : [
+   "@interact",
+   "def mandel_plot(expo = slider(-10,10,0.1,2), \\",
+   "      formula = ['mandel','ff'],\\",
+   "      iterations=slider(1,100,1,30), \\",
+   "      zoom_x = range_slider(-2,2,0.01,(-2,1)), \\",
+   "      zoom_y = range_slider(-2,2,0.01,(-1.5,1.5))):",
+   "    var('z c')",
+   "    f(z,c) = z^expo + c",
+   "    ff_m = fast_callable(f, vars=[z,c], domain=CDF)",
+   "    ",
+   "    # fast_callable",
+   "    for i in range(int(iterations)/3):",
+   "        f(z,c) = f(z,c)^expo+c",
+   "    ff = fast_callable(f, vars=[z,c], domain=CDF)    ",
+   "    ",
+   "    def mandel(z):",
+   "      c = z",
+   "      for i in range(iterations):",
+   "         z = ff_m(z,c)",
+   "         if abs(z) > 2:",
+   "            return z",
+   "      return z",
+   "    print 'z <- z^%s + c' % expo",
+   "    ",
+   "    # calling ff three times, otherwise it fast_callable exceeds a recursion limit",
+   "    if formula is 'ff':",
+   "     func = lambda z: ff(ff(ff(z,z),z),z)",
+   "    elif formula is 'mandel':",
+   "     func = mandel     ",
+   "     ",
+   "    p=complex_plot(func, zoom_x,zoom_y, plot_points=200, dpi=100)",
+   "    p.show(frame=True, aspect_ratio=1)"
+ ]
+},
+
+"Permutation Group" : {
+ "cat" : ["Algebra" , "Groups" ],
+ "descr" : "<a href='http://sagemath.org/doc/reference/sage/groups/perm_gps/permgroup.html'>see documentation</a>",
+ "code" : [
+   "G = PermutationGroup([[(1,5,7),(3,2)], [(1,3,5)]])",
+   "html('<h3>Elements of %s</h3>' % G)",
+   "html('%s' % G.list())",
+   "",
+   "html('<h3>Properties and more</h3>')",
+   "print 'order:', G.order()",
+   "print 'degree:', G.degree()",
+   "print 'center:', G.center()",
+   "print 'non-fixed points:', G.non_fixed_points()",
+   "",
+   "n = G([(2,5)])",
+   "html( '<h3>Normalizer of %s in G:</h3>'%n)",
+   "print G.normalizer(n)",
+   "",
+   "html('<h3>Character Table</h3>')",
+   "print G.character_table()"
+ ]
+},
+
+"Polynomial Ring" : {
+  "cat" : ["Algebra", "Polynomials" ],
+  "descr" : "Just some examples of <a href='http://sagemath.org/doc/reference/sage/rings/polynomial/multi_polynomial_ring_generic.html'>this</a>",
+  "code": [
+   "P = PolynomialRing(RDF, 'x')",
+   "x = P.gen(0)",
+   "p1 = 2*x+x^2-1",
+   "print p1, 'evaluated at x=1.:', p1.subs({x : 1.})",
+   "",
+   "P2.<x> = PolynomialRing(GF(2))",
+   "print '3*x^2+2*x+1 in GF(2) =', 3*x^2+2*x+1",
+   "print 'P2.characteristic() = ', P2.characteristic()",
+   "",
+   "P3 = P2.change_ring(ZZ)",
+   "y = P3.gen(0)",
+   "p3 = 3*y^2+2*y+1",
+   "print 'in ZZ:', p3",
+   "",
+   "print 'p1(p3) =', p1(p3) "
+  ]
+},
+"Infinite Polynomial Ring" : {
+  "cat" : ["Algebra", "Polynomials" ],
+  "descr" : "<a href='http://sagemath.org/doc/reference/polynomial_rings_infinite.html'>see documentation</a>",
+  "code" : [
+   "A.<alpha,beta> = InfinitePolynomialRing(QQ,implementation='sparse')",
+   "print A",
+   "p1 = 2*alpha[3]-3*alpha[11]*beta[1]^2",
+   "p2 = beta[11]^4+1",
+   "print 'p1:', p1",
+   "print 'p2:', p2",
+   "print 'p1+p2 =', p1+p2",
+   "print 'p1*p2 =', p1*p2",
+   "print 'p1*alpha[11]^(-1) = ', p1 * alpha[11]^(-1)"
+  ]
+},
+
+"Points on an Elliptic Curve" : {
+ "cat" : ["Algebra", "Elliptic Curves"],
+ "descr" : "see <a href='http://sagemath.org/doc/reference/sage/schemes/elliptic_curves/ell_point.html'>documentation</a>",
+ "code" :[
+   "R.<x> = GF(101^3)",
+   "E = EllipticCurve(R, [1,0,3,-1,1])",
+   "print E",
+   "print E.cardinality()",
+   "print 'point with x=1:', E.lift_x(1)",
+   "print 'on E?', E(1,43,1) in E"
+ ]
+},
+
+"Plot Elliptic Curve" : {
+ "cat" : ["Algebra", "Elliptic Curves"],
+ "descr" : "",
+ "code" : [
+   "E = EllipticCurve(RDF, [-2,2,0,-1,0])",
+   "print E",
+   "@interact",
+   "def _(x=slider(-3,2,0.1,1)):",
+   "  x1 = E.lift_x(x)",
+   "  print 'point at x=%.2f:'%x, x1",
+   "  p1 = E.plot()",
+   "  p2 = point2d(x1.xy(), color='red', size=30)",
+   "  show(p1+p2)"
+ ]
+},
+
+"Point Separation" : {
+ "cat" : [ "Numerics" , "Optimization" ],
+ "descr" : "This linear program separates a number of points with a polynomial of given degree",
+ "code" : [
+   "'''",
+   "This linear program separates a set of n",
+   "points with a polynomial of degree 'degree'.",
+   "'''",
+   "",
+   "def random_points(n=5):",
+   "  '''",
+   "  generate some random points",
+   "  '''",
+   "  greens = [(6*random(), 2*random()) for i in range(n)]",
+   "  reds  = [(6*random(), 2*random() + 4) for i in range(n)]",
+   "  return greens, reds",
+   "",
+   "var('t')",
+   "greens, reds = random_points()",
+   "",
+   "@interact",
+   "def LinProg(degree = slider(1,10,1,3,label='Degree of Poly')):",
+   "   separa = MixedIntegerLinearProgram()",
+   "   delta  = separa.new_variable()",
+   "   ap     = separa.new_variable()",
+   "   an     = separa.new_variable()",
+   "   separa.set_objective(delta[0])",
+   "   J = range(1,degree +1)",
+   "   for red in reds:",
+   "       l = [ (ap[j]-an[j])*(red[0])^j for j in J]",
+   "       separa.add_constraint(ap[0]-an[0] + sum(l) + delta[0], max = red[1])",
+   "   for green in greens:",
+   "       l = [ (ap[j]-an[j])*green[0]^j for j in J]",
+   "       separa.add_constraint(ap[0]-an[0] + sum(l) - delta[0], min = green[1])",
+   "   plt = point(greens,color='green') + point(reds,color='red')",
+   "   try:",
+   "       separa.solve()",
+   "       vals = separa.get_values",
+   "       curvaSep = sum([(vals(ap)[i]-vals(an)[i])*t^i for i in range(degree+1)] )",
+   "       html('$p(t)=%s$' % latex(curvaSep.expand()))",
+   "       plt += plot(curvaSep,0,6)",
+   "   except:",
+   "       html('''<span style='color: red; font-weight: bold'>",
+   "             There seems to be no polynomial of degree %d that separates these points.",
+   "             </span>''' % degree)",
+   "   plt.show(ymax=6,ymin=-4,figsize=[4,4])"
+ ]
+}
+}

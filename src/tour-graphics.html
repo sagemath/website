@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Tour - Graphics</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="graphics" -->
+
+ <h1 class="narrow">Sage Plotting and Graphics</h1>
+
+<div class="txt narrow justify">
+Sage has a wide range of capabilities for visualizing mathematics. It can
+produce 
+<a href="./doc/reference/plotting/">2-D</a>
+as well as 
+<a href="./doc/reference/plot3d/">3-D</a>
+graphics, and even 
+<a href="./doc/reference/sage/plot/animate.html">
+animated plots</a>. The wiki contains some 
+<a href="http://wiki.sagemath.org/pics">examples of images</a>
+that can be drawn using Sage.
+</div>
+
+ <h2 class="narrow">Interact</h2>
+
+ <div class="txt narrow justify">
+  <em>Interact</em> provides an interactive tool to dynamically visualize the impact of parameters
+  on calculations. This is done in a very general way using the basic functionality of Python.
+  Therefore nearly every possible dependency could be shown. The following animation shows a slider
+  on top, which can be dragged in the real case - the plot is then updated accordingly. - <a href=
+  "http://wiki.sagemath.org/interact"
+       target="_blank">see the wiki for more examples</a>
+ </div>
+
+ <div class="txt center">
+  <a href="http://wiki.sagemath.org/interact#head-1f5673c4b3c918cc4e08755a4fed9a9c54ceb266"
+       target="_blank"><img src="./pix/interact_ani_sage.gif"
+       alt="interact animation in Sage"
+       height="501"
+       width="700" /></a>
+ </div>
+
+ <h2 class="narrow">Regions Plot / Contours</h2>
+
+ <div class="txt narrow justify">
+  A <em>Region Plot</em> draws those regions, where the given equality, inequality or set of them is true.
+ </div>
+
+ <div class="txt center">
+$$\huge{\frac{sin(x^2 + y^2)}{(1+y+x y)} > 0}$$
+</div>
+ <div class="txt center">
+<img src="./pix/graphics-region_plot.png" alt="Sage Regions Plot" />
+</div>
+<div class="narrow txt">
+<pre class="code">
+sage: var('x y')
+sage: region_plot(sin(x^2 + y^2)/(1+y+x*y) > 0, (-5,5), (-5,5), ...
+      incol='#ffff7f', outcol='#7f7fff', bordercol='black', ...
+      plot_points=300).show(aspect_ratio=1) 
+</pre>
+</div>
+
+
+<h2 class="narrow">Density Plot</h2>
+
+<div class="txt narrow justify">
+<em>Density Plot</em> of a two dimensional function.
+</div>
+
+<div class="txt center">
+$$\large{sin(x^2 + y^2) * cos(x+y^2) * sin(y)}$$
+</div>
+<div class="txt center">
+<img src="./pix/graphics-density_plot.png" alt="Sage Density Plot" />
+</div>
+<div class="narrow txt">
+<pre class="code">
+sage: density_plot(sin(x^2 + y^2) * cos(x+y^2) * sin(y), (-4, 4), (-4, 4), ...
+      cmap='jet', plot_points=100).show(figsize=(6,6), frame=True)
+</pre>
+</div>
+
+<h2 class="narrow">Filled Plots</h2>
+
+<div class="txt narrow justify">
+A <em>Filled Plot</em> visualizing approximations of $$\large{f(x) = \frac{1}{1 + 25 x^2}}$$.
+</div>
+
+<div class="txt center"><img src="./pix/graphics-runge.png" alt="Sage Filled Plot"/></div>
+
+<div class="txt narrow">
+<pre class="code">
+sage: def f(x):
+....:    return RDF(1 / (1 + 25 * x^2))
+....: 
+sage: def runge():
+....:       g = plot(f, -1, 1, rgbcolor='red', thickness=1)
+....:     polynom = []
+....:     for i, n in enumerate([6, 8, 10, 12]):
+....:       data = [(x, f(x)) for x in xsrange(-1, 1, 2 / (n - 1), ...
+                include_endpoint=True)]
+....:       polynom.append(maxima.lagrange(data).sage())
+....:       g += list_plot(data, rgbcolor='black', pointsize=5)
+....:     g += plot(polynom, -1, 1, fill=f, fillalpha=0.2, thickness=0)
+....:     return g
+....: 
+sage: runge().show(ymin=0, ymax=1, figsize=(6,4))
+</pre>
+</div>
+
+
+
+<h2 class="narrow">Multiedge Graph</h2>
+
+<div class="txt narrow justify">
+A <em>Multiedge Graph</em> visualizing all pairs of characters in the sentence "I am a cool multiedge graph with loops".
+</div>
+
+<div class="txt center"><img src="./pix/graphics-multiedge.png" alt="Sage Multiedge Graph"/></div>
+
+<div class="txt narrow">
+<pre class="code">
+sage: stnc = 'I am a cool multiedge graph with loops'
+sage: g = DiGraph({}, loops=True, multiedges=True)
+sage: for a,b in [(stnc[i], stnc[i+1]) for i in xrange(len(stnc)-1)]:
+....:    g.add_edge(a, b, b)
+sage: g.plot(color_by_label=True, edge_style='solid').show(figsize=(8,8))
+</pre></div>
+
+<!--
+ <h2 class="narrow">GFan Grobner Basis</h2>
+
+ <div class="txt narrow justify">
+  <em>GFan</em> ...
+ </div>
+
+ <div class="txt center"><img src="./pix/plot-gfan.png" alt="Sage GFan Plot"
+      height="500"
+      width="700" /></div>
+-->
+
+ <div class="txt"></div>
+
+ <div class="narrow center txt">
+<a href="http://wiki.sagemath.org/interact">Interactive Graphics</a>  &middot;  
+  <a href="./tour-research.html">Tour Research</a>  &middot;  <a href="./tour-quickstart.html">Tour
+  Quickstart</a>
+</div>
+<!--#include virtual="inc/footer.shtml"    -->
+</body>
+</html>

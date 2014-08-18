@@ -1,0 +1,130 @@
+#calctut {
+line-height:150%;
+text-align:justify;
+}
+
+.narrow {
+width:90%;
+}
+
+/* An element not to be resized should apply a second class
+ * or style so as to override this font-size. Not specifying
+ * a size will make the element resize with its container.
+ */
+.noresize {
+font-size:11pt;
+}
+
+#header-title {
+font-size:36pt;
+margin-left:10px;
+color:blue;
+}
+
+#navbar {
+border:0px;
+margin:0px;
+}
+
+#controlpanel {
+width:100%;
+}
+
+#controlpanel td {
+border-bottom:1px solid #7F7FFF;
+margin: 0px 0 5px 0;
+}
+
+.tdzoom {
+padding-left:20px;
+}
+
+#calctut h1 {
+font-size:18pt;
+font-weight:bold;
+border:0px;
+padding-left:0px;
+}
+
+#calctut h2 {
+font-size:16pt;
+font-weight:bold;
+border:0px;
+padding-left:0px;
+}
+
+#calctut pre.tutcode {
+border:1px solid;
+background-color:rgb(230, 230, 230);
+padding:5px;
+line-height:130%;
+}
+
+#calctut p.tutexplain {
+padding:5px;
+border:1px dashed gray;
+}
+
+#calctut a.tuttoggle, a.lines {
+margin-left:30px;
+}
+
+#calctut span.subtitle {
+font-weight:bold;
+font-size:16pt;
+}
+
+#calctut ul {
+list-style-type:circle;
+}
+
+.proof {
+text-align:left;
+padding-left:30px;
+font-style:italic;
+line-height:300%;
+}
+
+.rule {
+border:2px solid rgb(50, 50, 50);
+margin-bottom:4px;
+}
+
+.rule h3 {
+font-style:normal;
+margin-top:10px;
+margin-bottom:10px;
+}
+
+.vmiddle {
+vertical-align:middle;
+}
+
+.vtop {
+vertical-align:top;
+}
+
+.qimg {
+margin-bottom:10px;
+margin-top:10px;
+}
+
+#practice {
+margin-bottom:10px;
+}
+
+#practice a {
+font-size:11pt;
+}
+
+#bottomnav {
+margin-left:auto;
+margin-right:auto;
+width:100%;
+}
+
+#bottomnav td {
+width:50%;
+text-align:center;
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - One-Sided Limits</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>One-Sided Limits</h1>
+  <p>
+  Our topic of discussion in this section is <strong>one-sided limits</strong>,
+  which builds upon the preceding lesson on continuity. Create a new worksheet
+  called 03-One-Sided Limits. The basis of one-sided limits is that when a function
+  jumps suddenly from one value to another, it often is not possible to describe
+  the function's behavior with a single limit. What we can do, though, is to
+  describe the function's behavior <em>from the right</em> and <em>from the left</em>
+  using two limits. Consider the following graph, the code of which is provided:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/onesided01.png" />
+  </div>
+<pre class="tutcode">
+p1 = plot(-x^2+6, x, 0, 2)
+p2 = plot(x-1, x, 2, 4)
+pt1 = point((0, 6), rgbcolor='black', pointsize=30)
+pt2 = point((2, 2), rgbcolor='white', pointsize=30, faceted=True)
+pt3 = point((2, 1), rgbcolor='black', pointsize=30)
+pt4 = point((4, 3), rgbcolor='black', pointsize=30)
+(p1+p2+pt1+pt2+pt3+pt4).show(xmin=0, xmax=4, ymin=0, ymax=6)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+  1-2) Plot -x<sup>2</sup>+6 from 0 to 2, x-1 from 2 to 4<br />
+  3-6) Create three closed points, one open<br />
+  7) Combine the plots and points, then show the result with the given x and y boundaries
+  </p>
+  <p>
+  The above function has a discontinuity at x=2, and since the two pieces of the
+  function approach different values:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/onesided02.png" class="vmiddle" /> is undefined.
+  </div>
+  <p>
+  You probably see where this is going. What we <em>can</em> say that the limit of
+  f(x) as x approaches 2 from the left is 2, and the limit of f(x) as x approaches
+  2 from the right is 1. If you were to write this, it would look like:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/onesided03.png" class="vmiddle" /> and <img src="pix-calctut/onesided04.png" class="vmiddle" />
+  </div>
+  <p>
+  The minus sign indicates "from the left", and the plus sign indicates "from the
+  right". Since the limit of f(x) as x approaches 2 from the right is equal to f(2),
+  f(x) is said to be <em>continuous from the right at 2</em>. The limit of f(x)
+  as x approaches 2 from the left does not equal f(2), however, so f(x) is not
+  continuous from the left at 2.
+  </p>
+  <p>
+  One-sided limits are usually fairly straightforward. However, be aware
+  that when a function approaches a <strong>vertical asymptote</strong>, such as
+  at x=0 in the following graph, you would describe the limit of the function as
+  approaching -oo or oo, depending on the case. A vertical asymptote is an x-value
+  of a function at which one or both sides approach infinity or negative infinity.
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/onesided05.png" />
+  </div>
+<pre class="tutcode">
+plot(1/x, x, -6, 6, randomize=False).show(ymin=-5, ymax=5, xmin=-5, xmax=5)
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(2);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain2">
+  1) Plot 1/x from -6 to 6. randomize=False produces a more consistent result when
+  this particular function is plotted.
+  </p>
+  <p>
+  Here, we would say that the limit of f(x) as x approaches zero from the left is
+  negative infinity and that the limit of f(x) as x approaches zero from the right
+  is infinity. The limit of f(x) as x approaches zero is undefined, since both
+  sides approach different values. Visually,
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/onesided06.png" class="vmiddle" />,
+  <img src="pix-calctut/onesided07.png" class="vmiddle" />, and
+  <img src="pix-calctut/onesided08.png" class="vmiddle" /> is undefined.
+  </div>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Refer to the following graph of f.<br />
+  (a) At which points is f discontinuous?<br />
+  (b) For each of these points, determine whether f(x) is continuous from the right,
+  from the left, or neither.<br />
+  (c) Classify any points of discontinuity as either removable or nonremovable.<br /> 
+  <img class="vtop qimg" src="pix-calctut/onesided09.png" /><br />
+  (a) <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'f has discontinuities at the following x-coordinates: -3, -1, and 2.');">Toggle answer</a><br />
+  (b) <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'f is continuous from the right at -3, but is continuous from neither side at -1 and 2.');">Toggle answer</a><br />
+  (c) <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'The discontinuity at x=2 is removable; the discontinuities at x=-3 and x=-1 are not.');">Toggle answer</a>
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<div id="footer" class="center">
+<table><tr>
+<td><a id="footer-webmaster" href="mailto:harald.schilly@gmail.com"></a></td><td>&middot;</td>
+<td><a id="footer-cc" title="Content is Creative Commons 3.0 licensed" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund" href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+</tr></table>
+</div>
+
+</body>
+</html>

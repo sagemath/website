@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - The Definition of the Derivative</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>The Definition of the Derivative</h1>
+  <p>
+  As you saw in the last section, the <strong>derivative</strong> of a function
+  measures the function's rate of change, or its slope. To give you a better idea
+  of what a derivative is, imagine that Bob The Crash Test Dummy is driving a car.
+  Bob's car is on fire, which is why his driving is somewhat erratic. The function
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/derivative01.png" />
+  </div>
+  <p>
+  models the number of miles driven after t hours has elapsed. After one hour
+  has passed, Bob looks at his melting odometer to see that he has driven 21.5
+  miles. According to his speedometer, Bob is traveling at a measly 23 miles per
+  hour, which spurs him to wonder audibly how much he'll be paid for this
+  "invigorating yet harmless driving stunt" that Stunt Dummies International
+  signed him up for. Five hours later (t = 6 hours), Bob finds that he has covered
+  a total of 174 miles and is currently moving at 38 miles per hour. Since 174 miles
+  was all Bob had to drive, he slams on the brakes, gets out of the car and
+  telephones mission control on his tungsten cellphone.
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/flamingcar.png" />
+  </div>
+  <p>
+  In this example, the speed that Bob was traveling at any point in time could
+  be described as the <em>rate of change of his position</em> at that point --
+  also known as the derivative of his position function. The change in the speed
+  of Bob's car over time was his acceleration, or the <em>rate of change of his
+  rate of change</em> throughout the journey. His acceleration can also be
+  described as the <strong>second derivative</strong> of his position function,
+  though we will mostly be concerned with the first derivative for now.
+  </p>
+  <p>
+  Do you see now how derivatives relate to motion and position? This is very much
+  the same as with the functions of the last section; you can think of the slope
+  of a tangent line as the function's speed at that point. Just as a speedometer
+  gives a vehicle's instantaneous speed, the derivative gives a function's
+  instantaneous rate of change. Since finding derivatives via the limit process
+  of the last section can be rather tedious, though, it is time to introduce a
+  much faster method.
+  </p>
+  <h2>The Rules of Differentiation</h2>
+  <p>
+  Differentiation is the process of finding derivatives, a process that becomes
+  much faster once you have master the upcoming rules! Most calculus books have
+  a chart of such rules on the inside front or back cover for easy viewing,
+  though <a href="diffrules.html">this page</a> should also serve as a faithful
+  reference. I'll start with just a few of the rules here, and explain them as I go.
+  </p>
+  <div class="proof rule">
+  <h3>Constant Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules01.png" /> and a is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules02.png" />.
+  </div>
+  <div class="proof rule">
+  <h3>Constant Multiple Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules03.png" /> and a is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules04.png" />.
+  </div>
+  <div class="proof rule">
+  <h3>Power Rule</h3>
+  If <img class="vmiddle" src="pix-calctut/diffrules05.png" /> and n is a
+  real number, then<br />
+  <img class="vmiddle" src="pix-calctut/diffrules06.png" />.
+  </div>
+  <p>
+  The function f'(x) (pronounced 'f prime of x') signifies the first derivative of
+  f(x). To explain the Constant Rule, think of a function that is equal to a constant,
+  perhaps the number 3, the square root of 5, the number e, or just a constant 'a'.
+  The graph of such a function will necessarily be flat, and thus have a slope of
+  zero. It is natural, therefore, that:
+  </p>
+  <div class="proof">
+  If <img class="vmiddle" src="pix-calctut/derivative02.png" />, then<br />
+  <img src="pix-calctut/derivative03.png" />
+  </div>
+  <p>
+  In order to save space, I won't use 'lim' in the other examples. The variable
+  'h' is assumed to be approaching zero. For the Constant Multiple Rule:
+  </p>
+  <div class="proof">
+  If <img class="vmiddle" src="pix-calctut/derivative04.png" />, then<br />
+  <img src="pix-calctut/derivative05.png" />
+  </div>
+  <p>
+  I used 'a' again instead of an actual number just to show that it works for
+  a general case. The Power Rule is more difficult to prove for x<sup>n</sup>, though, so
+  I'll use an actual number in tandem with the Constant Multiple Rule.
+  </p>
+  <div class="proof">
+  If <img class="vmiddle" src="pix-calctut/derivative06.png" />, then<br />
+  <img src="pix-calctut/derivative07.png" /><img src="pix-calctut/derivative08.png" />
+  </div>
+  <p>
+  Keep in mind that if the variable's power is a negative number, you will have
+  to multiply through the negative sign. So if f(x) = 4*x^-3, then f'(x) = -12*x^-4.
+  Negative exponents also 'get bigger', since the Power Rule dictates that you must
+  subtract 1 from the exponent's power.
+  </p>
+  <p>
+  Going back to the example about Bob in his car, let's take the derivative of
+  his position function to see how fast he was moving at any point in time.
+  </p>
+  <div class="proof">
+  Since <img src="pix-calctut/derivative01.png" />,<br />
+  <img src="pix-calctut/derivative09.png" />
+  </div>
+  <p>
+  The function v(t) is a better representation for instantaneous velocity than x'(t), which
+  explains the above. Based on the newly-found formula for Bob's velocity, we
+  can confirm his observations that v(1) = 23 and that v(6) = 38. If we take the
+  derivative of the velocity function, now:
+  </p>
+  <div class="proof">
+  Since <img class="vmiddle" src="pix-calctut/derivative09.png" />,<br />
+  <img src="pix-calctut/derivative10.png" />
+  </div>
+  <p>
+  Bob was accelerating at a rate of 3 miles per hour per hour, which explains why
+  he was moving more quickly toward the end of his journey than at the start.
+  Compare the position, velocity, and acceleration functions in the following graph:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/derivative11.png" />
+  </div>
+<pre class="tutcode">
+var('t')
+plot(3*t^2/2+20*t, t, 0, 6)+plot(3*t+20, t, 0, 6, rgbcolor='red')+line([(0, 3), (6, 3)], rgbcolor='green')
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+  1) Initialize t.<br />
+  2) Plot Bob's position, velocity, and acceleration for his six-hour drive.
+  </p>
+  <p>
+  You can see that as Bob's velocity gradually increased (the red line), his
+  distance traveled (the blue line) began to rise more quickly. His acceleration
+  remained constant (the green line), which caused his velocity to increase linearly.
+  </p>
+  <p>
+  The next two differentiation rules are not as easy to apply as the first three,
+  so pay attention. What makes them less straightforward is that both usually
+  involve a fair amount of work.
+  </p>
+  <div class="proof rule">
+  <h3>Product Rule</h3>
+  If f and g are differentiable at x, then<br />
+  <img src="pix-calctut/diffrules07.png" />
+  </div>
+   <div class="proof rule">
+  <h3>Quotient Rule</h3>
+  If f is the quotient g(x)/h(x) and h(x) &ne; 0, then<br />
+  <img src="pix-calctut/diffrules08.png" />
+  </div>
+  <p>
+  As an example of the product rule, think of two expressions, (x<sup>2</sup>+1)
+  and (4*x^3-2*x+3) that are multiplied together. To take the derivative of their
+  combination, one could either multiply through (which would be somewhat of a
+  hassle) or apply the product rule, which is the much better alternative.
+  </p>
+  <div class="proof">
+  If <img class="vmiddle" src="pix-calctut/derivative12.png" />, then<br />
+  <img class="vmiddle" src="pix-calctut/derivative13.png" />
+  <img class="vmiddle" src="pix-calctut/derivative14.png" />
+  <img class="vmiddle" src="pix-calctut/derivative15.png" />
+  </div>
+  <p>
+  I wouldn't recommend simplifying the result of the product rule unless you have
+  to; it's much safer just to leave it as it is, especially if you are going for
+  the second derivative as well. The quotient rule is another case where you don't
+  always want to simplify, since generally leaving the denominator as it is (without
+  squaring) looks much cleaner and is still a valid answer. In this case, though,
+  simplifying turns out to be a valid option.
+  </p>
+  <div class="proof">
+  If <img class="vmiddle" src="pix-calctut/derivative16.png" />, then<br />
+  <img class="vmiddle" src="pix-calctut/derivative17.png" />
+  <img class="vmiddle" src="pix-calctut/derivative18.png" />
+  <img class="vmiddle" src="pix-calctut/derivative19.png" />
+  <img class="vmiddle" src="pix-calctut/derivative20.png" />
+  </div>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Manually differentiate the following functions, then use Sage to confirm your
+  result.* Remember to initialize variables that you haven't referred to previously
+  using var('t') or whatever the variable's name is.
+  <br />
+  1) <img class="vmiddle qimg" src="pix-calctut/derivative21.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'f\'(x) = 10*x+5.');">Toggle answer</a>
+  <br />
+  2) <img class="vmiddle qimg" src="pix-calctut/derivative22.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 's\'(v) = (6*v+5)*(v^2-1)+(2*v)*(3*v^2+5*v+2).');">Toggle answer</a>
+  <br />
+  3) <img class="vmiddle qimg" src="pix-calctut/derivative23.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'x\'(t) = (12*t^2-16*t)/(3*t-2)^2.');">Toggle answer</a>
+  <br /><br />
+  *If you were to differentiate x<sup>2</sup> in Sage, for example, you would use
+<pre class="tutcode">
+derivative(x^2, x)
+</pre>
+  <p>
+  This is also the last lesson for now; sorry! Check back in a couple of weeks.
+  </p>
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<!--#include virtual="inc/footer.shtml"-->
+</body>
+</html>

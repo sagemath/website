@@ -1,0 +1,19 @@
+
+<div id="header">
+
+<div id="header-logo">
+<a href="../index.html"><img width="250px" height="65px" alt="Sage Logo" src="./pix/sage_logo_new.png" title="Sage Computer Algebra System" /></a>
+<a href="./index.html">Deutsch</a>
+</div>
+
+<div id="header-text">
+<a href="../index.html">back to Sage main page</a>
+</div>
+
+</div>
+
+<div id="header-navbar">
+<ul id="navbar"><!-- sort other way round -->
+<li id="intro"><a href="./index.html" title="">Index</a></li>
+</ul>
+</div>

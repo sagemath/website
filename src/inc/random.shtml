@@ -1,0 +1,27 @@
+<!--#set var="rand" value="$DATE_LOCAL" -->
+<div id="random" class="narrow center txt random">
+Random Link: 
+<!--#if   expr="$rand = /..:..:.0/" -->
+<a href="./tour-quickstart.html">Quickstart into Sage</a>
+<!--#elif expr="$rand = /..:..:.1/" -->
+<a href="./development-map.html">Map of all Sage developers</a>
+<!--#elif expr="$rand = /..:..:.2/" -->
+<a href="./tour.html">Introduction to Sage</a>
+<!--#elif expr="$rand = /..:..:.3/" -->
+<a href="http://planet.sagemath.org/">Sage Blog</a>
+<!--#elif expr="$rand = /..:..:.4/" -->
+<a href="http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html">SageTeX - embedding Sage code inside LaTeX documents.</a>
+<!--#elif expr="$rand = /..:..:.5/" -->
+<a href="./library-stories.html">Success Stories, Testimonials, News Articles, Blogs</a>
+<!--#elif expr="$rand = /..:..:.6/" -->
+<a href="./library-publications.html">Publications citing Sage</a>
+<!--#elif expr="$rand = /..:..:.7/" -->
+<a href="./library-marketing.html">Posters, Flyers, Spread the Word, ...</a>
+<!--#elif expr="$rand = /..:..:.8/" -->
+<a href="./tour-benchmarks.html">Sage Benchmarks</a>
+<!--#elif expr="$rand = /..:..:.9/" -->
+<a href="http://wiki.sagemath.org/interact">Interactive Calculations with Sage</a>
+<!--#else -->
+<a href="./help.html">Tutorials and Help Resources</a>
+<!--#endif -->
+</div>

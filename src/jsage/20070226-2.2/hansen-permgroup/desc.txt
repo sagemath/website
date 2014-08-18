@@ -1,0 +1,4 @@
+AUTHOR: Mike Hansen
+REFEREE: Nick Alexander
+
+Improve implicit coercion for permutation groups.

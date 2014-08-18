@@ -1,1 +1,8 @@
 www/
+*~
+.*.swp
+
+*.pyc
+*.out
+*.error
+*.lock

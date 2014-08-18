@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=300px, initial-scale=1.0">
+<title>Sage Documentation Pages Statistics</title>
+<style>
+html { font-family: sans-serif; font-size: 11px; }
+table {  border-collapse: collapse; border-spacing: 0;
+         border: 1px solid gray; font-size: inherit;}
+table td { border: 0; }
+table thead tr { border: 1px solid gray; }
+table td:first-child,
+table th:first-child { text-align: right; padding-right: 5px; }
+a { text-decoration: none; }
+table tbody a { display: block; }
+table tbody a:hover { background: #888; color: white; }
+div.cont { min-height: 298px; float: left; margin: 5px;}
+@media screen and (max-width: 500px){
+div.cont { min-height: 0; float: none; margin: 5px;}
+}
+</style>
+</head>
+<body>
+<h1>Statistics for <a href="http://www.sagemath.org/doc/">Sage Documentation</a> .html files</h1>
+<div>Note: for each category, the top 15 above a threshold of 3
+       are shown. The "Reference" category is split apart one level deeper.
+       The number in brackets is the sum of all in that category.</div><div>Data spans 2013-06-27 06:54:36 to 2014-04-03 16:42:06 (280 days and 9.8 hours)</div><div>Number of total Pageviews: 1660349 (= 5921.19 / day)</div><div>Number of unique IPs: 319180 (= 1138.27 / day)</div><h2><a name='TOC'>TOC</a></h2>
+<div><a href="#..">..</a> &middot;
+ <a href="#/">/</a> &middot;
+ <a href="#a_tour_of_sage">A_Tour_Of_Sage</a> &middot;
+ <a href="#bordeaux_2008">Bordeaux_2008</a> &middot;
+ <a href="#constructions">Constructions</a> &middot;
+ <a href="#developer">Developer</a> &middot;
+ <a href="#faq">Faq</a> &middot;
+ <a href="#installation">Installation</a> &middot;
+ <a href="#numerical_sage">Numerical_Sage</a> &middot;
+ <a href="#prep">Prep</a> &middot;
+ <a href="#reference">Reference</a> &middot;
+ <a href="#reference/">Reference/</a> &middot;
+ <a href="#reference/..">Reference/..</a> &middot;
+ <a href="#reference/algebras">Reference/Algebras</a> &middot;
+ <a href="#reference/arithgroup">Reference/Arithgroup</a> &middot;
+ <a href="#reference/calculus">Reference/Calculus</a> &middot;
+ <a href="#reference/categories">Reference/Categories</a> &middot;
+ <a href="#reference/cmd">Reference/Cmd</a> &middot;
+ <a href="#reference/coding">Reference/Coding</a> &middot;
+ <a href="#reference/coercion">Reference/Coercion</a> &middot;
+ <a href="#reference/combinat">Reference/Combinat</a> &middot;
+ <a href="#reference/constants">Reference/Constants</a> &middot;
+ <a href="#reference/cryptography">Reference/Cryptography</a> &middot;
+ <a href="#reference/databases">Reference/Databases</a> &middot;
+ <a href="#reference/dev">Reference/Dev</a> &middot;
+ <a href="#reference/doctest">Reference/Doctest</a> &middot;
+ <a href="#reference/dynamics">Reference/Dynamics</a> &middot;
+ <a href="#reference/finance">Reference/Finance</a> &middot;
+ <a href="#reference/finite_rings">Reference/Finite_Rings</a> &middot;
+ <a href="#reference/function_fields">Reference/Function_Fields</a> &middot;
+ <a href="#reference/functions">Reference/Functions</a> &middot;
+ <a href="#reference/games">Reference/Games</a> &middot;
+ <a href="#reference/geometry">Reference/Geometry</a> &middot;
+ <a href="#reference/graphs">Reference/Graphs</a> &middot;
+ <a href="#reference/groups">Reference/Groups</a> &middot;
+ <a href="#reference/hecke">Reference/Hecke</a> &middot;
+ <a href="#reference/history_and_license">Reference/History_And_License</a> &middot;
+ <a href="#reference/homology">Reference/Homology</a> &middot;
+ <a href="#reference/interfaces">Reference/Interfaces</a> &middot;
+ <a href="#reference/lfunctions">Reference/Lfunctions</a> &middot;
+ <a href="#reference/libs">Reference/Libs</a> &middot;
+ <a href="#reference/logic">Reference/Logic</a> &middot;
+ <a href="#reference/matrices">Reference/Matrices</a> &middot;
+ <a href="#reference/matroids">Reference/Matroids</a> &middot;
+ <a href="#reference/misc">Reference/Misc</a> &middot;
+ <a href="#reference/modabvar">Reference/Modabvar</a> &middot;
+ <a href="#reference/modfrm">Reference/Modfrm</a> &middot;
+ <a href="#reference/modmisc">Reference/Modmisc</a> &middot;
+ <a href="#reference/modsym">Reference/Modsym</a> &middot;
+ <a href="#reference/modules">Reference/Modules</a> &middot;
+ <a href="#reference/monoids">Reference/Monoids</a> &middot;
+ <a href="#reference/notebook">Reference/Notebook</a> &middot;
+ <a href="#reference/number_fields">Reference/Number_Fields</a> &middot;
+ <a href="#reference/numerical">Reference/Numerical</a> &middot;
+ <a href="#reference/padics">Reference/Padics</a> &middot;
+ <a href="#reference/parallel">Reference/Parallel</a> &middot;
+ <a href="#reference/plane_curves">Reference/Plane_Curves</a> &middot;
+ <a href="#reference/plot3d">Reference/Plot3D</a> &middot;
+ <a href="#reference/plotting">Reference/Plotting</a> &middot;
+ <a href="#reference/polynomial_rings">Reference/Polynomial_Rings</a> &middot;
+ <a href="#reference/power_series">Reference/Power_Series</a> &middot;
+ <a href="#reference/probability">Reference/Probability</a> &middot;
+ <a href="#reference/quadratic_forms">Reference/Quadratic_Forms</a> &middot;
+ <a href="#reference/quat_algebras">Reference/Quat_Algebras</a> &middot;
+ <a href="#reference/riemannian_geometry">Reference/Riemannian_Geometry</a> &middot;
+ <a href="#reference/rings">Reference/Rings</a> &middot;
+ <a href="#reference/rings_numerical">Reference/Rings_Numerical</a> &middot;
+ <a href="#reference/rings_standard">Reference/Rings_Standard</a> &middot;
+ <a href="#reference/sage">Reference/Sage</a> &middot;
+ <a href="#reference/sat">Reference/Sat</a> &middot;
+ <a href="#reference/schemes">Reference/Schemes</a> &middot;
+ <a href="#reference/semirings">Reference/Semirings</a> &middot;
+ <a href="#reference/stats">Reference/Stats</a> &middot;
+ <a href="#reference/structure">Reference/Structure</a> &middot;
+ <a href="#reference/tensor">Reference/Tensor</a> &middot;
+ <a href="#thematic_tutorials">Thematic_Tutorials</a> &middot;
+ <a href="#tutorial">Tutorial</a></div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="/">/</a> (20368) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ababab"><td>18224</td><td><a href="http://sagemath.org/doc/index.html">index</a></td>
+<tr style="background: #e6e6e6"><td>903</td><td><a href="http://sagemath.org/doc/genindex.html">genindex</a></td>
+<tr style="background: #e7e7e7"><td>833</td><td><a href="http://sagemath.org/doc/py-modindex.html">py-modindex</a></td>
+<tr style="background: #f2f2f2"><td>349</td><td><a href="http://sagemath.org/doc/genindex-all.html">genindex-all</a></td>
+<tr style="background: #fdfdfd"><td>59</td><td><a href="http://sagemath.org/doc/search.html">search</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="a_tour_of_sage">A_Tour_Of_Sage</a> (2614) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dedede"><td>1453</td><td><a href="http://sagemath.org/doc/a_tour_of_sage/index.html">index</a></td>
+<tr style="background: #efefef"><td>470</td><td><a href="http://sagemath.org/doc/a_tour_of_sage/py-modindex.html">py-modindex</a></td>
+<tr style="background: #f0f0f0"><td>425</td><td><a href="http://sagemath.org/doc/a_tour_of_sage/genindex.html">genindex</a></td>
+<tr style="background: #f5f5f5"><td>258</td><td><a href="http://sagemath.org/doc/a_tour_of_sage/genindex-all.html">genindex-all</a></td>
+<tr style="background: #ffffff"><td>7</td><td><a href="http://sagemath.org/doc/a_tour_of_sage/search.html">search</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="bordeaux_2008">Bordeaux_2008</a> (7075) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e5e5e5"><td>921</td><td><a href="http://sagemath.org/doc/bordeaux_2008/elliptic_curves.html">elliptic_curves</a></td>
+<tr style="background: #e9e9e9"><td>700</td><td><a href="http://sagemath.org/doc/bordeaux_2008/integer_factorization.html">integer_factorization</a></td>
+<tr style="background: #eaeaea"><td>678</td><td><a href="http://sagemath.org/doc/bordeaux_2008/nf_galois_groups.html">nf_galois_groups</a></td>
+<tr style="background: #eaeaea"><td>665</td><td><a href="http://sagemath.org/doc/bordeaux_2008/index.html">index</a></td>
+<tr style="background: #ececec"><td>561</td><td><a href="http://sagemath.org/doc/bordeaux_2008/nf_introduction.html">nf_introduction</a></td>
+<tr style="background: #eeeeee"><td>484</td><td><a href="http://sagemath.org/doc/bordeaux_2008/introduction.html">introduction</a></td>
+<tr style="background: #efefef"><td>468</td><td><a href="http://sagemath.org/doc/bordeaux_2008/birds_other.html">birds_other</a></td>
+<tr style="background: #f2f2f2"><td>354</td><td><a href="http://sagemath.org/doc/bordeaux_2008/nf_orders.html">nf_orders</a></td>
+<tr style="background: #f2f2f2"><td>343</td><td><a href="http://sagemath.org/doc/bordeaux_2008/modular_symbols.html">modular_symbols</a></td>
+<tr style="background: #f2f2f2"><td>338</td><td><a href="http://sagemath.org/doc/bordeaux_2008/number_fields.html">number_fields</a></td>
+<tr style="background: #f4f4f4"><td>285</td><td><a href="http://sagemath.org/doc/bordeaux_2008/modular_forms_and_hecke_operators.html">modular_forms_and_hecke_operators</a></td>
+<tr style="background: #f5f5f5"><td>259</td><td><a href="http://sagemath.org/doc/bordeaux_2008/generators_for_rings.html">generators_for_rings</a></td>
+<tr style="background: #f5f5f5"><td>259</td><td><a href="http://sagemath.org/doc/bordeaux_2008/level_one_forms.html">level_one_forms</a></td>
+<tr style="background: #f5f5f5"><td>257</td><td><a href="http://sagemath.org/doc/bordeaux_2008/modabvar.html">modabvar</a></td>
+<tr style="background: #f5f5f5"><td>257</td><td><a href="http://sagemath.org/doc/bordeaux_2008/modular_forms.html">modular_forms</a></td>
+<tr style="background: #f5f5f5"><td>246</td><td><a href="http://sagemath.org/doc/bordeaux_2008/birds_eye_view.html">birds_eye_view</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="constructions">Constructions</a> (45583) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #c0c0c0"><td>6752</td><td><a href="http://sagemath.org/doc/constructions/linear_algebra.html">linear_algebra</a></td>
+<tr style="background: #c2c2c2"><td>6324</td><td><a href="http://sagemath.org/doc/constructions/calculus.html">calculus</a></td>
+<tr style="background: #c7c7c7"><td>4962</td><td><a href="http://sagemath.org/doc/constructions/polynomials.html">polynomials</a></td>
+<tr style="background: #cacaca"><td>4243</td><td><a href="http://sagemath.org/doc/constructions/number_theory.html">number_theory</a></td>
+<tr style="background: #cbcbcb"><td>3965</td><td><a href="http://sagemath.org/doc/constructions/plotting.html">plotting</a></td>
+<tr style="background: #d3d3d3"><td>2690</td><td><a href="http://sagemath.org/doc/constructions/linear_codes.html">linear_codes</a></td>
+<tr style="background: #d3d3d3"><td>2594</td><td><a href="http://sagemath.org/doc/constructions/graph_theory.html">graph_theory</a></td>
+<tr style="background: #d5d5d5"><td>2340</td><td><a href="http://sagemath.org/doc/constructions/index.html">index</a></td>
+<tr style="background: #d8d8d8"><td>2085</td><td><a href="http://sagemath.org/doc/constructions/elliptic_curves.html">elliptic_curves</a></td>
+<tr style="background: #dadada"><td>1808</td><td><a href="http://sagemath.org/doc/constructions/groups.html">groups</a></td>
+<tr style="background: #dbdbdb"><td>1716</td><td><a href="http://sagemath.org/doc/constructions/number_fields.html">number_fields</a></td>
+<tr style="background: #dfdfdf"><td>1389</td><td><a href="http://sagemath.org/doc/constructions/rep_theory.html">rep_theory</a></td>
+<tr style="background: #dfdfdf"><td>1365</td><td><a href="http://sagemath.org/doc/constructions/modular_forms.html">modular_forms</a></td>
+<tr style="background: #e2e2e2"><td>1171</td><td><a href="http://sagemath.org/doc/constructions/algebraic_geometry.html">algebraic_geometry</a></td>
+<tr style="background: #e2e2e2"><td>1135</td><td><a href="http://sagemath.org/doc/constructions/rings.html">rings</a></td>
+<tr style="background: #e3e3e3"><td>1044</td><td><a href="http://sagemath.org/doc/constructions/interface_issues.html">interface_issues</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="developer">Developer</a> (34965) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #c0c0c0"><td>6760</td><td><a href="http://sagemath.org/doc/developer/walk_through.html">walk_through</a></td>
+<tr style="background: #c9c9c9"><td>4513</td><td><a href="http://sagemath.org/doc/developer/conventions.html">conventions</a></td>
+<tr style="background: #cacaca"><td>4154</td><td><a href="http://sagemath.org/doc/developer/py-modindex.html">py-modindex</a></td>
+<tr style="background: #d1d1d1"><td>2981</td><td><a href="http://sagemath.org/doc/developer/coding_in_python.html">coding_in_python</a></td>
+<tr style="background: #d2d2d2"><td>2852</td><td><a href="http://sagemath.org/doc/developer/coding_in_cython.html">coding_in_cython</a></td>
+<tr style="background: #d6d6d6"><td>2253</td><td><a href="http://sagemath.org/doc/developer/trac.html">trac</a></td>
+<tr style="background: #d7d7d7"><td>2189</td><td><a href="http://sagemath.org/doc/developer/writing_code.html">writing_code</a></td>
+<tr style="background: #dadada"><td>1848</td><td><a href="http://sagemath.org/doc/developer/index.html">index</a></td>
+<tr style="background: #e0e0e0"><td>1323</td><td><a href="http://sagemath.org/doc/developer/sage_manuals.html">sage_manuals</a></td>
+<tr style="background: #e1e1e1"><td>1221</td><td><a href="http://sagemath.org/doc/developer/coding_in_other.html">coding_in_other</a></td>
+<tr style="background: #e5e5e5"><td>972</td><td><a href="http://sagemath.org/doc/developer/producing_spkgs.html">producing_spkgs</a></td>
+<tr style="background: #e5e5e5"><td>951</td><td><a href="http://sagemath.org/doc/developer/doctesting.html">doctesting</a></td>
+<tr style="background: #e7e7e7"><td>805</td><td><a href="http://sagemath.org/doc/developer/coding_basics.html">coding_basics</a></td>
+<tr style="background: #e8e8e8"><td>789</td><td><a href="http://sagemath.org/doc/developer/manual_git.html">manual_git</a></td>
+<tr style="background: #e8e8e8"><td>772</td><td><a href="http://sagemath.org/doc/developer/producing_patches.html">producing_patches</a></td>
+<tr style="background: #ececec"><td>582</td><td><a href="http://sagemath.org/doc/developer/sagenb/index.html">index</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="faq">Faq</a> (23514) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #b5b5b5"><td>11773</td><td><a href="http://sagemath.org/doc/faq/faq-usage.html">faq-usage</a></td>
+<tr style="background: #c8c8c8"><td>4571</td><td><a href="http://sagemath.org/doc/faq/faq-contribute.html">faq-contribute</a></td>
+<tr style="background: #cbcbcb"><td>4007</td><td><a href="http://sagemath.org/doc/faq/faq-general.html">faq-general</a></td>
+<tr style="background: #d9d9d9"><td>1875</td><td><a href="http://sagemath.org/doc/faq/index.html">index</a></td>
+<tr style="background: #f0f0f0"><td>429</td><td><a href="http://sagemath.org/doc/faq/genindex.html">genindex</a></td>
+<tr style="background: #f1f1f1"><td>384</td><td><a href="http://sagemath.org/doc/faq/py-modindex.html">py-modindex</a></td>
+<tr style="background: #f5f5f5"><td>238</td><td><a href="http://sagemath.org/doc/faq/genindex-all.html">genindex-all</a></td>
+<tr style="background: #f5f5f5"><td>236</td><td><a href="http://sagemath.org/doc/faq/search.html">search</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="installation">Installation</a> (60859) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #acacac"><td>17737</td><td><a href="http://sagemath.org/doc/installation/source.html">source</a></td>
+<tr style="background: #b1b1b1"><td>14117</td><td><a href="http://sagemath.org/doc/installation/binary.html">binary</a></td>
+<tr style="background: #bfbfbf"><td>7168</td><td><a href="http://sagemath.org/doc/installation/sagetex.html">sagetex</a></td>
+<tr style="background: #c0c0c0"><td>6837</td><td><a href="http://sagemath.org/doc/installation/introduction.html">introduction</a></td>
+<tr style="background: #c3c3c3"><td>5988</td><td><a href="http://sagemath.org/doc/installation/quick-guide.html">quick-guide</a></td>
+<tr style="background: #cdcdcd"><td>3651</td><td><a href="http://sagemath.org/doc/installation/index.html">index</a></td>
+<tr style="background: #d9d9d9"><td>1926</td><td><a href="http://sagemath.org/doc/installation/icon.html">icon</a></td>
+<tr style="background: #e4e4e4"><td>999</td><td><a href="http://sagemath.org/doc/installation/py-modindex.html">py-modindex</a></td>
+<tr style="background: #e6e6e6"><td>909</td><td><a href="http://sagemath.org/doc/installation/documentation.html">documentation</a></td>
+<tr style="background: #eeeeee"><td>473</td><td><a href="http://sagemath.org/doc/installation/genindex.html">genindex</a></td>
+<tr style="background: #f6f6f6"><td>231</td><td><a href="http://sagemath.org/doc/installation/search.html">search</a></td>
+<tr style="background: #f7f7f7"><td>200</td><td><a href="http://sagemath.org/doc/installation/genindex-all.html">genindex-all</a></td>
+<tr style="background: #f8f8f8"><td>160</td><td><a href="http://sagemath.org/doc/installation/genindex-E.html">genindex-E</a></td>
+<tr style="background: #f8f8f8"><td>156</td><td><a href="http://sagemath.org/doc/installation/genindex-S.html">genindex-S</a></td>
+<tr style="background: #f8f8f8"><td>154</td><td><a href="http://sagemath.org/doc/installation/genindex-C.html">genindex-C</a></td>
+<tr style="background: #f8f8f8"><td>153</td><td><a href="http://sagemath.org/doc/installation/genindex-P.html">genindex-P</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="numerical_sage">Numerical_Sage</a> (22405) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cfcfcf"><td>3269</td><td><a href="http://sagemath.org/doc/numerical_sage/numpy.html">numpy</a></td>
+<tr style="background: #d5d5d5"><td>2375</td><td><a href="http://sagemath.org/doc/numerical_sage/ctypes_examples.html">ctypes_examples</a></td>
+<tr style="background: #d8d8d8"><td>2025</td><td><a href="http://sagemath.org/doc/numerical_sage/scipy.html">scipy</a></td>
+<tr style="background: #dadada"><td>1768</td><td><a href="http://sagemath.org/doc/numerical_sage/f2py.html">f2py</a></td>
+<tr style="background: #dcdcdc"><td>1652</td><td><a href="http://sagemath.org/doc/numerical_sage/mpi4py.html">mpi4py</a></td>
+<tr style="background: #dedede"><td>1491</td><td><a href="http://sagemath.org/doc/numerical_sage/f2py_examples.html">f2py_examples</a></td>
+<tr style="background: #dedede"><td>1413</td><td><a href="http://sagemath.org/doc/numerical_sage/ctypes.html">ctypes</a></td>
+<tr style="background: #e1e1e1"><td>1198</td><td><a href="http://sagemath.org/doc/numerical_sage/cvxopt.html">cvxopt</a></td>
+<tr style="background: #e1e1e1"><td>1186</td><td><a href="http://sagemath.org/doc/numerical_sage/weave.html">weave</a></td>
+<tr style="background: #e1e1e1"><td>1182</td><td><a href="http://sagemath.org/doc/numerical_sage/numerical_tools.html">numerical_tools</a></td>
+<tr style="background: #e4e4e4"><td>1015</td><td><a href="http://sagemath.org/doc/numerical_sage/index.html">index</a></td>
+<tr style="background: #e5e5e5"><td>957</td><td><a href="http://sagemath.org/doc/numerical_sage/parallel_laplace_solver.html">parallel_laplace_solver</a></td>
+<tr style="background: #e5e5e5"><td>914</td><td><a href="http://sagemath.org/doc/numerical_sage/comparison_to_cython.html">comparison_to_cython</a></td>
+<tr style="background: #e7e7e7"><td>833</td><td><a href="http://sagemath.org/doc/numerical_sage/using_compiled_code_iteractively.html">using_compiled_code_iteractively</a></td>
+<tr style="background: #ececec"><td>569</td><td><a href="http://sagemath.org/doc/numerical_sage/py-modindex.html">py-modindex</a></td>
+<tr style="background: #ececec"><td>558</td><td><a href="http://sagemath.org/doc/numerical_sage/plotting.html">plotting</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="prep">Prep</a> (29590) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #c9c9c9"><td>4489</td><td><a href="http://sagemath.org/doc/prep/Advanced-2DPlotting.html">Advanced-2DPlotting</a></td>
+<tr style="background: #cacaca"><td>4143</td><td><a href="http://sagemath.org/doc/prep/Symbolics-and-Basic-Plotting.html">Symbolics-and-Basic-Plotting</a></td>
+<tr style="background: #cccccc"><td>3886</td><td><a href="http://sagemath.org/doc/prep/Calculus.html">Calculus</a></td>
+<tr style="background: #cccccc"><td>3781</td><td><a href="http://sagemath.org/doc/prep/Intro-Tutorial.html">Intro-Tutorial</a></td>
+<tr style="background: #d2d2d2"><td>2865</td><td><a href="http://sagemath.org/doc/prep/Logging-On.html">Logging-On</a></td>
+<tr style="background: #d3d3d3"><td>2596</td><td><a href="http://sagemath.org/doc/prep/Programming.html">Programming</a></td>
+<tr style="background: #dddddd"><td>1557</td><td><a href="http://sagemath.org/doc/prep/index.html">index</a></td>
+<tr style="background: #dfdfdf"><td>1392</td><td><a href="http://sagemath.org/doc/prep/quickstart.html">quickstart</a></td>
+<tr style="background: #e6e6e6"><td>874</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Graphs-and-Discrete.html">Graphs-and-Discrete</a></td>
+<tr style="background: #eaeaea"><td>690</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Interact.html">Interact</a></td>
+<tr style="background: #eaeaea"><td>646</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Differential-Equations.html">Differential-Equations</a></td>
+<tr style="background: #ebebeb"><td>630</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Multivariable-Calculus.html">Multivariable-Calculus</a></td>
+<tr style="background: #ebebeb"><td>604</td><td><a href="http://sagemath.org/doc/prep/py-modindex.html">py-modindex</a></td>
+<tr style="background: #eeeeee"><td>496</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Statistics-and-Distributions.html">Statistics-and-Distributions</a></td>
+<tr style="background: #eeeeee"><td>487</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/NumAnalysis.html">NumAnalysis</a></td>
+<tr style="background: #efefef"><td>454</td><td><a href="http://sagemath.org/doc/prep/Quickstarts/Linear-Algebra.html">Linear-Algebra</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference">Reference</a> (24773) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #bbbbbb"><td>8551</td><td><a href="http://sagemath.org/doc/reference/index.html">index</a></td>
+<tr style="background: #c2c2c2"><td>6157</td><td><a href="http://sagemath.org/doc/reference/todolist.html">todolist</a></td>
+<tr style="background: #cecece"><td>3395</td><td><a href="http://sagemath.org/doc/reference/genindex.html">genindex</a></td>
+<tr style="background: #dedede"><td>1413</td><td><a href="http://sagemath.org/doc/reference/genindex-all.html">genindex-all</a></td>
+<tr style="background: #e6e6e6"><td>888</td><td><a href="http://sagemath.org/doc/reference/py-modindex.html">py-modindex</a></td>
+<tr style="background: #eeeeee"><td>507</td><td><a href="http://sagemath.org/doc/reference/genindex-S.html">genindex-S</a></td>
+<tr style="background: #efefef"><td>452</td><td><a href="http://sagemath.org/doc/reference/genindex-P.html">genindex-P</a></td>
+<tr style="background: #efefef"><td>448</td><td><a href="http://sagemath.org/doc/reference/genindex-I.html">genindex-I</a></td>
+<tr style="background: #efefef"><td>445</td><td><a href="http://sagemath.org/doc/reference/search.html">search</a></td>
+<tr style="background: #f1f1f1"><td>387</td><td><a href="http://sagemath.org/doc/reference/genindex-A.html">genindex-A</a></td>
+<tr style="background: #f1f1f1"><td>372</td><td><a href="http://sagemath.org/doc/reference/genindex-C.html">genindex-C</a></td>
+<tr style="background: #f1f1f1"><td>361</td><td><a href="http://sagemath.org/doc/reference/genindex-M.html">genindex-M</a></td>
+<tr style="background: #f2f2f2"><td>358</td><td><a href="http://sagemath.org/doc/reference/genindex-F.html">genindex-F</a></td>
+<tr style="background: #f2f2f2"><td>355</td><td><a href="http://sagemath.org/doc/reference/genindex-L.html">genindex-L</a></td>
+<tr style="background: #f2f2f2"><td>349</td><td><a href="http://sagemath.org/doc/reference/genindex-D.html">genindex-D</a></td>
+<tr style="background: #f2f2f2"><td>335</td><td><a href="http://sagemath.org/doc/reference/genindex-R.html">genindex-R</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/algebras">Reference/Algebras</a> (4701) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #eeeeee"><td>503</td><td><a href="http://sagemath.org/doc/reference/algebras/index.html">index</a></td>
+<tr style="background: #efefef"><td>469</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/free_algebra.html">free_algebra</a></td>
+<tr style="background: #efefef"><td>443</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/group_algebra_new.html">group_algebra_new</a></td>
+<tr style="background: #f0f0f0"><td>419</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/steenrod/steenrod_algebra.html">steenrod_algebra</a></td>
+<tr style="background: #f0f0f0"><td>417</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/free_algebra_quotient.html">free_algebra_quotient</a></td>
+<tr style="background: #f3f3f3"><td>305</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/free_algebra_element.html">free_algebra_element</a></td>
+<tr style="background: #f4f4f4"><td>276</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/steenrod/steenrod_algebra_bases.html">steenrod_algebra_bases</a></td>
+<tr style="background: #f4f4f4"><td>264</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/shuffle_algebra.html">shuffle_algebra</a></td>
+<tr style="background: #f5f5f5"><td>253</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/free_algebra_quotient_element.html">free_algebra_quotient_element</a></td>
+<tr style="background: #f5f5f5"><td>239</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/letterplace/free_algebra_letterplace.html">free_algebra_letterplace</a></td>
+<tr style="background: #f5f5f5"><td>238</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/letterplace/letterplace_ideal.html">letterplace_ideal</a></td>
+<tr style="background: #f5f5f5"><td>236</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/letterplace/free_algebra_element_letterplace.html">free_algebra_element_letterplace</a></td>
+<tr style="background: #f6f6f6"><td>212</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/steenrod/steenrod_algebra_mult.html">steenrod_algebra_mult</a></td>
+<tr style="background: #f7f7f7"><td>188</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/steenrod/steenrod_algebra_misc.html">steenrod_algebra_misc</a></td>
+<tr style="background: #fafafa"><td>123</td><td><a href="http://sagemath.org/doc/reference/algebras/py-modindex.html">py-modindex</a></td>
+<tr style="background: #fafafa"><td>116</td><td><a href="http://sagemath.org/doc/reference/algebras/sage/algebras/iwahori_hecke_algebra.html">iwahori_hecke_algebra</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/arithgroup">Reference/Arithgroup</a> (4268) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ececec"><td>579</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_gamma0.html">congroup_gamma0</a></td>
+<tr style="background: #efefef"><td>440</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_gamma.html">congroup_gamma</a></td>
+<tr style="background: #f0f0f0"><td>419</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_sl2z.html">congroup_sl2z</a></td>
+<tr style="background: #f0f0f0"><td>413</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/farey_symbol.html">farey_symbol</a></td>
+<tr style="background: #f1f1f1"><td>375</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/arithgroup_perm.html">arithgroup_perm</a></td>
+<tr style="background: #f1f1f1"><td>362</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_gammaH.html">congroup_gammaH</a></td>
+<tr style="background: #f2f2f2"><td>330</td><td><a href="http://sagemath.org/doc/reference/arithgroup/index.html">index</a></td>
+<tr style="background: #f3f3f3"><td>324</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/arithgroup_generic.html">arithgroup_generic</a></td>
+<tr style="background: #f3f3f3"><td>297</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_gamma1.html">congroup_gamma1</a></td>
+<tr style="background: #f4f4f4"><td>280</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_generic.html">congroup_generic</a></td>
+<tr style="background: #f6f6f6"><td>223</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/arithgroup_element.html">arithgroup_element</a></td>
+<tr style="background: #fafafa"><td>114</td><td><a href="http://sagemath.org/doc/reference/arithgroup/sage/modular/arithgroup/congroup_pyx.html">congroup_pyx</a></td>
+<tr style="background: #fafafa"><td>111</td><td><a href="http://sagemath.org/doc/reference/arithgroup/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/calculus">Reference/Calculus</a> (70723) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #b2b2b2"><td>13524</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/expression.html">expression</a></td>
+<tr style="background: #b5b5b5"><td>11601</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/relation.html">relation</a></td>
+<tr style="background: #bfbfbf"><td>7260</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/calculus/desolvers.html">desolvers</a></td>
+<tr style="background: #bfbfbf"><td>7254</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/calculus/calculus.html">calculus</a></td>
+<tr style="background: #c0c0c0"><td>6706</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/integration/integral.html">integral</a></td>
+<tr style="background: #c8c8c8"><td>4578</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/function_factory.html">function_factory</a></td>
+<tr style="background: #d3d3d3"><td>2663</td><td><a href="http://sagemath.org/doc/reference/calculus/index.html">index</a></td>
+<tr style="background: #d3d3d3"><td>2637</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/units.html">units</a></td>
+<tr style="background: #d5d5d5"><td>2382</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/calculus/test_sympy.html">test_sympy</a></td>
+<tr style="background: #d6d6d6"><td>2287</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/gsl/integration.html">integration</a></td>
+<tr style="background: #d6d6d6"><td>2250</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/gsl/dwt.html">dwt</a></td>
+<tr style="background: #d9d9d9"><td>1933</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/calculus/functional.html">functional</a></td>
+<tr style="background: #dcdcdc"><td>1600</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/expression_conversions.html">expression_conversions</a></td>
+<tr style="background: #dedede"><td>1467</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/calculus/tests.html">tests</a></td>
+<tr style="background: #dfdfdf"><td>1397</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/gsl/ode.html">ode</a></td>
+<tr style="background: #e1e1e1"><td>1184</td><td><a href="http://sagemath.org/doc/reference/calculus/sage/symbolic/ring.html">ring</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/categories">Reference/Categories</a> (7689) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e6e6e6"><td>860</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/primer.html">primer</a></td>
+<tr style="background: #e9e9e9"><td>738</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/category.html">category</a></td>
+<tr style="background: #eaeaea"><td>691</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/enumerated_sets.html">enumerated_sets</a></td>
+<tr style="background: #ededed"><td>552</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/coxeter_groups.html">coxeter_groups</a></td>
+<tr style="background: #ededed"><td>535</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/tutorial.html">tutorial</a></td>
+<tr style="background: #efefef"><td>466</td><td><a href="http://sagemath.org/doc/reference/categories/index.html">index</a></td>
+<tr style="background: #efefef"><td>442</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/vector_spaces.html">vector_spaces</a></td>
+<tr style="background: #efefef"><td>436</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/tensor.html">tensor</a></td>
+<tr style="background: #f0f0f0"><td>416</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/homset.html">homset</a></td>
+<tr style="background: #f1f1f1"><td>390</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/groups.html">groups</a></td>
+<tr style="background: #f1f1f1"><td>375</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/cartesian_product.html">cartesian_product</a></td>
+<tr style="background: #f1f1f1"><td>370</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/weyl_groups.html">weyl_groups</a></td>
+<tr style="background: #f1f1f1"><td>362</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/category_types.html">category_types</a></td>
+<tr style="background: #f2f2f2"><td>357</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/sets_cat.html">sets_cat</a></td>
+<tr style="background: #f2f2f2"><td>350</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/morphism.html">morphism</a></td>
+<tr style="background: #f2f2f2"><td>349</td><td><a href="http://sagemath.org/doc/reference/categories/sage/categories/finite_posets.html">finite_posets</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/cmd">Reference/Cmd</a> (5760) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dadada"><td>1811</td><td><a href="http://sagemath.org/doc/reference/cmd/options.html">options</a></td>
+<tr style="background: #dedede"><td>1456</td><td><a href="http://sagemath.org/doc/reference/cmd/index.html">index</a></td>
+<tr style="background: #e5e5e5"><td>928</td><td><a href="http://sagemath.org/doc/reference/cmd/startup.html">startup</a></td>
+<tr style="background: #ececec"><td>596</td><td><a href="http://sagemath.org/doc/reference/cmd/sage/misc/trace.html">trace</a></td>
+<tr style="background: #efefef"><td>460</td><td><a href="http://sagemath.org/doc/reference/cmd/environ.html">environ</a></td>
+<tr style="background: #f1f1f1"><td>386</td><td><a href="http://sagemath.org/doc/reference/cmd/sage/misc/readline_extra_commands.html">readline_extra_commands</a></td>
+<tr style="background: #fafafa"><td>123</td><td><a href="http://sagemath.org/doc/reference/cmd/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/coding">Reference/Coding</a> (4899) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e0e0e0"><td>1304</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/linear_code.html">linear_code</a></td>
+<tr style="background: #e2e2e2"><td>1160</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/code_constructions.html">code_constructions</a></td>
+<tr style="background: #ececec"><td>592</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/source_coding/huffman.html">huffman</a></td>
+<tr style="background: #eeeeee"><td>478</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/sd_codes.html">sd_codes</a></td>
+<tr style="background: #efefef"><td>433</td><td><a href="http://sagemath.org/doc/reference/coding/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>372</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/code_bounds.html">code_bounds</a></td>
+<tr style="background: #f7f7f7"><td>191</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/delsarte_bounds.html">delsarte_bounds</a></td>
+<tr style="background: #f9f9f9"><td>145</td><td><a href="http://sagemath.org/doc/reference/coding/py-modindex.html">py-modindex</a></td>
+<tr style="background: #fafafa"><td>113</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/guava.html">guava</a></td>
+<tr style="background: #fcfcfc"><td>62</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/codes_catalog.html">codes_catalog</a></td>
+<tr style="background: #fdfdfd"><td>49</td><td><a href="http://sagemath.org/doc/reference/coding/sage/coding/codecan/autgroup_can_label.html">autgroup_can_label</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/coercion">Reference/Coercion</a> (1787) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e9e9e9"><td>709</td><td><a href="http://sagemath.org/doc/reference/coercion/sage/structure/coerce.html">coerce</a></td>
+<tr style="background: #efefef"><td>435</td><td><a href="http://sagemath.org/doc/reference/coercion/sage/structure/coerce_actions.html">coerce_actions</a></td>
+<tr style="background: #f1f1f1"><td>368</td><td><a href="http://sagemath.org/doc/reference/coercion/index.html">index</a></td>
+<tr style="background: #f8f8f8"><td>169</td><td><a href="http://sagemath.org/doc/reference/coercion/sage/structure/coerce_maps.html">coerce_maps</a></td>
+<tr style="background: #fafafa"><td>106</td><td><a href="http://sagemath.org/doc/reference/coercion/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/combinat">Reference/Combinat</a> (21986) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d0d0d0"><td>3087</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/tutorial.html">tutorial</a></td>
+<tr style="background: #d4d4d4"><td>2533</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/permutation.html">permutation</a></td>
+<tr style="background: #d5d5d5"><td>2357</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/combinat.html">combinat</a></td>
+<tr style="background: #dadada"><td>1832</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/partition.html">partition</a></td>
+<tr style="background: #dedede"><td>1447</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/subset.html">subset</a></td>
+<tr style="background: #e0e0e0"><td>1257</td><td><a href="http://sagemath.org/doc/reference/combinat/index.html">index</a></td>
+<tr style="background: #e1e1e1"><td>1192</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/combination.html">combination</a></td>
+<tr style="background: #e1e1e1"><td>1186</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/sf/sf.html">sf</a></td>
+<tr style="background: #e2e2e2"><td>1134</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/set_partition.html">set_partition</a></td>
+<tr style="background: #e3e3e3"><td>1080</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/sf/sfa.html">sfa</a></td>
+<tr style="background: #e5e5e5"><td>953</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/sloane_functions.html">sloane_functions</a></td>
+<tr style="background: #e5e5e5"><td>927</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/posets/posets.html">posets</a></td>
+<tr style="background: #e7e7e7"><td>851</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/posets/hasse_diagram.html">hasse_diagram</a></td>
+<tr style="background: #e9e9e9"><td>734</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/cartesian_product.html">cartesian_product</a></td>
+<tr style="background: #e9e9e9"><td>723</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/tableau.html">tableau</a></td>
+<tr style="background: #eaeaea"><td>693</td><td><a href="http://sagemath.org/doc/reference/combinat/sage/combinat/tuple.html">tuple</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/constants">Reference/Constants</a> (4762) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d0d0d0"><td>3108</td><td><a href="http://sagemath.org/doc/reference/constants/sage/symbolic/constants.html">constants</a></td>
+<tr style="background: #e4e4e4"><td>1021</td><td><a href="http://sagemath.org/doc/reference/constants/sage/symbolic/constants_c.html">constants_c</a></td>
+<tr style="background: #eeeeee"><td>504</td><td><a href="http://sagemath.org/doc/reference/constants/index.html">index</a></td>
+<tr style="background: #f9f9f9"><td>129</td><td><a href="http://sagemath.org/doc/reference/constants/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/cryptography">Reference/Cryptography</a> (17659) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d6d6d6"><td>2205</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/mq/sbox.html">sbox</a></td>
+<tr style="background: #dbdbdb"><td>1714</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/block_cipher/sdes.html">sdes</a></td>
+<tr style="background: #dddddd"><td>1560</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/boolean_function.html">boolean_function</a></td>
+<tr style="background: #dddddd"><td>1542</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/util.html">util</a></td>
+<tr style="background: #dddddd"><td>1503</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/classical.html">classical</a></td>
+<tr style="background: #e2e2e2"><td>1162</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/cryptosystem.html">cryptosystem</a></td>
+<tr style="background: #e2e2e2"><td>1121</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/block_cipher/miniaes.html">miniaes</a></td>
+<tr style="background: #e2e2e2"><td>1113</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/lfsr.html">lfsr</a></td>
+<tr style="background: #e4e4e4"><td>991</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/mq/sr.html">sr</a></td>
+<tr style="background: #e4e4e4"><td>979</td><td><a href="http://sagemath.org/doc/reference/cryptography/index.html">index</a></td>
+<tr style="background: #e6e6e6"><td>862</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/lattice.html">lattice</a></td>
+<tr style="background: #e8e8e8"><td>773</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/classical_cipher.html">classical_cipher</a></td>
+<tr style="background: #eaeaea"><td>658</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/stream.html">stream</a></td>
+<tr style="background: #ececec"><td>578</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/public_key/blum_goldwasser.html">blum_goldwasser</a></td>
+<tr style="background: #ededed"><td>531</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/cipher.html">cipher</a></td>
+<tr style="background: #f1f1f1"><td>367</td><td><a href="http://sagemath.org/doc/reference/cryptography/sage/crypto/stream_cipher.html">stream_cipher</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/databases">Reference/Databases</a> (4241) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e6e6e6"><td>878</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/odlyzko.html">odlyzko</a></td>
+<tr style="background: #e9e9e9"><td>745</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/cremona.html">cremona</a></td>
+<tr style="background: #eeeeee"><td>491</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/sloane.html">sloane</a></td>
+<tr style="background: #f0f0f0"><td>426</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/stein_watkins.html">stein_watkins</a></td>
+<tr style="background: #f2f2f2"><td>349</td><td><a href="http://sagemath.org/doc/reference/databases/index.html">index</a></td>
+<tr style="background: #f2f2f2"><td>338</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/symbolic_data.html">symbolic_data</a></td>
+<tr style="background: #f3f3f3"><td>303</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/conway.html">conway</a></td>
+<tr style="background: #f4f4f4"><td>271</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/jones.html">jones</a></td>
+<tr style="background: #f8f8f8"><td>172</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/lincodes.html">lincodes</a></td>
+<tr style="background: #f9f9f9"><td>144</td><td><a href="http://sagemath.org/doc/reference/databases/sage/databases/oeis.html">oeis</a></td>
+<tr style="background: #fafafa"><td>124</td><td><a href="http://sagemath.org/doc/reference/databases/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/dev">Reference/Dev</a> (657) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f9f9f9"><td>139</td><td><a href="http://sagemath.org/doc/reference/dev/sage/dev/sagedev.html">sagedev</a></td>
+<tr style="background: #f9f9f9"><td>134</td><td><a href="http://sagemath.org/doc/reference/dev/index.html">index</a></td>
+<tr style="background: #f9f9f9"><td>132</td><td><a href="http://sagemath.org/doc/reference/dev/sage/dev/trac_interface.html">trac_interface</a></td>
+<tr style="background: #fafafa"><td>104</td><td><a href="http://sagemath.org/doc/reference/dev/sage/dev/user_interface.html">user_interface</a></td>
+<tr style="background: #fbfbfb"><td>99</td><td><a href="http://sagemath.org/doc/reference/dev/sage/dev/git_interface.html">git_interface</a></td>
+<tr style="background: #fdfdfd"><td>49</td><td><a href="http://sagemath.org/doc/reference/dev/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/doctest">Reference/Doctest</a> (1658) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f4f4f4"><td>283</td><td><a href="http://sagemath.org/doc/reference/doctest/index.html">index</a></td>
+<tr style="background: #f5f5f5"><td>234</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/parsing.html">parsing</a></td>
+<tr style="background: #f7f7f7"><td>186</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/control.html">control</a></td>
+<tr style="background: #f8f8f8"><td>175</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/forker.html">forker</a></td>
+<tr style="background: #f8f8f8"><td>173</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/reporting.html">reporting</a></td>
+<tr style="background: #f8f8f8"><td>170</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/sources.html">sources</a></td>
+<tr style="background: #f8f8f8"><td>162</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/util.html">util</a></td>
+<tr style="background: #f8f8f8"><td>155</td><td><a href="http://sagemath.org/doc/reference/doctest/sage/doctest/test.html">test</a></td>
+<tr style="background: #fafafa"><td>120</td><td><a href="http://sagemath.org/doc/reference/doctest/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/dynamics">Reference/Dynamics</a> (1335) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f5f5f5"><td>238</td><td><a href="http://sagemath.org/doc/reference/dynamics/index.html">index</a></td>
+<tr style="background: #f9f9f9"><td>135</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/interval_exchanges/iet.html">iet</a></td>
+<tr style="background: #f9f9f9"><td>135</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/interval_exchanges/constructors.html">constructors</a></td>
+<tr style="background: #f9f9f9"><td>128</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/flat_surfaces/strata.html">strata</a></td>
+<tr style="background: #f9f9f9"><td>128</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/interval_exchanges/labelled.html">labelled</a></td>
+<tr style="background: #fafafa"><td>118</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/interval_exchanges/template.html">template</a></td>
+<tr style="background: #fafafa"><td>115</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/interval_exchanges/reduced.html">reduced</a></td>
+<tr style="background: #fafafa"><td>105</td><td><a href="http://sagemath.org/doc/reference/dynamics/interval_exchanges.html">interval_exchanges</a></td>
+<tr style="background: #fbfbfb"><td>91</td><td><a href="http://sagemath.org/doc/reference/dynamics/sage/dynamics/flat_surfaces/quadratic_strata.html">quadratic_strata</a></td>
+<tr style="background: #fcfcfc"><td>75</td><td><a href="http://sagemath.org/doc/reference/dynamics/flat_surfaces.html">flat_surfaces</a></td>
+<tr style="background: #fcfcfc"><td>67</td><td><a href="http://sagemath.org/doc/reference/dynamics/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/finance">Reference/Finance</a> (3216) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e6e6e6"><td>913</td><td><a href="http://sagemath.org/doc/reference/finance/sage/finance/time_series.html">time_series</a></td>
+<tr style="background: #e9e9e9"><td>707</td><td><a href="http://sagemath.org/doc/reference/finance/sage/finance/stock.html">stock</a></td>
+<tr style="background: #f0f0f0"><td>416</td><td><a href="http://sagemath.org/doc/reference/finance/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>392</td><td><a href="http://sagemath.org/doc/reference/finance/sage/finance/markov_multifractal.html">markov_multifractal</a></td>
+<tr style="background: #f1f1f1"><td>388</td><td><a href="http://sagemath.org/doc/reference/finance/sage/finance/fractal.html">fractal</a></td>
+<tr style="background: #f4f4f4"><td>274</td><td><a href="http://sagemath.org/doc/reference/finance/sage/finance/option.html">option</a></td>
+<tr style="background: #fafafa"><td>126</td><td><a href="http://sagemath.org/doc/reference/finance/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/finite_rings">Reference/Finite_Rings</a> (3900) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ebebeb"><td>599</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_base.html">finite_field_base</a></td>
+<tr style="background: #eeeeee"><td>487</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_ntl_gf2e.html">finite_field_ntl_gf2e</a></td>
+<tr style="background: #efefef"><td>457</td><td><a href="http://sagemath.org/doc/reference/finite_rings/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>388</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/element_givaro.html">element_givaro</a></td>
+<tr style="background: #f2f2f2"><td>355</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_ext_pari.html">finite_field_ext_pari</a></td>
+<tr style="background: #f3f3f3"><td>305</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/element_ntl_gf2e.html">element_ntl_gf2e</a></td>
+<tr style="background: #f5f5f5"><td>252</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_givaro.html">finite_field_givaro</a></td>
+<tr style="background: #f6f6f6"><td>230</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/homset.html">homset</a></td>
+<tr style="background: #f6f6f6"><td>216</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_prime_modn.html">finite_field_prime_modn</a></td>
+<tr style="background: #f8f8f8"><td>169</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/finite_field_pari_ffelt.html">finite_field_pari_ffelt</a></td>
+<tr style="background: #f8f8f8"><td>154</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/element_pari_ffelt.html">element_pari_ffelt</a></td>
+<tr style="background: #f9f9f9"><td>132</td><td><a href="http://sagemath.org/doc/reference/finite_rings/py-modindex.html">py-modindex</a></td>
+<tr style="background: #fbfbfb"><td>103</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/conway_polynomials.html">conway_polynomials</a></td>
+<tr style="background: #fdfdfd"><td>53</td><td><a href="http://sagemath.org/doc/reference/finite_rings/sage/rings/finite_rings/integer_mod_ring.html">integer_mod_ring</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/function_fields">Reference/Function_Fields</a> (2067) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #efefef"><td>466</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/function_field.html">function_field</a></td>
+<tr style="background: #f2f2f2"><td>337</td><td><a href="http://sagemath.org/doc/reference/function_fields/index.html">index</a></td>
+<tr style="background: #f4f4f4"><td>280</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/function_field_element.html">function_field_element</a></td>
+<tr style="background: #f5f5f5"><td>241</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/function_field_ideal.html">function_field_ideal</a></td>
+<tr style="background: #f6f6f6"><td>232</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/maps.html">maps</a></td>
+<tr style="background: #f7f7f7"><td>204</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/function_field_order.html">function_field_order</a></td>
+<tr style="background: #f7f7f7"><td>190</td><td><a href="http://sagemath.org/doc/reference/function_fields/sage/rings/function_field/constructor.html">constructor</a></td>
+<tr style="background: #fafafa"><td>117</td><td><a href="http://sagemath.org/doc/reference/function_fields/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/functions">Reference/Functions</a> (21180) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d2d2d2"><td>2823</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/log.html">log</a></td>
+<tr style="background: #d2d2d2"><td>2774</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/piecewise.html">piecewise</a></td>
+<tr style="background: #d9d9d9"><td>1873</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/other.html">other</a></td>
+<tr style="background: #dcdcdc"><td>1609</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/wigner.html">wigner</a></td>
+<tr style="background: #dedede"><td>1461</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/special.html">special</a></td>
+<tr style="background: #dedede"><td>1443</td><td><a href="http://sagemath.org/doc/reference/functions/index.html">index</a></td>
+<tr style="background: #e0e0e0"><td>1273</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/generalized.html">generalized</a></td>
+<tr style="background: #e1e1e1"><td>1203</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/orthogonal_polys.html">orthogonal_polys</a></td>
+<tr style="background: #e1e1e1"><td>1179</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/hyperbolic.html">hyperbolic</a></td>
+<tr style="background: #e4e4e4"><td>1031</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/trig.html">trig</a></td>
+<tr style="background: #e5e5e5"><td>963</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/bessel.html">bessel</a></td>
+<tr style="background: #e7e7e7"><td>820</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/prime_pi.html">prime_pi</a></td>
+<tr style="background: #e8e8e8"><td>767</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/min_max.html">min_max</a></td>
+<tr style="background: #e9e9e9"><td>743</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/transcendental.html">transcendental</a></td>
+<tr style="background: #e9e9e9"><td>704</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/exp_integral.html">exp_integral</a></td>
+<tr style="background: #ededed"><td>514</td><td><a href="http://sagemath.org/doc/reference/functions/sage/functions/spike_function.html">spike_function</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/games">Reference/Games</a> (2421) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e0e0e0"><td>1266</td><td><a href="http://sagemath.org/doc/reference/games/sage/games/sudoku.html">sudoku</a></td>
+<tr style="background: #ebebeb"><td>626</td><td><a href="http://sagemath.org/doc/reference/games/sage/games/quantumino.html">quantumino</a></td>
+<tr style="background: #f0f0f0"><td>419</td><td><a href="http://sagemath.org/doc/reference/games/index.html">index</a></td>
+<tr style="background: #fafafa"><td>110</td><td><a href="http://sagemath.org/doc/reference/games/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/geometry">Reference/Geometry</a> (9924) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e1e1e1"><td>1231</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/constructor.html">constructor</a></td>
+<tr style="background: #e1e1e1"><td>1203</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/lattice_polytope.html">lattice_polytope</a></td>
+<tr style="background: #e2e2e2"><td>1144</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/base.html">base</a></td>
+<tr style="background: #e9e9e9"><td>703</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/cone.html">cone</a></td>
+<tr style="background: #eaeaea"><td>666</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/plot.html">plot</a></td>
+<tr style="background: #ebebeb"><td>607</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/rings/polynomial/groebner_fan.html">groebner_fan</a></td>
+<tr style="background: #ececec"><td>597</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/fan.html">fan</a></td>
+<tr style="background: #ececec"><td>571</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/triangulation/point_configuration.html">point_configuration</a></td>
+<tr style="background: #ededed"><td>517</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/representation.html">representation</a></td>
+<tr style="background: #eeeeee"><td>478</td><td><a href="http://sagemath.org/doc/reference/geometry/index.html">index</a></td>
+<tr style="background: #efefef"><td>461</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/library.html">library</a></td>
+<tr style="background: #f0f0f0"><td>422</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/toric_lattice.html">toric_lattice</a></td>
+<tr style="background: #f1f1f1"><td>367</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/triangulation/element.html">element</a></td>
+<tr style="background: #f2f2f2"><td>347</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/triangulation/base.html">base</a></td>
+<tr style="background: #f2f2f2"><td>329</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/polyhedron/base_QQ.html">base_QQ</a></td>
+<tr style="background: #f4f4f4"><td>281</td><td><a href="http://sagemath.org/doc/reference/geometry/sage/geometry/fan_morphism.html">fan_morphism</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/graphs">Reference/Graphs</a> (35612) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #bfbfbf"><td>7099</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/generic_graph.html">generic_graph</a></td>
+<tr style="background: #c1c1c1"><td>6629</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph.html">graph</a></td>
+<tr style="background: #c8c8c8"><td>4666</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_generators.html">graph_generators</a></td>
+<tr style="background: #cecece"><td>3412</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/digraph.html">digraph</a></td>
+<tr style="background: #d6d6d6"><td>2320</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/digraph_generators.html">digraph_generators</a></td>
+<tr style="background: #d9d9d9"><td>1869</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_latex.html">graph_latex</a></td>
+<tr style="background: #dcdcdc"><td>1658</td><td><a href="http://sagemath.org/doc/reference/graphs/index.html">index</a></td>
+<tr style="background: #dfdfdf"><td>1353</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/bipartite_graph.html">bipartite_graph</a></td>
+<tr style="background: #e0e0e0"><td>1306</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_coloring.html">graph_coloring</a></td>
+<tr style="background: #e3e3e3"><td>1082</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/cliquer.html">cliquer</a></td>
+<tr style="background: #e6e6e6"><td>860</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/distances_all_pairs.html">distances_all_pairs</a></td>
+<tr style="background: #e6e6e6"><td>859</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_decompositions/graph_products.html">graph_products</a></td>
+<tr style="background: #eaeaea"><td>669</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_list.html">graph_list</a></td>
+<tr style="background: #ebebeb"><td>645</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/spanning_tree.html">spanning_tree</a></td>
+<tr style="background: #ebebeb"><td>631</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/graph_database.html">graph_database</a></td>
+<tr style="background: #ededed"><td>554</td><td><a href="http://sagemath.org/doc/reference/graphs/sage/graphs/comparability.html">comparability</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/groups">Reference/Groups</a> (12541) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dadada"><td>1795</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/perm_gps/permgroup_element.html">permgroup_element</a></td>
+<tr style="background: #dbdbdb"><td>1710</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/perm_gps/permgroup.html">permgroup</a></td>
+<tr style="background: #e1e1e1"><td>1214</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/perm_gps/permgroup_named.html">permgroup_named</a></td>
+<tr style="background: #e4e4e4"><td>1018</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/perm_gps/cubegroup.html">cubegroup</a></td>
+<tr style="background: #e9e9e9"><td>718</td><td><a href="http://sagemath.org/doc/reference/groups/index.html">index</a></td>
+<tr style="background: #eaeaea"><td>667</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/generic.html">generic</a></td>
+<tr style="background: #eaeaea"><td>664</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/additive_abelian/additive_abelian_group.html">additive_abelian_group</a></td>
+<tr style="background: #eaeaea"><td>653</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/finitely_presented.html">finitely_presented</a></td>
+<tr style="background: #eaeaea"><td>646</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/perm_gps/permgroup_morphism.html">permgroup_morphism</a></td>
+<tr style="background: #ececec"><td>587</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/matrix_gps/matrix_group.html">matrix_group</a></td>
+<tr style="background: #ececec"><td>574</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/abelian_gps/abelian_group.html">abelian_group</a></td>
+<tr style="background: #ededed"><td>540</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/free_group.html">free_group</a></td>
+<tr style="background: #efefef"><td>469</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/braid.html">braid</a></td>
+<tr style="background: #efefef"><td>462</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/conjugacy_classes.html">conjugacy_classes</a></td>
+<tr style="background: #f0f0f0"><td>419</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/groups_catalog.html">groups_catalog</a></td>
+<tr style="background: #f0f0f0"><td>405</td><td><a href="http://sagemath.org/doc/reference/groups/sage/groups/group.html">group</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/hecke">Reference/Hecke</a> (2187) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f3f3f3"><td>297</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/module.html">module</a></td>
+<tr style="background: #f4f4f4"><td>276</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/hecke_operator.html">hecke_operator</a></td>
+<tr style="background: #f5f5f5"><td>243</td><td><a href="http://sagemath.org/doc/reference/hecke/index.html">index</a></td>
+<tr style="background: #f5f5f5"><td>241</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/algebra.html">algebra</a></td>
+<tr style="background: #f7f7f7"><td>188</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/submodule.html">submodule</a></td>
+<tr style="background: #f7f7f7"><td>182</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/degenmap.html">degenmap</a></td>
+<tr style="background: #f7f7f7"><td>182</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/ambient_module.html">ambient_module</a></td>
+<tr style="background: #f8f8f8"><td>161</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/homspace.html">homspace</a></td>
+<tr style="background: #f8f8f8"><td>157</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/element.html">element</a></td>
+<tr style="background: #f8f8f8"><td>152</td><td><a href="http://sagemath.org/doc/reference/hecke/sage/modular/hecke/morphism.html">morphism</a></td>
+<tr style="background: #fafafa"><td>108</td><td><a href="http://sagemath.org/doc/reference/hecke/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/history_and_license">Reference/History_And_License</a> (342) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f2f2f2"><td>342</td><td><a href="http://sagemath.org/doc/reference/history_and_license/index.html">index</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/homology">Reference/Homology</a> (6281) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e2e2e2"><td>1123</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/simplicial_complex.html">simplicial_complex</a></td>
+<tr style="background: #e4e4e4"><td>1019</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/examples.html">examples</a></td>
+<tr style="background: #eaeaea"><td>648</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/chain_complex.html">chain_complex</a></td>
+<tr style="background: #ececec"><td>571</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/delta_complex.html">delta_complex</a></td>
+<tr style="background: #efefef"><td>444</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/simplicial_complex_morphism.html">simplicial_complex_morphism</a></td>
+<tr style="background: #f0f0f0"><td>404</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/cell_complex.html">cell_complex</a></td>
+<tr style="background: #f0f0f0"><td>397</td><td><a href="http://sagemath.org/doc/reference/homology/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>395</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/cubical_complex.html">cubical_complex</a></td>
+<tr style="background: #f2f2f2"><td>345</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/chain_complex_morphism.html">chain_complex_morphism</a></td>
+<tr style="background: #f3f3f3"><td>323</td><td><a href="http://sagemath.org/doc/reference/homology/sage/interfaces/chomp.html">chomp</a></td>
+<tr style="background: #f7f7f7"><td>204</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/simplicial_complex_homset.html">simplicial_complex_homset</a></td>
+<tr style="background: #f7f7f7"><td>200</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/chain_complex_homspace.html">chain_complex_homspace</a></td>
+<tr style="background: #fafafa"><td>120</td><td><a href="http://sagemath.org/doc/reference/homology/py-modindex.html">py-modindex</a></td>
+<tr style="background: #fdfdfd"><td>44</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/homology_group.html">homology_group</a></td>
+<tr style="background: #fdfdfd"><td>44</td><td><a href="http://sagemath.org/doc/reference/homology/sage/homology/matrix_utils.html">matrix_utils</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/interfaces">Reference/Interfaces</a> (15589) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d8d8d8"><td>2071</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/octave.html">octave</a></td>
+<tr style="background: #d8d8d8"><td>2008</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/r.html">r</a></td>
+<tr style="background: #e1e1e1"><td>1202</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/mathematica.html">mathematica</a></td>
+<tr style="background: #e2e2e2"><td>1148</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/gap.html">gap</a></td>
+<tr style="background: #e4e4e4"><td>986</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/gp.html">gp</a></td>
+<tr style="background: #e4e4e4"><td>985</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/maple.html">maple</a></td>
+<tr style="background: #e6e6e6"><td>904</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/magma.html">magma</a></td>
+<tr style="background: #e7e7e7"><td>853</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/maxima.html">maxima</a></td>
+<tr style="background: #e7e7e7"><td>852</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/matlab.html">matlab</a></td>
+<tr style="background: #e7e7e7"><td>841</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/singular.html">singular</a></td>
+<tr style="background: #e8e8e8"><td>796</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/sage0.html">sage0</a></td>
+<tr style="background: #eaeaea"><td>670</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/maxima_lib.html">maxima_lib</a></td>
+<tr style="background: #ebebeb"><td>634</td><td><a href="http://sagemath.org/doc/reference/interfaces/index.html">index</a></td>
+<tr style="background: #ececec"><td>591</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/gap3.html">gap3</a></td>
+<tr style="background: #ececec"><td>555</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/gnuplot.html">gnuplot</a></td>
+<tr style="background: #eeeeee"><td>493</td><td><a href="http://sagemath.org/doc/reference/interfaces/sage/interfaces/mwrank.html">mwrank</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/lfunctions">Reference/Lfunctions</a> (1754) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ededed"><td>519</td><td><a href="http://sagemath.org/doc/reference/lfunctions/sage/lfunctions/dokchitser.html">dokchitser</a></td>
+<tr style="background: #efefef"><td>458</td><td><a href="http://sagemath.org/doc/reference/lfunctions/sage/lfunctions/lcalc.html">lcalc</a></td>
+<tr style="background: #f3f3f3"><td>325</td><td><a href="http://sagemath.org/doc/reference/lfunctions/index.html">index</a></td>
+<tr style="background: #f3f3f3"><td>321</td><td><a href="http://sagemath.org/doc/reference/lfunctions/sage/lfunctions/sympow.html">sympow</a></td>
+<tr style="background: #f9f9f9"><td>131</td><td><a href="http://sagemath.org/doc/reference/lfunctions/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/libs">Reference/Libs</a> (5619) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e8e8e8"><td>751</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/pari/gen.html">gen</a></td>
+<tr style="background: #ececec"><td>598</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/ppl.html">ppl</a></td>
+<tr style="background: #efefef"><td>460</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/lrcalc/lrcalc.html">lrcalc</a></td>
+<tr style="background: #efefef"><td>452</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/libecm.html">libecm</a></td>
+<tr style="background: #efefef"><td>448</td><td><a href="http://sagemath.org/doc/reference/libs/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>394</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/gap/libgap.html">libgap</a></td>
+<tr style="background: #f1f1f1"><td>370</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/singular/function.html">function</a></td>
+<tr style="background: #f3f3f3"><td>322</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/ntl/all.html">all</a></td>
+<tr style="background: #f3f3f3"><td>321</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/singular/option.html">option</a></td>
+<tr style="background: #f4f4f4"><td>281</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/mwrank/interface.html">interface</a></td>
+<tr style="background: #f4f4f4"><td>273</td><td><a href="http://sagemath.org/doc/reference/libs/sage/ext/pselect.html">pselect</a></td>
+<tr style="background: #f5f5f5"><td>254</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/gap/element.html">element</a></td>
+<tr style="background: #f7f7f7"><td>204</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/mwrank/all.html">all</a></td>
+<tr style="background: #f7f7f7"><td>182</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/mwrank/mwrank.html">mwrank</a></td>
+<tr style="background: #f8f8f8"><td>172</td><td><a href="http://sagemath.org/doc/reference/libs/sage/libs/flint/fmpz_poly.html">fmpz_poly</a></td>
+<tr style="background: #f9f9f9"><td>137</td><td><a href="http://sagemath.org/doc/reference/libs/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/logic">Reference/Logic</a> (2489) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e4e4e4"><td>1012</td><td><a href="http://sagemath.org/doc/reference/logic/sage/logic/propcalc.html">propcalc</a></td>
+<tr style="background: #eaeaea"><td>660</td><td><a href="http://sagemath.org/doc/reference/logic/sage/logic/booleval.html">booleval</a></td>
+<tr style="background: #efefef"><td>445</td><td><a href="http://sagemath.org/doc/reference/logic/index.html">index</a></td>
+<tr style="background: #f5f5f5"><td>240</td><td><a href="http://sagemath.org/doc/reference/logic/sage/logic/boolformula.html">boolformula</a></td>
+<tr style="background: #f9f9f9"><td>132</td><td><a href="http://sagemath.org/doc/reference/logic/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/matrices">Reference/Matrices</a> (39403) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #b7b7b7"><td>10603</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/constructor.html">constructor</a></td>
+<tr style="background: #c8c8c8"><td>4706</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_symbolic_dense.html">matrix_symbolic_dense</a></td>
+<tr style="background: #c9c9c9"><td>4355</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/docs.html">docs</a></td>
+<tr style="background: #cdcdcd"><td>3565</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix2.html">matrix2</a></td>
+<tr style="background: #d2d2d2"><td>2803</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_space.html">matrix_space</a></td>
+<tr style="background: #d3d3d3"><td>2687</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_integer_dense.html">matrix_integer_dense</a></td>
+<tr style="background: #d4d4d4"><td>2505</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix1.html">matrix1</a></td>
+<tr style="background: #dddddd"><td>1515</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix0.html">matrix0</a></td>
+<tr style="background: #e0e0e0"><td>1319</td><td><a href="http://sagemath.org/doc/reference/matrices/index.html">index</a></td>
+<tr style="background: #e1e1e1"><td>1223</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/operation_table.html">operation_table</a></td>
+<tr style="background: #e3e3e3"><td>1040</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/strassen.html">strassen</a></td>
+<tr style="background: #e7e7e7"><td>818</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix.html">matrix</a></td>
+<tr style="background: #ebebeb"><td>615</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_rational_dense.html">matrix_rational_dense</a></td>
+<tr style="background: #ececec"><td>581</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_sparse.html">matrix_sparse</a></td>
+<tr style="background: #ededed"><td>554</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/benchmark.html">benchmark</a></td>
+<tr style="background: #ededed"><td>514</td><td><a href="http://sagemath.org/doc/reference/matrices/sage/matrix/matrix_double_dense.html">matrix_double_dense</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/matroids">Reference/Matroids</a> (2543) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f3f3f3"><td>319</td><td><a href="http://sagemath.org/doc/reference/matroids/index.html">index</a></td>
+<tr style="background: #f6f6f6"><td>226</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/constructor.html">constructor</a></td>
+<tr style="background: #f6f6f6"><td>205</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/matroid.html">matroid</a></td>
+<tr style="background: #f7f7f7"><td>197</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/linear_matroid.html">linear_matroid</a></td>
+<tr style="background: #f8f8f8"><td>175</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/catalog.html">catalog</a></td>
+<tr style="background: #f8f8f8"><td>173</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/basis_matroid.html">basis_matroid</a></td>
+<tr style="background: #f8f8f8"><td>155</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/circuit_closures_matroid.html">circuit_closures_matroid</a></td>
+<tr style="background: #f9f9f9"><td>133</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/basis_exchange_matroid.html">basis_exchange_matroid</a></td>
+<tr style="background: #f9f9f9"><td>132</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/matroids_catalog.html">matroids_catalog</a></td>
+<tr style="background: #f9f9f9"><td>127</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/minor_matroid.html">minor_matroid</a></td>
+<tr style="background: #fafafa"><td>126</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/utilities.html">utilities</a></td>
+<tr style="background: #fafafa"><td>122</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/extension.html">extension</a></td>
+<tr style="background: #fafafa"><td>121</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/dual_matroid.html">dual_matroid</a></td>
+<tr style="background: #fafafa"><td>118</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/advanced.html">advanced</a></td>
+<tr style="background: #fafafa"><td>117</td><td><a href="http://sagemath.org/doc/reference/matroids/sage/matroids/rank_matroid.html">rank_matroid</a></td>
+<tr style="background: #fbfbfb"><td>97</td><td><a href="http://sagemath.org/doc/reference/matroids/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/misc">Reference/Misc</a> (21277) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cdcdcd"><td>3570</td><td><a href="http://sagemath.org/doc/reference/misc/sage/rings/arith.html">arith</a></td>
+<tr style="background: #d5d5d5"><td>2383</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/latex.html">latex</a></td>
+<tr style="background: #d9d9d9"><td>1974</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/randstate.html">randstate</a></td>
+<tr style="background: #dadada"><td>1816</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/functional.html">functional</a></td>
+<tr style="background: #dfdfdf"><td>1335</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/nested_class.html">nested_class</a></td>
+<tr style="background: #e1e1e1"><td>1242</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/html.html">html</a></td>
+<tr style="background: #e2e2e2"><td>1149</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/sage_eval.html">sage_eval</a></td>
+<tr style="background: #e2e2e2"><td>1126</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/latex_macros.html">latex_macros</a></td>
+<tr style="background: #e3e3e3"><td>1096</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/package.html">package</a></td>
+<tr style="background: #e5e5e5"><td>916</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/interpreter.html">interpreter</a></td>
+<tr style="background: #e6e6e6"><td>887</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/misc.html">misc</a></td>
+<tr style="background: #e7e7e7"><td>804</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/sage_timeit_class.html">sage_timeit_class</a></td>
+<tr style="background: #e8e8e8"><td>780</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/cython.html">cython</a></td>
+<tr style="background: #e8e8e8"><td>760</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/table.html">table</a></td>
+<tr style="background: #e9e9e9"><td>743</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/explain_pickle.html">explain_pickle</a></td>
+<tr style="background: #e9e9e9"><td>696</td><td><a href="http://sagemath.org/doc/reference/misc/sage/misc/preparser.html">preparser</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/modabvar">Reference/Modabvar</a> (2375) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f5f5f5"><td>259</td><td><a href="http://sagemath.org/doc/reference/modabvar/index.html">index</a></td>
+<tr style="background: #f6f6f6"><td>205</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/torsion_subgroup.html">torsion_subgroup</a></td>
+<tr style="background: #f7f7f7"><td>203</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/constructor.html">constructor</a></td>
+<tr style="background: #f7f7f7"><td>194</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/abvar.html">abvar</a></td>
+<tr style="background: #f7f7f7"><td>186</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/homspace.html">homspace</a></td>
+<tr style="background: #f7f7f7"><td>181</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/lseries.html">lseries</a></td>
+<tr style="background: #f8f8f8"><td>177</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/homology.html">homology</a></td>
+<tr style="background: #f8f8f8"><td>176</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/abvar_ambient_jacobian.html">abvar_ambient_jacobian</a></td>
+<tr style="background: #f8f8f8"><td>174</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/cuspidal_subgroup.html">cuspidal_subgroup</a></td>
+<tr style="background: #f8f8f8"><td>172</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/finite_subgroup.html">finite_subgroup</a></td>
+<tr style="background: #f8f8f8"><td>165</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/morphism.html">morphism</a></td>
+<tr style="background: #f8f8f8"><td>165</td><td><a href="http://sagemath.org/doc/reference/modabvar/sage/modular/abvar/abvar_newform.html">abvar_newform</a></td>
+<tr style="background: #fafafa"><td>118</td><td><a href="http://sagemath.org/doc/reference/modabvar/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/modfrm">Reference/Modfrm</a> (4956) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ececec"><td>584</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/constructor.html">constructor</a></td>
+<tr style="background: #efefef"><td>464</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/element.html">element</a></td>
+<tr style="background: #f1f1f1"><td>380</td><td><a href="http://sagemath.org/doc/reference/modfrm/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>371</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/hecke_operator_on_qexp.html">hecke_operator_on_qexp</a></td>
+<tr style="background: #f1f1f1"><td>361</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/space.html">space</a></td>
+<tr style="background: #f2f2f2"><td>337</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/eis_series.html">eis_series</a></td>
+<tr style="background: #f4f4f4"><td>293</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/cuspidal_submodule.html">cuspidal_submodule</a></td>
+<tr style="background: #f4f4f4"><td>275</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/numerical.html">numerical</a></td>
+<tr style="background: #f5f5f5"><td>261</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/half_integral.html">half_integral</a></td>
+<tr style="background: #f5f5f5"><td>253</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/ambient_eps.html">ambient_eps</a></td>
+<tr style="background: #f5f5f5"><td>249</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/find_generators.html">find_generators</a></td>
+<tr style="background: #f6f6f6"><td>231</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/eis_series_cython.html">eis_series_cython</a></td>
+<tr style="background: #f6f6f6"><td>228</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/vm_basis.html">vm_basis</a></td>
+<tr style="background: #f6f6f6"><td>227</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/ambient_g0.html">ambient_g0</a></td>
+<tr style="background: #f6f6f6"><td>223</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/ambient.html">ambient</a></td>
+<tr style="background: #f6f6f6"><td>219</td><td><a href="http://sagemath.org/doc/reference/modfrm/sage/modular/modform/ambient_g1.html">ambient_g1</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/modmisc">Reference/Modmisc</a> (4435) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ededed"><td>546</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/dirichlet.html">dirichlet</a></td>
+<tr style="background: #f0f0f0"><td>431</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/dims.html">dims</a></td>
+<tr style="background: #f0f0f0"><td>396</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/cusps.html">cusps</a></td>
+<tr style="background: #f2f2f2"><td>341</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/etaproducts.html">etaproducts</a></td>
+<tr style="background: #f4f4f4"><td>279</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/local_comp/smoothchar.html">smoothchar</a></td>
+<tr style="background: #f4f4f4"><td>271</td><td><a href="http://sagemath.org/doc/reference/modmisc/index.html">index</a></td>
+<tr style="background: #f5f5f5"><td>248</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/overconvergent/weightspace.html">weightspace</a></td>
+<tr style="background: #f5f5f5"><td>244</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/quatalg/brandt.html">brandt</a></td>
+<tr style="background: #f6f6f6"><td>229</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/overconvergent/genus0.html">genus0</a></td>
+<tr style="background: #f6f6f6"><td>229</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/ssmod/ssmod.html">ssmod</a></td>
+<tr style="background: #f6f6f6"><td>223</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/cusps_nf.html">cusps_nf</a></td>
+<tr style="background: #f6f6f6"><td>222</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/local_comp/local_comp.html">local_comp</a></td>
+<tr style="background: #f6f6f6"><td>207</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/local_comp/liftings.html">liftings</a></td>
+<tr style="background: #f6f6f6"><td>205</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/local_comp/type_space.html">type_space</a></td>
+<tr style="background: #f7f7f7"><td>196</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/buzzard.html">buzzard</a></td>
+<tr style="background: #f8f8f8"><td>168</td><td><a href="http://sagemath.org/doc/reference/modmisc/sage/modular/overconvergent/hecke_series.html">hecke_series</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/modsym">Reference/Modsym</a> (3796) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #efefef"><td>434</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/modular_symbols.html">modular_symbols</a></td>
+<tr style="background: #f3f3f3"><td>302</td><td><a href="http://sagemath.org/doc/reference/modsym/index.html">index</a></td>
+<tr style="background: #f4f4f4"><td>282</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/manin_symbols.html">manin_symbols</a></td>
+<tr style="background: #f5f5f5"><td>260</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/modsym.html">modsym</a></td>
+<tr style="background: #f5f5f5"><td>258</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/p1list.html">p1list</a></td>
+<tr style="background: #f5f5f5"><td>251</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/space.html">space</a></td>
+<tr style="background: #f5f5f5"><td>236</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/subspace.html">subspace</a></td>
+<tr style="background: #f6f6f6"><td>226</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/p1list_nf.html">p1list_nf</a></td>
+<tr style="background: #f6f6f6"><td>219</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/relation_matrix.html">relation_matrix</a></td>
+<tr style="background: #f6f6f6"><td>212</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/g1list.html">g1list</a></td>
+<tr style="background: #f6f6f6"><td>209</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/boundary.html">boundary</a></td>
+<tr style="background: #f7f7f7"><td>201</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/ambient.html">ambient</a></td>
+<tr style="background: #f7f7f7"><td>196</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/ghlist.html">ghlist</a></td>
+<tr style="background: #f7f7f7"><td>191</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/element.html">element</a></td>
+<tr style="background: #f7f7f7"><td>185</td><td><a href="http://sagemath.org/doc/reference/modsym/sage/modular/modsym/heilbronn.html">heilbronn</a></td>
+<tr style="background: #f9f9f9"><td>134</td><td><a href="http://sagemath.org/doc/reference/modsym/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/modules">Reference/Modules</a> (6492) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e0e0e0"><td>1320</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/free_module_element.html">free_module_element</a></td>
+<tr style="background: #e2e2e2"><td>1164</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/free_module.html">free_module</a></td>
+<tr style="background: #f0f0f0"><td>416</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/complex_double_vector.html">complex_double_vector</a></td>
+<tr style="background: #f0f0f0"><td>408</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/vector_space_morphism.html">vector_space_morphism</a></td>
+<tr style="background: #f1f1f1"><td>379</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/fg_pid/fgp_module.html">fgp_module</a></td>
+<tr style="background: #f1f1f1"><td>374</td><td><a href="http://sagemath.org/doc/reference/modules/index.html">index</a></td>
+<tr style="background: #f2f2f2"><td>344</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/module.html">module</a></td>
+<tr style="background: #f4f4f4"><td>285</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/vector_callable_symbolic_dense.html">vector_callable_symbolic_dense</a></td>
+<tr style="background: #f4f4f4"><td>276</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/matrix_morphism.html">matrix_morphism</a></td>
+<tr style="background: #f4f4f4"><td>272</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/free_module_homspace.html">free_module_homspace</a></td>
+<tr style="background: #f4f4f4"><td>269</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/vector_space_homspace.html">vector_space_homspace</a></td>
+<tr style="background: #f5f5f5"><td>248</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/fg_pid/fgp_morphism.html">fgp_morphism</a></td>
+<tr style="background: #f6f6f6"><td>219</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/fg_pid/fgp_element.html">fgp_element</a></td>
+<tr style="background: #f6f6f6"><td>215</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/free_module_morphism.html">free_module_morphism</a></td>
+<tr style="background: #f8f8f8"><td>173</td><td><a href="http://sagemath.org/doc/reference/modules/sage/modules/real_double_vector.html">real_double_vector</a></td>
+<tr style="background: #f9f9f9"><td>130</td><td><a href="http://sagemath.org/doc/reference/modules/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/monoids">Reference/Monoids</a> (2542) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ececec"><td>587</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/string_monoid.html">string_monoid</a></td>
+<tr style="background: #ededed"><td>522</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/string_monoid_element.html">string_monoid_element</a></td>
+<tr style="background: #f4f4f4"><td>272</td><td><a href="http://sagemath.org/doc/reference/monoids/index.html">index</a></td>
+<tr style="background: #f5f5f5"><td>256</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/free_monoid.html">free_monoid</a></td>
+<tr style="background: #f7f7f7"><td>202</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/free_abelian_monoid_element.html">free_abelian_monoid_element</a></td>
+<tr style="background: #f7f7f7"><td>201</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/free_monoid_element.html">free_monoid_element</a></td>
+<tr style="background: #f7f7f7"><td>192</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/monoid.html">monoid</a></td>
+<tr style="background: #f7f7f7"><td>190</td><td><a href="http://sagemath.org/doc/reference/monoids/sage/monoids/free_abelian_monoid.html">free_abelian_monoid</a></td>
+<tr style="background: #fafafa"><td>120</td><td><a href="http://sagemath.org/doc/reference/monoids/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/notebook">Reference/Notebook</a> (14938) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cacaca"><td>4122</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/notebook_object.html">notebook_object</a></td>
+<tr style="background: #dadada"><td>1793</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/config.html">config</a></td>
+<tr style="background: #dcdcdc"><td>1667</td><td><a href="http://sagemath.org/doc/reference/notebook/index.html">index</a></td>
+<tr style="background: #dfdfdf"><td>1357</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/interact.html">interact</a></td>
+<tr style="background: #e2e2e2"><td>1172</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/notebook.html">notebook</a></td>
+<tr style="background: #e4e4e4"><td>1007</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/worksheet.html">worksheet</a></td>
+<tr style="background: #e5e5e5"><td>920</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/cell.html">cell</a></td>
+<tr style="background: #ebebeb"><td>610</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/js.html">js</a></td>
+<tr style="background: #f3f3f3"><td>320</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/misc/misc.html">misc</a></td>
+<tr style="background: #f3f3f3"><td>314</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/template.html">template</a></td>
+<tr style="background: #f3f3f3"><td>310</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/misc/support.html">support</a></td>
+<tr style="background: #f3f3f3"><td>302</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/css.html">css</a></td>
+<tr style="background: #f3f3f3"><td>296</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/challenge.html">challenge</a></td>
+<tr style="background: #f4f4f4"><td>265</td><td><a href="http://sagemath.org/doc/reference/notebook/sage/server/trac/trac.html">trac</a></td>
+<tr style="background: #f5f5f5"><td>256</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/notebook/docHTMLProcessor.html">docHTMLProcessor</a></td>
+<tr style="background: #f6f6f6"><td>227</td><td><a href="http://sagemath.org/doc/reference/notebook/sagenb/misc/sphinxify.html">sphinxify</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/number_fields">Reference/Number_Fields</a> (11473) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dbdbdb"><td>1762</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field.html">number_field</a></td>
+<tr style="background: #e0e0e0"><td>1306</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_element.html">number_field_element</a></td>
+<tr style="background: #e3e3e3"><td>1071</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/galois_group.html">galois_group</a></td>
+<tr style="background: #e4e4e4"><td>979</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_rel.html">number_field_rel</a></td>
+<tr style="background: #e6e6e6"><td>911</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_ideal.html">number_field_ideal</a></td>
+<tr style="background: #e9e9e9"><td>701</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/unit_group.html">unit_group</a></td>
+<tr style="background: #eaeaea"><td>659</td><td><a href="http://sagemath.org/doc/reference/number_fields/index.html">index</a></td>
+<tr style="background: #ececec"><td>594</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/qqbar.html">qqbar</a></td>
+<tr style="background: #ececec"><td>583</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_element_quadratic.html">number_field_element_quadratic</a></td>
+<tr style="background: #ededed"><td>522</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/order.html">order</a></td>
+<tr style="background: #ededed"><td>522</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/class_group.html">class_group</a></td>
+<tr style="background: #eeeeee"><td>508</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_base.html">number_field_base</a></td>
+<tr style="background: #f0f0f0"><td>403</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/number_field_ideal_rel.html">number_field_ideal_rel</a></td>
+<tr style="background: #f2f2f2"><td>330</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/small_primes_of_degree_one.html">small_primes_of_degree_one</a></td>
+<tr style="background: #f3f3f3"><td>318</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/totallyreal.html">totallyreal</a></td>
+<tr style="background: #f3f3f3"><td>304</td><td><a href="http://sagemath.org/doc/reference/number_fields/sage/rings/number_field/morphism.html">morphism</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/numerical">Reference/Numerical</a> (12401) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cccccc"><td>3820</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/mip.html">mip</a></td>
+<tr style="background: #cdcdcd"><td>3518</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/optimize.html">optimize</a></td>
+<tr style="background: #dfdfdf"><td>1343</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/backends/generic_backend.html">generic_backend</a></td>
+<tr style="background: #e1e1e1"><td>1182</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/linear_functions.html">linear_functions</a></td>
+<tr style="background: #e8e8e8"><td>786</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/knapsack.html">knapsack</a></td>
+<tr style="background: #ebebeb"><td>611</td><td><a href="http://sagemath.org/doc/reference/numerical/index.html">index</a></td>
+<tr style="background: #ededed"><td>525</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/backends/glpk_backend.html">glpk_backend</a></td>
+<tr style="background: #f3f3f3"><td>312</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/backends/glpk_graph_backend.html">glpk_graph_backend</a></td>
+<tr style="background: #f8f8f8"><td>152</td><td><a href="http://sagemath.org/doc/reference/numerical/py-modindex.html">py-modindex</a></td>
+<tr style="background: #f9f9f9"><td>151</td><td><a href="http://sagemath.org/doc/reference/numerical/sage/numerical/backends/ppl_backend.html">ppl_backend</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/padics">Reference/Padics</a> (5308) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e8e8e8"><td>797</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/tutorial.html">tutorial</a></td>
+<tr style="background: #eeeeee"><td>480</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_generic_element.html">padic_generic_element</a></td>
+<tr style="background: #efefef"><td>450</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/misc.html">misc</a></td>
+<tr style="background: #f0f0f0"><td>417</td><td><a href="http://sagemath.org/doc/reference/padics/index.html">index</a></td>
+<tr style="background: #f0f0f0"><td>406</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/factory.html">factory</a></td>
+<tr style="background: #f3f3f3"><td>298</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_printing.html">padic_printing</a></td>
+<tr style="background: #f3f3f3"><td>295</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/local_generic.html">local_generic</a></td>
+<tr style="background: #f4f4f4"><td>283</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_fixed_mod_element.html">padic_fixed_mod_element</a></td>
+<tr style="background: #f5f5f5"><td>261</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_base_generic.html">padic_base_generic</a></td>
+<tr style="background: #f5f5f5"><td>250</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_generic.html">padic_generic</a></td>
+<tr style="background: #f5f5f5"><td>244</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_extension_generic.html">padic_extension_generic</a></td>
+<tr style="background: #f5f5f5"><td>233</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/unramified_extension_generic.html">unramified_extension_generic</a></td>
+<tr style="background: #f6f6f6"><td>227</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_ext_element.html">padic_ext_element</a></td>
+<tr style="background: #f6f6f6"><td>227</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/padic_base_generic_element.html">padic_base_generic_element</a></td>
+<tr style="background: #f6f6f6"><td>222</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/local_generic_element.html">local_generic_element</a></td>
+<tr style="background: #f6f6f6"><td>218</td><td><a href="http://sagemath.org/doc/reference/padics/sage/rings/padics/eisenstein_extension_generic.html">eisenstein_extension_generic</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/parallel">Reference/Parallel</a> (2736) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e9e9e9"><td>723</td><td><a href="http://sagemath.org/doc/reference/parallel/sage/parallel/decorate.html">decorate</a></td>
+<tr style="background: #ededed"><td>530</td><td><a href="http://sagemath.org/doc/reference/parallel/sage/parallel/multiprocessing_sage.html">multiprocessing_sage</a></td>
+<tr style="background: #f0f0f0"><td>405</td><td><a href="http://sagemath.org/doc/reference/parallel/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>395</td><td><a href="http://sagemath.org/doc/reference/parallel/sage/parallel/reference.html">reference</a></td>
+<tr style="background: #f2f2f2"><td>340</td><td><a href="http://sagemath.org/doc/reference/parallel/sage/parallel/ncpus.html">ncpus</a></td>
+<tr style="background: #f6f6f6"><td>225</td><td><a href="http://sagemath.org/doc/reference/parallel/sage/parallel/use_fork.html">use_fork</a></td>
+<tr style="background: #fafafa"><td>118</td><td><a href="http://sagemath.org/doc/reference/parallel/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/plane_curves">Reference/Plane_Curves</a> (15465) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d4d4d4"><td>2530</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_point.html">ell_point</a></td>
+<tr style="background: #dcdcdc"><td>1628</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/constructor.html">constructor</a></td>
+<tr style="background: #dcdcdc"><td>1592</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_finite_field.html">ell_finite_field</a></td>
+<tr style="background: #dedede"><td>1419</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_rational_field.html">ell_rational_field</a></td>
+<tr style="background: #e1e1e1"><td>1227</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_torsion.html">ell_torsion</a></td>
+<tr style="background: #e6e6e6"><td>863</td><td><a href="http://sagemath.org/doc/reference/plane_curves/index.html">index</a></td>
+<tr style="background: #e7e7e7"><td>807</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_number_field.html">ell_number_field</a></td>
+<tr style="background: #e8e8e8"><td>770</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_generic.html">ell_generic</a></td>
+<tr style="background: #e9e9e9"><td>737</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_field.html">ell_field</a></td>
+<tr style="background: #eaeaea"><td>667</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_tate_curve.html">ell_tate_curve</a></td>
+<tr style="background: #ececec"><td>586</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/heegner.html">heegner</a></td>
+<tr style="background: #ececec"><td>566</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/cm.html">cm</a></td>
+<tr style="background: #ececec"><td>563</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/plane_curves/constructor.html">constructor</a></td>
+<tr style="background: #ededed"><td>547</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/period_lattice.html">period_lattice</a></td>
+<tr style="background: #eeeeee"><td>493</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_curve_isogeny.html">ell_curve_isogeny</a></td>
+<tr style="background: #efefef"><td>470</td><td><a href="http://sagemath.org/doc/reference/plane_curves/sage/schemes/elliptic_curves/ell_local_data.html">ell_local_data</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/plot3d">Reference/Plot3D</a> (30358) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #c1c1c1"><td>6518</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/plot3d.html">plot3d</a></td>
+<tr style="background: #cdcdcd"><td>3627</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/implicit_plot3d.html">implicit_plot3d</a></td>
+<tr style="background: #cecece"><td>3445</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/parametric_plot3d.html">parametric_plot3d</a></td>
+<tr style="background: #d5d5d5"><td>2388</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/platonic.html">platonic</a></td>
+<tr style="background: #d6d6d6"><td>2307</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/list_plot3d.html">list_plot3d</a></td>
+<tr style="background: #dadada"><td>1801</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/parametric_surface.html">parametric_surface</a></td>
+<tr style="background: #dadada"><td>1774</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/base.html">base</a></td>
+<tr style="background: #dddddd"><td>1496</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/tachyon.html">tachyon</a></td>
+<tr style="background: #dfdfdf"><td>1379</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/plot_field3d.html">plot_field3d</a></td>
+<tr style="background: #dfdfdf"><td>1367</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/shapes2.html">shapes2</a></td>
+<tr style="background: #dfdfdf"><td>1359</td><td><a href="http://sagemath.org/doc/reference/plot3d/index.html">index</a></td>
+<tr style="background: #e1e1e1"><td>1179</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/examples.html">examples</a></td>
+<tr style="background: #e5e5e5"><td>923</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/revolution_plot3d.html">revolution_plot3d</a></td>
+<tr style="background: #ececec"><td>565</td><td><a href="http://sagemath.org/doc/reference/plot3d/sage/plot/plot3d/texture.html">texture</a></td>
+<tr style="background: #f6f6f6"><td>229</td><td><a href="http://sagemath.org/doc/reference/plot3d/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/plotting">Reference/Plotting</a> (67973) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #a8a8a8"><td>20839</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/plot.html">plot</a></td>
+<tr style="background: #b8b8b8"><td>10149</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/graphics.html">graphics</a></td>
+<tr style="background: #c9c9c9"><td>4329</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/line.html">line</a></td>
+<tr style="background: #cbcbcb"><td>4026</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/animate.html">animate</a></td>
+<tr style="background: #cccccc"><td>3823</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/graphs/graph_plot.html">graph_plot</a></td>
+<tr style="background: #cecece"><td>3439</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/contour_plot.html">contour_plot</a></td>
+<tr style="background: #d1d1d1"><td>2999</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/point.html">point</a></td>
+<tr style="background: #d2d2d2"><td>2833</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/plot_field.html">plot_field</a></td>
+<tr style="background: #d3d3d3"><td>2676</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/colors.html">colors</a></td>
+<tr style="background: #d7d7d7"><td>2175</td><td><a href="http://sagemath.org/doc/reference/plotting/index.html">index</a></td>
+<tr style="background: #d8d8d8"><td>2035</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/complex_plot.html">complex_plot</a></td>
+<tr style="background: #d9d9d9"><td>1922</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/matrix_plot.html">matrix_plot</a></td>
+<tr style="background: #d9d9d9"><td>1907</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/text.html">text</a></td>
+<tr style="background: #d9d9d9"><td>1872</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/polygon.html">polygon</a></td>
+<tr style="background: #dedede"><td>1491</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/scatter_plot.html">scatter_plot</a></td>
+<tr style="background: #dedede"><td>1458</td><td><a href="http://sagemath.org/doc/reference/plotting/sage/plot/density_plot.html">density_plot</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/polynomial_rings">Reference/Polynomial_Rings</a> (16596) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d8d8d8"><td>2035</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring_constructor.html">polynomial_ring_constructor</a></td>
+<tr style="background: #dadada"><td>1836</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_ideal.html">multi_polynomial_ideal</a></td>
+<tr style="background: #dadada"><td>1831</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_element.html">multi_polynomial_element</a></td>
+<tr style="background: #dfdfdf"><td>1373</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_element.html">polynomial_element</a></td>
+<tr style="background: #e3e3e3"><td>1102</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/pbori.html">pbori</a></td>
+<tr style="background: #e3e3e3"><td>1042</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_ring.html">polynomial_ring</a></td>
+<tr style="background: #e5e5e5"><td>955</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/index.html">index</a></td>
+<tr style="background: #e6e6e6"><td>909</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/term_order.html">term_order</a></td>
+<tr style="background: #e8e8e8"><td>749</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_sequence.html">multi_polynomial_sequence</a></td>
+<tr style="background: #e8e8e8"><td>747</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_ring_generic.html">multi_polynomial_ring_generic</a></td>
+<tr style="background: #e9e9e9"><td>736</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/polynomial_rings_univar.html">polynomial_rings_univar</a></td>
+<tr style="background: #e9e9e9"><td>731</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_element_generic.html">polynomial_element_generic</a></td>
+<tr style="background: #eaeaea"><td>663</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_quotient_ring.html">polynomial_quotient_ring</a></td>
+<tr style="background: #ebebeb"><td>631</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/cyclotomic.html">cyclotomic</a></td>
+<tr style="background: #ebebeb"><td>631</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/polynomial_integer_dense_flint.html">polynomial_integer_dense_flint</a></td>
+<tr style="background: #ebebeb"><td>625</td><td><a href="http://sagemath.org/doc/reference/polynomial_rings/sage/rings/polynomial/multi_polynomial_ring.html">multi_polynomial_ring</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/power_series">Reference/Power_Series</a> (4303) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e1e1e1"><td>1249</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/power_series_ring_element.html">power_series_ring_element</a></td>
+<tr style="background: #ebebeb"><td>635</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/power_series_poly.html">power_series_poly</a></td>
+<tr style="background: #ededed"><td>521</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/laurent_series_ring_element.html">laurent_series_ring_element</a></td>
+<tr style="background: #efefef"><td>467</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/power_series_ring.html">power_series_ring</a></td>
+<tr style="background: #f2f2f2"><td>337</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/multi_power_series_ring.html">multi_power_series_ring</a></td>
+<tr style="background: #f2f2f2"><td>334</td><td><a href="http://sagemath.org/doc/reference/power_series/index.html">index</a></td>
+<tr style="background: #f3f3f3"><td>325</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/laurent_series_ring.html">laurent_series_ring</a></td>
+<tr style="background: #f3f3f3"><td>325</td><td><a href="http://sagemath.org/doc/reference/power_series/sage/rings/multi_power_series_ring_element.html">multi_power_series_ring_element</a></td>
+<tr style="background: #fafafa"><td>110</td><td><a href="http://sagemath.org/doc/reference/power_series/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/probability">Reference/Probability</a> (4159) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d5d5d5"><td>2344</td><td><a href="http://sagemath.org/doc/reference/probability/sage/gsl/probability_distribution.html">probability_distribution</a></td>
+<tr style="background: #e1e1e1"><td>1194</td><td><a href="http://sagemath.org/doc/reference/probability/sage/probability/random_variable.html">random_variable</a></td>
+<tr style="background: #eeeeee"><td>488</td><td><a href="http://sagemath.org/doc/reference/probability/index.html">index</a></td>
+<tr style="background: #f9f9f9"><td>133</td><td><a href="http://sagemath.org/doc/reference/probability/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/quadratic_forms">Reference/Quadratic_Forms</a> (3191) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e8e8e8"><td>797</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/quadratic_form.html">quadratic_form</a></td>
+<tr style="background: #e9e9e9"><td>720</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/binary_qf.html">binary_qf</a></td>
+<tr style="background: #f1f1f1"><td>382</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>376</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/special_values.html">special_values</a></td>
+<tr style="background: #f4f4f4"><td>285</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/constructions.html">constructions</a></td>
+<tr style="background: #f4f4f4"><td>270</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/random_quadraticform.html">random_quadraticform</a></td>
+<tr style="background: #f5f5f5"><td>244</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/sage/quadratic_forms/count_local_2.html">count_local_2</a></td>
+<tr style="background: #fafafa"><td>117</td><td><a href="http://sagemath.org/doc/reference/quadratic_forms/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/quat_algebras">Reference/Quat_Algebras</a> (1566) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #eaeaea"><td>657</td><td><a href="http://sagemath.org/doc/reference/quat_algebras/sage/algebras/quatalg/quaternion_algebra.html">quaternion_algebra</a></td>
+<tr style="background: #ededed"><td>531</td><td><a href="http://sagemath.org/doc/reference/quat_algebras/sage/algebras/quatalg/quaternion_algebra_element.html">quaternion_algebra_element</a></td>
+<tr style="background: #f5f5f5"><td>256</td><td><a href="http://sagemath.org/doc/reference/quat_algebras/index.html">index</a></td>
+<tr style="background: #fafafa"><td>122</td><td><a href="http://sagemath.org/doc/reference/quat_algebras/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/riemannian_geometry">Reference/Riemannian_Geometry</a> (445) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f8f8f8"><td>155</td><td><a href="http://sagemath.org/doc/reference/riemannian_geometry/index.html">index</a></td>
+<tr style="background: #f9f9f9"><td>134</td><td><a href="http://sagemath.org/doc/reference/riemannian_geometry/sage/geometry/riemannian_manifolds/surface3d_generators.html">surface3d_generators</a></td>
+<tr style="background: #fafafa"><td>110</td><td><a href="http://sagemath.org/doc/reference/riemannian_geometry/sage/geometry/riemannian_manifolds/parametrized_surface3d.html">parametrized_surface3d</a></td>
+<tr style="background: #fdfdfd"><td>46</td><td><a href="http://sagemath.org/doc/reference/riemannian_geometry/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/rings">Reference/Rings</a> (9080) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dfdfdf"><td>1361</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/ideal.html">ideal</a></td>
+<tr style="background: #e2e2e2"><td>1163</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/quotient_ring.html">quotient_ring</a></td>
+<tr style="background: #e4e4e4"><td>1027</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/ring.html">ring</a></td>
+<tr style="background: #e6e6e6"><td>856</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/quotient_ring_element.html">quotient_ring_element</a></td>
+<tr style="background: #eaeaea"><td>669</td><td><a href="http://sagemath.org/doc/reference/rings/index.html">index</a></td>
+<tr style="background: #eaeaea"><td>653</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/fraction_field_element.html">fraction_field_element</a></td>
+<tr style="background: #ebebeb"><td>641</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/morphism.html">morphism</a></td>
+<tr style="background: #ececec"><td>573</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/fraction_field.html">fraction_field</a></td>
+<tr style="background: #eeeeee"><td>480</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/invariant_theory.html">invariant_theory</a></td>
+<tr style="background: #f0f0f0"><td>430</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/infinity.html">infinity</a></td>
+<tr style="background: #f0f0f0"><td>422</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/ideal_monoid.html">ideal_monoid</a></td>
+<tr style="background: #f2f2f2"><td>341</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/homset.html">homset</a></td>
+<tr style="background: #f3f3f3"><td>314</td><td><a href="http://sagemath.org/doc/reference/rings/sage/rings/noncommutative_ideals.html">noncommutative_ideals</a></td>
+<tr style="background: #f9f9f9"><td>150</td><td><a href="http://sagemath.org/doc/reference/rings/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/rings_numerical">Reference/Rings_Numerical</a> (9786) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #d6d6d6"><td>2257</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_mpfr.html">real_mpfr</a></td>
+<tr style="background: #dedede"><td>1413</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_double.html">complex_double</a></td>
+<tr style="background: #e1e1e1"><td>1206</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_double.html">real_double</a></td>
+<tr style="background: #e4e4e4"><td>1033</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_mpfi.html">real_mpfi</a></td>
+<tr style="background: #e5e5e5"><td>930</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_number.html">complex_number</a></td>
+<tr style="background: #e6e6e6"><td>877</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_field.html">complex_field</a></td>
+<tr style="background: #f0f0f0"><td>411</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_mpc.html">complex_mpc</a></td>
+<tr style="background: #f1f1f1"><td>378</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/index.html">index</a></td>
+<tr style="background: #f4f4f4"><td>272</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_interval.html">complex_interval</a></td>
+<tr style="background: #f5f5f5"><td>250</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_interval_field.html">real_interval_field</a></td>
+<tr style="background: #f5f5f5"><td>241</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_lazy.html">real_lazy</a></td>
+<tr style="background: #f7f7f7"><td>201</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/complex_interval_field.html">complex_interval_field</a></td>
+<tr style="background: #f7f7f7"><td>178</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/sage/rings/real_interval_absolute.html">real_interval_absolute</a></td>
+<tr style="background: #f9f9f9"><td>139</td><td><a href="http://sagemath.org/doc/reference/rings_numerical/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/rings_standard">Reference/Rings_Standard</a> (21450) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cccccc"><td>3738</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/finite_rings/constructor.html">constructor</a></td>
+<tr style="background: #cfcfcf"><td>3269</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/finite_rings/integer_mod_ring.html">integer_mod_ring</a></td>
+<tr style="background: #d0d0d0"><td>3070</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/integer.html">integer</a></td>
+<tr style="background: #d1d1d1"><td>2963</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/rational.html">rational</a></td>
+<tr style="background: #d4d4d4"><td>2483</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/finite_rings/integer_mod.html">integer_mod</a></td>
+<tr style="background: #dadada"><td>1848</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/integer_ring.html">integer_ring</a></td>
+<tr style="background: #dedede"><td>1461</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/finite_rings/element_base.html">element_base</a></td>
+<tr style="background: #dedede"><td>1421</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/rational_field.html">rational_field</a></td>
+<tr style="background: #ebebeb"><td>632</td><td><a href="http://sagemath.org/doc/reference/rings_standard/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>375</td><td><a href="http://sagemath.org/doc/reference/rings_standard/sage/rings/universal_cyclotomic_field/universal_cyclotomic_field.html">universal_cyclotomic_field</a></td>
+<tr style="background: #f7f7f7"><td>189</td><td><a href="http://sagemath.org/doc/reference/rings_standard/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/sage">Reference/Sage</a> (59527) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #b7b7b7"><td>10697</td><td><a href="http://sagemath.org/doc/reference/sage/plot/plot.html">plot</a></td>
+<tr style="background: #bfbfbf"><td>7307</td><td><a href="http://sagemath.org/doc/reference/sage/symbolic/expression.html">expression</a></td>
+<tr style="background: #c1c1c1"><td>6664</td><td><a href="http://sagemath.org/doc/reference/sage/calculus/desolvers.html">desolvers</a></td>
+<tr style="background: #c2c2c2"><td>6124</td><td><a href="http://sagemath.org/doc/reference/sage/symbolic/relation.html">relation</a></td>
+<tr style="background: #cacaca"><td>4145</td><td><a href="http://sagemath.org/doc/reference/sage/graphs/graph.html">graph</a></td>
+<tr style="background: #d0d0d0"><td>3134</td><td><a href="http://sagemath.org/doc/reference/sage/graphs/graph_generators.html">graph_generators</a></td>
+<tr style="background: #d1d1d1"><td>2951</td><td><a href="http://sagemath.org/doc/reference/sage/calculus/calculus.html">calculus</a></td>
+<tr style="background: #d2d2d2"><td>2776</td><td><a href="http://sagemath.org/doc/reference/sage/rings/arith.html">arith</a></td>
+<tr style="background: #d4d4d4"><td>2477</td><td><a href="http://sagemath.org/doc/reference/sage/plot/animate.html">animate</a></td>
+<tr style="background: #d5d5d5"><td>2348</td><td><a href="http://sagemath.org/doc/reference/sage/rings/finite_rings/constructor.html">constructor</a></td>
+<tr style="background: #d6d6d6"><td>2211</td><td><a href="http://sagemath.org/doc/reference/sage/symbolic/constants.html">constants</a></td>
+<tr style="background: #d7d7d7"><td>2112</td><td><a href="http://sagemath.org/doc/reference/sage/plot/plot3d/plot3d.html">plot3d</a></td>
+<tr style="background: #dadada"><td>1827</td><td><a href="http://sagemath.org/doc/reference/sage/sets/set.html">set</a></td>
+<tr style="background: #dcdcdc"><td>1655</td><td><a href="http://sagemath.org/doc/reference/sage/numerical/mip.html">mip</a></td>
+<tr style="background: #dcdcdc"><td>1589</td><td><a href="http://sagemath.org/doc/reference/sage/plot/line.html">line</a></td>
+<tr style="background: #dddddd"><td>1510</td><td><a href="http://sagemath.org/doc/reference/sage/graphs/generic_graph.html">generic_graph</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/sat">Reference/Sat</a> (1795) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #ececec"><td>575</td><td><a href="http://sagemath.org/doc/reference/sat/sage/sat/solvers/dimacs.html">dimacs</a></td>
+<tr style="background: #f0f0f0"><td>430</td><td><a href="http://sagemath.org/doc/reference/sat/index.html">index</a></td>
+<tr style="background: #f1f1f1"><td>361</td><td><a href="http://sagemath.org/doc/reference/sat/sage/sat/converters/polybori.html">polybori</a></td>
+<tr style="background: #f2f2f2"><td>334</td><td><a href="http://sagemath.org/doc/reference/sat/sage/sat/boolean_polynomials.html">boolean_polynomials</a></td>
+<tr style="background: #fbfbfb"><td>95</td><td><a href="http://sagemath.org/doc/reference/sat/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/schemes">Reference/Schemes</a> (5556) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #e8e8e8"><td>783</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/variety.html">variety</a></td>
+<tr style="background: #efefef"><td>454</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/fano_variety.html">fano_variety</a></td>
+<tr style="background: #f0f0f0"><td>422</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/ideal.html">ideal</a></td>
+<tr style="background: #f1f1f1"><td>386</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/generic/algebraic_scheme.html">algebraic_scheme</a></td>
+<tr style="background: #f2f2f2"><td>359</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/generic/hypersurface.html">hypersurface</a></td>
+<tr style="background: #f2f2f2"><td>346</td><td><a href="http://sagemath.org/doc/reference/schemes/index.html">index</a></td>
+<tr style="background: #f2f2f2"><td>331</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/generic/divisor.html">divisor</a></td>
+<tr style="background: #f3f3f3"><td>308</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/chow_group.html">chow_group</a></td>
+<tr style="background: #f3f3f3"><td>303</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/divisor.html">divisor</a></td>
+<tr style="background: #f3f3f3"><td>302</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/affine/affine_space.html">affine_space</a></td>
+<tr style="background: #f4f4f4"><td>287</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/morphism.html">morphism</a></td>
+<tr style="background: #f4f4f4"><td>276</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/projective/projective_space.html">projective_space</a></td>
+<tr style="background: #f4f4f4"><td>264</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/toric/library.html">library</a></td>
+<tr style="background: #f4f4f4"><td>263</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/generic/scheme.html">scheme</a></td>
+<tr style="background: #f5f5f5"><td>238</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/readme.html">readme</a></td>
+<tr style="background: #f5f5f5"><td>234</td><td><a href="http://sagemath.org/doc/reference/schemes/sage/schemes/projective/projective_point.html">projective_point</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/semirings">Reference/Semirings</a> (667) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #f6f6f6"><td>221</td><td><a href="http://sagemath.org/doc/reference/semirings/index.html">index</a></td>
+<tr style="background: #f7f7f7"><td>183</td><td><a href="http://sagemath.org/doc/reference/semirings/sage/rings/semirings/non_negative_integer_semiring.html">non_negative_integer_semiring</a></td>
+<tr style="background: #f9f9f9"><td>146</td><td><a href="http://sagemath.org/doc/reference/semirings/sage/rings/semirings/tropical_semiring.html">tropical_semiring</a></td>
+<tr style="background: #fafafa"><td>117</td><td><a href="http://sagemath.org/doc/reference/semirings/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/stats">Reference/Stats</a> (6294) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #dddddd"><td>1540</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/basic_stats.html">basic_stats</a></td>
+<tr style="background: #dfdfdf"><td>1366</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/hmm/chmm.html">chmm</a></td>
+<tr style="background: #e5e5e5"><td>963</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/hmm/hmm.html">hmm</a></td>
+<tr style="background: #e6e6e6"><td>906</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/intlist.html">intlist</a></td>
+<tr style="background: #ebebeb"><td>616</td><td><a href="http://sagemath.org/doc/reference/stats/index.html">index</a></td>
+<tr style="background: #eeeeee"><td>491</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/hmm/distributions.html">distributions</a></td>
+<tr style="background: #f5f5f5"><td>259</td><td><a href="http://sagemath.org/doc/reference/stats/sage/stats/hmm/util.html">util</a></td>
+<tr style="background: #f8f8f8"><td>153</td><td><a href="http://sagemath.org/doc/reference/stats/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/structure">Reference/Structure</a> (22867) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #cdcdcd"><td>3645</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/primes.html">primes</a></td>
+<tr style="background: #d2d2d2"><td>2816</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/factorization.html">factorization</a></td>
+<tr style="background: #d6d6d6"><td>2290</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/set.html">set</a></td>
+<tr style="background: #dadada"><td>1820</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/element.html">element</a></td>
+<tr style="background: #dadada"><td>1775</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/list_clone.html">list_clone</a></td>
+<tr style="background: #dcdcdc"><td>1645</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/integer_range.html">integer_range</a></td>
+<tr style="background: #dedede"><td>1450</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/sequence.html">sequence</a></td>
+<tr style="background: #dedede"><td>1429</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/sage_object.html">sage_object</a></td>
+<tr style="background: #e3e3e3"><td>1048</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/disjoint_set.html">disjoint_set</a></td>
+<tr style="background: #e6e6e6"><td>858</td><td><a href="http://sagemath.org/doc/reference/structure/index.html">index</a></td>
+<tr style="background: #e8e8e8"><td>763</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/unique_representation.html">unique_representation</a></td>
+<tr style="background: #e8e8e8"><td>754</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/totally_ordered_finite_set.html">totally_ordered_finite_set</a></td>
+<tr style="background: #eaeaea"><td>686</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/element_wrapper.html">element_wrapper</a></td>
+<tr style="background: #eaeaea"><td>664</td><td><a href="http://sagemath.org/doc/reference/structure/sage/sets/positive_integers.html">positive_integers</a></td>
+<tr style="background: #ebebeb"><td>626</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/parent.html">parent</a></td>
+<tr style="background: #ececec"><td>598</td><td><a href="http://sagemath.org/doc/reference/structure/sage/structure/mutability.html">mutability</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="reference/tensor">Reference/Tensor</a> (1583) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #eeeeee"><td>487</td><td><a href="http://sagemath.org/doc/reference/tensor/sage/tensor/differential_form_element.html">differential_form_element</a></td>
+<tr style="background: #f2f2f2"><td>338</td><td><a href="http://sagemath.org/doc/reference/tensor/sage/tensor/differential_forms.html">differential_forms</a></td>
+<tr style="background: #f2f2f2"><td>330</td><td><a href="http://sagemath.org/doc/reference/tensor/sage/tensor/coordinate_patch.html">coordinate_patch</a></td>
+<tr style="background: #f2f2f2"><td>326</td><td><a href="http://sagemath.org/doc/reference/tensor/index.html">index</a></td>
+<tr style="background: #fbfbfb"><td>102</td><td><a href="http://sagemath.org/doc/reference/tensor/py-modindex.html">py-modindex</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="thematic_tutorials">Thematic_Tutorials</a> (49000) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #bcbcbc"><td>8095</td><td><a href="http://sagemath.org/doc/thematic_tutorials/numtheory_rsa.html">numtheory_rsa</a></td>
+<tr style="background: #c3c3c3"><td>5953</td><td><a href="http://sagemath.org/doc/thematic_tutorials/tutorial-objects-and-classes.html">tutorial-objects-and-classes</a></td>
+<tr style="background: #c3c3c3"><td>5837</td><td><a href="http://sagemath.org/doc/thematic_tutorials/linear_programming.html">linear_programming</a></td>
+<tr style="background: #c6c6c6"><td>5203</td><td><a href="http://sagemath.org/doc/thematic_tutorials/functional_programming.html">functional_programming</a></td>
+<tr style="background: #c8c8c8"><td>4725</td><td><a href="http://sagemath.org/doc/thematic_tutorials/group_theory.html">group_theory</a></td>
+<tr style="background: #d0d0d0"><td>3089</td><td><a href="http://sagemath.org/doc/thematic_tutorials/tutorial-programming-python.html">tutorial-programming-python</a></td>
+<tr style="background: #d1d1d1"><td>3014</td><td><a href="http://sagemath.org/doc/thematic_tutorials/index.html">index</a></td>
+<tr style="background: #d6d6d6"><td>2227</td><td><a href="http://sagemath.org/doc/thematic_tutorials/lie.html">lie</a></td>
+<tr style="background: #d9d9d9"><td>1956</td><td><a href="http://sagemath.org/doc/thematic_tutorials/coercion_and_categories.html">coercion_and_categories</a></td>
+<tr style="background: #dddddd"><td>1570</td><td><a href="http://sagemath.org/doc/thematic_tutorials/toctree.html">toctree</a></td>
+<tr style="background: #dddddd"><td>1568</td><td><a href="http://sagemath.org/doc/thematic_tutorials/sandpile.html">sandpile</a></td>
+<tr style="background: #dddddd"><td>1541</td><td><a href="http://sagemath.org/doc/thematic_tutorials/tutorial-notebook-and-help-long.html">tutorial-notebook-and-help-long</a></td>
+<tr style="background: #dddddd"><td>1510</td><td><a href="http://sagemath.org/doc/thematic_tutorials/lie/lie_basics.html">lie_basics</a></td>
+<tr style="background: #e1e1e1"><td>1201</td><td><a href="http://sagemath.org/doc/thematic_tutorials/tutorial-comprehensions.html">tutorial-comprehensions</a></td>
+<tr style="background: #e7e7e7"><td>809</td><td><a href="http://sagemath.org/doc/thematic_tutorials/lie/weyl_character_ring.html">weyl_character_ring</a></td>
+<tr style="background: #e9e9e9"><td>702</td><td><a href="http://sagemath.org/doc/thematic_tutorials/lie/introduction.html">introduction</a></td>
+</tbody></table>
+</div><div class="cont"><table>
+<thead><tr><th>#</th><th><a name="tutorial">Tutorial</a> (259012) <a href="#TOC">&uArr;</a>
+</th></tr></thead>
+<tbody><tr style="background: #999999"><td>41650</td><td><a href="http://sagemath.org/doc/tutorial/tour_algebra.html">tour_algebra</a></td>
+<tr style="background: #a3a3a3"><td>26586</td><td><a href="http://sagemath.org/doc/tutorial/tour_plotting.html">tour_plotting</a></td>
+<tr style="background: #a5a5a5"><td>23774</td><td><a href="http://sagemath.org/doc/tutorial/programming.html">programming</a></td>
+<tr style="background: #a6a6a6"><td>23015</td><td><a href="http://sagemath.org/doc/tutorial/index.html">index</a></td>
+<tr style="background: #a8a8a8"><td>21329</td><td><a href="http://sagemath.org/doc/tutorial/introduction.html">introduction</a></td>
+<tr style="background: #acacac"><td>17650</td><td><a href="http://sagemath.org/doc/tutorial/interactive_shell.html">interactive_shell</a></td>
+<tr style="background: #adadad"><td>16620</td><td><a href="http://sagemath.org/doc/tutorial/tour_linalg.html">tour_linalg</a></td>
+<tr style="background: #b2b2b2"><td>12979</td><td><a href="http://sagemath.org/doc/tutorial/tour_functions.html">tour_functions</a></td>
+<tr style="background: #b4b4b4"><td>11829</td><td><a href="http://sagemath.org/doc/tutorial/sagetex.html">sagetex</a></td>
+<tr style="background: #b6b6b6"><td>10971</td><td><a href="http://sagemath.org/doc/tutorial/tour_polynomial.html">tour_polynomial</a></td>
+<tr style="background: #b6b6b6"><td>10960</td><td><a href="http://sagemath.org/doc/tutorial/tour_help.html">tour_help</a></td>
+<tr style="background: #b7b7b7"><td>10310</td><td><a href="http://sagemath.org/doc/tutorial/tour.html">tour</a></td>
+<tr style="background: #bababa"><td>9317</td><td><a href="http://sagemath.org/doc/tutorial/tour_assignment.html">tour_assignment</a></td>
+<tr style="background: #bebebe"><td>7573</td><td><a href="http://sagemath.org/doc/tutorial/interfaces.html">interfaces</a></td>
+<tr style="background: #bebebe"><td>7464</td><td><a href="http://sagemath.org/doc/tutorial/tour_rings.html">tour_rings</a></td>
+<tr style="background: #c0c0c0"><td>6985</td><td><a href="http://sagemath.org/doc/tutorial/tour_advanced.html">tour_advanced</a></td>
+</tbody></table>
+</div><div style="clear:both;">generated: 2014-04-03 23:42:07.194058 UTC</div>

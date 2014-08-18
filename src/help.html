@@ -1,0 +1,359 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - Help and Support</title>
+ <!--#include virtual="inc/htmlhead.shtml"-->
+
+ <style type="text/css">
+/*<![CDATA[*/
+ li.c1 {list-style: none; display: inline}
+ /*]]>*/
+ </style>
+</head>
+
+<body onload="navbarjs.init();"
+      onunload="navbarjs.cleanUp();">
+ <!--#include virtual="inc/header.shtml" -->
+ <!--#set var="sub" value="help" -->
+
+ <h1>Help and Support</h1><!--  <div class="narrow center txt">
+   There are many sources to learn more about Sage.
+  </div>-->
+
+<ul>
+  <li><a href="#SageStandardDoc">Sage standard documentation</a></li>
+  <li><a href="#furtherResources">Further resources</a></li>
+  <li><a href="./development.html#mailingList">Support and discussion groups</a></li>
+  <li><a href="./help-uSage.html">uSage User Groups</a></li>
+</ul>
+
+   <!-- Sage standard documentation -->
+<h2><a name="SageStandardDoc">Sage standard documentation</a></h2>
+
+<div class="normal justify bodypadding">
+The 
+<a href="./doc/index.html">Sage standard documentation</a> consists of the following documents, in both
+HTML and PDF versions.
+<br>
+<br>
+<div style="text-align:center">
+<b>
+&rarr; <a href="./doc/index.html">Read the online documentation.</a> &larr;
+</b></div>
+<br>
+</div>
+
+<ul>
+  <li><a href="./doc/a_tour_of_sage/">A Tour of Sage</a>,
+    <a href="./pdf/en/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a> &mdash;
+    a brief tour of some of Sage's features</li>
+  <ul>
+    <li><a href="./fr/html/a_tour_of_sage/">Sage en quelques mots (Français)</a>,
+      <a href="./pdf/fr/a_tour_of_sage/a_tour_of_sage.pdf">PDF</a></li>
+  </ul>
+
+  <li><a href="./doc/tutorial/">Tutorial</a>
+    (<a target="_blank" href="http://www.amazon.com/Sage-tutorial-version-3-4-Group/dp/1442141948/ref=sr_1_2?ie=UTF8&amp;s=books&amp;qid=1261010025&amp;sr=1-2">Printed &amp; Bound</a>),
+    <a href="./pdf/en/tutorial/SageTutorial.pdf">PDF</a>
+    &mdash; information for beginners, recommended
+    <ul>
+      <li><a href="./de/html/tutorial/">Sage Tutorial (Deutsch)</a>,
+	<a href="./pdf/de/tutorial/SageTutorial-de.pdf">PDF</a></li>
+
+      <li><a href="./de/html/thematische_anleitungen/index.html">Sage thematische Anleitungen (Deutsch)</a>,
+        <a href="./de/pdf/thematische_anleitungen/ThematischeAnleitungen-de.pdf">PDF</a></li>
+
+      <li><a href="./es/Manual_SAGE_principiantes.pdf">Manual de Sage
+	  para principiantes (Español)</a></li>
+
+      <li><a href="./es/Introduccion_a_SAGE.pdf">Introduccion:
+	  Matemáticas Elementales con Sage (Español)</a></li>
+
+      <li><a href="./fr/html/tutorial/">Tutoriel Sage (Français)</a>,
+	<a href="./pdf/fr/tutorial/tutorial-fr.pdf">PDF</a></li>
+
+      <li><a href="./ru/html/tutorial/">учебное пособие Sage (русский язык)</a>,
+	<a href="./pdf/ru/tutorial/SageTutorial_ru.pdf">PDF</a></li>
+
+<li><a href="./files/Sage_Persian_tutorial.pdf">Persian Tutorial (Farsi): آموزش فارسی (PDF)</a> (<a href="./files/Sage_Persian_tutorial.docx">DOCX</a>)</li>
+    </ul>
+  </li>
+
+  <li><a href="./doc/thematic_tutorials/">Thematic Tutorials</a>,
+    <a href="./pdf/en/thematic_tutorials/thematic_tutorials.pdf">PDF</a>
+    <ul>
+      <li>Introduction to Sage</li>
+      <ul>
+	<li><a href="./doc/prep/Logging-On.html">Logging on to a Sage Server and Creating a Worksheet (PREP)</a></li>
+	<li><a href="./doc/prep/Intro-Tutorial.html">Introductory Sage Tutorial (PREP)</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-notebook-and-help-long.html">Tutorial: Using the Sage notebook, navigating the help system, first exercises</a></li>
+	<li><a href="./doc/tutorial/">Sage’s main tutorial</a></li>
+      </ul>
+
+      <li>Calculus and plotting</li>
+      <ul>
+	<li><a href="./doc/prep/Symbolics-and-Basic-Plotting.html">Tutorial: Symbolics and Plotting (PREP)</a></li>
+	<li><a href="./doc/prep/Calculus.html">Tutorial: Calculus (PREP)</a></li>
+	<li><a href="./doc/prep/Advanced-2DPlotting.html">Tutorial: Advanced-2D Plotting (PREP)</a></li>
+      </ul>
+
+      <li>Algebra</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/linear_programming.html">Linear Programming (Mixed Integer)</a></li>
+	<li><a href="./doc/thematic_tutorials/group_theory.html">Group Theory and Sage</a></li>
+	<li><a href="./doc/thematic_tutorials/lie.html">Lie Methods and Related Combinatorics in Sage</a></li>
+      </ul>
+
+      <li>Number Theory</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/numtheory_rsa.html">Number Theory and the RSA Public Key Cryptosystem</a></li>
+	<li><a href="./doc/reference/padics/sage/rings/padics/tutorial.html">Introduction to the p-adics</a></li>
+      </ul>
+
+      <li>Combinatorics</li>
+      <ul>
+	<li><a href="./doc/reference/combinat/sage/combinat/tutorial.html">Introduction to combinatorics in Sage</a></li>
+      </ul>
+
+      <li>Algebraic Combinatorics</li>
+      <ul>
+	<li><a href="./doc/reference/combinat/sage/combinat/sf/sf.html">Tutorial: Symmetric Functions</a></li>
+	<li><a href="./doc/thematic_tutorials/lie.html">Lie Methods and Related Combinatorics in Sage</a></li>
+	<li><a href="./doc/thematic_tutorials/sandpile.html">Abelian Sandpile Model</a></li>
+      </ul>
+
+      <li>Programming and Design</li>
+      <ul>
+	<li><a href="./doc/prep/Programming.html">Tutorial: Sage Introductory Programming (PREP)</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-programming-python.html">Tutorial: Programming in Python and Sage</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-comprehensions.html">Tutorial: Comprehensions, Iterators, and Iterables</a></li>
+	<li><a href="./doc/thematic_tutorials/tutorial-objects-and-classes.html">Tutorial: Objects and Classes in Python and Sage</a></li>
+	<li><a href="./doc/thematic_tutorials/functional_programming.html">Functional Programming for Mathematicians</a></li>
+      </ul>
+
+      <li>Modeling Mathematics on a computer</li>
+      <ul>
+	<li><a href="./doc/thematic_tutorials/coercion_and_categories.html">How to implement new algebraic structures in Sage</a></li>
+	<li><a href="./doc/reference/categories/sage/categories/primer.html">Elements, parents, and categories in Sage: a (draft of) primer</a></li>
+	<li><a href="http://www.sagemath.org/doc/reference/categories/sage/categories/tutorial.html">Implementing a new parent: a (draft of) tutorial</a></li>
+      </ul>
+    </ul>
+  </li>
+
+  <li><a href="./doc/faq/">FAQ</a>,
+    <a href="./pdf/en/faq/faq.pdf">PDF</a> &mdash;
+    frequently asked questions with answers</li>
+
+  <li><a href="./doc/reference/">Reference Manual</a>,
+    <a href="./pdf/en/reference">PDF</a> &mdash;
+    details about built-in functions</li>
+
+  <li><a href="./doc/installation">Installation Guide</a>,
+    <a href="./pdf/en/installation/installation.pdf">PDF</a> &mdash;
+    helps you install Sage (<a href="./download.html">download</a>)</li>
+
+  <li><a href="./doc/developer/">Developer's Guide</a>,
+    <a href="./pdf/en/developer/developer.pdf">PDF</a> &mdash;
+    guidelines for current and prospective Sage developers</li>
+
+  <li><a href="./doc/constructions/">Constructions</a>
+    (<a target="_blank" href="http://www.lulu.com/product/paperback/sage-constructions/4089083">Printed &amp; Bound</a>),
+    <a href="./pdf/en/constructions/constructions.pdf">PDF</a> &mdash;
+    describes how to explain specific mathematical objects to Sage</li>
+
+  <li><a href="./doc/numerical_sage/">Numerical Sage</a>,
+    <a href="./pdf/en/numerical_sage/numerical_sage.pdf">PDF</a> &mdash;
+    how to do numerical computing with Sage</li>
+
+  <li><a href="./doc/bordeaux_2008/">
+      Explicit Methods in Number Theory</a>,
+    <a href="./pdf/en/bordeaux_2008/bordeaux_2008.pdf">PDF</a> &mdash; 
+    computing with number fields and modular forms</li>
+</ul>
+
+<!-- Download the standard documentation in various formats -->
+<!-- You can download the standard documentation. Multiple formats are
+     available. -->
+<div class="normal justify bodypadding">
+
+<p>You can download the entire standard documentation as a compressed file.</p>
+
+<!-- This is where you begin inserting the paths to compressed doc. -->
+<!--START_TOKEN_DOC-->
+
+<table cellpadding="6">
+  <tr bgcolor="#b8b9f9">
+    <th>Format</th>
+    <th>Packed as .zip</th>
+    <th>Packed as .tar.bz2</th>
+  </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>HTML</td>
+    <td><a href="./doc-zip/sage-6.3-doc-html.zip">download</a> (327.4 MB)</td>
+    <td><a href="./doc-bz2/sage-6.3-doc-html.tar.bz2">download</a> (66.3 MB)</td>
+   </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>PDF</td>
+    <td><a href="./doc-zip/sage-6.3-doc-pdf.zip">download</a> (44.5 MB)</td>
+    <td><a href="./doc-bz2/sage-6.3-doc-pdf.tar.bz2">download</a> (43.3 MB)</td>
+  </tr>
+
+  <tr bgcolor="#dfdfff">
+    <td>HTML+PDF</td>
+    <td><a href="./doc-zip/sage-6.3-doc.zip">download</a> (372.4 MB)</td>
+    <td><a href="./doc-bz2/sage-6.3-doc.tar.bz2">download</a> (110.2 MB)</td>
+  </tr>
+</table>
+<!--END_TOKEN_DOC-->
+<!-- This is where you finish inserting paths to compressed doc. -->
+</div>
+</li>
+
+<!-- further resources -->
+<h2><a name="furtherResources">Further resources</a></h2>
+  <ul>
+    <li><a href="http://wiki.sagemath.org/quickref"
+           target="_blank">Quick Reference Cards</a> &mdash; overview of
+      important functions</li>
+
+    <li><a href="./help-video.html"><strong>Screencasts</strong></a> &mdash;
+      videos explaining how Sage works</li>
+
+    <li><a target="_blank" href="http://arachnoid.com/sage/">
+        Exploring Mathematics with Sage</a> by Paul Lutus &mdash; overview
+      of using Sage in various areas of applied mathematics</li>
+
+    <li><a target="_blank" href="http://www-rohan.sdsu.edu/~mosulliv/Courses/sdsu-sage-tutorial/index.html">Sage Tutorial</a> by Mike O'Sullivan, Ryan Rosenbaum, and  David Monarres</li>
+
+    <li><a href="./files/introduccio-al-sage_Amoros2012.pdf">Introducci&#243; al SAGE</a> &mdash; mini tutorial in Catalan by Maria Bras Amor&#243;s</li>
+
+    <li><a href="http://sage.math.washington.edu/home/tkosan/newbies_book/"
+           target="_blank">Sage for Newbies</a> &mdash; book by T. Kosan</li>
+
+    <li><a href="http://wiki.sagemath.org/faq"
+           target="_blank">FAQ: Frequently Asked Questions</a></li>
+
+    <li><a href="./library-publications.html#books">Books</a> &mdash; a collection of
+      online books explaining mathematics (calculus, linear algebra,
+      number theory, etc.) using Sage</li>
+
+    <li><a href="http://openwetware.org/wiki/Open_writing_projects/Sage_and_cython_a_brief_introduction"
+           target="_blank">Sage and Cython: A Brief Introduction</a>
+      by Marshall Hampton &mdash; a brief introduction to Sage focusing on
+      Cython</li>
+
+    <li><a href="http://bitbucket.org/mvngu/numtheory-crypto/downloads/numtheory-crypto.pdf"
+           target="_blank">Number Theory and the RSA Public Key Cryptosystem</a>
+      by Minh Van Nguyen &mdash; using Sage to study elementary number
+      theory and the RSA public key cryptosystem</li>
+
+    <li><a href="http://www.steinertriples.fr/ncohen/tut/LP/"
+           target="_blank">Linear Programming in Sage</a> by Nathann Cohen
+      &mdash; There are many very good solvers around and they are now
+      available in Sage.</li>
+
+    <li><a href="http://www.steinertriples.fr/ncohen/tut/Graphs/"
+           target="_blank">Sage and Graph Theory</a> by Nathann Cohen
+      &mdash; Sage will not solve your graph problems in polynomial time.
+      But everything that is already written, YOU do not have to write it
+      again!</li>
+
+    <li><a href="http://sage.math.washington.edu/home/wdj/cookbook/coding-theory/sage-coding-cookbook.pdf"
+           target="_blank">Linear Error-Correcting Codes</a> by David Joyner and
+      Robert Miller &mdash; introduces some of Sage's functionality in the
+      theory of error-correcting codes</li>
+
+    <li><a href="http://buzzard.ups.edu/sage/sage-group-theory-primer.pdf"
+           target="_blank">Group Theory and Sage: A Primer</a> by Rob Beezer
+      &mdash; a compilation of Sage commands useful for a student studying
+      group theory for the first time</li>
+
+    <li><a href="http://planet.sagemath.org/"
+           target="_blank">Planet Sage Blogs</a> &mdash; a collection of blogs by
+      Sage users and developers</li>
+
+    <li><a href="./search.html"><strong>Search</strong></a> &mdash; an
+      online search interface indexing Sage documentation, discussion
+      groups, various web resources, blogs and various other places on
+      the web</li>
+  </ul>
+
+<div class="normal justify bodypadding">
+<!-- Python resources -->
+Understanding <a href="http://www.python.org" target="_blank">Python</a> is
+very important for using the full power of Sage. Python is the interface and
+primary programming language of Sage. Here are some external resources:
+</div>
+
+<ul>
+  <li>
+    <a href="http://en.wikibooks.org/wiki/Non-Programmer&#39;s_Tutorial_for_Python"
+       target="_blank">
+      <strong>Non-Programmer's Tutorial for Python</strong></a> &mdash; 
+    from Wikibooks, the open-content
+    textbooks collection, offspring of Wikipedia and probably the
+    easiest introduction of all</li>
+
+  <li>
+    <a href="http://docs.python.org/tut/"
+       target="_blank">Python Tutorial by Guido van Rossum</a> &mdash;
+    written by the father of Python</li>
+
+  <li>
+    <a target="_blank"
+       href="http://www.diveintopython.net/">Dive Into Python</a> &mdash; 
+    maybe not so dry as the one above and better suited for beginners</li>
+
+  <li><a target="_blank" href="http://greenteapress.com/thinkpython/">Python for Software Design</a>
+      &mdash; How to Think Like a Computer Scientist by Allen B. Downey
+  </li>
+
+  <li>
+    <a target="_blank"
+       href="http://www.youtube.com/watch?v=bDgD9whDfEY">Google I/O: Painless
+      Python Part 1</a> / 
+    <a target="_blank"
+       href="http://www.youtube.com/watch?v=y7vwZ20SDzc">Part 2</a> &mdash;
+    talk introducing Python</li>
+
+  <li>
+    <a target="_blank"
+       href="http://www.itmaybeahack.com/homepage/books/python.html">
+      Building Skills in Python</a> &mdash; 
+    suitable for people who are already comfortable with programming</li>
+</ul>
+
+<!-- dicussion groups -->
+<!--
+<h2><a name="discussionGroups">Discussion groups</a></h2>
+
+<ul>
+  <li><a href="http://groups.google.com/group/sage-support"
+         target="_blank"><strong>sage-support</strong></a> &mdash; this
+    discussion group is for all sorts of <strong>general questions or
+      problems</strong></li>
+
+  <li><a href="http://groups.google.com/group/sage-edu"
+         target="_blank">sage-edu</a> &mdash; this group discusses issues
+    regarding Sage in education</li>
+
+  <li><a href="./help-irc.html">IRC help channel</a> &mdash; directly
+    connects you to an online chat room</li>
+
+  <li><a href="./development.html#mailingList">all discussion groups</a></li>
+</ul>
+-->
+
+<!--#include virtual="inc/footer.shtml" -->
+</body>
+</html>

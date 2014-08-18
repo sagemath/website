@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="en"
+      xml:lang="en">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title>Sage Calculus Tutorial - Supplement: Slant Asymptotes</title>
+ <!--#include virtual="calctut-inc/htmlhead.shtml"-->
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+</head>
+
+<body onload="navbarjs.init(); calctut.pageLoad();"
+      onunload="navbarjs.cleanUp();">
+<!--#include virtual="calctut-inc/header.shtml"-->
+
+ <div id="calctut" class="narrow txt">
+  <h1>Slant (Oblique) Asymptotes</h1>
+  <p>
+  Depending on whether your calculus class covers this topic or not, you may wish
+  to pass by this mini-section. If you find asymptotes interesting, though...keep
+  on reading! You'll want to start a new worksheet called 05-Slant Asymptotes before
+  you proceed with the rest of this section.
+  </p>
+  <p>
+  So far, we have looked at the behavior of two types of functions as x approaches
+  positive or negative infinity: those with horizontal asymptotes, and those that
+  oscillate indefinitely. The third type we are going to cover is <strong>slant
+  asymptotes</strong>. Also known as <strong>oblique asymptotes</strong>, 
+  slant asymptotes are invisible, diagonal lines suggested by a function's curve
+  that approach a certain slope as x approaches positive or negative infinity.
+  The following graph is one such function:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/slantasymp01.png" />
+  </div>
+<pre class="tutcode">
+plot((x^2-3*x-4)/(x-2), x, -10, 10, randomize=False, plot_points=101).show(ymin=-20, ymax=20)
+</pre>
+<a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  It looks like f(x) starts to approach a certain slope rather than a certain
+  y-value to both sides of the vertical asymptote. As in the last section, this
+  function gives the suggestion of an invisible line separating the top and bottom
+  portions of the graph. In this case, the invisible line is a slant asymptote.
+  The question here is not of which value the function approaches, but of which
+  slope it approaches as x becomes increasingly large or small. To answer this
+  question, let's do a little numerical analysis. Copy, paste, then evaluate the
+  following code.
+  </p>
+<pre class="tutcode">
+def f(x):
+    return (x^2-3*x-4)/(x-2)
+
+for i in [4..100]:
+    print f(float(i))-f(float(i-1))
+</pre>
+  <a class="tuttoggle" href="javascript:calctut.toggle(1);">Toggle Explanation</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p class="tutexplain" id="explain1">
+  1-2) Define the function f(x) as the rational expression (x<sup>2</sup>-3*x-4)/(x-2)<br />
+  4-5) Loop from i equal 4 to i equals 100, printing out the slope between f(i)
+  and f(i-1) for each value of i. 'float' is so that Sage displays the slope
+  as a decimal and not as a fraction.<br /><br />
+  If the above code still seems untowardly foreign...try playing around with it!
+  In my experience, going hands-on with code is often the best way to understand
+  what it does.
+  </p>
+  <p>
+  Based on the code's output, we can see that in the area of x=100, the function's
+  slope is approximately equal to 1. Using Sage's 'limit' function, we can confirm
+  this result:
+  </p>
+<pre class="tutcode">
+limit(f(x)-f(x-1), x=oo)
+</pre>
+<a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
+  <p>
+  As expected, the limit of the function's slope as x approaches infinity is 1. A
+  hunch would tell you that the function's slope as x approaches negative infinity
+  is most likely 1 as well, and changing the x=oo to x=-oo verifies that result.
+  </p>
+  <p>
+  Now that you've done things the hard way, though, I'll tell you a shortcut to
+  find the slope of slant asymptotes for rational functions. For a generalized
+  rational function like this one:
+  </p>
+  <div class="proof">
+  <img src="pix-calctut/slantasymp02.png" />
+  </div>
+  <p>
+  If n is the highest power of the denominator, n+1 is the highest power of the
+  numerator, and a and b are constants, the function will have a horizontal
+  asymptote with a slope equal to a/b. You will find that slant asymptotes only
+  pop up when the numerator of a function is of one higher power than the denominator
+  of a rational function. Where numerical analysis can still come into play,
+  though, in a case where you can't simplify a function to fit this general form.
+  </p>
+  <h2>Practice Problems</h2>
+  <div id="practice">
+  Determine the slope, if possible, of each function as it approaches positive and
+  negative infinity.<br />
+  1) <img class="vmiddle qimg" src="pix-calctut/slantasymp03.png" />&nbsp;&nbsp;&nbsp;&nbsp;<a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'Slant asymptote with slope 5 at &plusmn;oo.');">Toggle answer</a>
+  <br />
+  2) <img class="vmiddle qimg" src="pix-calctut/slantasymp04.png" />&nbsp;&nbsp;&nbsp;&nbsp;<a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'No slant asymptote here. Plot the function, though, and look at the position of each crest and trough--they approximate the slope of x!');">Toggle answer</a>
+  <br />
+  3) Hint: simplify first. <img class="vmiddle qimg" src="pix-calctut/slantasymp05.png" />&nbsp;&nbsp;&nbsp;&nbsp;<a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'Slant asymptote with slope 2 at &plusmn;oo.');">Toggle answer</a>
+  </div>
+  <table id="bottomnav">
+  <tr>
+  <script type="text/javascript">
+  <!--
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  //-->
+  </script>
+  </tr>
+  </table>
+ </div>
+
+<div id="footer" class="center">
+<table><tr>
+<td><a id="footer-webmaster" href="mailto:harald.schilly@gmail.com"></a></td><td>&middot;</td>
+<td><a id="footer-cc" title="Content is Creative Commons 3.0 licensed" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund" href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG" target="_blank"></a></td><td>&middot;</td>
+<td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
+</tr></table>
+</div>
+
+</body>
+</html>

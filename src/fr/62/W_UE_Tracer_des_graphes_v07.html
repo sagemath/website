@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--#include virtual="inc/variables.shtml"-->
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      lang="fr"
+      xml:lang="fr">
+<head>
+ <meta http-equiv="content-type"
+       content="text/html; charset=utf-8" />
+
+ <title><!--#echo var="title"--> - French</title><!--#include virtual="inc/htmlhead.shtml"-->
+
+
+<style>
+div.explanation {float: right; clear: right; margin-left: 51%;}
+
+div.explanation_centered {clear: both; padding-left: 15px; padding-right: 15px;}
+
+p.explanation {float: right; clear: right; width: 49%; padding-left: 15px;}
+
+p.explanation_centered {clear: both; width: 100%; padding-left: 15px; padding-right: 15px;}
+
+
+div.cell {float: left; clear: left; margin-right: -51%; padding-left: 15px;}
+
+h1, h3 {clear: both;}
+
+h3 {margin-top: 50px;}
+
+</style>
+
+
+
+
+
+<style type="text/css">#jsMath_test {font-size:200%}
+</style><style type="text/css">.math {font-family:serif; font-style:normal; font-weight:normal}
+.typeset {font-family:serif; font-style:normal; font-weight:normal; line-height:normal;}
+div.typeset {text-align:center; margin:1em 0px;}
+span.typeset {text-align:left}
+.typeset span {text-align:left; border:0px; margin:0px; padding:0px;}
+.typeset .normal {font-family:serif; font-style:normal; font-weight:normal}
+.typeset .size0 {font-size:50%}
+.typeset .size1 {font-size:60%}
+.typeset .size2 {font-size:70%}
+.typeset .size3 {font-size:85%}
+.typeset .size4 {font-size:100%}
+.typeset .size5 {font-size:120%}
+.typeset .size6 {font-size:144%}
+.typeset .size7 {font-size:173%}
+.typeset .size8 {font-size:207%}
+.typeset .size9 {font-size:249%}
+.typeset .cmr10 {font-family:jsMath-cmr10, serif}
+.typeset .cmbx10 {font-family:jsMath-cmbx10, jsMath-cmr10}
+.typeset .cmti10 {font-family:jsMath-cmti10, jsMath-cmr10}
+.typeset .cmmi10 {font-family:jsMath-cmmi10}
+.typeset .cmsy10 {font-family:jsMath-cmsy10}
+.typeset .cmex10 {font-family:jsMath-cmex10}
+.typeset .textit {font-family:serif; font-style:italic}
+.typeset .textbf {font-family:serif; font-weight:bold}
+.typeset .link {text-decoration:none}
+.typeset .error {font-size:10pt; font-style:italic; background-color:#FFFFCC; padding:1px; border:1px solid #CC0000}
+.typeset .blank {display:-moz-inline-box; overflow:hidden; border:0px none; width:0px; height:0px;}
+.typeset .spacer {}
+#jsMath_hiddenSpan {visibility:hidden; position:absolute; top:0px;left:0px; line-height:normal; text-indent:0px}
+#jsMath_message {position:fixed; bottom:1px; left:2px; background-color:#E6E6E6; border:solid 1px #959595; margin:0px; padding:1px 8px; z-index:102; color: black; font-size:small; width:auto;}
+#jsMath_panel {position:fixed; bottom:1.5em; right:1.5em; padding:.8em 1.6em; background-color:#DDDDDD; border:outset 2px; z-index:103; width:auto; color:black; font-size:10pt; font-style:normal}
+#jsMath_panel .disabled {color:#888888}
+#jsMath_panel .infoLink {font-size:85%}
+#jsMath_panel * {font-size:inherit; font-style:inherit; font-family:inherit; line-height:normal}
+#jsMath_panel div {background-color:inherit; color:inherit;}
+#jsMath_panel span {background-color:inherit; color:inherit;}
+#jsMath_panel td {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
+#jsMath_panel tr {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
+#jsMath_panel table {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
+#jsMath_button {position:fixed; bottom:1px; right:2px; background-color:white; border:solid 1px #959595; margin:0px; padding:0px 3px 1px 3px; z-index:102; color:black; text-decoration:none; font-size:x-small; width:auto; cursor:pointer;}
+#jsMath_button * {padding:0px; border:0px; margin:0px; line-height:normal; font-size:inherit; font-style:inherit; font-family:inherit}
+#jsMath_global {font-style:italic;}
+#jsMath_float {position:absolute; top:0px; left:0px; max-width:80%; z-index:101; width:auto; height:auto;}
+#jsMath_float .drag {background-color:#DDDDDD; border:outset 1px; height:12px; font-size:1px;}
+#jsMath_float .close {background-color:#E6E6E6; border:inset 1px; width:8px; height:8px; margin:1px 2px;}
+#jsMath_float .source {background-color:#E2E2E2; border:outset 1px; width:auto; height:auto; padding:8px 15px; font-family:courier, fixed; font-size:90%}
+#jsMath_noFont .message {text-align: center; padding:.8em 1.6em; border:3px solid #DD0000; background-color:#FFF8F8; color: #AA0000; font-size:small; width:auto;}
+#jsMath_noFont .link {padding:0px 5px 2px 5px; border:2px outset; background-color:#E8E8E8; color:black; font-size:80%; width:auto; cursor:pointer;}
+#jsMath_PrintWarning .message {text-align:center; padding:.8em 1.6em; border:3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size:x-small; width:auto;}
+@media print {#jsMath_button {display:none}
+#jsMath_Warning {display:none}}
+@media screen {#jsMath_PrintWarning {display:none}}
+.typeset .scale {font-size:110%}
+</style></head><body onload="navbarjs.init();" onunload="navbarjs.cleanUp();">
+
+<!--#include virtual="inc/header-fr.shtml" -->
+
+
+
+<h1 align="center">Tracer des graphes de fonctions avec Sage
+</h1>
+<h3 align="center" style="font-size: 0.6em">auteur : Philippe Saadé (2008), psaade@gmail.com
+</h3>
+<br><br>
+
+
+<div class="bodypadding">
+  Nous allons présenter l'utilisation de Sage pour la représentation graphique de fonctions d'une variable.
+</div>
+<br><br>
+
+
+
+Plan :
+<ul style="padding-left: 2em;">
+
+<li>
+<a href="#ah1">Un tracé sans option</a>
+</li>
+
+<li>
+<a href="#ah2"></a>
+<ul>
+<li><a href="#a1">Choix de l'intervalle pour le tracé de la fonction</a>
+</li>
+<li><a href="#a2">Affichage des options propres à <span class="code">plot</span></a>
+</li>
+<li><a href="#a3">Réglage de l'épaisseur du trait lors du tracé</a>
+</li>
+<li><a href="#a4">Réglage de la couleur du trait lors du tracé</a>
+</li>
+<li><a href="#a5">Réglage de la transparence du trait lors du tracé</a>
+</li>
+<li><a href="#a6">Ajuster le nombre de point pour le tracé du graphe</a>
+</li>
+
+
+</ul>
+</li>
+
+<li>
+<a href="#ah3">Options avancées contrôlant le tracé</a>
+<ul>
+<li><a href="#b1">Choix de la couleur par la désignation d'une teinte</a>
+</li>
+<li><a href="#b2">Choix d'un style de ligne</a>
+</li>
+<li><a href="#b3">Choix du type de marqueur de points</a>
+</li>
+<li><a href="#b4">Choix de la couleur pour les marqueurs de points</a>
+</li>
+<li><a href="#b5">Choix de la taille des marqueurs de points</a>
+</li>
+<li><a href="#b6">Choix de l'épaisseur du trait des marqueurs de points</a>
+</li>
+
+</ul>
+</li>
+
+</ul>
+
+
+
+<br><br>
+
+
+
+
+<a name="ah1"></a>
+<h1>Un tracé sans option
+</h1>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Voici un moyen direct de tracer une partie du graphe de la fonction exponentielle. On constate que l'intervalle par défaut utilisé pour le tracé est l'intervalle [-1,1].<br>
+      On constate également la présence des axes et des marques sur les axes, qui se prolongent un peu en dehors de l'intervalle [-1,1], pour faciliter la lecture du graphique.
+
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_0.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<div class="bodypadding">
+  Nous allons voir dans ce tutoriel comment ajuster le tracé en fonction de nos besoins.
+</div>
+
+
+
+<a name="ah2"></a>
+<h1>Options de bases
+</h1>
+
+
+<a name="a1"></a>
+<h3>Choix de l'intervalle pour le tracé de la fonction
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp,(-2,3))</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      L'intervalle est fourni sous forme d'un couple :
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_31.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp,-2,3)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      ou bien en indiquant les bornes à la suite de la fonction.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_1.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="a2"></a>
+<h3>Affichage des options propres à <span class="code">plot</span>
+</h3>
+
+
+<table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot.options</strong>
+</pre>
+     <pre class="code-ans">   {'plot_points': 200, 'thickness': 1, 'pl
+   ot_division': 1000, 'rgbcolor': (0, 0, 1
+   ), 'max_bend': 0.10000000000000001, 'alp
+   ha': 1}
+
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Il est facile d'obtenir la liste des options directement attachées à la commande <span class="code">plot</span> ainsi que leurs valeurs par défaut.<br>
+      <em>Remarque</em> : beaucoup d'autres options existes pour contrôler le rendu graphique, comme nous allons le voir ici, mais elles ne sont pas directement attachées à la commande <span class="code">plot</span>. Celles-ci dépendent du type d'objet tracé.
+
+    </td>
+   </tr>
+
+
+</tbody>
+</table>
+
+
+<a name="a3"></a>
+<h3>Réglage de l'épaisseur du trait lors du tracé
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp,thickness=3.5)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     Il suffit d'utiliser l'option <span class="code">thickness</span> de la commande <span class="code">plot</span>.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_4.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="a4"></a>
+<h3>Réglage de la couleur du trait lors du tracé
+</h3>
+
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, rgbcolor='red')  # ou (1,0,0) 
+   ou '#FF0000'</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     Il suffit d'utiliser l'option <span class="code">rbgcolor</span> de la commande <span class="code">plot</span>.<br />
+Ici, il est possible de fournir la couleur par son nom (en anglais et entre '...'), par son code RGB (valeurs entre 0 et 1) ou bien par un code hexadécimal de type HTML. Les couleurs possibles sont : "red", "orange", "yellow", "green", "blue", "purple", "white", "black", "grey".
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_10.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="a5"></a>
+<h3>Réglage de la transparence du trait lors du tracé
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp,alpha=0.5)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Il suffit d'utiliser l'option <span class="code">alpha</span> de la commande <span class="code">plot</span>. Il s'agit d'une valeur entre 0 et 1 : pour 1, le trait est pleinement opaque. Pour 0, il est invisible.      
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_17.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="a6"></a>
+<h3>Ajuster le nombre de point pour le tracé du graphe
+</h3>
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp,plot_points=3,plot_division=4, 
+   marker='+',markeredgecolor='red')</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Les options <span class="code">plot_points</span>, <span class="code">plot_division</span> et <span class="code">max_bend</span> permettent, respectivement, de choisir le nombre de points calculés initialement sur la courbe, le nombre maximal de points qui peuvent être ajouter par Sage pour lisser le tracé et d'imposer une contrainte plus ou moins forte à la qualité du rendu.<br>
+      <em>Remarque</em> : dans une prochaine version de Sage, ces deux dernières options seront remplacées par les options <span class="code">adaptive_recursion</span> et <span class="code">adaptive_tolerance</span> qui reposeront sur un algorithme récursif plus efficace.<br >
+      Dans notre exemple, les points ont été indiqués par une croix rouge.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_5.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, plot_points=3, plot_division=4
+   , max_bend=10, marker='+', markeredgecol
+   or='red')</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Une grande tolérance sur le paramètre <span class="code">max_bend</span> fait en sorte que Sage ne rajoute aucun point pour affiner le tracé.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_23.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="ah3"></a>
+<h1>Options avancées contrôlant le tracé
+</h1>
+
+<div class="bodypadding">
+  Nous allons présenter les options qui permettent de contrôler le type de trait produit et la nature des points.
+</div>
+
+<a name="b1"></a>
+<h3>Choix de la couleur par la désignation d'une teinte
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, hue=0.3)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Au lieu d'utiliser l'option <span class="code">rgbcolor</span> de la commande <span class="code">plot</span>, il est possible de choisir une couleur par sa teinte (<em>hue</em> en anglais). L'arc en ciel des couleurs est parcouru de façon circulaire, de rouge à rouge, par un paramètre réel allant de 0 à 1.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_9.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="b2"></a>
+<h3>Choix d'un style de ligne
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, linestyle='-.')</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Par défaut, le tracé se fait à l'aide d'un trait continu. Il est possible de choisir d'autres type de traits en utilisant l'option <span class="code">linestyle</span>. Voici la liste complète des valeurs possibles ainsi que le résultat obtenu :
+
+
+<table align="center" border="1px" cellpadding="5px" cellspacing="0">
+  <tbody>
+    <tr align="center" >
+      <td>'--'</td>
+      <td>pointillé</td>
+    </tr>
+    <tr align="center" >
+      <td>'-.'</td>
+      <td>mixte</td>
+    </tr>
+    <tr align="center" >
+      <td>'-'</td>
+      <td>continu</td>
+    </tr>
+    <tr align="center" >
+      <td>'steps'</td>
+      <td>en escalier</td>
+    </tr>
+    <tr align="center" >
+      <td>':'</td>
+      <td>filet de points</td>
+    </tr>
+  </tbody>
+</table>
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_11.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="b3"></a>
+<h3>Choix du type de marqueur de points
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, marker='>', plot_points=10, ma
+   x_bend=10)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      Le tracé du graphe de la fonction se fait à partir d'une liste de points répartis sur l'intervalle parcouru par la variable. Même si ces points ont tendance à disparaître sous la ligne continue de segments qui les relie, il n'en est pas moins possible de les utiliser et, en particulier de les afficher en choisissant un marqueur.<br>
+      Pour ce faire, on utilise l'option <span class="code">marker</span>. La valeur que peut prendre cette option est à prendre parmi la liste suivante :
+
+<table align="center" border="1px" cellpadding="5px" cellspacing="0">
+  <tbody>
+    <tr>
+      <td>'0'</td>
+      <td>tickleft</td>
+    </tr>
+    <tr>
+      <td>'1'</td>
+      <td>tickright</td>
+    </tr>
+    <tr>
+      <td>'2'</td>
+      <td>tickup</td>
+    </tr>
+    <tr>
+
+      <td>'3'</td>
+      <td>tickdown</td>
+    </tr>
+    <tr>
+      <td>''</td>
+      <td>nothing</td>
+    </tr>
+    <tr>
+      <td>' '</td>
+      <td>nothing</td>
+    </tr>
+    <tr>
+      <td>'+'</td>
+      <td>plus</td>
+
+    </tr>
+    <tr>
+      <td>','</td>
+      <td>pixel</td>
+    </tr>
+    <tr>
+      <td>'.'</td>
+      <td>point</td>
+    </tr>
+    <tr>
+      <td>'1'</td>
+      <td>tri_down</td>
+    </tr>
+    <tr>
+
+      <td>'3'</td>
+      <td>tri_left</td>
+    </tr>
+    <tr>
+      <td>'2'</td>
+      <td>tri_up</td>
+    </tr>
+    <tr>
+      <td>'4'</td>
+      <td>tri_right</td>
+    </tr>
+    <tr>
+      <td>'<'</td>
+      <td>triangle_left</td>
+    </tr>
+    <tr>
+      <td>'>'</td>
+      <td>triangle_right</td>
+    </tr>
+    <tr>
+      <td>'None'</td>
+      <td>nothing</td>
+    </tr>
+    <tr>
+      <td>'D'</td>
+      <td>diamond</td>
+    </tr>
+    <tr>
+      <td>'H'</td>
+
+      <td>hexagon2</td>
+    </tr>
+    <tr>
+      <td>'_'</td>
+      <td>hline</td>
+    </tr>
+    <tr>
+      <td>'^'</td>
+      <td>triangle_up</td>
+    </tr>
+    <tr>
+
+      <td>'d'</td>
+      <td>thin_diamond</td>
+    </tr>
+    <tr>
+      <td>'h'</td>
+      <td>hexagon1</td>
+    </tr>
+    <tr>
+      <td>'o'</td>
+      <td>circle</td>
+    </tr>
+    <tr>
+      <td>'p'</td>
+      <td>pentagon</td>
+    </tr>
+    <tr>
+      <td>'s'</td>
+      <td>square</td>
+    </tr>
+    <tr>
+      <td>'v'</td>
+      <td>triangle_down</td>
+    </tr>
+    <tr>
+      <td>'x'</td>
+      <td>x</td>
+    </tr>
+    <tr>
+      <td>'|'</td>
+      <td>vline</td>
+    </tr>
+  </tbody>
+</table>
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_12.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="b4"></a>
+<h3>Choix de la couleur pour les marqueurs de points
+</h3>
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, marker='o', markeredgecolor='b
+   lack', plot_points=10, max_bend=10, rgbc
+   olor="yellow")</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      L'option <span class="code">markeredgecolor</span> permet de choisir une couleur pour le tracé des marqueurs. Il faut noter que cette couleur ne s'applique qu'au trait dessinant le marqueur et que lorsqu'un marqueur possède une surface de fond, celle-ci est de la même couleur que le trait de la courbe.
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_13.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="b5"></a>
+<h3>Choix de la taille des marqueurs de points
+</h3>
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, marker='^', markeredgecolor='r
+   ed', markersize=15, plot_points=10, max_
+   bend=10)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      L'option <span class="code">markersize</span> permet de fixer la taille des marqueurs (en pixel).
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_14.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<a name="b6"></a>
+<h3>Choix de l'épaisseur du trait des marqueurs de points
+</h3>
+
+
+
+<table class="top" style="width: 100%">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong>plot(exp, marker='p', markeredgecolor='r
+   ed', markeredgewidth=4, markersize=30, p
+   lot_points=10, max_bend=10)</strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+      L'option <span class="code">markeredgewidth</span> permet de fixer l'épaisseur du trait dessinant les marqueurs (en pixel).
+
+    </td>
+   </tr>
+<tr>
+<td class="bodypadding" colspan="2">
+ <div class="txt center">
+  <img src="./pix2/img_34.png" alt="" height="370" width="600">
+</div>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+
+<table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong></strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+    </td>
+   </tr>
+
+
+</tbody>
+</table>
+
+
+<table class="top">
+  <colgroup>
+   <col width="50%">
+   <col width="50%">
+  </colgroup>
+  <tbody>
+   <tr>
+    <td class="leftpadding">
+     <pre class="code">
+ sage: <strong></strong>
+</pre>
+     <pre class="code-ans">
+</pre>
+    </td>
+    <td class="rightpadding">
+     
+    </td>
+   </tr>
+
+
+</tbody>
+</table>
+
+
+ <!--#include virtual="inc/footer.shtml"-->
+
+
+</body></html>
+
