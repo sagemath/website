@@ -33,6 +33,8 @@ def log(what, level=0, nl=True):
         return
     if not nl:
         write('\r')
+    else:
+        write('\n')
     if level == 1:
         stdout.write(what)
     if nl:
@@ -81,7 +83,7 @@ for root, paths, filenames in os.walk("."):
             # all other files, copy them
             copy2(src, dst)
 
-log('\nFinished', level=1)
+log('Finished', level=1)
 
 
 
