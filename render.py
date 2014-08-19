@@ -3,7 +3,8 @@
 
 # This renders the template files from 'src' into 'www'
 
-import os, sys
+import os
+import sys
 from os.path import join, normpath, exists, islink
 import datetime
 from shutil import copy2
@@ -17,12 +18,14 @@ config = yaml.load(open('config.yaml'))
 
 # we operate in "src"
 os.chdir("./src")
-j2env = j2.Environment(loader=j2.FileSystemLoader("."))
+j2env = j2.Environment(loader=j2.ChoiceLoader(
+    [j2.FileSystemLoader("."), j2.FileSystemLoader("../publications/")]))
 j2env.globals.update(config)
 
-TARG="../www"
+TARG = "../www"
 
 IGNORE_PATHS = ["old"]
+
 
 def log(what, nl=True):
     from sys import stdout
@@ -48,7 +51,8 @@ for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines(
 for root, paths, filenames in os.walk("."):
     # check if we ignore a branch in a sub-tree
     root_split = root.split(os.sep)
-    if len(root_split) > 1 and root_split[1] in IGNORE_PATHS: continue
+    if len(root_split) > 1 and root_split[1] in IGNORE_PATHS:
+        continue
 
     # path need to exist in the target before we copy and process the files
     for path in paths:
@@ -93,6 +97,3 @@ for root, paths, filenames in os.walk("."):
 log("processing: done", nl=False)
 
 log('Finished')
-
-
-
