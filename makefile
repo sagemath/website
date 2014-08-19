@@ -15,3 +15,5 @@ server:
 show:
 	xdg-open http://127.0.0.1:8181/
 
+open:
+	python -c 'from webbrowser import open; open("./www/index.html")'

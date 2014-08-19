@@ -1,0 +1,7 @@
+version: 6.3
+version_src: 6.3
+releasedate: 2014-08-10
+version_solaris_bin: None
+title: Sage
+version_devel: 6.1.beta1
+releasedate_devel: 2013-12-21

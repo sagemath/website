@@ -9,7 +9,7 @@
 <head profile="http://a9.com/-/spec/opensearch/1.1/">
  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
- <title><!--#echo var="title"-->: Open Source Mathematics Software</title>
+ <title>{{ title }} Open Source Mathematics Software</title>
  <!--#include virtual="inc/htmlhead.shtml"-->
 <style type="text/css">
  div.announce {
@@ -141,13 +141,12 @@ other: <a href="http://www.sagenb.org/">Sagenb</a>,
        name="index-download" <!--#include virtual="inc/download-link.shtml"--> ></a></td>
 
     <td class="left">
-     <h2><a <!--#include virtual="inc/download-link.shtml"-->>Download 
-     <!--#echo var="version"--></a></h2>
+        <h2><a <!--#include virtual="inc/download-link.shtml"-->>Download {{version}}</a></h2>
 
      <div class="small">
-      <span class="nowrap"><a href="./mirror/src/changelogs/sage-<!--#echo var="version-src"-->.txt">Changelog</a>
+         <span class="nowrap"><a href="./mirror/src/changelogs/sage-{{version_src}}.txt">Changelog</a>
        &middot; </span> 
-     <span class="nowrap"><a href="./download-source.html">Source <!--#echo var="version-src"--></a>
+   <span class="nowrap"><a href="./download-source.html">Source {{ version_src }}</a>
       &middot; </span> 
 <!--
       <span class="nowrap"><a href="./download-livecd.html">LiveCD</a> &middot; </span>
