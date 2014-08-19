@@ -12,6 +12,7 @@ import jinja2 as j2
 
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
 config = yaml.load(open('config.yaml'))
 
 # we operate in "src"
@@ -23,23 +24,26 @@ TARG="../www"
 
 IGNORE_PATHS = ["old"]
 
-def log(what, level=0, nl=True):
+def log(what, nl=True):
     from sys import stdout
     write = stdout.write
     if len(what) > 100:
         what = '%s…' % what[:99]
     what = '{:100}'.format(what)
-    if level == 0:
-        return
     if not nl:
         write('\r')
-    else:
+    elif not log.lastnl:
         write('\n')
-    if level == 1:
-        stdout.write(what)
+    stdout.write(what)
     if nl:
         write('\n')
     stdout.flush()
+    log.lastnl = nl
+log.lastnl = True
+
+log("config:")
+for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
+    log("    %s" % line)
 
 for root, paths, filenames in os.walk("."):
     # check if we ignore a branch in a sub-tree
@@ -48,20 +52,24 @@ for root, paths, filenames in os.walk("."):
 
     # path need to exist in the target before we copy and process the files
     for path in paths:
-        target_path = normpath(join(TARG, root, path))
-        log("path %s -> %s" % (path, target_path))
-        if not exists(target_path):
-            os.makedirs(target_path)
+        src = join(root, path)
+        dst = normpath(join(TARG, src))
 
-        # we also have to take care of symlinks here!
-        if islink(join(root, path)):
-            log("SYMLINK/paths: %s" % join(root, path))
+        log("processing/d: %s" % src, nl=False)
+
+        # we have to take care of symlinks here, too!
+        if islink(src):
+            #log("SYMLINK/paths: %s" % src)
+            os.symlink(os.readlink(src), dst)
+
+        elif not exists(dst):
+            os.makedirs(dst)
 
     for fn in filenames:
         src = join(root, fn)
-        dst = normpath(join(TARG, root, fn))
+        dst = normpath(join(TARG, src))
 
-        log("processing %s" % src, level=1, nl=False)
+        log("processing/f: %s" % src, nl=False)
 
         if fn.endswith(".html"):
             # assume it's a template and process it
@@ -73,17 +81,18 @@ for root, paths, filenames in os.walk("."):
 
         elif islink(src):
             # we have a symlink, copy it
-            log("SYMLINK/files %s" % src)
+            #log("SYMLINK/files %s" % src)
             if islink(dst):
                 os.remove(dst)
-            linkto = os.readlink(src)
-            os.symlink(linkto, dst)
+            os.symlink(os.readlink(src), dst)
 
         else:
             # all other files, copy them
             copy2(src, dst)
 
-log('Finished', level=1)
+log("processing: done", nl=False)
+
+log('Finished')
 
 
 
