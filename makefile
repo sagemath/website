@@ -1,6 +1,12 @@
 .PHONY: render clean show server
 
-render:
+default: render
+
+clean:
+	- rm -rf www
+	- mkdir www
+
+render: clean
 	python render.py
 
 server:
