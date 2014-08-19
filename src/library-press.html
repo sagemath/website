@@ -9,7 +9,7 @@
  <meta http-equiv="content-type"
        content="text/html; charset=utf-8" />
 
- <title><!--#echo var="title"--> - Press</title><!--#include virtual="inc/htmlhead.shtml"-->
+ <title>{{ title }} - Press</title><!--#include virtual="inc/htmlhead.shtml"-->
 <style type="text/css">
 /*<![CDATA[*/
  #poster img {border: 2px solid #7f7fff; padding: 5px;}
@@ -120,8 +120,8 @@ Additionally, for example it is possible to <a href="http://www.ctan.org/tex-arc
 <table cellspacing="15" style="width:100%">
 <tr>
 <td>First Release 2005</td>
-<td colspan="2">Latest version <!--#echo var="version"-->
-    released <!--#echo var="releasedate"--></td>
+<td colspan="2">Latest version {{ version }}
+    released {{ releasedate }}</td>
 </tr>
 <tr>
 <td>License: GPLv2+</td>

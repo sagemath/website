@@ -9,7 +9,7 @@
  <meta http-equiv="content-type"
        content="text/html; charset=utf-8" />
 
- <title><!--#echo var="title"--> - Mirrors</title><!--#include virtual="inc/htmlhead.shtml"-->
+ <title>{{ title }} - Mirrors</title><!--#include virtual="inc/htmlhead.shtml"-->
 
  <style type="text/css">
 /*<![CDATA[*/
@@ -55,8 +55,8 @@ Sage Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html
  <div class="narrow txt">
   <strong>
   If the Sage icon is missing, a mirror may be down. If the date is too old compared to the first
-  (master mirror), it is outdated. The current Sage version is <!--#echo var="version"--> released 
-  <!--#echo var="releasedate"--></strong>. 
+  (master mirror), it is outdated. The current Sage version is {{ version }} released 
+  {{ releasedate }}</strong>. 
   If you also want to help Sage by hosting a mirror, please <a href="./contact.html">contact us</a>.
   Check status of <a href="./mirror_manager.txt">Mirror Management</a> script.
 

@@ -9,7 +9,7 @@
  <meta http-equiv="content-type"
        content="text/html; charset=utf-8" />
 
- <title><!--#echo var="title"--> - Download Binaries for Solaris</title>
+ <title>{{ title }} - Download Binaries for Solaris</title>
  <!--#include virtual="inc/htmlhead.shtml"-->
 </head>
 
@@ -38,7 +38,7 @@
 <!--  <a href="./bin/solaris/">Download Solaris Binaries</a> -->
  <div class="txt border ">
 <!--#if expr="$version-solaris-bin == NONE" -->
-  <strong>The current version of the Solaris build is <!--#echo var="version-solaris-bin"-->.</strong> <br/>
+  <strong>The current version of the Solaris build is {{ version_solaris_bin }}.</strong> <br/>
 <!--#endif -->
   <!--#include virtual="./inc/mirrorselector.shtml"-->
  </div>

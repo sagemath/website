@@ -7,7 +7,7 @@
  <meta content="text/html; charset=utf-8"
        http-equiv="content-type" /><!--#include virtual="inc/variables.shtml"-->
 
- <title><!--#echo var="title"--> - Source Code Distribution</title><!--#include virtual="inc/htmlhead.shtml"-->
+ <title>{{ title }} - Source Code Distribution</title><!--#include virtual="inc/htmlhead.shtml"-->
 </head>
 
 <body onload="navbarjs.init();"
@@ -21,7 +21,7 @@
  <div class="txt large narrow bluebg round">
  <!--<a href="./src/">Download Source Code</a>-->
  <div class="txt border">
-  <strong>The newest source code release is <!--#echo var="version-src"-->. 
+  <strong>The newest source code release is {{ version_src }}. 
   </strong>   
   <br/>
    <!--#include virtual="./inc/mirrorselector-src.shtml"-->
