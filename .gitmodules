@@ -1,0 +1,3 @@
+[submodule "publications"]
+	path = publications
+	url = https://github.com/sagemath/publications.git
