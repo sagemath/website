@@ -83,9 +83,9 @@ for root, paths, filenames in os.walk("."):
             # assume it's a template and process it
             tmpl = j2env.get_template(src)
             content = tmpl.render()
-            #with open(dst, "wb") as output:
-            #    output.write(content.encode("utf-8"))
-            #    output.write(b"\n")
+            with open(dst, "wb") as output:
+                output.write(content.encode("utf-8"))
+                output.write(b"\n")
 
         elif islink(src):
             # we have a symlink, copy it
