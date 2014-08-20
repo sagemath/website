@@ -14,18 +14,8 @@ import jinja2 as j2
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-config = yaml.load(open('config.yaml'))
-
-# we operate in "src"
-os.chdir("./src")
-j2env = j2.Environment(loader=j2.ChoiceLoader(
-    [j2.FileSystemLoader("."), j2.FileSystemLoader("../publications/")]))
-j2env.globals.update(config)
-
-TARG = "../www"
-
-IGNORE_PATHS = ["old"]
-
+if not exists("www"):
+    os.mkdir("www")
 
 def log(what, nl=True):
     from sys import stdout
@@ -44,9 +34,22 @@ def log(what, nl=True):
     log.lastnl = nl
 log.lastnl = True
 
+config = yaml.load(open('config.yaml'))
 log("config:")
-for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
+for line in yaml.dump(config["global"], indent=True, default_flow_style=False).splitlines():
     log("    %s" % line)
+log("    %d mirrors" % len(config["mirrors"]))
+
+# everything is now rooted in the src directory
+os.chdir("src")
+
+j2env = j2.Environment(loader=j2.FileSystemLoader(
+    [join("..", _) for _ in ["publications", "templates", "src"]]))
+j2env.globals.update(config["global"])
+
+TARG = join("..", "www")
+
+IGNORE_PATHS = ["old"]
 
 for root, paths, filenames in os.walk("."):
     # check if we ignore a branch in a sub-tree
@@ -67,6 +70,7 @@ for root, paths, filenames in os.walk("."):
             os.symlink(os.readlink(src), dst)
 
         elif not exists(dst):
+            #log("mkdir %s" % dst)
             os.makedirs(dst)
 
     for fn in filenames:
@@ -79,9 +83,9 @@ for root, paths, filenames in os.walk("."):
             # assume it's a template and process it
             tmpl = j2env.get_template(src)
             content = tmpl.render()
-            with open(dst, "wb") as output:
-                output.write(content.encode("utf-8"))
-                output.write(b"\n")
+            #with open(dst, "wb") as output:
+            #    output.write(content.encode("utf-8"))
+            #    output.write(b"\n")
 
         elif islink(src):
             # we have a symlink, copy it
@@ -91,8 +95,9 @@ for root, paths, filenames in os.walk("."):
             os.symlink(os.readlink(src), dst)
 
         else:
-            # all other files, copy them
-            copy2(src, dst)
+            # all other files, hardlink them
+            #log("hardlink %s -> %s" % (src, dst))
+            os.link(src, dst)
 
 log("processing: done", nl=False)
 

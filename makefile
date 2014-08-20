@@ -1,12 +1,14 @@
-.PHONY: render clean show server
+.PHONY: publications render clean show server
 
 default: render
 
 clean:
-	- rm -rf www
-	- mkdir www
+	- cd www && find -P -delete
 
-render: clean
+publications:
+	cd publications && python pubparse.py
+
+render: clean publications
 	python render.py
 
 server:

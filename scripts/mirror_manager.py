@@ -60,22 +60,22 @@ TIMESTAMP_RE = re.compile(r'<pre>(.*)</pre>')
 DELIM_RE = re.compile(r' / ')
 
 # where the output file is written to
-TARGETS = [ '../www/inc/mirrorselector.shtml']
-TARGETS_SPKG = [ '../www/inc/mirrorselector-src.shtml']
-TARGETS_LIST = [ '../www/mirror_list']
+TARGETS = [ '../src/inc/mirrorselector.shtml']
+TARGETS_SPKG = [ '../src/inc/mirrorselector-src.shtml']
+TARGETS_LIST = [ '../src/mirror_list']
 OUTPUT_FILE = './mirror_manager.out'
-METALINK_FILE = [ '../www/metalink.helper' ]
-TORRENT_FILE  = [ '../www/torrent.helper' ]
+METALINK_FILE = [ '../src/metalink.helper' ]
+TORRENT_FILE  = [ '../src/torrent.helper' ]
 
 # mirrors.html holds the list of all mirrors
 # the are inserted between <!--STARTTOKEN--> and <!--ENDTOKEN-->
-MIRRORS_HTML = '../www/mirrors.html'
+MIRRORS_HTML = '../src/mirrors.html'
 tslog   = time.strftime('%Y-%U', time.gmtime())
-LOGFILE = '../mirror-log/mirror_manager_%s.log' % tslog
-SYMLINK = '../mirror-log/mirror_manager.log'
+LOGFILE = './mirror-log/mirror_manager_%s.log' % tslog
+SYMLINK = './mirror-log/mirror_manager.log'
 if os.path.exists(SYMLINK):
   os.remove(SYMLINK)
-os.symlink('../mirror_manager_%s.log' % tslog, SYMLINK)
+os.symlink('./mirror-log/mirror_manager_%s.log' % tslog, SYMLINK)
 OUTPUT = ''
 
 # categories of the mirror list, used to group the mirrors
@@ -100,14 +100,15 @@ class Mirror():
     if not type(active) is bool:
       raise RuntimeError('type(active) is not bool')
     self.name = name
-    self.cat = cat       
-    self.flag = flag
+    assert cat in CATEGORY.keys()
+    self.cat = cat
     self.url = url
     self.active = active
-    if country == '':
+    if country is None or country == '':
       self.country = url.split(r'/')[2].split(r'.')[-1]
     else:
       self.country = country
+    self.flag = flag if flag is not None else self.country
     self.priority = priority
   def entry(self):
     n = self.name
