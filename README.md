@@ -24,6 +24,9 @@ or if you forgot the `--recursive` switch, do this:
 Later, don't forget to not only update the `website` project,
 but also the submodules
 (or whatever it is the right thing to do).
+For example:
+
+    git submodule foreach "git checkout master; git pull origin master"
 
 Development
 -----------
