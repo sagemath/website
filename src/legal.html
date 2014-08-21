@@ -1,24 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Legal Notice" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Legal notice</title>
-<!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="home" -->
-
- <h1 class="narrow">Legal Notice</h1>
+{% block content %}
+<h1 class="narrow">Legal Notice</h1>
 
 <div class="narrow txt">
 Sage Mathematical Software System ("Sage" from now on) is an open-source software project.
@@ -39,6 +23,4 @@ All material on the Sage web-sites is covered under the terms of the Creative Co
 <br/><br/>
 You also cannot buy herbs here; we don't sell any kind of product. <a href="http://en.wikipedia.org/wiki/Sage">Maybe Wikipedia helps?</a>
  </div>
-<!--#include virtual="inc/footer.shtml"    -->
-</body>
-</html>
+{% endblock %}

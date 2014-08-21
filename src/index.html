@@ -222,21 +222,46 @@ if (data) {
 
 <!--#include virtual="inc/random.shtml"-->
 
- <div class="hidden">
-  <img src="./pix/index_icons.png"
-       alt="" />
- </div>
+<div id="random"
+     class="narrow center txt random"
+     style="opacity: 0">&nbsp;</div>
+<script type="text/javascript">
+var rlinks = [
+    ["./tour-quickstart.html", "Quickstart into Sage"],
+    ["./development-map.html", "Map of all Sage developers"],
+    ["./tour.html", "Introduction to Sage"],
+    ["http://planet.sagemath.org/", "Sage Blog"],
+    ["http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html", "SageTeX - embedding Sage code inside LaTeX documents."],
+    ["./library-stories.html", "Success Stories, Testimonials, News Articles, Blogs"],
+    ["./library-publications.html", "Publications citing Sage"],
+    ["./library-marketing.html", "Posters, Flyers, Spread the Word, ..."],
+    ["./tour-benchmarks.html", "Sage Benchmarks"],
+    ["http://wiki.sagemath.org/interact", "Interactive Calculations with Sage"],
+    ["./help.html", "Tutorials and Help Resources"]
+];
+$(function () {
+    var idx = Math.floor(Math.random() * rlinks.length);
+    var href = rlinks[idx][0];
+    var txt = rlinks[idx][1];
+    var $a = $('<a>').attr('href', href).text(txt);
+    $("#random").text("Random Link: ")
+                .append($a)
+                .animate({ opacity: 1 }, "slow");
+});
+</script>
+
+<div class="hidden"><img src="./pix/index_icons.png" alt="" /></div>
 {% endblock %}
 
 
 {% block footer %}
 <script  type="text/javascript">
 $(function() {
- tracklinks("idx1", "index-intro");
- tracklinks("top", "index-top");
- tracklinks("motd", "index-motd");
- tracklinks("index-table", "index-table");
- tracklinks("random", "index-random");
+ sage.tracklinks("idx1", "index-intro");
+ sage.tracklinks("motd", "index-motd");
+ sage.tracklinks("top", "index-top");
+ sage.tracklinks("index-table", "index-table");
+ sage.tracklinks("random", "index-random");
 });
 </script>
 {% endblock %}
