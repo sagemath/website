@@ -7,3 +7,19 @@ src/old/
 *.out
 *.error
 *.lock
+
+# PyCharm
+# user-specific stuff:
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+# and these sensitive or high-churn files:
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+# File-based project format
+*.ipr
+*.iws
+
+
