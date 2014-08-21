@@ -60,17 +60,8 @@ or directly via interfaces or wrappers.
 Work with Sage, or run Python, R, GAP, M2 and more <a href="https://cloud.sagemath.com/?utm_source=sagemath.org&amp;utm_medium=banner">in the Cloud</a>.
 </div>
 
-
 {#
-<script>
-if (Math.random() < .20) {
-  var scld = document.querySelector("#sagecloud");
-  scld.style.display = "";
-}
-</script>
-#}
-
-{#  <a href="./eval.html">Sage Cell Server</a>: run Sage online instantly
+  <a href="./eval.html">Sage Cell Server</a>: run Sage online instantly
   <br/>
   <form method="GET" action="./eval.html">
   <input onmouseover="javascript:this.focus();" type="text" name="code" value="factor(2012)" size="25" />
@@ -237,7 +228,7 @@ var rlinks = [
     ["http://wiki.sagemath.org/interact", "Interactive Calculations with Sage"],
     ["./help.html", "Tutorials and Help Resources"]
 ];
-$(function () {
+var random_link = function () {
     var idx = Math.floor(Math.random() * rlinks.length);
     var href = rlinks[idx][0];
     var txt = rlinks[idx][1];
@@ -245,7 +236,8 @@ $(function () {
     $("#random").text("Random Link: ")
                 .append($a)
                 .animate({ opacity: 1 }, "slow");
-});
+}
+$(function () { random_link(); setInterval(random_link, 10000); });
 </script>
 
 <div class="hidden"><img src="./pix/index_icons.png" alt="" /></div>
