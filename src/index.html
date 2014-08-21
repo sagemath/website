@@ -1,16 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
-<!--#set var="jsmath" value="0" -->
+{% extends 'base.html' %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head profile="http://a9.com/-/spec/opensearch/1.1/">
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-
- <title>{{ sage }} Open Source Mathematics Software</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
+{% block header %}
 <style type="text/css">
  div.announce {
    font-size:115%; font-weight: strong; padding: 10px; width: 70%;
@@ -20,10 +10,9 @@
  } 
  div.announce input {font-size: 100%;}
 </style>
-</head>
+{% endblock %}
 
-<body>
- <!--#include virtual="inc/header.shtml" -->
+{% block content %}
 
  <div class="narrow center txt topmargin" id="idx1">
   <strong class="large">Sage</strong> is a free <a href=
@@ -54,44 +43,43 @@ or directly via interfaces or wrappers.
   Mission: <em>Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab</em>.
  </div>
 
-<!--
-<div class="narrow center txt announce">
-Sage and lmonade are searching for students for this summer's GSoC! We have many exciting projects for students to work (from home) over the summer and to get mentored by experts in the field: 
-<a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/sagemath">
-Sage
-</a>, 
-<a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/lmonade">
-lmonade
-</a>
-</div>
--->
+{#
+  <div class="narrow center txt announce">
+  Sage and lmonade are searching for students for this summer's GSoC! We have many exciting projects for students to work (from home) over the summer and to get mentored by experts in the field: 
+  <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/sagemath">
+  Sage
+  </a>, 
+  <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/lmonade">
+  lmonade
+  </a>
+  </div>
+#}
 
 <div id="sagecloud" class="narrow center txt announce">
-<a href="https://cloud.sagemath.com/?utm_source=sagemath.org&utm_medium=banner"><b>SageMathCloud&#8482;</b></a> is still in Beta Test.<br/>
-Work with Sage, or run Python, R, GAP, M2 and more <a href="https://cloud.sagemath.com/?utm_source=sagemath.org&utm_medium=banner">in the Cloud</a>.
+<a href="https://cloud.sagemath.com/?utm_source=sagemath.org&amp;utm_medium=banner"><b>SageMathCloud&#8482;</b></a> is still in Beta Test.<br/>
+Work with Sage, or run Python, R, GAP, M2 and more <a href="https://cloud.sagemath.com/?utm_source=sagemath.org&amp;utm_medium=banner">in the Cloud</a>.
 </div>
 
 
-<!--
+{#
 <script>
 if (Math.random() < .20) {
   var scld = document.querySelector("#sagecloud");
   scld.style.display = "";
 }
 </script>
--->
+#}
 
-<!--  <a href="./eval.html">Sage Cell Server</a>: run Sage online instantly -->
-  <!-- <br/>
+{#  <a href="./eval.html">Sage Cell Server</a>: run Sage online instantly
+  <br/>
   <form method="GET" action="./eval.html">
   <input onmouseover="javascript:this.focus();" type="text" name="code" value="factor(2012)" size="25" />
   <input type="submit" value="eval" />
   </form>
-  -->
-</div>
+#}
 
+{#
 <!-- pushing chrome webstore sage app -->
-<!--
 <script type="text/javascript">
 var data = navigator.userAgent;
 if (data) {
@@ -101,16 +89,15 @@ if (data) {
    }
 }
 </script>
--->
-<!-- end chrome webapp ad -->
+#}
 
  <table class="top center"
         id="index-table">
   <colgroup>
-   <col width="40%" />
-   <col width="10%" />
-   <col width="10%" />
-   <col width="40%" />
+   <col style="width: 40%" />
+   <col style="width: 10%" />
+   <col style="width: 10%" />
+   <col style="width: 40%" />
   </colgroup>
 
   <tbody>
@@ -119,12 +106,13 @@ if (data) {
      <h2><a href="http://cloud.sagemath.com/">Try Sage Online</a></h2>
 
      <div class="small">
-      <!--
-      <a href="https://sage.math.washington.edu:8102">Server 2</a>  &middot;  
-<a href=
-      "https://sage.math.washington.edu:8103">Server 3</a>
- &middot;<a href="http://sage.milnix.org">Milnix.org</a>  &middot;  --> 
-other: <a href="http://www.sagenb.org/">Sagenb</a>,
+       {#
+       <a href="https://sage.math.washington.edu:8102">Server 2</a>  &middot;
+       <a href= "https://sage.math.washington.edu:8103">Server 3</a> &middot;
+       <a href="http://sage.milnix.org">Milnix.org</a>  &middot;
+       #}
+       other:
+       <a href="http://www.sagenb.org/">Sagenb</a>,
        <a href="http://sagenb.kaist.ac.kr/">KAIST</a>, 
        <a href="http://sagecell.sagemath.org/">SageCell</a><br/>
      </div>
@@ -134,22 +122,20 @@ other: <a href="http://www.sagenb.org/">Sagenb</a>,
        id="index-sagenb"
        href="http://cloud.sagemath.org/"
        name="index-sagenb"></a></td>
-    
+
     <td><a class="index-menu"
        id="index-download"
-       name="index-download" <!--#include virtual="inc/download-link.shtml"--> ></a></td>
+       name="index-download" href="./download.html" downloadurl></a></td>
 
     <td class="left">
-        <h2><a <!--#include virtual="inc/download-link.shtml"-->>Download {{version}}</a></h2>
+        <h2><a href="./download.html" downloadurl>Download {{version}}</a></h2>
 
      <div class="small">
          <span class="nowrap"><a href="./mirror/src/changelogs/sage-{{version_src}}.txt">Changelog</a>
        &middot; </span> 
    <span class="nowrap"><a href="./download-source.html">Source {{ version_src }}</a>
       &middot; </span> 
-<!--
-      <span class="nowrap"><a href="./download-livecd.html">LiveCD</a> &middot; </span>
--->
+      {# <span class="nowrap"><a href="./download-livecd.html">LiveCD</a> &middot; </span> #}
       <a href="./download-packages.html">Packages</a>
       &middot;
       <a href="http://git.sagemath.org/sage.git/">Git</a>
@@ -232,20 +218,25 @@ other: <a href="http://www.sagenb.org/">Sagenb</a>,
 
  <div class="txt">
   &#160;
- </div><!--#include virtual="inc/random.shtml"-->
+ </div>
+
+<!--#include virtual="inc/random.shtml"-->
 
  <div class="hidden">
   <img src="./pix/index_icons.png"
        alt="" />
  </div>
-<!--#include virtual="inc/footer.shtml"-->
-<script src="./res/tracklinks.js" type="text/javascript" ></script>
+{% endblock %}
+
+
+{% block footer %}
 <script  type="text/javascript">
-tracklinks("idx1", "index-intro");
-tracklinks("top", "index-top");
-tracklinks("motd", "index-motd");
-tracklinks("index-table", "index-table");
-tracklinks("random", "index-random");
+$(function() {
+ tracklinks("idx1", "index-intro");
+ tracklinks("top", "index-top");
+ tracklinks("motd", "index-motd");
+ tracklinks("index-table", "index-table");
+ tracklinks("random", "index-random");
+});
 </script>
-</body>
-</html>
+{% endblock %}
