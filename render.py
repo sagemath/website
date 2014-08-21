@@ -47,6 +47,23 @@ j2env = j2.Environment(loader=j2.FileSystemLoader(
     [join("..", _) for _ in ["publications", "templates", "src"]]))
 j2env.globals.update(config["global"])
 
+@j2.contextfilter
+def filter_prefix(ctx, link):
+    """
+    Prepend level-times "../" to the given string.
+    Used to go up in the directory hierarchy.
+    Yes, one could also do absolute paths, but then it is harder to debug locally!
+    """
+
+    level = ctx.get("level", 0)
+    if level == 0:
+        return link
+    path = ['..'] * level
+    path.append(link)
+    return '/'.join(path)
+
+j2env.filters["prefix"] = filter_prefix
+
 TARG = join("..", "www")
 
 IGNORE_PATHS = ["old"]
@@ -76,13 +93,17 @@ for root, paths, filenames in os.walk("."):
     for fn in filenames:
         src = join(root, fn)
         dst = normpath(join(TARG, src))
+        lvl = root.count(os.sep)
 
         log("processing/f: %s" % src, nl=False)
 
         if fn.endswith(".html"):
+            # we ignore html files starting with a dot (e.g. language templates)
+            if fn.startswith("."):
+                continue
             # assume it's a template and process it
             tmpl = j2env.get_template(src)
-            content = tmpl.render()
+            content = tmpl.render(level=lvl)
             with open(dst, "wb") as output:
                 output.write(content.encode("utf-8"))
                 output.write(b"\n")

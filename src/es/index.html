@@ -1,30 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'es/.es.html' %}
+{% set title = "Español" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
+{% block content %}
 
- <title>{{ sage }} - Español</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
+<h1 class="narrow">Sage Español</h1>
 
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-es.shtml" -->
-
- <h1 class="narrow">Sage Español</h1>
-
- <div class="narrow">
+<div class="narrow">
 Dos documentos en español. Si quieres ayudar a este sitio web, solicitar al webmaster.
 <ul>
 <li> <a href="./Manual_SAGE_principiantes.pdf">Manual de Sage para principiantes (PDF, Español)</a> </li>
 <li><a href="./Introduccion_a_SAGE.pdf">Introduccion: Matemáticas Elementales con Sage (PDF, Español)</a> </li>
 <li><a href="http://strange1712.kubuntu-es.org/6733/sage-open-source-mathematics-software">instalarlo sage - kubuntu-tenochtitlan blog (Espanol)</a></li>
 </ul>
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </div>
+{% endblock %}
