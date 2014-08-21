@@ -7,7 +7,7 @@ import os
 import sys
 from os.path import join, normpath, exists, islink
 import datetime
-from shutil import copy2
+import shutil
 import yaml
 import jinja2 as j2
 
@@ -16,6 +16,7 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 if not exists("www"):
     os.mkdir("www")
+
 
 def log(what, nl=True):
     from sys import stdout
@@ -46,6 +47,7 @@ os.chdir("src")
 j2env = j2.Environment(loader=j2.FileSystemLoader(
     [join("..", _) for _ in ["publications", "templates", "src"]]))
 j2env.globals.update(config["global"])
+
 
 @j2.contextfilter
 def filter_prefix(ctx, link):
@@ -98,8 +100,8 @@ for root, paths, filenames in os.walk("."):
         log("processing/f: %s" % src, nl=False)
 
         if fn.endswith(".html"):
-            # we ignore html files starting with a dot (e.g. language templates)
-            if fn.startswith("."):
+            # we ignore html files starting with "_" (e.g. language templates)
+            if fn.startswith("_"):
                 continue
             # assume it's a template and process it
             tmpl = j2env.get_template(src)
