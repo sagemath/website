@@ -1,4 +1,4 @@
-.PHONY: publications render clean show server
+.PHONY: publications render clean show server style
 
 default: render
 
@@ -19,3 +19,6 @@ show:
 
 open:
 	python -c 'from webbrowser import open; open("./www/index.html")'
+
+style:
+	autopep8 -i -aaa -j -1 --ignore=E501 *.py scripts/*.py

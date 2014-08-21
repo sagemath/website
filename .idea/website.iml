@@ -4,7 +4,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/www" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7.6 virtualenv at /scratch/scratch/schilly/canopy/Canopy_64bit/User" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7.6 virtualenv at /opt/canopy/env/User" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

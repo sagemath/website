@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# coding: utf8
 
 ###########################################################################
 # Copyright (c) 2010--2011 Minh Van Nguyen <nguyenminh2@gmail.com>
@@ -88,6 +89,7 @@ SAGE_ROOT = None
 SAGE_SAGE = None
 SAGE_VERSION = None
 
+
 def delete_previous_doc(target_dir):
     """
     Delete the previous version of the Sage standard documentation.
@@ -110,6 +112,7 @@ def delete_previous_doc(target_dir):
     os.system("rm -rf doc-bz2")
     os.system("rm -rf doc-zip")
     os.system("rm html pdf")
+
 
 def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     """
@@ -240,35 +243,35 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>HTML</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-zip/",
-            docdir, "-html.zip\">download</a> (",
-            str(zipdochtml_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-zip/",
+        docdir, "-html.zip\">download</a> (",
+        str(zipdochtml_size), " MB)</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-bz2/",
-            docdir, "-html.tar.bz2\">download</a> (",
-            str(bz2dochtml_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-bz2/",
+        docdir, "-html.tar.bz2\">download</a> (",
+        str(bz2dochtml_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "   </tr>\n\n"])
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>PDF</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-zip/",
-            docdir, "-pdf.zip\">download</a> (",
-            str(zipdocpdf_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-zip/",
+        docdir, "-pdf.zip\">download</a> (",
+        str(zipdocpdf_size), " MB)</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-bz2/",
-            docdir, "-pdf.tar.bz2\">download</a> (",
-            str(bz2docpdf_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-bz2/",
+        docdir, "-pdf.tar.bz2\">download</a> (",
+        str(bz2docpdf_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "  </tr>\n\n"])
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>HTML+PDF</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-zip/",
-            docdir, ".zip\">download</a> (",
-            str(zipdoc_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-zip/",
+        docdir, ".zip\">download</a> (",
+        str(zipdoc_size), " MB)</td>\n"])
     htmlcontent = "".join([
-            htmlcontent, "    <td><a href=\"./doc-bz2/",
-            docdir, ".tar.bz2\">download</a> (",
-            str(bz2doc_size), " MB)</td>\n"])
+        htmlcontent, "    <td><a href=\"./doc-bz2/",
+        docdir, ".tar.bz2\">download</a> (",
+        str(bz2doc_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "  </tr>\n"])
     htmlcontent = "".join([htmlcontent, "</table>\n"])
     # Process the rest of the HTML file.
@@ -292,6 +295,7 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     outfile = open(filename, "w")
     outfile.write(htmlcontent)
     outfile.close()
+
 
 def usage():
     """
@@ -351,7 +355,7 @@ if __name__ == "__main__":
             shell=True).communicate()
 
     else:
-        SAGE_VERSION="6.3"
+        SAGE_VERSION = "6.3"
     delete_previous_doc(DOC_DIR)
     update_doc(
         DEV_DIR,

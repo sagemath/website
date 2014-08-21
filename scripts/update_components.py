@@ -51,7 +51,7 @@ SPKG = {
     "ecm": ("GMP-ECM", "https://gforge.inria.fr/projects/ecm/", "Elliptic curve method for integer factorization"),
     "elliptic_curves": ("elliptic_curves", "http://www.warwick.ac.uk/~masgaj/ftp/data/", "Cremona's mini tables of elliptic curves"),
     "f2c": ("f2c", "http://www.netlib.org/f2c/", "Converts Fortran 77 to C code"),
-    "fflas_ffpack" : ("FFLAS-FFPACK", "http://linalg.org/projects/fflas-ffpack", "A LGPL-2.1+ source code library for dense linear algebra over word-size finite fields."),
+    "fflas_ffpack": ("FFLAS-FFPACK", "http://linalg.org/projects/fflas-ffpack", "A LGPL-2.1+ source code library for dense linear algebra over word-size finite fields."),
     "flint": ("FLINT", "http://www.flintlib.org", "Fast Library for Number Theory"),
     "flintqs": ("flintqs", "http://www.friedspace.com/QS/", "William Hart's highly optimized multi-polynomial quadratic sieve for integer factorization"),
     "fortran": ("G95", "http://www.g95.org", "A stable, production Fortran 95 compiler available for multiple CPU architectures and operating systems"),
@@ -60,7 +60,7 @@ SPKG = {
     "gd": ("GD", "http://www.libgd.org", "Dynamic graphics generation tool"),
     "gdmodule": ("gdmodule", "http://newcenturycomputers.net/projects/gdmodule.html", "A Python interface to the GD library"),
     "genus2reduction": ("genus2reduction", "http://www.math.u-bordeaux.fr/~liu/G2R/", "Curve data computation"),
-    "gf2x" : ("GF2X", "http://gf2x.gforge.inria.fr/", "a C/C++ software package containing routines for fast arithmetic in GF(2)[x] (multiplication, squaring, GCD) and searching for irreducible/primitive trinomials."),
+    "gf2x": ("GF2X", "http://gf2x.gforge.inria.fr/", "a C/C++ software package containing routines for fast arithmetic in GF(2)[x] (multiplication, squaring, GCD) and searching for irreducible/primitive trinomials."),
     "gfan": ("Gfan", "http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html", "Gr\\\"obner fans and tropical varieties"),
     "givaro": ("Givaro", "http://ljk.imag.fr/CASYS/LOGICIELS/givaro/", "C++ library for arithmetic and algebraic computations"),
     "glpk": ("GLPK", "http://www.gnu.org/software/glpk/glpk.html", "GNU Linear Programming Kit"),
@@ -74,15 +74,15 @@ SPKG = {
     "lapack": ("LAPACK", "http://www.netlib.org/lapack/", "Linear Algebra PACKage written in Fortran"),
     "lcalc": ("lcalc", "http://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/", "Michael Rubinstein's L-function calculator"),
     "libfplll": ("fplll", "http://perso.ens-lyon.fr/damien.stehle/index.html#software", "Euclidean lattice reduction"),
-    "libgap" : ("LibGAP", "https://bitbucket.org/vbraun/libgap", "LibGAP is essentially a fork of the upstream GAP kernel."),
+    "libgap": ("LibGAP", "https://bitbucket.org/vbraun/libgap", "LibGAP is essentially a fork of the upstream GAP kernel."),
     "libgcrypt": ("Libgcrypt", "http://directory.fsf.org/project/libgcrypt/", "General purpose cryptographic library based on the code from GnuPG"),
     "libgpg_error": ("Libgpg-error", "http://www.gnupg.org/related_software/libgpg-error/", "A small library that defines common error values for all GnuPG components"),
     "iconv": ("libiconv", "http://www.gnu.org/software/libiconv/", "A library to enable different languages with different characters to be handled properly"),
     "libpng": ("libpng", "http://www.libpng.org/pub/png/libpng.html", "Bitmap image support"),
     "linbox": ("LinBox", "http://www.linalg.org", "C++ template library for exact, high-performance linear algebra computation with dense, sparse, and structured matrices over the integers and over finite fields"),
     "libm4ri": ("M4RI", "http://m4ri.sagemath.org", "A library for fast arithmetic with dense matrices over GF(2)"),
-    "libm4rie" : ("M4RI(e)", "http://m4ri.sagemath.org", "A library for fast arithmetic with dense matrices over GF(2^e)"),
-    "lrcalc" : ("lrcalc", "http://math.rutgers.edu/~asbuch/lrcalc/", "Littlewood-Richardson Calculator "),
+    "libm4rie": ("M4RI(e)", "http://m4ri.sagemath.org", "A library for fast arithmetic with dense matrices over GF(2^e)"),
+    "lrcalc": ("lrcalc", "http://math.rutgers.edu/~asbuch/lrcalc/", "Littlewood-Richardson Calculator "),
     "matplotlib": ("matplotlib", "http://matplotlib.sourceforge.net", "Python plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms"),
     "maxima": ("Maxima", "http://maxima.sourceforge.net", "System for manipulating symbolic and numerical expressions"),
     "mercurial": ("Mercurial", "http://mercurial.selenic.com", "Free, distributed source control management tool"),
@@ -136,21 +136,22 @@ SPKG = {
     "zn_poly": ("zn_poly", "http://cims.nyu.edu/~harvey/code/zn_poly/", "C library for polynomial arithmetic in Z/nZ[x]"),
     "zodb3": ("ZODB", "http://www.zodb.org", "Native object database for Python"),
     "bzip2": ("bzip2", "http://www.bzip.org", "High-quality data compressor"),
-    "gcc" : ("gcc", "http://gcc.gnu.org/", "GCC, the GNU Compiler Collection"),
+    "gcc": ("gcc", "http://gcc.gnu.org/", "GCC, the GNU Compiler Collection"),
     "jmol": ("Jmol", "http://jmol.sourceforge.net", "Java viewer for chemical structures in 3D")
-    }
+}
 # these components are embedded into other packages
 SPKG_EMBEDDED = {
     "jsmath": ("jsMath", "http://www.math.union.edu/~dpvc/jsMath/", "JavaScript implementation of LaTeX"),  # embedded in the moin spkg
     "mwrank": ("mwrank", "http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/", "Program for computing Mordell-Weil groups of elliptic curves over Q via 2-descent. Since November 2007 mwrank has formed part of the eclib package"),
     "rpy": ("RPy", "http://rpy.sourceforge.net", "Simple and efficient access to R from Python")  # embedded in the R spkg
-    }
+}
 # these packages should be excluded
 SPKG_EXCLUDE = ["examples", "extcode", "sage", "sage_scripts", "sage_root"]
 
 ##############################
 # helper functions
 ##############################
+
 
 def current_spkgs(spkgdir, spkg_db, spkg_exclude):
     r"""
@@ -191,6 +192,7 @@ def current_spkgs(spkgdir, spkg_db, spkg_exclude):
             sys.exit(1)
     return spkg
 
+
 def replace_special(s):
     r"""
     Replace each special character from the spkg description with an
@@ -207,13 +209,14 @@ def replace_special(s):
     for special characters) are replaced with equivalent HTML codes.
     """
     replace_table = [
-        ('\\"o',     "&ouml;"),
-        ('\\"u',     "&uuml;")
-        ]
+        ('\\"o', "&ouml;"),
+        ('\\"u', "&uuml;")
+    ]
     cleansed_str = copy.copy(s)
     for candidate, target in replace_table:
         cleansed_str = cleansed_str.replace(candidate, target)
     return cleansed_str
+
 
 def update_page(f, spkg_current, spkg_db, spkg_embedded, sdelim, edelim):
     r"""
@@ -279,23 +282,24 @@ def update_page(f, spkg_current, spkg_db, spkg_embedded, sdelim, edelim):
         # no URL provided for a component
         if s[1] == "":
             page_middle = "".join([
-                    page_middle,
-                    "\n",
-                    "<li>%s: %s</li>" % (s[0], replace_special(s[2]))])
+                page_middle,
+                "\n",
+                "<li>%s: %s</li>" % (s[0], replace_special(s[2]))])
         else:
             page_middle = "".join([
-                    page_middle,
-                    "\n",
-                    '<li><a target="_blank" href="%s">%s</a>: %s</li>' % (s[1], s[0], replace_special(s[2]))])
+                page_middle,
+                "\n",
+                '<li><a target="_blank" href="%s">%s</a>: %s</li>' % (s[1], s[0], replace_special(s[2]))])
     page_middle = "".join([page_middle, "\n", "</ol>"])
     F = open(f, "w")
     F.write("".join([
-                page_start.strip(),
-                "\n",
-                page_middle.strip(),
-                "\n",
-                page_end.strip()]))
+        page_start.strip(),
+        "\n",
+        page_middle.strip(),
+        "\n",
+        page_end.strip()]))
     F.close()
+
 
 def usage():
     """

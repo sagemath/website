@@ -46,6 +46,7 @@ import sys
 # helper functions
 ##############################
 
+
 def usage():
     """
     Print the usage information for this script.
@@ -87,7 +88,7 @@ if sh.returncode != 0:
     sys.stdout.flush()
     sys.exit(1)
 
-# # push changes to Mercurial repository hg.sagemath.org
+# push changes to Mercurial repository hg.sagemath.org
 # HG_SCRIPT = "/home/sagemath/bin/sage-pushall"
 # if not os.path.isfile(HG_SCRIPT):
 #     print("Mercurial repository update script %s not found. Exiting..." % HG_SCRIPT)
@@ -102,7 +103,7 @@ if sh.returncode != 0:
 #     sys.exit(1)
 # os.chdir(PWD)
 
-# # push to the mirrors
+# push to the mirrors
 # MIRROR_SCRIPT = "/home/sagemath/mirror"
 # if not os.path.isfile(MIRROR_SCRIPT):
 #     print("Mirror script %s not found. Exiting..." % MIRROR_SCRIPT)
