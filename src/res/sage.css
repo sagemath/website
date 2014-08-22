@@ -814,10 +814,11 @@ background-color: #dfdfff;
   white-space: nowrap;
   border-bottom: 1px solid #7f7fff;
   padding-left: 10px;
+  background: #fff;
 }
 #sage-nav li       { float: left; position: relative; padding: 0; line-height: 1em; }
 #sage-nav li a       { display: block; padding: 5px 15px 5px 5px; color: #090999; text-decoration: none; border: 1px solid transparent;}
-#sage-nav li ul       {  display: none; opacity: 0; 
+#sage-nav li ul       {  display: none; opacity: 0;
   position: absolute; left: 0; min-width: 8em; background: #efefff; list-style-type: none; padding: 0; margin: 0 0 0px 0; 
   border: #0f0fff 1px solid; 
 }
@@ -825,7 +826,7 @@ background-color: #dfdfff;
 #sage-nav li:hover a { background: #efefff; border: #0f0fff 1px solid; border-bottom: 0; }
 #save-nav li:hover a:hover {background: #c9c9f9; }
 #sage-nav li ul li       { display: none; float: none; margin: 0; padding:0; position: static; height: 0; line-height: 0; background: none; border: 0;}
-#sage-nav li ul li a { 
+#sage-nav li ul li a {
 border: 0;
 display: none;
 line-height: 0;
@@ -834,7 +835,7 @@ border: 0;
 padding: 0;
 margin: 0;
 } 
-#sage-nav li:hover ul li { 
+#sage-nav li:hover ul li {
 display: block; 
 height: 24px; 
 line-height: 24px; 
@@ -848,7 +849,7 @@ height: 24px;
 line-height: 24px; 
 padding: 0 5px; 
 }
-#sage-nav li ul li a       { background: #efefff; } 
+#sage-nav li ul li a       { background: #efefff; }
 #sage-nav li ul li a:hover { background: #fff; }
 #sage-nav li ul li.section { border-top: 1px solid #0f0fff; }
 
