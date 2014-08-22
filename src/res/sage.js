@@ -9,23 +9,29 @@ var isWindows = navigator.platform.toUpperCase().indexOf('WIN')!==-1;
 var isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
 
 var sage = {
-    tracklinks: function (id, cat) {
-        var list = document.getElementById(id);
-        if (!list) { return; }
-        function getTarget(x){
-            x = x || window.event;
-            return x.target || x.srcElement;
-        }
-        function klick(e) {
-            var t = getTarget(e);
-            //alert (t);
-            if (t.nodeName.toLowerCase() == 'a') {
-              var u = t.href;
-              pageTracker._trackEvent('Clicks', cat, u, 0);
-            }
-        }
-        list.addEventListener('click',klick,false);
+    tracklinks: function () {
+        $("[track]").each(function() {
+            var $this = $(this);
+            var cat = $this.attr("track");
+            $this.children("a").each(function() {
+               var $a = $(this);
+               $a.click(function() {
+                 pageTracker._trackEvent('Clicks', cat, $a.attr("href"), 0);
+               });
+            });
+        });
     },
+
+    /* this variant doesn't work ...
+    tracklinks: function() {
+        $("*[track] a").on("click", function() {
+            var $a = $(this);
+            var $track = $a.parent("*[track]");
+            var cat = $track.attr("track");
+            pageTracker._trackEvent('Clicks', cat, $a.attr("href"), 0);
+        });
+    },
+    */
 
     downloadUrl: function() {
         if (isWindows) return "download-windows.html";
@@ -67,3 +73,4 @@ var sage = {
 
 $(sage.setDownloadUrls);
 $(sage.scrollNavbarInit);
+$(sage.tracklinks);
