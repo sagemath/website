@@ -227,7 +227,7 @@ mirrors:
   cat: a
   country: ir
   flag: ir
-  name: ASIS, Theran, IR
+  name: ASIS, Tehran, Iran
   priority: 50
   url: http://sage.asis.io/
 spkg:
