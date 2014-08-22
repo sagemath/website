@@ -73,7 +73,7 @@ MIRRORS_HTML = '../src/mirrors.html'
 tslog = time.strftime('%Y-%U', time.gmtime())
 LOGFILE = './mirror-log/mirror_manager_%s.log' % tslog
 SYMLINK = './mirror-log/mirror_manager.log'
-if os.path.exists(SYMLINK):
+if os.path.islink(SYMLINK):
     os.remove(SYMLINK)
 os.symlink('./mirror-log/mirror_manager_%s.log' % tslog, SYMLINK)
 OUTPUT = ''
