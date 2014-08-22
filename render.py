@@ -105,7 +105,8 @@ for root, paths, filenames in os.walk("."):
                 continue
             # assume it's a template and process it
             tmpl = j2env.get_template(src)
-            content = tmpl.render(level=lvl)
+            c = fn.rsplit(".", 1)[0].split("-", 1)[0]
+            content = tmpl.render(level=lvl, filename=fn, category=c)
             with open(dst, "wb") as output:
                 output.write(content.encode("utf-8"))
                 output.write(b"\n")
