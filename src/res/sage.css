@@ -837,16 +837,16 @@ margin: 0;
 } 
 #sage-nav li:hover ul li {
 display: block; 
-height: 24px; 
-line-height: 24px; 
+height: 30px;
+line-height: 30px;
 background: #efefff;
 }
 #sage-nav li:hover ul li a {
 background: #efefff;
 border: 0;
 display: block; 
-height: 24px; 
-line-height: 24px; 
+height: 30px;
+line-height: 30px;
 padding: 0 5px; 
 }
 #sage-nav li ul li a       { background: #efefff; }

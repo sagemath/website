@@ -1,23 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Help Mailing Lists" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Help Groups</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="groups" -->
+{% block content %}
 
  <h1>Sage Discussion Groups</h1>
+
+ <div>
+    The following mailing-lists are for general help around Sage.
+    There are also <a href="development-groups.html">development mailing-lists</a>.
+ </div>
 
  <table class="top wide">
   <colgroup>
@@ -111,30 +102,32 @@
     </td>
    </tr>
   </tbody>
- </table><script type="text/javascript"
-      src=
-      "http://www.google.com/jsapi?key=ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w">
-</script><script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
+ </table>
+<script type="text/javascript"
+      src="http://www.google.com/jsapi?key=ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w">
+</script>
+<script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
       type="text/javascript">
 </script><script type="text/javascript">
-//<![CDATA[
  function initialize() {
- var feedsup = ["http://groups.google.com/group/sage-support/feed/atom_v1_0_topics.xml"];
- var feededu = ["http://groups.google.com/group/sage-edu/feed/atom_v1_0_topics.xml"];
- var feedalg = ["http://groups.google.com/group/sage-algebra/feed/atom_v1_0_topics.xml"];
+ var feeds = [
+  ["supportfeed", "http://groups.google.com/group/sage-support/feed/atom_v1_0_topics.xml"],
+  ["edufeed", "http://groups.google.com/group/sage-edu/feed/atom_v1_0_topics.xml"],
+  ["algebrafeed", "http://groups.google.com/group/sage-algebra/feed/atom_v1_0_topics.xml"]
+ ];
  var options = {
   stacked : false,
   horizontal : false,
   title : "",
   numResults : 15
  }
- new GFdynamicFeedControl(feedsup,  'supportfeed', options);
- new GFdynamicFeedControl(feededu,  'edufeed', options);
- new GFdynamicFeedControl(feedalg,  'algebrafeed', options);
+ for (fidx in feeds) {
+   var name = feeds[fidx][0];
+   var feed = feeds[fidx][1];
+   new GFdynamicFeedControl(feed, name, options);
+ }
  }
  google.load('feeds', '1');
  google.setOnLoadCallback(initialize);
- //]]>
-</script><!--#include virtual="inc/footer.shtml" -->
-</body>
-</html>
+</script>
+{% endblock %}

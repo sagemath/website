@@ -1,17 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
-<!--#set var="jsmath" value="0" -->
+{% extends 'base.html' %}
+{% set title = "Sage Cell Server" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
- <title>{{ sage }} - Cell Server</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
-
+{% block header %}
 <script type="text/javascript" src="http://aleph.sagemath.org/static/jquery.min.js"></script>
 <script type="text/javascript" src="http://aleph.sagemath.org/embedded_sagecell.js"></script>
 <script type="text/javascript" src="./eval/eval.js"></script>
@@ -40,11 +31,9 @@
 #db span.loading { font-style: italic; color: grey; }
 #db-descr { min-height: 35px; font-size: 90%; }
 </style>
-</head>
+{% endblock %}
 
-<body> 
-<!--#include virtual="inc/header.shtml" -->
-
+{% block content %}
 <h1>Sage Cell Server</h1>
 
 <div class="bodypadding txt">
@@ -96,8 +85,4 @@ located in  e.g.
 <a href="./eval/db1.json">./eval/db1.json</a> 
 and mail it to the  <a href="./contact.html">webmaster</a>!
 </div>
-
- 
-<!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+{% endblock %}

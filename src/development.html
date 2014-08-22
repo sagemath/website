@@ -1,23 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
-<!--#set var="trademark" value="1"-->
+{% extends 'base.html' %}
+{% set title = "Development" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Development</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="main" -->
-
+{% block content %}
  <h1 class="narrow">Information for Developers</h1>
 
  <div class="narrow txt">
@@ -35,7 +19,14 @@
 
 
 <div class="narrow center txt">
-<object width="640" height="480"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed></object><p><a href="http://vimeo.com/14044496">Contributing to Sage</a> from <a href="http://vimeo.com/user1449175">William Stein</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>This is a video that describes how to contribute to the Sage (http://sagemath.org) project, and includes many sources of ideas.
+<object width="640" height="480">
+    <param name="allowfullscreen" value="true" />
+    <param name="allowscriptaccess" value="always" />
+    <param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" />
+    <embed src="http://vimeo.com/moogaloop.swf?clip_id=14044496&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00adef&amp;fullscreen=1&amp;autoplay=0&amp;loop=0" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="640" height="480"></embed>
+</object>
+<p>
+ <a href="http://vimeo.com/14044496">Contributing to Sage</a> from <a href="http://vimeo.com/user1449175">William Stein</a> on <a href="http://vimeo.com">Vimeo</a>.</p><p>This is a video that describes how to contribute to the Sage (http://sagemath.org) project, and includes many sources of ideas.
 [<a href="http://wiki.sagemath.org/daysindia25/schedule?action=AttachFile&do=view&target=stein-contrib.pdf">download presentation (pdf)</a>,
 <a href="http://sage.math.washington.edu/home/wstein/video/sagedays25/Contributing%20to%20Sage.m4v">download video (m4v)]</p>
 </div>
@@ -194,6 +185,5 @@
 <div>Translation of this page to
 <a href="http://science.webhostinggeeks.com/sage-informacije-za-programere">serbo-croatian</a>.
 </div>
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+</div>
+{% endblock %}

@@ -1,24 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
-<!--#set var="trademark" value="1"-->
+{% extends 'base.html' %}
+{% set title = "Acknowledgment" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Acknowledgment</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml"-->
- <!--#set var="sub" value="ack"-->
-
+{% block content %}
  <h1>Acknowledgment to Supporters</h1>
 
  <div class="txt leftpadding rightpadding">
@@ -304,6 +287,5 @@
       "window.open(&#39;http://mailhide.recaptcha.net/d?k=01JhWPFLZ8tJCbx84EXp20vw==&amp;c=C8CP83g7M5hbfmYWTynnLHz_lr5sWlI4Z2wKwgSaJ50=&#39;, &#39;&#39;, &#39;toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300&#39;); return false;">
 let me know</a> if I failed to acknowledge anybody&#39;s
   contributions!
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </div>
+{% endblock %}

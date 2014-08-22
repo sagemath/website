@@ -1,32 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Help and Support" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
+{% block header %}
+<style type="text/css">
+    li.c1 {list-style: none; display: inline}
+</style>
+{% endblock %}
 
- <title>{{ sage }} - Help and Support</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
+{% block content %}
 
- <style type="text/css">
-/*<![CDATA[*/
- li.c1 {list-style: none; display: inline}
- /*]]>*/
- </style>
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="help" -->
-
- <h1>Help and Support</h1><!--  <div class="narrow center txt">
-   There are many sources to learn more about Sage.
-  </div>-->
+ <h1>Help and Support</h1>
 
 <ul>
   <li><a href="#SageStandardDoc">Sage standard documentation</a></li>
@@ -43,6 +26,8 @@ The
 <a href="./doc/index.html">Sage standard documentation</a> consists of the following documents, in both
 HTML and PDF versions.
 <br>
+
+{#
 <br>
 <div style="text-align:center">
 <b>
@@ -50,6 +35,7 @@ HTML and PDF versions.
 </b></div>
 <br>
 </div>
+#}
 
 <ul>
   <li><a href="./doc/a_tour_of_sage/">A Tour of Sage</a>,
@@ -222,12 +208,14 @@ HTML and PDF versions.
 <!-- further resources -->
 <h2><a name="furtherResources">Further resources</a></h2>
   <ul>
-    <li><a href="http://wiki.sagemath.org/quickref"
-           target="_blank">Quick Reference Cards</a> &mdash; overview of
-      important functions</li>
+    <li><a href="http://wiki.sagemath.org/quickref">Quick Reference Cards</a> &mdash;
+        overview of  important functions</li>
 
     <li><a href="./help-video.html"><strong>Screencasts</strong></a> &mdash;
       videos explaining how Sage works</li>
+
+  <li><a href="./help-irc.html">IRC help channel</a> &mdash;
+      directly connects you to an online chat room</li>
 
     <li><a target="_blank" href="http://arachnoid.com/sage/">
         Exploring Mathematics with Sage</a> by Paul Lutus &mdash; overview
@@ -333,27 +321,18 @@ primary programming language of Sage. Here are some external resources:
     suitable for people who are already comfortable with programming</li>
 </ul>
 
-<!-- dicussion groups -->
-<!--
-<h2><a name="discussionGroups">Discussion groups</a></h2>
+
+<h2>Discussion groups</h2>
 
 <ul>
-  <li><a href="http://groups.google.com/group/sage-support"
-         target="_blank"><strong>sage-support</strong></a> &mdash; this
-    discussion group is for all sorts of <strong>general questions or
-      problems</strong></li>
+  <li><a href="http://groups.google.com/group/sage-support">
+      <strong>sage-support</strong></a> &mdash;
+      this discussion group is for all sorts of <strong>general questions or problems</strong></li>
 
-  <li><a href="http://groups.google.com/group/sage-edu"
-         target="_blank">sage-edu</a> &mdash; this group discusses issues
-    regarding Sage in education</li>
+  <li><a href="http://groups.google.com/group/sage-edu">sage-edu</a> &mdash;
+      this group discusses issues regarding Sage in education</li>
 
-  <li><a href="./help-irc.html">IRC help channel</a> &mdash; directly
-    connects you to an online chat room</li>
-
-  <li><a href="./development.html#mailingList">all discussion groups</a></li>
+  <li><a href="./development.html#mailingList">development discussion groups</a></li>
 </ul>
--->
 
-<!--#include virtual="inc/footer.shtml" -->
-</body>
-</html>
+{% endblock %}

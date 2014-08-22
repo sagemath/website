@@ -1,24 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
-<!--#set var="trademark" value="1"-->
+{% extends 'base.html' %}
+{% set title = "Development Groups" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Development Groups</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="groups" -->
-
+{% block content %}
  <h1>Development Discussion Groups</h1>
 
  <table class="top wide">
@@ -279,6 +262,5 @@
  google.load('feeds', '1');
  google.setOnLoadCallback(initialize);
  //]]>
- </script><!--#include virtual="inc/footer.shtml"    -->
-</body>
-</html>
+ </script>
+{% endblock %}

@@ -1,22 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Screencasts" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Screencasts</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="video" -->
-
+{% block content %}
  <h1>Screencasts and Videos</h1>
 
 <div class="bodypadding txt">On top are introductions to Sage, <a href="#python">below are introductions to Python</a>.</div>
@@ -322,6 +307,5 @@ Systems of differential equations can be used to mathematically model the weathe
  <div class="center xsmall">
   <a href="http://www.youtube.com/watch?v=y7vwZ20SDzc"
        target="_blank">http://www.youtube.com/watch?v=y7vwZ20SDzc</a>
- </div><!--#include virtual="inc/footer.shtml" -->
-</body>
-</html>
+ </div>
+{% endblock %}
