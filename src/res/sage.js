@@ -52,6 +52,8 @@ var sage = {
         var navbar_top = $navbar.offset().top;
         $navbar.css({'width' : $navbar.width()});
         var height = $navbar.height();
+        $nav_buffer = $("#sage-nav-buffer");
+        $nav_buffer.height(height);
 
         /* note to self: animation is cute, but one has to device a way to re-trigger it while animations are still running */
         var scrollNavbar = function(){
@@ -59,9 +61,11 @@ var sage = {
             if (curtop > navbar_top) {
                 $navbar.css({"position" : "fixed", "top" : 0, 'height' : "3em", background: "#e9e9f9"});
                 /* $navbar.animate({'height' : "3em", background: "#e9e9f9"}); */
+                $nav_buffer.show();
             } else {
                 $navbar.css({'position': 'relative', "height" : height, background: "#fff"});
                 /* $navbar.animate({"height" : height, background: "#fff" }); */
+                $nav_buffer.hide();
             }
         };
 
