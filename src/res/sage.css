@@ -165,7 +165,7 @@ a.index-menu {
 display: block;
 width: 100px;
 height: 100px;
-background: transparent url("../pix/index_icons.png") no-repeat;
+background: transparent url("../pix/index_icons-nq8.png") no-repeat;
 }
 #index-download a        { background-position: 0px    0px; }
 #index-download:hover    { background-position: -100px 0px; }
