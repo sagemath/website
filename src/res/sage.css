@@ -18,9 +18,9 @@ margin-top: 0px;
 margin-bottom: 0px;
 padding: 0px;
 background-color: #b8b9f6;
-/*background-image: url('../pix/sageicon.png');*/
+/*background-image: url('../pix/sageimakecon.png');*/
 /*background-repeat: repeat;*/
-font-family: sans-serif;
+font-family: "RobotoDraft",  "DejaVu Sans", sans-serif;
 text-align: center;
 overflow-y: scroll;
 }
@@ -330,6 +330,19 @@ color: #0f0fff;
 #header-logo img {
 vertical-align: middle;
 }
+
+.raised {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.raised:hover {
+  position: relative;
+  top: 1px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.5);
+  transition: top 0.3s ease-out,
+              box-shadow 0.1s ease-out;
+}
+
 
 #devmap a:hover, #devmap img:hover {
 background: none;
@@ -853,11 +866,10 @@ padding: 0 5px;
 #sage-nav li ul li a:hover { background: #fff; }
 #sage-nav li ul li.section { border-top: 1px solid #0f0fff; }
 
-/*
-#sage-nav li       { -webkit-transition: all 0.3s; }
-#sage-nav li a     { -webkit-transition: all 0.2s; }
-#sage-nav li ul    { -webkit-transition: all 0.1s; }
-#sage-nav li ul li { -webkit-transition: height 0.5s; } */
+#sage-nav li       { transition: all 0.3s; }
+#sage-nav li a     { transition: all 0.2s; }
+#sage-nav li ul    { transition: all 0.1s; }
+#sage-nav li ul li { transition: height 0.5s; }
 
 /**** download table ****/
 #mirror {

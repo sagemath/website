@@ -3,7 +3,9 @@
 {% block header %}
 <style type="text/css">
  div.announce {
-   font-size:115%; font-weight: strong; padding: 10px; width: 70%;
+   font-size:115%; font-weight: strong;
+   padding: 10px; margin-top: 15px;
+   width: 70%;
    border-left:  3px solid #7f7fff;
    border-right: 3px solid #7f7fff;
    background: #efefff;
@@ -13,7 +15,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="narrow center txt topmargin" id="idx1" track="index-top">
+<div class="narrow txt topmargin" id="idx1" track="index-top">
   <strong class="large">Sage</strong> is a free <a href=
   "http://git.sagemath.org/">open-source</a>
   mathematics software system licensed under the GPL.
@@ -38,12 +40,12 @@ or directly via interfaces or wrappers.
 
  </div>
 
- <div class="center txt">
+ <div class="narrow center txt">
   Mission: <em>Creating a viable free open source alternative to Magma, Maple, Mathematica and Matlab</em>.
  </div>
 
 {#
-  <div class="narrow center txt announce">
+  <div class="narrow txt announce">
   Sage and lmonade are searching for students for this summer's GSoC! We have many exciting projects for students to work (from home) over the summer and to get mentored by experts in the field: 
   <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/sagemath">
   Sage
@@ -109,12 +111,12 @@ if (data) {
      </div>
     </td>
 
-    <td><a class="index-menu"
+    <td><a class="index-menu round raised"
        id="index-sagenb"
        href="http://cloud.sagemath.org/"
        name="index-sagenb"></a></td>
 
-    <td><a class="index-menu"
+    <td><a class="index-menu round raised"
        id="index-download"
        name="index-download" href="./download.html" downloadurl></a></td>
 
@@ -148,11 +150,11 @@ if (data) {
     </td>
 
     <td><a href="./help.html"
-       class="index-menu"
+       class="index-menu round raised"
        id="index-help"
        name="index-help"></a></td>
 
-    <td><a class="index-menu"
+    <td><a class="index-menu round raised"
        id="index-tour"
        href="./tour.html"
        name="index-tour"></a></td>
@@ -181,12 +183,12 @@ if (data) {
     </td>
 
     <td><a href="./library.html"
-       class="index-menu"
+       class="index-menu round raised"
        id="index-library"
        name="index-library"></a></td>
 
     <td><a href="./search.html"
-       class="index-menu"
+       class="index-menu round raised"
        id="index-search"
        name="index-search"></a></td>
 
