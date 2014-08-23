@@ -1,4 +1,4 @@
-.PHONY: publications render clean show server style
+.PHONY: publications render clean show server style test
 
 default: render
 
@@ -21,4 +21,7 @@ open:
 	python -c 'from webbrowser import open; open("./www/index.html")'
 
 style:
-	autopep8 -i -aaa -j -1 --ignore=E501 *.py scripts/*.py
+	autopep8 -i -aaa -j -1 --ignore=E501 *.py scripts/*.py conf/*.py
+
+test:
+	python -m unittest discover

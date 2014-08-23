@@ -1,0 +1,8 @@
+releasedate: 2014-08-10
+releasedate_devel: 2013-12-21
+sage: Sage
+logo: pix/sage_logo_new_l_hc-nq8.png
+version: 6.3
+version_devel: 6.1.beta1
+version_solaris_bin: None
+version_src: 6.3
