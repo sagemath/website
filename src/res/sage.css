@@ -835,9 +835,11 @@ background-color: #dfdfff;
   position: absolute; left: 0; min-width: 8em; background: #efefff; list-style-type: none; padding: 0; margin: 0 0 0px 0; 
   border: #0f0fff 1px solid; 
 }
-#sage-nav li:hover ul { display: block; opacity: 1;}
-#sage-nav li:hover a { background: #efefff; border: #0f0fff 1px solid; border-bottom: 0; }
-#save-nav li:hover a:hover {background: #c9c9f9; }
+#sage-nav li:hover ul, #sage-nav li.hovered ul
+    { display: block; opacity: 1;}
+#sage-nav li:hover a, #sage-nav li.hovered a
+    { background: #efefff; border: #0f0fff 1px solid; border-bottom: 0; }
+#save-nav li:hover a:hover {background: #fff; }
 #sage-nav li ul li       { display: none; float: none; margin: 0; padding:0; position: static; height: 0; line-height: 0; background: none; border: 0;}
 #sage-nav li ul li a {
 border: 0;
@@ -848,13 +850,13 @@ border: 0;
 padding: 0;
 margin: 0;
 } 
-#sage-nav li:hover ul li {
+#sage-nav li:hover ul li, #sage-nav li.hovered ul li {
 display: block; 
 height: 30px;
 line-height: 30px;
 background: #efefff;
 }
-#sage-nav li:hover ul li a {
+#sage-nav li:hover ul li a, #sage-nav li.hovered ul li a {
 background: #efefff;
 border: 0;
 display: block; 
@@ -870,6 +872,11 @@ padding: 0 5px;
 #sage-nav li a     { transition: all 0.2s; }
 #sage-nav li ul    { transition: all 0.1s; }
 #sage-nav li ul li { transition: height 0.5s; }
+
+#sage-nav a.ext::after {
+  content: "\2197";
+  padding-left: .3em;
+}
 
 /**** download table ****/
 #mirror {

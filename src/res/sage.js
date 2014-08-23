@@ -72,9 +72,48 @@ var sage = {
         /* run it once and then every time the window scrolls */
         scrollNavbar();
         $(window).scroll(scrollNavbar);
+    },
+
+    touchMenu: function() {
+        if (!isTouch) { return; }
+        var cn = "hovered";
+        var menus = [];
+        var active = -1;
+
+        /* tri-state mechanism to show submenus on touch devices */
+        $("#sage-nav > li > a").each(function(idx) {
+            var $a = $(this);
+            var $li = $a.parent("li");
+            menus.push($li);
+
+            $li.click(function(evt) {
+                if (active >= 0) {
+                    if (active == idx) {
+                        return;
+                    } else {
+                        menus[active].removeClass(cn);
+                    }
+                }
+                evt.preventDefault();
+                $li.addClass(cn);
+                active = idx;
+            });
+        });
+
+        /* this removes the menu by clicking somewhere else */
+        $("html").on("click", function (evt) {
+            if ($(evt.target).parents("#sage-nav").length) {
+                return;
+            }
+            if (active >= 0) {
+                menus[active].removeClass(cn);
+                active = -1;
+            }
+        });
     }
 };
 
 $(sage.setDownloadUrls);
 $(sage.scrollNavbarInit);
+$(sage.touchMenu);
 $(sage.tracklinks);
