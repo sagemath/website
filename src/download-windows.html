@@ -1,5 +1,7 @@
-{% extends 'base.html' %}
+{% extends 'download-tmpl.html' %}
 {% set title = "Download Binaries for Microsoft Windows" %}
+{% set mirrordir = "win" %}
+{% set trademark = True %}
 
 {% block content %}
  <h1 class="narrow">Download Binaries for Microsoft Windows</h1>
@@ -8,10 +10,8 @@
  or <a href="./download-source.html">here to download source distribution</a>.
  </div>
 
- <!--#set var="mirrordir" value="win/"-->
-
  <div class="narrow large txt bluebg round">
-<!-- <a href="./bin/microsoft_windows/">Download VM-Ware Image of Sage</a> -->
+
  <div class="txt border ">
   <!--#include virtual="./inc/mirrorselector.shtml"-->
  </div>
@@ -29,7 +29,7 @@
      </ol>
       The current VirtualBox solution provides you with an encapsulated
       and tested system. It allows to use the Sage notebook in your web
-      browser with no noticable speed loss compared to a native Linux
+      browser with no noticeable speed loss compared to a native Linux
       install.<br>
       <br>
    </div>
@@ -40,7 +40,5 @@
         <li>7 GB free disk space</li>
       </ul>
     </div>
- 
-<!--#include virtual="inc/download-common.shtml"-->
 
 {% endblock %}

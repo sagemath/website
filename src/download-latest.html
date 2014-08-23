@@ -1,18 +1,20 @@
-{% extends 'base.html' %}
+{% extends 'download-tmpl.html' %}
 {% set title = "Development Release" %}
 {% set mirrordir = "devel" %}
 
 {% block content %}
 <div class="txt large narrow bluebg round border" style="font-size:200%; background: red; font-color: white;">
-  Unstable release for development only. Do <strong>not</strong> use for your
-  every day work.
+  Unstable release for development only.
+  Do <strong>not</strong> use for your every day work.
 </div>
 
  <div class="txt large narrow bluebg round">
  <div class="txt border">
+{#
   <strong>The latest development version is {{ version_devel }}
     released on {{ releasedate_devel }}. 
-  </strong>   
+  </strong>
+#}
   <br/>
    <!--#include virtual="./inc/mirrorselector-src.shtml"-->
  </div>
