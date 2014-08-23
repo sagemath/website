@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # coding: utf8
-
+#
 # This renders the template files from 'src' into 'www'
+#
+# Author: Harald Schilly <harald@schil.ly>
+# License: Apache 2.0
 
 import os
 import sys
@@ -11,6 +14,9 @@ import shutil
 import yaml
 import jinja2 as j2
 
+from scripts import log
+from conf import config, mirrors, packages
+
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
@@ -18,35 +24,18 @@ if not exists("www"):
     os.mkdir("www")
 
 
-def log(what, nl=True):
-    from sys import stdout
-    write = stdout.write
-    if len(what) > 100:
-        what = '%s…' % what[:99]
-    what = '{:100}'.format(what)
-    if not nl:
-        write('\r')
-    elif not log.lastnl:
-        write('\n')
-    stdout.write(what)
-    if nl:
-        write('\n')
-    stdout.flush()
-    log.lastnl = nl
-log.lastnl = True
-
-config = yaml.load(open('config.yaml'))
 log("config:")
-for line in yaml.dump(config["global"], indent=True, default_flow_style=False).splitlines():
+for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
     log("    %s" % line)
-log("    %d mirrors" % len(config["mirrors"]))
+log("    %d mirrors" % len(mirrors))
 
 # everything is now rooted in the src directory
 os.chdir("src")
 
-j2env = j2.Environment(loader=j2.FileSystemLoader(
-    [join("..", _) for _ in ["publications", "templates", "src"]]))
-j2env.globals.update(config["global"])
+tmpl_dirs = [join("..", _) for _ in ["publications", "templates", "src"]]
+j2loader = j2.FileSystemLoader(tmpl_dirs)
+j2env = j2.Environment(loader=j2loader)
+j2env.globals.update(config)
 
 
 @j2.contextfilter
@@ -66,7 +55,7 @@ def filter_prefix(ctx, link):
 
 j2env.filters["prefix"] = filter_prefix
 
-TARG = join("..", "www")
+TARG = join("..", "www")  # assumption: completely empty www
 
 IGNORE_PATHS = ["old"]
 
