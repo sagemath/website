@@ -23,7 +23,6 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 if not exists("www"):
     os.mkdir("www")
 
-
 log("config:")
 for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
     log("    %s" % line)

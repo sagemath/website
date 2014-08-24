@@ -1,4 +1,4 @@
-.PHONY: publications render clean show server style test
+.PHONY: publications render clean show server style test cont
 
 default: render
 
@@ -25,3 +25,6 @@ style:
 
 test:
 	python -m unittest discover
+
+cont:
+	python cont.py
