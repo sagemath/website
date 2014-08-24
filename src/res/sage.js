@@ -59,7 +59,7 @@ var sage = {
         /* note to self: animation is cute, but one has to device a way to re-trigger it while animations are still running */
         var scrollNavbar = function(){
             /* -10 or -9?, see CSS */
-            $navbar.width($b.width() - 9);
+            $navbar.width($b.width() - 10);
             var curtop = $w.scrollTop();
             if (curtop > navbar_top) {
                 var left = $b.offset().left;

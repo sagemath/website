@@ -306,7 +306,7 @@ clear: both;
 #header-text {
 white-space: nowrap;
 margin-right: 0px;
-float: right;
+/* float: right; */
 text-align: right;
 font-style: italic;
 line-height: 24px;
