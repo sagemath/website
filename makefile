@@ -6,7 +6,7 @@ clean:
 	- cd www && find -P -delete
 
 publications:
-	cd publications && python pubparse.py
+	$(MAKE) -C publications
 
 render: clean publications
 	python render.py
