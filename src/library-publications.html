@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Publications Citing Sage" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
-  <meta http-equiv="content-type"
-        content="text/html; charset=utf-8" />
-  <title>{{ sage }} - Publications</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
-  <!--#include virtual="inc/header.shtml" -->
-  <!--#set var="sub" value="publications" -->
-
+{% block content %}
   <h1>Publications Citing Sage</h1>
 
 <div class="normal justify bodypadding">
@@ -35,25 +21,25 @@ for information on how to cite Sage and/or the Sage cluster in your publications
 
 <h2>Articles</h2>
 
-  <div class="small justify twocols bodypadding" id="list1">
+  <div class="small justify twocols bodypadding" id="list1" track="pub-sage">
   {{ pub.papers() }}
   </div>
 
 <h2>Theses</h2>
 
-  <div id="list2" class="small justify twocols bodypadding">
+  <div id="list2" class="small justify twocols bodypadding" track="pub-sage">
   {{ pub.thesis() }}
   </div>
 
 <h2><a name="books"></a>Books</h2>
 
-  <div id="list3" class="small justify twocols bodypadding">
+  <div id="list3" class="small justify twocols bodypadding" track="pub-sage">
   {{ pub.books() }}
   </div>
 
 <h2>Preprints</h2>
 
-  <div id="list4" class="small justify twocols bodypadding">
+  <div id="list4" class="small justify twocols bodypadding" track="pub-sage">
   {{ pub.preprints() }}
   </div>
 
@@ -86,13 +72,5 @@ for information on how to cite Sage and/or the Sage cluster in your publications
       purchase of the Sage cluster by adding the following acknowledgment
       to your work: National Science Foundation Grant No. DMS-0821725.
     </div>
-  </div><!--#include virtual="inc/footer.shtml"-->
-<script src="./res/tracklinks.js" type="text/javascript" ></script>
-<script  type="text/javascript">
-tracklinks("list1", "library-publications.html");
-tracklinks("list2", "library-publications.html");
-tracklinks("list3", "library-publications.html");
-tracklinks("list4", "library-publications.html");
-</script>
-</body>
-</html>
+  </div>
+{% endblock %}

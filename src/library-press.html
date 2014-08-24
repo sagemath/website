@@ -1,33 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Press Kit" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
 
- <title>{{ sage }} - Press</title><!--#include virtual="inc/htmlhead.shtml"-->
+{% block header %}
 <style type="text/css">
-/*<![CDATA[*/
  #poster img {border: 2px solid #7f7fff; padding: 5px;}
  td {padding-top: 5px; padding-bottom: 5px;}
-/*]]>*/
 </style>
-</head>
+{% endblock %}
 
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="press" -->
-
+{% block content %}
  <h1 class="narrow">Press Kit</h1>
 <h2 class="narrow">Naming</h2>
 <div class="narrow">
 <ul>
-<li>short: <em>Sage</em> <span style="color:grey;">[exactly this capitalization]</span></li>
+<li>short: <em>{{ sage }}</em> <span style="color:grey;">[exactly this capitalization]</span></li>
 <li>full: <em>Sage open-source mathematical software system</em></li>
 </ul>
 </div>
@@ -185,6 +172,4 @@ For a personal report what has motivated Prof. Stein to build Sage read
   like. If you have questions or additional request, please
   contact the <a href="./contact.html">press officer</a>.</em>
 </div>
-<!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ {% endblock %}

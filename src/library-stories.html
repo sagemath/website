@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="./inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Success Stories, Testimonials and News Articles" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Stories</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="stories" -->
+{% block content %}
 
  <h1>Success Stories, Testimonials and News Articles</h1>
 
@@ -1113,6 +1099,5 @@ Elizabeth Dembart, e-mail, 2009-07-29
     </td>
    </tr>
   </tbody>
- </table><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </table>
+{% endblock %}
