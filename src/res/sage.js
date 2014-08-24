@@ -48,6 +48,7 @@ var sage = {
 
     scrollNavbarInit: function () {
         var $w = $(window);
+        var $b = $("body");
         var $navbar = $('#sage-nav');
         var navbar_top = $navbar.offset().top;
         $navbar.css({'width' : $navbar.width()});
@@ -57,21 +58,30 @@ var sage = {
 
         /* note to self: animation is cute, but one has to device a way to re-trigger it while animations are still running */
         var scrollNavbar = function(){
+            $navbar.width($b.width() - 10);
             var curtop = $w.scrollTop();
             if (curtop > navbar_top) {
-                $navbar.css({"position" : "fixed", "top" : 0, 'height' : "3em", background: "#e9e9f9"});
+                var left = $b.offset().left;
+                if ($b.offset().left == 0 && $w.scrollLeft() > 0) {
+                    left = -$w.scrollLeft();
+                }
+                $navbar.css({"position" : "fixed",
+                    "top" : 0, "left" : left,
+                    'height' : "3em", background: "#e9e9f9"});
                 /* $navbar.animate({'height' : "3em", background: "#e9e9f9"}); */
                 $nav_buffer.show();
             } else {
-                $navbar.css({'position': 'relative', "height" : height, background: "#fff"});
+                $navbar.css({'position': 'relative',
+                "height" : height, background: "#fff", "left" : 0});
                 /* $navbar.animate({"height" : height, background: "#fff" }); */
                 $nav_buffer.hide();
             }
         };
 
-        /* run it once and then every time the window scrolls */
+        /* run it once and then every time the window scrolls or resizes */
         scrollNavbar();
-        $(window).scroll(scrollNavbar);
+        $w.scroll(scrollNavbar);
+        $w.resize(scrollNavbar);
     },
 
     touchMenu: function() {
