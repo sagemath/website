@@ -13,12 +13,47 @@ import datetime
 import shutil
 import yaml
 import jinja2 as j2
+import multiprocessing as mp
 
 from scripts import log
 from conf import config, mirrors, packages
 
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+
+TARG = j2env = None
+
+def render_task(arg):
+    """
+    This is the worker task run on a sub-process,
+    it needs TARG and j2env set properly (done inside render())
+    """
+    fn, root = arg
+    src = join(root, fn)
+    dst = normpath(join(TARG, src))
+    lvl = root.count(os.sep)
+    log("processing/f: %s" % src, nl=False)
+    if fn.endswith(".html"):
+        # we ignore html files starting with "_" (e.g. language templates)
+        if fn.startswith("_"):
+            return
+        # assume it's a template and process it
+        tmpl = j2env.get_template(src)
+        c = fn.rsplit(".", 1)[0].split("-", 1)[0]
+        content = tmpl.render(level=lvl, filename=fn, category=c)
+        with open(dst, "wb") as output:
+            output.write(content.encode("utf-8"))
+            output.write(b"\n")
+    elif islink(src):
+        # we have a symlink, copy it
+        # log("SYMLINK/files %s" % src)
+        if islink(dst):
+            os.remove(dst)
+        os.symlink(os.readlink(src), dst)
+    else:
+        # all other files, hardlink them
+        # log("hardlink %s -> %s" % (src, dst))
+        os.link(src, dst)
 
 def render():
     if not exists("www"):
@@ -33,11 +68,11 @@ def render():
     # everything is now rooted in the src directory
     os.chdir("src")
 
+    global j2env
     tmpl_dirs = [join("..", _) for _ in ["publications", "templates", "src"]]
     j2loader = j2.FileSystemLoader(tmpl_dirs)
     j2env = j2.Environment(loader=j2loader)
     j2env.globals.update(config)
-
 
     @j2.contextfilter
     def filter_prefix(ctx, link):
@@ -56,9 +91,14 @@ def render():
 
     j2env.filters["prefix"] = filter_prefix
 
+    global TARG
     TARG = join("..", "www")  # assumption: completely empty www
 
     IGNORE_PATHS = ["old"]
+
+    # pool must be created *after* global vars are set
+    # it forks the main process, it's a "copy-on-write" memory architecture
+    pool = mp.Pool()
 
     for root, paths, filenames in os.walk("."):
         # check if we ignore a branch in a sub-tree
@@ -82,36 +122,7 @@ def render():
                 #log("mkdir %s" % dst)
                 os.makedirs(dst)
 
-        for fn in filenames:
-            src = join(root, fn)
-            dst = normpath(join(TARG, src))
-            lvl = root.count(os.sep)
-
-            log("processing/f: %s" % src, nl=False)
-
-            if fn.endswith(".html"):
-                # we ignore html files starting with "_" (e.g. language templates)
-                if fn.startswith("_"):
-                    continue
-                # assume it's a template and process it
-                tmpl = j2env.get_template(src)
-                c = fn.rsplit(".", 1)[0].split("-", 1)[0]
-                content = tmpl.render(level=lvl, filename=fn, category=c)
-                with open(dst, "wb") as output:
-                    output.write(content.encode("utf-8"))
-                    output.write(b"\n")
-
-            elif islink(src):
-                # we have a symlink, copy it
-                #log("SYMLINK/files %s" % src)
-                if islink(dst):
-                    os.remove(dst)
-                os.symlink(os.readlink(src), dst)
-
-            else:
-                # all other files, hardlink them
-                #log("hardlink %s -> %s" % (src, dst))
-                os.link(src, dst)
+        pool.map(render_task, [(_, root) for _ in filenames])
 
     log("processing: done", nl=False)
     log("")
