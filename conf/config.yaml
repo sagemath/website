@@ -6,6 +6,7 @@ version: 6.3
 version_devel: 6.1.beta1
 version_solaris_bin: None
 version_src: 6.3
+git: http://git.sagemath.org/sage.git/
 webmaster_href: >
     href="http://mailhide.recaptcha.net/d?
     k=01JhWPFLZ8tJCbx84EXp20vw==&amp;c=C8CP83g7M5hbfmYWTynnLHz_lr5sWlI4Z2wKwgSaJ50="
