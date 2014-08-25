@@ -1,23 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Links" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Links</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="links" -->
-
- <div id="list">
+{% block content %}
+ <div track="links">
  <h1>Sage specific</h1>
  <ul>
   <li><a href="http://planet.sagemath.org/"
@@ -129,10 +114,4 @@ alt="PADRING: Always new software"></a></li>
 </li>
 </ul>
 </div>
-<!--#include virtual="inc/footer.shtml"    -->
-<script src="./res/tracklinks.js" type="text/javascript" ></script>
-<script  type="text/javascript">
-tracklinks("list", "links.html");
-</script>
-</body>
-</html>
+{% endblock %}

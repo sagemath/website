@@ -1,27 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Components" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-lang="en"
-xml:lang="en">
-<head>
-<meta http-equiv="content-type"
-content="text/html; charset=utf-8" />
-
-<title>{{ sage }} - Components</title><!--#include virtual="inc/htmlhead.shtml"-->
-
-</head>
-
-<body onload="navbarjs.init();"
-onunload="navbarjs.cleanUp();">
-<!--#include virtual="inc/header.shtml" -->
-<!--#set var="sub" value="components" -->
-
+{% block content %}
 <h1>Components</h1>
 
-<div class="bodypadding">These software packages are used by Sage. Go to the <a href="./download-packages.html">Download Packages</a> page to
-get them if they are not already part of your Sage installation.
+<div class="bodypadding">These software packages are used by Sage.
+    Go to the <a href="./download-packages.html">Download Packages</a>
+    page to get them if they are not already part of your Sage installation.
 </div>
 
 <!-- BEGIN COMPONENT LIST -->
@@ -120,13 +105,6 @@ get them if they are not already part of your Sage installation.
 <!-- END COMPONENT LIST -->
 
 <div class="center">
-Something missing? Email the webmaster.
-</div><!--#include virtual="inc/footer.shtml"    -->
-
-<script src="./res/tracklinks.js" type="text/javascript"></script>
-<script  type="text/javascript">
-tracklinks("list", "links-components.html");
-</script>
-
-</body>
-</html>
+Something missing? Email the <a {{ webmaster_href }}">webmaster</a>.
+</div>
+{% endblock %}

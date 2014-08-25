@@ -1,22 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Tour" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Tour</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="tour" -->
-
+{% block content %}
  <h1 class="narrow">Sage Feature Tour</h1>
 
  <div class="narrow txt">
@@ -107,6 +92,5 @@ and delete input, and share your work across the network.
   <div class="center">
    <a href="http://wiki.sagemath.org/pics"><img src="./pix/hypotrochoid.gif" /></a>
   </div>
- </div><!--#include virtual="inc/footer.shtml"    -->
-</body>
-</html>
+ </div>
+{% endblock %}

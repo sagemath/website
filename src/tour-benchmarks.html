@@ -1,33 +1,16 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Tour - Benchmarks" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Tour - Benchmarks</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
-
+{% block header %}
 <style type="text/css">
-/*<![CDATA[*/
 .red {font-weight: bold; color: red; font-size: large;}
 .green {font-weight: bold; color: green; font-size: large;}
 pre { padding-top: 15px; }
-/*]]>*/
 </style>
+{% endblock %}
 
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="benchmarks" -->
-
- <h1>Tour — Benchmarks</h1>
+{% block content %}
+ <h1>Tour - Benchmarks</h1>
 
 <div class="bodypadding txt">Here are some comparisons of Sage with other systems. Each pair of comparison was made on the same system and it was carfully avoided to hit swap memory to avoid accidental slowdows. Unless otherwise noted, all timings are in seconds.
 <br/>
@@ -346,6 +329,4 @@ Using <a href="http://www.netlib.org/lapack/double/dgesvd.f" target="_blank">dge
   <a href="./tour-quickstart.html">Tour Quickstart</a>  &middot;  <a href="./tour-graphics.html">Tour
   Graphics</a> &middot; <a href="./tour-research.html">Tour Research</a>
  </div>
-<!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+{% endblock %}

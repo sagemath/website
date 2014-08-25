@@ -833,9 +833,9 @@ background-color: #dfdfff;
   padding-left: 10px;
   background: #fff;
 }
-#sage-nav li       { float: left; position: relative; padding: 0; line-height: 1em; }
-#sage-nav li a       { display: block; padding: 5px 15px 5px 5px; color: #090999; text-decoration: none; border: 1px solid transparent;}
-#sage-nav li ul       {  display: none; opacity: 0;
+#sage-nav > li     { float: left; position: relative; padding: 0; line-height: 1em; }
+#sage-nav > li a   { display: block; padding: 5px 15px 5px 5px; color: #090999; text-decoration: none; border: 1px solid transparent;}
+#sage-nav > li > ul  {  display: none; opacity: 0;
   position: absolute; left: 0; min-width: 8em; background: #efefff; list-style-type: none; padding: 0; margin: 0 0 0px 0; 
   border: #0f0fff 1px solid; 
 }
@@ -845,7 +845,6 @@ background-color: #dfdfff;
 }
 #sage-nav > li:hover > a, #sage-nav > li.hovered > a
     { background: #efefff; border: #0f0fff 1px solid; border-bottom: 0; z-index:10; position:relative; top: 1px}
-#save-nav > li:hover > a:hover {background: #fff; }
 #sage-nav > li > ul > li       { display: none; float: none; margin: 0; padding:0; position: static; height: 0; line-height: 0; background: none; border: 0;}
 #sage-nav > li > ul > li > a {
 border: 0;
@@ -877,6 +876,7 @@ padding: 0 5px;
 #sage-nav > li > ul > li > a       { background: #efefff; }
 #sage-nav > li > ul > li > a:hover { background: #fff; }
 #sage-nav > li > ul > li.section   { border-top: 1px solid #0f0fff; }
+#save-nav > li:hover > a:hover { background: #fff; }
 
 /*
 #sage-nav > li           { transition: all 0.2s; }

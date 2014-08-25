@@ -1,23 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Tour - Graphics" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Tour - Graphics</title>
- <!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="graphics" -->
-
+{% block content %}
  <h1 class="narrow">Sage Plotting and Graphics</h1>
 
 <div class="txt narrow justify">
@@ -140,7 +124,7 @@ sage: for a,b in [(stnc[i], stnc[i+1]) for i in xrange(len(stnc)-1)]:
 sage: g.plot(color_by_label=True, edge_style='solid').show(figsize=(8,8))
 </pre></div>
 
-<!--
+{#
  <h2 class="narrow">GFan Grobner Basis</h2>
 
  <div class="txt narrow justify">
@@ -150,7 +134,7 @@ sage: g.plot(color_by_label=True, edge_style='solid').show(figsize=(8,8))
  <div class="txt center"><img src="./pix/plot-gfan.png" alt="Sage GFan Plot"
       height="500"
       width="700" /></div>
--->
+#}
 
  <div class="txt"></div>
 
@@ -159,6 +143,4 @@ sage: g.plot(color_by_label=True, edge_style='solid').show(figsize=(8,8))
   <a href="./tour-research.html">Tour Research</a>  &middot;  <a href="./tour-quickstart.html">Tour
   Quickstart</a>
 </div>
-<!--#include virtual="inc/footer.shtml"    -->
-</body>
-</html>
+{% endblock %}

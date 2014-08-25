@@ -1,22 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Tour - Education" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Tour</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
- <!--#set var="sub" value="education" -->
-
+{% block content %}
  <h1>Sage in Education</h1>
 
  <h3>Interact</h3>
@@ -25,9 +10,9 @@
   <em>Interact</em> provides an interactive tool to dynamically visualize the impact of parameters
   on calculations. This is done in a very general way using the basic functionality of Python.
   Therefore nearly every possible dependency could be shown. The following animation shows a slider
-  on top, which can be dragged in the real case - the plot is then updated accordingly. - <a href=
-  "http://wiki.sagemath.org/interact"
-       target="_blank">see wiki for more examples</a>
+  on top, which can be dragged in the real case - the plot is then updated accordingly. -
+     <a href="http://wiki.sagemath.org/interact">see wiki</a> or
+     the <a href="http://interact.sagemath.org">Interact Website</a> for more examples</a>.
  </div>
 
  <div class="txt center">
@@ -36,6 +21,5 @@
        alt="interact animation in Sage"
        height="501"
        width="700" /></a>
- </div><!--#include virtual="inc/footer.shtml"    -->
-</body>
-</html>
+ </div>
+{% endblock %}
