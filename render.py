@@ -21,7 +21,8 @@ from conf import config, mirrors, packages
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-TARG = j2env = None
+TARG = join("..", "www")  # assumption: completely empty www
+j2env = None
 
 
 def render_task(arg):
@@ -35,7 +36,7 @@ def render_task(arg):
     lvl = root.count(os.sep)
     log("processing/f: %s" % src, nl=False)
     if fn.endswith(".html"):
-        # we ignore html files starting with "_" (e.g. language templates)
+        # we ignore html files starting with "_" (e.g. language specific templates)
         if fn.startswith("_"):
             return
         # assume it's a template and process it
@@ -57,6 +58,22 @@ def render_task(arg):
         os.link(src, dst)
 
 
+@j2.contextfilter
+def filter_prefix(ctx, link):
+    """
+    Prepend level-times "../" to the given string.
+    Used to go up in the directory hierarchy.
+    Yes, one could also do absolute paths, but then it is harder to debug locally!
+    """
+
+    level = ctx.get("level", 0)
+    if level == 0:
+        return link
+    path = ['..'] * level
+    path.append(link)
+    return '/'.join(path)
+
+
 def render():
     if not exists("www"):
         os.mkdir("www")
@@ -76,25 +93,7 @@ def render():
     j2env = j2.Environment(loader=j2loader, undefined=j2.StrictUndefined)
     j2env.globals.update(config)
 
-    @j2.contextfilter
-    def filter_prefix(ctx, link):
-        """
-        Prepend level-times "../" to the given string.
-        Used to go up in the directory hierarchy.
-        Yes, one could also do absolute paths, but then it is harder to debug locally!
-        """
-
-        level = ctx.get("level", 0)
-        if level == 0:
-            return link
-        path = ['..'] * level
-        path.append(link)
-        return '/'.join(path)
-
     j2env.filters["prefix"] = filter_prefix
-
-    global TARG
-    TARG = join("..", "www")  # assumption: completely empty www
 
     IGNORE_PATHS = ["old"]
 

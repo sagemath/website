@@ -24,7 +24,7 @@ do_compilation = mp.Event()
 do_compilation.set()  # run it once after startup
 
 
-def compile_it(cmd="make"):
+def compile_it(cmd):
     """
     This is executed on demand in a proper sub-process.
 
