@@ -277,7 +277,7 @@ def update_page(f, spkg_current, spkg_db, spkg_embedded, sdelim, edelim):
     P += spkg_embedded.values()
     # sorting the list of packages, ignoring cases
     P = sorted(P, cmp=lambda x, y: cmp(x[0].lower(), y[0].lower()))
-    page_middle = "".join([page_middle, "\n", "<ol>"])
+    page_middle = "".join([page_middle, "\n", "<ol track='links-components'>"])
     for s in P:
         # no URL provided for a component
         if s[1] == "":

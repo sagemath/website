@@ -23,6 +23,7 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 TARG = j2env = None
 
+
 def render_task(arg):
     """
     This is the worker task run on a sub-process,
@@ -55,6 +56,7 @@ def render_task(arg):
         # log("hardlink %s -> %s" % (src, dst))
         os.link(src, dst)
 
+
 def render():
     if not exists("www"):
         os.mkdir("www")
@@ -62,7 +64,7 @@ def render():
     log("config: {} version {} @ {}, {} mirrors and {} spkgs".format(
         config["sage"], config["version"], config["releasedate"],
         len(mirrors), len(packages["spkg"])))
-    #for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
+    # for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
     #    log("    %s" % line)
 
     # everything is now rooted in the src directory
@@ -71,7 +73,7 @@ def render():
     global j2env
     tmpl_dirs = [join("..", _) for _ in ["publications", "templates", "src"]]
     j2loader = j2.FileSystemLoader(tmpl_dirs)
-    j2env = j2.Environment(loader=j2loader)
+    j2env = j2.Environment(loader=j2loader, undefined=j2.StrictUndefined)
     j2env.globals.update(config)
 
     @j2.contextfilter
@@ -141,17 +143,16 @@ def reload():
         print("$ sudo apt-get install xdotool")
     else:
         # firefox or chrome?
-        for browser in  ["Chrome", "Mozilla Firefox", "Chromium"]:
+        for browser in ["Chrome", "Mozilla Firefox", "Chromium"]:
             try:
                 check_output(["xdotool", "search", "--name", "%s" % browser])
             except CalledProcessError:
                 continue
             print("RELOAD ==> detected '%s' and sending Shift+Ctrl+R" % browser)
-            call(['xdotool', 'search', "%s" % browser, 'key', '--clearmodifiers', 'ctrl+shift+r'])
-            return
-        print("==> sorry, could not find your browser?")
-
-
+            call(['xdotool', 'search', '"%s"' % browser, 'key', '--clearmodifiers', 'ctrl+shift+r'])
+            break
+        else:
+            print("==> sorry, could not find your browser?")
 
 
 if __name__ == '__main__':
