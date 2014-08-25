@@ -39,6 +39,32 @@ Ideally, a courageous `make` should do everything for you
 and and additional `make open` opens up your web-browser
 to inspect the result.
 
+### Continuous Build Mode
+
+For your convenience, there is a continuous build mode available: `make cont`
+
+It depends on
+
+* [pyInotify](https://github.com/seb-m/pyinotify) - `pip install --user pyinotify` -
+  to pick up any changes in your local file-system.
+
+* [xdotool](http://www.semicomplete.com/projects/xdotool/) - `apt-get install xdotool` -
+  which does reload the open tab in your web-browser (by sending `Shift+Ctrl+R`)
+
+Combined, less than a second after you "save" any file,
+you can see the result without lifting a finger.
+
+Style
+-----
+
+* HTML: Modern HTML5, but nothing too fancy please.
+  One of the main design goals is that everything should still work
+  without any Javascript and no Flash.
+
+* Python: PEP8 is authoritative various Python scripts; except E501 (long lines).
+  Just make sure your `pep8` and `autopep8` is up-to-date and
+  do a healthy `make style` to clean up your code before you commit.
+
 License
 -------
 
