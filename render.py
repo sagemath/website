@@ -145,5 +145,6 @@ def reload():
 
 if __name__ == '__main__':
     render()
-    reload()
+    if len(sys.argv) >= 2 and sys.argv[-1] == "reload":
+        reload()
     log('Finished')

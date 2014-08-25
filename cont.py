@@ -74,7 +74,7 @@ def autocompile(paths, cmd):
 
 if __name__ == '__main__':
     paths = ["src", "conf", "templates", "scripts"]
-    cmd = 'make'
+    cmd = 'make ARGS=reload'
 
     compilation_process = mp.Process(target=compile_it, args=(cmd,))
     compilation_process.start()

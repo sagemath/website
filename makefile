@@ -1,5 +1,7 @@
 .PHONY: publications render clean show server style test cont
 
+ARGS ?= ""
+
 default: render
 
 clean:
@@ -9,7 +11,7 @@ publications:
 	$(MAKE) -C publications
 
 render: clean publications
-	python render.py
+	python render.py $(ARGS)
 
 server:
 	cd www && python -m SimpleHTTPServer 8181
