@@ -14,6 +14,7 @@ import shutil
 import yaml
 import jinja2 as j2
 import multiprocessing as mp
+import markdown
 
 from scripts import log
 from conf import config, mirrors, packages
@@ -74,6 +75,12 @@ def filter_prefix(ctx, link):
     return '/'.join(path)
 
 
+md = markdown.Markdown()
+
+@j2.evalcontextfilter
+def filter_markdown(eval_ctx, text):
+    return md.convert(text)
+
 def render():
     if not exists("www"):
         os.mkdir("www")
@@ -94,6 +101,7 @@ def render():
     j2env.globals.update(config)
 
     j2env.filters["prefix"] = filter_prefix
+    j2env.filters["markdown"] = filter_markdown
 
     IGNORE_PATHS = ["old"]
 
@@ -148,7 +156,7 @@ def reload():
             except CalledProcessError:
                 continue
             print("RELOAD ==> detected '%s' and sending Shift+Ctrl+R" % browser)
-            call(['xdotool', 'search', "--name", '"%s"' % browser, 
+            call(['xdotool', 'search', "--name", "%s" % browser,
                   'key', '--clearmodifiers', 'ctrl+shift+r'])
             break
         else:

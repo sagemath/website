@@ -1,34 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Mirrors" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - Mirrors</title><!--#include virtual="inc/htmlhead.shtml"-->
-
+{% block header %}
  <style type="text/css">
-/*<![CDATA[*/
- iframe {
+iframe {
  height: 30px;
  width: 600px;
  overflow: hidden;
  border: 1px solid #7f7fff;
- }
- a.c1 {color:#0000FF;text-align:left}
- td {padding: 5px 0 5px 0; }
- /*]]>*/
- </style>
-</head>
+}
+a.c1 {color:#0000FF;text-align:left}
+td {padding: 5px 0 5px 0; }
+</style>
+{% endblock %}
 
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header.shtml" -->
-
+{% block content %}
  <h1 class="narrow">Sage Mirrors</h1>
 
  <div class="narrow center txt">
@@ -39,8 +25,7 @@
             scrolling="no"
             marginheight="0"
             marginwidth="0"
-            src=
-            "http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;output=embed">
+            src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;output=embed">
     </iframe><br />
     <small>View <a href=
     "http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;source=embed"
@@ -49,7 +34,7 @@
 
 <div class="narrow txt center">
 Sage Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html">CVUT.cz</a>):<br/>
-<img src="http://ftp.sh.cvut.cz/WEB/var/sagemath.png"></img>
+<img src="http://ftp.sh.cvut.cz/WEB/var/sagemath.png" />
 </div>
 <h2 class="narrow">Mirror List</h2>
  <div class="narrow txt">
@@ -567,6 +552,5 @@ Sage Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html
   
 <!--ENDTOKEN-->
   </table>
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </div>
+{% endblock %}

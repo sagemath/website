@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head profile="http://a9.com/-/spec/opensearch/1.1/">
  <title>
-  {% set title = title|default("Open-Source Mathematical Software System") %}
+  {%- set title = title|default("Open-Source Mathematical Software System") -%}
   {%block title -%}{{ sage }} - {{ title }}{%- endblock %}
  </title>
  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -27,9 +27,8 @@
  <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
  <meta property="og:site_name" content="Sage Mathematical Software System"/>
  <meta property="og:description" content="Sage is a free and open-source mathematical software system."/>
-
-{% block header %}
-{% endblock %}
+{%- block header -%}
+{%- endblock -%}
 </head>
 
 <body>
@@ -43,7 +42,7 @@
 </div>
 
 <div id="header-text">
-{% block header_text %}
+{%- block header_text -%}
 <form action="{{ 'search.html'|prefix }}" method="get">
 <a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">RSS</a>
 &middot;
@@ -99,7 +98,7 @@ or
 <option value="ru">Russian</option>
 </select>
 </form>
-{% endblock %}
+{%- endblock -%}
 </div>
 
 </div>
@@ -107,7 +106,7 @@ or
 <div id="sage-nav-buffer" style="display: none"></div>
 
 <ul id="sage-nav">
-{% block menu %}
+{%- block menu -%}
 <li><a href="{{ 'index.html'|prefix }}">Home</a>
 <ul>
  <li><a href="{{ 'search.html'|prefix }}">Search</a></li>
@@ -208,14 +207,13 @@ or
  <li><a href="{{ 'contact.html'|prefix }}">Contact</a></li>
 </ul>
 </li>
-{% endblock %}
+{%- endblock -%}
 </ul>
 
-{% block content %}
-{% endblock %}
-
-{% block bottom %}
-{% endblock %}
+{%- block content -%}
+{%- endblock -%}
+{%- block bottom -%}
+{%- endblock -%}
 
 <div style="height:auto;min-height:50px;"> </div>
 <div id="footer" class="center">
@@ -313,7 +311,7 @@ function googleTranslateElementInit() {
 </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 #}
 
-{% set trademark = trademark|default(False) %}
+{%- set trademark = trademark|default(False) -%}
 {% if trademark %}
 <div class="trademark">Microsoft and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</div>
 {% endif %}
@@ -358,7 +356,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  })();
 </script>
 
-{% block footer %}
-{% endblock %}
+{%- block footer -%}
+{%- endblock -%}
 </body>
 </html>
