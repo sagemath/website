@@ -148,7 +148,8 @@ def reload():
             except CalledProcessError:
                 continue
             print("RELOAD ==> detected '%s' and sending Shift+Ctrl+R" % browser)
-            call(['xdotool', 'search', '"%s"' % browser, 'key', '--clearmodifiers', 'ctrl+shift+r'])
+            call(['xdotool', 'search', "--name", '"%s"' % browser, 
+                  'key', '--clearmodifiers', 'ctrl+shift+r'])
             break
         else:
             print("==> sorry, could not find your browser?")
