@@ -77,9 +77,11 @@ def filter_prefix(ctx, link):
 
 md = markdown.Markdown()
 
+
 @j2.evalcontextfilter
 def filter_markdown(eval_ctx, text):
     return md.convert(text)
+
 
 def render():
     if not exists("www"):

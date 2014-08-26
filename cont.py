@@ -20,48 +20,50 @@ IN_DELETE = pyinotify.IN_DELETE
 from os.path import exists, abspath
 import time
 
-do_compilation = mp.Event()
-do_compilation.set()  # run it once after startup
 
-
-def compile_it(cmd):
-    """
-    This is executed on demand in a proper sub-process.
-
-    :param cmd:
-    :return:
-    """
-    try:
-        while True:
-            do_compilation.wait()
-            # wait a bit in case multiple events fire
-            time.sleep(0.1)
-            do_compilation.clear()
-            print("==> running '%s'" % cmd)
-            subprocess.Popen(cmd, shell=True,
-                             stdout=sys.stdout, stderr=sys.stderr)
-    except KeyboardInterrupt:
-        pass
-
-
-class OnWriteHandler(pyinotify.ProcessEvent):
+class ChangeHandler(pyinotify.ProcessEvent):
 
     def my_init(self, cmd):
         self.cmd = cmd
 
+        self.do_compilation = mp.Event()
+        self.do_compilation.set()  # run it once after startup
+
+        self.compilation_process = mp.Process(target=self.compile_it, args=(cmd,))
+        self.compilation_process.start()
+
+    def compile_it(self, cmd):
+        """
+        This is executed on demand in a proper sub-process.
+
+        :param cmd:
+        :return:
+        """
+        try:
+            while True:
+                self.do_compilation.wait()
+                # wait a bit in case multiple events fire
+                time.sleep(0.1)
+                self.do_compilation.clear()
+                print("==> running '%s'" % cmd)
+                subprocess.Popen(cmd, shell=True,
+                                 stdout=sys.stdout, stderr=sys.stderr)
+        except KeyboardInterrupt:
+            pass
+
     def process_IN_MODIFY(self, event):
-        do_compilation.set()
+        self.do_compilation.set()
 
     def process_IN_CREATE(self, event):
-        do_compilation.set()
+        self.do_compilation.set()
 
     def process_IN_DELETE(self, event):
-        do_compilation.set()
+        self.do_compilation.set()
 
 
 def autocompile(paths, cmd):
     wm = pyinotify.WatchManager()
-    handler = OnWriteHandler(cmd=cmd)
+    handler = ChangeHandler(cmd=cmd)
     notifier = pyinotify.Notifier(wm, default_proc_fun=handler)
     wm.add_watch(paths,
                  # pyinotify.ALL_EVENTS,
@@ -70,17 +72,14 @@ def autocompile(paths, cmd):
                  rec=True,
                  auto_add=True)
     print '==> Start monitoring %s (type CTRL-c to exit)' % paths
-    notifier.loop()
+
+    try:
+        notifier.loop()
+    finally:
+        handler.compilation_process.terminate()
+
 
 if __name__ == '__main__':
     paths = ["src", "conf", "templates", "scripts"]
     cmd = 'make ARGS=reload'
-
-    compilation_process = mp.Process(target=compile_it, args=(cmd,))
-    compilation_process.start()
-
-    # Blocks monitoring
-    try:
-        autocompile(paths, cmd)
-    finally:
-        compilation_process.terminate()
+    autocompile(paths, cmd)
