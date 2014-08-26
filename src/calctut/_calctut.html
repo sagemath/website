@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title -%}{{ sage }} - Calculus Tutorial - {{ title }}{%- endblock %}
+
+{% block logo_title %}
+<a href="./index.html">Calculus Tutorial</a>
+{% endblock %}
+
+{% block header_text %}
+<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+{% endblock %}
+
+{% block menu %}
+<div id="header-navbar">
+<table id="controlpanel">
+<tr>
+<td class="tdzoom">
+    <a href="javascript:increaseFontSize();">A+</a>&nbsp;&nbsp;
+    <a href="javascript:decreaseFontSize();">a-</a>
+</td>
+<td>
+<ul id="navbar">
+<script type="text/javascript">
+calctut.generateNav();
+</script>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+
+<div id="subnav">
+<select id="tutgoto" onchange="calctut.dropdownSelect();"></select>
+</div>
+{% endblock %}
+
+{% block header %}
+<link href="./calctut-res/calctut.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 7]>
+<style type="text/css">
+/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
+ * text box without losing all line returns. Hopefully IE 8 will fix this */
+#calctut a.lines {
+visibility:hidden;
+}
+</style>
+<![endif]-->
+<script src="calctut-res/calctut.js" type="text/javascript"></script>
+<script src="calctut-res/zoom.js" type="text/javascript"></script>
+<script type="text/javascript">$(calctut.pageLoad);</script>
+{% endblock %}
+
+{% block bottom %}
+<table id="bottomnav" class="narrow txt">
+  <tr>
+  <script type="text/javascript">
+  calctut.writePreviousPage();
+  calctut.writeNextPage();
+  </script>
+  </tr>
+</table>
+{% endblock %}

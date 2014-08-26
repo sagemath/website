@@ -98,12 +98,15 @@ var calctut = {
 	},
 	
 	goToCurrentNav: function() {
+	    return;
+	    /*
 		var pos = calctut.end-calctut.index;
 		if(calctut.index < 0) {
 			pos = 1;
 		}
 		navbarjs.initSlide(pos, true);
 		navbarjs.currentTab = pos;
+		*/
 	},
 	
 	hideExplanations: function() {

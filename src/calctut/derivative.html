@@ -1,32 +1,9 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends "calctut/_calctut.html" %}
+{%- set title =  "The Definition of the Derivative" -%}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
 
- <title>Sage Calculus Tutorial - The Definition of the Derivative</title>
- <!--#include virtual="calctut-inc/htmlhead.shtml"-->
-<!--[if lte IE 7]>
-<style type="text/css">
-/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
- * text box without losing all line returns. Hopefully IE 8 will fix this */
-#calctut a.lines {
-visibility:hidden;
-}
-</style>
-<![endif]-->
-</head>
-
-<body onload="navbarjs.init(); calctut.pageLoad();"
-      onunload="navbarjs.cleanUp();">
-<!--#include virtual="calctut-inc/header.shtml"-->
-
- <div id="calctut" class="narrow txt">
+{% block content %}
+<div id="calctut" class="narrow txt">
   <h1>The Definition of the Derivative</h1>
   <p>
   As you saw in the last section, the <strong>derivative</strong> of a function
@@ -234,18 +211,6 @@ derivative(x^2, x)
   This is also the last lesson for now; sorry! Check back in a couple of weeks.
   </p>
   </div>
-  <table id="bottomnav">
-  <tr>
-  <script type="text/javascript">
-  <!--
-  calctut.writePreviousPage();
-  calctut.writeNextPage();
-  //-->
-  </script>
-  </tr>
-  </table>
  </div>
 
-<!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+{% endblock %}

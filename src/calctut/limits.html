@@ -1,31 +1,8 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends "calctut/_calctut.html" %}
+{%- set title =  "Limits" -%}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
 
- <title>Sage Calculus Tutorial - Limits</title>
- <!--#include virtual="calctut-inc/htmlhead.shtml"-->
-<!--[if lte IE 7]>
-<style type="text/css">
-/* Internet Explorer 7 and below cannot set the innerHTML of a pre-formatted
- * text box without losing all line returns. Hopefully IE 8 will fix this */
-#calctut a.lines {
-visibility:hidden;
-}
-</style>
-<![endif]-->
-</head>
-
-<body onload="navbarjs.init(); calctut.pageLoad();"
-      onunload="navbarjs.cleanUp();">
-<!--#include virtual="calctut-inc/header.shtml"-->
-
+{% block content %}
  <div id="calctut" class="narrow txt">
   <h1>Limits</h1>
   <p>
@@ -142,26 +119,5 @@ plot((1 - cos(x)^2)/sin(x), x, -1, 5).show(xmin=0, ymin=0)
   &nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer5" href="javascript:void(0);" onclick="calctut.ansToggle(5, 'Limit evaluates to 0 (graph it to see)');">Toggle answer</a>
   </div>
-  <table id="bottomnav">
-  <tr>
-  <script type="text/javascript">
-  <!--
-  calctut.writePreviousPage();
-  calctut.writeNextPage();
-  //-->
-  </script>
-  </tr>
-  </table>
  </div>
-
-<div id="footer" class="center">
-<table><tr>
-<td><a id="footer-webmaster" href="mailto:harald.schilly@gmail.com"></a></td><td>&middot;</td>
-<td><a id="footer-cc" title="Content is Creative Commons 3.0 licensed" href="http://creativecommons.org/licenses/by-nc/3.0/" target="_blank"></a></td><td>&middot;</td>
-<td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund" href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&Code=MATSAG" target="_blank"></a></td><td>&middot;</td>
-<td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
-</tr></table>
-</div>
-
-</body>
-</html>
+{% endblock %}
