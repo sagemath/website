@@ -79,6 +79,14 @@ var sage = {
             }
         };
 
+
+        /* scroll up, G+ style */
+        $navbar.on("click", function(evt) {
+            if (this == evt.target) {
+                $("html, body").animate({scrollTop: 0}, "slow");
+            }
+        });
+
         /* run it once and then every time the window scrolls or resizes */
         scrollNavbar();
         $w.scroll(scrollNavbar);
@@ -106,8 +114,10 @@ var sage = {
                     }
                 }
                 evt.preventDefault();
+                evt.stopPropagation();
                 $li.addClass(cn);
                 active = idx;
+                return false;
             });
         });
 
