@@ -16,6 +16,7 @@ BUGS:
 import xml.dom.minidom as minidom
 from xml.dom.minidom import parse, parseString
 import os
+from os.path import join
 import sys
 import urllib
 import time
@@ -26,33 +27,29 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 # google key for sagemath.org - got free from their maps api website
 #gkey   = "ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w"
-gkey = "AIzaSyCh9JDXJE7BsdfT105pRP_dusAzxadA_kc"
+#gkey = "AIzaSyCh9JDXJE7BsdfT105pRP_dusAzxadA_kc"
+gkey = "AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA"
 
 # allowed attributes in source xml, for checkXML
 goodKeys = ["name", "location", "work", "description", "url", "pix", "size", "jitter", "trac"]
 
 # point to datafiles in local path, ./www/res/... should be best
-ack = parse(os.path.join(".", "www", "res", "contributors.xml"))
-outfn = os.path.join(".", "www", "res", "geocode.xml")
-devmap_xml = os.path.join(".", "www", "development-map.html")
+ack = parse("contributors.xml")
+geocode_xml_outfn = "geocode.xml"
+devmap_tmpl = os.path.join("..", "templates", "devs.html")
 devlist = None
 tracSearch = "http://trac.sagemath.org/sage_trac/search?q="
 
-if os.path.exists(devmap_xml):
-    print devmap_xml
-    devmap = parse(devmap_xml)
-else:
-    raise Exception("File %s not found" % devmap_xml)
+devmap = minidom.Document()
 
+#def getDevlist():
+#    devlists = devmap.getElementsByTagName(r'tbody')
+#    for d in devlists:
+#        if d.getAttribute('id') == r'devlist':
+#            return d
 
-def getDevlist():
-    devlists = devmap.getElementsByTagName(r'tbody')
-    for d in devlists:
-        if d.getAttribute('id') == r'devlist':
-            return d
-
-if os.path.exists(outfn):
-    locxml = parse(outfn)
+if os.path.exists(geocode_xml_outfn):
+    locxml = parse(geocode_xml_outfn)
 else:
     locxml = minidom.Document()
 
@@ -67,18 +64,20 @@ def writeToDevmap():
     # cleanup
     # for d in devlist.childNodes:
     #    d.parentNode.removeChild(d)
-    devlist = getDevlist()
-    p = devlist.parentNode
-    p.removeChild(devlist)
+    #devlist = getDevlist()
+    #p = devlist.parentNode
+    #p.removeChild(devlist)
     tbody = devmap.createElement(r'tbody')
     tbody.setAttribute(r'id', r'devlist')
-    p.appendChild(tbody)
+    devmap.appendChild(tbody)
     devlist = tbody
 
     # fixing empty tag
-    for d in devmap.getElementsByTagName(r'div'):
-        if d.getAttribute('id') == r'devcloud':
-            devcloud = d
+    #for d in devmap.getElementsByTagName(r'div'):
+    #    if d.getAttribute('id') == r'devcloud':
+    #        devcloud = d
+    devcloud = devmap.createElement(r'div')
+    devcloud.setAttribute("id", "devlist")
     devcloud.appendChild(devmap.createTextNode(" "))
 
     # write from ack file, and we don't need geolocations
@@ -133,7 +132,7 @@ def writeToDevmap():
         a = devmap.createElement("a")
         a.setAttribute("href", tracSearch + trac)
         a.setAttribute("class", "trac")
-        a.setAttribute("target", "_blank")
+        #a.setAttribute("target", "_blank")
         a.appendChild(devmap.createTextNode("contributions"))
         td.appendChild(devmap.createElement("br"))
         td.appendChild(a)
@@ -158,7 +157,7 @@ def checkXML():
 checkXML()
 
 
-# if outfn exists, read in dict of locations to nodes, else empty
+# if geocode_xml_outfn exists, read in dict of locations to nodes, else empty
 def locExists(loc):
     for l in loclist + out.getElementsByTagName("loc"):
         if l.getAttribute("location") == loc:
@@ -182,10 +181,19 @@ def getGeo(loc):
     print loc, ">>>",
     global timeout
     time.sleep(timeout)
-    url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
+    #url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
+    #url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
+    url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s' % loc
     geo = (urllib.urlopen(url)).read()
-    print geo
-    return geo.split(",")
+    import json
+    geo = json.loads(geo)
+    acc = "6" # no idea
+    #print geo
+    loc = geo["results"][0]["geometry"]["location"]
+    lng = str(loc["lng"])
+    lat = str(loc["lat"])
+    print acc, lng, lat
+    return "200", acc, lng, lat
 
 
 def addGeo(place):
@@ -214,16 +222,17 @@ def addGeo(place):
         out.appendChild(lcache)
 
 
-def writeStatistics():
+def getStatistics():
         # get statistics for description
     nbContribs = len(ack.getElementsByTagName("contributor"))
     nbPlaces = len(out.getElementsByTagName("loc"))
-    for c in devmap.getElementsByTagName('span'):
-        if c.getAttribute("id") == "contrib-nb":
-            c.replaceChild(devmap.createTextNode(str(nbContribs)), c.childNodes[0])
-        elif c.getAttribute("id") == "contrib-places":
-            c.replaceChild(devmap.createTextNode(str(nbPlaces)), c.childNodes[0])
+    #for c in devmap.getElementsByTagName('span'):
+    #    if c.getAttribute("id") == "contrib-nb":
+    #        c.replaceChild(devmap.createTextNode(str(nbContribs)), c.childNodes[0])
+    #    elif c.getAttribute("id") == "contrib-places":
+    #        c.replaceChild(devmap.createTextNode(str(nbPlaces)), c.childNodes[0])
     print "contributors =", str(nbContribs), "places =", str(nbPlaces)
+    return nbContribs, nbPlaces
 
 # read through ack.xml
 for c in ack.getElementsByTagName("contributor"):
@@ -233,23 +242,34 @@ for c in ack.getElementsByTagName("contributor"):
     else:
         print "  <--- UNKNOWN LOCATION !!!"
 
-#xml.dom.ext.PrettyPrint(out, open(outfn, "w"))
-out.writexml(utils.UnicodeFileWriter(open(outfn, "w")), newl="\n")
 
 print
-print "This is now written to file %s:" % outfn
+print "This is now written to file %s:" % geocode_xml_outfn
 print out.toprettyxml()
 
+#xml.dom.ext.PrettyPrint(out, open(geocode_xml_outfn, "w"))
+out.writexml(utils.UnicodeFileWriter(open(geocode_xml_outfn, "w")), newl="\n")
 
 print
 print "calculating statistics and writing to description"
-writeStatistics()
+nbContribs, nbPlaces = getStatistics()
 
 print
 print "now writing table entries for search engines and javascript disabled ones"
 writeToDevmap()
 
-print "file written to %s" % devmap_xml
+print "file written to %s" % devmap_tmpl
 #xml.dom.ext.PrettyPrint(devmap, open(devmap_xml, "w"))
-devmap.writexml(utils.UnicodeFileWriter(open(devmap_xml, "w")), newl="\n")
+#devmap.writexml(utils.UnicodeFileWriter(open(devmap_tmpl, "w")), newl="\n")
 # utils.delFirstLine(devmap_xml)
+import codecs
+with codecs.open(devmap_tmpl, "w", "utf8") as outf:
+    outf.write("{% macro number() %}" +str(nbContribs) + "{% endmacro %}")
+    outf.write("{% macro places() %}" + str(nbPlaces) + "{% endmacro %}")
+    outf.write("""{% macro devs() %}
+    """)
+    x = devmap.toprettyxml(encoding="utf8", indent=" ", newl="\n").decode("utf8")
+    x = x.split("\n", 1)[1]
+    outf.write(x)
+    outf.write("""{% endmacro %}
+    """)

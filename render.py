@@ -34,11 +34,19 @@ def copy_aux_files():
     For example, the *.bib files from the publications subdirectory.
     """
     log("copying auxiliary files")
+
+    # publication files
     PUB = "publications"
     os.chdir(PUB)
     for bib in glob("*.bib"):
         dst = normpath(join("..", TARG_FILES, bib))
         os.link(bib, dst)
+    os.chdir("..")
+
+    # contributors for the devmap
+    contrib_xml = "contributors.xml"
+    os.link(join("scripts", contrib_xml),
+            join(TARG, "res", contrib_xml))
 
 
 def render_task(arg):

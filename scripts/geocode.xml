@@ -1,5 +1,5 @@
 <locations>
-<!--ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY ./geocode.py-->
+<!--ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY scripts/geocode.py-->
 <loc location="Massachusetts, USA" loclat="42.037302" loclng="-71.683502"/>
 <loc location="Dortmund, Germany" loclat="51.512028" loclng="7.463572"/>
 <loc location="Irvine, CA 92697, USA" loclat="33.647320" loclng="-117.840944"/>
@@ -88,6 +88,7 @@
 <loc location="Hradec Kralove, Czech Republic" loclat="50.2094261" loclng="15.8326259"/>
 <loc location="Gwangju, Korea" loclat="35.1322140" loclng="126.8895956"/>
 <loc location="80000 Amiens, France" loclat="49.8990500" loclng="2.2752772"/>
+<loc location="Leibniz University" loclat="9.7119709" loclng="52.3858965"/>
 <loc location="61300 Brno, Czech Republic" loclat="49.2136422" loclng="16.6222468"/>
 <loc location="Harrisonburg, VA, USA" loclat="38.439278" loclng="-78.876469"/>
 <loc location="201 Avenue Du President-Kennedy, Montreal, QC, Canada" loclat="45.5093227" loclng="-73.5679164"/>

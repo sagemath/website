@@ -1,4 +1,4 @@
-.PHONY: publications render clean show server style test cont
+.PHONY: publications render devmap clean show server style test cont
 
 ARGS ?= ""
 
@@ -7,10 +7,15 @@ default: render
 clean:
 	- cd www && find -P -delete
 
+devmap: templates/devs.html
+
+templates/devs.html: scripts/geocode.xml scripts/geocode.py scripts/contributors.xml
+	python scripts/geocode.py
+
 publications:
 	$(MAKE) -C publications
 
-render: clean publications
+render: clean publications devmap
 	python render.py $(ARGS)
 
 server:

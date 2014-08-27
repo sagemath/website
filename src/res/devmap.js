@@ -327,6 +327,7 @@ function zoomTo(where) {
     } else { // ALL
       map.setCenter(new google.maps.LatLng(20, 15), 2);
     }
+    return false;
 }
 
 
