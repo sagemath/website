@@ -1,2 +1,0 @@
-<!--#set var="doctestmeter" value="http://chart.apis.google.com/chart?chs=175x100&cht=gom&chd=t:$doctest&chl=$doctest&chf=bg,s,ffffff&chco=ffffff,7f7fff" -->
-<img class="c2" alt="doctest meter <!--#echo var="doctest"-->%" src="<!--#echo var="doctestmeter"-->" />

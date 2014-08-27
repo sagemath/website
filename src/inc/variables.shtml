@@ -1,6 +1,0 @@
-<!--#set var="version" value="6.3"-->
-<!--#set var="version_src" value="6.3"-->
-<!--#set var="version-solaris-bin" value="NONE"-->
-<!--#set var="releasedate" value="2014-08-10"-->
-<!--#set var="title" value="Sage"-->
-<!--#include virtual="variables_devel.shtml"-->
