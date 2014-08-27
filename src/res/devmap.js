@@ -1,8 +1,7 @@
 /*
  * JavaScript Code for displaying Sage developers on a Google Map.
- * Author: Harald Schilly
- * Created: 2008-04-02
- * (C) ALL RIGHTS RESERVED
+ * Author: Harald Schilly, 2008 -- 2014
+ * License: Apache 2.0
  */
 
 var map     = null;//the map, GMap2
@@ -20,7 +19,7 @@ var contribs          = null; //array of contributors, processed
 var devmap            = null; //dom element
 var markers           = [];   //possible cache, but doesn't work, see below
 var points            = [];   //same
-var sagepinwww        = "./pix/sagepin.png";
+var sagepinwww        = "pix/sagepin.png";
 var sagepin       = null;
 var markerOptions     = null;
 var tracSearch        = "http://trac.sagemath.org/sage_trac/search?q=";
@@ -38,7 +37,7 @@ function orderOfCreation(marker,b) {return 1;}
 
 // search url for contributions
 function getTracLink(trac) {
-   return "<a class='trac' target='_blank' href='" + tracSearch + trac + "'>search contributions</a>";
+   return "<a class='trac' href='" + tracSearch + trac + "'>search contributions</a>";
 }
 
 // clear contents (it is invoked on zoom for adapted jitter of points!)
@@ -258,7 +257,7 @@ function draw_population() {
           var url   = contribs[i].getAttribute("url");
           var pix   = contribs[i].getAttribute("pix");
           var size  = contribs[i].getAttribute("size");
-    var jitter= contribs[i].getAttribute("jitter");
+          var jitter= contribs[i].getAttribute("jitter");
           var trac  = contribs[i].getAttribute("trac");
          
           //GLog.write("current: " + dev + ", " + loc + ", " + work + ", " + pix); 
@@ -408,3 +407,5 @@ function load() {
   //var d = document.getElementById("devmap");
   //d.innerHTML = "YOUR BROWSER IS NOT SUPPORTED :(";
 }
+
+$(load);
