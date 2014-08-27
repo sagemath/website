@@ -1,6 +1,18 @@
 {% extends 'base.html' %}
 {% set title = "Deutsch" %}
 
+{% block logo_title %}
+<a href="./index.html">Deutsch</a>
+{% endblock %}
+
+{% block header_text %}
+<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+{% endblock %}
+
+{% block menu %}
+<li id="intro"><a href="./index.html" title="">Index</a></li>
+{% endblock %}
+
 {% block header %}
 <meta name="keywords"
  content="sage, sagemath, sagemaths, sage math, open source, open-source, opensource, quelloffen, gpl, software, mathematik, cas, computer algebra system, python, kryptographie, numerische berechnungen, algebra, gruppentheorie, kombinatorik, graphentheorie, analysis, zahlentheorie, wissenschaftliches rechnen, interaktive mathematik, mathematica alternative, gruppen, endliche körper, fortschrittliche mathematische software, opensource mathematik, kostenlose mathematik software, freie mathehmatik software, mathematik programm, gratis mathematik software, gratis mathematik programm" />
