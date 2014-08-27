@@ -12,7 +12,7 @@
   Bob's car is on fire, which is why his driving is somewhat erratic. The function
   </p>
   <div class="proof">
-  <img src="pix-calctut/derivative01.png" />
+  <img src="calctut-pix/derivative01.png" />
   </div>
   <p>
   models the number of miles driven after t hours has elapsed. After one hour
@@ -26,7 +26,7 @@
   telephones mission control on his tungsten cellphone.
   </p>
   <div class="proof">
-  <img src="pix-calctut/flamingcar.png" />
+  <img src="calctut-pix/flamingcar.png" />
   </div>
   <p>
   In this example, the speed that Bob was traveling at any point in time could
@@ -56,21 +56,21 @@
   </p>
   <div class="proof rule">
   <h3>Constant Rule</h3>
-  If <img class="vmiddle" src="pix-calctut/diffrules01.png" /> and a is a
+  If <img class="vmiddle" src="calctut-pix/diffrules01.png" /> and a is a
   real number, then<br />
-  <img class="vmiddle" src="pix-calctut/diffrules02.png" />.
+  <img class="vmiddle" src="calctut-pix/diffrules02.png" />.
   </div>
   <div class="proof rule">
   <h3>Constant Multiple Rule</h3>
-  If <img class="vmiddle" src="pix-calctut/diffrules03.png" /> and a is a
+  If <img class="vmiddle" src="calctut-pix/diffrules03.png" /> and a is a
   real number, then<br />
-  <img class="vmiddle" src="pix-calctut/diffrules04.png" />.
+  <img class="vmiddle" src="calctut-pix/diffrules04.png" />.
   </div>
   <div class="proof rule">
   <h3>Power Rule</h3>
-  If <img class="vmiddle" src="pix-calctut/diffrules05.png" /> and n is a
+  If <img class="vmiddle" src="calctut-pix/diffrules05.png" /> and n is a
   real number, then<br />
-  <img class="vmiddle" src="pix-calctut/diffrules06.png" />.
+  <img class="vmiddle" src="calctut-pix/diffrules06.png" />.
   </div>
   <p>
   The function f'(x) (pronounced 'f prime of x') signifies the first derivative of
@@ -80,16 +80,16 @@
   zero. It is natural, therefore, that:
   </p>
   <div class="proof">
-  If <img class="vmiddle" src="pix-calctut/derivative02.png" />, then<br />
-  <img src="pix-calctut/derivative03.png" />
+  If <img class="vmiddle" src="calctut-pix/derivative02.png" />, then<br />
+  <img src="calctut-pix/derivative03.png" />
   </div>
   <p>
   In order to save space, I won't use 'lim' in the other examples. The variable
   'h' is assumed to be approaching zero. For the Constant Multiple Rule:
   </p>
   <div class="proof">
-  If <img class="vmiddle" src="pix-calctut/derivative04.png" />, then<br />
-  <img src="pix-calctut/derivative05.png" />
+  If <img class="vmiddle" src="calctut-pix/derivative04.png" />, then<br />
+  <img src="calctut-pix/derivative05.png" />
   </div>
   <p>
   I used 'a' again instead of an actual number just to show that it works for
@@ -97,8 +97,8 @@
   I'll use an actual number in tandem with the Constant Multiple Rule.
   </p>
   <div class="proof">
-  If <img class="vmiddle" src="pix-calctut/derivative06.png" />, then<br />
-  <img src="pix-calctut/derivative07.png" /><img src="pix-calctut/derivative08.png" />
+  If <img class="vmiddle" src="calctut-pix/derivative06.png" />, then<br />
+  <img src="calctut-pix/derivative07.png" /><img src="calctut-pix/derivative08.png" />
   </div>
   <p>
   Keep in mind that if the variable's power is a negative number, you will have
@@ -111,8 +111,8 @@
   his position function to see how fast he was moving at any point in time.
   </p>
   <div class="proof">
-  Since <img src="pix-calctut/derivative01.png" />,<br />
-  <img src="pix-calctut/derivative09.png" />
+  Since <img src="calctut-pix/derivative01.png" />,<br />
+  <img src="calctut-pix/derivative09.png" />
   </div>
   <p>
   The function v(t) is a better representation for instantaneous velocity than x'(t), which
@@ -121,8 +121,8 @@
   derivative of the velocity function, now:
   </p>
   <div class="proof">
-  Since <img class="vmiddle" src="pix-calctut/derivative09.png" />,<br />
-  <img src="pix-calctut/derivative10.png" />
+  Since <img class="vmiddle" src="calctut-pix/derivative09.png" />,<br />
+  <img src="calctut-pix/derivative10.png" />
   </div>
   <p>
   Bob was accelerating at a rate of 3 miles per hour per hour, which explains why
@@ -130,7 +130,7 @@
   Compare the position, velocity, and acceleration functions in the following graph:
   </p>
   <div class="proof">
-  <img src="pix-calctut/derivative11.png" />
+  <img src="calctut-pix/derivative11.png" />
   </div>
 <pre class="tutcode">
 var('t')
@@ -154,12 +154,12 @@ plot(3*t^2/2+20*t, t, 0, 6)+plot(3*t+20, t, 0, 6, rgbcolor='red')+line([(0, 3), 
   <div class="proof rule">
   <h3>Product Rule</h3>
   If f and g are differentiable at x, then<br />
-  <img src="pix-calctut/diffrules07.png" />
+  <img src="calctut-pix/diffrules07.png" />
   </div>
    <div class="proof rule">
   <h3>Quotient Rule</h3>
   If f is the quotient g(x)/h(x) and h(x) &ne; 0, then<br />
-  <img src="pix-calctut/diffrules08.png" />
+  <img src="calctut-pix/diffrules08.png" />
   </div>
   <p>
   As an example of the product rule, think of two expressions, (x<sup>2</sup>+1)
@@ -168,10 +168,10 @@ plot(3*t^2/2+20*t, t, 0, 6)+plot(3*t+20, t, 0, 6, rgbcolor='red')+line([(0, 3), 
   hassle) or apply the product rule, which is the much better alternative.
   </p>
   <div class="proof">
-  If <img class="vmiddle" src="pix-calctut/derivative12.png" />, then<br />
-  <img class="vmiddle" src="pix-calctut/derivative13.png" />
-  <img class="vmiddle" src="pix-calctut/derivative14.png" />
-  <img class="vmiddle" src="pix-calctut/derivative15.png" />
+  If <img class="vmiddle" src="calctut-pix/derivative12.png" />, then<br />
+  <img class="vmiddle" src="calctut-pix/derivative13.png" />
+  <img class="vmiddle" src="calctut-pix/derivative14.png" />
+  <img class="vmiddle" src="calctut-pix/derivative15.png" />
   </div>
   <p>
   I wouldn't recommend simplifying the result of the product rule unless you have
@@ -182,11 +182,11 @@ plot(3*t^2/2+20*t, t, 0, 6)+plot(3*t+20, t, 0, 6, rgbcolor='red')+line([(0, 3), 
   simplifying turns out to be a valid option.
   </p>
   <div class="proof">
-  If <img class="vmiddle" src="pix-calctut/derivative16.png" />, then<br />
-  <img class="vmiddle" src="pix-calctut/derivative17.png" />
-  <img class="vmiddle" src="pix-calctut/derivative18.png" />
-  <img class="vmiddle" src="pix-calctut/derivative19.png" />
-  <img class="vmiddle" src="pix-calctut/derivative20.png" />
+  If <img class="vmiddle" src="calctut-pix/derivative16.png" />, then<br />
+  <img class="vmiddle" src="calctut-pix/derivative17.png" />
+  <img class="vmiddle" src="calctut-pix/derivative18.png" />
+  <img class="vmiddle" src="calctut-pix/derivative19.png" />
+  <img class="vmiddle" src="calctut-pix/derivative20.png" />
   </div>
   <h2>Practice Problems</h2>
   <div id="practice">
@@ -194,13 +194,13 @@ plot(3*t^2/2+20*t, t, 0, 6)+plot(3*t+20, t, 0, 6, rgbcolor='red')+line([(0, 3), 
   result.* Remember to initialize variables that you haven't referred to previously
   using var('t') or whatever the variable's name is.
   <br />
-  1) <img class="vmiddle qimg" src="pix-calctut/derivative21.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  1) <img class="vmiddle qimg" src="calctut-pix/derivative21.png" />&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'f\'(x) = 10*x+5.');">Toggle answer</a>
   <br />
-  2) <img class="vmiddle qimg" src="pix-calctut/derivative22.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  2) <img class="vmiddle qimg" src="calctut-pix/derivative22.png" />&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 's\'(v) = (6*v+5)*(v^2-1)+(2*v)*(3*v^2+5*v+2).');">Toggle answer</a>
   <br />
-  3) <img class="vmiddle qimg" src="pix-calctut/derivative23.png" />&nbsp;&nbsp;&nbsp;&nbsp;
+  3) <img class="vmiddle qimg" src="calctut-pix/derivative23.png" />&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'x\'(t) = (12*t^2-16*t)/(3*t-2)^2.');">Toggle answer</a>
   <br /><br />
   *If you were to differentiate x<sup>2</sup> in Sage, for example, you would use

@@ -44,7 +44,7 @@ visibility:hidden;
   recreate the following graph using the provided code. (The f(x)=... is superimposed).
   </p>
   <div class="proof">
-  <img src="pix-calctut/continuity01.png" />
+  <img src="calctut-pix/continuity01.png" />
   </div>
 <pre class="tutcode">
 p1 = plot(x^2, x, 0, 1)
@@ -76,8 +76,8 @@ pt2 = point((3, 2), rgbcolor='black', pointsize=30)
   Using our knowledge of limits from the previous lesson, we can say that:
   </p>
   <div class="proof">
-  <img src="pix-calctut/continuity02.png" class="vmiddle" /> and
-  <img src="pix-calctut/continuity03.png" class="vmiddle" />
+  <img src="calctut-pix/continuity02.png" class="vmiddle" /> and
+  <img src="calctut-pix/continuity03.png" class="vmiddle" />
   </div>
   <h1>The Intermediate Value Theorem</h1>
   <p>
@@ -95,7 +95,7 @@ pt2 = point((3, 2), rgbcolor='black', pointsize=30)
   interval for which it is shown.
   </p>
   <div class="proof">
-  <img src="pix-calctut/continuity04.png" />
+  <img src="calctut-pix/continuity04.png" />
   </div>
 <pre class="tutcode">
 p1 = plot(2*x, x, 0, 1)
@@ -149,7 +149,7 @@ pt6 = point((3, 2), rgbcolor='black', pointsize=30)
   for which they are shown. For functions that are not continuous, determine the
   x-coordinates of their discontinuities.
   <br />
-  1) <img src="pix-calctut/continuity05.png" class="vtop qimg" />
+  1) <img src="calctut-pix/continuity05.png" class="vtop qimg" />
 <pre class="tutcode">
 # Just a note -- sin(x) transformed doesn't actually follow the same curve as x<sup>2</sup>
 p1 = plot((x+1)^2-1, x, -2, 0)
@@ -161,7 +161,7 @@ pt2 = point((4, 0), rgbcolor='black', pointsize=30)
 </pre>
   <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'The function is continuous on the closed interval [-2, 4] for which it is shown');">Toggle answer</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
   <br />
-  2) <img src="pix-calctut/continuity06.png" class="vtop qimg" />
+  2) <img src="calctut-pix/continuity06.png" class="vtop qimg" />
 <pre class="tutcode">
 p = plot(tan(x), x, -pi, pi, randomize=False, plot_points=101)
 pt1 = point((-pi, 0), rgbcolor='black', pointsize=30)
@@ -170,7 +170,7 @@ pt2 = point((pi, 0), rgbcolor='black', pointsize=30)
 </pre>
   <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'The function is not continuous on the closed interval [-&pi;, &pi;]. There are discontinuities at x=-&pi;/2 and x=&pi;/2');">Toggle answer</a> <a class="lines" href="javascript:calctut.toggleLineNumbers();">Toggle Line Numbers</a>
   <br />
-  3) <img src="pix-calctut/continuity07.png" class="vtop qimg" />
+  3) <img src="calctut-pix/continuity07.png" class="vtop qimg" />
   <pre class="tutcode">
 # exp() means 'e to the ___'
 p1 = plot(exp(x/5)-1, x, 0, e)
@@ -187,15 +187,15 @@ pt4 = point((e^2, 2), rgbcolor='black', pointsize=30)
   <br />
   Determine the value or values of k that will make each function continuous on the given interval.*
   <br />
-  4) <img class="vtop qimg" src="pix-calctut/continuity08.png" />
+  4) <img class="vtop qimg" src="calctut-pix/continuity08.png" />
   <br />
   <a id="answer4" href="javascript:void(0);" onclick="calctut.ansToggle(4, 'k=5; both sides converge at (5, 13)');">Toggle answer</a>
   <br />
-  5) <img class="vtop qimg" src="pix-calctut/continuity09.png" />
+  5) <img class="vtop qimg" src="calctut-pix/continuity09.png" />
   <br />
   <a id="answer5" href="javascript:void(0);" onclick="calctut.ansToggle(5, 'k=a*&pi;/2, where a is any odd integer. Convergence at (a*&pi;/2, 0)');">Toggle answer</a>
   <br />
-  6) <img class="vtop qimg" src="pix-calctut/continuity10.png" />
+  6) <img class="vtop qimg" src="calctut-pix/continuity10.png" />
   <br />
   <a id="answer6" href="javascript:void(0);" onclick="calctut.ansToggle(6, 'k=11; convergence at (4, 6)');">Toggle answer</a>
   <br />
@@ -204,15 +204,15 @@ pt4 = point((e^2, 2), rgbcolor='black', pointsize=30)
   Use the Intermediate Value Theorem to demonstrate that a solution exists to each
   equation on the interval given.
   <br />
-  7) <img class="vmiddle qimg" src="pix-calctut/continuity11.png" />;&nbsp;&nbsp;&nbsp;[1, 3]
+  7) <img class="vmiddle qimg" src="calctut-pix/continuity11.png" />;&nbsp;&nbsp;&nbsp;[1, 3]
   <br />
   <a id="answer7" href="javascript:void(0);" onclick="calctut.ansToggle(7, 'f(1) &lt; 0 and f(3) &gt; 0, so a number c must exist in [1, 3] such that f(c) = 0');">Toggle answer</a>
   <br />
-  8) <img class="vmiddle qimg" src="pix-calctut/continuity12.png" />;&nbsp;&nbsp;&nbsp;[-1, 1]
+  8) <img class="vmiddle qimg" src="calctut-pix/continuity12.png" />;&nbsp;&nbsp;&nbsp;[-1, 1]
   <br />
   <a id="answer8" href="javascript:void(0);" onclick="calctut.ansToggle(8, 'f(-1) &gt; 2 and f(1) &lt; 2, so a number c must exist in [-1, 1] such that f(c) = 2');">Toggle answer</a>
   <br />
-  9) <img class="vmiddle qimg" src="pix-calctut/continuity13.png" />;&nbsp;&nbsp;&nbsp;[1, 2]
+  9) <img class="vmiddle qimg" src="calctut-pix/continuity13.png" />;&nbsp;&nbsp;&nbsp;[1, 2]
   <br />
   <a id="answer9" href="javascript:void(0);" onclick="calctut.ansToggle(9, 'Rewrite the equation so that the square root is on the same side as x<sup>5<\/sup> to find that f(1) &lt; 0 and f(2) &gt; 0, so a number c must exist in [1, 1] such that f(c) = 0');">Toggle answer</a>
   <br /><br />

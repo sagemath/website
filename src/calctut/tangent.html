@@ -10,7 +10,7 @@
   know it as "rise over run" or "change in y over change in x", the formula
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent01.png" />
+  <img src="calctut-pix/tangent01.png" />
   </div>
   <p>
   will give you the slope between points (x1, y1) and (x2, y2). So if, for
@@ -23,7 +23,7 @@
   calculus.
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent02.png" />
+  <img src="calctut-pix/tangent02.png" />
   </div>
   <p>
   Rather than simply generating a static graph this time, we'll be doing a bit of
@@ -83,7 +83,7 @@ g.show(xmin=0, xmax=3, ymin=-1, ymax=9)
   graph should now look something like the following image:
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent03.png" />
+  <img src="calctut-pix/tangent03.png" />
   </div>
   <p>
   As you can see, the secant line in this graph still does not pass through the
@@ -102,7 +102,7 @@ g.show(xmin=0, xmax=3, ymin=-1, ymax=9)
   slopes, this time in a slightly altered form:
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent04.png" />
+  <img src="calctut-pix/tangent04.png" />
   </div>
   <p>
   Rather than ignoring the relationship between the two points, as in the first
@@ -163,7 +163,7 @@ var('x, h')
   an equation for this tangent line in slope-intercept form, it would be
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent05.png" />.
+  <img src="calctut-pix/tangent05.png" />.
   </div>
   <p>
   It's very important to remember that the equation for a tangent line can <em>
@@ -179,7 +179,7 @@ var('x, h')
   at x=1. Look at how the tangent line lies against the graph of f(x) = x<sup>3</sup>/2:
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent15.png" />
+  <img src="calctut-pix/tangent15.png" />
   </div>
 <pre class="tutcode">
 (plot(x^3/2, x, 0, 2)+plot(3*x/2-1, 0, 2, rgbcolor='red')+point((1, 1/2), \
@@ -195,31 +195,31 @@ var('x, h')
   consider the function
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent06.png" />
+  <img src="calctut-pix/tangent06.png" />
   </div>
   <p>
   What is the equation for the line tangent to (-2, g(-2))? The slope of the
   tangent line can be found using the function's derivative:
   </p>
   <div class="proof">
-  <img class="qimg" src="pix-calctut/tangent07.png" />
-  <img class="qimg" src="pix-calctut/tangent08.png" />
-  <img class="qimg" src="pix-calctut/tangent09.png" />
-  <img class="qimg" src="pix-calctut/tangent10.png" />
-  <img class="qimg" src="pix-calctut/tangent11.png" />
-  <img class="qimg" src="pix-calctut/tangent12.png" />
+  <img class="qimg" src="calctut-pix/tangent07.png" />
+  <img class="qimg" src="calctut-pix/tangent08.png" />
+  <img class="qimg" src="calctut-pix/tangent09.png" />
+  <img class="qimg" src="calctut-pix/tangent10.png" />
+  <img class="qimg" src="calctut-pix/tangent11.png" />
+  <img class="qimg" src="calctut-pix/tangent12.png" />
   </div>
   <p>
   Plug in -2 for x, then write an equation for the tangent line:
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent13.png" />, so <img src="pix-calctut/tangent14.png" />
+  <img src="calctut-pix/tangent13.png" />, so <img src="calctut-pix/tangent14.png" />
   </div>
   <p>
   Here is another comparison:
   </p>
   <div class="proof">
-  <img src="pix-calctut/tangent16.png" />
+  <img src="calctut-pix/tangent16.png" />
   </div>
 <pre class="tutcode">
 (plot(3/x, x, -3, 0)+plot(-3*x/4-3, -3, 0, rgbcolor='red')+point((-2, -3/2), \
@@ -234,13 +234,13 @@ var('x, h')
   <div id="practice">
   Use the limit process to find the equation of the line tangent to the indicated
   point.<br />
-  1) <img class="vmiddle qimg" src="pix-calctut/tangent17.png" /> at x=2.&nbsp;&nbsp;&nbsp;&nbsp;
+  1) <img class="vmiddle qimg" src="calctut-pix/tangent17.png" /> at x=2.&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer1" href="javascript:void(0);" onclick="calctut.ansToggle(1, 'The limit process yields a slope of 4; tangent line of y = 4*x (since 4*x was a straight line to begin with).');">Toggle answer</a>
   <br />
-  2) <img class="vmiddle qimg" src="pix-calctut/tangent18.png" /> at x=-1.&nbsp;&nbsp;&nbsp;&nbsp;
+  2) <img class="vmiddle qimg" src="calctut-pix/tangent18.png" /> at x=-1.&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer2" href="javascript:void(0);" onclick="calctut.ansToggle(2, 'The limit process yields a slope of 6; tangent line of y = 6*x+5.');">Toggle answer</a>
   <br />
-  3) <img class="vmiddle qimg" src="pix-calctut/tangent19.png" /> at t=5.&nbsp;&nbsp;&nbsp;&nbsp;
+  3) <img class="vmiddle qimg" src="calctut-pix/tangent19.png" /> at t=5.&nbsp;&nbsp;&nbsp;&nbsp;
   <a id="answer3" href="javascript:void(0);" onclick="calctut.ansToggle(3, 'The limit process yields a slope of -1/5; tangent line of y = -x/5+5.');">Toggle answer</a>
   </div>
  </div>
