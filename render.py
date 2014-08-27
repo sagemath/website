@@ -9,6 +9,7 @@
 import os
 import sys
 from os.path import join, normpath, exists, islink
+from glob import glob
 import datetime
 import shutil
 import yaml
@@ -22,8 +23,22 @@ from conf import config, mirrors, packages
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-TARG = join("..", "www")  # assumption: completely empty www
+SRC = "src"
+TARG = "www"  # assumption: completely empty www
+TARG_FILES = join(TARG, "files")
 j2env = None
+
+def copy_aux_files():
+    """
+    This copies auxiliary files into the output file tree.
+    For example, the *.bib files from the publications subdirectory.
+    """
+    log("copying auxiliary files")
+    PUB = "publications"
+    os.chdir(PUB)
+    for bib in glob("*.bib"):
+        dst = normpath(join("..", TARG_FILES, bib))
+        os.link(bib, dst)
 
 
 def render_task(arg):
@@ -33,7 +48,7 @@ def render_task(arg):
     """
     fn, root = arg
     src = join(root, fn)
-    dst = normpath(join(TARG, src))
+    dst = normpath(join("..", TARG, src))
     lvl = root.count(os.sep)
     log("processing/f: %s" % src, nl=False)
     if fn.endswith(".html"):
@@ -94,7 +109,7 @@ def render():
     #    log("    %s" % line)
 
     # everything is now rooted in the src directory
-    os.chdir("src")
+    os.chdir(SRC)
 
     global j2env
     tmpl_dirs = [join("..", _) for _ in ["publications", "templates", "src"]]
@@ -120,7 +135,7 @@ def render():
         # path need to exist in the target before we copy and process the files
         for path in paths:
             src = join(root, path)
-            dst = normpath(join(TARG, src))
+            dst = normpath(join("..", TARG, src))
 
             log("processing/d: %s" % src, nl=False)
 
@@ -136,7 +151,8 @@ def render():
         pool.map(render_task, [(_, root) for _ in filenames])
 
     log("processing: done", nl=False)
-    log("")
+    os.chdir("..")
+    copy_aux_files()
 
 
 def reload():
