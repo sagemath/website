@@ -1,18 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Portuguese" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
-<head>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% block logo_title %}
+<a href="./index.html">Português</a>
+{% endblock %}
 
- <title>{{ sage }} - Portuguese</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
+{% block header_text %}
+<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+{% endblock %}
 
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-pt.shtml" -->
+{% block menu %}
+<li id="intro"><a href="./index.html" title="">Index</a></li>
+{% endblock %}
 
+
+{% block content %}
 <div class="narrow" style="margin-top: 2em;">
 
 <h1>O que é Sage?</h1>
@@ -52,6 +54,5 @@ tópicos para a comunidade interessada nestes tópicos.</p>
 <p>Um tutorial (em construção!) de <a href="http://www.estudos.de/matematica/Sage/Sage1.html">Sage</a>, em português.</p>
 
 
-</div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+</div>
+{% endblock %}

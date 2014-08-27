@@ -1,17 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'base.html' %}
+{% set title = "Russian" %}
 
-<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
-<head>
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+{% block logo_title %}
+<a href="./index.html">Russian</a>
+{% endblock %}
 
- <title><!--#echo var="title"--> - Russian</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
+{% block header_text %}
+<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+{% endblock %}
 
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-ru.shtml" -->
+{% block menu %}
+<li id="intro"><a href="./index.html" title="">Index</a></li>
+<li id="documentation"><a href="./html/" title="">Documentation</a></li>
+<li id="pdf"><a href="./pdf/" title="">PDF</a></li>
+{% endblock %}
+
+
+{% block content %}
 
 <div class="narrow" style="margin-top: 2em;">
 
@@ -83,6 +88,5 @@ WIDTH="800" HEIGHT="500" ShowControls="1" ShowStatusBar="0" ShowDisplay="0" auto
 </OBJECT>
 </div>
 
-</div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+</div>
+{% endblock %}
