@@ -242,7 +242,8 @@ var random_link = function () {
     var href = rlinks[idx][0];
     var txt = rlinks[idx][1];
     var $a = $('<a>').attr('href', href).text(txt);
-    $("#random").text("Random Link: ")
+    $("#random").animate({ opacity: 0 }, "slow")
+                .text("Random Link: ")
                 .append($a)
                 .animate({ opacity: 1 }, "slow");
 }
