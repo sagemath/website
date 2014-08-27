@@ -1,29 +1,13 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'fr/_fr.html' %}
+{% set title = 'Documentation' %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - French</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-fr.shtml" -->
-
-
- 
+{% block content %}
  <h1 class="narrow">Documentation</h1> 
  
  <div class="narrow">
  
-<div>L&#39;intégralité de la documentation de Sage est <a href="http://sagemath.org/doc/" target="_blank">accessible ici</a>. Vous pouvez aussi aller
-  faire un tour sur <a href="http://sagemath-edu.fr" target="_blank">le wiki Sage pour
+<div>L&#39;intégralité de la documentation de Sage est <a href="{{ 'doc/'|prefix }}">accessible ici</a>.
+  Vous pouvez aussi aller faire un tour sur <a href="http://sagemath-edu.fr">le wiki Sage pour
   l&#39;éducation</a> et participer à la <a href="http://mail.irem.univ-mrs.fr/mailman/listinfo/sagemath-edu" target="_blank">liste de
   discussion Sage et enseignement </a>(sur laquelle toute les questions en
   français sont les bienvenues).</div> 
@@ -48,7 +32,4 @@
 </div> 
  </div>
 </div>
-
-<!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+{% endblock %}

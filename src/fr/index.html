@@ -1,21 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'fr/_fr.html' %}
+{% set title = 'French' %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="fr"
-      xml:lang="fr">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - French</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-fr.shtml" -->
-
+{% block content %}
  <h1 class="narrow">Sage French</h1>
 
  <div class="narrow">
@@ -50,11 +36,10 @@ fonctionnalités du bloc-note. </div>
 Sage est principalement disponible en anglais. Une partie de sa
 documentation a cependant été traduite en français:
 <ul> 
-<li><a href="http://www.sagemath.org/fr/html/a_tour_of_sage/" target="_blank">Sage en
-quelques mots</a> ;</li> 
-<li><a href="http://www.sagemath.org/fr/html/tutorial/" target="_blank">tutoriel</a>.</li> 
+<li><a href="{{ 'doc/fr/html/a_tour_of_sage/'|prefix }}">Sage en quelques mots</a> ;</li>
+<li><a href="{{ 'doc/fr/html/tutorial/'|prefix }}">tutoriel</a>.</li>
 </ul> 
-L&#39;intégralité de la documentation en anglais est <a href="http://www.sagemath.org/doc/" target="_blank">accessible
+L&#39;intégralité de la documentation en anglais est <a href="{{ 'doc/'|prefix }}">accessible
 ici</a>. Elle regroupe les versions originales (parfois plus à jour que
 leurs traductions) de ces documents, ainsi que plusieurs manuels qui
 n&#39;ont pas encore été traduits: <cite>Constructions</cite>,
@@ -77,6 +62,5 @@ Voir aussi le livre électronique en français
 
  </div>
 
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </div>
+{% endblock %}

@@ -1,99 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'fr/_fr.html' %}
+{% set title = 'Utilisation avancée des objets graphiques' %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="fr"
-      xml:lang="fr">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title><!--#echo var="title"--> - French</title><!--#include virtual="inc/htmlhead.shtml"-->
-
-
-
-<style>
-div.explanation {float: right; clear: right; margin-left: 51%;}
-
-div.explanation_centered {clear: both; padding-left: 15px; padding-right: 15px;}
-
-p.explanation {float: right; clear: right; width: 49%; padding-left: 15px;}
-
-p.explanation_centered {clear: both; width: 100%; padding-left: 15px; padding-right: 15px;}
-
-
-div.cell {float: left; clear: left; margin-right: -51%; padding-left: 15px;}
-
-h1, h3 {clear: both;}
-
-h3 {margin-top: 50px;}
-
-</style>
-
-
-
-
-
-<style type="text/css">#jsMath_test {font-size:200%}
-</style><style type="text/css">.math {font-family:serif; font-style:normal; font-weight:normal}
-.typeset {font-family:serif; font-style:normal; font-weight:normal; line-height:normal;}
-div.typeset {text-align:center; margin:1em 0px;}
-span.typeset {text-align:left}
-.typeset span {text-align:left; border:0px; margin:0px; padding:0px;}
-.typeset .normal {font-family:serif; font-style:normal; font-weight:normal}
-.typeset .size0 {font-size:50%}
-.typeset .size1 {font-size:60%}
-.typeset .size2 {font-size:70%}
-.typeset .size3 {font-size:85%}
-.typeset .size4 {font-size:100%}
-.typeset .size5 {font-size:120%}
-.typeset .size6 {font-size:144%}
-.typeset .size7 {font-size:173%}
-.typeset .size8 {font-size:207%}
-.typeset .size9 {font-size:249%}
-.typeset .cmr10 {font-family:jsMath-cmr10, serif}
-.typeset .cmbx10 {font-family:jsMath-cmbx10, jsMath-cmr10}
-.typeset .cmti10 {font-family:jsMath-cmti10, jsMath-cmr10}
-.typeset .cmmi10 {font-family:jsMath-cmmi10}
-.typeset .cmsy10 {font-family:jsMath-cmsy10}
-.typeset .cmex10 {font-family:jsMath-cmex10}
-.typeset .textit {font-family:serif; font-style:italic}
-.typeset .textbf {font-family:serif; font-weight:bold}
-.typeset .link {text-decoration:none}
-.typeset .error {font-size:10pt; font-style:italic; background-color:#FFFFCC; padding:1px; border:1px solid #CC0000}
-.typeset .blank {display:-moz-inline-box; overflow:hidden; border:0px none; width:0px; height:0px;}
-.typeset .spacer {}
-#jsMath_hiddenSpan {visibility:hidden; position:absolute; top:0px;left:0px; line-height:normal; text-indent:0px}
-#jsMath_message {position:fixed; bottom:1px; left:2px; background-color:#E6E6E6; border:solid 1px #959595; margin:0px; padding:1px 8px; z-index:102; color: black; font-size:small; width:auto;}
-#jsMath_panel {position:fixed; bottom:1.5em; right:1.5em; padding:.8em 1.6em; background-color:#DDDDDD; border:outset 2px; z-index:103; width:auto; color:black; font-size:10pt; font-style:normal}
-#jsMath_panel .disabled {color:#888888}
-#jsMath_panel .infoLink {font-size:85%}
-#jsMath_panel * {font-size:inherit; font-style:inherit; font-family:inherit; line-height:normal}
-#jsMath_panel div {background-color:inherit; color:inherit;}
-#jsMath_panel span {background-color:inherit; color:inherit;}
-#jsMath_panel td {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
-#jsMath_panel tr {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
-#jsMath_panel table {border:0px; padding:0px; margin:0px; background-color:inherit; color:inherit;}
-#jsMath_button {position:fixed; bottom:1px; right:2px; background-color:white; border:solid 1px #959595; margin:0px; padding:0px 3px 1px 3px; z-index:102; color:black; text-decoration:none; font-size:x-small; width:auto; cursor:pointer;}
-#jsMath_button * {padding:0px; border:0px; margin:0px; line-height:normal; font-size:inherit; font-style:inherit; font-family:inherit}
-#jsMath_global {font-style:italic;}
-#jsMath_float {position:absolute; top:0px; left:0px; max-width:80%; z-index:101; width:auto; height:auto;}
-#jsMath_float .drag {background-color:#DDDDDD; border:outset 1px; height:12px; font-size:1px;}
-#jsMath_float .close {background-color:#E6E6E6; border:inset 1px; width:8px; height:8px; margin:1px 2px;}
-#jsMath_float .source {background-color:#E2E2E2; border:outset 1px; width:auto; height:auto; padding:8px 15px; font-family:courier, fixed; font-size:90%}
-#jsMath_noFont .message {text-align: center; padding:.8em 1.6em; border:3px solid #DD0000; background-color:#FFF8F8; color: #AA0000; font-size:small; width:auto;}
-#jsMath_noFont .link {padding:0px 5px 2px 5px; border:2px outset; background-color:#E8E8E8; color:black; font-size:80%; width:auto; cursor:pointer;}
-#jsMath_PrintWarning .message {text-align:center; padding:.8em 1.6em; border:3px solid #DD0000; background-color: #FFF8F8; color: #AA0000; font-size:x-small; width:auto;}
-@media print { #jsMath_button {display:none}
-#jsMath_Warning {display:none}}
-@media screen { #jsMath_PrintWarning {display:none}}
-.typeset .scale {font-size:110%}
-</style></head><body onload="navbarjs.init();" onunload="navbarjs.cleanUp();">
-
-<!--#include virtual="inc/header-fr.shtml" -->
-
-
+{% block content %}
 <h1 align="center">Utilisation avancée des objets graphiques
 </h1>
 <h3 align="center" style ="font-size: 0.6em">auteur : Philippe Saadé (2008), psaade@gmail.com
@@ -904,10 +812,4 @@ We have $2006 = \sage{factor(2006)}$.
 <td><a id="footer-rss" title="RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
 </tr></tbody></table>
 </div>
-
-
- <!--#include virtual="inc/footer.shtml"-->
-
-
-</body></html>
-
+{% endblock %}

@@ -1,174 +1,159 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!--#include virtual="inc/variables.shtml"-->
+{% extends 'fr/_fr.html' %}
+{% set title = 'Components' %}
 
-<html xmlns="http://www.w3.org/1999/xhtml"
-      lang="en"
-      xml:lang="en">
-<head>
- <meta http-equiv="content-type"
-       content="text/html; charset=utf-8" />
-
- <title>{{ sage }} - French</title><!--#include virtual="inc/htmlhead.shtml"-->
-</head>
-
-<body onload="navbarjs.init();"
-      onunload="navbarjs.cleanUp();">
- <!--#include virtual="inc/header-fr.shtml" -->
-
+{% block content %}
  <h1 class="narrow">Components</h1>
 
  <div class="narrow">
 
 <ul> 
-  <li><a href="http://math-atlas.sourceforge.net/" target="_blank">ATLAS</a>: Librairie d&#39;algèbre linéaire configurée automatiquement</li> 
+  <li><a href="http://math-atlas.sourceforge.net/">ATLAS</a>: Librairie d&#39;algèbre linéaire configurée automatiquement</li> 
  
-  <li><a href="http://www.netlib.org/blas" target="_blank">BLAS</a>: Routines d&#39;algèbre linéaire en Fortran 77</li> 
+  <li><a href="http://www.netlib.org/blas">BLAS</a>: Routines d&#39;algèbre linéaire en Fortran 77</li> 
  
-  <li><a href="http://www.bzip.org/" target="_blank">Bzip2</a>: Compression de données</li> 
+  <li><a href="http://www.bzip.org/">Bzip2</a>: Compression de données</li> 
  
-  <li><a href="http://www.ifor.math.ethz.ch/%7Efukuda/cdd_home" target="_blank">Cddlib</a>: Méthode de double description de Motzkin</li> 
+  <li><a href="http://www.ifor.math.ethz.ch/%7Efukuda/cdd_home">Cddlib</a>: Méthode de double description de Motzkin</li> 
  
-  <li><a href="http://clisp.cons.org/" target="_blank">Common Lisp</a>: Un langage de programmation multiparadigme et généraliste</li> 
+  <li><a href="http://clisp.cons.org/">Common Lisp</a>: Un langage de programmation multiparadigme et généraliste</li> 
  
-  <li><a href="http://abel.ee.ucla.edu/cvxopt" target="_blank">CVXOPT</a>: Optimisation convexe, programmation linéaire, moindres carrés, etc.</li> 
+  <li><a href="http://abel.ee.ucla.edu/cvxopt">CVXOPT</a>: Optimisation convexe, programmation linéaire, moindres carrés, etc.</li> 
  
-  <li><a href="http://www.cython.org" target="_blank">Cython</a>: Extensions en C pour Python</li> 
+  <li><a href="http://www.cython.org">Cython</a>: Extensions en C pour Python</li> 
  
-  <li><a href="http://docutils.sourceforge.net/" target="_blank">Docutils</a>: un projet open-source pour convertir des formats textes dans des formats pratiques comme HTML ou LaTeX. Il inclut en particulier reStructuredText, le format facile à lire, facile à utiliser et wysiwyg.</li> 
+  <li><a href="http://docutils.sourceforge.net/">Docutils</a>: un projet open-source pour convertir des formats textes dans des formats pratiques comme HTML ou LaTeX. Il inclut en particulier reStructuredText, le format facile à lire, facile à utiliser et wysiwyg.</li> 
  
-  <li><a href="http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/index.html" target="_blank">mwrank</a>: Logiciel pour le calcul des groupes de Mordell-Weil groups des courbes elliptiques sur Q via 2-descente. Depuis Novembre 2007, mwrank fait parti du package eclib qui est inclus dans Sage.</li> 
+  <li><a href="http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/index.html">mwrank</a>: Logiciel pour le calcul des groupes de Mordell-Weil groups des courbes elliptiques sur Q via 2-descente. Depuis Novembre 2007, mwrank fait parti du package eclib qui est inclus dans Sage.</li> 
  
-  <li><a href="http://www.netlib.org/f2c/" target="_blank">F2c</a>: Converti le code Fortran 77 en C</li> 
+  <li><a href="http://www.netlib.org/f2c/">F2c</a>: Converti le code Fortran 77 en C</li> 
  
-  <li><a href="http://www.flintlib.org/" target="_blank">Flint</a>: Librairie rapide pour la théorie des nombres (Fast Library for Number Theory)</li> 
+  <li><a href="http://www.flintlib.org/">Flint</a>: Librairie rapide pour la théorie des nombres (Fast Library for Number Theory)</li> 
  
-  <li><a href="http://perso.ens-lyon.fr/damien.stehle/english.html#software" target="_blank">FpLLL</a>: Réduction des réseaux euclidien</li> 
+  <li><a href="http://perso.ens-lyon.fr/damien.stehle/english.html#software">FpLLL</a>: Réduction des réseaux euclidien</li> 
  
-  <li><a href="http://www.freetype.org/" target="_blank">FreeType</a>: Un logiciel de police libre, de qualité et portable</li> 
+  <li><a href="http://www.freetype.org/">FreeType</a>: Un logiciel de police libre, de qualité et portable</li> 
  
-  <li><a href="http://www.g95.org" target="_blank">G95</a>: Compilateur Fortran 95</li> 
+  <li><a href="http://www.g95.org">G95</a>: Compilateur Fortran 95</li> 
  
-  <li><a href="http://www-groups.dcs.st-and.ac.uk/%7Egap/" target="_blank">GAP</a>: Un logiciel d&#39;algèbre (Groups, Algorithms, Programming)</li> 
+  <li><a href="http://www-groups.dcs.st-and.ac.uk/%7Egap/">GAP</a>: Un logiciel d&#39;algèbre (Groups, Algorithms, Programming)</li> 
  
-  <li><a href="http://www.libgd.org/Main_Page" target="_blank">GD</a>: Une librairie de génération dynamique de graphique</li> 
+  <li><a href="http://www.libgd.org/Main_Page">GD</a>: Une librairie de génération dynamique de graphique</li> 
  
-  <li><a href="http://www.math.u-bordeaux.fr/%7Eliu/G2R/" target="_blank">Genus2reduction</a>: Librairie pour le calcul des réductions des courbes hyperelliptiques de genre 2.</li> 
+  <li><a href="http://www.math.u-bordeaux.fr/%7Eliu/G2R/">Genus2reduction</a>: Librairie pour le calcul des réductions des courbes hyperelliptiques de genre 2.</li> 
  
-  <li><a href="http://www.math.tu-berlin.de/%7Ejensen/software/gfan/gfan.html" target="_blank">Gfan</a>: Bases de Gröbner et variétés tropicales</li> 
+  <li><a href="http://www.math.tu-berlin.de/%7Ejensen/software/gfan/gfan.html">Gfan</a>: Bases de Gröbner et variétés tropicales</li> 
  
-  <li><a href="http://ljk.imag.fr/CASYS/LOGICIELS/givaro/" target="_blank">Givaro</a>: Librairie C++ pour l&#39;arithmétique et l&#39;algèbre</li> 
+  <li><a href="http://ljk.imag.fr/CASYS/LOGICIELS/givaro/">Givaro</a>: Librairie C++ pour l&#39;arithmétique et l&#39;algèbre</li> 
  
-  <li><a href="http://gforge.inria.fr/projects/ecm/" target="_blank">GMP-ECM</a>: Factorisation des entiers par l&#39;utilisation de courbes elliptiques</li> 
-  <li><a href="http://www.gnu.org/software/gnutls/" target="_blank">GNU TLS</a>: Réseaux sécurisés</li> 
+  <li><a href="http://gforge.inria.fr/projects/ecm/">GMP-ECM</a>: Factorisation des entiers par l&#39;utilisation de courbes elliptiques</li> 
+  <li><a href="http://www.gnu.org/software/gnutls/">GNU TLS</a>: Réseaux sécurisés</li> 
  
-  <li><a href="http://www.gnu.org/software/gsl/" target="_blank">GSL</a>: La librairie scientifique Gnu</li> 
+  <li><a href="http://www.gnu.org/software/gsl/">GSL</a>: La librairie scientifique Gnu</li> 
  
-  <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja</a>: Un engin de template</li> 
+  <li><a href="http://jinja.pocoo.org/">Jinja</a>: Un engin de template</li> 
  
-  <li><a href="http://www.math.union.edu/%7Edpvc/jsMath/" target="_blank">JsMath</a>: Une implémentation JavaScript de LaTeX</li> 
+  <li><a href="http://www.math.union.edu/%7Edpvc/jsMath/">JsMath</a>: Une implémentation JavaScript de LaTeX</li> 
  
-  <li><a href="http://www.cs.uwaterloo.ca/%7Ez4chen/iml.html" target="_blank">IML</a>: Librairie pour les matrices à coefficients entiers</li> 
+  <li><a href="http://www.cs.uwaterloo.ca/%7Ez4chen/iml.html">IML</a>: Librairie pour les matrices à coefficients entiers</li> 
  
-  <li><a href="http://ipython.scipy.org/" target="_blank">IPython</a>: Un shell Python interactif</li> 
+  <li><a href="http://ipython.scipy.org/">IPython</a>: Un shell Python interactif</li> 
  
-  <li><a href="http://www.netlib.org/lapack/" target="_blank">LAPACK</a>: Algèbre linéaire en Fortan 77</li> 
+  <li><a href="http://www.netlib.org/lapack/">LAPACK</a>: Algèbre linéaire en Fortan 77</li> 
  
-  <li><a href="http://pmmac03.math.uwaterloo.ca/%7Emrubinst/L_function_public/CODE/" target="_blank">Lcalc</a>: calculs des fonctions-L</li> 
+  <li><a href="http://pmmac03.math.uwaterloo.ca/%7Emrubinst/L_function_public/CODE/">Lcalc</a>: calculs des fonctions-L</li> 
  
-  <li><a href="http://directory.fsf.org/project/libgcrypt/" target="_blank">Libgcrypt</a>: librairie de cryptographie généraliste</li> 
+  <li><a href="http://directory.fsf.org/project/libgcrypt/">Libgcrypt</a>: librairie de cryptographie généraliste</li> 
  
-  <li><a href="http://www.gnupg.org/related_software/libgpg-error/" target="_blank">Libgpg-error</a>: Gestions des erreurs pour les composants GnuPG</li> 
+  <li><a href="http://www.gnupg.org/related_software/libgpg-error/">Libgpg-error</a>: Gestions des erreurs pour les composants GnuPG</li> 
  
-  <li><a href="http://www.libpng.org/pub/png/libpng.html" target="_blank">libpng</a>: Support des images bitmap</li> 
+  <li><a href="http://www.libpng.org/pub/png/libpng.html">libpng</a>: Support des images bitmap</li> 
  
-  <li><a href="http://www.linalg.org/" target="_blank">Linbox</a>: Librairie d&#39;algèbre linéaire en C++</li> 
+  <li><a href="http://www.linalg.org/">Linbox</a>: Librairie d&#39;algèbre linéaire en C++</li> 
  
-  <li><a href="http://m4ri.sagemath.org/" target="_blank">M4RI</a>: Algèbre linéaire sur le corps fini GF(2)</li> 
+  <li><a href="http://m4ri.sagemath.org/">M4RI</a>: Algèbre linéaire sur le corps fini GF(2)</li> 
  
-  <li><a href="http://matplotlib.sourceforge.net/" target="_blank">Matplotlib</a>: Librairie Python pour le graphisme</li> 
+  <li><a href="http://matplotlib.sourceforge.net/">Matplotlib</a>: Librairie Python pour le graphisme</li> 
  
-  <li><a href="http://maxima.sourceforge.net/" target="_blank">Maxima</a>: Logiciel de calcul formel</li> 
+  <li><a href="http://maxima.sourceforge.net/">Maxima</a>: Logiciel de calcul formel</li> 
  
-  <li><a href="http://www.selenic.com/mercurial/wiki/index.cgi" target="_blank">Mercurial</a>: Un gestionnaire de version libre</li> 
+  <li><a href="http://www.selenic.com/mercurial/wiki/index.cgi">Mercurial</a>: Un gestionnaire de version libre</li> 
  
-  <li><a href="http://moinmoin.wikiwikiweb.de/" target="_blank">MoinMoin Wiki</a>: Un wiki écrit en python</li> 
+  <li><a href="http://moinmoin.wikiwikiweb.de/">MoinMoin Wiki</a>: Un wiki écrit en python</li> 
  
-  <li><a href="http://perso.ens-lyon.fr/nathalie.revol/software.html" target="_blank">MPFI</a>: Librairie de précisions multiples pour les réels.</li> 
+  <li><a href="http://perso.ens-lyon.fr/nathalie.revol/software.html">MPFI</a>: Librairie de précisions multiples pour les réels.</li> 
  
-  <li><a href="http://www.mpfr.org/" target="_blank">MPFR</a>: Librairie C pour les floattants en précisions multiples avec correction des arrondis.</li> 
+  <li><a href="http://www.mpfr.org/">MPFR</a>: Librairie C pour les floattants en précisions multiples avec correction des arrondis.</li> 
  
-  <li><a href="http://mpir.org/" target="_blank">MPIR</a>: Librairie pour les entiers et les rationnels en pércision arbitraire.</li> 
+  <li><a href="http://mpir.org/">MPIR</a>: Librairie pour les entiers et les rationnels en pércision arbitraire.</li> 
  
   <li>ECLib:Cremona&#39;s Programme pour l&#39;énumération des courbes elliptiques</li> 
  
-  <li><a href="https://networkx.lanl.gov/wiki" target="_blank">NetworkX</a>: Une librairie Python pour la théorie des graphes.</li> 
+  <li><a href="https://networkx.lanl.gov/wiki">NetworkX</a>: Une librairie Python pour la théorie des graphes.</li> 
  
-  <li><a href="http://www.shoup.net/ntl/" target="_blank">NTL</a>: Une librairie C++ de théorie des nombres</li> 
+  <li><a href="http://www.shoup.net/ntl/">NTL</a>: Une librairie C++ de théorie des nombres</li> 
  
-  <li><a href="http://numpy.scipy.org/" target="_blank">Numpy</a>: Librairie python d&#39;algèbre linéaire numérique</li> 
+  <li><a href="http://numpy.scipy.org/">Numpy</a>: Librairie python d&#39;algèbre linéaire numérique</li> 
  
-  <li><a href="http://www.gnu.org/software/gnutls/" target="_blank">OpenCDK</a>: Un logiciel de cryptographie (Open Crypto Development Kit)</li> 
+  <li><a href="http://www.gnu.org/software/gnutls/">OpenCDK</a>: Un logiciel de cryptographie (Open Crypto Development Kit)</li> 
  
-  <li><a href="http://www.openopt.org/" target="_blank">OpenOpt</a>: Intégrations de solveurs pour l&#39;optimisation numérique en Python.</li> 
+  <li><a href="http://www.openopt.org/">OpenOpt</a>: Intégrations de solveurs pour l&#39;optimisation numérique en Python.</li> 
  
-  <li><a href="http://hep.itp.tuwien.ac.at/%7Ekreuzer/CY/CYpalp.html" target="_blank">PALP</a>: Une librairie pour l&#39;analyse des polytopes des réseaux</li> 
+  <li><a href="http://hep.itp.tuwien.ac.at/%7Ekreuzer/CY/CYpalp.html">PALP</a>: Une librairie pour l&#39;analyse des polytopes des réseaux</li> 
  
-  <li><a href="http://pari.math.u-bordeaux.fr/" target="_blank">PARI/GP</a>: Un logiciel de théorie des nombres</li> 
+  <li><a href="http://pari.math.u-bordeaux.fr/">PARI/GP</a>: Un logiciel de théorie des nombres</li> 
  
-  <li><a href="http://pexpect.sourceforge.net/" target="_blank">Pexpect</a>: Contrôle pseudo-tty pour python (émulation de terminaux)</li> 
+  <li><a href="http://pexpect.sourceforge.net/">Pexpect</a>: Contrôle pseudo-tty pour python (émulation de terminaux)</li> 
  
-  <li><a href="http://polybori.sourceforge.net/" target="_blank">PolyBoRi</a>: Librairie pour les polynômes sur les anneaux booléens</li> 
+  <li><a href="http://polybori.sourceforge.net/">PolyBoRi</a>: Librairie pour les polynômes sur les anneaux booléens</li> 
  
-  <li><a href="http://www.amk.ca/python/code/crypto" target="_blank">PyCrypto</a>: Une librairie python de cryptographie (Python Cryptography Toolkit)</li> 
+  <li><a href="http://www.amk.ca/python/code/crypto">PyCrypto</a>: Une librairie python de cryptographie (Python Cryptography Toolkit)</li> 
  
-  <li><a href="http://www.python.org/" target="_blank">Python</a>: Un langage interprété</li> 
+  <li><a href="http://www.python.org/">Python</a>: Un langage interprété</li> 
  
-  <li><a href="http://pynac.sagemath.org/" target="_blank">Pynac</a>: Manipulation symbolique avec des objets Python basé sur <a href="http://www.ginac.de/" target="_blank">GiNaC</a></li> 
+  <li><a href="http://pynac.sagemath.org/">Pynac</a>: Manipulation symbolique avec des objets Python basé sur <a href="http://www.ginac.de/">GiNaC</a></li> 
  
-  <li><a href="http://www.cs.berkeley.edu/%7Eyozo/" target="_blank">Qd</a>: Librairie pour le calcul Quad-double/Double-double</li> 
+  <li><a href="http://www.cs.berkeley.edu/%7Eyozo/">Qd</a>: Librairie pour le calcul Quad-double/Double-double</li> 
  
-  <li><a href="http://www.r-project.org/" target="_blank">R</a>: Un logiciel de statistiques</li> 
+  <li><a href="http://www.r-project.org/">R</a>: Un logiciel de statistiques</li> 
  
-  <li><a href="http://cnswww.cns.cwru.edu/%7Echet/readline/rltop.html" target="_blank">Readline</a>: Librairie Gnu pour l&#39;édition</li> 
+  <li><a href="http://cnswww.cns.cwru.edu/%7Echet/readline/rltop.html">Readline</a>: Librairie Gnu pour l&#39;édition</li> 
  
-  <li><a href="http://rpy.sourceforge.net/" target="_blank">Rpy</a>: Interface Python pour le logiciel de statistiques R</li> 
+  <li><a href="http://rpy.sourceforge.net/">Rpy</a>: Interface Python pour le logiciel de statistiques R</li> 
  
-  <li><a href="http://www.scipy.org/" target="_blank">Scipy</a>: Librairie Python pour le calcul scientifique</li> 
+  <li><a href="http://www.scipy.org/">Scipy</a>: Librairie Python pour le calcul scientifique</li> 
  
-  <li><a href="http://www.singular.uni-kl.de/" target="_blank">Singular</a>: Logiciel pour l&#39;algèbre commutative et non-commutative.</li> 
+  <li><a href="http://www.singular.uni-kl.de/">Singular</a>: Logiciel pour l&#39;algèbre commutative et non-commutative.</li> 
  
-  <li><a href="http://www.scons.org/" target="_blank">Scons</a>: Un logiciel pour construire d&#39;autres logiciels (Software CONstruction Tool)</li> 
+  <li><a href="http://www.scons.org/">Scons</a>: Un logiciel pour construire d&#39;autres logiciels (Software CONstruction Tool)</li> 
  
-  <li><a href="http://sphinx.pocoo.org/" target="_blank">Sphinx</a>: Générateur de documentation pour les fichiers python</li> 
+  <li><a href="http://sphinx.pocoo.org/">Sphinx</a>: Générateur de documentation pour les fichiers python</li> 
  
-  <li><a href="http://www.sqlalchemy.org/" target="_blank">SQLAlchemy</a>: Librairie Python pour les bases de données SQL et pour le Mapping objet-relationnel</li> 
+  <li><a href="http://www.sqlalchemy.org/">SQLAlchemy</a>: Librairie Python pour les bases de données SQL et pour le Mapping objet-relationnel</li> 
  
-  <li><a href="http://www.sqlite.org/" target="_blank">SQLite</a>: Base de donnnée relationnelle</li> 
+  <li><a href="http://www.sqlite.org/">SQLite</a>: Base de donnnée relationnelle</li> 
  
-  <li><a href="http://www.maths.bris.ac.uk/%7Emamjw/" target="_blank">Sympow</a>: Logiciel pour le calcul des fonctions-L</li> 
+  <li><a href="http://www.maths.bris.ac.uk/%7Emamjw/">Sympow</a>: Logiciel pour le calcul des fonctions-L</li> 
  
-  <li><a href="http://www.mathe2.uni-bayreuth.de/axel/symneu_engl.html" target="_blank">Symmetrica</a>: Théorie des représentations des groupes</li> 
+  <li><a href="http://www.mathe2.uni-bayreuth.de/axel/symneu_engl.html">Symmetrica</a>: Théorie des représentations des groupes</li> 
  
-  <li><a href="http://code.google.com/p/sympy/" target="_blank">Sympy</a>: Librairie Python pour le calcul symbolique</li> 
+  <li><a href="http://code.google.com/p/sympy/">Sympy</a>: Librairie Python pour le calcul symbolique</li> 
  
-  <li><a href="http://code.google.com/p/mpmath/" target="_blank">mpmath</a>: Une librairie Python pour les flotants en précision arbitraire</li> 
+  <li><a href="http://code.google.com/p/mpmath/">mpmath</a>: Une librairie Python pour les flotants en précision arbitraire</li> 
   
  
-  <li><a href="http://jedi.ks.uiuc.edu/%7Ejohns/raytracer/" target="_blank">Tachyon</a>: logiciel léger pour le dessin 3d</li> 
+  <li><a href="http://jedi.ks.uiuc.edu/%7Ejohns/raytracer/">Tachyon</a>: logiciel léger pour le dessin 3d</li> 
  
-  <li><a href="http://www.catb.org/%7Eesr/terminfo/" target="_blank">Termcap</a>: Simplification de l&#39;écriture de solutions portables en mode texte</li> 
+  <li><a href="http://www.catb.org/%7Eesr/terminfo/">Termcap</a>: Simplification de l&#39;écriture de solutions portables en mode texte</li> 
  
-  <li><a href="http://twistedmatrix.com/trac/" target="_blank">Twisted</a>: Librairie Python pour les réseaux</li> 
+  <li><a href="http://twistedmatrix.com/trac/">Twisted</a>: Librairie Python pour les réseaux</li> 
  
-  <li><a href="http://www.scipy.org/Weave" target="_blank">Weave</a>: Des outils pour inclure du C/C++ dans du code Python</li> 
+  <li><a href="http://www.scipy.org/Weave">Weave</a>: Des outils pour inclure du C/C++ dans du code Python</li> 
  
-  <li><a href="http://www.zlib.net/" target="_blank">Zlib</a>: Compression de données</li> 
+  <li><a href="http://www.zlib.net/">Zlib</a>: Compression de données</li> 
  
-  <li><a href="http://www.zope.org/Wikis/ZODB/" target="_blank">ZODB</a>: Une base de donnée orientée objet</li> 
+  <li><a href="http://www.zope.org/Wikis/ZODB/">ZODB</a>: Une base de donnée orientée objet</li> 
  </ul> 
  
 
- </div><!--#include virtual="inc/footer.shtml"-->
-</body>
-</html>
+ </div>
+{% endblock %}
