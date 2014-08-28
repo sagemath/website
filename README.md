@@ -39,6 +39,11 @@ Ideally, a courageous `make` should do everything for you
 and and additional `make open` opens up your web-browser
 to inspect the result.
 
+To test the website under realistic conditions,
+`make server` starts a minimal HTTP server on port 8181 and
+`make show` opens it in your web-browser.
+
+
 ### Continuous Build Mode
 
 For your convenience, there is a continuous build mode available: `make cont`
@@ -49,9 +54,9 @@ It depends on
   to pick up any changes in your local file-system.
 
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - `apt-get install xdotool` -
-  which does reload the open tab in your web-browser (by sending `Shift+Ctrl+R`)
+  which does reload the open tab in your web-browser (by sending `Shift+Ctrl+R`).
 
-Combined, less than a second after you "save" any file,
+Their combined effect is, that less than a second after you "save" a file,
 you can see the result without lifting a finger.
 
 Style
@@ -59,9 +64,9 @@ Style
 
 * HTML: Modern HTML5, but nothing too fancy please.
   One of the main design goals is that everything should still work
-  without any Javascript and no Flash.
+  without Javascript and no Flash.
 
-* Python: PEP8 is authoritative various Python scripts; except E501 (long lines).
+* Python: PEP8 is authoritative for various Python scripts -- except E501 (long lines).
   Just make sure your `pep8` and `autopep8` is up-to-date and
   do a healthy `make style` to clean up your code before you commit.
 
