@@ -44,9 +44,8 @@ def copy_aux_files():
     os.chdir("..")
 
     # contributors for the devmap
-    contrib_xml = "contributors.xml"
-    os.link(join("scripts", contrib_xml),
-            join(TARG, "res", contrib_xml))
+    for xml in ["geocode.xml", "contributors.xml"]:
+        os.link(join("scripts", xml), join(TARG, "res", xml))
 
 
 def render_task(arg):

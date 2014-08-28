@@ -91,7 +91,7 @@ function addDevCloud(dev, loc, point, work, descr, url, pix, size, trac) {
 
     if(point != null) { //only those who have locations
       //spn.setAttribute("class", "border");
-      GEvent.addDomListener(spn,"click",function() {
+      google.maps.event.addListener(spn,"click",function() {
         //map.zoomIn();
         if (map.getZoom() < 5) {map.setZoom(5);}
         map.openInfoWindowHtml(point, getInfoText(dev,loc,work,descr,url,pix,trac));
@@ -110,7 +110,7 @@ function addDevCloud(dev, loc, point, work, descr, url, pix, size, trac) {
     GEvent.addDomListener(spn,"mouseout", function() {
       this.setAttribute("class","");
     });
-*/
+    */
     cld.appendChild(spn);
 }
 
@@ -153,14 +153,14 @@ function addDevTable(dev, loc, point, work, descr, url, pix, trac) {
     if (point != null) {
       // event handler on click, mouseover, mouseout
 /*
-      GEvent.addDomListener(tr, 'mouseover', function(){
+      google.maps.event.addListener(tr, 'mouseover', function(){
         this.setAttribute('class', 'highlight');
       });
-      GEvent.addDomListener(tr, 'mouseout', function(){
+      google.maps.event.addListener(tr, 'mouseout', function(){
         this.setAttribute('class', '');
       });
 */
-      GEvent.addDomListener(tr,"click",function() {
+      google.maps.event.addListener(tr,"click",function() {
         if (map.getZoom() < 5) {map.setZoom(5);}
         map.openInfoWindowHtml(point, getInfoText(dev,loc,work,descrOld,url,pix,trac));
         scrollToElement(document.getElementById("mapzoom"));
@@ -240,13 +240,14 @@ function draw_population() {
     //windows, too. Unless someone has an idea, this is deactivated...
     markers = [];
     points  = [];
+    // console.log("DRAW_POPULATION " + markers.length);
     if (markers.length == 0) {
         //map.clearOverlays(); 
         map.overlayMapTypes.setAt( 0, null);
         clearContents();
-        mgr.clearMarkers();
+        //mgr.clearMarkers(); // FIXME
 
-        //GLog.write("markers.length = " + markers.length);
+        // console.log("markers.length = " + markers.length);
 
         for (var i = 0; i < contribs.length; i++) {
         //for (var i = 0; i < 15; i++) {
@@ -282,14 +283,14 @@ function draw_population() {
               points.push(pointOrig);
           }
         }
-        mgr.addMarkers(markers, 1);
+        //mgr.addMarkers(markers, 1);
     } else { // never hit until now, see caching info above
         for (var i = 0; i < markers.length; i++) {
           markers[i].setPoint(jitterPoint(points[i], 1));
         }
     }
     if (map.getZoom() > 16) { map.setZoom(16); }
-    mgr.refresh();
+    //mgr.refresh();
 
     
     //GLog.write("markers.length = " + markers.length + " -- marker manager count= " + mgr.getMarkerCount(zoom_level));
@@ -297,7 +298,7 @@ function draw_population() {
 
 // our population of Sage developers
 function population() {
-  downloadUrl(contributors_xml, function(data) {
+  $.get(contributors_xml, function(data) {
     //var xml = google.maps.Xml.parse(data);
     contribs = data.documentElement.getElementsByTagName("contributor");
     draw_population();
@@ -382,7 +383,7 @@ function load() {
     });
 
     if (geocode == null) {
-      downloadUrl(geocode_xml, function(data) {
+      $.get(geocode_xml, function(data) {
         //var xmldata = google.maps.Xml.parse(data);
         geocode = data.documentElement.getElementsByTagName("loc");
         population();
