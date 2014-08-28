@@ -10,51 +10,35 @@
 
 
 {% block content %}
-<h1>
-Sage developers around the world
-</h1>
+<h1>Sage developers around the world</h1>
 
 <div class="padding center narrow">
-    This is a map of all contributors to the Sage project. There are currently
-    <span id="contrib-nb">{{ devs.number() }}</span> contributors in
-    <span id="contrib-places">{{ devs.places() }}</span> different places
-    from all around the world.
+    This map shows many contributors of the Sage project from all around the world.<br/>
+    There are currently <span id="contrib-nb">{{ devs.number() }}</span> in
+    <span id="contrib-places">{{ devs.places() }}</span> different places.
 </div>
 
 <div class="mapzoom" id="mapzoom">
     Map Zoom:
-    <a href="javascript:;" onclick="zoomTo(&quot;ALL&quot;);"> Earth </a>
-    -
-    <a href="javascript:;" onclick="zoomTo(&quot;USA&quot;);"> USA </a>
-    (
-    <a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);"> UW </a>
-    ,
-    <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);"> West </a>
-    ,
-    <a href="javascript:;" onclick="zoomTo(&quot;USAE&quot;);"> East </a>
-    ) -
-    <a href="javascript:;" onclick="zoomTo(&quot;Europe&quot;);"> Europe </a>
-    -
-    <a href="javascript:;" onclick="zoomTo(&quot;Africa&quot;);"> Africa </a>
-    -
-    <a href="javascript:;" onclick="zoomTo(&quot;Asia&quot;);"> Asia </a>
-    -
-    <a href="javascript:;" onclick="zoomTo(&quot;SAM&quot;);"> S. America </a>
-    -
-    <a href="javascript:;" onclick="zoomTo(&quot;Australia&quot;);"> Australia </a>
+    <a href="javascript:;" onclick="zoomTo(&quot;ALL&quot;);">Earth</a> -
+    <a href="javascript:;" onclick="zoomTo(&quot;USA&quot;);">USA</a> (
+    <a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);">UW</a>,
+    <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);">West </a> ,
+    <a href="javascript:;" onclick="zoomTo(&quot;USAE&quot;);">East</a>) -
+    <a href="javascript:;" onclick="zoomTo(&quot;Europe&quot;);">Europe</a> -
+    <a href="javascript:;" onclick="zoomTo(&quot;Africa&quot;);">Africa</a> -
+    <a href="javascript:;" onclick="zoomTo(&quot;Asia&quot;);">Asia</a> -
+    <a href="javascript:;" onclick="zoomTo(&quot;SAM&quot;);">S. America</a> -
+    <a href="javascript:;" onclick="zoomTo(&quot;Australia&quot;);">Australia</a>
 </div>
  
 <div class="center" id="devmap">
-  
 <noscript>
-  
 <div class="center large narrow">
    Sorry, here would be an interactive map, but it seems that you have disabled Java-Script. Please
    enable it and reload!
-  
 </div>
 </noscript>
- 
 </div>
  
 <div id="devcloudp">
@@ -64,12 +48,6 @@ Sage developers around the world
 <h2>
 Sage Developers
 </h2>
-<!--
- <div class="center txt small">
-  click on row to show in map
- </div>
--->
- 
 <table class="devlist">
   <colgroup>
 <col width="25%"/>
@@ -94,6 +72,5 @@ Sage Developers
 <div class="narrow small center">
   If you are missing, please email the webmaster your name, location, university/work, what you
   did, perhaps your homepage and a small picture.
- 
 </div>
 {% endblock %}
