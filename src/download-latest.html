@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Development Release" %}
-{% set mirrordir = "devel" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
 <div class="txt large narrow bluebg round border" style="font-size:200%; background: red; font-color: white;">
@@ -16,7 +16,7 @@
   </strong>
 #}
   <br/>
-   <!--#include virtual="./inc/mirrorselector-src.shtml"-->
+   {{ mirrors("devel") }}
  </div>
  </div>
 

@@ -1,6 +1,8 @@
-.PHONY: publications render devmap clean show server style test cont
+.PHONY: publications render devmap clean show server style test cont mirrors
 
 ARGS ?= ""
+
+MIRROR_FILES := scripts/mirror_list scripts/metalink.helper scripts/torrent.helper templates/all-mirrors.html templates/mirrorselector-src.html templates/mirrorselector.html
 
 default: render
 
@@ -9,13 +11,19 @@ clean:
 
 devmap: templates/devs.html
 
-templates/devs.html: scripts/geocode.xml scripts/geocode.py scripts/contributors.xml
+templates/devs.html: scripts/geocode.xml scripts/geocode.py conf/contributors.xml
 	python scripts/geocode.py
+
+mirrors: $(MIRROR_FILES)
+
+$(MIRROR_FILES): scripts/mirror_manager.py conf/mirrors.yaml
+	bash scripts/mirror_manager_wrapper.sh
+
 
 publications:
 	$(MAKE) -C publications
 
-render: clean publications devmap
+render: clean mirrors publications devmap
 	python render.py $(ARGS)
 
 server:

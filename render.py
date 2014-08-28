@@ -8,7 +8,7 @@
 
 import os
 import sys
-from os.path import join, normpath, exists, islink
+from os.path import join, normpath, exists, islink, basename
 from glob import glob
 import datetime
 import shutil
@@ -44,8 +44,13 @@ def copy_aux_files():
     os.chdir("..")
 
     # contributors for the devmap
-    for xml in ["geocode.xml", "contributors.xml"]:
-        os.link(join("scripts", xml), join(TARG, "res", xml))
+    for xml in [join("scripts", "geocode.xml"),
+                join("conf", "contributors.xml")]:
+        os.link(xml, join(TARG, "res", basename(xml)))
+
+    # mirror_manager.py files
+    for mm in ["metalink.helper", "torrent.helper", "mirror_list"]:
+        os.link(join("scripts", mm), join(TARG, mm))
 
 
 def render_task(arg):
@@ -155,7 +160,10 @@ def render():
                 #log("mkdir %s" % dst)
                 os.makedirs(dst)
 
-        pool.map(render_task, [(_, root) for _ in filenames])
+        # bad error handling, disabled parallelization
+        #pool.map(render_task, [(_, root) for _ in filenames])
+        for task in [(_, root) for _ in filenames]:
+            render_task(task)
 
     log("processing: done", nl=False)
     os.chdir("..")

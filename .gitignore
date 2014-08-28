@@ -23,4 +23,12 @@ src/old/
 *.iws
 
 
+scripts/metalink.helper
+scripts/mirror_list
+scripts/mirror-log/
+scripts/torrent.helper
 templates/devs.html
+templates/all-mirrors.html
+templates/mirrorselector-src.html
+templates/mirrorselector.html
+

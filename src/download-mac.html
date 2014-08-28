@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% set title = "Download Binaries for Apple Mac OSX" %}
-{% set mirrordir = "osx" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
 
@@ -13,7 +13,7 @@
  <div class="txt large bluebg round narrow">
 
  <div class="txt border">
-  <!--#include virtual="./inc/mirrorselector.shtml"-->
+  {{ mirrors("osx") }}
  </div>
 
  </div>

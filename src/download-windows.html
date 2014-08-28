@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Download Binaries for Microsoft Windows" %}
-{% set mirrordir = "win" %}
+{% from "mirrorselector.html" import mirrors %}
 {% set trademark = True %}
 
 {% block content %}
@@ -13,7 +13,7 @@
  <div class="narrow large txt bluebg round">
 
  <div class="txt border ">
-  <!--#include virtual="./inc/mirrorselector.shtml"-->
+  {{ mirrors("win") }}
  </div>
  </div>
 

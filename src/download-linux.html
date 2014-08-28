@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Download for Linux" %}
-{% set mirrordir = "linux" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
  <h1 class="narrow">Binaries for Linux</h1>
@@ -14,7 +14,7 @@
  <div class="txt large narrow bluebg round">
 
  <div class="txt border ">
-  <!--#include virtual="./inc/mirrorselector.shtml"-->
+  {{ mirrors("linux") }}
  </div>
  </div>
 

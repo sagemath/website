@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Download Live CD" %}
-{% set mirrordir = "livecd" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
 
@@ -9,7 +9,7 @@
 
  <div class="narrow large txt bluebg round">
  <div class="txt border ">
-  <!--#include virtual="./inc/mirrorselector.shtml"-->
+  {{ mirrors("livecd") }}
  </div>
  </div>
 

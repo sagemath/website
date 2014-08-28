@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Download Binaries for Solaris" %}
-{% set mirrordir = "solaris" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
  <h1 class="narrow">Download Binaries for Solaris</h1>
@@ -19,12 +19,8 @@
  </div>
  
  <div class="txt large narrow bluebg round">
-<!--  <a href="./bin/solaris/">Download Solaris Binaries</a> -->
  <div class="txt border ">
-<!--#if expr="$version-solaris-bin == NONE" -->
-  <strong>The current version of the Solaris build is {{ version_solaris_bin }}.</strong> <br/>
-<!--#endif -->
-  <!--#include virtual="./inc/mirrorselector.shtml"-->
+{{ mirrors("solaris") }}
  </div>
  </div>
 

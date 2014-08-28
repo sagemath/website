@@ -34,7 +34,7 @@ gkey = "AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA"
 goodKeys = ["name", "location", "work", "description", "url", "pix", "size", "jitter", "trac"]
 
 # point to datafiles in local path, ./www/res/... should be best
-ack = parse("contributors.xml")
+ack = parse(join("..", "conf", "contributors.xml"))
 geocode_xml_outfn = "geocode.xml"
 devmap_tmpl = os.path.join("..", "templates", "devs.html")
 devlist = None

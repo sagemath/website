@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Source Code Distribution" %}
-{% set mirrordir = "src" %}
+{% from "mirrorselector-src.html" import mirrors %}
 
 {% block content %}
  <h1 class="narrow">Source Code Distribution</h1>
@@ -11,7 +11,7 @@
   <strong>The newest source code release is {{ version_src }}. 
   </strong>   
   <br/>
-   <!--#include virtual="./inc/mirrorselector-src.shtml"-->
+   {{ mirrors("src") }}
  </div>
  </div>
 

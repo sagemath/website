@@ -26,7 +26,7 @@ ts = time.strftime('%Y-%U', time.gmtime())  # Year-Week
 # if timestamp is given, use it instead
 if len(sys.argv) > 1:
     ts = sys.argv[1]
-dir = '../mirror-log/'
+dir = './mirror-log/'
 file = dir + 'mirror_manager_%s.log' % ts
 output = dir + 'mirror_manager_%s.png' % ts
 #website = urllib2.urlopen('http://sage.math.washington.edu/home/schilly/mm/mirror_manager.log')

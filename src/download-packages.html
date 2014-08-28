@@ -1,6 +1,6 @@
 {% extends 'download-tmpl.html' %}
 {% set title = "Packages (SPKG)" %}
-{% set mirrordir = "spkg" %}
+{% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
  <h1 class="narrow">Packages (SPKG)</h1>
@@ -8,22 +8,22 @@
  <div class="narrow txt">
   Sage consists of a selected set of packages which are well tested and integrated into the Sage
   framework. Please have a look at the <a href="http://wiki.sagemath.org/Sage_Spkg_Tracking">Sage
-  Wiki tracking SPKGs</a>. There is also a <a href="./links-components.html">list of links of Sage
+  Wiki tracking SPKGs</a>. There is also a <a href="links-components.html">list of links of Sage
   components</a>.
  </div>
 
  <div class="narrow txt">
   <ul>
-   <li><b><a href="./packages/upstream">Upstream Packages (new Git layout)</a> (since version 6.0)</a></b></li>
-   <li><a href="./packages/standard/">Standard</a></li>
-   <li><a href="./packages/optional/">Optional</a></li>
-   <li><a href="./sagedb/">Huge</a></li>
-   <li><a href="./packages/experimental/">Experimental</a></li>
+   <li><b><a href="packages/upstream">Upstream Packages (new Git layout)</a> (since version 6.0)</a></b></li>
+   <li><a href="packages/standard/">Standard</a></li>
+   <li><a href="packages/optional/">Optional</a></li>
+   <li><a href="sagedb/">Huge</a></li>
+   <li><a href="packages/experimental/">Experimental</a></li>
   </ul>
  </div>
 
 <div class="narrow txt">
 Please use one of the mirrors:
-<!--#include virtual="./inc/mirrorselector-src.shtml"-->
+{{ mirrors("spkg") }}
 </div>
 {% endblock %}

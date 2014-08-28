@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% set title = "Download Binaries" %}
+{% from "mirrorselector.html" import mirrors %}
 {% set mirrordir = "" %}
 
 {% block content %}
@@ -20,7 +21,7 @@
 
  <div class="narrow txt border bluebg round">
   <div  class="large txt">  
-    <!--#include virtual="./inc/mirrorselector.shtml"-->
+    {% include "mirrorselector.html" %}
   </div>
  </div>
 
