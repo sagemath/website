@@ -107,6 +107,8 @@ md = markdown.Markdown()
 
 @j2.evalcontextfilter
 def filter_markdown(eval_ctx, text):
+    if eval_ctx.autoescape:
+        return md.convert(j2.escape(stream))
     return md.convert(text)
 
 
