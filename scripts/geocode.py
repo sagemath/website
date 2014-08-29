@@ -42,7 +42,7 @@ tracSearch = "http://trac.sagemath.org/sage_trac/search?q="
 
 devmap = minidom.Document()
 
-#def getDevlist():
+# def getDevlist():
 #    devlists = devmap.getElementsByTagName(r'tbody')
 #    for d in devlists:
 #        if d.getAttribute('id') == r'devlist':
@@ -66,14 +66,14 @@ def writeToDevmap():
     #    d.parentNode.removeChild(d)
     #devlist = getDevlist()
     #p = devlist.parentNode
-    #p.removeChild(devlist)
+    # p.removeChild(devlist)
     tbody = devmap.createElement(r'tbody')
     tbody.setAttribute(r'id', r'devlist')
     devmap.appendChild(tbody)
     devlist = tbody
 
     # fixing empty tag
-    #for d in devmap.getElementsByTagName(r'div'):
+    # for d in devmap.getElementsByTagName(r'div'):
     #    if d.getAttribute('id') == r'devcloud':
     #        devcloud = d
     devcloud = devmap.createElement(r'div')
@@ -187,8 +187,8 @@ def getGeo(loc):
     geo = (urllib.urlopen(url)).read()
     import json
     geo = json.loads(geo)
-    acc = "6" # no idea
-    #print geo
+    acc = "6"  # no idea
+    # print geo
     loc = geo["results"][0]["geometry"]["location"]
     lng = str(loc["lng"])
     lat = str(loc["lat"])
@@ -226,7 +226,7 @@ def getStatistics():
         # get statistics for description
     nbContribs = len(ack.getElementsByTagName("contributor"))
     nbPlaces = len(out.getElementsByTagName("loc"))
-    #for c in devmap.getElementsByTagName('span'):
+    # for c in devmap.getElementsByTagName('span'):
     #    if c.getAttribute("id") == "contrib-nb":
     #        c.replaceChild(devmap.createTextNode(str(nbContribs)), c.childNodes[0])
     #    elif c.getAttribute("id") == "contrib-places":
@@ -264,7 +264,7 @@ print "file written to %s" % devmap_tmpl
 # utils.delFirstLine(devmap_xml)
 import codecs
 with codecs.open(devmap_tmpl, "w", "utf8") as outf:
-    outf.write("{% macro number() %}" +str(nbContribs) + "{% endmacro %}")
+    outf.write("{% macro number() %}" + str(nbContribs) + "{% endmacro %}")
     outf.write("{% macro places() %}" + str(nbPlaces) + "{% endmacro %}")
     outf.write("""{% macro devs() %}
     """)

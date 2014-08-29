@@ -28,6 +28,7 @@ TARG = "www"  # assumption: completely empty www
 TARG_FILES = join(TARG, "files")
 j2env = None
 
+
 def copy_aux_files():
     """
     This copies auxiliary files into the output file tree.

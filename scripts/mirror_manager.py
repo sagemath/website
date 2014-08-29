@@ -23,7 +23,7 @@ or better the wrapper script to ensure, that only on instance runs at the same t
 COPYRIGHT: Harald Schilly <harald.schilly@gmail.com>, 2009, Vienna, Austria
 LICENSE: GPL2+
 '''
-
+from __future__ import unicode_literals
 import urllib2
 # import subprocess #we use curl, urllib2.urlopen doesn't work :(
 import re
@@ -34,6 +34,8 @@ import os
 from os.path import join, normpath
 import sys
 import time
+import yaml
+import codecs
 
 # safeguad, don't run script two times at the same time
 # there is something very odd, probably nfs file system and
@@ -61,6 +63,7 @@ TIMESTAMP_RE = re.compile(r'<pre>(.*)</pre>')
 DELIM_RE = re.compile(r' / ')
 
 # where the output file is written to
+MIRROR_YAML = join("..", "conf", "mirrors.yaml")
 OUTDIR = join("..", "templates")
 TARGETS = [join(OUTDIR, 'mirrorselector.html')]
 TARGETS_SPKG = [join(OUTDIR, 'mirrorselector-src.html')]
@@ -92,25 +95,25 @@ CATEGORY = {
 }
 
 
-class Mirror():
+class Mirror(object):
 
     """
     mirror class contains all info needed to
     contact and analyze a mirror
     """
 
-    def __init__(self, name, cat, flag, url, active, country='', priority=50):
+    def __init__(self, name, url, cat, active=True, flag=None, country=None, priority=50):
         if cat not in CATEGORY:
             raise RuntimeError('category %s does not exist' % cat)
         if not isinstance(active, bool):
             raise RuntimeError('type(active) is not bool')
-        self.name = name
+        self.name = unicode(name)
         assert cat in CATEGORY.keys()
         self.cat = cat
         assert url.endswith("/")
         self.url = url
         self.active = active
-        if country is None or country == '':
+        if country is None:
             self.country = url.split(r'/')[2].split(r'.')[-1]
         else:
             self.country = country
@@ -122,62 +125,13 @@ class Mirror():
         f = '<img src="http://www.sagemath.org/pix/flags/%s.png" width="22" height="14"></img>' % self.flag
         return '<a href="%s{{ mirrordir }}/index.html">%s %s</a>\n' % (self.url, f, n)
 
+    def __unicode__(self):
+        x =  u"Mirror '{name}' in {country}".format(**self.__dict__)
+        #.encode("utf8")
+        return x
 
-# base URLs of all mirrors [("name", "category", "flag", "url", "active"), ...]
-# active: True or False (False means that it will be ignored)
-# priority for metalinks, default 50; country for metalinks geolocation hint (default end of server url)
-MIRRORS = [
-    #Mirror("UW2 (WA, USA)", "na", "us", "http://sage.math.washington.edu/sage/", True, priority=1, country='us'),
-    Mirror("University of Washington, Seattle, WA, USA", "na", "us", "http://boxen.math.washington.edu/home/sagemath/sage-mirror/", True, priority=1, country='us'),
-    #Mirror("CoralCDN", "g", 1, "http://sage.math.washington.edu.nyud.net/sage/", True),
-    Mirror("Harvard, Boston, MA, USA", "na", "us", "http://modular.fas.harvard.edu/sage/", True, priority=10, country='us'),
-    Mirror("James Madison University, VA, USA", "na", "us", "http://modular.math.jmu.edu/", True, country='us'),
-    Mirror("XMission, Utah, USA", "na", "us", "http://mirrors.xmission.com/sage/", True, country='us', priority=75),
-    Mirror("Technocozy, MD, USA", "na", "us", "http://sage.technocozy.com/", True, country='us'),
-    Mirror("Simon Fraser University, B.C., Canada", "na", "ca", "http://www.cecm.sfu.ca/sage/", True),
-    Mirror("SciPy, TX, USA", "na", "us", "http://sage.scipy.org/sage/", True, country='us'),
-    # utk mirror lost due to shutdown request by uni administration
-    #Mirror("University of Tennessee, TN, USA", "na", "us", "http://mira.sunsite.utk.edu/sagemath/", True, country='us', priority=20),
-    Mirror("Universidade Federal do Paraná, Brazil", "sa", "br", "http://sagemath.c3sl.ufpr.br/", True),
-    Mirror("SWITCHmirror, Zurich, Switzerland", "e", "ch", "http://mirror.switch.ch/mirror/sagemath/", True, priority=90),
-    Mirror("Technical University, Prague, Czech", "e", "cz", "http://ftp.sh.cvut.cz/MIRRORS/sagemath/", True),
-    Mirror("Freie Universität Berlin, Germany", "e", "de", "ftp://ftp.fu-berlin.de/unix/misc/sage/", True),
-    Mirror("University of Sydney", "aus", "au", "http://echidna.maths.usyd.edu.au/sage/", True, country='au'),
-    Mirror("AARNet Research Network", "aus", "au", "http://mirror.aarnet.edu.au/pub/sage/", True),
-    Mirror("Riken, Japan", "a", "jp", "http://ftp.riken.jp/sagemath/", True),
-    Mirror("Yandex, Russia", "a", "ru", "http://mirror.yandex.ru/mirrors/sage.math.washington.edu/", True),
-    Mirror("KAIST, Republic of Korea", "a", "kr", "http://ftp.kaist.ac.kr/sage/", True),
-    Mirror("Yongbok, Republic of Korea", "a", "kr", "http://mirror.yongbok.net/sage/", True),
-    Mirror("Stellenbosch University, South Africa", "af", "za", "ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/", True),
-    Mirror("Jember University, Java, Indonesia", "a", "id", "http://mirror.unej.ac.id/mirrors/sage/", True),
-    Mirror("RedIRIS Research Network, Spain", "e", "es", "http://sunsite.rediris.es/mirror/sagemath/", True),
-    Mirror("Polytechnic of Namibia", "af", "na", "http://sagemath.polytechnic.edu.na/", True),
-    Mirror("University of Cape Town, South Africa", "af", "za", "http://ftp.leg.uct.ac.za/pub/packages/sage/", True, priority=10),
-    Mirror("Mirrorservice Network, United Kingdom", "e", "gb", "http://www.mirrorservice.org/sites/www.sagemath.org/", True, country='uk'),
-    Mirror("Universidade do Porto, Portugal", "e", "pt", "http://mirrors.fe.up.pt/pub/sage/", True),
-    Mirror("Εθνικό Μετσόβιο Πολυτεχνείο, Greece", "e", "gr", "http://ftp.ntua.gr/pub/sagemath/", True),
-    Mirror("Wuala (Content Distribution Network)", "e", "ch", "http://content.wuala.com/contents/phatsphere/edoras/sage-mirror/", False),
-    Mirror("Tertiary Education Network, Johannesburg, South Africa", "af", "za", "http://sagemath.mirror.ac.za/", True),
-    Mirror("Yaşar Üniversitesi, Turkey", "a", "tr", "http://sage.yasar.edu.tr/", True),
-    Mirror("Indian Institute of Technology Madras, India", "a", "in", "http://ftp.iitm.ac.in/sage/", True),
-    Mirror("Université Pierre et Marie Curie, Paris, France", "e", "fr", "http://www-ftp.lip6.fr/pub/math/sagemath/", True),
-    Mirror("Université du Québec à Montréal, Québec, Canada", "na", "ca", "http://mirror.clibre.uqam.ca/sage/", True),
-    Mirror("Tunisia", "af", "tn", "http://sagemath.mirror.tn/", True),
-    Mirror("Nanyang Technological University, Singapore", "a", "sg", "http://jambu.spms.ntu.edu.sg/sage/", True),
-    Mirror("GARR, Italy", "e", "it", "http://sage.mirror.garr.it/mirrors/sage/", True),
-    Mirror("Tallinn, Estonia", "e", "ee", "http://servingzone.com/mirrors/sage/", True),
-    Mirror("Sofia, Bulgaria", "e", "bg", "http://sage.Igor.onlineDirect.bg/", True),
-    # name should include the university by request!
-    Mirror("Tsinghua University, Beijing, China", "a", "cn", "http://mirrors.tuna.tsinghua.edu.cn/sagemath/", True),
-    Mirror("WIDE Project Tsukuba NOC, Japan", "a", "jp", "http://ftp.tsukuba.wide.ad.jp/software/sage/", True),
-    Mirror("University of São Paulo, Brazil", "sa", "br", "http://linorg.usp.br/sage/", True),
-    Mirror("University of Science and Technology, China", "a", "cn", "http://mirrors.ustc.edu.cn/sagemath/", True),
-    Mirror("Huazhong University of Science and Technology, China", "a", "cn", "http://mirrors.hustunique.com/sagemath/", True),
-    Mirror('Hub.co Services Inc., NY, USA', 'na', 'us', "http://mirrors.hub.co/sage/", True),
-    Mirror('Huazhong University of Science and Technology, Hubei, China', 'a', 'cn', "http://mirror.hust.edu.cn/sagemath/", True),
-    Mirror('Google Datacenter, EU', 'e', 'eu', 'http://www-eu-1.sagedev.org/mirror/', True),
-    Mirror("ASIS, Theran, IR", "a", "ir", "http://sage.asis.io/", True)
-]
+
+MIRRORS = [Mirror(**m) for m in yaml.load(codecs.open(MIRROR_YAML, "r", "utf8"))]
 
 TOTAL_NUMBER = len(MIRRORS)
 
@@ -229,7 +183,7 @@ def info(txt, width=127):
 
 def log(mirrors):
     ts = '%4s%2s%2s-%2s:%2s:%2s' % time.gmtime()[0:6]
-    f = open(LOGFILE, 'a')
+    f = codecs.open(LOGFILE, 'a', "utf8")
     try:
         f.write(ts)
         f.write(';')
@@ -512,18 +466,18 @@ def publish(good, good_spkg, TS):
     global OUTPUT
     info('publishing')
     for t in TARGETS:
-        with  open(t, 'w') as F:
+        with codecs.open(t, 'w', "utf8") as F:
             F.write(out)
         OUTPUT += 'published mirrorselector page to %s\n' % t
     for t in TARGETS_SPKG:
-        with open(t, 'w') as F:
+        with codecs.open(t, 'w', "utf8") as F:
             F.write(out_spkg)
         OUTPUT += 'published mirrorselector page for src/spkg to %s\n' % t
     for t in TARGETS_LIST:
-        with open(t, 'w') as F:
+        with codecs.open(t, 'w', "utf8") as F:
             F.write(out_list)
         OUTPUT += 'published mirror_list page to %s\n' % t
-    with open(OUTPUT_FILE, 'w') as F:
+    with codecs.open(OUTPUT_FILE, 'w', "utf8") as F:
         F.write(OUTPUT)
 
 
@@ -533,7 +487,7 @@ def metalink_helper(M):
     out = '\n'.join([' '.join([m.country, str(m.priority), ' % ', m.url]) for m in reversed(M)])
     out += '\n'
     for MF in METALINK_FILE:
-        with open(MF, 'w') as F:
+        with codecs.open(MF, 'w', "utf8") as F:
             F.write(out)
     global OUTPUT
     OUTPUT += out
@@ -542,7 +496,7 @@ def metalink_helper(M):
     # torrent.helper
     out = '\n'.join([m.url for m in M])
     for TF in TORRENT_FILE:
-        with open(TF, "w") as F:
+        with codecs.open(TF, "w", "utf8") as F:
             F.write(out)
     OUTPUT += out
 
@@ -552,7 +506,7 @@ def metalink_helper(M):
 if __name__ == '__main__':
     info('Mirror Management Script started %s' % time.asctime(time.gmtime()))
 
-    with open(MIRRORS_HTML, 'w') as MH:
+    with codecs.open(MIRRORS_HTML, 'w', "utf8") as MH:
         MH.write(mirrors_html())
     TS = fetch_timestamps()
     TS = extract_timestamps(TS)
