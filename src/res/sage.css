@@ -144,9 +144,8 @@ text-align: center;
 margin-left: auto;
 margin-right: auto;
 }
-#footer table td {
-padding: 3px;
-}
+#footer table td { padding: 3px 5px; text-align: center; }
+#footer table tr:nth-child(2) td { padding: 3px; }
 tr#links a {
 background: transparent url("../pix/page-graphics.gif") no-repeat;
 width: 80px;
