@@ -109,9 +109,8 @@ var sage = {
                 if (active >= 0) {
                     if (active == idx) {
                         return;
-                    } else {
-                        menus[active].removeClass(cn);
                     }
+                    menus[active].removeClass(cn);
                 }
                 evt.preventDefault();
                 evt.stopPropagation();
@@ -138,3 +137,19 @@ $(sage.setDownloadUrls);
 $(sage.scrollNavbarInit);
 $(sage.touchMenu);
 $(sage.tracklinks);
+
+/* MathJax */
+$(function () {
+  var head = document.getElementsByTagName("head")[0], script;
+  script = document.createElement("script");
+  script.type = "text/x-mathjax-config";
+  script[(window.opera ? "innerHTML" : "text")] =
+    "MathJax.Hub.Config({\n" +
+    "  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] }\n" +
+    "});"
+  head.appendChild(script);
+  script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+  head.appendChild(script);
+});
