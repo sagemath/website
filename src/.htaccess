@@ -58,6 +58,7 @@ RewriteRule ^(.*)$ http://www.sagemath.org/$1 [R=301,L]
 # reporting an issue
 Redirect 301 /report-issue http://ask.sagemath.org
 #old pages are moved - this catches wrong links
+Redirect 301 /old http://boxen.math.washington.edu/home/sagemath/www/
 Redirect 301 /ack.html http://www.sagemath.org/development-ack.html
 Redirect 301 /dev.html http://www.sagemath.org/development.html
 Redirect 301 /art/ http://www.sagemath.org/old/art/
