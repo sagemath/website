@@ -133,13 +133,8 @@ var sage = {
     }
 };
 
-$(sage.setDownloadUrls);
-$(sage.scrollNavbarInit);
-$(sage.touchMenu);
-$(sage.tracklinks);
-
 /* MathJax */
-$(function () {
+function initMathjax() {
   var head = document.getElementsByTagName("head")[0], script;
   script = document.createElement("script");
   script.type = "text/x-mathjax-config";
@@ -152,4 +147,78 @@ $(function () {
   script.type = "text/javascript";
   script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
   head.appendChild(script);
-});
+}
+
+/* G+ */
+function initGplus() {
+  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+  po.src = 'https://apis.google.com/js/plusone.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+}
+
+/* Twitter */
+function initTwitter(d,s,id){
+  var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+  if(!d.getElementById(id)){
+    js=d.createElement(s);
+    js.id=id;
+    js.src=p+'://platform.twitter.com/widgets.js';
+    fjs.parentNode.insertBefore(js,fjs);
+  }
+}
+
+/* facebook app */
+function initFacebook(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=109731879648&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-66100-10']);
+_gaq.push(['_setDomainName("none")']);
+_gaq.push(['_setAllowLinker(true)']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+function googleAnalytics() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+}
+
+var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.startgif', '1,1579950,4,10051,"div#histatsC {position: absolute;top:0px;left:0px;}body>div#histatsC {position: fixed;}"']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+
+function initHistats() {
+  var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+  hs.src = ('http://s10.histats.com/js15_gif_as.js');
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+}
+
+function initClustermap() {
+ function _cantload() {
+   var img = document.getElementById("clustrMapsImg");
+   img.onerror = null;
+   img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
+   document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
+ }
+ var img = document.getElementById("clustrMapsImg");
+ img.onerror = _cantload;
+}
+
+$(sage.setDownloadUrls);
+$(sage.scrollNavbarInit);
+$(sage.touchMenu);
+$(googleAnalytics);
+$(sage.tracklinks);
+$(initHistats);
+$(initMathjax);
+$(initGplus);
+$(function() { initTwitter(document, 'script', 'twitter-wjs');});
+$(function() { initFacebook(document, 'script', 'facebook-jssdk');});
+$(initClustermap);

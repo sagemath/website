@@ -241,127 +241,43 @@ or
 <tr style="height: 70px;">
 <td align="right" colspan="1">
 <a style="background:none;" href="http://www4.clustrmaps.com/counter/maps.php?url=http://www.sagemath.org" id="clustrMapsLink">
-<img width="65" height="42" src="http://www4.clustrmaps.com/counter/index2.php?url=http://www.sagemath.org" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" />
+<img width="65" height="42"
+     src="http://www4.clustrmaps.com/counter/index2.php?url=http://www.sagemath.org"
+     style="border:0px;"
+     alt="Locations of visitors to this page"
+     title="Locations of visitors to this page"
+     id="clustrMapsImg" />
 </a>
-<script type="text/javascript">
-function cantload() {
-img = document.getElementById("clustrMapsImg");
-img.onerror = null;
-img.src = "http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg";
-document.getElementById("clustrMapsLink").href = "http://www2.clustrmaps.com";
-}
-img = document.getElementById("clustrMapsImg");
-img.onerror = cantload;
-</script>
 </td>
-<td/>
-<td align="center" colspan="1" style="padding-bottom: 10px;vertical-align: center">
-
-<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.startgif', '1,1579950,4,10051,"div#histatsC {position: absolute;top:0px;left:0px;}body>div#histatsC {position: fixed;}"']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('http://s10.histats.com/js15_gif_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="http://www.histats.com" alt="free web stats" target="_blank" ><div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
+<td></td>
+<td align="center" style="padding-bottom: 10px;vertical-align: center">
+<div id="histats_counter"></div>
+<noscript>
+<a href="http://www.histats.com" alt="free web stats" target="_blank" >
+<div id="histatsC"><img border="0" src="http://s4is.histats.com/stats/i/1579950.gif?1579950&103"></div></a>
 </noscript>
-<!-- Histats.com  END  -->
-
 </td>
-<td/>
-<td align="left" colspan="1" style="padding-bottom: 0px; vertical-align: center">
-{#
-<!-- new google translate -->
-<!-- <div id="google_translate_element"></div> -->
-<!--<a style="color: grey;" href="./uptime.html">uptime</a>-->
-<!--
-<a name="fb_share" type="button_count" share_url="http://www.sagemath.org" href="http://www.facebook.com/sharer.php">Share</a>
--->
-#}
-
+<td></td>
+<td align="left" style="padding-bottom: 0px; vertical-align: center; horizontal-align: center;">
 <g:plusone size="medium" href="http://sagemath.org"></g:plusone>
 </td>
-<td/>
-
+<td></td>
 <td>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=109731879648&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 <div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
 </td>
-<td/>
+<td></td>
 <td>
 <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';
-fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
-</script>
 </td>
-
 </tr>
 </table>
 </div>
-
-{#
-<script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-66100-10'}, 'google_translate_element');
-}
-</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-#}
 
 {%- set trademark = trademark|default(False) -%}
 {% if trademark %}
 <div class="trademark">Microsoft and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</div>
 {% endif %}
-
-<!-- google plusone (needs to be after last <g:plusone> tag -->
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>
-
-{#
-<!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-LCNH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-LCNH');</script>
-<!-- End Google Tag Manager -->
-#}
-
-<!-- google analytics -->
-<script type="text/javascript">
- var _gaq = _gaq || [];
- _gaq.push(['_setAccount', 'UA-66100-10']);
- _gaq.push(['_setDomainName("none")']);
- _gaq.push(['_setAllowLinker(true)']);
- _gaq.push(['_trackPageview']);
- _gaq.push(['_trackPageLoadTime']);
-
- (function() {
-   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-   ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
- })();
-</script>
 
 {%- block footer -%}
 {%- endblock -%}
