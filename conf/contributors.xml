@@ -1542,7 +1542,6 @@ groups; braid groups"
  location="Changsha, Hunan, China"
  description="documentation"
  url="http://www.ai7.org" />
-</contributors>
 <contributor
  name="Vincent Knight"
  work="Lecturer, Cardiff University"
@@ -1550,7 +1549,6 @@ groups; braid groups"
  description="Game Theory"
  url="http://www.vincent-knight.com/"
  trac="vinceknight"/>
-</contributors>
 <contributor
  name="James Campbell"
  work="Student, Cardiff University"
