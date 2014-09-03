@@ -290,8 +290,8 @@ contributor
  url="http://www-sop.inria.fr/members/Nathann.Cohen/"
  description="Graph Theory;Linear Programming;documentation"
  trac="ncohen" />
-<contributor 
- name="Jenny Cooley" 
+<contributor
+ name="Jenny Cooley"
  work="undergraduate student, University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="elliptic curves" />
@@ -462,7 +462,7 @@ contributor
  description="pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation"/>
 <contributor
  name="Andrzej Giniewicz"
- url="http://www.im.pwr.wroc.pl/~giniew/" 
+ url="http://www.im.pwr.wroc.pl/~giniew/"
  work="Ph.D. student, Institute of Mathematics and Computer Science, Wroclaw University of Technology"
  location="Wroclaw, Poland"
  description="small build fixes" pix="http://www.sagemath.org/pix/aginiewicz.jpg"
@@ -563,7 +563,7 @@ contributor
 <contributor
  name="Marshall Hampton"
  work="Minnesota Duluth"
- location="Duluth, MN, USA" 
+ location="Duluth, MN, USA"
  description="gfan interface; polyhedra; phcpack interface and spkg; biopython package maintainer"
  url="http://www.d.umn.edu/~mhampton/index.html" pix="./pix/mhampton.jpeg"
  trac="mhampton"/>
@@ -594,7 +594,7 @@ contributor
 <contributor
  name="David Harvey"
  work="NYU"
- location="NYU, NY, USA" 
+ location="NYU, NY, USA"
  description="p-adic heights; arithmetic architecture; Bernoulli numbers mod p; FLINT; other random things"
  trac="dmharvey"/>
 <contributor
@@ -988,12 +988,12 @@ groups; braid groups"
  description="cryptography; graph theory; release management; website maintainer; miscellaneous bug fixes; documentation work"
  url="http://sage.math.washington.edu/home/mvngu/"
  trac="mvngu"/>
-<contributor 
-  name="Andrey Novoseltsev" 
-  work="University of Alberta, postdoc" 
-  location="Edmonton, Canada" 
-  description="toric geometry" 
-  url="http://www.math.ualberta.ca/~novoseltsev/" 
+<contributor
+  name="Andrey Novoseltsev"
+  work="University of Alberta, postdoc"
+  location="Edmonton, Canada"
+  description="toric geometry"
+  url="http://www.math.ualberta.ca/~novoseltsev/"
   trac="novoselt" />
 <contributor
  name="Christopher Olah"
@@ -1110,7 +1110,7 @@ groups; braid groups"
  trac="Snark"/>
 <contributor
  name="Yi Qiang"
- work="undergraduate student employee, University of Washington" 
+ work="undergraduate student employee, University of Washington"
  location="University of Washington, WA, USA"
  description="Distributed Sage (in progress)"/>
 <contributor
@@ -1542,4 +1542,20 @@ groups; braid groups"
  location="Changsha, Hunan, China"
  description="documentation"
  url="http://www.ai7.org" />
+</contributors>
+<contributor
+ name="Vincent Knight"
+ work="Lecturer, Cardiff University"
+ location="Cardiff, United Kingdom"
+ description="Game Theory"
+ url="http://www.vincent-knight.com/"
+ trac="vinceknight"/>
+</contributors>
+<contributor
+ name="James Campbell"
+ work="Student, Cardiff University"
+ location="Cardiff, United Kingdom"
+ description="Game Theory"
+ url="http://www.jamescampbell.org.uk/"
+ trac="jcampbell"/>
 </contributors>
