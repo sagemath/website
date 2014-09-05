@@ -228,6 +228,13 @@ contributor
  url="http://www.paulbutler.org"
  trac="pbutler"/>
 <contributor
+ name="James Campbell"
+ work="Student, Cardiff University"
+ location="Cardiff, United Kingdom"
+ description="Game Theory"
+ url="http://www.jamescampbell.org.uk/"
+ trac="jcampbell"/>
+<contributor
  name="Oriol Castejón"
  work="Universitat Politècnica de Catalunya"
  location="C/ Jordi Girona, 31 08034 Barcelona, Spain"
@@ -754,6 +761,13 @@ contributor
  location="University of Washington, WA, USA"
  description="documentation; graph theory"
  trac="ekirkman"/>
+<contributor
+ name="Vincent Knight"
+ work="Lecturer, Cardiff University"
+ location="Cardiff, United Kingdom"
+ description="Game Theory"
+ url="http://www.vincent-knight.com/"
+ trac="vinceknight"/>
 <contributor
  name="David Kohel"
  work="Professor, University of Sydney"
@@ -1542,18 +1556,4 @@ groups; braid groups"
  location="Changsha, Hunan, China"
  description="documentation"
  url="http://www.ai7.org" />
-<contributor
- name="Vincent Knight"
- work="Lecturer, Cardiff University"
- location="Cardiff, United Kingdom"
- description="Game Theory"
- url="http://www.vincent-knight.com/"
- trac="vinceknight"/>
-<contributor
- name="James Campbell"
- work="Student, Cardiff University"
- location="Cardiff, United Kingdom"
- description="Game Theory"
- url="http://www.jamescampbell.org.uk/"
- trac="jcampbell"/>
 </contributors>
