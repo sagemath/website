@@ -45,7 +45,7 @@ def copy_aux_files():
     os.chdir("..")
 
     # contributors for the devmap
-    for xml in [join("scripts", "geocode.xml"),
+    for xml in [join("conf", "geocode.xml"),
                 join("conf", "contributors.xml")]:
         os.link(xml, join(TARG, "res", basename(xml)))
 

@@ -35,8 +35,8 @@ goodKeys = ["name", "location", "work", "description", "url", "pix", "size", "ji
 
 # point to datafiles in local path, ./www/res/... should be best
 ack = parse(join("..", "conf", "contributors.xml"))
-geocode_xml_outfn = "geocode.xml"
-devmap_tmpl = os.path.join("..", "templates", "devs.html")
+geocode_xml_outfn = join("..", "conf", "geocode.xml")
+devmap_tmpl = join("..", "templates", "devs.html")
 devlist = None
 tracSearch = "http://trac.sagemath.org/sage_trac/search?q="
 
@@ -80,12 +80,22 @@ def writeToDevmap():
     devcloud.setAttribute("id", "devlist")
     devcloud.appendChild(devmap.createTextNode(" "))
 
+    def sort_by_name(node):
+        names = node.getAttribute("name").split(" ", 1)
+        if len(names) > 1:
+            return names[1].strip(), names[0].strip()
+        else:
+            return names
+
     # write from ack file, and we don't need geolocations
-    for c in ack.getElementsByTagName("contributors")[0].childNodes:
-        if c.nodeType != ack.ELEMENT_NODE:
-            continue
-        if c.tagName != "contributor":
-            continue
+    nodes = ack.getElementsByTagName("contributors")[0].childNodes
+    nodes = filter(lambda _ : _.nodeType == ack.ELEMENT_NODE and 
+                              _.tagName == "contributor", nodes)
+    for c in sorted(nodes, key = sort_by_name):
+        #if c.nodeType != ack.ELEMENT_NODE:
+        #    continue
+        #if c.tagName != "contributor":
+        #    continue
         dev = c.getAttribute("name")
         loc = c.getAttribute("location")
         work = c.getAttribute("work")
@@ -214,8 +224,8 @@ def addGeo(place):
         else:  # code must be 200!
             # insert the same for matching later
             g.setAttribute("location", place)
-            g.setAttribute("loclat", geo[2])
-            g.setAttribute("loclng", geo[3])
+            g.setAttribute("loclng", geo[2])
+            g.setAttribute("loclat", geo[3])
             out.appendChild(g)
     else:
         print "cache"

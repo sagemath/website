@@ -11,7 +11,7 @@ clean:
 
 devmap: templates/devs.html
 
-templates/devs.html: scripts/geocode.xml scripts/geocode.py conf/contributors.xml
+templates/devs.html: conf/geocode.xml scripts/geocode.py conf/contributors.xml
 	python scripts/geocode.py
 
 mirrors: $(MIRROR_FILES)
