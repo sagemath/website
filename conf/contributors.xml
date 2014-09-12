@@ -182,8 +182,8 @@ contributor
  trac="robertwb" />
 <contributor
  name="Volker Braun"
- work="Dublin Institute for Advanced Studies"
- location="Dublin, Ireland"
+ work="Mathematical Institute, Oxford University"
+ location="Oxford, UK"
  description="Toric geometry package; polyhedra and PPL interface; triangulations" />
 <contributor
  name="Michael Brickenstein"
@@ -746,8 +746,8 @@ contributor
  trac="SimonKing" />
 <contributor
  name="Keshav Kini"
- work="Research Assistant, School of Physical and Mathematical Sciences, Nanyang Technological University"
- location="21 Nanyang Link, Singapore"
+ work="Graduate Student, UT Austin"
+ location="Austin, USA"
  description="documentation"
  url="http://www1.spms.ntu.edu.sg/~krkini/"
  trac="kini"/>
@@ -1047,10 +1047,10 @@ groups; braid groups"
  trac="jhpalmieri"/>
 <contributor
  name="Dmitrii Pasechnik"
- work="Assistant Professor, School of Physical &amp; Mathematical Sciences, Nanyang Technological University"
- location="21 Nanyang Link, Singapore"
+ work="Department of Computer Science, Oxford University"
+ location="Oxford, UK"
  description="packaging; commutative algebra; group theory"
- url="http://www.ntu.edu.sg/home/dima/"
+ url="http://users.ox.ac.uk/~coml0531/"
  trac="dimpase"/>
 <contributor
  name="Javier López Peña"
