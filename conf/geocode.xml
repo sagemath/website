@@ -16,7 +16,6 @@
 <loc location="823 St Charles Ave, New Orleans, LA 70118, United States" loclat="29.9453813" loclng="-90.0718634"/>
 <loc location="University of Canterbury, New Zealand" loclat="-43.5280656" loclng="172.5846007"/>
 <loc location="MI 48109, USA" loclat="42.285638" loclng="-83.716730"/>
-<loc location="Dublin, Ireland" loclat="53.3441040" loclng="-6.2674937"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5042700" loclng="8.4724100"/>
 <loc location="64293 Darmstadt, Germany" loclat="49.8776347" loclng="8.6285365"/>
@@ -79,6 +78,7 @@
 <loc location="Cambridge, USA" loclat="42.375392" loclng="-71.118487"/>
 <loc location="Tyndall Avenue, Bristol BS8 1TH, UK" loclat="51.4588934" loclng="-2.6027921"/>
 <loc location="Friedrich-Schiller-University Jena, Germany" loclat="50.9287229" loclng="11.5814352"/>
+<loc location="Austin, USA" loclat="30.267153" loclng="-97.7430608"/>
 <loc location="Cardiff, United Kingdom" loclat="51.481581" loclng="-3.17909"/>
 <loc location="163 Avenue de Luminy 13009 Marseille, France" loclat="43.2393443" loclng="5.4376800"/>
 <loc location="Poland, Katowice" loclat="50.2648919" loclng="19.0237815"/>
@@ -112,7 +112,7 @@
 <loc location="Karlsruhe, Germany" loclat="49.0080848" loclng="8.4037563"/>
 <loc location="Brazil" loclat="-14.2350040" loclng="-51.9252800"/>
 <loc location="Leiden, Netherlands" loclat="52.161087" loclng="4.490153"/>
-<loc location="21 Nanyang Link, Singapore" loclat="1.3418140" loclng="103.6819290"/>
+<loc location="Oxford, UK" loclat="51.7520209" loclng="-1.2577263"/>
 <loc location="London E1 4NS UK" loclat="51.5215548" loclng="-0.0748548"/>
 <loc location="Curitiba, Brazil" loclat="-25.4283563" loclng="-49.2732515"/>
 <loc location="Reed College, 3203 SE Woodstock Blvd, Portland, OR 97202, USA" loclat="45.4732760" loclng="-122.6291680"/>
