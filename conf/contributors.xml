@@ -1556,4 +1556,10 @@ groups; braid groups"
  location="Changsha, Hunan, China"
  description="documentation"
  url="http://www.ai7.org" />
+<contributor
+ name="Amit Jamadagni"
+ work="Student, Dept. Mathematics, BITS Pilani"
+ location="Goa, India"
+ description="bug fixes"
+ trac="amitjamadagni"/>
 </contributors>
