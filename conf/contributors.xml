@@ -669,6 +669,12 @@ contributor
  location="San Diego, CA 92093, USA"
  description="Examples" />
 <contributor
+ name="Amit Jamadagni"
+ work="Student, Dept. Mathematics, BITS Pilani"
+ location="Goa, India"
+ description="bug fixes"
+ trac="amitjamadagni"/>
+<contributor
  name="Peter Jeremy"
  location="Sydney, Australia"
  description="porting packages to FreeBSD"
