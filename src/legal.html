@@ -26,4 +26,17 @@ You also cannot buy herbs here; we don't sell any kind of product.
 [Maybe Wikipedia helps?](http://en.wikipedia.org/wiki/Sage)
 {% endfilter %}
 </div>
+
+<h2 class="narrow">Export Control Classification Number (ECCN)</h2>
+
+<div class="narrow">
+{% filter markdown %}
+Sage doesn't have a formally reviewed ECCN.
+Since everything of Sage and all of its components are open-sourced,
+[ECCN 5D002](http://www.access.gpo.gov/bis/ear/txt/ccl5-pt2.txt)
+fits best via the 
+[TSU exception in EAR 740.13(e)](http://www.access.gpo.gov/bis/ear/txt/740.txt),
+which applies to software containing or designed for use with encryption software that is publicly available as open source.
+{% endfilter %}
+</div>
 {% endblock %}
