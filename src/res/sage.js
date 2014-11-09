@@ -178,7 +178,7 @@ function initFacebook(d, s, id) {
 
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-66100-10']);
-_gaq.push(['_setDomainName("none")']);
+_gaq.push(['_setDomainName("sagemath.org")']);
 _gaq.push(['_setAllowLinker(true)']);
 _gaq.push(['_trackPageview']);
 _gaq.push(['_trackPageLoadTime']);
