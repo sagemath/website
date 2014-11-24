@@ -2,6 +2,8 @@
 {% set title = "404 Error" %}
 
 {% block header %}
+{# repeat CSS absolute, because it could happen in arbitrary subdirectories! #}
+<link href='http://www.sagemath.org/res/sage.css' type="text/css" rel="stylesheet" />
 <style type="text/css">
 input.c1 {font-size:85%;vertical-align:middle;}
 </style>
