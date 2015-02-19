@@ -13,10 +13,10 @@
 
 
 {% block content %}
- <h1 class="center">Search Sage Resources</h1><noscript>
+ <h1 class="center">Search {{ sage }} Resources</h1><noscript>
  <div>
   You have Java-Script disabled. You can also search here: <a href=
-  "http://www.google.com/coop/cse?cx=017384562579735769466%3As27byrlaffu">Sage Infobase Search</a>
+  "http://www.google.com/coop/cse?cx=017384562579735769466%3As27byrlaffu">{{ sage }} Infobase Search</a>
  </div></noscript>
 
  <div class="center small narrow">
@@ -28,7 +28,7 @@
    Examples: <a href="#"
         onclick=
         'javascript:searchControl.execute(&quot;introduction sage&quot;);return false;'>Introduction
-        Sage</a>  &middot;  <a href="#"
+        {{ sage }}</a>  &middot;  <a href="#"
         onclick='javascript:searchControl.execute(&quot;install&quot;);return false;'>Install</a>  &middot; 
         <a href="#"
         onclick='javascript:searchControl.execute(&quot;plot 3d&quot;);return false;'>Plot 3d</a>  &middot; 
@@ -105,7 +105,7 @@
 
  <div class="center small">
   <a href="http://www.google.com/coop/cse?cx=017384562579735769466%3As27byrlaffu">
-      Sage Infobase Search</a> -
+      {{ sage }} Infobase Search</a> -
      tell  webmaster about your public content
  </div>
 {% endblock %}

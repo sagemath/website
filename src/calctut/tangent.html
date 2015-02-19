@@ -116,7 +116,7 @@ g.show(xmin=0, xmax=3, ymin=-1, ymax=9)
   do is to make the change in x (designated by h) equal to zero in order to find
   the function's slope at a single point. Exchanging 0 for h does not work well,
   however, since that would make the formula simply (f(x + 0) - f(x))/0, which is
-  not of much help (0/0 = ?). Let us consult Sage, though, and see if there is a
+  not of much help (0/0 = ?). Let us consult {{ sage }}, though, and see if there is a
   way to factor out h before setting it equal to zero. In a new cell, copy or type
   the following code.
   </p>
@@ -136,7 +136,7 @@ var('x, h')
   <p>
   The result should look like this: ((x + h)^3/2 - x^3/2)/h. With h still in the
   denominator, though, replacing it with zero would not be a good idea. Luckily,
-  Sage has a way for us to pull all variables from the denominator to the numerator,
+  {{ sage }} has a way for us to pull all variables from the denominator to the numerator,
   which is just what we need. In another cell, type and evaluate the following:
   </p>
 <pre class="tutcode">

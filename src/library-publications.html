@@ -1,20 +1,20 @@
 {% extends 'base.html' %}
-{% set title = "Publications Citing Sage" %}
+{% set title = "Publications Citing {{ sage }}" %}
 
 {% block content %}
-  <h1>Publications Citing Sage</h1>
+  <h1>Publications Citing {{ sage }}</h1>
 
 <div class="normal justify bodypadding">
 See also the list of publications citing
-<a href="./library-publications-combinat.html">Sage-Combinat</a>.
+<a href="./library-publications-combinat.html">{{ sage }}-Combinat</a>.
 <p/>
-Below is a list of publications that cite Sage and/or the Sage
+Below is a list of publications that cite {{ sage }} and/or the {{ sage }}
 cluster. This list is also available in
 <a href="./files/bibliography-sage.bib">BibTeX</a> format. The publications
 listed in each section are sorted in chronological order. Where two or more
 items are published in the same year, these items are sorted alphabetically
-by the authors' last names. See the section <a href="#CiteSage">Citing Sage</a>
-for information on how to cite Sage and/or the Sage cluster in your publications.
+by the authors' last names. See the section <a href="#CiteSage">Citing {{ sage }}</a>
+for information on how to cite {{ sage }} and/or the {{ sage }} cluster in your publications.
 </div>
 
 {% import 'publications-general.html' as pub %}
@@ -43,33 +43,33 @@ for information on how to cite Sage and/or the Sage cluster in your publications
   {{ pub.preprints() }}
   </div>
 
-<h2><a name="CiteSage">Citing Sage</a></h2>
+<h2><a name="CiteSage">Citing {{ sage }}</a></h2>
 
   <div class="justify small bodypadding">
     <div class="txt">
-      If you use Sage in a book, paper, website, etc., please
+      If you use {{ sage }} in a book, paper, website, etc., please
       <a href="../contact.html">contact us</a> about details of the
       publication, e.g. where it is published, provide a link to your
-      publication. Please reference Sage as
+      publication. Please reference {{ sage }} as
       <a href="http://wiki.sagemath.org/Publications_using_SAGE">described
       here</a>.
     </div>
 
     <div class="txt">
-      Also, be sure to find out which components of Sage, e.g. NumPy,
+      Also, be sure to find out which components of {{ sage }}, e.g. NumPy,
       PARI, GAP, Sage-Combinat, that your calculation uses and
       properly attribute those systems. If you are unsure, ask on the
       <a href=
       "http://groups.google.com/group/sage-support">sage-support</a>
-      mailing list. Similarly, consider finding out who wrote the Sage
+      mailing list. Similarly, consider finding out who wrote the {{ sage }}
       code you are using and acknowledge them explicitly as well.
     </div>
 
     <div class="txt">
       If your work (book, paper, website, etc.) is supported by the
-      Sage cluster, please <a href="../contact.html">contact
+      {{ sage }} cluster, please <a href="../contact.html">contact
       us</a>. Please also acknowledge the grant that supports the
-      purchase of the Sage cluster by adding the following acknowledgment
+      purchase of the {{ sage }} cluster by adding the following acknowledgment
       to your work: National Science Foundation Grant No. DMS-0821725.
     </div>
   </div>

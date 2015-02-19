@@ -15,18 +15,18 @@
        title="Search sagemath.org" />
  <link href='{{ "res/sage.css"|prefix }}' type="text/css" rel="stylesheet" />
  <link rel="shortcut icon" href="{{ 'pix/sageicon.png'|prefix }}" type="image/x-icon" />
- <link rel="alternate" type="application/rss+xml" title="Sage RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+ <link rel="alternate" type="application/rss+xml" title="{{ sage }} RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
  <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
  <script src='{{ "res/sage.js"|prefix }}' type="text/javascript"></script>
  <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
  <link href='http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
 
- <meta property="og:title" content="Sage Mathematical Software System - Sage"/>
+ <meta property="og:title" content="{{ sage }} Mathematical Software System - Sage"/>
  <meta property="og:type" content="website"/>
  <meta property="og:url" content="http://www.sagemath.org/"/>
  <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
- <meta property="og:site_name" content="Sage Mathematical Software System"/>
- <meta property="og:description" content="Sage is a free and open-source mathematical software system."/>
+ <meta property="og:site_name" content="{{ sage }} Mathematical Software System"/>
+ <meta property="og:description" content="{{ sage }} is a free and open-source mathematical software system."/>
 {%- block header -%}
 {%- endblock -%}
 </head>
@@ -35,8 +35,8 @@
 <div id="header" class="small">
 <div id="header-logo">
  <a href="{{ 'index.html'|prefix }}">
-  <img width="250" height="65" alt="Sage Logo" class="round raised"
-       src="{{ logo|prefix }}" title="Sage Mathematical Software" />
+  <img width="250" height="65" alt="{{ sage }} Logo" class="round raised"
+       src="{{ logo|prefix }}" title="{{ sage }} Mathematical Software" />
  </a>
 {%- block logo_title -%}{%- endblock -%}
 </div>
@@ -117,7 +117,7 @@ or
  <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
  <li><a href="{{ 'development-ack.html'|prefix }}">Acknowledgments</a></li>
  {# <li><a href="http://wiki.sagemath.org/gsoc10">Get Involved</a></li> #}
- <li><a href="http://wiki.sagemath.org/Workshops">Sage Days</a></li>
+ <li><a href="http://wiki.sagemath.org/Workshops">{{ sage }} Days</a></li>
  <li class="section"><a href="{{ 'legal.html'|prefix }}">Legal Notice</a></li>
 </ul>
 </li>
@@ -130,8 +130,8 @@ or
  <li><a href="{{ 'tour-research.html'|prefix }}">Research</a></li>
  <li><a href="{{ 'tour-benchmarks.html'|prefix }}">Benchmarks</a></li>
  <li class="section"><a href="http://wiki.sagemath.org/interact/">Interactive Plots (wiki)</a></li>
- <li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of Sage</a></li>
- <li class="section"><a href="http://interact.sagemath.org" class="ext">Sage Interact Community</a></li>
+ <li><a href="http://www.sagemath.org/doc/a_tour_of_sage/">A Tour of {{ sage }}</a></li>
+ <li class="section"><a href="http://interact.sagemath.org" class="ext">{{ sage }} Interact Community</a></li>
 </ul>
 </li>
 
@@ -140,13 +140,13 @@ or
  <li><a href="{{ 'doc/index.html'|prefix }}"><b>Online Documentation</b></a></li>
  <li class="section"><a href="{{ 'help.html'|prefix }}">Support Resources</a></li>
  <li><a href="{{ 'help-groups.html'|prefix }}">Mailing Lists</a></li>
- <li><a href="{{ 'help-uSage.html'|prefix }}">uSage User Groups</a></li>
- <li><a href="http://ask.sagemath.org" class="ext">AskSage Q/A Forum</a></li>
+ <li><a href="{{ 'help-uSage.html'|prefix }}">u{{ sage }} User Groups</a></li>
+ <li><a href="http://ask.sagemath.org" class="ext">Ask{{ sage }} Q/A Forum</a></li>
  <li><a href="{{ 'help-irc.html'|prefix }}">IRC Chat</a></li>
  <li><a href="{{ 'help-video.html'|prefix }}">Videos</a></li>
  <li class="section"><a href="http://www.sagemath.org/doc/tutorial/">Tutorial</a></li>
  <li><a href="http://www.sagemath.org/doc/constructions/">Constructions</a></li>
- <li><a href="http://www.sagemath.org/doc/reference/">Sage Reference</a></li>
+ <li><a href="http://www.sagemath.org/doc/reference/">{{ sage }} Reference</a></li>
 </ul>
 </li>
 
@@ -154,7 +154,7 @@ or
 <ul>
  <li><a href="{{ 'library.html'|prefix }}">Overview</a></li>
  <li><a href="{{ 'library-stories.html'|prefix }}">Testimonials</a></li>
- <li><a href="{{ 'library-publications.html'|prefix }}">Publications Sage</a></li>
+ <li><a href="{{ 'library-publications.html'|prefix }}">Publications {{ sage }}</a></li>
  <li><a href="{{ 'library-publications-combinat.html'|prefix }}">Publications Combinat</a></li>
  <li><a href="{{ 'library-publications-mupad.html'|prefix }}">Publications Mupad</a></li>
  <li><a href="{{ 'library-publications.html#books'|prefix }}" >Books</a></li>
@@ -198,15 +198,15 @@ or
 <li><a href="{{ 'links.html'|prefix }}">Links</a>
 <ul>
  <li><a href="{{ 'links.html'|prefix }}">Projects &amp; Software</a></li>
- <li><a href="{{ 'links-components.html'|prefix }}">Sage Components</a></li>
- <li class="section"><a href="http://interact.sagemath.org">Sage Interact Community</a></li>
- <li><a href="http://sagecell.sagemath.org/">Sage Cell Server</a></li>
- <li class="section"><a href="http://planet.sagemath.org/">Sage Blog</a></li>
- <li><a href="http://wiki.sagemath.org/">Sage Wiki</a></li>
+ <li><a href="{{ 'links-components.html'|prefix }}">{{ sage }} Components</a></li>
+ <li class="section"><a href="http://interact.sagemath.org">{{ sage }} Interact Community</a></li>
+ <li><a href="http://sagecell.sagemath.org/">{{ sage }} Cell Server</a></li>
+ <li class="section"><a href="http://planet.sagemath.org/">{{ sage }} Blog</a></li>
+ <li><a href="http://wiki.sagemath.org/">{{ sage }} Wiki</a></li>
  <li><a href="http://spreadsheets.google.com/viewform?key=pCwvGVwSMxTzT6E2xNdo5fA">Report a Problem</a></li>
  <li><a href="http://wiki.sagemath.org/support/ReportingBugs">About Bugreporting</a></li>
- <li><a href="http://trac.sagemath.org/">Sage Bugtracker</a></li>
- <li><a href="{{ git }}">Sage Code Repository</a></li>
+ <li><a href="http://trac.sagemath.org/">{{ sage }} Bugtracker</a></li>
+ <li><a href="{{ git }}">{{ sage }} Code Repository</a></li>
  <li class="section"><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
  <li><a href="{{ 'contact.html'|prefix }}">Contact</a></li>
 </ul>
@@ -228,14 +228,14 @@ or
     <td><a id="footer-cc" title="website content is Creative Commons 3.0 licensed"
            href="http://creativecommons.org/licenses/by-sa/4.0/"></a></td>
     <td>&middot;</td>
-    <td><a id="footer-donate" title="Donate to the UW Sage Foundation Fund"
+    <td><a id="footer-donate" title="Donate to the UW {{ sage }} Foundation Fund"
            href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG"></a>
     </td>
     <td>&middot;</td>
     <td><a id="footer-rss" title="RSS News Feed"
            href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml"></a></td>
     <td>&middot;</td>
-    <td><a id="footer-contact" title="Contact Sage Project" href="{{ 'contact.html'|prefix }}"></a></td>
+    <td><a id="footer-contact" title="Contact {{ sage }} Project" href="{{ 'contact.html'|prefix }}"></a></td>
 </tr>
 
 <tr style="height: 70px;">

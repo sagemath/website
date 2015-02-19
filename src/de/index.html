@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block header_text %}
-<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+<a href="{{ 'index.html'|prefix }}">back to {{ sage }} main page</a>
 {% endblock %}
 
 {% block menu %}
@@ -20,13 +20,13 @@
 
 {% block content %}
 
- <h1 class="narrow">Sage Deutsch</h1>
+ <h1 class="narrow">{{ sage }} Deutsch</h1>
 
  <div class="narrow">
 
 <div class="txt">
-<em>Sage</em> ist ein freies Open Source Mathematiksystem das unter der GPL steht.
-Sage vereint die Funktionalität diverser Open Source Pakete unter einer gemeinsamen auf Python basierenden Oberflaeche.
+<em>{{ sage }}</em> ist ein freies Open Source Mathematiksystem das unter der GPL steht.
+{{ sage }} vereint die Funktionalität diverser Open Source Pakete unter einer gemeinsamen auf Python basierenden Oberflaeche.
 </div>
 
 <div class="center narrow txt">
@@ -38,15 +38,15 @@ Unser Ziel: <em>Erstellen eines vollwertigen open-source Ersatzes für Magma, Ma
 <ul>
 <li>Deutsch:
 <ul>
-  <li><a href="{{ './html/tutorial/' }}">Sage Tutorial</a>,
+  <li><a href="{{ './html/tutorial/' }}">{{ sage }} Tutorial</a>,
     <a href="{{ './pdf/tutorial/SageTutorial-de.pdf' }}">PDF</a></li>
 
-  <li><a href="http://wiki.ubuntuusers.de/SAGE">UbuntuUsers.de Sage Installationsanleitung</a></li>
+  <li><a href="http://wiki.ubuntuusers.de/SAGE">UbuntuUsers.de {{ sage }} Installationsanleitung</a></li>
 
 <!--
   <li>Bernhard Esslinger and CrypTool Development Team.
  <a href="http://www.cryptool.com/download/CrypToolScript-de.pdf">A.5 "Kurzeinführung in das Computeralgebrasystem
-Sage", S. 247 - 255</a> &mdash; eine kurze Einführung in Sage, auch wie man Skripte schreibt.
+{{ sage }}", S. 247 - 255</a> &mdash; eine kurze Einführung in {{ sage }}, auch wie man Skripte schreibt.
 </li>
 -->
 </ul>

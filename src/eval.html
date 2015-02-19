@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% set title = "Sage Cell Server" %}
+{% set title = "{{ sage }} Cell Server" %}
 
 
 {% block header %}
@@ -34,10 +34,10 @@
 {% endblock %}
 
 {% block content %}
-<h1>Sage Cell Server</h1>
+<h1>{{ sage }} Cell Server</h1>
 
 <div class="bodypadding txt">
-This web page contains an interactive Sage widget and a collection of 
+This web page contains an interactive {{ sage }} widget and a collection of 
 <span id="nb-examples">?</span> examples.
 You can edit it however you want. Interacts, graphics and plotting, etc., should all work.
 </div>
@@ -74,11 +74,11 @@ plot(sin(x)/(2+cos(pi*x)), (-2*pi, 3*pi)).show()
 <h2>Links</h2>
 <div class="bodypadding">
 <ul>
-<li><a href="https://github.com/sagemath/sagecell">Sage Cell
+<li><a href="https://github.com/sagemath/sagecell">{{ sage }} Cell
 Server</a> is open source, so you can also install your own server.</li>
 <li>The evaluations are done by <a href="http://aleph.sagemath.org/">Aleph Server</a>.</li>
-<li><a href="doc">Sage Documentation</a></li>
-<li><a href="./help.html">Sage Help</a></li>
+<li><a href="doc">{{ sage }} Documentation</a></li>
+<li><a href="./help.html">{{ sage }} Help</a></li>
 </ul>
 Do you want to contribute some additional examples? Extend or add the existing ones
 located in  e.g. 

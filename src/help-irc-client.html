@@ -2,7 +2,7 @@
 {% set title = "Help IRC Client" %}
 
 {% block content %}
- <h1 class="narrow">Sage IRC Help Channel</h1>
+ <h1 class="narrow">{{ sage }} IRC Help Channel</h1>
 
  <div class="padding narrow txt">
   If you want to connect directly: <a href="irc://irc.freenode.net/sagemath">#sagemath is
@@ -31,7 +31,7 @@
    <param name="CABINETS" value="./res/irc/irc.cab,./res/irc/securedirc.cab,./res/irc/pixx.cab" />
    <param name="nick" value="SageWWW" />
    <param name="alternatenick" value="SageWWW??" />
-   <param name="name" value="Sage IRC Help Channel" />
+   <param name="name" value="{{ sage }} IRC Help Channel" />
    <param name="host" value="irc.freenode.net" />
    <param name="gui" value="pixx" />
    <param name="coding" value="2">

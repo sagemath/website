@@ -1,8 +1,8 @@
 {% extends 'fr/_fr.html' %}
-{% set title = 'Tracer des graphes de fonctions avec Sage' %}
+{% set title = 'Tracer des graphes de fonctions avec {{ sage }}' %}
 
 {% block content %}
-<h1 align="center">Tracer des graphes de fonctions avec Sage
+<h1 align="center">Tracer des graphes de fonctions avec {{ sage }}
 </h1>
 <h3 align="center" style="font-size: 0.6em">auteur : Philippe Saadé (2008), psaade@gmail.com
 </h3>
@@ -10,7 +10,7 @@
 
 
 <div class="bodypadding">
-  Nous allons présenter l'utilisation de Sage pour la représentation graphique de fonctions d'une variable.
+  Nous allons présenter l'utilisation de {{ sage }} pour la représentation graphique de fonctions d'une variable.
 </div>
 <br><br>
 
@@ -366,8 +366,8 @@ Ici, il est possible de fournir la couleur par son nom (en anglais et entre '...
     </td>
     <td class="rightpadding">
      
-      Les options <span class="code">plot_points</span>, <span class="code">plot_division</span> et <span class="code">max_bend</span> permettent, respectivement, de choisir le nombre de points calculés initialement sur la courbe, le nombre maximal de points qui peuvent être ajouter par Sage pour lisser le tracé et d'imposer une contrainte plus ou moins forte à la qualité du rendu.<br>
-      <em>Remarque</em> : dans une prochaine version de Sage, ces deux dernières options seront remplacées par les options <span class="code">adaptive_recursion</span> et <span class="code">adaptive_tolerance</span> qui reposeront sur un algorithme récursif plus efficace.<br >
+      Les options <span class="code">plot_points</span>, <span class="code">plot_division</span> et <span class="code">max_bend</span> permettent, respectivement, de choisir le nombre de points calculés initialement sur la courbe, le nombre maximal de points qui peuvent être ajouter par {{ sage }} pour lisser le tracé et d'imposer une contrainte plus ou moins forte à la qualité du rendu.<br>
+      <em>Remarque</em> : dans une prochaine version de {{ sage }}, ces deux dernières options seront remplacées par les options <span class="code">adaptive_recursion</span> et <span class="code">adaptive_tolerance</span> qui reposeront sur un algorithme récursif plus efficace.<br >
       Dans notre exemple, les points ont été indiqués par une croix rouge.
 
     </td>
@@ -403,7 +403,7 @@ Ici, il est possible de fournir la couleur par son nom (en anglais et entre '...
     </td>
     <td class="rightpadding">
      
-      Une grande tolérance sur le paramètre <span class="code">max_bend</span> fait en sorte que Sage ne rajoute aucun point pour affiner le tracé.
+      Une grande tolérance sur le paramètre <span class="code">max_bend</span> fait en sorte que {{ sage }} ne rajoute aucun point pour affiner le tracé.
 
     </td>
    </tr>

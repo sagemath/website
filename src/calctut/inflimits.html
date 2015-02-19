@@ -25,7 +25,7 @@ plot(1/(x-3), x, -100, 100, randomize=False, plot_points=10001) \
   <p class="tutexplain" id="explain1">
   1-2) Plot 1/(x-3) from -100 to 100. The backslash indicates that the command
   continues on the second line. Not randomizing the points on the graph produces
-  a consistently smoother result, and plot_points=10001 is simply so that Sage won't
+  a consistently smoother result, and plot_points=10001 is simply so that {{ sage }} won't
   draw a line for the vertical asymptote at x=3. Though the graph was plotted from
   -100 to 100, it is only shown for a domain and range of -10 to 10.
   </p>
@@ -115,7 +115,7 @@ plot((2*x^4 + x^2 + 2)/(x^4 + 1), x, -4, 4).show(xmin=-3, xmax=3, ymin=-1, ymax=
   <p>
   Before you graph this function to see if and where it has a horizontal asymptote,
   though, let us try a bit of logical analysis. First, which will grow the fastest,
-  e^x or 5^x? Evaluating 'float(e)' in Sage will tell you that Euler's number e
+  e^x or 5^x? Evaluating 'float(e)' in {{ sage }} will tell you that Euler's number e
   equals approximately 2.7182818284590451, so 5^x will grow more quickly than e^x. But what
   about the 2*x in the denominator? Consider the growth, now, of 5^x relative to
   2*x. When x is 5, the former evaluates to 3125 while the latter evaluates to 10.
@@ -195,7 +195,7 @@ table()
   8) Print the current values of x and f(x). '%6i' means "fill six spaces with the
   following integer", while '%+f' means "put a positive or negative sign in front
   of the following floating point number". The '%(x, f(x))' at the end of the line
-  tells Sage which numbers to use when it replaces the preceding percentage signs.
+  tells {{ sage }} which numbers to use when it replaces the preceding percentage signs.
   </p>
   <p>
   There is another way to prove that the limit of sin(x)/x as x approaches positive

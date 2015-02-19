@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block header_text %}
-<a href="{{ 'index.html'|prefix }}">back to Sage main page</a>
+<a href="{{ 'index.html'|prefix }}">back to {{ sage }} main page</a>
 {% endblock %}
 
 {% block menu %}
@@ -15,12 +15,12 @@
 
 
 {% block content %}
- <h1 class="narrow">Sage 中文</h1>
+ <h1 class="narrow">{{ sage }} 中文</h1>
 
  <div class="narrow">
 
 <div class="txt">
-<em>Sage</em> 是一个基于GPL协议的开源数学软件。它使用Python作为通用接口，将现有的许多开源软件包整合在一起，构建一个统一的计算平台。
+<em>{{ sage }}</em> 是一个基于GPL协议的开源数学软件。它使用Python作为通用接口，将现有的许多开源软件包整合在一起，构建一个统一的计算平台。
 
 </div>
 
@@ -36,7 +36,7 @@ href="http://www.sagemath.org/doc/">文档 (英文)</a>
 </div>
 
 <div class="txt">
-<a href="http://ai7.org/wp/html/682.html"> 中文版的Sage入门手册 </a>
+<a href="http://ai7.org/wp/html/682.html"> 中文版的{{ sage }}入门手册 </a>
 </div>
 
 

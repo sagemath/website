@@ -15,7 +15,7 @@ td {padding: 5px 0 5px 0; }
 {% endblock %}
 
 {% block content %}
- <h1 class="narrow">Sage Mirrors</h1>
+ <h1 class="narrow">{{ sage }} Mirrors</h1>
 
  <div class="narrow center txt">
     <iframe style="height: 400px; width: 100%"
@@ -29,20 +29,20 @@ td {padding: 5px 0 5px 0; }
     </iframe><br />
     <small>View <a href=
     "http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=106570724428886886399.00046d7f23e304afe9f11&amp;ll=28.304381,12.65625&amp;spn=166.337894,360&amp;z=1&amp;source=embed"
-       class="c1">Sage Mirrors</a> in a larger map</small>
+       class="c1">{{ sage }} Mirrors</a> in a larger map</small>
  </div>
 
 <div class="narrow txt center">
-Sage Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html">CVUT.cz</a>):<br/>
+{{ sage }} Mirror size stats, (thanks to <a href="http://ftp.sh.cvut.cz/WEB/index.html">CVUT.cz</a>):<br/>
 <img src="http://ftp.sh.cvut.cz/WEB/var/sagemath.png" />
 </div>
 <h2 class="narrow">Mirror List</h2>
  <div class="narrow txt">
   <strong>
-  If the Sage icon is missing, a mirror may be down. If the date is too old compared to the first
-  (master mirror), it is outdated. The current Sage version is {{ version }} released 
+  If the {{ sage }} icon is missing, a mirror may be down. If the date is too old compared to the first
+  (master mirror), it is outdated. The current {{ sage }} version is {{ version }} released 
   {{ releasedate }}</strong>. 
-  If you also want to help Sage by hosting a mirror, please <a href="./contact.html">contact us</a>.
+  If you also want to help {{ sage }} by hosting a mirror, please <a href="./contact.html">contact us</a>.
   Check status of <a href="./mirror_manager.txt">Mirror Management</a> script.
 
   <table class="">

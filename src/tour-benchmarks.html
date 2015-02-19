@@ -12,9 +12,9 @@ pre { padding-top: 15px; }
 {% block content %}
  <h1>Tour - Benchmarks</h1>
 
-<div class="bodypadding txt">Here are some comparisons of Sage with other systems. Each pair of comparison was made on the same system and it was carfully avoided to hit swap memory to avoid accidental slowdows. Unless otherwise noted, all timings are in seconds.
+<div class="bodypadding txt">Here are some comparisons of {{ sage }} with other systems. Each pair of comparison was made on the same system and it was carfully avoided to hit swap memory to avoid accidental slowdows. Unless otherwise noted, all timings are in seconds.
 <br/>
-Links: <a href="http://wiki.sagemath.org/sagebeatsmagma">List of Computations where Sage is Noticeably Faster than Magma...</a></div>
+Links: <a href="http://wiki.sagemath.org/sagebeatsmagma">List of Computations where {{ sage }} is Noticeably Faster than Magma...</a></div>
 
  <table class="top" style="width:100%">
   <colgroup>
@@ -25,7 +25,7 @@ Links: <a href="http://wiki.sagemath.org/sagebeatsmagma">List of Computations wh
   <tbody>
 
 <tr><th colspan="2"> <h3>Multiply Integers $$({12345}^{678900} - 1) * ({67890}^{123456} - 1)$$</h3> </th> </tr>
-<tr> <td class="leftpadding"> Sage 4.1.1
+<tr> <td class="leftpadding"> {{ sage }} 4.1.1
 <pre class="code txt">
 sage: a1 = 12345^678900 - 1
 sage: a2 = 67890^123456 - 1
@@ -45,7 +45,7 @@ In[4]:= Timing[a1*a2][[1]]
 Out[4]= <span class="red">0.368023</span>
 </pre> </td>
 <tr><td colspan="2" class="leftpadding">
-Note: "ms" is Milliseconds ($$10^{-3}$$).<br/>Sage is 32% faster.<br/>
+Note: "ms" is Milliseconds ($$10^{-3}$$).<br/>{{ sage }} is 32% faster.<br/>
 System: Intel 32bit, Linux</td></tr>
 
 
@@ -53,7 +53,7 @@ System: Intel 32bit, Linux</td></tr>
 
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: time a = factorial(10000000) 
 CPU times: user <span class="green">13.79 s</span>,...
@@ -67,13 +67,13 @@ In[12]:= Timing[10000000!][[1]]
 Out[12]= <span class="red">19.2908</span> 
 </pre>
 </td>
-<tr><td colspan="2" class="leftpadding">Sage is 40% faster.<br/>System: Mac OSX</td></tr>
+<tr><td colspan="2" class="leftpadding">{{ sage }} is 40% faster.<br/>System: Mac OSX</td></tr>
    </tr>
 
  <tr> <th colspan="2"> <h3>Integer Factorization of $$2^{512} - 1$$</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: time a = factor(2^512 - 1) 
 CPU times: user <span class="green">92.29 s</span>,...
@@ -89,11 +89,11 @@ Out[10]= <span class="red">346.494</span>
 </td>
    </tr>
 <tr><td colspan="2" class="leftpadding">System: Intel 32bit, Linux<br/>
-Sage is nearly 4 times faster.</td></tr>
+{{ sage }} is nearly 4 times faster.</td></tr>
 
 <tr> <th colspan="2"> <h3>Bernoulli Number $$3 * 10^5$$</h3> </th> </tr>
    <tr>
-    <td class="leftpadding"> Sage 4.1.1
+    <td class="leftpadding"> {{ sage }} 4.1.1
 <pre class="code txt">
 sage: %time _ = bernoulli(3*10^5)
 CPU times: user <span class="green">141.04 s</span>,...
@@ -110,14 +110,14 @@ Out[1]= <span class="red">214.842</span>
 </td>
    </tr>
 <tr><td colspan="2" class="leftpadding">System: Intel 32bit, Linux<br/>
-Sage is 52% faster.</td></tr>
+{{ sage }} is 52% faster.</td></tr>
 
 
 
  <tr> <th colspan="2"> <h3>5 Million Digits of $$\pi$$</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1 (pure and using mpmath)
+{{ sage }} 4.1.1 (pure and using mpmath)
      <pre class="code txt">
 sage: time a = N(pi, digits=5000000) 
 CPU times: user <span class="red">28.90 s</span>,...
@@ -142,7 +142,7 @@ Out[1]= <span class="red">13.21</span>
  <tr> <th colspan="2"> <h3>Pseudoprimality Test $$2^{19937} - 1$$</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: time a = is_pseudoprime(2^19937 - 1) 
 CPU times: user <span class="green">16.61 s</span>,...
@@ -160,7 +160,7 @@ Out[11]= {<span class="red">28.2604</span>, True}[1]
  <tr> <th colspan="2"> <h3>Expanding a Symbolic Expression</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: R.&lt;a1,a2,a3,a4,a5,a6,a7&gt; = QQ[] 
 sage: time f = (a1+a2+a3+a4+a5+a6+a7)^25
@@ -188,7 +188,7 @@ Out[15]= <span class="green">15.981</span>
  <tr><th colspan="2"><h3>Expanding a Polynomial over $$GF(13)$$</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: R.&lt;x,y,z&gt; = PolynomialRing(GF(13)) 
 sage: time _ = expand((x+y+z+1)**100) 
@@ -205,13 +205,13 @@ Out[1]= <span class="red">4.20826</span>
 </td>
    </tr>
 <tr><td colspan="2" class="leftpadding">
-Sage is 60 times faster.<br/>
+{{ sage }} is 60 times faster.<br/>
 System: Intel 32bit, Linux</td></tr>
 
  <tr> <th colspan="2"> <h3>Multiply and Add Random Boolean Matrices in $$GF(2)$$</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.1
+{{ sage }} 4.1.1
      <pre class="code txt">
 sage: m1 = random_matrix(GF(2), 1000, 1000) 
 sage: m2 = random_matrix(GF(2), 1000, 1000) 
@@ -223,7 +223,7 @@ sage: %timeit m1+m2
 <br/>
 <a href="http://m4ri.sagemath.org/performance.html">M4RI Performance Comparisons</a>
 <br/>
-<a href="http://wiki.sagemath.org/days7/sprints/linalg">More about Matrix Multiplications (Sage Days 7/LinAlg)</a>
+<a href="http://wiki.sagemath.org/days7/sprints/linalg">More about Matrix Multiplications ({{ sage }} Days 7/LinAlg)</a>
 </td>
 
     <td class="rightpadding">
@@ -238,18 +238,18 @@ Out[18]= <span class="red">0.060003</span>
 </pre>
 <br/>
 Magma<br/>
-<a href="http://wiki.sagemath.org/sagebeatsmagma">Sage vs. Magma for this particular type of problem.</a>
+<a href="http://wiki.sagemath.org/sagebeatsmagma">{{ sage }} vs. Magma for this particular type of problem.</a>
 </td>
    </tr>
 <tr><td colspan="2" class="leftpadding">
 Note: "ms" is Milliseconds ($$10^{-3} s$$); "µs" is Microseconds ($$10^{-6} s$$)<br/>
 System: Intel 32bit, Linux<br/>
-Sage is about 3000 times faster.</td></tr>
+{{ sage }} is about 3000 times faster.</td></tr>
 
- <tr> <th colspan="2"> <h3>Matrix Multiplication in Sage vs. MATLAB and Mathematica</h3> </th> </tr>
+ <tr> <th colspan="2"> <h3>Matrix Multiplication in {{ sage }} vs. MATLAB and Mathematica</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.1.2
+{{ sage }} 4.1.2
      <pre class="code txt">
 age:  a = random_matrix(RDF,2000) 
 sage: timeit('a*a') 
@@ -283,7 +283,7 @@ Timing[b . b][[1]]
  <tr> <th colspan="2"> <h3>Full SVD of a 1000x1000 Random Matrix</h3> </th> </tr>
    <tr>
     <td class="leftpadding">
-Sage 4.3.2
+{{ sage }} 4.3.2
      <pre class="code txt">
 sage: m = random_matrix(RDF, 1000)
 sage: %time U,s,Vh = m.SVD()

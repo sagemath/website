@@ -1,8 +1,8 @@
 {% extends 'fr/_fr.html' %}
-{% set title = 'Tracer des courbes paramétrées avec Sage' %}
+{% set title = 'Tracer des courbes paramétrées avec {{ sage }}' %}
 
 {% block content %}
-<h1 align="center">Tracer des courbes paramétrées avec Sage
+<h1 align="center">Tracer des courbes paramétrées avec {{ sage }}
 </h1>
 <h3 align="center" style="font-size: 0.6em">auteur : Philippe Saadé (2008), psaade@gmail.com
 </h3>
@@ -15,7 +15,7 @@
 Nous détaillons autant que possible les paramètres controlant le tracé (couleur, épaisseur, type de trait, ...) ainsi que ceux contrôlant le graphique qui en résulte. Pour une présentation encore plus approfondie des réglages et opérations possibles avec les graphiques, on pourra se reporter à la feuille de calcul <strong>Graphique_Utilisation_avancée</strong>.
 </div>
 <div class="bodypadding">
-<em>Remarque importante</em> : nous avons fait en sorte de rendre chaque cellule indépendante des autres. Le code contenu dans une cellule peut donc être utilisé par copier-coller dans une autre feuille de calcul Sage. Le lecteur ayant une certaine habitude des langages informatiques voudra bien nous excuser pour la répétition de certaines déclarations de variable, inutile dans le contexte d'une utilisation continue de la feuille de calcul.
+<em>Remarque importante</em> : nous avons fait en sorte de rendre chaque cellule indépendante des autres. Le code contenu dans une cellule peut donc être utilisé par copier-coller dans une autre feuille de calcul {{ sage }}. Le lecteur ayant une certaine habitude des langages informatiques voudra bien nous excuser pour la répétition de certaines déclarations de variable, inutile dans le contexte d'une utilisation continue de la feuille de calcul.
 </div>
 
 Plan :
@@ -265,7 +265,7 @@ Cependant, si l'affectation de labels aux axes doit se faire selon une exigence 
 </pre>
     </td>
     <td class="rightpadding">
-     Il faut distinguer ici le pixel (ou point graphique) du point typographique. Une convention ancienne veut que le point typographique occupe environ 1/72ème de pouce. La résolution par défaut des graphiques produits par Sage est de 100dpi (pixels par pouce). Le point typographique est donc généralement un peu plus grand qu'un pixel. Comme le paramètre <span class="code">figsize</span> permet d'imposer la taille du graphique final en pouce, il est facile de conjuguer <span class="code">figsize</span> et <span class="code">dpi</span> pour fixer le taille de l'image en pixels.<br>
+     Il faut distinguer ici le pixel (ou point graphique) du point typographique. Une convention ancienne veut que le point typographique occupe environ 1/72ème de pouce. La résolution par défaut des graphiques produits par {{ sage }} est de 100dpi (pixels par pouce). Le point typographique est donc généralement un peu plus grand qu'un pixel. Comme le paramètre <span class="code">figsize</span> permet d'imposer la taille du graphique final en pouce, il est facile de conjuguer <span class="code">figsize</span> et <span class="code">dpi</span> pour fixer le taille de l'image en pixels.<br>
 <br>
 C'est ce que nous avons pour obtenir ici une image de 800x600 pixels.<br>
 <br>

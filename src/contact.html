@@ -2,7 +2,7 @@
 {% set title = "Contact" %}
 
 {% block content %}
- <h1 class="narrow">Contact the Sage Project</h1>
+ <h1 class="narrow">Contact the {{ sage }} Project</h1>
 
  <div class="narrow">
   <ul>
@@ -25,7 +25,7 @@
    <li><a href="{{ webmaster_href }}" >
    Harald Schilly</a>: webmaster, website,
        <a href="{{ 'mirrors.html'|prefix }}">mirrors (rsync)</a>,
-       <a href="http://planet.sagemath.org">Planet Sage</a>, press,
+       <a href="http://planet.sagemath.org">Planet {{ sage }}</a>, press,
      publications list, website,  mailing lists, ...
    </li>
 
@@ -34,13 +34,13 @@
       onclick=
       "window.open(&#39;http://mailhide.recaptcha.net/d?k=01TaDHLUV5NyEImof1o1Uc6g==&amp;c=FL7HswaKHTXj2z5h3N4AQv-RDVShkk-GPt2DjGEYrV0=&#39;, &#39;&#39;, &#39;toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300&#39;); return false;">
    William Stein</a>: general inquiries (no support, no bugreports), press, donations.<br>
-<b>WARNING</b>: If you send me an unsolicited email related to <a href="http://sagemath.org">Sage</a>, I will by
-default cc my response to one of the public Sage mailing lists 
+<b>WARNING</b>: If you send me an unsolicited email related to <a href="http://sagemath.org">{{ sage }}</a>, I will by
+default cc my response to one of the public {{ sage }} mailing lists 
 (such as <a href="http://groups.google.com/group/sage-support">sage-support</a>). If you explicitly ask that I don't, then 
 I will not respond to your email.
  
 I do this because I feel that I am often not the best person to 
-respond to a Sage question, and I want to give all Sage developers 
+respond to a {{ sage }} question, and I want to give all {{ sage }} developers 
 a chance to respond as well.  Very, very often, somebody other than 
 me is better qualified to answer a question.
  

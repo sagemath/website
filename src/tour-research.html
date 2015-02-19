@@ -2,7 +2,7 @@
 {% set title = "Tour - Research" %}
 
 {% block content %}
- <h1>Sage in Research</h1>
+ <h1>{{ sage }} in Research</h1>
 
  <div class="narrow txt"></div>
 
@@ -41,17 +41,17 @@ sage: <strong>b-c</strong>
       <ul>
        <li>Python: float, complex, decimal</li>
 
-       <li>Sage specific: RDF, CDF, RQDF, CC, RR, RIF, CIF</li>
+       <li>{{ sage }} specific: RDF, CDF, RQDF, CC, RR, RIF, CIF</li>
 
        <li>included Systems: pari, maxima</li>
       </ul>
 
       <div class=" txt">
-       Most important are the Sage specific types. They use specific libraries and have more
+       Most important are the {{ sage }} specific types. They use specific libraries and have more
        functionality. Important are RR and CC, because their behavior is independent of the
        underlying system and architecture using the <a href="http://www.mpfr.org/"
            >MPFR</a> library. RDF and CDF use the GSL library and are very fast and
-            compatible with the Sage framework.
+            compatible with the {{ sage }} framework.
       </div>
 
       <div class=" txt">
@@ -92,7 +92,7 @@ b
 
     <td class="rightpadding">
      <div class="txt">
-      Sage is built on an object oriented programming language. It uses this feature to describe
+      {{ sage }} is built on an object oriented programming language. It uses this feature to describe
       categories of mathematical objects. A good example are algebraic objects like groups, rings
       and fields.
      </div>
@@ -132,7 +132,7 @@ sage: <strong>L.structures([1,2,3]).count()</strong>
 
     <td class="rightpadding">
      <div class="txt">
-      The demonstration on the left hand side shows how Sage is able to work with combinatorial
+      The demonstration on the left hand side shows how {{ sage }} is able to work with combinatorial
       objects from the theory of <a href="http://en.wikipedia.org/wiki/Combinatorial_species"
           >Combinatorial Species</a>.
      </div>
@@ -141,7 +141,7 @@ sage: <strong>L.structures([1,2,3]).count()</strong>
 
    <tr>
     <th colspan="2">
-     <h3>Embedding Sage into LaTeX</h3>
+     <h3>Embedding {{ sage }} into LaTeX</h3>
     </th>
    </tr>
 
@@ -162,9 +162,9 @@ Here you can see a $sin()$-Function:
     <td class="rightpadding">
      <div class="txt">
       <a name="latex"
-           id="latex"></a> It is possible to call Sage commands from inside a LaTeX document. The
-           SageTex package provides special LaTeX commands that translate Sage code into a Python
-           file. Then this file is evaluated by Sage and the results of each calculation are
+           id="latex"></a> It is possible to call {{ sage }} commands from inside a LaTeX document. The
+           SageTex package provides special LaTeX commands that translate {{ sage }} code into a Python
+           file. Then this file is evaluated by {{ sage }} and the results of each calculation are
            written back into the LaTeX file. This even works for graphics, source-code and saved
            objects.
      </div>
@@ -175,7 +175,7 @@ Here you can see a $sin()$-Function:
      </div>
 
      <div>
-      This package is part of the Sage distribution in the <span class=
+      This package is part of the {{ sage }} distribution in the <span class=
       "code">/examples/latex_embed</span> sub-directory together with the documentation. You can
       also obtain it online: <a
            href="http://www.ctan.org/pkg/sagetex">CTAN: SageTex

@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% set title = "Sage developers around the world" %}
+{% set title = "{{ sage }} developers around the world" %}
 {% import 'devs.html' as devs %}
 
 {% block header %}
@@ -10,10 +10,10 @@
 
 
 {% block content %}
-<h1>Sage developers around the world</h1>
+<h1>{{ sage }} developers around the world</h1>
 
 <div class="padding center narrow">
-    This map shows many contributors of the Sage project from all around the world.<br/>
+    This map shows many contributors of the {{ sage }} project from all around the world.<br/>
     There are currently <span id="contrib-nb">{{ devs.number() }}</span> in
     <span id="contrib-places">{{ devs.places() }}</span> different places.
 </div>
@@ -46,7 +46,7 @@
 </div>
  
 <h2>
-Sage Developers
+{{ sage }} Developers
 </h2>
 <table class="devlist">
   <colgroup>

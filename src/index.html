@@ -19,7 +19,7 @@
 {% block content %}
 <div class="hidden"><img src="./pix/index_icons-nq8.png" alt="" /></div>
 <div class="narrow txt topmargin" id="idx1" track="index-top">
-  <strong class="large">Sage</strong> is a free <a href=
+  <strong class="large">{{ sage }}</strong> is a free <a href=
   "http://git.sagemath.org/">open-source</a>
   mathematics software system licensed under the GPL.
 It builds on top of many existing 
@@ -49,9 +49,9 @@ or directly via interfaces or wrappers.
 
 {#
   <div class="narrow txt announce">
-  Sage and lmonade are searching for students for this summer's GSoC! We have many exciting projects for students to work (from home) over the summer and to get mentored by experts in the field: 
+  {{ sage }} and lmonade are searching for students for this summer's GSoC! We have many exciting projects for students to work (from home) over the summer and to get mentored by experts in the field: 
   <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/sagemath">
-  Sage
+  {{ sage }}
   </a>, 
   <a href="http://www.google-melange.com/gsoc/org2/google/gsoc2014/lmonade">
   lmonade
@@ -61,7 +61,7 @@ or directly via interfaces or wrappers.
 
 <div id="sagecloud" class="narrow center txt announce" track="index-smc-banner">
     Join the <a href="https://cloud.sagemath.com/?utm_source=sagemath.org&amp;utm_medium=banner"><b>SageMathCloud&#8482;</b></a> online service for free.<br/>
-Work with Sage,
+Work with {{ sage }},
     <a href="http://pydata.org/">Python</a>,
     <a href="http://r-project.org/">R</a>,
     <a href="http://gap-system.org/">GAP</a>,
@@ -72,7 +72,7 @@ Work with Sage,
 </div>
 
 {#
-  <a href="./eval.html">Sage Cell Server</a>: run Sage online instantly
+  <a href="./eval.html">{{ sage }} Cell Server</a>: run {{ sage }} online instantly
   <br/>
   <form method="GET" action="./eval.html">
   <input onmouseover="javascript:this.focus();" type="text" name="code" value="factor(2012)" size="25" />
@@ -87,7 +87,7 @@ var data = navigator.userAgent;
 if (data) {
    if (data.indexOf("Chrome") != -1) {
      document.write("<div class='narrow txt' style='text-align:center'>");
-     document.write("<a href='https://chrome.google.com/webstore/detail/dckejpjjnjaagdahkdgighlejbckajak'><img src='http://boxen.math.washington.edu/home/schilly/sage-webstore/sage-128.png' height='64' width='64'><br/>Install the Sage Notebook Webapp for Google Chrome.</a></div>");
+     document.write("<a href='https://chrome.google.com/webstore/detail/dckejpjjnjaagdahkdgighlejbckajak'><img src='http://boxen.math.washington.edu/home/schilly/sage-webstore/sage-128.png' height='64' width='64'><br/>Install the {{ sage }} Notebook Webapp for Google Chrome.</a></div>");
    }
 }
 </script>
@@ -106,7 +106,7 @@ if (data) {
   <tbody>
    <tr>
     <td class="right">
-     <h2><a href="http://cloud.sagemath.com/">Use Sage Online</a></h2>
+     <h2><a href="http://cloud.sagemath.com/">Use {{ sage }} Online</a></h2>
 
      <div class="small">
        {#
@@ -115,9 +115,9 @@ if (data) {
        <a href="http://sage.milnix.org">Milnix.org</a>  &middot;
        #}
        other:
-       <a href="http://www.sagenb.org/">Sagenb</a>,
+       <a href="http://www.sagenb.org/">{{ sage }}nb</a>,
        <a href="http://sagenb.kaist.ac.kr/">KAIST</a>, 
-       <a href="http://sagecell.sagemath.org/">SageCell</a><br/>
+       <a href="http://sagecell.sagemath.org/">{{ sage }}Cell</a><br/>
      </div>
     </td>
 
@@ -223,16 +223,16 @@ if (data) {
      style="opacity: 0">&nbsp;</div>
 <script type="text/javascript">
 var rlinks = [
-    ["tour-quickstart.html", "Quickstart into Sage"],
-    ["development-map.html", "Map of all Sage developers"],
-    ["tour.html", "Introduction to Sage"],
-    ["http://planet.sagemath.org/", "Sage Blog"],
-    ["http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html", "SageTeX - embedding Sage code inside LaTeX documents."],
+    ["tour-quickstart.html", "Quickstart into {{ sage }}"],
+    ["development-map.html", "Map of all {{ sage }} developers"],
+    ["tour.html", "Introduction to {{ sage }}"],
+    ["http://planet.sagemath.org/", "{{ sage }} Blog"],
+    ["http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html", "SageTeX - embedding {{ sage }} code inside LaTeX documents."],
     ["library-stories.html", "Success Stories, Testimonials, News Articles, Blogs"],
-    ["library-publications.html", "Publications citing Sage"],
+    ["library-publications.html", "Publications citing {{ sage }}"],
     ["library-marketing.html", "Posters, Flyers, Spread the Word, ..."],
-    ["tour-benchmarks.html", "Sage Benchmarks"],
-    ["http://wiki.sagemath.org/interact", "Interactive Calculations with Sage"],
+    ["tour-benchmarks.html", "{{ sage }} Benchmarks"],
+    ["http://wiki.sagemath.org/interact", "Interactive Calculations with {{ sage }}"],
     ["help.html", "Tutorials and Help Resources"]
 ];
 var random_link = function () {
