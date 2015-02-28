@@ -221,3 +221,9 @@
   name: ASIS, Tehran, Iran
   priority: 50
   url: http://sage.asis.io/
+- active: true
+  cat: a
+  country: jp
+  name: Yamagata University, JP
+  url: http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/
+
