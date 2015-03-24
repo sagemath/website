@@ -237,3 +237,8 @@
   country: us
   name: Go-Parts, Michigan, USA
   url: http://mirrors-usa.go-parts.com/sage/
+- active: true
+  cat: e
+  country: uk
+  name: Go-Parts, Hampshire, UK
+  url: http://mirrors-uk.go-parts.com/sage/
