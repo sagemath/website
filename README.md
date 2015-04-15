@@ -83,3 +83,9 @@ If no licensing information can be found,
 regard it as [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 
+Google Cloud Storage Notes
+--------------------------
+
+* RSync: `gsutil -m rsync -d -r www gs://www.sagemath.org`
+* Publish all files: `gsutil -m acl ch -r -u AllUsers:R gs://www.sagemath.org`
+* Cache-Control 10 minutes: `gsutil -m setmeta -r -h "Cache-Control:public, max-age=600" gs://www.sagemath.org`
