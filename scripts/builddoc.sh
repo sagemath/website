@@ -67,7 +67,7 @@ function relocate_pdf {
 
 # rebuild Sage library
 cd $SAGE_ROOT
-./sage -b master
+#./sage -b master
 
 # (re)generate documentation
 rm -rf src/doc/output/

@@ -7,17 +7,16 @@
 # make sure that relative paths are correct!
 cd `dirname "$0"`
 
-if [ ! -d ../www/mirror/ ] ; then
-  echo ../www/mirror/ does not exist
+if [ ! -d www/mirror/ ] ; then
+  echo www/mirror/ does not exist
   exit 1
 fi
 
-TORRENT_HELPER=`pwd`/../www/torrent.helper
-METALINK_HELPER=`pwd`/../www/metalink.helper
+TORRENT_HELPER=`pwd`/www/torrent.helper
 
 FINDCMD='find  . -type f -size +2M -follow -not -name "*spkg*" -not -name "*zsync" | grep -v -e "\./doc/.*"'
 
-cd ../www/mirror/
+cd www/mirror/
 
 function metatorrent () {
     OUTPUT=$1
@@ -60,11 +59,11 @@ function metatorrent () {
     done 
     
     # publish it
-    echo published $OUTPUT file to `dirname "../../www/mirror/$OUTPUT"`
-    cp -f $OUTPUT ../../www/mirror/$OUTPUT
+    echo published $OUTPUT file to `dirname "../../../www2/mirror/$OUTPUT"`
+    cp -f $OUTPUT ../../../www2/mirror/$OUTPUT
 }
 
-metatorrent metalinks.html Metalinks    metalink
+# metatorrent metalinks.html Metalinks    metalink
 metatorrent torrents.html  BitTorrents  torrent
 
 ######################
@@ -106,7 +105,7 @@ for f in `eval $FINDCMD`; do
        WEBSEEDS=$WEBSEEDS,${line}${RELDIR}/$FILE
      done < $TORRENT_HELPER
      WEBSEEDS=${WEBSEEDS%,} # delete , at the end
-     mktorrent -v  \
+     ~/bin/mktorrent -v  \
              -a "udp://tracker.openbittorrent.com:80"  \
              -a "udp://tracker.ccc.de:80/announce"     \
              -l 20 -c "$COMMENT" -w $WEBSEEDS          \
@@ -114,35 +113,35 @@ for f in `eval $FINDCMD`; do
    popd
  fi
 
- if [ ! -s $METADIR/$FILE.metalink ]
- then
-   metalink --alldigests $f < $METALINK_HELPER > $METADIR/$FILE.metalink
+ #if [ ! -s $METADIR/$FILE.metalink ]
+ #then
+ #  ~/bin/metalink --alldigests $f < ../metalink.helper > $METADIR/$FILE.metalink
 
-   # insert link to torrent file
-   # finds first line with <url> in xml, inserts a torrent file, then copies back the tmp file
-   # fixes <file name="path .. filename"> tag by removing the subdir
-   insert='<url type="bittorrent" preference="100">http://sagemath.org/mirror/'$TORFILE'</url>'
-   first_url=True
-   first_name=True
-   while read line; do
-     if [[ $first_name == True && "$line" =~ "<file name=" ]] ; then
-       # assuming this string:
-       # <file name="linux/32bit/sage-4.1.1-linux-Fedora_release_10_Cambridge-i686-Linux.tar.gz">
-       # wrong
-       # t=$(( ${#DIR} + 13 ))
-       #echo ${line:0:12}${line:$t}
-       echo '<file name="'$FILE'">'
-       first_name=False
-     else 
-       echo "$line"
-     fi
+ #  # insert link to torrent file
+ #  # finds first line with <url> in xml, inserts a torrent file, then copies back the tmp file
+ #  # fixes <file name="path .. filename"> tag by removing the subdir
+ #  insert='<url type="bittorrent" preference="100">http://sagemath.org/mirror/'$TORFILE'</url>'
+ #  first_url=True
+ #  first_name=True
+ #  while read line; do
+ #    if [[ $first_name == True && "$line" =~ "<file name=" ]] ; then
+ #      # assuming this string:
+ #      # <file name="linux/32bit/sage-4.1.1-linux-Fedora_release_10_Cambridge-i686-Linux.tar.gz">
+ #      # wrong
+ #      # t=$(( ${#DIR} + 13 ))
+ #      #echo ${line:0:12}${line:$t}
+ #      echo '<file name="'$FILE'">'
+ #      first_name=False
+ #    else 
+ #      echo "$line"
+ #    fi
 
-     if [[ $first_url == True && "$line" =~ "<url" ]] ; then
-       echo $insert
-       first_url=False
-     fi
-   done < $METADIR/$FILE.metalink > $METADIR/tmp
-   mv -f $METADIR/tmp $METADIR/$FILE.metalink
- fi 
+ #    if [[ $first_url == True && "$line" =~ "<url" ]] ; then
+ #      echo $insert
+ #      first_url=False
+ #    fi
+ #  done < $METADIR/$FILE.metalink > $METADIR/tmp
+ #  mv -f $METADIR/tmp $METADIR/$FILE.metalink
+ #fi 
 
 done

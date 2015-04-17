@@ -35,7 +35,7 @@ fi
 IN=$1
 OUT=`basename $LZMA`
 
-CMD="$DECOMP $IN | nice lzma -zv > $OUT"
+CMD="$DECOMP $IN | nice lzma -z > $OUT"
 
 #read -p "Run $CMD [y/N]?"
 #

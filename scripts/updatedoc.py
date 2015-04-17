@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# coding: utf8
 
 ###########################################################################
 # Copyright (c) 2010--2011 Minh Van Nguyen <nguyenminh2@gmail.com>
@@ -81,14 +80,13 @@ import os
 import re
 import sys
 
-DEV_DIR = "/www-data/sagemath-org"
-DOC_DIR = "/www-data/sagemath-org/www-files/doc"
+DEV_DIR = "/home/sagemath/www2-dev"
+DOC_DIR = "/home/sagemath/www-files/doc"
 DOC_NAME = os.path.join(DEV_DIR, "www/help.html")
-DOCBUILD = os.path.join(DEV_DIR, "scripts/builddoc.sh")
+DOCBUILD = os.path.join(DEV_DIR, "builddoc.sh")
 SAGE_ROOT = None
 SAGE_SAGE = None
 SAGE_VERSION = None
-
 
 def delete_previous_doc(target_dir):
     """
@@ -112,7 +110,6 @@ def delete_previous_doc(target_dir):
     os.system("rm -rf doc-bz2")
     os.system("rm -rf doc-zip")
     os.system("rm html pdf")
-
 
 def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     """
@@ -149,26 +146,26 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
 
     os.chdir(os.path.join(current_dir, "www"))
     # update links for English documentation
-    #os.system("rm pdf")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/") + " pdf")
+    os.system("rm pdf")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/") + " pdf")
     # update links for French documentation
-    #os.chdir(os.path.join(current_dir, "www/fr"))
-    #os.system("rm html pdf")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "html/fr/") + " html")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/fr/") + " pdf")
+    os.chdir(os.path.join(current_dir, "www/fr"))
+    os.system("rm html pdf")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "html/fr/") + " html")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/fr/") + " pdf")
     # update links for German documentation
-    #os.chdir(os.path.join(current_dir, "www/de"))
-    #os.system("rm html pdf")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "html/de/") + " html")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/de/") + " pdf")
+    os.chdir(os.path.join(current_dir, "www/de"))
+    os.system("rm html pdf")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "html/de/") + " html")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/de/") + " pdf")
     # update links for Russian documentation
-    #os.chdir(os.path.join(current_dir, "www/ru"))
-    #os.system("rm html pdf")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "html/ru/") + " html")
-    #os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/ru/") + " pdf")
+    os.chdir(os.path.join(current_dir, "www/ru"))
+    os.system("rm html pdf")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "html/ru/") + " html")
+    os.system("ln -s " + os.path.join(target_dir, docdir, "pdf/ru/") + " pdf")
 
     os.chdir(target_dir)
-    os.system("ln -s " + os.path.join(docdir, "html") + " html")
+    os.system("ln -s " + os.path.join(docdir, "html/en") + " html")
     os.system("ln -s " + os.path.join(docdir, "pdf") + " pdf")
     bz2dir = os.path.join(target_dir, "doc-bz2")
     zipdir = os.path.join(target_dir, "doc-zip")
@@ -243,35 +240,35 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>HTML</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-zip/",
-        docdir, "-html.zip\">download</a> (",
-        str(zipdochtml_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-zip/",
+            docdir, "-html.zip\">download</a> (",
+            str(zipdochtml_size), " MB)</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-bz2/",
-        docdir, "-html.tar.bz2\">download</a> (",
-        str(bz2dochtml_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-bz2/",
+            docdir, "-html.tar.bz2\">download</a> (",
+            str(bz2dochtml_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "   </tr>\n\n"])
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>PDF</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-zip/",
-        docdir, "-pdf.zip\">download</a> (",
-        str(zipdocpdf_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-zip/",
+            docdir, "-pdf.zip\">download</a> (",
+            str(zipdocpdf_size), " MB)</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-bz2/",
-        docdir, "-pdf.tar.bz2\">download</a> (",
-        str(bz2docpdf_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-bz2/",
+            docdir, "-pdf.tar.bz2\">download</a> (",
+            str(bz2docpdf_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "  </tr>\n\n"])
     htmlcontent = "".join([htmlcontent, "  <tr bgcolor=\"#dfdfff\">\n"])
     htmlcontent = "".join([htmlcontent, "    <td>HTML+PDF</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-zip/",
-        docdir, ".zip\">download</a> (",
-        str(zipdoc_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-zip/",
+            docdir, ".zip\">download</a> (",
+            str(zipdoc_size), " MB)</td>\n"])
     htmlcontent = "".join([
-        htmlcontent, "    <td><a href=\"./doc-bz2/",
-        docdir, ".tar.bz2\">download</a> (",
-        str(bz2doc_size), " MB)</td>\n"])
+            htmlcontent, "    <td><a href=\"./doc-bz2/",
+            docdir, ".tar.bz2\">download</a> (",
+            str(bz2doc_size), " MB)</td>\n"])
     htmlcontent = "".join([htmlcontent, "  </tr>\n"])
     htmlcontent = "".join([htmlcontent, "</table>\n"])
     # Process the rest of the HTML file.
@@ -296,7 +293,6 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     outfile.write(htmlcontent)
     outfile.close()
 
-
 def usage():
     """
     Print the usage information for this script.
@@ -310,52 +306,48 @@ def usage():
 ##############################
 
 if __name__ == "__main__":
-    if False:
-        # sanity checks
-        if len(sys.argv) != 2:
-            usage()
-            sys.exit(1)
-        SAGE_ROOT = os.path.abspath(sys.argv[1])
-        if not os.path.isdir(SAGE_ROOT):
-            print("Invalid SAGE_ROOT. Exiting...")
-            sys.stdout.flush()
-            sys.exit(1)
-        SAGE_SAGE = os.path.join(SAGE_ROOT, "sage")
-        if not os.path.isfile(SAGE_SAGE):
-            print("Invalid Sage start up script %s. Exiting..." % SAGE_SAGE)
-            sys.stdout.flush()
-            sys.exit(1)
-        # get Sage's version number
-        # Assume that the following shell command would output a string as
-        # follows:
-        #
-        # $ Sage Version x.y.z, Release Date: yyyy-mm-dd
-        sh = Popen("%s --version" % SAGE_SAGE, shell=True, stdout=PIPE)
-        s = sh.communicate()[0].strip()
-        if sh.returncode != 0:
-            print("Error running %s. Exiting..." % SAGE_SAGE)
-            sys.stdout.flush()
-            sys.exit(1)
-        s = s.split()[2]
-        SAGE_VERSION = s.split(",")[0]
-        # build HTML and PDF versions of standard documentation
-        if not os.path.isfile(DOCBUILD):
-            print("Documentation build script %s not found. Exiting..." % DOCBUILD)
-            sys.stdout.flush()
-            sys.exit(1)
-        sh = Popen("%s %s %s" % (DOCBUILD, SAGE_ROOT, SAGE_VERSION), shell=True)
-        sh.communicate()
-        if sh.returncode == 1:
-            print("Error building documentation. Exiting...")
-            sys.stdout.flush()
-            sys.exit(1)
-        # update website with built documentation
-        Popen(
-            "cp %s/sage-%s-doc.tar.bz2 %s" % (SAGE_ROOT, SAGE_VERSION, DEV_DIR),
-            shell=True).communicate()
-
-    else:
-        SAGE_VERSION = "6.3"
+    # sanity checks
+    if len(sys.argv) != 2:
+        usage()
+        sys.exit(1)
+    SAGE_ROOT = os.path.abspath(sys.argv[1])
+    if not os.path.isdir(SAGE_ROOT):
+        print("Invalid SAGE_ROOT. Exiting...")
+        sys.stdout.flush()
+        sys.exit(1)
+    SAGE_SAGE = os.path.join(SAGE_ROOT, "sage")
+    if not os.path.isfile(SAGE_SAGE):
+        print("Invalid Sage start up script %s. Exiting..." % SAGE_SAGE)
+        sys.stdout.flush()
+        sys.exit(1)
+    # get Sage's version number
+    # Assume that the following shell command would output a string as
+    # follows:
+    #
+    # $ Sage Version x.y.z, Release Date: yyyy-mm-dd
+    sh = Popen("%s --version" % SAGE_SAGE, shell=True, stdout=PIPE)
+    s = sh.communicate()[0].strip()
+    if sh.returncode != 0:
+        print("Error running %s. Exiting..." % SAGE_SAGE)
+        sys.stdout.flush()
+        sys.exit(1)
+    s = s.split()[2]
+    SAGE_VERSION = s.split(",")[0]
+    # build HTML and PDF versions of standard documentation
+    if not os.path.isfile(DOCBUILD):
+        print("Documentation build script %s not found. Exiting..." % DOCBUILD)
+        sys.stdout.flush()
+        sys.exit(1)
+    sh = Popen("%s %s %s" % (DOCBUILD, SAGE_ROOT, SAGE_VERSION), shell=True)
+    sh.communicate()
+    if sh.returncode == 1:
+        print("Error building documentation. Exiting...")
+        sys.stdout.flush()
+        sys.exit(1)
+    # update website with built documentation
+    Popen(
+        "cp %s/sage-%s-doc.tar.bz2 %s" % (SAGE_ROOT, SAGE_VERSION, DEV_DIR),
+        shell=True).communicate()
     delete_previous_doc(DOC_DIR)
     update_doc(
         DEV_DIR,
