@@ -293,7 +293,7 @@ contributor
 <contributor
  name="Nathann Cohen"
  work="CNRS researcher"
- location="LRI, Universite Paris Sud, France"
+ location="University Paris-Sud, France"
  url="http://www-sop.inria.fr/members/Nathann.Cohen/"
  description="Graph Theory;Linear Programming;documentation"
  trac="ncohen" />
@@ -615,7 +615,7 @@ contributor
 <contributor
  name="Florent Hivert"
  work="Professor, Laboratoire de Recherche en Informatique"
- location="LRI, Universite Paris Sud, France"
+ location="University Paris-Sud, France"
  description="combinatorics (design and code); various bug fixes"
  trac="hivert" />
 <contributor
@@ -1406,7 +1406,7 @@ groups; braid groups"
 <contributor
  name="Nicolas Thiery"
  work="Université Paris Sud, Faculty"
- location="LRI, Universite Paris Sud, France"
+ location="University Paris-Sud, France"
  description="Crystals code, combinatorics design"
  trac="nthiery"/>
 <contributor

@@ -54,7 +54,7 @@ def getSpkgHash():
 def getVersion():
     """extracts version number"""
     ver, src = "None", "None"
-    for l in open(os.path.join('www', 'inc', 'variables.shtml')):
+    for l in open(os.path.join('website', 'inc', 'variables.shtml')):
         m = re.search(r'var="version"\s+value="(.*)"', l)
         if not m is None and len(m.groups()) >= 1:
             ver = m.group(1)
@@ -95,7 +95,8 @@ if __name__ == '__main__':
     msg += ' / ' + getMirrorHash() + ' / ' + getSpkgHash()
     print 'Message:', msg
     # WARNING: check if second publishing path is in sync with ./go_live.sh and the general layout!!!
-    stampfiles = [os.path.join('.', 'www', 'mirror', 'zzz', 'timestamp.html'),
-                  os.path.join('..', 'www2', 'mirror', 'zzz', 'timestamp.html')]
+    stampfiles = [os.path.join(".", "files", "zzz", "timestamp.html")]
+    #stampfiles = [os.path.join('.', 'www', 'mirror', 'zzz', 'timestamp.html'),
+    #              os.path.join('..', 'www2', 'mirror', 'zzz', 'timestamp.html')]
     for file in stampfiles:
         writeMirrorTimestamp(msg, file)

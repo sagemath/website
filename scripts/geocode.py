@@ -35,7 +35,7 @@ goodKeys = ["name", "location", "work", "description", "url", "pix", "size", "ji
 
 # point to datafiles in local path, ./www/res/... should be best
 ack = parse(join("..", "conf", "contributors.xml"))
-geocode_xml_outfn = "geocode.xml"
+geocode_xml_outfn = join("..", "conf", "geocode.xml")
 devmap_tmpl = os.path.join("..", "templates", "devs.html")
 devlist = None
 tracSearch = "http://trac.sagemath.org/sage_trac/search?q="

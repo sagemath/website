@@ -83,7 +83,7 @@ fi
 # relocate_pdf en
 # relocate_pdf fr
 cd $SAGE_ROOT
-cp -rf $SAGE_DOC/output sage-"$SAGE_VERSION"-doc
+cp -rlf $SAGE_DOC/output sage-"$SAGE_VERSION"-doc
 rm -rf sage-"$SAGE_VERSION"-doc/doctrees
 rm -rf sage-"$SAGE_VERSION"-doc/latex
 tar -jcf sage-"$SAGE_VERSION"-doc.tar.bz2 sage-"$SAGE_VERSION"-doc
