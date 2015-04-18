@@ -410,8 +410,8 @@ if __name__=='__main__':
     #for d in ['./www/bin/', './www/src/', './www/src-old', './www/devel/']:
     #  create_meta(d)
     
-    for d in map(os.path.abspath, [ './files/apple_osx/', './files/microsoft_windows/',
-          './files/linux/', './files/solaris/', './files/src/', './files/src-old/', './files/devel/', './files/spkg/upstream/']):
+    for d in map(os.path.abspath, [ './files/osx/', './files/win/', './files/livecd/',
+          './files/linux/', './files/solaris/', './files/src/', './files/devel/', './files/spkg/upstream/']):
        os.chdir(d)
        print os.path.abspath(os.curdir)
        strip = d.split(os.path.sep)[-1]

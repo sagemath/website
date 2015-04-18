@@ -4,6 +4,8 @@
 # in the subdirectory 'meta'
 # depends on ctorrent (debian package)
 
+# set -e
+
 # make sure that relative paths are correct!
 cd # `dirname "$0"`
 
@@ -84,9 +86,7 @@ for f in `eval $FINDCMD`; do
  FILE=`basename $f`
  TORFILE=$METADIR/`basename $f`.torrent
 
-
- if [ ! -d $METADIR ]
- then
+ if [ ! -d $METADIR ]; then
    mkdir $METADIR
  fi
  
