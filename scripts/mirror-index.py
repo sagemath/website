@@ -32,13 +32,15 @@ md5file = 'md5sums.txt'
 notesfile = 'notes.txt'
 
 # script uses relative paths, switch to its
-os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+# os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+# NO, works relative to ~
+os.chdir(os.path.expanduser("~"))
 
 # run the indexer for meta files
 print "now running meta file indexing, torrents, metalink, or more ..."
 print "by calling ./mirror-meta.sh"
 print
-os.system('./mirror-meta.sh')
+os.system('./website/scripts/mirror-meta.sh')
 print "mirror-meta.sh finished"
 print
 
@@ -72,7 +74,7 @@ def create_meta(root):
 listfile = 'index.html'
 
 # template
-outfile = os.path.abspath('mirror-index-template.xml')
+outfile = os.path.abspath('website/scripts/mirror-index-template.xml')
 
 
 
@@ -408,7 +410,8 @@ if __name__=='__main__':
     #for d in ['./www/bin/', './www/src/', './www/src-old', './www/devel/']:
     #  create_meta(d)
     
-    for d in map(os.path.abspath, ['./www/bin/', './www/bin/apple_osx/', './www/bin/microsoft_windows/', './www/bin/linux/', './www/bin/solaris/', './www/src/', './www/src-old/', './www/devel/', './www/spkg/upstream/']):
+    for d in map(os.path.abspath, [ './files/apple_osx/', './files/microsoft_windows/',
+          './files/linux/', './files/solaris/', './files/src/', './files/src-old/', './files/devel/', './files/spkg/upstream/']):
        os.chdir(d)
        print os.path.abspath(os.curdir)
        strip = d.split(os.path.sep)[-1]

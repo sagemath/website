@@ -5,18 +5,18 @@
 # depends on ctorrent (debian package)
 
 # make sure that relative paths are correct!
-cd `dirname "$0"`
+cd # `dirname "$0"`
 
-if [ ! -d www/mirror/ ] ; then
-  echo www/mirror/ does not exist
+if [ ! -d files/ ] ; then
+  echo files/ does not exist
   exit 1
 fi
 
-TORRENT_HELPER=`pwd`/www/torrent.helper
+TORRENT_HELPER=`pwd`/website/www/torrent.helper
 
 FINDCMD='find  . -type f -size +2M -follow -not -name "*spkg*" -not -name "*zsync" | grep -v -e "\./doc/.*"'
 
-cd www/mirror/
+cd files/
 
 function metatorrent () {
     OUTPUT=$1
@@ -59,8 +59,8 @@ function metatorrent () {
     done 
     
     # publish it
-    echo published $OUTPUT file to `dirname "../../../www2/mirror/$OUTPUT"`
-    cp -f $OUTPUT ../../../www2/mirror/$OUTPUT
+    echo published $OUTPUT file to `dirname "./$OUTPUT"`
+    cp -f $OUTPUT ./$OUTPUT
 }
 
 # metatorrent metalinks.html Metalinks    metalink
@@ -105,7 +105,7 @@ for f in `eval $FINDCMD`; do
        WEBSEEDS=$WEBSEEDS,${line}${RELDIR}/$FILE
      done < $TORRENT_HELPER
      WEBSEEDS=${WEBSEEDS%,} # delete , at the end
-     ~/bin/mktorrent -v  \
+     mktorrent -v  \
              -a "udp://tracker.openbittorrent.com:80"  \
              -a "udp://tracker.ccc.de:80/announce"     \
              -l 20 -c "$COMMENT" -w $WEBSEEDS          \
