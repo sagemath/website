@@ -15,7 +15,9 @@ import re
 from hashlib import md5
 
 # script uses relative paths, switch to its
-os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+# os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
+# NO, IT DOES NOT
+os.chdir(os.path.expanduser("~"))
 
 
 def getMirrorHash():
@@ -33,7 +35,7 @@ def getMirrorHash():
     # return hash.hexdigest()
     # workaround:
     import subprocess
-    s = subprocess.Popen('find -L www/mirror/ -type f -and '
+    s = subprocess.Popen('find -L files/ -type f -and '
                          '\( -size +10M -not -path "*src*" -not -path "*devel*" -not -path "*meta*" -not -name "*.spkg" \) '
                          '-exec ls -la {} \; | md5sum | cut -d" " -f1',
                          shell=True, stdout=subprocess.PIPE)
@@ -42,7 +44,7 @@ def getMirrorHash():
 
 def getSpkgHash():
     import subprocess
-    s = subprocess.Popen('find -L www/mirror/ -type f -and '
+    s = subprocess.Popen('find -L files/ -type f -and '
                          '\(  \( -path "*src*" -and -size +100M \)  '
                          '-or \( -path "*standard*" -and -name "*.spkg" -or -name "*install" \) \) '
                          '-exec ls -la {} \; | md5sum | cut -d" " -f1',
@@ -53,15 +55,18 @@ def getSpkgHash():
 
 def getVersion():
     """extracts version number"""
-    ver, src = "None", "None"
-    for l in open(os.path.join('website', 'inc', 'variables.shtml')):
-        m = re.search(r'var="version"\s+value="(.*)"', l)
-        if not m is None and len(m.groups()) >= 1:
-            ver = m.group(1)
-        m = re.search(r'var="version-src"\s+value="(.*)"', l)
-        if not m is None and len(m.groups()) >= 1:
-            src = m.group(1)
-    return ver, src
+    import yaml
+    conf = yaml.load(open(os.path.join("website", "conf", "config.yaml")))
+    ver = conf["version"]
+    src = conf["version_src"]
+    #for l in open(os.path.join('website', 'www', 'inc', 'variables.shtml')):
+    #    m = re.search(r'var="version"\s+value="(.*)"', l)
+    #    if not m is None and len(m.groups()) >= 1:
+    #        ver = m.group(1)
+    #    m = re.search(r'var="version-src"\s+value="(.*)"', l)
+    #    if not m is None and len(m.groups()) >= 1:
+    #        src = m.group(1)
+    return str(ver), str(src)
 
 
 def writeMirrorTimestamp(msg, STAMP):
