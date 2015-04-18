@@ -24,13 +24,13 @@ NOTES_TMPL_2 = "</pre></div>"
 # step 1: update the ~/sage-git directory
 os.chdir(os.path.expanduser("~/sage-git"))
 os.system("git fetch origin")
-os.system("git checkout develop")
+os.system("git checkout master")
 os.system("git reset --hard origin/develop")
 
 # step 2: construct path to source SPPK and
 # walk through all the directories in the target directories
 src_dir = os.path.expanduser("~/sage-git/build/pkgs/")
-targ_dir = os.path.expanduser("~/www-files/spkg/upstream/")
+targ_dir = os.path.expanduser("~/files/spkg/upstream/")
 os.chdir(targ_dir)
 print "starting"
 for dirname in glob("*"):
