@@ -123,7 +123,8 @@ class Mirror(object):
     def entry(self):
         n = self.name
         f = '<img src="http://www.sagemath.org/pix/flags/%s.png" width="22" height="14"></img>' % self.flag
-        return '<a href="%s{{ mirrordir }}/index.html">%s %s</a>\n' % (self.url, f, n)
+        e = '<a href="%s{{ mirrordir }}/index.html">%s %s</a>\n' % (self.url, f, n)
+        return e.replace("//", "/")
 
     def __unicode__(self):
         x =  u"Mirror '{name}' in {country}".format(**self.__dict__)

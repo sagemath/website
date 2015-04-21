@@ -8,6 +8,7 @@
 #  url: http://boxen.math.washington.edu/home/sagemath/sage-mirror/
 - active: true
   cat: g
+  country: us
   name: Google Cloud Storage CDN
   priority: 1
   url: http://files.sagemath.org/
