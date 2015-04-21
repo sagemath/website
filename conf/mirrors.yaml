@@ -1,11 +1,16 @@
-# cat = category: na: north america, sa: south america, e: europe, a: asia
+# cat = category: na: north america, sa: south america, e: europe, a: asia, g: global (CDN)
+#- active: true
+#  cat: na
+#  country: us
+#  flag: us
+#  name: University of Washington, Seattle, WA, USA
+#  priority: 1
+#  url: http://boxen.math.washington.edu/home/sagemath/sage-mirror/
 - active: true
-  cat: na
-  country: us
-  flag: us
-  name: University of Washington, Seattle, WA, USA
+  cat: g
+  name: Google Cloud Storage CDN
   priority: 1
-  url: http://boxen.math.washington.edu/home/sagemath/sage-mirror/
+  url: http://files.sagemath.org/
 - active: true
   cat: na
   country: us
