@@ -214,8 +214,8 @@ def addGeo(place):
         else:  # code must be 200!
             # insert the same for matching later
             g.setAttribute("location", place)
-            g.setAttribute("loclat", geo[2])
-            g.setAttribute("loclng", geo[3])
+            g.setAttribute("loclng", geo[2])
+            g.setAttribute("loclat", geo[3])
             out.appendChild(g)
     else:
         print "cache"
