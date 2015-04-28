@@ -6,19 +6,26 @@
 
 # set -e
 
-# make sure that relative paths are correct!
-cd # `dirname "$0"`
+if [ ! -n "$1" ]; then
+   echo '$1 variable not set, must be the directory where to index, e.g. ~/files'
+   exit 1
+fi
 
-if [ ! -d files/ ] ; then
+# *ONLY* relative to itself for this torrent.helper file path!
+cd `dirname "$0"`
+TORRENT_HELPER=`readlink -f ../www/torrent.helper`
+
+FILES=`readlink -f $1`
+echo "FILES: $FILES"
+
+if [ ! -d $FILES ] ; then
   echo files/ does not exist
   exit 1
 fi
 
-TORRENT_HELPER=`pwd`/website/www/torrent.helper
-
+# from now on we switch to the target $FILES directory
+cd $FILES
 FINDCMD='find  . -type f -size +2M -follow -not -name "*spkg*" -not -name "*zsync" | grep -v -e "\./doc/.*"'
-
-cd files/
 
 function metatorrent () {
     OUTPUT=$1
@@ -62,7 +69,7 @@ function metatorrent () {
     
     # publish it
     echo published $OUTPUT file to `dirname "./$OUTPUT"`
-    cp -f $OUTPUT ./$OUTPUT
+    echo cp -f $OUTPUT ./$OUTPUT
 }
 
 # metatorrent metalinks.html Metalinks    metalink
@@ -71,13 +78,14 @@ metatorrent torrents.html  BitTorrents  torrent
 ######################
 
 # comment in torrent file
-COMMENT="Sage Mathematical Software System. Learn more here: http://www.sagemath.org/"
+COMMENT="Sage Mathematical Software System: http://www.sagemath.org/"
 
 # now the 'real' work
 ROOT=`pwd`
 ROOTLEN=`expr ${#ROOT} + 1`
 # searches for all files, which are above a certain size, and also which are not
 # spkges or part of the documentation
+
 for f in `eval $FINDCMD`; do
 # echo $f
  f=${f:2} #removes find's ./ in the beginning
@@ -104,6 +112,8 @@ for f in `eval $FINDCMD`; do
        # TODO: the trailing $FILE is just for µtorrent. all others work well with the trailing / !!!
        WEBSEEDS=$WEBSEEDS,${line}${RELDIR}/$FILE
      done < $TORRENT_HELPER
+     # substring deletes, if matched, see http://tldp.org/LDP/abs/html/string-manipulation.html
+     WEBSEEDS=${WEBSEEDS#,} # delete , at the start
      WEBSEEDS=${WEBSEEDS%,} # delete , at the end
      mktorrent -v  \
              -a "udp://tracker.openbittorrent.com:80"  \
