@@ -41,17 +41,25 @@ def copy_aux_files():
     os.chdir(PUB)
     for bib in glob("*.bib"):
         dst = normpath(join("..", TARG_FILES, bib))
+        if exists(dst):
+            os.remove(dst)
         os.link(bib, dst)
     os.chdir("..")
 
     # contributors for the devmap
     for xml in [join("conf", "geocode.xml"),
                 join("conf", "contributors.xml")]:
-        os.link(xml, join(TARG, "res", basename(xml)))
+        dst = join(TARG, "res", basename(xml))
+        if exists(dst):
+            os.remove(dst)
+        os.link(xml, dst)
 
     # mirror_manager.py files
     for mm in ["metalink.helper", "torrent.helper", "mirror_list"]:
-        os.link(join("scripts", mm), join(TARG, mm))
+        dst = join(TARG, mm)
+        if exists(dst):
+            os.remove(dst)
+        os.link(join("scripts", mm), dst)
 
 
 def render_task(arg):
@@ -84,6 +92,8 @@ def render_task(arg):
     else:
         # all other files, hardlink them
         # log("hardlink %s -> %s" % (src, dst))
+        if exists(dst):
+            os.remove(dst)
         os.link(src, dst)
 
 

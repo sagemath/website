@@ -23,7 +23,7 @@ $(MIRROR_FILES): scripts/mirror_manager.py conf/mirrors.yaml
 publications:
 	$(MAKE) -C publications
 
-render: clean mirrors publications devmap
+render: mirrors publications devmap
 	python render.py $(ARGS)
 
 server:
