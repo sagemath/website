@@ -1,1 +1,0 @@
-/home/sagemath/www2-dev/www/mirror_manager.out
