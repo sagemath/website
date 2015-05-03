@@ -609,7 +609,8 @@ contributor
  work="Alpen-Adria-Universität Klagenfurt"
  location="Klagenfurt, Austria"
  description="Finite State Machines"
- trac="cheuberg"/>
+ trac="cheuberg"
+ url="http://wwwu.aau.at/cheuberg/"/>
 <contributor
  name="Jason B Hill"
  work="University of Colorado Boulder"
