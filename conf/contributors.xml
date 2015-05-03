@@ -554,6 +554,13 @@ contributor
  location="Am Campus 1, 3400 Klosterneuburg, Austria"
  description="documentation"/>
 <contributor
+ name="Benjamin Hackl"
+ work="Alpen-Adria-Universität Klagenfurt"
+ location="Klagenfurt, Austria"
+ description="Asymptotics; Symbolics"
+ trac="behackl"
+ url="http://wwwu.aau.at/behackl/"/>
+<contributor
  name="Anna Haensch"
  location="70 Wyllys Avenue, Middletown, CT 06457-3226, United States"
  work="graduate student, Department of Mathematics and Computer Science, Wesleyan University"
@@ -805,6 +812,13 @@ contributor
  description="misc; bug fixes"
  url="http://www.danielkrenn.at"
  trac="dkrenn" />
+<contributor
+ name="Sara Kropf"
+ work="Alpen-Adria-Universität Klagenfurt"
+ location="Klagenfurt, Austria"
+ description="Finite State Machines"
+ trac="skropf"
+ url="http://wwwu.aau.at/skropf/"/>
 <contributor
  name="Ross Kyprianou"
  work="PhD student, The University of Melbourne"
