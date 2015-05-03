@@ -605,6 +605,13 @@ contributor
  description="p-adic heights; arithmetic architecture; Bernoulli numbers mod p; FLINT; other random things"
  trac="dmharvey"/>
 <contributor
+ name="Clemens Heuberger"
+ work="Alpen-Adria-Universität Klagenfurt"
+ location="Klagenfurt, Austria"
+ description="Finite State Machines"
+ trac="cheuberg"
+ url="http://wwwu.aau.at/cheuberg/"/>
+<contributor
  name="Jason B Hill"
  work="University of Colorado Boulder"
  location="Boulder, Colorado, USA"
