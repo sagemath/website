@@ -248,3 +248,8 @@
   country: uk
   name: Go-Parts, Hampshire, UK
   url: http://mirrors-uk.go-parts.com/sage/
+- active: true
+  cat: na
+  country: us
+  name: MIT, Cambridge, MA, USA
+  url: http://mirrors.mit.edu/sage/
