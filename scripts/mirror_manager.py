@@ -403,8 +403,8 @@ def build_mirrorselector(mirrors, TS):
     if len(mirrors) <= 5:
         page += TS_SYNC
     # if bin != src version, new release upcoming!
-    if TS.values()[0][0] != TS.values()[0][1]:
-        page += TS_NEW
+    #if TS.values()[0][0] != TS.values()[0][1]:
+    #    page += TS_NEW
     page += '\n<table id="mirror">\n'
     # category by name
     for c in sorted(CATEGORY.iteritems(), key=lambda x: x[1]):
