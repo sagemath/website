@@ -4,7 +4,7 @@ ARGS ?= ""
 
 MIRROR_FILES := scripts/mirror_list scripts/metalink.helper scripts/torrent.helper templates/all-mirrors.html templates/mirrorselector-src.html templates/mirrorselector.html
 
-default: render
+default: clean render
 
 clean:
 	- cd www && find -P -delete
@@ -43,3 +43,6 @@ test:
 
 cont:
 	python cont.py
+
+publish: default
+	bash publish.sh
