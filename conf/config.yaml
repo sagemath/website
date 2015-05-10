@@ -8,3 +8,7 @@ git: http://git.sagemath.org/sage.git/
 git_website: https://github.com/sagemath/website
 webmaster_href: |
     http://www.google.com/recaptcha/mailhide/d?k=01I3KyN6Tl7Esyc9uET-W0bw==&amp;c=dfn-dhNhxofbYyJp6aeGa3isTM1iBIrs7DBTSeQX2-w=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501I3KyN6Tl7Esyc9uET-W0bw\75\75\46c\75dfn-dhNhxofbYyJp6aeGa3isTM1iBIrs7DBTSeQX2-w\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;
+
+# the docroot is the base URL for the documentation.
+# the directory structure is (more or less) the same as in SageMath's "output" directory in doc
+docroot: http://doc.sagemath.org
