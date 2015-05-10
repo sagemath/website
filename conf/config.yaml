@@ -6,10 +6,5 @@ version_solaris_bin: None
 version_src: 6.6
 git: http://git.sagemath.org/sage.git/
 git_website: https://github.com/sagemath/website
-webmaster_href: >
-    http://mailhide.recaptcha.net/d?
-    k=01JhWPFLZ8tJCbx84EXp20vw==&amp;c=C8CP83g7M5hbfmYWTynnLHz_lr5sWlI4Z2wKwgSaJ50="
-    onclick="window.open(&#39;http://mailhide.recaptcha.net/d?
-    k=01JhWPFLZ8tJCbx84EXp20vw==&amp;c=C8CP83g7M5hbfmYWTynnLHz_lr5sWlI4Z2wKwgSaJ50=&#39;
-    , &#39;&#39;, &#39;toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300&#39;);
-    return false;
+webmaster_href: |
+    http://www.google.com/recaptcha/mailhide/d?k=01I3KyN6Tl7Esyc9uET-W0bw==&amp;c=dfn-dhNhxofbYyJp6aeGa3isTM1iBIrs7DBTSeQX2-w=" onclick="window.open('http://www.google.com/recaptcha/mailhide/d?k\07501I3KyN6Tl7Esyc9uET-W0bw\75\75\46c\75dfn-dhNhxofbYyJp6aeGa3isTM1iBIrs7DBTSeQX2-w\075', '', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=300'); return false;
