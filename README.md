@@ -43,6 +43,12 @@ To test the website under realistic conditions,
 `make server` starts a minimal HTTP server on port 8181 and
 `make show` opens it in your web-browser.
 
+### NQ8 Images
+
+Shrinking PNG images further down via e.g.
+
+    pngnq -v -f -s 64 index_icons.png
+
 
 ### Continuous Build Mode
 
