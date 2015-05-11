@@ -6,7 +6,7 @@
 #  name: University of Washington, Seattle, WA, USA
 #  priority: 1
 #  url: http://boxen.math.washington.edu/home/sagemath/sage-mirror/
-- active: true
+- active: false
   cat: g
   country: us
   name: Google Cloud Storage CDN
