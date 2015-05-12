@@ -253,3 +253,9 @@
   country: us
   name: MIT, Cambridge, MA, USA
   url: http://mirrors.mit.edu/sage/
+- active: true
+  cat: af
+  country: za
+  flag: za
+  name: University of the Free State, South Africa
+  url: http://mirror.ufs.ac.za/sagemath/
