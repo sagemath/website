@@ -409,13 +409,14 @@ def build_mirrorselector(mirrors, TS):
     # category by name
     for c in sorted(CATEGORY.iteritems(), key=lambda x: x[1]):
         OUTPUT += c[1] + ' : '
-        # per category, mirrors sorted by name (disabled!)
-        # ms = [m.entry() for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]]
-        ms = [m.entry() for m in mirrors if m.cat == c[0]]
-        # shuffeling list, because the first mirror per category
-        # is selected very often.
-        import random
-        random.shuffle(ms)
+        # per category, mirrors sorted by name (re-enabled!)
+        ms = [m.entry() for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]]
+        # ms = [m.entry() for m in mirrors if m.cat == c[0]]
+        ## shuffeling list, because the first mirror per category
+        ## is selected very often.
+        ## -> no longer shuffle, rather, make it stable to avoid unnecessary commits&pushes
+        # import random
+        # random.shuffle(ms)
         OUTPUT += ', '.join([m.name for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]]) + '\n'
         if len(ms) > 0:
             page += '<tr>\n'
