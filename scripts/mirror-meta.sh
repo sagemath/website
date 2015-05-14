@@ -42,7 +42,7 @@ function metatorrent () {
       echo "$line" >> $OUTPUT
     done 
     # write content
-    echo "<h1>$2 for <a href='http://www.sagemath.org/'>Sage</a></h1>" >> $OUTPUT
+    echo "<h1>$2 for <a href='http://www.sagemath.org/'>SageMath</a></h1>" >> $OUTPUT
     echo '<div><strong>Read more <a href="http://wiki.sagemath.org/DownloadAndInstallationGuide">in the Download Guide</a></strong></div>' >> $OUTPUT
     echo '<div><table>' >> $OUTPUT
     for f in `eval $FINDCMD`; do
@@ -52,7 +52,7 @@ function metatorrent () {
      METAFILE=$METADIR/`basename $f`.$ENDING
      echo '<tr><td>'${METADIR%/meta}'</td><td>' >> $OUTPUT
      echo '<a onClick="pageTracker._trackEvent('MirrorDL', '`dirname $f`', '`basename $f`.$ENDING', 1)"' >> $OUTPUT
-     echo ' href="http://www.sagemath.org/mirror/'$METAFILE'">'$FILE'</a></td></tr>' >> $OUTPUT
+     echo ' href="./'$METAFILE'">'$FILE'</a></td></tr>' >> $OUTPUT
     done
     echo '</table></div>' >> $OUTPUT
     # end of index file
