@@ -414,7 +414,7 @@ if __name__=='__main__':
     for d in map(os.path.abspath, [ './osx/', './win/', './livecd/',
           './linux/', './solaris/', './src/', './devel/', './spkg/upstream/']):
        os.chdir(d)
-       print os.path.abspath(os.curdir)
+       print os.path.abspath(os.curdir).center(100, "=")
        strip = d.split(os.path.sep)[-1]
        index(os.path.abspath(os.curdir), strip)
 
