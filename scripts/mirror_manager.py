@@ -392,7 +392,7 @@ def good_mirrors_spkg(TS, ref_spkg):
     return good
 
 
-def build_mirrorselector(mirrors, TS):
+def build_mirrorselector(mirrors, TS, best_mirror):
     """
     builds the mirrorselector.html page, see sample at the bottom
     """
@@ -428,20 +428,20 @@ def build_mirrorselector(mirrors, TS):
     page += '''\
 <h4>Distributed and P2P</h4>
 <ul>
- <li style="font-size: 90%;">
-   <a href="http://files.sagemath.org/torrents.html">BitTorrent</a> &mdash;
+ <li style="font-size: 90%%;">
+   <a href="%s">BitTorrent</a> &mdash;
     is a P2P protocol for fast and reliable downloads of huge files
     over the Internet (<a href="http://en.wikipedia.org/wiki/BitTorrent">read more</a>).
  </li>
 <!--
- <li style="font-size: 90%;">
+ <li style="font-size: 90%%;">
     <a href="http://files.sagemath.org/metalinks.html">Metalinks</a> &mdash;
      provide fast, stable and resumeable downloads via a
      <a href="http://www.metalinker.org/samples.html">download client</a> (<a href="http://en.wikipedia.org/wiki/Metalink">read more</a>).
  </li>
 -->
 </ul>
-'''
+''' % os.path.join(best_mirror.url, "torrents.html")
     page += TS_OUTRO
     return page
 
@@ -463,14 +463,14 @@ def build_mirror_list(good):
     return ret
 
 
-def publish(good, good_spkg, TS):
+def publish(good, good_spkg, TS, best_mirror):
     """
     publishs the page and mirror list to the website
     """
     info('building mirrorselector page')
-    out = build_mirrorselector(good, TS)
+    out = build_mirrorselector(good, TS, best_mirror)
     info('building mirrorselector page for src/spkg')
-    out_spkg = build_mirrorselector(good_spkg, TS)
+    out_spkg = build_mirrorselector(good_spkg, TS, best_mirror)
     out_list = build_mirror_list(good_spkg)
     global OUTPUT
     info('publishing')
@@ -531,6 +531,7 @@ if __name__ == '__main__':
     for m in good_spkg:
         OUTPUT += m.name + '\n'
     metalink_helper(MIRRORS)
-    publish(good, good_spkg, TS)
+    one_good_mirror = [gm for gm in good if not gm.url.startswith("ftp")][0]
+    publish(good, good_spkg, TS, one_good_mirror)
     # calling visualization
     os.system("python mirror_log_visualize.py")
