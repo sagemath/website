@@ -426,22 +426,31 @@ def build_mirrorselector(mirrors, TS, best_mirror):
     page += '</table>\n'
     # global category for metalinks, then continent/server
     page += '''\
-<h4>Distributed and P2P</h4>
-<ul>
+<h4>Distributed / P2P</h4>
+<!-- <ul>
  <li style="font-size: 90%%;">
-   <a href="%s">BitTorrent</a> &mdash;
-    is a P2P protocol for fast and reliable downloads of huge files
-    over the Internet (<a href="http://en.wikipedia.org/wiki/BitTorrent">read more</a>).
- </li>
+-->
+<div>
+    Consider downloading via <b><a href="%(server)s">BitTorrent web-seed files</a></b>!
+    Then your download is balanced across all servers,
+    resumeable, and the checksum of the data is automatically verified.
+    This gives you optimal speed and protection against corrupt/malicious data.
+    Either install a libitorrent based client like <a href="http://deluge-torrent.org/">Deluge</a>
+    or <a href="http://aria2.sourceforge.net/">Aria2</a> for the command-line
+    (e.g. <code>sudo apt-get install aria2</code> and then <code>$ aria2c http://...*.torrent</code>).
+    <a href="%(server)s">Download here</a>.
+</div>
+
 <!--
+ </li>
  <li style="font-size: 90%%;">
     <a href="http://files.sagemath.org/metalinks.html">Metalinks</a> &mdash;
      provide fast, stable and resumeable downloads via a
      <a href="http://www.metalinker.org/samples.html">download client</a> (<a href="http://en.wikipedia.org/wiki/Metalink">read more</a>).
  </li>
--->
 </ul>
-''' % os.path.join(best_mirror.url, "torrents.html")
+-->
+''' % {"server" : os.path.join(best_mirror.url, "torrents.html")}
     page += TS_OUTRO
     return page
 
