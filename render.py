@@ -71,7 +71,7 @@ def render_task(arg):
     src = join(root, fn)
     dst = normpath(join("..", TARG, src))
     lvl = root.count(os.sep)
-    log("processing/f: %s" % src, nl=False)
+    #log("processing/f: %s" % src, nl=False)
     if fn.endswith(".html"):
         # we ignore html files starting with "_" (e.g. language specific templates)
         if fn.startswith("_"):
@@ -119,7 +119,7 @@ md = markdown.Markdown()
 @j2.evalcontextfilter
 def filter_markdown(eval_ctx, text):
     if eval_ctx.autoescape:
-        return md.convert(j2.escape(stream))
+        return md.convert(j2.escape(text))
     return md.convert(text)
 
 
@@ -149,8 +149,10 @@ def render():
 
     # pool must be created *after* global vars are set
     # it forks the main process, it's a "copy-on-write" memory architecture
-    pool = mp.Pool()
+    # pool = mp.Pool()
 
+    nb_walks = 0
+    len_walks = float(len(list(os.walk('.'))))
     for root, paths, filenames in os.walk("."):
         # check if we ignore a branch in a sub-tree
         root_split = root.split(os.sep)
@@ -162,7 +164,7 @@ def render():
             src = join(root, path)
             dst = normpath(join("..", TARG, src))
 
-            log("processing/d: %s" % src, nl=False)
+            #log("processing/d: %s" % src, nl=False)
 
             # we have to take care of symlinks here, too!
             if islink(src):
@@ -177,6 +179,10 @@ def render():
         #pool.map(render_task, [(_, root) for _ in filenames])
         for task in [(_, root) for _ in filenames]:
             render_task(task)
+
+        if nb_walks % (len_walks // 27) == 0:
+           log("processing: %5.1f%%" % (100. * nb_walks / len_walks), nl=False)
+        nb_walks += 1
 
     log("processing: done", nl=False)
     os.chdir("..")
