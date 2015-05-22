@@ -237,17 +237,17 @@
   cat: e
   country: ru
   name: Go-Parts, Moscow, RU
-  url: http://mirrors-ru.go-parts.com/sage/
+  url: http://mirrors-ru.go-parts.com/sage/sagemath/
 - active: true
   cat: na
   country: us
   name: Go-Parts, Michigan, USA
-  url: http://mirrors-usa.go-parts.com/sage/
+  url: http://mirrors-usa.go-parts.com/sage/sagemath/
 - active: true
   cat: e
   country: uk
   name: Go-Parts, Hampshire, UK
-  url: http://mirrors-uk.go-parts.com/sage/
+  url: http://mirrors-uk.go-parts.com/sage/sagemath/
 - active: true
   cat: na
   country: us
