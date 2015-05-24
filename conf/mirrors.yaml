@@ -240,6 +240,7 @@
 - active: true
   cat: e
   country: uk
+  flag: gb
   name: Go-Parts, Hampshire, UK
   url: http://mirrors-uk.go-parts.com/sage/sagemath/
 - active: true
