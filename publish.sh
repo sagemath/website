@@ -23,6 +23,6 @@ $GIT fetch github
 $GIT checkout -B master
 $GIT reset --soft github/master # <- non destructive
 $GIT add -A -- .
-$GIT ci -m "auto publish `date -u --rfc-3339=seconds`"
+$GIT commit -m "auto publish `date -u --rfc-3339=seconds`"
 $GIT push github master -f
 
