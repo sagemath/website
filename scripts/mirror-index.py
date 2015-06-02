@@ -21,7 +21,7 @@ from hashlib import md5
 #import md5
 import re
 
-if len(sys.argv) != 2:
+if len(sys.argv) < 2:
   raise Exception("first argument must be the root directory of the files to mirror! e.g. ~/files")
 ROOT = os.path.abspath(os.path.expanduser(sys.argv[1]))
 
@@ -39,13 +39,14 @@ notesfile = 'notes.txt'
 # to call mirror-meta.sh switch to its path
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-# run the indexer for meta files
-print "now running meta file indexing, torrents, metalink, or more ..."
-print "by calling ./mirror-meta.sh"
-print
-os.system('./mirror-meta.sh %s' % ROOT)
-print "mirror-meta.sh finished"
-print
+if len(sys.argv) == 2: # not old!
+  # run the indexer for meta files
+  print "now running meta file indexing, torrents, metalink, or more ..."
+  print "by calling ./mirror-meta.sh"
+  print
+  os.system('./mirror-meta.sh %s' % ROOT)
+  print "mirror-meta.sh finished"
+  print
 
 
 # output filename in each directory
@@ -411,10 +412,16 @@ if __name__=='__main__':
 
     os.chdir(ROOT)
     
-    for d in map(os.path.abspath, [ './osx/', './win/', './livecd/',
-          './linux/', './solaris/', './src/', './devel/', './spkg/upstream/']):
-       os.chdir(d)
-       print os.path.abspath(os.curdir).center(100, "=")
-       strip = d.split(os.path.sep)[-1]
-       index(os.path.abspath(os.curdir), strip)
+    import sys
+    if len(sys.argv) == 3 and sys.argv[2] == "old":
+       os.chdir(ROOT)
+       index(os.path.abspath(os.curdir), "src-old")
+    
+    else:
+      for d in map(os.path.abspath, [ './osx/', './win/', './livecd/',
+            './linux/', './solaris/', './src/', './devel/', './spkg/upstream/']):
+         os.chdir(d)
+         print os.path.abspath(os.curdir).center(100, "=")
+         strip = d.split(os.path.sep)[-1]
+         index(os.path.abspath(os.curdir), strip)
 

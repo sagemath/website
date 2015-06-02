@@ -19,6 +19,13 @@ from hashlib import md5
 # NO, IT DOES NOT
 os.chdir(os.path.expanduser("~"))
 
+#if len(sys.argv) != 2:
+#  raise Exception("first argument must be the root directory of the files to mirror! e.g. ~/files")
+#ROOT = os.path.abspath(os.path.expanduser(sys.argv[1]))
+#os.chdir(ROOT)
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(sys.argv[0]))
 
 def getMirrorHash():
     # python 2.6 version, nicer, but needs followlinks !!!
