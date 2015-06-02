@@ -1,0 +1,89 @@
+﻿Hello,
+
+I've released SAGE-2.7.   Download the source here
+
+   http://sagemath.org/sage/dist/src/
+
+or get a binary here
+
+   http://sagemath.org/sage/download.html
+
+I've posted binaries for the standard platforms, but
+haven't updated the vmware image yet.
+
+This is a very significant upgrade from the previous version
+of SAGE, primarily because:
+
+ 1. The *SAGE notebook* was almost completely rewritten.
+
+ 2. SAGE now includes a wide range of functionality
+    for *numerical* computation and applied mathematics;
+    in particular, SAGE includes both scipy for scientific
+    computation and cvxopt for optimization standard.
+
+ 3. Building SAGE now involves *Fortran*.  On most systems
+    a gfortran binary is downloaded and installed as part
+    of the build process.  There is also nontrivial support
+    for using Fortran (and Fortran libraries) from SAGE and
+    in the SAGE notebook, and in Python files (mainly via
+    numpy, f2py, and new code by Josh Kantor).
+
+WARNING: Because of (2), building and upgrading SAGE is
+unfortunately now more difficult rather.  In fact, I
+expect there to be upgrade and build issues with
+SAGE-2.7 -- making scipy buid on "most anything" is
+not easy.  That said, SAGE now has functionality for
+addressing a huge range of mathematics, certainly
+far more than any other free mathematics software.
+
+Please try this out and let me know about the show-stopper
+bugs/issues, and send me updated patches, so I can release
+sage-2.7.1 early next week.  After that, the plan is to
+incorporate all of Didier Deshomme and Brian Granger's great
+packaging work into SAGE, and work toward having .deb's,
+etc.
+
+The main highlights of the release include though following,
+though I've likely missed many people's contributions (which
+are listed in the detailed changelog).    As usual, there are
+still many patches in my inbox that I still haven't got into a
+stable enough form to include yet.  Resending me your
+not-included patches as patches against sage-2.7 would be
+appreciated.
+
+       * m albrecht: a huge patch of fast multivariate
+             poly arithmetic code, etc.
+       * r bradshaw: enhancements to sagex; merge with
+             official pyrex.
+       * d harvey: generic convolution function
+       * d joyner (refereed by n alexander): large
+             permutation group improvements patch.
+       * j kantor: excellent fortran support (e.g., %fortran
+             in the notebook)
+       * j kantor and w stein: new standard SAGE packages --
+              blas: fortran low level linear algebra
+              cvxopt: convex optimization, linear programming,
+                      sparse linear algebra
+              f2c: fortran to c conversion program
+              gfortran: binaries
+              lapack: fortran high-level linear algebra library
+              scipy: latest svn version
+       * r miller, e kirkman, t boothby: substantial bug
+              fixes and improvements to graph theory code.
+       * w stein: upgrade to latest svn version of scipy
+              (much easier to build, etc.)
+       * w stein with b moretti, y qiang, a clemesha,
+              d ramier, t clemans, and t boothby:
+              rewrite of the SAGE notebook; use twisted;
+              more robust security model, etc.
+       * w stein: removed Mark Watkins's "ec" from SAGE.
+       * w stein: upgraded to mercurial-0.9.4
+       * w stein: included sympy-0.4.2 standard with
+                  SAGE (do "import sympy")
+       * g tornaria: improvements to the SAGE base
+                  coercion code and free modules
+       * c wuthrich: p-adic BSD bounds
+
+Many many other people contributed to this release.
+
+ -- William Stein, 2007-07-19

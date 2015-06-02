@@ -1,0 +1,358 @@
+﻿Hello folks,
+
+Sage 2.11 has been released on March 30th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 31 people contributed code to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Tom Boothby
+ * Robert Bradshaw
+ * Craig Citro
+ * John Cremona
+ * Dan Drake
+ * Didier Deshommes
+ * Burcin Erocal
+ * Lars Fischer
+ * Gary Furnish
+ * Alex Ghitza
+ * Jason Grout
+ * Marshall Hampton
+ * Carlo Hamalainen
+ * Mike Hansen
+ * Ryan Hinton
+ * David Joyner
+ * Michael Kallweit
+ * Emily Kirkman
+ * Robert Miller
+ * Joel Mohler
+ * R. Rishikesh
+ * David Roe
+ * William Stein
+ * Jaap Spies
+ * Justin Walker
+ * Carl Witty
+ * Yi Qiang
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * ATLAS: Michael Abshoff and Burcin Erocal upgraded ATLAS to the 
+   3.8.1 release. In addition tuning info for 32 bit Prescott CPUs 
+   as well as Powerbook G4s under Linux was added. 
+
+ * zn_poly: David Harvey's zn_poly library is now a standard package 
+   for Sage. zn_poly is a new C library for polynomial arithmetic in 
+   (Z/nZ)[x] where 3≤n≤ULONG_MAX (i.e. any machine-word-sized modulus). 
+   The main benefit is speed. The library is used so far only to 
+   compute the zeta function for hyperelliptic curves.
+
+ * Small roots method for polynomials mod N (N composite): Martin 
+   Albrecht implemented Coppersmith's method for finding small roots 
+   of univariate polynomials modulo N where N is composite.
+
+ * Generic Multivariate Polynomial Arithmetic: Joel Mohler improved 
+   the efficiency of the generic multivariate polynomial arithmetic 
+   in Sage by roughly a factor of ten. 
+
+ * k-Schur Functions and Non-symmetric Macdonald Polynomials: Mike 
+   Hansen: k-Schur functions s^(k)_\lambda are a relatively new 
+   family of symmetric functions which play a role in Z[h1,...,hk] 
+   as the Schur functions s_\lambda do in \Lambda. The k-Schur 
+   functions, amongst other things, provide a natural basis for the 
+   quantum cohomology of the Grassmannian. The k-Schur functions can 
+   be used like any other symmetric functions and are created with 
+   kSchurFunctions. Non-symmetric Macdonald polynomials in type A 
+   can now be accessed in Sage. The polynomials are computed from 
+   the main theorem in "A Combinatorial Formula for the Non-symmetric 
+   Macdonald Polynomials" by Haglun, Haiman, and Loehr.
+
+ * Marshall Hampton did upgrade gfan as well as the optional phcpack
+   spkgs and their interfaces. He also increased doctest coverage to 
+   100% for both interfaces.
+
+ * Improved capabilities for solving matrix equations: William Stein 
+   implemented code so that one can now solve matrix equations AX=B 
+   and XA=B whenever a solution exists. In particular, solving linear 
+   equations now works even if A is singular or nonsquare. 
+
+ * Generators for congruence subgroups: Robert Miller implemented an 
+   algorithm for very quickly computing generators for congruence 
+   subgroups \Gamma_0(N), \Gamma_1(N), and \Gamma_H(N).
+
+ * Various other people fixed a number of bugs and did improve other 
+   bits of Sage.
+
+* Known Issues with 2.11:
+
+ * None
+
+* Bug Statistics
+
+We closed 129 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-2.11
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.0, chaired by Michael Abshoff. 
+The release is planned in about two weeks. Potential features 
+include:
+
+ * DOCTESTS: Raise the doctest coverage of the Sage library 
+   to 50%.
+ * INTERACT: Interactive versions of functions in the notebook; 
+   kind of like Mathematica's Manipulate command.
+ * R: a pexpect R interface
+ * TIMING/BENCHMARK: Making it so doctesting Sage also saves 
+   complete timing and profiling information. Start using and 
+   publishing the results of this.
+ * PORTING: OSX 10.5 64 bit, FreeBSD, PPC 64 bit build support 
+   out of the box. Experimental 32 bit Solaris 10 build support.
+ * MODULAR ABELIAN VARIETIES: Implement Stein's algorithms for 
+   computing with modular abelian varieties. This is very 
+   symbolic, because Stein started the Sage project in the 
+   first place specifically to implement these algorithms. 
+
+* Doctesting Coverage
+
+For 2.10.4 we had:
+
+Overall weighted coverage score:  47.6%
+Total number of functions:  18616
+
+We increased coverage by 1.3% in 2.11 while adding 237 functions:
+
+Overall weighted coverage score:  48.9%
+Total number of functions:  18853
+
+* Closed Tickets:
+
+Merged in final:
+
+#2736: Yi Qiang: fix for dsage doctest failures in 
+       sage-2.11.rc0
+
+Merged in rc0:
+
+#1882: Marshall Hampton, Carl Witty: update optional 
+       phcpack.spkg to 2.3.39, mixed volume computation
+#1990: Carl Witty: ZZ.random_element() -- never returns 
+       0 and typos/nonsense in docstrings
+#2173: Tim Abbott: SAGE setup.py should run cython as 
+       "python2.5 cython" and other debian fixes
+#2688: Emily Kirkman: Kuratowski subgraph isolator for 
+       planarity checking
+#2702: Martin Albrecht, Mike Hansen: get coverage of 
+       multi_polynomial_libsingular to almost 100%
+#2709: Nick Alexander: add a prime_above() function to 
+       NumberField_generic for finding prime ideals above 
+       other ideals
+#2714: Carl Witty: many interfaces have gp-specific code
+#2715: Mike Hansen: sage -coverage currently counts 
+       functions that are defined in doctests
+#2717: Carl Witty: maxima expect interface synchronization 
+       not sufficiently robust
+#2718: Michael Abshoff: increase the default doctest 
+       timeout to 360 seconds
+#2719: Robert Bradshaw: bitset is completely broken on OSX 
+       10.4 G5
+#2720: Michael Abshoff: Sage 2.11.alpha2: fix documentation 
+       build issues
+#2721: Gary Furnish: parallel doctest not robust against 
+       filesystem issues
+#2722: William Stein: interact -- a doctest problem
+#2723: Joel Mohler: coercion error in monomial_quotient
+#2725: Joel Mohler: MPolynomial_polydict doc-tests and some 
+       refactoring
+#2727: Tim Abbott: fix uninitialized cdef in 
+       multi_polynomial_libsingular.pyx
+
+Merged in alpha2:
+
+#1010: Marshall Hampton: upgrade gfan to version 0.3
+#1618: Michael Abshoff: Make SCons ignore Intel ifort's 
+       linker options
+#1707: Carlo Hamalainen: add Carlo Hamalainen's latin square 
+       stuff to Sage
+#2276: Martin Albrecht: M.divides(N) gives an error if M and 
+       N are monomials in R.<x,y> = PolynomialRing(QQ)
+#2355: Didier Deshommes, Gary Furnish: Write a clearer 
+       submatrix implementation
+#2415: Michael Abshoff: update NTL to 5.4.2 (bugfix release)
+#2417: Alex Ghitza: discriminant method sometimes returns 
+       values in the fraction field
+#2470: Yi Qiang: dsage docs in tutorial -- can't tex them
+#2498: Alex Ghitza: PARI's is_irreducible being used 
+       inappropriately
+#2565: Dan Drake: logging is extremely broken
+#2596: William Stein: Sage 2.11.alpha0: sage/plot/plot.py 
+       doctest failure
+#2597: Ryan Hinton: Add reduced adjacency matrix and a list 
+       file format support to BipartiteGraph
+#2600: Carl Witty: vector plot throws error when function 
+       contains a float
+#2609: Robert Miller: generators for congruence subgroups
+#2611: Martin Albrecht: add monomial_coefficent to boolean 
+       polynomials
+#2612: Robert Bradshaw: String to Integer Conversion
+#2614: Joel Mohler: MPolynomial coefficient/
+       polynomial_coefficient merging
+#2627: Robert Bradshaw: Integer(abs(gamma(n+1))) is not always 
+       equal to factorial(n) for n a positive integer
+#2634: Martin Albrecht: Unable to create certain multivariate 
+       polynomial rings since libsingular is invoked instead 
+       of generic code
+#2642: Martin Albrecht, Carl Witty: doctest failure in 
+       polynomial_modn_dense_ntl.pyx: .small_roots()
+#2645: Jason Grout: arrow3d is sometimes too long
+#2653: Robert Bradshaw: norm and trace of elements of orders 
+       are Rational not Integer
+#2657: Tim Abbott: Debian fplll cleanup
+#2660: Michael Abshoff: copy work around stdint.h on Solaris 9
+#2661: Mike Hansen: sage cannot compute floor / ceil of 
+       log(8)/log(2)
+#2664: Nick Alexander: implement a symplectic form for 
+       finding symplectic bases
+#2668: Nick Alexander, Carl Witty: loads/dumps do not work 
+       with QQbar and AA
+#2672: Michael Abshoff: Fix OSX 10.5 detection code - it 
+       fails for the currect OSX 10.5.2
+#2674: Craig Citro, Justin Walker: Bug in modforms
+#2676: Robert Miller: equitable partitions: two bugs
+#2677: Didier Deshommes: sage 2.11.alpha1: doctest failures 
+       in real_double_dense.pyx
+#2681: Alex Ghitza:improve doctest coverage in libs/pari/gen.pyx
+#2683: Mike Hansen: Add initial support of k-Schur functions
+#2685: Robert Miller: compute the girth of a graph
+#2689: Robert Miller: compute blocks and cut-vertices of a 
+       graph
+#2690: Emily Kirkman: add circular argument to genus command
+#2691: Robert Miller: generate digraphs
+#2692: William Stein: bug displaying list of published worksheets
+#2701: David Joyner: simple bug fixed for linear_codes
+#2706: Robert Bradshaw: Fast bitset implimentation
+#2707: Nick Alexander: clean and better document 
+       is_totally_real(), add is_totally_imaginary() to 
+       NumberField_generic
+#2708: Mike Hansen: add support for nonsymmetric Macdonald 
+       polynomials in type A via HHL formula
+#2712: Justin Walker: Add 'scalar_part()' and other methods 
+       for quaternion elements
+
+Merged in alpha1:
+
+#291: Joel Mohler: strange printing of -1 in multivariate 
+      polynomial rings
+#679: Gary Furnish: print statistics about the number of 
+      failed doctests and exact nature of failures
+#2287: Michael Abshoff: error installing rubiks related 
+       to location of install
+#2493: Jaap Spies: Updated experimental vtk spkg 
+       (vtk-5.0.4.spkg)
+#2495: Jaap Spies: Updated experimental Mayavi2 spkg 
+       (mayavi_2.1.1) linux only
+#2514: David Joyner, Robert Miller: additions to coding 
+       modules
+#2572: Carl Witty: imag() not defined for Algebraic Real 
+       Field
+#2586: Alex Ghitza, Michael Abshoff: latex products need 
+       to be space separated
+#2595: Michael Abshoff: rubiks and polymake both have a 
+       cube binary
+#2598: Martin Albrecht: allow ZZ element to be constructed 
+       from GF(2) list
+#2599: Mike Hansen: Permutation -> PermutationGroupElement 
+       fails for the identity
+#2613: Michael Kallweit: Moving all_paths() to GenericGraph
+#2618: Martin Albrecht: documentation for QuotientRingElement
+#2619: Martin Albrecht: Gröbner bases over quotient rings
+#2621: Gary Furnish: parallel doctest: concurrency problem 
+       when creating .doctest directories
+#2622: Martin Albrecht: add PolyBoRi to reference manual
+#2623: Michael Abshoff: fix repo consistency issue with 
+       sage/schemes/hyperelliptic_curves/hypellfrob/README
+#2626: Martin Albrecht: useless __list__ methods
+#2635: Tom Boothby: MAJOR NOTEBOOK BUG -- sending unevaluated 
+       cells back to the server is severly broken
+#2639: Carl Witty: ZZ(QQbar(0)) fails
+#2640: Michael Abshoff: add sage-edu to list of mailing lists
+#2644: Didier Deshommes: fix numerical noise doctest failures 
+       in matrix_real_double_dense
+#2647: Tim Abbott: Fixed Debian support for linbox
+#2648: William Stein: bug in octave version
+
+Merged in alpha0: 
+
+#1567: David Harvey: Make zn_poly a standard package
+#1568: David Harvey: hypellfrob -- faster zeta functions for 
+       hyperelliptic curves
+#2108: Burcin Erocal, Michael Abshoff: Add Atlas Tuning 
+       information for 32 bit Pentium D CPUs under Linux 
+#2148: Burcin Erocal: PolyBoRi monomial orders are wrong
+#2260: Michael Abshoff: Upgrade ATLAS to 3.8.1
+#2262: Michael Abshoff: Move the debian directory from the sage 
+       to the ext repo
+#2368: Michael Abshoff: Add Atlas Tuning information for G4
+       Powerbook under Linux 
+#2405: Joel Mohler: increase Polydict speed
+#2424: Martin Albrecht: small roots method for polynomials 
+       mod N (N composite)
+#2426: Michael Abshoff: inst.tex - update compiler and 
+       operating system support
+#2431: Marshall Hampton: fix optional polymake-2.2.p4.spkg 
+#2437: Tom Boothby, Michael Abshoff: update eclib.spkg to 
+       eclib-20080304.p0
+#2468: Didier Deshommes: inverting a non-invertible matrix over 
+       RDF returns weird results
+#2517: Jason Grout: ignore bad values in plot
+#2545: Burcin Erocal: FractionFieldElement lacks derivative method
+#2566: Robert Miller: fix all known bugs in graph_isom and 
+       binary_code
+#2571: John Cremona: problem with copy() on 
+       sage.rings.integer_mod.IntegerMod_gmp
+#2574: David Joyner: problem with Abelian groups and trivial 
+       elements
+#2576: William Stein: preserve docstrings of decorated methods 
+       in multi_polynomial_ideal.py
+#2579: R. Rishikesh: Inconsistency in integer quotient
+#2580: Robert Miller: Implement backends for graphs
+#2581: William Stein: extend solve_right to all cases; implement 
+       solve_left
+#2582: Robert Miller: fix bug in PermutationGroupElement
+#2583: Robert Miller: Sage 2.11.a0: doctest failure in plot.py 
+       due to #2580
+#2584: Jason Grout, Mike Hansen: printing bug with list_function())
+#2585: David Roe, Mike Hansen: padic bugfix for check=False in 
+       constructor
+#2587: Robert Miller: subgroup of a permutation group is so slow 
+       it's silly
+#2588: Nick Alexander: documentation and tests for 
+       sage.schemes.hyperelliptic_curves.jacobian_morphism
+#2593: Martin Albrecht: Sage chokes on utf-8 in .sage files
+#2594: Joel Mohler: MPolynomial_polydict __floordiv__ wrong 
+       arithmetic
+#2602: Jason Grout: plot_vector_field docs are unnecessarily 
+       complicated (and use the slow lambda functions!)
+#2610: Lars Fischer, Michael Abshoff: Website: add missing 
+       line for emacs config

@@ -1,0 +1,288 @@
+﻿Hello folks,
+
+Sage 3.0.2 has been released on May 24th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 27 people contributed code to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Jason Bandlow
+ * Francois Bissey
+ * Tom Boothby
+ * Robert Bradshaw
+ * Dan Bump
+ * Francis Clark
+ * Timothy Clemans
+ * Craig Citro
+ * John Cremona
+ * Didier Deshommes
+ * Burcin Erocal
+ * Gary Furnish
+ * Jason Grout
+ * Mike Hansen
+ * Carlo Hamalainen
+ * Bjarke Hammersholt Roune
+ * Peter Jipsen
+ * David Joyner
+ * Emily Kirkman
+ * Robert Miller
+ * Yi Qiang
+ * Franco Saliola
+ * William Stein
+ * Carl Witty
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Self-orthogonal Binary Codes (Robert Miller)
+ * Notebook Improvements (William Stein, Tom Boothby)
+ * Portability of Sage to 64 bit OSX and Cygwin (Michael Abshoff, 
+   William Stein)
+ * Posets and Semi-Lattices (Peter Jipsen and Franco Saliola)
+ * Frobby for monomial ideals (Bjarke Hammersholt Roune)
+
+For details see the Sage 3.0.2 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.0.2
+
+* Known Issues with 3.0.2:
+
+ * clisp is broken on SLES 10/Itanium with the system 
+   compiler. Building clisp 2.44.1 manually fixes the 
+   problem.
+
+* Bug Statistics
+
+We closed a record number of 138 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.0.2
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.0.3, chaired by Michael Abshoff. 
+The release is planned in about a week. It will be mostly a 
+bug fix release to clear up issues from the 3.0.2 release.
+
+* Doctesting Coverage
+
+For 3.0.1 we had:
+
+Overall weighted coverage score:  51.8%
+Total number of functions:  19553
+
+We increased coverage by 0.4% in 3.0.2 while adding 211 functions:
+
+Overall weighted coverage score:  52.2%
+Total number of functions:  19764
+
+* Closed Tickets:
+
+Merged in rc3:
+
+#3285: Robert Miller: segfault in binary_code.pyx on 32-bit linux
+#3287: William Stein: worksheet.py -- doctest failure blocking a 
+       release
+#3288: Robert Miller: linear_code -- memory errors in doctests 
+       on Arch Linux
+#3289: Robert Miller: linear_code -- segfaults on ubuntu linux
+#3291: Gary Furnish: pbuild doesn't properly compile mwrank.so 
+       on some systems
+
+Merged in rc1/2:
+
+#3279: Michael Abshoff: Sage 3.0.2.rc0: Copy dsage_* scripts 
+       from the scrips.spkg
+#3280: Michael Abshoff: Sage 3.0.2.rc0: fix rebuild Sage 
+       documentation issues
+#3281: Gary Furnish: libecm fails to pbuild
+
+Merged in rc0:
+
+#1762: Robert Miller, Michael Abshoff: Create optional graphviz 
+       package
+#2121: Robert Miller: move libecm wrapper from interfaces to libs
+#2519: Franco Saliola, Peter Jipsen: Add support for posets, 
+       semi-lattices, etc. to Sage
+#3018: Bjarke Hammersholt Roune: Integrate Frobby into Sage
+#3097: Gary Furnish, Michael Abshoff: pbuild: make sure the files 
+       from setup.py's scripts section are copied
+#3104: William Stein: pbori.pyx: Make some doctest long since 
+       it uses a lot of RAM
+#3112: Robert Miller: Generate self-orthogonal binary codes
+#3148: Francis Clarke: improved orthogonal functions
+#3218: Michael Abshoff: fix 64 bit OSX build support for mercurial
+#3219: William Stein: upgrade to gmp-4.2.2 while we wait for MPIR
+#3242: Robert Miller: Fix little bug in G.relabel() for G a graph
+#3245: Mike Hansen: provide coefficient and coefficients methods 
+       for symbolic expressions
+#3257: Gary Furnish: Pbuild ignores gcc specific default settings
+#3263: Craig Citro: typo in lseries_ell.py
+#3266: William Stein: Sage 3.0.2.alpha1: doctest failure in 
+       sage/server/simple/twist.py
+#3267: Michael Abshoff: Sage 3.0.2.alpha1: doctest failure in 
+       sage/server/support.py
+#3269: Jason Bandlow: Improve documentation for combinat/dyck_word.py
+#3270: Robert Miller: trivial 100x speedup in coding theory
+#3272: Craig Citro: Bug in sparse polynomials over finite fields
+#3273: Robert Bradshaw: extend isqrt to work for Python int's in 
+       addition to Sage integers and objects with an isqrt method
+#3274: Michael Abshoff: OSX: delete libpng*.la since we also nuke 
+       libpng*.dylib
+#3275: Craig Citro: Make SL2Z distinct
+
+Merged in alpha1:
+
+#406: William Stein: notebook -- make tab completion not stick 
+      gap. when using the notebook in gap mode
+#637: William Stein: notebook improvement -- upload allow txt 
+      worksheets.
+#1733: William Stein: notebook bug -- %foo (or anything else) 
+       in a cell by itself (with nothing else in the cell) does 
+       not give an error but it *should*
+#1864: William Stein: simple notebook bug -- typing ? in a 
+       comment yields introspection but shouldn't
+#1892: William Stein: notebook -- uploading a data file should 
+       give some help about the DATA variable
+#2359: William Stein: notebook -- make it so when you send a 
+       kill signal to the notebook server it saves state
+#2636: William Stein: notebook -- changing a cell without 
+       evaluate should put the red line back to the left
+#2860: William Stein: easy-to-fix bug in html.py
+#2884: William Stein, Tom Boothby: notebook -- bug; @interact 
+       cell eval doesn't clear out the old html output
+#2992: William Stein: notebook -- help(foo) in the notebook 
+       should not word wrap
+#3024: William Stein: notebook -- parses tracebacks in the 
+       output of docstrings of help command
+#3050: Timothy Clemans: notebook -- add a "remember me" checkbox 
+       to the login page
+#3051: Dan Bump, Mike Hansen: Implement Weyl Characters
+#3053: William Stein: notebook -- new cell_resize doesn't 
+       respect %hide at the beginning of a cell
+#3069: William Stein: notebook -- typeset checkbox doesn't work 
+       after save/reload
+#3137: Yi Qiang: view command in misc/latex.py -- fix to not 
+       hardcode xdvi command
+#3153: Carl Witty: make finite_field_ntl_gf2e use randstate 
+       framework
+#3155: Timothy Clemans: notebook postdata and behaviour of archive, 
+       delete and stop buttons
+#3160: Emily Kirkman, Robert Miller: change is_planar for graphs 
+       to return bool
+#3161: Michael Abshoff: sdist: #3046 seems to have broken 
+       sage-banner
+#3170: Michael Abshoff: add 64 bit OSX build support to readline
+#3171: Michael Abshoff: add 64 bit OSX build support to termcap
+#3172: Michael Abshoff: add 64 bit OSX build support to prereq 
+       and bzip
+#3176: Michael Abshoff: add 64 bit OSX build support to sqlite
+#3177: Michael Abshoff: fix 64 bit OSX build support for python
+#3178: Michael Abshoff: add 64 bit OSX build support to freetype
+#3179: Michael Abshoff: more 64 bit OSX libpng fixes
+#3181: Michael Abshoff: add 64 bit OSX build support to iml
+#3182: Michael Abshoff: improve 64 bit OSX build support for givaro
+#3183: Michael Abshoff: add 64 bit OSX build support to linbox
+#3186: Michael Abshoff: fix 64 bit OSX build support for numpy
+#3187: Michael Abshoff: fix 64 bit OSX build support for matplotlib
+#3188: Michael Abshoff: add 64 bit OSX build support to mpfi
+#3189: Michael Abshoff: add 64 bit OSX build support to pycrypto
+#3190: Michael Abshoff: add 64 bit OSX build support to zodb
+#3191: Michael Abshoff: add 64 bit OSX build support to quaddouble
+#3192: Michael Abshoff: fix 64 bit OSX build support for python_gnutls
+#3197: Michael Abshoff: fix 64 bit OSX build support for m4ri
+#3198: Michael Abshoff: fix 64 bit OSX build support for ecm
+#3200: Michael Abshoff: fix 64 bit OSX build support for genus2reduction
+#3213: Timothy Clemans: notebook -- Account Settings page for 
+       changing password and e-mail address
+#3220: William Stein: readline -- fix a couple of issues
+#3222: William Stein: sqlite -- add cygwin support to sqlite
+#3233: William Stein: cygwin -- make linbox work with cygwin
+#3224: Michael Abshoff: add 64 bit OSX build support for lcalc
+#3225: Michael Abshoff: add 64 bit OSX build support for cddlib
+#3226: Michael Abshoff: add 64 bit OSX build support for gfan
+#3234: William Stein: cygwin -- make numpy work with cygwin
+#3235: William Stein, Michael Abshoff: cygwin -- mpfi; get it 
+       to work with Cygwin by fixing configure.ac
+#3236: William Stein, Michael Abshoff: cygwin -- get quaddouble 
+       to work with cygwin
+#3238: William Stein, Michael Abshoff: libfpll spkg -- update 
+       to work with cygwin
+#3239: William Stein, Michael Abshoff: cygwin polybori -- add 
+       Cygwin build support for polybori
+#3230: William Stein: cygwin -- new givaro spkg that works 
+       around stupidity in cygwin
+#3241: William Stein, Michael Abshoff: cygwin -- new rubiks 
+       spkg that builds on cygwin
+#3243: William Stein: cygwin -- get log2 to work on cygwin
+#3246: William Stein: cygwin -- fix broken gsl.ode setup.py code
+#3252: Yi Qiang: add kbase functionality to libsingular
+
+Merged in alpha0:
+
+#336: William Stein, Timothy Clemans: Create an option to clear 
+      all cell output
+#905: Burcin Erocal, Michael Abshoff: update ipython to 0.8.2
+#1230: William Stein: Quit worksheet behaviour
+#1557: William Stein: notebook -- usability improvement after 
+       uploading file
+#2684: Jason Grout: vertices should not default to red
+#2768: Jason Grout: add comparison operators to the fast_float 
+       mechanism
+#2926: Timothy Clemans: notebook -- Minimalistic change password 
+       page for notebook user
+#2983: Michael Abshoff: Itanium (RHEL 5) -- singular interface 
+       problems in matrix_group.py
+#3008: William Stein: first cell in notebook is undeletable
+#3020: John Cremona, Martin Albrecht: Speed up Finite Fields of 
+       characteristic 2 constructors
+#3026: Bjarke Hammersholt Roune: multivariate polynomial rings 
+       with no variables do not print properly
+#3028: Bjarke Hammersholt Roune: Ideals in multivariate polynomial 
+       rings with no variables raise exception on comparison
+#3065: Didier Deshommes: empty matrices: frobenius() throws 
+       RuntimeError
+#3105: Francis Clark: new _latex_ and modified __repr__ for 
+       elements of relative number fields
+#3109: William Stein: elliptic curves -- implement P.divide(n) 
+       for P a point on an elliptic curve and n an integer
+#3110: Gary Furnish: fix pbuild dependency bug
+#3116: Mike Hansen: 1x1 symbolic matrices don't work right
+#3121: Jason Grout, William Stein: @interact grid control
+#3125: Robert Miller: chromatic_polynomial incorrectly blocks 
+       control-c
+#3126: Robert Bradshaw: Cython annotation has unicode errors 
+       (e.g. from the notebook)
+#3129: Bjarke Hammersholt Roune: The singular interface should 
+       not claim to support polynomial rings with no variables
+#3136: William Stein: the readme for osx should be changed to 
+       delete the line about inotebook()
+#3138: Bjarke Roune: Singular multivariate polynomial ring has 
+       redundant _repr_ method
+#3142: Martin Albrecht: MPolynomialIdeal.homogenize bugfix
+#3143: Martin Albrecht: remove references to "/home/was"
+#3046: David Joyner: version option returning clone branch name
+#3150: Carlo Hamalainen: Memory leak in dancing_links.pyx
+#3157: Gary Furnish: Executable target for pbuild
+#3158: Michael Abshoff: singular-3-0-4-2-20080405.p1 requires 
+       flex
+#3159: Tim Abbott, Francois Bissey, Michael Abshoff: Patch adding 
+       soname to ntl shared library

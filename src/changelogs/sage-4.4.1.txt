@@ -1,0 +1,190 @@
+﻿Hi folks,
+
+Sage 4.4.1 was released on May 02, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+* sage-support: http://groups.google.com/group/sage-support
+* sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+* sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+* http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 50 people contributed to this release. Of those, 9 made
+their first contribution to Sage:
+
+ * Alec Mihailovs
+ * Alex Ghitza
+ * Alex Leone
+ * Alexander Dreyer
+ * Alexandre Blondin Massé
+ * Andrey Novoseltsev
+ * Burcin Erocal
+ * Dan Drake
+ * David Joyner
+ * David Kirkby
+ * David Loeffler
+ * Dmitrii Pasechnik
+ * Ethan Van Andel [first contribution]
+ * Florent Hivert
+ * Francis Clarke
+ * Georg S. Weber
+ * Gonzalo Tornaria
+ * Gregory McWhirter [first contribution]
+ * Harold Gutch [first contribution]
+ * Ivan Andrus
+ * Jason Grout
+ * Jens Vollinga [first contribution]
+ * Johan Bosman [first contribution]
+ * John Cremona
+ * John Verzani [first contribution]
+ * Karl-Dieter Crisman
+ * Leif Leonhardy [first contribution]
+ * Marc Mezzarobba
+ * Mariah Lennox [first contribution]
+ * Marshall Hampton
+ * Martin Albrecht
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Nathann Cohen
+ * Nicolas M. Thiéry
+ * Paul Zimmermann
+ * Peter Jeremy
+ * Richard Kreckel [first contribution]
+ * Rishikesh
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Mařík
+ * Robert Miller
+ * Ryan Hinton
+ * Sébastien Labbé
+ * Tim Dumol
+ * Tom Boothby
+ * Vincent Delecroix
+ * Willem Jan Palenstijn
+ * William Stein
+
+* Release manager
+
+  * William Stein
+
+* Major features, new spkg's, and bug fixes
+
+ * Upgrade NetworkX to version 1.0.1
+
+* Bug statistics
+
+We closed 55 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.4.1
+
+or check out the closed ticket section at the end of the announcement.
+
+* Doctesting coverage
+
+For Sage 4.4, we had an overall weighted doctest coverage score of
+81.7%, with 25,406 functions. In Sage 4.4.1, we added 69 new
+functions. Thus for Sage 4.4.1 we now have
+
+ * Overall weighted coverage score:  81.7%
+ * Total number of functions:  25,475
+
+* Known issues
+
+When compiling the standard package sagenb, this package requires an
+Internet connection to download a number of prerequisite
+packages. This is should not happen because all prerequisites
+necessary for sagenb to compile are contained in the sagenb spkg
+itself. This issue is tracked at ticket #8861. In general, compiling
+the Sage source tarball should not depend on an active Internet connection.
+
+Closed tickets:
+
+#4608: roots method broken for root system lattices
+
+Merged in sage-4.4.1.alpha0:
+
+#4793: Rishikesh: Update lcalc to the new upstream 1.23 [Reviewed by Robert Bradshaw, William Stein]
+#6246: SAGE_FAT_BINARY still doesn't work
+#8415: bug in quadratic field embedding into QQbar [Reviewed by John Cremona]
+#8453: Mike Hansen: Update PARI to 2.3.5 [Reviewed by John Cremona, David Loeffler]
+#8644: Burcin Erocal: update pynac to 0.1.12 [Reviewed by Robert Mařík]
+#8753: William Stein: get pynac to build with gcc-4.5. [Reviewed by Mike Hansen]
+#8767: Willem Jan Palenstijn: libpng -- sage-4.4 fails to build on SUSE with GCC-4.5.0 [Reviewed by William Stein]
+#8770: Willem Jan Palenstijn: gfan fails to build on Fedora Core 12 wtih GCC-4.5.0 (lena) [Reviewed by William Stein]
+#8771: Willem Jan Palenstijn: Sage-4.4 + GCC-4.5.0 -- sage fails to startup due to libzn_poly missing symbol issue (ZNP_mpn_mulmid_fallback_thresh) [Reviewed by William Stein]
+#8773: Willem Jan Palenstijn: GCC-4.5.0 breaks GAP -- the workspace is broken, hence gap('2+2') fails. [Reviewed by Dmitrii Pasechnik, William Stein]
+#8774: Dmitrii Pasechnik: gap-4.4.12.p0 is full of *CRAP* [Reviewed by Willem Jan Palenstijn]
+#8785: William Stein: avoid subtle interaction between importing multiprocessing and twisted [Reviewed by Mariah Lennox]
+
+Merged in sage-4.4.1.alpha1:
+
+#7608: Gregory McWhirter: upgrade NetworkX to version 1.0.1 [Reviewed by Minh Van Nguyen, Rob Beezer, Jason Grout]
+#7765: Karl-Dieter Crisman, Ivan Andrus: In sage-4.3, the command "sage -bdist" is broken on OS X [Reviewed by William Stein, Georg Weber, Karl-Dieter Crisman]
+#8192: Alexander Dreyer, Burcin Erocal: Update PolyBoRi to newest upstream release [Reviewed by Martin Albrecht]
+#8715: Harold Gutch: fortran-20100118 ignores SAGE_FORTRAN on Linux [Reviewed by William Stein]
+
+Merged in sage-4.4.1.alpha2:
+
+#5969: William Stein: implement computation of rational cuspidal subgroups of modular abelian varieties [Reviewed by Alex Ghitza]
+#6648: Ethan Van Andel: adds riemann mapping and complex interpolation [Reviewed by David Joyner, Martin Albrecht, Minh Van Nguyen]
+#7004: Nicolas M. Thiéry: Refactor the graph layout code, and add interface with graphviz [Reviewed by Vincent Delecroix]
+#7319: Mike Hansen: gdmodule requires libiconv on cygwin [Reviewed by David Kirkby, William Stein]
+#7321: Mike Hansen: numpy fails to build on cygwin due to not using the correct fortran compiler [Reviewed by Peter Jeremy, William Stein]
+#7643: Francis Clarke: composite_fields does not play nice with QuadraticFields [Reviewed by John Cremona]
+#7665: Karl-Dieter Crisman, Tim Joseph Dumol: Make support for R graphics [Reviewed by William Stein, John Verzani, Rob Beezer]
+#8172: Nathann Cohen: Support for CPLEX [Reviewed by Dmitrii Pasechnik, Martin Albrecht]
+#8303: Dan Drake: Sage cannot work with files with spaces in their names [Reviewed by William Stein]
+#8370: Marc Mezzarobba: Add tour_functions to the French tutorial (cf. #5463) [Reviewed by Alexandre Blondin Massé, Nathann Cohen]
+#8378: Paul Zimmermann, John Cremona: typo in documentation of crt [Reviewed by Minh Van Nguyen]
+#8394: Marshall Hampton: plot/plot3d/tri_plot.py is at 0% coverage: get it to 100% [Reviewed by Minh Van Nguyen, Tom Boothby]
+#8402: Florent Hivert: Sanity check for Parents and Elements [Reviewed by Nicolas M. Thiéry]
+#8407: Sébastien Labbé: more practical construction of word paths [Reviewed by Alexandre Blondin Massé, Nathann Cohen]
+#8425: Ryan Hinton: BipartiteGraph add_edge allows bipartite property to be violated [Reviewed by Robert Miller, Nathann Cohen]
+#8565: Burcin Erocal, Richard Kreckel, Jens Vollinga: atan2(-pi,0) throws "divide by zero" [Reviewed by Robert Mařík]
+#8642: Mike Hansen: port detection for the notebook does not work in Cygwin [Reviewed by Alec Mihailovs]
+#8681: Alex Ghitza, Gonzalo Tornaria: implement matrix actions on binary quadratic forms [Reviewed by John Cremona]
+#8724: Tim Dumol, Alex Leone: Notebook redirects use wrong HTTP Status Code (301 Moved Permanently) [Reviewed by William Stein]
+#8725: Tim Dumol: New SageNB release 0.8 [Reviewed by William Stein]
+#8733: Minh Van Nguyen: documentation and stylistic clean-ups of c_graph.pyx [Reviewed by Nathann Cohen]
+#8735: Florent Hivert: Renamed size to cardinality in poset [Reviewed by Nicolas Thiery]
+#8736: Johan Bosman: Bug in computing radical of univariate polynomial [Reviewed by Leif Leonhardy, Andrey Novoseltsev]
+#8745: Nathann Cohen: Steiner Triple Systems [Reviewed by David Joyner]
+#8746: Florent Hivert: Equality of posets element is very slow [Reviewed by Andrey Novoseltsev]
+
+Merged in sage-4.4.1.alpha3:
+
+#8468: Rob Beezer: add "Group Theory and Sage: A Primer" to the classification "Thematic Tutorials" [Reviewed by David Joyner, Minh Van Nguyen]
+#8749: Robert Miller: BSD: doctest failures on solaris (t2) [Reviewed by William Stein]
+#8788: Willem Jan Palenstijn: segfault in Sage-4.4 built using GCC-4.5.0 [Reviewed by William Stein]
+#8817: Karl-Dieter Crisman, William Stein: Rplot001.png left around when doctesting [Reviewed by Minh Van Nguyen]
+#8823: Rob Beezer: Fix Cayley table doctest failure in group theory tutorial [Reviewed by William Stein]
+#8830: Alexander Dreyer, Minh Van Nguyen: polybori-0.6.4.spkg causes crashes on exit [Reviewed by Willem Jan Palenstijn]
+#8833: William Stein: fix riemann.pyx numerical noise issues on t2 (etc.) [Reviewed by Rob Beezer]
+#8835: William Stein: mark some latex doctests optional [Reviewed by Minh Van Nguyen]
+
+Merged in sage-4.4.1.rc0:
+
+#8834: William Stein: make R png graphics doctests optional [Reviewed by Minh Van Nguyen]
+#8836: Mike Hansen: sagenb doctest issue discovered on t2.
+
+Merged in sage-4.4.1.final:
+
+#8806: William Stein: update the README.txt in sage-4.4.1 to reflect improved platform and compiler support [Reviewed by Minh Van Nguyen]
+#8831: Minh Van Nguyen: fail to build PDF version of reference manual in Sage 4.4.1.alpha2 [Reviewed by William Stein]
+#8837: Georg S. Weber: Sage 4.4.1: the symmetrica Sage library cython code doesn't build on OS X 10.4 PowerPC, Intel [Reviewed by William Stein]

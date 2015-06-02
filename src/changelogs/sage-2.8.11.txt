@@ -1,0 +1,94 @@
+﻿Sage 2.8.11:
+
+Release team: Michael Abshoff (chair), William Stein, Carl Witty
+
+While there were many bug fixes, performance improvements and features added 
+the main goal of this release was to get Sage building out of the box in 32 
+bit mode on OSX 10.5. We didn't make it 100% to the finish line, but more 
+about that below. The main participants in the port were William Stein, 
+Ralf-Philipp Weinmann and Michael Abshoff. If you plan to participate in 
+Sage Bug Day 5 you should build this release since it will be the base we 
+build upon.
+
+This release contains patches and updated spkgs from (in ascending order 
+of ticket number):
+
+* Jaap Spies
+* Carl Witty
+* Tom Boothby
+* William Stein
+* Martin Albrecht
+* Josh Kantor
+* Ondrej Certik
+* Michael Abshoff
+* Joel Mohler
+* Mike Hansen
+* Jennifer S. Balakrishnan
+* Jason Grout
+* Robert Bradshaw
+* Ralf-Philipp Weinmann
+
+The following 33 tickets have been closed during the 2.8.11 release cycle:
+
+#217: optimize matrix permanents (Jaap Spies)
+#389: bug in mpfi C library (Carl Witty)
+#431: dsage jobs get lost by server (Yi Qiang, fixed by an earlier patch)
+#750: permutation group element (dict method, acting on lists) (Tom Boothby)
+#762: Elliptic curve L-series bug (William Stein)
+#830: SAGE does not install 'gphelp' for extended PARI/GP help (Carl Witty)
+#845: can't pass boolean as parameter to Magma (Martin Albrecht)
+#948: very slow factorization over a numberfield in a 2-variable ring 
+      (Martin Albrecht, Hannes Schönemann)
+#959: errors building sage because singular gets confused by system-wide boost 
+      (Martin Albrecht)
+#969: cvxopt miscompiled on OSX ppc (Josh Kantor, fixes by Michael Abshoff)
+#971: update Sympy.spkg to 0.5.6, add some minimal doctests (Carl Witty, 
+      Ondrej Certik)
+#973: Unhandled SIGSEGV: A segmentation fault occured running dance(10
+       (Michael Abshoff, Carl Witty)
+#993: Pari's gp interpreter has built-in library search path (Carl Witty)
+#1011: MagmaElement.__nonzero__ (Martin Albrecht)
+#1026: memleak in linbox's gmp++_int_io.C (Michael Abshoff)
+#1030: MPolynomial_libsingular mutates with call to factor (Joel Mohler)
+#1032: Latex'ing variable names is more robust and consistent (Joel Mohler)
+#1033: updated optional spkg: biopython 1.44 (Mike Hansen, fixes by William 
+       Stein, Michael Abshoff)
+#1034: clean up 'revlex' term ordering mess (Martin Albrecht)
+#1037: arithmetic with Schubert polynomials  (Mike Hansen)
+#1038: bad interaction between numpy and in-place operations (Robert Bradshaw)
+#1039: Dokchitser L-series of number field (Jennifer S. Balakrishnan, referred 
+       by William Stein)
+#1044: segfault apply morphism to field element (Carl Witty)
+#1045: add eulerian testing and circuit-finding (Jason Grout, referred by 
+       Robert Miller)
+#1049: graphs: transitive reduction function (Jason Grout, referred by 
+       Robert Miller)
+#1053: updated Cython to the 0.9.6.8b release (Robert Bradshaw)
+#1056: Fix Givaro 3.2.6 build problem on MacOS X 10.5 (Ralf-Philipp Weinmann, 
+       integrated by Michael Abshoff)
+#1059: fix lcalc installation on OSX 10.5 (William Stein, integrated by 
+       Michael Abshoff)
+#1051: pari/gp extended help stops working when sage tree is moved (Carl Witty)
+#1057: Order elements do not have Z as a (proper) basering (Robert Bradshaw)
+#1060: fix flintqs compile on OSX 10.5 (William Stein, integrated by Michael 
+       Abshoff)
+#1061: updated python spkg on 10.5 (William Stein)
+#1063: "sage -sh" should run $SHELL with Sage environment variables set 
+       (Carl Witty)
+
+
+Build instruction for OSX 10.5
+
+Install gfortran (e.g., binaries from http://sagemath.org/packages/binary/gfortran/
+or http://hpc.sourceforge.net/ and export SAGE_FORTRAN=`which gfortran`. 
+Then the build will work. 
+There is one more doctest to fix and I am certain that this will be done
+quickly. If you do not install gfortran Sage will use the prebuilt 
+g95 which will fail to compile scipy on 10.5. Please report any issues you 
+encounter.  
+
+Apologies to anybody I might have forgotten.
+
+Cheers,
+
+Michael

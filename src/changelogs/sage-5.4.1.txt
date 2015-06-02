@@ -1,0 +1,69 @@
+﻿Sage 5.4.1 was released on 15 November 2012. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 15 people contributed to this release. Of those, 2 made
+their first contribution to Sage:
+
+  - Aly Deines
+  - Benjamin Hutz [first contribution]
+  - Burcin Erocal
+  - David Loeffler
+  - Dmitrii Pasechnik
+  - Jeroen Demeyer
+  - John Palmieri
+  - Karl-Dieter Crisman
+  - Kenneth Smith
+  - Paul Zimmermann
+  - Punarbasu Purkayastha
+  - Sarah Chisholm
+  - Sebastien Gouezel [first contribution]
+  - Travis Scrimshaw
+  - Volker Braun
+
+* Release manager: Jeroen Demeyer.
+
+* We closed 13 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-5.4.1/tickets.html
+
+Closed tickets:
+
+#13309: Build Sage on OS X Mountain Lion [Reviewed by Dmitrii Pasechnik]
+
+Merged in sage-5.4.1.rc0:
+
+#6367: Karl-Dieter Crisman, Kenneth Smith: polygon2d -- several issues: typo in docs, shouldn't have been renamed [Reviewed by Volker Braun]
+#10803: Paul Zimmermann: critical bug in real_roots [Reviewed by Jeroen Demeyer]
+#12753: Benjamin Hutz: is_PrimeField import error [Reviewed by David Loeffler]
+#12859: Aly Deines: quaternion algebra 'ramified at one prime' [Reviewed by Sarah Chisholm]
+#13382: Dmitrii Pasechnik: build docs for SymmetricGroupRepresentation(s) [Reviewed by Volker Braun, Travis Scrimshaw]
+#13533: Jeroen Demeyer: Remove "optional - gcc" from doctests [Reviewed by Karl-Dieter Crisman, John Palmieri]
+#13541: John Palmieri: update scipy to 0.11.0 [Reviewed by Dmitrii Pasechnik]
+#13598: John Palmieri: 'x' should be defined when using 'sage -c' [Reviewed by Punarbasu Purkayastha]
+#13632: Sebastien Gouezel: Fix latex display of arguments of symbolic functions [Reviewed by Burcin Erocal]
+
+Merged in sage-5.4.1.rc1:
+
+#13407: Jeroen Demeyer: Move sage-make_relative to sage-location [Reviewed by Dmitrii Pasechnik]
+#13452: Jeroen Demeyer: Refactor sage-location [Reviewed by Dmitrii Pasechnik]
+#13689: Jeroen Demeyer: Fix upgrading from relocated Sage with GCC [Reviewed by John Palmieri]

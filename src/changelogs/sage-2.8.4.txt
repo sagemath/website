@@ -1,0 +1,21 @@
+﻿#
+
+This release is another one that concentrates on fixing bugs and increasing the doctests coverage. Many people contributed and a great number of tickets were closed.
+
+    * Craig Citro -- fixes to build process (involving c_lib)
+    * Craig Citro -- modular forms bugfix (for projection map); added some number fields functionality, many new doctests
+    * Pablo De Napoli (refereed by Martin Albrecht) -- added minpoly for finite field elements.
+    * Robert Bradshaw (and William Stein) -- created a separate java3d spkg
+    * Mike Hansen -- lots of Bug fixes all over the place
+    * Michael Abshoff -- bug fixes, improved valgrind support, Solaris port fixes
+    * William Stein -- bug fixes and lots more doctests, added coverage flag for doctests, improvements to the build process (SCons not rebuilding issue)
+    * William Stein, Michael Abshoff, Martin Albrecht, Robert Bradshaw, Burcin Erocal, Joel B. Mohler: memleak fixes
+    * Timothy Clemans -- bug fix for the notebook
+    * Tom Boothby -- bug fixes for the notebook, various other fixes
+    * David Harvey: bug fixes, integration of vastly improved gcd code from gmplib.org/devel, AMD64 specific assembly code:
+
+      sage: a = ZZ.random_element(2^10000000); b = ZZ.random_element(2^10000000);
+      sage: time t = XGCD(a, b)
+      CPU times: user 16.03 s, sys: 0.39 s, total: 16.42 s
+
+With 2.8.3 and the old gmp package this took about 900 seconds

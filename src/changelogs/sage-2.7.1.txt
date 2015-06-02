@@ -1,0 +1,17 @@
+﻿Tue Jul 24 16:41:34 2007
+------------------------
+2.7.1:
+       * m albrecht: misc arithmetic fixes and improvements
+       * r bradshaw: matrix subdivisions
+       * r bradshaw: lots of p-adic and series optimizations
+       * r bradshaw: implementation of the new coercion model (massive amount of work)
+       * j kantor and w stein: switch from fortran to g95 and update many build scripts
+       * d kohel (ref w stein): improvements to Jacobians and point sets
+       * e kirkman and r miller: graph genus module; speed and bugfix
+                                 and documentation improvements to NICE
+       * j schmidt: group theory bug fixes
+       * w stein & d deshommes: putting all spkg's under revision control;
+               reorganize package structure
+       * w stein: upgrade to pari-2.3.2
+       * w stein: upgarde to ZODB-3.7.0
+       * c wuthrich: supersingular p-adic birch and swinnerton-dyer code

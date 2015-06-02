@@ -1,0 +1,106 @@
+﻿SAGE-2.9.1 -- Holiday Edition
+
+Release Manager: Robert Miller
+
+summary:
+rc3: fixed mwrank importing, and
+William Stein - check types for plotting
+
+rc2: four spaces -> tab in spkg/standard/deps, and
+#1558 - Joel Mohler
+  - more NTL wrapping, coefficient access and factoring
+#1564 - Robert Bradshaw, William Stein
+  - 3d graphics via jmol!
+#1580 - Robert Miller
+  - notebook shows graphics out of order
+
+rc1: just fixed spkg/install and spkg/standard/deps from #1505
+
+rc0:
+#405 - Mike Hansen
+  - set rows and cols of matrices
+#649 Robert Bradshaw, Mike Hansen
+  - create a special symbolic matrix data type
+#857 - Michael Abshoff, Robert Miller
+  - updates to COPYING.txt
+#1106 - Mike Hansen
+  - speed up dense matrix comparison
+#1448 - Mike Hansen, ref. David Harvey
+  - iterate over a matrix space
+#1459 - Mike Hansen
+  - make notebook ? behavior like command line behavior
+#1505 - Martin Albrecht
+  - make M4RI a shared library
+#1533 - Robert Bradshaw
+  - finish converting java3d to an spkg
+#1566 - Mike Hansen
+  - Symbolic substitution infinite recursion
+#1586 - Robert Miller
+  - preparser.py doctest failures
+
+alpha3:
+#668 - Michael Abshoff
+  - numerical noise doctest in calculus.py
+#670 - Michael Abshoff
+  - numerical noise doctest in piecewise.py
+#924 - William Stein
+  - the matplotlib spkg patches break underlying functionality
+#1561 - Nick Alexander
+  - add ._matrix_() and .transpose() to vector/FreeModuleElement.
+#1579 - Michael Abshoff
+  - memleak in GSL's ComplexDoubleVector
+#1582 - Robert Miller
+  - 2.9.1.alph2: doctest failure in sage/graphs/graph.py with x86 Linux
+#1584 - Robert Miller
+  - calculus.py doctest failure on Fermat
+
+alpha2:
+#1064 - Robert Miller
+  - permutation __call__ type check
+#1175 - Michael Abshoff
+  - circular link in sage/local/lib/python2.5
+#1233 - Michael Abshoff, John Cremona
+  - mwrank wrapper causes crashes and error on non-minimal curves#1240 - Michael Abshoff
+  - wrong unix rights of some files
+#1424 - William Stein
+  - threaded map function, as requested by Peter Doyle
+#1546 - Michael Abshoff
+  - Update FLINT.spkg to 1.03 release
+#1556 - Yi Qiang
+  - make usernames legible on bad login name to notebook
+#1562 - Dan Drake
+  - inverse trig
+#1563 - Robert Miller
+  - ./sage -r main
+#1569 - William Stein
+  - solve() fails if one list element is True
+#1572 - Michael Abshoff
+  - memleak in graph_fast.pyx
+#1573 - Michael Abshoff
+  - Mismatched free() / delete / delete [] in wrap.cc
+
+alpha1:
+#1139 - Mike Hansen
+ - nintegral raises helpful error if precision is too high
+#1318 & #1319 - Robert Miller
+ - eigenspaces/charpoly of a graph
+#1363 - Carl Witty
+ - sqrt for complex intervals
+#1380 - Martin Albrecht
+ - R.<x,y>=QQ[]; x.subs(x=1/y); now works
+#1421 - Paul Zimmerman, Craig Citro
+ - finer control in ECM interface
+#1432 - William Stein
+ - plotting examples
+#1540 - Michael Abshoff
+ - remove linux elf binaries during lapack build
+#1542 & #1543 - Craig Citro
+ - R/rpy build issues fixed
+#1548 - Michael Abshoff
+ - numerical noise in doctests in calculus.py
+#1551 - Robert Miller
+ - is_subgraph
+#1555 - bill.p, William Stein
+ - typos in documentation
+
+

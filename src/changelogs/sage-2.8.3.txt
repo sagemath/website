@@ -1,0 +1,16 @@
+﻿
+    * Michael Abshoff: General build, debugging, etc., contributions.
+    * Martin Albrecht: Much new code for working with matrices over certain polynomial rings
+    * Michael A and Martin A: fixed serious memory leaks in integer linear algebra
+    * Tom Boothby: Greatly improved pow and generic_power
+    * Tom Boothby: Preliminary notebook support for internet explorer
+    * Robert Bradshaw: Added first version of new java/notebook based 3d plotting capabilities.
+    * Robert Bradshaw: Improvements to coercion code
+    * Robert Bradshaw and David Joyner: New Rubik's cube solver code interface code.
+    * Paul Dehaye: Interface improvements
+    * Mike Hansen: Lie interface
+    * David Joyner, Tom Boothby, Robert Miller: Update to guava in the GAP spkg.
+    * Joel Mohler (with Craig Citro and David Harvey): Move c_lib back into the main SAGE repo (no more sage_c_lib); NTL wrapper improvements
+    * William Stein: New Modular forms code.
+    * William Stein: upgraded maxima to version 5.13.0
+    * William Stein: Fix some quaternion algebra bugs; Fix bug with current directory in notebook. 

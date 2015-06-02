@@ -1,0 +1,235 @@
+﻿Hello folks,
+
+Sage 3.2.1 was released on December 1st, 2008. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 43 people contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Jason Bandlow
+ * Arnaud Bergeron
+ * Tom Boothby
+ * Robert Bradshaw
+ * Ondrej Certik
+ * Craig Citro
+ * Timothy Clemans
+ * John Cremona
+ * Alexander Dreyer
+ * Burcin Erocal
+ * Gary Furnish
+ * Alex Ghitza
+ * Andrzej Giniewicz
+ * Dan Gordan
+ * Jason Grout
+ * Carlo Hamalainen
+ * Marshall Hampton
+ * Mike Hansen
+ * Wilfried Huss [first contribution]
+ * David Joyner
+ * Simon King
+ * Sebastien Labbe
+ * Kwankyu Lee [first contribution]
+ * David Loeffler
+ * Robert Miller
+ * Guillaume Moroz [first contribution]
+ * Tobias Nagel
+ * Brett Nakashima
+ * Willem Jan Palenstijn
+ * John Palmieri
+ * Minh Nguyen
+ * Franco Saliola
+ * Chris Swierczewski
+ * Jaap Spies
+ * William Stein
+ * Philippe Theveny [first contribution]
+ * Nicolas Thiery
+ * Mark Watkins
+ * Carl Witty
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+See the Sage 3.2.1 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.2.1
+
+* Known Issues with 3.2.1:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 120 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.2.1
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.2.2, chaired by Michael Abshoff. It will 
+be a release focusing on merging existing patches from trac in 
+preparation for the big docstring Sphinx conversion planned for Sage 3.3. 
+The release cycle will be on the short side, i.e. about 7 days are 
+planned.
+
+* Doctesting Coverage
+
+For 3.2 we had:
+
+Overall weighted coverage score:  63.0%
+Total number of functions:  21578
+
+We increased coverage by 0.3% in 3.2.1 while adding 39 functions:
+
+Overall weighted coverage score:  63.3%
+Total number of functions:  21617
+
+* Closed Tickets:
+
+Merged in Sage 3.2.1.rc1:
+
+#3122: Michael Abshoff: after make install, sage tries to write in /usr/local [Reviewed by William Stein]
+#4254: Martin Albrecht: mq.SR improvements for convenience [Reviewed by William Stein]
+#4261: Willem Jan Palenstijn: sympow Configure fails to handle aliases [Reviewed by William Stein, Mark Watkins, Michael Abshoff]
+#4308: Philippe Theveny: make mpc an optional spkg [Reviewed by William Stein, Michael Abshoff]
+#4317: William Stein: Fix easy-install.pth after moving Sage [Reviewed by Michael Abshoff, Craig Citro]
+#4321: Alexander Dreyer, Michael Abshoff: wrong Unix permissions in some PolyBoRi files
+#4352: Marshall Hampton: add support for weight vectors to gran/groebner_fan [Reviewed by William Stein]
+#4402: William Stein: Sage 3.1.4: magma related optional doctest failure in tut.tex [Reviewed by Michael Abshoff]
+#4412: John Cremona: extend the local information function for elliptic curves over number fields [Reviewed by William Stein, Minh Nguyen]
+#4576: Marshall Hampton: biopython optional package upgrade to 1.49beta [Reviewed by William Stein]
+#4582: Guillaume Moroz: use Singular's capabilities for computing over fraction fields [Reviewed by Martin Albrecht]
+#4619: Michael Abshoff: Sage 3.2.1.a1: Update HISTORY.txt with the 3.1.3, 3.1.4 and 3.2 release notes [Reviewed by William Stein]
+#4654: John Palmieri: for 'sage -testall': put sage version in test log [Reviewed by Michael Abshoff]
+#4655: William Stein: doctest failure in plot.py with 3.2.1.rc0 on 64-bit SuSe linux [Reviewed by Michael Abshoff]
+#4657: Michael Abshoff: OSX: gnuplot doesn't start due to dreaded libpng conflict [Reviewed by William Stein]
+#4658: William Stein: magma -- get rid of redundant caching: just have _magma_init_ [Reviewed by Michael Abshoff]
+#4659: John Palmieri: remove an extra 'cdef class Integer' line from integer.pyx [Reviewed by Robert Bradshaw]
+#4660: William Stein: mark inline fortran and inline cython examples optional [Reviewed by Michael Abshoff]
+#4661: Craig Citro: clean up module_list.py [Reviewed by Michael Abshoff]
+#4664: Michael Abshoff: Sage 3.2.1.rc1: Fix documentation build issues [Reviewed by Craig Citro]
+#4668: Michael Abshoff: libSingular's header have too tight permissions  [Reviewed by Craig Citro]
+
+Merged in Sage 3.2.1.rc0:
+
+#815: Arnaud Bergeron: doctesting is broken on .sage files [Reviewed by William Stein]
+#3102: Gary Furnish: debugging output in p-adics with print mode "digits" [Reviewed by William Stein, Craig Citro]
+#3621: Chris Swierczewski, Brett Nakashima, William Stein: sage.finance - add expand and refine finance.Stock [Reviewed by William Stein, Tom Boothby]
+#4057: Andrzej Giniewicz: Underlines instead of headings in notebook version of docstring for R functions [Reviewed by William Stein]
+#4266: Robert Bradshaw: overflow error in SR approx [Reviewed by William Stein]
+#4334: Jaap Spies: Updated experimental Mayavi2 spkg [Reviewed by William Stein]
+#4383: David Joyner: composition_series() returns no generators for trivial subgroup [Reviewed by William Stein]
+#4431: Wilfried Huss: conversion of maxima matrices to sage matrices [Reviewed by Mike Hansen]
+#4432: Wilfried Huss, Mike Hansen, Burcin Erocal: symbolic gamma and factorial [Reviewed by Mike Hansen, Burcin Erocal]
+#4433: Wilfried Huss: Replace factorial with a symbolic version [Reviewed by Mike Hansen]
+#4481: Nicolas Thiery: Fix cached_function to accept functions without func_doc or func_name [Reviewed by Mike Hansen]
+#4488: Timothy Clemans: notebook -- login page not given when logged out and trying to view your worksheets [Reviewed by William Stein]
+#4522: Burcin Erocal: polynomial interface improvements [Reviewed by William Stein]
+#4535: Mike Hansen: refactoring in plot/* [Reviewed by William Stein, Michael Abshoff]
+#4537: David Loeffler: inverse_mod for number field ideals [Reviewed by William Stein]
+#4568: Simon King: Dangerous doc test of save_session [Reviewed by William Stein]
+#4587: Simon King: Installation of the latest version of a package [Reviewed by William Stein]
+#4615: Michael Abshoff: Make boehm_gc a standard spkg [Reviewed by William Stein]
+#4632: Carl Witty: .roots(ring=QQbar) fails for polynomials with enormous (rational) coefficients [Reviewed by Nick Alexander]
+#4641: Kwankyu Lee: "-notebook" commandline option should take trailing options [Reviewed by William Stein]
+#4642: William Stein: Limit sage-flags.txt to vector math flags [Reviewed by Michael Abshoff]
+#4645: Michael Abshoff: in setup.py module_list.py is hidden with no comment [Reviewed by Craig Citro]
+#4647: Michael Abshoff: Disable dependency code cacheing in setup.py for now [Reviewed by Craig Citro]
+
+Merged in Sage 3.2.1.alpha2:
+
+#463: William Stein: sage -upgrade: "sage -upgrade URL" will install all *newer* spkg's from the given URL, which can also be a local directory [Reviewed by Michael Abshoff]
+#4176: William Stein: matplotlib build failure due to broken tcl/tk detection [Reviewed by Jaap Spies, Michael Abshoff]
+#4613: Robert Bradshaw: doctests for big-o [Reviewed by Craig Citro]
+#4624: William Stein: Sage 3.2.1.a1: add ipy_profile_sage.py to list of files copied when sdisting [Reviewed by Michael Abshoff]
+#4627: Nick Alexander: CRT_list in HNF dominates computation [Reviewed by Craig Citro]
+#4628: William Stein: sage-3.2.1.alpha1 -- setup.py build system is foobar'd [Reviewed by Craig Citro]
+#4634: Michael Abshoff: Sage 3.2.1.a1: numerical noise in sage/schemes/ elliptic_curves/ell_rational_field.py [Reviewed by Nick Alexander]
+#4635: Michael Abshoff, John Palmieri: Sage 3.2.1.a1: numerical noise in sage/plot/plot.py [Reviewed by Nick Alexander]
+
+Merged in Sage 3.2.1.alpha1:
+
+#3891: John Palmieri: polynomial sqrt method [Reviewed by Carl Witty]
+#4320: David Joyner: linear codes improvements [Reviewed By Robert Miller, Dan Gordan, Michael Abshoff]
+#4341: Carlo Hamalainen: Optimisations + corrections to latin.py [Reviewed by David Joyner]
+#4381: Mike Hansen: sage -wthread not passed correctly to ipython [Reviewed by Jaap Spies]
+#4399: William Stein: Sage 3.1.4: magma related optional doctest failure in sage/matrix/matrix1.pyx [Reviewed by Michael Abshoff]
+#4401: William Stein: Sage 3.1.4: magma related optional doctest failure in sage/crypto/mq/mpolynomialsystem.py [Reviewed by Michael Abshoff]
+#4463: Craig Citro: modular/abvar/homspace.py doctests are long [Reviewed by William Stein]
+#4482: William Stein: Sage 3.2.rc0: optional Magma doctest failure in devel/sage/sage/rings/polynomial/pbori.pyx [Reviewed by Michael Abshoff]
+#4525: John Cremona: LLL-reduction of elliptic curve bases (with resulting speed enhancement to integral_points()) [Reviewed by William Stein, Tobias Nagel]
+#4536: John Cremona: Various number field order and ideal utilities [Reviewed by David Loeffler]
+#4541: Jason Bandlow: kschur functions don't properly convert to schur's [Reviewed by Mike Hansen]
+#4553: John Palmieri: a few new methods for FiniteFieldElement [Reviewed by John Cremona]
+#4572: Robert Bradshaw: maxima output has misleading precision [Reviewed by Michael Abshoff]
+#4580: Robert Bradshaw: move mpfr declarations to a pxd [Reviewed by Carl Witty]
+#4592: Craig Citro: new setup.py dependency checking does not handle Cython built-in pxd files [Reviewed by Carl Witty]
+#4597: Craig Citro: setup.py dependency checker does not invalidate cache correctly [Reviewed by Carl Witty]
+#4598: Michael Abshoff: add sage/libs/gmp/__init__.py to MANIFEST.in [Reviewed by Ondrej Certik]
+#4599: Michael Abshoff: sage/schemes/elliptic_curves/ell_rational_field.py doctest failure due to missing "#optional" [Reviewed by Jaap Spies]
+#4600: William Stein: followup issue on sage -only_optional [Reviewed by Michael Abshoff]
+#4601: William Stein: optional magma interface -- fix all broken optional doctests by introducing _magma_init_(self, magma) signature [Reviewed by Michael Abshoff]
+#4602: Minh Nguyen: typos in files under sage/catalogue [Reviewed by Michael Abshoff]
+#4603: Minh Nguyen: trivial typos in files under sage/categories [Reviewed by Michael Abshoff]
+#4605: Robert Bradshaw: Update Cython to 0.10.2 (latest stable upstream) [Reviewed by Michael Abshoff]
+#4609: William Stein: Sage 3.2.1.a1: Make two optional magma doctests also depend on database_gap [Reviewed by Michael Abshoff]
+#4620: Craig Citro: setup.py: if the cythonization fails then next "sage -b" starts to build extensions [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.2.1.alpha0:
+
+#169: Craig Citro: slice assignment not implemented for PARI C library interface [Reviewed by Robert Bradshaw]
+#846: Robert Bradshaw:  Split cdefs.pxi [Reviewed by Carl Witty]
+#2304: Michael Abshoff: sparse_poly should probably be removed [Reviewed by Nick Alexander]
+#4144: Martin Albrecht: allow finite field elements in SBox constructor [Reviewed by Carl Witty]
+#4168: Robert Bradshaw: native mpfr polynomials [Reviewed by Mike Hansen]
+#4273: Jason Grout: Failure on Jordan form transformation matrices [Reviewed by Marshall Hampton]
+#4287: Paul Zimmermann, John Cremona: improve elliptic curve doctest (part 5) [Reviewed by Alex Ghitza]
+#4310: Robert Bradshaw: simplification of the coercion api [Reviewed by Mike Hansen]
+#4330: Mike Hansen: interfaces function_call(...) function is a total MESS [Reviewed by William Stein]
+#4403: Minh Nguyen: Fix "Install from Source Code" section in "Sage Installation Guide" [Reviewed by Mike Hansen]
+#4419: Mike Hansen: conversion of Permutations to GAP not implemented [Reviewed by Franco Saliola]
+#4468: Sebastien Labbe: assertion error when (some) bad color map given [Reviewed by Mike Hansen]
+#4487: Franco Saliola: add method to evaluate characters of permutation and matrix groups [Reviewed by David Joyner, Mike Hansen]
+#4528: John Cremona: Implement Krull dimension for orders in number fields [Reviewed by Craig Citro]
+#4533: Robert Bradshaw: divisors function slow for integers [Reviewed by William Stein, John Cremona, Craig Citro]
+#4540: Jason Bandlow: Symmetrica segfault converting Schur functions to k-Schurs [Reviewed by Mike Hansen]
+#4542: Marshall Hampton: polyhedra bug fix and improvments [Reviewed by Carl Witty]
+#4556: John Palmieri: nth_root for finite fields: document the fact that 'extend' is not implemented [Reviewed by Robert Bradshaw] 
+#4558: Ondrej Certik: update to sympy-0.6.3.spkg (latest upstream) [Reviewed by Michael Abshoff]
+#4561: Robert Bradshaw: _fast_float_ for sin/cos, etc., in caculus.py is implemented stupidly [Reviewed by Mike Hansen]
+#4562: Jason Grout: clean up a bunch of imports in matrix CDF/RDF code [Reviewed by Carl Witty]
+#4564: Robert Bradshaw: implement long long -> mpz_t [Reviewed by Craig Citro]
+#4569: Franco Saliola: problems with the Permutation constructor function [Reviewed by Mike Hansen]
+#4570: Jason Grout: change the numpy include to the standard place [Reviewed by Robert Bradshaw]
+#4573: Franco Saliola: Permutation not callable, but PermutationGroupElement is [Reviewed by Mike Hansen]
+#4577: Wilfried Huss: simple interface to scipy.optimize.leastsq [Reviewed by Carl Witty]
+#4579: Robert Bradshaw: put mpz_longlong functions in c_lib [Reviewed by Carl Witty]
+#4583: William Stein: implement "sage -t --only-optional" [Reviewed by Michael Abshoff]
+#4584: William Stein: remove doctest cruft -- delete sage-doctest_old_ver [Reviewed by Michael Abshoff]
+#4586: Michael Abshoff: delete sage/rings/number_field/todo.py [Reviewed by Nick Alexander]
+#4589: William Stein: sage/rings/polynomial/multi_polynomial_ideal.py doctest failure due to #4583 [Reviewed by Michael Abshoff]
+#4591: William Stein: magma -- EllipticCurve('37a').three_selmer_rank() fails in Magma 2.14 [Reviewed by Michael Abshoff]
+#4594: Minh Nguyen: typos in files under sage/algebras [Reviewed by Michael Abshoff]
+#4595: Minh Nguyen: typos in files under sage/calculus [Reviewed by Michael Abshoff]
+#4596: Craig Citro: delete sha.py [Reviewed by William Stein]
+

@@ -1,0 +1,367 @@
+﻿Hello folks,
+
+Sage 2.10.3 has been released on March 11th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+You can also drop by in #sage-devel or #sage-support infreenode.
+
+We have closed the Google Groups sage-newbie and sage-forum so 
+that we can deal with support questions in sage-support only. We 
+decided to close those two groups since we had various inquiries 
+left unanswered due to people posting to the wrong group.
+
+---------------------------------------------------------------------
+
+The following 29 people contributed code to this release:
+
+ * Michael Abshoff
+ * Antti Ajanki
+ * Martin Albrecht
+ * Nick Alexander
+ * Jonathan Bober
+ * Tom Boothby
+ * Robert Bradshaw
+ * Craig Citro
+ * Timothy Clemans
+ * John Cremona
+ * Didier Deshommes
+ * Burcin Erocal
+ * Gary Furnish
+ * Alex Gitza
+ * Jason Grout
+ * Mike Hansen
+ * David Harvey
+ * David Joyner
+ * Simon King
+ * Emily Kirkman
+ * Robert Miller
+ * Bobby Moretti
+ * Clement Pernet
+ * Jaap Spies
+ * William Stein
+ * Chris Swierczewski
+ * John Voight
+ * Carl Witty
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Interactive Functions: Sage now has a first version of 
+   its "interact" command. Calling "@interact" before 
+   defining a function will construct controls to 
+   graphically control the input variables of the function, 
+   making it dramatically easier to create interactive 
+   functionality that is easy to use. See 
+   http://wiki.sagemath.org/interact for details and 
+   examples or just type "interact?" in Sage.
+
+ * Graph theory: Many of the results of Sage Days 7: 
+   Combinatorics are included in this release, including 
+   Schnyder's algorithm for producing straight-line drawings 
+   of planar graphs in linear time (Jonathan Bober and Emily 
+   Kirkman), and a new compiled backend for the base graph 
+   structures (Robert Miller). This backend will be switched 
+   into graphs proper in sage-2.10.4, and the basic functions, 
+   such as add edge and has edge, will be sped up by at least 
+   20 times in many cases, and often much more. In addition 
+   most of graph.py was refactored and cleaned up, in 
+   preparation for the switch.
+
+ * Plotting: The plot_vector_field function now takes 
+   2-variable functions, allowing for much more complex 
+   vector fields.
+
+ * Linear Algebra: Matrices now have a jordan_form method 
+   which computes the Jordan canonical form.
+
+ * Unified derivative syntax: The derivative function now 
+   accepts the same argument format across many different 
+   data types, including symbolic objects, polynomials, 
+   power series, and Laurent series.
+
+ * LinBox & Givaro updates: Clement Pernet did fix a large 
+   number of issues in LinBox and Givaro in cooperation with 
+   Michael Abshoff and we finally updated the code in Sage 
+   to clean upstream code. While there are still issues left 
+   we will do more work in that direction in 2.10.4 and 2.11.
+
+* Known Issues with 2.10.3:
+
+ * None
+
+* Bug Statistics
+
+We closed 152 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-2.10.3
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 2.10.4, chaired by Robert Miller and 
+Michael Abshoff. The release is planned in about two weeks. 
+Potential features (which is also the goal for 3.0) include:
+
+ * 47% doctest coverage
+ * OSX 10.5 support in 64 bit mode [this will depend on fixing
+   a vexing segfault in libSingular and getting disutils to
+   play nice with numpy]
+ * Pexpect interace to R
+
+* Doctesting Coverage
+
+For 2.10.2 we had:
+Overall weighted coverage score:  40.1%
+Total number of functions:  18528
+
+We increased coverage by 4.4% in 2.10.3 while adding 112 functions:
+
+Overall weighted coverage score:  44.5%
+Total number of functions:  18640
+
+* Closed Tickets:
+
+Merged in final:
+
+#2435: Robert Bradshaw, Michael Abshoff: Fix memory leak 
+       from #1337 workaround
+#2453: William Stein: disable linbox minpoly and charpoly 
+       mod p, since they are completely broken.  Disabling 
+       them removes "space.py segfaults".
+#2471: William Stein: doctest failures in graph.py and 
+       factorization.py (caused by architecture dependence))
+
+Merged in rc5: 
+
+#2371: William Stein: tut.tex failures for 2.10.3.rc0
+#2449: William Stein: interactive functionality for the notebook
+#2463: Clement Pernet: Linbox static commentator make sage crash 
+       on PPC
+#2464: William Stein: slight change to coverage script to avoid 
+       functions named "_"
+#2465: William Stein: fix bug with phi(I) for I an ideal exposed
+       by groebner_fan.
+#2466: William Stein: 2.10.3: doctest failure in const.tex
+
+Merged in rc4: 
+
+#2340: Chris Swierczewski, John Cremona: Docstrings and doctests 
+       for rings/ring.pyx
+#2374: Gary Furnish: sage-ptest must run in $SAGE_ROOT
+#2425: Jason Bandlow: In multipolynomials, the function jacob() 
+       should be called gradient()
+#2433: Robert Miller: Refactor graph code; prepare for backend 
+       migration; miscellaneous small things from Waterloo
+#2438: Martin Albrecht: get the reference manual to build again
+#2439: Carl Witty: ZZ.random_element() crashes Sage with 
+       probability 2^-31
+#2440: Chris Swierczewski: Doctests for rings/quotient_ring.py
+#2441: Robert Miller: fix typo in chromatic number
+#2442: Timothy Clemans: Clone Mathematica's Differences function
+#2443: Martin Albrecht: add LaTeX macros like \Singular
+#2445: John Cremona: algebras module lacks many docstrings and tests
+#2451: William Stein: plotting - contour_plot and plot_vector_field 
+       are REALLY SLOW but it's easy to get a million times speedup
+#2456: Gary Furnish: fix matrix_symbolic_dense doctest failures
+#2457: Gary Furnish: fix ideal.py doctest failure
+#2458: Michael Abshoff: bug in linbox's spkg-install: ${SAGE_LCOAL}
+
+Merged in rc3:
+
+#1337: Michael Abshoff, Gary Furnish, Robert Bradshaw: tp_new 
+       leads to munmap_chunk(): invalid pointer segfault
+#1711: Burcin Erocal: SIGSEGV in PolyBoRi's BooleSet iterator
+#1884: Robert Bradshaw: memory leak in real numbers
+#2305: Chris Swierczewski: Docstrings and doctests for 
+       rings/ideal.py
+#2142: Robert Bradshaw: product of two subdivided matrices 
+       should yield a subdivided matrix if it makes sense
+#2334: Michael Abshoff: $SAGE_LOCAL/include/eclib has wrong 
+       permissions
+#2398: William Stein: new Hermite normal form code returns 
+       a zero row at the top of a matrix.
+#2399: Jason Grout: allow utf8 characters in the notebook 
+       cells
+#2423: Jason Grout: notebook() opens up to the entire world 
+       by defaultl
+#2434: Robert Miller: fix doctest in plot.py
+
+Merged in rc2:
+
+#277: John Cremona: Add generic_discrete_logarithm and order 
+      computation using Pollard's rho algorithm
+#2155: William Stein: greatly speed up matrix inversion for 
+       1x1 and 2x2 matrices over QQ by a factor of 20!; 
+       speed up changing base rings (architecture); hadamard 
+       bound
+#2207: Mike Hansen: fcp for matrices over SR
+#2310: William Stein: bug attaching files in files that 
+       are attached
+#2356: John Cremona: Bug in discrete_log_generic
+#2370: Didier Deshommes: unable to coerce bool types to 
+       Sage integers
+#2381: Jason Grout: plot_vector_field: implement ability to 
+       plot arbitrary vector fields
+#2382: Gary Furnish: sage-doctest broken by removal of temp 
+       files
+#2388: Clement Pernet: linbox charpoly crashes on OSX 10.5 
+       Intel - this is a work around fix
+#2391: William Stein: module docstring bug running 
+       filename.sage from the command line
+#2392: Nick Alexander: generic univariate polynomial has 
+       no discriminant function
+#2395: Simon King: New features for number fields (gap 
+       interface, matrix groups)
+
+Merged in rc1:
+
+#590: Mike Hansen: document extended_rational_field.py
+#753: David Harvey, Carl Witty: derivative alias for diff
+#915: Clement Pernet: Make LinBox interface use PID_Integer 
+      instead of using old header as workaround
+#1748: Carl Witty: Passing the ipython argument '-wthread' at 
+       startup
+#1805: William Stein: improve doctest coverage for 
+       Factorization; fix several critical bugs
+#1810: Martin Albrecht: refactoring to improve finite field 
+       reference manual
+#1868: Jaap Spies: New experimental mayavi2 package
+#1902: John Cremona: mistake in the documentation for gens 
+       for Finite field givaro
+#2099: Nick Alexander, Gary Furnish: Make sage-test execute 
+       multiple doctests in parallel
+#2239: John Voight, William Stein: Leak in totallyreal.py
+#2245: William Stein, Craig Cigtro: abvar -- increase the 
+       doctest coverage to 100%
+#2254: Clement Pernet:Upgrade linbox and givaro spkg to 
+       upstream
+#2268: Gary Furnish, Robert Bradshaw: has_coerce_map_from_c 
+       performance improvements
+#2275: Mike Hansen: get sloane_functions.py to 100% coverage
+#2279: Craig Citro: Followup fix due to a typo in a doctestfix
+#2298: Carl Witty: implement a way to compute a number field 
+       containing given algebraic numbers
+#2326: Robert Miller: compiled sparse and dense graph 
+       datastructures
+#2333: Mike Hansen: hg_sage.apply('http://foo.org/.../bar.patch') 
+       should be made to work
+#2343: Martin Albrecht: for zero-dimensional ideals, allow
+       computation of varieties over arbitrary fields
+#2345: Mike Hansen: negative indicies in vectors
+#2349: Martin Albrecht: homogenize does different things 
+       in different contexts
+#2350: Jason Grout: revert show(list) to the The 2.10.2 behavior
+#2363: Gary Furnish: Integer.pyx mpz structure fix
+#2365: Carl Witty: with sage -wthread, attach runs code in wrong 
+       thread on subsequent loads
+#2375: Robert Miller: Sage 2.10.3.rc1: graph_isom.py doctest
+       failure in PermutationGroup
+#2376: Michael Abshoff: Sage 2.10.3.rc1: various doctest failure 
+       in abvar
+#2377: Simon King: Bugfix for the new __copy__ method of 
+       SingularElement
+
+Merged in rc0:
+
+#37: William Stein: preparser doesn't parse hex input
+#874: Jason Grout: Implement Jordan and Rational Canonical Form
+#1151: Martin Albrecgh: Bug in creating elements in 
+       multivariate quotient rings that cannot be coerced 
+       to singular
+#1186: Alex Gitza, Mike Hansen: Charpoly of a matrix of 
+       polynomials sometimes breaks
+#1209: Mike Hansen: make it so maple.gcd?? shows source code
+#1320: Emily Kirkman: graph planarity testing
+#1639: John Cremona: missing documentation P.completion()
+#1722: Mike Hansen: Symbolic Matrices should be callable
+#2037: David Joyner, Alex Ghitza: out-of-date tutorial 
+       section on errors and exceptions
+#2050: Nick Alexander: disallow *generic* matrix eigenspaces 
+       for inexact fields
+#2058: Martin Albrecht, Burcin Erocal: PolyBoRi evaluation
+#2105: Martin Albrecht: Constructor for ntl.GF2X polynomials 
+       does not take Polynomials over GF(2)
+#2279: John Voight: numerical noise? doctest failure in 
+       sage.rings.number_field.totallyreal.__selberg_zograf_bound 
+       with 2.10.2
+#2281: John Cremona: elliptic_curve_finite_field: order caching
+       problem
+#2283: Jason Grout, Gary Furnish: the coercion code (in __mul__) 
+       should call __rmul__ when left or right is not coercible 
+       to a Sage element
+#2284: Bobby Moretti: CallableSymbolicExpression._latex_() 
+       has some odd behavior
+#2286: Carl Witty: create and document a new "fp_rank" concept
+#2289: Alex Ghitza: make the constructions document 
+       prettier and more consistent
+#2292: David Joyner: segfault in AbelianGroups
+#2293: David Joyner: word_problem error in AbelianGroup
+#2299: Nick Alexander: add zero_matrix constructor
+#2300: Simon King: A copy method for SingularElement
+#2301: Simon King: Bug in sage_structured_str_list
+#2315: Jason Grout: Union of Graphs
+#2323: Yi Qiang: updated tutorial to include dsage section
+#2324: Carl Witty: RealNumber->QQ coercion fails for NaN, 
+       infinity
+#2327: Michael Abshoff: libgcrypt can't find libgpg-error 
+       headers
+#2336: William Stein: hermite -- this function in sage is broken 
+       in more ways than it has lines of code
+#2337: William Stein: fix typo in save_session
+#2338: Martin Albrecht: add p.lexLmDeg to PolyBoRi polynomials
+#2342: Robert Miller: digraphs show axes...
+
+Merged in alpha0:
+
+#1311: Tom Boothby: graphs: calculate chromatic number
+#1313: Tom Boothby: graphs: calculate chromatic polynomial
+#1382: Timothy Clemans, William Stein: conversion of sage 
+       matrices to mathematica is completely totally broken
+#1399: John Cremona, William Stein: improve and document 
+       integer is_prime and is_irreducible
+#1962: Robert Miller: set_edge_label creates edges when 
+       multiple edges are allowed
+#2087: Michael Abshoff: make the final output of "sage -i" 
+       more user friendly
+#2135: Robert Miller: allow for specifying initial position 
+       in spring layout
+#2154: Robert Miller: Infinite memory allocation bug in 
+       PermutationGroupElement
+#2180: William Stein: cython skipping (build optimization)
+#2206: Jason Grout, Alex Ghitza: some fixes of Factorizations
+#2240: Chris Swierczewski, Mike Hansen: Docstrings and 
+       Doctests: calculus.py
+#2265: Jason Grout: fix shortest_path_all_pairs
+#2271: Antti Ajanki, Tom Boothby: Include Antti Ajanki's 
+       DLX library
+#2274: David Joyner: guava->python (Part 1)
+#2282: Craig Citro: readline currently not building dynamic 
+       library on Mac
+#2285: Michael Abshoff: add "--trace-children=yes" back for 
+       memcheck in sage-doctest
+#2288: David Joyner: tutorial -- fix some typos
+#2290: Paul Zimmermann, David Joyner: typo in calculus.py
+#2294: Carl Witty: RealDoubleElement _interface_init_ is 
+       very poor
+#2295: Burcin Erocal: build cache check fails on paths 
+       containing symlinks
+#2297: Simon King: Tensor product of matrices
+#2307: Robert Miller: has_edge ignores labels
+#2308: Michael Abshoff: remove SAGE_ROOT/local/bin/sage-server 
+#2309: Carl Witty: The patch from #2267 introduced spurious 
+       linebreak commands '\\'
+#2311: William Stein: remove stupid timeout from sage-location
+

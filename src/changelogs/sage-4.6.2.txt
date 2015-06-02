@@ -1,0 +1,380 @@
+﻿-*- coding: utf-8 -*-
+
+Sage 4.6.2 was released on 28 February 2011. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+  * sage-release: http://groups.google.com/group/sage-release
+
+The following 100 people contributed to this release. Of those, 25 made
+their first contribution to Sage:
+
+  * Alain Filbois [first contribution]
+  * Alain Giorgetti [first contribution]
+  * Alexandre Blondin Massé
+  * Alexey U. Gudchenko [first contribution]
+  * Alex Ghitza
+  * Aly Deines
+  * André Apitzsch
+  * Andrey Novoseltsev
+  * Anna Haensch
+  * Benjamin Dexheimer [first contribution]
+  * Benjamin Jones
+  * Bill Hart
+  * Carlo Hamalainen
+  * Charlie Turner
+  * Christian Stump
+  * Chris Wuthrich
+  * Dan Drake
+  * Daniel Bump
+  * David Jao [first contribution]
+  * David Joyner
+  * David Kirkby
+  * David Loeffler
+  * David Roe
+  * Dmitrii Pasechnik
+  * Dominique Bernardi [first contribution]
+  * Dominique Poulalhon [first contribution]
+  * Emil Widmann [first contribution]
+  * Erin Beyerstedt
+  * Eviatar Bach
+  * Florent Hivert
+  * Francis Clarke
+  * François Bissey
+  * Franco Saliola
+  * Fredrik Stroemberg [first contribution]
+  * Gagan Sekhon
+  * Geoffrey Ehrman
+  * Ivan Andrus
+  * Jason Grout
+  * Jean-Pierre Flori
+  * Jeroen Demeyer
+  * Jim Stankewicz
+  * Joanna Gaski
+  * Johan Oudinet [first contribution]
+  * John Cremona
+  * John Palmieri
+  * John Perry
+  * John Thurber
+  * Jonathan Spreer [first contribution]
+  * Joris Vankerschaver
+  * Karl-Dieter Crisman
+  * Keshav Kini [first contribution]
+  * Koen van de Sande [first contribution]
+  * Kwankyu Lee
+  * Leif Leonhardy
+  * Leonardo Sampaio
+  * Luis Felipe Tabera Alonso
+  * Maarten Derickx
+  * Marco Streng
+  * Marina Gresham [first contribution]
+  * Mark Jordan
+  * Marshall Hampton
+  * Martin Albrecht
+  * Martin Allen [first contribution]
+  * Mate Soos [first contribution]
+  * Maxim Cournoyer [first contribution]
+  * Mike Hansen
+  * Minh Van Nguyen
+  * Moritz Minzlaff [first contribution]
+  * Nathann Cohen
+  * Nick Alexander
+  * Nicolas M. Thiéry
+  * Niles Johnson
+  * Oleksandr Motsak [first contribution]
+  * Olivier Guichard [first contribution]
+  * Pablo Angulo
+  * Paul Zimmermann
+  * Philipp Schneider [first contribution]
+  * Radoslav Kirov
+  * Richard B. Kreckel [first contribution]
+  * Rob Beezer
+  * Robert Bradshaw
+  * Robert Miller
+  * Robin Langer [first contribution]
+  * Ron Evans
+  * Ryan Grout
+  * Sebastian Pancratz
+  * Sébastien Labbé
+  * Simon King
+  * Simon Spicer
+  * Stefan Reiterer
+  * Tim Dumol
+  * Timo Jolivet
+  * Tom Boothby
+  * Tom Coates
+  * Volker Braun
+  * Willem Jan Palenstijn
+  * William Stein
+  * Wolfgang Steiner [first contribution]
+  * Yann Laigle-Chapuy
+  * Yann Ponty [first contribution]
+
+* Release manager: Jeroen Demeyer.
+
+* Doctesting coverage:
+
+  * Overall weighted coverage score:  84.8%  (84.4% for 4.6.1)
+  * Total number of functions:        27200  (26816 for 4.6.1)
+
+* We closed 221 tickets in this release. For details, see
+
+  http://sage.math.washington.edu/home/release/sage-4.6.2/tickets.html
+
+Closed tickets:
+
+#116: notebook doctest -- should be able to doctest a worksheet, so we can distribute worksheets with SAGE [Reviewed by Willem Jan Palenstijn]
+#5389: Creating a  updated GAP workspace with -tp is racy [Reviewed by Willem Jan Palenstijn]
+#8216: Make David Perkinson's sandpile 2.2 module an experimental (at least) package [Reviewed by David Kirkby]
+#9641: Race condition with sage -tp [Reviewed by Willem Jan Palenstijn]
+#9809: Graph.num_edges() gives wrong answer [Reviewed by Minh Van Nguyen]
+#10425: Manage subdivisions when augmenting matrices [Reviewed by Rob Beezer]
+#8645: maxima package fails to install ECL library [Reviewed by Karl-Dieter Crisman]
+#9525: Installation of cvxopt will always report succesful, even if it fails. [Reviewed by Karl-Dieter Crisman]
+#6063: [fixed by #4000] x^2 for x over QQ is really frickin' slow compared to over ZZ (nearly factor of 100!!) [Reviewed by David Loeffler]
+#9620: conflicting branch cut conventions [Reviewed by Richard B. Kreckel]
+#9897: pari-2.4.3.svn-12577 fails to build on itanium with gcc 4.5.1 [Reviewed by Jeroen Demeyer]
+#10120: Errors building the PARI/GP spkg with GCC 4.4.1 (Fedora 11, openSUSE 11.2) [Reviewed by Koen van de Sande]
+#10472: Implement identity, transpose, adjoint as matrix properties [Reviewed by Rob Beezer]
+#10559: path to perl hardcoded in gphelp (GP/PARI) [Reviewed by Jeroen Demeyer]
+#10663: Remove devel/sage/.hg/hgrc [Reviewed by Emil Widmann]
+#8169: Volker Braun: include TOPCOM as optional spkg [Reviewed by Marshall Hampton]
+#8537: Stefan Reiterer: Update Open MPI package to latest - Sage version is 3 years old! [Reviewed by Volker Braun]
+#9997: Tachyon does not even try to build on AIX [Reviewed by David Kirkby]
+#10438: [duplicate] Calculate the character of a newform [Reviewed by David Loeffler]
+#10518: Nicolas M. Thiéry: Add dot2tex as optional spkg [Reviewed by Pablo Angulo]
+#10676: [duplicate] Bizarre results for genus of a singular curve [Reviewed by David Loeffler]
+#2429: block_matrix command should be consistent with the syntax of the matrix command [Reviewed by Willem Jan Palenstijn]
+#9379: ia64-Linux binary fails "devel/sage/sage/plot/plot3d/tachyon.py" [Reviewed by Volker Braun]
+#9414: make the rational number field consistent with other number fields [Reviewed by Maarten Derickx]
+#10439: Make dictionary input to vector constructor more robust [Reviewed by Rob Beezer]
+#3297: [with proto spkg, needs review, waiting on upstream] Make cddlib produce a shared library [Reviewed by François Bissey]
+
+Merged in sage-4.6.2.alpha0:
+
+#7662: Nathann Cohen: Update is_chordal to return certificates [Reviewed by Robert Miller]
+#8395: Minh Van Nguyen: degree() reports the degree of a self-loop vertex as contributing 1 to total degree [Reviewed by Robert Miller, Minh Van Nguyen]
+#8702: Florent Hivert: Datastructure for objects with prototype (clone) design pattern. [Reviewed by Mike Hansen]
+#8739: Alexandre Blondin Massé: Addition of Kolakoski word [Reviewed by Nathann Cohen, Sébastien Labbé]
+#8807: Simon King: Adding support for morphisms to the category framework [Reviewed by John Cremona]
+#8925: Florent Hivert: __call__ for categories sets / enumeratedsets [Reviewed by Mike Hansen, Jason Grout]
+#9055: Charlie Turner, David Joyner, Robert Miller, Andrey Novoseltsev: Moving/cleaning enumeration functions for points on schemes [Reviewed by Robert Miller, Andrey Novoseltsev]
+#9074: Rob Beezer: Expand latex support for combinatorial graphs via tkz-graph [Reviewed by John Palmieri]
+#9459: Jeroen Demeyer: Implement a generic radical() function [Reviewed by John Cremona]
+#9672: Tom Boothby: Improve performance of Graph.genus [Reviewed by Robert Miller]
+#9702: Tom Boothby, Robert Miller: Matching polynomials for graphs [Reviewed by Nathann Cohen]
+#9747: Philipp Schneider: assigment to 1x1 submatrices specified by slices fails [Reviewed by David Loeffler]
+#9910: Nathann Cohen: Longest path [Reviewed by Robert Miller, Minh Van Nguyen]
+#9941: Yann Laigle-Chapuy: faster multinomial_coefficients [Reviewed by Francis Clarke]
+#9972: Andrey Novoseltsev, Volker Braun: Add fan morphisms [Reviewed by Volker Braun, Andrey Novoseltsev]
+#10134: Sébastien Labbé: Provide the enumeration of word morphisms from a range of integers [Reviewed by Alexandre Blondin Massé]
+#10189: Rob Beezer: Additions to the ones matrix constructor [Reviewed by Karl-Dieter Crisman, Robert Miller]
+#10211: André Apitzsch: flint/long_extras.pxd add missing parameters [Reviewed by Sebastian Pancratz]
+#10265: Sébastien Labbé: Add palindrome defect word to the word constructor [Reviewed by Alexandre Blondin Massé]
+#10266: Sébastien Labbé: Add sum of digits method to the abstract word class [Reviewed by Alexandre Blondin Massé]
+#10267: Sébastien Labbé: Add a method that returns the balance level of a finite word [Reviewed by Alexandre Blondin Massé]
+#10297: John Cremona: Creating morphisms between projective varieties fails [Reviewed by Andrey Novoseltsev]
+#10307: Minh Van Nguyen: add Bidiakis cube graph to common graph database [Reviewed by Nathann Cohen]
+#10310: Minh Van Nguyen: add Brinkmann graph to common graph database [Reviewed by Nathann Cohen]
+#10313: Minh Van Nguyen: add butterfly graph to common graph database [Reviewed by Nathann Cohen]
+#10315: Minh Van Nguyen: add friendship graph to common graph database [Reviewed by Nathann Cohen]
+#10316: Minh Van Nguyen: add Durer graph to common graph database [Reviewed by Nathann Cohen]
+#10318: John Cremona: Change CompositConstructionFunctor to CompositeConstructionFunctor [Reviewed by David Kirkby]
+#10321: Minh Van Nguyen: add Errera graph to common graph database [Reviewed by Nathann Cohen]
+#10322: Minh Van Nguyen: add Franklin graph to common graphs database [Reviewed by Nathann Cohen]
+#10325: Volker Braun: Cohomology Ring of toric varieties not unique [Reviewed by Andrey Novoseltsev]
+#10329: Minh Van Nguyen: add Goldner-Harary  graph to common graphs database [Reviewed by Nathann Cohen]
+#10330: Minh Van Nguyen: improve docstring and doctests for Grötzsch graph [Reviewed by Nathann Cohen]
+#10337: Minh Van Nguyen: add Herschel graph to the common graphs database [Reviewed by Nathann Cohen]
+#10338: Minh Van Nguyen: add Moser spindle to the common graphs database [Reviewed by Nathann Cohen]
+#10346: Joris Vankerschaver: Inconsistency in computing right eigenvectors of matrices over the symbolic ring [Reviewed by Rob Beezer]
+#10363: Robert Miller: Implement a.ord(p) for QQ and number fields [Reviewed by John Cremona]
+#10364: Rob Beezer: Vector constructor improvements [Reviewed by Andrey Novoseltsev]
+#10424: Rob Beezer: Expand matrix augment'ing to allow vectors as input [Reviewed by Joris Vankerschaver]
+#10484: David Loeffler: Chinese remainder code raises an error when called with Python ints [Reviewed by Robert Bradshaw, Mike Hansen]
+#10486: Jeroen Demeyer: Conversion List -> PARI finite field extension element disregards characteristic [Reviewed by John Cremona]
+#10488: Minh Van Nguyen: clean-up module headers to follow guidelines in Developer's Guide [Reviewed by Andrey Novoseltsev]
+
+Merged in sage-4.6.2.alpha1:
+
+#5281: David Kirkby, Marshall Hampton, Volker Braun: Update tachyon to Version 0.98.9 (latest upstream) [Reviewed by David Kirkby, Marshall Hampton, Volker Braun, Leif Leonhardy]
+#5945: Tom Boothby, Sebastian Pancratz: fastify factorization of inferior integers with flint [Reviewed by André Apitzsch, Jeroen Demeyer]
+#7644: Niles Johnson: generic power series reversion [Reviewed by Francis Clarke]
+#8355: Aly Deines, Robert Bradshaw: Fix hsv_to_rgb to take all 3 arguments [Reviewed by Willem Jan Palenstijn]
+#8597: Ryan Grout: point(vector((2,3,4))) is broken [Reviewed by Aly Deines, John Thurber]
+#8894: Nathann Cohen: topological minor [Reviewed by Leonardo Sampaio]
+#8997: Moritz Minzlaff: riemann_roch_basis is implemented incorrectly in sage [Reviewed by David Joyner, Oleksandr Motsak]
+#9063: Luis Felipe Tabera Alonso: wrong type for denominator [Reviewed by John Cremona, Aly Deines]
+#9124: John Palmieri: h-vectors for simplicial complexes [Reviewed by Marshall Hampton]
+#9332: Jim Stankewicz, Erin Beyerstedt, Anna Haensch, Robert Miller, David Loeffler: S_class_group() should return a group [Reviewed by John Cremona]
+#9363: Willem Jan Palenstijn: load bug when last line of file begins with # [Reviewed by Aly Deines]
+#9369: William Stein: make verbose command flush its output [Reviewed by Robert Miller]
+#9390: Francis Clarke: is_galois_relative() not always right [Reviewed by Marco Streng]
+#9481: Niles Johnson, Jeroen Demeyer: random_element fails for power series over real field, has inaccurate docstring [Reviewed by Aly Deines]
+#9498: William Stein: The function _factor_over_nonprime_finite_field is wrong in Sage, so remove it [Reviewed by David Loeffler]
+#9546: Nathann Cohen, Geoffrey Ehrman: bounded outdegree orientation [Reviewed by Robert Miller]
+#9846: André Apitzsch: misspelled word in parallel help function info [Reviewed by Aly Deines]
+#9911: Nathann Cohen, Geoffrey Ehrman: Changing the LP formulation of feedback vertex/arc set to improve the speed [Reviewed by Robert Miller]
+#9942: John Palmieri: Fix CHomP-related doctest errors [Reviewed by Marshall Hampton]
+#10003: Marshall Hampton: Make a textarea input for interact [Reviewed by Rob Beezer]
+#10314: David Roe: speed up comparison of Integers and native Python numeric types [Reviewed by Aly Deines]
+#10368: Benjamin Jones: spherical coordinates should allow specifying an 'elevation' angle as an alternative to the 'inclination' angle [Reviewed by Jason Grout]
+#10433: Minh Van Nguyen: clean up the code for Kruskal's algorithm [Reviewed by Nathann Cohen]
+#10443: David Loeffler: Improvements to ideallog [Reviewed by David Roe]
+#10462: Sébastien Labbé: Bring doc coverage of sage/groups/matrix_gps/homset.py to 100% [Reviewed by David Loeffler]
+#10463: Sébastien Labbé: Bring doc coverage of sage/matrix/strassen.pyx to 100% [Reviewed by David Loeffler]
+#10467: Simon King: Improve lookup of private attributes [Reviewed by Robert Bradshaw]
+#10468: Simon King: Cache of infinite polynomial rings is broken [Reviewed by Mike Hansen]
+#10475: Simon King: Calling a polynomial over finite non-prime field with named arguments [Reviewed by David Roe, Aly Deines]
+#10478: Dan Drake: line() does not accept iterators [Reviewed by Robert Bradshaw]
+#10479: Andrey Novoseltsev: Nef-partitions rewrite [Reviewed by Volker Braun]
+#10481: Maarten Derickx: errors should be raised not returned in is_integral_domain() [Reviewed by Robert Bradshaw, Gagan Sekhon]
+#10490: Minh Van Nguyen: toggling a weighted graph to be unweighted [Reviewed by Nathann Cohen]
+#10496: Simon King: The default call method of maps does not do as promised by the documentation [Reviewed by David Roe]
+#10499: Alexey U. Gudchenko: magma_free interface is broken [Reviewed by Aly Deines]
+#10516: Robert Miller: Edge labeled isomorphism of graphs chokes on "certify=True" [Reviewed by Nathann Cohen]
+#10523: David Jao: Make Weil pairing polynomial time [Reviewed by Aly Deines]
+#10547: Eviatar Bach: DeBruijn digraph fixes [Reviewed by Nathann Cohen]
+#10573: Radoslav Kirov: notebook search tries to open a file which might not be created yet [Reviewed by John Thurber]
+#10588: Ryan Grout: Upgrade to matplotlib 1.0.1 [Reviewed by Jason Grout, Dan Drake]
+#10609: Willem Jan Palenstijn: tachyon fails with .ac in hostname [Reviewed by Volker Braun]
+#10612: John Thurber: fix documentation error in constructions/graph_theory [Reviewed by Geoffrey Ehrman]
+#10614: Jeroen Demeyer: Increase maximum startuptime [Reviewed by Volker Braun]
+
+Merged in sage-4.6.2.alpha2:
+
+#727: Nick Alexander, Marco Streng: find rational points on plane conic curves [Reviewed by David Loeffler]
+#5618: Simon King: Cyclotomic field elements are not converted to Gap correctly [Reviewed by Luis Felipe Tabera Alonso]
+#7981: Jason Grout, Andrey Novoseltsev: animate ignores options to show that are passed up from the plot command [Reviewed by Tim Dumol, Marshall Hampton, Karl-Dieter Crisman]
+#8611: Jason Grout, Simon King: speed up cached_function and cached_method [Reviewed by David Loeffler]
+#8632: Andrey Novoseltsev: .save ignores ymin etc. [Reviewed by Karl-Dieter Crisman]
+#8716: David Loeffler: Modular forms of level GammaH [Reviewed by Robert Miller]
+#9032: Gagan Sekhon: no method numerical_approx for integers and rationals [Reviewed by Aly Deines, Willem Jan Palenstijn, Joanna Gaski]
+#9227: Martin Allen: units.length.millimeter missing [Reviewed by Simon Spicer]
+#9228: John Cremona: Bring doctests for interfaces/mwrank.py up to 100% (from 20% (2 of 10)  ) [Reviewed by Aly Deines, Jeroen Demeyer]
+#9423: Simon King: Gap interface for number fields [Reviewed by Luis Felipe Tabera Alonso]
+#10244: Marshall Hampton: legends don't save correctly [Reviewed by Karl-Dieter Crisman]
+#10279: Jeroen Demeyer: Bug in factor of polynomials over number fields [Reviewed by Luis Felipe Tabera Alonso]
+#10336: Andrey Novoseltsev: Cannot plot non-strictly convex cones [Reviewed by Volker Braun]
+#10355: Niles Johnson, Andrey Novoseltsev: containment for multivariate polynomial rings [Reviewed by Volker Braun]
+#10369: Jeroen Demeyer: Yet another bug in factorization over number fields [Reviewed by Luis Felipe Tabera Alonso]
+#10430: Jeroen Demeyer: Add some bugfixes to the PARI package [Reviewed by Leif Leonhardy, Volker Braun]
+#10473: Kwankyu Lee: Wrong docs of _lmul_ and _rmul_ in the polynomial module [Reviewed by Aly Deines]
+#10498: Andrey Novoseltsev: fix inject_coefficients for toric varieties [Reviewed by Volker Braun]
+#10506: Ron Evans, John Cremona: efficient counting of cusps for the principal congruence subgroup Gamma(n) [Reviewed by Ron Evans]
+#10525: Volker Braun: move algebraic subschemes of toric varieties to their rightful places [Reviewed by Andrey Novoseltsev]
+#10560: Eviatar Bach: Spelling errors in generic_graph.py [Reviewed by André Apitzsch]
+#10590: John Cremona: Saturation of elliptic curve points can cause an infinite loop [Reviewed by Robert Miller]
+#10600: Martin Albrecht: fix bug in eliminate_linear_variables() + return reductors used [Reviewed by Mate Soos]
+#10625: David Loeffler: inverse_mod for integer ring won't take an ideal as argument [Reviewed by Rob Beezer]
+#10640: Alain Giorgetti: Non interactive example in documentation of sage.combinat.cartesian_product.CartesianProduct(*iters) [Reviewed by Dominique Poulalhon]
+#10643: Olivier Guichard: Composition.fatter() method documentation - incorrect font [Reviewed by Johan Oudinet]
+#10646: Wolfgang Steiner: Doc typos correction [Reviewed by David Loeffler]
+#10647: Dominique Bernardi: Example unrecognized as such in FiniteCombinatorialClass.keys() [Reviewed by David Loeffler]
+#10648: Jonathan Spreer: fix documentation in/doc/live/reference/sage/plot/plot3d/base.html [Reviewed by David Loeffler]
+#10664: Fredrik Stroemberg: bug in old_subspace of hecke module in some edge cases [Reviewed by William Stein]
+
+Merged in sage-4.6.2.alpha3:
+
+#4492: Willem Jan Palenstijn: block_matrix reacts inconsistently with 0 [Reviewed by Aly Deines, Rob Beezer]
+#7458: Carlo Hamalainen, Luis Felipe Tabera Alonso: Sylvester matrix for polynomials [Reviewed by David Loeffler]
+#7524: Karl-Dieter Crisman: frame axes are lost when saving a graphic to a file [Reviewed by Andrey Novoseltsev]
+#8442: Daniel Bump: Lie Methods and Related Combinatorics (tutorial) [Reviewed by Minh Van Nguyen, Mark Jordan, Dmitrii Pasechnik]
+#8456: Robert Bradshaw: lazy import improvements [Reviewed by Luis Felipe Tabera Alonso]
+#8948: Jason Grout, Rob Beezer: add thin space between vector entries [Reviewed by Rob Beezer, Andrey Novoseltsev]
+#9437: David Loeffler: special linear group over finite rings [Reviewed by John Cremona]
+#9599: Simon King, John Perry, Martin Albrecht: re-merge #1396 and insure that Sage starts + passes doc tests on t2.math [Reviewed by Martin Albrecht]
+#9646: Chris Wuthrich: Incorrect calculation of elliptic curve formal group law [Reviewed by David Loeffler]
+#9791: Stefan Reiterer, Jeroen Demeyer: Fix documentation for weave in the "numerical_sage" document [Reviewed by André Apitzsch]
+#9918: Volker Braun: triangulate point configurations [Reviewed by Marshall Hampton]
+#9923: Nathann Cohen: Minimum Feedback Arc/Vertex set through constraint generation [Reviewed by Robert Miller]
+#10143: Karl-Dieter Crisman: Bring 2D plotting up to 100% doctest coverage (except plot.py) [Reviewed by Minh Van Nguyen, Geoffrey Ehrman]
+#10173: Willem Jan Palenstijn: asking if polynomial element in list gives error [Reviewed by Geoffrey Ehrman]
+#10222: Francis Clarke: Bernoulli polynomial problem [Reviewed by David Loeffler]
+#10251: Joris Vankerschaver: Bessel functions of real argument have small imaginary component when scipy is used [Reviewed by Simon Spicer]
+#10331: Martin Albrecht: degree of semi-regularity [Reviewed by Marshall Hampton]
+#10341: Martin Albrecht, Nathann Cohen: make MIP backend interface more Python-ic [Reviewed by Martin Albrecht, Nathann Cohen]
+#10432: Nathann Cohen: is_directed_acyclic is Cython (--> without NetworX) and its certificates [Reviewed by Robert Miller]
+#10435: Robert Miller: Invalid write in bitsets [Reviewed by Nathann Cohen]
+#10449: André Apitzsch: DeprecationWarning for popen3 in ECM [Reviewed by Robert Bradshaw]
+#10450: David Loeffler: Problem computing Hecke matrices on subspaces of modular forms spaces [Reviewed by Alex Ghitza]
+#10454: Rob Beezer: Add .is_singular method to matrices [Reviewed by Robert Bradshaw]
+#10457: Marina Gresham, Aly Deines, Gagan Sekhon: Hyperelliptic curve Cartier matrix and Hasse-Witt matrix [Reviewed by Aly Deines]
+#10471: Rob Beezer: Add the conjugate-transpose of a matrix, by that name [Reviewed by Robert Bradshaw]
+#10500: Rob Beezer: Documentation clean-up for linear combinations of matrix rows/columns [Reviewed by Aly Deines]
+#10515: Christian Stump, Aly Deines: Removed bug in MatrixGroup.list() [Reviewed by Gagan Sekhon]
+#10526: Ryan Grout: plot option gridlines='minor' broken [Reviewed by Geoffrey Ehrman, Marshall Hampton]
+#10535: Rob Beezer, Jason Grout: A column-oriented matrix constructor [Reviewed by Dan Drake]
+#10537: Rob Beezer: Fix dictionary input to sparse vector constructor [Reviewed by Dmitrii Pasechnik]
+#10564: Jean-Pierre Flori: bug in symbolic sums [Reviewed by André Apitzsch]
+#10578: Willem Jan Palenstijn: Coercion problem for vectors from polynomial rings over GF(2) [Reviewed by Dmitrii Pasechnik]
+#10579: Willem Jan Palenstijn: echelon_form docstring claims result not cached [Reviewed by Aly Deines]
+#10593: André Apitzsch: Replace __getslice__ with functionality in __getitem__ in ContinuedFraction [Reviewed by Robert Bradshaw]
+#10610: Willem Jan Palenstijn: tachyon block=False doesn't work [Reviewed by Volker Braun]
+#10626: Rob Beezer: Route sparse integer matrices to a working Smith form [Reviewed by David Loeffler]
+#10627: Ivan Andrus: add options for printing matrices [Reviewed by Rob Beezer]
+#10641: Johan Oudinet: fix documentation in  sage.misc.package.install_all_optional_packages [Reviewed by Gagan Sekhon]
+#10644: Yann Ponty: examples in Common Graphs doc not interpreted [Reviewed by Gagan Sekhon]
+#10650: Robin Langer: documentation bug in the class sage.calculus.riemann.ColorPlot [Reviewed by Gagan Sekhon]
+#10681: Volker Braun: Tachyon on 32-bit OSX still sets CC=cc [Reviewed by John Palmieri, Jeroen Demeyer]
+#10686: Alex Ghitza: speed up computation of T_p in characteristic p [Reviewed by David Loeffler]
+#10695: Jeroen Demeyer: Use execv() instead of Subprocess.call() in sage-run [Reviewed by Willem Jan Palenstijn]
+#10697: Minh Van Nguyen: documentation bug in linear programming tutorial [Reviewed by Robert Bradshaw]
+
+Merged in sage-4.6.2.alpha4:
+
+#7931: David Roe: Improved nth root for finite fields and integer_mods [Reviewed by Paul Zimmermann, David Loeffler, Bill Hart]
+#8721: David Loeffler: Residue fields for relative number fields broken (again) [Reviewed by Marco Streng]
+#9614: Dan Drake: "-sdist" should complain or fail when run in a "-bdist" copy of Sage [Reviewed by Volker Braun]
+#9713: Volker Braun: Add toric Chow group [Reviewed by Andrey Novoseltsev, Simon King, Jeroen Demeyer]
+#9955: André Apitzsch: Rational(3)%Rational(-1) fails [Reviewed by John Cremona]
+#10028: André Apitzsch: inconsistent error messages for inverting singular matrices [Reviewed by Rob Beezer]
+#10351: Jeroen Demeyer: Fix the way sage/misc/sagedoc.py reads doc/common/builder.py [Reviewed by Mike Hansen, Volker Braun]
+#10440: Dan Drake: preparser does not correctly identify encoding lines [Reviewed by Volker Braun, Maxim Cournoyer]
+#10452: David Loeffler: Weird behaviour with cusps [Reviewed by Alex Ghitza]
+#10541: Rob Beezer: Conversions of vectors to matrices [Reviewed by Volker Braun, Marco Streng]
+#10543: Rob Beezer: Echelon form over QQ is mutable [Reviewed by Tom Coates]
+#10571: Martin Albrecht: print protocol of Groebner basis computations via Singular and Magma [Reviewed by Marshall Hampton]
+#10582: Willem Jan Palenstijn: stein-watkins table iteration [Reviewed by Gagan Sekhon]
+#10604: Rob Beezer, Dan Drake: Rewrite diagonal matrix constructor [Reviewed by Dan Drake, Rob Beezer]
+#10649: Geoffrey Ehrman: Typo in the documentation of "graphs/generic_graph.html", method "is_interval" [Reviewed by Nathann Cohen]
+#10659: Simon King: Improve performance of matrix group morphisms [Reviewed by Robert Bradshaw]
+#10661: Andrey Novoseltsev: Origin in non-full-dimensional polytopes [Reviewed by Volker Braun]
+#10685: Rob Beezer: All subgroups of a permutation group [Reviewed by Dmitrii Pasechnik]
+#10699: Timo Jolivet, Sébastien Labbé: Misc improvements to the code of sage/combinat/e_one_star.py [Reviewed by Sébastien Labbé, Timo Jolivet]
+#10702: Marco Streng: Add patchbot to the developers guide [Reviewed by André Apitzsch]
+#10710: William Stein, Alex Ghitza: doc fixes for modular symbols [Reviewed by David Loeffler]
+#10721: Jeroen Demeyer: Increase LaTeX POOL_SIZE [Reviewed by Volker Braun]
+#10722: Rob Beezer: All cosets of a permutation group [Reviewed by Dmitrii Pasechnik]
+#10731: Volker Braun: IndexError in toric sheaf cohomology [Reviewed by Andrey Novoseltsev]
+
+Merged in sage-4.6.2.rc0:
+
+#7570: Ryan Grout: Make plot methods accept 'empty' input to return empty Graphics object [Reviewed by Aly Deines, Gagan Sekhon]
+#9796: Rob Beezer: Add a "diagonal" method for matrices [Reviewed by Tom Coates]
+#10301: Ryan Grout, Alain Filbois: load does not recognize https urls [Reviewed by Jason Grout]
+#10487: Jeroen Demeyer: Clean up doctests in sage/rings/finite_rings/finite_field_ext_pari.py [Reviewed by Gagan Sekhon]
+#10654: Geoffrey Ehrman: Replace ".. rubric:" with ".. rubric::" in a few files [Reviewed by François Bissey]
+#10706: Sébastien Labbé: A doctest of word morphism is saving an object locally [Reviewed by Benjamin Dexheimer]
+#10714: Rob Beezer: Rows of a zero-row sparse matrix are incorrect [Reviewed by Jason Grout]
+#10739: Volker Braun: Singular fails to build on OSX with 64bit kernel [Reviewed by Franco Saliola]
+
+Merged in sage-4.6.2.rc1:
+
+#10712: Jeroen Demeyer: Mark doctests # long time [Reviewed by Rob Beezer]
+#10782: Keshav Kini: update docs with info on mercurial rebase extension [Reviewed by Dmitrii Pasechnik]
+#10816: Volker Braun: Subscheme creation does not work from the notebook [Reviewed by Jeroen Demeyer]
+#10842: Jeroen Demeyer: Increase timeouts in sage/tests/cmdline.py [Reviewed by Volker Braun]

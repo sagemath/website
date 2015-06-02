@@ -1,0 +1,74 @@
+﻿Hello folks,
+
+Sage 3.1.4 was released on October 20th, 2008. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 5 people contributed to this release:
+
+ * Michael Abshoff
+ * Robert Bradshaw
+ * Robert Miller
+ * William Stein
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+This release was a bug fix release only that fixed a problem introduced in 3.1.3 
+that caused start up failures of Sage in case the user had an init.sage file.
+
+For details see the Sage 3.1.4 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.1.4
+
+* Known Issues with 3.1.4:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 6 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.1.4
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.2, chaired by Michael Abshoff. It will 
+be focused on major new features and the usual set of bug fixes.
+
+* Doctesting Coverage
+
+For 3.1.3 we had:
+
+Overall weighted coverage score:  60.5%
+Total number of functions:  20584
+
+The doctest coverage was unchanged in Sage 3.1.4.
+
+* Closed Tickets:
+
+Merged in Sage 3.1.4.final:
+
+#4289: Robert Bradshaw: Fix bug in EllipticCurve constructor [Reviewed by Paul Zimmermann]
+#4291: Mike Hansen: Fix problem with IPython and init.sage [Reviewed by Paul Zimmermann]
+#4292: William Stein: graphics_array -- stupid bug introduced by somebody cleaning up the code [Reviewed by Michael Abshoff]
+#4295: Michael Abshoff: delete mercurial-howto.txt [Reviewed by Robert Miller]
+#4300: Michael Abshoff: Update HISTORY.txt with Sage 3.1.2 and 3.1.1 [Reviewed by Robert Miller]

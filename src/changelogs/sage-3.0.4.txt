@@ -1,0 +1,373 @@
+﻿Hello folks,
+
+Sage 3.0.4 has been released on July 9th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 34 people contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Tom Boothby
+ * Robert Bradshaw
+ * Craig Citro
+ * Timothy Clemans
+ * Francis Clarke
+ * John Cremona
+ * Andrew Dalke (first contribution)
+ * Gabriel Ebner (first contribution)
+ * Burcin Erocal
+ * Gary Furnish
+ * Alex Ghitza
+ * Jason Grout
+ * Marshall Hampton
+ * Mike Hansen
+ * David Harvey
+ * Alex Jokela (first contribution)
+ * David Joyner
+ * Josh Kantor
+ * Robert Miller
+ * Willem Jan Palenstijn
+ * John Palmieri
+ * Clement Pernet
+ * Yi Qiang
+ * David Roe
+ * Bjarke Hammersholt Roune
+ * William Stein
+ * Chris Swierczewski
+ * Igor Tolkov (first contribution)
+ * Ralph-Philipp Weinmann
+ * Carl Witty
+ * Bin Zhang (first contribution)
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Integer polynomials now use FLINT (Burcin Erocal, Carl Witty)
+ * Sage startup time improvements (William Stein, Mike Hansen)
+ * Notebook updates (Timothy Clemans)
+ * @parallel and pyprocessing (William Stein, Tom Boothby, Mike Hansen)
+
+For details see the Sage 3.0.4 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.0.4
+
+* Known Issues with 3.0.4:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 131 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.0.4
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.0.5, chaired by Michael Abshoff. It will 
+focus on getting optional packages to work well and fix some of the 
+remaining blockers left over from 3.0.4. This will be the ISSAC 
+release, so we should really make this a good one.
+
+* Doctesting Coverage
+
+For 3.0.3 we had:
+
+Overall weighted coverage score:  52.5%
+Total number of functions:  19949
+
+We increased coverage by 1.1% in 3.0.4 while adding 284 functions:
+
+Overall weighted coverage score:  53.6%
+[19:31] <wstein> Total number of functions:  20233
+
+* Closed Tickets:
+
+Merged in Sage 3.0.4.rc3:
+
+#3620: William Stein: minpoly absurdly slow for elements of finte 
+       fields [Reviewed by Mike Hansen]
+#3627: William Stein: illegal instruction on modular/modsym/subspace.py 
+       on P4 3.4Ghz with 3.0.4.rc0 [Reviewed by Michael Abshoff]
+#3628: William Stein: (take 2) building sage on opensuse x86_64 fails 
+       with readline detection error [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.0.4.rc2:
+
+#3527: Michael Abshoff:  Disable "-fwrapv" on Itanium when building 
+       python [Reviewed by William Stein]
+#3607: Robert Miller: graph_isom.py: "Conditional jump or move depends 
+       on uninitialised value(s)" [Reviewed by Michael Abshoff]
+#3616: Bill Hart, Michael Abshoff: flint hangs on Itanium [Reviewed 
+       by William Stein]
+#3618: William Stein: Bump Maxima dues to new clisp release [Reviewed 
+       by Michael Abshoff]
+
+Merged in Sage 3.0.4.rc1:
+
+#3593: William Stein: completley disable doctesting of dsage_
+       interfaces.py [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.0.4.rc0:
+
+#1839: William Stein: sage-crap: incorporate this script into sage and 
+       start using it before each release. [Reviewed by Michael Abshoff]
+#3477: Michael Abshoff: clisp spkg-install has bad hard-coded error 
+       message [Reviewed by William Stein]
+#3519: Michael Abshoff: Update clisp to 2.46 release [Reviewed by 
+       William Stein]
+#3581: William Stein: The new pbuild pyhon files are not copied on sdist 
+       [Reviewed by Michael Abshoff]
+#3582: Michael Abshoff: clisp 2.46 cannot deal with parallel make 
+       [Reviewed by William Stein]
+#3583: William Stein: randomness in some worksheet doctests [Reviewed 
+       by Nick Alexander]
+#3584: Craig Citro: cython.py -- randomness in doctests [Reviewed by 
+       William Stein]
+#3585: Craig Citro: time_series -- lots of numerical noise in the doctests 
+       [Reviewed by William Stein]
+#3586: William Stein: twist.py -- doctest doesn't work on some machines due 
+       to ports not being open-able [Reviewed by Willem Jan Palenstijn]
+#3589: William Stein: numerical noise -- number_field.py [Reviewed by 
+       Craig Citro]
+#3590: William Stein: dage_interfaces -- port detection code hangs solid 
+       [Reviewed by Nick Alexander]
+#3594: Michael Abshoff: lisp -- impossible to run command line! [Reviewed 
+       by William Stein]
+#3595: William Stein: the matplotlibrc file is missing [Reviewed by Michael 
+       Abshoff]
+#3596: William Stein: can't build tut.tex; latex errors in ref.tex [Reviewed 
+       by Michael Abshoff]
+#3597: William Stein: building sage on opensuse x86_64 fails with readline 
+       detection error [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.0.4.alpha2:
+
+#2357: Burcin Erocal, Carl Witty, Craig Citro: make FLINT the default for 
+       ZZ['x'] [Reviewed by Craig Citro, William Stein]
+#3283: Martin Albrecht, Burcin Erocal: fix some memholes in PolyBoRi 
+       interface [Reviewed by Burcin Erocal, Martin Albrecht]
+#3356: William Stein, Chris Swierczewski, Josh Kantor: finance -- add 
+       randomization code; optimize some models; improve plotting code 
+       [Reviewed by Josh Kantor,  Michael Abshoff]
+#3399: Gary Furnish: sage pbuild extcode files should be moved to devel 
+       [Reviewed by Michael Abshoff]
+#3410: Burcin Erocal: conversion of matrices over polynomial rings to 
+       magma is broken [Reviewed by William Stein]
+#3442: David Joyner, Willem Jan Palenstijn: is_normal for permutation 
+       groups gives wrong answer [Reviewed by Willem Jan Palenstijn, 
+       Martin Albrecht]
+#3475: Yi QIang: setup.py was missing jquery.form.js, upgrade to latest 
+       version of jquery (1.2.6) and jquery.form [Reviewed by Michael 
+       Abshoff]
+#3482: William Stein: create a pickle jar [Reviewed by Nick Alexander]
+#3492: Francis Clarke: listing finite field embeddings [Reviewed by 
+       David Harvey]
+#3513: Alex Ghitza: modular symbols -- remove the compute_dual option 
+       to decomposition [Reviewed by Craig Citro]
+#3518: William Stein: modular symbols -- fix a bug in factorization of 
+       modular symbols spaces [Reviewed by Craig Citro]
+#3521: William Stein, Craig Citro: Atkin-Lehner operator doesn't square 
+       to 1 [Reviewed by Craig Citro]
+#3523: William Stein: upgrade flint to 1.0.10 [Reviewed by Craig Citro]
+#3526: Timothy Clemans: notebook -- change favicon to the new one seen 
+       at the new sagemath.org web site [Reviewed by Michael Abshoff]
+#3528: Michael Abshoff: test_gcc_version.pl claims that gcc 4.3 is not 
+       a valid compiler to build FLINT [Reviewed by William Stein]
+#3529: Bin Zhang, Michael Abshoff: ATLAS.spkg: reapply the PowerPC 
+       detection fix [Reviewed by William Stein]
+#3530: Martin Albrecht, Michael Abshoff: documentation for clib, 
+       cinclude pragmas [Reviewed by Craig Citro]
+#3533: Francis Clarke: better number fields (mostly cyclotomic) 
+       [Reviewed by John Cremona, Michael Abshoff, William Stein]
+#3539: Craig Citro, Willem Jan Palenstijn, Robert Bradshaw: bug in 
+       DirichletGroup -- bad code [Reviewed by Willem Jan Palenstijn]
+#3540: Robert Miller, Martin Albrecht: Augment messes up the ncols for 
+       flat matrices [Reviewed by Martin Albrecht, Robert Miller]
+#3545: Robert Miller: is_vertex_transitive for graphs [Reviewed by 
+       Tom Boothby]
+#3548: John Cremona: bug in Permutation creation from a string 
+       [Reviewed by Robert Miller]
+#3550: William Stein: notebook -- make saving and loading state of the 
+       notebook vastly faster and scale better [Reviewed by Tom Boothby]
+#3552: William Stein: bring worksheet.py coverage from 3% to 35% 
+       [Reviewed by Timothy Clemans]
+#3553: John Cremona: Update eclib to eclib-20080310.p4.spkg [Reviewed 
+       by Michael Abshoff]
+#3555: William Stein: notebook -- fix bug where it saved the notebook 
+       every tie it checked for idle worksheets [Reviewed by Michael 
+       Abshoff]
+#3556: Craig Citro: Bug in IntegerModRing(n) for very large n [Reviewed 
+       by Willem Jan Palenstijn]
+#3559: Andrew Dalke, William Stein, Mike Hansen: sage timeup script 
+       [Reviewed by Michael Abshoff]
+#3560: William Stein: optimize import of gnutls_socket_ssl.py [Reviewed 
+       by Mike Hansen]
+#3561: William Stein: make it so sage does *not* import numpy by default 
+       on startup in totallyreal_data.pyx [Reviewed by Michael Abshoff]
+#3566: William Stein: dsage -- get rid of uuid import [Reviewed by Mike 
+       Hansen]
+#3567: William Stein: optimize startup of sage -- don't import global 
+       transaction module [Reviewed by Mike Hansen]
+#3569: William Stein: optimize import of sage.dsage.interface.dsage_interface 
+       [Reviewed by Mike Hansen]
+#3570: Mike Hansen: more import improvements to db.py [Reviewed by William 
+       Stein]
+#3574: William Stein: optimize startup time by not importing mwrank library 
+       until needed [Reviewed by Mike Hansen]
+#3576: William Stein: fix stupid bug in RDF [Reviewed by Mike Hansen]
+#3577: William Stein: numpy -- don't import into sage on startup (take 2) 
+       [Reviewed by Mike Hansen]
+#3578: Igor Tolkov: Highlighting selected button in selector [Reviewed by 
+       William Stein]
+
+Merged in Sage 3.0.4.alpha1:
+
+#2932: Bjarke Hammersholt Roune: matrix.is_invertible() has inconsisten 
+       behavior over CDF [Reviewed by Jason Grout]
+#3141: Martin Albrecht: Doctest coverage 100% for crypto.mq.mpolynomialsystem 
+       [Ralph-Philipp Weinmann]
+#3215: Marshall Hampton: optional lrs package [Reviewed by Mike Hansen]
+#3276: Robert Bradshaw: more generic assumptions in calculus [Reviewed by 
+       Gary Furnish]
+#3284: Martin Albrecht, Burcin Erocal: use weakref for PolyBoRi [Reviewed by 
+       Burcin Erocal, Martin Albrecht]
+#3290: Michael Abshoff: Integrate ATLAS 3.8.1 Errata [Reviewed by William 
+       Stein]
+#3340: Clement Pernet: update givaro to 3.2.11 release [Reviewed by Michael 
+       Abshoff]
+#3380: Michael Abshoff: Fix large performance regression in ATLAS 3.8.0 and 
+       3.8.1 [Reviewed by William Stein]
+#3403: William Stein: get doctest coverage for rational up to 100% 
+       [reviewed by Gary Furnish]
+#3405: Martin Albrecht: update Singular SPKG to newest upstream release 
+       [Reviewed by Michael Abshoff]
+#3406: Martin Albrecht: improve TermOrder class [Reviewed by Mike Hansen]
+#3407: Martin Albrecht: better error handling for GB calculations [Reviewed 
+       by Mike Hansen]
+#3408: Robert Bradshaw: Cython 0.9.8 released [Reviewed by Gary Furnish]
+#3429: Clement Pernet: New linbox 1.1.6 spkg [Reviewed by Michael Abshoff]
+#3443: Timothy Clemans: notebook -- confirmation e-mail sent even when 
+       username already taken [Reviewed by Tom Boothby]
+#3445: Timothy Clemans: notebook -- finish implementing e-mail confirmation 
+       [Reviewed by Tom Boothby]
+#3446: Timothy Clemans: notebook -- implement basic account recovery 
+       [Reviewed by Tom Boothby]
+#3449: Timothy Clemans: notebook -- implement inline error reporting for 
+       login [Reviewed by Tom Boothby]
+#3450: Timothy Clemans: notebook -- move HTML code for registration page 
+       to template [Reviewed by Tom Boothby]
+#3452: Timothy Clemans: implement inline error reporting for registration 
+       [Reviewed by Tom Boothby]
+#3454: Timothy Clemans: notebook -- in registration email input box has 
+       to be filled in before the other input boxes are processed 
+       [Reviewed by Tom Boothby]
+#3455: Timothy Clemans: notebook -- after registration give user login 
+       box with congratulations message [Reviewed by Tom Boothby]
+#3458: William Stein, Mike Hansen, Yi Qiang: parallel -- a very simple 
+        reference api for @parallel and parallel_eval [Reviewed by Yi 
+       Qiang, William Stein]
+#3467: Yi Qiang: implements @parallel decorator using dsage [Reviewed 
+       by Mike Hansen]
+#3470: Mike Hansen, Tom Boothby: add pyprocessing (=multiproccessing) 
+       to sage [Reviewed by Yi Qiang]
+#3472: Craig Citro: Running sage from a non-existent directory pretends 
+       to work [Reviewed by Michael Abshoff]
+#3480: Timothy Clemans: notebook -- hide "New Worksheet" and "Upload" 
+       links on the published worksheets page from guest users 
+       [Reviewed by Tom Boothby]
+#3483: Timothy Clemans: notebook -- major improvements to registration 
+       page [Reviewed by Tom Boothby]
+#3490: Timothy Clemans: notebook -- improve registration error checking 
+       and reporting [Reviewed by Tom Boothby]
+#3495: Craig Citro: bug in cyclotomic charpoly for 1x1 matrices 
+       [Reviewed by William Stein]
+#3499: Craig Citro: cyclotomic linear algebra: multiplying 1x1 identity 
+       matrix by anything fails [Reviewed by William Stein]
+#3500: Craig Citro: bug in cyclotomic linear algebra code [Reviewed by 
+       Clement Pernet]
+#3501: Craig Citro: charpoly of zero matrix over a cyclotomic field 
+       fails [Reviewed by Clement Pernet]
+#3503: Craig Citro, David Roe, Michael Abshoff: pickling certain 
+       modular forms segfaults [Reviewed by William Stein]
+#3507: William Stein: fix major efficiency/performance bug in sparse 
+       linear algebra matrix multiply [Reviewed by Craig Citro]
+#3509: John Cremona: Update eclib to eclib-20080310.p3.spkg [Reviewed 
+       by Michael Abshoff]
+#3511: Jason Grout: make laplacian_matrix a synonym for kirchoff_matrix 
+       [Reviewed by Robert Miller]
+#3512: Yi Qiang: upgrade to sqlalchemy 0.4.6 [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.0.4.alpha0:
+
+#2962: Mike Hansen: modify .name() method for ExpectElements to allow 
+       renaming [reviewed by Gary Furnish]
+#3044: Marshall Hampton, Alex Jokela: phcpack improvements: path 
+       tracking [Reviewed by Carl Witty]
+#3132: Gabriel Ebner: Add computation of multinomial coefficients 
+       [Reviewed by Carl Witty]
+#3145: John Palmieri: documentation and defaults for the 'view' 
+       function [Reviewed by William Stein]
+#3149: Carl Witty: off-by-one error in real_roots on AA coefficients 
+       [Reviewed by Craig Citro]
+#3205: Jason Grout: when the notebook scrolls to a new cell that is 
+       created, the jsmath box obscures the bottom cell [Reviewed 
+       by Mike Hansen]
+#3206: William Stein: sage -i http://url.of.an.spkg doesn't work 
+       [Reviewed by Gary Furnish]
+#3207: Jason Grout: upgrade jsmath to version 3.5 [Reviewed by 
+      Marshall Hampton]
+#3210: Robert Bradshaw: plotting Z_p as a fractal image [Reviewed 
+       by Craig Citro]
+#3216: Timothy Clemans: notebook -- doctests for user.py [Reviewed 
+       by William Stein]
+#3228: Timothy Clemans: notebook -- Account Settings Page with auto 
+       save, better styling, etc [Reviewed by Tom Boothby]
+#3240: Timothy Clemans: notebook -- implement page dedicated 
+       to worksheet publishing [Reviewed by Tom Boothby]
+#3262: Marshall Hampton: interact selector breaks if there are too 
+       many options [Reviwed by William Stein]
+#3341: Mike Hansen: fix minor issue with creating skew partitions 
+        by dividing partitions [Reviewed by Martin Albrecht]
+#3347: John Palmieri: lots of changes to the tutorial [Reviewed by 
+       Mike Hansen]
+#3371: Francis Clarke, Craig Citro: bug in uniformiSer for p-adic rings 
+       [Reviewed by David Roe]
+#3379: Mike Hansen: error in plotting 3d polytopes [Reviewed by Nick 
+       Alexander]
+#3382: Marshall Hampton: Compute Newton polytopes without polymake 
+       [Reviewed by Mike Hansen]
+#3419: Robert Miller: 100% coverage for sage.coding.binary_code 
+       [reviewed by Martin Albrecht]
+#3428: Burcin Erocal, Craig Citro: univariate polynomial quo_rem 0 
+       trouble [Reviewed by Craig Citro, Nick Alexander]
+#3439: Robert Miller: 20% --> 100% coverage for graph_isom [Reviewed 
+       by Gary Furnish]/Applications/Utilities/Terminal.app
+#3453: William Stein, Yi Qiang, Gary Furnish: add function pickling 
+       to sage [Reviewed by Gary Furnish]
+#3459: Nick Alexander: incorrect coercion in number field ideals 
+       [Reviewed by David Harvey]
+#3462: William Stein: modular symbols -- fix use_cache not being 
+       properly respected [Reviewed by Craig Citro]
+#3471: Robert Miller: Backends for compiled graph structures 
+       [Reviewed by Tom Boothby]
+#3488: David Harvey: typos in sage-clone script [Reviewed by Michael 
+       Abshoff]

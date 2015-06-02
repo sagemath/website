@@ -1,0 +1,160 @@
+﻿-*- coding: utf-8 -*-
+
+Sage 4.5.3 was released on 7 September 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+  * sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+  * http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 40 people contributed to this release. Of those, 1 made
+their first contribution to Sage:
+
+  * Adam Webb
+  * Alexander Dreyer
+  * Andrey Novoseltsev
+  * Ben Edwards [first contribution]
+  * Carl Witty
+  * Craig Citro
+  * David Joyner
+  * David Kirkby
+  * David Roe
+  * Florent Hivert
+  * François Bissey
+  * Georg Weber
+  * Harald Schilly
+  * Jeroen Demeyer
+  * John Cremona
+  * John Palmieri
+  * Karl-Dieter Crisman
+  * Leif Leonhardy
+  * Leonardo Sampaio
+  * Luis Felipe Tabera Alonso
+  * Marco Streng
+  * Mariah Lenox
+  * Martin Albrecht
+  * Michael Brickenstein
+  * Mike Hansen
+  * Minh Van Nguyen
+  * Mitesh Patel
+  * Nathann Cohen
+  * Paul Zimmermann
+  * Peter Jeremy
+  * Ralf Hemmecke
+  * Rob Beezer
+  * Robert Bradshaw
+  * Robert Miller
+  * Ryan Hinton
+  * Simon King
+  * Valentin Feray
+  * Volker Braun
+  * Willem Jan Palenstijn
+  * William Stein
+
+* Release manager
+
+  * Mitesh Patel
+
+* Bug statistics
+
+We closed 58 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.5.3
+
+or the closed ticket section at the end of this announcement.
+
+* Doctesting coverage
+
+  * Overall weighted coverage score:  83.8%  (83.8% for 4.5.2)
+  * Total number of functions:        26178  (26139 for 4.5.2)
+
+* Closed tickets:
+
+#7708: Harald Schilly: upgrade openopt spkg to 0.29 [Reviewed by Harald Schilly]
+#9354: Ralf Hemmecke: Update FriCAS to 1.0.9 [Reviewed by Adam Webb, Mike Hansen]
+#9515: Martin Albrecht: make an optional spkg for PyCryptoPlus [Reviewed by David Joyner]
+
+Merged in sage-4.5.3.alpha0:
+
+#2508: Jeroen Demeyer: Problem converting a Laurent Series from pari to Sage [Reviewed by John Cremona]
+#5828: Luis Felipe Tabera Alonso: number fields -- serious bug in coercion to a relative extension of degree 1 [Reviewed by Marco Streng]
+#7861: David Kirkby: pynac not building on Open Solaris x64 (32-bit/64-bit mixup) [Reviewed by John Palmieri]
+#7864: David Kirkby, Willem Jan Palenstijn: libfplll tries to link 64-bit objects to 32-bit libstdc++.so [Reviewed by John Palmieri]
+#8017: Robert Bradshaw: incorrect trailing digits for continued fraction [Reviewed by Paul Zimmermann]
+#8086: David Kirkby: numpy fails to build on OpenSolaris or Solaris 10 64-bit [Reviewed by John Palmieri]
+#8316: Mitesh Patel: Remove the Jinja (not Jinja2) package [Reviewed by Carl Witty]
+#9003: Georg Weber, Willem Jan Palenstijn: Doctest (or whatever???) failure on Mac OS X in free_module.py [Reviewed by Karl-Dieter Crisman, Craig Citro]
+#9247: Robert Miller, John Cremona: A collection of little improvements to elliptic curves [Reviewed by John Cremona, Robert Miller]
+#9253: Robert Miller: A collection of little improvements to heegner.py [Reviewed by William Stein]
+#9254: Robert Miller: A collection of little improvements to BSD.py [Reviewed by Mitesh Patel, William Stein]
+#9309: David Kirkby: Add an spkg-check file for the IML library [Reviewed by Martin Albrecht]
+#9326: Volker Braun: Add cohomology of toric varieties [Reviewed by Andrey Novoseltsev]
+#9338: Minh Van Nguyen: upgrade PyCrypto to upstream 2.1.0 [Reviewed by David Kirkby]
+#9352: John Palmieri: givaro spkg: trivial typo in spkg-check [Reviewed by David Kirkby]
+#9356: John Palmieri: make SAGE_ATLAS_LIB work on Solaris [Reviewed by David Kirkby]
+#9396: Mariah Lenox, David Kirkby: statistical package r fails to run, missing libicuuc [Reviewed by David Kirkby, Robert Miller]
+#9444: Mitesh Patel: Fix "rm: Cannot remove any directory in the path of the current working directory" on t2 [Reviewed by David Kirkby, John Palmieri, Leif Leonhardy]
+#9470: Andrey Novoseltsev: Switch toric varieties to enhanced fans [Reviewed by Volker Braun]
+#9472: Leif Leonhardy: Remove (duplicate) BOOST and M4RI source trees from PolyBoRi spkg, some clean-up [Reviewed by Martin Albrecht]
+#9476: John Cremona: Upgrade eclib to version 20100711 [Reviewed by Robert Miller]
+#9482: Carl Witty: implicit_plot3d gives "Out of memory allocating triangulation" when plotting an empty surface [Reviewed by Karl-Dieter Crisman]
+#9533: David Kirkby: Update GSL to the latest upstream release (1.14) &amp; permit parallel building. [Reviewed by Mike Hansen, Peter Jeremy, Leif Leonhardy]
+#9575: Nathann Cohen: Grundy coloring of a graph [Reviewed by Leonardo Sampaio]
+#9595: Jeroen Demeyer: Conversion from constant PARI polynomials to QQ doesn't work [Reviewed by John Cremona]
+#9610: Robert Miller: int(finite field element) should only work when it is in the prime subfield [Reviewed by Martin Albrecht]
+#9647: Harald Schilly: instructive example for mip.pyx [Reviewed by Nathann Cohen]
+#9649: Jeroen Demeyer: c_lib/include/interrupt.h: rename FOO_H [Reviewed by Robert Bradshaw]
+#9661: Jeroen Demeyer: pari(string) always returns a value, even when it should not [Reviewed by John Cremona]
+#9682: Valentin Feray: Fix a bug in error message in perfect matchings [Reviewed by Florent Hivert]
+#9686: Robert Miller: Polish documentation for canonical label [Reviewed by Minh Van Nguyen]
+#9700: Ryan Hinton: Export check_edge_label from sparse_graph.pyx [Reviewed by Nathann Cohen]
+
+Merged in sage-4.5.3.alpha1:
+
+#8059: Martin Albrecht: Update Singular spkg to release 3-1-1-4 [Reviewed by David Kirkby, Simon King, William Stein, John Palmieri]
+#9358: David Kirkby: zn_poly passes all tests on on Solaris 10 64-bit SPARC, but fails to install [Reviewed by John Palmieri]
+#9475: Martin Albrecht, Leif Leonhardy: update M4RI to newest upstream release [Reviewed by Leif Leonhardy, David Kirkby, Mariah Lenox]
+#9506: Martin Albrecht: include libSingular error messages in exceptions [Reviewed by William Stein]
+#9508: David Kirkby: Fix all ATLAS build problems on Solaris/OpenSolaris [Reviewed by John Palmieri]
+#9567: Ben Edwards, Nathann Cohen: Networkx-1.2 spkg [Reviewed by Ben Edwards, Nathann Cohen, Robert Miller]
+#9643: David Kirkby: Force ECL to disable assembly code on Solaris 10 x86 as it does on OpenSolaris [Reviewed by François Bissey]
+#9712: Mitesh Patel: Make building PolyBoRi depend on GD [Reviewed by Leif Leonhardy]
+#9717: Alexander Dreyer, Martin Albrecht, Michael Brickenstein: fix variable substitution in PolyBoRi + finding M4RI [Reviewed by Martin Albrecht, Alexander Dreyer, Leif Leonhardy]
+
+Merged in sage-4.5.3.alpha2:
+
+#9689: David Kirkby: Numerical noise on devel/sage-main/sage/symbolic/expression.pyx computing sinh(1) [Reviewed by John Cremona]
+#9693: David Kirkby: Maxima is printing asinh(1.0) without a leading zero (.8813735870195429) on Solaris 10 x86 [Reviewed by John Cremona]
+#9703: David Kirkby: Doctest failures caused by non-working sympow on 32-bit Solaris x86 and  32-bit OpenSolaris [Reviewed by Jeroen Demeyer, Mitesh Patel, Carl Witty]
+#9722: Leif Leonhardy: PARI/GP build error on Fedora 13 [Reviewed by Jeroen Demeyer, Mitesh Patel]
+#9735: John Palmieri: Numerical noise on sage/stats/hmm/chmm.pyx on both Solaris x86 and OpenSolaris x86 [Reviewed by David Kirkby]
+#9760: John Palmieri: Possible numerical noise doctest failure in sage/matrix/matrix2.pyx on t2 [Reviewed by David Kirkby]
+#9761: David Kirkby: Adjust spkg/standard/deps to build Python before zn_poly, and make two other dependencies explicit [Reviewed by Leif Leonhardy]
+#9765: John Palmieri: matrix2.pyx: replace "x < 1e-15" by "abs(x) < 1e-15" [Reviewed by Mitesh Patel]
+
+Merged in sage-4.5.3.rc0:
+
+#9064: William Stein: remove p-adic matrix directory [Reviewed by David Roe]
+#9179: Karl-Dieter Crisman: Typo makes docs not perfect in plot/disk.py [Reviewed by Minh Van Nguyen]
+#9553: Jeroen Demeyer: Mention 'sage -ba-force' in the 'sage -ba' prompt [Reviewed by William Stein, Mitesh Patel]
+#9766: Nathann Cohen, David Kirkby: Cliquer - Update Upstream contact [Reviewed by David Kirkby, Mitesh Patel]
+#9781: Jeroen Demeyer: Typo in book_stein_ent.py [Reviewed by Mike Hansen]
+#9783: Rob Beezer: Add additive groups to the documentation [Reviewed by John Cremona]

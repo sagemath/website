@@ -1,0 +1,185 @@
+﻿Sage 5.2 was released on 25 July 2012. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 54 people contributed to this release. Of those, 5 made
+their first contribution to Sage:
+
+  - Alexander Dreyer
+  - Andrey Novoseltsev
+  - André Apitzsch
+  - Anne Schilling
+  - Armin Straub
+  - Benjamin Jones
+  - Birk Eisermann [first contribution]
+  - Burcin Erocal
+  - Charles Bouillaguet
+  - Chris Berg
+  - Dan Drake
+  - Daniel Krenn
+  - David Coudert
+  - David Roe
+  - Dima Pasechnik
+  - Dmitrii Pasechnik
+  - Douglas McNeil
+  - Franco Saliola
+  - François Bissey
+  - Frédéric Chapoton
+  - Hugh Thomas
+  - Ivan Andrus
+  - Jason Grout
+  - Javier López Peña
+  - Jeroen Demeyer
+  - Johan Bosman
+  - John Palmieri
+  - Jonathan Gutow
+  - Karl-Dieter Crisman
+  - Keshav Kini
+  - Leif Leonhardy
+  - Luis Felipe Tabera Alonso
+  - Marshall Hampton
+  - Martin Albrecht
+  - Martin Raum
+  - Mike Hansen
+  - Nathann Cohen
+  - Nicolas M. Thiéry
+  - Niels Ranosch
+  - Paul Ivanov [first contribution]
+  - Paulo César Pereira de Andrade
+  - Punarbasu Purkayastha
+  - R. Andrew Ohana
+  - Rado Kirov [first contribution]
+  - Rob Beezer
+  - Robert Bradshaw
+  - Samuel Gonshaw [first contribution]
+  - Simon King
+  - Stephen Montgomery-Smith
+  - Timothy Walsh [first contribution]
+  - Titus Nicolae
+  - Volker Braun
+  - Wai Yan Pong
+  - William Stein
+
+* Release manager: Jeroen Demeyer.
+
+* We closed 87 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-5.2/tickets.html
+
+Closed tickets:
+
+#1861: Ivan Andrus: better document sage.el [Reviewed by Karl-Dieter Crisman]
+#5873: Fix matplotlib build on FreeBSD [Reviewed by Stephen Montgomery-Smith, Paul Ivanov]
+#6582: Potential issue in polybori - 0.5rc.p8 and/or  0.5rc.p9 [Reviewed by Alexander Dreyer]
+#6880: docstrings and @cached_method -- if you used cached_method then docstring displays wrong file, etc. [Reviewed by Simon King]
+#7003: Update jmol [Reviewed by Jason Grout]
+#7831: numpy-1.5.0 fixes for FreeBSD [Reviewed by Stephen Montgomery-Smith]
+#9547: x * Infinity assumes that x is positive [Reviewed by Burcin Erocal, Volker Braun]
+#10340: Strange error in groebner_basis() [Reviewed by Alexander Dreyer]
+#11423: Make atan2(0,0) consistent [Reviewed by Volker Braun, Titus Nicolae, Burcin Erocal]
+#12059: Make R work on FreeBSD [Reviewed by Stephen Montgomery-Smith]
+#12303: leave beta symbolic for exact complex inputs [Reviewed by Burcin Erocal]
+#12654: polybori crash (Linux) [Reviewed by Alexander Dreyer]
+#12984: Possible future issues with ECL build with unicode enabled [Reviewed by Karl-Dieter Crisman, Paulo César Pereira de Andrade]
+#13126: John Palmieri, Jeroen Demeyer: Update and clean up openssl [Reviewed by Jeroen Demeyer, John Palmieri, Karl-Dieter Crisman, Benjamin Jones]
+#13144: Fix Sympow on FreeBSD [Reviewed by Stephen Montgomery-Smith]
+#3766: move sage_fortran from fortran spkg to sage_scripts spkg [Reviewed by Karl-Dieter Crisman]
+#12818: Building polybori under FreeBSD [Reviewed by Stephen Montgomery-Smith, Alexander Dreyer, Karl-Dieter Crisman]
+#13040: Polybori spkg: allow CC to contain multiple words [Reviewed by R. Andrew Ohana]
+#876: Implement or wrap Braid Groups [Reviewed by Karl-Dieter Crisman]
+#8393: bring plot3d.py to 100% coverage [Reviewed by Karl-Dieter Crisman]
+#10144: Update plot.py to 100% coverage [Reviewed by Karl-Dieter Crisman]
+#10694: bug with plot [Reviewed by Karl-Dieter Crisman]
+#11953: Marshall Hampton, John Palmieri: Upgrade optional package biopython to version 1.60 [Reviewed by Marshall Hampton, John Palmieri]
+#13205: make LP return bounds on variables [Reviewed by Dmitrii Pasechnik]
+#13207: Please consider updating to gfan 0.5 [Reviewed by Marshall Hampton]
+#13270: Jason Grout, Keshav Kini: Restarted notebook server allows user registration [Reviewed by Punarbasu Purkayastha]
+
+Merged in sage-5.2.beta0:
+
+#10764: François Bissey, André Apitzsch: Cleanup a few Cython warnings [Reviewed by François Bissey, André Apitzsch]
+#11078: William Stein, Jonathan Gutow: jmol in the flask notebook [Reviewed by Jason Grout]
+#11080: Mike Hansen, Rado Kirov, William Stein, Jason Grout, Jeroen Demeyer: move notebook to flask/wsgi-based notebook [Reviewed by Rado Kirov, Dan Drake, Jason Grout, Simon King, Dmitrii Pasechnik, John Palmieri, Punarbasu Purkayastha]
+#11503: Jonathan Gutow: Make new spkg to install Jmol in SAGE_LOCAL/share [Reviewed by Dan Drake, Jason Grout, Punarbasu Purkayastha]
+#11528: Wai Yan Pong: Allow deleting row or column from matrix [Reviewed by Rob Beezer]
+#11851: Niels Ranosch, Burcin Erocal: make pybtex an optional spkg [Reviewed by John Palmieri]
+#11874: Rado Kirov, Jason Grout: Remove twisted spkg [Reviewed by Dmitrii Pasechnik, Jason Grout]
+#12229: Jason Grout, Karl-Dieter Crisman: Add section in the developers manual about sagenb development [Reviewed by William Stein, Jeroen Demeyer, Punarbasu Purkayastha, Karl-Dieter Crisman, Keshav Kini]
+#12327: Ivan Andrus: Improve loading page of Mac App [Reviewed by Karl-Dieter Crisman]
+#12917: Nathann Cohen: is_cartesian_product [Reviewed by David Coudert]
+#12974: Punarbasu Purkayastha: make Graphics class inheritable and some clean ups [Reviewed by Karl-Dieter Crisman, Jeroen Demeyer]
+#12989: Nathann Cohen: Ellingham–Horton graphs [Reviewed by Keshav Kini]
+#13014: Douglas McNeil: lcm for SR rationals [Reviewed by Dan Drake, William Stein]
+#13038: Nathann Cohen: ClebschGraph, CoxeterGraph, HoffmanGraph [Reviewed by Keshav Kini]
+#13052: Rob Beezer: Positive definite check for matrices over RDF/CDF [Reviewed by Dan Drake, Andrey Novoseltsev]
+#13090: Punarbasu Purkayastha: Make LinearCode take minimum distance as a parameter [Reviewed by Dmitrii Pasechnik]
+#13103: Charles Bouillaguet: Makes BooleanPolynomial more compatible with MPolynomial [Reviewed by Martin Albrecht]
+#13113: Keshav Kini: sage -pkg can't handle its own options [Reviewed by John Palmieri]
+#13139: André Apitzsch: Bug in IntegerFactorization [Reviewed by R. Andrew Ohana]
+#13148: Dima Pasechnik: make LP return the number of variables [Reviewed by Nathann Cohen]
+#13167: Jeroen Demeyer: Clarify some comments concerning the matplotlib Delaunay code in list_plot3d.py [Reviewed by Karl-Dieter Crisman]
+#13168: Anne Schilling: Fixing typos in latex options documentation [Reviewed by Nicolas M. Thiéry]
+#13172: David Roe: Bug in mod(a, p^k).nth_root() for p>62, k>1 [Reviewed by Robert Bradshaw]
+
+Merged in sage-5.2.beta1:
+
+#4529: Punarbasu Purkayastha, Karl-Dieter Crisman: Implement plots with logarithmic scale [Reviewed by Karl-Dieter Crisman, Punarbasu Purkayastha]
+#5043: Ivan Andrus: gap_console help broken [Reviewed by Karl-Dieter Crisman]
+#10795: Rob Beezer: Fix and upgrade double dense matrix QR decomposition [Reviewed by Martin Raum, Dan Drake]
+#12433: R. Andrew Ohana, Leif Leonhardy: Make zn_poly respect the CC environment variable, work around GCC 4.7.0 bug on ia64 (and clean up the spkg) [Reviewed by Leif Leonhardy, Jeroen Demeyer]
+#12544: Andrey Novoseltsev: Switch cones to `PointCollection` [Reviewed by Volker Braun]
+#12706: Frédéric Chapoton: monomials of 0 [Reviewed by Keshav Kini]
+#12751: Jeroen Demeyer: Allow building Sage with GCC-4.7.x [Reviewed by Volker Braun]
+#12806: Daniel Krenn, Javier López Peña: upgrade of spkg networkx-1.2.p2 to 1.6 [Reviewed by Keshav Kini, Karl-Dieter Crisman]
+#12965: Andrey Novoseltsev: X.Kaehler_cone().lattice() is not a lattice [Reviewed by Volker Braun]
+#13029: Robert Bradshaw: Upgrade Cython to 0.17 [Reviewed by R. Andrew Ohana]
+#13058: Nathann Cohen, Dima Pasechnik: Hall-Janko Graph [Reviewed by Keshav Kini, Dima Pasechnik]
+#13124: Alexander Dreyer: Updating PolyBoRi to release 0.8.2 [Reviewed by Martin Albrecht]
+#13140: John Palmieri, Rob Beezer: OS X Lion doctest failures for double dense QR decomposition [Reviewed by Rob Beezer, John Palmieri]
+#13155: Charles Bouillaguet: Boolean Multivariate Ideals should not have negative dimension.... [Reviewed by Martin Albrecht]
+#13166: Armin Straub: Compute q-binomial coefficients more efficiently [Reviewed by Javier López Peña]
+#13169: Nicolas M. Thiéry: Little doctest improvements in permutation groups [Reviewed by Frédéric Chapoton]
+#13170: Simon King: Speedup the default nonzero test for matrices [Reviewed by Javier López Peña]
+#13175: Jeroen Demeyer: Upgrade Mercurial [Reviewed by Volker Braun]
+#13187: André Apitzsch: Minpoly and charpoly don't check their arguments correctly [Reviewed by Robert Bradshaw]
+#13191: Volker Braun: Construct a 2-d fan from rays only [Reviewed by Andrey Novoseltsev]
+#13196: Charles Bouillaguet, Javier López Peña: GL(n, GF(q)).random_element() is way too slow for what it does [Reviewed by Dima Pasechnik, Charles Bouillaguet]
+#13206: André Apitzsch: Remove from __future__ import with_statement [Reviewed by Volker Braun]
+#13208: Franco Saliola: Move the basis method from CombinatorialFreeModule to ModulesWithBasis.ParentMethods [Reviewed by Chris Berg]
+#13216: Frédéric Chapoton: one test in lattice polytope should be tagged # random [Reviewed by Volker Braun]
+#13217: Armin Straub: Expand the Dedekind eta function more efficiently [Reviewed by Frédéric Chapoton]
+#13219: John Palmieri: Document 'make' targets [Reviewed by Keshav Kini]
+#13222: Franco Saliola: Fix is_graded for Posets to use appropriate definition [Reviewed by Anne Schilling]
+
+Merged in sage-5.2.rc0:
+
+#10607: Marshall Hampton, John Palmieri: Update phcpack to latest verson [Reviewed by Marshall Hampton, John Palmieri]
+#11563: Nicolas M. Thiéry: Make lrcalc a standard package [Reviewed by Anne Schilling, Jeroen Demeyer, John Palmieri]
+#11996: Johan Bosman: Bug in LaTeX representation of subgroups of permutation groups [Reviewed by Samuel Gonshaw]
+#12343: Luis Felipe Tabera Alonso: Cleanup unexisting methods after #10263 [Reviewed by André Apitzsch]
+#12925: Nicolas M. Thiéry, Hugh Thomas: Thematic tutorial on combinatorics [Reviewed by Hugh Thomas, Nicolas M. Thiéry, Timothy Walsh]
+#13073: Birk Eisermann: recognition of weakly chordal graphs [Reviewed by Nathann Cohen,Birk Eisermann]
+#13088: Frédéric Chapoton: implement the Paley graphs [Reviewed by Nathann Cohen]
+#13109: Volker Braun: Rewrite deprecation to use trac ticket numbers [Reviewed by John Palmieri, Karl-Dieter Crisman]
+#13146: David Roe: Removing tabs in .rst, .tex and .pxi files [Reviewed by Keshav Kini, André Apitzsch, Jeroen Demeyer]
+#13193: Benjamin Jones: erf evaluation is wrong along imaginary axis [Reviewed by Karl-Dieter Crisman]
+#13220: John Palmieri: bug in morphisms of chain complexes [Reviewed by Marshall Hampton]

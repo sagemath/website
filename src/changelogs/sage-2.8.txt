@@ -1,0 +1,30 @@
+﻿Sun Aug 12 18:22:22 2007
+------------------------
+
+This is a fairly nontrivial upgrade, mainly because it includes
+a major new version of Singular, and updates to Linbox.  There's
+also new graph theory-related code that came out of the summer REU
+at Washington and optimizations to mwrank.  If you wrote something, 
+sent me a patch, and it isn't in here, definitely send me an email 
+with a new version of the patch. 
+
+Thanks to the many many people who contributed to this release,
+including M Abshoff, M Albrecht, C Citro, C Pernet, D Kohel, G Nebe, D
+Joyner, E Kirkman, R Miller, S Howe, J Mohler, B moretti, J. Rivas,
+and anybody else who I didn't mention explicitly.
+
+High level change log:
+
+       * m albrecht: upgrade to singular-3-0-3 (this was nontrivial)
+       * m albrecht, c pernet: new version of givaro that fixes some bugs. (gcc-4.2 support)
+       * m abshoff, c pernet, w stein: new version of linbox that fixes some bugs. (gcc-4.2 support)
+       * d kohel, g nebe, et al.: Genus computation for quadratic forms (not really made public yet
+             but it is there in quadratic_forms/genus).
+       * e kirkman, r miller: graph database improvements (which are generally useful).
+       * s howe, r miller: bruhat intervals
+       * j mohler: programming guide improvement
+       * b moretti: cayley graphs
+       * juan m bello rivas: fix so clisp can be built in the background.
+       * w stein: upgraded sympy to version 0.5.1, whose main features included much optimization
+       * w stein: implement computing half_integer_weight_modform_basis function for computing
+                 a basis for half-integral modular forms of given weight, level, and character.

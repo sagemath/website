@@ -1,0 +1,60 @@
+﻿SAGE-2.8.7
+
+See http://trac.sagemath.org/sage_trac/query?status=closed&milestone=sage-2.8.7 for more details about
+the list of patches included in this release. 
+ 
+294 [with patch] slowness in mpfr_root	somebody	enhancement	minor	basic arithmetic	
+467 [with patch] asymptotically slow pari integer conversions		craigcitro    enhancement	minor	basic arithmetic 
+468 [with patch] quaddouble wrapper sets fpu precision to 53 bits for entire sage session		bober	defect		 major basic arithmetic 
+470 libpari doesn't deallocate its stack [usually 8MB or more]	  was defect major			packages		 
+486 [with patch] number_of_partitions() could be faster. bober	  enhancement				minor			 combinatorics 
+533 matrix_rational_sparse_allocate_mpq_vector leak (from modular/ssmod/ssmod.py)			mabshoff		 defect	       major memleak 
+534 matrix_modn_sparse_Matrix_modn_sparse leak (from modular/ssmod/ssmod.py)				mabshoff		 defect	       major memleak 
+559 memleak in multi_modular_MultiModularBasis_base exposed by ModularSymbols(n,sign=1).decomposition()	mabshoff		 defect	       major memleak 
+596 sage wiki() doesn't close with ctl-C	    was	    defect					minor			 website/wiki  
+616 [with patch] [tested by cwitty] sage -coverage improvements						craigcitro		 enhancement   minor user interface 
+635 [with patch] p-adic height gives incorrect precision						dmharvey		 defect	       major algebraic geometry 
+643 [with patch] notebook -- fix space issues with the top bar.						was			 defect	       major notebook  
+662 [with patch] Start Browser with clean environment  malb						defect			 major	       user interface  
+826 [with patch] [tested by cwitty] Coercing rational function elements (i.e. fraction field) to symbolic ring			 was	       defect	       major calculus 
+828 edit() always puts the editor into the background was      defect	minor user interface  
+831 [with patch] hg_sage.export('tip') was enhancement	       minor	packages   
+832 [with patch] [tested by cwitty] MPolynomialIdeal.vector_space_dimension	   malb	enhancement	minor	commutative algebra 
+833 [with patch] new coercion model segfault (??)				   robertwb		defect	blocker	    basic arithmetic 
+835 [with patch] cannot coerce real numbers to Integer				   somebody		defect	critical    basic arithmetic 
+840 [with patch] new real root isolation algorithm				   was			enhancement	    major numerical  
+841 [with patch] hash() on algebraic reals is not stable			   tbd			defect		    minor basic arithmetic 
+842 [with patch] SAGE's Singular build fails to factor simple polynomials	   malb			defect		    critical	commutative algebra 
+843 [with patch] fast quadratic field elements	somebody      enhancement	   major		basic arithmetic    
+849 [with patch] [tested by cwitty] Cython 0.9.6.7	      was		   enhancement		major packages	    
+850 [with patch] [tested by cwitty] graphs: create graph by specifying vertices and a function giving adjacencies	    was enhancement major combinatorics 
+851 [with patch] [tested by cwitty] graphs: line_graph function	       was	enhancement    major  combinatorics	    
+852 [with patches] Singular's Factorisation crashes under OSX	       mabshoff	defect	       critical			    packages 
+854 [with patch] [tested by cwitty] memory leak: MultiModularBasis_base_mpz_crt_vec_tail       mabshoff			    defect   major memleak 
+856 [with patch] [tested by cwitty] strange behaviour when converting a numpy matrix to a sage one			    mhansen  defect	   major numerical 
+858 [with patch] [tested by cwitty] add support for numpy arrays with integer entries	mhansen				    enhancement		   major numerical 
+859 [with patch] [tested by cwitty] Cannot coerce numpy integral types to ZZ  cwitty	defect				    major		   basic arithmetic 
+860 [with patch] dsage -- update to fix a bunch of "rough edges" was   defect major	distribution			    
+861 [with patch] magma.[get|set]_verbose  was	enhancement	 minor interfaces	
+862 [with patch] [tested by cwitty] memory leak: Matrix_modn_sparse    mabshoff		defect	major	memleak	
+865 [with patch] [tested by cwitty] several small memory leak in multi_modular		mabshoff	defect	major	memleak 
+866 [with patch] [tested by cwitty] big NTL patch craigcitro  defect			major		interfaces	
+867 [with patch] support for rook monoid and planar rook monoid (as well as their diagram/partition algebras) and a few other misc. fixes mhansen enhancement minor combinatorics 
+868 [with patch] graphs: upgrade networkx to 0.35.1 was	 task	major	 combinatorics		    
+869 [with patch] [tested by cwitty] graphs: bipartite graph functions	 was			    enhancement	major	combinatorics 
+871 [with patch] [tested by cwitty] graphs: circulant graph creating function			    was		enhancement	      major combinatorics 
+873 [with patch] sage -clone is rebuilding everything !	    was	     defect			    critical	user interface	      
+878 [with patch] graphs/graph.py: Correct a doctest failing on some systems due to different output ordering.	was  defect	      blocker combinatorics 
+880 [with patch] 2.8.7-alpha0: many segfaults when running doctests on 32-bit x86 Linux	     failure		defect		      blocker doctest	    
+882 [with patch] 2.8.7-alpha0: doctest failures in sets/set.py and matrix/matrix_integer_dense.pyx (due to RR->ZZ coercion patch)     somebody		    defect blocker basic arithmetic 
+883 2.8.7-alpha0:doctest failure: sloane_functions.py assumes that ZZ(3.0) fails		   failure defect blocker  doctest    
+884 [with-patch] 2.8.7-alpha0: doctest failure in rings/residue_field.pyx  was			   defect  blocker	   doctest    
+885 [with patch] 2.8.7-alpha0: doctest failure in rings/morphism.pyx (loads/dumps)		   failure defect	   blocker    doctest 
+886 [with patch] 2.8.7-alpha0: doctest failure in rings/integer_mod.pyx (expecting wrong type)	   failure defect	   blocker    doctest 
+887 [with patch] 2.8.7-alpha0: doctest failure in rings/polynomial/real_roots.pyx  failure	   defect  blocker	   doctest    
+889 [with-patch] 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/lseries_ell.py (tiny differences in answer)	   failure    defect blocker doctest 
+890 2.8.7-alpha0: doctest failure in schemes/elliptic_curves/ec_database.py (database lookup failures)	   failure	   defect     blocker	     doctest 
+891 [with patch] symmetrica needs to have its deallocation routine called upon exit   mhansen		   defect	   major      memleak	     
+892 [with patch] sage -t doesn't test .pxi files	   failure defect minor	      doctest		   
+893 [with-patch] 2.8.7-alpha0: doctest failure in const.tex	   tba	  defect      blocker		   documentation 
+897 number_of_partitions -- now broken on OS X PPC		   was	  defect      critical		   combinatorics 

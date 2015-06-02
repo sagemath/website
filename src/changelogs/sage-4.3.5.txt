@@ -1,0 +1,59 @@
+﻿-*- coding: utf-8 -*-
+
+Hi folks,
+
+Sage 4.3.5 was released on March 28, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+The following 6 people contributed to this release:
+
+ * David Kirkby
+ * Florent Hivert
+ * Jaap Spies
+ * Rob Beezer
+ * Robert Miller
+ * William Stein
+
+* Release manager
+
+  * William Stein
+
+* Major features, new spkg's, and bug fixes
+
+ * After introducing iconv as a standard package, Sage 4.3.4 failed to
+   build on platforms such as Fedora, Red Hat, openSUSE, etc. Sage
+   4.3.5 is a bug fix release that allows Sage to build on such
+   platforms.
+
+* Bug statistics
+
+We closed 3 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.3.5
+
+or check out the closed ticket section at the end of the announcement.
+
+* Doctesting coverage
+
+The doctest coverage for Sage 4.3.5 is the same as that for Sage
+4.3.4. Thus for Sage 4.3.5 we have
+
+ * Overall weighted coverage score:  81.5%
+ * Total number of functions:  25,122
+
+Closed tickets:
+
+Merged in sage-4.3.5.final:
+
+#8539: Robert Miller: Matrix(ZZ, sparse=True)._mod_int(p) has the wrong parent [Reviewed by William Stein]
+#8567: David Kirkby: Change iconv so it builds on Cygwin and Solaris only [Reviewed by Jaap Spies, Florent Hivert]
+#8612: William Stein: potentially horrible multimodular matrix echelon bug [Reviewed by Rob Beezer]

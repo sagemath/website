@@ -1,0 +1,6 @@
+﻿A very minor bugfix release:
+
+* Fix a c_lib build issue on opteron linux.
+* Add sage -gdb-ipython for running ipython under gdb 
+* Fix a PARI build issue related to ppc32-bit linux.
+

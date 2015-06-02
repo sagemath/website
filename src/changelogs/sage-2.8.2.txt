@@ -1,0 +1,116 @@
+﻿Release notes Sage 2.8.2
+
+The goal of this release was to squash as many known bugs from our
+bug tracker as possible. Only a very limited number of features
+have been added and to some extend the portability of Sage to
+Solaris has been improved. While we haven't crossed the finish
+line for Solaris yet we have gotten very close. Unfortunately
+some of the fixes caused problems on other architectues, so we
+will revisit those problems in the future, hopefully for 2.9
+
+The total number of tickets closed was 47. Considering that now
+there are about 217 tickets open (of which many are enhancements
+and not defects) Sage's Bug Day 1 can be considered a tremendous
+success. Participation was lively (in total 10 people showed up)
+and the whole session went on for about 16 hours. Some of the
+people  even got together in IRC the next day to sort out some of
+the leftovers.
+
+We still think that certain aspects of the way we planned and
+handled the bug day can be improved upon (as always) and plan to
+do Sage's Bug Day 2 on September 7th 2007 starting at 10 am
+Pacific time.
+
+The results from Sage's Bug Day 1 are as follows:
+
+algebraic geometry  4/4
+basic arithmetic   12/12
+interfaces          5/6
+linear algebra      3/3
+modular forms       2/2
+notebook            5/7
+number theory       2/2
+packages            7/11
+user interface      7/7
+
+x/y denotes that x out of y bugs in that category were fixed.
+
+For the details check out
+
+ http://www.sagemath.org:9002/sage_trac/milestone/sage-2.8.2
+
+and
+
+ http://www.sagemath.org:9001/bug1/Results
+
+
+2.8.1:
+-----
+These are the release notes for sage-2.8.1, though there never was an
+offical release.  The reason it was never officially released was that
+2.8.1 was the basis of the first Sage Bug Squashing day that is about
+to be wrapped up.  
+
+The main goal of this release was to get Sage to compile cleanly on a
+wider range of platforms, and fix any build-system bugs we discovered
+along the way:
+
+ * Linux on Itanium
+ * Linux on PPC 64
+ * Solaris on Sparc and Opteron
+
+This involved a whole lot of massaging spkg-install scripts and build
+options. William Stein did the port for Linux on Itanium and PPC 64
+while William Stein, Michael Abshoff, Didier Deshommes and Kate Minola
+did work on the Solaris port. They were helped by Martin Albrecht to
+sort out some Singular and libSingular build issues. Robert Bradshaw
+coded up a patch to sort out some issues with Cython on *BSD based
+systems.
+
+While the Itanium port of Sage is now fully working and supported
+neither the Linux on PPC not the Solaris on Sparc/Opteron port made it
+to the finish line. While the Linux on PPC is close there are still
+some issues left with Solaris, but great progress has been made there.
+
+Detailed changes:
+
+* w stein, m abshoff: add stdint.h to local/include/ to work around
+                     missing defines in Solaris
+
+* r bradshaw: fix coercion code to compile on *BSD, fix Cython to
+             warn about _[A-Z] PyObjects.  [not applied yet.]
+
+* w stein: Make sure that the system-wide gmp doesn't get picked up.
+
+* w stein, d deshommes, m abshoff: linbox build fixes, lround
+           workaround, build against gsl blas on solaris
+
+* w stein, k minolta: gfortran binary on Solaris, add SAGE_FORTRAN
+                     environment variable.
+
+* w stein: make f2c use gcc instead of cc on Solaris
+
+* w stein: pari build fixes on Solaris and Itanium
+
+* w stein: fix problem wirh matplotlib when linking in the wrong libz
+          in /usr/local/lib
+
+* w stein: new mpfi package
+
+* w stein, m abshoff, m. albrecht: many fixes to the singular package
+                                  to make it build on Solaris
+
+* w stein, m abshoff, d deshomees: stdint.h fix for Solaris
+
+* w stein: update gmp package, so that the resulting gmp is nuch more
+portable  (and possible resolve some other bugs -- old version was
+building with certain patches preapplied).
+
+Many of the fixes were a joint effort be several people, some fixes
+were discovered twice, i.e. Didier Deshommes had made suggestions on
+fixes for Sage 2.5.x on Nexenta which were unfortunately
+rediscovered. We will discuss how to deal with that problem in the
+report about the first Sage Bug Squashing day.
+
+Cheers,
+Michael Abshoff

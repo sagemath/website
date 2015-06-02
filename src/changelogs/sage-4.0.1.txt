@@ -1,0 +1,198 @@
+﻿Hi folks,
+
+Sage 4.0.1 was released on June 06th, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 83 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 38 people contributed to this release. Of those, 3 made
+their first contribution to Sage:
+
+ * Alex Ghitza
+ * Anne Schilling
+ * Bill Cauchois
+ * Bill Hart
+ * Burcin Erocal
+ * Carl Witty
+ * Carlo Hamalainen
+ * Craig Citro
+ * Dan Bump
+ * Dan Christensen [first contribution]
+ * Dan Drake
+ * David Joyner
+ * David Loeffler
+ * David Perkinson [first contribution]
+ * Emily Kirkman
+ * Francis Clarke
+ * Georg Weber
+ * Jason Grout
+ * Joanna Gaski [first contribution]
+ * Joel Mohler
+ * John Cremona
+ * John Palmieri
+ * Karl-Dieter Crisman
+ * Kiran Kedlaya
+ * Martin Albrecht
+ * Michael Abshoff
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nick Alexander
+ * Nicolas Thiery
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Simon King
+ * Soroosh Yazdani
+ * Wilfried Huss
+ * William Stein
+
+Release managers: Mike Hansen, William Stein
+
+
+* Major Features, New Spkgs and Bug fixes
+
+  * Notebook: nested lists as nicely formatted HTML tables
+  * Update FLINT and MPIR to latest upstream releases
+  * Updates to the ATLAS and GAP spkg's
+  * Speed optimization to modules in algebra, basic arithmetics, and the GAP interface
+  * A tool for understanding pickling
+
+For all the details of what else changed in Sage 4.0.1, please see the
+release tour in the Sage wiki at
+
+  http://wiki.sagemath.org/sage-4.0.1
+
+
+* Bug Statistics
+
+We closed 75 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.0.1
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming version 4.0.2 is a bug fix release for ironing out any
+outstanding bugs in 4.0.1 and cleaning up mergeable patches. This
+version is scheduled to be released before or during the MEGA 2009
+conference, Barcelona, June 15--19, 2009.
+
+
+* Doctesting Coverage
+
+For 4.0 we had:
+
+Overall weighted coverage score:  76.9%
+Total number of functions:  21811
+
+In 4.0.1, we increased coverage by 0.3%, while adding 177 functions:
+
+Overall weighted coverage score:  77.2%
+Total number of functions:  21988
+
+
+
+* Closed Tickets:
+
+#3100: closed due to #6144 and #6194: coercion errors from SymbolicRing to various fields
+#5840: Dan Drake: update SageTeX spkg to version 2.1.1 [Reviewed by Jason Grout]
+
+
+Merged in Sage 4.0.1.rc3:
+
+#4652: Craig Citro: make distutils compile Cython extensions in parallel [Needs testing]
+#6179: John Palmieri: html -- doctest failure in sage-4.0.1.alpha0 [Reviewed by Mike Hansen]
+#6217: Mike Hansen: fix issues with sorting in formal_sum [Reviewed by William Stein]
+#6230: Mike Hansen: Fix numerical noise and dictionary sorting issues in 4.0.1.rc2. [Reviewed by William Stein]
+
+
+Merged in Sage 4.0.1.rc2:
+
+#6144: Burcin Erocal, Mike Hansen: Pynac doesn't simplify exp(x)*exp(2*x) to exp(3*x) [Reviewed by Nick Alexander, Mike Hansen]
+#6194: Burcin Erocal: fixes for sage.symbolic.pynac.py_mod [Reviewed by Mike Hansen]
+#6219: Mike Hansen: Fix the silly fpmz.c typo in the flint spkg. [Reviewed by William Stein]
+
+
+Merged in Sage 4.0.1.rc1:
+
+#5404: John Palmieri: deprecate numerical_sqrt [Reviewed by Mike Hansen]
+#5656: Martin Albrecht: add hint to lift() function to docstring of groebner_basis() [Reviewed by Burcin Erocal]
+#5718: Mitesh Patel: notebook -- %hide works fine in the worksheet but shows up when printing [Reviewed by Mike Hansen]
+#5766: William Stein, Alex Ghitza: improve coverage of structure/formal_sum.py [Reviewed by John Cremona, Mike Hansen]
+#5827: Minh Van Nguyen: knapsack: subset sum problem for super-increasing sequences [Reviewed by Mike Hansen]
+#5925: Dan Christensen: Improve speed of CombinatorialAlgebra.multiply() [Reviewed by Mike Hansen]
+#5931: Dan Christensen: Greatly speed up sage.combinat.symmetric_group_algebra.e [Reviewed by Mike Hansen]
+#6033: Karl-Dieter Crisman, Jason Grout: Bring plot/disk.py to 100% coverage [Reviewed by Jason Grout, Mike Hansen]
+#6043: Minh Van Nguyen: optimize the construction of Lagrange interpolation polynomials [Reviewed by Mike Hansen]
+#6050: Dan Bump: Dynkin diagram ascii art for reducible Cartan types [Reviewed by Mike Hansen]
+#6081: John Palmieri: make abelian categories abelian [Reviewed by Alex Ghitza]
+#6091: Francis Clarke: syntax extended for subfields of number fields [Reviewed by Mike Hansen]
+#6139: Martin Albrecht: Fix S-Box calling when m != n [Reviewed by Minh Van Nguyen]
+#6176: Minh Van Nguyen: ReSTify modules in sage/numerical and put them in reference manual [Reviewed by Mike Hansen]
+#6206: Nick Alexander: move algebraic_closure method from RLF to LazyField [Reviewed by Robert Bradshaw]
+#6208: Simon King: Improving gap interface by pre-compiling certain regular expressions [Reviewed by Mike Hansen]
+#6209: Mike Hansen: fix flint [Reviewed by Bill Hart]
+
+
+Merged in Sage 4.0.1.rc0:
+
+#3699: John Cremona: rewrite free_module.py to use basis matrices everywhere [Reviewed by Alex Ghitza]
+#5483: Carl Witty: Add explain_pickle module; allow overriding class lookup for unpickling [Reviewed by Nicolas Thiery, William Stein]
+#5599: Jason Grout: density_plot not centered correctly [Reviewed by Robert Bradshaw, Bill Cauchois]
+#5732: Joel Mohler: digits,exact_log,ndigits speed overhaul [Reviewed by Bill Hart]
+#5817: Michael Abshoff: Update FLINT to 1.2.5 (latest upstream release) [Reviewed by Kiran Kedlaya]
+#6021: John Cremona: Implement period lattices for elliptic curves over CC [Reviewed by Robert Bradshaw]
+#6093: Carlo Hamalainen: module to read ext_rep format of combinatorial designs [Reviewed by David Joyner]
+#6156: William Stein: gap packages don't load anymore on itanium, even with gap-4.4.10.p11 (!) [Reviewed by Mike Hansen]
+#6168: Martin Albrecht: FLINT wrapper not reducing coefficients properly [Reviewed by Kiran Kedlaya]
+#6180: William Stein: fix typo in spkg-install for pynac [Reviewed by Mike Hansen]
+#6184: Bill Cauchois: mesh=True and dots=True don't work for 3D plots [Reviewed by Marshall Hampton ]
+#6190: David Loeffler: Fix documentation in sage/combinat/backtrack.py [Reviewed by Rob Beezer]
+#6191: William Stein: atlas -- make it so SAGE_FAT_BINARY only used on x86 [Reviewed by Mike Hansen]
+#6192: William Stein: numerical noise on x86 fedora core 8 (cicero on skynet) [Reviewed by Mike Hansen]
+#6198: Mike Hansen: stop Sage from trying to download spkg/standard/README.txt on upgrade [Reviewed by William Stein]
+#6203: Mike Hansen: numerical noise on sparc solaris (trivial to fix) [Reviewed by William Stein]
+
+
+Merged in Sage 4.0.alpha0:
+
+#133: David Loeffler: Galois action [Reviewed by Alex Ghitza]
+#4504: Minh Van Nguyen, William Stein: document Sage's .spkg extension better [Reviewed by Georg Weber]
+#4575: Wilfried Huss: Option to show nested lists as html tables [Reviewed by Jason Grout, William Stein]
+#4958: Martin Albrecht: MPolynomialIdeal.reduced_basis?? returns decorator source [Reviewed by Alex Ghitza]
+#5114: Alex Ghitza: something wrong in the initializer for elements of QuaternionAlgebra [Reviewed by David Loeffler]
+#5241: David Joyner: Matrix Group sometimes assumes base ring is a field [Reviewed by Alex Ghitza]
+#5430: Kiran Kedlaya: Coleman integrals of differential forms from different rings [Reviewed by Robert Bradshaw]
+#5716: John Palmieri: lifting a subdivided matrix should preserve the subdivision, but doesn't. [Reviewed by Jason Grout]
+#5895: Rob Beezer: Limit number of worksheet snapshots [Reviewed by Kiran Kedlaya]
+#5916: Wilfried Huss: show mathematica expression using jsmath [Reviewed by Jason Grout]
+#5936: Emily Kirkman: result of graph query should be iterable -- make more pythonic [Reviewed by Robert Miller]
+#5967: Nicolas Thiery: ElementWrapper: A class for wrapping Sage or Python objects as Sage elements [Reviewed by Anne Schilling, Robert Bradshaw]
+#5979: Nicolas Thiery: Parent: fixes broken (implicit) invariant between ._element_constructor and self._element_init_pass_parent [Reviewed by Robert Bradshaw]
+#5990: John Palmieri: developer's guide: more on .spkg files [Reviewed by David Joyner]
+#5995: David Loeffler: Membership testing for modular forms subspaces is hopeless [Reviewed by John Cremona]
+#6000: Nicolas Thiery: Sets enumerated by exploring a search space with a (lazy) tree or graph structure [Reviewed by Rob Beezer]
+#6016: Soroosh Yazdani: factoring rational functions [Reviewed by John Cremona, Minh Van Nguyen]
+#6109: John Cremona: Bring documentation for QQbar up to 100% and add to reference manual [Reviewed by David Loeffler]
+#6120: Martin Albrecht: P(0).total_degree() should return -1 for multivariate polynomial rings [Reviewed by Alex Ghitza]
+#6122: John Palmieri: strip 'nodetex' from docstrings [Reviewed by Rob Beezer]
+#6141: John Palmieri: simplicial complexes: change 'facets' from an attribute to a method [Reviewed by David Perkinson]
+#6157: Jason Grout: enhance implicit_plot3d documentation [Reviewed by Alex Ghitza]
+#6166: John Palmieri, Mike Hansen: strip 'nodetex' from the reference manual [Reviewed by John Palmieri, Mike Hansen]
+#6167: Joanna Gaski: add the very useful sloane sequence A000008 (ways of making change for n cents) [Reviewed by Mike Hansen]
+#6171: John Palmieri: make 'prec' work with sqrt more of the time [Reviewed by Mike Hansen]
+#6173: William Stein: atlas -- change from SAGE_SIMD_MODE to SAGE_FAT_BINARY [Reviewed by Mike Hansen]
+#6174: William Stein: Add to README.txt note about the SAGE_FAT_BINARY build flag; also update sage-location to use SAGE_FAT_BINARY [Reviewed by Mike Hansen]
+#6175: John Palmieri: change Sage Group to Sage Development Team [Reviewed by David Joyner]

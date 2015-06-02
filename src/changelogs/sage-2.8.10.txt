@@ -1,0 +1,44 @@
+﻿Sage 2.8.10:
+
+Release team: Carl Witty (chair), Michael Abshoff, William Stein
+
+New packages:
+Revised Cython from Robert Bradshaw
+Mercurial updated to 0.9.5 by Carl Witty
+
+Tickets closed:
+#58    added subsets() method for Set (Jason Grout)
+#416   faster GF(2^n) arithmetic for n >= 16 (Martin Albrecht)
+#657   improved is_zero() on symbolics (Mike Hansen)
+#724   improved error-checking on graph6 parsing (Robert Miller)
+#749   enum() functionality duplicated in relabel() (Robert Miller)
+#875   fast Sage -> Pari int conversion (Craig Citro)
+#899   minor update for inst.tex (David Joyner)
+#901   minor addition to prog.tex (David Joyner)
+#931   optimize permanent code for matrices over ZZ (Jaap Spies)
+#935   fix missing files in sage-*.spkg (Carl Witty)
+#938   graph_database.py problems fixed (Robert Miller)
+#955   subprocess synchronization problems (Carl Witty)
+#958   bug in "make install" (Carl Witty)
+#960   floatint-point printing improved (Mike Hansen)
+#988   restore bg= option for edit() (Nils Bruin)
+#994   fixed strange __int__ method on ntl_GF2X (Martin Albrecht)
+#996   Isomorph-free exhaustive graph generation (Robert Miller)
+#1003  overflow on GF(2^n) powering (Martin Albrecht)
+#1007  fixed cyclotomic_polynomial() (Robert Bradshaw)
+#1008  reverted "touch" in setup.py (William Stein)
+#1009  fixed slow caching of NTL context objects (William Stein)
+#1012  doctest failures in alpha0 (Carl Witty)
+#1015  free monoid and free algebra fixes and features (Joel Mohler)
+#1016  added max_level argument to flatten() (Jason Grout)
+#1017  added solution_dict= argument to solve() (Jason Grout)
+#1018  changed prod() to use balanced tree (Robert Bradshaw)
+#1020  fixed several Cython warnings from duplicate declarations (Carl Witty)
+#1021  bug-fix for real_roots returning extra non-roots (Carl Witty)
+#1022  combinatorics update/fixes/additions (Mike Hansen)
+#1023  added support for valgrind's omega to sage-sage (Michael Abshoff)
+#1024  memleak fix in sparse rational vectors (Michael Abshoff)
+#1025  fixed conversion of symmetric functions into a dual basis (Mike Hansen)
+
+Issues fixed without a ticket:
+new sage3d.js from Robert Bradshaw makes interactive 3D graphics work again

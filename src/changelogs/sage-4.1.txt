@@ -1,0 +1,251 @@
+﻿Hi folks,
+
+Sage 4.1 was released on July 09, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 44 people contributed to this release. Of those, 4 made
+their first contribution to Sage:
+
+ * Andrzej Giniewicz
+ * Bjarke Hammersholt Roune
+ * Burcin Erocal
+ * Carlo Hamalainen
+ * Chris Swierczewski
+ * Chris Wuthrich
+ * Craig Citro
+ * Dan Drake
+ * David Joyner
+ * David Kirkby
+ * David Loeffler
+ * David Roe
+ * Franco Saliola
+ * Fredrik Johannson
+ * Georg S. Weber
+ * Golam Mortuza Hossain [first contribution]
+ * Gonzalo Tornaria
+ * John Cremona
+ * John Palmieri
+ * John Perry
+ * Karl-Dieter Crisman
+ * Lloyd Kilford
+ * Marc Mezzarobba
+ * Martin Albrecht
+ * Michael Abshoff
+ * Michael Stoll
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nick Alexander
+ * Nicolas Borie
+ * Nicolas M. Thiery
+ * Peter Jeremy [first contribution]
+ * Peter Mora [first contribution]
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Ryan Dingman
+ * Simon King
+ * Stanislav Bulygin [first contribution]
+ * Tim Abbott
+ * Tom Boothby
+ * William Stein
+ * Yann Laigle-Chapuy
+
+
+Release Managers
+
+ * Robert Miller
+ * Tom Boothby
+
+
+* Major Features, New Spkgs and Bug fixes
+
+ * Sage now uses Python 2.6.x
+ * Support for building Singular with GCC 4.4
+ * Optimized integer division
+ * Combinatorics: irreducible matrix representations of symmetric groups;
+   Yang-Baxter Graphs
+ * Cryptography: Mini Advanced Encryption Standard for educational purposes
+ * Graph theory: back-end for graph theory with Cython (c_graph);
+   improve accuracy of graph eigenvalues
+ * Linear algebra: a general package for finitely generated, not-necessarily
+   free R-modules; multiplicative order for matrices over finite fields
+ * Miscellaneous: optimized Sudoku solver; a decorator for declaring
+   abstract methods; support Unicode in LaTeX cells (notebook)
+ * Number theory: improved random element generation for number field orders
+   and ideals; support Michael Stoll's ratpoints package; elliptic exponential
+ * Numerical: computing numerical values of constants using mpmath
+ * About 19 packages were updated or upgraded to latest upstream releases
+
+
+For all the details of what else changed in Sage 4.1, please see the
+release tour in the Sage wiki at
+
+  http://wiki.sagemath.org/sage-4.1
+
+
+* Bug Statistics
+
+We closed 91 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.1
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming release is Sage 4.1.1. There will be a special sage-combinat
+release which will merge many tickets related to the category theory
+implementation of the sage-combinat team.
+
+
+* Doctesting Coverage
+
+For 4.0.2 we had:
+
+Overall weighted coverage score:  77.5%
+Total number of functions:  22182
+
+In 4.1, we increased coverage by 0.3%, while adding 216 functions:
+
+Overall weighted coverage score:  77.8%
+Total number of functions:  22398
+
+
+* Closed Tickets:
+
+#6398: shorten long doctests in sage/schemes/elliptic_curves/sha_tate.py
+
+
+Merged in Sage 4.1.final:
+
+#6399: David Kirkby: Allow ATLAS to build on Solaris with Sun or GNU linker [Reviewed by Robert Miller]
+#6408: William Stein: notebook -- secure notebook doesn't work in sage-4.1.alpha1 because of twisted.web2 not being ported to python 2.6 [Reviewed by Robert Miller]
+#6478: Nicolas M. Thiery: Make sage -combinat work without touching .hgrc [Reviewed by Dan Drake]
+#6492: William Stein: ratpoints -- new spkg is broken on OS X 64-bit [Reviewed by Robert Miller]
+
+
+Merged in Sage 4.1.rc1:
+
+#5799: John Palmieri: jsMath, favicon, and logo for live, static, and offline docs [Reviewed by Robert Miller, only merged trac_5799_manifest.patch]
+#6056: Minh Van Nguyen: HISTORY.txt for sage-4.0.alpha0 needs updating [Reviewed by Robert Miller]
+#6469: Rob Beezer: sage-4.1.rc0: numerical noise in graph.py [Reviewed by Andrzej Giniewicz]
+#6470: Andrzej Giniewicz: sage-4.1.rc0: On OS X 10.4/10.5 Singular 3.1.0.4 fails to work [Reviewed by Robert Miller]
+#6474: John Palmieri: PDF version of the reference manual should build successfully [Reviewed by Minh Van Nguyen]
+
+
+Merged in Sage 4.1.rc0:
+
+#2452: Golam Mortuza Hossain: Heaviside step function, Dirac delta needed [Reviewed by David Joyner, Burcin Erocal]
+#3167: Mitesh Patel: notebook -- jmol 3d plots in the dynamic live worksheet-based reference manual do not work [Reviewed by John Palmieri]
+#5517: Gonzalo Tornaria: cvxopt-0.9.p7: build failure due to missing perl modules [Reviewed by Mike Hansen]
+#5665: Stanislav Bulygin: Bug in ShrinkingGeneratorCipher [Reviewed by Minh Van Nguyen]
+#5799: Mitesh Patel: jsMath, favicon, and logo for live, static, and offline docs [Reviewed by John Palmieri]
+#5854: Robert Miller, Michael Stoll: Include Michael Stoll's ratpoints in Sage [Reviewed by John Cremona]
+#5866: Peter Jeremy: Fix freetype build on systems where make is not GNU make. [Reviewed by Mike Hansen]
+#5867: Peter Jeremy: Fix gd build on FreeBSD [Reviewed by Mike Hansen]
+#5868: Peter Jeremy: Fix libgcrypt shared library name on FreeBSD [Reviewed by Mike Hansen]
+#5869: Peter Jeremy: Fix libgpg-error shared library name on FreeBSD [Reviewed by Mike Hansen]
+#5870: Peter Jeremy: Detect blas and atlas libraries for linbox on FreeBSD [Reviewed by Mike Hansen]
+#5872: Peter Jeremy: Explicitly pass -fPIC into ntl shared object build. [Reviewed by Mike Hansen]
+#5874: Peter Jeremy: Fix readline build on FreeBSD [Reviewed by Mike Hansen]
+#5875: Peter Jeremy: Support tachyon on FreeBSD [Reviewed by Mike Hansen]
+#5882: William Stein, David Loeffler: implement general package for finitely generated not-necessarily free R-modules [Reviewed by Robert Miller, John Palmieri]
+#6083: Robert Bradshaw: speedup integer division [Reviewed by Craig Citro]
+#6196: Fredrik Johannson, Mike Hansen: mpmath support [Reviewed by Nick Alexander]
+#6200: Fredrik Johannson, Mike Hansen: Use mpmath to compute constants [Reviewed by Nick Alexander]
+#6258: Rob Beezer: Improve accuracy of graph eigenvalues [Reviewed by Franco Saliola]
+#6276: David Kirkby: atlas-3.8.3.p2 dumps core on Solaris 10 with gcc 4.4.0 [Reviewed by William Stein]
+#6281: William Stein: enable parallel make for rubiks spkg [Reviewed by Robert Miller]
+#6362: Andrzej Giniewicz, Martin Albrecht, Craig Citro: Singular and GCC 4.4 [Reviewed by John Perry, Robert Miller]
+#6386: John Cremona: Implement elliptic exponential [Reviewed by Robert Bradshaw]
+#6387: David Roe: Typo in parent.pyx [Reviewed by Robert Bradshaw]
+#6417: Peter Mora: Unicode in LaTeX [Reviewed by John Palmieri]
+#6419: John Palmieri: fix ref manual warnings for sage.misc.misc [Reviewed by David Loeffler]
+#6421: Karl-Dieter Crisman: make a symbolic arctan2 function [Reviewed by Burcin Erocal]
+#6429: John Palmieri: sagedoc: make search_src and friends less OS dependent [Reviewed by Dan Drake]
+#6434: John Palmieri: make a latex.py doctest more robust [Reviewed by Robert Miller]
+#6435: John Palmieri: misformatted docstrings in sage.misc.abstract_method (easy fix) [Reviewed by Nicolas Thiery]
+#6436: Bjarke Hammersholt Roune: ideal([]) gives unhelpful error message [Reviewed by John Palmieri]
+#6448: Georg S. Weber: darwin_utilities import issues [Reviewed by Robert Miller]
+
+
+Merged in Sage 4.1.alpha3:
+
+#4712: John Palmieri: Make the doctest timeouts in Sage easily adjustable [Reviewed by Nick Alexander]
+#5080: David Loeffler: Bug in decomposing modular symbol subspace [Reviewed by Craig Citro, Michael Abshoff, John Cremona]
+#5350: Burcin Erocal: sage-clone should use hard links for the build directory [Reviewed by Robert Miller]
+#5481: John Palmieri: devel/doc/output/* should be filtered from the list of files to doctest [Reviewed by Mike Hansen]
+#5902: Tim Abbott: Try SAGE_ROOT as base of argument to "sage -t" [Reviewed by Mike Hansen]
+#6406: Chris Wuthrich: fixing p_primary_bound on Tate-Shafarevich groups not to allow the reducible case [Reviewed by John Cremona]
+#6446: Robert Miller: memory issue from #6394 [Reviewed by John Cremona]
+
+
+Merged in Sage 4.1.alpha2:
+
+#5640: Karl-Dieter Crisman: no way to figure out list of colormaps from matrix plot's docstring [Reviewed by Minh Van Nguyen]
+#5740: Minh Van Nguyen: typo in docstring for taylor series (really easy!) [Reviewed by Burcin Erocal]
+#5971: Minh Van Nguyen: fix dumb error message when modding out by 0: Mod(10,0) [Reviewed by Karl-Dieter Crisman]
+#6097: Nicolas Thiery: Implements a mantra for declaring abstract methods [Reviewed by Robert Bradshaw]
+#6162: David Joyner: plot_histogram improvments [Reviewed by Chris Swierczewski]
+#6164: Minh Van Nguyen: Phan's Mini-AES for educational purposes [Reviewed by Martin Albrecht]
+#6269: Karl-Dieter Crisman: Coloring odds and ends [Reviewed by Nick Alexander]
+#6372: Karl-Dieter Crisman: Move a few 3d plot files into plot3d [Reviewed by Minh Van Nguyen]
+#6412: Simon King: Getting Singular's cputime does not work with negative argument [Reviewed by Martin Albrecht]
+#6418: John Palmieri: ref manual fixes for 4.1.alpha1 [Reviewed by Minh Van Nguyen]
+
+
+Merged in Sage 4.1.alpha1:
+
+#6085: Robert Miller: Finish full implementation of c_graphs [Reviewed by Tom Boothby]
+#6359: Mike Hansen: update to Python 2.6.2 [Reviewed by Robert Miller]
+#6394: Robert Miller: Fix fallout from removal of graph_isom in 4.1.alpha1 [Reviewed by Tom Boothby]
+
+
+Merged in Sage 4.1.alpha0:
+
+#1871: Robert Miller: wiki -- pressing control-c just starts another copy running [Reviewed by David Joyner]
+#3084: Rob Beezer, Tom Boothby: Solve Sudoku faster! [Reviewed by Nick Alexander]
+#4196: John Palmieri: write a new coercion section for the developer's/programmer's guide [Reviewed by Minh Van Nguyen]
+#4290: Lloyd Kilford, John Cremona: function to construct an Elliptic Curve from a plane curve of genus one (using Magma) [Reviewed by Nick Alexander]
+#4313: John Cremona: Add some functionality to matrices in eclib [Reviewed by William Stein]
+#4761: Martin Albrecht: global cputime (inclusive some subprocesses like Singular) [Reviewed by Simon King, Nick Alexander]
+#5080: David Loeffler: Bug in decomposing modular symbol subspace [Reviewed by Craig Citro, Michael Abshoff]
+#5280: Franco Saliola: problem with a subposet coming from an order_filter [Reviewed by Mike Hansen, Robert Miller]
+#5307: John Cremona: Bug in conductor() over number fields [Reviewed by Nick Alexander]
+#5594: John Palmieri: better error message for list_plot [Reviewed by Nick Alexander]
+#5637: John Palmieri: allow \[ and \] to delimit math in %html blocks [Reviewed by Nick Alexander]
+#5711: Golam Mortuza Hossain: Enhanced Typesetting of Symbolic Functions [Reviewed by Burcin Erocal]
+#5806: Dan Drake: Sage 3.4.1.rc3: failing test "devel/sage/sage/misc/sagedoc.py" [Reviewed by John Palmieri]
+#5850: Marc Mezzarobba, Dan Drake: add Creative Commons license to French tutorial [Reviewed by Nicolas Borie]
+#5878: Franco Saliola: Add support for constructing irreducible matrix representations of the symmetric group [Reviewed by Mike Hansen]
+#6027: Ryan Dingman: get_memory_usage() sucks performance wise on OSX [Reviewed by Nick Alexander]
+#6073: John Palmieri: Developer guide somewhat wrong about cython extensions [Reviewed by David Joyner]
+#6112: Dan Drake: Remove stale file sage/graphs/graph_isom.pyx [Reviewed by Robert Miller]
+#6215: Nicolas Thiery: Followup ot #6126: Symmetric group algebra jucys_murphy elements incorrect [Reviewed by Robert Miller]
+#6239: Minh Van Nguyen: fix ReST formatting for pydesign module ext_rep [Reviewed by Carlo Hamalainen]
+#6261: Yann Laigle-Chapuy: Add multiplicative order for matrices over finite fields [Reviewed by John Cremona]
+#6273: John Cremona: Improve random_element for number field orders and ideals [Reviewed by Nick Alexander]
+#6274: Minh Van Nguyen: fix formatting of files under sage/plot [Reviewed by John Palmieri]
+#6289: John Palmieri: minor ref manual issue with calculus stuff [Reviewed by Minh Van Nguyen]
+#6290: Golam Mortuza Hossain: Allow keywords such as latex_name=LaTeX while defining symbolic function [Reviewed by Nick Alexander]
+#6314: David Joyner: optional doctest failure -- many failures in linear_codes related to wtdist [Reviewed by Robert Miller]
+#6330: John Palmieri: optional doctest failure -- constructions number fields doctest failures [Reviewed by David Joyner]
+#6336: John Palmieri: optional doctest failure -- constructions calculus tests hang forever [Reviewed by David Joyner]
+#6349: Robert Miller: graphs -- bug in DiGraph constructor [Reviewed by William Stein]
+#6351: Robert Miller: typo in Graph.plot docstring [Reviewed by John Palmieri]
+#6354: Nicolas Thiery: Advertise and improve sage -fixdoctest [Reviewed by Mike Hansen]
+#6361: Minh Van Nguyen: elliptic curves -- easy to fix mistake in docs [Reviewed by Mike Hansen]
+#6363: Mitesh Patel: Display Sage version on notebook login page [Reviewed by John Cremona]

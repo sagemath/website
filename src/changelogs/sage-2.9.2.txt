@@ -1,0 +1,141 @@
+﻿Hello folks,
+
+Sage 2.9.2 has been released. It is available at
+
+           http://sagemath.org/download.html
+
+The following people contributed to this release:
+
+ * Michael Abshoff
+ * Francois Bissey
+ * Tom Boothby
+ * Robert Bradshaw
+ * Burcin Erocal
+ * David Harvey
+ * Josh Kantor
+ * Willem Jan Palenstijn
+ * R. Rishikesh
+ * William Stein
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+The 2.9.2 release was mostly a bug fix release, specifically aimed at 
+the  AMS meeting in San Diego. The main new features are
+
+ * Much, much improved 3D plots by the integration of jmol 
+   (this involved substantial new code by Robert Bradshaw and 
+   William Stein)
+ * Many build fixes and build improvements
+
+We closed 33 tickets, mostly because we were very, very conservative 
+for this release. For details see below or our tracker at
+
+http://trac.sagemath.org/sage_trac/milestone/sage-2.9.2
+
+Reviewers: William Stein, Mike Hansen, David Harvey, Robert Bradshaw
+           Michael Abshoff; apologies to anybody I forgot.
+
+Feeback: Jaap Spies, apologies to anybody I forgot.
+
+* Known Issues with 2.9.2
+
+#1497: ATLAS can fail to build on multi core Linux boxen when 
+       power management is activated. This is a known ATLAS 
+       issue with workaround: disable power management
+
+* Upcoming Releases
+
+The next release will be 2.10, chaired by Michael Abshoff. The release 
+should happen in about a week from the release of 2.9.2. Planned 
+features are:
+
+ * Update a lot of spkgs to the current release
+ * Solaris 10 support in 32 bit mode on Opteron/x86
+ * FreeBSD support out of the box 
+
+* Doctesting Coverage 
+
+For 2.9.2:
+
+Overall weighted coverage score:  35.2%
+Total number of functions:  18100
+
+Compared to 2.9.1.1 this is a decrease by 0.1%.
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+sage-forum or sage-newbie. You can also drop by in #sage-devel in
+freenode.
+
+* Closed Tickets:
+
+Merged in final:
+
+#1589: Robert Bradshaw: jmol -- using via https is a pain in the butt
+
+Merged in rc1:
+
+#1302: R. Rishikesh: fix bug in laurent_series integration
+#1449: Tom Boothby: make shift-enter work on OSX
+#1482: David Harvey: fix xgcd suboptimal output
+#1576: Robert Bradshaw: add implicit multiplication [not enabled 
+       per default for now]
+#1596: Robert Bradshaw, Willem Jan Palenstijn: preparser hangs 
+       if line starts with '...'
+#1661: Tom Boothby: add click-to-evaluate button in notebook
+#1670: William Stein: fix various plot3d doctest failures
+#1681: Robert Bradshaw: fix serious bug when raising complex(0,1) 
+       to the power of the Sage integer 2.
+#1683: Willem Jan Palenstijn, William Stein: sage -t cubegroup.py& 
+       stops instead of running in background [workaround for 
+       Linux only for now]
+#1687: William Stein: "make distclean" doesn't delete test.log
+#1688: William Stein: give option to set the libgfortran.so
+
+Merged in rc0:
+
+#1535: Robert Bradshaw: jmol meshes are always smoothed
+#1615: Michael Abshoff: mpfi -- build is seriously broken on 
+       at least one system
+#1643: Josh Kantor: if SAGE_FORTRAN is set do not link 
+       the binary to sage_fortran.bin
+#1670: Robert Bradshaw, William Stein: many more updates 
+       for jmol/3D plotting
+#1674: Willem Jan Palenstijn: memleak in 
+       pAdicCappedRelativeElement.__pow__
+#1675: Willem Jan Palenstijn: memleak in 
+       pAdicCappedRelativeElement._set_from_Rational
+#1676: Willem Jan Palenstijn: memleak and unused variable 
+       in pAdicCappedAbsoluteElement
+#1677: Michael Abshoff, Robert Bradschaw: trivial-to-fix 
+       mistake in the rubiks spkg
+
+Merged in alpha0:
+
+#1471: Michael Abshoff: moving a sage install breaks clisp
+#1536: Robert Bradshaw: jmol useable from notebook
+#1591: Michael Abshoff: immediately terminate the build on 
+       Cygwin, Solaris
+#1603: William Stein: upgrade pari to 2.3.3
+#1635: Michael Abshoff: Singular.spkg relatated: lib->LIB 
+       link issue on OSX
+#1644: Michael Abshoff: Enable email notification of trac 
+       tickets
+#1654: Francois Bissey, William Stein: excise pysqlite
+#1658: Willaim Stein: sage -bdist on osx should output a dmg 
+       instead of a tar.bz2
+#1664: Robert Bradshaw: update jmol to 11.5.2
+#1665: Robert Bradshaw: zip related jmol files
+#1666: Robert Bradshaw: jmol cylinders should use the draw 
+       command rather than be triangulated as a pmesh
+#1667: Burcin Erocal: coercion fixes for PolyBoRi
+#1671: Michael Abshoff: doctest: fix shapes.pyx fallout from 
+       the bundle merged in #1666

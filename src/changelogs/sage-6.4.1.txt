@@ -1,0 +1,47 @@
+﻿Sage 6.4.1 was released on 23 November 2014. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 8 people contributed to this release. Of those, 0 made
+their first contribution to Sage:
+
+  - Erik Massop
+  - François Bissey
+  - Jean-Pierre Flori
+  - Jeroen Demeyer
+  - John Palmieri
+  - Karl-Dieter Crisman
+  - Peter Bruin
+  - Volker Braun
+
+* Release manager: Volker Braun.
+
+* We closed 4 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-6.4.1/tickets.html
+
+Merged in sage-6.4.1:
+
+#15316: Jean-Pierre Flori, Erik Massop: Make gf2x respect SAGE_FAT_BINARY and use --libdir [Reviewed by Jeroen Demeyer, Jean-Pierre Flori]
+#17346: Volker Braun: The sage-bdist script is not executable [Reviewed by John Palmieri]
+#17349: Volker Braun: R fails with version `GOMP_4.0' not found [Reviewed by François Bissey]
+#17375: Peter Bruin: Maxima should not need a working C compiler to run [Reviewed by Karl-Dieter Crisman]

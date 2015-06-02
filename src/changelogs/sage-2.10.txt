@@ -1,0 +1,232 @@
+﻿Hello folks,
+
+Sage 2.10 has been released on January 18th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+sage-forum or sage-newbie. You can also drop by in #sage-devel in
+freenode.
+
+---------------------------------------------------------------------
+
+We did not achieve all the goals we had set ourselves for Sage 2.10
+and also decided to release slightly before the planned date.  The
+reason was one hand the much better than expected stability of
+2.10.alpha4 [it build and tested perfectly on all out test platforms]
+and on the other hand the need to have a stable release for Bug Day 9
+planned for this Saturday.
+
+The following people contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Bill Allombert
+ * Robert Bradshaw
+ * Craig Citro
+ * Francis Clarke
+ * Burcin Erocal
+ * Alex Ghitza
+ * Jason Grout
+ * Peter Jipsen
+ * David Joyner
+ * Mike Hansen
+ * Bill Hart
+ * David Harvey
+ * Josh Kantor
+ * Kiran Kedlaya
+ * David Kohel
+ * Ted Kosan
+ * Willem Jan Palenstijn
+ * Robert Miller
+ * Bobby Moretti
+ * Rich Morin
+ * Minh Nguyen
+ * Jaap Spies
+ * William Stein
+ * Carl Witty
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Python is now built with ucs4
+ * FLINT was updated to the 1.0.5 release
+ * Many bug fixes and also a couple of memory leak fixes
+ * Integrate a fix to the mpfr library so we no longer smash
+   the stack with high precisions
+ * Fix a long standing, hard to hit bug in the maxima interface
+
+* Known Issues with 2.10:
+
+ * The mpfr fix for smashing the stack causes speed regressions,
+   especially for multiplications. This ought to be fixed for the
+   upcoming mpfr 2.3.1 release.
+ * Any non-standard Python packages that build native components
+   need to be rebuilt due to the switch from ucs2 to ucs4
+
+We closed 83 tickets.  For details see
+
+    http://trac.sagemath.org/sage_trac/milestone/sage-2.10
+
+* Upcoming Releases
+
+The next release will be 2.10.1, chaired by Michael Abshoff. The release
+is planned for the 25th of January, 2008. Potential features include:
+
+ * OSX 10.5 support in 64 bit mode [this will depend on fixing
+   a vexing segfault in libSingular and getting disutils to
+   play nice with numpy]
+ * gcc 4.3 support [depends on the update to eclib.spkg]
+ * FreeBSD support out of the box
+
+* Doctesting Coverage
+
+For 2.9.3 we had:
+Overall weighted coverage score:  35.2%
+Total number of functions:  18100
+
+We increased coverage by 0.2% in 2.10 while adding 196 extra functions:
+Overall weighted coverage score:  35.4%
+Total number of functions:  18296
+
+* Closed Tickets:
+
+Merged in alpha4:
+
+#1266: Mike Hansen: sage.functions.piecewise is missing from
+       reference manual
+#1289: Mike Hansen: serious problems with how ceil and floor
+#1640: Alex Ghitza: missing documentation Elliptic Curve for
+       heegner_discriminants
+#1705: Martin Albrecht: factorization of polynomials over
+       non-prime finite fields is TOTALLY BROKEN in Sage
+       [we now throw a not implemented error on this case and
+       will fix this once upstream, i.e. Singular fixes this]
+#1727: Mike Hansen: truth value of inequalities not as expected
+#1734: Robert Bradshaw, William Stein: variable jmol translucency
+#1736: Alex Ghitza: sturm_bound() not working on spaces of cusp
+       forms
+#1745: William Stein: bug in point enumeration mod p.
+#1747: Martin Albrecht: speed improvement for
+       mq.SR.polynomial_system
+#1774: Bill Allombert: potential very serious problems with
+       SEA and PARI-2.3.3
+#1783: Mike Hansen: fix latex errors with fraction field elements
+#1786: Mike Hansen: coercion error with fraction field of
+       multivariate polynomials
+#1788: Robert Bradshaw: cython annotation in notebook
+#1790: Michael Abshoff: numerical noise doctest failure with
+       gcc 4.2.2/x86-64
+#1791: Michael Abshoff: numerical noise doctest failure with
+       gcc 4.2.2/x86
+#1797: Mike Hansen: add another doctest for expansion of
+       elementary symmetric functions
+#1799: Carl Witty: fix spelling errors in qqbar.py
+#1803: Michael Abshoff: Add HISTORY.txt to $SAGE_ROOT
+#1806: Michael Abshoff: bump various spkgs due to Sage 2.10
+       upgrade (python ucs4 related)
+#1807: Mike Hansen: fix combinatorics section of the reference
+       manual
+#1808: Martin Albrecht: three simple LaTeX fixes
+#1825: William Stein: rewrite the script in devel/doc/ref 
+       so that anybody can add new auto-generated files to 
+       the reference manual via hg.
+#1827: William Stein: plot3d/transform.pyx test failure
+#1828: William Stein: add 3d graphics to the reference manual
+
+Merged in alpha3:
+
+#1428: Mike Hansen: add SVD method to matrix_complex_double_dense
+#1570: Francis Clarke: typo in rings/number_field/number_field.py
+#1571: Minh Nguyen, Michael Abshoff: corrections for tut.tex
+#1657: Ted Kosan: make a build-from-source version of jmol spkg
+       [the spkg has been put in the optional spkg repo]
+#1668: Burcin Erocal: fix polybori's variable names [BSD issue]
+#1679: Mike Hansen: two documentation typos
+#1682: Robert Bradshaw: make enabling implicit multiplication
+       easy
+#1691: Craig Citro: old bug in pari.gen __setitem__ code
+#1716: Paul Zimmermann: add function log1p in mpfr interface
+#1732: Robert Bradshaw: block matrix construction
+#1735: Michael Abshoff: do not mark a spkg as installed if
+       sage-check fails
+#1743: Michael Abshoff: implausibly old time stamp in optional
+       package gap_packages-4.4.10_2.spkg
+#1759: Michael Abshoff: Various files still mention GPL V2 only
+#1769: Craig Citro: Fast Pari <--> Sage p-adic capped relative
+       element conversions
+#1771: Peter Jipsen: latex bug with symbolics
+#1776: William Stein: symbolic function preparser bug
+#1778: Bobby Moretti, William Stein: plot() does not follow the
+       same interval range conventions as plot3d()
+#1779: Bobby Moretti: setup.py computes the cache of some
+       irrelevent files
+#1780: Michael Abshoff: add 64 bit MacIntel build support to
+       mpfr, fix stack smashing issue
+
+Merged in alpha2:
+
+#511: Michael Abshoff: consider changing python to UCS4
+#1091: Willem Jan Palenstijn, Michael Abshoff: small memleaks
+       exposed by doctesting ntl_mat_GF2E.pyx
+#1685: Mike Hansen: restructuring symmetric functions and
+       misc. combinatorics updates.
+#1712: Burcin Erocal: logic error in coercion
+#1739: Robert Miller, Michael Abshoff: Use of uninitialised value
+       of size 8" in binary_code.pyx
+#1749: Michael Abshoff: rings/polynomial/polynomial_element.pyx
+       numerical noise doctest failure on FC7/x86
+#1752: Michael Abshoff: sage make install bug
+
+Merged in alpha1:
+
+#975: Jason Grout: work around Library incompatibilities when
+      launching external applications
+#1073: Martin Albrecht: print out some useful information right
+       after "sage -pkg" creates a package
+#1669: Josh Kantor: remove bogus recommendation to set SAGE_ATLAS
+       when numpy fails
+#1693: Martin Albrecht: jmol stubles over browser caching
+#1709: Robert Miller: Make experimental jmol graph plotting work
+#1717: Alex Ghitza, David Harvey: trivial fixes in the
+       programming guide (mostly typos)
+#1720: Josh Kantor, Michael Abshoff: update numpy to 1.0.4, also
+       fix silent build problems with gfortran
+#1725: Jaap Spies: Experimental package for wxPython
+       [linux only for now]
+#1726: Jaap Spies: Experimental package for Enthought Mayavi2
+       [linux only for now]
+#1728: Michael Abshoff: numpy 1.0.4 causes various numerical noise
+       doctest failures
+#1729: Robert Bradshaw, Tom Boothby: disable password prompt on
+       initial startup
+#1740: Paul Zimmermann: Fix Pentium M detection for ATLAS BLAS
+#1741: Michael Abshoff: Build zlib with debug info
+#1742: Michael Abshoff: Build ntl with debug info
+
+Merged in alpha0:
+
+#1092: Willem Jan Palenstijn, Michael Abshoff: small memleaks exposed
+       by doctesting ntl_ZZ_pE.pyx
+#1093: Michael Abshoff, Willem Jan Palenstijn: small memleaks exposed
+       by doctesting ntl_ZZ_pX.pyx
+#1541: Burcin Erocal: improve PolyBoRi integration
+#1544: David Joyner, Rich Morin: SAGE Tutorial nits #2
+#1553: Kiran Kedlaya, Michael Abshoff: SCons related build failure
+       of PolyBoRi on 64-bit RHEL5
+#1598: Martin Albrecht: fix SIGSEGV in libSINGULAR interface on
+       Solaris
+#1694: Michael Abshoff, Bill Hart: Update FLINT to 1.05 release
+#1701: Martin Albrecht: attempt to clean up currRing if deallocated
+#1702: Martin Albrecht: fix memleak in fplll.pyx
+#1703: Michael Abshoff: memleak in Singular: one mpz is leaked in
+       longrat.cc

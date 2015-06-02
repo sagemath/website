@@ -1,0 +1,77 @@
+Sage 6.0 was released on 18 December 2013. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 11 people contributed to this release. Of those, 0 made
+their first contribution to Sage:
+
+  - David Roe
+  - Jeroen Demeyer
+  - Julian Rueth
+  - Marc Mezzarobba
+  - Martin Albrecht
+  - Martin Raum
+  - Peter Bruin
+  - R. Andrew Ohana
+  - Robert Bradshaw
+  - Timo Kluck
+  - Volker Braun
+
+* Release manager: Volker Braun.
+
+* We closed 30 tickets in this release.
+
+Merged in sage-6.0.rc0:
+
+#14480: R. Andrew Ohana: switch sage to the new directory layout [Reviewed by Volker Braun]
+#14481: Volker Braun: document the new workflow [Reviewed by Marc Mezzarobba]
+#14482: Robert Bradshaw, David Roe, Julian Rueth, R. Andrew Ohana, Martin Raum, Timo Kluck: create the new development scripts/library [Reviewed by Volker Braun]
+#14908: Two small issues with make micro_release [Reviewed by Marc Mezzarobba, Volker Braun]
+#14962: Volker Braun: make sure all optional packages work in the git repository [Reviewed by Volker Braun]
+#14968: Robert Bradshaw: Store actual tarball name in pkg metadata. [Reviewed by Volker Braun]
+#15120: Fix doctest doctests in git layout. [Reviewed by Robert Bradshaw, Volker Braun]
+#15221: Robert Bradshaw: Sage should re-build packages when versions change. [Reviewed by Volker Braun]
+#15222: Robert Bradshaw: "make download" target for sage [Reviewed by Volker Braun]
+#15241: Volker Braun: Add editor- and os-specific temporary files to .gitignore [Reviewed by Robert Bradshaw]
+#15263: Martin Albrecht,Volker Braun: update database_symbolic_data to new git workflow [Reviewed by Volker Braun, Martin Albrecht]
+#15302: Volker Braun: Update misc. optional spkgs to the new directory layout [Reviewed by R. Andrew Ohana]
+#15401: Volker Braun: Build git without gettext if necessary, spkg-check sanity [Reviewed by R. Andrew Ohana]
+#15420: Robert Bradshaw, R. Andrew Ohana: Borken git doctests. [Reviewed by R. Andrew Ohana]
+#15430: Robert Bradshaw: Enable cython caching [Reviewed by Volker Braun]
+#15436: Volker Braun: Cksum uses tabs instead of spaces, breaking sage-spkg's regex [Reviewed by unknown]
+#15440: Volker Braun: Random spaces injected into Maxima pexpect output [Reviewed by Peter Bruin]
+#15458: Volker Braun: "make distclean" fails on Solaris [Reviewed by unknown]
+#15465: Volker Braun: Allow using Sage without dev/git [Reviewed by R. Andrew Ohana]
+#15468: Volker Braun: update to latest upstream git [Reviewed by R. Andrew Ohana]
+#15469: Volker Braun: Symmetrica spkg-check fails due to whitespace [Reviewed by R. Andrew Ohana]
+#15472: Volker Braun: Fixes for the source tarball generation (sage -sdist) [Reviewed by R. Andrew Ohana]
+
+Merged in sage-6.0.rc1:
+
+#13015: Metaticket: revamp workflow / switch to git [Reviewed by unknown]
+#14715: Jeroen Demeyer: Gracefully break upgrading from earlier versions [Reviewed by Volker Braun]
+#15509: R. Andrew Ohana: sage-fix-pkg-checksums can break when not run from bash [Reviewed by Volker Braun]
+#15517: Jeroen Demeyer: Run sage-upgrade *outside* of the Sage shell [Reviewed by Volker Braun, R. Andrew Ohana]
+#15524: Volker Braun: sage-fix-pkg-checksums does not preserve tarball name [Reviewed by unknown]
+#15526: Volker Braun: banner is not updated [Reviewed by Volker Braun]
+#15527: Volker Braun: Automatically pick up version for bdist [Reviewed by R. Andrew Ohana]
+#15529: Volker Braun: Maxima takes version information from git repo [Reviewed by R. Andrew Ohana]

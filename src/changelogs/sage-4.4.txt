@@ -1,0 +1,271 @@
+﻿Sage 4.4 was released on 2010/04/25. It is available (or will be soon) at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+The following 63 people contributed to this release. Of those, 3 made
+their first contribution to Sage:
+
+ * Alec Mihailovs [first contribution]
+ * Alex Ghitza
+ * Alexandre Blondin Massé
+ * Andrey Novoseltsev
+ * Anne Schilling
+ * Brant Jones
+ * Burcin Erocal
+ * Carl Witty
+ * Charlie Turner
+ * Chris Wuthrich
+ * Craig Citro
+ * Dan Bump
+ * Dan Drake
+ * Daniel Bump
+ * David Ackerman [first contribution]
+ * David Joyner
+ * David Kirkby
+ * David Loeffler
+ * David Roe
+ * Dmitrii Pasechnik
+ * Flavia Stan [first contribution]
+ * Florent Hivert
+ * Golam Mortuza Hossain
+ * Gonzalo Tornaria
+ * Harald Schilly
+ * Håkan Granath
+ * Jason Bandlow
+ * Jason Grout
+ * John Cremona
+ * John Palmieri
+ * Karl-Dieter Crisman
+ * Kwankyu Lee
+ * Lloyd Kilford
+ * Marc Mezzarobba
+ * Marshall Hampton
+ * Martin Albrecht
+ * Martin Raum
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nicolas Borie
+ * Nicolas M. Thiéry
+ * Nils Bruin
+ * Paul Zimmermann
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Mařík
+ * Robert Miller
+ * Ross Kyprianou
+ * Ryan Hinton
+ * Samuele Giraudo
+ * Simon King
+ * Sébastien Labbé
+ * Tim Dumol
+ * Tom Boothby
+ * Valentin Feray
+ * Vincent Delecroix
+ * Volker Braun
+ * William Stein
+ * Yann Laigle-Chapuy
+
+* Release manager
+
+  * John Palmieri
+
+* Major features, new spkg's, and bug fixes
+
+  * created a units module (#3852)
+  * closed 14 combinatorics tickets
+  * closed 10 graph theory tickets
+  * closed 11 modular forms tickets
+  * started creating a library of interacts (#8488)
+  * progress toward binary interface with Maxima (#6781)
+  * various Solaris fixes (#7990, #8509, #8514, #8520, #8523, #8730, #8750)
+  * re-implemented Hidden Markov Models from scratch (#8547)
+
+* Bug statistics
+
+We closed 132 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.4
+
+or check out the closed ticket section at the end of the announcement.
+
+* Upcoming release
+
+Sage 5.0?
+
+* Doctesting coverage
+
+For Sage 4.3.5, we had an overall weighted doctest coverage score of
+81.5%, with 25122 functions. In Sage 4.4, we increased the doctest
+coverage by 0.2% and added 276 new functions. Thus for Sage 4.4 we
+now have
+
+ * Overall weighted coverage score:  81.7%
+ * Total number of functions:  25406
+
+* Known issues
+
+#8749: BSD: doctest failures on solaris (t2): doctest failures,
+Solaris only, probably due to a combination of a timeout and some
+buggy code related to the Birch and Swinnerton-Dyer conjecture.
+
+#8756: random segfault in planarity.pyx test: occasional doctest
+failures due to segfaults on some 32-bit linux boxes.
+
+Closed tickets:
+
+#5134: Polyhedron: conversion from V-form to H-form fails if no extreme point is given
+#6020: bug in delta_qexp over finite fields
+#6917: Minkowsky sum should work with polyhedra and not only with polytopes
+#7990: A new build failure on Solaris 10 SPARC.
+#8171: Nathann Cohen: New Cbc spkg with Cplex support [Reviewed by Dmitrii Pasechnik]
+#8298: Nathann Cohen: GLPK 4.42 + error message [Reviewed by Dmitrii Pasechnik]
+#8514: Dmitrii Pasechnik: Optional database_gap-4.4.12 fails to install on Solaris 10 SPARC [Reviewed by David Joyner, David Kirkby]
+#8520: Dima Pasechnik: Optional package gap_packages-4.4.12_2  fails to install on Solaris 10 SPARC [Reviewed by David Kirkby]
+#8523: Simon King: Optional package  p_group_cohomology-1.2 fails to install on Solaris 10 SPARC, as well as Debian Linux x86/x86_64 and MacOSX 10.5 (PPC) [Reviewed by Dima Pasechnik]
+#8548: Samuele Giraudo: Permutation : a bad error message in hyperoctahedral_double_coset_type
+
+Merged in sagenb:
+
+(nothing)
+
+Merged in sage-4.4.alpha0:
+
+#261: Mike Hansen: a new matrix constructor: add lambda support [Reviewed by Alec Mihailovs]
+#598: Mike Hansen: implement substitute for monoids [Reviewed by Paul Zimmermann]
+#3852: David Ackerman, William Stein: create or adapt or include a units package [Reviewed by Dan Drake]
+#3863: Golam Mortuza Hossain, Burcin Erocal: Have numerical evaluation of unevaluated integrals call numerical integral [Reviewed by Dan Drake]
+#4509: Jason Grout: doctests for planarity code [Reviewed by Tom Boothby, Minh Van Nguyen]
+#4756: Rob Beezer: eigenmatrix_right totally broken [Reviewed by Alex Ghitza]
+#5165: Alex Ghitza: make padded_list use prec by default [Reviewed by David Loeffler]
+#6214: Volker Braun: Polyhedra compute incorrect dimension when defined through inequalities [Reviewed by Marshall Hampton]
+#6390: John Cremona: Implement elliptic logarithms (complex case) [Reviewed by Chris Wuthrich]
+#6671: Martin Raum: Speed of Victor Miller basis [Reviewed by David Loeffler]
+#6781: Nils Bruin: Library access to ecl [Reviewed by Burcin Erocal, Karl-Dieter Crisman, Nils Bruin]
+#6836: Lloyd Kilford, Alex Ghitza: The Sturm bound for modular forms gives the wrong result sometimes [Reviewed by David Loeffler]
+#6955: John Cremona: update simon denis pari-scripts [Reviewed by Chris Wuthrich]
+#7288: Nathann Cohen: Gomory-Hu Trees [Reviewed by Alexandre Blondin Massé]
+#7311: Nathann Cohen: Improve the add_constraint method from MixedIntegerLinearProgram [Reviewed by Alexandre Blondin Massé]
+#7538: Florent Hivert, Nicolas Borie: equality of posets is broken ! [Reviewed by Andrey Novoseltsev]
+#7549: Mitesh Patel: Reference manual: class hierarchy, inherited members, underscore variables [Reviewed by John Palmieri]
+#7555: Rob Beezer, Nicolas M. Thiéry: Fix Cayley tables, add operation tables [Reviewed by Nicolas M. Thiéry, Jason Grout]
+#7569: Nathann Cohen: random_vertex and random_edge functions [Reviewed by Alexandre Blondin Massé]
+#7661: Burcin Erocal: maxima interface gives precedence to function dictionary instead of local variables [Reviewed by Robert Mařík]
+#7748: Flavia Stan, Burcin Erocal: Make incomplete gamma function symbolic [Reviewed by Paul Zimmermann]
+#7805: Nathann Cohen: MixedIntegerLinearProgram.show should use the constraints' names [Reviewed by David Joyner]
+#7880: David Roe: Category of sets with partial maps. [Reviewed by Robert Bradshaw, David Loeffler]
+#7914: Jason Bandlow: Implementation of triangular morphisms for modules with basis [Reviewed by Nicolas M. Thiéry]
+#8018: Rob Beezer: Eigenvalues sorted, but not eigenvectors, in modular/modform/numerical.py [Reviewed by Alex Ghitza]
+#8071: Rob Beezer: Trivial kernel of a matrix over non-fields are broken [Reviewed by Martin Albrecht]
+#8133: Chris Wuthrich: changing the string representation of Dirichlet charachters [Reviewed by John Cremona]
+#8218: David Roe: Finite Field move [Reviewed by David Loeffler]
+#8242: Marc Mezzarobba: Fix duplicate citation warnings when building the French-language tutorial [Reviewed by Paul Zimmermann, Minh Van Nguyen]
+#8281: Alex Ghitza: bug in hecke_operator_on_basis over finite fields [Reviewed by David Loeffler]
+#8297: Burcin Erocal: extra parenthesis when typesetting QQ arguments to symbolic functions [Reviewed by Håkan Granath]
+#8300: Robert Bradshaw: native algdep with proof option [Reviewed by John Cremona]
+#8313: Florent Hivert: Misplaced "`" in linear code construction documentation [Reviewed by Minh Van Nguyen]
+#8329: Ryan Hinton: Missing copy() method in BipartiteGraph [Reviewed by Robert Miller]
+#8330: Ryan Hinton: BipartiteGraph needs to override methods to add and delete vertices and edges [Reviewed by Nathann Cohen]
+#8332: David Roe: Changes FiniteField_givaro to Python [Reviewed by David Loeffler, John Cremona]
+#8344: Dmitrii Pasechnik: Factor constant polynomials over QQbar [Reviewed by Paul Zimmermann, John Cremona]
+#8366: Jason Grout: make contour plot labels and linestyles work when fill=True [Reviewed by Robert Mařík]
+#8390: Robert Mařík: Find all roots of a trigonometric equation [Reviewed by William Stein]
+#8404: Nathann Cohen: Computing a H-minor [Reviewed by Dmitrii Pasechnik]
+#8417: Yann Laigle-Chapuy: improve CubeGraph and HyperStarGraph generation [Reviewed by Robert Miller]
+#8420: Valentin Feray: new feature : class of perfect matching [Reviewed by Florent Hivert]
+#8421: Ryan Hinton: Change BipartiteGraph .left and .right to sets [Reviewed by Robert Miller]
+#8424: Jason Grout: bounding box calculation doesn't handle NaN or infinity [Reviewed by Robert Mařík]
+#8428: Charlie Turner: Problem with rational_points over plane curves AND addition of rational_points_iterator function [Reviewed by David Roe]
+#8429: Sébastien Labbé: Split word.py file into 4 files [Reviewed by Alexandre Blondin Massé]
+#8438: Florent Hivert: Construction of a skew partition from its row and column lengths [Reviewed by Nicolas Borie]
+#8444: Gonzalo Tornaria: Memleak in conversion for univariate polynomial rings [Reviewed by Paul Zimmermann]
+#8476: Martin Albrecht: return the correct class instance in MPolynomialSystem.__copy__ [Reviewed by Yann Laigle-Chapuy]
+#8481: John Palmieri: lift doesn't work for vector space homomorphisms [Reviewed by William Stein]
+#8484: Robert Miller: incremental improvements to prove_BSD [Reviewed by John Cremona]
+#8486: Kwankyu Lee: Xelatex and Sage notebook [Reviewed by Dan Drake, John Palmieri]
+#8487: Robert Mařík: Use use_grobner in to_poly_solve [Reviewed by Alex Ghitza]
+#8502: John Cremona: evaluating multivariate polynomials yields non-constant [Reviewed by Alex Ghitza]
+#8504: Robert Bradshaw: AbelianGroup.exponent() uses GAP (slow) [Reviewed by Mike Hansen]
+#8506: Robert Bradshaw: Inefficient hash for homsets [Reviewed by John Cremona]
+#8509: David Kirkby, John Palmieri: Ilegal 'grep -o' causes problems installing optional packages on Solaris [Reviewed by Dmitrii Pasechnik]
+#8513: Alexandre Blondin Massé, Nathann Cohen: Including documentation in the reference manual for some files related to graph theory [Reviewed by Minh Van Nguyen, John Palmieri]
+#8519: Nicolas Borie: Add a factory of finite/infinite enumerated set (with categories) defines by Range(begin, end, step) [Reviewed by Florent Hivert]
+#8536: John Cremona: Change SAGE" to "Sage" in output [Reviewed by Dan Drake]
+#8541: David Loeffler: Cyclotomic matrix multiplication bug [Reviewed by William Stein]
+#8543: Florent Hivert: EmptySet is Back ! TestSuite should allows for empty sets. [Reviewed by Nicolas Borie, Nicolas M. Thiéry]
+#8547: William Stein: implement hidden markov models in Cython from scratch (so can remove the GHMM standard package from Sage) [Reviewed by Marshall Hampton, Tom Boothby, Jason Grout]
+#8560: Kwankyu Lee: magma interface should be changed to use sage-native-execute [Reviewed by William Stein]
+#8572: Florent Hivert: Doc of poset appear as void if called from the console. [Reviewed by John Palmieri]
+#8576: Nicolas M. Thiéry: Categories for QQ, CC, RR and friends [Reviewed by John Cremona]
+#8579: Nicolas M. Thiéry: Add the categories of magmas and additive magmas [Reviewed by Robert Beezer, Florent Hivert]
+#8580: Martin Albrecht: bug in matrix_mod2_dense (m4ri wrapper?): exhibited by bug in coercing into a 0-dimensional qotient vector space [Reviewed by William Stein]
+#8584: David Loeffler: implement latex'ing of Dirichlet characters [Reviewed by Chris Wuthrich]
+#8595: Sébastien Labbé: Fixed point of word morphism is broken on some tuple input [Reviewed by Vincent Delecroix]
+#8599: Sébastien Labbé: Allow size as an argument for point2d [Reviewed by Jason Grout]
+#8600: Harald Schilly, Yann Laigle-Chapuy: fibonacci tree [Reviewed by Robert Miller]
+#8602: Gonzalo Tornaria: Implement theta series of degree 2 [Reviewed by Alex Ghitza]
+#8609: Andrey Novoseltsev: Switch AmbientSpace and Scheme to Parent [Reviewed by John Cremona]
+#8610: William Stein: fix caching bug in modular/modsym/element.pyx (very easy to review!) [Reviewed by Alex Ghitza]
+#8618: Sébastien Labbé: Fix is_identity of WordMorphism to handle non standard alphabet [Reviewed by Vincent Delecroix]
+#8620: David Loeffler: Rogue minus sign in sage.modular.modsym.ambient.diamond_bracket_operator [Reviewed by William Stein]
+#8630: David Loeffler: Cusp forms constructor ignores the character and returns enormous space [Reviewed by William Stein]
+#8633: John Palmieri: remove more instances of 'texttt' from jsmath output [Reviewed by Andrey Novoseltsev]
+#8635: Paul Zimmermann: Typos in DisjointUnionEnumeratedSets. [Reviewed by Florent Hivert]
+#8636: William Stein: iconv -- put the "do not build check" in the right place [Reviewed by John Palmieri]
+#8638: John Palmieri: iconv -- make with SAGE_CHECK="yes" fails on iconv with x86_64 ubuntu [Reviewed by Dan Drake, William Stein]
+#8639: Nathann Cohen: Bug when defining a MIPVariable's  type [Reviewed by David Joyner]
+#8647: William Stein: bump maxima artificially so upgrades aren't *all* broken [Reviewed by Robert Mařík]
+#8650: Marshall Hampton: Extreme faces of Polyhedra are inconsistent [Reviewed by Andrey Novoseltsev]
+#8666: Craig Citro, Robert Bradshaw: Bug in cyclotomic linear algebra [Reviewed by Robert Bradshaw]
+#8676: Minh Van Nguyen: document breadth-first and depth-first search methods of C graph [Reviewed by Nathann Cohen]
+#8679: John Palmieri: conventions for spkg names, rewriting sage-spkg [Reviewed by William Stein, Dan Drake]
+#8683: John Palmieri, Minh Van Nguyen: add randstate to the reference manual [Reviewed by Minh Van Nguyen, John Palmieri]
+
+Merged in sage-4.4.alpha1:
+
+#6927: boothby: Extend CachedFunction to handle disk-cache [Reviewed by Tim Dumol, Mitesh Patel]
+#8414: Daniel Bump: lattice -&gt; domain in weyl_groups.py [Reviewed by Nicolas M. Thiéry]
+#8488: William Stein, Jason Grout: Add support for @interact to the Sage library and module for a library of interacts [Reviewed by Jason Grout, William Stein, John Palmieri]
+#8493: David Loeffler: Complex conjugation in Galois groups [Reviewed by John Cremona]
+#8496: Robert Bradshaw, Chris Wuthrich: Implement canonical heights for elliptic curves over number fields [Reviewed by Chris Wuthrich, John Cremona]
+#8505: Robert Bradshaw, John Cremona: random points on elliptic curve misses half the group [Reviewed by John Cremona, Robert Bradshaw]
+#8524: Florent Hivert: DisjointUnionEnumeratedSets should have a private __classcall__ method [Reviewed by Nicolas M. Thiéry]
+#8557: Charlie Turner: is_singular method for projective plane curves [Reviewed by Alex Ghitza]
+#8574: Sébastien Labbé: Length of a finite word defined by an iterator is broken [Reviewed by Alexandre Blondin Massé]
+#8585: Florent Hivert: PermutationGroup and SymmetricGroup on the empty set [Reviewed by Nicolas Borie]
+#8649: Anne Schilling: to_tableau method broken for crystals of type B [Reviewed by Dan Bump]
+#8653: Rob Beezer: Command-line "advanced" help has wrong option name for randomized tests [Reviewed by Tim Dumol]
+#8669: John Palmieri: interrupting download in sage-spkg should delete the spkg file [Reviewed by Tim Dumol]
+#8695: Florent Hivert: UniqueRepresentations implements __eq__ but not __ne__ [Reviewed by Nicolas Borie]
+#8705: Florent Hivert: Add sage_unittest to the reference manual [Reviewed by Nicolas M. Thiéry]
+#8706: William Stein: sage-4.4.alpha0: numerical noise in chmm.pyx [Reviewed by John Cremona]
+#8707: Nicolas M. Thiéry: view(x) calls x._latex_() 5 times! [Reviewed by Andrey Novoseltsev]
+#8709: Marshall Hampton: polyhedra level set doctest failure [Reviewed by Andrey Novoseltsev]
+#8711: John Palmieri: fix warnings when building the ref manual (4.4.alpha0) [Reviewed by Minh Van Nguyen]
+
+Merged in sage-4.4.rc0:
+
+#6245: Jason Grout, Carl Witty, Florent Hivert: make a custom infix operator decorator [Reviewed by Ross Kyprianou]
+#8043: John Palmieri: #7544 breaks #7355: "sage -i foo" does not automatically find the version number [Reviewed by Dan Drake]
+#8368: Jason Grout: add colorbar option to contour_plots [Reviewed by Robert Mařík]
+#8411: Daniel Bump: Branching rule fix and doc revision [Reviewed by Nicolas M. Thiéry, Brant Jones]
+#8446: Robert Miller: avoid 0^0 in number fields [Reviewed by David Loeffler]
+#8477: Mitesh Patel: Force GNU make to build PALP serially [Reviewed by David Kirkby]
+#8605: Dan Drake: upgrade SageTeX spkg to 2.2.5 [Reviewed by Jason Grout]
+#8607: Jason Grout: add deprecation option to the plot option rename decorator [Reviewed by Sébastien Labbé]
+#8713: Nicolas M. Thiéry: Prepare the ground for moving Parent._an_element_ to Sets().ParentMethods [Reviewed by Florent Hivert]
+#8722: David Loeffler: S-units sometimes broken and sometimes just plain wrong for relative fields [Reviewed by John Cremona]
+#8730: vbraun: cddlib makefile looks for gmp in /usr/local, should be $SAGE_LOCAL [Reviewed by Dmitrii Pasechnik, David Kirkby, John Palmieri]
+#8732: William Stein: bug in new HMM code [Reviewed by Marshall Hampton]
+#8737: John Palmieri: compile plot3d/base.pyx and index_face_set with "-std=c99" [Reviewed by William Stein]
+#8750: John Palmieri: numerical noise on solaris [Reviewed by David Kirkby]
+

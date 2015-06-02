@@ -1,0 +1,104 @@
+﻿SAGE-2.8.12:
+
+The release managers were Michael Abshoff and William Stein.
+  
+Many thanks to all the contributors to sage-2.8.12, which mainly grew
+out of bugfixes during Bug Day 5.  The main contributors to this release
+include:
+
+   * Mike Hansen
+   * Nick Alexander
+   * Robert Bradshaw 
+   * Craig Citro
+   * Robert Miller
+   * Bobby Moretti
+   * Yi Qiang
+   * William Stein
+   * Justin Walker
+   * Carl Witty
+
+Apologies to anybody I did not list who contributed. 
+
+Important Note: The longstanding issue where upgrading can delete your work in
+SAGE_ROOT/data/extcode, SAGE_ROOT/doc/, and SAGE_ROOT/local/bin/ is now
+resolved -- things are now merged.  
+
+Component: algebraic geometry (2 matches)
+765	Ctrl-C unresponsive in rational_points	was	defect	major		fixed
+766	Duplicate method in structure/formal_sum.py:FormalSums_generic	was	defect	major		fixed
+
+Component: basic arithmetic (6 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+61	hanke -- disturbing matrix constructor issue involving rows versus columns	mhansen	enhancement	minor		fixed
+790	rational reconstruction failing for p-adics	somebody	defect	major		fixed
+995	Generalize polynomial .roots() method by adding optional ring= parameter for result ring	cwitty	defect	major		fixed
+1096	real_roots may give wrong answers on non-squarefree polynomials	somebody	defect	major		fixed
+1100	polynomial roots() method can return rational roots for polynomials over ZZ	cwitty	defect	major		fixed
+1112	Integer.__pow__	somebody	enhancement	minor		fixed
+
+Component: calculus (2 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+554	the calculus roots command is totally stupid.	mhansen	defect	major		fixed
+1042	reset() doesn't restore anything in all_cmdline or all_notebook	was	defect	major		fixed
+
+Component: combinatorics (3 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+1071	IntegerVectors_nk	mhansen	enhancement	major		fixed
+1088	graphs: minimum spanning tree function	mhansen	enhancement	major		fixed
+1117	fix #1088	rlm	defect	major		fixed
+
+Component: doctest (2 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+1095	silly annoyance in sage -coverage	craigcitro	defect	trivial		fixed
+1103	2.8.12.alpha1: doctest failure in schemes/elliptic_curves/lseries_ell.py	was	defect	major		fixed
+
+Component: documentation (4 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+989	Stripping $ from documentation	tba	defect	major		fixed
+1087	add combinatorics documentation to the reference manual	mhansen	defect	major		fixed
+1113	Delete a file to fix an example involving the sage latex mode	tba	defect	minor		duplicate
+1114	Delete a file to fix an example involving the sage latex mode	tba	defect	minor		fixed
+
+Component: interfaces (2 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+1080	inconsistent doctest failure in sage/misc/sage_eval.py	cwitty	defect	major		fixed
+1109	gp interface raises stack overflow exception if gp stack exceeds available memory	was	defect	major		fixed
+
+Component: memleak (2 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+894	small ntl memory leaks in 2.8.7.alpha0	craigcitro	defect	major		fixed
+1105	static memory leak in libSingular interface	mabshoff	defect	minor		fixed
+
+Component: notebook (3 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+435	sage notebooks have hardcoded absolute paths	boothby	defect	critical		fixed
+683	bug in "latex?" in the notebook	boothby	defect	major		fixed
+1110	improve notebook help message	boothby	defect	major		fixed
+
+Component: number theory (6 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+836	L-series dokchitser -- infinite recursion	was	defect	major		fixed
+1040	bug in new ring extension constructor	ncalexan	defect	critical		fixed
+1041	latex representation of fractional ideals in a number field is totally stupid	was	defect	major		fixed
+1043	constructing number field with check=False doesn't behave as it should	was	defect	major		duplicate
+1055	Don't factor discriminant for quadratic number fields	robertwb	defect	major		fixed
+1057	Order elements do not have Z as a (proper) basering	mabshoff	defect	critical		fixed
+
+Component: packages (11 matches)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+283	Improve the SAGE vmware image	was	enhancement	major		invalid
+407	improve how gap workspace caching works	was	defect	major		duplicate
+527	gap -- gap_reset_workspace()	was	task	critical		fixed
+546	hg_extcode should merge repository on upgrade/install instead of overwriting	was	defect	critical		fixed
+547	hg_doc should merge repository on upgrade/install instead of overwriting	was	defect	critical		fixed
+548	hg_scripts should merge repository on upgrade/install instead of overwriting	was	defect	critical		fixed
+575	make building SAGE on cygwin stop fast and clean	mabshoff	defect	major		fixed
+1067	moin moin wiki in sage -- updates needed	was	defect	major		fixed
+1079	DSage improper get_worker_count	yi	defect	major		fixed
+1081	update the deps file	was	defect	major		fixed
+1098	make rpy work with SAGE data types	mhansen	enhancement	minor		fixed
+
+Component: user interface (1 match)
+Ticket 	Summary 	Owner 	Type 	Priority 	Version 	Resolution
+1084	invalid use of ring notation gives bizarre post-preparser syntax error	ncalexan	defect	minor		fixed
+

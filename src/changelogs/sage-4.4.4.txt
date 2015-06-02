@@ -1,0 +1,241 @@
+﻿-*- coding: utf-8 -*-
+
+Sage 4.4.4 was released on June 23, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+* sage-support: http://groups.google.com/group/sage-support
+* sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+* sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+* http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 52 people contributed to this release. Of those, 7 made
+their first contribution to Sage:
+
+ * Alex Ghitza
+ * Alyson Deines
+ * Andrey Novoseltsev
+ * Anne Schilling
+ * Barinder Banwait
+ * Bill Cauchois
+ * Billy Wonderly [first contribution]
+ * Burcin Erocal
+ * Chris Wuthrich
+ * Christopher Schwan [first contribution]
+ * David Joyner
+ * David Kirkby
+ * David Loeffler
+ * David Roe
+ * Florent Hivert
+ * Francis Clarke
+ * Franco Saliola
+ * Jaap Spies
+ * Jason Bandlow
+ * Jason Grout
+ * Jens Vollinga
+ * Johan Bosman
+ * John Cremona
+ * John Palmieri
+ * Joni Syri [first contribution]
+ * Jose Guzman [first contribution]
+ * Karl-Dieter Crisman
+ * Kiminori Tsukazaki [first contribution]
+ * Laurent Fousse
+ * Leif Leonhardy
+ * Mark Jordan [first contribution]
+ * Martin Albrecht
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Nathann Cohen
+ * Nicolas Borie
+ * Nicolas M. Thiéry
+ * Pablo Angulo
+ * Paul Zimmermann
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Simon King
+ * Sébastien Labbé
+ * Tom Boothby
+ * Tom Coates [first contribution]
+ * Vincent Delecroix
+ * Volker Braun
+ * Wilfried Huss
+ * Willem Jan Palenstijn
+ * William Stein
+ * Yann Laigle-Chapuy
+
+* Release managers
+
+  * Mike Hansen (most of the work)
+  * William Stein (a bit at the end)
+
+* Major features, new spkg's, and bug fixes
+
+ * Updated spkg's: libgcrypt-1.4.4.p3, libpng-1.2.35.p2, mercurial-1.3.1.p2,
+   opencdk-0.6.6.p4, ratpoints-2.1.3.p1, singular-3.1.0.4.p6,
+   sympow-1.018.1.p7, tachyon-0.98beta.p11
+ * Removed spkg: ghmm
+
+* Bug statistics
+
+We closed 119 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.4.4
+
+or check out the closed ticket section at the end of the announcement.
+
+* Doctesting coverage
+
+For Sage 4.4.3, we had an overall weighted doctest coverage score of
+82.1%, with 25,516 functions. In Sage 4.4.4, we increased the doctest
+coverage by 0.6% and added 211 new functions. Thus for Sage 4.4.4 we
+now have
+
+ * Overall weighted coverage score:  82.7%
+ * Total number of functions:  25,727
+
+Closed tickets:
+
+#327: add perl 5.8 dependency for sage
+#5238: remove qsieve.spkg and replace it by mpQS (part of FLINT)
+#7130: David Kirkby: libpng 1.2.35 always builds 32-bit libraries on Solaris.
+#7131: libcliquer always builds 32-bit libraries on Solaris.
+#7133: pari-2.3.3 always builds 32-bit libraries on Solaris.
+#7153: Doctest failures don't kill processes and bring system to a halt.
+#7297: Wilfried Huss: spkg's for libogg and libtheora [Reviewed by Pablo Angulo]
+#7439: Jason Grout: optional spkg nauty-24b7.p1  fails to build with sage-4.2.1 and ubuntu 9.10 (gcc-4.4.1) [Reviewed by Jason Grout, Paul Zimmermann]
+#7826: David Kirkby: mpfi ignores SAGE64
+#8416: long doctest elliptic_curves/ell_modular_symbols.py fails on Solaris 10 (SPARC)
+#8419: cddlib fails to build on OpenSolaris fully.
+#8512: David Kirkby: Optional database_stein_watkins_mini uses 'cp -v' which fails on Solaris. [Reviewed by William Stein]
+#8700: the libpng-1.2.35.p0 in sage-4.4.alpha0 contains an extra copy of libpng-1.2.35!
+#9161: William Stein: update nzmath optional package to 1.0 and post about this to NMBRTHY [Reviewed by Alex Ghitza, Mike Hansen]
+#9303: dumb (easy-to-fix) mistake in sage notebook js.py file
+#9305: Add an spkg-check file for R (statistics package)
+
+Merged in sage-4.4.4.alpha0:
+
+#1975: John Cremona: elliptic curve method -- one should trivially be able to implement a toy version, but can't anymore, which sucks [Reviewed by Chris Wuthrich]
+#2203: Nathann Cohen: Add a traveling salesman problem solver [Reviewed by Jason Grout, David Joyner, Minh Van Nguyen]
+#3461: Mike Hansen: write a construction for permutation groups so that the coercion system can find a common parent [Reviewed by David Loeffler]
+#5117: Volker Braun: Rename the Polyhedron.union(...) method [Reviewed by Andrey Novoseltsev]
+#6665: Jason Bandlow: Expanding the 'zero' symmetric function in variables crashes symmetrica [Reviewed by Nathann Cohen]
+#6763: Nathann Cohen: Bin Packing (uses Linear Programming) [Reviewed by Joni Syri]
+#7492: Nathann Cohen: Decomposition of a doubly stochastic matrix as a convex sum of permutations (Birkhoff–von Neumann Theorem) [Reviewed by Mike Hansen, David Loeffler]
+#7529: Nathann Cohen: Maximum Average Degree of a graph [Reviewed by David Joyner]
+#7789: Nathann Cohen: Improve the arguments for the default type of a variable in MixedIntegerLinearProgram [Reviewed by Joni Syri]
+#7803: Christopher Schwan: DeprecationWarning: the sets module is deprecated [Reviewed by Andrey Novoseltsev]
+#7828: Karl-Dieter Crisman, John Cremona: There should be a top-level sign() function. [Reviewed by John Cremona, Robert Bradshaw]
+#8166: Nathann Cohen: Expose max_weight_matching from NetworkX [Reviewed by Minh Van Nguyen]
+#8207: Joni Syri: Factoring a constant generic multivariate polynomial broken [Reviewed by John Cremona]
+#8238: Robert Miller: heegner_index_bound may be incorrect for curves with rational torsion [Reviewed by John Cremona]
+#8351: Jaap Spies: ratpoints-2.1.3.p0 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes [Reviewed by David Kirkby]
+#8379: Yann Laigle-Chapuy: add arithmetic for Boolean functions [Reviewed by Martin Albrecht]
+#8490: Vincent Delecroix, Sébastien Labbé: Bad behavior of is_square_free for Words [Reviewed by Mike Hansen, Nathann Cohen]
+#8500: Nicolas Borie: Add the set of TransitiveGroups [Reviewed by Nicolas M. Thiéry, Jason Grout]
+#8544: John Cremona: Factor  polynomials over QQbar and AA [Reviewed by Paul Zimmermann]
+#8549: Nicolas Borie, Nicolas M. Thiéry: Implements cycle index for permutation groups, toward Polya enumeration [Reviewed by Nicolas M. Thiéry, Nicolas Borie, Rob Beezer]
+#8606: Paul Zimmermann: floats in exponent do not propagate [Reviewed by Burcin Erocal]
+#8651: Burcin Erocal, Jens Vollinga: binomial(n,k) evaluates to zero when 0 is subsituted for k [Reviewed by Mike Hansen]
+#8655: Tom Boothby: Fix graph genus (broken on multigraphs?) [Reviewed by Robert Miller]
+#8671: Burcin Erocal: FieldElement.quo_rem broken [Reviewed by John Cremona]
+#8675: Andrey Novoseltsev: Remove AmbientSpace._constructor and fix consequences [Reviewed by Alex Ghitza]
+#8682: Andrey Novoseltsev: Improve AlgebraicScheme_subscheme.__init__ and AmbientSpace._validate [Reviewed by Alex Ghitza]
+#8691: Tom Boothby: Implement Plain Change algorithm in cython [Reviewed by Robert Miller]
+#8694: Andrey Novoseltsev: Improve schemes printing and LaTeXing [Reviewed by Alex Ghitza]
+#8704: Florent Hivert: Improve the _repr_ of IntegerRange [Reviewed by Mike Hansen]
+#8717: David Roe: Precision problem in E2 for Tate Curve [Reviewed by Alex Ghitza]
+#8742: Florent Hivert: Lazy format strings [Reviewed by Nicolas M. Thiéry]
+#8743: Jason Grout: change_ring on a rational matrix may return self [Reviewed by Joni Syri]
+#8765: Nathann Cohen: Huffman Encoding [Reviewed by Minh Van Nguyen]
+#8796: Minh Van Nguyen: clean up documentation of logic/propcalc.py [Reviewed by Nathann Cohen]
+#8799: John Cremona, Minh Van Nguyen, Leif Leonhardy: Bring doctests for mwrank.pyx up to 100% (from 3%) [Reviewed by Minh Van Nguyen, Leif Leonhardy, David Loeffler]
+#8811: Nicolas M. Thiéry: Translation for elements of a root lattice and related features and fixes [Reviewed by Anne Schilling]
+#8864: Burcin Erocal: make zeta function symbolic [Reviewed by Paul Zimmermann]
+#8869: Jason Grout: float(CDF(1)) should return 1.0, not throw an error [Reviewed by Karl-Dieter Crisman, Leif Leonhardy]
+#8876: Florent Hivert: Allows triangular morphisms to have domain and codomain with different index sets [Reviewed by Jason Bandlow]
+#8881: Nicolas M. Thiéry: Functorial constructions in categories [Reviewed by Florent Hivert]
+#8884: Kiminori Tsukazaki: Inefficiency in isogeny_class function [Reviewed by Chris Wuthrich]
+#8887: Florent Hivert: Monoids().ParentMethods.prod doctest is ill formated. [Reviewed by Nicolas M. Thiéry]
+#8888: Florent Hivert: Rim and outer rim for integer partitions [Reviewed by Jason Bandlow]
+#8890: Nicolas M. Thiéry: map_support modifies the zero element of a free module, and related fixes and cleanup [Reviewed by Jason Bandlow]
+#8902: Florent Hivert: Subsets element construction is broken [Reviewed by Nicolas M. Thiéry]
+#8910: Florent Hivert: Have CombinatorialClass inherits from Parent [Reviewed by Nicolas M. Thiéry]
+#8913: Nicolas M. Thiéry: S.cayley_graph(side = "twosided") returns broken labels [Reviewed by Rob Beezer]
+#8921: Billy Wonderly: Extend cross product to 7d [Reviewed by Jason Grout]
+#8922: Nathann Cohen: induced subgraph search [Reviewed by Minh Van Nguyen]
+#8926: Florent Hivert: Family cannot completely handle a class as an argument [Reviewed by Nicolas M. Thiéry]
+#8930: Florent Hivert: Deprecate EnumeratedSet [Reviewed by Nicolas M. Thiéry]
+#8934: Andrey Novoseltsev: Trivial bug in computing faces of non-full-dimensional lattice polytopes [Reviewed by Volker Braun]
+#8936: Andrey Novoseltsev: Expose facet inequalities for lattice polytopes [Reviewed by Volker Braun]
+#8941: Andrey Novoseltsev: _latex_ and origin for lattice polytopes [Reviewed by Volker Braun]
+#8954: Anne Schilling: Implementation of the affine nilTemperley Lieb algebra of type A [Reviewed by Jason Bandlow]
+#8957: David Loeffler: Word problem broken for matrix groups [Reviewed by David Joyner]
+#8960: Jason Grout: doctest coverage for real_mpfr.pyx [Reviewed by Minh Van Nguyen, John Cremona]
+#8966: Burcin Erocal: Polynomial reduce causes segmentation fault [Reviewed by Martin Albrecht]
+#8982: Laurent Fousse: Fix jacobian for ode_solver example. [Reviewed by Burcin Erocal]
+#9006: Johan Bosman: Segfault evaluating large degree polynomials (easy review) [Reviewed by Alex Ghitza]
+#9009: David Kirkby: Mercurial is not building 64-bit with OpenSolaris with SAGE64=yes. [Reviewed by Leif Leonhardy, Minh Van Nguyen]
+#9013: Robert Miller: Fix graph.loops() to not return all edges [Reviewed by Tom Boothby]
+#9017: Robert Bradshaw: Use lowercase i for latex symbolic sqrt(-1) [Reviewed by Burcin Erocal]
+#9018: Robert Bradshaw: Better latex for quadratic fields [Reviewed by Francis Clarke]
+#9019: Simon King: Full doctest coverage for sage.categories.map [Reviewed by Robert Bradshaw]
+#9020: Burcin Erocal: random degrees for random_element()s univariate polynomial rings [Reviewed by John Cremona]
+#9035: Burcin Erocal: add degree argument to univariate polynomial reverse() method [Reviewed by John Cremona]
+#9045: Robert Miller: is_isomorphic bug (two generalized quadrangles over GF(5)) [Reviewed by Tom Boothby]
+#9068: John Cremona: remove redundant sgn function from quadratic_forms/extras [Reviewed by Alex Ghitza]
+#9081: Rob Beezer: Transistion better between two halves of the developer's walkthrough [Reviewed by Minh Van Nguyen]
+#9091: Rob Beezer: check_file() in latex.py spits out warnings every time [Reviewed by Nicolas M. Thiéry]
+#9096: Florent Hivert: Fixes wrong sphinx markup :cls: [Reviewed by Nicolas M. Thiéry]
+#9104: Nicolas M. Thiéry: _name is set too late when creating a combinatorial free module [Reviewed by Florent Hivert]
+#9106: Florent Hivert: Wrong sphinx markup in UniqueRepresentation [Reviewed by Nicolas M. Thiéry]
+#9108: Leif Leonhardy: Mark long doctests in rings/polynomial/symmetric_ideal [Reviewed by John Cremona, Simon King]
+#9119: Jason Grout: Cython variables used then later declared [Reviewed by Robert Bradshaw]
+#9120: Jason Grout: plot3d transformations don't respect variable names [Reviewed by Bill Cauchois]
+#9139: David Roe: PIDs are Noetherian [Reviewed by Alex Ghitza]
+#9140: Jason Grout: construct the normalized laplacian matrix for a graph [Reviewed by Nathann Cohen]
+#9142: Jason Grout: construct "fuzzy ball" graphs [Reviewed by Nathann Cohen]
+#9145: Rob Beezer: Expand math symbols available in documentation, remove doc/common/macros.tex [Reviewed by Minh Van Nguyen]
+#9146: Mike Hansen: cygwin: gd doesn't correctly link in libpng with sage-4.4.3. [Reviewed by William Stein]
+#9149: Paul Zimmermann: spelling error (trivial to fix) [Reviewed by Minh Van Nguyen]
+#9156: Robert Bradshaw: Add real() and imag() methods to Integer and Rational [Reviewed by Andrey Novoseltsev]
+
+Merged in sage-4.4.4.alpha1:
+
+#7407: John Palmieri: Fix building of binary distribution so it works on Solaris. [Reviewed by David Kirkby]
+#8380: Franco Saliola: Implement an interface to GAP3 [Reviewed by Burcin Erocal]
+#8464: Minh Van Nguyen: add FAQ to standard documentation [Reviewed by John Palmieri, Mark Jordan, Jose Guzman, Pablo Angulo]
+#8658: Volker Braun: opencdk spkg has incorrect DSO linking [Reviewed by Mike Hansen]
+#8747: Florent Hivert: Speedup testsuite using LazyFormat [Reviewed by Nicolas M. Thiéry]
+#8802: John Cremona, Barinder Banwait: sqrt() for QQbar and AA should have a parameter "all" [Reviewed by Robert Bradshaw, David Loeffler]
+#8911: Anne Schilling: Categorification of Crystals [Reviewed by Nicolas M. Thiery]
+#9024: David Kirkby: tachyon is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes" [Reviewed by Jaap Spies]
+#9029: David Kirkby: sympow is buiding 32-bit on OpenSolaris x64 even when SAGE64 is set to "yes" [Reviewed by Jaap Spies]
+#9056: Nicolas Borie: Add the category of SemiRings with an example : NonNegativeIntegers() [Reviewed by Nicolas M. Thiéry]
+#9105: Nicolas M. Thiéry: Improve the category primer and tutorial [Reviewed by Florent Hivert]
+#9127: Robert Miller: BSD.py doctest failure due to timeout of Heegner index computation. [Reviewed by John Cremona, David Kirkby]
+#9160: David Kirkby, Willem Jan Palenstijn: Singular - change timestamp of files and sort out SAGE64 issue. [Reviewed by Leif Leonhardy]
+#9178: Nicolas M. Thiéry: attrcall: implement missing hash function [Reviewed by Mike Hansen]
+#9182: Alyson Deines: Jacobian of a Hyperelliptic curve doesn't coerces correctly [Reviewed by Robert Miller]
+#9189: Mike Hansen: libgcrypt fails to build on Fedora 13 [Reviewed by Jaap Spies]
+#9213: Sébastien Labbé: Bring doc coverage of combinat/posets/elements.py to 100% [Reviewed by Franco Saliola]
+#9214: Sébastien Labbé: Bring doc coverage of combinat/lyndon_word.py to 100% [Reviewed by Franco Saliola, Minh Van Nguyen]
+#9217: Tom Coates: Taylor expansion of gamma functions is broken [Reviewed by Mike Hansen]
+

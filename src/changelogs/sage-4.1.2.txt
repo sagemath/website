@@ -1,0 +1,442 @@
+﻿Hi folks,
+
+Sage 4.1.2 was released on October 14, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+---------------------------------------------------------------------
+
+The following 79 people contributed to this release, by far the most
+of any release thus far. Of those, 13 made their first contribution to Sage:
+
+ * Adam Webb
+ * Alex Ghitza
+ * Alexander Dreyer
+ * Andrey Novoseltsev
+ * Anne Schilling
+ * Bill Cauchois
+ * Bjarke Hammersholt Roune
+ * Brant Jones
+ * Burcin Erocal
+ * Carlo Hamalainen
+ * Chris Wuthrich
+ * Craig Citro
+ * Dan Drake
+ * Dan Shumow
+ * Daniel Bump
+ * David J. Green [first contribution]
+ * David Joyner
+ * David Kirkby
+ * David Loeffler
+ * David Perkinson
+ * Felix Lawrence [first contribution]
+ * Florent Hivert
+ * Francis Clarke
+ * Franco Saliola
+ * Fredrik Johannson
+ * Georg S. Weber
+ * Golam Mortuza Hossain
+ * Hakan Granath [first contribution]
+ * Hans Schoenemann [first contribution]
+ * Harald Schilly
+ * Ivan Andrus
+ * Jaap Spies
+ * Jason Bandlow
+ * Jason Grout
+ * Jin-yeong Bak ("NoSyu") [first contribution]
+ * John Cremona
+ * John Palmieri
+ * John Perry
+ * Jonathan Bober
+ * Jonathan J. Hunt [first contribution]
+ * joskarsson [first contribution]
+ * Karl-Dieter Crisman
+ * Maite Aranes
+ * Mariah Lenox [first contribution]
+ * Marshall Hampton
+ * Martin Albrecht
+ * Michael Brickenstein
+ * Michael Yurko [first contribution]
+ * Mikael Vejdemo Johansson [first contribution]
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nick Alexander
+ * Nicolas Borie
+ * Nicolas M. Thiery
+ * Ondrej Certik
+ * Peter Mora
+ * Preston Wake [first contribution]
+ * R. Andrew Ohana
+ * R. Rishikesh
+ * Ralf Hemmecke [first contribution]
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Sebastien Labbe
+ * Sebastian Pancratz [first contribution]
+ * Simon King
+ * Soroosh Yazdani
+ * Stephen Hartke
+ * Tim Abbott
+ * Tim Joseph Dumol
+ * Timothy Clemans
+ * Tom Boothby
+ * Vincent Delecroix
+ * Wilfried Huss
+ * Willem Jan Palenstijn
+ * William Stein
+ * Yann Laigle-Chapuy
+
+
+Release Managers
+
+ * Minh Van Nguyen
+ * William Stein
+
+
+* Major features, new spkgs and bug fixes
+
+ * Notebook is now a separate spkg and largely new,
+   with improvements from many contributors
+ * Maxima and Pynac upgrades improves symbolic 
+   functionality 
+ * New optional CBC/COIN-OR spkg for linear programming
+ * Improved plotting control with upgraded Matplotlib
+   and other plotting improvements
+ * Over fifteen new/upgraded spkgs
+ * Improvements to forms and number theory
+ * Many improvements in general build support, 
+   especially for OS X 10.6 and Solaris
+
+There is no release tour for Sage 4.1.2.
+
+* Bug Statistics
+
+We closed 245 tickets, the third most so far. For details see
+
+ http://trac.sagemath.org/sage_trac/milestone/sage-4.1.2
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming release is Sage 4.2.  The goals for this release are:
+ * Full support for OS X 10.6 and Itanium
+ * Sage build support (not function) on cygwin
+ * Fix any problems with move to new notebook
+ * New categories functionality from sage-combinat
+ * Merging many new features
+
+
+* Doctesting Coverage
+
+For 4.1.1 we had:
+
+Overall weighted coverage score: 78.6%
+Total number of functions: 22330
+
+In 4.1.2, we increased coverage by 0.7%, while adding 287 functions:
+
+Overall weighted coverage score:  79.3%
+Total number of functions:  22617
+
+
+* Known issues
+
+ * Doesn't work on itanium at all
+ * Some real number field tests fail on PPC OS X
+ * Bug in partition refinement
+ * Doesn't work fully on OS X 10.6, bug in C++ exception
+   handling and Pynac
+
+* Closed Tickets
+
+#1303: Cayley graph class [fixed in Sage 4.1.2.alpha1]
+#1343: singular factorize is randomly slow [confirmed as fixed in Sage 4.1.1]
+#1611: polybori should use the m4ri library from libm4ri spkg [fixed by #6177]
+#2754: plotting with frame=True and ymin/ymax sometimes is buggy as a Florida swamp in summer [confirmed as fixed in Sage 4.1.2.alpha4]
+#3384: Issues a warning for all unsupported / poorly supported operating systems [fixed by #7021]
+#3895: sage-notebook-insecure ImportError [confirmed as fixed in Sage 4.1.1]
+#4236: magma -- boolean ring conversions [fixed by #6177]
+#4318: update French tutorial for #4285 [fixed in Sage 4.1.2.alpha2]
+#4384: Axes computation for constant function causes division by zero [fixed by #5448]
+#4566: speed up assume command (easy change) [confirmed as fixed in Sage 4.1.2.alpha0]
+#4622: certain input for variety() crashes Singular [reported upstream] [confirmed as fixed in Sage 4.1.1]
+#5337: update French to tutorial to reflect the fact that "I in CC" works in tour_rings.rst [fixed by #5850]
+#5645: error in axis plotting with large values [fixed by #5448]
+#6548: Improve tasteful ticks documentation [fixed by #5448]
+#6701: prereq-0.3.tar has many issues and needs updating [fixed by #7021]
+#6707: Sage will try to build on compilers known to be too old [fixed by #7021]
+#6753: sage-4.1.1 -- bug in integral_elements_in_box [fixed by #7112]
+#6754: sage-4.1.1 -- numerical noise on OS X 10.5 PPC [fixed by #7112]
+#6755: sage-4.1.1 -- twist.py tests are seriously broken on OS X 10.5 PPC [fixed by #7112]
+#6782: doctest failure in doc/en/constructions/calculus.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6783: fix doctest failures in doc/en/constructions/linear_algebra.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6784: fix doctest failures in doc/en/constructions/interface_issues.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6785: fix doctest failure in doc/en/constructions/plotting.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6786: fix doctest failures in doc/en/tutorial/tour_algebra.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6787: fix doctest failures in doc/en/tutorial/interfaces.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6789: fix doctest failures in symbolic/expression.pyx due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6792: fix doctest failures in doc/fr/tutorial/interfaces.rst due to upgrade to Maxima 5.19.1 [fixed by #6699]
+#6849: port Sage to OS X 10.6 [fixed by #6945 and others]
+#6884: notebook doctest failures in Sage 4.1.2.alpha0 on mod.math [confirmed as fixed in Sage 4.1.2.alpha0]
+#6994: upgrade matplotlib to 0.99.1 [fixed by #7022]
+#7000: Move Sphinx-ify on-the-fly code to another module [fixed by #7080]
+#7060: notebook -- templating patch introduces numerous bugs [fixed by #7080]
+#7107: sage does not build on ppc os x 10.4 anymore, failing with mpfr [confirmed as fixed in Sage 4.1.2]
+
+Merged in Sage 4.1.2:
+
+#7213: William Stein: "sage -upgrade" to 4.1.2 results in issue with symbolic link and ecl [Reviewed by Minh Van Nguyen]
+#7204: William Stein: issue building sage docs since notebook moved [Reviewed by John Palmieri]
+
+Merged in Sage 4.1.2.rc2:
+
+#7115: Georg S. Weber, Karl-Dieter Crisman: building cliquer (with cliquer-1.2.p0.spkg) fails on 32bit OS X 10.4 [Reviewed by William Stein]
+#7186: William Stein: maxima update #6699 introduced hard-coded paths, unable to start maxima [Reviewed by Georg S. Weber]
+
+Merged in Sage 4.1.2.rc1:
+
+#6681: Minh Van Nguyen: cliquer doesn't work in 64-bit OS X [Reviewed by David Kirkby, Robert Miller]
+#6990: Jason Grout, Minh Van Nguyen: readline tab completion has an extra space appended [Reviewed by William Stein]
+#7021: David Kirkby, Minh Van Nguyen: Update prereq from 0.3 to 0.4 [Reviewed by Georg S. Weber]
+#7059: John Palmieri: Stop Sage tests from saving things to hard drive -- really! [Reviewed by Karl-Dieter Crisman]
+#7076: Tim Joseph Dumol: SageNB -- Do ReST introspection on a `worksheet_process` [Reviewed by William Stein]
+#7078: Tim Joseph Dumol: SageNB -- Introspection does not format output properly [Reviewed by William Stein]
+#7080: William Stein: include new separated sage notebook in Sage [Reviewed by Tim Joseph Dumol]
+#7088: Robert Bradshaw factoring certain polynomials over ZZ gets all mixed up (wrong constant) via our PARI wrapper [Reviewed by Mike Hansen]
+#7092: Minh Van Nguyen, Jaap Spies: build failure of pari-2.3.3.p1.spkg with gcc-4.4.1 as distributed by Fedora 11constant) via our PARI wrapper [Reviewed by Jaap Spies, Minh Van Nguyen]
+#7093: William Stein: fast_eval -- numerical noise on OS X 10.6 [Reviewed by Tim Joseph Dumol]
+#7102: Georg S. Weber: R.py doctest fails for non-english locale [Reviewed by William Stein]
+#7112: William Stein: os x 10.5 powerpc -- there are many many doctest failures all over [Reviewed by Georg S. Weber, Karl-Dieter Crisman
+#7149: John Palmieri: tutorial: delete the graph theory section [Reviewed by William Stein]
+
+Merged in Sage 4.1.2.rc0:
+
+#3951: Jason Grout: Make a "Tickets in which I have participated" report [Reviewed by Minh Van Nguyen]
+#6612: Harald Schilly: sage-update selects a suiteable mirror [Reviewed by Minh Van Nguyen]
+#6870: Hakan Granath: Bug in binomial [Reviewed by Karl-Dieter Crisman, Adam Webb]
+#6916: Minh Van Nguyen: follow-up to #6749: fix warnings when building reference manual [Reviewed by William Stein, John Palmieri]
+#7008: Jason Grout: consolidate in plotting all extraction of variables, ranges, and fast_float setup [Reviewed by Karl-Dieter Crisman]
+#7020: Minh Van Nguyen: Fix 32-bit versus 64-bit boolean_function issue in crypto [Reviewed by Jaap Spies]
+#7022: William Stein: os x -- 10.6 -- generated the matplotlib font cache crashes sage [Reviewed by Mike Hansen]
+#7046: Ivan Andrus: Singular fails to build on OS X 10.6 with case sensitive file system [Reviewed by William Stein, Minh Van Nguyen]
+#7055: Georg S. Weber: Fix 32-bit versus 64-bit in pbori.pyx doctest [Reviewed by Jaap Spies]
+#7064: Minh Van Nguyen: fix warnings when building reference manual in Sage 4.1.2.alpha4 [Reviewed by William Stein]
+#7079: Francis Clarke: parallel doctest broken in Sage 4.1.2.alpha4 if HOME/.sage/tmp doesn't exist [Reviewed by William Stein]
+
+Merged in Sage 4.1.2.alpha4:
+
+#780: Alex Ghitza, Burcin Erocal: calculus integration failing due to maxima interacting when it shouldn't [Reviewed by Karl-Dieter Crisman]
+#2562: Karl-Dieter Crisman: minor symbolic doc things [Reviewed by Burcin Erocal]
+#2624: John Palmieri: parallel testing: sage -tp foo/bar/file.py should assume 1 thread [Reviewed by Dan Drake]
+#3646: Tom Boothby: Implement paren matching [Reviewed by John Palmieri]
+#4046: Mitesh Patel: add support for Google's new browser to the notebook [Reviewed by Tim Dumol]
+#5221: Karl-Dieter Crisman: default cmap for contour_plot makes last contour line invisible when fill=False [Reviewed by Jason Grout]
+#6283: John Palmieri: Make it so NUM_THREADS is set intelligently instead of idiotically in makefile so doing "make ptest" or "make ptestlong" doesn't kill some computers [Reviewed by Dan Drake, Minh Van Nguyen]
+#6339: Martin Albrecht: multivariate polynomial content is broken [Reviewed by Mike Hansen]
+#6340: Karl-Dieter Crisman: var('x',ns=False) -- should go boom but silently gives a new symbolic variable [Reviewed by Jason Grout, Burcin Erocal]
+#6373: John Cremona: AA and QQbar have no is_square method [Reviewed by Jason Grout]
+#6507: Mitesh Patel: doc sidebar toggle [Reviewed by Tim Dumol]
+#6524: Burcin Erocal: Ratio of two symbolic expressions involving derivative does not simplify [Reviewed by Karl-Dieter Crisman]
+#6630: Florent Hivert: The empty species exists !!! [Reviewed by Franco Saliola, Mike Hansen, Minh Van Nguyen]
+#6694: Mitesh Patel: Live reference manual worksheets [Reviewed by Marshall Hampton]
+#6748: Nathann Cohen: Adds Graph.Cliquer to the reference [Reviewed by Jason Grout]
+#6776: Andrey Novoseltsev: plot3d improvement for lattice polytopes [Reviewed by Marshall Hampton]
+#6778: Andrey Novoseltsev: Fix nfacets for non-reflexive lattice polytopes [Reviewed by Marshall Hampton]
+#6824: Jason Grout: cdef in timeseries.pyx follows use of variable [Reviewed by Mike Hansen]
+#6826: Nick Alexander: magma_free interface is broken [Reviewed by Mike Hansen, Robert Bradshaw]
+#6829: Maite Aranes: Implement Manin symbols over number fields [Reviewed by Georg S. Weber]
+#6832: Maite Aranes: bug in inverse_mod for number field elements [Reviewed by William Stein]
+#6841: Minh Van Nguyen: the shift cryptosystem [Reviewed by Rob Beezer]
+#6851: Burcin Erocal: hashes for derivatives of symbolic functions still collide [Reviewed by Karl-Dieter Crisman]
+#6859: Michael Yurko: Add more graph generators [Reviewed by Jason Grout, Minh Van Nguyen]
+#6861: Jason Grout, Francis Clarke: allow users to test Sage script using system-wide Sage installation [Reviewed by Tim Dumol]
+#6865: Tim Dumol: Use templates for CSS [Reviewed by Mitesh Patel, Jason Grout]
+#6879: John Cremona: Elliptic curve constructor does not check if the base is a field properly [Reviewed by Mike Hansen]
+#6883: David Kirkby, Minh Van Nguyen: ECL 9.8.4 fails to build in 64-bit mode, OS X 10.5.8 [Reviewed by John Palmieri, William Stein]
+#6898: Minh Van Nguyen, John Palmieri: update the installation guide [Reviewed by Mike Hansen, John Palmieri, Minh Van Nguyen]
+#6901: Minh Van Nguyen: follow-up to #6839: fix warnings when building reference manual [Reviewed by John Palmieri]
+#6902: Burcin Erocal: log(x) is typeset as \ln x [Reviewed by Karl-Dieter Crisman]
+#6919: Mike Hansen, William Stein: basic arithmetic using FLINT is broken (very serious!) [Reviewed by John Palmieri, Minh Van Nguyen]
+#6921: Jonathan J. Hunt: MATLAB crashes on Snow Leopard due to library conflicts [Reviewed by William Stein]
+#6929: Karl-Dieter Crisman: Docs in functional and a few ring methods [Reviewed by John Palmieri]
+#6930: Jason Grout: make 3d axes labels a little more precise [Reviewed by William Stein]
+#6937: Tom Boothby: Fix cached_function to handle defaults better [Reviewed by Robert Miller]
+#6939: Jason Grout: Make scrollbars appear on cell output when the output is too wide [Reviewed by Karl-Dieter Crisman, Mitesh Patel, Jason Grout, Minh Van Nguyen]
+#6944: Minh Van Nguyen: typos in some installation scripts [Reviewed by John Palmieri]
+#6947: Jonathan Bober: make complex_plot() work for for fast_callable functions [Reviewed by Jason Grout]
+#6948: Burcin Erocal: powers of exp are over simplified [Reviewed by Karl-Dieter Crisman]
+#6951: Georg S. Weber: Singular fails to build on t2.math with GCC [Reviewed by Minh Van Nguyen]
+#6954: Wilfried Huss: latex output for dictionaries [Reviewed by John Palmieri, Mike Hansen]
+#6956: Tim Joseph Dumol: cannot differentiate cotangent [Reviewed by Burcin Erocal]
+#6963: Minh Van Nguyen: follow up to #3133: fix ReST formatting [Reviewed by Jason Grout]
+#6964: William Stein: implement computation of Dirichlet character of irreducible cuspidal modular symbols space [Reviewed by Soroosh Yazdani, Minh Van Nguyen]
+#6966: Soroosh Yazdani: Shimura subgroup [Reviewed by William Stein]
+#6968: Yann Laigle-Chapuy: improve _vector_times_matrix [Reviewed by William Stein]
+#6969: William Stein: port boehm gc to os x 10.6 [Reviewed by John Palmieri, Minh Van Nguyen]
+#6971: William Stein: port ECL spkg to os x 10.6 [Reviewed by John Palmieri, Minh Van Nguyen]
+#6972: Jason Grout: update the r spkg in sage to 2.9.2 [Reviewed by William Stein, John Palmieri, Minh Van Nguyen]
+#6974: William Stein: cygwin port: make all the crypto ssl-ish spkg's into dummy packages on Cygwin (where we can use the system openssl instead) [Reviewed by Ondrej Certik, John Palmieri, Minh Van Nguyen]
+#6976: Ondrej Certik: numpy package fixed to work in cygwin [Reviewed by William Stein]
+#6980: Yann Laigle-Chapuy: add _nonzero_positions_by_column to sparse integer matrices [Reviewed by William Stein]
+#6981: William Stein: include 64-bit OS X gfortran in standard SAge [Reviewed by John Palmieri]
+#6982: William Stein: cygwin port: atlas and linbox [Reviewed by Ondrej Certik, Minh Van Nguyen]
+#6985: Mike Hansen, Jason Grout: complex_plot needs to use fast_callable [Reviewed by Jason Grout, Karl-Dieter Crisman]
+#6988: John Palmieri: error building PDF version of reference manual on Sage 4.1.2.alpha2 [Reviewed by Minh Van Nguyen]
+#6992: Burcin Erocal: rename lngamma to log gamma [Reviewed by Karl-Dieter Crisman]
+#6993: Burcin Erocal: update pynac to 0.1.9 [Reviewed by Karl-Dieter Crisman]
+#6996: Jason Grout: turn off axes in new contour plots [Reviewed by Karl-Dieter Crisman]
+#6997: Mariah Lenox: minor typo in Constructions documentation [Reviewed by Minh Van Nguyen]
+#6999: Felix Lawrence: doctest failures on 32-bit systems due to #4948 patches [Reviewed by Jaap Spies]
+#7002: Jason Grout: Notebook documentation says to use "#auto", but should be "%auto" [Reviewed by Karl-Dieter Crisman]
+#7006: William Stein: os x 10.6 port -- update mpir to autodetect ABI on OS X since ABI=32 is *no* longer necessarily the default on 10.6 [Reviewed by John Palmieri, Minh Van Nguyen]
+
+
+Merged in Sage 4.1.2.alpha3:
+
+There was no 4.1.2.alpha3. Sage 4.1.2.alpha3 was William Stein's
+release for working on making the notebook a standalone package.
+
+
+Merged in Sage 4.1.2.alpha2:
+
+#3133: Jason Grout: allow parametric_plot and parametric_plot3d to take a vector as input [Reviewed by Karl-Dieter Crisman]
+#3835: John Cremona: Make an algebraic closure function [Reviewed by Mike Hansen]
+#4786: Karl-Dieter Crisman, Burcin Erocal: fix some bugs / typos in the solve function [Reviewed by Burcin Erocal, Karl-Dieter Crisman]
+#4948: Felix Lawrence: implement the transfer of Mathematica lists back to Sage [Reviewed by William Stein, Minh Van Nguyen]
+#5145: Karl-Dieter Crisman: increase default plot_points value for contour_plot [Reviewed by Jason Grout]
+#5347: John Cremona: divides() may fail for 1 on the rhs. [Reviewed by Mike Hansen]
+#5758: John Palmieri: weird "hello" bug in homset coerce! [Reviewed by Mike Hansen]
+#5858: Jonathan J. Hunt: use sage-native-execute to start octave [Reviewed by Jason Grout]
+#5900: Tim Abbott: Add support for system python != Sage python [Reviewed by Mike Hansen]
+#6177: Michael Brickenstein, Alexander Dreyer, Martin Albrecht: Update PolyBoRi to newest upstream release [Reviewed by David Kirkby, Alex Ghitza, Burcin Erocal]
+#6197: Karl-Dieter Crisman: conversion of binomial fails [Reviewed by Mike Hansen]
+#6325: David Joyner: optional doctest failure -- linear algebra constructions.rst [Reviewed by Mike Hansen]
+#6328: David Joyner: optional doctest failure -- bugs in the graph theory section of constructions guide [Reviewed by Mike Hansen]
+#6343: Nicolas M. Thiery: Adds TestSuite(object).run() generic testing framework [Reviewed by Mike Hansen, Minh Van Nguyen]
+#6441: Sebastian Pancratz: Charpoly (plus adjoint and det) [Reviewed by Rob Beezer, Yann Laigle-Chapuy]
+#6521: Karl-Dieter Crisman, Jason Grout: replace .copy() with .__copy__() in matrix/matrix0.pyx [Reviewed by Jason Grout, Karl-Dieter Crisman, Minh Van Nguyen]
+#6545: Martin Albrecht: sorting of ideal bases [Reviewed by John Perry]
+#6597: Nicolas M. Thiery: SetMorphism: 100% doctest + equality + pickling; depends on #6343 [Reviewed by Mike Hansen]
+#6609: David Kirkby: GNUism in lcalc-20080205.p2 passing GNU flags directly to the Sun assembler. [Reviewed by Minh Van Nguyen]
+#6634: Marshall Hampton: biopython 1.49b broken with python-2.6; biopython upgrade [Reviewed by Alex Ghitza]
+#6636: Karl-Dieter Crisman: Simplification of factorials and binomial coefficients is not very good [Reviewed by Mike Hansen]
+#6652: Ralf Hemmecke: should not have algebra structure on streams [Reviewed by Florent Hivert]
+#6663: Marshall Hampton: add new 4ti2 experimental package [Reviewed by David Joyner, Alex Ghitza, Bjarke Hammersholt Roune, Mike Hansen, David Perkinson]
+#6749: Nathann Cohen: Knapsack algorithm [Reviewed by David Joyner]
+#6750: Simon King, David J. Green: New version of optional Group Cohomology spkg [Reviewed by John Palmieri, David Joyner, Mikael Vejdemo Johansson]
+#6759: David Kirkby: Update sqlite to latest release - needed for Sun's compiler [Reviewed by Minh Van Nguyen]
+#6774: Nathann Cohen: tour Graph Theory [Reviewed by Jason Grout]
+#6806: Minh Van Nguyen: typo in patch of ticket #6396: primes_of_degree_one is broken for relative extensions [Reviewed by Karl-Dieter Crisman]
+#6827: Carlo Hamalainen: probability distributions doctests + general discrete distribution [Reviewed by Mike Hansen]
+#6848: John Palmieri: "Definition:" messed up in notebook and command line in cython code [Reviewed by Mike Hansen]
+#6858: Robert Miller: Cayley graph connecting set [Reviewed by Nathann Cohen]
+#6864: John Palmieri: Stop Sage tests from saving things to hard drive [Reviewed by Karl-Dieter Crisman]
+#6867: Nathann Cohen: GLPK ( compatible with the symbolics from MIP ) [Reviewed by Minh Van Nguyen]
+#6868: Nathann Cohen: Coin-OR CBC ( compatible with the symbolics from MIP ) [Reviewed by Minh Van Nguyen]
+#6869: Nathann Cohen: LP and MIP Solvers in Sage ( with symbolics ) [Reviewed by David Joyner, Minh Van Nguyen]
+#6875: Wilfried Huss: fill option is broken for polar_plot [Reviewed by Jason Grout]
+#6903: Sebastien Labbe, Franco Saliola: Function Word currently prevent the inheritance of Words_over_OrderedAlphabet [Reviewed by Franco Saliola]
+#6905: Mike Hansen: real(0.0r) is broken [Reviewed by Nicolas M. Thiery]
+#6908: Minh Van Nguyen: programmers' guide --- doctesting and parallel doctesting [Reviewed by John Palmieri, Karl-Dieter Crisman]
+#6911: Robert Bradshaw: Faster basis and discriminants of a Hecke algebra [Reviewed by William Stein]
+#6945: David Kirkby, William Stein: Update readline to version 6.0 [Reviewed by Minh Van Nguyen]
+#6950: Yann Laigle-Chapuy: computing algebraic immunity [Reviewed by Martin Albrecht]
+#6952: Minh Van Nguyen: follow-up to #6774: fix warnings and stylistic niceties [Reviewed by Jason Grout]
+#6953: Minh Van Nguyen: follow-up to #6950: fix warning when building reference manual [Reviewed by Martin Albrecht]
+
+
+Merged in Sage 4.1.2.alpha1:
+
+#4552: Timothy Clemans: notebook -- when email system on, registration is broken [Reviewed by Willem Jan Palenstijn]
+#5448: Jason Grout: rework save/show in plot, use Matplotlib's axes code, upgrade matplotlib [Reviewed by Karl-Dieter Crisman]
+#6388: Karl-Dieter Crisman: Logarithm function log(x) is partially broken for x <= 0 [Reviewed by Golam Mortuza Hossain]
+#6839: Anne Schilling, Brant Jones: Implementation of crystal of letters for type E7 [Reviewed by Daniel Bump]
+#6857: Robert Miller: in automorphism_group, orbits=True does not translate vertices back [Reviewed by Nathann Cohen]
+#6896: joskarsson: update README.txt about GCC versions [Reviewed by William Stein]
+
+
+Merged in Sage 4.1.2.alpha0:
+
+#3108: John Cremona: implement additive_order for elliptic curve points [Reviewed by Chris Wuthrich]
+#4135: Timothy Clemans: notebook -- user management features [Reviewed by Tim Dumol, Dan Drake]
+#4822: John Cremona: Tweak to the error message for EllipticCurve [Reviewed by Chris Wuthrich]
+#5600: Nicolas M. Thiery: Cleanup of integer compositions [Reviewed by Dan Drake, Jason Bandlow, Minh Van Nguyen]
+#5660: John Cremona: count_points(1) for elliptic curves over finite fields is stupid [Reviewed by Alex Ghitza]
+#5726: John Palmieri: "Definition:" missing/wrong/messed up both in notebook and command line in different ways for both python and cython code (frickin') [Reviewed by Tim Dumol]
+#5857: John Cremona: E.list() for E an elliptic curve over a finite field is broken [Reviewed by Alex Ghitza, Minh Van Nguyen]
+#5958: John Perry: MPolynomial_polydict.factor() should accept proof parameter [Reviewed by Martin Albrecht]
+#6253: Nicolas M. Thiery: Constant functions [Reviewed by Florent Hivert, Minh Van Nguyen]
+#6287: Adam Webb: sage -lisp should run ECL [Reviewed by Franco Saliola]
+#6294: Adam Webb: lisp command in sage is now totally broken (because of ecl switch) [Reviewed by Tim Dumol]
+#6384: Chris Wuthrich: elliptic curve -- isogeny function is not robust -- it doesn't check validity of its input [Reviewed by John Cremona, Minh Van Nguyen]
+#6402: David Loeffler: Fix bugs + improve documentation for overconvergent modular forms [Reviewed by Alex Ghitza, Minh Van Nguyen]
+#6447: Bill Cauchois: Add a <canvas> renderer for 3D plotting [Reviewed by David Joyner, William Stein]
+#6461: Minh Van Nguyen: Schaefer's Simplified Data Encryption Standard for educational purposes [Reviewed by Martin Albrecht, William Stein]
+#6464: Jin-yeong Bak ("NoSyu"): notebook: Unicode in notebook worksheets [Reviewed by Peter Mora, Karl-Dieter Crisman]
+#6476: Martin Albrecht: upgrade Singular to 3.1.0.4 [Reviewed by Alex Ghitza]
+#6514: Yann Laigle-Chapuy: Boolean function for cryptography [Reviewed by Martin Albrecht]
+#6531: David Loeffler: Add generic ring classes to reference manual [Reviewed by John Cremona]
+#6549: Alex Ghitza: reinstate some doctests in schemes/plane_curves/affine_curve.py [Reviewed by Craig Citro]
+#6556: Hakan Granath: notebook: document keyboard shortcuts [Reviewed by Tim Dumol]
+#6561: David Loeffler: Trivial bug with cartesian product of an empty list of iterators [Reviewed by Alex Ghitza]
+#6564: David Kirkby: Update ECL to the latest 9.8.4, needed for Solaris. [Reviewed by Adam Webb, Alex Ghitza, Minh Van Nguyen]
+#6568: Tim Joseph Dumol: Migrate Notebook to Jinja [Reviewed by William Stein]
+#6571: Sebastien Labbe, Franco Saliola: Improve iterator of word morphisms [Reviewed by Franco Saliola, Sebastien Labbe]
+#6590: Robert Bradshaw: Cython __new__ should be __cinit__ [Reviewed by Alex Ghitza]
+#6596: Martin Albrecht, Michael Brickenstein, Hans Schoenemann: Singular refactoring and Groebner Strategy objects [Reviewed by Alex Ghitza]
+#6603: Nathann Cohen: COIN-OR / CBC for SAGE [Reviewed by David Joyner]
+#6614: Mitesh Patel: Remove jsMath from version control in the Sage library. [Reviewed by John Palmieri]
+#6620: Franco Saliola: add a method to the Gap class to access elements of records [Reviewed by David Joyner, Minh Van Nguyen]
+#6627: Franco Saliola: fix lyndon and standard factorization of words [Reviewed by Vincent Delecroix]
+#6628: Michael Brickenstein, Martin Albrecht: Singular functions via libSingular [Reviewed by Alex Ghitza]
+#6631: Franco Saliola: speed up is_lyndon method for words [Reviewed by Vincent Delecroix, Minh Van Nguyen]
+#6643: Sebastien Labbe: vector function changes the ring of a vector for ZZ when possible [Reviewed by Rob Beezer]
+#6647: Nicolas Borie: Permutation Group improvements [Reviewed by David Joyner, Minh Van Nguyen]
+#6659: Jason Grout: cores() is broken for some digraphs, and is *way* too slow [Reviewed by Robert Miller, Minh Van Nguyen]
+#6664: Mitesh Patel: Update autodoc-skip-member for Sphinx v0.6.x [Reviewed by John Palmieri]
+#6672: William Stein, Dan Shumow, John Cremona: Elliptic curve isogeny coercion of output to codomain curve takes too long [Reviewed by John Cremona, Alex Ghitza]
+#6677: Burcin Erocal: Sequence doesn't know how to typeset itself [Reviewed by John Palmieri]
+#6685: John Palmieri, Mitesh Patel: include pictures in the reference manual and notebook introspection [Reviewed by Dan Drake]
+#6686: Mitesh Patel: Missing closing </center> tag in notebook help page [Reviewed by Karl-Dieter Crisman]
+#6699: David Kirkby, Alex Ghitza: Update to Maxima 5.19.1 (particularly important for Solaris support). [Reviewed by Adam Webb, Minh Van Nguyen]
+#6740: Fredrik Johannson: upgrade mpmath to 0.13 [Reviewed by Mike Hansen]
+#6742: Mitesh Patel: Stylesheets are not always loaded in Chrome [Reviewed by Mike Hansen]
+#6744: Harald Schilly: install script stores start time of build [Reviewed by Tim Dumol]
+#6745: William Stein: quaternion algebras -- add computation of left and right orders associated to ideals [Reviewed by Robert Bradshaw]
+#6751: William Stein: implement ternary quadratic forms associated to orders in rational quaternion algebras [Reviewed by John Cremona]
+#6762: Robert Bradshaw: add __contains__ to quaternion algebra ideals [Reviewed by William Stein]
+#6766: Francis Clarke: faster powers of factorizations [Reviewed by John Cremona]
+#6767: Francis Clarke: typo in totallyreal_rel.py [Reviewed by Minh Van Nguyen]
+#6768: Preston Wake: Basis of a Hecke algebra [Reviewed by William Stein]
+#6770: Minh Van Nguyen: typos in two modules of modular form [Reviewed by Chris Wuthrich]
+#6807: Stephen Hartke: bug in blocks_and_cut_vertices() of a graph where a cut vertex can be listed more than once [Reviewed by Nathann Cohen]
+#6811: William Stein: prime_pi.plot is wrong (!) [Reviewed by R. Andrew Ohana, Minh Van Nguyen]
+#6817: Nathann Cohen: GLPK for Sage, new version [Reviewed by David Joyner]
+#6818: William Stein: maxima interface gets dramatically slower over time [Reviewed by Alex Ghitza]
+#6819: Rishikesh: multinomial to accept lists as argument too [Reviewed by Nathann Cohen]
+#6835: John Cremona: Inconsistent types for degree of finite fields [Reviewed by Mike Hansen]
+#6838: Mike Hansen: error creating matrices over GF(2) from elements of QQ [Reviewed by Martin Albrecht]
+#6840: Tim Dumol, Mitesh Patel: Fix documentation for Sage Notebook [Reviewed by Minh Van Nguyen, Mitesh Patel]
+#6842: Simon King: ordinal_str giving wrong answers for 111, 112, 113 [Reviewed by Adam Webb]
+#6845: Nathann Cohen: bad ReST formatted docstring in #6819 [Reviewed by Minh Van Nguyen]
+#6846: Minh Van Nguyen: follow up to #6751: fix warnings when building reference manual [Reviewed by William Stein]
+#6850: Minh Van Nguyen: follow-up to #6531: really add ring.pyx to reference manual [Reviewed by John Cremona]
+#6853: Mitesh Patel: Templating tag typo [Reviewed by Willem Jan Palenstijn]
+#6856: Willem Jan Palenstijn: cancel button in notebook user settings not working [Reviewed by Dan Drake]
+#6866: Hakan Granath: Latex typos in orthogonal_polys.py [Reviewed by John Palmieri]
+#6872: Minh Van Nguyen: #6596 follow-up: typo in docstring [Reviewed by Martin Albrecht]
+#6874: Minh Van Nguyen: #4135 follow-up: fix typos and docbuild warnings [Reviewed by Dan Drake]
+#6877: Yann Laigle-Chapuy: Boolean function for crypto, small bugfixes and improvement [Reviewed by Martin Albrecht]

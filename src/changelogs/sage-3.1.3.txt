@@ -1,0 +1,244 @@
+﻿Hello folks,
+
+Sage 3.1.3 was released on October 14th, 2008. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 41 people contributed to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Jason Badlaw
+ * Arnaud Bergeron
+ * Robert Bradshaw
+ * Michael Brickenstein
+ * Craig Citro
+ * Francis Clarke
+ * Timothy Clemans
+ * John Cremona
+ * Karl-Dieter Crisman
+ * Pablo De Napoli
+ * Dan Drake
+ * Burcin Erocal
+ * David Fu
+ * Alex Ghitza
+ * Andrzej Giniewicz
+ * Jason Grout
+ * Marshall Hampton
+ * Mike Hansen
+ * David Harvey
+ * David Joyner
+ * Simon King
+ * Emily Kirkman
+ * David Loeffler
+ * Jason Merrill
+ * Robert Miller
+ * Minh Nguyen
+ * Willem Jan Palenstijn
+ * John Palmieri
+ * Clement Pernet
+ * David Philp
+ * Harald Schilly
+ * William Stein
+ * Chris Swierczewski
+ * Nicolas Thiery
+ * John Voight
+ * Justin Walker
+ * Georg Weber
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Mike Hansen: inclusion of Sphinx, Docutils, Jinja, and Pygments as a step toward ReST documentation
+ * Robert Bradshaw: coercion improvements
+ * Nicolas Thiery, Mike Hansen:  tighter integration with sage-combinat, i.e. the 2144 server is now installable with vanilla Sage
+ * Martin Albrecht: MPolynomial_libsingular improvements for number fields and ZZ 
+ * Martin Albrecht: Gröbner bases over Z and Z/nZ
+ * William Stein, Burcin Erocal: add initial pynac-0.1.p0 package
+ * William Stein, Craig Citro: modular symbols -- optimize fast computation of hecke eigenvalues on weight 2 modular symbols for gamma0
+ * Michael Abshoff: numerous Solaris build fixes
+
+For details see the Sage 3.1.3 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.1.3
+
+* Known Issues with 3.1.3:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 125 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.1.3
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.1.4, chaired by Michael Abshoff. It will 
+be a bug fixes release.
+
+* Doctesting Coverage
+
+For 3.1.2 we had:
+
+Overall weighted coverage score:  60.5%
+Total number of functions:  20584
+
+We increased coverage by 1.8% in 3.1.3 while adding 836 functions:
+
+Overall weighted coverage score:  62.3%
+Total number of functions:  21420
+
+* Closed Tickets:
+
+Merged in Sage 3.1.3.final:
+
+#4271: Paul Zimmermann: improve coverage test of ell_generic.py to 100%, and fix typos [Reviewed by John Cremona]
+#4272: Michael Abshoff: add the files from new coercion to the reference manual [Reviewed by Mike Hansen]
+#4279: Michael Abshoff: Sage 3.1.3.rc0: numerical noise in rings/real_lazy.pyx [Reviewed by Mike Hansen]
+
+Merged in Sage 3.1.3.rc0:
+
+#1346: Martin Albrecht: fpLLL doctests don't test fpLLL [Reviewed by Willem Jan Palenstijn]
+#3945: Mike Hansen, Burcin Erocal: sage -gdb doesn't work [Reviewed by Michael Abshoff]
+#4159: Michael Abshoff: sage -bdist fails on osx 10.5 ppc and intel with libpng errors [Reviewed by Mike Hansen]
+#4214: Alex Ghitza: elliptic_logarithm gives inaccurate answers [Reviewed by Georg Weber]
+#4219: Michael Abshoff: MacOSX: work around java detection hang in r due to "Mac OS X 10.5 Update 2" [Reviewed by Mike Hansen]
+#4228: Michael Abshoff: eclib-20080310.p6.spkg is broken with 'export MAKE="make -j4"' [Reviewed by Mike Hansen]
+#4231: William Stein: magma -- long input too verbose in some cases [Reviewed by Georg Weber]
+#4240: William Stein: magma -- increase doctest coverage of magma.py [Reviewed by Georg Weber, Michael Abshoff]
+#4242: Jason Badlaw: Bugfix for dominates() method of partition.py [Reviewed by Mike Hansen]
+#4253: Martin Albrecht: polybori interface: equality operator for navigators [Reviewed by Michael Brickenstein]
+#4257: Martin Albrecht: support for Singular's 'intmat' and 'intvec' [Reviewed by Mike Hansen]
+#4262: William Stein: Elliptic curve a_invariants command returns a list reference [Reviewed by Martin Albrecht]
+#4263: William Stein: elliptic curves -- point height serious stupid bug in raising error [Reviewed by Martin Albrecht]
+#4270: Nicolas Thiery: Add sage-combinat script and sage-combinat [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.1.3.alpha3:
+
+#3385: Jason Grout: plot_vector_field does not deal with aspect ratios correctly [Reviewed by Mike Hansen]
+#3665: Mike Hansen: add initial species code [Reviewed by Robert Miller]
+#3980: Jason Merrill: Find_root bug [Reviewed by Marshall Hampton]
+#4106: Alex Ghitza: error coercing symbolic variable into polynomial ring modulo 4 (but not mod 3) [Reviewed by William Stein]
+#4220: Mike Hansen: include Sphinx, Docutils, Jinja, and Pygments in Sage [Reviewed by Michael Abshoff]
+#4224: Carl Witty: small error in new question-mark interval printing [Reviewed by Michael Abshoff]
+#4225: Robert Bradsahw: faster sqrt for complex numbers [Reviewed by Alex Ghitza]
+#4226: Robert Bradshaw: Real Lazy Field [Reviewed by Mike Hansen]
+#4227: Michael Abshoff: Sage 3.1.3.alpha2: many Magma doctests that should are not optional [Reviewed by Alex Ghitza]
+#4232: Robert Bradshaw: #249 causes bug in importing large lists [Reviewed by Jason Grout]
+#4233: John Palmieri: fix doctest failure due to deprecation warning in calculus/all.py [Reviewed by Mike Hansen]
+#4234: Minh Nguyen: typos in programming guide [Reviewed by Michael Abshoff]
+#4235: Minh Nguyen: typos in and enhancement to installation guide [Reviewed by Michael Abshoff]
+#4238: David Fu, Robert Bradshaw: option to create local .so file for .spyx modules [Reviewed by Georg Weber]
+#4239: Francis Clarke: fix for problems with zero kernel and images [Reviewed by Georg Weber]
+#4247: William Stein: plotting -- bug in text and pdf export [Reviewed by Mike Hansen]
+
+Merged in Sage 3.1.3.alpha2:
+
+#686: Martin Albrecht: write MPolynomial_libsingular over number fields [Reviewed by Alex Ghitza]
+#767: John Palmieri: animate has cryptic error message when imagemagick is not installed [Reviewed by Michael Abshoff]
+#1104: Alex Ghitza: Ideal() should check arguments better [Reviewed by Martin Albrecht]
+#2407: Timothy Clemans: Notebook fails without explanation when cookies are disabled [Reviewed by Jason Grout, Dan Drake, Mike Hansen]
+#2948: John Palmieri: (Additional) Docstrings and Doctests for rings/quotient_ring.py [Reviewed by Alex Ghitza]
+#3316: Pablo De Napoli: Fix a bug and improve documentation in jordan_form [Reviewed by Alex Ghitza]
+#3659: Mike Hansen: Upgrade IPython to 0.8.4 [Reviewed by Michael Abshoff]
+#3799: Emily Kirkman: degree sequence should not be a single integer in graph_database [Reviewed by Robert Miller]
+#3943: David Joyner: block designs patch [Reviewed by Robert Miller]
+#4021: Martin Albrecht: MPolynomial_libsingular over ZZ [Reviewed by Alex Ghitza]
+#4022: Martin Albrecht: Gröbner bases over Z and Z/nZ [Reviewed by Alex Ghitza]
+#4096: John Cremona, Alex Ghitza: fix pari precision interface [Reviewed by Michael Abshoff]
+#4111: Robert Bradshaw: move basic types to new coercion model [Reviewed by Mike Hansen]
+#4126: William Stein: improve sage <--> magma interface for number fields [Reviewed by Robert Bradshaw]
+#4157: Michael Abshoff: add introduction to README.txt [Reviewed by Mike Hansen]
+#4169: David Harvey, Tim Abbott: zn_poly 0.9 and hypellfrob 2.1.1 [Reviewed by Martin Albrecht, Michael Abshoff]
+#4189: William Stein: fix hmm documentation buglet [Reviewed by Michael Abshoff]
+#4191: Arnaud Bergeron, John Cremona: Update eclib to eclib-20080310.p6.spkg [Reviewed by Michael Abshoff]
+#4192: Mike Hansen: is_Blah functions: deprecate and then remove them from top level imports [Reviewed by Michael Abshoff]
+#4195: Martin Albrecht: implicit plotting for multivariate polynomial ideals [Reviewed by Mike Hansen]
+#4197: William Stein: weird ntl finite field modulus caching bug [Reviewed by Michael Abshoff]
+#4198: Michael Abshoff: matrix_cyclo_dense.pyx leaks in _get_unsafe [Reviewed by Mike Hansen]
+#4200: Jason Grout:  Update numpy to 1.2.0 [Reviewed by Michael Abshoff]
+#4201: Mike Hansen: add .options and .reset to plot functions [Reviewed by Jason Grout]
+#4202: Jason Grout: latex derivatives of symbolic functions nicely [Reviewed by Mike Hansen]
+#4208: Michael Abshoff: Update mpfr to 2.3.2 release [Reviewed by Robert Miller]
+#4209: Michael Abshoff: upgrade maxima.spkg to 5.16.3 [Reviewed by Robert Miller]
+#4210: Michael Abshoff: Remove some deprecation warnings from numpy-1.2.spkg [Reviewed by Mike Hansen]
+#4211: Michael Abshoff: new optional spkg: guppy [Reviewed by Mike Hansen]
+#4212: Michael Abshoff, Mike Hansen: Invalid read of size 8 in totallyreal.pyx [Reviewed by Mike Hansen, Michael Abshoff]
+#4213: Mike Hansen: Bug in Permutations(n, k) [Reviewed by Arnaud Bergeron]
+#4215: Mike Hansen: Bug in creating sparse vectors using a dictionary [Reviewed by Michael Abshoff]
+#4216: John Palmieri: use sage-native-execute to run 'convert' in animate.py [Reviewed by Michael Abshoff]
+#4221: William Stein, Burcin Erocal: add initial pynac-0.1.p0 package [Reviewed by Michael Abshoff, Robert Bradshaw]
+#4222: Michael Abshoff: R fails to build when global readline headers are not present [Reviewed by Simon King]
+#4132: Alex Agitza: complex arithmetic passes via pari [Reviewed by Robert Bradshaw]
+
+Merged in Sage 3.1.3.alpha1:
+
+#249: Robert Bradshaw: a much needed preparser optimization -- factor out constants [Reviewed by Alex Ghitza]
+#1932: Craig Citro: weird hg bug due to sha.py in the Sage tree [Reviewed by Alex Ghitza]
+#1951: John Cremona: reduction map modulo a number field prime ideal still not 100% done [Reviewed by Alex Ghitza]
+#2076: Mike Hansen: Inconsistent coloring of plotted points [Reviewed by Jason Grout]
+#2777: Andrzej Giniewicz: '??' can't always find the source [Reviewed by Robert Bradshaw]
+#3502: William Stein, Craig Citro: modular symbols -- optimize fast computation of hecke eigenvalues on weight 2 modular symbols for gamma0 [Reviewed by Craig Citro, William Stein]
+#3774: Robert Bradshaw: __radd__ doesn't work when left hand side is an Element [Reviewed by Mike Hansen]
+#3838: Simon King: Element access for RElement [Reviewed by Alex Ghitza]
+#3855: Arnaud Bergeron: point3d size default is too small to see [Reviewed by Andrzej Giniewicz]
+#3897: John Cremona: bug in local_information due to the lack of residue_field for ZZ [Reviewed by Alex Ghitza]
+#3967: John Voight: Totallyreal "just print" feature added [Reviewed by Craig Citro]
+#4058: Robert Bradshaw: move integer ring to the new coercion model [Reviewed by Mike Hanson]
+#4129: Martin Albrecht: add support for ntl.mat_GF2 [Reviewed by Robert Bradshaw]
+#4151: Robert Bradshaw: implementation of Dickman's function [Reviewed by David Loeffler]
+#4155: Craig Citro: Speed up totally real field enumeration code [Reviewed by John Voight, Michael Abshoff]
+#4156: Robert Miller: fix memleak in graph_isom [Reviewed by Michael Abshoff]
+#4161: Michael Abshoff: GAP doesn't compile with CXX='ccache g++' [Reviewed by Harald Schilly]
+#4163: Alex Ghitza: tut -- improve factorial / valuation example [Reviewed by John Cremona]
+#4165: Michael Abshoff: Doctest for lisp.py blows chunks on (some) Mac OS X systems [Reviewed by Justin Walker]
+#4170: Robert Bradshaw: symbolic ring does not accept python longs [Reviewed by Michael Abshoff]
+#4173: Michael Abshoff: Solaris: fix cddlib build problem on Solaris x86 [Reviewed by Mike Hansen]
+#4174: Michael Abshoff: Do not run "make install" in python.spkg in parallel [Reviewed by Craig Citro]
+#4175: Robert Bradshaw: cpdef arithmetic functions [Reviewed by Mike Hansen]
+#4180: Mike Hansen:  magic pexpect logging switch [Reviewed by Michael Abshoff]
+#4186: Robert Bradshaw: speed up default __call__ [Reviewed by Mike Hansen]
+#4187: Michael Abshoff: Fix compilation problem for libfplll.spkg on Solaris 10 [Reviewed by Mike Hansen]
+#4188: Michael Abshoff: Fix cvxopt.spkg build on Solaris due to broken complex.h headers [Reviewed by Craig Citro]
+
+Merged in Sage 3.1.3.alpha0:
+
+#2906: Timothy Clemans: notebook -- there is a "sagetex" command; it is untested and completely broken right now. remove it (i.e., don't export to top level all.py) [Reviewed by Alex Ghitza]
+#3876: Karl-Dieter Crisman: Add plotting to sigma and Euler phi functions [Reviewed by Chris Swierczewski]
+#3981: Chris Swierczewski: finance.TimeSeries - Add candlestick plot method [Reviewed by Mike Hansen]
+#4060: Marshall Hampton: Polyhedra don't handle real coordinates properly [Reviewed by Mike Hansen]
+#4087: Francis Clarke: Improved printing of polynomials with 'negative' coefficients [Reviewed by John Cremona]
+#4088: Timothy Clemans: notebook -- on list of published worksheets if no worksheets, everyone sees welcome message [Reviewed by Mike Hansen]
+#4099: Jason Merrill: Fix documentation for point2d, line2d, ... [Reviewed by Mike Hansen]
+#4100: Robert Bradshaw: comparison with None extraordinarily slow [Reviewed by John Cremona]
+#4103: Jason Grout: Delete the cmap option for vector field plots [Reviewed by Michael Abshoff]
+#4104: Jason Grout: Create plot_slope_field function [Reviewed by David Joyner]
+#4115: Robert Miller: Double coset problems [Reviewed by David Joyner]
+#4127: David Philp: Python scripts to search for libraries that get wrongly called in [Reviewed by Michael Abshoff]
+#4134: Timothy Clemans: notebook -- user.py has nodoctest flag [Reviewed by Michael Abshoff]
+#4139: Mike Hansen: Improvements to permutation groups [Reviewed by Robert Miller]
+#4145: Robert Miller: linear codes list function is slow [Reviewed by David Joyner]
+#4147: Clement Pernet: Upgrade to linbox-1.1.6 [Reviewed by Michael Abshoff]
+#4148: Clement Pernet: Upgrade to givaro-3.2.13rc2 [Reviewed by Michael Abshoff]
+#4150: Robert Miller: migrate graphs to new refinement code [Reviewed by Mike Hansen]
+#4153: Robert Miller: re-enable -fwrapv option for Python on Itanium [Reviewed by Michael Abshoff]

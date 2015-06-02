@@ -1,0 +1,32 @@
+﻿SAGE-2.8.4.2 closes the following trac tickets.
+
+262	Alex Ghitza:   extend point counting on elliptic curves 
+        to non-prime finite fields -- the GF(p) case.
+
+395	Marshall Hampton: flatten command for nested lists	
+
+481	William Stein: sagemath.org Optional Packages out of date
+
+519	Martin Albrecht and Michael Abshoff: memory leak: many states passed to
+        gmp_randinit_mt are leaked
+
+556	??: ntl re-wrapping in sage-2.8.3 broke sage on itanium linux
+
+622	William Stein: SAGE's factor function is not probably 
+        correct (actuall it was..., but now it's much better)
+
+625	William Stein: check for system gfortran, g95 or g77 
+        when no binary is available	
+
+628	P. Denapo (refereed by Joel Mohler): Make binomial(x,m) work for 
+        symbolic expressions when x-m is an integer
+
+631	William Stein and John Cremona: update mwrank package
+
+640	Michael Abshoff (refereed by W Stein, reported by Kate Minola): get 
+        rid of the circular link that is created when installing the python
+
+646	Robert Bradshaw (refereed by W Stein, reported by Kate Minola) plot3d 
+        error on itanium
+
+

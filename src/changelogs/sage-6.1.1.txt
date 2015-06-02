@@ -1,0 +1,44 @@
+﻿Sage 6.1.1 was released on 4 February 2014. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 6 people contributed to this release.
+
+  - Jeroen Demeyer
+  - John Palmieri
+  - Karl-Dieter Crisman
+  - Marc Mezzarobba
+  - Michael Welsh
+  - Punarbasu Purkayastha
+
+* Release manager: Volker Braun.
+
+* We closed 4 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-6.1.1/tickets.html
+
+Merged in sage-6.1.1:
+
+#15693: Punarbasu Purkayastha: Remove simplify_radical() from the doc of simplify_full() and full_simplify() [Reviewed by Karl-Dieter Crisman]
+#15743: Jeroen Demeyer: Document cancel_alarm() in alarm() [Reviewed by Marc Mezzarobba]
+#15778: Punarbasu Purkayastha: Fix broken mathjax in sagenb [Reviewed by Jeroen Demeyer]
+#15783: John Palmieri: Update README.txt for OS X Mavericks [Reviewed by Michael Welsh]

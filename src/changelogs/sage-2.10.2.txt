@@ -1,0 +1,364 @@
+﻿Hello folks,
+
+Sage 2.10.2 has been released on February 23nd, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+You can also drop by in #sage-devel or #sage-support infreenode.
+
+We have closed the Google Groups sage-newbie and sage-forum so 
+that we can deal with support questions in sage-support only. We 
+decided to close those two groups since we had various inquiries 
+left unanswered due to people posting to the wrong group.
+
+---------------------------------------------------------------------
+
+The following 35 people contributed to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Jen Balakrishnan
+ * Karim Belabas
+ * Jonathan Bober
+ * Tom Boothby
+ * Robert Bradshaw
+ * Nils Bruin
+ * Craig Citro
+ * John Cremona
+ * Burcin Erocal
+ * Gary Furnish
+ * Alex Ghitza
+ * Rob Gross
+ * Jason Grout
+ * John Hanke
+ * Mike Hansen
+ * David Harvey
+ * Peter Jipsen
+ * David Joyner
+ * Kiran Kedlaya
+ * Robert Miller
+ * Kate Minola
+ * Joel Mohler
+ * Bobby Moretti
+ * Willem Jan Palenstijn
+ * Clement Pernet
+ * David Roe
+ * Jaap Spies
+ * William Stein
+ * John Voight
+ * Justin Walker
+ * Carl Witty
+ 
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * John Voight's fast new code for enumeration of totally 
+   real fields is now included.
+
+ * David Roe's code for unramified and Eisenstein extensions 
+   of Qp and Zp is now included. 
+
+ * Clement Pernet, Burcin Erocal and William Stein have implemented
+   an optimized p-adic/modular algorithm for computing Hermite
+   normal forms of matrices over the integers.  For random square
+   nonsingular matrices with small entries it is similar to Magma
+   in speed, and vastly faster than the implementations in Gap,
+   NTL, and PARI.  For matrices with large entries (e.g., 16 bits
+   or more), it is faster than anything else in the world.
+   For nonsquare matrices it is also reasonably good, though more
+   optimization is needed since Magma is much better in some cases.
+   We also implemented related code for computing determinants
+   over QQ and ZZ, which is again the fastest in the world 
+   especially when the matrix entries are large.  The main
+   reasons for the speed of our implementation are (1) IML is fast,
+   and (2) we found some tricks that are not in the literature.
+
+ * Tim Abbott and Michael Abshoff worked on the Debianization of 
+   the build process. Due to a lot of work done by Project Athena 
+   at MIT Tim Abbott contributed many build scripts for chroot 
+   environments. He also contributed build scripts for nearly 
+   all of the SPKGs not yet in Debian. Michael Abshoff did set 
+   up a test build server and while it has been shut down for 
+   now the Sage project will set up another 64 bit build server 
+   in the near future top provide Debian packages for a wide 
+   variety of Debian based distributions.
+
+ * Graph Theory: Robert Miller has implemented edge-labeled graph
+   isomorphism, and eliminated many bugs in the main backtrack algorithm.
+   He also made a few minor optimizations, and added an option which
+   visualizes the structure that is searched during the running of the
+   algorithm. This should make it easier to see what the algorithm is
+   actually doing. Jason Grout refereed, and found another bug in the
+   process, which has also been fixed.  Also every permutation
+   of every graph on seven or fewer vertices has been verified to 
+   give correct output.
+
+ * Assorted bug and build fixes all over the map.
+
+* Known Issues with 2.10.2:
+
+ * None
+
+* Bug Statistics
+
+We closed 156 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-2.10.2
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 2.10.3, chaired by Michael Abshoff and 
+Robert Miller. The release is planned post Sage Days 8, but 
+details are sketchy at the moment. Potential features include:
+
+ * OSX 10.5 support in 64 bit mode [this will depend on fixing
+   a vexing segfault in libSingular and getting disutils to
+   play nice with numpy]
+ * gcc 4.3 support out of the box
+ * FreeBSD support out of the box
+ * Improved experimental Solaris support
+
+* Doctesting Coverage
+
+For 2.10.1 we had:
+Overall weighted coverage score:  38.3%
+Total number of functions:  18290
+
+We increased coverage by 1.8% in 2.10.2 while adding 238 functions:
+
+Overall weighted coverage score:  40.1%
+Total number of functions:  18528
+
+* Closed Tickets:
+
+Merged in final:
+
+#2257: Craig Citro: re-fix doctest failures for 2.10.2.rc0 in 
+       sage/rings/number_field/
+#2259: David Roe: Fix doctest in pow_computer
+#2261: Michael Abshoff: setup.py: Don't add empty Debian 
+       directory to scripts section
+#2263: Michael Abshoff: numerical noise doctest failure in 
+       calculus/calculus.py
+#2264: Michael Abshoff: 2.rc0: numerical noise doctest failure 
+       in rings/real_rqdf.pyx
+#2267: Michael Abshoff: Sage 2.10.2: fix latex errors when 
+       generating the documentation
+
+Merged in rc0:
+
+#1946: John Cremona, William Stein: Tate's algorithm has 
+       NO DOCTESTS! /schemes/elliptic_curves/ell_number_field.py
+#2049: William Stein: symbolic matrix exp
+#2075: William Stein, Martin Albrecht: very serious bug in 
+       modules over QQ[x] -- they shouldn't "work"
+#2223: David Joyner: bessel_J -- precision errors
+#2224: William Stein: strange show doctest bug in group.pyx
+#2225: William Stein: sage-2.10.2.alpha1 -- genus2reduction is 
+       now completely broken
+#2226: William Stein: sage-2.10.2.alpha1 -- integral is now wrong 
+       (imho) for polynomials
+#2230: William Stein: sage-2.10.2.alpha1 -- linear algebra hash 
+       not implemented
+#2246: William Stein: sage-2.10.2.alpha2: special.py -- fix it 
+       and several bugs etc
+#2247: Craig Citro: comment out long doctest in totallyreal_rel.py
+#2248: Michael Abshoff: sage-2.10.2.alpha2: multi_polynomial.pyx 
+       doctest failure
+#2249: William Stein: comments to indicate in docstrings that 
+       log is not finished in some cases for p-adics
+#2250: Robert Bradshaw: elliptic_curves/monsky_washnitzer.py 
+       doctest failure with -long
+#2251: Craig Citro: rings/number_field/number_field.py doctest 
+       failure
+#2252: Craig Citro: rings/number_field/number_field_ideal.py 
+       failure
+#2253: William Stein: timeit doctests not robust enough
+
+Merged in alpha2:
+
+#1961: Robert Miller: Fix graph_isom bug
+#2186: Robert Miller: verbosity for graph_isom - visualize the 
+       tree that is traversed during search
+#2211: Robert Miller: another segfault issue in graph_isom
+#2213: Robert Miller: misc graph theory fixes
+#2218: Mike Hansen: assuming an expression is not equal to 
+       another expression doesn't work
+#2221: Gary Furnish: Silent failure of sage-env
+#2227: William Stein, Michael Abshoff: doctest broken in 
+       sageinspect.py because I added a new option
+#2228: William Stein, Michael Abshoff: fractional ideal doctest 
+       failure -- output is equivalent
+#2229: Craig Citro: breakage in new totally_rel.py
+#2231: Mike Hansen, William Stein: doctest failure in 
+       partition_algebra.py
+#2233: Willem Jan Palenstijn: "valuation too large" in padics 
+       on 64bit
+#2234: Martin Albrecht: typo fix in doctest
+#2236: Jason Grout: plot randomizes the endpoints of the interval 
+       and causes wiggling in the graph
+#2238: William Stein, Alex Ghitza: doctest failure in const.tex
+
+Merged in alpha1:
+
+#174: William Stein: Implement a modular Hermite Normal Form 
+      algorithm
+#506: William Stein: add %timeit support to the notebook
+#521: David Harvey, Alex Ghitza: increase the doctest coverage for 
+      schemes/elliptic_curves/monsky_washnitzer.py
+#1116: Michael Abshoff: sage -sdist recreates certain empty files 
+       in $SAGE_LOCAL/bin
+#1130: John Cremona, Nick Alexander: point counting for elliptic 
+       curves over non-prime finite fields
+#1171: Robert Bradshaw: _new() method for quadratic field elements
+#1304: Robert Miller: edge-labeled graph isomorphism
+#1601: Rob Gross, Michael Abshoff: issue with noclobber and  
+       building sage
+#1651: David Joyner: bug in decode
+#1857: David Joyner: examples of parametric surfaces in 3d
+#1971: Jason Grout: notebook/jsmath -- make an optional spkg with 
+       the image fonts
+#1987: Nils Bruin: "forall" and "exists" need pointers in docstring 
+       to "all" and "any
+#2004: David Harvey: padic_height_via_multiply
+#2041: Alex Ghitza: tutorial: long lines in verbatim environments 
+       get cut off in pdf file
+#2063: William Stein: sage -q is broken
+#2079: Robert Bradshaw: /= does not work for univariate polynomials
+#2085: Robert Miller: bug in graph_isom and binary_code
+#2089: Martin Albrecht: major finite field printing bug
+#2107: Clement Pernet, Michael Abshoff: serious malloc problem 
+       triggered by Hecke operator computation
+#2126: Alex Ghitza: small fixes to eisenstein_series_qexp()
+#2127: Clement Pernet: Mod n determinant and LinBox/FFPACK
+#2128: Kate Minola, Alex Ghitza: bug in random_prime
+#2133: Alex Ghitza: running dimension_modular_forms on weight 0  
+       should return 1 (trivial to fix)
+#2146: Burcin Erocal: PolyBoRi random_element is broken
+#2172: Michael Abshoff: sage -sdist loses debian build infrastructure
+#2176: Tim Abbott: debianize tachyon.spkg
+#2177: Tim Abbott: debianized jmol.spkg
+#2178: Carl Witty: latex2html does not like $+$
+#2182: Jason Grout: undefined symbol: gzopen64 when starting the 
+       notebook()
+#2183: David Joyner: scipy and special functions, better doctesting
+#2184: Robert Miller: readjust xmin...ymax for plotting digraphs 
+       with arrows
+#2185: Robert Miller: improvement to plotting digraphs with fixed 
+       heights
+#2187: Carl Witty: improve refman autogeneration; add and rewrite 
+       much reference manual text
+#2190: William Stein: implement a ZZ-module saturation algorithm: 
+       this is the key thing needed to compute kernels over ZZ, etc.
+#2191: Tim Abbott: Debianize gfan spkg
+#2193: Burcin Erocal: doctest framework should check for keywords 
+       only in comments
+#2194: Carl Witty, William Stein: Elliptic curves over QQbar: point 
+       creation fails
+#2196: John Cremona: Elliptic Curve quadratic/quartic/sextic twists: 
+       unhelpful error message when D=0
+#2201: Craig Citro: doctest failure: number_field.py
+#2202: Tim Abbott: Debianize rubiks spkg
+#2204: William Stein, Michael Abshoff, Karim Belabas: Integrate 
+       Karim Belabas's HNF bug fix for pari, add 64 bit OSX support 
+       for pari.spkg
+
+Merged in alpha0:
+
+#1014: Alex Ghitza: there should be an Integer.number_of_digits() 
+       function
+#1085: John Voight, Craig Citro: code for enumerating totally real 
+       fields
+#1366: Bobby Moretti: speed up "sage -br" - cache the dependency 
+       diagram instead of computing it every time
+#1371: John Hanke: hg_sage.pull/push() to non-default server with 
+       multiple branches
+#1413: Joel Mohler: added _sig_on/_sig_off to mpolynomial_libsingular
+#1714: Martin Albrecht: allow keyword arguments for remote sage 
+       methods (sage0)
+#1793: Martin Albrecht: Hilbert series, Hilbert polynomial, Laurent 
+       series expansion
+#1824: Martin Albrecht: *huge* memory leak in PolyBoRi iteratiors
+#1908: Jason Grout: Make it so that show plots a list as a grid
+#1927: Mike Hansen: dots in symbolic variable names should not be 
+       allowed, etc.
+#1963: David Roe: unramified and eisenstein extensions [Credit also 
+       goes to Craig Citro, Kiran Kedlaya, Robert Bradshaw, Jen 
+       Balakrishnan, Nick Alexander for extensive review and bug 
+       fixes, especially during Bug Day 7]
+#2003: Justin Walker, Michael Abshoff: gnutls configure script finds 
+       local copy of guile when it shouldn't
+#2032: William Stein: bug in bundle script for sage hg repo
+#2036: Jason Grout: maxima is off by -1 with its charpoly
+#2046: Carl Witty: save(srange(3), './foo') fails
+#2047: Carl Witty: new fast float evaluation framework does not 
+       work with multivariate polynomials
+#2051: Martin Albrecht: added documentation for parameters of 
+       groebner_basis method of boolean ideals
+#2053: William Stein: creating symbolic matrices is insanely slow
+#2055: Martin Albrecht: MPolynomialRing(BooleanPolynomial)
+#2056: Peter Jipsen: 3d graphics examples: include two very nice 
+       examples in the sage docstrings
+#2057: William Stein: followup to #1983 -- 0^0 for 0 a rational
+#2068: Michael Abshoff: zlib -- not picking up the right zlib when 
+       building libpng
+#2073: Willam Stein, Mike Hansen: calculus -- get doctest coverage 
+       above 50%
+#2074: Tom Boothby: PermutationGroupElement constructor bug.
+#2077: Jason Grout: matrix.column(i) should throw error when i is 
+       larger than the number of columns in the matrix (minus 1).
+#2080: William Stein: notebook -- create eval_asap cells; fix bug 
+       in checkbox functionality
+#2081: Mike Hansen: Add .coefficients() and .exponents() to 
+       univariate polynomials and power series
+#2082: Robert Miller: plot loops
+#2083: Nick Alexander: Make number_field .galois_closure require 
+       a name and .galois_conjugates take an explicit field.
+#2097: Bobby Moretti, Carl Witty: aspect_ratio option to show() for 
+       function plots does not work correctly
+#2098: Tim Abbott: rudimentary debian package build support
+#2101: Tim Abbott: debianize various spkgs
+#2104: Tim Abbott: missing dependency: lcalc on mpfr
+#2111: Martin Albrecht: Gröbner bases over any field
+#2112: Mike Hansen: __contains__ sometimes fails with SR elements 
+       due to == returning an equation
+#2115: Mike Hansen: add native python implementation of multiset 
+       combinations
+#2116: Jason Grout: is package installed function
+#2123: Craig Citro: bug in modular symbols setting sign on subspace
+#2124: Craig Citro: minor bug in f.root_field()
+#2125: Jonathan Bober: bober's name is spelled wrong
+#2132: Carl Witty, Michael Abshoff: disable "padlock" support in 
+       libgcrypt
+#2134: Robert Miller: arrows for digraphs
+#2139: Mike Hansen: set partitions iterator not working
+#2140: Nick Alexander: enhance search_src and add search_def for 
+       easier source navigating.
+#2144: Robert Bradshaw: hex constants do not work as expected
+#2147: Nick Alexander:  Make default cyclotomic polynomial be 
+       defined over ZZ.
+#2156: Robert Bradshaw: update cython to 0.9.6.12 release
+#2158: Jaap Spies: Fix some typos in matrix/matrix2.pyx
+#2160: Jaap Spies: leftovers from python to cython translation
+#2161: Joel Mohler: some speed improvements for mpolynomials over ZZ
+#2162: William Stein: pari stack -- ability to resize at runtime
+#2164: Mike Hansen: add fast iterator for partitions
+#2166: Michael Abshoff: matrix/matrix_symbolic_dense.pyx doctest 
+       failure
+#2168: Mike Hansen: add native implementation for PartitionTuples
+#2169: William Stein: magma <--> sage conversions: first step to 
+       more systematic conversions back and forth

@@ -1,0 +1,42 @@
+﻿Hello folks,
+
+Sage 3.0.5 was released on July 11th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 3 people contributes to the Sage 3.0.5 release:
+
+ * Michael Abshoff
+ * Robert Bradshaw
+ * William Stein
+
+Sage 3.0.5 was a stabilization release that due to a bug introduced in 
+#3634 was never officially announced on the list. It is superseded by 
+the 3.0.6 release.
+
+Cheers,
+
+Michael Abshoff (release Manager), William Stein
+
+Merged in Sage 3.0.5.final:
+
+#2007: William Stein: the R spkg contains precompiled java files 
+       [Reviewed by Michael Abshoff]
+#2017: William Stein: singular includes surfex as a precompiled binary. 
+       Remove it. [Reviewed by Michael Abshoff]
+#2303: Michael Abshoff: bessel_I(1,1,"scipy") segfaults with gcc 4.2.3 
+       on Linux x86 [Reviewed by William Stein]
+#3634: Robert Bradshaw: minpoly still slow for elements of finite fields 
+       [Reviewed by William Stein]
+#3642: Michael Abshoff: Append R's lib directory to LD_LIBRARY_PATH in 
+       sage-env) [Reviewed by William Stein]

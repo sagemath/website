@@ -1,0 +1,336 @@
+﻿Sage 5.13 was released on 15 December 2013. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 94 people contributed to this release. Of those, 16 made
+their first contribution to Sage:
+
+  - Adam Towsley
+  - Adriana Salerno
+  - Alexander Dreyer
+  - Alexandre Casamayou
+  - Alex Csar
+  - Aly Deines
+  - Amritanshu Prasad
+  - Andrew Mathas
+  - Anne Schilling
+  - Benjamin Hutz
+  - Benjamin Jones
+  - Beth Malmskog
+  - Birk Eisermann
+  - Brant Jones
+  - Burcin Erocal
+  - Christelle Vincent
+  - Chris Wuthrich
+  - Clemens Heuberger [first contribution]
+  - Daniel Krenn
+  - Darij Grinberg
+  - David Coudert
+  - David Loeffler
+  - David Roe
+  - Davis Shurbert
+  - Dmitrii Pasechnik
+  - Emmanuel Charpentier
+  - Eric Larson
+  - Ethan Van Andel
+  - Eviatar Bach
+  - Felix Salfelder [first contribution]
+  - Florian Bouyer
+  - Frédéric Chapoton
+  - Fredrik Stromberg
+  - Frithjof Schulze
+  - Han Frederic [first contribution]
+  - Isabel Vogt [first contribution]
+  - Ivan Andrus
+  - Jean-Philippe Labbé
+  - Jean-Pierre Flori
+  - Jenny Cooley
+  - Jeroen Demeyer
+  - Joao Alberto de Faria [first contribution]
+  - Johan Sebastian Rosenkilde Nielsen
+  - John Cremona
+  - John Palmieri
+  - Jonathan Hayase [first contribution]
+  - Joris Vankerschaver
+  - Julian Rueth
+  - Karl-Dieter Crisman
+  - Kevin Dilks
+  - Kimi Tsukazaki [first contribution]
+  - Lassina Dembele [first contribution]
+  - Leif Leonhardy
+  - Luca De Feo
+  - Luis Felipe Tabera Alonso
+  - Marc Mezzarobba
+  - Marco Streng
+  - Martin Albrecht
+  - Mathias  Meulien [first contribution]
+  - Matthieu Deneufchâtel [first contribution]
+  - Michael Orlitzky
+  - Miguel Marco
+  - Mike Zabrocki
+  - Mikhail Malakhaltsev [first contribution]
+  - Minh Van Nguyen
+  - Nathann Cohen
+  - Nicolas Borie
+  - Nicolas M. Thiéry
+  - Nico Van Cleemput
+  - Nils Bruin
+  - Paul Fili [first contribution]
+  - Paul Zimmermann
+  - Peter Bruin
+  - Punarbasu Purkayastha
+  - R. Andrew Ohana
+  - Robert Bradshaw
+  - Robert Pollak [first contribution]
+  - Samuele Anni [first contribution]
+  - Sara Kropf [first contribution]
+  - Sébastien Labbé
+  - Simon King
+  - Stefan van Zwam
+  - Syed Ahmad Lavasani [first contribution]
+  - Thierry Dumont
+  - Thierry Monteil
+  - Thomas Feulner
+  - Tobias Weich
+  - Tomer Bauer
+  - Travis Scrimshaw
+  - Ursula Whitcher
+  - Vincent Delecroix
+  - Volker Braun
+  - Xavier Caruso
+  - Zafeirakis Zafeirakopoulos
+
+* Release manager: Jeroen Demeyer.
+
+* We closed 186 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-5.13/tickets.html
+
+Closed tickets:
+
+#7767: PARI thinks C compiler is broken on Open Solaris. [Reviewed by Jeroen Demeyer]
+#9300: update french version of tutorial [Reviewed by Nathann Cohen]
+#9348: Building pari with -O1 rather than -O3 [Reviewed by Peter Bruin]
+#9899: PARI/GP (2.4.3-svn) self-test fails after self-tuning on Pentium 4 Prescott [Reviewed by Jeroen Demeyer]
+#11123: Plot connects parts of function over non-domain area [Reviewed by Karl-Dieter Crisman, Robert Pollak]
+#11135: Crashes when constructing algebraic numbers using Matrix.eigenvectors [Reviewed by Johan Sebastian Rosenkilde Nielsen]
+#11240: Update database_cremona_ellcurve spkg [Reviewed by Frédéric Chapoton]
+#11345: Period method for quadratic irrationals [Reviewed by Benjamin Jones, Vincent Delecroix]
+#11518: Make Latte Machiatto an experimental package [Reviewed by Zafeirakis Zafeirakopoulos]
+#13136: The Equivalence of Linear Codes [Reviewed by Frédéric Chapoton]
+#13263: matrix() for elements in quotients of polynomial ring broken over inexact rings [Reviewed by Julian Rueth, Travis Scrimshaw]
+#14317: Add FFT stuff in sage/gsl to reference manual [Reviewed by Frédéric Chapoton]
+#14908: Two small issues with make micro_release [Reviewed by Marc Mezzarobba, Volker Braun]
+#15120: Fix doctest doctests in git layout. [Reviewed by Robert Bradshaw, Volker Braun]
+#15135: unicode box "open your browser" and cleanup of sage/server/misc.py [Reviewed by Frédéric Chapoton]
+#15173: Can not save graph plots to pdf file [Reviewed by Punarbasu Purkayastha]
+#15182: duplicate declaration of stackdummy() in sage/libs/pari/decl.pxi [Reviewed by Peter Bruin, Jeroen Demeyer]
+#13060: Jean-Pierre Flori: Update Valgrind spkg to version 3.8.1 [Reviewed by Volker Braun]
+#15261: Karl-Dieter Crisman: Fix brian optional spkg for new workflow [Reviewed by Volker Braun]
+#7206: doctest failure in groups/perm_gps/permgroup.py [Reviewed by Frédéric Chapoton]
+#11426: point3d needs to accept single vectors, not just lists of them [Reviewed by Punarbasu Purkayastha]
+#12863: Roots of polynomial dies with PariError: division by zero (27) [Reviewed by Peter Bruin]
+#13817: Add documentation about how to use Type-1 fonts in graphics [Reviewed by Punarbasu Purkayastha]
+#15096: corrupted documentation (global fix) [Reviewed by Paul Zimmermann, Minh Van Nguyen]
+#15197: Robert Bradshaw: Update patchbot to handle git repo [Reviewed by Volker Braun]
+#15258: The "Brian" optional spkg must be updated for the new git directory layout [Reviewed by Volker Braun]
+#15259: (v,4,1)-BIBD, Latin Squares and Orthogonal arrays [Reviewed by Nathann Cohen]
+#15314: density_plot does not handle aspect_ratio [Reviewed by Punarbasu Purkayastha]
+#15321: Function changes behaviour, related to polynomial rings [Reviewed by Nils Bruin]
+#3423: Make Pari error messages more informative [Reviewed by Jeroen Demeyer]
+#12403: calculating elliptic curve order gives pari error [Reviewed by Jeroen Demeyer]
+#12690: Signal handling doesn't properly handle OpenMP code [Reviewed by Jeroen Demeyer]
+#15080: Volker Braun: Build also wide version of ncurses [Reviewed by Jean-Pierre Flori]
+#15362: regression in simplify_full [Reviewed by Paul Zimmermann, Karl-Dieter Crisman]
+#7024: Flint ignores CC and CXX. [Reviewed by R. Andrew Ohana, Leif Leonhardy]
+#14812: p-adic root finding broken (mathematically incorrect answer) [Reviewed by Jeroen Demeyer]
+#15073: Nico Van Cleemput: Wrong program name in license section of SPKG.txt for the buckygen package [Reviewed by Nathann Cohen]
+#15370: Ivan Andrus: fix sage_mode optional spkg for git transition [Reviewed by Volker Braun]
+#15416: Robert Bradshaw: Upgrade patchbot [Reviewed by Volker Braun]
+#15424: A coercion-related memory leak [Reviewed by Simon King]
+#4950: Sage-3.2.3 won't build on mandriva 32-bit due to an issue with numpy [Reviewed by Jeroen Demeyer]
+#6793: fix doctest timeout in schemes/elliptic_curves/ell_point.py due to upgrade to Maxima 5.19.0 [Reviewed by Jeroen Demeyer]
+#6797: doctest failure in sage/sage/groups/perm_gps/cubegroup.py due to upgrade to Maxima 5.19.1 [Reviewed by Jeroen Demeyer]
+#6798: fix doctest timeout in modules/vector_double_dense.pyx [Reviewed by Jeroen Demeyer]
+#14744: Coercion problem for polyhedra [Reviewed by Volker Braun]
+#15141: typo in discrete_log_rho [Reviewed by Nathann Cohen]
+#15359: Segmentation fault when accessing documentation. [Reviewed by Frithjof Schulze]
+#15452: Fix latex representation bug in operation table [Reviewed by Luca De Feo]
+#6799: Speed up symbolic comparison [Reviewed by Jeroen Demeyer]
+#14792: source deleted after package build [Reviewed by Felix Salfelder]
+
+Merged in sage-5.13.beta0:
+
+#6341: Florian Bouyer, Marco Streng: implement Mestre's algorithm for constructing genus 2 hyperelliptic curves [Reviewed by Lassina Dembele, Fredrik Stromberg, Aly Deines]
+#8388: Vincent Delecroix: pickle the paths of Rauzy diagrams [Reviewed by Frédéric Chapoton, Nathann Cohen]
+#11273: Ethan Van Andel: Riemann Enhancements: Docs, Exterior, Multiple Spiderweb, Error Testing [Reviewed by Burcin Erocal, Karl-Dieter Crisman]
+#11688: Frédéric Chapoton: graded modules : an example and new element methods [Reviewed by Travis Scrimshaw]
+#13615: Kimi Tsukazaki, John Cremona, Luca De Feo: Extend elliptic curve isogenies to arbitrary prime degrees [Reviewed by John Cremona, Jenny Cooley, Samuele Anni, Luca De Feo]
+#13838: Travis Scrimshaw: Implementation of virtual Klebers algorithm [Reviewed by Anne Schilling]
+#14117: Darij Grinberg: Jordan normal form not computed for nilpotent matrix over rational function field / polynomials cannot be factored over rational function field [Reviewed by Luis Felipe Tabera Alonso, Travis Scrimshaw]
+#14269: David Loeffler: Ray class numbers for ideals [Reviewed by Frédéric Chapoton]
+#14476: Chris Wuthrich: non-integral models can cause a bug in local_data for elliptic curves over number fields [Reviewed by Frédéric Chapoton, John Cremona]
+#14791: Davis Shurbert: Named finitely presented groups [Reviewed by Volker Braun, Travis Scrimshaw]
+#14875: Travis Scrimshaw: Remove CombinatorialClass from DyckWords [Reviewed by Darij Grinberg]
+#14880: Beth Malmskog, Adriana Salerno, Christelle Vincent, Ursula Whitcher: Compute the p-adic Gamma function [Reviewed by Volker Braun]
+#14888: Peter Bruin, Jeroen Demeyer: Make FiniteField_pari_ffelt the default for generic finite fields [Reviewed by Jean-Pierre Flori, Jeroen Demeyer, Peter Bruin]
+#14898: Matthieu Deneufchâtel: Poincaré-Birkhoff-Witt and dual bases [Reviewed by Travis Scrimshaw]
+#14957: David Roe, Jean-Pierre Flori, Peter Bruin: Square-free decomposition and any_root for polynomials [Reviewed by Jean-Pierre Flori, Peter Bruin]
+#14958: David Roe, Jean-Pierre Flori, Peter Bruin: Implement pseudo-Conway polynomials [Reviewed by Jean-Pierre Flori, Peter Bruin]
+#14963: John Cremona: Add functionality for S-units to UnitGroup [Reviewed by Peter Bruin]
+#15029: Amritanshu Prasad: Implement similarity classes over principal ideal local rings of length two [Reviewed by Travis Scrimshaw]
+#15071: Eviatar Bach: Make it easy to have automatic numerical evaluation of symbolic functions on inexact input [Reviewed by Benjamin Jones]
+#15094: Darij Grinberg: QSym: internal coproduct, Frobenius, lambda-of-monomials, documentation fixes [Reviewed by Mike Zabrocki, Travis Scrimshaw]
+#15122: Darij Grinberg: Compositions: ribbon decomposition and minor improvements [Reviewed by Travis Scrimshaw]
+#15127: Frédéric Chapoton: cleanup of matchpoly.pyx [Reviewed by Nathann Cohen]
+#15142: Travis Scrimshaw: Changes to RSK [Reviewed by Anne Schilling, Darij Grinberg]
+#15143: Travis Scrimshaw: Improvements to SetPartitions [Reviewed by Darij Grinberg, Mike Zabrocki]
+#15151: Travis Scrimshaw: Implement residue functions for partitions [Reviewed by Darij Grinberg]
+#15170: Travis Scrimshaw: Implement to_symmetric_group_algebra for all bases of DescentAlgebra [Reviewed by Darij Grinberg]
+#15199: David Coudert: Change behavior of blocks_and_cuts_tree on biconnected graphs [Reviewed by Nathann Cohen]
+#15243: Jeroen Demeyer: Change algorithm for K.uniformizer(P) [Reviewed by John Cremona]
+#15250: Jeroen Demeyer: Upgrade PARI to 2.5.5 [Reviewed by Peter Bruin]
+
+Merged in sage-5.13.beta1:
+
+#8335: David Roe, Jean-Pierre Flori, Peter Bruin: Finite field lattices via Conway polynomials [Reviewed by Jean-Pierre Flori, Luca De Feo]
+#10589: Andrew Mathas: sage -fixdoctests doesn't work correctly [Reviewed by Travis Scrimshaw]
+#12170: Syed Ahmad Lavasani: Genus computation (using singular) and _singular_ object for function field [Reviewed by Dmitrii Pasechnik]
+#13106: Frédéric Chapoton: Use of bin_op in rings_pari_ring.py [Reviewed by Peter Bruin]
+#13283: Birk Eisermann: Tolerance Graphs (graph generators, etc.) [Reviewed by David Coudert]
+#13726: Thomas Feulner: The semimonomial group [Reviewed by Volker Braun]
+#14223: Punarbasu Purkayastha: Fix 3d plots to not ignore user prespecified aspect_ratio. [Reviewed by Tobias Weich]
+#14261: Brant Jones, Travis Scrimshaw, Andrew Mathas: Iwahori-Hecke algebra with several bases [Reviewed by Andrew Mathas, Brant Jones, Travis Scrimshaw]
+#14813: Davis Shurbert: Finitely generated abelian group presentations [Reviewed by Travis Scrimshaw]
+#14994: Davis Shurbert: Direct product for finitely presented groups [Reviewed by Travis Scrimshaw]
+#15076: Frédéric Chapoton: remove import of is_* in rings.all [Reviewed by Nathann Cohen]
+#15130: Stefan van Zwam: Docbuilder issue with BasisExchangeMatroid [Reviewed by Volker Braun]
+#15131: Darij Grinberg: QSym: the Hazewinkel Lambda basis [Reviewed by Travis Scrimshaw]
+#15164: Darij Grinberg: NSym (NCSF): Verschiebung, doc improvements, meet and join of compositions [Reviewed by Travis Scrimshaw]
+#15172: Dmitrii Pasechnik: update 4ti2 to version 1.6 [Reviewed by Volker Braun]
+#15212: Matthieu Deneufchâtel: Dual PBW basis for the shuffle algebra [Reviewed by Travis Scrimshaw]
+#15233: Tomer Bauer: Implement q-multinomial and combinat/q_analogues.py cleanup [Reviewed by Travis Scrimshaw]
+#15245: Darij Grinberg: Pfaffian of a skew-symmetric matrix [Reviewed by Travis Scrimshaw]
+#15257: Anne Schilling, Mike Zabrocki: Update of doctests for book on k-Schur functions [Reviewed by Anne Schilling, Mike Zabrocki]
+#15269: Darij Grinberg: Speeding up tableau's cells_containing and weight methods [Reviewed by Travis Scrimshaw]
+#15270: Volker Braun: ATLAS build failure on Solaris [Reviewed by Jean-Pierre Flori]
+#15277: Travis Scrimshaw: CartanMatrix to DynkinDiagram adds edges with zeros [Reviewed by Nicolas M. Thiéry, Frédéric Chapoton]
+#15279: Darij Grinberg: RootSystem __init__ builds the dual twice, breaking initialization of non-crystallographic root systems [Reviewed by Travis Scrimshaw]
+#15281: Punarbasu Purkayastha: allow LinearCode.weight_enumerator to take the variable names separately [Reviewed by Stefan van Zwam]
+
+Merged in sage-5.13.beta2:
+
+#864: Peter Bruin: Asymptotically slow PARI --> Python long conversions [Reviewed by Jeroen Demeyer]
+#9290: Travis Scrimshaw: Implement Coxeter groups in their geometric representation [Reviewed by Frédéric Chapoton]
+#10358: Thierry Monteil: New interface with OEIS [Reviewed by Nathann Cohen]
+#11409: Jeroen Demeyer: Remove old notebook files [Reviewed by Frédéric Chapoton, Punarbasu Purkayastha]
+#13214: Xavier Caruso, Peter Bruin: Finite field homomorphisms and Frobenius endomorphisms [Reviewed by Paul Zimmermann, Peter Bruin, Volker Braun]
+#13240: Alex Csar, Kevin Dilks, Frédéric Chapoton: Give posets polynomials (order, characteristic, zeta, etc.) [Reviewed by Darij Grinberg, Nathann Cohen]
+#13413: Jeroen Demeyer: Correct bug in symmetric functions caused by Symmetrica using integers longer than 32 bits [Reviewed by Mike Zabrocki]
+#14029: Jeroen Demeyer: Exit Sage ungracefully upon SIGQUIT [Reviewed by Peter Bruin]
+#14218: Benjamin Hutz: height and canonical height for projective points and morphisms [Reviewed by Joao Alberto de Faria, Adam Towsley]
+#14339: Mathias  Meulien, Paul Zimmermann: More doctests from the book "Calcul mathématique avec Sage"--Chap. "nonlinear" [Reviewed by Frédéric Chapoton]
+#14340: Marc Mezzarobba, Nicolas M. Thiéry, Paul Zimmermann: More doctests from the book "Calcul mathématique avec Sage"--Chap. "domaines" [Reviewed by Frédéric Chapoton]
+#14710: Jean-Pierre Flori: Update boehm_gc to 7.2d [Reviewed by Dmitrii Pasechnik, Jeroen Demeyer]
+#14915: Punarbasu Purkayastha: Add _sympy_ method to real_mpfr.pyx [Reviewed by Jeroen Demeyer]
+#15028: Davis Shurbert: More named finitely presented groups [Reviewed by Travis Scrimshaw]
+#15121: Frédéric Chapoton: a quick way to create trees [Reviewed by Travis Scrimshaw]
+#15195: Travis Scrimshaw: Family cardinality does not catch enough errors [Reviewed by Nathann Cohen]
+#15237: Travis Scrimshaw: Crystals using tableaux are not created if dot2tex installed but graphviz is not [Reviewed by Frédéric Chapoton]
+#15244: Jeroen Demeyer: sage -t outputs duplicate lines [Reviewed by David Roe]
+#15255: David Coudert: Assign correct name to GridGraph [Reviewed by Frédéric Chapoton]
+#15283: Darij Grinberg: Rowmotion and Panyushev orbits: iterators for orbits and better doc [Reviewed by Nathann Cohen]
+#15309: Travis Scrimshaw: Symmetric group algebra creating algebra generators using _element_constructor_ [Reviewed by Darij Grinberg]
+#15312: Mike Zabrocki: Fix use of freed memory in Symmetrica [Reviewed by Jeroen Demeyer]
+#15324: Stefan van Zwam: Docbuilder issue with LinearMatroid [Reviewed by Jeroen Demeyer]
+
+Merged in sage-5.13.beta3:
+
+#9640: Peter Bruin, Jeroen Demeyer: Change PARI error catching mechanism [Reviewed by Jeroen Demeyer, Peter Bruin]
+#10983: Alexandre Casamayou, Marc Mezzarobba, Paul Zimmermann: new doctest for french book about Sage [Reviewed by Dmitrii Pasechnik]
+#12083: Jean-Philippe Labbé: Add a TikZ-tex output method for 2d and 3d polytopes [Reviewed by Sébastien Labbé, Volker Braun]
+#13311: Jeroen Demeyer: alarm() doesn't work for Cython code [Reviewed by Peter Bruin]
+#13394: Simon King, Nils Bruin: Write a WeakValueDictionary with safer key removal [Reviewed by Nils Bruin, Simon King]
+#13429: Han Frederic: eval_line in giac interface [Reviewed by Volker Braun]
+#14296: Jeroen Demeyer: Force consistency of $LD and $AS with $CC [Reviewed by Leif Leonhardy, Jean-Pierre Flori]
+#14320: Thierry Dumont, Paul Zimmermann: More doctests from the book "Calcul mathématique avec Sage" [Reviewed by Frédéric Chapoton]
+#14998: Davis Shurbert: Semidirect product for finitely presented groups [Reviewed by Travis Scrimshaw]
+#15027: John Cremona, Jeroen Demeyer: Inconsistent primitive_root_of_unity for number fields [Reviewed by Peter Bruin]
+#15083: Paul Zimmermann: More doctests from the book "Calcul mathématique avec Sage"--Chap. "linalg" [Reviewed by Frédéric Chapoton]
+#15098: Frédéric Chapoton: remove import of is_* in matrix.all [Reviewed by Darij Grinberg]
+#15144: Isabel Vogt: Binary recurrence sequences [Reviewed by Eric Larson]
+#15210: Nicolas M. Thiéry: Fix latex for operation tables [Reviewed by Jeroen Demeyer]
+#15268: Jean-Pierre Flori: ncurses fails to build on Solaris/SPARC [Reviewed by Volker Braun]
+#15305: Travis Scrimshaw, Nicolas Borie: Allow natural morphism between tensor products [Reviewed by Nicolas Borie, Travis Scrimshaw]
+#15322: Darij Grinberg: Testing for antichains and chains in arbitrary posets [Reviewed by Nathann Cohen]
+#15327: Darij Grinberg: More minor tableau and skew_tableau optimizations, and moving out attacking_pairs [Reviewed by Travis Scrimshaw]
+#15337: Jeroen Demeyer: Speed up ulp() method of real_mpfr.pyx [Reviewed by Paul Zimmermann]
+#15347: Jeroen Demeyer: Delete yamanouchi.py [Reviewed by Travis Scrimshaw]
+#15363: Jeroen Demeyer: MPIR large numbers give a segmentation fault [Reviewed by Paul Zimmermann]
+#15373: Paul Fili: Implement global_height for Integers [Reviewed by Adam Towsley]
+#15377: Benjamin Hutz: improve documentation for projective normalize_coordinates [Reviewed by Travis Scrimshaw]
+#15388: Paul Fili, Adam Towsley: log of NaN in RealField and ComplexField results in infinite loop [Reviewed by Benjamin Hutz]
+#15397: Mike Zabrocki: Bug in product of Schur symmetric functions [Reviewed by Anne Schilling]
+
+Merged in sage-5.13.beta4:
+
+#10018: Jeroen Demeyer: Improve PARI's stack allocation [Reviewed by Peter Bruin]
+#13951: Peter Bruin, John Cremona: (non)archimedian_local_height broken for rational points on elliptic curves over Q [Reviewed by John Cremona, Peter Bruin]
+#14219: Benjamin Hutz: rational preperiodic points for projective morphisms [Reviewed by Vincent Delecroix, Adam Towsley]
+#14706: Emmanuel Charpentier, Jean-Pierre Flori: Upgrade R to version 3.0.2 [Reviewed by Leif Leonhardy, Karl-Dieter Crisman, Jeroen Demeyer, John Palmieri]
+#15169: Travis Scrimshaw: Bug in FreeAlgebra coercion with fields [Reviewed by Darij Grinberg]
+#15299: Jeroen Demeyer: Incorrect results for analytic Sha due to low precision [Reviewed by Peter Bruin]
+#15311: Travis Scrimshaw: Implement the classical Hall algebra and polynomials [Reviewed by Darij Grinberg]
+#15350: Darij Grinberg: Partitions, skew partitions and Sym: odds and ends [Reviewed by Travis Scrimshaw]
+#15376: Paul Fili: Projective Point global_height remove special case for ZZ [Reviewed by Adam Towsley]
+#15402: Jeroen Demeyer: PARI: add patch for exponential_integral_1() precision [Reviewed by Peter Bruin]
+#15434: John Cremona: elliptic curve isogenies: follow-up to #13615 [Reviewed by Volker Braun]
+
+Merged in sage-5.13.beta5:
+
+#8793: Frédéric Chapoton: clean up documentation of logic/boolformula.py [Reviewed by Volker Braun, Nathann Cohen]
+#9411: Aly Deines, John Cremona: Given points on an elliptic curve, this finds a LLL reduced ZZ-independent set [Reviewed by John Cremona, Paul Zimmermann, Frédéric Chapoton]
+#10132: Mikhail Malakhaltsev, Joris Vankerschaver: Parametrization of (metric) surfaces in 3D euclidean space [Reviewed by Vincent Delecroix]
+#11628: Peter Bruin: GF() arithmetic slower than IntegerModRing() [Reviewed by Jeroen Demeyer]
+#11868: Peter Bruin: PARI library interface broken by design [Reviewed by Jeroen Demeyer]
+#13848: Martin Albrecht: mq.SR: use deglex and polybori (if GF(2)) by default [Reviewed by Alexander Dreyer]
+#13849: Martin Albrecht: deprecate degrevlex when using PolyBoRi [Reviewed by Alexander Dreyer]
+#14410: Jean-Pierre Flori: Let ATLAS build shared libraries on Cygwin [Reviewed by Volker Braun, Jeroen Demeyer]
+#15078: Clemens Heuberger, Daniel Krenn, Sara Kropf: new module: finite state machines, automata, transducers [Reviewed by Volker Braun, Frédéric Chapoton, Vincent Delecroix, Darij Grinberg, Sébastien Labbé]
+#15079: Daniel Krenn: unique_round for RIF [Reviewed by Jeroen Demeyer]
+#15174: Darij Grinberg: Permutations and symmetric group algebra: Stopgap for #14885 and noninversions [Reviewed by Travis Scrimshaw]
+#15385: Frédéric Chapoton: cleanup of sage/combinat/matrices/hadamard [Reviewed by Nathann Cohen]
+#15453: Jeroen Demeyer: Wrap IML calls in sig_on() [Reviewed by Martin Albrecht]
+
+Merged in sage-5.13.rc0:
+
+#10093: Minh Van Nguyen, Jeroen Demeyer: clean up documentation of sage/misc/bitset.pyx [Reviewed by Nathann Cohen, David Coudert]
+#11934: Michael Orlitzky: Symbolic simplification error [Reviewed by Jeroen Demeyer]
+#13352: David Coudert, Jeroen Demeyer: Running time improvement of the bitset_len method [Reviewed by David Coudert]
+#15007: Jonathan Hayase: adding diff() and differentiate() aliases to polynomial rings for consistency [Reviewed by Jeroen Demeyer]
+#15150: Travis Scrimshaw: Implement NCSym [Reviewed by Mike Zabrocki, Darij Grinberg]
+#15301: Minh Van Nguyen: fix a link to PDF version of PREP tutorials [Reviewed by Jeroen Demeyer]
+#15392: Benjamin Hutz: Implement minimal model algorithm [Reviewed by Nils Bruin]
+#15422: Jeroen Demeyer: factorization of non-squarefree polynomials over the p-adics [Reviewed by Robert Bradshaw, David Roe]
+#15433: R. Andrew Ohana: Port to OSX 10.9 [Reviewed by Volker Braun]
+#15488: Jeroen Demeyer: Fix misplaced sig_on() inside try [Reviewed by Volker Braun]
+#15505: Miguel Marco: Braid Group construction misses some relations [Reviewed by Travis Scrimshaw]

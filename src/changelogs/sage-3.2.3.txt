@@ -1,0 +1,133 @@
+﻿Hello folks,
+
+Sage 3.2.3 was released on January 5th, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 83 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 17 people contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Arnaud Bergeron
+ * Robert Bradshaw
+ * Craig Citro
+ * Timothy Clemans
+ * John Cremona
+ * Dan Drake
+ * Alex Ghitza
+ * Marshall Hampton
+ * Mike Hansen
+ * Alexander Hupfer [first contribution]
+ * Kiran Kedlaya
+ * Robert Miller
+ * Jaap Spies
+ * William Stein
+ * Chris Swierczewski
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+See the Sage 3.2.3 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.2.3
+
+* Known Issues with 3.2.3:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+ * Building from source fails on OpenSUSE 11.1 64 bit. Please check 
+   http://trac.sagemath.org/sage_trac/ticket/4946
+
+* Bug Statistics
+
+We closed 40 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.2.3
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.2.4, chaired by Michael Abshoff. It will 
+be a release focusing on merging existing patches from trac in 
+preparation for the big docstring Sphinx conversion planned for Sage 3.3. 
+The release cycle will be on the short side, i.e. about 7 days are 
+planned.
+
+* Doctesting Coverage
+
+For 3.2.2 we had:
+
+Overall weighted coverage score:  64.2%
+Total number of functions:  22034
+
+We increased coverage by 0.1% in 3.2.3 while removing 52 functions:
+
+Overall weighted coverage score:  64.3%
+Total number of functions:  21982
+
+* Closed Tickets:
+
+Merged in Sage 3.2.3:
+
+#4843: Michael Abshoff: Fix readline related build problems on OpenSUSE 11.1 [Reviewed by William Stein]
+#4934: William Stein: matrix1.pyx reference related doctest crash on cicero [Reviewed by Michael Abshoff]
+#4939: William Stein: massive performance regression to primes_first_n [Reviewed by Craig Citro]
+
+Merged in Sage 3.2.3.final:
+
+#4870: Michael Abshoff: Sage 3.2.3: turn off FLINT test suite in the final build [Reviewed by William Stein]
+#4894: William Stein: save_session -- bug when saving %cython functions, etc. [Reviewed by William Stein]
+#4899: John Cremona: bug in sqrt(1) over GF(2^e) for e>15 [Reviewed by William Stein]
+#4929: Michael Abshoff: 3.2.3.rc0: remove sage/functions/elementary.py from files to build in the documentation [Reviewed by Kiran Kedlaya]
+#4930: Michael Abshoff: 3.2.3.rc0: Fix bug in ATLAS' spkg-install that breaks the install target for dynamic libs [Reviewed by William Stein]
+#4931: Michael Abshoff: Sage 3.2.3.final: Fix various Solaris 10 build issues in the Sage library [Reviewed by William Stein]
+
+Merged in Sage 3.2.3.rc0:
+
+#3640: Michael Abshoff: optional spkg polymake is broken with Sage 3.0.3/3.0.4 [Reviewed by Marshall Hampton]
+#3785: Michael Abshoff: upgrade atlas in sage to version 3.8.2 [Reviewed by William Stein]
+#3787: Michael Abshoff: make ATLAS use extended cpuid [Reviewed by William Stein]
+#4862: Michael Abshoff: macaulay2 optional spkg is broken with parallel make [Reviewed by William Stein]
+#4872: William Stein: use sage_native_execute for dvipng, clean up file handling [Reviewed by Arnaud Bergeron]
+#4879: Michael Abshoff: Update FLINT to 1.0.21 (latest 1.0.x upstream) [Reviewed by Jaap Spies]
+#4882: Michael Abshoff: macaulay2 related doctest failure in sage/rings/polynomial/multi_polynomial_ideal.py [Reviewed by Jaap Spies]
+#4885: William Stein, Mike Hansen: fix fallout from sloppy review of #4535 [Reviewed by Mike Hansen, William Stein]
+
+Merged in Sage 3.2.3.alpha0:
+
+#3237: Michael Abshoff: update ecm to 6.2.1 [Reviewed by Robert Miller]
+#3678: Alex Ghitza: fractional powers for polynomial variables bug [Reviewed by John Cremona]
+#4038: John Cremona: Problem in factor() and roots() for p-adic polynomials [Reviewed by Alex Ghitza]
+#4069: Alexander Hupfer: support "application shortcut" in chrome and gears [Reviewed by Timothy Clemans]
+#4218: Alex Ghitza: Extensions of Finite Fields don't work well [Reviewed by John Cremona]
+#4367: Robert Bradshaw: plot gamma bug [Reviewed by Michael Abshoff]
+#4494: Alex Ghitza: conjugate method returns error on ZZ matrix [Reviewed by John Cremona]
+#4671: William Stein, Mike Hansen: sage-3.2.1 startup time: do not import twisted on startup [Reviewed by Michael Abshoff]
+#4749: Chris Swierczewski: improve coercion of points between elliptic curves and reduction of points mod p [Reviewed by John Cremona]
+#4776: Martin Albrecht: random element of multivariate polynomial ring in one variable is totally broken [Reviewed by Alex Ghitza]
+#4812: Mike Hansen: matrix_plot is broken for matrices with "complicated" base rings [Reviewed by Dan Drake]
+#4814: William Stein: serious bug in Sage/GMP-ECM interface [Reviewed by Mike Hansen]
+#4826: Craig Citro: change return type of G.cusps() for G a congruence subgroup [Reviewed by John Cremona]
+#4845: Craig Citro: sage 3.2.2 crashes on startup when init.sage present [Reviewed by Michael Abshoff]
+#4842: Robert Bradshaw: Fix performance regression in eisenstein_submodule.py due to cyclotomic coercion [Reviewed by John Cremona]
+#4844: Michael Abshoff: Disable DSage doctests [Reviewed by Marshall Hampton]
+#4847: Michael Abshoff: Remove deadwood: sage/functions/elementary.py and sage/rings/interval.py [Reviewed by Marshall Hampton, William Stein]
+#4848: Michael Abshoff: Remove deadwood: sage/schemes/elliptic_curves/heegner.py [Reviewed by Marshall Hampton]
+#4853: Michael Abshoff: Sage 3.2.2: numerical noise in sage/rings/number_field/number_field_morphisms.pyx [Reviewed by Robert Miller]
+#4861: Michael Abshoff: Update FLINT to 1.0.20 (latest 1.0.x upstream) [Reviewed by Martin Albrecht]
+

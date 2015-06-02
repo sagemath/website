@@ -1,0 +1,403 @@
+﻿Sage 6.7 was released on 17 May 2015. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://doc.sagemath.org/html/en/installation/index.html
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 84 people contributed to this release. Of those, 9 made
+their first contribution to Sage:
+
+  - Aladin Virmaux
+  - Alex Ghitza
+  - André Apitzsch
+  - Andrey Novoseltsev
+  - Anne Schilling
+  - Ben Hutz
+  - Benjamin Hackl
+  - Ben Salisbury
+  - Bruno Grenet
+  - Buck Evan [first contribution]
+  - Chao Xu [first contribution]
+  - Christian Nassau
+  - Chris Wuthrich
+  - Clemens Heuberger
+  - Dan Bump
+  - Daniel Krenn
+  - Darij Grinberg
+  - David Coudert
+  - David Einstein [first contribution]
+  - David Loeffler
+  - David Lucas
+  - David Roe
+  - Dima Pasechnik
+  - Emily Gunawan
+  - Emmanuel Charpentier
+  - Eric Gourgoulhon
+  - Florent Hivert
+  - François Bissey
+  - Franco Saliola
+  - Frédéric Chapoton
+  - Grayson Jorgenson
+  - Grégory Châtel
+  - Han Xiao [first contribution]
+  - Hugh Thomas
+  - Ivan Andrus
+  - Jakob Kroeker
+  - James Propp [first contribution]
+  - Jan Keitel
+  - Jean-Philippe Labbé
+  - Jean-Pierre Flori
+  - Jernej Azarija
+  - Jeroen Demeyer
+  - Jessica Striker
+  - Johan Bosman
+  - Johan Sebastian Rosenkilde Nielsen
+  - John Cremona
+  - John Palmieri
+  - Jori Mäntysalo
+  - Josh Swanson [first contribution]
+  - Julien Puydt
+  - Karl-Dieter Crisman
+  - Leif Leonhardy
+  - Lloyd Kilford
+  - Marc Masdeu
+  - Marc Mezzarobba
+  - Martin Albrecht
+  - Martin Rubey
+  - Martin von Gagern
+  - Matthias Köppe [first contribution]
+  - Michael Orlitzky
+  - Miguel Marco
+  - Mike Hansen
+  - Mike Zabrocki
+  - Moritz Firsching
+  - Nadia Lafrenière [first contribution]
+  - Nathann Cohen
+  - Nicolas M. Thiéry
+  - Nils Bruin
+  - Peter Bruin
+  - Peter Wicks Stringfield [first contribution]
+  - Ralf Stephan
+  - R. Andrew Ohana
+  - Rudi Pendavingh
+  - Sara Kropf
+  - Sebastien Gouezel
+  - Sébastien Labbé
+  - Simon King
+  - Stefan van Zwam
+  - Steven Trogdon
+  - Thierry Monteil
+  - Travis Scrimshaw
+  - Vincent Delecroix
+  - Viviane Pons
+  - Volker Braun
+
+* Release manager: Volker Braun.
+
+* We closed 263 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-6.7/tickets.html
+
+Merged in sage-6.7.beta0:
+
+#8678: Nicolas M. Thiéry: Improvements for morphisms of ModulesWithBasis [Reviewed by Franco Saliola]
+#10846: Ralf Stephan: Conversion of PowerSeries -> SR bug [Reviewed by Volker Braun]
+#12051: Johan Bosman: LLL algorithm for matrices over QQ [Reviewed by John Cremona]
+#12446: Jeroen Demeyer: Introduce user_globals [Reviewed by Volker Braun]
+#12804: Vincent Delecroix: infinite loop in find method of a finite word [Reviewed by Sébastien Labbé]
+#14239: Martin von Gagern, Jeroen Demeyer: symbolic radical expression for algebraic number [Reviewed by Marc Mezzarobba, Jeroen Demeyer, Vincent Delecroix]
+#15110: Vincent Delecroix: Bug in matrix constructor [Reviewed by Travis Scrimshaw]
+#15415: Travis Scrimshaw: Add methods for plotting crystals and LS paths [Reviewed by Ben Salisbury]
+#15852: Ralf Stephan: uncouple Sequence from categories [Reviewed by Volker Braun]
+#15862: Josh Swanson, Jan Keitel, Darij Grinberg: Mutability of tableaux part I: lists of tuples instead of lists of lists [Reviewed by Travis Scrimshaw]
+#16866: Vincent Delecroix: Radical difference families [Reviewed by Nathann Cohen]
+#16935: Nadia Lafrenière: Faster palindromes function for the Words library [Reviewed by Sébastien Labbé]
+#17160: Nicolas M. Thiéry: Finitely generated axiom for (mutiplicative) magmas, semigroups, monoids, groups [Reviewed by Travis Scrimshaw]
+#17221: Clemens Heuberger: New method transducers.Recursion [Reviewed by Daniel Krenn, Sara Kropf]
+#17285: Vincent Delecroix: CIF is missing many functions [Reviewed by Jeroen Demeyer]
+#17294: Jeroen Demeyer: Add gcd to number field elements [Reviewed by Vincent Delecroix]
+#17562: Jeroen Demeyer: Implement and use get_unsafe()/set_unsafe() for vectors [Reviewed by Vincent Delecroix]
+#17689: Nathann Cohen: A tutorial on profiling in Sage [Reviewed by Thierry Monteil]
+#17730: Vincent Delecroix: Use Pari for is_cyclotomic() [Reviewed by Frédéric Chapoton]
+#17817: Peter Bruin: Error when taking resultant of polynomials over complicated base ring [Reviewed by Marc Mezzarobba]
+#17847: Jeroen Demeyer, Simon King: Cython: embed signatures in docstrings of Sage library code [Reviewed by Simon King, Jeroen Demeyer]
+#17860: Jeroen Demeyer: Auto-generate gen.pyx -- part 2 [Reviewed by Vincent Delecroix]
+#17874: Volker Braun: TeXlive + required packages install script [Reviewed by Steven Trogdon]
+#17907: Ben Hutz: Random failure in enum_projective_number_field [Reviewed by Volker Braun]
+#17953: Ralf Stephan: symbolic function args prevent forced conversion of result to numeric [Reviewed by Marc Mezzarobba]
+#17974: Peter Bruin: Fix conversion from PARI to multivariate polynomial rings [Reviewed by Vincent Delecroix]
+#18002: Nicolas M. Thiéry, Aladin Virmaux: Submonoids and subsemigroup defined by generators [Reviewed by Anne Schilling]
+#18007: Jeroen Demeyer: Move includes of interrupt.pxi to pyx files [Reviewed by Volker Braun]
+#18021: Emily Gunawan, Travis Scrimshaw: Add gyration orbit methods for AlternatingSignMatrix and AlternatingSignMatrices [Reviewed by Jessica Striker, Travis Scrimshaw, James Propp]
+#18032: Peter Wicks Stringfield, Volker Braun: Broken copy, plot in sandpile [Reviewed by Nathann Cohen]
+#18035: Vincent Delecroix: Handle more text options [Reviewed by Eric Gourgoulhon]
+#18037: Jeroen Demeyer: Use alarm() instead of interrupt_after_delay() in doctests [Reviewed by Peter Bruin]
+#18049: Jeroen Demeyer: Compute class/modular polynomials using PARI [Reviewed by Vincent Delecroix]
+#18050: Travis Scrimshaw: Implement dual equivalence graphs [Reviewed by Darij Grinberg]
+#18054: Bruno Grenet: Add is_finite method for the Symbolic Ring [Reviewed by Peter Bruin]
+#18065: Vincent Delecroix: .value() for all continued fractions [Reviewed by Marc Mezzarobba]
+#18067: Nathann Cohen: sage/graphs/graph.py: multigraph recognition in init fails [Reviewed by David Coudert]
+#18069: Marc Mezzarobba: Two bugs of sparse polynomials with interval coefficients [Reviewed by Jeroen Demeyer]
+#18080: Volker Braun: IPython pdf/print requires mistune [Reviewed by François Bissey]
+#18084: Jeroen Demeyer: Fix bad library uses of var() [Reviewed by Ralf Stephan, Karl-Dieter Crisman]
+#18093: Jeroen Demeyer: Improve deprecation doc [Reviewed by Nathann Cohen]
+#18095: Jeroen Demeyer: Use src/Makefile for building Sage [Reviewed by Marc Mezzarobba]
+#18096: Nils Bruin: Libsingular conversion of (signed?) int to sage might have a muisunderstanding about bitlength [Reviewed by Jeroen Demeyer]
+#18097: David Lucas: Parity check matrix-related methods [Reviewed by Vincent Delecroix]
+#18098: Ralf Stephan: improve constructions/calculus.rst on power series [Reviewed by Frédéric Chapoton]
+#18107: Johan Sebastian Rosenkilde Nielsen: The codes collection should describe how to import it as a real module [Reviewed by Nathann Cohen, Volker Braun]
+#18108: Jeroen Demeyer: Deprecate sage.rings.field [Reviewed by Ralf Stephan]
+#18110: Jeroen Demeyer: Improve "unable to convert string" error message [Reviewed by Karl-Dieter Crisman]
+#18113: Daniel Krenn: Warning for unstable/experimental code [Reviewed by Jeroen Demeyer, Karl-Dieter Crisman, Marc Mezzarobba]
+#18114: Daniel Krenn: Automaton: method to create a transducer out of it [Reviewed by Clemens Heuberger]
+#18115: Ivan Andrus: Add BackendEmacs so sage-mode can have it's own playground for typesetting output [Reviewed by Volker Braun]
+#18117: Johan Sebastian Rosenkilde Nielsen: Remove completely-not-functioning AG code implementation [Reviewed by Vincent Delecroix]
+#18120: Daniel Krenn: encourage developers to include a SEEALSO block in the documentation [Reviewed by Nathann Cohen]
+#18126: Nathann Cohen: Coin-OR CBC: new-style SPKG [Reviewed by David Coudert, Thierry Monteil, Vincent Delecroix]
+#18137: Nathann Cohen: Centrality betweenness in Sage [Reviewed by David Coudert]
+#18142: Jeroen Demeyer: Numpy: fix dependency checking of headers for Sage library code [Reviewed by François Bissey]
+#18145: Jeroen Demeyer: Cythonize optional extensions [Reviewed by François Bissey]
+#18148: Nathann Cohen: No lexicographic iterator over finite binary words [Reviewed by Vincent Delecroix]
+#18149: Nathann Cohen: Can add vertex to immutable graph once [Reviewed by David Coudert]
+#18151: David Coudert: Fix bug with hyperbolicity [Reviewed by Nathann Cohen]
+#18153: Vincent Delecroix: Handle conversion to infinity and int in libgap [Reviewed by Volker Braun]
+
+Merged in sage-6.7.beta1:
+
+#6837: Lloyd Kilford, Alex Ghitza, Peter Bruin: Implementation of twisting modular forms by Dirichlet characters [Reviewed by Chris Wuthrich]
+#10513: Simon King, Peter Bruin: Coercion and category framework for modules [Reviewed by Jean-Pierre Flori, Vincent Delecroix]
+#12949: David Loeffler: Better congruence testing for odd arithmetic subgroups [Reviewed by Vincent Delecroix]
+#13711: Vincent Delecroix: charpoly error on matrices with pi [Reviewed by Jeroen Demeyer]
+#15905: Volker Braun: altermundus links are dead [Reviewed by Marc Mezzarobba]
+#17240: Daniel Krenn: some rationals not in RIF (docu) [Reviewed by Thierry Monteil]
+#17540: Nathann Cohen: Poset.dimension [Reviewed by Dima Pasechnik]
+#17576: Peter Bruin: FreeModule.__contains__ is too lax in its test [Reviewed by Travis Scrimshaw]
+#17580: Ivan Andrus: Update sage_mode and fix autoload generation [Reviewed by Volker Braun]
+#17852: Vincent Delecroix: Cleanup in rings.arith and rings.integer [Reviewed by Jeroen Demeyer]
+#17855: Ben Hutz: create is_preperiodic function for points of projective space [Reviewed by Grayson Jorgenson]
+#17969: Jean-Philippe Labbé: A tutorial on How to draw polytope in Tikz [Reviewed by Frédéric Chapoton]
+#18008: Grayson Jorgenson: Periodic points for projective morphisms [Reviewed by Ben Hutz]
+#18030: Jeroen Demeyer: Clean-up stdsage.pxi includes [Reviewed by Peter Bruin]
+#18040: Peter Bruin: Minimal polynomials of matrices over SymbolicRing [Reviewed by Travis Scrimshaw]
+#18075: Jessica Striker: Add inversion number method to AlternatingSignMatrices [Reviewed by Darij Grinberg]
+#18140: Jeroen Demeyer: Remove some global imports from all.py files [Reviewed by Marc Mezzarobba]
+#18146: Karl-Dieter Crisman: typos in linear codes [Reviewed by Marc Mezzarobba]
+#18147: Jori Mäntysalo: Rank of int matrix, documentation typo [Reviewed by Frédéric Chapoton, Jeroen Demeyer]
+#18154: Jori Mäntysalo: Documentation of 'bound' in IntegerModRing.random_element() [Reviewed by Volker Braun]
+#18160: Volker Braun: IPython 3.1.0 [Reviewed by François Bissey]
+#18164: Marc Mezzarobba: Ref: add various missing modules to r/coding [Reviewed by Frédéric Chapoton]
+#18165: Marc Mezzarobba: Ref: add various missing modules to r/geometry [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#18171: Clemens Heuberger: Update reference HKW2014 [Reviewed by Marc Mezzarobba]
+#18174: Travis Scrimshaw: Generalize base class construction for functorial construction categories [Reviewed by Nicolas M. Thiéry]
+#18177: Jori Mäntysalo: Warning to Matrix.random() [Reviewed by Nathann Cohen]
+#18178: Dima Pasechnik: fixing is_planar doc [Reviewed by Nathann Cohen]
+#18179: Grégory Châtel: Random generation of Ordered rooted trees [Reviewed by Frédéric Chapoton]
+#18181: Jeroen Demeyer: Move IntegerListsLex._Iter out of IntegerListsLex [Reviewed by Vincent Delecroix]
+#18183: Frédéric Chapoton: Implement two matroid polytopes [Reviewed by Vincent Delecroix]
+#18184: Jeroen Demeyer: CombinatorialObject constructor should copy input [Reviewed by Vincent Delecroix]
+#18193: Grégory Châtel: Fix CompleteDyckWords_size behaviour for negative size [Reviewed by Darij Grinberg]
+#18200: Nathann Cohen: Caching canonical_label in IncidenceStructure.is_isomorphic [Reviewed by Vincent Delecroix]
+#18202: Volker Braun: Six requires setuptools [Reviewed by François Bissey]
+#18205: Volker Braun: mistune buggers up sage install [Reviewed by Darij Grinberg]
+#18206: Sara Kropf: transducers.Recursion: Improvement of the documentation [Reviewed by Clemens Heuberger]
+
+Merged in sage-6.7.beta2:
+
+#5332: Marc Mezzarobba, Vincent Delecroix: Convert MV polynomial constructors in multi_polynomial_ideal.py, category_object.py, etc [Reviewed by Vincent Delecroix, Marc Mezzarobba]
+#9787: Peter Bruin: lagrange_polynomial(algorithm='divided_difference') fails over finite fields [Reviewed by Miguel Marco, Vincent Delecroix]
+#11111: Florent Hivert, Franco Saliola, Nicolas M. Thiéry: More support for finite dimensional modules and algebras with basis [Reviewed by Franco Saliola, Nicolas M. Thiéry, Aladin Virmaux]
+#15047: Ralf Stephan: LaTeX typeseting of SR.wild should prefix $ with \ [Reviewed by Jan Keitel]
+#15846: Benjamin Hackl: Incorrect series expansion of zeta(s) at 1 [Reviewed by Ralf Stephan]
+#16836: Christian Nassau: __neg__ fails in CartesianProduct of CombinatorialFreeModule [Reviewed by Vincent Delecroix]
+#17464: Jernej Azarija: Computing the automorphism group of a graph with Bliss [Reviewed by Nathann Cohen]
+#17591: R. Andrew Ohana: remove gdmodule [Reviewed by Jeroen Demeyer]
+#17750: Nathann Cohen: Random failure in sage.graphs.genus.simple_connected_genus_backtracker.__dealloc__ [Reviewed by Volker Braun]
+#17821: Volker Braun: Refactor show() methods, rename to pretty_print [Reviewed by Andrey Novoseltsev]
+#17842: Jeroen Demeyer: Show tracebacks in unpickle_all() [Reviewed by Jan Keitel]
+#17927: Nathann Cohen: Discarded arguments in IntegerVector [Reviewed by Nicolas M. Thiéry]
+#17944: Travis Scrimshaw: Add more methods to root lattices [Reviewed by Frédéric Chapoton]
+#17962: Sebastien Gouezel: Fix sublinking issues [Reviewed by Jeroen Demeyer]
+#18004: Eric Gourgoulhon: Too small relative size of axes labels w.r.t. tick marks in 2D plots [Reviewed by Vincent Delecroix]
+#18024: Jan Keitel, Darij Grinberg: Mutability of tableaux part II: replacing CombinatorialObject by ClonableList [Reviewed by Josh Swanson, Travis Scrimshaw]
+#18132: Frédéric Chapoton: Method is_new for Tamari lattice intervals [Reviewed by Darij Grinberg, Grégory Châtel, Viviane Pons]
+#18157: Vincent Delecroix, Simon King: Random failure in coerce_action.pyx [Reviewed by Simon King]
+#18161: Marc Mezzarobba: Ref: add various missing modules to r/repl [Reviewed by Frédéric Chapoton]
+#18162: Marc Mezzarobba, Frédéric Chapoton: Ref: add various missing modules to r/plot* [Reviewed by Frédéric Chapoton, Marc Mezzarobba, Karl-Dieter Crisman]
+#18203: Jeroen Demeyer: Deprecate PARI functions [Reviewed by Ralf Stephan]
+#18208: Travis Scrimshaw: `AlternatingSignMatrices(3, use_monotone_triangles=False)` broken [Reviewed by Darij Grinberg]
+#18211: Vincent Delecroix: Computing Ehrhart polynomials with LattE [Reviewed by Matthias Köppe, Nathann Cohen]
+#18213: Vincent Delecroix: A lot of polytope constructors are broken [Reviewed by Nathann Cohen]
+#18215: Vincent Delecroix: Huge speed up for hash of quadratic number field elements [Reviewed by Nathann Cohen]
+#18218: Jan Keitel: Not completely merged: #15017 Symbolic spherical harmonic [Reviewed by Ralf Stephan]
+#18219: Dima Pasechnik: Not completely merged: #16847 LP-related typos [Reviewed by Clemens Heuberger]
+#18221: Travis Scrimshaw: x / 2 doesn't work for x generator of free Q-algebra [Reviewed by Nicolas M. Thiéry]
+#18233: Mike Zabrocki: default implementation of product_by_coercion in SymmetricFunctionAlgebra_generic [Reviewed by Darij Grinberg]
+#18235: Clemens Heuberger: Inconsistent indentation in module_list.py [Reviewed by Jeroen Demeyer]
+#18237: Ralf Stephan: upgrade to pynac-0.3.5 [Reviewed by Benjamin Hackl]
+#18238: Eric Gourgoulhon, Volker Braun: Options ignored in show() of 3D objects [Reviewed by Volker Braun, Karl-Dieter Crisman, Vincent Delecroix]
+#18239: Vincent Delecroix: Constructing Cayley graphs is slow [Reviewed by Nathann Cohen]
+#18241: Vincent Delecroix: Great speedup in polytopes construction with generic backend [Reviewed by Nathann Cohen]
+#18244: Vincent Delecroix: mysterious doctest failure on dyck_word.py [Reviewed by Benjamin Hackl]
+#18250: Nathann Cohen: G.triangles_count speedup [Reviewed by Vincent Delecroix]
+#18260: Nathann Cohen: DiGraph.centrality_betweeenness [Reviewed by David Coudert]
+#18262: Nathann Cohen: Make centrality_betweenness interruptible [Reviewed by David Coudert]
+
+Merged in sage-6.7.beta3:
+
+#2072: Marc Mezzarobba: Remove _neg_c_impl and _invert_c_impl from some classes. [Reviewed by Jeroen Demeyer]
+#9903: Marc Mezzarobba: is_prime should document proof flag [Reviewed by Vincent Delecroix]
+#11529: Florent Hivert: Rooted trees [Reviewed by Frédéric Chapoton, Darij Grinberg, Travis Scrimshaw]
+#17243: Grégory Châtel: connect bubble sort graph and permutahedron [Reviewed by Karl-Dieter Crisman, Vincent Delecroix]
+#17575: Travis Scrimshaw: Implement incidence algebra of a (finite) poset [Reviewed by Frédéric Chapoton]
+#17662: Vincent Delecroix: Evenly distributed sets [Reviewed by Nathann Cohen]
+#17682: Sebastien Gouezel: Generic filename extension for shared libraries [Reviewed by Jeroen Demeyer]
+#17760: Darij Grinberg: Doc fixes in combinat/species/generating_series.py [Reviewed by Martin Rubey]
+#17823: Volker Braun: Three.js optional package [Reviewed by François Bissey, Andrey Novoseltsev]
+#17932: Marc Mezzarobba: Ref: add various missing modules to r/misc [Reviewed by Julien Puydt, Jeroen Demeyer]
+#17971: Peter Bruin: Infinite recursion when taking a resultant over a complicated base ring [Reviewed by Vincent Delecroix]
+#18045: Nathann Cohen: Wrong result returned by is_planar on a given embedding [Reviewed by Vincent Delecroix]
+#18076: Vincent Delecroix, Jeroen Demeyer: Coercion for numpy types [Reviewed by Jeroen Demeyer, Vincent Delecroix]
+#18099: David Lucas, Johan Sebastian Rosenkilde Nielsen: Prepare linear_code for inheritance [Reviewed by Nathann Cohen, Vincent Delecroix]
+#18121: Jeroen Demeyer: Patch Cython with PyTypeObject members [Reviewed by Vincent Delecroix, Nils Bruin]
+#18169: Marc Mezzarobba: Ref: add various missing modules to r/*rings* [Reviewed by Vincent Delecroix]
+#18189: Marc Mezzarobba: real_roots.root_bounds: Inconsistent return types [Reviewed by Vincent Delecroix]
+#18194: Mike Zabrocki: Speedup of calculation of Macdonald H and Ht bases [Reviewed by Travis Scrimshaw]
+#18217: Jeroen Demeyer: Various Cython code fixes [Reviewed by Frédéric Chapoton]
+#18240: Dima Pasechnik: fix MPIR's compliance with c++ [Reviewed by Jakob Kroeker, Leif Leonhardy]
+#18252: David Einstein: add_path doc error [Reviewed by Jeroen Demeyer, Frédéric Chapoton]
+#18254: Buck Evan: osx R spkg error: expected ',' or '}' before '__attribute__' [Reviewed by John Palmieri, Volker Braun]
+#18271: David Einstein: Stanley hook content formula [Reviewed by Travis Scrimshaw]
+#18273: Nicolas M. Thiéry: SymmetricGroup(...).algebra(..., category=...) for consistency [Reviewed by Aladin Virmaux]
+#18275: Vincent Delecroix: subtraction fails for cartesian products of rings [Reviewed by Jori Mäntysalo]
+#18276: Jeroen Demeyer: is_squarefree() should not restrict to PID's [Reviewed by Bruno Grenet]
+#18283: Vincent Delecroix: Words random element is wrong [Reviewed by Nathann Cohen]
+#18285: Travis Scrimshaw: Implement reduced word graph [Reviewed by Darij Grinberg]
+#18287: Jeroen Demeyer: Fix percentage in sage-coverageall [Reviewed by Nathann Cohen]
+#18294: Jeroen Demeyer: Cython memleak [Reviewed by Volker Braun]
+#18297: Vincent Delecroix: Increase tolerance in a doctest in linear programming tutorial [Reviewed by Nathann Cohen]
+
+Merged in sage-6.7.beta4:
+
+#9123: Hugh Thomas: implement Schur algebras and use them to determine irreducible characters for GL_n [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#14982: Marc Mezzarobba, Vincent Delecroix: When a parent is equipped with an embedding, consider coercions that don't go through the embedding [Reviewed by Vincent Delecroix]
+#15486: Peter Bruin: Speed up NumberField_generic.zeta() and DirichletGroup() [Reviewed by Frédéric Chapoton]
+#15806: Dan Bump: Integrable representations of (affine) Kac-Moody Lie Algebras [Reviewed by Travis Scrimshaw]
+#16352: Sébastien Labbé: TransitiveIdeal -> RecursivelyEnumeratedSet in the sage library [Reviewed by Vincent Delecroix, Frédéric Chapoton]
+#16519: Moritz Firsching: Fix numerical output of tikzpictures of projections of polytopes [Reviewed by Jean-Philippe Labbé]
+#16659: Aladin Virmaux: Representation theory of finite dimensional associative algebras [Reviewed by Franco Saliola, Nicolas M. Thiéry]
+#16880: Vincent Delecroix: previous_prime, previous_prime_power, next_prime_power [Reviewed by Jeroen Demeyer]
+#17543: Peter Bruin: Move the last few module classes from Module_old to Module [Reviewed by Vincent Delecroix, Travis Scrimshaw]
+#17664: Peter Bruin: Fix underlying permutation group of decomposition group [Reviewed by Frédéric Chapoton]
+#17814: Simon King: Make calling a cached method independent of source code inspection [Reviewed by Volker Braun]
+#17890: Jeroen Demeyer: Remove _(rich)cmp_c_impl [Reviewed by Vincent Delecroix]
+#17964: Peter Bruin: Singular crashes when reducing a polynomial modulo a prime of a number field [Reviewed by Volker Braun]
+#18068: Peter Bruin: Fix and simplify comparison of modular forms [Reviewed by Vincent Delecroix]
+#18156: Buck Evan: XCode 6.3 broken [Reviewed by John Palmieri, Dima Pasechnik]
+#18170: Marc Mezzarobba: Ref: add various missing modules to the reference manual [Reviewed by Jeroen Demeyer]
+#18185: Nathann Cohen: Clean the Graph/DiGraph constructors [Reviewed by David Coudert]
+#18247: Leif Leonhardy: MPIR's configure fails with GCC 5.x [Reviewed by Jeroen Demeyer]
+#18249: Simon King: Introspection for builtin functions [Reviewed by Volker Braun]
+#18269: David Lucas: A new structure for experimentation on decoding: communication channels [Reviewed by Vincent Delecroix]
+#18274: Jeroen Demeyer: Ignored exception in Polynomial_generic_dense.__normalize [Reviewed by Marc Mezzarobba]
+#18278: Bruno Grenet: Variable to non-integral power for integer polynomials (using Flint) is broken [Reviewed by Jeroen Demeyer]
+#18293: André Apitzsch: libgd fails to build on Archlinux [Reviewed by Volker Braun]
+#18295: David Einstein: random SSYT [Reviewed by Travis Scrimshaw]
+#18301: Leif Leonhardy: ncurses fails to build with GCC 5.x [Reviewed by Jean-Pierre Flori]
+#18307: Frédéric Chapoton: cleanup of hyperbolic geodesic [Reviewed by Travis Scrimshaw]
+#18316: Leif Leonhardy: Lcalc fails to build with GCC 5.x (C++ issue) [Reviewed by Jeroen Demeyer]
+#18317: Nathann Cohen: General documentation about graph data structures [Reviewed by Frédéric Chapoton]
+#18318: Martin Albrecht: CryptoMiniSat Memleak [Reviewed by Dima Pasechnik]
+#18324: Dima Pasechnik: Upgrade 4ti2 package to version 1.6.3 [Reviewed by Frédéric Chapoton]
+#18327: Volker Braun: Fix graph bounding box [Reviewed by Nathann Cohen]
+#18332: Vincent Delecroix: is_one/is_integer/is_rational for number field elements [Reviewed by Marc Mezzarobba]
+#18334: Vincent Delecroix: sign and more truncation functions on real intervals [Reviewed by Jeroen Demeyer]
+#18335: Nathann Cohen: Compute the degree of a vertex without using networkX [Reviewed by Vincent Delecroix]
+#18336: Aladin Virmaux: Give a default behavious to algebra_generators [Reviewed by Nicolas M. Thiéry]
+#18337: Vincent Delecroix: Add methods `real` and `imag` to real interval field [Reviewed by Marc Mezzarobba]
+#18339: Leif Leonhardy: gf2x's test suite may "pass" even though it actually failed [Reviewed by Sebastien Gouezel]
+#18340: Jeroen Demeyer: PARI/GP does not gracefully handle out-of-memory [Reviewed by Vincent Delecroix, John Cremona, Leif Leonhardy]
+#18344: John Palmieri: fix some case issues in sage-fix-pkg-checksums [Reviewed by Leif Leonhardy]
+#18346: Nathann Cohen: Easier handling of vertex labels in graph backends [Reviewed by Vincent Delecroix]
+#18348: Sebastien Gouezel: Sublinking again [Reviewed by Nathann Cohen]
+#18352: Andrey Novoseltsev: Remove EMBEDDED_MODE in ISM [Reviewed by Volker Braun]
+#18354: Dima Pasechnik: typo fixes [Reviewed by Han Xiao]
+#18355: Nathann Cohen: Some cleanup in finance/stock [Reviewed by Volker Braun]
+
+Merged in sage-6.7.beta5:
+
+#6484: Nicolas M. Thiéry: sage.combinat.ranker improvements [Reviewed by Vincent Delecroix]
+#11517: Matthias Köppe: make LiDIA an experimental or optional package [Reviewed by Dima Pasechnik]
+#15355: Daniel Krenn: representation of CIF-element plus SR-element [Reviewed by Ralf Stephan]
+#15635: Frédéric Chapoton: free Pre-Lie algebras [Reviewed by Travis Scrimshaw]
+#15642: Volker Braun: Use mirrors for tarballs [Reviewed by Volker Braun]
+#15671: Peter Bruin, Jeroen Demeyer: Improve handling of memory errors in integer.pyx [Reviewed by Jeroen Demeyer, Peter Bruin]
+#15753: Rudi Pendavingh: Add BasisExchangeMatroid.isomorphism() [Reviewed by Stefan van Zwam]
+#17394: Nils Bruin: TypeError in Expression.simplify_hypergeometric() [Reviewed by Ralf Stephan]
+#17463: Nathann Cohen: Remove the deprecated 'dim' argument of MIP variables [Reviewed by Dima Pasechnik]
+#17656: Nathann Cohen: More meaningful error messages from _check_embedding_validity [Reviewed by Frédéric Chapoton]
+#17792: Marc Masdeu: Word problem for FareySymbol [Reviewed by Vincent Delecroix, John Cremona]
+#17990: Aladin Virmaux: Implements is_zero and is_commutative for infinity ring [Reviewed by Jean-Philippe Labbé]
+#18152: Vincent Delecroix: Universal Cyclotomic Field implementation using libgap [Reviewed by Jean-Philippe Labbé]
+#18166: Marc Mezzarobba: Ref: add various missing modules to r/calculus [Reviewed by Jeroen Demeyer]
+#18270: Martin von Gagern: Print matrices using unicode large delimiters (on demand) [Reviewed by Volker Braun]
+#18288: Jeroen Demeyer: Bad from __future__ import in sage-CSI-helper.py [Reviewed by Volker Braun]
+#18289: Volker Braun: Make graph display configurable [Reviewed by Nathann Cohen]
+#18290: Vincent Delecroix: enhanced sets and cartesian products [Reviewed by Nicolas M. Thiéry]
+#18296: Nathann Cohen: Emphasize that Graph.subgraph_search ignores edge labels [Reviewed by David Coudert]
+#18321: Jeroen Demeyer: Don't cimport type [Reviewed by Peter Bruin]
+#18322: Jeroen Demeyer: _cmp should try _richcmp_ if _cmp_ failed [Reviewed by Vincent Delecroix]
+#18330: Jeroen Demeyer: Metaclasses for Cython [Reviewed by Nils Bruin]
+#18359: David Einstein: Random Order Ideals [Reviewed by Frédéric Chapoton]
+#18363: Bruno Grenet: It should be possible to interrupt the method is_irreducible for polynomials over Zmod(n) [Reviewed by Jeroen Demeyer]
+#18366: Mike Hansen: Bug in tutte_polynomial with labeled graphs [Reviewed by Dima Pasechnik]
+#18371: Travis Scrimshaw: Implement supercharacter bases of Bergeron and Thiem for NCSym [Reviewed by Mike Zabrocki]
+#18372: Benjamin Hackl: residue() produces wrong output [Reviewed by Ralf Stephan]
+#18377: Frédéric Chapoton: fixing doc in generic_graph_pyx [Reviewed by Nathann Cohen]
+#18379: Frédéric Chapoton: missing links to trac in sage/combinat [Reviewed by Chao Xu]
+#18380: Jeroen Demeyer: New class for CombinatorialObject +  Element + ClasscallMetaclass [Reviewed by Travis Scrimshaw]
+#18382: Leif Leonhardy: Installation Guide no longer lists g++, gfortran in prerequisites for Linux [Reviewed by Dima Pasechnik]
+#18387: Jeroen Demeyer: Use type(x) instead of x.__class__ in Cython [Reviewed by Travis Scrimshaw]
+#18388: Jeroen Demeyer: Optimize ManinSymbol [Reviewed by Travis Scrimshaw]
+#18391: Travis Scrimshaw: Add Jordan algebras to the algebras catalog [Reviewed by Frédéric Chapoton]
+#18392: Michael Orlitzky: Add is_solid() and is_proper() for Polyhedral cones [Reviewed by Andrey Novoseltsev]
+#18394: Jeroen Demeyer: Upgrade PARI to latest master [Reviewed by Peter Bruin]
+#18401: Vincent Delecroix: maple command broken through ssh [Reviewed by Leif Leonhardy]
+#18403: Nathann Cohen: Deprecate the 'dev' scripts [Reviewed by Jeroen Demeyer]
+#18404: Volker Braun: Fix sage-callgrind [Reviewed by Nathann Cohen, Ralf Stephan]
+#18407: Nathann Cohen: Fix standard_packages(), optional_packages(), and experimental_packages() [Reviewed by Leif Leonhardy]
+
+Merged in sage-6.7.rc0:
+
+#12807: Ralf Stephan: Taking the real part of a sum of exponentials with imaginary exponents gives wrong result [Reviewed by Travis Scrimshaw]
+#16865: Nicolas M. Thiéry: Dot2tex reverses Poset.show() upside down [Reviewed by Nathann Cohen, Jori Mäntysalo]
+#16974: Travis Scrimshaw: Implement Kirillov-Reshetikhin crystal B^{1,s} in type D_4^(3) [Reviewed by Frédéric Chapoton]
+#18088: Ralf Stephan: Inconsistency with 0^0 [Reviewed by Travis Scrimshaw]
+#18229: Emmanuel Charpentier, Leif Leonhardy: Upgrade R to 3.2.0 [Reviewed by Vincent Delecroix, François Bissey, Leif Leonhardy]
+#18279: Ben Hutz: implement rational preperiodic points for polynomials over number fields [Reviewed by Grayson Jorgenson]
+#18358: Vincent Delecroix: a cython function that produces long given python input [Reviewed by Jeroen Demeyer]
+#18362: Ralf Stephan: upgrade to pynac-0.3.7 [Reviewed by Vincent Delecroix, François Bissey]
+#18369: John Cremona: upgrade eclib to version 20150510 [Reviewed by Jeroen Demeyer, François Bissey]
+#18414: Volker Braun: Fix download of configure tarball in bootstrap [Reviewed by Leif Leonhardy]
+#18422: David Roe: Documentation bug for binary quadratic form action [Reviewed by Frédéric Chapoton]
+
+Merged in sage-6.7:
+
+#18417: Volker Braun: Tarball download fixes [Reviewed by Leif Leonhardy]
+#18424: François Bissey: FLINT 2.4.5's test suite fails unconditionally (t-NTL-interface) [Reviewed by Volker Braun]

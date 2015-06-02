@@ -1,0 +1,68 @@
+﻿SAGE - 2.8.6
+
+
+ * Change Sage library to "GPL version >= 2."
+
+ * Robert Bradshaw -- upgrade Cython
+
+ * Martin Albrecht -- upgrade singular
+
+ * Jason Grout (refereed by Robert Miller) -- lots of updates to the graph theory package
+
+ * Mike Hansen -- updates to combinatorics; improved how multi-variate poly rings print.
+
+ * William Stein -- many bug fixes
+
+ * Martin Albrecht -- many small improvements to commutative algebra
+
+ * Joel Mohler -- optimizations
+
+ * Soroosh Yazdani -- improvements to smith normal form
+
+ * Gonzalo Tornaria and William Stein -- made pari c library interface automatically 
+                                         increase memory as needed
+
+ * Craig Citro and William Stein -- improvements to scons so that branch switching works.
+
+----------------------------------------------------------------------------------------------
+
+741	sage -bdist: after doing this in sage-2.8.5, the dsage unit tests don't run for the resulting binary
+763	serious bug latexing p-adic L-series
+769	Matrix_mod2_dense._echelon_strassen gives false results sometimes
+528	write new Integer_mod_dense class that wraps NTL directly
+593	MPolynomialIdeal.reduced_basis() doesn't behave as expected
+694	SAGE's multivariate gcd sucks over QQ and/or ZZ
+701	port srange to Cython for speed
+719	make pari.allocatemen() more clever
+728	sage_inspect broken
+735	issues with server timing out worksheets
+745	update the version of FLINT that is in Sage
+746	graphs: graph name is not reset using clear()
+747	flint build problem on itanium
+755	graphs: adjacency_matrix() does not call multiple_edges correctly.
+759	graphs: density returns incorrect result for directed graphs.
+764	repr(PolynomialRing(ZZ, 1, 'x')) is ambiguous
+770	Bad behaviour when Ctrl-C hit while running an expect interface
+776	kernel of linear homomorphism fails
+784	quotient spaces of vector spaces
+789	Can't create a submodule over a QQ[x]-module
+798	MPolynomial_libsingular.subs
+801	graphs: Latexify module-level documentation	
+806	matrix_integer_dense.elementary_divisors return a mutable object
+809	class_graph fixes
+810	gens_reduced for general ideals
+816	Commutative Algebra assorted functionality
+817	O(3^(-2)) is broken
+818	Convert of prod to Cython
+822	Some matrix multiplications inefficiencies
+730	graphs: fickle equality testing
+736	combinatorics updates
+761	graphs: Lots of various doc changes and additional doc tests.
+774	graphs: change "node" to "vertex"
+782	sage -testall should support ctrl-C
+786	standard smith normal form
+794	MPolynomial_libsingular.jacob()	
+796	Yet another fix for c_lib/scons stuff
+802	graphs: Streamline and document _cmp_ more
+760	graphs: a small change to subgraphs allow it to default to the original graph.
+795	tiny documentation update for MPolynomialIdeal.groebner_basis

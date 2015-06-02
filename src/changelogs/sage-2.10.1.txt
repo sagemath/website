@@ -1,0 +1,407 @@
+﻿Hello folks,
+
+Sage 2.10.1 has been released on February 2nd, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 75 open source
+packages.  It is available for download from sagemath.org and its
+mirrors in source or binary form. If you have any questions and/or
+problems please report them to the google groups sage-devel,
+sage-support, sage-forum or sage-newbie. You can also drop by in
+#sage-devel on irc.freenode.net.
+
+---------------------------------------------------------------------
+
+At least the following 27 developers contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Robert Bradshaw
+ * Michael Brickenstein
+ * Craig Citro
+ * Timothy Clemans
+ * John Cremona
+ * Burcin Erocal
+ * Alex Ghitza
+ * Jason Grout
+ * Mike Hansen
+ * David Harvey
+ * David Joyner
+ * Josh Kantor
+ * Simon King
+ * David Kohel
+ * Robert Miller
+ * Joel Mohler
+ * Willem Jan Palenstijn
+ * Yi Qiang
+ * Denis Simone
+ * William Stein
+ * Steve Vonn
+ * Ralf-Philip Weinmann
+ * Carl Witty
+ * Paul Zimmermann 
+ 
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Updated to eclib.spkg from cremona.spkg. 
+ * Update to FLINT 1.0.6
+ * Updated to MPFR 2.3.1 which contains an important fix that 
+   avoids smashing the stack with large precisions
+ * Improved ATLAS with pre-tuned settings for more CPUs. This 
+   greatly reduced the compile time on Pentium M and Athlon CPUS. 
+ * Massive improvements on the doctesting coverage.
+ * Fix security issue with the notebook (found by T. Clemans). 
+   It is *highly* recommended that you upgrade.
+ * Fixed various memleaks in PolyBoRi. There are still some 
+   issues in the PolyBoRi wrapper.
+ * Progress on the Solaris port as well as the 64-bit OS X port. 
+   Neither port is yet ready for prime time.
+
+* Known Issues with 2.10.1:
+
+ * GNUTLS might fail to build on OS X if guile is present. For a 
+   workaround use the updated GNUTLS spkg linked from ticket #2003
+ * You need to update the optional valgrind.spkg to the 3.3.0 
+   release because the interface has been changed in 2.10.1 and it
+   isn't backward compatible with earlier releases.
+
+* Bug Statistics
+
+We closed 186 tickets. For details see
+
+    http://trac.sagemath.org/sage_trac/milestone/sage-2.10.1
+
+* Upcoming Releases
+
+The next release will be 2.10.2, chaired by Michael Abshoff. The release
+is planned post Sage Days 7, but details are sketchy at the moment. 
+Potential features include:
+
+ * David Roe's unramified and Eisenstein extensions of Qp and Zp 
+ * John Voight's code for enumerating totally real fields [with 
+   generalizations for not-totally real fields]
+ * OS X 10.5 support in 64-bit mode [this will depend on fixing
+   a vexing segfault in libSingular and getting disutils to
+   play nice with numpy]
+ * GCC 4.3 support out of the box
+ * FreeBSD support out of the box
+ * Michael Abshoff's improved experimental Solaris support
+ * William Stein's rewrite of the mwrank Cython interface
+
+* Doctesting Coverage
+
+For 2.10 we had:
+Overall weighted coverage score:  35.4%
+Total number of functions:  18296
+
+We increased coverage by 2.9% in 2.10.1 while removing 6 functions:
+Overall weighted coverage score:  38.3%
+Total number of functions:  18290
+
+* Closed Tickets:
+
+Merged in rc5:
+
+#1547: Michael Abshoff: Add pre-tuned settings for ATLAS for 
+       certain CPUs
+#1886: Michael Abshoff: add ATLAS pretuning for AMD Athlon MP 
+       processors
+#1977: Michael Abshoff: valgrind 3.3.0 no longer appends $PID per 
+       default to the logs
+#1986: William Stein: Numerical noise in fast evaluation code.
+#1999: Michael Abshoff, William Stein: delete mpl3d code from sage
+#2019: David Joyner: problem with gap_packages-4.4.10_3
+#2021: Jason Grout: Only start one maxima instance
+#2026: William Stein, Jason Grout: matrix.eigenspaces doctest 
+       description is misleading
+#2027: Ralf-Philip Weinmann, Michael Brickenstein: update PolyBoRi
+       to current CVS: fix memleak and remove joke patent claim
+#2029: Michael Abshoff: adjust TIMEOUT for long and valgrinded 
+       doctests
+#2035: William Stein: transform.pyx is now broken (probably caused 
+       by other fixes)
+
+Merged in rc4:
+
+#1926: Burcin Erocal: fixes for the maple interface
+       [this is another patch to fix some more doctest issues]
+#1960: Martin Albrecht: bug when reducing Gröbner basis
+#1967: William Stein: fix matplotlib locale-related bugs once and for
+       all
+#1968: Timothy Clemans and William Stein: notebook -- remove
+       capability of using live tutorial for users not signed in to
+       the notebook server; this was a potential security risk.
+#1973: Jason Grout, Mike Hansen: native partition_associated function
+#1983: William Stein: change 0^0, for 0 a Sage integer, to evaluate 
+       to 1 for consistency with Python, PARI, Magma, Maple, MPFR, 
+       GMP, etc.
+#1985: Steve Vonn, Michael Abshoff: is_pseudoprime docstring 
+       doesn't wrap
+#1988: Craig Citro: doctest fallout -- osx ppc 10.4 overflow error
+#1989: Craig Citro: doctest fallout -- osx ppc 10.4 matrix index out 
+       of range
+#1996: Craig Citro: doctest failure on 2.10.1.rc3: libecm.pyx
+#2002: Jason Grout: creating a fresh new notebook in sage-2.10.1.rc3 
+       is broken
+#2005: William Stein: The .sage directory -- adjust permissions
+#2006: Michael Abshoff: crap -- gap contains a binary
+#2008: Michael Abshoff: crap -- cython contains a stupid OS X file
+#2009: Michael Abshoff: crap -- networkx spkg in sage-2.10.1.rc3 
+       contains a bunch of .svn directories
+#2010: Michael Abshoff: crap -- libpng contains lots and lots of 
+       weird (OS X?) temp or meta files
+#2011: Michael Abshoff: crap -- mpfi ships with two precompiled 
+       binaries
+#2012: Michael Abshoff: crap -- jmol contains some os x files 
+       that shouldn't be there
+#2013: Michael Abshoff: crap -- f2c spkg contains precompiled binary
+#2014: Michael Abshoff: crap -- matplotlib contains an annoying OS 
+       X temp file
+#2015: Michael Abshoff: crap -- twisted contains a bunch of ._ osx 
+       crap
+#2016: Michael Abshoff: crap -- there is a precompiled object 
+       file in the SAGE_ROOT/examples directory
+#2018: Michael Abshoff: crap -- scipy sandbox has a bunch of .svn 
+       directories
+#2022: William Stein: bug with load and loads when data is not 
+       compressed during save
+
+Merged in rc3:
+
+#740: John Cremona: Implement standard transformations for elliptic 
+      curves & points
+#1328: Michael Abshoff: 2.8.14/Solaris: partitions_c.h compile fix
+#1329: Michael Abshoff: 2.8.14/Solaris: real_rqdf.pyx compile fixes
+#1554: Mike Hansen: issues with calling symbolic expressions
+#1637: Michael Abshoff: Update to mpfr 2.3.1 - fix small issues in 
+       the spkg
+#1887: Robert Miller: graph isomorphism for multiple edges
+#1923: Jason Grout: Make an obvious checkbox or menu to switch on 
+       pretty printing in the notebook
+#1938: Robert Bradshaw: Fast (double) function evaluation for 
+       plotting, etc.
+#1958: Craig Citro: fix problems with ANSI codes in sage0.py
+#1966: Josh Kantor: inline_fortran broke on OS X
+#1970: Willaim Stein, Martin Albrecht: gnutls should not be needed 
+       if you're running the notebook insecurely, so don't require it
+#1972: William Stein: programming guide -- fix a confusing typo
+#1978: Yi Qiang, Michael Abshoff: update python-gnutls
+#1979: John Cremona, Michael Abshoff: doctest fall out from #740 
+       in tut.tex
+
+Merged in rc2:
+
+#571: John Cremona, Denis Simone, William Stein: weird doctest 
+      failure in simon_two_descent [to quote William: "John and 
+      Denis Simone in fact did greatly update this code and it 
+      is now in Sage. And this particularly doctest runs almost 
+      instantly now, so remove #long"]
+#1058: John Cremona, William Stein: the mwrank interface barfs on 
+       bad input
+#1649: John Cremona, William Stein, Michael Abshoff: Updated
+       eclib.spkg to eclib-20080127.spkg
+#1650: John Cremona: eclib.spkg: fix tsat test failure
+#1823: Robert Bradshaw, Carl Witty: RDF/CDF coverage, consistent 
+       hashing
+#1922: Jason Grout: change and update lprint
+#1940: Martin Albrecht: Segmentation fault when comparing two empty 
+       ideals
+#1953: Carl Witty: fix problems in calculus.py found by Jason while 
+       reviewing #1945
+#1954: Mike Hansen: sage/modules/free_module_element.pyx computing 
+       abs(vector(...))
+#1957: Michael Abshoff: Solaris 9 fixes for libfplll.spkg
+#1959: Michael Abshoff: Solaris 9 fixes for rubiks.spkg
+
+Merged in rc1:
+
+#384: Alex Ghitza, Mike Hansen: latex formatting issues with 
+      symbolic expressions
+#652: Nick Alexander: .sage files destroy existing .py files
+#743: Robert Miller, Carl Witty: graphs: simplify interface for 
+      accessing vertex objects
+#980: Martin Albrecht, Didier Deshommes: random_element() 
+      for multivariate polynomials
+#1083: Craig Citro: Bug in degree 1 number fields; manifests itself 
+       in element.matrix(), .trace(), .norm(), etc
+#1155: Mike Hansen: PermutationGroup coercion bug
+#1209: Mike Hansen: make it so maple.gcd?? shows source code
+       [later reopened due to more review]
+#1456: Mike Hansen: gaussian_binomial bug
+#1575: Jason Grout: plotting -- fix vector plotting
+#1845: Josh Kantor, Carl Witty: list_plot3d should be able to accept 
+       lists of points in arbitrary positions
+#1875: William Stein: increase idle timeout and save interval 
+       on the notebook to 6 minutes (shorter times cause serious 
+       performance problems, esp on large notebook servers)
+#1929: Alex Ghitza: add more examples to qqbar.py
+#1943: Michael Abshoff: rpy fails to build on OS X 10.4
+#1945: Carl Witty: improve reference manual formatting
+
+Merged in rc0:
+
+#1600: Craig Citro: another weird coercion bug
+#1911: William Stein, Craig Citro: elliptic curves -- make 
+       heegner_index command return index instead of square 
+       of index; clarify why sometimes result is not an 
+       integer (it's not a bug, it's part of the algorithm)
+#1930: Michael Abshoff: R is broken for parallel make, rpy is 
+       broken for fresh installs, remove recommended tar.gz
+#1931: Michael Abshoff: sage.spkg need to depend on ecm.spkg
+#1933: Michael Abshoff: libgpg_error-1.6.spkg broken make install 
+       for parallel make
+#1934: Michael Abshoff: sage-check for ATLAS broken on OS X
+#1935: Craig Citro: legendre_symbol currently quite slow
+#1937: Martin Albrecht: fix LLL documentation
+#1939: Michael Abshoff: Fix OS X rpy import issues, i.e. 
+       DYLD_LIBRARY_PATH fix
+
+Merged in alpha2:
+
+#1028: Michael Abshoff: fix omega support for new valgrind 
+       release (3.3.0 once it is out)
+#1050: Michael Abshoff: update optional valgrind.spkg to 3.3.0 
+       release
+#1147: William Stein: change location of valgrind output files 
+       to something less obnoxious
+#1550: Robert Miller: use libecm instead of pexpect+ecm binary
+#1593: Martin Albrecht: m4ri -- the documentation of the echelon 
+       command only lists 1 algorithm but >= 2 algorithms are 
+       supported
+#1617: William Stein: speed problem when factoring polynoms
+#1623: Michael Abshoff: update gsl to 1.10
+#1724: Craig Citro: Creating ModularForms from q-expansions
+#1817: Martin Albrecht: crypto.mq.sr doctest coverage at 100%
+#1818: Martin Albrecht: include AES polynomial system generator 
+       in reference manual
+#1852: Michael Abshoff: Configure R to use Atlas, other build 
+       improvements to R package
+#1869: Robert Miller: Implement show(list(graphs(n)))
+#1873: Mike Hansen: elementary function expansion returns result 
+       in the wrong ring
+#1889: Martin Albrecht: 2.10.1.alpha2 doctest failure in 
+       crypto/mq/sr.py
+#1890: Robert Miller: interfaces/libecm.pyx doctest failure
+#1894: Martin Albrecht: toy_buchberger failures
+#1895: Martin Albrecht: deal with passed through keyword arguments
+       for Gröbner basis computation
+#1898: Michael Abshoff, William Stein: numerical doctest failure 
+       for polynomial_element.pyx on Linux/Itanium
+#1899: Robert Miller:  Making graphs with a matrix and loops=True 
+       blows up
+#1900: Robert Miller, Jason Grout: Clean up adjacency matrix 
+       functions for graphs
+#1905: Alex Ghitza: both E.Lseries and E.L_series are defined. 
+       Just define one of them, say E.Lseries.
+#1906: Alex Ghitza: eisenstein_series_qexp does not pay attention 
+       to the field parameter
+#1913: Burcin Erocal: poles of gamma
+#1917: William Stein: get rid of crazy OS X charpoly workaround, 
+       since linbox isn't broken anymore 
+#1924: Robert Bradshaw, William Stein, Clement Pernet: Optimize 
+       matrix multiply cache friendliness
+
+Merged in alpha1:
+
+#1166: William Stein: 2D terminal output is inconsistent and 
+       corrupted
+#1217: Willem Jan Palenstijn: libfplll error codes
+#1274: Martin Albrecht: modify singular interface to allow for 
+       verbose output
+#1294: Mike Hansen: v.n() function blows up when v is a vector
+#1306: Robert Miller: Bundles of graphs
+#1418: Joel Mohler: magma element __floordiv__
+#1508: William Stein: axes_label in plot() broken
+#1577: Martin Albrecht: .coefficients() and .monomials() differ 
+       in order in multivariate polynomial rings
+#1583: Craig Citro: simple modules of modular symbols over finite 
+       fields
+#1604: William Stein: more locale problems with python exposed 
+       by matplotlib
+#1606: William Stein: plotting -- add aspect_ratio option to show 
+       command
+#1652: Mike Hansen: length of DAGs with loops calculation runs 
+       infinite
+#1704: David Harvey: replace _DivPolyContext by _multiply_point
+#1713: Martin Albrecht: fix SageElement._sage_
+#1737: William Stein: ctl-c doesn't exit job in parametric_plot3d
+#1718: William Stein: bug in parametric_plot
+#1721: Josh Kantor, Michael Abshoff: Introduce SAGE_ATLAS_LIB to 
+       skip building of ATLAS
+#1787: Michael Abshoff: Apply row-major GEMM major ATLAS errata
+#1794: Willem Jan Palenstijn: Gram-Schmidt typo
+#1804: Nick Alexander: Factorization.__mul__ assumes that the 
+       primes in the factorization commute, which may not be a 
+       valid assumption
+#1812: Martin Albrecht: doctest coverage for finite_field_givaro up 
+       to 100%
+#1814: Martin Albrecht: docstrings for stream_cipher.py
+#1820: Mike Hansen: update documentation for skew_partition.py
+#1829: Martin Albrecht: small improvements for term ordering module
+#1831: David Joyner: 3d docs: add more examples of parametric plots
+#1832: Mike Hansen: change how real(...) is defined in Sage
+#1833: William Stein: plot3d and parametric_plot3d can be very slow 
+       on some inputs
+#1835: Martin Albrecht: some minor changes to the documentation 
+       of basis_is_groebner
+#1836: Martin Albrecht: return reduced Groebner bases by default
+#1837: Martin Albrecht: pass through options from groebner_basis
+       [hunk 2 seems to have snuck in]
+#1840: David Kohel: Hill cipher addition to crypto package
+#1843: William Stein: cputime for gp interface
+#1844: Craig Citro: Get doctest coverage in sage/modular/modform 
+       up to 100%
+#1854: David Joyner: add more 3d plots to the reference manual
+#1856: William Stein: 3d graphics -- bug in setting options via 
+       the show command
+#1858: William Stein: plot.py coverage is crap -- improve it
+#1872: William Stein: serious bug in pickling elliptic curves
+#1874: Robert Miller: implement bipartite graphs
+#1878: Paul Zimmermann: add new function from mpfr-2.3.0
+#1880: Michael Abshoff: qqbar numerical doctest failure
+#1881: Michael Abshoff: tut.tex doctes failure with factorize()
+#1883: Michael Abshoff: Sage distribution includes Windows 
+       executables
+
+Merged in alpha0:
+
+#712: William Stein: SAGE/Maxima is sometimes unable to solve a 
+      linear system [solved by #1827 merged in 2.10]
+#827: Nick Alexander: nfrootsof1 from Pari
+#1391: Martin Albrecht, William Stein : bug in unit part of 
+       factorizations of multivariate polynomials
+#1485: David Joyner, Simon King: wrapper for invariant_ring and 
+       invariant_algebra_reynolds in Singular
+#1525: Robert Miller: NetworkX upgraded spkg, Bipartite graphs
+#1616: Mike Hansen, David Joyner: Change asin to arcsin, etc.
+#1622: Michael Abshoff: update gnutls to 2.2.1
+#1627: Michael Abshoff: update libgcrypt to 1.4
+#1630: Michael Abshoff: update opencdk to 0.6.6
+#1653: David Harvey: Bug raising an integer to a float
+#1710: William Stein: switch default location of trac server 
+       away from http://www.sagemath.org:9002/
+#1715: Martin Albrecht: PolyBoRi pickling/hashing
+#1746: Alex Ghitza: add p-norm as a method to vectors
+#1772: Mike Hansen, Robert Miller: bug somewhere in the symbolics
+#1789: William Stein: standalone Sage scripts don't work on Linux, 
+       they work fine on OS X
+#1800: Carl Witty: bug with RealIntervalField/MPFI
+#1801: Robert Bradshaw: Update cython package to 0.9.6.11
+#1813: Martin Albrecht: misc enhancements for ref.pdf
+#1821: Michael Abshoff, Bill Hart: Update FLINT to 1.0.6
+#1826: Robert Bradshaw, Robert Miller: cdefs.pxi and stdsage.pxi 
+       were missing some function declarations
+#1850: Robert Bradshaw: serious bug in parametric plotting of curves
+#1851: Robert Miller: add documentation, doctests for 
+       graphs/bruhat_sn.pyx
+#1853: Michael Abshoff: update libgpg_error to 1.6
+#1855: William Stein: trivial but visibly very painful bug in plotting
+#1859: Robert Bradshaw: 3d and 2d graphics -- some unification

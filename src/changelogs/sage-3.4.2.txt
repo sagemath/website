@@ -1,0 +1,161 @@
+﻿Hi folks,
+
+Sage 3.4.2 was released on May 05, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 83 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 33 people contributed to this release:
+
+ * Alex Ghitza
+ * Anne Schilling
+ * Bill Cauchois
+ * Bill Hart
+ * Bill Page
+ * Carl Witty
+ * Chris Gorecki
+ * Chris Swierczewski
+ * Chris Wuthrich
+ * Craig Ctiro
+ * Dan Bump
+ * Dan Drake
+ * David Harvey
+ * David Roe
+ * Franco Saliola
+ * Georg Weber
+ * Jason Grout
+ * John Cremona
+ * John Palmieri
+ * Jaap Spies
+ * Karl-Dieter Crisman
+ * Martin Albrecht
+ * Michael Abshoff
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * R. Andrew Ohana
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Simon King
+ * Wilfried Huss
+ * William Stein
+
+
+Release manager: Michael Abshoff
+
+
+For all the details of what else changed in Sage 3.4.2, please see the
+release tour in the Sage wiki at
+
+  http://wiki.sagemath.org/sage-3.4.2
+
+
+* Bug Statistics
+
+We closed 74 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.4.2
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Closed Tickets:
+
+#4193: closed due to #5508
+
+
+Merged in Sage 3.4.2:
+
+#5952: Robert Bradshaw: Worksheet downloading blocks the entire server [Reviewed by Michael Abshoff]
+#5981: Michael Abshoff: Sage 3.4.2: prime_pi() broken on 32 bit [Reviewed by Jaap Spies]
+#5983: Michael Abshoff: cmp related doctest failure in sage/schemes/ jacobians/abstract_jacobian.py [Reviewed by William Stein]
+#5984: Michael Abshoff: cmp related doctest failure in sage/modular/ arithgroup/arithgroup_perm.py [Reviewed by William Stein]
+#5992: Michael Abshoff: Set stack size in Maxima.spkg to 32kb for clisp [Reviewed by William Stein]
+
+
+Merged in Sage 3.4.2.final:
+
+#5951: John Palmieri: fix a few minor issues with the reference manual in 3.4.2.rc0 [Reviewed by Michael Abshoff]
+#5953: Michael Abshoff, John Palmieri: sage/modular/modform/ #vm_basis.py is missing verbatim areas for doctests [Reviewed by Minh Van Nguyen]
+#5955: Michael Abshoff: Sage 3.4.2.rc0: Set stacksize during clisp.spkg build to 32kb [Reviewed by David Roe]
+#5957: Michael Abshoff: 3.4.2.rc0: Maxima related doctest failure in matrix/matrix_symbolic_dense.pyx [Reviewed by Michael Abshoff]
+#5963: Michael Abshoff: 3.4.2.a0: prime_pi returns wrong results on some platforms for large input [Reviewed by David Roe]
+#5966: Michael Abshoff: sage/sets/primes.py: change doctest so that we check for Primes being != to x^2+x [Reviewed by David Roe]
+#5972: William Stein: segfault in degenerate matrix multiply [Reviewed by Michael Abshoff]
+#5973: Michael Abshoff: Fix spkg-check target for FLINT on OSX 64 bit [Reviewed by William Stein]
+
+
+Merged in Sage 3.4.2.rc0:
+
+#545: Chris Gorecki: polish the new symbolic logic code [Reviewed by Minh Van Nguyen, Georg Weber, Wilfried Huss, Michael Abshoff]
+#2740: Robert Bradshaw: Downloading and uploading folders of worksheets [Reviewed by William Stein]
+#4435: John Palmieri: %latex -- don't use \usepackage{fullpage} [Reviewed by William Stein]
+#5479: Alex Ghitza: schemes/generic/spec.py: Spec.__call__ is basically not implemented [Reviewed by David Roe]
+#5588: John Palmieri: developer's guide: more information about docstrings [Reviewed by John Cremona]
+#5765: Alex Ghitza: improve doctest coverage for schemes/generic/ algebraic_scheme.py [Reviewed by John Cremona]
+#5791: John Palmieri: Allow custom packages to be injected or %latex and the Sage latex mode [Reviewed by Rob Beezer]
+#5804: William Stein, Bill Hart, Michael Abshoff: Solaris 10/Sparc: number_of_partitions(100000) is broken [Reviewed by Mike Hansen]
+#5820: Alex Ghitza: implement comparison of ring coercion morphisms [Reviewed by David Roe]
+#5824: William Stein: Move DSage to its own spkg [Reviewed by Michael Abshoff]
+#5846: Chris Wuthrich: small bug in caching the precision for p-adic L-series [Reviewed by Georg Weber]
+#5849: Michael Abshoff: Update MPIR to 1.1.1 [Reviewed by Robert Miller]
+#5853: Chris Wuthrich: Restify and include more documentation on elliptic curves [Reviewed by John Cremona]
+#5855: Robert Miller: implement squarefree_divisors function [Reviewed by William Stein]
+#5856: Alex Ghitza: elliptic curves over Z/pZ are treated totally differently than elliptic curves over GF(p) [Reviewed by John Cremona]
+#5860: William Stein: delete sage/catalogue [Reviewed by David Harvey]
+#5877: Franco Saliola: calling a group character is broken [Reviewed by David Harvey]
+#5880: William Stein, Rob Beezer: notebook -- greatly reduce the number of actions that trigger taking a snapshot [Reviewed by Rob Beezer, William Stein]
+#5881: Mike Hansen: __cmp__ is random-ish in root_system/type_dual.py also (analog to #5811) [Reviewed by Michael Abshoff]
+#5890: Alex Ghitza: clean up schemes/elliptic_curves/ell_generic.py [Reviewed by John Cremona]
+#5896: Craig Ctiro: Documentation fix for lcalc interface [Reviewed by John Cremona]
+#5898: Karl-Dieter Crisman: Plot Field doc [Reviewed by Minh Van Nguyen]
+#5904: Alex Ghitza: improve doctest coverage for schemes/jacobians/abstract_jacobian.py [Reviewed by John Cremona]
+#5905: John Cremona: minor fix to ReST markup in ell_rational_field.py [Reviewed by John Palmieri]
+#5912: William Stein: %fortran mode is broken in the notebook [Reviewed by Chris Swierczewski]
+#5914: Robert Miller: default edge color is *invisible* [Reviewed by William Stein]
+#5918: Franco Saliola: bring doctest coverage for posets to 100% [Reviewed by Dan Drake]
+#5919: John Cremona: bug in conversion of polys over GF(2,e) from NTL to singular [Reviewed by Martin Albrecht]
+#5921: Alex Ghitza: factoring integer polynomials does not factor the content [Reviewed by John Cremona]
+#5926: William Stein: solaris top sometimes fails due to race condition [Reviewed by Michael Abshoff]
+#5928: Alex Ghitza: binary operations on factorisations should coerce factors into a common universe [Reviewed by John Cremona]
+#5933: Karl-Dieter Crisman: Bring primes.py to 100% [Reviewed by John Cremona]
+#5946: David Roe: bug in content for p-adic polynomials [Reviewed by Alex Ghitza]
+
+
+Merged in Sage 3.4.2.alpha0:
+
+#4809: Dan Drake, John Palmieri: the installation guide and constructions guide should be CC licensed [Reviewed by John Palmieri, Dan Drake]
+#5111: Mike Hansen, Bill Page: axiom --> fricas [Reviewed by Carl Witty]
+#5130: R. Andrew Ohana: create a prime_pi function that doesn't just #compute len(prime_range(n) [Reviewed by Carl Witty, William Stein, Michael Abshoff]
+#5346: John Cremona: Some doctests in schemes/elliptic_curves/ell_rational_field.py fail with optional database installed [Reviewed by Michael Abshoff]
+#5567: Wilfried Huss: bug in region_plot [Reviewed by Bill Cauchois]
+#5595: Robert Bradshaw: minor dependancy checking glitch [Reviewed by Carl Witty]
+#5610: John Palmieri: LaTeX customization [Reviewed by Robert Bradshaw, Rob Beezer]
+#5627: Karl-Dieter Crisman: Trivial typo in quadratic_nonresidue [Reviewed by Minh Van Nguyen]
+#5704: John Cremona: Implementation of finding elliptic curves with prescribed reduction over QQ [Reviewed by Robert Miller]
+#5751: Dan Bump: cartan_type now a method rather than attribute in weyl_characters.py [Reviewed by Anne Schilling]
+#5795: Simon King: Improved performance of MPolynomialRing_libsingular.__call__() [Reviewed by Martin Albrecht]
+#5797: Dan Drake: raise coverage in matrix1.pyx to 97% [Reviewed by John Cremona, Michael Abshoff]
+#5803: Robert Bradshaw: Upgrade Cython to 0.11.1 [Reviewed by William Stein]
+#5809: Alex Ghitza: schemes/generic/hypersurface.py is completely broken [Reviewed by John Cremona]
+#5815: Mitesh Patel, Jason Grout: Disable TinyMCE in the live documentation [Reviewed by Jason Grout, Mitesh Patel]
+#5821: Robert Bradshaw: preparser incorrectly handles backslash operator inside strings (sometimes) [Reviewed by Carl Witty]
+#5822: William Stein: cusps -- implement action of the Galois group on cusps for congruence subgroups as on page 12 of Steven's "Arithmetic on Modular Curves" [Reviewed by John Cremona]
+#5836: Jason Grout: Make show() immediately show an image in the notebook [Reviewed by William Stein]
+#5848: John Palmieri: untabify Sage [Reviewed by Rob Beezer, Michael Abshoff]
+#5851: Chris Wuthrich: Convert 3 more elliptic curves files to ReST and add to reference manual [Reviewed by John Cremona]
+#5861: Michael Abshoff: Remove cocoa, four_ti_2, reduce and template interfaces since they do not work/are broken [Reviewed by Michael Abshoff]
+#5863: John Palmieri: remove some files from sage/algebras [Reviewed by William Stein]
+#5871: William Stein: solaris x86 3.4.1 -- code_bounds.py fails some plot doctests [Reviewed by Michael Abshoff]
+#5876: John Cremona: Vast speedup in P1List construction [Reviewed by William Stein, Robert Bradshaw]
+#5886: William Stein: Bug in free module homomorphism creation [Reviewed by Robert Bradshaw]

@@ -1,0 +1,243 @@
+﻿Hello folks,
+
+Sage 3.1.1 was released on August 17th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 44 people contributed to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Nick Alexander
+ * Robert Bradshaw
+ * Tom Boothby
+ * Nicolas Borie [first contribution]
+ * Dan Bump
+ * Craig Citro
+ * Francis Clarke
+ * Timothy Clemans
+ * John Cremona
+ * Didier Deshommes
+ * Tom Denton [first contribution]
+ * Tom Draper [first contribution]
+ * Bill Furnish
+ * Andrzej Giniewicz
+ * Alex Ghitza
+ * Jason Grout
+ * David Harvey
+ * Mike Hansen
+ * Waldek Hebish
+ * David Joyner
+ * Emily Kirkman
+ * David Kohel
+ * Michael Mardaus [first contribution]
+ * Robert Miller
+ * Tobias Nagel [first contribution]
+ * Brett Nakashima [first contribution]
+ * Bill Page
+ * John Palmieri
+ * Clement Pernet
+ * Pearu Peterson [first contribution]
+ * David Roe
+ * Harald Schilly [first contribution]
+ * Jaap Spies
+ * Franco Saliola
+ * Chris Swierczewski
+ * Yi Qiang
+ * Glenn Tarbox [first contribution]
+ * Nicolas Thiery
+ * Igor Tolkov
+ * William Stein
+ * Carl Witty
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * New Coercion Infrastructure (Robert Bradshaw, David Roe)
+ * Graph and Plotting Improvements (Arnaud Bergeron, Jason Grout, Robert Miller, Franco Saliola)
+ * Major Update to Root Systems: Dan Bump, Nicolas Thiery, Nicolas Borie, Mike Hansen 
+ * Steenrod Algebra Calculations (John Palmieri)
+ * Notebook improvements (Timothy Clemans)
+ * Free Modules Revision (David Kohel)
+ * Multimodular Algorithm for Bernoulli Numbers (David Harvey)
+ * Partition Refinement (Robert Miller)
+ * New sage_input Function (Carl Witty)
+ * New printing for intervals and QQbar elements (Carl Witty)
+ * Integral Point Finding for Elliptic Curves over Q (Tobias Nagel, Michael Mardaus, John Cremona)
+
+For details see the Sage 3.1 and 3.1.1 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.1
+
+* Known Issues with 3.1.1:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 114 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.1
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.1.1
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.1.2, chaired by Michael Abshoff. It will 
+be a mix of new features and bug fixes.
+
+* Doctesting Coverage
+
+For 3.0.6 we had:
+
+Overall weighted coverage score:  54.2%
+Total number of functions:  20237
+
+We increased coverage by 2.3% in 3.1.1 while adding 683 functions:
+
+Overall weighted coverage score:  56.5%
+Total number of functions:  20920
+
+* Closed Tickets:
+
+Merged in Sage 3.1.1.final:
+
+William Stein: Fix a critical notebook unpickling bug
+
+Merged in Sage 3.1.final:
+
+#3875: William Stein: matrix/matrix_cyclo_dense.pyx segfault [Reviewed by Michael Abshoff]
+#3878: Franco Saliola: Constructing a c_graph from a DiGraph doubles the edges [Reviwed by Robert Miller]
+#3881: Michael Abshoff: Quiet three MPolynomialRing deprecation warnings [Reviwed by Robert Miller]
+
+Merged in Sage 3.1.rc0:
+
+#1719: Jason Grout: problems building documentation [Reviewed by Michael Abshoff]
+#3864: Craig Citro: Bug exposed by p-adic matrices [Reviewed by William Stein]
+#3738: Robert Bradshaw, David Roe: new coercion model [Reviewed by Nick Alexander, Robert Miller, Craig Citro]
+#3744: Robert Bradshaw: Coercion between isomorphic parents should result in an element of the left operand's parent [Reviewed by Nick Alexander, Robert Miller, Craig Citro]
+#3759: Robert Miller: make testlong leaves all kinds of crap in SAGE_ROOT [Reviewed by William Stein]
+#3814: Craig Citro: Bug introduced in trac #3800 fix [Reviewed by John Cremona]
+#3815: William Stein: fix plot3d segfaults [Reviewed by Michael Abshoff]
+#3822: Igor Tolkov: Interact - slider breaks defaulting on too many values [Reviewed by William Stein]
+#3825: Franco Saliola: 2d-plots has no functionality for grid lines [Reviewed by William Stein]
+#3827: Chris Swierczewski: finance.TimeSeries -- missng docstring input option [Reviewed by Andrzej Giniewicz]
+#3834: William Stein: notebook -- massive bug in the notebook -- doing full text search starts a PYthon process for every single worksheet you have!!! [Reviewed by Michael Abshoff]
+#3837: John Cremona: Performance regression in sha.py due to #3674 [Reviewed by Michael Abshoff, William Stein]
+#3842: William Stein: notebook -- major bug in how javascript <script> tags are interpreted by the notebook [Reviewed by Timothy Clemans]
+#3848: Craig Citro: Better documentation for discriminant function for modular abelian varieties' endomorphism ring [Reviewed by William Stein]
+#3850: William Stein: Sage 3.1.alpha2: matrix_space.py doctest failure (OSX only) [Reviewed by Michael Abshoff]
+#3851: John Palmieri: Steenrod algebra doctest patch: small coercion issue with 3.1alpha [Reviewed by Michael Abshoff]
+#3858: John Palmieri: 3.1alpha: fix issues with the reference manual [Reviewed by Michael Abshoff]
+#3860: Michael Abshoff: itanium -- can't build mercurial extension [Reviewed by William Stein]
+#3867: William Stein: sage-3.1.alpha2: graph.py numerical noise [Reviewed by Michael Abshoff]
+#3868: William Stein: matrix_modn_dense -- numerical noise [Reviewed by Michael Abshoff]
+
+Merged in Sage 3.1.alpha2:
+
+#1220: Craig Citro: ModularSymbols(GammaH) [Reviewed by John Cremona, Michael Abshoff]
+#2527: Craig Citro: get doctests for congroup.py and congroup_element.py up to 100% [Reviewed by John Cremona]
+#3383: John Cremona: division_points() fails for elliptic curve over number field [Reviewed by William Stein, Michael Abshoff]
+#3485: Carl Witty: new sage_input function gives a sequence of commands to reproduce sage values [Reviewed by William Stein]
+#3637: Emily Kirkman: Implement Jacobi sums of Dirichlet characters [Reviewed by Nick Alexander, Alex Ghitza, David Joyner]
+#3674: Tobias Nagel, Michael Mardaus, John Cremona: Implement integral point finding for elliptic curves over Q [Reviewed by William Stein, Nick Alexander]
+#3676: Robert Miller: Refactor graph isom code [Reviewed by Nick Alexander, Tom Boothby]
+#3776: Timothy Clemans: notebook -- cookies don't work for admin users [Reviewed by William Stein]
+#3786: Robert Miller: Refactor binary code isomorphism code [Reviewed by Nick Alexander]
+#3806: Mike Hansen, Robert Miller: improvements to plot.py [Reviewed by Robert Miller, Mike Hansen]
+#3807: Michael Abshoff: Fix gcc 4.3 issues in David Harvey Bernoulli modp code [Reviewed by William Stein]
+#3809: Nick Alexander: reorder checks for creating a number field; prevents some silly errors [Reviewed by William Stein]
+#3811: Nick Alexander: number fields in different polynomials compare differently [Reviewed by William Stein]
+#3816: William Stein: notebook -- SyntaxWarning in twist.py [Reviewed by Michael Abshoff]
+#3818: William Stein: COPYING.txt doesn't mention jmol but it should [Reviewed by Michael Abshoff]
+#3819: Michael Abshoff: time_series.pyx numerical noise doctest failures [Reviewed by William Stein]
+#3821: David Harvey: bernmm shouldn't depend on pyport.h [Reviewed by Michael Abshoff]
+#3824: Timothy Clemans: notebook -- clicking sign out needs to resource not found page [Reviewed by William Stein]
+#3828: Clement Pernet: Upgrade to linbox-1.1.6rc1 [Reviewed by Michael Abshoff]
+#3831: Michael Abshoff: add experimental boost-1.34-1.spkg to the repo [Reviewed by Robert Miller]
+#3832: Michael Abshoff: add experimental Quantlib.spkg and Quantlib-SWIG.spkg to the repo [Reviewed by Robert Miller]
+#3833: William Stein: calculus -- fix bug in hashing of symbolic expressions [Reviewed by Bill Furnish]
+#3840: Bill Furnish: conversion of 0 from MV polynomial rings broken [Reviewed by Nick Alexander, William Stein]
+
+Merged in Sage 3.1.alpha1:
+
+#1686: Michael Abshoff: arpack -- illegal instruction when built on Pentium 4 using gfortran [Reviewed by William Stein] 
+#3119: John Cremona: elliptic curves -- implement gens function for non-integral models [Reviewed by Nick Alexander]
+#3397: John Palmieri: Steenrod algebra calculations [Reviewed by William Stein]
+#3460: Nick Alexander: add power_basis() to number fields [Reviewed by David Harvey, John Cremona]
+#3484: Carl Witty: extend sage_eval (in preparation for sage_input) [Reviewed by William Stein]
+#3514: David Kohel:  Free modules revision [Reviewed by Mike Hansen, William Stein]
+#3522: Jaap Spies: New experimental mayavi2 spkg based on vtk_5.2 for linux [Reviewed by Michael Abshoff]
+#3542: David Harvey: multimodular algorithm for Bernoulli numbers [Reviewed by William Stein, Nick Alexander]
+#3591: Timothy Clemans: notebook -- remove notebook.save() from Logout [Reviewed by Nick Alexander, William Stein]
+#3613: Mike Hansen: symbolic equations are not passed to Maple correctly [Reviewed by Nick Alexander]
+#3633: Yi Qiang: use commands.getoutput in hostinfo [Reviewed by Robert Miller]
+#3649: Timothy Clemans: Add option to disable the Notebook registration email [Reviewed by William Stein]
+#3652: Carl Witty: FreeModule(ZZ, 2000).random_element() is far slower than it should be [Reviewed by Nick Alexander]
+#3662: Niclos Thiery, Mike Hansen: separate the module functionality of out CombinatorialAlgebra and move it into CombinatorialAlgebra [Reviewed by the Sage-combinat team]
+#3664: Dan Bump, Nicolas Thiery, Nicolas Borie, Mike Hansen: major updates to root systems [Reviewed by the Sage-combinat team]
+#3673: Francis Clarke: NumberFieldElement class unreasonably privileges the polynomial variable 'x' [Reviewed by John Cremona]
+#3727: Harald Schilly: bug report link in notebook [Reviewed by Timothy Clemans]
+#3731: John Palmieri: missing some derivatives in wester [Reviewed by Nick Alexander]
+#3735: William Stein: Interact - header Javascript code executes on update [Reviewed by Igor Tolkov]
+#3736: Mike Hansen: pairwise_product fails for vectors over CDF [Reviewed by Robert Bradshaw]
+#3741: Timothy Clemans: notebook -- the files for the revision history of a worksheet *do* get published [Reviewed by William Stein]
+#3743: Timothy Clemans: notebook -- allow admin user to view any worksheet [Reviewed by William Stein]
+#3751: John Cremona: Type of output returned by QuadraticField(-1).class_number() [Reviewed by Nick Alexander]
+#3755: William Stein: finance -- improve implementation of hurst exponent [Reviewed by Brett Nakashima]
+#3756: William Stein: finance -- fix a bug in fractional brownian motion random walks [Reviewed by Igor Tolkov]
+#3757: Carl Witty: change printing for intervals (and AA/QQbar) [Reviewed by Jason Grout and William Stein]
+#3763: Carl Witty: add conversions from AA/QQbar to standard types [Reviewed by John Cremona]
+#3764: Timothy Clemans: notebook -- notebook.py coverage to 17% [Reviewed by William Stein]
+#3771: William Stein: make it so typing "sage -br" for new binary sage installs doesn't require rebuilding everything [Reviewed by Craig Citro]
+#3779: Mike Hansen: inconsistency for variables method, leads to errors in differentiation [Reviewed by Robert Bradshaw]
+#3781: Mike Hansen: add a cached_method decorator [Reviewed by Nick Alexander]
+#3782: Tom Denton: add support for non-symmetric Macdonald polynomials with permuted basement [Reviewed by Mike Hansen]
+#3788: Robert Bradshaw: many matrix_dense_modn operations are unreasonably slow [Reviewed by Mike Hansen]
+#3789: Robert Miller: graphs(<tab>) [Reviewed by Mike Hansen]
+#3790: Mike Hansen: limit gets stuck without computing anything [Reviewed by Michael Abshoff]
+#3793: John Cremona: Some elliptic curve doctests fail when the optional database is installed [Nick Alexander]
+#3795: Mike Hansen: increase coverage of sage/server/notebook/cell.py [Reviewed by Nick Alexander]
+#3797: Robert Miller: several improvements to graph generation [Reviewed by Carl Witty]
+#3798: Robert Miller: some docstrings for sage.graphs [Reviewed by Emily Kirkman]
+#3800: Craig Citro: Problem with Cusp constructor [Reviewed by William Stein]
+#3801: Robert Miller, Franco Saliola: Spring layout for posets [Reviewed by Franco Saliola, Robert Miller]
+
+Merged in Sage 3.1.alpha0:
+
+#3361: Waldek Hebish, Bill Page: Update optional fricas.spkg to 1.0.3 release - make it use clisp again [Reviewed by Michael Abshoff]
+#3497: Glenn Tarbox: ignore git repo info in main sage repo [Reviewed by Michael Abshoff]
+#3558: Mike Hansen: make "% cells" work in the notebook when the mode is not set to "sage [Reviewed by William Stein]
+#3599: Igor Tolkov: Longer slider and labels on sliders [Reviewed by William Stein]
+#3609: John Cremona: Update eclib to eclib-20080310.p5.spkg [Reviewed by Michael Abshoff]
+#3636: Igor Tolkov: Text control, no label [Reviewed by William Stein]
+#3645: John Palmieri: tutorial: make documentation for .n() more prominent [Reviewed by William Stein]
+#3679: Igor Tolkov: Range Slider Control [Reviewed by William Stein]
+#3697: Tom Draper: Adds is_primitive() method to polynomials over Finite Fields [Reviewed by Robert Bradshaw]
+#3698: William Stein: add multinomial_coefficients and binomial_coefficients to sage [Reviewed by Pearu Peterson]
+#3703: Robert Miller: fix bug in set_edge_label [Reviewed by Jason Grout]
+#3705: Mike Hansen: upgrade Mercurial to 1.01 [Reviewed by Michael Abshoff]
+#3708: David Joyner: something screwy in the reference manual [Reviewed by Michael Abshoff]
+#3721: Yi Qiang: Use SAGE_TESTDIR for dsage unit tests [Reviewed by Michael Abshoff]
+#3725: Martin Albrecht: tiny doc improvement for mq.SR [Reviewed by Michael Abshoff]
+#3729: Tim Abbott: Only overwrite RHOME environment variable when it is unset [Reviewed by Michael Abshoff]
+#3734: John Cremona: inverse() fails for 0 by 0 matrices [Reviewed by Didier Deshommes]
+#3739: Timothy Clemans: notebook -- new user default [Reviewed by William Stein]
+#3747: David Harvey: incorrect power in modular arithmetic [Reviewed by William Stein, John Cremona]

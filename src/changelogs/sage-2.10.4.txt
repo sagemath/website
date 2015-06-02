@@ -1,0 +1,316 @@
+﻿Hello folks,
+
+Sage 2.10.4 has been released on March 17th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+You can also drop by in #sage-devel or #sage-support infreenode.
+
+We have closed the Google Groups sage-newbie and sage-forum so 
+that we can deal with support questions in sage-support only. We 
+decided to close those two groups since we had various inquiries 
+left unanswered due to people posting to the wrong group.
+
+---------------------------------------------------------------------
+
+The following 32 people contributed code to this release:
+
+ * Michael Abshoff
+ * Martin Alrecht
+ * Nick Alexander
+ * Tom Boothby
+ * Robert Bradshaw
+ * Craig Citro
+ * Timothy Clemans
+ * John Cremona
+ * Karl-Dieter Crisman
+ * Didier Deshommes
+ * Dan Drake
+ * Burcin Erocal
+ * Gary Furnish
+ * Alex Ghitza
+ * Jason Grout
+ * Mike Hansen
+ * David Harvey
+ * Ryan Hinton
+ * David Joyner
+ * Josh Kantor
+ * Robert Miller
+ * Joel Mohler
+ * Willem Jan Palenstijn
+ * Clement Pernet
+ * Bill Purvis
+ * Yi Qiang
+ * David Roe
+ * Gordon Royle
+ * Franco Saliola
+ * Jaap Spies
+ * William Stein
+ * Carl Witty
+
+Cheers,
+
+Michael Abshoff (release chair), Robert Miller, William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+This 
+
+ * Memory leaks exposed by modular symbols: Michael Abshoff, 
+   Martin Albrecht, Burcin Erocal, Willem Jan Palenstijn, 
+   Clement Pernet, William Stein: memory leaks exposed by 
+   modular symbols functionality. This ticket is a composite 
+   of numerous other memleak fixes merged over a *7 month* 
+   period. Modular forms are an excellent way to expose 
+   memory leaks in pretty much every algebraic component 
+   of Sage and all known issues there are now finally fixed.
+
+ * SQLAlchemy and DSage: We merged SetupTools and SQLAlchemy 
+   into Sage as standard packages. SQLAlchemy is now used as 
+   in DSage replacing hand written code with much more 
+   efficient classes from SQLAlchemy. SetupTools is required 
+   to install SQLAlchemy, but is also useful for a number of 
+   experimental spkgs like Mayavi2, TVTK and other packages
+   from the Enthought Tool Suite. Yi Qiang improved DSage 
+   making it more robust and finally adding the documentation 
+   to the standard Sage manual. 
+
+ * Graph theory: chromatic polynomial: An algorithm originally 
+   written in C by Gordon Royle has been adapted by Robert 
+   Miller to replace the old slow method. This algorithm 
+   uses a cut and merge algorithm to recursively compute 
+   the chromatic polynomial, and is written in Cython.
+
+ * Documentation: Many doctest patches written during Doc 
+   Day 2 were merged. In addition many people kept up the 
+   good work after Doc Day 2 was over and have been 
+   submitting patches to increase coverage. We did exceed 
+   the target for the release by 0.6% reaching 47.6%.
+
+ * Symmetric function updates: Mike Hansen, reviewed by 
+   Franco Saliola: Sage 2.10.4 adds support for Macdonald 
+   polynomials, LLT polynomials, and Jack polynomials as 
+   well as a whole class of user-defined symmetric functions 
+   which can characterized by orthogonality and triangularity 
+   conditions. Support for working with ribbon tableaux was 
+   also added as part of these updates. In addtition, many 
+   doctests were added and subtle bugs fixed.
+
+ * Notebook Updates Tom Boothby and William Stein and 
+   Timothy Clemans: Fixed a bunch of new and old issue that 
+   improve the usability of the notebook. Among those are 
+   a working trash, fixes to the polling infrastructure, 
+   saving the content of unevaluated cells, URL issues to 
+   work around problems introduced by restrictive firewalls
+   and small improvements to the interact command.
+
+ * Parallel Doctesting: Gary Furnish reviewed by Michael 
+   Abshoff: "sage -tp" has been introduced as an experimental 
+   multithreaded doctester. The first parameter is the number 
+   of threads, and the second parameter is the folder to 
+   doctest. Thus "sage -tp 4 devel/sage/sage" tests everything 
+   with four threads running. Additional options like "-long" 
+   or valgrind options like "-memcheck" do work. The code base 
+   is still young and needs more testing. The eventual goal 
+   will be to replace the current doctesting infrastructure 
+   with this code base.
+
+ * SBox Class: Martin Albrecht introduced a new S-box class 
+   to Sage to support (algebraic) exploration of this 
+   fundamental cryptographic primitive.
+
+* Known Issues with 2.10.4:
+
+ * None
+
+* Bug Statistics
+
+We closed 89 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-2.10.4
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 2.11, chaired by Michael Abshoff. 
+The release is planned in about two weeks. Potential features 
+(which are also the goals for 3.0) include:
+
+ * Upgrade many core components of Sage: Python 2.5.2, 
+   ATLAS 3.8.1, clisp 2.44.1
+ * 50% doctest coverage
+ * OSX 10.5 support in 64 bit mode [this will depend on fixing
+   a vexing segfault in libSingular and getting disutils to
+   play nice with numpy]
+ * Pexpect interace to R
+
+* Doctesting Coverage
+
+For 2.10.3 we had:
+
+Overall weighted coverage score:  44.5%
+Total number of functions:  18640
+
+We increased coverage by 3.1% in 2.10.4 while removing 24 functions:
+
+Overall weighted coverage score:  47.6%
+Total number of functions:  18616
+
+* Closed Tickets:
+
+Merged in final:
+
+#185: Tom Boothby: Firefox + Xorg (Linux) take way too much 
+      cputime while waiting for results from the notebook server
+#432: William Stein: finish implementing deleting the trash 
+      (emptying it) in the sage notebook.
+#1590: Tom Boothby: notebook -- change it so changes are 
+       saved even in cells that aren't evaluated
+#1879: Tom Boothby: notebook -- registering redirects to 
+       annoying url
+#1974: Tom Boothby: when changing the title of a worksheet, 
+       the javascript should change the document title (via 
+       DOM or at worst forced reload)
+#2332: Tom Boothby: notebook -- the evaluate link doesn't
+#2492: Mike Hansen: Reference Manual: 18.2 Functions that 
+       compute some of the sequences in Sloane's tables
+#2532: David Roe: various padic bugfixes
+#2550: Martin Alrecht: remove UTF-8 garbage from SBox file
+#2552: Mike Hansen: fix problems in the combinat reference 
+       manual caused by #2432
+#2561: John Cremona: serious inefficiency in order of points 
+       on elliptic curves over finite fields
+#2563: Michael Abshoff: Fix outstanding doc issues for 
+       2.10.4.final
+#2564: Michael Abshoff: Sage 2.10.4.rc0: fix numerical noise 
+       doctest failure in numerical/optimize.py
+
+Merged in rc0:
+
+#1765: Didier Deshommes: allow list of variables as second 
+       input to solve command 
+#1862: Carl Witty: implement at least some sort of useful 
+       rudimentary implicit 2d plotting function
+#2143: Josh Kantor, Didier Deshommes, Mike Hansen: wrap scipy 
+       optimization routines and cvxopt linear programming, add 
+       gradient/hessian to calculus
+#2244: Jason Grout, Alex Ghitza: add a randomize=False option 
+       to the plot command, to avoid "wiggle" in animations
+#2362: Joel Mohler: Integer digits method
+#2372: Didier Deshommes: speedup to matrix_from_rows_and_columns
+#2400: Jason Grout: maxima automatically simplifies floats 
+       to rationals
+#2444: Martin Albrecht: add UTF-8 support to sage -t
+#2448: Nick Alexander: add docstrings, clean code in 
+       quadratic_forms
+#2454: Craig Citro: Start improving doctest coverage in 
+       modular/modsym/
+#2455: Martin Albrecht: improve documentation for multivariate 
+       polynomial ideals
+#2478: Gordon Royle, Robert Miller: chromatic polynomial revisited
+#2485: John Cremona: Complete docstrings and doctests for 
+       schemes/elliptic_curves
+#2501: Martin Albrecht: SBox class for Sage
+#2502: Martin Albrecht: doctest coverage for finite fields
+#2505: Dan Drake: Sage has no Wronskian function
+#2528: Craig Citro, William Stein: File sage/modular/dims_doc.py 
+       should be removed soon
+#2529: Robert Miller: slightly more preparation for backend 
+       switch in graphs
+#2530: William Stein: interact bug -- drop down menu default 
+       doesn't show default value
+#2533: Bill Purvis, Michael Abshoff: add "-p" flag to $CP 
+       for make install to avoid long build times for the 
+       sage library after an install
+#2534: Mike Hansen: Sage does not handle Symmetrica's large 
+       integers
+#2538: Michael Abshoff, William Stein: Sage 2.10.4.rc0: 
+       server/notebook/interact.py is broken due to #2530
+#2540: Yi Qiang: add missing #long in dsage/tests/testdoc.py
+#2541. Robert Miller: Fixes bugs in binary_code.pyx
+#2542: Alex Ghitza: implement right_kernel() and 
+       right_nullity() for matrices
+#2543: Craig Citro: fix doctest in modular/modform/element.py
+
+Merged in alpha0: 
+
+#454: Michael Abshoff, Martin Albrecht, Burcin Erocal, Willem 
+      Jan Palenstijn, Clement Pernet, William Stein: memory 
+      leaks exposed by modular symbols functionality [this 
+      ticket is a composit of numerous other memleak fixes 
+      merged over a *7 months* period. Modular forms are an 
+      excellent way to expose memory leaks in pretty much 
+      every algebraic component of Sage and all know issues 
+      there are now finally fixed]
+#520: Clement Pernet, Michael Abshoff: memory leak: some small 
+      issues with Givaro
+#1901: John Cremona: mistake in the documentation for gens for 
+       Finite field pari
+#1907: William Stein: matrix kernel() is broken (disagrees with 
+       nullity())
+#1976: William Stein: disable the use of openssl on linux as a 
+       hack to generate security certificates quickly
+#2205: Yi Qiang: new sqlalchemy.spkg package
+#2066: William Stein:animate -- bug fix for xmin/ymin/xmax/ymax 
+       and add a nice example requested by a user
+#2192: Craig Citro: various Dirichlet character fixes and 
+       improvements
+#2212: Karl-Dieter Crisman: degree sequence documentation
+#2280: Timothy Clemans: DistributedFactor doesn't return an 
+       instance of sage.structure.factorization.Factorization
+#2320: Yi Qiang: sage -server, sage -worker, sage -dsage broken
+#2322: Yi Qiang: large dsage patch for 2.10.3
+#2328: Mike Hansen, Dan Drake, David Joyner: many docstrings 
+       in combinat functions are unhelpful, outdated, or wrong
+#2354: Didier Deshommes: bug in matrix_real_double_dense
+#2385: Joel Mohler: Multivariate Polynomial coefficients
+#2397: Didier Deshommes: speed up matrix_from_rows and 
+       matrix_from_columns
+#2403: Didier Deshommes: Cannot copy Sequence
+#2421: Didier Deshommes: .round(), .floor(), .ceil(), and .trunc() 
+       on RealNumber should have the same return type
+#2432: Mike Hansen, Franco Saliola: Add support for Macdonald 
+       polynomials, LLT polynomials, Jack polynomials, etc.
+#2447: John Cremona: lfunctions modules scores low on doctests
+#2450: David Harvey: a few doctests for matrix_integer_dense
+#2459: Didier Deshommes: Fix GSL_DISABLE_DEPRECAED macro in 
+       setup.py
+#2461: Robert Bradshaw, Alex Ghitza:vector norms should have a 
+       reasonable default
+#2473: Ryan Hinton, Robert Miller: BipartiteGraph.__init__ does 
+       not properly initialize for some inputs
+#2475: William Stein, Craig Citro: doctest -- get coverage 
+       of modular/dims.py up to 100%
+#2479: William Stein: RDF polynomial factoring bug
+#2481: Jaap Spies: setuptools spkg
+#2482: Gary Furnish: ptest iterators
+#2483: Josh Kantor: Currently R help does not work
+#2484: Carl Witty: "Conditional jump" in QuadDoubleElement __repr__
+#2486: Gary Furnish: remove unused/broken vector and matrix pyx 
+       files
+#2487: Gary Furnish: remove unused/broken p-adic morphism.pyx
+#2488: Gary Furnish: remove unused/broken hanke and pari pxy 
+       files
+#2489: Mike Hansen: symmetric crashes when giving a skew partition 
+       to kostka_tab
+#2499: William Stein, Willem Jan Palenstijn: cython -- issues with 
+       cython-ing on the fly, also fixes #1559
+#2503: Michael Abshoff: doctest failout in sage/misc/functional.py 
+       from #2421
+#2506: Robert Miller: fix problem with inequality operator (!=) in 
+       graph.py
+#2509: Nick Alexander, David Harvey: showstopper in xgcd(f, 0)
+#2510: Robert Miller: Sage 2.10.4.a0: sage/graphs/graph_generators.py 
+       doctest failure related to #2473
+#2520: Mike Hansen: 2.10.4.a0: doctest failures in combinatorics 
+       after merging #2489
+#2524: Michael Abshoff, Clement Pernet: update givaro.spkg to 
+       the 3.2.10.rc3 release

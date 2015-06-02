@@ -1,0 +1,203 @@
+﻿Hi folks,
+
+Sage 4.0.2 was released on June 18th, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 83 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 36 people contributed to this release. Of those, 2 made
+their first contribution to Sage:
+
+ * Alex Ghitza
+ * Burcin Erocal
+ * Carl Witty
+ * Craig Citro
+ * Dan Gordon
+ * Dan Shumow
+ * David Joyner
+ * David Kirkby
+ * David Kohel
+ * David Loeffler
+ * Fidel Barrera Cruz [first contribution]
+ * Florent Hivert
+ * Francis Clarke
+ * Franco Saliola
+ * Harald Schilly
+ * Jason Grout
+ * Jerome Lefebvre [first contribution]
+ * Jim Stankewicz
+ * John Cremona
+ * John Palmieri
+ * Josh Kantor
+ * Karl-Dieter Crisman
+ * Kiran Kedlaya
+ * Maite Aranes
+ * Martin Albrecht
+ * Michael Abshoff
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Nick Alexander
+ * Nicolas Thiery
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Sebastien Labbe
+ * William Stein
+ * Yann Laigle-Chapuy
+
+
+Release managers: Nick Alexander, Craig Citro
+
+
+* Major Features, New Spkgs and Bug fixes
+
+  * Upgrade NumPy, SciPy, Singular, and FLINT to latest upstream releases
+  * A script to automate the testing and merging of tickets
+  * LaTeX output for combinatorial graphs
+  * New features for linear algebra include Hermite normal form over
+    principal ideal domains
+  * New features for number theory include elliptic curve isogeny,
+    elliptic curve logarithm, and local and global heights for number fields
+
+For all the details of what else changed in Sage 4.0.2, please see the
+release tour in the Sage wiki at
+
+  http://wiki.sagemath.org/sage-4.0.2
+
+
+* Bug Statistics
+
+We closed 84 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.0.2
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming release is Sage 4.0.3. The focus will be on increasing
+support for mpmath, upgrade to Python 2.6, and cleaning up mergeable tickets.
+
+
+* Doctesting Coverage
+
+For 4.0.1 we had:
+
+Overall weighted coverage score: 77.2%
+Total number of functions: 21988
+
+In 4.0.2, we increased coverage by 0.3%, while adding 194 functions:
+
+Overall weighted coverage score: 77.5%
+Total number of functions: 22182
+
+
+* Closed Tickets:
+
+#4559: fixed due to #5954
+#5341: William Stein: jsmath broken on wiki [Reviewed by Burcin Erocal]
+#6248: Craig Citro: remove executable bits from sage-README-osx.txt [fixed by removing the executable bits]
+#6285: fixed due to #6244
+#6298: fixed by merging in optional repository
+
+
+Merged in Sage 4.0.2.final
+
+#6360: Craig Citro: Change -O2 to -O0 in singular spkg [Reviewed by Nick Alexander]
+
+
+Merged in Sage 4.0.2.rc3
+
+#6170: Craig Citro, Nick Alexander: automate applying patches from a ticket and testing them [Reviewed by Craig Citro, Nick Alexander]
+#6295: Burcin Erocal: build runs sphinx-build even on failure [Reviewed by Craig Citro]
+#6297: Minh Van Nguyen: fix LaTeX formatting in sage/schemes/elliptic_curves/period_lattice.py [Reviewed by Nick Alexander]
+#6306: John Palmieri: fix some reference manual issues for 4.0.2 [Reviewed by Minh Van Nguyen]
+#6308: Craig Citro: Fix scipy spkg to play nicely with gfortran and g95 [Reviewed by William Stein]
+#6346: William Stein: sage-4.0.2.rc2 build test problem on ppc os x 10.5 [Reviewed by Craig Citro]
+#6350: Martin Albrecht: update M4RI to newest upstream release (20090617) [Reviewed by Craig Citro]
+
+
+Merged in Sage 4.0.2.rc2
+
+#6303: John Cremona, Craig Citro: sage-4.0.2.rc0 test failure [Reviewed by Nick Alexander]
+
+
+Merged in Sage 4.0.2.rc1
+
+#6202: Robert Bradshaw: bitset "noise" on solaris sparc (mark) [Reviewed by William Stein]
+#6241: William Stein: numerical noise (very easy to fix) on cicero (redhat 9) i686 32-bit [Reviewed by Craig Citro]
+#6266: David Kirkby: Build problem of sqlite on Solaris 10 with gcc 4.4.0 [Reviewed by William Stein]
+#6299: Mike Hansen: major scoping error introduced by refactoring dsage [Reviewed by Nick Alexander]
+#6300: Martin Albrecht: doctest fix related to singular upgrad; needed on 32-bit OS X intel, at least (maybe all 32-bit) [Reviewed by William Stein]
+
+
+Merged in Sage 4.0.2.alpha0
+
+#2256: Craig Citro: matrix inverse over CC raises ZeroDivisionError [Reviewed by Jason Grout, Nick Alexander]
+#2513: Craig Citro: Weird printing issues with gcc, caused by LANG environment variable [Reviewed by William Stein]
+#3391: Jason Grout: update scipy to 0.7 [Reviewed by Josh Kantor]
+#3829: Burcin Erocal: wester.py disagrees with Wester!!! [Reviewed by Alex Ghitza]
+#5321: Martin Albrecht: follow up to #5287: improve mq.SR usability even more [Reviewed by Burcin Erocal]
+#5371: Michael Abshoff, Rob Beezer: change autosave defaults [Reviewed by Rob Beezer, Kiran Kedlaya]
+#5431: Mike Hansen: Command line parser fails on hex values with 'e' [Reviewed by Robert Bradshaw]
+#5444: Mike Hansen: ellipses + float = boom [Reviewed by Robert Bradshaw]
+#5454: Robert Bradshaw: Add coercion documentation to the reference manual [Reviewed by David Loeffler]
+#5510: Martin Albrecht: update M4RI interface [Reviewed by Jason Grout]
+#5539: John Palmieri: "sage -docbuild" could use a better error message [Reviewed by Minh Van Nguyen]
+#5701: David Joyner: Remove Guava from standard Sage [Reviewed by Robert Miller]
+#5771: John Palmieri: %latex should issue a warning if latex isn't installed on the system [Reviewed by Rob Beezer]
+#5842: Francis Clarke: Various number field improvements [Reviewed by John Cremona, David Loeffler]
+#5845: John Cremona: Fix precision bug in hilbert_class_polynomial() [Reviewed by Alex Ghitza, Jim Stankewicz]
+#5975: Robert Beezer, Fidel Barrera Cruz: Implement latex output for (combinatorial) graphs [Reviewed by John Palmieri]
+#5976: Dan Shumow: Add an Elliptic Curve Isogeny object [Reviewed by John Cremona, David Kohel]
+#6014: David Joyner: hexads in S(5,6,12) and mathematical blackjack [Reviewed by Dan Gordon]
+#6017: Provide methods for graphs to set options for latex printing [closed due to #5975]
+#6034: Martin Albrecht: update Singular to newest upstream release [Reviewed by Kiran Kedlaya]
+#6044: Maite Aranes: Enhanced reduction modulo ideals of number fields [Reviewed by John Cremona, David Loeffler]
+#6046: John Cremona: Implement local and global heights for number field elements [Reviewed by Francis Clarke, Nick Alexander]
+#6051: Martin Albrecht: Enable Singular's coefficient rings which are not fields [Reviewed by Kiran Kedlaya]
+#6089: John Palmieri: view command: don't always use jsMath [Reviewed by Rob Beezer]
+#6108: Mike Hansen: sage -tp skips all.py!! [Reviewed by Nick Alexander]
+#6110: Carl Witty, Nicolas Thiery: implement a "decorator" to allow pickling nested classes [Reviewed by Robert Bradshaw, Nicolas Thiery]
+#6121: Robert Bradshaw, Nicolas Thiery: use metaclasses to support nested class pickling [Reviewed by Nicolas Thiery]
+#6123: Robert Miller: expose partition refinement functions to Python [Reviewed by Nick Alexander]
+#6140: Jason Grout: Upgrade numpy to 1.3.0 [Reviewed by Josh Kantor]
+#6178: David Loeffler: Hermite normal form over PIDs [Reviewed by John Cremona]
+#6185: Martin Albrecht: Add SBox -> CNF Conversion [Reviewed by Yann Laigle-Chapuy]
+#6188: David Loeffler: Add more files in sage/rings/number_field to reference [Reviewed by John Cremona]
+#6193: John Cremona: implement elliptic logarithm [Reviewed by Robert Bradshaw]
+#6201: Alex Ghitza: CC() raises exception instead of returning 0 [Reviewed by John Palmieri]
+#6205: Nick Alexander: add __invert__ to number field morphism [Reviewed by Craig Citro]
+#6211: Burcin Erocal: typesetting exp sometimes broken [Reviewed by Nick Alexander]
+#6213: Craig Citro: easy addition of an alias to eta product (trivial ticket to deal with) [Reviewed by David Loeffler]
+#6218: Nick Alexander: small changes to jacobian_morphism to make hyperelliptic curve arithmetic faster [Reviewed by Kiran Kedlaya]
+#6221: Minh Van Nguyen: typos in Lagrange interpolation polynomial [Reviewed by Nick Alexander]
+#6222: Minh Van Nguyen: typos in super-increasing code [Reviewed by Nick Alexander]
+#6225: Harald Schilly: add link to irc in notebook help page [Reviewed by Nick Alexander]
+#6226: Michael Abshoff, Florent Hivert, Minh Van Nguyen: developer's guide: sections on formatting docstrings and trac guidelines [Reviewed by John Palmieri, Minh Van Nguyen]
+#6229: Yann Laigle-Chapuy: efficiency in Lagrange polynomial interpolation (easy fix...) [Reviewed by Minh Van Nguyen]
+#6234: Craig Citro: make parallel GCC'ing of Sage library not experimental [Reviewed by Nick Alexander]
+#6244: Burcin Erocal: conjugate() in sage-4.0 is broken [Reviewed by Nick Alexander]
+#6250: Nicolas Thiery: Standardize MatrixGroup_gap: by adding .cardinality, and deprecating __len__ [Reviewed by David Joyner]
+#6252: Minh Van Nguyen: Add 11 people to the development map [Reviewed by Mike Hansen]
+#6256: Burcin Erocal: bug in symbolic arithmetic with exp [Reviewed by Nick Alexander]
+#6257: Karl-Dieter Crisman: Minor plot doc issues [Reviewed by John Palmieri]
+#6259: Craig Citro: Fix spurious file creation in sage/server/support.py [Reviewed by Nick Alexander]
+#6260: William Stein: sage -startuptime is totally broken in sage-4.0.1 [Reviewed by Mike Hansen]
+#6263: Franco Saliola: Add __cmp__ method to ClassFunctions (group characters) [Reviewed by Jerome Lefebvre, David Joyner]
+#6264: Sebastien Labbe: ReST bug introduced by #5452 (missing '::' before a sage block) [Reviewed by John Palmieri]
+#6268: John Palmieri: Typesetting of sec(x), csc(x), cot(x) are broken [Reviewed by Nick Alexander]
+#6270: John Palmieri: add some files from the plot directory to the reference manual [Reviewed by Minh Van Nguyen]
+#6271: Nick Alexander: upgrade to mpir-1.3.0 [Reviewed by Craig Citro]
+#6272: Nick Alexander: upgrade to flint-1.3.0 [Reviewed by Craig Citro]
+#6282: William Stein: document SAGE_CHECK [Reviewed by John Palmieri, Nick Alexander]

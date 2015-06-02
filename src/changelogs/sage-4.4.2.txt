@@ -1,0 +1,186 @@
+﻿Hi folks,
+
+Sage 4.4.2 was released on May 19, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+* sage-support: http://groups.google.com/group/sage-support
+* sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+* sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+* http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 44 people contributed to this release. Of those, 11 made
+their first contribution to Sage:
+
+ * Alex Leone
+ * André-Patrick Bubel [first contribution]
+ * Anne Schilling
+ * Arthur Lubovsky [first contribution]
+ * Burcin Erocal
+ * Dan Drake
+ * David Joyner
+ * Florent Hivert
+ * Francis Clarke
+ * Franco Saliola
+ * Georg S. Weber
+ * Irene Márquez-Corbella [first contribution]
+ * Jason Bandlow
+ * Jason Grout
+ * John Cremona
+ * Karl-Dieter Crisman
+ * Laurent Fousse [first contribution]
+ * Leif Leonhardy
+ * Marco Robado [first contribution]
+ * Martin Albrecht
+ * Mathieu Guay-Paquet [first contribution]
+ * Mike Hansen
+ * Mike Zabrocki
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nicolas M. Thiéry
+ * Nils Bruin
+ * Numata Yasuhide [first contribution]
+ * Oscar Fernández-Ramos [first contribution]
+ * Pablo Angulo [first contribution]
+ * Paul Brouwers [first contribution]
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Mařík
+ * Robert Miller
+ * Ross Kyprianou
+ * Sébastien Labbé
+ * Tim Dumol
+ * Tom Boothby
+ * Wilfried Huss
+ * Willem Jan Palenstijn
+ * William Laffin [first contribution]
+ * William Stein
+
+* Release manager
+
+  * Minh Van Nguyen
+
+* Major features, new spkg's, and bug fixes
+
+ * Updated spkg's: libm4ri-20100221, mpir-1.2.2.p1, r-2.10.1.p1,
+   sagenb-0.8.p2
+
+* Bug statistics
+
+We closed 65 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.4.2
+
+or check out the closed ticket section at the end of the announcement.
+
+* Doctesting coverage
+
+For Sage 4.4.1, we had an overall weighted doctest coverage score of
+81.7%, with 25,475 functions. In Sage 4.4.2, we increased the doctest
+coverage by 0.4% and added 38 new functions. Thus for Sage 4.4.2 we
+now have
+
+ * Overall weighted coverage score:  82.1%
+ * Total number of functions:  25,513
+
+* Known issues
+
+On 32-bit systems, there are random segfaults in doctests of
+planarity.pyx. This issue is tracked at ticket #8756.
+
+Closed tickets:
+
+#5400: conversion error
+#5602: make .lighter() and .darker() methods for Sage Color objects
+#5603: make a .mix() method for Sage color objects
+#5604: average Color objects when adding them together
+#5605: Construct Color objects using hsl and hsv values
+#7340: cayley_table has a syntax error
+#8645: Nils Bruin: maxima package fails to install ECL library
+
+Merged in sagenb:
+
+#3154: Willem Jan Palenstijn, Tim Dumol: notebook -- spurious u0027's output [Reviewed by Mitesh Patel, Tim Dumol; merged in sagenb-0.8]
+#5712: Tim Dumol, Mitesh Patel: notebook -- Get rid of the stupid "unable to immediately interrupt computation" alert that drives me nuts [Reviewed by Mitesh Patel, Tim Dumol, Alex Leone; merged in sagenb-0.8]
+#6069: Tim Dumol, Mitesh Patel: Make error message for nonexistent published page more informative [Reviewed by Tim Dumol, Mitesh Patel; merged in sagenb-0.8]
+#7501: William Stein, Jason Grout, Mitesh Patel: Include CodeMirror in SageNB and use it to edit data files [Reviewed by Jason Grout, Tim Dumol; merged in sagenb-0.8]
+#8038: Dan Drake, Mitesh Patel: email address validator does not accept + in addresses [Reviewed by Tim Dumol; merged in sagenb-0.8]
+#8092: Mitesh Patel: init.sage not attached in worksheets [Reviewed by William Stein, Tim Dumol; merged in sagenb-0.8]
+#8249: Mitesh Patel: sagenb: notebook cookies [Reviewed by Alex Leone, Tim Dumol; merged in sagenb-0.8]
+#8436: Mitesh Patel: Automatic LaTeX output is broken in notebook [Reviewed by Tim Dumol; merged in sagenb-0.8]
+#8637: Paul Brouwers: typo in sagenb/data/sage/html/worksheet_listing.html, line 117 [Reviewed by Tim Dumol; merged in sagenb-0.8]
+
+Merged in sage-4.4.2.alpha0:
+
+#5405: Tim Dumol: create a decorator for adding default keyword arguments to a function [Reviewed by Mike Hansen]
+#6655: Numata Yasuhide, Florent Hivert: Cleanups and new features about corners and cells in partition and tableau [Reviewed by Anne Schilling]
+#6949: Burcin Erocal: add symbolic max and min functions [Reviewed by Laurent Fousse]
+#8174: Burcin Erocal: maxima_methods wrapper for symbolic expressions [Reviewed by Robert Mařík, Karl-Dieter Crisman]
+#8237: Burcin Erocal: Sage does not recognize Maxima's complex infinity [Reviewed by Karl-Dieter Crisman, Ross Kyprianou, Robert Mařík]
+#8301: Martin Albrecht: segfault in m4ri [Reviewed by Tom Boothby, William Stein]
+#8459: Robert Marik: broken translation of polylog from Maxima [Reviewed by Burcin Erocal]
+#8479: Wilfried Huss: numpy support for more basic functions [Reviewed by Burcin Erocal]
+#8587: Martin Albrecht: get rid of annoying warning in vector_space_dimension() [Reviewed by Burcin Erocal]
+#8719: Jason Grout: convert RDF/CDF matrices to numpy [Reviewed by Rob Beezer]
+#8786: Minh Van Nguyen, Nathann Cohen: graph.py: autogenerated broken links to Wikipedia [Reviewed by Minh Van Nguyen, Nathann Cohen]
+#8789: William Stein: Improve doctest coverage of modules/free_module_element.pyx [Reviewed by Mike Hansen]
+#8798: Nathann Cohen: Duplicate version of feedback_arc_set and feedback_vertex_set [Reviewed by Minh Van Nguyen]
+#8805: Karl-Dieter Crisman, Minh Van Nguyen: Bring doctest for sage/functions folder to 100% [Reviewed by Minh Van Nguyen, Karl-Dieter Crisman]
+#8814: Robert Bradshaw: Remove redundant checks for elliptic curve group structure [Reviewed by John Cremona]
+#8815: Robert Bradshaw: Misc elliptic curve typo fixes (easy review) [Reviewed by John Cremona]
+#8816: Robert Bradshaw: Bug in CPS_height_bound documentation [Reviewed by John Cremona]
+#8818: Robert Bradshaw: Infinite loop in ZZ.range() [Reviewed by Leif Leonhardy]
+#8827: Robert Bradshaw: Cache heights of points on elliptic curves [Reviewed by John Cremona]
+#8832: Florent Hivert: CombinatorialFreeModule doesn't properly coerce scalar during action [Reviewed by Jason Bandlow]
+#8856: Florent Hivert: Reinstate cached one in algebra_with_basis [Reviewed by Nicolas M. Thiéry]
+#8859: Robert Miller: bidirectional_dijkstra does not handle vertex labels properly [Reviewed by Nathann Cohen]
+#8861: Tim Dumol: sagenb-0.8.p1.spkg: broken dependencies, requires internet conn. to build [Reviewed by Minh Van Nguyen, Georg S. Weber]
+#8865: Mathieu Guay-Paquet: FractionFieldElement.__call__ doesn't handle keyword arguments [Reviewed by Mike Hansen]
+#8866: Jason Grout: preparse vector-valued functions and derivatives [Reviewed by Rob Beezer]
+#8874: Mike Hansen: Matrices are missing a is_skew_symmetric method [Reviewed by Pablo Angulo]
+#8875: Marco Robado: Problem with Set created from iterator [Reviewed by Mike Hansen]
+#8877: Anne Schilling: New methods in partitions [Reviewed by Jason Bandlow, Florent Hivert]
+#8882: Florent Hivert: Cleanup Combinatorial Free module [Reviewed by Franco Saliola]
+#8912: Franco Saliola: documentation error in pseudo_order for finite monoid element [Reviewed by Minh Van Nguyen]
+#8914: William Laffin: categories/sets_cat.py in an_element docstring [Reviewed by Minh Van Nguyen]
+#8916: Oscar Fernández-Ramos, Irene Márquez-Corbella: documentation error in cardinality for Enumerated Sets [Reviewed by Florent Hivert]
+#8917: Marco Robado: Documentation in Magmas product_from_element_class_mul [Reviewed by Minh Van Nguyen]
+#8935: Minh Van Nguyen: update README.txt to reflect support for Mac OS X 10.4.x [Reviewed by Karl-Dieter Crisman]
+
+Merged in sage-4.4.2.rc0:
+
+#7936: Karl-Dieter Crisman: Calculus constructions mix explicit calls to maxima [Reviewed by David Joyner]
+#8449: Minh Van Nguyen, Burcin Erocal: real_part? has an unescaped \r [Reviewed by Burcin Erocal, Minh Van Nguyen]
+#8601: Jason Grout: Bug in vector reduction [Reviewed by Minh Van Nguyen]
+#8640: Minh Van Nguyen: Add BipartiteGraph to the documentation [Reviewed by David Joyner]
+#8804: Karl-Dieter Crisman: Bring plot/plot3d/parametric_surface.pyx to 100% doctest coverage [Reviewed by Minh Van Nguyen]
+#8819: Minh Van Nguyen: warnings in building documentation of Sage 4.4.2.alpha0 [Reviewed by John Cremona]
+#8892: Nathann Cohen: Many doctests fails since the update of NetworkX ! [Reviewed by Minh Van Nguyen, Jason Grout]
+#8944: Minh Van Nguyen: 32 vs. 64 bit issues in matrix1.pyx [Reviewed by John Cremona]
+#8946: Wilfried Huss: Sage 4.4.2.alpha0: doctest failures in calculus/riemann.pyx due to #8479 [Reviewed by Minh Van Nguyen]
+
+Merged in sage-4.4.2.final:
+
+#8915: Mike Zabrocki: improve documentation on combinat.dyck_words [Reviewed by Minh Van Nguyen, Sébastien Labbé]
+#8919: William Laffin: documetation error in super_categories for Sets [Reviewed by Minh Van Nguyen]
+#8964: Jason Grout: Two small typos [Reviewed by Francis Clarke]
+#8979: André-Patrick Bubel: spelling mistake in sage/gsl/ode.pyx [Reviewed by Minh Van Nguyen]
+#8990: Georg S. Weber: update MPIR 1.2.2 license information as requested by upstream [Reviewed by Minh Van Nguyen]
+#8991: Rob Beezer: Adjust developer walkthrough for two changes to mercurial queues syntax [Reviewed by Arthur Lubovsky]

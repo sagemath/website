@@ -1,0 +1,164 @@
+﻿Hello folks,
+
+Sage 3.0.6 was released on July 30th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 22 people contributed to this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Tom Boothby
+ * Ondrej Certik
+ * Craig Citro
+ * Dan Grayson (first contribution)
+ * John Cremona
+ * Gary Furnish
+ * Carlo Hamalainen
+ * Mike Hansen
+ * Bill Hart
+ * David Harvey
+ * Waldek Hebish (first contribution)
+ * Emily Kirkman
+ * Robert Miller
+ * Clement Pernet
+ * Anne Schilling
+ * William Stein
+ * Nicolas Thiery
+ * Ralph-Philipp Weinmann
+ * Carl Witty
+ * Chris Wuthrich
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * This release was another stabilization release before opening 
+   3.1.
+
+For details see the Sage 3.0.6 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.0.6
+
+* Known Issues with 3.0.6:
+
+ * RHEL 5 clisp build issue: the latest clisp.spkg does not build 
+   so please use the clisp.spkg from Sage 3.0.3.
+
+* Bug Statistics
+
+We closed 39 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.0.6
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.1, chaired by Michael Abshoff. It will 
+focus on merging the new coercion code among other things and 
+should increase the development speed again.
+
+* Doctesting Coverage
+
+For 3.0.4 we had:
+
+Overall weighted coverage score:  53.6%
+Total number of functions:  20233
+
+We increased coverage by 0.6% in 3.0.6 while adding 4 functions:
+
+Overall weighted coverage score:  54.2%
+Total number of functions:  20237
+
+* Closed Tickets:
+
+Merged in Sage 3.0.6.final:
+
+#3611: Michael Abshoff: sympow: make it use $CC instead of cc [Reviewed 
+       by William Stein]
+#3706: William Stein: fix segfault in matrix2.pyx [Reviewed by Michael 
+       Abshoff]
+#3712: Michael Abshoff: clisp+nohup eats ones disc [Reviewed by William 
+       Stein]
+#3715: Waldek Hebish, Michael Abshoff: Bug in lisp startup script 
+       [Reviewed by William Stein]
+#3716: Martin Albrecht: add GINV as experimental/optional package 
+       [Reviewed by Michael Abshoff]
+#3742: Michael Abshoff: Fortran.spkg: Detect the location of gfortran 
+       properly [Reviewed by William Stein]
+
+Merged in Sage 3.0.6.rc0:
+
+#10: Gary Furnish, Dan Grayson: update M2 to the 1.1 release 
+     [Reviewed by Michael Abshoff, Mike Hansen]
+#3345: Mike Hansen, William Stein: trace no longer works in 3.0.2 
+       [Reviewed by William Stein, Mike Hansen] 
+#3669: William Stein: improve multiple_of_order command for torsion 
+       subgroups of modular abelian varieties [Reviewed by Craig Citro]
+#3671: Michael Abshoff, Clement Pernet: Fix ssmod.py doctest failures in 
+       Sage 3.0.4 or later [Reviewed by William Stein]
+#3694: Michael Abshoff, Bill Hart: Update FLINT to the 1.0.13 release 
+       [Reviewed by William Stein]
+#3681: William Stein: modulus() randomly broken for gf2e fields 
+       [Reviewed by John Cremona, Michael Abshoff]
+#3695: Ondrej Certik, John Cremona: Improve factor documentation 
+       [Reviewedby William Stein, Martin Albrecht]
+#3696: Michael Abshoff: Fix gmp.spkg build issue on Solaris
+       [Reviewed by William Stein]
+#3700: Michael Abshoff: Solaris: Fix ntl build issue 
+       [Reviewed by William Stein]
+#3701: Michael Abshoff: Solaris: fix polybori build due to bashism 
+       [Reviewed by William Stein]
+
+Merged in Sage 3.0.6.alpha0:
+
+#3232: Martin Albrecht: wrap NTL's BKZ [Reviewed by Ralph-Philipp Weinmann]
+#3531: Gary Furnish: create optional boehm_gc.spkg [Reviewed by Michael Abshoff]
+#3532: Gary Furnish: create optional gdbm.spkg [Reviewed by Michael Abshoff]
+#3554: Mike Hansen: improve M2 pexpect interface [Reviewed by Gary Furnish]
+#3564: William Stein: optimize sage startup: don't import sympy by default 
+       [Reviewed by Michael Abshoff]
+#3579: Emily Kirkman: bug in RandonGNP graph constructor 
+       [Reviewed by Robert Miller]
+#3592: Ondrej Certik: update sympy to the 0.6.0 release 
+       [Reviewed by Michael Abshoff]
+#3601: Anne Schilling: Reimplementation of tensor products 
+       [Reviewed by Mike Hansen]
+#3614: Gary Furnish: pbuild broken by finance [Reviewed by Michael Abshoff]
+#3626: Tom Boothby: Graph.set_boundary only takes lists 
+       [Reviewed by Robert Miller]
+#3629: Clement Pernet: givaro-3.2.11 installs its own libgmpxx.{so,a} 
+       [Reviewed by Michael Abshoff]
+#3650: Gary Furnish: Infinite recursion in pbuild by recursive pxd imports 
+       [Reviewed by Michael Abshoff]
+#3651: John Cremona: elliptic curves -- bug in L_ratio() 
+       [Reviewed by Chris Wuthrich]
+#3657: Carlo Hamalainen: Documentation for latin squares, DLXCPP; minor fixes 
+       [Reviewed by Mike Hansen]
+#3632: Chris Wuthrich, David Harvey: small bug in p-adic heights 
+       [Reviewed by David Harvey, Chris Wuthrich]
+#3647: Michael Abshoff: remove "- static-libgcc" from lcalc's CFLAGS) 
+       [Reviewed by Mike Hansen]
+#3648: Carl Witty, David Harvey: complex(pari(...)) fails 
+       [Reviewed by David Harvey, Carl Witty]
+#3660: Anne Schilling, Mike Hansen: add documentation to the reference manual
+       for crystals and root systems [Reviewed by Mike Hansen]
+#3661: Nicolas Thiery, Mike Hansen: move sage/combinat/family.py into the 
+       main tree [Reviewed by Mike Hansen]
+#3667: William Stein: notebook -- if user history can't be loaded from disk 
+       make it blank (much better than making entire notebook not work at all) 
+       [Reviewed by Michael Abshoff]

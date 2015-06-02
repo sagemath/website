@@ -1,0 +1,10 @@
+﻿Thu Aug  2 21:15:57 2007
+------------------------
+2.7.3:
+       * r bradshaw: bug fixes
+       * j bober: vastly optimized number_of_partitions
+       * c citro: bug fixes and optimization of computing eisenstein series.
+       * d kohel: bug fixes; improved free modules
+       * w stein: upgraded to jsmath-3.4c
+       * w stein: many misc bug fixes; speed up bell_number
+       * j walker: notebook bug fixes, etc.

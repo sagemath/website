@@ -1,0 +1,589 @@
+Sage 6.3 was released on 10 August 2014. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 121 people contributed to this release. Of those, 22 made
+their first contribution to Sage:
+
+  - Adrien Boussicault [first contribution]
+  - Aladin Virmaux
+  - Alex Ghitza
+  - Aly Deines
+  - André Apitzsch
+  - Andrew Gainer-Dewar
+  - Andrey Novoseltsev
+  - Anna Haensch
+  - Anne Schilling
+  - Ares Ribó [first contribution]
+  - Ben Hutz
+  - Ben LeVeque [first contribution]
+  - Bernhard Bloechl [first contribution]
+  - Bogdan Ion [first contribution]
+  - Bradly Schlenker [first contribution]
+  - Brett Stevens
+  - Brice Onfroy [first contribution]
+  - Bruno Grenet [first contribution]
+  - Charles Bouillaguet
+  - Christian Nassau
+  - Christian Stump
+  - Christoph Lauter [first contribution]
+  - Clemens Heuberger
+  - Daniel Bump
+  - Daniel Krenn
+  - Darij Grinberg
+  - David Coudert
+  - David Krumm
+  - David Roe
+  - Dillon Rose
+  - Dmitrii Pasechnik
+  - Emmanuel Charpentier
+  - Erik Massop
+  - Eviatar Bach
+  - Federico Poloni
+  - Florent Hivert
+  - Francis Clarke
+  - François Bissey
+  - Frédéric Chapoton
+  - Fredrik Johansson
+  - Hao Chen [first contribution]
+  - Ingólfur Eðvarðsson [first contribution]
+  - Ivan Andrus
+  - James Campbell [first contribution]
+  - Jan Keitel
+  - Jason Grout
+  - Jayant Apte
+  - Jean-Baptiste Priez
+  - Jean-Philippe Labbé
+  - Jean-Pierre Flori
+  - Jennet Dickinson [first contribution]
+  - Jernej Azarija
+  - Jeroen Demeyer
+  - Jim Stark
+  - Joao Alberto de Faria
+  - Johan Bosman
+  - John Cremona
+  - John Doyle [first contribution]
+  - John Palmieri
+  - Jonas Jermann [first contribution]
+  - Jonathan Bober
+  - Jordi Saludes [first contribution]
+  - Julien Puydt
+  - Julian Rüth
+  - Kannappan Sampath
+  - Karl-Dieter Crisman
+  - Leif Leonhardy
+  - Luis Felipe Tabera Alonso
+  - Marc Mezzarobba
+  - Marco Streng
+  - Mark Shimozono
+  - Martin Albrecht
+  - Martin Raum
+  - Martin von Gagern
+  - Mathieu Guay-Paquet
+  - Matthieu Dien
+  - Michael Orlitzky
+  - Miguel Marco
+  - Mike Zabrocki
+  - Minh Van Nguyen
+  - Nathan Dunfield
+  - Nathann Cohen
+  - Nicolas M. Thiéry
+  - Niles Johnson
+  - Nils Bruin
+  - Paul Scurek
+  - Paul Zimmermann
+  - Pedro Cruz [first contribution]
+  - Peter Bruin
+  - Peter Müller
+  - Punarbasu Purkayastha
+  - Ralf Hemmecke
+  - Ralf Stephan
+  - R. Andrew Ohana
+  - Robert Bradshaw
+  - Robert Harron
+  - Robert Lipshitz
+  - Roberto Panai [first contribution]
+  - Samuel Gonshaw
+  - Santiago Vila [first contribution]
+  - Sara Kropf
+  - Sébastien Besnier [first contribution]
+  - Sébastien Labbé
+  - Simon King
+  - Soli Vishkautsan [first contribution]
+  - Stefan van Zwam
+  - Steven Trogdon
+  - Taylor Dupuy
+  - Thierry Monteil
+  - Timo Kluck
+  - Tom Boothby
+  - Tom Denton
+  - Tomer Bauer
+  - Travis Scrimshaw
+  - Vince Knight [first contribution]
+  - Vincent Delecroix
+  - Viviane Pons
+  - Volker Braun
+  - Wilfried Luebbe
+  - William Stein
+  - Yann Laigle-Chapuy
+
+* Release manager: Volker Braun.
+
+* We closed 400 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-6.3/tickets.html
+
+Merged in sage-6.3.beta0:
+
+#2686: Nathann Cohen: graph generators - new additions [Reviewed by Frédéric Chapoton]
+#7085: Peter Bruin: fix this laurent series coercion bug [Reviewed by Travis Scrimshaw]
+#9885: Nils Bruin, Marc Mezzarobba: slow coercion from integer mod ring to integer ring [Reviewed by Marc Mezzarobba, Nils Bruin, Peter Bruin]
+#11669: William Stein: optimize quaternion algebra elements a bit, in some obvious ways [Reviewed by R. Andrew Ohana]
+#11670: Julian Rueth: fix number fields being unique parents -- this got broken over the years [Reviewed by Simon King, Peter Bruin]
+#12630: Jim Stark, Simon King, Mathieu Guay-Paquet, Aladin Virmaux: Add representations of quivers and quiver algebras to sage [Reviewed by Simon King, Travis Scrimshaw]
+#12867: Nathann Cohen: random_element for Words is broken [Reviewed by Vincent Delecroix]
+#14996: Eviatar Bach: Improve support for Jacobi elliptic functions [Reviewed by Ralf Stephan, Travis Scrimshaw]
+#15059: Darij Grinberg: Morphisms cannot be applied to too-simple elements of a multivariate power series ring [Reviewed by Peter Bruin]
+#15061: Robert Harron, Peter Bruin: PARI and Singular can't handle all polynomial resultants [Reviewed by Martin von Gagern]
+#15310: Nathann Cohen: Wilson's construction of Transversal Designs/Orthogonal Arrays/MOLS [Reviewed by Vincent Delecroix]
+#15646: Jean-Pierre Flori: Move monsky_washnitzer.py from elliptic_curves to hyperelliptic_curves [Reviewed by Frédéric Chapoton]
+#15901: John Palmieri: git-related doctest failures after moving sage installation [Reviewed by Peter Bruin]
+#15919: Nicolas M. Thiéry: unrank via R[i] conflicts with notation for constructing polynomial rings in CartesianProduct [Reviewed by Travis Scrimshaw]
+#16005: Nathann Cohen: Waste of time in iterator_edges 2 [Reviewed by Vincent Delecroix]
+#16051: Ben Hutz: fast_callable can return ipow with exponents in the base ring [Reviewed by Dillon Rose]
+#16091: Nathann Cohen: A missing obvious case for BIBD [Reviewed by Kannappan Sampath]
+#16129: Julian Rüth: Improve caching in EllipticCurve_generic [Reviewed by Peter Bruin]
+#16143: Clemens Heuberger, Daniel Krenn, Sara Kropf: finite_state_machine: Add an example on the Gray code into the documentation [Reviewed by Daniel Krenn, Sara Kropf]
+#16145: Clemens Heuberger, Sara Kropf: FiniteStateMachine.asymptotic_moments: New method [Reviewed by Daniel Krenn]
+#16168: Dillon Rose: use p_iter_fork in projective_morphism [Reviewed by Ben Hutz]
+#16206: Daniel Krenn: FSMProcessIterator deals with fsm_word_out [Reviewed by Clemens Heuberger]
+#16207: Clemens Heuberger: FiniteStateMachine._latex_: more options, better documentation [Reviewed by Daniel Krenn]
+#16227: Nathann Cohen: Product construction of Transversal Designs [Reviewed by Vincent Delecroix]
+#16229: Clemens Heuberger: FiniteStateMachine._latex_ and latex_options: customize loop position [Reviewed by Daniel Krenn]
+#16231: Nathann Cohen: Equivalence between OA/TD/MOLS [Reviewed by Vincent Delecroix]
+#16240: Ralf Stephan: regression in partial_fraction_decomposition() [Reviewed by Peter Bruin]
+#16254: Sara Kropf, Clemens Heuberger: FiniteStateMachine: final_word_out: more implementations [Reviewed by Clemens Heuberger, Daniel Krenn]
+#16269: Nathann Cohen, Nicolas M. Thiéry: Cartesian Products of additive groups [Reviewed by Nathann Cohen, Nicolas M. Thiéry]
+#16275: Nicolas M. Thiéry, Simon King: Hom: introduce a check argument to simplify the unpickling detection logic [Reviewed by Simon King, Nicolas M. Thiéry]
+#16280: Nicolas M. Thiéry: Fix call for FiniteEnumeratedSet's of plain Python objects [Reviewed by Nathann Cohen]
+#16281: Vincent Delecroix: redesign projective plane [Reviewed by Nathann Cohen]
+#16282: Martin Albrecht: magma(P) for multivariate polynomial rings [Reviewed by Volker Braun]
+#16288: Nicolas M. Thiéry: Optimize sage.sets.cartesian_product.CartesianProduct._cartesian_product_of_elements [Reviewed by Nathann Cohen]
+#16289: Nicolas M. Thiéry: Fix ZZ.cartesian_product(...) [Reviewed by Nathann Cohen]
+#16305: Peter Bruin: sage-env must wait longer before setting MPLCONFIGDIR [Reviewed by Leif Leonhardy]
+
+Merged in sage-6.3.beta1:
+
+#6637: Sébastien Labbé: standardize the interface to TransitiveIdeal and friends [Reviewed by Travis Scrimshaw]
+#11475: R. Andrew Ohana: improve prime_pi (speedup + small fixes) [Reviewed by Yann Laigle-Chapuy, Leif Leonhardy, William Stein, Karl-Dieter Crisman]
+#11719: Tom Boothby, Ralf Stephan: Add is_monomial() to power series and laurent series ring elements [Reviewed by Peter Bruin]
+#13445: Alex Ghitza: Cuspidal subspace of modular forms over finite field contains forms that are not cuspidal [Reviewed by Peter Bruin]
+#13525: Samuel Gonshaw, Jan Keitel: PALP Normal Form [Reviewed by Volker Braun]
+#15018: Paul Scurek: add recover_formula and prefix_to_infix functions to logicparser.py [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#15036: Nils Bruin: Speed up matrix repr for matrices larger than 20 [Reviewed by Travis Scrimshaw, Nathann Cohen]
+#15099: Eviatar Bach: Implement numeric evaluation of zetaderiv [Reviewed by Ralf Stephan]
+#15704: Nathann Cohen: Stupid waste of time in graphs 1 [Reviewed by Vincent Delecroix]
+#15780: Dillon Rose: Increase Performance in Projective Morphism [Reviewed by Ben Hutz]
+#15896: Frédéric Chapoton: integration of polynomials in several variables is buggy [Reviewed by Peter Bruin]
+#15897: Julian Rueth: UniqueFactory for QuaternionAlgebras [Reviewed by David Roe, Peter Bruin]
+#15970: Alex Ghitza: j_invariant_qexp won't allow substitution [Reviewed by Peter Bruin]
+#16211: Kannappan Sampath: Implement Hadamard 3-Designs [Reviewed by Nathann Cohen]
+#16235: Nathann Cohen, Vincent Delecroix: A pair of orthogonal latin squares of order 10 [Reviewed by Vincent Delecroix, Nathann Cohen]
+#16236: Nathann Cohen: Five mutually orthogonal latin squares of order 12 [Reviewed by Vincent Delecroix]
+#16237: Kannappan Sampath: IncidenceStructureFromMatrix bug [Reviewed by Nathann Cohen]
+#16241: Nathann Cohen: New MOLS shared by Ian Wanless [Reviewed by Vincent Delecroix]
+#16244: Nicolas M. Thiéry: Simplify TestSuite's some_elements role and logic (no random sampling) [Reviewed by Travis Scrimshaw]
+#16248: Nathann Cohen: Some trivial Orthogonal Arrays (when n=1) [Reviewed by Vincent Delecroix]
+#16251: Julian Rueth: Polynomials with unhashable coefficients should be unhashable [Reviewed by Peter Bruin]
+#16253: Sara Kropf: FiniteStateMachine: Introduce final_word_out [Reviewed by Clemens Heuberger, Daniel Krenn]
+#16257: Nathann Cohen: Unnatural syntax of G.relabel() [Reviewed by Pedro Cruz]
+#16265: Sara Kropf: transducers.weight: new common transducer [Reviewed by Clemens Heuberger]
+#16266: Daniel Krenn: FiniteStateMachine: option to show empty final word out labels [Reviewed by Clemens Heuberger]
+#16272: Nathann Cohen, Vincent Delecroix: redesign transversal designs [Reviewed by Nathann Cohen, Vincent Delecroix]
+#16277: Nathann Cohen: MOLS constructions rom the Handbook of Combinatorial Designs [Reviewed by Vincent Delecroix]
+#16279: Nathann Cohen: BIBD from Transversal Designs [Reviewed by Kannappan Sampath]
+#16284: André Apitzsch: Remove some deprecated code [Reviewed by Nathann Cohen, Travis Scrimshaw]
+#16286: Nathann Cohen: Allow k=None in MOLS/TD/OA [Reviewed by Vincent Delecroix]
+#16297: John Palmieri: followup to #16196: strip multiple 'sage:' prompts [Reviewed by Travis Scrimshaw]
+#16300: Ralf Stephan: upgrade setuptools to 2.2b1 [Reviewed by Peter Bruin]
+#16307: Jennet Dickinson: Fix small bug in G.strong_orientation() [Reviewed by Nathann Cohen]
+#16314: Florent Hivert: Allows to construct subclasses of labelled tree from a labelled tree [Reviewed by Adrien Boussicault]
+#16315: Anne Schilling: Modify the header of the tests for k-Schur book [Reviewed by Mike Zabrocki]
+#16326: Frédéric Chapoton: spring cleanup for dyck_word.py [Reviewed by Nathann Cohen]
+#16328: Julian Rüth: Add a category parameter for Module [Reviewed by Peter Bruin]
+
+Merged in sage-6.3.beta2:
+
+#9493: Leif Leonhardy, Jean-Pierre Flori: Remove extra baggage from the ECL spkg [Reviewed by Peter Bruin]
+#10963: Nicolas M. Thiéry: Axioms and more functorial constructions [Reviewed by Volker Braun, Nils Bruin, Peter Bruin, Frédéric Chapoton, Darij Grinberg, Florent Hivert, Simon King, Travis Scrimshaw]
+#11506: Volker Braun: Fix the infinity ring. [Reviewed by Peter Bruin]
+#11990: Peter Bruin: infinite sums that are infinite produce errors [Reviewed by Travis Scrimshaw]
+#12046: Ben LeVeque: Fix for numerator_ideal function [Reviewed by Peter Bruin]
+#13125: Volker Braun , Jordi Saludes , Ares Ribó: Reals sets consisting of intervals and isolated points [Reviewed by Ralf Stephan, Peter Bruin]
+#13355: Timo Kluck: doctest proper handling of domain in evalf functions [Reviewed by Ralf Stephan]
+#14102: Nicolas M. Thiéry, Anne Schilling: Nonsymmetric Macdonald Polynomials for all affine types [Reviewed by Anne Schilling, Nicolas M. Thiéry, Mark Shimozono, Bogdan Ion]
+#14329: Marc Mezzarobba: Remove all the "is_[A-Z].*" from global namespace [Reviewed by Peter Bruin]
+#14631: Nathann Cohen, Dima Pasechnik: Affine Polar Graphs [Reviewed by Nathann Cohen, Dima Pasechnik]
+#14990: Peter Bruin: Implement algebraic closures of finite fields [Reviewed by Vincent Delecroix]
+#15040: Paul Scurek: error handling and new model theoretic functions in logic module [Reviewed by William Stein]
+#15631: Volker Braun: Random failures in sandpiles.py [Reviewed by Nils Bruin]
+#15781: Dillon Rose: Increase Performance of possible_periods in Projective Morphism [Reviewed by Ben Hutz, Joao Alberto de Faria]
+#15782: Dillon Rose, Ben Hutz: Increase Performance of Multiplier in Projective Morphism [Reviewed by Ben Hutz, Dillon Rose]
+#15801: Nicolas M. Thiéry: Categories over a base ring category [Reviewed by Travis Scrimshaw]
+#15921: Dmitrii Pasechnik: work around Maxima fpprintprec bug and other ARM-specific problems [Reviewed by Peter Bruin, Volker Braun]
+#16059: Thierry Monteil: Equality vs hash for braid groups [Reviewed by Travis Scrimshaw]
+#16162: Jean-Pierre Flori: Cantor-Zassenhaus may enter infinite loop over GF(2**k) and cannot be interrupted [Reviewed by Peter Bruin]
+#16199: Ralf Stephan: improve docs, add doctests in power_series* [Reviewed by Peter Bruin]
+#16216: Wilfried Luebbe: Improve PEP8 compliance: replace "== None" by "is None" [Reviewed by Ralf Stephan]
+#16224: Nils Bruin: incorrect translation of Bessel from Maxima? [Reviewed by Peter Bruin]
+#16246: Jennet Dickinson: Add functions calculating all spanning trees, all bridges in a graph [Reviewed by Nathann Cohen]
+#16255: Clemens Heuberger, Daniel Krenn: FiniteStateMachine.with_final_word_out: New method [Reviewed by Daniel Krenn, Sara Kropf]
+#16267: Daniel Krenn: option to change column alignment in a matrix (in LaTeX output) [Reviewed by Clemens Heuberger]
+#16276: Charles Bouillaguet: fixes PolynomialElement.mod() [Reviewed by John Cremona, Jean-Pierre Flori, Peter Bruin]
+#16299: François Bissey: upgrade numpy/scipy to 1.8.1 and 0.14 [Reviewed by Nathan Dunfield]
+#16306: Darij Grinberg: Replace =0 by is_zero() in test for matrix being alternating [Reviewed by Vincent Delecroix]
+#16337: Julian Rueth: key parameter of cached_method is not correctly propagated [Reviewed by Simon King]
+#16338: Punarbasu Purkayastha: generate immutable codewords for a linear code? [Reviewed by Dmitrii Pasechnik]
+#16341: Julian Rueth: discover_action() fails for unhashable elements [Reviewed by Peter Bruin]
+#16344: Jan Keitel: Virtual rays of fans in non-saturated lattices [Reviewed by Andrey Novoseltsev]
+#16345: Jean-Pierre Flori: ATLAS fails to build on ARM [Reviewed by Volker Braun, Peter Bruin]
+#16348: Volker Braun: Cdd linker path [Reviewed by François Bissey]
+#16349: Simon King, Travis Scrimshaw: Make UniqueFactory unpickling more flexible [Reviewed by Travis Scrimshaw, Simon King]
+#16350: Ralf Stephan: on some systems, pkg-libexecs are installed into local/lib instead of local/libexec [Reviewed by Simon King, John Palmieri]
+#16355: Sara Kropf: FiniteStateMachine: Corrected adjacency matrix [Reviewed by Clemens Heuberger]
+#16357: Clemens Heuberger: FiniteStateMachine.default_format_transition_label: accept iterable [Reviewed by Daniel Krenn]
+#16362: Nathann Cohen: Orthogonal Polar Graph [Reviewed by Dima Pasechnik]
+#16365: Nathan Dunfield: ChainComplex.betti uses wrong base_ring [Reviewed by John Palmieri]
+#16368: Volker Braun: Missing pkgconf dependencies [Reviewed by Martin Albrecht]
+#16375: Volker Braun: Typo in libGAP's spkg-install [Reviewed by Leif Leonhardy]
+#16379: Anna Haensch: Compute Hasse invariant over number fields and fix current implementation [Reviewed by Peter Bruin]
+#16387: Clemens Heuberger: FiniteStateMachine.determinisation: allow input words of length > 1 [Reviewed by Daniel Krenn]
+#16389: Volker Braun: display typeset missing [Reviewed by Ivan Andrus]
+
+Merged in sage-6.3.beta3:
+
+#7191: Jonathan Bober, Frédéric Chapoton: Make Dirichlet characters work when base ring is CC [Reviewed by Johan Bosman, Peter Bruin]
+#7829: Marc Mezzarobba: implement hex for real numbers [Reviewed by Robert Bradshaw]
+#8828: Robert Bradshaw, John Cremona: Lower height bound for elliptic curves [Reviewed by Peter Bruin]
+#10448: Julian Rüth: Extensions of ZZ are not unique parents [Reviewed by Peter Bruin]
+#10955: Peter Bruin: Get Maxima to easily accept flag values [Reviewed by Nils Bruin, Karl-Dieter Crisman]
+#11894: Peter Bruin: problems with infinite sum [Reviewed by Karl-Dieter Crisman]
+#13291: Frédéric Chapoton: Make matlab optional tests consistent [Reviewed by André Apitzsch]
+#13422: Punarbasu Purkayastha, Michael Orlitzky: Log scale plots should auto-expand axes range to include at least 2 ticks [Reviewed by Karl-Dieter Crisman, Michael Orlitzky, Punarbasu Purkayastha]
+#13526: Peter Bruin: simple incorrect limit [Reviewed by Travis Scrimshaw]
+#13712: Travis Scrimshaw: wrong evaluation of infinite sum [Reviewed by Jeroen Demeyer, Karl-Dieter Crisman]
+#13973: Peter Bruin: Upgrade Maxima to 5.33.0 [Reviewed by Marc Mezzarobba]
+#14209: Karl-Dieter Crisman: Extra assumption kept by Maxima [Reviewed by Travis Scrimshaw, Peter Bruin]
+#14543: Andrew Gainer-Dewar: Implement compositional inverses of cycle index series [Reviewed by Frédéric Chapoton]
+#14680: Sébastien Labbé: fix broken optional dot2tex doctests [Reviewed by André Apitzsch]
+#14953: Nathann Cohen, Brice Onfroy: Graph drawing in javascript using d3.js [Reviewed by Dima Pasechnik, Volker Braun]
+#15178: Bradly Schlenker: the pexpect in sage has a major bug in it -- the which command is broken (easy to fix) [Reviewed by William Stein, Peter Bruin]
+#15384: Travis Scrimshaw: Improvements to root systems [Reviewed by Daniel Bump]
+#15386: Karl-Dieter Crisman: Maxima is confused about limits at infinity [Reviewed by Travis Scrimshaw]
+#15438: Peter Müller: Fix elias_upper_bound [Reviewed by Punarbasu Purkayastha]
+#15545: Ralf Stephan: TypeError in matching_polynomial [Reviewed by Nathann Cohen]
+#15683: Viviane Pons: Interval-posets of Tamari [Reviewed by Darij Grinberg, Frederic Chapoton, Travis Scrimshaw]
+#15768: Travis Scrimshaw: Cleanup logic documentation [Reviewed by Frédéric Chapoton]
+#15976: Martin Albrecht: IntegerLattice class [Reviewed by Daniel Krenn, Travis Scrimshaw]
+#16078: André Apitzsch: Python 3 preparation: reduce() is no more a builtin function [Reviewed by Wilfried Luebbe]
+#16083: Nathann Cohen: MCQD to compute max cliques [Reviewed by Jernej Azarija]
+#16294: Ivan Andrus: Move sage_mode a new style spkg [Reviewed by Volker Braun]
+#16323: Nathann Cohen: Construction of BIBD with k=5 [Reviewed by Vincent Delecroix]
+#16336: John Cremona: Update Cremona's table of elliptic curves to 350000 [Reviewed by Jeroen Demeyer]
+#16358: Nathann Cohen: Wrong answers of IncidenceStructure.automorphism_group() [Reviewed by Vincent Delecroix]
+#16359: Jean-Pierre Flori: Implement "first_lexicographic" option for irreducible polynomials over finite fields of odd characteristic [Reviewed by Peter Bruin]
+#16367: Nathann Cohen: IncidenceStructure.automorphism_group : correct labels [Reviewed by Vincent Delecroix]
+#16371: André Apitzsch: Change some integer divisions from / to // [Reviewed by Wilfried Luebbe]
+#16385: Jeroen Demeyer: Fix rounding ZZ -> Python float [Reviewed by Christoph Lauter, Marc Mezzarobba]
+#16390: Ralf Stephan: in src/bin/sage handle -patchbot option earlier [Reviewed by Volker Braun]
+#16395: Robert Lipshitz: adjacency_matrix raises error for large multigraphs [Reviewed by Nathann Cohen]
+#16405: Nicolas M. Thiéry: Cartesian product of rings [Reviewed by Nathann Cohen]
+#16410: Nicolas M. Thiéry: Make combinatorial_map a no-op by default. [Reviewed by Christian Stump]
+#16413: Ralf Stephan: upgrade setuptools to version 3.6 [Reviewed by Volker Braun]
+#16414: Christian Nassau: cartesian_factors missing in CombinatorialFreeModule_CartesianProduct [Reviewed by Travis Scrimshaw]
+#16416: Dmitrii Pasechnik: provide AtlasRep GAP package to fix TomLib [Reviewed by Volker Braun]
+#16419: Volker Braun: libgap_long_ints [Reviewed by André Apitzsch]
+#16420: Anne Schilling: Addition to algebraic combinatorics tutorial on Young's lattice and RSK [Reviewed by Travis Scrimshaw, Nicolas M. Thiery]
+#16425: Clemens Heuberger: FiniteStateMachine.relabeled: allow user to specify labels. [Reviewed by Sara Kropf]
+#16437: Ivan Andrus: Make Sage.app support default arguments when starting the notebook server [Reviewed by Volker Braun]
+
+Merged in sage-6.3.beta4:
+
+#2952: Peter Bruin: Multivariate LaurentPolynomial can have coefficients in the wrong ring [Reviewed by Frédéric Chapoton]
+#9107: Simon King, Nicolas M. Thiéry: Nested class name mangling can be wrong in case of double nesting [Reviewed by Volker Braun, Florent Hivert, Travis Scrimshaw]
+#10534: Vincent Delecroix, Frédéric Chapoton: Cleanup in choose_nk, split_nk, subword, subset [Reviewed by Florent Hivert, Frédéric Chapoton, Travis Scrimshaw]
+#11215: Taylor Dupuy, Frédéric Chapoton, Peter Bruin: Periods for Modular Forms [Reviewed by Aly Deines, Peter Bruin, Frédéric Chapoton]
+#13528: Punarbasu Purkayastha: ymin is not respected in logarithmic plots [Reviewed by Karl-Dieter Crisman]
+#14306: Karl-Dieter Crisman: regression in solve [Reviewed by Peter Bruin]
+#14364: Steven Trogdon, Jeroen Demeyer: The jmol spkg contains testjava.sh [Reviewed by Julien Puydt]
+#15137: Travis Scrimshaw: Implement right-angled Artin groups [Reviewed by Frédéric Chapoton, Miguel Marco]
+#15493: Marc Mezzarobba: qqbar.ANRoot creates tons of copies of interval fields [Reviewed by Vincent Delecroix, Jeroen Demeyer]
+#15494: Nathann Cohen: Deprecate the _boundary parameter [Reviewed by Frédéric Chapoton, Vincent Delecroix]
+#15547: Jean-Philippe Labbé: Fix the creation of tikzpictures of projections of polytopes [Reviewed by Volker Braun]
+#15595: Jean-Baptiste Priez: Shuffle Product [Reviewed by Matthieu Dien, Tomer Bauer]
+#15639: Federico Poloni: Random failure in integer_vector [Reviewed by Volker Braun]
+#16067: Wilfried Luebbe: Python 3 preparation: The semantic of filter() function is changed [Reviewed by André Apitzsch]
+#16101: Volker Braun: Python backend for Polyhedra [Reviewed by Dima Pasechnik, Leif Leonhardy, Frédéric Chapoton, Jan Keitel]
+#16223: Nathann Cohen: Removes the Graph Theory constructions pages [Reviewed by Ralf Stephan]
+#16260: Volker Braun: Python 2.7.7 [Reviewed by François Bissey, Jean-Pierre Flori, Leif Leonhardy, Simon King, John Palmieri]
+#16291: Sébastien Besnier: Fixing associativity of FormalCompositeMap [Reviewed by Peter Bruin]
+#16295: Nathann Cohen: Faster is_orthogonal_array [Reviewed by Vincent Delecroix, Brett Stevens]
+#16303: Volker Braun: 'make doc-clean' calls system-wide 'git', which may break 'make distclean' [Reviewed by Anne Schilling, John Palmieri, Leif Leonhardy]
+#16319: Travis Scrimshaw: Implement k-closures for matroids [Reviewed by Stefan van Zwam]
+#16356: Nathann Cohen: MOLS for n=18,57,154,276,298,342 [Reviewed by Vincent Delecroix]
+#16361: Nathann Cohen: OA(7,66), OA(7,68), OA(8,69), OA(7,74) and OA(8,76) [Reviewed by Vincent Delecroix]
+#16370: Nathann Cohen: OA(k,n) strongly regular graphs [Reviewed by Vincent Delecroix]
+#16373: Nathann Cohen: OA(18,273), OA(12,474), OA(33,993) [Reviewed by Vincent Delecroix]
+#16374: Vincent Delecroix: better two_squares, three_squares, four_squares for small input [Reviewed by Jeroen Demeyer, Leif Leonhardy,  ​Nathann Cohen]
+#16383: Peter Bruin: Can't evaluate a polynomial on a finite field if representation is not "poly" [Reviewed by Ralf Stephan]
+#16388: Nathann Cohen: Specify the values of k,n in the exceptions [Reviewed by Vincent Delecroix]
+#16391: Nathann Cohen: Helper functions for OA constructions [Reviewed by Vincent Delecroix]
+#16394: Frédéric Chapoton, Vincent Delecroix: bijection from Dyck words to triangulations + random Dyck word [Reviewed by Vincent Delecroix, Frédéric Chapoton, Travis Scrimshaw]
+#16415: Volker Braun: Ignore case in package directory [Reviewed by John Palmieri, Leif Leonhardy]
+#16424: Vincent Delecroix: is_triangular_number() cleanup [Reviewed by Ralf Stephan]
+#16431: Volker Braun: sync-build is broken [Reviewed by R. Andrew Ohana]
+#16433: Nathann Cohen: clique_with_loops.is_strongly_regular() is True [Reviewed by Vincent Delecroix]
+#16434: Thierry Monteil: Package d3.js [Reviewed by Nathann Cohen]
+#16438: Thierry Monteil: Use d3js package if available [Reviewed by Nathann Cohen]
+#16440: Volker Braun: GAP 4.7.5 [Reviewed by Dima Pasechnik]
+#16445: Santiago Vila: load and attach need parentheses [Reviewed by Punarbasu Purkayastha]
+#16452: Nathann Cohen: Making the reference manual's introduction more concise [Reviewed by Volker Braun]
+#16455: Thierry Monteil: Update zeromq and pyzmq to recent version and new git layout [Reviewed by Sébastien Labbé]
+#16458: Miguel Marco: Braid group creates elements in wrong class [Reviewed by Vincent Delecroix]
+#16460: Nathann Cohen: a cache for OA/TD/MOLS existence [Reviewed by Vincent Delecroix]
+#16461: Vincent Delecroix: Difference families... and more BIBD [Reviewed by Nathann Cohen]
+#16462: Leif Leonhardy: Segfault in factorization of multivariate polynomials (Singular 3.1.6) [Reviewed by Volker Braun]
+#16464: Vincent Delecroix: cyclotomic_cosets for any finite ring [Reviewed by Nathann Cohen]
+#16469: Punarbasu Purkayastha: some_code.random_element() does not return immutable elements [Reviewed by Nathann Cohen]
+#16472: Vincent Delecroix: get rid of PermutationsNK [Reviewed by Travis Scrimshaw]
+#16476: Vincent Delecroix: New difference family (25,4,1) and cleanup in bibd.py [Reviewed by Nathann Cohen]
+#16482: Erik Massop: Update developer manual for git's push-url feature [Reviewed by Volker Braun]
+#16487: Travis Scrimshaw: Fix ascii art of tableaux [Reviewed by Vincent Delecroix]
+#16488: R. Andrew Ohana: upgrade to IPython 2.1 [Reviewed by Thierry Monteil]
+
+Merged in sage-6.3.beta5:
+
+#7554: Travis Scrimshaw: bug in multivariate polynomial factorization [Reviewed by Martin Albrecht]
+#9321: Ralf Stephan: Documentation for sum() function should indicate Python syntax *first* [Reviewed by Karl-Dieter Crisman, Travis Scrimshaw]
+#10128: Martin Albrecht: Ideal.vector_space_dimension() should return Infinity for non-zero dimensional ideals. [Reviewed by Julian Rueth]
+#10665: Peter Bruin: bug in elliptic curve two_descent command [Reviewed by Frédéric Chapoton]
+#12410: Travis Scrimshaw: divergent alternating sum gives finite result [Reviewed by Peter Bruin]
+#13008: Julian Rueth: refactor squarefree_decomposition to allow different rings to chose different implementations [Reviewed by Martin Albrecht]
+#13053: Julian Rueth: wrong sign in square-free decomposition of polynomials over ZZ [Reviewed by Miguel Marco]
+#13246: Punarbasu Purkayastha: Automatic exclusion of non-domain points in things like arcsec [Reviewed by Ralf Stephan, Karl-Dieter Crisman]
+#13620: Julian Rueth: initialization of padic polynomial fails for empty dictionary [Reviewed by Martin Albrecht]
+#14004: Christian Stump: Implementation of generalized nonnesting partitions for Weyl groups [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#14288: Andrey Novoseltsev: Add interactive simplex method module [Reviewed by Travis Scrimshaw]
+#15390: Vincent Delecroix: roots of polynomials and eigenvalues of matrices over finite fields [Reviewed by Miguel Marco]
+#15670: Martin Albrecht: eliminate_linear_variables() may increase degree [Reviewed by Miguel Marco]
+#15732: Ivan Andrus: OS X app fails with no warning when run on read only file system (e.g. dmg) [Reviewed by Volker Braun]
+#16147: Vincent Delecroix: abs for elements of number fields provided with a complex embedding ignores it [Reviewed by Francis Clarke]
+#16174: Andrey Novoseltsev: Fix deprecated use of field in toric plotter [Reviewed by Jan Keitel]
+#16191: Sara Kropf: FiniteStateMachine: implement final_word_out [Reviewed by Clemens Heuberger, Daniel Krenn]
+#16242: Sébastien Labbé: assert_have_dot2tex should reraise exception not replace it [Reviewed by Nathann Cohen]
+#16308: Jeroen Demeyer: Improve sums of squares [Reviewed by Peter Bruin, Leif Leonhardy , Vincent Delecroix]
+#16318: Julian Rueth: Improve some manual caching in monsky_washnitzer [Reviewed by Peter Bruin]
+#16347: Nathann Cohen: Wilson's constructions of OA with 2 truncated groups [Reviewed by Vincent Delecroix]
+#16423: Nathann Cohen: Table of MOLS from the handbook and comparison with Sage [Reviewed by Vincent Delecroix]
+#16430: Nathann Cohen: Small speedup for OA(None,p^c) [Reviewed by Vincent Delecroix]
+#16439: Punarbasu Purkayastha: Allow inverse trig functions to all take complex input [Reviewed by Karl-Dieter Crisman, Ralf Stephan]
+#16446: Vincent Delecroix: BalancedIncompleteBlockDesign -> balanced_incomplete_block_design [Reviewed by Nathann Cohen]
+#16449: Jayant Apte: Add plot() and show() methods to abstract Matroid class [Reviewed by Stefan van Zwam]
+#16474: Volker Braun: timeouts in doctests on OS X 10.9 [Reviewed by John Palmieri]
+#16485: Martin von Gagern: "TypeError: keys do not match self's parent" computing variety of MPolynomialIdeal_singular_repr [Reviewed by Martin Albrecht]
+#16497: Thierry Monteil: Rounding problem with CBC and gurobi LP solvers [Reviewed by Nathann Cohen]
+#16498: Travis Scrimshaw: Improvements to Lie theory documentation [Reviewed by Dan Bump]
+#16499: Nathann Cohen: Cheap speedup in the OA recursive constructions [Reviewed by Vincent Delecroix]
+#16500: Nathann Cohen: New recursive constructions of Orthogonal Arrays [Reviewed by Vincent Delecroix]
+#16502: Volker Braun: libgap printing to files broken [Reviewed by Dima Pasechnik]
+#16503: Nathann Cohen: q-x construction of Orthogonal Arrays [Reviewed by Vincent Delecroix]
+#16509: Peter Bruin: bug in .as_finite_field_element() when minimal=True [Reviewed by Vincent Delecroix]
+#16521: Julian Rueth: Add is_perfect() for fields [Reviewed by Martin Albrecht]
+#16524: Nathann Cohen: OA(9,135) [Reviewed by Vincent Delecroix]
+#16525: Nathann Cohen: IntegerRanger._repr_ now uses ... instead of .. [Reviewed by Martin Albrecht]
+#16526: Nathann Cohen: IntersectionGraph constructor [Reviewed by Kannappan Sampath]
+#16527: André Apitzsch: Remove deprecated code from #9005, #14138, #14724 [Reviewed by Martin Albrecht]
+#16528: Nathann Cohen: OA(9,120) [Reviewed by Vincent Delecroix]
+#16531: Miguel Marco: Expression.solve() does not handle multiple variables to solve for. [Reviewed by Julian Rueth]
+#16535: Vincent Delecroix: get rid of who_asked parameter in combinatorial design and move Wilson constructions [Reviewed by Nathann Cohen]
+#16539: Clemens Heuberger: FiniteStateMachine.process: Refuse Non-Deterministic Finite State Machines [Reviewed by Daniel Krenn]
+#16551: Nathann Cohen, Ralf Hemmecke: Sage's doc believes we are in 2011 [Reviewed by Volker Braun]
+#16560: Travis Scrimshaw: Upgrade lrcalc to 1.1.7 [Reviewed by François Bissey]
+
+Merged in sage-6.3.beta6:
+
+#804: Peter Bruin: Matrix should not inherit from AlgebraElement [Reviewed by Luis Felipe Tabera  Alonso]
+#2516: Fredrik Johansson, Eviatar Bach, Ralf Stephan: generalized hypergeometric functions should be implemented [Reviewed by Ralf Stephan, Nils Bruin, Volker Braun]
+#6882: Ralf Stephan: bugs in conversion of variable names from Maxima to Sage [Reviewed by Karl-Dieter Crisman]
+#8734: Jason Grout, Ralf Stephan: make sage variables unique in maxima [Reviewed by Volker Braun, Paul Zimmermann, Karl-Dieter Crisman]
+#11474: Peter Bruin: Elliptic curves should be unique parent structures [Reviewed by Volker Braun]
+#11980: Daniel Krenn, Jean-Pierre Flori: Improve naive point counting and implement zeta_function for hyperelliptic curves over finite fields [Reviewed by Marco Streng, Volker Braun]
+#12442: R. Andrew Ohana, Leif Leonhardy: Singular does not state return type of main() functions [Reviewed by Leif Leonhardy, Jean-Pierre Flori, Volker Braun]
+#12718: Martin Albrecht: polynomial substitution overflow hell (libsingular bug?) [Reviewed by Volker Braun, William Stein]
+#12880: Sébastien Besnier: Inconsistent domain, codomain and parent in EllipticCurveIsogeny [Reviewed by Peter Bruin]
+#12947: Peter Bruin: Bug in integrating x*cos(x^3) [Reviewed by Ralf Stephan]
+#13277: Julian Rueth: Add _factor_univariate_polynomial() for RealField and ComplexField [Reviewed by Martin Albrecht]
+#13331: Jean-Pierre Flori: Build Singular with FLINT support [Reviewed by Peter Bruin]
+#13647: Julian Rueth: padic elements can not be initialized from polynomials [Reviewed by Martin Albrecht]
+#13781: Ralf Stephan: Doctests in rings/polynomial/polynomial_modn_dense_ntl.pyx test the wrong implementation [Reviewed by Martin Albrecht]
+#14782: Punarbasu Purkayastha: empty ticks result in empty axes in log scale [Reviewed by Karl-Dieter Crisman]
+#15289: Travis Scrimshaw: Implement indexed monoids [Reviewed by Nicolas M. Thiéry]
+#15382: Soli Vishkautsan, Hao Chen: Implementing Macaulay Resultant (sage days 55) [Reviewed by Ben Hutz]
+#15515: Jeroen Demeyer: Change graphics_filename() to return a tmp_filename() except from the notebook [Reviewed by Martin von Gagern]
+#16007: Ralf Stephan: give solution constants of ODEs unique names [Reviewed by Nils Bruin, Karl-Dieter Crisman]
+#16037: Travis Scrimshaw: Hash value of Family is based on string representation [Reviewed by Nicolas M. Thiéry]
+#16135: Peter Bruin: Implement QuotientRingElement._im_gens_() [Reviewed by Luis Felipe Tabera Alonso]
+#16186: Clemens Heuberger, Daniel Krenn: extend transducers.add to arbitrary input-length [Reviewed by Daniel Krenn, Clemens Heuberger]
+#16316: Julian Rueth: cached_function and cached_method for unhashable elements [Reviewed by Peter Bruin, Travis Scrimshaw]
+#16317: Julian Rueth: UniqueFactory for unhashable elements [Reviewed by Peter Bruin]
+#16322: Martin Albrecht: Magma doctest failures [Reviewed by Volker Braun]
+#16332: James Campbell, Vince Knight: Game Theory: Build capacity to calculate Shapley value of cooperative games. [Reviewed by Karl-Dieter Crisman, Travis Scrimshaw]
+#16454: Thierry Monteil: Update openssl package to latest version. [Reviewed by Sébastien Labbé]
+#16463: Frédéric Chapoton: random_element for parking functions [Reviewed by Aladin Virmaux]
+#16495: Martin von Gagern: Latex formatting of rational algebraic numbers [Reviewed by Volker Braun]
+#16504: Nathann Cohen: A mandatory 'nonnegative' argument for MixedIntegerLinearProgram.new_variable() until the standard changes [Reviewed by Jeroen Demeyer]
+#16518: Julian Rueth: Derivations for rational function fields [Reviewed by Miguel Marco]
+#16530: Julian Rueth: Caching error for function field extensions [Reviewed by Martin Albrecht]
+#16544: Bruno Grenet: Implement `quo_rem` for `Polynomial_sparse_generic` [Reviewed by Travis Scrimshaw]
+#16553: Nathann Cohen, Vincent Delecroix: Clean IncidenceStructure [Reviewed by Nathann Cohen, Vincent Delecroix]
+#16555: Clemens Heuberger: FiniteStateMachine.composition: Only deterministic machines for explorative algorithm [Reviewed by Daniel Krenn]
+#16557: Clemens Heuberger: FiniteStateMachine - LaTeX output in notebook [Reviewed by Jean-Baptiste Priez]
+#16558: Robert Bradshaw: Add note about github integration to developer guide. [Reviewed by Volker Braun]
+#16566: Julian Rueth: Improve printing of function field morphisms [Reviewed by Martin Albrecht]
+#16578: Miguel Marco: Add TIDES as optional package. [Reviewed by Vincent Delecroix]
+#16579: Miguel Marco: Tides interface [Reviewed by Volker Braun]
+#16582: Nathann Cohen: MOLS: Table with n<600 and updated syntax [Reviewed by Vincent Delecroix]
+#16589: Clemens Heuberger: FSMState.__copy__: copy color [Reviewed by Daniel Krenn]
+#16602: Travis Scrimshaw: Immutable graphs don't work with canonical_relabel() [Reviewed by Nathann Cohen]
+#16608: Niles Johnson: Immediate fix for animations in notebook [Reviewed by Martin von Gagern]
+#16611: Emmanuel Charpentier: Upgrade R to version 3.1 [Reviewed by Volker Braun]
+#16621: Clemens Heuberger: cached_method: additional docstring [Reviewed by Simon King]
+#16622: Nathann Cohen: Deprecate Hypergraph in favor of IncidenceStructure [Reviewed by Dima Pasechnik]
+#16623: Jayant Apte: Fix bugs in plot() and show() methods of abstract matroids class [Reviewed by Stefan van Zwam]
+#16625: Volker Braun: Better plotting for polytopes, re-add projection_direction [Reviewed by Andrey Novoseltsev]
+#16626: Volker Braun: ellipsis for doctest line numbers [Reviewed by Martin Albrecht, Dima Pasechnik]
+#16633: Travis Scrimshaw: indefinite factorization changes an immutable matrix [Reviewed by Jan Keitel]
+#16645: Martin von Gagern: Restore displaying animations in notebook [Reviewed by Volker Braun]
+#16648: Volker Braun: Python 2.7.8 [Reviewed by Emmanuel Charpentier]
+#16661: Clemens Heuberger: New common transducer Wait [Reviewed by Daniel Krenn]
+#16663: Clemens Heuberger, Daniel Krenn: New common transducers all and any [Reviewed by Daniel Krenn, Clemens Heuberger]
+#16668: Clemens Heuberger: Enhance FiniteStateMachine.is_Markov_chain to handle symbolic probabilities [Reviewed by Daniel Krenn]
+#16669: Jan Keitel: Lattice automorphism group forgets labels [Reviewed by Volker Braun]
+
+Merged in sage-6.3.beta7:
+
+#3912: Frédéric Chapoton: sage -t foo.tex should also test listings blocks not only verbatim [Reviewed by André Apitzsch]
+#5131: Travis Scrimshaw: regression in free modules -- who broke my __mul__ [Reviewed by Jan Keitel]
+#8698: Bernhard Bloechl: German translation of the document "A Tour of Sage" [Reviewed by Minh Van Nguyen, André Apitzsch]
+#10149: Roberto Panai: Italian translation of "A Tour of Sage" [Reviewed by Frédéric Chapoton]
+#13248: Tom Denton, Frédéric Chapoton: Coxeter groups: all elements of length N, random elements [Reviewed by Mike Zabrocki, Travis Scrimshaw]
+#13626: Julian Rueth: implement gcd for padics [Reviewed by Luis Felipe Tabera Alonso]
+#14843: Miguel Marco: Minor improvements to 4ti2 interface [Reviewed by Dima Pasechnik]
+#14857: Peter Bruin: SR(infinity) / unsigned_infinity returns 0 [Reviewed by Jan Keitel]
+#15017: Eviatar Bach: Symbolic spherical harmonic [Reviewed by Jan Keitel, Travis Scrimshaw]
+#15560: Travis Scrimshaw: Add methods to rigged configurations [Reviewed by Anne Schilling]
+#15628: Frédéric Chapoton: Change the sage-combinat scripts to work with Sage-6.0 [Reviewed by Anne Schilling]
+#15803: Luis Felipe Tabera Alonso: Add a gcd algorithm for univariate polynomials over number fields using pari [Reviewed by Peter Bruin]
+#15860: Jan Keitel: spaces in function('A, B') [Reviewed by Daniel Krenn]
+#16104: Frédéric Chapoton: Obsolete references to Mercurial in the documentation [Reviewed by Robert Bradshaw]
+#16158: Peter Bruin: Make Spec into a functor [Reviewed by Travis Scrimshaw]
+#16171: Andrey Novoseltsev: Sort cone facets [Reviewed by Jan Keitel]
+#16180: Andrey Novoseltsev: Subdivide fans using PPL [Reviewed by Jan Keitel]
+#16271: Christian Nassau: Support the generic Steenrod algebra at the prime 2 [Reviewed by John Palmieri]
+#16296: Simon King: Speed improvements for categories with axioms [Reviewed by Travis Scrimshaw]
+#16309: Simon King: Determine argspec of static methods with defaults in Cython files [Reviewed by Travis Scrimshaw]
+#16360: Julian Rueth: Conversion of function field elements to pari [Reviewed by Peter Bruin]
+#16380: Volker Braun: improve startup time of libGAP [Reviewed by Travis Scrimshaw]
+#16398: Nathann Cohen: Cleaning the Graph documentation index + remove numerical/test.py [Reviewed by Frédéric Chapoton]
+#16401: Peter Bruin: Use FiniteFieldHomomorphism_prime for embeddings of GF(p) [Reviewed by Jean-Pierre Flori]
+#16456: John Cremona: Bug in descend_to method for elliptic curves [Reviewed by Peter Bruin]
+#16490: Ingólfur Eðvarðsson: Create a linear programming backend for cvxopt [Reviewed by Dima Pasechnik]
+#16541: Nathann Cohen: MOLS table : 10 000 integers [Reviewed by Volker Braun, Vincent Delecroix]
+#16588: Clemens Heuberger, Daniel Krenn: finite_state_machine.FSMState: New method fully_equal [Reviewed by Daniel Krenn, Clemens Heuberger]
+#16597: Vincent Delecroix: Singer difference set and fix OA_9_135 [Reviewed by Nathann Cohen]
+#16614: Nathann Cohen: Non existence of some small BIBD [Reviewed by Vincent Delecroix]
+#16617: Vincent Delecroix: simple echelon matrix iterator [Reviewed by Nathann Cohen]
+#16620: Clemens Heuberger: Don't mention setup_latex_preamble in introductory documentation [Reviewed by Daniel Krenn]
+#16639: Frédéric Chapoton: Fix link in tutorial [Reviewed by Ralf Stephan]
+#16644: Travis Scrimshaw, Punarbasu Purkayastha: LinearCode.cardinality category breakage [Reviewed by Nathann Cohen, Punarbasu Purkayastha, Travis Scrimshaw]
+#16646: Jean-Baptiste Priez: Ordered Set Partitions of size 42 [Reviewed by Frédéric Chapoton]
+#16666: Clemens Heuberger: Extend FiniteStateMachine.product_FiniteStateMachine and Transducer.cartesian_product to products of more than two machines [Reviewed by Daniel Krenn]
+#16674: Daniel Krenn: add is_monochromatic to finite state machines [Reviewed by Clemens Heuberger]
+#16675: Daniel Krenn: add function that checks if all elements of iterator are the equal [Reviewed by Clemens Heuberger, Daniel Krenn]
+#16677: Clemens Heuberger, Daniel Krenn: improve the docstrings in the finite state machines module [Reviewed by Clemens Heuberger, Daniel Krenn]
+#16678: Travis Scrimshaw: Fix coercions for descent and symmetric group algebras [Reviewed by Darij Grinberg]
+#16680: Peter Bruin, Travis Scrimshaw: Improve handling of "algorithm" parameter in EllipticCurve_finite_field.cardinality() [Reviewed by Travis Scrimshaw, Peter Bruin]
+#16683: Vincent Delecroix: gray code for integer vectors and combinations [Reviewed by Nathann Cohen]
+#16685: Jonas Jermann: power series reversion using flint [Reviewed by Jean-Pierre Flori]
+#16690: Frédéric Chapoton: typos in French tour of sage [Reviewed by Nathann Cohen]
+#16692: Martin Raum: Update nose to version 1.3.3 [Reviewed by John Palmieri]
+#16695: Frédéric Chapoton, Clemens Heuberger: Add src/sage/symbolic/assumptions to the reference manual [Reviewed by Clemens Heuberger, Ralf Stephan]
+#16696: Frédéric Chapoton: correct a typo in doc of morphism.pyx [Reviewed by Peter Bruin]
+#16700: Frédéric Chapoton: fix latex of bimodules [Reviewed by Travis Scrimshaw]
+#16701: Nathann Cohen: IncidenceStructure.degree [Reviewed by Dima Pasechnik]
+#16702: Nathann Cohen: Raise exceptions when database_gap is not installed [Reviewed by Dima Pasechnik]
+#16708: Peter Bruin: Class group part of the Selmer group of a number field is incorrectly computed [Reviewed by John Cremona]
+#16710: Daniel Krenn: typos in documentation (mentionned) [Reviewed by Frédéric Chapoton]
+#16711: Emmanuel Charpentier, Nathan Cohen: Upgrade R to version 3.1.1 [Reviewed by Nathann Cohen]
+#16712: Frédéric Chapoton: remove bad use of exec in cluster code [Reviewed by André Apitzsch]
+#16715: Frédéric Chapoton: Remove "nonbreaking spaces" from .rst files [Reviewed by Steven Trogdon]
+#16717: Daniel Krenn: Python3: next in finite_state_machines module [Reviewed by Clemens Heuberger]
+
+Merged in sage-6.3.beta8:
+
+#2352: Luis Felipe Tabera Alonso, Julian Rueth: univariate homogenize is not the same as multivariate homogenize [Reviewed by Julian Rueth, Luis Felipe Tabera Alonso]
+#15389: David Krumm, John Doyle: An algorithm for enumerating elements of bounded height in number fields [Reviewed by Ben  Hutz]
+#16515: Jeroen Demeyer: Every RDF number compares equal to NaN [Reviewed by Marc Mezzarobba]
+#16599: Frédéric Chapoton: OEIS database install docstring is out of date [Reviewed by Niles Johnson]
+#16728: Volker Braun: libgap_workspace_2 [Reviewed by Ralf Stephan]
+#16735: Volker Braun: Graph database installs to wrong location [Reviewed by François Bissey]
+
+Merged in sage-6.3.rc0:
+
+#15181: Nathann Cohen: Treewidth (lazy implementation) [Reviewed by David Coudert]
+#15191: Julian Rueth: Add tests in the category of euclidean domains [Reviewed by Peter Bruin, Travis Scrimshaw, Frédéric Chapoton]
+#16226: Niles Johnson: Tachyon plot produces invalid file [Reviewed by Frédéric Chapoton]
+#16580: Clemens Heuberger: FiniteStateMachine: cleanup code [Reviewed by Daniel Krenn]
+#16709: Nathann Cohen: IncidenceStructure.packing [Reviewed by Dima Pasechnik]
+#16718: Travis Scrimshaw: Create a category for Cartesian products of groups [Reviewed by Nathann Cohen]
+#16727: Nathann Cohen: IncidenceStructure.__contains__ [Reviewed by Dima Pasechnik]
+#16730: Nathann Cohen: PermutationGroup.blocks_all with correct labels [Reviewed by Dima Pasechnik]
+#16732: Nils Bruin: Fix _maxima_init_evaled_ use, as well as translations of psi etc. to/from maxima. [Reviewed by Ralf Stephan]
+#16738: Frédéric Chapoton: Shortening some very long cluster doctests [Reviewed by Christian Stump]
+#16741: Nathann Cohen: Bug in IncidenceStructure.automorphism_group when the ground set consists of pairs [Reviewed by Dima Pasechnik]
+#16751: Volker Braun: Singular build fail OSX109 [Reviewed by Jan Keitel, Leif Leonhardy]
+#16752: Travis Scrimshaw: Cleanup in hypergeometric functions [Reviewed by Ralf Stephan]
+
+Merged in sage-6.3.rc1:
+
+#16596: Travis Scrimshaw: Add tests for the category of domains [Reviewed by Julian Rueth]
+#16705: Clemens Heuberger, Daniel Krenn, Sara Kropf: including doctests of arxiv`1404.7458` in src/sage/tests [Reviewed by Clemens Heuberger, Daniel Krenn, Sara Kropf]
+#16744: Peter Bruin: Random failure in elliptic_curves/constructor.py [Reviewed by Jeroen Demeyer]
+#16750: Volker Braun: libgap fails converting char GapElements to Sage [Reviewed by Ralf Stephan]
+#16754: Clemens Heuberger: Finite State Machine: trivial documentation improvements [Reviewed by Daniel Krenn, Sara Kropf]
+#16758: Clemens Heuberger: FiniteStateMachine.composition: check types [Reviewed by Daniel Krenn]
+#16760: John Palmieri: stopgap for #16759 [Reviewed by Jeroen Demeyer]
+
+Merged in sage-6.3:
+
+#16766: Nathann Cohen: Improve the doc of combinat/designs/ [Reviewed by Volker Braun, Dima Pasechnik]
+#16789: Volker Braun: Combinatorial designs use internet during doctest [Reviewed by Vincent Delecroix]

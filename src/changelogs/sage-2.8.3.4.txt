@@ -1,0 +1,10 @@
+﻿This is a bug fix release.  Some of the contributors and contributions are listed below.
+
+High level changelog:
+  * Craig Citro -- fixes to build process (involving c_lib)
+  * Craig Citro -- modular forms bugfix (for projection map); added some number fields functionality
+  * Pablo De Napoli (refereed by Martin Albrecht) -- added minpoly for finite field elements. 
+  * Robert Bradshaw (and William Stein) -- created a separate java3d spkg
+  * Mike Hansen -- Bug fixes
+  * Michael Abshoff -- bug fixes
+  * William Stein -- bug fixes and lots more doctests. 

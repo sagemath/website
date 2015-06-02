@@ -1,0 +1,202 @@
+﻿Hello folks,
+
+Sage 3.0.3 has been released on June 23rd, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 23 people contributed to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Martin Albrecht
+ * Jason Bandlow
+ * Francois Bissey
+ * Tom Boothby
+ * Robert Bradshaw
+ * Craig Citro
+ * John Cremona
+ * Karl-Dieter Crisman
+ * Dan Drake
+ * Burcin Erocal
+ * Gary Furnish
+ * Marschall Hampton
+ * Mike Hansen
+ * David Joyner
+ * Robert Miller
+ * John Palmieri
+ * Bjarke Hammersholt Roune
+ * Anne Schilling
+ * William Stein
+ * Carl Witty
+ * Mike Zabrocki (first contribution)
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * Faster Cyclotomic linear algebra (William Stein, Craig Citro)
+
+For details see the Sage 3.0.3 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.0.3
+
+* Known Issues with 3.0.3:
+
+ * None.
+
+* Bug Statistics
+
+We closed 85 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.0.3
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.0.4, chaired by Michael Abshoff. It will 
+focus on stabilizing the 3.0.3 release.
+
+* Doctesting Coverage
+
+For 3.0.2 we had:
+
+Overall weighted coverage score:  52.2%
+Total number of functions:  19764
+
+We increased coverage by 0.1% in 3.0.3 while adding 185 functions:
+
+Overall weighted coverage score:  52.5%
+Total number of functions:  19949
+
+* Closed Tickets:
+
+Merged in Sage 3.0.3.rc0:
+
+#2575: Michael Abshoff: GAP doesn't compile with CC='ccache gcc'
+#3073: Marschall Hampton  allow variable width text input_box in interact
+#3107: Robert Bradshaw:  Triangulation doesn't automatically happen for 
+       x3d output of 3d objects
+#3113: Robert Bradshaw, Craig Citro:  Major segfault related to modular 
+       symbols and pickling
+#3396: John Palmieri, William Stein: new function in misc/latex.py: 
+       print_or_typeset
+#3370: Burcin Erocal converting strings to ZZ[x,y] fails
+#3402: Robert Miller: Digraph.incoming_edges forgets labels
+#3411: William Stein: sage-3.0.3.alpha2 -- finance time_series doctest 
+       failure due to numerical precision
+#3412: William Stein: sage-3.0.3.alpha2 -- two files that are ? in 
+       repo in fresh build
+#3413: William Stein: sage-3.0.3.alpha2 -- endianess issue with 
+       time_series doctest
+#3415: Robert Bradshaw: sage-3.0.3.alpha2 -- clean test of simple.py 
+       fails badly on osx ppc
+#3418: Anne Schilling: added new combinatorial functions for tableaux 
+       and crystals
+#3420: Michael Abshoff: Failure in markov_multifractal
+#3421: Martin Albrecht: MPolynomialRing_libsingular should accept 
+       longs in __call__
+#3425: William Stein: setup.py -- change the description, author, 
+       author_email
+#3427: William Stein: remove ntl library from sage_object build 
+       dependency in setup.py
+#3430: Tom Boothby: 3.0.3.rc0: doctest failure in server/notebook/ 
+       interact.py
+
+Merged in Sage 3.0.3.alpha2:
+
+#690: William Stein, Michael Abshoff: VMware sage doesn't allow 
+      creation of files
+#2351: Michael Abshoff, William Stein: sagenb.org SSL certificate is 
+       expired
+#3040: William Stein, Craig Citro:  make it so magma(A) works for 
+       matrices over cyclotomic number fields
+#3042: William Stein, Craig Citro, Robert Bradshaw: cyclolinalg - 
+       make a new type for cyclotomic linear algebra
+#3130: David Joyner: permgps: added normal_subgroups and fixed image 
+       and kernel
+#3173: Michael Abshoff:  add 64 bit OSX build support to eclib
+#3212: Karl-Dieter Crisman: Improving rescaling of matrices
+#3332: Gary Furnish: Switch pbuild to -O2
+#3343: John Palmieri: arguments, documentation to ln function
+#3346: William Stein: finance -- add a very very basic first little 
+       tiny amount of quantitative finance functionality to sage
+#3357: Gary Furnish: Refactor pool code in integer.pyx
+#3364: Carl Witty: randstate interaction with GAP is broken
+#3378: Mike Hansen: graphs.nauty_geng fails due to missing imports
+#3386: Michael Abshoff: zn_poly test code is still being run - make 
+       them optional via spkg-check
+#3387: William Stein: unacceptably slow conversion of rationals from 
+       pari to Rational
+#3395: Gary Furnish: emacs temporary files prevent pbuild from pbuilding
+
+Merged in Sage 3.0.3.alpha1:
+
+#1440: Bjarke Hammersholt Roune:Inconsistency in subs and substitute 
+       for univariate polynomials
+#2353: Burcin Erocal: MPolynomialRing should be deprecated
+#3111: John Cremona: Two bug fixes for elliptic curve abelian_group()
+#3254: Mike Hansen: improvements and doctests for CachedFunction
+#3323: Gary Furnish: Enhanced error reporting for dependency 
+       errors in pbuild
+#3325: John Palmieri: small error in argument to dvipng in latex.py
+#3327: Carl Witty: missing .divides() implementation for FieldElement
+#3328: Francois Bissey, Michael Abshoff: set correct RHOME for rpy
+#3331: Gary Furnish: Disable --incref-local-binop in pbuild
+#3333: Martin Albrecht: Matrix_mod2_dense randomize endianess issue
+#3334: Martin Albrecht: Matrix_mod2_dense may crash due to missing 
+       _sig_on/_sig_off
+#3336: Dan Drake: DyckWords(n) should use an iterator
+#3344: John Palmieri: small changes to documentation for erf, n
+#3353: William Stein: MatrixGroup iterator for GL(2,p) very slow
+
+
+Merged in Sage 3.0.3.alpha0:
+
+#1284: Robert Miller: G.subgroup([...]) for G an abelian group has 
+       at least one lame property
+#1605: Burcin Erocal: conversion of sage vectors to magma vectors 
+       not implemented
+#2040: John Palmieri: 2d graphics - problems with axes_labels options
+#3193: Michael Abshoff: fix 64 bit OSX build support for twisted
+#3196: Michael Abshoff: fix 64 bit OSX build support for R
+#3204: Martin Albrecht: update M4RI to newest upstream release 
+       libm4ri-20080521.p0.spkg
+#3208: John Palmieri: a bunch of small changes to the tutorial
+#3217: Craig Citro: Serious bug in modular symbols for GammaH
+#3244: Mike Hansen: add support for inner plethysms of symmetric 
+       functions
+#3247: Mike Zabrocki: add skew and generalized Hall-Littlewood 
+       creation operators to symmetric functions
+#3255: Mike Hansen: Add support for generic backtracking algorithms
+#3259: Tim Abbott, Michael Abshoff: shared library versioning for flint
+#3278: Mike Hansen: update the crystal iterator to use the new 
+       backtracking code
+#3286: Jason Bandlow: Minor fixes (mostly doc) to partition.py
+#3292: Burcin Erocal: conversion of FractionFieldElements to magma
+#3293: Burcin Erocal: MPolynomialRing_generic.random_element returns 
+       tuple when degree=0
+#3295: Marshall Hampton: misspelled "parrallel" in graphs
+#3300: Tim Abbott: ntl soname for Debian package
+#3303: Tim Abbott: Add shared library to tachyon Debian package
+#3305: Tim Abbott: man page for lcalc Debian package
+#3307: Tim Abbott: Move genus2reduction to /usr/lib for Debian package
+#3308: Tim Abbott: Update sage-sbuildhack to work with new sbuild 
+       in Debian
+#3311: Michael Abshoff, Gary Furnish: dsage.setup() is broken in 
+       Sage 3.0.2
+#3318: Michael Abshoff: improve 64 bit osx python 2.5.2 build
+#3322: Gary Furnish: new python spkg with -j enabled

@@ -1,0 +1,212 @@
+﻿Hi folks,
+
+Sage 4.2.1 was released on November 14, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+---------------------------------------------------------------------
+
+The following 42 people contributed to this release. Of those, 2 made
+their first contribution to Sage:
+
+ * Adam Webb
+ * Alex Ghitza
+ * Anders Jonsson
+ * Andrey Novoseltsev
+ * Arnaud Bergeron
+ * Burcin Erocal
+ * Christian Wuthrich
+ * D. Benjamin Antieau
+ * David Joyner
+ * David Kirkby
+ * Florent Hivert
+ * Francis Clarke
+ * Fran ois Bissey
+ * Georg S. Weber
+ * Hakan Granath
+ * Jason Grout
+ * John Cremona
+ * John Palmieri
+ * Karl-Dieter Crisman
+ * Kwankyu Lee
+ * Luis Felipe Tabera [first contribution]
+ * Marshall Hampton
+ * Martin Albrecht
+ * Michael Yurko
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nicolas M. Thiery
+ * Phillipe Saade
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Sebastien Labbe
+ * Simon King
+ * Tim Joseph Dumol
+ * Tom Boothby
+ * Valentin Feray [first contribution]
+ * Vincent Delecroix
+ * Wilfried Huss
+ * William Stein
+ * Yann Laigle-Chapuy
+
+Release Managers
+
+ * Mike Hansen
+ * William Stein
+
+* Major features, new spkgs and bug fixes
+
+ * Many notebook fixes, and added test suite for notebook
+ * Speed-ups and fixes in combinatorics code
+ * Upgraded Sphinx, ECL, Flint, jsmath, and other skpgs
+ * Graph calculation and plotting improvements
+ * Various minor symbolics improvements
+
+There is a release tour coming for Sage 4.2.1!
+
+* Bug Statistics
+
+We closed 94 tickets. For details see
+
+ http://trac.sagemath.org/sage_trac/milestone/sage-4.2
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming release is Sage 4.3.  The goals for this release are:
+ * Merging most sage-combinat code (including categories) into Sage main branch
+ * More notebook improvements
+ * Merging lots of new functionality
+
+* Doctesting Coverage
+
+For 4.2 we had:
+
+Overall weighted coverage score:  79.5%
+Total number of functions:  22762
+
+In 4.2.1, we increased coverage by 0.3%, while adding 73 functions:
+
+Overall weighted coverage score:  79.8%
+Total number of functions:  22835
+
+* Known issues
+ * There are no known issues!
+
+* Closed Tickets
+
+Merged in Sage 4.2.1.rc0:
+#4898: Arnaud Bergeron, Karl-Dieter Crisman: Add style and labels to contour_plot() [Reviewed by Jason Grout]
+#5639: Mike Hansen: minpoly of symbolic matrices is broken [Reviewed by Jason Grout]
+#6825: Mike Hansen: intermittent failure in vector_real_double_dense.pyx [Reviewed by William Stein]
+#6995: Jason Grout: plotting specific contour lines should shade values above/below the extreme contour values [Reviewed by Karl-Dieter Crisman]
+#7103: John Palmieri: fix "mysterious error" in parallel doctesting first time: see ticket #7079 [Reviewed by William Stein]
+#7193: William Stein: os x 10.6 -- print warning about Sage being broken, so we can release [Reviewed by Georg S. Weber]
+#7235: William Stein: os x readme file is misleading [Reviewed by Georg S. Weber]
+#7273: Tim Dumol: PIL spkg uses libraries it must not use [Reviewed by William Stein]
+#7276: William Stein: Fix PPC issues in totallyreal_rel.py [Reviewed by Georg S. Weber]
+#7360: Alex Ghitza: isomorphism_type_info_simple_group returns an exception instead of raising it [Reviewed by Karl-Dieter Crisman]
+#7367: Mitesh Patel: Add SageNB modules to the reference manual [Reviewed by William Stein]
+#7398: Florent Hivert: Added is_iterator method and fixes sage to use it. [Reviewed by Nicolas M. ThiÅ½ry]
+#7408: Mike Hansen: Improve the speed of RSK [Reviewed by Florent Hivert]
+#7411: Yann Laigle-Chapuy: improve the speed of inverse RSK [Reviewed by Florent Hivert]
+#7414: Yann Laigle-Chapuy: improve {from,to}_inversion_vector and to_lehmer_code [Reviewed by Florent Hivert]
+#7419: Jason Grout: implicit_plot ignores the z-range [Reviewed by Karl-Dieter Crisman]
+#7426: William Stein: fix mpir spkg to correctly detect OS X 10.6 [Reviewed by Minh Van Nguyen]
+#7430: William Stein: include new version of sagenb (0.4.2) [Reviewed by Mike Hansen]
+#7432: Florent Hivert: Missing ` ` in hecke/module.py [Reviewed by William Stein]
+#7446: William Stein: include sagenb 0.4.3 in sage-4.2.1 [Reviewed by Mitesh Patel]
+
+Merged in Sage 4.2.1.alpha0:
+
+#385: Karl-Dieter Crisman: implement at for symbolics [Reviewed by David Joyner]
+#2646: Jason Grout: create plot_vector_field3d function [Reviewed by Marshall Hampton]
+#3128: Simon King: PolynomialRing's behaviour does not match docstring [Reviewed by Martin Albrecht, Mike Hansen]
+#3666: Alex Ghitza: pari(infinity) looks like it works, but it doesn't [Reviewed by Karl-Dieter Crisman]
+#4264: Christian Wuthrich: change E.a_invariants() for an elliptic curve to return a tuple [Reviewed by Mike Hansen]
+#5680: Burcin Erocal: Use new bits from FLINT 1.2.4 (followup to #5240) [Reviewed by Mike Hansen]
+#5800: Jason Grout: Nice wrapper for bitset [Reviewed by Robert Bradshaw]
+#5911: Nathann Cohen: greatly improve the documentation one gets from Graph? [Reviewed by Robert Miller, Minh Van Nguyen, Mike Hansen]
+#6309: D. Benjamin Antieau: miscellaneous additions to simplicial complex class; clique complex method for graphs [Reviewed by John Palmieri]
+#6541: Luis Felipe Tabera: functions numerator and denominator for univariate polynomials [Reviewed by Karl-Dieter Crisman]
+#6543: Marshall Hampton: improve doctests for tachyon [Reviewed by Minh Van Nguyen, Tim Dumol]
+#6673: Mitesh Patel: Set up jsMath extensions, macros, etc., for the documentation [Reviewed by John Palmieri]
+#6676: William Stein: DeprecationWarning on twisted after starting notebook(). [Reviewed by Mike Hansen]
+#6747: Tom Boothby: Improve plotting of trees [Reviewed by Nathann Cohen, Michael Yurko]
+#6759: David Kirkby: Update sqlite to latest release - needed for Sun's compiler [Reviewed by Minh Van Nguyen]
+#6761: Kwankyu Lee: solve_left on a vector returns a matrix [Reviewed by Robert Bradshaw]
+#6831: Andrey Novoseltsev: No more maximal dimension requirement for lattice polytopes [Reviewed by Marshall Hampton]
+#7052: Anders Jonsson, Robert Miller: Chromatic polynomial calculated incorrectly [Reviewed by Mike Hansen]
+#7083: Karl-Dieter Crisman: Improve a few special functions [Reviewed by David Joyner]
+#7096: Christian Wuthrich: bug in dual isogeny computation [Reviewed by John Cremona]
+#7111: Robert Miller: timeout when doctesting partition refinement code [Reviewed by Mike Hansen]
+#7124: Minh Van Nguyen: affine cipher and its cryptanalysis [Reviewed by Rob Beezer]
+#7159: Nathann Cohen: Graph.merge_vertices, and a bug in edge_boundary [Reviewed by Anders Jonsson]
+#7200: Valentin FÅ½ray: Fixing longest increasing subsequence (permutation method) [Reviewed by Florent Hivert]
+#7204: Mitesh Patel: issue building sage docs since notebook moved [Reviewed by ]
+#7227: Sebastien Labbe: Improving factor complexity of words functions [Reviewed by Vincent Delecroix]
+#7241: Mike Hansen: sage -upgrade will try to redownload spkg's that are already present [Reviewed by Florent Hivert]
+#7244: Rob Beezer: Implement dicyclic groups as permutation groups [Reviewed by David Joyner]
+#7266: William Stein: implement computation of Silverman height bounds [Reviewed by Robert Bradshaw]
+#7285: William Stein: remove hgmerge from list of installed scripts [Reviewed by Mike Hansen]
+#7286: Tim Joseph Dumol: After installing sphinx-0.6.3.p1.spkg, error occurs during docbuild [Reviewed by William Stein]
+#7295: Fran ois Bissey: typo in ecm spkg-install [Reviewed by Minh Van Nguyen]
+#7306: Rob Beezer: Documentation fix for Generalized Petersen graph [Reviewed by Anders Jonsson]
+#7315: Karl-Dieter Crisman: Can only forget one GenericDeclaration at a time for some reason [Reviewed by Jason Grout]
+#7320: John Palmieri: search_src and friends are case-sensitive [Reviewed by Karl-Dieter Crisman]
+#7323: John Palmieri: tinkering with documentation for simplicial complexes [Reviewed by Phillipe Saade]
+#7324: Yann Laigle-Chapuy: improve order_from_multiple [Reviewed by Francis Clarke]
+#7326: Jason Grout: html.table should automatically typeset math inside of strings [Reviewed by Wilfried Huss]
+#7327: Jason Grout, Karl-Dieter Crisman: Make integrate accept a variable range as a tuple [Reviewed by Karl-Dieter Crisman, Jason Grout, Mike Hansen]
+#7328: Jason Grout: latex doesn't handle python floats correctly [Reviewed by Karl-Dieter Crisman]
+#7329: Jason Grout: Make integration of vectors work (component-wise) [Reviewed by Rob Beezer]
+#7331: Christian Wuthrich: Conditions for non-split multiplicative reduction in p_primary_bound of Tate-Shafarevich groups [Reviewed by Robert Miller]
+#7361: Alex Ghitza: implement is_regular() for a graph [Reviewed by Nathann Cohen]
+#7366: Martin Albrecht: fix GF(4,'a').list() [Reviewed by Rob Beezer]
+#7370: Martin Albrecht: fix FiniteFieldIterator [Reviewed by Yann Laigle-Chapuy]
+#7373: David Kirkby: Disable assembly code in libgcrypt on risky platforms. [Reviewed by Mike Hansen]
+#7374: Alex Ghitza: wrong docstring for is_isomorphic() in permgroup.py [Reviewed by Mike Hansen]
+#7393: Mike Hansen: Update ECL to the latest version [Reviewed by William Stein]
+#7399: Robert Bradshaw: fix ugliness for default graph plot3d [Reviewed by William Stein]
+
+Merged in Sage notebook 0.4.3 and earlier:
+
+#4471: name worksheet when creating a new worksheet [confirmed as fixed]
+#5324: William Stein: notebook -- %time block bug [reviewed by William Stein]
+#7106: Hakan Granath: Add keyboard shortcut ctrl-0 to reference manual [Reviewed by Adam Webb]
+#7309: Tim Joseph Dumol, Mitesh Patel: SageNB -- Restructure /javascript/ to have /javascript/sage/ [Reviewed by Mitesh Patel, William Stein]
+#7310: Tim Joseph Dumol, Mitesh Patel: Use modal dialogs instead of javascript prompts for the rename prompt. [Reviewed by Mitesh Patel, William Stein]
+#7316: John Palmieri: notebook: default values for variables are printed incorrectly in docstrings [Reviewed by Mitesh Patel, Tim Joseph Dumol]
+#7318: Mitesh Patel: SageNB: Sphinxify erases doc/en/introspect [Reviewed by John Palmieri]
+#7322: Mitesh Patel: SageNB: Upgrade jsMath to 3.6c [Reviewed by John Palmieri]
+#7332: Tim Joseph Dumol, Mitesh Patel: Escape css id's and classes in templates [Reviewed by Mitesh Patel, William Stein]
+#7341: William Stein: major tab completion issue in notebook (?) [Reviewed by Tim Joseph Dumol]
+#7343: Mike Hansen, Mitesh Patel: SageNB -- Add a Selenium test suite. [Reviewed by Mitesh Patel, William Stein]
+#7346: William Stein: notebook -- needless vertical scroll bars on output [Reviewed by John Palmieri]
+#7354: Mitesh Patel: use jsmath to render revisions of worksheets [Reviewed by Tim Joseph Dumol]
+#7385: Tim Joseph Dumol: renaming "Untitled" published pages [Reviewed by Mitesh Patel]
+#7417: William Stein: disturbing notebook resource limit [Reviewed by Mitesh Patel]
+
+Other tickets closed:
+
+#6779: positive_integer_relations bug in lattice_polytope [fixed by #6831]
+#6780: Stability improvement for lattice_polytope [fixed by #6831]
+#6805: Integrality check in LatticePolytope [fixed by #6831]
+#7104: Add config.py back to the reference manual. [fixed by #7367]
+#7113: Maxima does not build on SUSE Itanium Ã(Iras) [fixed by #7393]
+#7202: On OS X 10.4 ppc, to_poly_solve evidently doesn't exist / work, which breaks some symbolic doctests [invalid]
+#7349: SageNB -- Include fixes from #6848 (introspection) [duplicate]
+#7429: pari is misbuilt on OS X using xcode 3.2.1, making sage mostly broken [invalid]

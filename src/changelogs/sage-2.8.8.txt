@@ -1,0 +1,5 @@
+﻿See 
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-2.8.8
+
+New GAP version; lots of bug fixes.

@@ -1,0 +1,270 @@
+﻿-*- coding: utf-8 -*-
+
+Hi folks,
+
+Sage 4.3.4 was released on March 19, 2010. It is available at
+
+          http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+The following 55 people contributed to this release. Of those, 4 made
+their first contribution to Sage:
+
+ * Adam Webb
+ * Alex Ghitza
+ * Alexandre Blondin Massé
+ * Andrey Novoseltsev
+ * Anne Schilling
+ * Bill Cauchois
+ * Burcin Erocal
+ * Chris Wuthrich
+ * Craig Citro
+ * Dan Drake
+ * Daniel Bump
+ * David Joyner
+ * David Kirkby
+ * David Roe
+ * Florent Hivert
+ * Francis Clarke
+ * Franco Saliola
+ * Francois Maltey [first contribution]
+ * Fredrik Johansson
+ * Gonzalo Tornaria
+ * Harald Schilly
+ * Ivan Andrus
+ * Jaap Spies
+ * Jason Bandlow
+ * Jason Grout
+ * Jennifer Balakrishnan
+ * John Cremona
+ * John Palmieri
+ * Julien Leroy [first contribution]
+ * Karl-Dieter Crisman
+ * Kiran Kedlaya
+ * Marc Mezzarobba
+ * Marshall Hampton
+ * Martin Raum
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nicolas Borie
+ * Nicolas M. Thiéry
+ * Oscar Gerardo Lazo Arjona [first contribution]
+ * Paul Zimmermann
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Mařík
+ * Robert Miller
+ * Ross Kyprianou
+ * Ryan Hinton
+ * Samuele Giraudo [first contribution]
+ * Sebastian Pancratz
+ * Sébastien Labbé
+ * Tim Dumol
+ * Willem Jan Palenstijn
+ * William Stein
+ * Yann Laigle-Chapuy
+
+* Release managers
+
+ * Mike Hansen
+ * Minh Van Nguyen
+
+* Major features, new spkg's, and bug fixes
+
+ * Merged 16 tickets enhancing the combinatorics module. A big thank
+   you to the Sage-Combinat team for their hard work before and during
+   Sage Days 20 to get those tickets merged.
+ * Sage now builds on SPARC Solaris 10, in particular on the machine
+   t2.math.washington.edu. A big thank you to David Kirkby for his
+   consistent hard work to get Sage to build on that machine. Please also
+   thank Jaap Spies and John Palmieri for their work on getting Sage to
+   build on t2.math.
+ * New spkg: iconv-1.13.1
+ * Removed spkg: pyprocessing-0.52.p0
+ * Upgraded spkg's: ecl-10.2.1, mpfr-2.4.2, mpmath-0.14,
+   sagenb-0.7.5.3, sqlalchemy-0.5.8, sqlite-3.6.22, twisted-9.0.p2
+ * Updated spkg's: atlas-3.8.3.p12, cddlib-094f.p5,
+   eclib-20080310.p10, flint-1.5.0.p4, python-2.6.4.p7, r-2.10.1.p0,
+   sagetex-2.2.3.p0, scipy-0.7.p4, zn_poly-0.9.p3
+
+* Bug statistics
+
+We closed 120 tickets. For details see
+
+  http://trac.sagemath.org/sage_trac/milestone/sage-4.3.4
+
+or check out the closed ticket section at the end of the announcement.
+
+* Upcoming release
+
+The upcoming major release is Sage 5.0, scheduled to be released in
+early June 2010. The goals for Sage 5.0 include:
+
+ * Resolve the high-impact tickets at
+   http://trac.sagemath.org/sage_trac/wiki/stab1
+ * Raise the doctest coverage score to 90% by removing the notebook
+   from the score and writing about 1500 docstrings
+ * Official 32-bit Solaris 10 support on SPARC (automatic build, all
+   tests pass)
+ * Official Cygwin support (automatic build, all tests pass)
+
+* Doctesting coverage
+
+To my dismay, this release of Sage actually has a decrease in doctest
+coverage. For Sage 4.3.3, we had an overall weighted doctest coverage
+score of 81.6%, with 24,808 functions. In Sage 4.3.4, we decreased the
+doctest coverage by 0.1% and added 314 new functions. Thus for Sage 4.3.4
+we now have
+
+ * Overall weighted coverage score:  81.5%
+ * Total number of functions:  25,122
+
+* Known issues
+
+ * Kiran Kedlaya reported that Sage can fail to compile on 64-bit
+   Fedora 10. This build problem occurs after we added the new iconv
+   spkg.
+
+Closed tickets:
+
+#3211: make echelon_form work over fraction fields (and hermite_form =old echelon_form)
+#4574: add notebook_object.py docs to the reference manual, and possibly a short survey about that to notebook help (top letter)
+#6932: jordan_form with transformation=true fails on a 1x1 matrix
+#7932: _Complex_I undeclared - a new bug totally stops a Solaris 10 build.
+#8352: Jaap Spies: twisted-8.2.0.p1 fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes [Reviewed by David Kirkby]
+#8463: Test failure of sage/homology/delta_complex.py
+
+Merged in sagenb:
+
+#8141: Mitesh Patel: Update font stacks, sans-serif and monospace, for SageNB pages [Reviewed by Marshall Hampton; merged in sagenb-0.7.5.2]
+#8221: Mitesh Patel: blank space at bottom of worksheet missing [Reviewed by Adam Webb; merged in sagenb-0.7.5.3]
+#8225: Mitesh Patel: %time now hugely broken in sagenb-0.7.4 (sage-4.3.2) [Reviewed by William Stein; merged in sagenb-0.7.5.3]
+#8265: Mitesh Patel: LaTeX-friendly Unicode characters in underscored methods' docstrings [Reviewed by John Palmieri; merged in sagenb-0.7.5.2]
+#8324: Mitesh Patel, John Palmieri: Reconcile sage.misc.sageinspect and sagenb.misc.sageinspect [Reviewed by John Palmieri, Mitesh Patel; merged in sagenb-0.7.5.2]
+#8387: Mitesh Patel: help (notebook) examples use deprecated usage. [Reviewed by David Kirkby; merged in sagenb-0.7.5.2]
+#8443: Mitesh Patel, Dan Drake: Active cell jumps to end of worksheet when evaluating a cell [Reviewed by Dan Drake, Mitesh Patel; merged in sagenb-0.7.5.3]
+
+Merged in sage-4.3.4.alpha0:
+
+#5601: Jason Grout, Mitesh Patel: Colors: CSS3/SVG presets, construct from HSL/HSV, blend/lighter/darker methods [Reviewed by Jason Grout, Karl-Dieter Crisman]
+#6503: John Palmieri, Mike Hansen: remove the pyprocessing spkg from sage, then sort out any fallout that results [Reviewed by Minh Van Nguyen]
+#7520: Sébastien Labbé: Improving word construction [Reviewed by Franco Saliola]
+#7552: Tim Dumol, Jaap Spies: Update the Twisted package to 9.0 [Reviewed by William Stein, Mitesh Patel, David Kirkby]
+#7619: Sébastien Labbé: Pickling support for finite word defined by callable and iterable [Reviewed by Franco Saliola]
+#7671: Nathann Cohen: strongly_connected_components in c_graphs [Reviewed by Robert Miller]
+#7761: Jaap Spies: Python 2.6.2.p4 faills to build on OpenSolaris [Reviewed by David Kirkby]
+#7854: Nathann Cohen: speed up edge_connectivity in easy cases [Reviewed by Paul Zimmermann]
+#7872: Bill Cauchois, Oscar Gerardo Lazo Arjona, Jason Grout: Adding coordinate transformations to plot3d [Reviewed by Karl-Dieter Crisman, Jason Grout]
+#7877: Jason Grout: matrix indexing should be explained in the manual [Reviewed by Robert Bradshaw, Minh Van Nguyen]
+#7927: Jennifer Balakrishnan, Robert Bradshaw: Extend coleman integration to handle Weierstrass points [Reviewed by Kiran Kedlaya]
+#7966: Nathann Cohen: Giving some punch to distance computations [Reviewed by Paul Zimmermann]
+#7984: Robert Bradshaw: QQbar doesn't use canonical coercion for comparison [Reviewed by John Cremona]
+#8008: Jason Grout: Implement an rref() function which works over the fraction field of the base ring of a matrix [Reviewed by Sebastian Pancratz, Minh Van Nguyen, Karl-Dieter Crisman, Rob Beezer]
+#8037: Marc Mezzarobba: add sagetex to the french tutorial [Reviewed by Dan Drake]
+#8039: Jaap Spies: ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64 [Reviewed by David Kirkby]
+#8131: Francis Clarke: Catalan numbers are integers [Reviewed by Nicolas Borie]
+#8157: Francois Maltey, Paul Zimmermann: why the bit limit of 2^24 in RealField? [Reviewed by Alex Ghitza]
+#8159: Fredrik Johansson: Updated Cython backend for mpmath [Reviewed by Harald Schilly]
+#8178: Jaap Spies: zn_poly fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes [Reviewed by David Kirkby]
+#8187: Sébastien Labbé: improve equality tests for words [Reviewed by Alexandre Blondin Massé]
+#8191: David Kirkby: Add iconv needed for Solaris, and possibly Cygwin too [Reviewed by Minh Van Nguyen]
+#8227: Alexandre Blondin Massé: Improving iterated palindromic closure computation [Reviewed by Sébastien Labbé]
+#8244: John Palmieri, Mitesh Patel: Annoying warnings when building the HTML reference manual [Reviewed by Mitesh Patel, John Palmieri]
+#8255: Dan Drake: update SageTeX spkg to 2.2.3.p0 to fix spkg-check script [Reviewed by John Palmieri]
+#8259: Anne Schilling: Conversion from symmetric polynomials to basis of monomial symmetric functions [Reviewed by Jason Bandlow]
+#8260: Robert Bradshaw: valuation of zero is wrong for Qq [Reviewed by David Roe]
+#8268: Sébastien Labbé: Improve speed of Christoffel word construction [Reviewed by Alexandre Blondin Massé]
+#8273: Alexandre Blondin Massé: Enumeration of cycles in directed graphs [Reviewed by Nathann Cohen]
+#8275: William Stein: upgrade to ecl 10.2.1 [Reviewed by David Kirkby]
+#8276: Florent Hivert: Make the one(), identity_matrix() and zero_matrix() cached and immutable [Reviewed by Martin Raum, Ross Kyprianou]
+#8285: David Kirkby: Update R's spkg-install to work on Solaris [Reviewed by Minh Van Nguyen]
+#8289: Sébastien Labbé: Clean up WordMorphism.__call__ [Reviewed by Alexandre Blondin Massé]
+#8294: Florent Hivert: Copy is broken on 2x2 integer matrix (mutability is not set) [Reviewed by Martin Raum]
+#8295: Daniel Bump: Documentation for Kazhdan-Lusztig polynomials and Iwahori Hecke algebras [Reviewed by Minh Van Nguyen]
+#8299: Robert Bradshaw: coercion and the bool type [Reviewed by Ross Kyprianou]
+#8302: John Palmieri: cubical complexes, delta complexes, and more [Reviewed by Marshall Hampton, Minh Van Nguyen]
+#8304: Jennifer Balakrishnan: Remove stray factors of 2 in Coleman integration [Reviewed by Kiran Kedlaya]
+#8307: Mitesh Patel: gfan-0.4plu keeps getting upgraded [Reviewed by Minh Van Nguyen]
+#8309: Robert Bradshaw: speedup prime range [Reviewed by Paul Zimmermann]
+#8310: Minh Van Nguyen: bad ReST formatting in kazhdan_lusztig.py [Reviewed by Mitesh Patel]
+#8318: Sébastien Labbé: overlap_partion of a word should return an instance disjoint set data structure [Reviewed by Alexandre Blondin Massé]
+#8319: John Cremona: elliptic curve canonical height bug for non-minimal models [Reviewed by Chris Wuthrich]
+#8320: Mitesh Patel: Make HTML doc headers and footers more compact [Reviewed by Minh Van Nguyen]
+#8323: Craig Citro: The variable "name" is predefined in Sage [Reviewed by Paul Zimmermann]
+#8326: Mitesh Patel: Sphinx warnings about posets and poset_example [Reviewed by John Palmieri]
+#8328: Minh Van Nguyen: clisp rather than ecl mentioned on web page [Reviewed by David Kirkby]
+#8331: Ryan Hinton: BipartiteGraph constructor does not create partitions for dict inputs [Reviewed by Robert Miller]
+#8347: Nicolas Borie: Test the positivity of a number field element [Reviewed by Paul Zimmermann]
+#8349: Craig Citro, Chris Wuthrich: bug in isogenies [Reviewed by John Cremona]
+#8362: Sebastien Labbe: Fix typo in documentation of Disjoint Union of Enumerated Sets [Reviewed by Andrey Novoseltsev]
+#8363: David Kirkby: cddlib-094f.p4 has a useless check for mpir which breaks on Solaris [Reviewed by Jaap Spies, Minh Van Nguyen]
+#8365: Marc Mezzarobba: Reorganize slightly the outline of the documentation of Polynomial Rings [Reviewed by Minh Van Nguyen]
+#8396: Samuele Giraudo: element_class of Subsets is broken [Reviewed by Nicolas Borie]
+#8412: Ivan Andrus: Trivial Center of Matrix Group [Reviewed by David Joyner]
+
+Merged in sage-4.3.4.alpha1:
+
+#7091: Mitesh Patel: sqlachemy test suite fails when building with SAGE_CHECK [Reviewed by William Stein]
+#7448: Florent Hivert: Sphinx nested class rendering. [Reviewed by Mitesh Patel]
+#7733: Nathann Cohen: Graph(g) and DiGraph(g) do not keep the embedding ! [Reviewed by Robert Miller]
+#7867: Dave Kirkby: GCC reports incorrect flags compiling descent_two_isogeny.c on Solaris 10 [Reviewed by Jaap Spies]
+#7902: Gonzalo Tornaria: scipy-0.7.p3: misbuilt silently, due to missing perl modules [Reviewed by Minh Van Nguyen]
+#7943: Mitesh Patel: move docbuild commands to their own targets in SAGE_ROOT/makefile [Reviewed by Minh Van Nguyen, John Palmieri]
+#7993: Willem Jan Palenstijn: whitespace error in doctest causes A Mysterious Error. [Reviewed by Paul Zimmermann]
+#8112: Jaap Spies: flint fails to build in Open Solaris x64 as 64 bit since FLINT_TUNE is not set [Reviewed by David Kirkby]
+#8233: Sébastien Labbé: concatenation of words should preserve the data type represention when possible [Reviewed by Alexandre Blondin Massé]
+#8261: Mike Hansen: cygwin: mpfr fails 1 test in its test suite on windows [Reviewed by Minh Van Nguyen]
+#8266: Sébastien Labbé: Improve documentation for word objects [Reviewed by Alexandre Blondin Massé]
+#8283: Yann Laigle-Chapuy: A better Carmichael lambda function [Reviewed by David Joyner, Minh Van Nguyen]
+#8296: Nicolas M. Thiéry: getattr hack not failing graciously on descriptors / tab completion broken in emacs [Reviewed by Mike Hansen]
+#8325: Mitesh Patel: Sphinx warning: 'Could not parse cython argspec' [Reviewed by John Palmieri]
+#8353: Alexandre Blondin Massé: Adding height() and width() functions to square grid paths [Reviewed by Sébastien Labbé]
+#8354: John Palmieri: ReST fixes based on Sage 4.3.3 [Reviewed by Mitesh Patel]
+#8356: python 2.6.4 is configured with an unrecognised option [Fixed by #8440]
+#8357: John Cremona, Mitesh Patel: eclib: suppress / delete files left by doctests and check, fix building in parallel [Reviewed by Minh Van Nguyen]
+#8358: Paul Zimmermann: improved documentation of number_field.py [Reviewed by Christian Wulthrich]
+#8374: David Kirkby: Numerical noise in devel/sage/sage/symbolic/constants_c.pyx [Reviewed by Mitesh Patel, Jaap Spies]
+#8375: David Kirkby: Numerical noise in devel/sage/sage/symbolic/pynac.pyx [Reviewed by Mitesh Patel, Jaap Spies]
+#8376: Paul Zimmermann: improve documentation for RealField [Reviewed by Robert Mařík]
+#8391: David Kirkby: Change 'top' to 'prstat' on Solaris for get_memory_usage() and top() [Reviewed by Jaap Spies]
+#8397: doctest devel/sage/sage/graphs/graph_list.py fails on Solaris 10 (SPARC) [Fixed by #8408]
+#8398: doctest devel/sage/sage/graphs/generic_graph.py fails on Solaris 10 (SPARC) [Fixed by #8408]
+#8399: doctest devel/sage/sage/graphs/graph.py fails on Solaris 10 (SPARC) [Fixed by #8408]
+#8400: doctest devel/sage/sage/databases/database.py fails on Solaris 10 (SPARC) [Fixed by #8408]
+#8401: doctest devel/sage/sage/graphs/graph_database.py fails on Solaris 10 (SPARC) [Fixed by #8408]
+#8408: David Kirkby: Update sqlite to 3.6.22 (the latest version) [Reviewed by Mitesh Patel]
+#8418: Julien Leroy: Reduced Rauzy graph [Reviewed by Sébastien Labbé, Alexandre Blondin Massé]
+#8422: Florent Hivert: ChainPoset in broken for small input [Reviewed by Nicolas Borie]
+#8430: Florent Hivert: doctest failures with Sage 4.3.4.alpha0 [Reviewed by Marshall Hampton]
+#8432: Minh Van Nguyen: make iconv a prerequisite for building gd [Reviewed by David Kirkby]
+#8435: Mitesh Patel: SageNB 0.7.5.3 [Reviewed by Minh Van Nguyen]
+#8440: David Kirkby: Removal of pyprocessing causing problems as _multiprocessing not building on Solaris [Reviewed by Minh Van Nguyen]
+#8445: John Palmieri: sh: kpsewhich: not found -  Sage 4.3.4.alpha0 on Solaris [Reviewed by Mike Hansen, David Kirkby]
+#8452: Florent Hivert, Mitesh Patel: Code check: Pickling of nested classes [Reviewed by Mitesh Patel, Florent Hivert]
+#8462: Dave Kirkby: Numerical noise in /sage/sage/plot/colors.py on Solairs SPARC [Reviewed by Mike Hansen]
+#8474: John Palmieri: Detect whether a program is in the path [Reviewed by David Kirkby]
+
+Merged in sage-4.3.4.rc0:
+
+#8311: John Cremona: elliptic curve random point hangs when group is trivial [Reviewed by Chris Wuthrich]
+#8406: Yann Laigle-Chapuy: problem with duck typing in c_graph [Reviewed by Robert Miller]
+#8457: Mitesh Patel: Yet more annoying warnings when building the reference manual [Reviewed by John Palmieri]
+#8475: Florent Hivert: Pickling of _python_object_alphabet is broken [Reviewed by Sébastien Labbé]
+#8480: Minh Van Nguyen: stylistic clean-ups on web page of standard documentation [Reviewed by John Palmieri]
+#8491: Burcin Erocal: incorrect latex produced for some symbolic expressions [Reviewed by Robert Mařík]
+#8492: John Palmieri: Sage 4.3.4.alpha1: docbuild warnings in HTML version of reference manual [Reviewed by Minh Van Nugyen]
+#8494: Dan Drake: docstring for digits() should mention its inverse [Reviewed by Minh Van Nguyen]
+#8498: John Cremona: bug in has_good_reduction for a point on an elliptic curve over a number field [Reviewed by Chris Wuthrich]
+#8507: Robert Bradshaw: all flag ignored for GF(107)(0).sqrt [Reviewed by Mike Hansen]
+#8511: John Palmieri: docstring fix for "unexpected indentation" [Reviewed by Minh Van Nguyen]
+#8528: Minh Van Nguyen, John Palmieri: typo in an exception [Reviewed by John Palmieri, Minh Van Nguyen]
+#8540: Burcin Erocal: very simple basic sqrt simplification totally broken [Reviewed by Mike Hansen]

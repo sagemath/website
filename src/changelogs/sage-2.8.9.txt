@@ -1,0 +1,30 @@
+﻿SAGE 2.8.9:
+
+Release team: Martin Albrecht (chair), William Stein, Carl Witty, Michael Abshoff
+
+Tickets Closed/Issues Resolved/Kittens Rescued:
+===================================
+
+758  Use NTL directly in Z/nZ polynomials  robertwb
+837  RealNumber should have abs method  cwitty
+904  graphs: clique-testing  jason
+929  wrap fpLLL-2.0  malb
+967  inplace operators for GF(p),GF(p^n) ...  malb
+282  add matrix() class to FiniteFields ... malb
+968  graph_isom: memory management, legibility  rlm
+768  Open a method source in the editor of your choice nbruin
+895  .inverse() method for matrices  mhansen
+898  ntl.GF2  malb
+916  remove structure.sequence._combinations  malb
+963  singular attribut getting/setting  malb
+966  ntl.GF2X  malb
+970  ntl.GF2E  malb
+974  small memleak in nullspace.c in IML  mabshoff
+310  Debian testing version of mercurial ... cwitty
+920  integrate doesn't handle divergent case correctly mhansen
+921  Exception error for divergent integral looks bad mhansen
+976  fpLLL fast early reduction segfaults malb/stehle
+977  Schubert polynomials send 1 ... mhansen
+978  bug in Sequence __str__ method was
+982  abs(x) returns incorrect LaTex  mhansen
+... and some more were invalidated.

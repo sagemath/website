@@ -1,0 +1,142 @@
+﻿-*- coding: utf-8 -*-
+
+Sage 4.4.3 was released on June 04th, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+* sage-support: http://groups.google.com/group/sage-support
+* sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+* sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+* http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 22 people contributed to this release. Of those, 2 made
+their first contribution to Sage:
+
+ * Barinder Banwait [first contribution]
+ * Burcin Erocal
+ * Chris Wuthrich
+ * David Kirkby
+ * Felipe Voloch [first contribution]
+ * Florent Hivert
+ * Georg S. Weber
+ * Harald Schilly
+ * Jason Grout
+ * John Cremona
+ * Leif Leonhardy
+ * Mariah Lenox
+ * Martin Albrecht
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Nathann Cohen
+ * Nicolas Borie
+ * Nicolas M. Thiéry
+ * Robert Bradshaw
+ * Robert Miller
+ * Simon King
+ * William Stein
+
+* Release manager
+
+  * William Stein
+
+* Major features, new spkg's, and bug fixes
+
+ * Numerous fixes and updates for Cygwin build. These take us closer to a
+   complete Cygwin build, thanks to Mike Hansen.
+ * New spkg: cephes-2.8
+ * Upgraded spkg: pynac-0.2.0.p3
+ * Updated spkg's: boehm_gc-7.1.p5, gd-2.0.35.p5, ntl-5.4.2.p12,
+   pari-2.3.5.p1, polybori-0.6.4.p1, python-2.6.4.p8, scipy-0.7.p5,
+   scipy_sandbox-20071020.p5
+
+* Bug statistics
+
+We closed 40 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.4.3
+
+or check out the closed ticket section at the end of the announcement.
+
+* Doctesting coverage
+
+For Sage 4.4.2, we had an overall weighted doctest coverage score of
+82.1%, with 25,513 functions. In Sage 4.4.3, added 3 new functions. Thus for
+Sage 4.4.3 we now have
+
+ * Overall weighted coverage score:  82.1%
+ * Total number of functions:  25,516
+
+Closed tickets:
+
+#3304: Make cddlib a shared library
+#7694: change pickle jar doctest to make it a bit more robust and flexible...
+#8025: artificially bump the version number of the scipy and scipy_sandbox spkg's
+#8999: Mariah Lenox: sage-4.4.2 test "groups/matrix_gps/matrix_group.py" fails on x86_64-Linux-nehalem-fc
+
+Merged in sage-4.4.3.alpha0:
+
+#8257: Mike Hansen: cygwin: gd-2.0.35.p4 fails to build [Reviewed by William Stein]
+#8688: Burcin Erocal: extra parenthesis when typesetting fractions [Reviewed by William Stein]
+#8780: Mike Hansen: add the Cephes spkg to Cygwin [Reviewed by William Stein]
+#8782: Mike Hansen: pari does not work under Cygwin [Reviewed by William Stein]
+#8843: Mike Hansen: fix c_lib on Cygwin [Reviewed by William Stein]
+#8844: Mike Hansen: add missing libraries to module_list for Cygwin (and Fedora, OpenSuSE, ...) [Reviewed by Leif Leonhardy, William Stein]
+#8845: Mike Hansen: fix install_package in Cygwin [Reviewed by William Stein]
+#8846: Mike Hansen: fix partitions in Cygwin [Reviewed by William Stein]
+#8847: Mike Hansen: pynac.pyx use double precision special functions instead of long double [Reviewed by Burcin Erocal, Mike Hansen, William Stein]
+#8848: Mike Hansen: the fast eval interpreters do not build on Cygwin [Reviewed by William Stein]
+#8849: Mike Hansen: the palp interface throws a (harmless?) OSError on Cygwin [Reviewed by William Stein]
+#8850: Mike Hansen: Cython should link against BLAS instead of ATLAS on Cygwin [Reviewed by William Stein]
+#8852: Mike Hansen: minor doctest fix in fast_eval.pyx for Cygwin [Reviewed by William Stein]
+#8853: Mike Hansen: fix M_PI_4 in complex_double on Cygwin [Reviewed by William Stein]
+#8855: Mike Hansen: sage-env needs to be updated for Cygwin [Reviewed by William Stein]
+#8907: Mike Hansen: build Python with --enabled-shared [Reviewed by William Stein]
+#9050: Mike Hansen: libntl.dll should be libntl.dll.a on Cygwin [Reviewed by William Stein]
+
+Merged in sage-4.4.3.alpha1:
+
+#7337: Mike Hansen: PolyBoRi fails to build on cygwin [Reviewed by William Stein]
+#8542: Mike Hansen: Pynac should use a function pointer table [Reviewed by Burcin Erocal]
+#8903: Mike Hansen, Burcin Erocal: update pynac to 0.2.0 [Reviewed by William Stein]
+#9052: Felipe Voloch: Hasse invariant for elliptic curves [Reviewed by William Stein, John Cremona]
+#9067: Mike Hansen: boehm_gc (still) fails to build on Cygwin [Reviewed by William Stein]
+#9070: Mike Hansen: implement chdir for matlab interface [Reviewed by William Stein]
+
+Merged in sage-4.4.3.alpha2:
+
+#8030: Nicolas Borie: Strong generating system returns heavy error for non transitive group [Reviewed by Nicolas M. ThiÃ©ry]
+#8364: Nathann Cohen: Forward options like "solver" in all the functions using LP [Reviewed by Harald Schilly, Jason Grout, Minh Van Nguyen]
+#8756: Jason Grout, Leif Leonhardy: random segfault in planarity.pyx test [Reviewed by Robert Miller]
+#9079: William Stein: fix bug in singular polynomial interface [Reviewed by Martin Albrecht, Simon King]
+#9086: William Stein: LaTeX representation of negative symbolic fractions broken [Reviewed by Mike Hansen]
+#9093: Robert Bradshaw: is_square broken for constant polynomials [Reviewed by John Cremona, Barinder Banwait]
+
+Merged in sage-4.4.3.alpha3:
+
+#9037: David Kirkby: pynac fails to build on 64-bit OpenSolaris x64. [Reviewed by Mike Hansen]
+#9116: William Stein: sage-4.4.3.alpha1 fails to build on OS X due to png library issue [Reviewed by Mike Hansen]
+#9121: William Stein: sage-4.4.3.alpha1: set.py doctest failure [Reviewed by Florent Hivert]
+#9133: William Stein: sage-4.4.3.alpha2: pynac build failure on an itanium box (easy autoconf issue) [Reviewed by Mike Hansen]
+
+Merged in sage-4.4.3.rc0:
+
+#9001: Mariah Lenox: optional package database_cremona_ellcurve-20071019.p0.spkg causes test failure [Reviewed by John Cremona]
+#9039: Robert Miller: major error in E.sha().bound_kato() for E an elliptic curve [Reviewed by Chris Wuthrich]
+#9135: Mike Hansen: sage-4.4.3.alpha3: os x ppc 10.4 -- error building pynac [Reviewed by Georg S. Weber]
+

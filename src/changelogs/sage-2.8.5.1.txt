@@ -1,0 +1,22 @@
+﻿SAGE 2.8.5.1
+
+This is a minor bug fix release that does have a lot of new code related specifically
+to algebraic number theory (especially relative number fields).   
+
+702 Robert Bradshaw -- Bug fixes for the ellipsis range notation
+
+722 William Stein -- Fix: GF(100) gives weird error message  
+
+734 Williamm Stein and Mike Hansen -- Fix combinatorics problems on fedora core 7 with sage-2.8.5     
+
+738 William Stein --  easy-to-fix bug in matrix2.pyx
+
+742 William Stein -- Made notebook worksheet timeout optional and off by default
+
+751 William Stein -- Lots of new code and changes related to algebraic number theory
+
+
+---
+
+Also, the iml package has been temporarily reverted to a previous version do to build problems
+on some machine.  

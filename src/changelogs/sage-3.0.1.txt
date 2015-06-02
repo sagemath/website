@@ -1,0 +1,220 @@
+﻿Hello folks,
+
+Sage 3.0.1 has been released on May 4th, 2008. It is available at
+
+           http://sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 24 people contributed to this release:
+
+ * Tim Abbott
+ * Michael Abshoff
+ * Jason Bandlow
+ * Francois Bissey
+ * Tom Boothby
+ * Robert Bradshaw
+ * Dan Bump
+ * Craig Citro
+ * Timothy Clemans
+ * Didier Deshommes
+ * Lars Fischer
+ * Gary Furnish
+ * Alex Ghitza
+ * Jason Grout
+ * David Joyner
+ * Marshall Hampton
+ * Kiran Kedlaya
+ * Robert Miller
+ * Max Murphy
+ * Andrey Novoseltsev
+ * Willem Jan Palenstijn
+ * David Roe
+ * William Stein
+ * Scot Terry
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+ * PBuild (Gary Furnish)
+ * Convex Hulls And Polyhedral Functions Improvements (Marshall Hampton)
+ * Lattice Polytope Update (Andrey Novoseltsev)
+ * zeta_function Method for Schemes (Kiran Kedlaya)
+ * More Debianization (Tim Abbott)
+ * Default Mode for Notebook no longer uses SSL (William Stein)
+
+For details see the Sage 3.0.1 Release Tour at
+
+  http://wiki.sagemath.org/sage-3.0.1
+
+* Known Issues with 3.0.1:
+
+ #2983: Singular interface problems in matrix_group.py on 
+        Itanium/Linux RHEL 5: We see a segfault in the 
+        doctest when using the default system compiler.        
+
+* Bug Statistics
+
+We closed a record number of 75 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-3.0.1
+
+or check out the closed ticket section at the end of the 
+announcement. 
+
+* Upcoming Releases
+
+The next release will be 3.0.2, chaired by Michael Abshoff. 
+The release is planned in about a week. It will be mostly a 
+bug fix release to clear up issues from the 3.0.1 release.
+
+* Doctesting Coverage
+
+For 3.0 we had:
+
+Overall weighted coverage score:  51.5%
+Total number of functions:  19514
+
+We increased coverage by 0.3% in 3.0.1 while adding 39 functions:
+
+Overall weighted coverage score:  51.8%
+Total number of functions:  19553
+
+* Closed Tickets:
+
+Merged in final:
+
+#3010: Michael Abshoff: Numerical noise doctest failure in 
+       rings/complex_double.pyx
+#3085: Jason Grout: fix identity matrix docs [reported by Geoff 
+       Tims]
+#3087: Tim Abbott: Fix stupid mistakes in Debian palp copyright 
+       files
+#3088: Tim Abbott: Fixes for Debian gfan build
+#3092: Tim Abbott: Debian Singular permissions fixes
+#3093: Tim Abbott: Debian lcalc package missing -DINCLUDE_PARI 
+       flag
+#3094: Tim Abbott: Update to SAGE Debian packaging
+#3095: Lars Fischer, Michael Abshoff: Notebook, Documentation 
+       of DATA has a small error
+#3096: Michael Abshoff: Fix documentation rebuild issues for 
+       Sage 3.0.1.final
+#3098: Willem Jan Palenstijn, William Stein: doctest failure in 
+       devel/sage/sage/rings/ring.pyx involving synchronizing 
+       the Singular interface
+#3101: Gary Furnish, Michael Abshoff: pbuild: mwrank.so needs 
+       to be build as a C++ extension
+
+Merged in rc0:
+
+#2755: Andrey Novoseltsev: lattice_polytope.py update
+#3060: Marshall Hampton, Michael Abshoff: update optional 
+       biopython package to 1.45 release
+#3062: Timothy Clemans: implement __oct__ special method for the 
+       integers
+#3070: Robert Miller: bug in SymmetricGroup(1).cayley_graph()
+#3071: Gary Furnish: Using pbuild does not create site-packages 
+       sage symlink
+#3072: Willem Jan Palenstijn: sage -i numeric-24.2 (and all other 
+       experimental packages) fails
+#3074: Robert Bradshaw: update Cython to the 0.9.6.14 release
+#3076: Michael Abshoff: spkg-debian in extcode spkg not executable
+#3077: Gary Furnish: pbuild does not return properly on failure
+#3078: Willem Jan Palenstijn: sage's spkg-install doesn't return 
+       failure if build failed
+#3082: William Stein: sage-3.0.1.alpha1: a twist.py doctest failure
+
+Merged in alpha1:
+
+#1261: Gary Furnish: parallel "sage -br"
+#1549: Alex Ghitza: Sage 2.9: fix optional doctests in tut.tex
+#2216: Alex Ghitza: Creating an order in a number field --> 
+       infinite loop?
+#2504: Alex Ghitza: number field .units() method caches 
+       proof=False result and returns it for proof=True
+#2523: Craig Citro: bug in modular symbols for GammaH subgroup
+#2716: Marshall Hampton: convex hulls and polyhedral functions
+#2741: William Stein, Timothy Clemans: Implement mesh lines 
+       in 3d plots
+#2938: Craig Citro: Fix ModularSymbols(GammaH(8,[3])).decomposition()
+       ModularSymbols(GammaH(81, [10])).decomposition(); 
+#3029: Tim Abbott: Move DEB_AUTO_UPDATE_DEBIAN_CONTROL out 
+       of Debian packages
+#3030: Gary Furnish: Cython working directory command line 
+       option patch
+#3031: Kiran Kedlaya, Craig Citro:  Add zeta_function method 
+       for schemes
+#3032: Dan Bump: minor docstring cleanup in crystals.py and 
+       tensor_product.py
+#3034: Tim Abbott: improved cleaning code for Debian packages
+#3036: Tim Abbott: SAGE_TESTDIR broken
+#3037: Gary Furnish, Robert Bradshaw: update cython to 
+       0.9.6.13-20080426
+#3038: Tim Abbott: SAGE setup.py fixes for using Debian 
+       packaged polybori, zn_poly
+#3039: Tim Abbott: Improve auto-generated version numbers 
+       for Debian packages
+#3041: Francois Bissey, Michael Abshoff: optimization setting 
+       in LinBox.spkg is broken
+#3054: Jason Grout: copying a graph doesn't copy _pos or 
+       _boundary
+#3055: Jason Grout: creating subgraph does not delete _pos 
+       entries [reported by Tracy McKay and Laura DeLoss]
+#3057: Tom Boothby: MPolynomialRing_generic type-checks to 
+       determine commutativity
+#3059: William Stein, Timothy Clemans: notebook -- rewrite 
+       notebook(...) function to *not* use SSL by default
+#3061: Michael Abshoff, Max Murphy: use readlink and realpatch 
+       so that symlinking sage works
+#3063: Didier Deshommes: empty matrices: norm() returns a 
+       ValueError
+#3064: Didier Deshommes: empty matrices: density() function 
+       throws a ZeroDivisionError
+#3066: Didier Deshommes: empty matrices: gram_schmidt() throws 
+       a NameError
+#3067: Didier Deshommes: matrices: numeric_array() is missing 
+       an import
+
+Merged in alpha0:
+
+#783: Alex Ghitza: dilog is lame
+#1187: Alex Ghitza: bug in G.conjugacy_classes_subgroups()
+#1921: Alex Ghitza, Mike Hansen: add random_element to groups
+#2302: Michael Abshoff, William Stein, Scot Terry: Add a 64 
+       bit glibc 2.3 based binary of Sage to the default 
+       build platforms
+#2325: David Roe, Kiran Kedlaya: segfault in p-adic extension() 
+       method
+#2821: Alex Ghitza: get rid of anything "about this document" 
+       sections of any sage docs that say "send email to stein"
+#2939: David Joyner: piecewise.py improvements (docstring and 
+       laplace fixes)
+#2985: Michael Abshoff: ITANIUM (RHEL 5) -- bug in rubik.py's 
+       OptimalSolver()
+#2993: Michael Abshoff: OSX/gcc 4.2: disable padlock support 
+       per default
+#2995: Alex Ghitza: some new functionality and doctests for 
+       congruence subgroups
+#3003: Jason Bandlow: Bugfix for to_tableau() method of 
+       CrystalOfTableaux elements
+#3005: Craig Citro: modabar -- failure to compute endomorphism 
+       ring
+#3006: David Joyner: missing elliptic integrals in special.py
+#3014: Michael Abshoff: ZZ.random_element -- corrupted docstring
+#3017: Michael Abshoff: invalid link after make install
+#3022: Tim Abbott: Debian package support for polybori
+#3023: Jason Grout: make apply_map deal with empty matrices
+#3025: William Stein: Sparse vector spaces don't cast on 
+       assignment
+#3027: Tim Abbott: Debian lintian fixes

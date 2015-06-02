@@ -1,0 +1,268 @@
+﻿Sage 5.4 was released on 08 November 2012. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 82 people contributed to this release. Of those, 12 made
+their first contribution to Sage:
+
+  - Alejandro Morales [first contribution]
+  - Alex Csar [first contribution]
+  - Alexander Dreyer
+  - Aly Deines
+  - Andrew Mathas
+  - Andrey Novoseltsev
+  - André Apitzsch
+  - Anne Schilling
+  - Armin Straub
+  - Benjamin Jones
+  - Bjarke Hammersholt Roune
+  - Burcin Erocal
+  - Charles Bouillaguet
+  - Chris Berg
+  - Dan Bump
+  - Dan Drake
+  - Daniel Bump
+  - David Coudert
+  - David Kirkby
+  - David Roe
+  - Davide Cervone [first contribution]
+  - Dmitrii Pasechnik
+  - Francis Clarke
+  - Franco Saliola
+  - François Bissey
+  - Frédéric Chapoton
+  - Hugh Thomas
+  - Jason Bandlow
+  - Jason Grout
+  - Jean-Philippe Labbé [first contribution]
+  - Jean-Pierre Flori
+  - Jeroen Demeyer
+  - John Cremona
+  - John Palmieri
+  - John Perry
+  - Jonathan Gutow
+  - Julian Rueth
+  - Karl-Dieter Crisman
+  - Kelvin Li
+  - Keshav Kini
+  - Keshav kini [first contribution]
+  - Kevin Halasz
+  - Kiran Kedlaya
+  - Leif Leonhardy
+  - Luis Felipe Tabera Alonso
+  - Luiz Aquino [first contribution]
+  - Maarten Derickx
+  - Marco Streng
+  - Mariah Lenox
+  - Marshall Hampton
+  - Martin Albrecht
+  - Michael Welsh [first contribution]
+  - Mike Hansen
+  - Mike Zabrocki
+  - Nathan Carter
+  - Nathann Cohen
+  - Nicolas M. Thiéry
+  - Nicolas Thiery
+  - Nils Bruin
+  - Paul Zimmermann
+  - Paul-Olivier Dehaye
+  - Paulo César Pereira de Andrade
+  - Punarbasu Purkayastha
+  - R. Andrew Ohana
+  - Rob Beezer
+  - Robert Bradshaw
+  - Robert Harron
+  - Samuel Lelievre [first contribution]
+  - Sarah Chisholm [first contribution]
+  - Sebastian Luther [first contribution]
+  - Simon King
+  - Stefano Leucci [first contribution]
+  - Stepan Starosta
+  - Stephen Montgomery-Smith
+  - Steven Trogdon
+  - Thomas Feulner [first contribution]
+  - Tim Dumol
+  - Titus Nicolae
+  - Travis Scrimshaw
+  - Valentin Féray
+  - Volker Braun
+  - William Stein
+
+* Release manager: Jeroen Demeyer.
+
+* We closed 127 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-5.4/tickets.html
+
+Closed tickets:
+
+#9238: J. Gutow's update to Jmol in the notebook... [Reviewed by Jason Grout, Karl-Dieter Crisman, William Stein, Jonathan Gutow]
+#9428: Internationalize the Sage Notebook [Reviewed by Keshav Kini, Luiz Aquino, Dan Drake, Tim Dumol]
+#11471: Add i18n capabilities to the Flask notebook [Reviewed by Keshav kini, Luiz Aquino, Dan Drake, Tim Dumol, Mike Hansen]
+#11789: compile python with ssl-support if possible [Reviewed by Jeroen Demeyer]
+#11805: Update optional MPC spkg to version 0.9 [Reviewed by Jean-Pierre Flori]
+#12089: Dmitrii Pasechnik, Karl-Dieter Crisman, Jean-Pierre Flori: Singular does not build on Cygwin  - static libs problem [Reviewed by Karl-Dieter Crisman, Dmitrii Pasechnik, Jean-Pierre Flori]
+#12846: Multivariate Factorisation can be randomly slow (over extension fields) [Reviewed by Jeroen Demeyer]
+#12918: segmentation fault with multivariate polynomial factorization [Reviewed by Jeroen Demeyer]
+#12928: critical bug in multivariate polynomial factorization over GF(2) [Reviewed by Jeroen Demeyer]
+#13129: libSingular segmentation fault in factor [Reviewed by Jeroen Demeyer]
+#13344: Jean-Pierre Flori, Alexander Dreyer, Jeroen Demeyer: on CYGWIN, Singular LIB files get copied to SAGELOCAL/lib [Reviewed by Dmitrii Pasechnik, Jean-Pierre Flori]
+#13384: Keshav Kini: pyOpenSSL SPKG [Reviewed by John Palmieri]
+#13410: Robert Bradshaw: Patchbot timeouts [Reviewed by Volker Braun]
+#6003: Additions to Cholesky decomposition [Reviewed by Rob Beezer]
+#9511: Upgrade Givaro to version 3.7.0 [Reviewed by Volker Braun]
+#10153: Canonical generator matrices for linear codes and their automorphism groups [Reviewed by Thomas Feulner]
+#11718: Upgrade LinBox to version 1.1.7 [Reviewed by Volker Braun, Martin Albrecht]
+#13340: log scale plot fails if xmin > xmax [Reviewed by Punarbasu Purkayastha]
+#4319: Update Italian tutorial for #4285 [Reviewed by Jeroen Demeyer]
+#7832: singular-3-1-0-4-20090818.p2 - fix compilation on FreeBSD [Reviewed by Stephen Montgomery-Smith]
+#13499: Volker Braun: Update TOPCOM to 0.17.4 [Reviewed by Marshall Hampton]
+#9965: Make SYMPOW not write to files under global Sage installations [Reviewed by Jeroen Demeyer]
+#3302: python_gnutls fails to upgrade on OSX in case Sage was moved [Reviewed by Jeroen Demeyer]
+#4797: Run sage -ba instead of sage -b after upgrading Cython [Reviewed by Jeroen Demeyer]
+#7511: gnutls-2.2.1  fails to build on HP-UX [Reviewed by Jeroen Demeyer]
+#7542: Security issues in gnutls-2.2.1 [Reviewed by Jeroen Demeyer]
+#8437: wrong unix rights/permissions of some files after make dist [Reviewed by Jeroen Demeyer]
+#9308: Add an spkg-check file for GnuTLS [Reviewed by David Kirkby, Jeroen Demeyer]
+#9974: The current (rather old) version of GnuTLS fails to install on AIX 5.3 [Reviewed by Jeroen Demeyer]
+#9975: Update GnuTLS  and clean up the package [Reviewed by Mariah Lenox, Jeroen Demeyer]
+#10624: Slashes disappear in docstrings [Reviewed by John Palmieri]
+#12331: updating an spkg may render Sage non-relocatable [Reviewed by Jeroen Demeyer]
+#12785: update the faq: no need for gfortran... [Reviewed by Jeroen Demeyer]
+#13545: Can't create a symbolic variable named 'lambda' [Reviewed by Nils Bruin, Burcin Erocal]
+#13551: Autotools spkg does not build correctly on systems without autotools installed [Reviewed by Jeroen Demeyer]
+#12707: Keshav Kini, John Palmieri, Jeroen Demeyer: Update the git spkg [Reviewed by Leif Leonhardy, Volker Braun]
+#13150: Jeroen Demeyer: Create an optional GCC-4.7.2 package [Reviewed by Volker Braun]
+#13292: Jeroen Demeyer: Bad symlink SAGE_DATA/graphs/graphs.db in binary distributions [Reviewed by Leif Leonhardy]
+#13295: Simon King: p_group_cohomology 2.1.3 [Reviewed by John Palmieri]
+#13302: Matrix constructor does not return over padic field [Reviewed by Julian Rueth]
+#13602: partition distinct parts max part error [Reviewed by Alejandro Morales]
+
+Merged in sage-5.4.beta0:
+
+#5457: Mike Zabrocki, Anne Schilling, Jason Bandlow: Refactor symmetric functions and k-bounded subspace [Reviewed by Dan Bump, Nicolas M. Thiéry, Jeroen Demeyer]
+#5489: Mike Hansen, Bjarke Hammersholt Roune: Add an interface for 4ti2 to Sage [Reviewed by Martin Albrecht, John Palmieri, Marshall Hampton, Frédéric Chapoton]
+#9774: Rob Beezer, Davide Cervone, John Palmieri, Jason Grout, Nathan Carter: Use MathJax instead of jsMath [Reviewed by Jason Grout, John Palmieri, Punarbasu Purkayastha, Keshav Kini]
+#11021: Leif Leonhardy, Kelvin Li, Jeroen Demeyer: Fix install_package() library function [Reviewed by Kelvin Li, Leif Leonhardy, John Palmieri]
+#11305: Travis Scrimshaw: Bijection between Rigged Configurations and Crystal Paths [Reviewed by Anne Schilling]
+#11440: Paul-Olivier Dehaye: compute the dimension of partition [Reviewed by Frédéric Chapoton]
+#11913: John Palmieri: Notebook hang in ?? source display Trackback [Reviewed by Keshav Kini]
+#12299: Jonathan Gutow: Upgrade Jmol to 12.3.27, Advance Jmol Interactive Features in Flask Notebook [Reviewed by Karl-Dieter Crisman, Steven Trogdon, Punarbasu Purkayastha, John Palmieri, Dan Drake]
+#12606: Jeroen Demeyer: Fix sage --info <package> [Reviewed by John Palmieri]
+#12946: Mike Hansen: Bug in Compositions [Reviewed by Andrew Mathas]
+#13121: Keshav Kini: Upgrade sagenb to 0.10.x [Reviewed by John Palmieri, Jonathan Gutow]
+#13157: Jeroen Demeyer: inline_fortran is STILL broken on OS X [Reviewed by Karl-Dieter Crisman, Benjamin Jones]
+#13231: Alex Csar: Check if a lattice is atomic [Reviewed by Frédéric Chapoton]
+#13237: Jeroen Demeyer, Alexander Dreyer, Dmitrii Pasechnik, Karl-Dieter Crisman, Jean-Pierre Flori: Upgrade Singular [Reviewed by Alexander Dreyer, François Bissey]
+#13253: Maarten Derickx: galois_action on cusps has a bug and incorrect documentation [Reviewed by Marco Streng]
+#13259: Andrew Mathas: Correcting implementation of "negative" quantum integers [Reviewed by Armin Straub, Nicolas Thiery]
+#13294: Stefano Leucci: Add test for not necessarily induced subgraphs to Graph.is_subgraph() method [Reviewed by David Coudert]
+#13314: Paul Zimmermann, Jeroen Demeyer: segmentation fault with roots over ComplexField [Reviewed by John Cremona]
+#13385: John Palmieri, Keshav Kini: Remove OpenSSL dependency from Sage [Reviewed by Keshav Kini, John Palmieri]
+#13389: Keshav Kini: Minor fix to LiE optional SPKG [Reviewed by John Palmieri]
+#13390: Stepan Starosta: Non Negative Integers: fix contains method [Reviewed by Mike Hansen]
+
+Merged in sage-5.4.beta1:
+
+#6654: Valentin Féray: New features in group algebra category [Reviewed by Frédéric Chapoton]
+#8899: Jason Bandlow, Chris Berg, Franco Saliola, Nicolas M. Thiéry: Implement non commutative symmetric functions [Reviewed by Mike Zabrocki, Franco Saliola, Mike Hansen]
+#9906: Leif Leonhardy, Jeroen Demeyer: Move the RPy package outside of the R package [Reviewed by Karl-Dieter Crisman, John Palmieri]
+#12883: Paulo César Pereira de Andrade, Martin Albrecht: Update LinBox to most recent upstream release [Reviewed by Volker Braun, Jeroen Demeyer]
+#12972: John Cremona: Fix small bug in elliptic curve saturation [Reviewed by Volker Braun]
+#12994: R. Andrew Ohana: Serialization of setuptools targets in spkg/standard/deps [Reviewed by Jeroen Demeyer]
+#13145: David Roe: Sage's noncommutative rings don't always increment a refcount [Reviewed by Martin Albrecht]
+#13164: Paulo César Pereira de Andrade, Martin Albrecht, Jean-Pierre Flori: Update Givaro to 3.7.1 [Reviewed by Volker Braun]
+#13284: Alexander Dreyer: Some conversion between BooleanPolynomialRing and QQ[.....] are missing [Reviewed by Charles Bouillaguet]
+#13298: John Cremona: Update Cremona's table of elliptic curves to 270000 [Reviewed by R. Andrew Ohana]
+#13327: Andrey Novoseltsev: Allow conversion of strings to iterated polynomial rings [Reviewed by Frédéric Chapoton]
+#13391: Daniel Bump: WeylCharacterRing improvement [Reviewed by Anne Schilling]
+#13395: Jeroen Demeyer: Fix upgrading with GCC [Reviewed by John Palmieri]
+#13404: Nicolas M. Thiéry, Mike Zabrocki: Improved printing for symmetric function bases and misc refactoring [Reviewed by Anne Schilling]
+#13416: Jeroen Demeyer: Fix GAP dependencies [Reviewed by Volker Braun]
+#13427: David Kirkby: Numerical noise causing sage/numerical/optimize.py to fail on SPARC [Reviewed by Volker Braun]
+#13428: Jeroen Demeyer: Race condition in R installation [Reviewed by John Palmieri]
+
+Merged in sage-5.4.beta2:
+
+#8908: Jean-Philippe Labbé: Add the Young subgroup method to symmetric groups [Reviewed by Mike Hansen, Frédéric Chapoton]
+#11442: Paul-Olivier Dehaye: Computes the Plancherel measure of an individual partition [Reviewed by Frédéric Chapoton]
+#13065: Francis Clarke: simon_two_descent not working [Reviewed by John Cremona]
+#13107: Titus Nicolae, Burcin Erocal: python long division causing infinite loop [Reviewed by Burcin Erocal, Jean-Pierre Flori]
+#13123: R. Andrew Ohana,  Jeroen Demeyer: Move SAGE_DATA to SAGE_LOCAL/share [Reviewed by François Bissey, Jeroen Demeyer]
+#13316: Jean-Pierre Flori: Update pynac to version 0.2.5 [Reviewed by Burcin Erocal]
+#13348: Jeroen Demeyer: Set CPATH in sage-env [Reviewed by Volker Braun]
+#13361: Volker Braun: Report startuptime exclusive children [Reviewed by John Palmieri]
+#13362: David Coudert: Fix bug in build_flow_graph [Reviewed by Keshav Kini, Nathann Cohen]
+#13397: Jeroen Demeyer: sage-location: handle lib64 also [Reviewed by John Palmieri]
+#13399: Anne Schilling, Mike Zabrocki: Fixes to symmetric functions [Reviewed by Mike Zabrocki, Anne Schilling]
+#13415: Jeroen Demeyer: Prevent unneeded rebuilding when upgrading [Reviewed by John Palmieri]
+#13420: Jeroen Demeyer: The usual #long time additions [Reviewed by Volker Braun]
+#13431: Kevin Halasz: Add sign as an alias for signature for permutations [Reviewed by Rob Beezer, John Cremona]
+#13443: Jeroen Demeyer: Some clean up of R spkg [Reviewed by Karl-Dieter Crisman, John Palmieri]
+#13449: Jonathan Gutow: Problem with testjava.sh in jmol package finding bash [Reviewed by Dmitrii Pasechnik]
+#13454: Jeroen Demeyer: Fix odlyzko database doctests [Reviewed by Volker Braun]
+#13455: Andrey Novoseltsev: Remove jsMath <> workaround [Reviewed by John Palmieri]
+#13457: Jeroen Demeyer: Various small fixes to sage-bdist [Reviewed by John Palmieri]
+#13462: Aly Deines: quaternion algebra discriminant generalized to number fields [Reviewed by Sarah Chisholm]
+#13497: Jeroen Demeyer, John Palmieri: Disable sage --info test for bdists [Reviewed by John Palmieri]
+#13502: Jason Grout: vector norm doesn't work with python integers [Reviewed by Rob Beezer]
+#13508: John Palmieri: deprecate jsmath_avoid_list etc. [Reviewed by Nicolas M. Thiéry]
+
+Merged in sage-5.4.rc0:
+
+#3979: Francis Clarke: Power series composition messes up precision [Reviewed by Kiran Kedlaya, Luis Felipe Tabera Alonso, Frédéric Chapoton]
+#5160: Jeroen Demeyer: Change name of misc/sagex_ds.pyx [Reviewed by Karl-Dieter Crisman]
+#11446: Paul-Olivier Dehaye: compute the outline of a partition [Reviewed by Frédéric Chapoton]
+#11770: Robert Harron: Add ability to detect CM number fields and take complex conjugate of their elements [Reviewed by Francis Clarke, Jeroen Demeyer]
+#12496: Samuel Lelievre, Hugh Thomas: Improve doctest coverage for integer_ring.pyx [Reviewed by Hugh Thomas, Jeroen Demeyer]
+#12802: John Perry: test containment of ideals in class MPolynomialIdeal [Reviewed by Andrey Novoseltsev, Simon King]
+#13289: David Coudert: Determine if a vertex is a cut vertex [Reviewed by Sebastian Luther]
+#13444: Anne Schilling, Mike Zabrocki: Doc Tests for book "k-Schur Primer" [Reviewed by Anne Schilling, Mike Zabrocki]
+#13459: Jeroen Demeyer: spkg/bin/sage: do not change directory [Reviewed by John Palmieri]
+#13509: Aly Deines: Pari nfhnf - hnf over number fields [Reviewed by Jeroen Demeyer]
+#13515: Jeroen Demeyer: Support the GCC spkg on Ubuntu 12.04 [Reviewed by Volker Braun]
+#13524: Michael Welsh: Error in Linear Algebra constructions [Reviewed by Dmitrii Pasechnik]
+#13527: Franco Saliola: modify repr of SubsetAlgebra (example of with realizations) to conform to standards set out in #13404 [Reviewed by Mike Hansen]
+
+Merged in sage-5.4.rc1:
+
+#13512: Francis Clarke: Docstring formatting in misc_c.pyx [Reviewed by Jeroen Demeyer]
+#13537: Julian Rueth: Stopgap for 13439 [Reviewed by Volker Braun]
+#13544: John Palmieri: Omit .DS_Store when building 'all' documentation [Reviewed by Michael Welsh]
+
+Merged in sage-5.4.rc2:
+
+#7688: Jeroen Demeyer: Remove byte-compiled files from extcode [Reviewed by R. Andrew Ohana]
+#9697: Paul-Olivier Dehaye: DS_Store garbage in flint spkg [Reviewed by Karl-Dieter Crisman]
+#10738: Volker Braun: insecure temp file in testcc.sh, testcxx.sh [Reviewed by Jeroen Demeyer]
+#13579: Jeroen Demeyer, Volker Braun: Python sys.path security risk [Reviewed by Volker Braun, Jeroen Demeyer, David Roe]
+#13582: John Palmieri: Add (brief) info about SAGE_TESTDIR to other pieces of doc [Reviewed by Karl-Dieter Crisman]
+#13595: Jeroen Demeyer: LD_LIBRARY_PATH potential security risk [Reviewed by Volker Braun]
+
+Merged in sage-5.4.rc3:
+
+#13258: André Apitzsch: Replace some deprecated functions in the documentation [Reviewed by Robert Bradshaw]
+#13631: Jeroen Demeyer: Sage refuses to run despite safe directory [Reviewed by Volker Braun]
+
+Merged in sage-5.4.rc4:
+
+#13681: Jeroen Demeyer: fix issues with SAGE_TMP [Reviewed by Volker Braun]

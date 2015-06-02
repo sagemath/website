@@ -1,0 +1,318 @@
+﻿Hello folks,
+
+Sage 2.9 has been released. It is available at
+
+           http://sagemath.org/download.html
+
+The following people contributed this release:
+
+ * Michael Abshoff
+ * Martin Albrecht
+ * Robert Bradshaw
+ * Tom Boothby
+ * Ondrej Certik
+ * Craig Citro
+ * F. Clark
+ * John Cremona
+ * Alyson Deines
+ * Burcin Erocal
+ * Jan Groenewald
+ * David Harvey
+ * Mike Hansen
+ * Josh Kantor
+ * Robert Miller
+ * Bobby Moretti
+ * Rich Morin
+ * Bill Page
+ * Willem Jan Palenstijn
+ * Yi Qiang
+ * David Roe
+ * William Stein
+ * Carl Witty
+ * Paul Zimmermann
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+We achieved most of the goals we set ourselves for 2.9. The major
+changes compared to 2.8.15 are:
+
+ * Integration of PolyBoRi
+ * Integration of ATLAS BLAS/Lapack on non-OSX
+ * Integration of R 2.6.1 and rpy
+ * Update to FLINT 1.02
+ * Update to Symmetrica 2.0
+ * Much faster permutation arithmatic
+ * Very fast rubik's cube solvers
+ * Many build fixes applied and many bugs squashed
+
+We closed a total of 110 tickets, for details see below or our 
+tracker at
+
+http://www.sagetrac.org/sage_trac/query?status=closed&milestone=sage-2.9
+
+* Known Issues with 2.9
+
+#1137: Import gd fails to import on OSX 10.4 ppc. Any attempt 
+       to fix this breaks other applications on different OSX 
+       flavors. We hope to fix this in 2.9.1.
+#1497: ATLAS fails to build on FC7, Dual core [known ATLAS 
+       issue with workaround: disable power management] 
+
+* Upcoming Releases
+
+The following releases are planned for the rest of the year:
+
+ * 2.9.1: chaired by Robert Miller, bug fixes, release 
+          planned about a week from now
+ * 2.9.2: chaired by Michael Abshoff, bug fixes, release 
+          planned about two weeks from now
+
+2.9.2 will be the release we plan to distribute on DVD at the AMS 
+meeting, so we are shooting hard for an excellent release.
+
+* Doctesting Coverage 
+
+For 2.9:
+
+Overall weighted coverage score:  35.3%
+Total number of functions:  17947
+
+Compared to 2.8.15 this is an increase by 0.5%.
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support,
+sage-forum or sage-newbie. You can also drop by in #sage-devel in
+freenode.
+
+* Closed Tickets:
+
+Merged in rc3:
+
+#1529: William Stein: update install_scripts to also install R script.
+#1530: William Stein: building tut.tex is currently broken
+#1531: Michael Abshoff: fix doctest failure sage/calculus/calculus.py
+#1532: Josh Kantor; Michael Abshoff: Error out with intelligent
+       message if ATLAS tune failed
+
+Without tickets:
+
+William Stein: update libpng.spkg
+William Stein: don't let "sage -ba" start sage
+William Stein: link libcsage.so against atlas on non-OSX
+William Stein: link IML against atlas on non-OSX
+Willaim Stein, Michael Abshoff: Various doctest fixes
+Michael Abshoff: link LinBox against atlas on non-OSX
+Michael Abshoff: remove forced check from FLINT.spkg
+
+Merged in rc1/2:
+
+#1258: Willem Jan Palenstijn, Robert Miller: additions and changes 
+       to linear_codes
+#1457: William Stein: "BUG: Rational.__pow__ called on a non-Rational"
+#1464: Robert Miller: binary code canonical labels & automorphism
+       group generators
+#1503: William Stein: formal function calls don't coerce correctly to
+       Mathematica
+#1511: Robert Bradshaw: Export 3d objects in jmol format
+#1527: William Stein: doctest R with "import rpy" 
+#1528: William Stein: make "sage -R" run R.
+
+Merged in rc0:
+
+#444: Robert Bradshaw: solve the rubik's cube fast!
+#553: Mike Hansen, William Stein: calling of symbolic expressions is
+      sometimes ridiculous
+#1077: Yi Qiang: DSage restarts two workers after timeout, various 
+       other fixes and improvements
+#1119: Martin Albrecht, Robert Bradshaw: EllipticCurve.random_element
+       for char=2
+#1137: Robert Miller: matrix visualize_structure is completely broken
+       on OSX [later reverted]
+#1162: Paul Zimmermann, Carl Witty: fix issues in RealField <-> RQDF
+       conversions
+#1183: David Roe, William Stein, Alyson Deines: Residue fields are
+       broken. This patch set also fixes #1242 and #1185
+#1232: Craig Citro: bug in modular symbols over GF(2)
+#1237: David Roe: E.torsion_order() fails on curves with big
+       coefficients!
+#1239: Robert Bradshaw, John Cremona: Wrap Simon's new gp two 
+       descent code
+#1393: Robert Miller: is_integral_domain may return incorrect answer
+#1395: Mike Hansen: notebook(directory="foo/") misbehaves
+#1401: Mike Hansen, William Stein: deprecate A[n] for n a matrix
+#1404: F. Clark, William Stein: bug in %latex feature in the notebook)
+#1407: William Stein: deciding that generators don't generate an order
+       in some extensions can be way way too slow.
+#1423: William Stein: bug/issue in python.eval from sage
+#1425: Mike Hansen, William Stein: wrong automatic simplification of
+       pow
+#1442: Mike Hansen: fix wrong statement in calculus.py
+#1447: Burcin Erocal: Polybori permissions issues [fixed in 
+       polybori-0.1-r5.spkg]
+#1454: William Stein: Change the prompt for sage -sh
+#1460: William Stein, Carl Witty: bug in float( ... ) conversion in
+       calculus
+#1461: William Stein: implement general subs_expr for calculus
+       expressions
+#1472: Josh Kantor: gnuplotpy optional package doesn't work with numpy
+       [updated optional spkg]
+#1473: Robert Bradschaw: make Java3D usable from command line as well
+       as notebook 
+#1480: William Stein: implement P.show() for mathematica elements --
+       nice mathematica graphics in the sage notebook!
+#1491: William Stein: improve conversion from interface to sage
+       objects (i.e., the dot sage method)
+#1494: William Stein: bug coercing from maximal order of cyclotomic
+       field into cyclotomic field
+#1502: Mike Hansen: calculus -- bug in argument ordering for formal
+       functions
+#1506: William Stein: NTL.spkg - dumb intentional error during the 
+       build
+#1507: William Stein: document how to use pylab / matlab style
+       plotting from sage
+#1513: Michael Abshoff: FLINT install uses make -B, which isn't an
+       option on (slightly) older make versions
+#1515: Robert Bradshaw: fix ParametricSurface bug
+#1518: William Stein: cache computing order of elliptic curve over
+       finite field
+#1519: William Stein: hg problem applying tickets via trac url: remove 
+       characters after "?" from name
+#1520: Michael Abshoff: prebuilt 2.9-alpha7 osx ppc binary has
+       hardcoded paths
+
+Merged in alpha7:
+
+#1340: Robert Bradshaw: %cython broken if directory name contains
+       spaces
+#1398: Mike Hansen: Functions on integers which are not 
+       object-oriented
+#1462: William Stein: make sure that not to update the timestamp 
+       cache if compilation fails
+#1487: Michael Abshoff: ATLAS breaks with parallel make
+#1488: William Stein: fix output of symbolic vectors
+#1489: William Stein: serious bug in calculus maxima parsing
+#1490: Michael Abhsoff: fix numerical noise doctest failure in
+       numerical/test.py
+#1492: Yi Qiang: update sqlite.spkg to 3.5.3.p1 [this also closes
+       #1152, #1202]
+#1493  Burcin Erocal: polybori doesn't free m4ri data on exit
+#1497: Josh Kantor: Configure ATLAS properly for 32 bit user space 
+       on 64 bit CPU
+#1499: Michael Abshoff: fix import issues related to ATLAS BLAS on
+       non-OSX
+#1500: William Stein: solve_mod -- implement solving modulo n in sage
+#1501: Josh Kantor: udpate cvxopt to use ATLAS on Linux
+
+Merged in alpha6:
+
+#469: Burcin Erocal: Add BoolenPolynomialRing to global namespace. 
+      With this patch PolyBoRi's integration should be finished
+#823: Josh Kantor, Michael Abshoff: make atlas standard in Sage
+#1430: Josh Kantor: sparse eigenvalues and splines [scipy sandbox]
+#1434: Josh Kantor: cut sandbox directory out of scipy spkg
+#1462: William Stein: speed up "sage -b" -- don't do anything cython
+       stuff if no .pyx, .pxd, or .pxi file changes 
+#1463: William Stein: polymake package has wrong cddlib,gmp versions
+#1479: William Stein: Fix doctest failure fallout from #1296
+
+Merged in alpha5:
+
+#469: Burcin Erocal: partial merge of the PolyBoRi wrapper, updated 
+      PolyBoRi.spkg [still some code to merge, so disable doctests 
+      for now, BooleanRing is missing]
+#1189: Ondrej Certik: SymPy <-> SAGE automatic conversion
+#1235: William Stein: doctest fixes for 32 bit Linux
+#1296: Robert Bradshaw: Fast permutation arithmatic [with bugfixes 
+       and debugging by William Stein, Michael Abshoff, Carl Witty 
+       and Mike Hansen - this was a real team effort :)]
+#1394: Robert Miller: make plot documentation readable in graph.py
+#1450: William Stein: update the error message for using maple/
+       mathmatica from sage
+#1453: William Stein: fix cython dependency computation for new files
+       [later reverted, due to issues with #1366]
+#1455: Michael Abshoff: Fix OSX doctest failures due to numerical
+       noise
+
+Merged in alpha4:
+
+No tickets, but build fixes for gfan and R by William Stein
+
+Merged in alpha3:
+
+#1366: Bobby Moretti, William Stein: speed up "sage -br" -- make it
+       cache the dependency diagram instead of computing it every 
+       time [later reverted]
+#1411: William Stein: pdate the README.txt file included in Sage
+#1416: William Stein, Mike Hansen, Josh Kantor: make R standard 
+       component
+#1427: Josh Kantor: rpy doesn't build on osx 10.4
+#1433: William Stein: Fix some documentation typos pointed out by 
+       Rich Morin
+#1436: Michael Abshoff, Bill Hart: Update FLINT.spkg to 1.02 relase
+#1437: Michael Abshoff: fix spkg-check in FLINT to work "stand alone"
+#1444: William Stein: fix some serious hard-coding issues that break
+       all binary installs
+#1445: Mike Hansen: symmetrica's longints need to be converted
+
+Merged in alpha2:
+
+#469: Burcin Erocal: add PolyBoRi.spkg [integration patch still 
+      missing]
+#1164: Mike Hansen: Error in tutorial documentation about %hist
+#1167: Mike Hansen: Spelling errors in documentation
+#1182: Mike Hansen: update freetype.spkg to 2.3.5
+#1235: William Stein: bug solving equations using maxima
+#1243: Mike Hansen: Minor spelling mistakes in documentation
+#1267: Mike Hansen: documentation for piecewise does not show up in
+       notebook
+#1288: Mike Hansen: misformating of some of the reference manual in
+       live version; also out of date
+#1324: Carl Witty: 2.8.14: doctest failure in sage/rings/real_rqdf.pyx
+       on FC6, x86-64
+#1348: Mike Hansen: Incorporate Jan Groenewald's documentation fixes
+#1378: Mike Hansen: add ssh-client (i.e., ssh-keygen) as a required
+       package in various places in the docs
+#1412: Tom Boothby: creating directory in notebook cell #x makes
+       evaluation of cell #x hang
+#1417: Mike Hansen: update symmetrica.spkg to 2.0
+#1420: Mike Hansen: documentation typo
+#1435: Michael Abshoff: Update FLINT.spkg to 1.01
+
+Merged in alpha1:
+
+#491: Michael Abshoff: gcc 4.3: fix givaro build due to ::memcpy
+      failure
+#492: Craig Citro, David Harvey: gcc 4.3: fix ntl_wrap.cc in   
+      sage_c_lib [this was some time ago]
+#1260: Michael Abshoff, Bill Hart: update to FLINT 1.0 and clean 
+       up spkg-install
+#1403: John Cremona: Analog fixes for termination issues for 
+       the other mwrank binaries
+#1406: Mike Hansen, William Stein: bug in coercion of multivariate
+       polynomials 
+#1410: Michael Abshoff: fix leftovers from 1256, make mwrank 
+       binaries link dynamically, fix cython doctest issue
+
+Merged in alpha0:
+
+#1002: Bill Page: Update clisp to the 2.43 release [later reverted]
+#1256: Michael Abshoff: mwrank*.spkg now redundant, included in
+       cremona*.spkg
+#1337: Carl Witty: technically incorrect code in integer_mod.pyx
+#1403: John Cremona: mwrank has termination issues
+#1405: Michael Abshoff, Carl Witty: gcc 4.3-snapshot: cremona 
+       compile fixes. 
+
+Reviewers: Carl Witty, William Stein, Mike Hansen, Robert Miller,
+           Craig Citro, Michael Abshoff; apologies to anybody I
+           forgot.
+
+Feeback: Jaap Spies, apologies to anybody I forgot.

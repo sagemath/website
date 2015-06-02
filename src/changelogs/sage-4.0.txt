@@ -1,0 +1,266 @@
+﻿Hello folks,
+
+Sage 4.0 was released on May 29th, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 83 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 40 people contributed to this release. Of those, 8 made
+their first contribution to Sage:
+
+* Anthony David [first contribution]
+* arattan AT gmail.com [first contribution]
+* Bill Cauchois
+* Burcin Erocal
+* Carl Witty
+* Craig Citro
+* Dan Bump
+* David Loeffler
+* David Perkinson
+* David Roe
+* Emily Kirkman
+* Franco Saliola
+* Fredrik Johansson [first contribution]
+* Gonzalo Tornaria
+* Jason Grout
+* John Cremona
+* John Palmieri
+* Chris Swierczewski
+* Jon Hanke
+* Karl-Dieter Crisman
+* Kwankyu Lee
+* Lloyd Kilford [first contribution]
+* Luiz Berlioz [first contribution]
+* Marshall Hampton
+* Martin Albrecht
+* Michael Abshoff
+* Mike Hansen
+* Minh Van Nguyen
+* Nick Alexander
+* Nicolas Thiery
+* Radoslav Kirov [first contribution]
+* Rob Beezer
+* Robert Bradshaw
+* Robert Miller
+* Ron Evans [first contribution]
+* Ryan Dingman [first contribution]
+* Simon King
+* Tom Boothby
+* Wilfried Huss
+* William Stein
+
+
+
+* Major Features, New Spkgs and Bugfixes
+
+For all the details of what else changed in Sage 4.0 please see the release
+tour in the Sage wiki at
+
+  http://wiki.sagemath.org/sage-4.0
+
+
+* Known Issues with 4.0
+
+- gap on itanium?
+
+
+* Bug Statistics
+
+We closed 140 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.0
+
+or check out the closed ticket section at the end of the
+announcement.
+
+
+* Upcoming Releases
+
+- category patches
+- mpir 1.2
+
+
+
+* Doctesting Coverage
+
+For 3.4.2 we had:
+
+Overall weighted coverage score:  71.1%
+Total number of functions:  22348
+
+We increased coverage by 5.8% in 4.0 while removing 537 functions:
+
+Overall weighted coverage score:  76.9%
+Total number of functions:  21811
+
+
+#5546: Closed due to #5777 and #5390: jacobian fails for pynac expressions
+rc1: #6130: Mike Hansen: README about documentation is outdated. [Reviewed by William Stein]
+CHECK THIS: #5977: Craig Citro: Implement sage -clean-residues [Reviewed by Mike Hansen]
+#5909: Closed due to #5930: symbolics -- x.subs_expr({}) hangs sage
+#5888: Closed due to #5834: quadratic forms added a stupid/broken new function to sage for random integer. Remove!
+#2071: Closed due to #5390: SymbolicExpression conjugate() method assumes variables are real
+#1588: Closed due to #5390: after #1566, new errors in converting symbolic compositions to polynomials are exposed.
+#3202: Closed due to #5390: show() smashes multiplied numbers together so the product looks like a number
+
+
+* Closed Tickets:
+
+Merged in Sage 4.0.rc2:
+
+#4478: Craig Citro: delete spkg-debian-maybe [Reviewed by Mike Hansen]
+#5218: Michael Abshoff, Mike Hansen: Update Python to 2.5.4 (latest 2.5 upstream) (depends on #5286) [Reviewed by William Stein]
+#5286: Closed due to #5218: python 2.5.4 breaks -sdist due to missing .hg repo in the sage-3.3.rc1.spkg (followup to #5218)
+#6125: Mike Hansen: disable testing in flint, mpir, etc. packages [Reviewed by William Stein]
+#6133: Craig Citro: remove pbuild files in devel/sage [Reviewed by Mike Hansen]
+#6147: Craig Citro:  Make sage -sync-build smarter. [Reviewed by Mike Hansen]
+#6148: Mike Hansen: functions involving ceil and floor are plotted incorrectly [Reviewed by Jason Grout, Willliam Stein]
+#6149: David Loeffler, Mike Hansen: Fix ReST glitches [Reviewed by Mike Hansen, David Loeffler]
+#6150: Mike Hansen: numerical noise issues in 4.0.rc1 [Reviewed by William Stein]
+#6151: Closed due to #5218: fedora 10 64-bit -- tab completion causes segfault
+#6152: John Palmieri: more ReST fixes [Reviewed by Mike Hansen]
+
+
+Merged in Sage 4.0.rc1:
+
+#5449: Nicolas Thiery: Implements a variant of @cached_method with cache stored in the parent [Reviewed by David Roe]
+#5852: Gonzalo Tornaria: the detection of SAGE_ROOT in $SAGE_ROOT/sage script should expand symlinks recursively (fix this on systems that support readlink -f) [Reviewed by William Stein]
+#5894: William Stein: spkg/install shoud use #!/usr/bin/env bash [Reviewed by Mike Hansen]
+#5927: William Stein, Mike Hansen: singular prompt problem on solaris sparc [Reviewed by Michael Abshoff]
+#6038: Bill Cauchois: add implicit_plot3d to the reference manual (and maybe an example in the tutorial) [Reviewed by Mike Hansen]
+#6053: Jason Grout: Cython numpy broken in notebook [Reviewed by Mike Hansen]
+#6075: Mike Hansen: dsage is not yet entirely optional [Reviewed by Craig Citro]
+#6096: Robert Miller: Fix subtle bug in partition refinement [Reviewed by Emily Kirkman]
+#6111: Robert Bradshaw, Carl Witty, William Stein, Mike Hansen: review symbolics in sage-4.0 (switch to pynac) [Reviewed by Mike Hansen, William Stein]
+#6114: Mike Hansen: symbolics -- fix removal of constants.so [Reviewed by William Stein]
+#6115: Mike Hansen, Jason Grout: make symbolic matrices use pynac symbolics [Reviewed by Jason Grout, Mike Hansen]
+#6117: Emily Kirkman: graph plotting with show ignores keyword 'talk' [Reviewed by Robert Miller]
+#6126: arattan AT gmail.com: Symmetric group algebra jucys_murphy elements incorrect [Reviewed by Mike Hansen]
+#6127: Ron Evans, William Stein: fix trivial typo in documentation [Reviewed by John Palmieri]
+#6129: Anthony David: Ammend docstring in ode.pyx [Reviewed by Mike Hansen]
+#6134: Mike Hansen: Fix SR coercion issue with numpy.float128 [Reviewed by Jason Grout]
+#6142: Mike Hansen: fix issues with assumptions() doctest due to architecture dependant hashing [Reviewed by William Stein]
+#6145: William Stein: upgrade mpir to 1.1.2 [Reviewed by Mike Hansen]
+
+
+Merged in Sage 4.0.rc0:
+
+#3932: Ryan Dingman: generate size n trees in linear time [Reviewed by Robert Miller]
+#4875: Marshall Hampton: Polyhedron.show(fill=True) fails [Reviewed by David Perkison]
+#5076: David Roe: bug with (coercion in?) p-adic extension fields [Reviewed by Robert Bradshaw]
+#5120: Nicolas Thiery: An alternative implementation of the Unique Representation design pattern [Reviewed by David Roe]
+#5236: David Roe: x^(-pm) in ramified extensions of Qp [Reviewed by Kiran Kedlaya]
+#5554: Nick Alexander: implement cholesky_decomposition for matrices other than RDF [Reviewed by Rob Beezer, Michael Abshoff]
+#5581: Marshall Hampton: Face lattices and f-vectors for polytopes; bug fixes for polyhedra.py [Reviewed by David Perkison]
+#5582: Robert Bradshaw: Coercion from float to QQ is missing [Reviewed by Jason Bandlow, Mike Hansen]
+#5619: Minh Van Nguyen: doctests for error messages in groebner_fan.py [Reviewed by Marshall Hampton]
+#5621: Minh Van Nguyen, Mike Hansen: doctests for calculus.py [Reviewed by John Palmieri]
+#5753: Burcin Erocal: update to pynac 0.1.4 [Reviewed by Mike Hansen]
+#5777: Burcin Erocal: update to pynac 0.1.6 [Reviewed by Mike Hansen]
+#5783: Nicolas Thiery: Lazy attribute fixes and improvements [Reviewed by David Roe]
+#5837: Luiz Berlioz: bug in rational_diagonal_form() from QuadraticForm class [Reviewed by John Cremona, Gonzalo Tornaria]
+#5879: Brant Jones, Anne Schilling: Added crystal of letters for type E [Reviewed by Nicolas Thiery, Dan Bump]
+#5907: Gonzalo Tornaria, Carl Witty: incorrect fast_float evaluation of constant polynomials [Reviewed by Mike Hansen]
+#5930: Mike Hansen, William Stein, Carl Witty, Robert Bradshaw: switch from maxima to pynac for core symbolic manipulation system [Reviewed by Carl Witty, Robert Bradshaw, William Stein, Mike Hansen, Tom Boothby, Michael Abshoff]
+#5940: Emily Kirkman: graph theory -- bug in is_circular_planar [Reviewed by Robert Miller]
+#5944: Burcin Erocal: fix a nasty pynac bug in exp [Reviewed by Mike Hansen]
+#5954: Jon Hanke: Added documentation/doctests for all quadratic form genus symbol routines [Reviewed by Gonzalo Tornaria]
+#6029: Robert Bradshaw: bug in floor() for python types [Reviewed by Mike Hansen]
+#6035: Wilfried Huss: Don't draw vertical asympotes [Reviewed by Marshall Hampton]
+#6036: Kwankyu Lee: a bug in polynomial() for PolynomialRing(GF(5),2) [Reviewed by Mike Hansen]
+#6037: Jon Hanke: Major Upgrade to QuadraticForm Local Density Routines [Reviewed by Gonzalo Tornaria]
+#6040: Jon Hanke: Added Doctests for QuadraticForms methods [Reviewed by Gonzalo Tornaria]
+#6042: John Cremona: Bring doctests of modular/modsym/ambient.py up to 100% [Reviewed by David Loeffler, Alex Ghitza]
+#6048: John Palmieri: fix non-ASCII character in mpolynomialsystem [Reviewed by Martin Albrecht]
+#6049: Jason Grout: bitset complement zeroes out last word if the bitset is a multiple of the word size [Reviewed by Carl Witty]
+#6052: Gonzalo Tornaria: partial_fraction_decomposition is broken for irreducible denominators [Reviewed by Mike Hansen]
+#6054: Mike Hansen: fix display2d with ecl on OSX [Reviewed by Michael Abshoff]
+#6059: Gonzalo Tornaria: speed regresion in hilbert_symbol after #5834 [Reviewed by John Cremona]
+#6060: Fredrik Johansson: divmod fails when one argument is Integer and the other is a Python int [Reviewed by Mike Hansen]
+#6061: William Stein: refresh the pickle jar [Reviewed by Michael Abshoff]
+#6062: Gonzalo Tornaria: QQ method is_padic_square fails when argument is python int [Reviewed John Cremona]
+#6064: Gonzalo Tornaria: allow rationals in kronecker_symbol and legendre_symbol [Reviewed John Cremona]
+#6065: Carl Witty: implement some missing trig methods on RealIntervalFieldElement [Reviewed by Mike Hansen]
+#6066: Radoslav Kirov: constructing Sage graphs is slow compared to NetworkX graphs [Reviewed by Robert Miller]
+#6070: David Loeffler: Get doctest coverage in sage/modular to 100% [Reviewed by John Cremona]
+#6077: Marshall Hampton: simplicial complex method for polytopes [Reviewed by John Palmieri]
+#6080: Fredrik Johansson: Add utility methods to Integer (needed for mpmath) [Reviewed by Mike Hansen]
+#6082: Robert Bradshaw: realloc called too often for Integer construction/deconstruction [Reviewed by William Stein]
+#6086: David Perkinson: fixed laplacian_matrix in graph.py [Reviewed by Emily Kirkman]
+#6088: Nicolas Thiery: LatticePolytope: Removed a try/catch which could involuntarily hide exceptions from lower code [Reviewed by Andrey Novoseltsev]
+#6104: Michael Abshoff: Fix Solaris specific build issue for libfplll.spkg [Needs review]
+#6107: Mike Hansen: misc. fixes for symbolics for 4.0.rc0 [Reviewed by William Stein]
+
+
+Merged in Sage 4.0.alpha0:
+
+#1338: Michael Abshoff: Solaris: Symmetrica 2.0 crashes due to linker issues [Reviewed by William Stein]
+#2507: John Palmieri, Chris Swierczewski: Docstrings and Doctests for rings/quotient_ring_element.py [Reviewed by Martin Albrecht, Minh Van Nguyen]
+#4223: Michael Abshoff: upgrade fpLLL to newest upstream release (3.0.12) [Reviewed by Martin Albrecht]
+#4337: David Loeffler: modular forms -- compute action of Hecke operators on Gamma_1(N) modular forms [Reviewed by Craig Citro]
+#4357: David Loeffler: modular forms -- new subspace used to work and now broken [Reviewed by Craig Citro]
+#5105: David Roe: behaviour of the norm function in the p-adic ring [Reviewed by Robert Bradshaw]
+#5249: Bill Cauchois, Carl Witty: implicit_plot3d functionality (isosurfaces, 3d contour plots, etc.) [Reviewed by William Stein, Jason Grout]
+#5250: David Loeffler: Bug in multiplicative_generator function for Z/NZ [Reviewed by Craig Citro]
+#5262: David Loeffler: L-series attached to modular forms has a major bug in how it computes the sign of the functional equation [Reviewed by Craig Citro]
+#5283: Franco Saliola: problem with posets: iterating the subposet construction [Reviewed by John Palmieri]
+#5381: Rob Beezer: Refactor matrix kernels [Reviewed by Jason Grout, Alex Ghitza]
+#5438: Karl-Dieter Crisman: Incorrect documentation and/or functionality in plot filling [Reviewed by Bill Cauchois, Minh Van Nguyen]
+#5502: Dan Bump: implement ascii art output for Dynkin diagrams [Reviewed by Anne Schilling]
+#5557: Tom Boothby: implement ridiculously fast 4x4 determinant [Reviewed by William Stein, Carl Witty, Alex Ghitza]
+#5566: Simon King, Mike Hansen: Symmetric Groebner bases and Infinitely Generated Polynomial Rings [Reviewed by Martin Albrecht]
+#5576: Martin Albrecht: MPolynomialSystem cleanup [Reviewed by Burcin Erocal, Minh Van Nguyen]
+#5586: Martin Albrecht: faster & more convenient sr [Reviewed by Burcin Erocal, Minh Van Nguyen]
+#5609: Martin Albrecht: some functions for BooleanPolynomialIdeal [Reviewed by Burcin Erocal]
+#5664: Simon King: Bugs in PermutationGroup_subgroup.__cmp__ [Reviewed by David Joyner]
+#5736: David Loeffler: Improve doctest coverage for sage/modular/hecke [Reviewed by William Stein, Michael Abshoff]
+#5767: Robert Bradshaw: Bring coverage of plot3d/base.pyx up to 87% [Reviewed by Bill Cauchois]
+#5778: David Roe: Get p-adic doctest coverage to 100% (depends on #5105) [Reviewed by Robert Bradshaw]
+#5787: David Loeffler: Improve doctest coverage for sage/modular/hecke (continued) [Reviewed by Craig Citro]
+#5792: Craig Citro: Dirichlet character bug [Reviewed by David Loeffler]
+#5796: Jason Grout: document bitsets and make interface consistent with python sets [Reviewed by Robert Miller, Robert Bradshaw]
+#5834: John Cremona: Improvements to quadratic_forms/extras/py [Reviewed by Jon Hanke]
+#5839: Carl Witty: MPolynomialRing_libsingular __dealloc__ is buggy, can lead to crash [Reviewed by Martin Albrecht]
+#5844: Simon King: Improvement of PermutationGroup_generic.has_element () and is_subgroup [Reviewed by David Joyner]
+#5862: Martin Albrecht: OSX 64 bit libsingular -- sage/libsingular segfaults on first creation of a ring [Reviewed by Michael Abshoff, William Stein, Georg Weber]
+#5887: William Stein: major bugs in morphisms of R-modules [Reviewed by Alex Ghitza]
+#5889: John Palmieri: random simplicial complexes [Reviewed by Alex Gitza]
+#5906: Robert Miller: "libpng error: Image width or height is zero in IHDR" when plotting CompleteGraph(2) [Reviewed by Michael Abshoff]
+#5913: Robert Miller: expose graph coloring in sage [Reviewed by William Stein, Alex Ghitza]
+#5920: Nicolas Thiery: Implement view(object, viewer='pdf') [Reviewed by William Stein, Alex Ghitza]
+#5923: David Loeffler: Handling of magma and pari input in ModularForms [Reviewed by Craig Citro]
+#5924: Lloyd Kilford: Slopes of U_p operator acting on a space of overconvergent modular forms [Reviewed by David Loeffler]
+#5929: Gonzalo Tornaria: Fix CTRL-C assumption problem with clisp [Reviewed by Michael Abshoff]
+#5934: William Stein: networkx -- fix bad spkg [Reviewed by Minh Van Nguyen]
+#5968: William Stein: increase doctest coverage of sage/modular/modsym/modular_symbols.py from 0% to 100% [Reviewed by David Loeffler, John Cremona]
+#5974: William Stein: the generic linear_combination_of_rows and linear_combination_of_columns functions for matrices are very stupidly slotch [Reviewed by John Palmieri]
+#5989: John Palmieri: typo in sage-sage [Reviewed by Minh Van Nguyen]
+#5997: John Palmieri: deprecate the "order" method on elements of rings [Reviewed by Minh Van Nguyen]
+#6004: Nick Alexander: add odd_degree_model function to hyperelliptic curves [Reviewed by William Stein]
+#6006: Karl-Dieter Crisman: Bring plot/point.py to 100% coverage [Reviewed by Minh Van Nguyen]
+#6007: Karl-Dieter Crisman: Bring plot/primitive.py to 100% coverage [Reviewed by Minh Van Nguyen]
+#6008: John Cremona: Improved efficiency of elliptic curve torsion computation [Reviewed by Jim Stankewicz]
+#6009: Karl-Dieter Crisman: Bring plot/text.py to 100% [Reviewed by Minh Van Nguyen]
+#6010: Nick Alexander: implement various invariants for genus 2 hyperelliptic curves [Reviewed by William Stein]
+#6011: Karl-Dieter Crisman: Bring plot/arrow.py to 100% coverage [Reviewed by Minh Van Nguyen]
+#6012: John Palmieri: allow use of pdflatex instead of latex [Reviewed by Rob Beezer]
+#6013: Nick Alexander: rewrite number field relativize to be much faster [Reviewed by William Stein]
+#6015: Minh Van Nguyen: bring doctest coverage of set.py to 96% [Reviewed by John Palmieri]
+#6019: David Loeffler: speed up new_submodule by a factor of >100 [Reviewed by Craig Citro]
+#6022: John Palmieri: latex.py: if dvipng fails, use dvips and convert instead [Reviewed by Rob Beezer]
+#6023: Karl-Dieter Crisman: Bring plot/polygon.py to 100% coverage [Reviewed by Minh Van Nguyen]
+#6024: Michael Abshoff: ecl->clisp switch [Reviewed by William Stein]
+#6025: Craig Citro, William Stein: Sage 3.4.2: doctest failure in sage/libs/pari/gen.pyx on 64 bit OSX [Reviewed by Michael Abshoff]
+#6030: Karl-Dieter Crisman: Bring plot/circle.py to 100% coverage [Reviewed by Minh Van Nguyen]
+#6031: Michael Abshoff: ntl-5.4.2.p7.spkg: Fix gcc 4.4.0 compilation problem, add spkg-check target [Reviewed by Martin Albrecht]
+#6032: Michael Abshoff: split boost-1.34.1.cropped off the polybori.spkg [Reviewed by Martin Albrecht]
+#6039: Craig Citro: Change name of pari's sum function when imported [Reviewed by Michael Abshoff]

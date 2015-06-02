@@ -1,0 +1,102 @@
+﻿Sage 5.0.1 was released on 09 June 2012. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://www.sagemath.org/doc/installation
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 26 people contributed to this release. Of those, 1 made
+their first contribution to Sage:
+
+  - Alexander Dreyer
+  - Andrey Novoseltsev
+  - Dan Drake
+  - David Kirkby
+  - David Roe
+  - Frithjof Schulze
+  - Ivan Andrus
+  - Jason Grout
+  - Javier Mora [first contribution]
+  - Jeroen Demeyer
+  - John Palmieri
+  - John Perry
+  - Karl-Dieter Crisman
+  - Keshav Kini
+  - Leif Leonhardy
+  - Mariah Lenox
+  - Mike Hansen
+  - Minh Van Nguyen
+  - Moritz Minzlaff
+  - Nils Bruin
+  - Paul Zimmermann
+  - Peter Jeremy
+  - Punarbasu Purkayastha
+  - Robert Miller
+  - Volker Braun
+  - William Stein
+
+* Release manager: Jeroen Demeyer.
+
+* We closed 35 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-5.0.1/tickets.html
+
+Closed tickets:
+
+#2801: add a get_page function which supports https via GNUTLS [Reviewed by Mike Hansen]
+#3349: OSX: make sure LDFLAGS are set for linking purposes [Reviewed by Karl-Dieter Crisman]
+#3565: worksheet.py -- increase doctest coverage to 50%. [Reviewed by David Roe]
+#3730: Sage scripts ending with .py [Reviewed by Karl-Dieter Crisman]
+#4636: improve polynomial_modn_dense_ntl.Polynomial_dense_mod_p [Reviewed by Mike Hansen]
+#4852: graph plotting using @option and @suboption [Reviewed by Robert Miller, Karl-Dieter Crisman]
+#6058: [with patch, needs comments] Add basic statistics functionality at the top level [Reviewed by Karl-Dieter Crisman]
+#6580: ratpoints -- this must be fixed to build with gcc-3.4.x [Reviewed by Minh Van Nguyen, Karl-Dieter Crisman]
+#7459: sage virtualbox -- install imagemagick [Reviewed by Volker Braun]
+#8035: make SageTeX able to detect version mismatches [Reviewed by Dan Drake]
+#8860: incoherent types for real numbers [Reviewed by Paul Zimmermann, Mike Hansen]
+#9568: Update IML to the newest upstream release, and improve spkg-install [Reviewed by Keshav Kini]
+#9601: Fix cvxopt on FreeBSD [Reviewed by David Kirkby, Mike Hansen, Peter Jeremy]
+#9759: Addition of SI prefixes capabilities to the units module [Reviewed by Javier Mora, Karl-Dieter Crisman]
+#10717: Prime typeset badly on plots [Reviewed by Andrey Novoseltsev]
+#10893: problem parsing integers starting with 0 [Reviewed by Volker Braun, Mike Hansen]
+#11034: bug in the way vectors are created for submodules of free modules [Reviewed by William Stein, Moritz Minzlaff]
+#11438: optional package libtheora-1.1.1.spkg does not build on sage-4.7.1.alpha1 [Reviewed by Dan Drake, Karl-Dieter Crisman]
+#11444: optional package cbc-2.3.p2.spkg does not build on some platforms on sage-4.7.1.alpha1 [Reviewed by Karl-Dieter Crisman, Dan Drake, John Perry]
+#12007: creation of extension field of finite field needs more parameter checking [Reviewed by David Roe]
+#12127: fix comparison R == Z [Reviewed by Andrey Novoseltsev, Frithjof Schulze]
+#12556: optional package database_cremona_ellcurve-20120113.spkg causes test failure [Reviewed by Mariah Lenox]
+#12723: Update python spkg to add a feature to python's doctest module [Reviewed by Volker Braun, David Roe]
+#12735: doctest framework bug that was somehow observed via -- "optional magma doctest fails on sage-5.0.beta9" [Reviewed by William Stein, Mike Hansen]
+#12752: resulant of two polynomials returns incorrect value [Reviewed by Nils Bruin]
+#13027: Upgrade and clean up IML [Reviewed by Keshav Kini]
+
+Merged in sage-5.0.1.rc0:
+
+#12954: Jeroen Demeyer: Make MPIR support SAGE_FAT_BINARY on all systems [Reviewed by William Stein, Karl-Dieter Crisman]
+#12963: Jeroen Demeyer: PolyBoRi links against system -lboost_unit_test_framework [Reviewed by Alexander Dreyer]
+#12970: Jeroen Demeyer: MPIR fails to build when CPU's architecture name doesn't match its actual capabilities [Reviewed by Volker Braun, William Stein]
+
+Merged in sage-5.0.1.rc1:
+
+#10822: John Palmieri, Jason Grout: sage -sh doesn't set the path right if default shell is zsh on OSX [Reviewed by Ivan Andrus, Jeroen Demeyer, Punarbasu Purkayastha]
+#12760: Leif Leonhardy: gfan 0.4plus [p1] fails to build with GCC 4.7.0 [Reviewed by Jeroen Demeyer]
+#12761: Leif Leonhardy, Jeroen Demeyer: Givaro's (3.2.13.rc1) C++ headers don't conform to C++11 [Reviewed by Karl-Dieter Crisman, Jeroen Demeyer]
+#12762: Leif Leonhardy: LinBox (1.1.6) fails to build with GCC 4.7.0, and lacks an `spkg-check` [Reviewed by Jeroen Demeyer, Karl-Dieter Crisman]
+#13013: Volker Braun: Update to python-2.7.3 [Reviewed by Jeroen Demeyer]
+#13024: Volker Braun, Jeroen Demeyer: Remove sage-libdist [Reviewed by Dan Drake]

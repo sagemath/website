@@ -1,0 +1,261 @@
+﻿Hi folks,
+
+Sage 4.3.3 was released on February 21, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel on freenode.
+
+The following 54 people contributed to this release. Of those, 4 made
+their first contribution to Sage:
+
+ * Alex Leone
+ * Alexandre Blondin Massé
+ * Andrey Novoseltsev
+ * Anne Schilling
+ * Bill Cauchois
+ * Brant Jones
+ * Burcin Erocal
+ * Charlie Turner [first contribution]
+ * Chris Wuthrich
+ * Craig Citro
+ * Dan Drake
+ * Daniel Bump
+ * David Joyner
+ * David Kirkby
+ * David Roe
+ * Dmitrii Pasechnik [first contribution]
+ * Florent Hivert
+ * Francis Clarke
+ * Fredrik Johansson
+ * Golam Mortuza Hossain
+ * Gonzalo Tornaria
+ * Jaap Spies
+ * Jason Grout
+ * Javier López Peña
+ * John Cremona
+ * John Palmieri
+ * Jonathan Hanke
+ * Karl-Dieter Crisman
+ * Kwankyu Lee
+ * Marshall Hampton
+ * Martin Albrecht
+ * Mike Hansen
+ * Mike Hogan [first contribution]
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nick Alexander
+ * Nicolas M. Thiéry
+ * Paul Zimmermann
+ * Radoslav Kirov
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Mařík
+ * Robert Miller
+ * Ross Kyprianou
+ * Sebastian Pancratz
+ * Simon King
+ * Sébastien Labbé
+ * Thomas Hupfer [first contribution]
+ * Tim Dumol
+ * Vincent Delecroix
+ * Volker Braun
+ * Wilfried Huss
+ * William Stein
+ * Yann Laigle-Chapuy
+
+* Release managers
+
+  * Minh Van Nguyen
+  * Mitesh Patel
+
+* Major features, new spkg's, and bug fixes
+
+ * The GAP package is now upgraded to version 4.4.12.
+ * Cython is now upgraded to version 0.12.1.
+ * The upgrade of Pynac to version 0.1.11 also fixes about 8 tickets
+   relating to symbolics.
+ * Much progress is made with the Cygwin port in closing tickets
+   #8267, #8279 and #8280.
+
+* Bug statistics
+
+We closed 131 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.3.3
+
+or check out the closed ticket section at the end of the announcement.
+
+* Upcoming release
+
+The upcoming release is Sage 4.3.4, scheduled to be out after Sage
+Days 20 and incorporating changes from that Sage workshop.
+
+* Doctesting coverage
+
+For Sage 4.3.2, we had an overall weighted doctest coverage score of
+81.5%, with 24,596 functions. In Sage 4.3.3, we increased the doctest
+coverage by 0.1% and added 212 new functions. Thus for Sage 4.3.3 we
+now have
+
+ * Overall weighted coverage score:  81.6%
+ * Total number of functions:  24,808
+
+* Known issues
+
+ * "make test" leaves a file schemes/elliptic_curves/PRIMES in the
+   sage repository. See #7575.
+
+ * Warnings when building the HTML reference manual. See #8244.
+
+Closed tickets:
+
+#1870: somehow we completely broke the moinmoin wiki stuff included in Sage on OS X.
+#2137: implement loading of pyx files when loading .sage files (probably relatively easy; in sage/misc/*)
+#3882: explain in the programming guide why spkg source patches should be applied by copying entire files
+#6403: Custom definitions for latex style
+#7453: Marshall Hampton: add sandpile experimental package [Reviewed by David Kirkby]
+#7807: region_plot does not pass extra arguments to show [Reviewed by Ross Kyprianou]
+#7918: log(float(_)) is really slow
+#8049: libgfortran *must* get shipped with the Sage binaries
+#8050: fix SPKG.txt in cddlib
+#8104: developer's guide for making spkgs should specify that patches need to be version controlled
+#8213: the "Sage developer trac" banner should link to trac.sagemath.org, not sagemath.org
+#8247: Remove package GLPK 4.9
+
+Merged in sagenb:
+
+#8033: Radoslav Kirov, Mitesh Patel: add a README.txt for the graph_editor, to encourage development [Reviewed by Mitesh Patel, Radoslav Kirov; merged in sagenb-0.7.5]
+#8100: Mitesh Patel: running the notebook should not change the working directory [Reviewed by John Palmieri; merged in sagenb-0.7.5]
+#8134: Mitesh Patel: Escape $s in notebook keybindings docstring, config.py [Reviewed by John Palmieri; merged in sagenb-0.7.5]
+#8165: Mitesh Patel: Title cut off on worksheet download [Reviewed by Rob Beezer; merged in sagenb-0.7.5]
+#8202: Mitesh Patel: Allow raw HTML in jsMath's \hbox{} [Reviewed by Rob Beezer; merged in sagenb-0.7.5]
+#8208: Alex Leone, Mitesh Patel: Click "No" actually publishes a worksheet in SageNB 0.7.4 [Reviewed by William Stein, Mitesh Patel; merged in sagenb-0.7.5]
+
+Merged in sage-4.3.3.alpha0:
+
+#2054: Mike Hansen: prun is not preparsed -- potentially very confusing [Reviewed by Ross Kyprianou]
+#2872: Bill Cauchois: 3d graphics can't be saved to a file [Reviewed by Tim Dumol, Robert Bradshaw]
+#3693: Tim Dumol, Mitesh Patel: Upgrade Moin Moin to 1.9.1 [Reviewed by Mitesh Patel, Mike Hansen]
+#4838: Vincent Delecroix: implement plotting of complex numbers [Reviewed by Ross Kyprianou]
+#6199: Robert Bradshaw: Integer * int is slow [Reviewed by Fredrik Johansson, Mike Hansen, Craig Citro]
+#6296: William Stein: linbox minpoly over small finite fields is TOTALLY BROKEN [Reviewed by Yann Laigle-Chapuy]
+#6515: Robert Bradshaw: assume doesn't interact well with solve [Reviewed by Burcin Erocal]
+#6775: Sebastien Labbe: Create an interface for Disjoint Set data structure [Reviewed by Robert Miller]
+#6878: Wilfried Huss: Allow the exclusion of points from the plot range [Reviewed by Jason Grout, Ross Kyprianou]
+#6942: Sebastian Pancratz: jordan_form with transformation=true returns non-invertible transformation [Reviewed by Rob Beezer, Minh Van Nguyen]
+#7313: John Palmieri: search_doc does not find phrases across multiple lines [Reviewed by Ross Kyprianou, Mitesh Patel]
+#7334: Robert Mařík: Sage cannot simplify sums of logarithms [Reviewed by Karl-Dieter Crisman]
+#7506: Tim Dumol: NotebookObject documentation is out of date [Reviewed by Mitesh Patel, Dan Drake, John Palmieri]
+#7575: Robert Miller: mwrank interface improvements [Reviewed by John Cremona]
+#7580: Simon King: bugs in infinite polynomial ring [Reviewed by John Cremona]
+#7706: Andrey Novoseltsev: palp (lattice polytopes): replace the pickle-based database of lattice polytopes by a non-pickle database format [Reviewed by Marshall Hampton, Mitesh Patel]
+#7793: Karl-Dieter Crisman: zorder not implemented in disk [Reviewed by Ross Kyprianou]
+#7841: Yann Laigle-Chapuy: Use NTL's ZZ_pEX for polynomial arithmetic over extension fields [Reviewed by John Cremona, David Roe]
+#7935: Chris Wuthrich, John Cremona: local_data for elliptic curves over number fields [Reviewed by John Cremona, Chris Wuthrich, Robert Miller]
+#7944: Minh Van Nguyen: update Developers' Guide to reflect new process for working on tickets [Reviewed by Andrey Novoseltsev]
+#7947: Gonzalo Tornaria: iteration error in QuadraticForm.vectors_by_length() [Reviewed by Jonathan Hanke]
+#7955: Burcin Erocal: printing unevaluated integrals, limits, etc. broken [Reviewed by Dan Drake]
+#7978: Nicolas M. Thiéry, Anne Schilling: Cleanup of crystal code [Reviewed by Dan Bump]
+#8004: Jason Grout: region_plot does not handle lambda functions [Reviewed by Ross Kyprianou]
+#8044: Nicolas M. Thiéry: Categories for finite/permutation/symmetric groups [Reviewed by David Joyner, Javier López Peña]
+#8056: Burcin Erocal: symbolic expressions involving rational functions with numerator 1 cannot be converted to fast callable [Reviewed by Thomas Hupfer]
+#8058: Jaap Spies: New ecm-6.2.1.p2.spkg now works with Open Solaris x64 as 64-bit [Reviewed by David Kirkby]
+#8060: Jaap Spies: New f2c-20070816.p2.spkg now works with Open Solaris x64 as 64 bit [Reviewed by David Kirkby]
+#8061: Jaap Spies: New genus2reduction spkg works with Open Solaris x64 as 64 bit [Reviewed by David Kirkby]
+#8062: Jaap Spies: New givaro-3.2.13rc2.p0.spkg works with Open Solaris 64 bit, SAGE64="yes" [Reviewed by David Kirkby]
+#8063: Jaap Spies: New gsl-1.10.p2.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8064: Jaap Spies: New iml-1.0.1.p12.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8066: Jaap Spies: New libgpg_error-1.6.p3.spkg works with Open Solaris x64 as 64 bit [Reviewed by David Kirkby]
+#8067: Jaap Spies: New linbox-1.1.6.p3.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8068: Jaap Spies: New mpfr-2.4.1.p1.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8069: Jaap Spies: New mpfi-1.3.4-cvs20071125.p8.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8070: Jaap Spies: New  pycrypto-2.0.1.p5.spkg builds 64-bit with Open Solaris x64. [Reviewed by David Kirkby]
+#8077: Jaap Spies: New python_gnutls-1.1.4.p7.spkg works with Open Solaris 64 bit [Reviewed by David Kirkby]
+#8082: Vincent Delecroix: correct point and line behavior with complex numbers [Reviewed by Ross Kyprianou]
+#8093: Alexandre Blondin Massé: Adding of prefixes and palindrome prefixes iterators to the Words library [Reviewed by Sébastien Labbé]
+#8097: Jaap Spies: termcap fails to build in Open Solaris x64 as 64 bit [Reviewed by David Kirkby]
+#8099: Jaap Spies: pari fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set [Reviewed by David Kirkby]
+#8101: Jaap Spies: ntl fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set [Reviewed by David Kirkby]
+#8113: Jaap Spies: gd-2.0.35.p3 fails to build on Open Solaris x64 as 64 bit without setting CFLAGS=-64 globally [Reviewed by David Kirkby]
+#8117: Jaap Spies: zodb3 fails to build in Open Solaris x64 as 64 bit if CFLAGS is not set [Reviewed by David Kirkby]
+#8120: Florent Hivert: UniqueRepresentation and hash value [Reviewed by Paul Zimmermann]
+#8124: Robert Miller: Selmer groups for number fields [Reviewed by John Cremona, Christian Wuthrich]
+#8127: Vincent Delecroix: Wraps string features into WordDatatypes [Reviewed by Sébastien Labbé]
+#8128: Mitesh Patel: UnicodeDecodeError with %latex [Reviewed by Robert Mařík]
+#8138: Mitesh Patel: Single-column index in PDF reference manual [Reviewed by John Palmieri]
+#8140: Sébastien Labbé: words.CharacteristicSturmianWord does not do what it says [Reviewed by Alexandre Blondin Massé]
+#8155: Robert Miller: add sig_on/sig_off to sage.schemes.elliptic_curves.descent_two_isogeny [Reviewed by John Cremona]
+#8161: John Palmieri: use Sphinx to produce docstrings from the command line [Reviewed by Mitesh Patel]
+#8176: Jaap Spies: libpng fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes [Reviewed by David Kirkby]
+#8180: John Palmieri: sh: kpsewhich: not found reported on 4.3.0.1.alpha3 on Solaris 10. [Reviewed by William Stein]
+#8183: Mitesh Patel: French PDF tutorial and tour don't build [Reviewed by John Palmieri]
+#8184: John Cremona: eclib upgrade and bugfix [Reviewed by Robert Miller]
+#8185: David Kirkby: numerical noise + crash on sage/calculus/functional.py [Reviewed by Robert Bradshaw]
+#8186: Sébastien Labbé: iterated_right_palindromic_closure of a finite word should return a finite word [Reviewed by Alexandre Blondin Massé]
+#8188: Kwankyu Lee: additional functions for linear codes [Reviewed by David Joyner]
+#8189: John Palmieri: hg.py: fix some docstrings [Reviewed by Minh Van Nguyen]
+#8190: Minh Van Nguyen: decrease the number of docbuild warnings to 147 [Reviewed by Florent Hivert]
+#8193: John Cremona, Charlie Turner: Enumeration of points on plane curves over finite fields is very inefficient [Reviewed by David Roe]
+#8194: Mitesh Patel: SageNB 0.7.5 [Reviewed by Robert Mařík]
+#8199: Minh Van Nguyen: developer's guide: consistency overhaul [Reviewed by Andrey Novoseltsev]
+#8203: John Palmieri: misc doc fixes [Reviewed by Marshall Hampton]
+#8206: Rob Beezer: Add information on hg qnew to Developer Walk-through [Reviewed by Marshall Hampton]
+#8209: John Palmieri: make docstring processing available for introspection, and fix mathtt [Reviewed by Mitesh Patel]
+#8211: Dima Pasechnik: bug in multiplication of polynomials over RR [Reviewed by Martin Albrecht]
+#8212: Yann Laigle-Chapuy: arithmetic on GF(2^n) might be improved [Reviewed by Paul Zimmermann]
+#8215: Sebastien Labbe: The empty word is a factor of a word [Reviewed by Alexandre Blondin Massé]
+#8219: William Stein: regression in show(...) [Reviewed by Andrey Novoseltsev]
+#8235: Bill Cauchois: fix another doctest in base.pyx [Reviewed by Mitesh Patel]
+
+Merged in sage-4.3.3.alpha1:
+
+#1610: Rob Beezer: hg record / cherry picking -- add something to the programming guide [Reviewed by Minh Van Nguyen]
+#2064: Mitesh Patel: foo?? doesn't know about cpdef from the command line [Reviewed by David Roe]
+#4889: William Stein: document matrix.list() better [Reviewed by Jason Grout, Nick Alexander]
+#6465: Burcin Erocal, Golam Mortuza Hossain: Derivative D acts wrongly on symbolic integration [Reviewed by Tim Dumol, Karl-Dieter Crisman, Ross Kyprianou, Minh Van Nguyen]
+#6559: Golam Mortuza Hossain, Burcin Erocal: Real domain for symbolic variables [Reviewed by Karl-Dieter Crisman, Ross Kyprianou, Minh Van Nguyen]
+#6961: Burcin Erocal: provide wrapper for psi function of GiNaC [Reviewed by Karl-Dieter Crisman, Ross Kyprianou, Minh Van Nguyen]
+#7308: Mike Hansen: cliquer's spkg-install does not work on cygwin [Reviewed by William Stein]
+#7336: Mike Hansen: boehm_gc fails to build on Cygwin [Reviewed by Minh Van Nguyen]
+#7338: William Stein: Singular fails to build on cygwin [Reviewed by Mike Hansen]
+#7363: Burcin Erocal: print symbolic fractions more naturally: print 2/(x+2) instead of 2 (1/(x+2)) [Reviewed by Karl-Dieter Crisman, Ross Kyprianou]
+#7746: Minh Van Nguyen: Blum-Goldwasser probabilistic encryption [Reviewed by David Joyner]
+#7751: Daniel Bump: Kazhdan-Lusztig polynomials, Bruhat order, and related features [Reviewed by David Roe, Brant Jones]
+#7822: Burcin Erocal: pynac log function cannot handle float arguments &lt;= 0 [Reviewed by Karl-Dieter Crisman]
+#7876: Burcin Erocal: symbolic expression displayed wrong [Reviewed by Jason Grout, Ross Kyprianou]
+#7911: Mitesh Patel: Fix Scilab interface doctests, add 'scilab (optional)' to systems in the notebook dropdown menu [Reviewed by Ross Kyprianou]
+#7916: Burcin Erocal: change conjugate(X) to try X.conjugate() [Reviewed by Karl-Dieter Crisman]
+#7957: Burcin Erocal: problems with real_part function [Reviewed by Karl-Dieter Crisman]
+#8007: Craig Citro: Speed up generation of random number field elements [Reviewed by David Roe]
+#8076: Dmitrii Pasechnik: upgrade GAP to version 4.4.12 [Reviewed by William Stein, David Joyner, Minh Van Nguyen]
+#8079: Minh Van Nguyen: Better documentation for patching spkg's [Reviewed by Ross Kyprianou, Karl-Dieter Crisman]
+#8080: Minh Van Nguyen: installation guide: require Fortran as a pre-requisite for compiling Sage on Linux [Reviewed by Mike Hansen]
+#8115: Volker Braun: bad patching practice in cddlib-094f.p2.spkg [Reviewed by Minh Van Nguyen]
+#8118: Chris Wuthrich: split off Galois representations and modular parametrization from ell_rational_field.py [Reviewed by John Cremona, Minh Van Nguyen]
+#8150: Dima Pasechnik: various fixes in sage/groups/ and sage/interfaces needed for GAP 4.4.12 [Reviewed by Robert Bradshaw, David Joyner]
+#8154: Anne Schilling: Enhancement for crystals [Reviewed by Daniel Bump]
+#8163: Robert Bradshaw: Upgrade to Cython 0.12.1 [Reviewed by Minh Van Nguyen]
+#8220: Yann Laigle-Chapuy: Improve consistency and docs for finite fields creation [Reviewed by Francis Clarke]
+#8223: Nicolas M. Thiéry: tab completion broken for many parent objects [Reviewed by Andrey Novoseltsev]
+#8224: Sébastien Labbé: help(w) is broken for infinite word w defined by a callable [Reviewed by Mitesh Patel]
+#8229: Dmitrii Pasechnik: gap_packages-4.4.12 updated [Reviewed by David Joyner]
+#8232: Sébastien Labbé: cmp function for words is broken [Reviewed by Alexandre Blondin Massé]
+#8246: Mike Hogan, David Joyner, Minh Van Nguyen: Carmichael lambda function for the Blum-Blum-Shub pseudorandom bit generator [Reviewed by David Joyner]
+#8248: John Cremona: Small improvement in checking for elliptic curve isogenies [Reviewed by Chris Wuthrich]
+#8250: Nicolas M. Thiéry: Extend ClasscallMetaclass to allow for binding behavior [Reviewed by Florent Hivert]
+#8253: John Palmieri: search_src (etc.) bug [Reviewed by Mitesh Patel]
+#8267: William Stein: cygwin: ratpoints is broken again [Reviewed by Minh Van Nguyen]
+#8279: Mike Hansen: cygwin: cliquer names the library incorrectly for cygwin [Reviewed by Minh Van Nguyen]
+#8280: Mike Hansen: cygwin: zn_poly shared library named incorrectly on cygwin [Reviewed by Minh Van Nguyen]
+
+Merged in sage-4.3.3.final:
+
+#8231: Mitesh Patel: Place cursor in new input cell in notebook [Reviewed by John Palmieri]
+#8314: Minh Van Nguyen: numerical noise in sage/misc/functional.py [Reviewed by John Cremona]

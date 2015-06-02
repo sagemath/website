@@ -1,0 +1,101 @@
+﻿Hello folks,
+
+Sage 2.8.13 has been released. Sources are and binaries should soon be
+available at
+
+              http://sagemath.org/download.html
+
+This is the first release after the excellent Sage Days 6 in Bristol.
+We are a couple days late, mostly due to a rocky initial alpha0 that
+took some time to sort out and also the new policy that all patches
+have to be reviewed before they can get merged.
+
+The usual suspects contributed major pieces to this release:
+
+ - Bill Hart
+ - John Cremona
+ - Josh Kantor
+ - Martin Albrecht
+ - Michael Abshoff
+ - Mike Hansen
+ - Ondrej Certik
+ - Ralf-Philip Weinmann
+ - Robert Bradshaw
+ - William Stein
+ - Willem Jan Palenstijn
+
+Sorry if I forgot anybody, it has been quite a turbulent release
+cycle. Thanks to all the reviewers, all the testers, especially
+Jaap Spies, and please send me patches for the doctest failures.
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+Major new features are John Cremona's g0n, updates to flint, scipy &
+numpy, cvxopt and sympy as well as major bug fixes to libfplll and
+memory leak fixes in linbox. This is also the first release that
+compiles on OSX 10.5 "out of the box", i.e. without the need to have
+gfortran installed.
+
+Updates spkgs in detail:
+
+#563: linbox-20070915.p2.spkg (Michael Abshoff)
+#1029: flint-0.9-r1072.spkg (Robert Bradshaw, Michael Abshoff)
+#1188: libfplll-2.1.3-20071117.spkg (Martin Albrecht, Michael Abshoff,
+      Willem Jan Palenstijn, also #1126)
+#1177: mpfr-2.3.0.p0.spkg (Michael Abshoff)
+#1189: sympy-0.5.7.spkg (Ondrej Certik)
+#1197: cremona-20071116.p0.spkg (John Cremona, William Stein,
+      Ralf-Philip Weinmann)
+#1198: scipy-20071020-0.6.spkg (Josh Kantor)
+#1198: numpy-20071020-1.0.3.1.spkg (Josh Kantor)
+#1199: cvxopt-0.9.p1.spkg (Josh Kantor, Michael Abshoff, also #1121, #1161)
+
+We closed a total of 49 tickets, see
+
+ http://www.sagetrac.org/sage_trac/query?status=closed&milestone=sage-2.8.13
+
+for details.
+
+* Known Issues with 2.8.13
+
+ - cvxopt fails to import on OSX PPC (ticket #1222)
+ - g0n, i.e. cremona.spkg fails to compile on Linux/Itanium with
+  older gcc and also Solaris.
+
+* Upcoming Releases
+
+2.8.14 is planned for next week, depending on how close the release
+will be to Sage Bug Day 6 on December 2nd, 2007 we might do another
+2.8.15 release the day before. Major spkg candidates for 2.8.14 are
+
+ - Singular 3-0-4
+ - PolyBoRi
+ - ATLAS BLAS/Lapack
+
+It looks unlikely that we will achieve the major goals for 2.9, namely
+Solaris 32 bit support and OSX 10.5 64 bit support, in the next two
+weeks, so we might do a couple more 2.8.x releases.
+
+* Coverage
+
+2.8.13:
+
+ Overall weighted coverage score:  34.4%
+ Total number of functions:  17472
+
+Compared to 2.8.12:
+
+ Overall weighted coverage score:  34.3%
+ Total number of functions:  17418
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for free download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support, sage-
+forum or sage-newbie. You can also drop by in #sage-devel in freenode.

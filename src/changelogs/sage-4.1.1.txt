@@ -1,0 +1,350 @@
+﻿Hi folks,
+
+Sage 4.1.1 was released on August 14, 2009. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to the Google groups sage-devel or sage-support.
+You can also drop by in #sage-devel or #sage-support in freenode.
+
+---------------------------------------------------------------------
+
+The following 56 people contributed to this release. Of those, 13 made
+their first contribution to Sage:
+
+ * Adam Webb [first contribution]
+ * Alex Ghitza
+ * Anders Claesson [first contribution]
+ * Andrew Mathas [first contribution]
+ * Bill Cauchois
+ * Bill Hart
+ * Burcin Erocal
+ * Chris Wuthrich
+ * Craig Citro
+ * Dag Sverre Seljebotn [first contribution]
+ * Dan Drake
+ * David Joyner
+ * David Kirkby
+ * David Kohel
+ * David Loeffler
+ * David Roe
+ * Emily Kirkman
+ * Evan Fosmark [first contribution]
+ * Francis Clarke
+ * Franco Saliola
+ * Georg S. Weber
+ * Golam Mortuza Hossain
+ * Hamish Ivey-Law
+ * Harald Schilly
+ * Jaap Spies
+ * Jason Bandlow
+ * Jason Grout
+ * Jens Rasch [first contribution]
+ * John Cremona
+ * John Palmieri
+ * Karl-Dieter Crisman
+ * Marshall Hampton
+ * Martin Albrecht
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen [first contribution]
+ * Nick Alexander
+ * Nicolas M. Thiery
+ * Paul Zimmermann
+ * Peter McNamara [first contribution]
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Ron Evans
+ * Sebastien Labbe
+ * Simon King
+ * Simon Morris [first contribution]
+ * Steven Hartke [first contribution]
+ * Taylor Sutton [first contribution]
+ * Tim Abbott
+ * Tim Dumol [first contribution]
+ * Tom Boothby
+ * Vincent Delecroix [first contribution]
+ * William Stein
+ * Yann Laigle-Chapuy
+
+
+Release Managers
+
+ * Minh Van Nguyen
+ * William Stein
+
+
+* Major features, new spkgs and bug fixes
+
+ * Improved data conversion between NumPy and Sage
+ * Solaris support, Solaris specific bug fixes for NTL, zn_poly,
+   Pari/GP, FLINT, MPFR, PolyBoRI, ATLAS
+ * Upgrade/updates for about 8 standard packages
+ * New optional packages: openopt, GLPK, p_group_cohomology
+
+
+For all the details of what else changed in Sage 4.1.1, please see the
+release tour on the Sage wiki at
+
+  http://wiki.sagemath.org/sage-4.1.1
+
+
+* Bug Statistics
+
+We closed 165 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.1.1
+
+or check out the closed ticket section at the end of the announcement.
+
+
+* Upcoming Release
+
+The upcoming release is Sage 4.1.2. This will be a bug-fix release. We
+also intend to merge as many features as possible.
+
+
+* Doctesting Coverage
+
+Ticket #877 changes the way the docstring coverage is
+counted. Previously, the docstring coverage script also counted functions
+that are local to other functions. In this manner, the docstring
+coverage for Sage 4.1 is:
+
+Overall weighted coverage score:  77.8%
+Total number of functions:  22398
+
+With ticket #877, nested functions or functions local to other
+functions are no longer counted towards the docstring coverage. This
+results in a reduced number of functions, hence we have the following
+statistics as a result of #877:
+
+Overall weighted coverage score:  78.3%
+Total number of functions:  22210
+
+Using the docstring coverage technique from ticket #877, in 4.1.1 we
+increased coverage by 0.3%, while adding 120 functions:
+
+Overall weighted coverage score: 78.6%
+Total number of functions: 22330
+
+
+* Known issues
+
+The standard package cliquer doesn't build under some 64-bit
+platforms. There are reports of cliquer failing to compile under 64-bit
+Fedora 10 (see ticket #6746) and 64-bit Intel Mac running OS X 10.5
+(see ticket #6681). We provide the 64-bit binary
+
+sage-4.1.1-OSX10.5-intel-64bit-i386-Darwin.dmg
+
+However, users should note that the README.txt file in that binary
+contains a warning about cliquer. In the above binary, the cliquer
+import statement in sage/graphs/all.py has been commented
+out like so
+
+#from sage.graphs.cliquer import *
+
+as a work-around to allow Sage to start up. In the meantime, users
+won't have access to functionalities of the cliquer spkg until ticket
+#6681 has been resolved.
+
+
+* Closed Tickets
+
+#4614: automatically add md5sums for source tarballs to the web site
+#4630: bug in functions real() and imag().
+#4725: bug in number field conjugate function, now dealt with
+#5175: pari error is thrown when computing Bessel function J0(0)
+#5420: imag(complex(0,1)) gives TypeError (easy)
+#5587: input of hexadecimal integers is corrupted
+#6508: make installing extcode depend on mercurial
+#6675: doctest failure in sage/misc/sagedoc.py
+
+
+Merged in Sage 4.1.1.final:
+
+#6645: Mitesh Patel: make sure bdist of sage-4.1.1 works before release [Reviewed by Minh Van Nguyen]
+#6684: Minh Van Nguyen: warnings when building reference manual in Sage 4.1.1.rc2 [Reviewed by John Palmieri]
+#6687: Minh Van Nguyen: spell-check all modules under sage/algebras [Reviewed by William Stein]
+#6688: Minh Van Nguyen: spell-check all modules under sage/calculus [Reviewed by Burcin Erocal]
+#6689: Minh Van Nguyen: spell-check all modules under sage/categories [Reviewed by William Stein]
+#6690: Minh Van Nguyen: spell-check all modules under sage/coding [Reviewed by William Stein]
+#6691: Minh Van Nguyen: spell-check all modules under sage/combinat [Reviewed by William Stein]
+#6692: Minh Van Nguyen: spell-check all modules under sage/crypto [Reviewed by William Stein]
+#6693: Minh Van Nguyen: spell-check all modules under sage/databases [Reviewed by William Stein]
+#6695: Minh Van Nguyen: spell-check all modules under sage/ext [Reviewed by William Stein]
+#6696: Minh Van Nguyen: spell-check all modules under sage/finance [Reviewed by William Stein]
+#6697: Minh Van Nguyen: spell-check all modules under sage/functions [Reviewed by William Stein]
+#6698: Minh Van Nguyen: spell-check all modules under sage/games [Reviewed by William Stein]
+#6700: Minh Van Nguyen: spell-check all modules under sage/geometry [Reviewed by William Stein]
+#6704: Minh Van Nguyen: spell-check all modules under sage/graphs [Reviewed by William Stein]
+#6708: Minh Van Nguyen: spell-check all modules under sage/groups [Reviewed by William Stein]
+#6711: Minh Van Nguyen: spell-check all modules under sage/gsl [Reviewed by William Stein]
+#6712: Minh Van Nguyen: spell-check all modules under sage/interfaces [Reviewed by William Stein]
+#6713: Minh Van Nguyen: spell-check all modules under sage/lfunctions [Reviewed by William Stein]
+#6714: Minh Van Nguyen: spell-check all modules under sage/libs [Reviewed by Harald Schilly]
+#6715: Minh Van Nguyen: spell-check all modules under sage/logic [Reviewed by Harald Schilly]
+#6717: Burcin Erocal: Sage 4.1.1.rc2: doctest failures in sage/symbolic/expression.pyx [Reviewed by Georg S. Weber]
+#6718: Minh Van Nguyen: spell-check all modules under sage/matrix [Reviewed by Harald Schilly]
+#6721: Minh Van Nguyen: spell-check all modules under sage/media [Reviewed by Mitesh Patel]
+#6722: Minh Van Nguyen: spell-check all modules under sage/misc [Reviewed by Mitesh Patel]
+#6723: Minh Van Nguyen: spell-check all modules under sage/modular [Reviewed by Chris Wuthrich]
+#6724: Minh Van Nguyen: spell-check all modules under sage/modules [Reviewed by Chris Wuthrich, Mitesh Patel]
+#6725: Minh Van Nguyen: spell-check all modules under sage/monoids [Reviewed by Chris Wuthrich]
+#6726: Minh Van Nguyen: spell-check all modules under sage/numerical [Reviewed by Mitesh Patel]
+#6727: Minh Van Nguyen: spell-check all modules under sage/plot [Reviewed by Marshall Hampton]
+#6728: Minh Van Nguyen: spell-check all modules under sage/quadratic_forms [Reviewed by Harald Schilly]
+#6730: Minh Van Nguyen: spell-check all modules under sage/rings [Reviewed by Francis Clarke]
+#6731: Minh Van Nguyen: spell-check all modules under sage/schemes [Reviewed by Chris Wuthrich]
+#6732: Minh Van Nguyen: spell-check all modules under sage/server [Reviewed by Mitesh Patel]
+#6733: Minh Van Nguyen: spell-check all modules under sage/sets [Reviewed by Mitesh Patel]
+#6734: Minh Van Nguyen: spell-check all modules under sage/stats [Reviewed by Mitesh Patel]
+#6735: Minh Van Nguyen: spell-check all modules under sage/structure [Reviewed by Marshall Hampton]
+#6736: Minh Van Nguyen: spell-check all modules under sage/symbolic [Reviewed by Marshall Hampton]
+#6738: Minh Van Nguyen: typo in spkg-install for atlas spkg [Reviewed by William Stein]
+
+
+Merged in Sage 4.1.1.rc2:
+
+#6674: Minh Van Nguyen: only use ASCII characters in patches [Reviewed by Nathann Cohen, Alex Ghitza]
+
+
+Merged in Sage 4.1.1.rc1:
+
+#5793: Nathann Cohen: New algorithm for Max Clique in Graph class using Cython [Reviewed by Robert Miller, Minh Van Nguyen]
+#6143: Jason Grout: Upgrade tinyMCE to 3.2.4.1 [Reviewed by Mitesh Patel, Marshall Hampton]
+#6243: Burcin Erocal: hashes for derivatives of symbolic functions w.r.t. different variables are the same [Reviewed by Golam Mortuza Hossain]
+#6355: Nathann Cohen: Cliquer to compute maximum cliques [Reviewed by Robert Miller]
+#6377: Burcin Erocal: exp(x) is broken at x=Infinity and x=-Infinity [Reviewed by Golam Mortuza Hossain]
+#6401: Burcin Erocal: Typesettings of real() and imag() are broken [Reviewed by Golam Mortuza Hossain]
+#6404: Burcin Erocal: Typeseting for conjugate() of symbolic function is inadequate [Reviewed by Golam Mortuza Hossain]
+#6491: Simon King: Modular Cohomology Rings of Finite p-Groups [Reviewed by David Joyner, William Stein]
+#6508: William Stein: make installing extcode depend on mercurial [Reviewed by Minh Van Nguyen]
+#6602: Nathann Cohen: GLPK for Sage [Reviewed by David Joyner]
+#6622: Bill Cauchois: substitution of a dict into a symbolic expression modifies the dict [Reviewed by Burcin Erocal]
+#6632: Steven Hartke: bug in blocks_and_cut_vertices() of a graph that occurs when vertex 0 is a cut vertex [Reviewed by Robert Miller]
+#6649: Georg S. Weber: doctest failure in decorate.py (on OS X only) [Reviewed by Marshall Hampton, David Joyner]
+#6656: John Palmieri: fix latex method for laurent series element [Reviewed by Minh Van Nguyen]
+#6658: Dan Drake: digits() claims it defaults to base 2, but it defaults to base 10 [Reviewed by Tim Dumol]
+#6661: Simon King: Misleading warning message of _expect_expr() at KeyboardInterrupt [Reviewed by Minh Van Nguyen]
+
+
+Merged in Sage 4.1.1.rc0:
+
+#4460: Mitesh Patel: add link to PDF manuals in doc/html/index.html [Reviewed by John Palmieri, Minh Van Nguyen]
+#5081: Robert Bradshaw: Make numpy play nice with Sage types [Reviewed by Jason Grout]
+#5653: Tom Boothby, Evan Fosmark, John Palmieri, Mitesh Patel: display docstrings in the notebook using html and jsMath [Reviewed by William Stein, Minh Van Nguyen, John Palmieri]
+#6251: Dan Drake: LogoutResource in sage/server/simple/twist.py doesn't really log you out [Reviewed by William Stein, John Palmieri]
+#6302: William Stein: make openopt an optional spkg [Reviewed by David Joyner, Harald Schilly]
+#6497: Robert Bradshaw: symbolic functions should understand numpy arrays [Reviewed by Burcin Erocal]
+#6506: Robert Bradshaw, Jason Grout: further numpy type conversions [Reviewed by Jason Grout, Robert Bradshaw, Minh Van Nguyen]
+#6542: Marshall Hampton: tachyon ouput seems broken in sage-4.1 [Reviewed by Tim Dumol]
+#6554: Jason Grout: plotting sparse matrices converts the matrix to a dense matrix [Reviewed by David Joyner]
+#6639: Peter McNamara: Documentation for Lyndon words [Reviewed by Jason Bandlow]
+#6644: John Palmieri: fix doctest error for lazy_attribute and abstract_method [Reviewed by Minh Van Nguyen]
+
+
+Merged in Sage 4.1.1.alpha1:
+
+#877: John Palmieri: "sage -coverage" should not care about functions which are local to other functions/methods [Reviewed by William Stein, Harald Schilly]
+#2737: Jason Grout, Mike Hansen: add balanced_sum to Sage [Reviewed by Robert Bradshaw]
+#3001: Dan Drake: sage ignores custom environment variables [Reviewed by William Stein]
+#3686: Tim Abbott: trivial problems in extcode.spkg [Reviewed by Adam Webb]
+#3687: Tim Abbott: trivial problems in the sage_scripts spkg [Reviewed by Adam Webb]
+#3688: Tim Abbott: trivial problems in the sage spkg [Reviewed by Adam Webb, Minh Van Nguyen]
+#3689: Tim Abbott: trivial problems in the examples spkg [Reviewed by Adam Webb]
+#4571: Robert Bradshaw, Dag Sverre Seljebotn: merge sage's numpy.pxd with the cython numpy.pxd [Reviewed by Robert Bradshaw, Dag Sverre Seljebotn, Minh Van Nguyen]
+#5133: Burcin Erocal: improve the coverage of ext/multi_modular.pyx from an abysmal 0% to something more respectable [Reviewed by Martin Albrecht]
+#5617: John Palmieri: Delete the reference to solve_linear [Reviewed by Minh Van Nguyen]
+#5625: John Palmieri: group cohomology -- bad error messages; should indicate an optional package is needed [Reviewed by David Joyner, Minh Van Nguyen]
+#6071: David Loeffler: Weight 1 Eisenstein series [Reviewed by William Stein, David Loeffler]
+#6307: Mike Hansen, Tom Boothby, Robert Miller: Move javascript out of python-land [Reviewed by Tom Boothby, Minh Van Nguyen, John Palmieri]
+#6310: John Cremona: optional doctest failure [Reviewed by William Stein]
+#6374: Craig Citro: Fix race condition in sage build process [Reviewed by Georg S. Weber]
+#6381: John Cremona: bug in integral_points when rank is large [Reviewed by William Stein]
+#6407: Hamish Ivey-Law, Tom Boothby: Multiplication-by-n method on elliptic curve formal groups should use the double-and-add algorithm [Reviewed by Robert Miller]
+#6438: Robert Bradshaw: Upgrade to Cython 0.11.2 [Reviewed by Minh Van Nguyen]
+#6453: Paul Zimmermann, David Kirkby: MPFR test failures on Solaris 10 update 4 on host 't2' [Reviewed by Minh Van Nguyen]
+#6504: Marshall Hampton: Add doctests to toy_buchberger to get it to 100% [Reviewed by Martin Albrecht, Minh Van Nguyen]
+#6528: David Kirkby: PolyBoRi ignores CXX and passes Sun flags to GNU C compiler [Reviewed by Minh Van Nguyen]
+#6536: David Loeffler: Constructor in sage.rings.number_field.order.Order calls a method of the wrong class [Reviewed by William Stein]
+#6552: Jason Grout: bug in depth-first searching [Reviewed by Robert Miller]
+#6553: Jason Grout: fast slicing of sparse matrices [Reviewed by Rob Beezer]
+#6558: David Kirkby: Be more selective in patching ATLAS on Solaris [Reviewed by Minh Van Nguyen]
+#6563: David Kirkby: Singular fails to install header files, since it fails to find install-sh [Reviewed by Minh Van Nguyen]
+#6573: Minh Van Nguyen: fix docstring from #5651 [Reviewed by David Loeffler]
+#6574: Chris Wuthrich: Type issue in is_quadratic_twist [Reviewed by John Cremona]
+#6577: David Loeffler: Reference manual build errors in 4.1.1.alpha0 [Reviewed by Minh Van Nguyen]
+#6578: Jason Grout: fast subgraphs by building the graph instead of deleting things [Reviewed by Robert Miller, Minh Van Nguyen]
+#6585: John Palmieri: trivial change to a few docstrings in partition.py [Reviewed by Minh Van Nguyen]
+#6587: Nicolas M. Thiery: Improve doc of partitions.conjugate [Reviewed by Jason Bandlow]
+#6591: Nicolas M. Thiery: Implement view(object, viewer='pdf') and view(object, tightpage = True) [Reviewed by John Palmieri]
+#6593: Sebastien Labbe: WordMorphism: doctest failure in Fedora [Reviewed by Jaap Spies]
+#6594: Georg S. Weber: doctest issue in "r.py" (follow-up to #6379) [Reviewed by Minh Van Nguyen]
+#6600: Ron Evans, Minh Van Nguyen: typos in "bordeaux_2008" document [Reviewed by John Palmieri, Minh Van Nguyen]
+#6606: Simon Morris: Add a more efficient implementation of index for Gamma(N). [Reviewed by John Cremona, David Roed]
+#6613: Ron Evans: patch from #6393 should also demonstrate that bug is fixed [Reviewed by Harald Schilly]
+#6617: Dan Drake: remove stale SageTeX files from latex_embed [Reviewed by Harald Schilly]
+#6619: Nicolas M. Thiery: Fix ``inner`` option for integer vectors [Reviewed by Dan Drake]
+#6621: Anders Claesson: Permutation.inverse too slow [Reviewed by Dan Drake]
+
+
+Merged in Sage 4.1.1.alpha0:
+
+#111: Alex Ghitza: def copy -- they should all be def __copy__ [Reviewed by David Loeffler]
+#5649: Karl-Dieter Crisman: plot doesn't work when x-range too small [Reviewed by Bill Cauchois]
+#5651: Bill Cauchois: make it so plot(...) passes extra options to show (maybe only those that makes sense) [Reviewed by William Stein, Jason Grout]
+#5790: Andrew Mathas: Updating some quirks in partition.py [Reviewed by Jason Bandlow, Franco Saliola, Nicolas M. Thiery]
+#5932: Robert Miller: graphs.RandomRegular(3,10) often returns a graph on 0 vertices [Reviewed by Jason Grout]
+#5939: Robert Miller: typo in g.automorphism_group documentation, for g a graph; also partition parameter isn't tested anywhere in the docstring [Reviewed by Emily Kirkman]
+#5941: Robert Miller: transitive_close returns a graph with the same name even though it is a totally different graph! [Reviewed by Emily Kirkman, Jason Grout]
+#5996: Jens Rasch: Wigner 3j, 6j, 9j, Clebsch-Gordan, Racah and Gaunt coefficients [Reviewed by Alex Ghitza, Minh Van Nguyen]
+#6045: Robert Bradshaw: Computation of Heegner points [Reviewed by John Cremona, Minh Van Nguyen]
+#6098: Emily Kirkman: 3d bezier path plotting [Reviewed by Robert Miller]
+#6159: Alex Ghitza: Implement real_part for CDF and CC [Reviewed by Burcin Erocal]
+#6195: Burcin Erocal: in symbolic Expression.match() return a dictionary with matched values of wildcards [Reviewed by Nick Alexander, Alex Ghitza]
+#6301: Rob Beezer: implement the Hadamard product of two matrices [Reviewed by Jason Grout]
+#6332: Francis Clarke: optional doctest failure -- jones number field database tests fail [Reviewed by Alex Ghitza]
+#6364: John Cremona: error message at end of successful "sage -merge" [Reviewed by Tom Boothby]
+#6379: Georg S. Weber: #2513 made R.py doctest fail for non-english locale [Reviewed by Minh Van Nguyen]
+#6380: David Kirkby: Allow NTL to build on Solaris with Sun or GNU linker [Reviewed by William Stein]
+#6393: David Joyner: Jacobi sums incorrect when exactly one character is trivial [Reviewed by David Loeffler]
+#6395: William Stein: magma interface: make magma_colon_equals mode work in both command line and notebook [Reviewed by David Kohel]
+#6396: David Loeffler: primes_of_degree_one is broken for relative extensions [Reviewed by Nick Alexander, Minh Van Nguyen]
+#6422: Burcin Erocal: make sage.symbolic.expression.Expression.__init__ usable [Reviewed by Alex Ghitza]
+#6433: John Palmieri: fix %html [Reviewed by Adam Webb, Mike Hansen]
+#6443: David Kirkby: A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker [Reviewed by Minh Van Nguyen]
+#6445: David Kirkby: pari 2.3.3.p0 problem on 't2' but not my home machine (similar setups!!) [Reviewed by Minh Van Nguyen]
+#6450: Yann Laigle-Chapuy: add generic group functions to the documentation [Reviewed by John Cremona]
+#6451: David Kirkby: Flint uses a non-portable option to 'cp' which fails on Solaris. [Reviewed by Bill Hart, John Cremona]
+#6454: Yann Laigle-Chapuy: improve sbox linear and differences matrices computation [Reviewed by Martin Albrecht]
+#6457: David Loeffler: Intersection of ideals in a number field [Reviewed by Nick Alexander]
+#6458: David Loeffler: Inverse modulo an ideal in a relative number field [Reviewed by Nick Alexander]
+#6462: David Loeffler: Unpickling problem for orders in a number field [Reviewed by Nick Alexander]
+#6463: David Loeffler: Residue fields broken for relative extensions [Reviewed by Nick Alexander]
+#6468: Simon King: FiniteField_prime_modn.__call__ should raise an error, rather than return an error [Reviewed by William Stein, Alex Ghitza]
+#6471: Minh Van Nguyen: clarify differences between c.abs() and c.norm() for complex c [Reviewed by Alex Ghitza]
+#6485: Mitesh Patel: broken links from website index to tutorial, constructions, etc. [Reviewed by David Loeffler]
+#6493: William Stein: new scipy-0.7.p2 spkg is broken on 64-bit OS X, due to numpy [Reviewed by Robert Miller]
+#6499: Minh Van Nguyen: minor formatting and typo in the script sage-location [Reviewed by Alex Ghitza]
+#6500: David Loeffler: Improve reference manual coverage for polynomial rings [Reviewed by John Palmieri]
+#6510: Taylor Sutton: Adds __nonzero__ method to abelian groups [Reviewed by David Roe]
+#6511: John Cremona: merge script: syntax error when doing "sage -merge <ticket-number>" [Reviewed by Minh Van Nguyen]
+#6512: Mitesh Patel: Link to jsMath's easy/load.js only if the documentation is built with --jsmath [Reviewed by David Loeffler]
+#6518: Burcin Erocal: doctest script uses deprecated signature for showwarning [Reviewed by Mike Hansen]
+#6519: Vincent Delecroix, Sebastien Labbe, Franco Saliola: improve the words library code [Reviewed by Robert Miller, Sebastien Labbe]
+#6526: Robert Miller: remove naive suffix trees [Reviewed by Franco Saliola]
+#6529: Marshall Hampton, David Loeffler: adding doctests to arith.py [Reviewed by David Loeffler, Minh Van Nguyen]
+#6534: David Loeffler: Jacobi sums are calculated in a ridiculously roundabout fashion [Reviewed by John Cremona]
+#6537: Robert Miller: Memleak in C graphs [Reviewed by Tom Boothby]
+#6540: Robert Miller: g.add_edge((u,v), label=l) syntax unsupported for C graphs [Reviewed by Jason Grout]
+#6544: Adam Webb: remove graph_isom.pxd [Reviewed by Robert Miller]
+#6557: William Stein: fix bug in number field caching [Reviewed by John Cremona]

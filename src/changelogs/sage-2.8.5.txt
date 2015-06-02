@@ -1,0 +1,34 @@
+﻿SAGE 2.8.5:
+
+This is a *MAJOR* new Sage release, which includes many bugfixes (some
+quite important to usability), and substantial new features and
+functionality.  Sage 2.8.5 includes Mike Hansen's massive new
+combinatorics packages along with the Symmetrica C library, much new
+multivariate polynomial code by Martin Albrecht along with bug fixes
+and sparse mod-p linear algebra via Linobx, new algebraic number
+fields code by William Stein and Robert Bradshaw, a major refactoring
+of NTL by Joel Mohler, Craig Citro, David Harvey and Robert Bradshaw,
+Bill Hart and David Harvey's the long-awaited FLINT library for
+super-fast polynomial arithmetic is now included standard in SAGE
+(though currently it is not used by anything by default, and can only
+multiply polynomials), a very nice new global proof option by David
+Roe, Robert Bradshaw's complete and fully optimized implementation of
+sequence notation [1..5], (2..7), [1,3,5,..19], and updates to MPFR,
+IML, and Linbox thanks to Michael Abshoff and Martin Albrecht.  PPC32
+Linux should now also be officially supported (thanks to Michael
+Abshoff).  John Cremona also updated mwrank. Finally, Gonzalo Tornaria
+and William Stein fixed a major bug in the Sage signal handling
+system, so control-c, should now be much more robust.
+
+We closed 43 tickets, which are listed here:
+
+  http://trac.sagemath.org/sage_trac/query?status=closed&milestone=sage-2.8.5&order=id
+
+or, by category, here:
+
+  http://trac.sagemath.org/sage_trac/milestone/sage-2.8.5
+
+Thanks to the many people who contributed to this release, and anybody
+I forgot to mention above.  There were dozens of people not listed
+above who made important contributions.
+

@@ -1,0 +1,77 @@
+﻿SAGE 2.8.14:
+
+At least the following people contributed this release:
+
+ - Michael Abshoff
+ - Martin Albrecht
+ - John Cremona
+ - Alexander Dreyer
+ - Bill Hart
+ - David Joyner
+ - Josh Kantor
+ - William Stein
+ - Carl Witty
+
+Feedback and testing by Andrzej Giniewicz and Simon King, Jaap Spies,
+Gregory Vanuxem and Justin Walker. Apologies to anybody I forgot.
+
+Cheers,
+
+Michael Abshoff (release chair), William Stein
+
+* Major Features, New Spkgs and Bugfixes
+
+Besides fixing the build process on OSX 10.5.1 (10.5 did work before)
+John Cremona also updated g0n to compile with gcc 4.2.x. This did slip
+through testing, which caused us to release a build so shortly after 2.8.13.
+
+- #998:  segmentation fault doctesting crypto/mq/sr.py [Carl Witty]
+- #1244: flint-0.9-r1075.p0.spkg [Bill Hart, Michael Abshoff] -
+         fix corner cases on Core Duo
+- #1246: mpfi-1.3.4-rc3.p10.spkg [Alexander Dreyer] - mpfi-1.3.4-rc3.p9
+         fails to build on x86_64 SuSE 10.1
+- #1247: cremona-20071124.spkg [John Cremona, William Stein] - gcc 4.2.x
+         compile fixes, Solaris build fix
+- #1250: multivariate polynomial factorization -- control-c to cancel
+         out doesn't work [William Stein]
+- #1251: tutorial out of date [David Joyner]
+- #1252: cddlib-094b.p0.spkg [Michael Abshoff] - force cddlib to link
+         against Sage's gmp
+- #1253: gmp-4.2.1.p12.spkg, python-2.5.1.p9.spkg, clisp-2.41.p11.spkg
+         [Michael Abshoff] - OSX 10.5.x build fixes
+- #1254: revision to combinat.py [David Joyner, William Stein] - Hadamard
+         matrices of certain types via guava, use combinat.py for
+         permutations instead of GAP wrapper
+- #1257: multi_polynomial_libsingular.pyx "random" segfault [Carl Witty]
+- #1262: "make check" needs to depend on all [William Stein]
+
+We closed a total of 10 tickets, see
+
+ http://www.sagetrac.org/sage_trac/query?status=closed&milestone=sage-2.8.14
+
+for details.
+
+* Known Issues with 2.8.14
+
+   - cvxopt still fails to import certain functionality on OSX PPC (ticket #1222)
+
+* Upcoming Releases
+
+2.8.15 is planned before Sage Bug Day 6 (which is on Saturday,
+December 1st, 2007). Major spkg candidates for 2.8.15 are
+
+ - Singular 3-0-4
+ - PolyBoRi
+ - ATLAS BLAS/Lapack
+
+* Coverage
+
+No changes from 2.8.13.
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines 71 open source packages.
+It is available for download from sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems
+please report them to the google groups sage-devel, sage-support, sage-
+forum or sage-newbie. You can also drop by in #sage-devel in freenode.

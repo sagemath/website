@@ -1,0 +1,235 @@
+﻿-*- coding: utf-8 -*-
+
+Sage 4.5.1 was released on July 19, 2010. It is available at
+
+           http://www.sagemath.org/download.html
+
+* About Sage (http://www.sagemath.org)
+
+Sage is developed by volunteers and combines over 90 open source packages.
+It is available for download from www.sagemath.org and its mirrors in
+source or binary form. If you have any questions and/or problems,
+please report them to any of these Google groups:
+
+* sage-support: http://groups.google.com/group/sage-support
+* sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sage-devel on freenode. Please report build and
+doctest results to the Google group
+
+* sage-release: http://groups.google.com/group/sage-release
+
+You are invited to update the build farm wiki page
+
+* http://wiki.sagemath.org/devel/BuildFarm
+
+with results of builds and doctests.
+
+The following 34 people contributed to this release. Of those, 1 made
+their first contribution to Sage:
+
+ * Adam Webb
+ * Alex Leone
+ * Burcin Erocal
+ * Christian Stump [first contribution]
+ * Dan Drake
+ * David Kirkby
+ * David Loeffler
+ * François Bissey
+ * Fredrik Johansson
+ * Ivan Andrus
+ * Jaap Spies
+ * Jason Grout
+ * John Cremona
+ * John Palmieri
+ * Justin Walker
+ * Leif Leonhardy
+ * Mariah Lenox
+ * Marshall Hampton
+ * Mike Hansen
+ * Minh Van Nguyen
+ * Mitesh Patel
+ * Nathann Cohen
+ * Nicolas M. Thiéry
+ * Peter Jeremy
+ * Ralf Hemmecke
+ * Rob Beezer
+ * Robert Bradshaw
+ * Robert Miller
+ * Tim Abbott
+ * Tim Dumol
+ * Tom Boothby
+ * Volker Braun
+ * Willem jan Palenstijn
+ * William Stein
+
+* Release manager
+
+  * Robert Miller
+
+* Major features, new spkg's, and bug fixes
+
+ * GLPK - GNU Linear Programming Kit
+ * SAGE_PARALLEL_SPKG_BUILD - Build spkg's in parallel, in parallel
+
+* Bug statistics
+
+We closed 90 tickets. For details see
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.5
+
+and
+
+   http://trac.sagemath.org/sage_trac/milestone/sage-4.5.1
+
+or check out the closed ticket section at the end of the announcement.
+
+* Upcoming release
+
+sage-4.5.2
+
+* Doctesting coverage
+
+For Sage 4.4.4, we had an overall weighted doctest coverage score of
+82.7%, with 25727 functions. In Sage 4.5.1, we increased the doctest
+coverage by 0.0% and added 37 new functions. Thus for Sage 4.5 we
+now have
+
+ * Overall weighted coverage score:  82.7%
+ * Total number of functions:  25764
+
+Note that this release focused mainly on spkg updates and fixes, and getting
+GLPK into standard spkg's. There are many many documentation patches ready
+for merging on trac, and this is one of the main goals fof sage-4.5.2.
+
+* Known issues
+
+Upgrading to sage-4.5 is very seriously broken, and although upgrading to
+sage-4.5.1 is also broken, it is in a much less serious way.
+
+Closed tickets:
+
+#2151: Error in quotient ring loaded from a file
+#5864: Peter Jeremy: Correctly inherit build environment in eclib [Reviewed by Mike Hansen]
+#8272: R's spkg-install tries to disable iconv, but it is *essential* for R.
+#8409: Fix build and doctest issues for Solaris 10 (SPARC) in 32-bit mode.
+#9307: delete GHMM standard spkg from Sage
+#9351: John Palmieri: deps for sagetex with SAGE_CHECK='yes' [Reviewed by David Kirkby]
+#9365: sage-4.5.alpha0: R fails to build on OS X 10.6
+#9406: Multi-dimensional polynomial fit
+#9435: sage-4.5.alpha3 fails on bsd.math
+
+Merged in sagenb:
+
+#7633: Mitesh Patel: sagenb -- add "Save/ Cancel" buttons to the top of the display too for notebook settings [Reviewed by Tim Dumol, Alex Leone; merged in sagenb-0.8]
+#8234: Tim Dumol, Mitesh Patel: Data file deletion in notebook throws errors [Reviewed by Mitesh Patel, Tim Dumol; merged in sagenb-0.8]
+#9294: Ralf Hemmecke: wrong usage of except [Reviewed by Tim Dumol; merged in sagenb 0.8.1]
+
+Merged in SageNB 0.8.1:
+
+#7418: Mike Hansen: %maxima cells are partially broken [Reviewed by Tim Dumol, Mitesh Patel]
+#8686: Mike Hansen: gettext related bug in _ (history) [Reviewed by Tim Dumol]
+#8758: Alex Leone: Add a top-level /data with static.File(DATA) that serves files from the data directory [Reviewed by William Stein]
+#8760: William Stein: change sage notebook to use HTML5 doctype, and also change the email part of registration form to actually use something from html5 [Reviewed by Alex Leone]
+#8959: Jason Grout: interact layouts with arbitrary html [Reviewed by ]
+#8961: Tim Dumol: zope.testbrowser is included in sagenb but is no longer required [Reviewed by ]
+
+Merged in sage-4.5.alpha0:
+
+#5901: Tim Abbott: Avoid permission denied error message when testing with non-writeable sage install [Reviewed by Tim Dumol]
+#7821: Peter Jeremy: readline-6.0.p1 fails on FreeBSD [Reviewed by Mike Hansen]
+#7982: Jaap Spies, David Kirkby: sage_fortran is not working properly on Open Solaris x64 in 64 bit mode [Reviewed by David Kirkby, Jaap Spies]
+#8306: Mitesh Patel, John Palmieri: Parallel inter/intra-spkg builds [Reviewed by David Kirkby, John Palmieri]
+#8712: Tim Dumol: Use `optparse` in sage -merge for increased usability. [Reviewed by John Palmieri]
+#8891: Mike Hansen: sage -t doesn't accept . as current directory [Reviewed by Mitesh Patel]
+#9008: David Kirkby, Mike Hansen: Update zlib to latest upstream, and clean up spkg-install [Reviewed by Mike Hansen, Jaap Spies]
+#9025: David Kirkby: PALP is building 32-bit on OpenSolaris - probably other platforms too. [Reviewed by Jaap Spies]
+#9030: David Kirkby: rubiks is building part 32-bit and part 64-bit on OpenSolaris x64. [Reviewed by Jaap Spies]
+#9034: David Kirkby: flintqs builds as 32-bit despite SAGE64=yes on OpenSolaris x64 [Reviewed by Jaap Spies]
+#9041: David Kirkby: python fails to build _socket on OpenSolaris x64, so pygments fails to build. [Reviewed by Jaap Spies]
+#9042: Robert Bradshaw: Cython fails to build on OpenSolaris x64 [Reviewed by David Kirkby]
+#9043: David Kirkby: lcalc failing to build on OpenSolaris x64. [Reviewed by Jaap Spies]
+#9098: David Kirkby: gap buillds 32-bit on OpenSolaris when SAGE64=yes [Reviewed by Jaap Spies]
+#9152: Fredrik Johansson: Update extension code for mpmath-0.15 [Reviewed by Dan Drake, Mike Hansen]
+#9177: Volker Braun: cddlib has hard-coded gmp path [Reviewed by David Kirkby, Mike Hansen]
+#9185: Mitesh Patel: Update Singular's spkg-install for building multiple spkgs in parallel [Reviewed by David Kirkby]
+#9186: Mitesh Patel: Update R's spkg-install for building multiple spkgs in parallel [Reviewed by David Kirkby]
+#9202: Jason Grout: update matplotlib [Reviewed by David Kirkby]
+#9208: David Kirkby: Add PKG_CONFIG_PATH to sage-env so programs like matplotlib link properly. [Reviewed by Jason Grout]
+#9272: John Palmieri: make -only-optional=... case-insensitive [Reviewed by Robert Miller]
+#9277: David Kirkby: Flint's spkg-check file does not work on 64-bit (SAGE64 only works on OS X) [Reviewed by Jaap Spies]
+#9286: David Kirkby: Add an spkg-check file for boehm_gc [Reviewed by Ivan Andrus]
+#9295: David Kirkby: Add an spkg-check file for Python [Reviewed by John Palmieri]
+
+Merged in sage-4.5.alpha1:
+
+#7289: Nathann Cohen: Multiway cut [Reviewed by Robert Miller]
+#7378: Nathann Cohen: Subdivide edges in a graph [Reviewed by Robert Miller]
+#7476: Nathann Cohen: Edge-disjoint spanning trees [Reviewed by Robert Miller]
+#7563: Nathann Cohen: Interval Graphs : recognition [Reviewed by Robert Miller]
+#7904: Nathann Cohen: is_gallai_tree [Reviewed by Robert Miller]
+#8284: Nathann Cohen: IntervalGraph generator and a bug in is_chordal [Reviewed by Robert Miller]
+#8403: Nathann Cohen: Steiner Tree [Reviewed by Robert Miller]
+#8748: Nathann Cohen: Linear Arboricity, Acyclic edge coloring [Reviewed by Robert Miller]
+#8781: Nathann Cohen: Overfull graph (and a bug in edge_coloring) [Reviewed by Minh Van Nguyen]
+#8870: Nathann Cohen: Multiflow [Reviewed by Robert Miller]
+#8893: Nathann Cohen: disjoint routed paths [Reviewed by Robert Miller]
+#8923: Nathann Cohen: CompleteMultipartiteGraph generator [Reviewed by Robert Miller]
+#8927: Nathann Cohen: is_triangle_free [Reviewed by Robert Miller]
+#9036: Christian Stump: Graph.canonical_label(certify=True, edge_labels=True) returns a name error [Reviewed by Nathann Cohen]
+#9059: Nathann Cohen: some shortcuts for "is_H-free" tests [Reviewed by Robert Miller]
+#9073: Robert Miller: Handle multigraphs better in planarity [Reviewed by Tom Boothby]
+#9195: Nathann Cohen: Recognition of split graphs (5 lines) [Reviewed by Robert Miller]
+#9230: Nathann Cohen: Broken docstrings in Travelling Salesman Problem [Reviewed by Minh Van Nguyen]
+#9249: Nathann Cohen: Wrong answer in is_hamiltonian if no LP solver available [Reviewed by Robert Miller]
+#9269: Robert Miller: clean up #optional tags in sage/graphs [Reviewed by Nathann Cohen]
+#9346: John Palmieri, Mitesh Patel: sage_fortran no longer works for 32-bit builds on Solaris. [Reviewed by David Kirkby]
+#9360: William Stein: Sage 4.4.4 numerical noise in mwrank.pyx on 32-bit cicero [Reviewed by John Cremona]
+
+Merged in sage-4.5.alpha2:
+
+#8680: John Palmieri: untabify Sage again, and make it stick [Reviewed by David Loeffler]
+#9010: Marshall Hampton: Upgrade biopython package to 1.54 [Reviewed by Adam Webb]
+#9388: Justin Walker, David Kirkby: Fix rubiks makefile [Reviewed by Robert Miller]
+
+Merged in sage-4.5.alpha3:
+
+#8263: John Palmieri: Document ALL environment variables used by Sage [Reviewed by David Kirkby]
+#9312: David Kirkby, Nathann Cohen: Make GLPK spkg standard [Reviewed by Robert Miller]
+#9392: Nathann Cohen: Broken docstring in binpacking method [Reviewed by Leif Leonhardy, Robert Miller]
+#9412: Robert Miller: some random crap coming from zodb *sometimes* [Reviewed by David Kirkby]
+
+Merged in sage-4.5.alpha4:
+
+#9061: Nathann Cohen: Create an efficient SUM command [Reviewed by Robert Miller]
+#9102: Rob Beezer: Docstring improvements for strong generating systems of permutation groups [Reviewed by Robert Miller]
+#9274: Mitesh Patel, John Palmieri: do some cleanup of the deps file, as suggested by Carl Hansen [Reviewed by Robert Miller]
+#9331: Minh Van Nguyen: can't build PDF version of reference manual in Sage 4.4.4 [Reviewed by Nicolas M. Thiéry]
+#9431: Willem jan Palenstijn: opencdk spkg should add $SAGE_LOCAL/lib to LDFLAGS [Reviewed by Robert Miller]
+#9432: Nathann Cohen: remove remaining # optional - GLPK tags on doctests [Reviewed by Robert Miller]
+
+Merged in sage-4.5.rc0:
+
+#8787: William Stein: upgrade the openssl optional spkg to version 1.0 [Reviewed by Mariah Lenox]
+#9097: David Kirkby, François Bissey: c_lib in Sage library fails to build on OpenSolaris x64 [Reviewed by François Bissey, David Kirkby]
+#9399: David Kirkby: Remove Sun-specific junk in rings/finite_rings/stdint.h [Reviewed by Mariah Lenox]
+#9430: Tim Dumol: Update SageNB to version 0.8.1 [Reviewed by Leif Leonhardy]
+#9436: Tim Dumol: zodb3 causes downloads during installation [Reviewed by Leif Leonhardy]
+#9442: John Palmieri: reference manual issues for 4.5.alpha4 [Reviewed by Mitesh Patel]
+
+Merged in sage-4.5.rc1:
+
+#7379: Jason Grout: layout interact controls [Reviewed by Marshall Hampton]
+#9187: Mitesh Patel: Update ECL's spkg-install for building multiple spkgs in parallel [Reviewed by John Palmieri, John Cremona]
+#9314: Burcin Erocal: LaTeX representation of negative symbolic fractions still broken [Reviewed by John Cremona]
+#9474: David Kirkby: Revert ECL back to ecl-10.2.1 and apply patches for Solaris 10 and OpenSolaris x64 [Reviewed by John Palmieri]
+
+Merged in sage-4.5.rc2:
+
+#9368: David Kirkby, William Stein: sage_fortran ignores SAGE64 except on Solaris/OpenSolaris [Reviewed by Robert Miller]
+
+Merged in sage-4.5.1:
+
+#9507: William Stein: if spkg-install is a Python script, first check that SAGE_LOCAL/bin/python exists. [Reviewed by Robert Miller]
+#9528: Leif Leonhardy, William Stein: #8306 completely breaks "sage -upgrade" [Reviewed by Mitesh Patel]
+
