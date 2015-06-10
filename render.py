@@ -74,7 +74,8 @@ def render_task(arg):
     #log("processing/f: %s" % src, nl=False)
     if fn.endswith(".html"):
         # we ignore html files starting with "_" (e.g. language specific templates)
-        if fn.startswith("_"):
+        # except the ones in doc, which might be __init__.html
+        if fn.startswith("_") and fn != "__init__.html":
             return
         # assume it's a template and process it
         tmpl = j2env.get_template(src)
