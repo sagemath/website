@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% set title = "{{ sage }} developers around the world" %}
+{% set title = sage + " developers around the world" %}
 {% import 'devs.html' as devs %}
 
 {% block header %}
@@ -10,7 +10,7 @@
 
 
 {% block content %}
-<h1>{{ sage }} developers around the world</h1>
+<h1>{{ title }}</h1>
 
 <div class="padding center narrow">
     This map shows many contributors of the {{ sage }} project from all around the world.<br/>
