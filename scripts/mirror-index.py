@@ -391,13 +391,17 @@ def getTableRowDir(xml, dirs):
      except ValueError:
         pass
      td.appendChild(xml.createTextNode(u'Subdirectories:' if len(dirs) > 0 else u' '))
-     for d in sorted(dirs):
-        td.appendChild(xml.createElement(u'br'))
-        a = xml.createElement(u'a')
-        a.setAttribute(u'href', './%s/index.html' % d)
-        a.appendChild(xml.createTextNode(d))
-        a.setAttribute(u'style', u'display:inline;font-size:large;')
-        td.appendChild(a)
+     if len(dirs) > 0:
+       ul = td.appendChild(xml.createElement(u"ul"))
+       for d in sorted(dirs):
+          li = td.appendChild(xml.createElement(u'li'))
+          a = xml.createElement(u'a')
+          a.setAttribute(u'href', './%s/index.html' % d)
+          a.appendChild(xml.createTextNode(d))
+          a.setAttribute(u'style', u'display:inline;font-size:large;')
+          li.appendChild(a)
+          ul.appendChild(li)
+       td.appendChild(ul)
      td.setAttribute(u'colspan', '3')
      tr.appendChild(td)
      return tr
