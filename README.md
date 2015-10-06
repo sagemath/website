@@ -1,5 +1,5 @@
-Sagemath.org Website
-====================
+# Sagemath.org Website[![Build Status](https://travis-ci.org/sagemath/website.svg?branch=master)](https://travis-ci.org/sagemath/website)
+
 
 The `src` contains the sources for the files,
 they are rendered to fill-in the blanks for the templates
