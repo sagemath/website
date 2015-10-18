@@ -137,7 +137,7 @@ spkg:
   graphs:
     descr: A database of combinatorial graphs
     name: graphs
-    url: http://good.math.iastate.edu/grout/graphs/
+    url: http://jasongrout.org/graph_database
   gsl:
     descr: The GNU Scientific Library
     name: GSL
