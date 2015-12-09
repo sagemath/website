@@ -13,22 +13,10 @@
  </div>
 
 <div class="narrow txt small round large" style="background: #faa; padding: 15px;">
-    <div style=" font-size: 120%; font-weight: bold;">
-        Currently, SageMath does <b>not</b> work on the new OS X 10.11!<br/>
-        For more information:
-        <a href="http://trac.sagemath.org/ticket/19370">Ticket #19370</a>.
-    </div>
-    <div>
-        To get the binary running, you can (temporarily) disable SIP:
-        <ol>
-            <li>Restart your Mac.</li>
-            <li>Before OS X starts up, hold down Command-R and keep it held down until you see an Apple icon and a progress bar. Release. This boots you into Recovery.</li>
-            <li>From the Utilities menu, select Terminal.</li>
-            <li>At the prompt type exactly the following and then press Return: csrutil disable</li>
-            <li>Terminal should display a message that SIP was disabled.</li>
-            <li>From the menu, select Restart.</li>
-        </ol>
-        You can re-enable SIP by following the above steps, but using csrutil enable instead.
+    <div style=" font-size: 110%; font-weight: bold;">
+        On OS X version 10.11 (El Capitan),
+        you need at least sage-6.10.
+        It does not work with older versions of {{ sage }}.
     </div>
 </div>
 
