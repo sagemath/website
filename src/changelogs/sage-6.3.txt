@@ -1,4 +1,4 @@
-Sage 6.3 was released on 10 August 2014. It is available in
+﻿Sage 6.3 was released on 10 August 2014. It is available in
 source and binary form from:
 
   * http://www.sagemath.org/download.html

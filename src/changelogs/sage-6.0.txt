@@ -1,4 +1,4 @@
-Sage 6.0 was released on 18 December 2013. It is available in
+﻿Sage 6.0 was released on 18 December 2013. It is available in
 source and binary form from:
 
   * http://www.sagemath.org/download.html
