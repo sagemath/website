@@ -8,7 +8,7 @@
 
 import os
 import sys
-from os.path import join, normpath, exists, islink, basename
+from os.path import join, normpath, exists, islink, basename, splitext
 from glob import glob
 import datetime
 import shutil
@@ -28,6 +28,17 @@ TARG = "www"  # assumption: completely empty www
 TARG_FILES = join(TARG, "files")
 j2env = None
 
+def index_changelogs():
+    log("indexing changelogs")
+    logs = [basename(_) for _ in glob(join("changelogs", "*.txt"))]
+
+    def sortlogs(fn):
+        name, version = splitext(basename(fn))[0].split("-")
+        key = [0 if name == "pre" else 1]
+        key.extend(int(_) for _ in version.split("."))
+        return key
+
+    return reversed(sorted(logs, key = sortlogs))
 
 def copy_aux_files():
     """
@@ -142,6 +153,7 @@ def render():
     j2loader = j2.FileSystemLoader(tmpl_dirs)
     j2env = j2.Environment(loader=j2loader, undefined=j2.StrictUndefined)
     j2env.globals.update(config)
+    j2env.globals["changelogs"] = index_changelogs()
 
     j2env.filters["prefix"] = filter_prefix
     j2env.filters["markdown"] = filter_markdown
@@ -182,7 +194,7 @@ def render():
             render_task(task)
 
         if nb_walks % (len_walks // 27) == 0:
-           log("processing: %5.1f%%" % (100. * nb_walks / len_walks), nl=False)
+            log("processing: %5.1f%%" % (100. * nb_walks / len_walks), nl=False)
         nb_walks += 1
 
     log("processing: done", nl=False)
