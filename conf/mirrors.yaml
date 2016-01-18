@@ -6,6 +6,19 @@
   name: University of Washington, Seattle, WA, USA
   priority: 1
   url: http://files.sagemath.org/
+- active: false
+  cat: na
+  country: us
+  flag: us
+  name: Harvard, Boston, MA, USA
+  priority: 10
+  url: http://modular.fas.harvard.edu/sage/
+- active: false
+  cat: na
+  country: us
+  flag: us
+  name: James Madison University, VA, USA
+  url: http://modular.math.jmu.edu/
 - active: true
   cat: na
   country: us
@@ -13,12 +26,24 @@
   name: XMission, Utah, USA
   priority: 75
   url: http://mirrors.xmission.com/sage/
+- active: false
+  cat: na
+  country: us
+  flag: us
+  name: Technocozy, MD, USA
+  url: http://sage.technocozy.com/
 - active: true
   cat: na
   country: ca
   flag: ca
   name: Simon Fraser University, B.C., Canada
   url: http://www.cecm.sfu.ca/sage/
+- active: false
+  cat: na
+  country: us
+  flag: us
+  name: SciPy, TX, USA
+  url: http://sage.scipy.org/sage/
 - active: true
   cat: sa
   country: br
@@ -29,7 +54,7 @@
   cat: e
   country: ch
   flag: ch
-  name: SWITCHmirror, Zurich, Switzerland
+  name: 'SWITCHmirror, Zurich, Switzerland'
   priority: 90
   url: http://mirror.switch.ch/mirror/sagemath/
 - active: true
@@ -38,6 +63,12 @@
   flag: de
   name: 'Four Dots OpenSource Initiative, Saxony, Germany'
   url: https://fourdots.com/mirror/sagemath/
+- active: false
+  cat: e
+  country: cz
+  flag: cz
+  name: Technical University, Prague, Czech
+  url: http://ftp.sh.cvut.cz/MIRRORS/sagemath/
 - active: true
   cat: e
   country: de
@@ -67,11 +98,21 @@
   name: KAIST, Republic of Korea
   url: http://ftp.kaist.ac.kr/sage/
 - active: true
+  cat: a
+  country: kr
+  flag: kr
+  name: Yongbok, Republic of Korea
+  url: http://mirror.yongbok.net/sage/
+- active: true
   cat: af
   country: za
   flag: za
   name: Stellenbosch University, South Africa
   url: ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/
+- active: true
+  cat: a
+  name: Jember University, Java, Indonesia
+  url: http://mirror.unej.ac.id/mirrors/sage/
 - active: true
   cat: e
   name: RedIRIS Research Network, Spain
@@ -102,6 +143,10 @@
   cat: af
   name: Tertiary Education Network, Johannesburg, South Africa
   url: http://sagemath.mirror.ac.za/
+- active: false
+  cat: a
+  name: 'Yaşar Üniversitesi, Turkey'
+  url: http://sage.yasar.edu.tr/
 - active: true
   cat: a
   name: Indian Institute of Technology Madras, India
@@ -114,6 +159,10 @@
   cat: na
   name: 'Université du Québec à Montréal, Québec, Canada'
   url: http://mirror.clibre.uqam.ca/sage/
+- active: false
+  cat: af
+  name: Tunisia
+  url: http://sagemath.mirror.tn/
 - active: true
   cat: a
   name: Nanyang Technological University, Singapore
@@ -122,6 +171,16 @@
   cat: e
   name: GARR, Italy
   url: http://sage.mirror.garr.it/mirrors/sage/
+- active: false
+  cat: e
+  country: ee
+  flag: ee
+  name: Tallinn, Estonia
+  url: http://servingzone.com/mirrors/sage/
+- active: true
+  cat: e
+  name: Sofia, Bulgaria
+  url: http://sage.Igor.onlineDirect.bg/
 - active: true
   cat: a
   name: Tsinghua University, Beijing, China
@@ -144,6 +203,13 @@
   flag: cn
   name: Huazhong University of Science and Technology, China
   url: http://mirrors.hustunique.com/sagemath/
+- active: false
+  cat: na
+  country: us
+  flag: us
+  name: Hub.co Services Inc., NY, USA
+  priority: 50
+  url: http://mirrors.hub.co/sage/
 - active: true
   cat: a
   name: Huazhong University of Science and Technology, Hubei, China
@@ -161,10 +227,21 @@
   name: Yamagata University, JP
   url: http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/
 - active: true
+  cat: e
+  country: ru
+  name: Go-Parts, Moscow, RU
+  url: http://mirrors-ru.go-parts.com/sage/sagemath/
+- active: true
   cat: na
   country: us
   name: Go-Parts, Michigan, USA
   url: http://mirrors-usa.go-parts.com/sage/sagemath/
+- active: true
+  cat: e
+  country: uk
+  flag: gb
+  name: Go-Parts, Hampshire, UK
+  url: http://mirrors-uk.go-parts.com/sage/sagemath/
 - active: true
   cat: na
   country: us
