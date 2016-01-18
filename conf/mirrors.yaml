@@ -6,14 +6,14 @@
   name: University of Washington, Seattle, WA, USA
   priority: 1
   url: http://files.sagemath.org/
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
   name: Harvard, Boston, MA, USA
   priority: 10
   url: http://modular.fas.harvard.edu/sage/
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
@@ -26,7 +26,7 @@
   name: XMission, Utah, USA
   priority: 75
   url: http://mirrors.xmission.com/sage/
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
@@ -38,7 +38,7 @@
   flag: ca
   name: Simon Fraser University, B.C., Canada
   url: http://www.cecm.sfu.ca/sage/
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
@@ -54,10 +54,16 @@
   cat: e
   country: ch
   flag: ch
-  name: SWITCHmirror, Zurich, Switzerland
+  name: 'SWITCHmirror, Zurich, Switzerland'
   priority: 90
   url: http://mirror.switch.ch/mirror/sagemath/
 - active: true
+  cat: e
+  country: de
+  flag: de
+  name: 'Four Dots OpenSource Initiative, Saxony, Germany'
+  url: https://fourdots.com/mirror/sagemath/
+- active: false
   cat: e
   country: cz
   flag: cz
@@ -137,7 +143,7 @@
   cat: af
   name: Tertiary Education Network, Johannesburg, South Africa
   url: http://sagemath.mirror.ac.za/
-- active: true
+- active: false
   cat: a
   name: 'Yaşar Üniversitesi, Turkey'
   url: http://sage.yasar.edu.tr/
@@ -153,7 +159,7 @@
   cat: na
   name: 'Université du Québec à Montréal, Québec, Canada'
   url: http://mirror.clibre.uqam.ca/sage/
-- active: true
+- active: false
   cat: af
   name: Tunisia
   url: http://sagemath.mirror.tn/
@@ -165,7 +171,7 @@
   cat: e
   name: GARR, Italy
   url: http://sage.mirror.garr.it/mirrors/sage/
-- active: true
+- active: false
   cat: e
   country: ee
   flag: ee
@@ -197,7 +203,7 @@
   flag: cn
   name: Huazhong University of Science and Technology, China
   url: http://mirrors.hustunique.com/sagemath/
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
@@ -208,13 +214,6 @@
   cat: a
   name: Huazhong University of Science and Technology, Hubei, China
   url: http://mirror.hust.edu.cn/sagemath/
-- active: true
-  cat: e
-  country: eu
-  flag: eu
-  name: Google Datacenter, EU
-  priority: 50
-  url: http://www-eu-1.sagedev.org/mirror/
 - active: true
   cat: a
   country: ir
