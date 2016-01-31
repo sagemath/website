@@ -1,0 +1,264 @@
+﻿Sage 7.0 was released on 19 January 2016. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://doc.sagemath.org/html/en/installation/index.html
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 57 people contributed to this release. Of those, 7 made
+their first contribution to Sage:
+
+  - André Apitzsch
+  - Andrey Novoseltsev
+  - Anne Schilling
+  - Ben Hutz
+  - Benjamin Hackl
+  - Ben Salisbury
+  - Bill Page
+  - Christian Stump
+  - Daniel Krenn
+  - Darij Grinberg
+  - David Loeffler
+  - David Lucas
+  - David Mödinger
+  - Dima Pasechnik
+  - Emmanuel Charpentier
+  - Erik Massop
+  - François Bissey
+  - Frédéric Chapoton
+  - Fredrik Johansson
+  - Janoš Vidali
+  - Javier Honrubia [first contribution]
+  - Jean-Pierre Flori
+  - Jeroen Demeyer
+  - Johan Sebastian Rosenkilde Nielsen
+  - John Cremona
+  - John Palmieri
+  - Jori Mäntysalo
+  - Julian Rüth
+  - Julien Lavauzelle [first contribution]
+  - Karl-Dieter Crisman
+  - Leif Leonhardy
+  - Lennart Ackermans [first contribution]
+  - Luis Felipe Tabera Alonso
+  - Marc Mezzarobba
+  - Marco Streng
+  - Martin Albrecht
+  - Martin Rubey
+  - Matthias Koeppe
+  - Michael Orlitzky
+  - Miguel Marco
+  - Nathann Cohen
+  - Nico Van Cleemput
+  - Ninad Bhat [first contribution]
+  - Peijun Xiao
+  - Peter Bruin
+  - Peter Luschny [first contribution]
+  - Ralf Stephan
+  - Robert Harron
+  - Salvatore Stella
+  - Sebastien Gouezel
+  - Solomon Vishkautsan [first contribution]
+  - Štěpán Starosta [first contribution]
+  - Thierry Monteil
+  - Travis Scrimshaw
+  - Vincent Delecroix
+  - Volker Braun
+  - Wilfried Luebbe
+
+* Release manager: Volker Braun.
+
+* We closed 154 tickets in this release. For details, see
+
+  http://boxen.math.washington.edu/home/release/sage-7.0/tickets.html
+
+Merged in sage-7.0.beta0:
+
+#10295: François Bissey, Bill Page, Jeroen Demeyer: Upgrade and optimize pexpect [Reviewed by Jeroen Demeyer, Bill Page]
+#18844: Dima Pasechnik: updating  upstream data in SPKG.txt of boehm_gc [Reviewed by Jeroen Demeyer]
+#19001: Marco Streng: Conic morphism creation fails on some base fields [Reviewed by Lennart Ackermans]
+#19097: Andrey Novoseltsev: Refactor run_[revised]_simplex_method; add run_dual_[revised]_simplex_method [Reviewed by Peijun Xiao]
+#19137: Vincent Delecroix: Use inverse_series_trunc in power series [Reviewed by Frédéric Chapoton]
+#19427: Volker Braun: Jupyter R kernel [Reviewed by Emmanuel Charpentier]
+#19487: Nathann Cohen: Support .zip upstream/ files [Reviewed by Dima Pasechnik, Matthias Koeppe]
+#19571: Jeroen Demeyer: Register Sage classes in numbers abc [Reviewed by Volker Braun]
+#19616: Karl-Dieter Crisman: Update sagenb [Reviewed by Jeroen Demeyer, Travis Scrimshaw]
+#19638: Emmanuel Charpentier: upgrade rpy2 to 2.7.5 [Reviewed by François Bissey, Travis Scrimshaw]
+#19641: Volker Braun: Remove (DY)LD_LIBRARY_PATH [Reviewed by François Bissey]
+#19671: Jeroen Demeyer: Ignore all exceptions in ._sage_doc_ attribute access [Reviewed by François Bissey, Karl-Dieter Crisman]
+#19688: Vincent Delecroix: Much fast divisors using PARI divisorsu [Reviewed by David Loeffler]
+#19691: Jeroen Demeyer: Add groebner_basis() method for univariate polynomials [Reviewed by Travis Scrimshaw]
+#19692: Emmanuel Charpentier: Upgrade R to 3.2.3 [Reviewed by Jeroen Demeyer]
+#19693: Matthias Koeppe: Update 4ti2 to version 1.6.7 [Reviewed by Dima Pasechnik]
+#19694: Jeroen Demeyer: Deprecate CachedFunction.get_cache() [Reviewed by Andrey Novoseltsev]
+#19695: Jeroen Demeyer: Remove duplicate code in cachefunc.pyx [Reviewed by Julian Rüth]
+#19697: Jori Mäntysalo: Posets: Add is_eulerian [Reviewed by Frédéric Chapoton]
+#19699: Volker Braun: Update FlintQS [Reviewed by François Bissey, Jeroen Demeyer]
+#19702: Jeroen Demeyer: Upgrade GNU patch [Reviewed by François Bissey]
+#19703: Jeroen Demeyer: Update config.guess in bzip2 [Reviewed by Travis Scrimshaw]
+#19705: Jeroen Demeyer: Add ppc64le support to config.guess [Reviewed by Volker Braun]
+#19708: Jeroen Demeyer: Upgrade MPFR [Reviewed by François Bissey]
+#19709: Jeroen Demeyer: Upgrade MPC [Reviewed by François Bissey]
+#19711: Jeroen Demeyer: SQLite: use newer version of config.guess [Reviewed by François Bissey]
+#19713: Jeroen Demeyer: GLPK: use newer version of config.guess [Reviewed by François Bissey]
+#19714: Jeroen Demeyer: ZeroMQ: use newer version of config.guess [Reviewed by François Bissey]
+#19716: Jeroen Demeyer: MPFI: use newer version of config.guess [Reviewed by François Bissey]
+#19717: Jeroen Demeyer: Allow tachyon to install on ppc64le [Reviewed by François Bissey]
+#19718: Jeroen Demeyer: cddlib: use newer version of config.guess [Reviewed by François Bissey]
+#19723: Jeroen Demeyer: planarity: use newer version of config.guess [Reviewed by François Bissey]
+#19724: Jeroen Demeyer: ECM: use newer version of config.guess [Reviewed by François Bissey]
+#19725: Jeroen Demeyer: lrcalc: use newer version of config.guess [Reviewed by François Bissey]
+#19726: Jeroen Demeyer: GAP: use newer version of config.guess [Reviewed by François Bissey]
+#19727: Jeroen Demeyer: gf2x: use newer version of config.guess [Reviewed by François Bissey]
+#19728: Jeroen Demeyer: givaro: use newer version of config.guess [Reviewed by François Bissey]
+#19729: Jeroen Demeyer: Rename boehm_gc to gc and upgrade to latest upstream [Reviewed by François Bissey]
+#19731: Jeroen Demeyer: Upgrade NTL [Reviewed by François Bissey]
+#19732: Jeroen Demeyer: ECL: use newer version of config.guess [Reviewed by François Bissey]
+#19734: Jeroen Demeyer: Maxima: use newer version of config.guess [Reviewed by Travis Scrimshaw]
+#19744: Ralf Stephan: Update to pynac-0.5.3 [Reviewed by Sebastien Gouezel]
+
+Merged in sage-7.0.beta1:
+
+#16896: David Mödinger, Johan Sebastian Rosenkilde Nielsen: rework of row_reduced_form/weak_popov_form calling convention [Reviewed by David Lucas]
+#18551: Marc Mezzarobba: sig_error() without sig_on() in call to mpz_mul_2exp [Reviewed by Jeroen Demeyer]
+#19475: Volker Braun: RealSet? shows wrong doc [Reviewed by John Palmieri]
+#19649: Jeroen Demeyer: Crash in pari polroots() [Reviewed by Travis Scrimshaw]
+#19674: Jeroen Demeyer: Reorganize NTL files [Reviewed by Jean-Pierre Flori]
+#19687: Dima Pasechnik: upgrade cvxopt to version 1.1.8 [Reviewed by François Bissey]
+#19720: Jeroen Demeyer: Upgrade fplll [Reviewed by Martin Albrecht]
+#19721: Jeroen Demeyer: Create new libgd tarball [Reviewed by Travis Scrimshaw]
+#19742: Jeroen Demeyer: CyclotomicField.zeta() inconsistent with zeta_order() and docs [Reviewed by Julian Rüth]
+#19746: Volker Braun: Ignore Jupyter notebook default files [Reviewed by Jeroen Demeyer]
+#19747: Nathann Cohen: Permutation.__init__ error message: negative->non-positive [Reviewed by Dima Pasechnik]
+#19749: Darij Grinberg: reduced_word_graph on a Coxeter group element fails due to DiGraph ducktyping [Reviewed by Travis Scrimshaw]
+#19755: Volker Braun: lcalc drops LDFLAGS [Reviewed by François Bissey]
+#19757: Jeroen Demeyer: fflas_ffpack: use newer version of config.guess [Reviewed by François Bissey]
+#19761: Jeroen Demeyer: LinBox: use newer version of config.guess [Reviewed by François Bissey]
+#19762: Leif Leonhardy: Ncurses fails to build with gcc-5.2.1 in OpenSuSE Leap [Reviewed by Ralf Stephan]
+#19764: Volker Braun: rpath trouble with PARI [Reviewed by Jeroen Demeyer]
+#19765: Jeroen Demeyer: Fix linking to FLINT [Reviewed by Volker Braun]
+#19767: Jeroen Demeyer: ATLAS drops LDFLAGS during build [Reviewed by Volker Braun]
+
+Merged in sage-7.0.beta2:
+
+#15804: Luis Felipe Tabera Alonso, Jeroen Demeyer: Add lift_centered for more classes [Reviewed by Vincent Delecroix]
+#16198: Ralf Stephan: allow constant != 1 in log(power series) [Reviewed by Volker Braun]
+#16647: Frédéric Chapoton: Remove java3d [Reviewed by Volker Braun]
+#17830: Vincent Delecroix,  Štěpán Starosta: Comparison of number field elements dependent of real embedding [Reviewed by Volker Braun]
+#18225: Nico Van Cleemput, Frédéric Chapoton: Missing polytopes in the library [Reviewed by Volker Braun]
+#18936: Robert Harron: Poset plot won't accept heights argument [Reviewed by Jori Mäntysalo]
+#19384: Travis Scrimshaw: Type B rigged configuration bijection doesn't work when spinor is not the only leftmost factor [Reviewed by Ben Salisbury]
+#19555: Travis Scrimshaw: Implement a containment for cartesian_product [Reviewed by Vincent Delecroix]
+#19565: Frédéric Chapoton: develop manual : use develop instead of master [Reviewed by Travis Scrimshaw]
+#19610: Jeroen Demeyer: Fix dependencies on PARI [Reviewed by Jean-Pierre Flori]
+#19645: Jeroen Demeyer: Remove redundant depends [Reviewed by Volker Braun]
+#19704: Jeroen Demeyer: Build generic MPIR on ppc64le [Reviewed by Jean-Pierre Flori]
+#19715: Jeroen Demeyer: ATLAS should skip "fast" configuration if it is not implemented [Reviewed by Volker Braun]
+#19736: Jeroen Demeyer: pexpect: call send() just once in sendline() [Reviewed by Volker Braun]
+#19752: Javier Honrubia: bugfix hyperbolic_arc [Reviewed by Volker Braun]
+#19754: Jeroen Demeyer: Upgrade to GCC 4.9.3 [Reviewed by Volker Braun]
+#19763: Jeroen Demeyer: Fix error handling in git_trac [Reviewed by Volker Braun]
+#19768: Jeroen Demeyer: Optimize cache_key() [Reviewed by Volker Braun]
+#19771: Darij Grinberg: Coefficient coercion for Steenrod algebra coproducts [Reviewed by John Palmieri]
+#19772: Darij Grinberg: The empty word should not be Lyndon [Reviewed by Travis Scrimshaw]
+#19773: Dima Pasechnik: update gap, libgap, and corr. optional packages to version 4.7.9 [Reviewed by Volker Braun]
+#19782: Volker Braun, Jeroen Demeyer: Symlink lib64 -> lib [Reviewed by Jeroen Demeyer, Volker Braun]
+#19784: Jeroen Demeyer: Trivial optional doctest fixes [Reviewed by Nathann Cohen]
+#19788: Jori Mäntysalo: Capital letters for "eulerian" and "hamiltonian" [Reviewed by Volker Braun]
+#19789: Jori Mäntysalo: Capital letters for "cartesian" [Reviewed by Volker Braun]
+#19796: Jeroen Demeyer: Simplify build of interpreters by skipping header files [Reviewed by Volker Braun]
+#19798: Vincent Delecroix: fix zeta on the universal cyclotomic field [Reviewed by Frédéric Chapoton]
+#19800: Volker Braun: Lrslib drops LDFLAGS [Reviewed by François Bissey]
+
+Merged in sage-7.0.beta3:
+
+#11010: Christian Stump: Implementation of the SubwordComplex as defined by Knutson and Miller [Reviewed by Frédéric Chapoton]
+#19536: Jeroen Demeyer: Implement division as true division for CategoryObject [Reviewed by Travis Scrimshaw]
+#19609: Travis Scrimshaw: Added image and kernel methods to morphisms of finite-dimensional modules with basis [Reviewed by Darij Grinberg]
+#19743: David Lucas: Generic not_equals methods for objects in coding theory library [Reviewed by Vincent Delecroix]
+#19758: Jeroen Demeyer: Remove deprecated "property foo:" Cython syntax [Reviewed by Volker Braun]
+#19776: Volker Braun: Globally set -L library search path [Reviewed by François Bissey]
+#19777: Nathann Cohen, Dima Pasechnik: Three new SRGs and db update [Reviewed by Nathann Cohen, Dima Pasechnik]
+#19783: Dima Pasechnik: Mark 4ti2 doctest failures as "known bug" [Reviewed by Jeroen Demeyer]
+#19793: Jeroen Demeyer: Fix arb on ppc64le [Reviewed by Fredrik Johansson]
+#19795: Travis Scrimshaw, Janoš Vidali: GAP3 does not have IsIdenticalObject [Reviewed by Anne Schilling]
+#19804: Jori Mäntysalo: Some capital letters [Reviewed by Frédéric Chapoton]
+#19806: Jeroen Demeyer: GSL: use newer version of config.guess [Reviewed by François Bissey]
+#19807: Miguel Marco: Tides malfunctions in version 7.0beta [Reviewed by Volker Braun]
+#19809: Volker Braun: LiE drops LDFLAGS [Reviewed by Travis Scrimshaw]
+#19810: Jeroen Demeyer: Optimize get_key() for cached functions [Reviewed by Travis Scrimshaw]
+#19812: Michael Orlitzky: Add tests for pointed/solid duality of cones [Reviewed by Volker Braun]
+#19816: Jeroen Demeyer: AlarmInterrupt in sage.rings.integer.Integer.divisors [Reviewed by Volker Braun]
+#19818: Jeroen Demeyer: Modernize eclib library interface [Reviewed by Jean-Pierre Flori]
+#19825: Vincent Delecroix: Better comparison and conversion code for UCF [Reviewed by Travis Scrimshaw]
+#19826: Travis Scrimshaw: Remove default random_element from Groups [Reviewed by Vincent Delecroix]
+#19827: Jori Mäntysalo: LatticePosets: Add is_geometric [Reviewed by Travis Scrimshaw]
+#19828: Jeroen Demeyer: Upgrade decorator to 4.0.6 [Reviewed by François Bissey]
+#19833: Jeroen Demeyer: Replace pexpect spawnpty patch by upstream version [Reviewed by Travis Scrimshaw]
+#19835: Vincent Delecroix: bug with rational constructor [Reviewed by Jeroen Demeyer]
+
+Merged in sage-7.0.rc0:
+
+#16679: Salvatore Stella: Plot the triangulation of a disk associated to a sine-Gordon Y-system [Reviewed by Volker Braun]
+#16929: Dima Pasechnik: Creating SDP interface [Reviewed by Jeroen Demeyer, Volker Braun]
+#18578: Wilfried Luebbe, Jeroen Demeyer: Python 3 preparation: Special function __div__() is used no more in Py3 [Reviewed by Volker Braun]
+#19143: Jeroen Demeyer: autodoc: move args_on_obj to a real method [Reviewed by André Apitzsch]
+#19153: Jeroen Demeyer: Trivial changes to sage_autodoc.py [Reviewed by André Apitzsch]
+#19425: Benjamin Hackl: Order in symbolic ring: error calling operator [Reviewed by Ralf Stephan]
+#19428: Jeroen Demeyer: Add support for MPFR_RNDA rounding mode [Reviewed by Vincent Delecroix, Marc Mezzarobba]
+#19492: David Lucas: Optimize linear codes: __eq__, dual_code and commented debug lines [Reviewed by Vincent Delecroix]
+#19552: Ben Hutz: images and preimages for projective subscheme [Reviewed by Vincent Delecroix, Solomon Vishkautsan]
+#19650: Ninad Bhat: Error in docs: description of 'divisors'. [Reviewed by Volker Braun, Peter Bruin, Peter Luschny]
+#19661: Dima Pasechnik: the srgs from Cossidente and Penttila construction of hemisystems in H(3,q^2) [Reviewed by Nathann Cohen]
+#19665: John Cremona: Bug in semi-global minimal models of elliptic curves [Reviewed by Volker Braun]
+#19689: John Cremona: Scaling of Weierstrass equations by units, over number fields [Reviewed by Volker Braun]
+#19737: Martin Rubey: SetPartition.to_permutation().cycle_tuples() is not the identity [Reviewed by Nathann Cohen]
+#19745: David Lucas: Tutorial for new structures in coding theory [Reviewed by Travis Scrimshaw, Julien Lavauzelle]
+#19756: Jeroen Demeyer: Upgrade to GSL 2.1 [Reviewed by Volker Braun]
+#19790: Volker Braun: FLINT testsuite drops LDFLAGS [Reviewed by Jeroen Demeyer]
+#19801: Jori Mäntysalo: LatticePosets: Add pseudocomplements [Reviewed by Daniel Krenn]
+#19805: Jeroen Demeyer: Allow custom configure options for ATLAS [Reviewed by François Bissey]
+#19819: Ralf Stephan: Update to pynac-0.6.0 [Reviewed by Jeroen Demeyer, Ralf Stephan]
+#19829: Travis Scrimshaw: Cache the results of monoid_generators for IndexedFreeMonoid [Reviewed by Darij Grinberg]
+#19831: Michael Orlitzky: Add random_element() for cones [Reviewed by Andrey Novoseltsev]
+#19842: Jeroen Demeyer: Implement true division for NTL classes [Reviewed by Volker Braun]
+#19844: Travis Scrimshaw: libfplll does not build on Cygwin. [Reviewed by Sebastien Gouezel]
+#19847: Michael Orlitzky: Typo in free_module.py [Reviewed by Peter Bruin]
+#19848: Peter Bruin: Fix typo in sage/sat/converters/polybori.py [Reviewed by Michael Orlitzky]
+#19852: Peter Bruin, Jori Mäntysalo: Fix some typos [Reviewed by Jori Mäntysalo, Frédéric Chapoton]
+#19854: Jori Mäntysalo: Index of functions to finite lattices [Reviewed by Nathann Cohen]
+#19861: Nathann Cohen: Janko-Kharaghani strongly regular graphs of orders 936 and 1800 [Reviewed by Dima Pasechnik]
+#19862: Nathann Cohen: matrix.zero(15) [Reviewed by Marc Mezzarobba]
+#19863: David Lucas: Static error rate channel does not always add as many errors as expected [Reviewed by Johan Sebastian Rosenkilde Nielsen]
+#19864: Jeroen Demeyer: Implement conversion FLINT fmpz_t -> PARI GEN [Reviewed by Jean-Pierre Flori]
+#19869: Jori Mäntysalo: Faster is_less_than() for set partitions [Reviewed by Travis Scrimshaw]
+
+Merged in sage-7.0.rc1:
+
+#15348: Jeroen Demeyer: "R.<a> =" syntactic sugar incorrect for EquationOrder [Reviewed by Erik Massop]
+#17785: Vincent Delecroix: crash in multipolynomial substitutions [Reviewed by Volker Braun]
+#19750: Volker Braun: singular genus crash [Reviewed by Jeroen Demeyer, François Bissey]
+#19781: Jeroen Demeyer: Move broken optional packages to experimental [Reviewed by Travis Scrimshaw]
+#19880: Thierry Monteil: update openssl to 1.0.2e [Reviewed by Volker Braun]
+
+Merged in sage-7.0:
+
+#19415: Jeroen Demeyer: Deprecate composite_field() [Reviewed by Vincent Delecroix]
+#19843: Volker Braun, Jeroen Demeyer: Improve location change error message [Reviewed by Volker Braun]
+#19879: Jeroen Demeyer: Move sage/rings/arith to sage/arith [Reviewed by Jean-Pierre Flori]
