@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% set title = "Marketing" %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+<div class="small justify bodypadding">
+<ul>
+{% for name in marketing %}
+<li>
+<a href="./{{ name }}">{{ name }}</a>
+</li>
+{% endfor %}
+</ul>
+</div>
+{% endblock %}
