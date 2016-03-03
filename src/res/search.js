@@ -1,7 +1,9 @@
 /*
  * Google Powered Search for Sage (www.sagemath.org)
- * (C) 2008, Harald Schilly, ALL RIGHTS RESERVED
+ * (C) 2008--2016, Harald Schilly, Apache 2.0
  */
+
+"use strict";
 
 google.load("search", "1", {"nooldnames" : true, "language" : "en"});
 var searchID = "017384562579735769466:s27byrlaffu";
@@ -18,8 +20,8 @@ if ( searcher.results && searcher.results.length > 0) {
 nresults += searcher.results.length;
 stats.innerHTML = "Google found " + nresults + "  results for you!";
 } else if (nresults == 0) {
-stats.innerHTML = "Google found nothing :(";
-} 
+stats.innerHTML = "Still searching or no results found ...";
+}
 }
 
 var sageSearch;
@@ -27,6 +29,17 @@ function OnLoad() {
 var urlQuery = window.location.search.split('?')[1];
 sageSearch = new SageSearch(urlQuery);
 }
+
+/*
+google.setOnLoadCallback(function() {
+  var customSearchOptions = {};
+  var customSearchControl =   new google.search.CustomSearchControl(searchID, customSearchOptions);
+  customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+  var options = new google.search.DrawOptions();
+  options.setAutoComplete(true);
+  customSearchControl.draw('cse', options);
+}, true);
+*/
 
 var searchControl = null;
 
@@ -55,7 +68,7 @@ siteSearch.setUserDefinedLabel("Documentation");
 siteSearch.setSiteRestriction(searchID, "doc");
 searchControl.addSearcher(siteSearch, options);
 siteSearch.setResultSetSize(google.search.Search.LARGE_RESULTSET);
-  
+
 var options = new google.search.SearcherOptions();
 options.setExpandMode(google.search.SearchControl.EXPAND_MODE_OPEN);
 options.setRoot(document.getElementById("searchgroup"));
