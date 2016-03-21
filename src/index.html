@@ -11,7 +11,7 @@
    border-left:  3px solid #7f7fff;
    border-right: 3px solid #7f7fff;
    background: #efefff;
- } 
+ }
  div.announce input {font-size: 95%;}
 </style>
 {% endblock %}
@@ -123,7 +123,7 @@ if (data) {
   <tbody>
    <tr>
     <td class="right">
-     <h2><a href="http://cloud.sagemath.com/">Use {{ sage }} Online</a></h2>
+     <h2><a href="http://cloud.sagemath.com/">{{ sage }} Online</a></h2>
 
      <div class="small">
        {#
@@ -131,8 +131,8 @@ if (data) {
        <a href= "https://sage.math.washington.edu:8103">Server 3</a> &middot;
        <a href="http://sage.milnix.org">Milnix.org</a>  &middot;
        #}
-       other:
-       <a href="http://www.sagenb.org/">Sagenb</a>,
+       or:
+       <!-- <a href="http://www.sagenb.org/">Sagenb</a>, -->
        <a href="http://sagecell.sagemath.org/">{{ sage }}Cell</a><br/>
      </div>
     </td>
