@@ -641,6 +641,11 @@ contributor
  location="Ottawa, ON, Canada"
  description="Newton-Raphson Root Finding interact demonstration" />
 <contributor
+ name="Javier Honrubia González"
+ location="Vigo, Spain"
+ description="various bug fixes; documentation"
+ trac="jhonrubia6" />
+<contributor
  name="Golam Mortuza Hossain"
  work="Postdoctoral fellow, Indian Institute of Science Education and Research"
  location="IISER, Kolkata, India"
