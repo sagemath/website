@@ -212,14 +212,23 @@ if (data) {
      <h2><a href="./search.html">Search</a></h2>
 
      <div class="small">
-      <form action="./search.html"
-            method="get">
+      <form id='search'>
        <input type="text"
              onmouseover="javascript:this.focus();"
              class="small"
              name="search"
+             id="searchquery"
              placeholder="Search..."/>
       </form>
+      <script type="text/javascript">
+          var search = form = document.getElementById("search");
+          var qurl = 'https://cse.google.com/cse/publicurl?cx=017384562579735769466:s27byrlaffu&q=';
+          form.onsubmit = function(){
+                var query = document.getElementById("searchquery");
+                window.location = qurl + query.value;
+                return false;
+          };
+      </script>
      </div>
     </td>
    </tr>

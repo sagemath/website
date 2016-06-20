@@ -3,109 +3,23 @@
 
 {% block header %}
 <link rel="canonical" href="search.html" />
-<script src=
-"http://www.google.com/jsapi?key=ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w"
-      type="text/javascript">
-</script>
-<script src="{{ 'res/search.js'|prefix }}" type="text/javascript">
-</script>
 {% endblock %}
 
 
 {% block content %}
- <h1 class="center">Search {{ sage }} Resources</h1><noscript>
- <div>
-  You have Java-Script disabled. You can also search here: <a href=
-  "http://www.google.com/coop/cse?cx=017384562579735769466%3As27byrlaffu">{{ sage }} Infobase Search</a>
- </div></noscript>
-
- <div class="center small narrow">
-  <div id="googlesearchform">
-   Loading search interface. If this doesn&#39;t vanish you have to enable Java-Script!
+  <h1 class="center">Search {{ sage }} Resources</h1>
+     <div class="narrow">
+         <script>
+      (function() {
+        var cx = '017384562579735769466:s27byrlaffu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
   </div>
-
-  <div class="txt">
-   Examples: <a href="#"
-        onclick=
-        'javascript:searchControl.execute(&quot;introduction sage&quot;);return false;'>Introduction
-        {{ sage }}</a>  &middot;  <a href="#"
-        onclick='javascript:searchControl.execute(&quot;install&quot;);return false;'>Install</a>  &middot; 
-        <a href="#"
-        onclick='javascript:searchControl.execute(&quot;plot 3d&quot;);return false;'>Plot 3d</a>  &middot; 
-        <a href="#"
-        onclick='javascript:searchControl.execute(&quot;solve equation&quot;);return false;'>Solve
-        Equation</a>  &middot;  <a href="#"
-        onclick=
-        'javascript:searchControl.execute(&quot;fourier series&quot;);return false;'>Fourier
-        Series</a>  &middot;  <a href="#"
-        onclick='javascript:searchControl.execute(&quot;integral&quot;);return false;'>Integral</a>
-         &middot;  <a href="#"
-        onclick='javascript:searchControl.execute(&quot;taylor series&quot;);return false;'>Taylor
-        series</a>
-  </div>
-
-  <div class="txt">
-   <a href=
-   "javascript:window.external.AddSearchProvider(&quot;http://www.sagemath.org/res/sage-search.xml&quot;);">
-   Add this search engine to your browser!</a>
-  </div>
- </div>
-
- <div id="searchstats"
-      class="small txt"></div>
-
- <div id="savedsearch"></div>
-
- <table id="sagesearch">
-  <colgroup>
-   <col width="50%" />
-   <col width="50%" />
-  </colgroup>
-
-  <tbody>
-   <tr>
-    <td>
-     <div id="searchuser"></div>
-    </td>
-
-    <td>
-     <div id="searchdoc"></div>
-    </td>
-
-    <td></td>
-   </tr>
-
-   <tr>
-    <td rowspan="2">
-     <div id="searchweb"></div>
-    </td>
-
-    <td>
-     <div id="searchgroup"></div>
-    </td>
-   </tr>
-
-   <tr>
-    <td>
-     <div id="searchblog"></div>
-    </td>
-   </tr>
-
-   <tr>
-    <td>
-     <div id="searchdev"></div>
-    </td>
-
-    <td>
-     <div id="searchpdf"></div>
-    </td>
-   </tr>
-  </tbody>
- </table>
-
- <div class="center small">
-  <a href="http://www.google.com/coop/cse?cx=017384562579735769466%3As27byrlaffu">
-      {{ sage }} Infobase Search</a> -
-     tell  webmaster about your public content
- </div>
 {% endblock %}

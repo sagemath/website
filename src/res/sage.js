@@ -145,7 +145,7 @@ function initMathjax() {
   head.appendChild(script);
   script = document.createElement("script");
   script.type = "text/javascript";
-  script.src  = "http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+  script.src  = "//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
   head.appendChild(script);
 }
 
@@ -196,7 +196,7 @@ _Hasync.push(['Histats.track_hits', '']);
 
 function initHistats() {
   var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-  hs.src = ('http://s10.histats.com/js15_gif_as.js');
+  hs.src = ('//s10.histats.com/js15_gif_as.js');
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 }
 
