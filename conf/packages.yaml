@@ -410,7 +410,7 @@ spkg:
   sympy:
     descr: Python library for symbolic mathematics
     name: SymPy
-    url: http://code.google.com/p/sympy/
+    url: http://www.sympy.org
   tachyon:
     descr: Parallel/multiprocessor ray tracing system
     name: Tachyon
