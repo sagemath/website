@@ -188,6 +188,7 @@ function refreshMap() {
       markerClusterer = new MarkerClusterer(map, markers, {
         //maxZoom: zoom,
         gridSize: 20,
+        imagePath: 'pix/m',
         //styles: styles[style]
       });
 

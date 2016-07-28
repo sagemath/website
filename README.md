@@ -88,6 +88,10 @@ explained at the top of their respective source files.
 If no licensing information can be found,
 regard it as [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
+### markerclusterer.js
+
+That's copied from https://github.com/googlemaps/js-marker-clusterer
+
 
 Google Cloud Storage Notes
 --------------------------
