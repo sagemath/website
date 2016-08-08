@@ -10,7 +10,6 @@ Disallow: /bin/
 Disallow: /src/
 Disallow: /spkg/
 Disallow: /packages/
-Disallow: /doc/
 Disallow: /documentation/
 
 
