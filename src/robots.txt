@@ -11,5 +11,5 @@ Disallow: /src/
 Disallow: /spkg/
 Disallow: /packages/
 Disallow: /documentation/
-
+Disallow: /git-developer-guide/
 
