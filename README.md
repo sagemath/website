@@ -28,6 +28,12 @@ For example:
 
     git submodule foreach "git checkout master; git pull origin master"
 
+### Ubuntu Packages
+
+To get started on Ubuntu:
+
+    sudo apt-get install -y pybtex python-jinja2 python-markdown python-yaml
+
 Development
 -----------
 
