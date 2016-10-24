@@ -21,6 +21,7 @@ http://doc.sagemath.org/pdf/en/reference/coercion/index.html
 http://doc.sagemath.org/pdf/en/reference/combinat/index.html
 http://doc.sagemath.org/pdf/en/reference/constants/index.html
 http://doc.sagemath.org/pdf/en/reference/cryptography/index.html
+http://doc.sagemath.org/pdf/en/reference/curves/index.html
 http://doc.sagemath.org/pdf/en/reference/data_structures/index.html
 http://doc.sagemath.org/pdf/en/reference/databases/index.html
 http://doc.sagemath.org/pdf/en/reference/diophantine_approximation/index.html
@@ -60,7 +61,6 @@ http://doc.sagemath.org/pdf/en/reference/number_fields/index.html
 http://doc.sagemath.org/pdf/en/reference/numerical/index.html
 http://doc.sagemath.org/pdf/en/reference/padics/index.html
 http://doc.sagemath.org/pdf/en/reference/parallel/index.html
-http://doc.sagemath.org/pdf/en/reference/plane_curves/index.html
 http://doc.sagemath.org/pdf/en/reference/plot3d/index.html
 http://doc.sagemath.org/pdf/en/reference/plotting/index.html
 http://doc.sagemath.org/pdf/en/reference/polynomial_rings/index.html
