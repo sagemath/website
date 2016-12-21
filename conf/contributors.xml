@@ -506,6 +506,13 @@ contributor
  description="Sage's logic package"
  trac="goreckc"/>
 <contributor
+ name="Bruno Grenet"
+ work="Université de Montpellier"
+ location="Montpellier, France"
+ description="Polynomials; Coding Theory"
+ url="http://www.lirmm.fr/~grenet/"
+ trac="bruno"/>
+<contributor
  name="Jan Groenewald"
  work="IT Manager; African Institute for Mathematical Sciences"
  location="AIMS; Muizenberg; Cape Town; South Africa"
