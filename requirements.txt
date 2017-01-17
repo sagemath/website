@@ -1,4 +1,0 @@
-jinja2 >= 2.7.3
-markdown >= 2.3
-pyinotify >= 0.9
-autopep8 >= 0.5
