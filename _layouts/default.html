@@ -1,44 +1,21 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-<head profile="http://a9.com/-/spec/opensearch/1.1/">
- <title>
-  {%- set title = title|default("Open-Source Mathematical Software System") -%}
-  {%block title -%}{{ sage }} - {{ title }}{%- endblock %}
- </title>
- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />
- <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
- <link rel="search"
-       type="application/opensearchdescription+xml"
-       href="http://www.sagemath.org/res/sage-search.xml"
-       title="Search sagemath.org" />
- <link href='{{ "res/sage.css"|prefix }}' type="text/css" rel="stylesheet" />
+<html>
+<head>
+ <title></title>
+ <link rel="stylesheet" type="text/css" href="/css/main.css">
  <link rel="shortcut icon" href="{{ 'pix/sageicon.png'|prefix }}" type="image/x-icon" />
- <link rel="alternate" type="application/rss+xml" title="{{ sage }} RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
- <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
- <script src='{{ "res/sage.js"|prefix }}' type="text/javascript"></script>
+ <link rel="alternate" type="application/rss+xml" title="{{ sage }} RSS News Feed" 
+       href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
  <link href="http://plus.google.com/113421169347512599264/" rel="publisher" />
- <link href='//fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en,fr,de,es' rel='stylesheet' type='text/css'>
-
- <meta property="og:title" content="{{ sage }} Mathematical Software System - Sage"/>
- <meta property="og:type" content="website"/>
- <meta property="og:url" content="http://www.sagemath.org/"/>
- <meta property="og:image" content="http://sagemath.org/pix/sage_logo_new_l_hc.png"/>
- <meta property="og:site_name" content="{{ sage }} Mathematical Software System"/>
- <meta property="og:description" content="{{ sage }} is a free and open-source mathematical software system."/>
-{%- block header -%}
-{%- endblock -%}
 </head>
 
 <body>
 <div id="header" class="small">
 <div id="header-logo">
- <a href="{{ 'index.html'|prefix }}">
+ <a href="index.html">
   <img width="250" height="65" alt="{{ sage }} Logo" class="round raised"
        src="/{{ logo }}" title="{{ sage }} Mathematical Software" />
  </a>
-{%- block logo_title -%}{%- endblock -%}
 </div>
 
 <div id="header-text">
@@ -53,25 +30,15 @@
 <a href="https://wiki.sagemath.org/">Wiki</a>
 &middot;
 <a href="http://ask.sagemath.org/">Questions?</a>
-{# &middot;
-<a href="http://interact.sagemath.org/">Interact</a>
-#}
-{# <a href="http://spreadsheets.google.com/viewform?formkey=dDY2V092c2R4b3F3c0hSNFMycTFobWc6MA">Feedback</a> #}
 &middot;
 <a title="Donate to the UW {{ sage }} Foundation Fund"
    href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG">
     <b>Donate</b>
 </a>
-{# <a href="{{ 'search.html'|prefix }}">Search</a>:#}
-{#
-    <input onmouseover="javascript:this.focus();" class="small"
-       placeholder="Search ..." type="text" name="search" size="15" />
-#}
 </form>
 
 Online:
 <a href="https://cloud.sagemath.com/">SMC</a>
-{# <a href="http://www.sagenb.org/">sagenb</a> #}
 &middot;
 <a href="https://sagecell.sagemath.org/">SageCell</a>
 or
@@ -81,16 +48,14 @@ or
 <a href="{{ 'download.html'|prefix }}" downloadurl>v{{ version }} ({{ releasedate }})</a>
 &middot;
 
-<a href="https://plus.google.com/+sagemath/" style="text-decoration: none;"><img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="G+" width="16" height="16" style="border: 0;"/></a>
+<a href="https://plus.google.com/+sagemath/" style="text-decoration: none;">
+ <img src="https://ssl.gstatic.com/images/icons/gplus-16.png" alt="G+" width="16" height="16" style="border: 0;"/></a>
 
 <a href="https://www.facebook.com/pages/Sage-Math/26593144945">
     <img alt="F" src="{{ 'pix/facebook-favicon.ico'|prefix }}" width="16" height="16" /></a>
-{# <a href="https://www.linkedin.com/groups?gid=2010654">
-    <img alt="LI" src="{{ 'pix/linkedin-favicon.ico'|prefix }}" width="16" height="16"/></a>
-#}
 <a href="https://twitter.com/sagemath">
     <img alt="T" src="{{ 'pix/twitter-favicon.ico'|prefix }}" width="16" height="16"/></a>
-{# <a href="http://friendfeed.com/sagemath"><img alt="FF" src="{{ 'pix/friendfeed-favicon.ico'|prefix }}" width="16" height="16"/></a> #}
+ <img alt="FF" src="{{ 'pix/friendfeed-favicon.ico'|prefix }}" width="16" height="16"/></a> #}
 <strong>&middot;</strong>
 <form name="i18n" style="display:inline">
 <select style="" name="menu" onChange="location='http://www.sagemath.org/' + document.i18n.menu.options[document.i18n.menu.selectedIndex].value;">
@@ -104,21 +69,17 @@ or
 <option value="ru">русский язык</option>
 </select>
 </form>
-{%- endblock -%}
-</div>
-
 </div>
 
 <div id="sage-nav-buffer" style="display: none"></div>
 
 <ul id="sage-nav">
-{%- block menu -%}
 <li><a href="{{ 'index.html'|prefix }}">Home</a>
 <ul>
  <li><a href="{{ 'search.html'|prefix }}">Search</a></li>
- <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">
+  Donate</a></li>
  <li><a href="{{ 'development-ack.html'|prefix }}">Acknowledgments</a></li>
- {# <li><a href="http://wiki.sagemath.org/gsoc10">Get Involved</a></li> #}
  <li><a href="http://wiki.sagemath.org/Workshops">{{ sage }} Days</a></li>
 </ul>
 </li>
@@ -168,12 +129,10 @@ or
  <li><a href="{{ 'download-mac.html'|prefix }}">Mac OSX</a></li>
  <li><a href="{{ 'download-linux.html'|prefix }}">Linux</a></li>
  <li class="section"><a href="{{ 'download-source.html'|prefix }}">Source (stable)</a></li>
-{# <li><a href="{{ 'src-old/'|prefix }}">Old Source</a></li> #}
  <li><a href="{{ 'download-latest.html'|prefix }}">Source (devel)</a></li>
  <li class="section"><a href="{{ 'download-liveusb.html'|prefix }}">Live USB Key</a></li>
  <li class="section"><a href="{{ 'download-packages.html'|prefix }}">Packages (SPKG)</a></li>
  <li class="section"><a href="{{ docroot }}/html/en/installation">Install Guide</a></li>
-{# <li><a href="{{ 'mirror/src/changelogs/'|prefix }}">Release Notes</a></li> #}
  <li><a href="{{ 'mirrors.html'|prefix }}">Mirrors</a></li>
 </ul>
 </li>
@@ -203,17 +162,12 @@ or
  <li><a href="http://wiki.sagemath.org/">{{ sage }} Wiki</a></li>
  <li><a href="https://groups.google.com/forum/#!forum/sage-devel">Report a bug</a></li>
  <li><a href="{{ git }}">{{ sage }} Code Repository</a></li>
- <li class="section"><a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
+ <li class="section">
+  <a href="https://secure.gifts.washington.edu/as_mathematics/gift.asp?page=make&amp;Code=MATSAG" class="ext">Donate</a></li>
  <li><a href="{{ 'contact.html'|prefix }}">Contact</a></li>
 </ul>
 </li>
-{%- endblock -%}
 </ul>
-
-{%- block content -%}
-{%- endblock -%}
-{%- block bottom -%}
-{%- endblock -%}
 
 <div style="height:auto;min-height:50px;"> </div>
 <div id="footer" class="center">
@@ -235,16 +189,7 @@ or
 </tr>
 
 <tr style="height: 70px;">
-<td align="right" colspan="1">
 
-<a style="background:none;" href="//www.clustrmaps.com/map/Sagemath.org">
-    <img width="65" height="42"
-    style="border:0px;"
-    id="clustrMapsImg"
-    src="http://www3.clustrmaps.com/stats/maps-no_clusters/sagemath.org-thumb.jpg" alt="Locations of visitors to this page" />
-</a>
-
-</td>
 <td></td>
 <td align="center" style="padding-bottom: 10px;vertical-align: center">
 <div id="histats_counter"></div>
@@ -260,22 +205,17 @@ or
 <td></td>
 <td>
 <div id="fb-root"></div>
-<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+<div class="fb-like" data-href="https://www.facebook.com/pages/Sage-Math/26593144945" data-layout="button_count" 
+     data-action="like" data-show-faces="false" data-share="false"></div>
 </td>
 <td></td>
 <td>
-<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" data-text="I like @sagemath" data-related="sagemath">Tweet</a>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://sagemath.org" 
+   data-text="I like @sagemath" data-related="sagemath">Tweet</a>
 </td>
 </tr>
 </table>
 </div>
 
-{%- set trademark = trademark|default(False) -%}
-{% if trademark %}
-<div class="trademark">Microsoft and Windows are either registered trademarks or trademarks of Microsoft Corporation in the United States and/or other countries.</div>
-{% endif %}
-
-{%- block footer -%}
-{%- endblock -%}
 </body>
 </html>
