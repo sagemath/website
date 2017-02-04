@@ -35,6 +35,11 @@ show:
 open:
 	python -c 'from webbrowser import open; open("./www/index.html")'
 
+update:
+	git checkout master
+	git pull --ff-only
+	git submodule foreach "git checkout master; git pull --ff-only origin master"
+
 style:
 	autopep8 -i -aaa -j -1 --ignore=E501 *.py scripts/*.py conf/*.py
 
