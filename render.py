@@ -194,7 +194,7 @@ def render():
             render_task(task)
 
         if nb_walks % (len_walks // 27) == 0:
-            log("processing: %5.1f%%" % (100. * nb_walks / len_walks), nl=False)
+            log("processing: %5.1f%% of %d documents" % (100. * nb_walks / len_walks, len_walks), nl=False)
         nb_walks += 1
 
     log("processing: done", nl=False)
