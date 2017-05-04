@@ -83,6 +83,12 @@ Redirect 301 /en/ http://www.sagemath.org/
 Redirect 301 /src-old http://boxen.math.washington.edu/home/sagemath/www-files/src-old/
 Redirect 301 /src-old/ http://boxen.math.washington.edu/home/sagemath/www-files/src-old/
 
+# redirect documentation to doc.sagemath.org
+RewriteCond %{HTTP_HOST} ^www.sagemath.org$ [NC]
+RewriteRule ^doc(.*)$ http://doc.sagemath.org/html/en$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^sagemath.org$ [NC]
+RewriteRule ^doc(.*)$ http://doc.sagemath.org/html/en$1 [R=301,L]
+
 # old wrong doc directory rewrite
 RewriteCond %{HTTP_HOST} ^www.sagemath.org$ [NC]
 RewriteRule ^doc/html(.*)$ http://www.sagemath.org/doc$1 [R=301,L]
