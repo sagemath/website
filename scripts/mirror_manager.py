@@ -153,7 +153,7 @@ TS_INTRO = r"""
 {% if mirrordir != "" %}
   {% set mirrordir = mirrordir + "/" %}
 {% endif %}
-Please select a download server close to your location below.
+Before choosing your download, please select a download server close to your location from the list below.
 """
 
 TS_OUTRO = """

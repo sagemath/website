@@ -167,10 +167,6 @@
   cat: a
   name: Nanyang Technological University, Singapore
   url: http://jambu.spms.ntu.edu.sg/sage/
-- active: true
-  cat: e
-  name: GARR, Italy
-  url: http://sage.mirror.garr.it/mirrors/sage/
 - active: false
   cat: e
   country: ee
