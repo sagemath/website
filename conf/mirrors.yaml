@@ -134,7 +134,7 @@
 - active: true
   cat: e
   name: Universidade do Porto, Portugal
-  url: http://mirrors.fe.up.pt/pub/sage/
+  url: https://mirrors.up.pt/pub/sage/
 - active: true
   cat: e
   name: 'Εθνικό Μετσόβιο Πολυτεχνείο, Greece'
