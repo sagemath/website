@@ -204,8 +204,8 @@ function initClustermap() {
  function _cantload() {
    var img = document.getElementById("clustrMapsImg");
    img.onerror = null;
-   img.src = "http://www.clustrmaps.com/images/clustrmaps-back-soon.jpg";
-   document.getElementById("clustrMapsLink").href = "http://www.clustrmaps.com";
+   img.src = "https://www.clustrmaps.com/images/clustrmaps-back-soon.jpg";
+   document.getElementById("clustrMapsLink").href = "https://www.clustrmaps.com";
  }
  var img = document.getElementById("clustrMapsImg");
  img.onerror = _cantload;
