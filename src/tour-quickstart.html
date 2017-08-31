@@ -156,9 +156,9 @@ Docstring:
     <td class="leftpadding">
      <pre class="code">
 sage: <strong>f = 1 - sin(x)^2</strong>
-sage: <strong>print f</strong>
+sage: <strong>print(f)</strong>
 -sin(x)^2 + 1
-sage: <strong>print maxima(f)  # pretty printing</strong>
+sage: <strong>print(maxima(f))  # pretty printing</strong>
                                          2
                                   1 - sin (x)
 sage: <strong>f.simplify_trig()</strong>
@@ -169,13 +169,13 @@ sage: <strong>f(x=pi/3)</strong>
 1/4
 sage: <strong>integrate(f, x).simplify_trig()</strong>
 1/2*sin(x)*cos(x) + 1/2*x
-sage: <strong>print maxima(integrate(f, x).simplify_trig())</strong>
+sage: <strong>print(maxima(integrate(f, x).simplify_trig()))</strong>
                                cos(x) sin(x)   x
                                ------------- + -
                                      2         2
 sage: <strong>f.differentiate(2).substitute({x: 3/pi})</strong>
 2*sin(3/pi)^2 - 2*cos(3/pi)^2
-sage: <strong>print maxima(f.differentiate(2).substitute({x: 3/pi}))</strong>
+sage: <strong>print(maxima(f.differentiate(2).substitute({x: 3/pi})))</strong>
                                 2  3          2  3
                            2 sin (---) - 2 cos (---)
                                   %pi           %pi
@@ -208,8 +208,8 @@ sage: <strong>find_root(g, 0, 2)</strong>
 sage: <strong>var(&#39;x y z&#39;)</strong>
 (x, y, z)
 
-sage: <strong>f= (1 + (y+x^2)^2 + (1+z+y^2)^2)^2</strong>
-sage: <strong>print f</strong>
+sage: <strong>f = (1 + (y+x^2)^2 + (1+z+y^2)^2)^2</strong>
+sage: <strong>print(f)</strong>
 
             2     2         2 2     2
      ((z + y  + 1)  + (y + x )  + 1)
