@@ -19,7 +19,8 @@
  </div>
 
  <div class="narrow txt border bluebg round">
-  <div  class="large txt">  
+  <div  class="large txt">
+    <p><strong>Note: </strong> For <strong>Windows</strong> installer binaries see the <a href="https://github.com/sagemath/sage-windows/releases">GitHub releases page</a>.</p>
     {{ mirrors("") }}
   </div>
  </div>
@@ -43,19 +44,34 @@
 
     <td>
      <div class="txt">
-      To run {{ sage }} on Microsoft Windows you need the following:
-      <ol>
-       <li><a href="./download-windows.html">Image of a {{ sage }} installation for virtualization</a></li>
-       <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
-      </ol>
+      <a href="./download-windows.html">Download Windows binaries</a>
      </div>
-
-     <div class="">
-      The current VirtualBox solution provides you with an encapsulated
-      and tested system. It allows to use the {{ sage }} notebook in your web
-      browser with no noticable speed loss compared to a native Linux
-      install.
-     </div>
+      To run {{ sage }} on Microsoft Windows there are two options:
+      <ul>
+        <li>
+          For {{ sage }} 8.0 and up a native binary installer is now available.
+          To use the installer you will need:
+          <ol>
+            <li>A 64-bit version of Windows 7 or up; there is not currently a 32-bit build</li>
+            <li>Roughly 5 GB of free disk space (plus 1 GB for the installer file itself)
+            <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
+          </ol>
+        </li>
+        <li>
+          If you can't use the binary installer for some reason, or simply
+          prefer the {{ sage }} VirtualBox appliance, you can us it with the following:
+          <ol>
+           <li><a href="./download-windows.html">Image of a {{ sage }} installation for virtualization</a></li>
+           <li>Read these <a href="http://wiki.sagemath.org/SageAppliance">additional instructions</a>
+          </ol>
+          <p>
+            The current VirtualBox solution provides you with an encapsulated
+            and tested system. It allows to use the {{ sage }} notebook in your web
+            browser with no noticable speed loss compared to a native Linux
+            install.
+         </p>
+        </li>
+      </ul>
     </td>
    </tr>
 
