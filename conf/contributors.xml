@@ -866,6 +866,13 @@ trac="slabbe" />
  description="bug fixes"
  trac="klee"/>
 <contributor
+ name="Samuel Lelièvre"
+ work="LMO, U Paris-Sud; CNRS; UNAM Morelia"
+ description="advocacy; organize Sage Days; user support; wiki"
+ location="UNAM Campus Morelia, Morelia, Mexico"
+ url="https://wiki.sagemath.org/slelievre"
+ trac="slelievre"/>
+<contributor
  name="Julien Leroy"
  work="LAMFA, Université de Picardie Jules Verne"
  location="80000 Amiens, France"
