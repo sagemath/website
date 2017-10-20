@@ -9,6 +9,21 @@
 <a href="{{ 'index.html'|prefix }}">back to {{ sage }} main page</a>
 {% endblock %}
 
+{% macro cocalc(basename) %}
+<div style="border: 2px solid #c9c9f9; border-radius: 5px; overflow: hidden; margin: 10px 0px"><i>
+  <img src="../pix/cocalc-transparent-logo-192x192.png" height=48 width=48 style="float: left; margin: 5px 15px 5px 5px;" />
+  <div>
+      <strong>NOTE:</strong>
+      <i>
+      This lesson is also available as executable worksheets on CoCalc.
+      First, create an account and a project.  Then you can copy these files to your project and start working right away.
+      <a href="https://cocalc.com/projects/487587b1-8b24-401a-92d9-a9b930edd53d/files/JUPYTER/{{ basename }}.ipynb?utm_source=sagemath.org&amp;utm_medium=calctut">{{ basename }}.ipynb (Jupyter Notebook)</a> and
+      <a href="https://cocalc.com/projects/487587b1-8b24-401a-92d9-a9b930edd53d/files/SAGEWS/{{ basename }}.sagews?utm_source=sagemath.org&amp;utm_medium=calctut">{{ basename }}.sagews (SageMath Worksheet)</a>.
+      </i>
+    </div>
+</div>
+{% endmacro %}
+
 {% block menu %}
 <div id="header-navbar">
 <table id="controlpanel">
