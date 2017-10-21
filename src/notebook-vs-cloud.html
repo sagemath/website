@@ -1,36 +1,38 @@
 {% extends 'base.html' %}
-{% set title = "SageNB vs. SageMathCloud" %}
+{% set title = "CoCalc" %}
 
 {% block content %}
 <div class="narrow">
-<h1>{{ sage }}NB vs. SageMathCloud</h1>
+<h1>CoCalc</h1>
 
 <div>
-{{ sage }} offsers
-<a href="https://cloud.sagemath.com/">a new online service</a>
+There is
+<a href="https://cocalc.com/">an online service</a>
 for running {{ sage }} computations online.
-It has been redesigned from the ground up to be much more reliable, 
+It has been redesigned from the ground up to be much more reliable,
 sustain higher load and offer a lot more features.
+It can be considered as the successor of the no longer existing "SageNB" online service.
 </div>
 
-<h2>Decide Below</h2>
+<h2>Start</h2>
 <ul style="font-size: 120%">
-<li><b>Previous: <a href="http://www.sagenb.org/">{{ sage }} Notebook</a></b><br/>
-    Contains your your old account and data.</li>
-
-<li><b>New &amp; Improved: <a href="https://cloud.sagemath.com/">{{ sage }}math Cloud</a></b><br/>
-    Where you can import existing *.sws Notebook files into this new service.
+<li><b><a href="https://cocalc.com/">CoCalc: collaborative calculation in the cloud</a></b><br/>
+    You can import *.sws worksheet files or work with Jupyter Notebooks (select the "SageMath" kernel).
+    </li>
+<li>Read the <b><a href="http://tutorial.cocalc.com/">CoCalc Tutorial</a></b><br/>
+    to learn more about what you can do and how to use it for teaching a class.</li>
 </ul>
 
-<h2>New Chrome Extension</h2>
+<h2>Chrome Extension</h2>
 <div>Install the
-<a href="https://chrome.google.com/webstore/detail/the-sagemath-cloud/eocdndagganmilahaiclppjigemcinmb">new Chrome Extension for SageMathCloud</a>.
+<a href="https://chrome.google.com/webstore/detail/the-sagemath-cloud/eocdndagganmilahaiclppjigemcinmb">Chrome Extension for CoCalc</a>.
 </div>
 
-<h2>Existing Accounts</h2>
+<h2>Existing Files</h2>
 <div>
-To transfer existing *.sws files to the new SageMathCloud service,
-download the notebook files from the old service and import them into a new project.
+To transfer existing *.sws files to the new CoCalc service,
+download the notebook files from your current SageNB setup and upload them into a new project on CoCalc.
+When you open them, they'll be converted to SageWorksheets.
 </div>
 
 </div>
