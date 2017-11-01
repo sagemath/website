@@ -253,3 +253,8 @@
   flag: za
   name: University of the Free State, South Africa
   url: http://mirror.ufs.ac.za/sagemath/
+- active: true
+  cat: e
+  country: nl
+  name: KoDDoS Mirror
+  url: https://mirror.koddos.net/sagemath/
