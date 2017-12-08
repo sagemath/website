@@ -1,0 +1,519 @@
+﻿Sage 7.6 was released on 25 March 2017. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://doc.sagemath.org/html/en/installation/index.html
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 97 people contributed to this release. Of those, 19 made
+their first contribution to Sage:
+
+  - Alba Málaga [first contribution]
+  - Amy Pang
+  - Andrew Mathas
+  - Andrey Novoseltsev
+  - André Apitzsch
+  - Anne Schilling
+  - Arpit Merchant
+  - Arthur Lubovsky
+  - Ashutosh Ahelleya [first contribution]
+  - Aurel Page [first contribution]
+  - Ben Hutz
+  - Ben Salisbury
+  - Bruno Grenet
+  - Chris Wuthrich
+  - Christian Nassau
+  - Clemens Heuberger
+  - Clément Pernet
+  - Daniel Augot
+  - Daniel Gulotta [first contribution]
+  - Daniel Krenn
+  - Darij Grinberg
+  - David Coudert
+  - David Lucas
+  - David Roe
+  - Dima Pasechnik
+  - Dylan Rupel
+  - Emily Gunawan
+  - Emmanuel Charpentier
+  - Eric Gourgoulhon
+  - Erik Bray
+  - Erik Holmes [first contribution]
+  - Franco Saliola
+  - François Bissey
+  - Frederic Han
+  - Frédéric Chapoton
+  - Jang Soo Kim [first contribution]
+  - Javier Honrubia González
+  - Jean-Philippe Labbé
+  - Jean-Pierre Flori
+  - Jennifer Balakrishnan
+  - Jeroen Demeyer
+  - Jerome Benoit [first contribution]
+  - Jessica Striker
+  - Johan Rosenkilde
+  - Johannes Huisman [first contribution]
+  - John Cremona
+  - John Palmieri
+  - Jori Mäntysalo
+  - Julian Rüth
+  - Julien Lavauzelle
+  - Justine Falque [first contribution]
+  - Kevin Lui
+  - Kolja Knauer [first contribution]
+  - Kwankyu Lee
+  - Luca De Feo
+  - Marc Mezzarobba
+  - Marco Mancini
+  - Mark Saaltink
+  - Martin Rubey
+  - Martin von Gagern
+  - Matthias Koeppe
+  - Mee Seong Im
+  - Michael Orlitzky
+  - Michał Bejger [first contribution]
+  - Mike Zabrocki
+  - Moritz Firsching
+  - Nicolas M. Thiéry
+  - Nils Bruin
+  - Paul Fili
+  - Paul Masson
+  - Peleg Michaeli
+  - Peter Bruin
+  - Petru Valicov [first contribution]
+  - Ralf Stephan
+  - Rebecca Lauren Miller
+  - Rob Beezer
+  - Robert Bradshaw
+  - Rolf Morel [first contribution]
+  - Roswitha Rissner [first contribution]
+  - Rusydi H. Makarim
+  - Salvatore Stella
+  - Samuel Lelièvre
+  - Simon King
+  - Sourav Singh [first contribution]
+  - Stefan van Zwam
+  - Steven Trogdon
+  - Sébastien Labbé
+  - Tania Richmond [first contribution]
+  - Thierry Monteil
+  - Tobias Hansen [first contribution]
+  - Travis Scrimshaw
+  - Vincent Delecroix
+  - Vincent Klein [first contribution]
+  - Volker Braun
+  - Xavier Caruso
+  - Ximin Luo [first contribution]
+  - Yann Laigle-Chapuy
+
+* Release manager: Volker Braun.
+
+* We closed 362 tickets in this release.
+
+Merged in sage-7.6.beta0:
+
+#9536: Matthias Koeppe: python setup.py picks prefix from ~/.pydistutils.cfg [Reviewed by Erik Bray]
+#10206: David Coudert: Various issues in find_hamiltonian [Reviewed by Travis Scrimshaw]
+#18505: Rob Beezer: Enhance matrix similarity check [Reviewed by Vincent Delecroix, Travis Scrimshaw]
+#19598: Travis Scrimshaw: Implement affine type E_{6,7} bijection [Reviewed by Frédéric Chapoton]
+#20058: Jori Mäntysalo: LatticePosets: Add congruence-related functions / part 1 [Reviewed by Martin Rubey]
+#20092: Emily Gunawan: Inconsistent doc for Graph.matching() and fixing Edmonds algorithm with labeled graphs [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#20100: David Lucas, Julien Lavauzelle: A new structure for Cyclic codes [Reviewed by Daniel Augot, Yann Laigle-Chapuy]
+#20745: John Palmieri: Implement simplicial sets [Reviewed by Christian Nassau]
+#20939: Ralf Stephan: Fix crash and remove pexpect-Maxima usage in Y(m,n) [Reviewed by Travis Scrimshaw]
+#21200: Daniel Krenn: unbound the lazy_list formatter [Reviewed by Clemens Heuberger]
+#21272: Vincent Delecroix: normalization (and hash) for Laurent polynomials is broken [Reviewed by Julian Rüth]
+#21354: Jori Mäntysalo: LatticePoset: certificates to non-modularity [Reviewed by Travis Scrimshaw]
+#21429: Ralf Stephan: Rational log not working [Reviewed by Travis Scrimshaw]
+#21497: Daniel Gulotta: modular symbols - is_cuspidal sometimes incorrectly returns False [Reviewed by Vincent Delecroix, Frédéric Chapoton]
+#21581: Jeroen Demeyer: Upgrade gp2c to 0.0.10 [Reviewed by Thierry Monteil]
+#21595: Michael Orlitzky: Add (cross) positive operator methods for convex cones [Reviewed by Andrey Novoseltsev]
+#21744: Emmanuel Charpentier: make xz a standard package [Reviewed by Matthias Koeppe]
+#21756: Jeroen Demeyer: Upgrade to PARI 2.9.1 [Reviewed by John Cremona, Jean-Pierre Flori, Vincent Delecroix]
+#21799: Peter Bruin: JH(28, [15]).decomposition() raises ValueError [Reviewed by Travis Scrimshaw]
+#21806: Luca De Feo, Jeroen Demeyer: Allow multiple instances of the PariInstance object [Reviewed by Vincent Delecroix, Luca De Feo]
+#21807: Vincent Delecroix: Move gentoobj and rename it to gen_to_sage [Reviewed by Luca De Feo]
+#21808: Vincent Delecroix: Change gen.python() to return Python objects [Reviewed by Luca De Feo]
+#21809: Jeroen Demeyer: Pythonize deprecation warnings in PARI interface [Reviewed by Luca De Feo]
+#21810: Jeroen Demeyer: Move calculation of PARI stack size out of __init__ [Reviewed by Luca De Feo]
+#21817: Rusydi H. Makarim: Implements change_ring() for BooleanPolynomialRing [Reviewed by Vincent Delecroix]
+#21833: Daniel Krenn: conversion from symbolic expression to laurent polynomial [Reviewed by Ralf Stephan]
+#21842: Jean-Pierre Flori: Update PARI databases [Reviewed by Jeroen Demeyer]
+#21852: Robert Bradshaw: Precision bug in computing sqrts mod p^e [Reviewed by Vincent Delecroix]
+#21918: Sébastien Labbé: Adding subgraph_clusters argument to graphviz_string [Reviewed by David Coudert]
+#21935: Vincent Delecroix: implement round for number field elements with real embedding [Reviewed by Jean-Philippe Labbé, Sébastien Labbé]
+#21951: Frédéric Chapoton: implement random planar bicubic graphs in a bijective way [Reviewed by Dima Pasechnik]
+#21966: Daniel Krenn: number_of_terms for laurent polynomials [Reviewed by Frédéric Chapoton]
+#21968: Daniel Krenn: quotient/remainder for multivariate laurent polynomials [Reviewed by Travis Scrimshaw]
+#21992: Clemens Heuberger, Roswitha Rissner: Compute J-ideal of a matrix [Reviewed by Daniel Krenn, Travis Scrimshaw]
+#21999: Daniel Krenn: MPolynomial: coefficients not in base ring [Reviewed by Travis Scrimshaw]
+#22013: Frédéric Chapoton: py3 removing a few cmp() in rings [Reviewed by Travis Scrimshaw]
+#22019: Frédéric Chapoton: py3 remove cmp() in two pyx files in rings [Reviewed by Travis Scrimshaw]
+#22048: Frédéric Chapoton: py3 remove cmp() in number_field/number_field_element (pyx) [Reviewed by Travis Scrimshaw]
+#22058: Emmanuel Charpentier: Upgrade git to 2.11.0 [Reviewed by Jeroen Demeyer, Dima Pasechnik]
+#22059: Frédéric Chapoton: little cleanup of poset examples [Reviewed by Travis Scrimshaw]
+#22060: Frédéric Chapoton: py3 replace <type 'str'> by <... 'str'> in doctests [Reviewed by Travis Scrimshaw]
+#22064: Clemens Heuberger, Daniel Krenn: LaurentPolynomial: use __call__ in subs [Reviewed by Clemens Heuberger, Daniel Krenn]
+#22065: Daniel Krenn: latex and pretty representation of Hrepresentations of polyhedra [Reviewed by Travis Scrimshaw]
+#22076: Jeroen Demeyer: cmp -> richcmp for polynomials [Reviewed by Marc Mezzarobba]
+#22077: John Cremona: Upgrade eclib to version 20170104 [Reviewed by Jeroen Demeyer]
+#22085: François Bissey: Don't include gslcblas in gsl.pc [Reviewed by Steven Trogdon]
+#22093: Matthias Koeppe: Polyhedron_normaliz: Fix up for stricter rectangular_box_points interface from #18029 [Reviewed by Vincent Delecroix]
+#22105: Mike Zabrocki: Implement k-split basis for kBoundedSubspace of symmetric functions [Reviewed by Anne Schilling]
+#22110: Dima Pasechnik: downgrade modular_decomposition package to experimental [Reviewed by Jeroen Demeyer]
+#22114: Frédéric Chapoton: change type to ... in src/doc [Reviewed by Jori Mäntysalo]
+#22118: Frédéric Chapoton: py3 get rid of one .itervalues in a py file [Reviewed by Travis Scrimshaw]
+#22119: Jeroen Demeyer: sage.misc.six: in u(), assume UTF-8 [Reviewed by Frédéric Chapoton]
+#22120: Daniel Krenn: powers of 1 in QQbar [Reviewed by Clemens Heuberger]
+#22121: Frédéric Chapoton: py3 : future-proof map in doctests of combinat folder [Reviewed by Travis Scrimshaw]
+#22123: Paul Masson: Update Three.js template [Reviewed by Andrey Novoseltsev]
+#22124: Frédéric Chapoton: py3 one detail [Reviewed by Dima Pasechnik]
+#22125: Jeroen Demeyer: Upgrade Jupyter packages [Reviewed by François Bissey]
+#22127: Frédéric Chapoton: py3 : more future-proof map in doctests (outside combinat) [Reviewed by Jori Mäntysalo]
+#22163: Jeroen Demeyer: giac has undeclared dependency on libpng [Reviewed by Jean-Pierre Flori]
+
+Merged in sage-7.6.beta1:
+
+#9084: Kwankyu Lee, Robert Bradshaw: Move sage/gsl [Reviewed by Jeroen Demeyer]
+#10256: John Cremona: make -1 modular symbols from eclib available to elliptic curves [Reviewed by Chris Wuthrich]
+#17680: Jori Mäntysalo: bug in Singulars factorize() [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#18631: Travis Scrimshaw: Implement Rational Cherednik Algebras [Reviewed by Mee Seong Im]
+#19943: Julian Rüth: 0^0 in unramified extensions [Reviewed by Travis Scrimshaw]
+#21496: Kevin Lui: Merge of GSoC modabvar project [Reviewed by Frédéric Chapoton]
+#21987: Javier Honrubia González: Add pictures to hyperbolic_polygon.py [Reviewed by Paul Masson]
+#22001: Julian Rüth: Category of number field morphisms is always Rings [Reviewed by David Roe]
+#22036: Frédéric Chapoton: py3 remove cmp() in comparison of padics printing modes (pyx) [Reviewed by Travis Scrimshaw]
+#22045: David Coudert: path_decomposition just returns vertex_separation output, it should derive the path decomposition instead [Reviewed by Rolf Morel]
+#22061: Erik Bray: Don't hard-code the path to thebe.js [Reviewed by Volker Braun]
+#22074: Jeroen Demeyer: Ensure that NaN != NaN in RealField [Reviewed by Marc Mezzarobba]
+#22086: Paul Masson: Minor improvements to harmonic number documentation [Reviewed by Vincent Delecroix]
+#22091: Peter Bruin: Allow coercion from matrix groups to matrix rings [Reviewed by Travis Scrimshaw]
+#22096: Paul Masson: Update bad documentation links [Reviewed by Travis Scrimshaw]
+#22097: Paul Masson: Update old links to Google code [Reviewed by Frédéric Chapoton]
+#22128: Peter Bruin: Fix pickling of FinitelyGeneratedMatrixGroup_generic [Reviewed by Travis Scrimshaw]
+#22129: Travis Scrimshaw: Remove gens argument from Group.__init__ [Reviewed by Peter Bruin]
+#22130: Peter Bruin: Remove __cmp__() methods in sage.groups.matrix_gps.finitely_generated [Reviewed by Frédéric Chapoton]
+#22133: Jori Mäntysalo: LatticePoset: Add certificate for is_meet_semidistributive [Reviewed by Travis Scrimshaw]
+#22134: Frédéric Chapoton: unicode art for binary trees [Reviewed by Travis Scrimshaw]
+#22135: Jeroen Demeyer: MPFR_PREC_MIN and MPFR_PREC_MAX are of type mpfr_prec_t [Reviewed by Travis Scrimshaw]
+#22141: Frédéric Chapoton: pep8 and py3 cleanup of interface sage0 [Reviewed by André Apitzsch]
+#22144: Frédéric Chapoton: simplify the Graphics3d object of polyhedra [Reviewed by Alba Málaga]
+#22153: Marc Mezzarobba: speed up addition of generic dense matrices [Reviewed by Jeroen Demeyer]
+#22160: Salvatore Stella: Use centralized references in ClusterSeed [Reviewed by Emily Gunawan, Travis Scrimshaw]
+#22178: Jessica Striker, Jennifer Balakrishnan, Travis Scrimshaw: Update the Sage Development Process documentation for new users [Reviewed by Dima Pasechnik, Matthias Koeppe]
+#22183: Jeroen Demeyer: Rename PariInstance -> Pari [Reviewed by Luca De Feo]
+#22185: Jeroen Demeyer: Rename gen -> Gen [Reviewed by Vincent Delecroix]
+#22195: Jeroen Demeyer: Allow compiling PARI interface without anal.h [Reviewed by Vincent Delecroix]
+#22203: Frédéric Chapoton: standardize the utf8 coding declaration [Reviewed by Travis Scrimshaw]
+#22214: André Apitzsch: use explicit relative cimports in cython files [Reviewed by Travis Scrimshaw]
+#22220: François Bissey: Remove instance of SAGE_SRC from sage runtime introduced by #20745 [Reviewed by John Palmieri]
+#22229: Jori Mäntysalo: LatticePoset: add is_simple() [Reviewed by Travis Scrimshaw]
+#22230: Frédéric Chapoton: py3 cleanup of pbori.pyx [Reviewed by Travis Scrimshaw]
+#22231: Frédéric Chapoton: py3 cleanup of laurent_polynomial.pyx [Reviewed by Travis Scrimshaw]
+#22232: Frédéric Chapoton: py3 cleanup of symmetric_reduction.pyx [Reviewed by Travis Scrimshaw]
+#22233: Frédéric Chapoton: py3 replace <type 'int'> by <... 'int'> in doctests [Reviewed by Travis Scrimshaw]
+#22234: Frédéric Chapoton: py3 no xrange again [Reviewed by Travis Scrimshaw]
+#22236: Frédéric Chapoton: py3 removal of cmp() in polydict.pyx [Reviewed by Travis Scrimshaw]
+#22239: Jeroen Demeyer: Don't use six in sage_setup/autogen/pari [Reviewed by Frédéric Chapoton]
+
+Merged in sage-7.6.beta2:
+
+#17527: Peter Bruin: Echelon form of a matrix is sometimes pickled incorrectly [Reviewed by Travis Scrimshaw]
+#18920: Dima Pasechnik: upgrade Maxima  to version >= 5.39 [Reviewed by Travis Scrimshaw, Emmanuel Charpentier, François Bissey, Jeroen Demeyer, Nils Bruin]
+#19625: Travis Scrimshaw: Lift faster digraph from alcove path to category of highest weight crystals [Reviewed by Arthur Lubovsky]
+#20729: Jeroen Demeyer: doctest runner breaks loading modules from packages that use relative imports [Reviewed by Erik Bray]
+#21117: Ben Hutz: specialzation for polynomials, schemes, and morphisms [Reviewed by Paul Fili, Erik Holmes, Rebecca Lauren Miller]
+#21533: Frédéric Chapoton: add a method to reach lmfdb webpage of elliptic curves over Q [Reviewed by John Cremona]
+#21594: Martin Rubey: Fomin's growth diagrams and Schensted-like algorithms [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#22053: Jori Mäntysalo: Doctest continuation marker / several files [Reviewed by Travis Scrimshaw]
+#22092: Peter Bruin: Remove custom method Group.__contains__() [Reviewed by Travis Scrimshaw]
+#22122: Andrey Novoseltsev: Remove deprecated code in geometry [Reviewed by Julian Rüth]
+#22132: Moritz Firsching: Make base ring appear in self representation of PointConfiguration [Reviewed by Matthias Koeppe]
+#22137: Jori Mäntysalo: LatticePoset: Add certificate for is_join_semidistributive [Reviewed by Travis Scrimshaw]
+#22140: Daniel Krenn: remove "import sage" from sage.rings.asymptotic.* [Reviewed by Clemens Heuberger, Frédéric Chapoton]
+#22172: Marc Mezzarobba: faster coercion from Python ints to ℚ(√a) [Reviewed by Travis Scrimshaw]
+#22188: John Palmieri: Document Sage's documentation style, in particular use ".. FOO::" rather than ".. foo::" [Reviewed by Travis Scrimshaw]
+#22198: Vincent Delecroix, Jeroen Demeyer: Make cypari2 Python2 / Python3 compatible [Reviewed by Jeroen Demeyer, Vincent Delecroix]
+#22199: Frédéric Chapoton: cleanup of two files inside stats/distribution [Reviewed by Jori Mäntysalo]
+#22205: Frédéric Chapoton: add more links to PARI documentation [Reviewed by Travis Scrimshaw]
+#22207: Justine Falque: Fix tutorial_free_modules.py [Reviewed by Samuel Lelièvre]
+#22210: Peter Bruin: Remove obsolete special case in PARI gen.eval() [Reviewed by Jeroen Demeyer]
+#22212: Peter Bruin: Improve method PowerSeries._pari_() [Reviewed by Travis Scrimshaw]
+#22216: Peter Bruin: Constructing a power series from PARI ignores the precision [Reviewed by Julian Rüth]
+#22226: Paul Masson: Make minimal Three.js a standard package [Reviewed by Andrey Novoseltsev]
+#22238: Jori Mäntysalo: LatticePoset: Is subdirectly irreducible? [Reviewed by Travis Scrimshaw]
+#22240: Jeroen Demeyer: Use relative imports in sage_setup/autogen/pari [Reviewed by Vincent Delecroix]
+#22242: Frédéric Chapoton: py3 : use richcmp for ring morphisms [Reviewed by Julian Rüth, Travis Scrimshaw]
+#22245: Frédéric Chapoton: py3: no cmp() in noncommutative ideals [Reviewed by Julian Rüth]
+#22246: Frédéric Chapoton: pep8 cleanup of graph_latex [Reviewed by Jori Mäntysalo]
+#22248: Frédéric Chapoton: typos in the word isomorphism [Reviewed by Jori Mäntysalo]
+#22251: Travis Scrimshaw: Fix lie_polynomial [Reviewed by Frédéric Chapoton]
+#22254: David Coudert: Speedup computation of bridges [Reviewed by Travis Scrimshaw]
+#22255: Frédéric Chapoton: py3 : use richcmp for padic ring morphisms [Reviewed by Travis Scrimshaw]
+#22259: Frédéric Chapoton: py3 do not call cmp() in code of real_mpfr [Reviewed by Travis Scrimshaw]
+#22260: François Bissey: mpir fails to build with sed 4.3+ [Reviewed by Martin von Gagern]
+#22262: Paul Masson: Three.js: Fix axes label offsets for significant aspect ratio adjustments [Reviewed by Andrey Novoseltsev]
+#22263: Stefan van Zwam: Regular matroid isomorphism problem [Reviewed by Travis Scrimshaw]
+#22266: Frédéric Chapoton: py3: get rid of cmp() in element_wrapper [Reviewed by Travis Scrimshaw]
+#22270: André Apitzsch: py3 compatible imports in sage/matrix [Reviewed by Frédéric Chapoton]
+
+Merged in sage-7.6.beta3:
+
+#15601: Peter Bruin: Implementation of power series using PARI [Reviewed by Travis Scrimshaw]
+#18680: Travis Scrimshaw: Implement Q-systems [Reviewed by Emily Gunawan]
+#20001: David Lucas, Johan Rosenkilde: Decoders and types for linear codes [Reviewed by Johan Rosenkilde]
+#20087: David Lucas: `__call__(message)` on a linear code or encoder should return a codeword. [Reviewed by Clément Pernet]
+#20898: Clément Pernet: Syndrome decoder for a linear code sometimes sets wrong decoder type [Reviewed by Bruno Grenet]
+#20899: David Lucas: `AbstractLinearCode` should throw sensible error messages on printing [Reviewed by Bruno Grenet]
+#20914: Dima Pasechnik: Upgrade to GAP 4.8.6 [Reviewed by Volker Braun]
+#20918: Jang Soo Kim, Jessica Striker: Implement plane partitions class [Reviewed by Emily Gunawan, Travis Scrimshaw]
+#20953: David Lucas: Improve minimum_distance for linear codes [Reviewed by Julien Lavauzelle]
+#22083: Julian Rüth: Teichmüller representatives wrong in ZpCA Eisenstein extensions [Reviewed by Frédéric Chapoton]
+#22152: Marc Mezzarobba, Travis Scrimshaw: speed up generic polynomials [Reviewed by Travis Scrimshaw, Marc Mezzarobba]
+#22189: Emmanuel Charpentier: Document SSL dependency, recommend OpenSSL [Reviewed by Julian Rüth, André Apitzsch, Travis Scrimshaw]
+#22196: Frédéric Chapoton: export using the binary STL file format [Reviewed by Alba Málaga]
+#22200: Marco Mancini: Parallelize Lie derivative computation [Reviewed by Travis Scrimshaw]
+#22219: Ralf Stephan: Upgrade to pynac-0.7.4 [Reviewed by Volker Braun]
+#22221: Jeroen Demeyer: Fix dependency on PARI headers [Reviewed by Vincent Delecroix]
+#22222: Jeroen Demeyer: Remove _pari_instance global [Reviewed by Luca De Feo]
+#22227: Matthias Koeppe: Document make V=0 (silencing the build) [Reviewed by John Palmieri, Jeroen Demeyer, Dima Pasechnik]
+#22235: Jeroen Demeyer: pip-lock broken for global sage installs [Reviewed by Matthias Koeppe]
+#22249: David Coudert: Test if a graph is a cycle [Reviewed by Mark Saaltink]
+#22256: Frédéric Chapoton: py3: no cmp() in padics pow_computer [Reviewed by Travis Scrimshaw]
+#22258: Frédéric Chapoton: py3 do not call cmp() in code of real_mpfi [Reviewed by Travis Scrimshaw]
+#22267: Frédéric Chapoton: py3 get rid of cmp() in btquotient.py [Reviewed by Travis Scrimshaw]
+#22269: Ben Hutz: extend segre to product of projective space with more than two components [Reviewed by Rebecca Lauren Miller]
+#22271: Frédéric Chapoton: py3 prepare some cases of zip behaviour [Reviewed by Jeroen Demeyer]
+#22272: Jeroen Demeyer: Gap install error "Text file busy" [Reviewed by Dima Pasechnik]
+#22273: André Apitzsch: py3 compatible imports in sage/rings [Reviewed by Frédéric Chapoton]
+#22275: Andrey Novoseltsev: Implement duality of faces for reflexive polytopes [Reviewed by Julian Rüth]
+#22278: Simon King: Fix slicing of quiver paths [Reviewed by Travis Scrimshaw]
+#22282: Frédéric Chapoton: py3 remove cmp() in another btquotient file [Reviewed by Travis Scrimshaw]
+#22284: Frédéric Chapoton: py3: no cmp() in algebras/ [Reviewed by Travis Scrimshaw]
+#22286: Frédéric Chapoton: py3: no cmp() in various py files [Reviewed by Travis Scrimshaw]
+#22287: Frédéric Chapoton: py3 no cmp() in some py files in modular [Reviewed by Travis Scrimshaw]
+#22289: Frédéric Chapoton: py3: no cmp() in some files in combinat/ [Reviewed by Travis Scrimshaw]
+#22290: Travis Scrimshaw: Move string_parameters to the category of HighestWeightCrystals [Reviewed by Ben Salisbury]
+#22291: Jeroen Demeyer: ob_size does not exist in Python 3 [Reviewed by Frédéric Chapoton]
+#22292: Frédéric Chapoton: py3 replace <type '*'> by <... '*'> in doctests for some * [Reviewed by John Palmieri]
+#22296: André Apitzsch: more py3 compatible imports [Reviewed by Frédéric Chapoton]
+#22298: Frédéric Chapoton: py3 : no .iteritems in combinat/ [Reviewed by Jori Mäntysalo]
+#22300: John Palmieri: Python 3: use Exception instead of StandardError [Reviewed by André Apitzsch]
+#22302: André Apitzsch: remove deprecated code [Reviewed by Jeroen Demeyer]
+#22304: Andrey Novoseltsev: Add NefCompleteIntersection.cohomology_class [Reviewed by Volker Braun]
+#22307: Frédéric Chapoton: py3: correct raise again [Reviewed by André Apitzsch]
+#22308: Paul Masson: Default plot_points for implicit_surface3d [Reviewed by Andrey Novoseltsev]
+#22317: Travis Scrimshaw: Crash with univariate polynomials [Reviewed by Marc Mezzarobba]
+
+Merged in sage-7.6.beta4:
+
+#18128: Jean-Philippe Labbé: Add a face truncation method to Polyhedron class [Reviewed by Vincent Delecroix, Frédéric Chapoton]
+#20787: Arpit Merchant, David Lucas, Dima Pasechnik, Daniel Augot: A class to manage Golay Codes [Reviewed by Dima Pasechnik, Daniel Augot]
+#21024: Kwankyu Lee, Johan Rosenkilde: weak Popov form and row reduced form should only be for matrices over `k[x]`. [Reviewed by Johan Rosenkilde, Kwankyu Lee]
+#21131: Arpit Merchant: Interpolation, Minimal Vanishing Polynomial and Multi Point Evaluation of Skew Polynomials [Reviewed by Johan Rosenkilde]
+#21156: Bruno Grenet: AbstractLinearCode.dimension() is wrong if `_dimension` is not set [Reviewed by Johan Rosenkilde]
+#21159: Clément Pernet: Cached generator matrices and parity check matrices should be immutable [Reviewed by David Lucas]
+#21172: John Palmieri: Docbuilding without TESTS: blocks fails [Reviewed by Jori Mäntysalo]
+#21328: Tania Richmond: Create a new class for Parity-Check Codes [Reviewed by David Lucas, Julien Lavauzelle]
+#21333: Bruno Grenet: Port Alekhnovich algorithm from CodingLib [Reviewed by Johan Rosenkilde]
+#21741: Jori Mäntysalo: Errors on empty graph [Reviewed by Thierry Monteil, Peleg Michaeli, David Coudert]
+#21855: Daniel Krenn: LaurentPolynomialRing: incorrect conversion of base ring element and failing conversion between rings [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#22174: Ralf Stephan: Interface expression conversion to gamma() and normalization [Reviewed by Travis Scrimshaw]
+#22217: Dima Pasechnik: test that cvxopt.glpk interface works [Reviewed by David Coudert]
+#22225: Jori Mäntysalo, Travis Scrimshaw: LatticePoset: add quotient lattice [Reviewed by Martin Rubey]
+#22247: David Coudert: Test if a graph is biconnected [Reviewed by Frédéric Chapoton]
+#22294: John Palmieri: Installation guide should say that you can't move the Sage installation [Reviewed by Dima Pasechnik]
+#22311: Jeroen Demeyer: Replace parent_c -> parent [Reviewed by Travis Scrimshaw]
+#22315: Erik Bray: make install fails on Cygwin for giac-1.2.2.103 [Reviewed by Travis Scrimshaw]
+#22319: Jeroen Demeyer: Implement __index__ for PARI Gen [Reviewed by Luca De Feo]
+#22320: Frédéric Chapoton: py3: some care for range [Reviewed by Jori Mäntysalo]
+#22323: Erik Bray: Several modules in sagelib don't link on Cygwin [Reviewed by Jeroen Demeyer]
+#22324: Erik Bray: Can't build SciPy on Cygwin with SAGE_DEBUG=yes [Reviewed by Travis Scrimshaw]
+#22325: Ralf Stephan: Replace all pexpect-maxima calls in function/orthogonal-polys [Reviewed by Travis Scrimshaw]
+#22326: Ralf Stephan: Jacobi P polynomials without pexpect-maxima [Reviewed by Travis Scrimshaw]
+#22328: John Cremona: Bug in isogeny computation over \Q [Reviewed by Jean-Pierre Flori]
+#22331: Frédéric Chapoton: py3: use six.iteritems in graphs folder [Reviewed by Travis Scrimshaw]
+#22332: Frédéric Chapoton: py3: use six.iteritems in algebras,calculus,categories folders [Reviewed by Jori Mäntysalo]
+#22334: Frédéric Chapoton: Doctest failure in src/sage/modular/pollack_stevens/padic_lseries.py [Reviewed by Dima Pasechnik]
+#22338: Frédéric Chapoton: py3: use six.iteritems in groups, quivers, rings, schemes, sets, typeset folders [Reviewed by Jori Mäntysalo]
+#22339: Frédéric Chapoton: py3: use six.iteritems in sat, symbolic, tensor and sage_setup folders [Reviewed by André Apitzsch]
+#22341: Jeroen Demeyer: PyString_FromString is gone in Python3 [Reviewed by Frédéric Chapoton]
+#22342: Jeroen Demeyer: Remove superfluous quotes from bin_op exception messages [Reviewed by Travis Scrimshaw]
+#22347: Marc Mezzarobba: Remove "Almost any two objects may be compared" from programming tutorial [Reviewed by Jeroen Demeyer]
+#22350: Frédéric Chapoton: py3 some care for zip [Reviewed by André Apitzsch]
+#22352: Jeroen Demeyer: range() -> list(xrange()) in graphs Cython files [Reviewed by Frédéric Chapoton]
+#22353: Jeroen Demeyer: Use # long time instead of # long test or # long [Reviewed by André Apitzsch]
+#22359: Martin Rubey: Fix a python 3 incompatibility using lambda [Reviewed by Frédéric Chapoton]
+#22365: Frédéric Chapoton: py3: some details about __cmp__ and __ne__ [Reviewed by Travis Scrimshaw]
+#22366: Frédéric Chapoton: cleanup surface3d_generators.py [Reviewed by Jori Mäntysalo]
+
+Merged in sage-7.6.beta5:
+
+#10574: Jori Mäntysalo: implicit multiplication setting should be added to the FAQ [Reviewed by Travis Scrimshaw]
+#18664: Amy Pang, Franco Saliola: Implement (left and right) Zassenhaus basis of NSym [Reviewed by Amy Pang, Travis Scrimshaw, Darij Grinberg]
+#19770: Travis Scrimshaw: Implement crystal of letters for type F_4 and E_8 [Reviewed by Frédéric Chapoton]
+#21254: Dylan Rupel, Salvatore Stella: Implement cluster algebras using the Parent-Element framework [Reviewed by Frédéric Chapoton]
+#21277: Matthias Koeppe: sage_input for infinities and RealSet [Reviewed by Volker Braun]
+#21371: Jeroen Demeyer: Clean up pynac interface [Reviewed by Ralf Stephan]
+#21514: Thierry Monteil: sage -rst2ipynb command [Reviewed by Sébastien Labbé, Nicolas M. Thiéry]
+#21592: Jori Mäntysalo, John Palmieri, Frédéric Chapoton: ".. note:" must be ".. note::" [Reviewed by John Palmieri, Jori Mäntysalo, Frédéric Chapoton]
+#21690: Erik Bray: fp(y)lll 5.x build fails on Cygwin [Reviewed by Jean-Pierre Flori]
+#21861: Jori Mäntysalo: LatticePosets: Add congruence-related functions / part 2 [Reviewed by Travis Scrimshaw]
+#22057: Ralf Stephan: Resultant of symbolic polynomials [Reviewed by Travis Scrimshaw]
+#22142: Daniel Krenn: Inconsistent handling of exact function arguments [Reviewed by Ralf Stephan]
+#22177: Jeroen Demeyer: Implement SVG plotting in pari_jupyter [Reviewed by Dima Pasechnik]
+#22206: Petru Valicov, Kolja Knauer: Generation of strong orientations of a graph [Reviewed by David Coudert]
+#22253: Frédéric Chapoton: Incorrect json representation for graphics [Reviewed by Paul Masson]
+#22274: Jori Mäntysalo: Doctest continuation marker / several files / 2 [Reviewed by Travis Scrimshaw]
+#22276: Jeroen Demeyer: Fix and add PARI patches [Reviewed by Peter Bruin]
+#22293: Ben Hutz: products and powers of schemes and subschemes [Reviewed by Rebecca Lauren Miller]
+#22306: Jori Mäntysalo: LatticePoset: add is_sudirectly_irreducible() [Reviewed by Travis Scrimshaw]
+#22318: Erik Bray: link error in sage.libs.linbox.linbox on Cygwin [Reviewed by Travis Scrimshaw]
+#22335: Frédéric Chapoton: PyInt_AS_LONG is gone in Python 3 [Reviewed by Jeroen Demeyer]
+#22340: Clemens Heuberger: Coefficient of an AsymptoticExpansion [Reviewed by Daniel Krenn]
+#22354: Volker Braun: Install both python 2 & 3 by default [Reviewed by John Palmieri]
+#22355: David Coudert: Fix issue induced by #19619 in DeBruijn and Kautz digraphs generators [Reviewed by Sébastien Labbé]
+#22356: Martin Rubey: Fix a bug in the forward rule for the Sylvester growth diagram [Reviewed by Frédéric Chapoton]
+#22360: Daniel Krenn: singularity analysis: raise proper OZero-exception (instead of AttributeError) [Reviewed by Clemens Heuberger]
+#22362: Frédéric Chapoton: py3: use six.iteritems in more places [Reviewed by Jori Mäntysalo]
+#22363: Frédéric Chapoton: py3: use six.iteritems ; final step for py files [Reviewed by Travis Scrimshaw]
+#22369: Marc Mezzarobba: FGP_Element: cmp -> richcmp [Reviewed by Jeroen Demeyer]
+#22370: Marc Mezzarobba: linear_expression: cmp -> richcmp [Reviewed by Jeroen Demeyer]
+#22371: Marc Mezzarobba: CGraphBackend: fix a segfault when given a non-existing vertex [Reviewed by Jeroen Demeyer]
+#22376: Marc Mezzarobba: Remove or fix some meaningless doctests for cmp() [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#22377: Jori Mäntysalo: LatticePoset: is_cosectionally_complemented() [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#22378: Jeroen Demeyer: Add Jupyter kernel for Singular [Reviewed by Dima Pasechnik]
+#22379: Frédéric Chapoton: py3: simplify richcmp of integer ring and polynomial classes [Reviewed by Travis Scrimshaw]
+#22383: Jeroen Demeyer: Use "yield" in CGraphBackend.iterator_verts [Reviewed by David Coudert]
+#22384: Jeroen Demeyer: coerce.pyx: don't use parent as variable name [Reviewed by Travis Scrimshaw]
+#22385: Frédéric Chapoton: py3: next round of cleanup for zip [Reviewed by Travis Scrimshaw]
+#22389: Paul Masson: Make Three.js work offline [Reviewed by Andrey Novoseltsev]
+#22392: Daniel Krenn: AsymptoticRingFunctor does not deal with derived classes [Reviewed by Clemens Heuberger]
+#22396: Daniel Krenn: AsymptoticRing default_prec lost with coercion [Reviewed by Clemens Heuberger]
+#22398: Daniel Krenn: LaurentPolynomial_mpair.__init__ modifies input [Reviewed by Jeroen Demeyer]
+#22402: Roswitha Rissner: p_part return value may not be polynomial [Reviewed by Clemens Heuberger]
+#22404: Travis Scrimshaw, Daniel Krenn: Some improvements and cleanup to ETuple [Reviewed by Daniel Krenn, Travis Scrimshaw]
+#22413: Frédéric Chapoton: doc cleanup in ell_rational_field [Reviewed by John Cremona]
+#22419: Jeroen Demeyer: Allow custom CXXFLAGS for pynac [Reviewed by Ralf Stephan]
+#22426: Frédéric Chapoton: py3: a few conversions from `_cmp_` to `_richcmp_` [Reviewed by Travis Scrimshaw]
+#22427: Frédéric Chapoton: py3: remove usage of `_richcmp` in complex fields [Reviewed by Travis Scrimshaw]
+
+Merged in sage-7.6.beta6:
+
+#20849: David Lucas, Clément Pernet: Improve grs.py documentation [Reviewed by Daniel Augot, Travis Scrimshaw, Clément Pernet]
+#21267: Jeroen Demeyer: Port SageNB widgets/interact to Jupyter [Reviewed by Emmanuel Charpentier]
+#21432: Sourav Singh: Missing link to transducers.Recursion in documentation of class TransducerGenerators [Reviewed by Daniel Krenn]
+#21976: Daniel Krenn: multivariate laurent polynomial constructor: shortcuts for speedup [Reviewed by Clemens Heuberger, Travis Scrimshaw]
+#22193: Vincent Delecroix, Luca De Feo: Port cypari2 documentation as a standalone doctests [Reviewed by Jeroen Demeyer]
+#22265: Rebecca Lauren Miller: Fix Dynatomic Polynomials [Reviewed by Ben Hutz]
+#22351: Frédéric Chapoton, Jeroen Demeyer: PyString_AsString is gone in Python3 [Reviewed by Jeroen Demeyer]
+#22364: Ralf Stephan: Upgrade to pynac-0.7.5 [Reviewed by Volker Braun]
+#22372: Frédéric Chapoton: Fix use of comparison in simplicial_complex [Reviewed by Frédéric Chapoton]
+#22382: Travis Scrimshaw: Fix facade option for DisjointUnionEnumeratedSets [Reviewed by Andrew Mathas, Frédéric Chapoton]
+#22418: Jeroen Demeyer: Always use V=1 for logfiles [Reviewed by Matthias Koeppe]
+#22421: Ralf Stephan: Pynac's to_gamma() is buggy [Reviewed by Jeroen Demeyer]
+#22428: Frédéric Chapoton: fixing typos of of & the the [Reviewed by Darij Grinberg]
+#22430: Frédéric Chapoton: better base ring for finite Coxeter matrix groups [Reviewed by Travis Scrimshaw]
+#22437: Jerome Benoit: Use system libGAP paths [Reviewed by Vincent Delecroix]
+#22440: Ximin Luo: Work around Python's inadequate SIGPIPE handling [Reviewed by Jeroen Demeyer]
+#22442: Tobias Hansen: Compile pynac interface with SINGULAR_CFLAGS to find its headers [Reviewed by Jeroen Demeyer]
+#22446: Frédéric Chapoton: py3: small cmp step (cmp() in doc, __cmp__ in code) [Reviewed by Travis Scrimshaw]
+#22447: Frédéric Chapoton: py3 : spring cleanup of comparison in Element classes in combinat [Reviewed by Travis Scrimshaw]
+#22448: Frédéric Chapoton: py3 : spring cleanup of comparison in Element classes in modular [Reviewed by Travis Scrimshaw]
+#22449: Jeroen Demeyer: SAGE_BROWSER is being ignored while launching Jupyter notebook [Reviewed by Emmanuel Charpentier]
+#22457: Frédéric Chapoton: py3: more zip as iterators [Reviewed by Jori Mäntysalo]
+#22459: Frédéric Chapoton: py3: get rid of _richcmp mechanism in Parent [Reviewed by Jeroen Demeyer]
+#22460: Frédéric Chapoton: py3 taking care of some range [Reviewed by Jeroen Demeyer]
+#22463: Erik Bray: Skip sage_setup tests when not running in a git repository [Reviewed by Jeroen Demeyer]
+#22464: Salvatore Stella: Add stopgap for #22381 [Reviewed by Frédéric Chapoton]
+#22469: Jean-Philippe Labbé: Deprecate/remove sage/geometry/polytope.py [Reviewed by Thierry Monteil]
+#22473: Thierry Monteil: Remove patchbot optional spkg [Reviewed by Jeroen Demeyer]
+#22474: Frédéric Chapoton: py3 modernize metaclass in combinat folder [Reviewed by Travis Scrimshaw]
+#22479: Frédéric Chapoton: py3 more cases of add_metaclass [Reviewed by Travis Scrimshaw]
+#22480: Dima Pasechnik: Experimental package GAP3 broken [Reviewed by Salvatore Stella]
+#22484: Frédéric Chapoton: py3 get rid of last call to cmp() in parent.pyx [Reviewed by Jeroen Demeyer]
+#22486: Aurel Page: hyperboloid model accepts invalid points [Reviewed by Travis Scrimshaw]
+#22491: Thierry Monteil: make lrslib and lidia a build-time dependencies of latte_int [Reviewed by Vincent Delecroix]
+
+Merged in sage-7.6.rc0:
+
+#15188: Julian Rüth: quo_rem incorret for p-adic polynomials [Reviewed by Xavier Caruso]
+#15900: Paul Masson: Move local/share/texmf/tex/generic/sagetex to local/share/texmf/tex/latex/sagetex [Reviewed by Frédéric Chapoton]
+#18220: Vincent Delecroix: disallow non exact fields for the 'field' backend [Reviewed by Jean-Philippe Labbé]
+#20335: David Lucas, Julien Lavauzelle: A new structure for BCH codes [Reviewed by Daniel Augot]
+#20736: Frédéric Chapoton: Upgrade patchbot to 2.6.1 as a system package [Reviewed by Jeroen Demeyer]
+#20746: Vincent Delecroix: Pushout for real embedded number fields [Reviewed by Jean-Philippe Labbé]
+#20908: David Lucas, Johan Rosenkilde: Rework index and catalogs in sage.coding [Reviewed by David Lucas, Johan Rosenkilde]
+#21554: Ashutosh Ahelleya: Document noninteger assumption in Maxima [Reviewed by Ralf Stephan]
+#21593: Jori Mäntysalo: Missing colons in Sphinx directives [Reviewed by Travis Scrimshaw]
+#22066: Daniel Krenn: implement MacMahon's Omega operator [Reviewed by Clemens Heuberger]
+#22261: Paul Masson: Three.js: Default lighting [Reviewed by Andrey Novoseltsev]
+#22268: Ben Hutz: copy for schememorphism_points not deep enough [Reviewed by Johannes Huisman, Rebecca Lauren Miller]
+#22303: Jori Mäntysalo: Unify "example" vs. "examples" [Reviewed by John Palmieri]
+#22309: Andrey Novoseltsev: Use PPL for computing vertices of LatticePolytope [Reviewed by Travis Scrimshaw]
+#22416: Jean-Philippe Labbé: Add .is_inscribed() method to polytopes [Reviewed by Frédéric Chapoton, Thierry Monteil]
+#22417: Moritz Firsching: Add neighborly methods for polyhedra [Reviewed by Jean-Philippe Labbé]
+#22424: David Coudert: graph to_directed can have side effect when plotting [Reviewed by Jeroen Demeyer]
+#22443: Tobias Hansen: Do not test the version of glpk [Reviewed by Vincent Delecroix]
+#22451: Daniel Krenn: developer guide: Explain merging in new SageMath version without triggering many recompilations [Reviewed by Matthias Koeppe]
+#22454: Mark Saaltink: is_unit can give wrong results in multivariate and infinite polynomial rings. [Reviewed by Travis Scrimshaw]
+#22466: Jean-Philippe Labbé: Implement star and stellar subdivision of a face of simplicial complex [Reviewed by Thierry Monteil, Frédéric Chapoton]
+#22481: Jeroen Demeyer: Add a trivial factor() method for fields [Reviewed by Travis Scrimshaw]
+#22485: Frédéric Chapoton: py3 get rid of the last .iteritems [Reviewed by André Apitzsch]
+#22487: Thierry Monteil: gdb fails to build on 32-bit system [Reviewed by Jeroen Demeyer]
+#22488: Paul Masson: Make Three.js work offline in Jupyter notebooks [Reviewed by Eric Gourgoulhon]
+#22489: Jeroen Demeyer: Upgrade ncurses to version 6.0 [Reviewed by Thierry Monteil]
+#22496: Jean-Philippe Labbé: Improve and fix documentation of Combinatorial or Discrete Geometry [Reviewed by Vincent Klein]
+#22497: Vincent Delecroix: generic latte_int interface to count [Reviewed by Matthias Koeppe]
+#22500: Moritz Firsching: Add .is_combinatorially_isomorphic() method to polyhedra [Reviewed by Jean-Philippe Labbé]
+#22502: Frédéric Chapoton: a full truck of typos [Reviewed by Jeroen Demeyer]
+#22503: Eric Gourgoulhon: Fix treatment of symbolic derivatives in simplification of coordinate functions [Reviewed by Michał Bejger]
+#22505: Matthias Koeppe: perl_term_readline_gnu fails to install [Reviewed by Vincent Delecroix]
+#22507: Matthias Koeppe: Upgrade lrslib to 062+autotools-2017-03-03 [Reviewed by Vincent Delecroix]
+#22515: Frédéric Chapoton: py: little cleanup of iteritems [Reviewed by Jeroen Demeyer]
+#22516: Frédéric Chapoton: py3: simplify comparison in quadratic number field elements [Reviewed by Travis Scrimshaw]
+#22517: Frédéric Chapoton: use Py_NE, PY_EQ, etc in richcmp in cython files [Reviewed by André Apitzsch]
+#22518: Eric Gourgoulhon: Fix bug in list functionality of free module bases [Reviewed by Travis Scrimshaw]
+#22519: Frédéric Chapoton: py3 care for zip again [Reviewed by André Apitzsch]
+#22520: Eric Gourgoulhon: Fix display of tensors on free modules of finite rank [Reviewed by Travis Scrimshaw]
+#22521: Frédéric Chapoton: py3 some care for range [Reviewed by Jori Mäntysalo]
+#22534: Jean-Philippe Labbé: Add "long time" to doctests in the geometry component [Reviewed by Travis Scrimshaw]
+#22535: Eric Gourgoulhon: Fix bug in checking validity of coordinate values on a chart [Reviewed by Travis Scrimshaw]
+#22537: Jeroen Demeyer: Use Python 3 metaclass syntax in Cython code [Reviewed by Frédéric Chapoton]
+#22538: Jeroen Demeyer: INFINITY is not an enum [Reviewed by Travis Scrimshaw]
+#22540: Jeroen Demeyer: Clean up partn_ref/data_structures [Reviewed by Travis Scrimshaw]
+#22550: Jeroen Demeyer: Upgrade to released versions of ipywidgets [Reviewed by Volker Braun]
+#22551: Jean-Philippe Labbé: Deprecate the old .field() method from polyhedron class [Reviewed by Vincent Delecroix]
+#22553: Ralf Stephan, Jeroen Demeyer: pynac bug -- evaluation of arctan2 fails with traceback [Reviewed by Jeroen Demeyer, Paul Masson]
+#22571: Jeroen Demeyer: weird memory error while approximating sin [Reviewed by Ralf Stephan]
+#22577: Matthias Koeppe: generic interface to latte count: workaround for a LattE flaw [Reviewed by Vincent Delecroix]
+#22583: Vincent Delecroix: Work around bug #22576 [Reviewed by Dima Pasechnik]
+
+Merged in sage-7.6.rc1:
+
+#22432: Jeroen Demeyer: Upgrade Jupyter notebook [Reviewed by Julian Rüth]
+#22458: Jeroen Demeyer: Temporarily disable Jupyter XSRF check in local notebooks to fix live documentation in Thebe [Reviewed by Julian Rüth]
+#22570: Jeroen Demeyer: Various fixes to (lib)GAP workspaces [Reviewed by Volker Braun]
+#22585: Jeroen Demeyer: rst2ipynb doctest failures [Reviewed by Frédéric Chapoton]
+#22593: Jeroen Demeyer: Upgrade setuptools to 33.1.1 [Reviewed by Julian Rüth]
+
+Merged in sage-7.6.rc2:
+
+#21884: Frederic Han: giacpy_sage doctest failure and new libsingular cf.type == n_unknown ring test [Reviewed by Emmanuel Charpentier]
+#22101: Frederic Han: Upgrade to giac-1.2.3.25 [Reviewed by Thierry Monteil]

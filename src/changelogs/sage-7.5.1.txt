@@ -1,0 +1,36 @@
+﻿Sage 7.5.1 was released on 15 January 2017. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://doc.sagemath.org/html/en/installation/index.html
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 2 people contributed to this release. Of those, 0 made
+their first contribution to Sage:
+
+  - Eric Gourgoulhon
+  - Volker Braun
+
+* Release manager: Volker Braun.
+
+* We closed 1 ticket in this release.
+
+Merged in sage-7.5.1:
+
+#22175: Volker Braun: Sage 7.5 binaries do not build [Reviewed by Eric Gourgoulhon]
