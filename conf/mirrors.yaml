@@ -258,3 +258,8 @@
   country: nl
   name: KoDDoS Mirror
   url: https://mirror.koddos.net/sagemath/
+- active: true
+  cat: na
+  country: us
+  name: Sorengard Software Mirrors, NY, USA
+  url: https://mirrors.sorengard.com/sage/
