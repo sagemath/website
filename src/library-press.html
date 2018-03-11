@@ -15,7 +15,7 @@
 <div class="narrow">
 <ul>
 <li>name: <em>{{ sage }}</em> <span style="color:grey;">[exactly this capitalization]</span></li>
-<li>long-form: <em>Sage Mathematical Software System</em></li>
+<li>long-form: <em>Sage Mathematics Software System</em></li>
 </ul>
 </div>
 
@@ -36,10 +36,10 @@ and a library of mathematical algorithms.
 </div>
 <div class="txt narrow">
 Mathematics is very old and encompasses many very different topics. 
-It is hard to come up with one unique approach that suites beginners as well as experts.
+It is hard to come up with one unique approach that suits beginners as well as experts.
 {{ sage }} tries to solve this and 
 <em>"is doing remarkably well at keeping a balance between ease-of-use for beginners and high-end users."</em> 
-as <a href="http://groups.google.com/group/sage-devel/msg/38cb807fd76c59a1">David Kohel once said</a>.
+as <a href="https://groups.google.com/forum/#!msg/sage-devel/8ShuktTSzoM/oVls13-AyzgJ">David Kohel once said</a>.
 </div>
 <div class="narrow">
 Read more:
@@ -48,10 +48,11 @@ Read more:
 <a href="./tour-graphics.html">some plots</a>;
 <a href="./library-why.html">Why?</a>; 
 <a href="http://doc.sagemath.org/html/en/tutorial/tour.html">{{ sage }} Tutorial, Guided Tour</a>;
-<a href="http://wiki.sagemath.org/interact">Interact Examples</a>.
+<a href="https://wiki.sagemath.org/interact">Interact Examples</a>.
 </li><li>
 For a personal report what has motivated Prof. Stein to build {{ sage }} read
-<a href="http://sagemath.blogspot.com/2009/12/mathematical-software-and-me-very.html">Mathematical Software and Me: A Very Personal Recollection</a>
+<a href="http://sagemath.blogspot.com/2009/12/mathematical-software-and-me-very.html">Mathematical
+Software and Me: A Very Personal Recollection</a>
 (<a href="http://wstein.org/mathsoftbio/history.pdf">PDF</a>).
 </li>
 </ul>
@@ -62,14 +63,17 @@ For a personal report what has motivated Prof. Stein to build {{ sage }} read
 <ol>
 <li>{{ sage }} aims to provide everything mathematicians, researchers and students need
 to do their calculations.
-The basic concept is to combine <a href="./links-components.html">many established software packages</a> under one umbrella.
-Even more than that, it provides powerful and unique algorithms in it's own library.
-{{ sage }}'s mission is to "create a viable free open source alternative to Magma, Maple, Mathematica and Matlab".
+The basic concept is to combine <a href="./links-components.html">many established
+software packages</a> under one umbrella.
+Even more than that, it provides powerful and unique algorithms in its own library.
+{{ sage }}'s mission is to "create a viable free open source alternative to Magma,
+Maple, Mathematica and Matlab".
 </li>
-<li><em>Open Source</em>: {{ sage }} is built upon open-source software and it is fully open-source by itself.
-It is free to use worldwide for private, commercial, governmental, etc. use. 
-Its license is the well known GPL and everyone is allowed to download it, install it on 
-an unlimited number of computers and redistribute copies.
+<li><em>Open Source</em>: {{ sage }} is built upon open-source software and it is
+fully open-source by itself.
+It is free to use worldwide for private, commercial, governmental, etc. use.
+Its license is the well known GNU Public License (GPL) and everyone is allowed to
+download it, install it on an unlimited number of computers and redistribute copies.
 </li>
 <li><em>Open Development</em>:
 {{ sage }} loves curious students and researchers to examine its source code and
@@ -82,22 +86,24 @@ Additionally, {{ sage }} utilizes the scientific method of peer-review to double
 each line of new source code in addition to its strict testing policies to ensure
 a certain level of quality.
 </li>
-<li><em>Leverages Existing Software</em>: {{ sage }} does not reinvent the wheel for every known calculation.
-When possible, it uses existing tools to solve the problem and combine all of them in one unique interface.
-This concept not only exposes software packages to a wider audience,
-but also helps to increase the quality by submitting bugs upstream.
+<li><em>Leverages Existing Software</em>: {{ sage }} does not reinvent the wheel
+for every known calculation. When possible, it uses existing tools to solve the
+problem and combine all of them in one unique interface. This concept not only
+exposes software packages to a wider audience, but also helps to increase the
+quality by submitting bugs upstream.
 </li>
-<li>{{ sage }} uses <em>Python</em> as its "glue language" to interface with all its components.
-Python is also {{ sage }}s primary interface language and hence {{ sage }} does not invent a new programming language
-as other mathematical software systems do.
-Python is well 
-established among research communities and makes
-interfacing even less complicated.
+<li>{{ sage }} uses <em>Python</em> as its "glue language" to interface with
+all its components. Python is also {{ sage }}'s primary interface language
+and hence {{ sage }} does not invent a new programming language as other
+mathematical software systems do. Python is well established among research
+communities and makes interfacing even less complicated.
 </li>
 <li><em>Interface</em>: There are three basic ways how the user can interact with {{ sage }}:
 a web-interface, accessible through a web-browser while {{ sage }} is running on your local machine
-or <a href="http://www.sagenb.org/">on a server</a>, a rich command-line interface and as a Python library.
-Additionally, for example it is possible to <a href="http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html">embedd {{ sage }} in LaTeX documents</a>.
+or <a href="http://sagecell.sagemath.org/">on a server</a>, a rich command-line interface and as a Python library.
+Additionally, it is possible to
+<a href="http://www.ctan.org/tex-archive/help/Catalogue/entries/sagetex.html">embed
+{{ sage }} in LaTeX documents</a>.
 </li>
 </ol>
 </div>
@@ -115,34 +121,37 @@ Additionally, for example it is possible to <a href="http://www.ctan.org/tex-arc
 <td colspan="2">Distributed as source and precompiled binary archive</td>
 </tr>
 <tr>
-<td>&gt; 300 <a href="http://sagemath.org/src-old/">Releases</a></td>
-<td colspan="2">Accessed via command-line, <a href="http://www.sagenb.org/">Webbrowser</a> (GUI) and as a library</td>
+<td>&gt; 300 releases (<a href="http://files.sagemath.org/src">recent</a>,
+<a href="http://old.files.sagemath.org/src-old">older</a>)</td>
+<td colspan="2">Accessed via command-line,
+<a href="http://sagecell.sagemath.org/">Webbrowser</a> (GUI) and as a library</td>
 <tr>
-<td>&gt; 180 <a href="./development-map.html">Developers</a></td>
-<td>~ 100 <a href="./links-components.html">Components</a></td>
-<td>~ 300 MB Source Code in total</td>
+<td>&gt; 180 <a href="./development-map.html">developers</a></td>
+<td>~ 100 <a href="./links-components.html">components</a></td>
+<td>~ 600 MB source code in total</td>
 </tr>
 <tr>
-<td>&gt; 100 <a href="./library-publications.html">papers cite</a>, <a href="./library-publications-combinat.html">{{ sage }}</a></td>
-<td>&gt; 1700 <a href="http://groups.google.com/group/sage-support/about">subscribers sage-support</a></td>
-<td>&gt; 1200 <a href="http://groups.google.com/group/sage-devel/about">subscribers sage-devel</a></td>
+<td>&gt; 500 <a href="./library-publications.html">papers cite {{ sage }}</a>,
+or <a href="./library-publications-combinat.html"></a>Sage-combinat</td>
+<td>&gt; 3,300 <a href="https://groups.google.com/forum/#!aboutgroup/sage-support">subscribers sage-support</a></td>
+<td>&gt; 2,200 <a href="https://groups.google.com/forum/#!aboutgroup/sage-devel">subscribers sage-devel</a></td>
 </tr>
 <tr>
 <td>&gt; 100,000 website visitors/month</td>
 <td>&gt; 6,500 downloads/month</td>
-<td>&gt; 30,000 active users on <a href="http://cloud.sagemath.com/">SageMathCloud</a></td>
+<td>&gt; 30,000 active users on <a href="https://cocalc.com/">CoCalc</a></td>
 </tr>
 </table>
 </div>
 
 <h2 class="narrow">History</h2>
 <div class="txt narrow">
-In 2005 <a href="http://wstein.org">William Stein</a> released the first version of {{ sage }}.
+In 2005 <a href="https://wstein.org">William Stein</a> released the first version of {{ sage }}.
 </div>
 <div class="narrow txt">
 For a personal report what has motivated Prof. Stein to build {{ sage }} read
 <a href="http://sagemath.blogspot.com/2009/12/mathematical-software-and-me-very.html">Mathematical Software and Me: A Very Personal Recollection</a>
-(<a href="http://wstein.org/mathsoftbio/history.pdf">PDF</a>).
+(<a href="https://wstein.org/mathsoftbio/history.pdf">PDF</a>).
 </div>
 
 {#
@@ -157,13 +166,13 @@ For a personal report what has motivated Prof. Stein to build {{ sage }} read
 <h1 class="narrow">Links</h1>
 <div class="narrow txt">
 <ul>
-<li><a href="http://groups.google.com/group/sage-announce">{{ sage }} Announcements Mailing list</a> and 
-    <a href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">Atom/Rss Feed</a>.
-<li><a href="http://www.facebook.com/pages/Sage-Math/26593144945">{{ sage }} Facebook group</a>, 
-    <a href="http://www.twitter.com/sagemath">{{ sage }} Twitter page</a>.
+<li><a href="https://groups.google.com/forum/#!forum/sage-announce">{{ sage }} Announcements mailing list</a> and 
+    <a href="https://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml">Atom/Rss Feed</a>.
+<li><a href="https://www.facebook.com/sagemathorg/">{{ sage }} Facebook group</a>, 
+    <a href="https://twitter.com/sagemath">{{ sage }} Twitter page</a>.
 <li><a href="./library-marketing.html">Marketing Material</a></li>
 <li><a href="./library-stories.html">Quotes, Testimonials and Stories about {{ sage }}</a></li>
-<li><a href="http://wiki.sagemath.org/SAGE_in_the_News">{{ sage }} in the News, on Blogs, ...</a></li>
+<li><a href="https://wiki.sagemath.org/SageMath_in_the_news">{{ sage }} in the News, on Blogs, ...</a></li>
 </ul>
 </div>
 
@@ -171,7 +180,7 @@ For a personal report what has motivated Prof. Stein to build {{ sage }} read
 <div class="narrow">
 <em>All graphics, files and texts on this page are dedicated to
   promote {{ sage }}. You are authorized to copy, distribute and share them as you
-  like. If you have questions or additional request, please
+  like. If you have questions or additional requests, please
   contact the <a href="./contact.html">press officer</a>.</em>
 </div>
  {% endblock %}
