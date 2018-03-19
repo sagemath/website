@@ -867,9 +867,9 @@ trac="slabbe" />
  trac="klee"/>
 <contributor
  name="Samuel Lelièvre"
- work="LMO, U Paris-Sud; CNRS; UNAM Morelia"
+ work="Laboratoire de mathématique d'Orsay, UMR 8628 CNRS / Université Paris-Sud"
  description="advocacy; organize Sage Days; user support; wiki"
- location="UNAM Campus Morelia, Morelia, Mexico"
+ location="Institut de mathématiques d'Orsay, 91400 Orsay, France"
  url="https://wiki.sagemath.org/slelievre"
  trac="slelievre"/>
 <contributor
