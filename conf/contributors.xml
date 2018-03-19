@@ -166,7 +166,7 @@ contributor
 <contributor
  name="Nicolas Borie"
  work="maître de conférences, LIGM, Universite Paris-Est Marne-la-Vallée"
- location="Marne-la-Vallée, France"
+ location="Bâtiment Copernic (UPEM), 5 boulevard Descartes, 77420 Champs-sur-Marne, France"
  description="combinat (root systems, invariant theory)"
  url="http://igm.univ-mlv.fr/~borie/"
  trac="nborie"/>
@@ -1461,8 +1461,9 @@ contributor
  description="plotting bug fix"/>
 <contributor
  name="Hugh Thomas"
- work="Department of Mathematics, University of New Brunswick"
- location="University of New Brunswick, Fredericton, New Brunswick, Canada"
+ work="professor, LaCIM, Department of Mathematics, UQAM"
+ location="LaCIM, UQAM, Montréal, Québec, Canada"
+ url="http://www.lacim.uqam.ca/~hugh/"
  trac="hthomas" />
 <contributor
  name="Emmanuel Thomé"
