@@ -3,7 +3,7 @@
 #
 # mirror indexing + md5 sum
 # (c) 2009, Harald Schilly, Sage Project
-# 
+#
 # !!!  IMPORTANT !!!
 #            new files with files need an empty $md5file,
 #            otherwise no md5sums are calculated!!!
@@ -71,14 +71,13 @@ def create_meta(root):
   return
   root = os.path.abspath(root)
   base = os.path.abspath(root.split(os.path.sep)[-1])
-  
+
   for dir, dirs, files in os.walk(root):
     reldir = dir[len(base):]
     for fn in files:
       f = os.path.join(dir,fn)
       if os.path.getsize(f) < MIN_SIZE * 1024 * 1024: continue
       print ">>> create_meta:", reldir, f
-      
 
   sys.exit(1)
 
@@ -108,7 +107,7 @@ def index(root, strip):
         keep = len(dir) - len(root) + len(strip)
         shortdir = dir[-keep:]
         title.appendChild(listxml.createTextNode('SageMath Download - %s' % shortdir))
-        
+
         table = listxml.createElement(u'table')
 
         table.appendChild(getTableHeaderDir(listxml, shortdir))
@@ -118,7 +117,7 @@ def index(root, strip):
         if notesfile in files:
            table.appendChild(getNotesText(listxml, dir))
            files.remove(notesfile)
-  
+
         tr = getTableRowDir(listxml, dirs)
         table.appendChild(tr)
 
@@ -126,7 +125,7 @@ def index(root, strip):
         if len(files) > 1:
 
           table.appendChild(getTableHeader(listxml))
-    
+
           knownMd5 = readMD5(dir) #reads file
 
           even = True # even/odd for different backgrounds of table rows
@@ -150,7 +149,7 @@ def index(root, strip):
               else:
                 trMd5 = getMd5Row(listxml, None, shortdir, fn, f)
               table.appendChild(trMd5)
-            
+
 
         output.appendChild(table)
         output.appendChild(trackPageView(listxml, shortdir))
@@ -248,7 +247,7 @@ def getNotesText(xml, dir):
          notes = xml.createElement(u"a")
          notes.setAttribute(u"href", "notes.txt")
          notes.appendChild(xml.createTextNode(u"For more details, see notes.txt"))
-         
+
        tr = xml.createElement(u'tr')
        td = xml.createElement(u'td')
        td.appendChild(notes)
@@ -336,7 +335,7 @@ def getTableRow(xml, f, fn, shortdir, even):
         a.setAttribute(u'onclick', u"pageTracker._trackEvent('MirrorDL', '%s', '%s', 1);" % (shortdir, fn))
      td.appendChild(a)
      tr.appendChild(td)
-        
+
      torrentfile = './meta/%s.torrent' % fn
      td = xml.createElement(u'td')
      size = os.path.getsize(f) / 1024.0 / 1024.0
@@ -405,7 +404,7 @@ def getTableRowDir(xml, dirs):
      td.setAttribute(u'colspan', '3')
      tr.appendChild(td)
      return tr
-     
+
 
 if __name__=='__main__':
     # the first www/bin is just for this dir, all later invocations
@@ -415,14 +414,14 @@ if __name__=='__main__':
     #  create_meta(d)
 
     os.chdir(ROOT)
-    
+
     import sys
     if len(sys.argv) == 3 and sys.argv[2] == "old":
        os.chdir(ROOT)
        index(os.path.abspath(os.curdir), "src-old")
     
     else:
-      for d in map(os.path.abspath, [ './osx/', './win/', './livecd/',
+      for d in map(os.path.abspath, [ './osx/', './win/', './livecd/', './ova/',
             './linux/', './solaris/', './src/', './devel/', './spkg/upstream/']):
          os.chdir(d)
          print os.path.abspath(os.curdir).center(100, "=")
