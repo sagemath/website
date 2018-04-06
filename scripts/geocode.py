@@ -199,8 +199,8 @@ def getGeo(loc):
     loc = geo["results"][0]["geometry"]["location"]
     lng = str(loc["lng"])
     lat = str(loc["lat"])
-    print acc, lng, lat
-    return "200", acc, lat, lng
+    print acc, lat, lng
+    return "200", acc, lng, lat
 
 
 def addGeo(place):
