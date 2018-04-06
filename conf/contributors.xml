@@ -44,7 +44,8 @@ contributor
  trac="ncalexan"/>
 <contributor
  name="Bill Allombert"
- description="help with PARI and GP2C integration" />
+ description="help with PARI and GP2C integration"
+ location="Bordeaux, France"/>
 <contributor
  name="Ethan Van Andel"
  work="Calvin College, MI"
@@ -110,7 +111,8 @@ contributor
  trac="jbandlow"/>
 <contributor
  name="Gregory Bard"
- description="dense linear algebra over GF(2)" />
+ description="dense linear algebra over GF(2)"
+ url="http://www.gregorybard.com/home.html"/>
 <contributor
  name="Sébastien Barthélemy"
  work="UPMC - Université Pierre et Marie Curie"
@@ -125,7 +127,9 @@ contributor
  url="http://buzzard.ups.edu"
  trac="rbeezer"/>
 <contributor
- name="Karim Belabas" />
+ name="Karim Belabas"
+ location="Bordeaux, France"
+ url="https://www.math.u-bordeaux.fr/~kbelabas/"/>
 <contributor
  name="Arnaud Bergeron"
  work="Université de Montréal"
@@ -161,17 +165,17 @@ contributor
  trac="boothby"/>
 <contributor
  name="Nicolas Borie"
- work="PhD student, Universite Paris-Sud"
- location="France"
- description="combinat (Root system, invariant theory)"
- url="http://www.math.u-psud.fr/~borie/"
+ work="maître de conférences, LIGM, Universite Paris-Est Marne-la-Vallée"
+ location="5 boulevard Descartes, 77420 Champs-sur-Marne, France"
+ description="combinat (root systems, invariant theory)"
+ url="http://igm.univ-mlv.fr/~borie/"
  trac="nborie"/>
 <contributor
  name="Johan Bosman"
  work="Postdoctoral fellow, Mathematics Institute, University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom"
  description="algebra"
- url="http://www.warwick.ac.uk/~masjam/"
+ url="https://www.tudelft.nl/en/staff/j.g.bosman/"
  trac="johanbosman"/>
 <contributor
  name="Robert Bradshaw"
@@ -193,7 +197,11 @@ contributor
  url="http://www.mfo.de/organisation/institute/brickenstein/" />
 <contributor
  name="Nils Bruin"
- description="miscellaneous useful code snippets" />
+ work="Department of Mathematics, Simon Fraser University"
+ description="miscellaneous useful code snippets"
+ location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada"
+ url="http://www.cecm.sfu.ca/~nbruin/"
+ trac="nbruin"/>
 <contributor
  name="André-Patrick Bubel"
  work="student, Universität Heidelberg"
@@ -337,10 +345,10 @@ contributor
  name="Alyson Deines" />
 <contributor
  name="Vincent Delecroix"
- work="PhD student, Institut de Mathématiques de Luminy, Université Aix-Marseille"
- location="163 Avenue de Luminy 13009 Marseille, France"
+ work="researcher, CNRS"
+ location="LaBRI, Université de Bordeaux, Bordeaux, France"
  description="combinatorics, documentation"
- url="http://iml.univ-mrs.fr/~delecroi"
+ url="http://www.labri.fr/perso/vdelecro/"
  trac="vdelecroix"/>
 <contributor
  name="Jeroen Demeyer"
@@ -398,6 +406,7 @@ contributor
 <contributor
  name="Nathan Dunfield"
  description="small patches; improvements to algdep; documentation"
+ location="Urbana-Champaign, Illinois, USA"
  trac="dunfield"/>
 <contributor
  name="Gabriel Ebner"
@@ -728,7 +737,7 @@ contributor
  work="PhD student: LIAFA, Paris, France; University of Turku, Finland"
  location="Turku, Finland"
  description="combinatorics"
- url="http://www.liafa.jussieu.fr/~jolivet/"
+ url="http://jolivet.org/timo/"
  trac="tjolivet"/>
 <contributor
  name="Benjamin Jones"
@@ -838,16 +847,15 @@ contributor
  description="documentation"
  trac="rossk"/>
 <contributor
-  name="Sébastien Labbé"
-  work="Postdoctoral fellow, LIAFA, University Paris-Diderot Paris 7"
-  location="48.82715, 2.3809"
-  description="combinatorics; discrete geometry; words; quantumino
-solver; bug fixes; visualization"
-  url="www.liafa.univ-paris-diderot.fr/~labbe/"
-trac="slabbe" />
+ name="Sébastien Labbé"
+ work="CNRS researcher, LaBRI, Université de Bordeaux"
+ location="LaBRI, Université de Bordeaux, Bordeaux, France"
+ description="combinatorics; discrete geometry; words; quantumino solver; bug fixes; visualization"
+ url="http://www.slabbe.org/"
+ trac="slabbe" />
 <contributor
  name="Yann Laigle-Chapuy"
- work=" PhD student, INRIA"
+ work="PhD student, INRIA"
  location="Rocquencourt, Paris, France"
  description="Pohlig-Hellman algorithm for discrete logarithms, optimized gcd"
  url="http://www-rocq.inria.fr/secret/Yann.Laigle-Chapuy"
@@ -867,9 +875,9 @@ trac="slabbe" />
  trac="klee"/>
 <contributor
  name="Samuel Lelièvre"
- work="LMO, U Paris-Sud; CNRS; UNAM Morelia"
+ work="Laboratoire de mathématique d'Orsay, UMR 8628 CNRS / Université Paris-Sud"
  description="advocacy; organize Sage Days; user support; wiki"
- location="UNAM Campus Morelia, Morelia, Mexico"
+ location="Institut de mathématiques d'Orsay, 91400 Orsay, France"
  url="https://wiki.sagemath.org/slelievre"
  trac="slelievre"/>
 <contributor
@@ -896,8 +904,7 @@ trac="slabbe" />
  name="Miguel Marco"
  location="Zaragoza, Spain"
  work="Universidad de Zaragoza"
- description="linear algebra; polynomial rings; free and finitely presented
-groups; braid groups"
+ description="linear algebra; polynomial rings; free and finitely presented groups; braid groups"
  url="http://riemann.unizar.es/~mmarco"
  trac="mmarco"/>
 <contributor
@@ -920,11 +927,11 @@ groups; braid groups"
  description="GMP assembly code improvements; linear algebra; work on Sage 64-bit build" />
 <contributor
  name="Alexandre Blondin Massé"
- work="PhD student; Laboratoire de combinatoire et d'informatique mathématique (LaCIM), Université du Québec à Montréal; Laboratoire de mathématique (LAMA), Université de Savoie"
+ work="Associate professor; Laboratoire de combinatoire et d'informatique mathématique (LaCIM), Université du Québec à Montréal; Laboratoire de mathématique (LAMA), Université de Savoie"
  location="201 Avenue Du President-Kennedy, Montreal, QC, Canada"
  description="combinatorics"
  trac="abmasse"
- url="http://www.thales.math.uqam.ca/~blondin"/>
+ url="http://www.lacim.uqam.ca/~blondin/"/>
 <contributor
  name="Andrew Mathas"
  description="algebraic combinatorics; partitions; tableaux; Specht modules; ..."
@@ -987,9 +994,9 @@ groups; braid groups"
 <contributor
  name="Thierry Monteil"
  work="research fellow, CNRS"
- location="Montpellier, France"
+ location="Villetaneuse, France"
  description="bug fixes; combinatorics (words, graphs); dynamics (translation surfaces, tilings); organized Sage Days 20 and Sage Days 28"
- url="http://www.lirmm.fr/~monteil/"
+ url="https://wiki.sagemath.org/ThierryMonteil"
  trac="tmonteil"/>
 <contributor
  name="Peter Mora"
@@ -1009,7 +1016,7 @@ groups; braid groups"
 <contributor
  name="Guillaume Moroz"
  work="LIP6/INRIA"
- location="France"
+ location="Paris, France"
  description="Singular interface improvements"
  trac="gmoroz"/>
 <contributor
@@ -1118,10 +1125,10 @@ groups; braid groups"
  url="http://people.reed.edu/~davidp"/>
 <contributor
  name="Clement Pernet"
- work="University of Washington"
- location="University of Washington, WA, USA"
+ work="maître de conférences, Université Grenoble-Alpes"
+ location="Laboratoire Jean Kuntzmann, Université Grenoble Alpes, Grenoble, France"
  description="LinBox maintainer; LinBox and Givaro integration; bug fixes"
- url="http://www.math.washington.edu/~pernet/"
+ url="http://ljk.imag.fr/membres/Clement.Pernet/"
  trac="cpernet"/>
 <contributor
  name="John Perry"
@@ -1275,8 +1282,7 @@ groups; braid groups"
 <contributor
  name="Ed Scheinerman"
  work="Professor, Department of Applied Mathematics &amp; Statistics, Johns Hopkins University"
- location="Shaffer Hall 102,
-3400 North Charles Street, Baltimore, MD 21218, United States"
+ location="Shaffer Hall 102, 3400 North Charles Street, Baltimore, MD 21218, United States"
  description="graph theory"
  url="http://www.ams.jhu.edu/~ers/"
  trac="edward.scheinerman"/>
@@ -1317,7 +1323,7 @@ groups; braid groups"
   work="UC Davis - PhD student"
   location="Tracy, CA, USA"
   description="Crystals; representation theory; programming"
-  url="http://www.math.ucdavis.edu/~scrimsha"
+  url="https://sites.google.com/view/tscrim/home"
   trac="tscrim" />
 <contributor
  name="Dag Sverre Seljebotn"
@@ -1380,7 +1386,7 @@ groups; braid groups"
  work="Professor, University of Washington"
  location="1212 E Barclay Ct, Seattle, WA 98122, USA"
  description="project leader; community manager; software architect; started Sage project"
- url="http://modular.math.washington.edu" size="130" pix="http://www.math.washington.edu/People/Photos/wsteinSM.jpg" jitter="0"
+ url="https://wstein.org/" size="130" pix="https://wstein.org/william.jpg" jitter="0"
  trac="was"/>
 <contributor
  name="Armin Straub"
@@ -1448,14 +1454,16 @@ groups; braid groups"
  work="Université Paris Sud, Faculty"
  location="University Paris-Sud, France"
  description="Crystals code, combinatorics design"
+ url="http://nicolas.thiery.name/"
  trac="nthiery"/>
 <contributor
  name="Griffen Thoma"
  description="plotting bug fix"/>
 <contributor
  name="Hugh Thomas"
- work="Department of Mathematics, University of New Brunswick"
- location="University of New Brunswick, Fredericton, New Brunswick, Canada"
+ work="professor, LaCIM, Department of Mathematics, UQAM"
+ location="LaCIM, UQAM, Montréal, Québec, Canada"
+ url="http://www.lacim.uqam.ca/~hugh/"
  trac="hthomas" />
 <contributor
  name="Emmanuel Thomé"
@@ -1585,7 +1593,7 @@ groups; braid groups"
  work="Dept. Maths and Statistics, York University"
  location="Toronto, Ontario, Canada"
  description="bug fixes"
- url="http://www.math.yorku.ca/new/people/zabrocki.html" />
+ url="http://garsia.math.yorku.ca/~zabrocki/" />
 <contributor
  name="Bin Zhang"
  location="France"
