@@ -19,6 +19,7 @@ import os
 from os.path import join
 import sys
 import urllib
+import urllib2
 import time
 import utils
 
@@ -54,7 +55,7 @@ else:
     locxml = minidom.Document()
 
 loclist = locxml.getElementsByTagName("loc")
-timeout = 0.3  # in secs, timeout between each request to avoid error 620
+timeout = 30  # in secs, timeout between each request to avoid error 620
 
 
 def writeToDevmap():
@@ -178,8 +179,11 @@ def getGeo(loc):
     [retcode,accuracy,lng,lat]
     """
     loc = loc.replace(" ", "+")
+    loc = urllib2.quote(loc.encode('UTF-8'))
     print loc, ">>>",
     global timeout
+    print "[doing query, %s secs break] >>>" % timeout,
+    sys.stdout.flush()
     time.sleep(timeout)
     #url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
     #url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
@@ -188,18 +192,30 @@ def getGeo(loc):
     import json
     geo = json.loads(geo)
     acc = "6"  # no idea
+    # no results? (new error in 2018)
+    if len(geo["results"]) == 0:
+        return None
     # print geo
     loc = geo["results"][0]["geometry"]["location"]
     lng = str(loc["lng"])
     lat = str(loc["lat"])
     print acc, lng, lat
-    return "200", acc, lng, lat
+    return "200", acc, lat, lng
 
 
 def addGeo(place):
     lcache = locExists(place)
+    attempts = 5
     if not lcache:
         geo = getGeo(place)
+        while geo is None and attempts > 0:
+            print "[no result, trying again] >>>",
+            sys.stdout.flush()
+            geo = getGeo(place)
+            attempts -= 1
+        if geo is None and attempts == 0:
+            print "FAILURE AFTER TOO MANY ATTEMPTS"
+            return
         g = outxml.createElement("loc")
         statuscode = geo[0]
         # http://code.google.com/apis/maps/documentation/reference.html#GGeoStatusCode
