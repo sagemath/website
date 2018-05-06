@@ -1,9 +1,9 @@
-releasedate: 2017-12-07
+releasedate: 2018-05-05
 sage: SageMath
 logo: pix/sage_logo_new_l_hc_edgy-nq8.png
-version: "8.1"
+version: "8.2"
 version_solaris_bin: None
-version_src: "8.1"
+version_src: "8.2"
 git: http://git.sagemath.org/sage.git/
 git_website: https://github.com/sagemath/website
 webmaster_href: |
