@@ -2,6 +2,98 @@
 
 {% block header %}
 <script language="JavaScript">
+
+pList= [' <a href="http://math-atlas.sourceforge.net">ATLAS</a>',
+    ' <a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/">boehm_gc</a>',
+    ' <a href="http://www.boost.org">Boost</a>',
+    ' <a href="http://www.bzip.org">bzip2</a>',
+    ' <a href="http://www.ifor.math.ethz.ch/~fukuda/cdd_home/">cddlib</a>',
+    ' <a href="http://www.moshier.net">Cephes</a>',
+    ' <a href="http://users.tkk.fi/pat/cliquer.html">Cliquer</a>',
+    ' <a href="http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/index.html">conway_polynomials</a>',
+    ' <a href="http://abel.ee.ucla.edu/cvxopt/">CVXOPT</a>',
+    ' <a href="http://www.cython.org">Cython</a>',
+    ' <a href="http://docutils.sourceforge.net">Docutils</a>',
+    ' <a href="http://ecls.sourceforge.net">ECL</a>',
+    ' <a href="http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/index.html">eclib</a>',
+    ' <a href="http://www.warwick.ac.uk/~masgaj/ftp/data/">elliptic_curves</a>',
+    ' <a href="http://linalg.org/projects/fflas-ffpack">FFLAS-FFPACK</a>',
+    ' <a href="http://www.flintlib.org">FLINT</a>',
+    ' <a href="http://www.friedspace.com/QS/">flintqs</a>',
+    ' <a href="http://perso.ens-lyon.fr/damien.stehle/index.html#software">fplll</a>',
+    ' <a href="http://freetype.sourceforge.net/index2.html">FreeType</a>',
+    ' <a href="http://www.gap-system.org">GAP</a>',
+    ' <a href="http://gcc.gnu.org/">gcc</a>',
+    ' <a href="http://www.libgd.org">GD</a>',
+    ' <a href="http://newcenturycomputers.net/projects/gdmodule.html">gdmodule</a>',
+    ' <a href="http://www.math.u-bordeaux.fr/~liu/G2R/">genus2reduction</a>',
+    ' <a href="http://gf2x.gforge.inria.fr/">GF2X</a>',
+    ' <a href="http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html">Gfan</a>',
+    ' <a href="http://ljk.imag.fr/CASYS/LOGICIELS/givaro/">Givaro</a>',
+    ' <a href="http://www.gnu.org/software/glpk/glpk.html">GLPK</a>',
+    ' <a href="https://gforge.inria.fr/projects/ecm/">GMP-ECM</a>',
+    ' <a href="http://www.multiprecision.org/">GNU MPC</a>',
+    ' <a href="http://savannah.gnu.org/projects/patch/">GNU patch</a>',
+    ' <a href="http://jasongrout.org/graph_database">graphs</a>',
+    ' <a href="http://www.gnu.org/software/gsl/">GSL</a>',
+    ' <a href="http://www.cs.uwaterloo.ca/~astorjoh/iml.html">IML</a>',
+    ' <a href="http://ipython.scipy.org">IPython</a>',
+    ' <a href="http://jinja.pocoo.org">Jinja2</a>',
+    ' <a href="http://jmol.sourceforge.net">Jmol</a>',
+    ' <a href="http://www.math.union.edu/~dpvc/jsMath/">jsMath</a>',
+    ' <a href="http://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/">lcalc</a>',
+    ' <a href="https://bitbucket.org/vbraun/libgap">LibGAP</a>',
+    ' <a href="http://www.gnu.org/software/libiconv/">libiconv</a>',
+    ' <a href="http://www.libpng.org/pub/png/libpng.html">libpng</a>',
+    ' <a href="http://www.linalg.org">LinBox</a>',
+    ' <a href="http://math.rutgers.edu/~asbuch/lrcalc/">lrcalc</a>',
+    ' <a href="http://m4ri.sagemath.org">M4RI</a>',
+    ' <a href="http://m4ri.sagemath.org">M4RI(e)</a>',
+    ' <a href="http://matplotlib.sourceforge.net">matplotlib</a>',
+    ' <a href="http://maxima.sourceforge.net">Maxima</a>',
+    ' <a href="http://mercurial.selenic.com">Mercurial</a>',
+    ' <a href="http://perso.ens-lyon.fr/nathalie.revol/software.html">MPFI</a>',
+    ' <a href="http://www.mpfr.org">MPFR</a>',
+    ' <a href="http://www.mpir.org">MPIR</a>',
+    ' <a href="http://mpmath.org/">mpmath</a>',
+    ' <a href="http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/">mwrank</a>',
+    ' <a href="http://invisible-island.net/ncurses">ncurses</a>',
+    ' <a href="http://networkx.lanl.gov">NetworkX</a>',
+    ' <a href="http://www.shoup.net/ntl/">NTL</a>',
+    ' <a href="http://numpy.scipy.org">NumPy</a>',
+    ' <a href="http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html">PALP</a>',
+    ' <a href="http://pari.math.u-bordeaux.fr">PARI/GP</a>',
+    ' <a href="http://www.noah.org/wiki/Pexpect">Pexpect</a>',
+    ' <a href="http://www.pythonware.com/library/">PIL</a>',
+    ' <a href="http://polybori.sourceforge.net">PolyBoRi</a>',
+    ' <a href="http://bugseng.com/products/ppl/">PPL</a>',
+    ' <a href="http://www.dlitz.net/software/pycrypto/">PyCrypto</a>',
+    ' <a href="http://pygments.org">Pygments</a>',
+    ' <a href="http://pynac.org">Pynac</a>',
+    ' <a href="http://www.python.org">Python</a>',
+    ' <a href="http://www.r-project.org">R</a>',
+    ' <a href="http://www.mathe2.uni-bayreuth.de/stoll/programs/">Ratpoints</a>',
+    ' <a href="http://tiswww.case.edu/php/chet/readline/rltop.html">Readline</a>',
+    ' <a href="http://rpy.sourceforge.net">RPy</a>',
+    ' <a href="http://rpy.sourceforge.net/rpy2.html">RPy2</a>',
+    ' <a href="http://www.math.ucf.edu/~reid/Rubik/optimal_solver.html">Rubik</a>',
+    ' <a href="http://nb.sagemath.org">SageMathNB</a>',
+    ' <a href="http://bitbucket.org/ddrake/sagetex">SageMathTeX</a>',
+    ' <a href="http://www.scipy.org">SciPy</a>',
+    ' <a href="http://www.scons.org">SCons</a>',
+    ' <a href="http://pypi.python.org/pypi/setuptools/">setuptools</a>',
+    ' <a href="http://www.singular.uni-kl.de">Singular</a>',
+    ' <a href="http://sphinx.pocoo.org">Sphinx</a>',
+    ' <a href="http://www.sqlalchemy.org">SQLAlchemy</a>',
+    ' <a href="http://www.sqlite.org">SQLite</a>',
+    ' <a href="http://www.algorithm.uni-bayreuth.de/en/research/SYMMETRICA/">Symmetrica</a>',
+    ' <a href="http://www.sympy.org">SymPy</a>',
+    ' <a href="http://jedi.ks.uiuc.edu/~johns/raytracer/">Tachyon</a>',
+    ' <a href="http://www.zlib.net">zlib</a>',
+    ' <a href="http://cims.nyu.edu/~harvey/code/zn_poly/">zn_poly</a>'];
+
+var listpkgInnerHTML;
+
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
@@ -13,15 +105,34 @@ function shuffle(a) {
     return a;
 }
 
-window.onload=function randomizePkgOrder() {
+function randomizePkgOrder() {
     /*
         Randomize the display order for the packages of the scrolling list.
      */
-    pList = document.getElementById("alphaList").innerHTML.split(",");
     pList = shuffle(pList);
-    document.getElementById("pkgList").innerHTML = pList.toString();
+    listpkgInnerHTML = pList.toString();
 }
 
+//launch the randomize as soon as possible
+randomizePkgOrder();
+
+//wait for the dom content to be loaded.
+var pkgListSet = false;
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById("pkgList").innerHTML = listpkgInnerHTML;
+    pkgListSet = true;
+});
+
+window.onload = function setPkgList(){
+    /*
+        If DOMContentLoaded has not been fired, like for browser that don't support HTML5,
+        the package list is set when the whole page is loaded
+     */
+    if(!pkgListSet) {
+        document.getElementById("pkgList").innerHTML = listpkgInnerHTML;
+    }
+}
 </script>
 <style type="text/css">
  div.announce {
@@ -46,8 +157,13 @@ window.onload=function randomizePkgOrder() {
  }
  .scroll-left p {
      position: absolute;
+     width: -webkit-max-content;
      width: -moz-max-content;
      width: max-content;
+     /* max content for IE */
+     display: -ms-grid;
+     -ms-grid-columns: max-content;
+     /* end max content for IE */
      height: 100%;
      margin: 0;
      line-height: 17px;
@@ -61,6 +177,7 @@ window.onload=function randomizePkgOrder() {
      -webkit-animation: scroll-left 180s linear infinite;
      animation: scroll-left 180s linear infinite;
  }
+
  /* Move it (define the animation) */
  @-moz-keyframes scroll-left {
      0%   { -moz-transform: translateX(1%); }
@@ -96,7 +213,7 @@ It builds on top of many existing
 open-source packages:
 <div class="scroll-left">
   <p id="pkgList">
-    <noscript id="alphaList">
+      <noscript>
       <a href="http://math-atlas.sourceforge.net">ATLAS</a>,
       <a href="http://www.hpl.hp.com/personal/Hans_Boehm/gc/">boehm_gc</a>,
       <a href="http://www.boost.org">Boost</a>,
