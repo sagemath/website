@@ -154,6 +154,8 @@ def render():
     j2env = j2.Environment(loader=j2loader, undefined=j2.StrictUndefined)
     j2env.globals.update(config)
     j2env.globals["changelogs"] = index_changelogs()
+    j2env.globals["packages"] = packages
+    j2env.globals['spkgs'] = sorted(packages['spkg'].values(), key = lambda x : x['name'].lower())
 
     j2env.filters["prefix"] = filter_prefix
     j2env.filters["markdown"] = filter_markdown
