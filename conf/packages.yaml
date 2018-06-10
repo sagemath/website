@@ -240,9 +240,8 @@ spkg:
     name: MPFI
     url: http://perso.ens-lyon.fr/nathalie.revol/software.html
   mpfr:
-    descr: C library for multiple-precision floating-point computations with correct
-      rounding
-    name: MPFR
+    descr: C library for multiple-precision floating-point computations with correct rounding
+    name: GNU MPFR
     url: http://www.mpfr.org
   mpir:
     descr: Multiple Precision Integers and Rationals
