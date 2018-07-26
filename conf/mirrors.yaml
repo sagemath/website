@@ -75,7 +75,7 @@
   flag: de
   name: 'Freie Universität Berlin, Germany'
   url: ftp://ftp.fu-berlin.de/unix/misc/sage/
-- active: true
+- active: false
   cat: aus
   country: au
   flag: au
@@ -97,7 +97,7 @@
   cat: a
   name: KAIST, Republic of Korea
   url: http://ftp.kaist.ac.kr/sage/
-- active: true
+- active: false
   cat: a
   country: kr
   flag: kr
@@ -108,15 +108,15 @@
   country: za
   flag: za
   name: Stellenbosch University, South Africa
-  url: ftp://ftp.sun.ac.za/pub/mirrors/www.sagemath.org/
-- active: true
+  url: http://ftp.sun.ac.za/ftp/pub/mirrors/www.sagemath.org/
+- active: false
   cat: a
   name: Jember University, Java, Indonesia
   url: http://mirror.unej.ac.id/mirrors/sage/
 - active: true
   cat: e
   name: RedIRIS Research Network, Spain
-  url: http://sunsite.rediris.es/mirror/sagemath/
+  url: http://ftp.rediris.es/mirror/sagemath
 - active: true
   cat: af
   name: Polytechnic of Namibia
@@ -155,7 +155,7 @@
   cat: e
   name: 'Université Pierre et Marie Curie, Paris, France'
   url: http://www-ftp.lip6.fr/pub/math/sagemath/
-- active: true
+- active: false
   cat: na
   name: 'Université du Québec à Montréal, Québec, Canada'
   url: http://mirror.clibre.uqam.ca/sage/
@@ -163,7 +163,7 @@
   cat: af
   name: Tunisia
   url: http://sagemath.mirror.tn/
-- active: true
+- active: false
   cat: a
   name: Nanyang Technological University, Singapore
   url: http://jambu.spms.ntu.edu.sg/sage/
@@ -177,7 +177,7 @@
   flag: ee
   name: Tallinn, Estonia
   url: http://servingzone.com/mirrors/sage/
-- active: true
+- active: false
   cat: e
   name: Sofia, Bulgaria
   url: http://sage.Igor.onlineDirect.bg/
@@ -185,7 +185,7 @@
   cat: a
   name: Tsinghua University, Beijing, China
   url: http://mirrors.tuna.tsinghua.edu.cn/sagemath/
-- active: true
+- active: false
   cat: a
   name: WIDE Project Tsukuba NOC, Japan
   url: http://ftp.tsukuba.wide.ad.jp/software/sage/
@@ -197,7 +197,7 @@
   cat: a
   name: University of Science and Technology, China
   url: http://mirrors.ustc.edu.cn/sagemath/
-- active: true
+- active: false
   cat: a
   country: cn
   flag: cn
@@ -226,7 +226,7 @@
   country: jp
   name: Yamagata University, JP
   url: http://ftp.yz.yamagata-u.ac.jp/pub/math/sage/
-- active: true
+- active: false
   cat: e
   country: ru
   name: Go-Parts, Moscow, RU
@@ -236,7 +236,7 @@
   country: us
   name: Go-Parts, Michigan, USA
   url: http://mirrors-usa.go-parts.com/sage/sagemath/
-- active: true
+- active: false
   cat: e
   country: uk
   flag: gb
