@@ -116,7 +116,7 @@
 - active: true
   cat: e
   name: RedIRIS Research Network, Spain
-  url: http://ftp.rediris.es/mirror/sagemath
+  url: http://ftp.rediris.es/mirror/sagemath/
 - active: true
   cat: af
   name: Polytechnic of Namibia
