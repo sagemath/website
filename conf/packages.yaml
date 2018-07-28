@@ -72,7 +72,7 @@ spkg:
     url: http://www.netlib.org/f2c/
   fflas_ffpack:
     descr: A LGPL-2.1+ source code library for dense linear algebra over word-size
-      finite fields.
+      finite fields
     name: FFLAS-FFPACK
     url: http://linbox-team.github.io/fflas-ffpack/
   flint:
@@ -114,8 +114,8 @@ spkg:
     name: genus2reduction
     url: http://www.math.u-bordeaux.fr/~liu/G2R/
   gf2x:
-    descr: a C/C++ software package containing routines for fast arithmetic in GF(2)[x]
-      (multiplication, squaring, GCD) and searching for irreducible/primitive trinomials.
+    descr: A C/C++ software package containing routines for fast arithmetic in GF(2)[x]
+      (multiplication, squaring, GCD) and searching for irreducible/primitive trinomials
     name: GF2X
     url: http://gf2x.gforge.inria.fr/
   gfan:
@@ -176,7 +176,7 @@ spkg:
     name: fplll
     url: http://perso.ens-lyon.fr/damien.stehle/index.html#software
   libgap:
-    descr: LibGAP is essentially a fork of the upstream GAP kernel.
+    descr: LibGAP is essentially a fork of the upstream GAP kernel
     name: LibGAP
     url: https://bitbucket.org/vbraun/libgap
   libgcrypt:
@@ -206,7 +206,7 @@ spkg:
     name: LinBox
     url: http://www.linalg.org
   lrcalc:
-    descr: 'Littlewood-Richardson Calculator '
+    descr: Littlewood-Richardson Calculator
     name: lrcalc
     url: http://math.rutgers.edu/~asbuch/lrcalc/
   matplotlib:
@@ -227,8 +227,8 @@ spkg:
     name: MoinMoin
     url: http://www.moinmo.in
   mpc:
-    descr: Gnu Mpc is a C library for the arithmetic of complex numbers with arbitrarily
-      high precision and correct rounding of the result.
+    descr: C library for the arithmetic of complex numbers with arbitrarily
+      high precision and correct rounding of the result
     name: GNU MPC
     url: http://www.multiprecision.org/
   mpfi:
@@ -248,7 +248,7 @@ spkg:
     name: mpmath
     url: http://mpmath.org/
   ncurses:
-    descr: a library of functions that manage an application's display on character-cell
+    descr: A library of functions that manage an application's display on character-cell
       terminals (e.g., VT100)
     name: ncurses
     url: http://invisible-island.net/ncurses
@@ -280,11 +280,11 @@ spkg:
     name: PALP
     url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
   pari:
-    descr: computer algebra system for fast computations in number theory
+    descr: Computer algebra system for fast computations in number theory
     name: PARI/GP
     url: http://pari.math.u-bordeaux.fr
   patch:
-    descr: Applies diffs and patches to files.
+    descr: Applies diffs and patches to files
     name: GNU patch
     url: http://savannah.gnu.org/projects/patch/
   pexpect:
@@ -308,7 +308,7 @@ spkg:
   ppl:
     descr: The Parma Polyhedra Library (PPL) provides numerical abstractions especially
       targeted at applications in the field of analysis and verification of complex
-      systems.
+      systems
     name: PPL
     url: http://bugseng.com/products/ppl/
   pycrypto:
@@ -345,8 +345,8 @@ spkg:
     name: Readline
     url: http://tiswww.case.edu/php/chet/readline/rltop.html
   rpy2:
-    descr: provides a low-level interface to R, a proposed high-level interface, including
-      wrappers to graphical libraries, as well as R-like structures and functions.
+    descr: Provides a low-level interface to R, a proposed high-level interface, including
+      wrappers to graphical libraries, as well as R-like structures and functions
     name: RPy2
     url: http://rpy.sourceforge.net/rpy2.html
   rubiks:
@@ -400,7 +400,7 @@ spkg:
     name: SQLite
     url: http://www.sqlite.org
   symmetrica:
-    descr: ' Collection of C routines for representation theory'
+    descr: Collection of C routines for representation theory
     name: Symmetrica
     url: http://www.algorithm.uni-bayreuth.de/en/research/SYMMETRICA/
   sympow:
