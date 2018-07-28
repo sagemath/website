@@ -265,6 +265,11 @@ spkg:
     descr: Package for scientific computing with Python
     name: NumPy
     url: http://www.numpy.org/
+  openblas:
+    descr: An optimized open library implementing the Basic Linear Algebra Subprograms
+      (BLAS) specification
+    name: OpenBLAS
+    url: https://www.openblas.net/
   opencdk:
     descr: Open Crypto Development Kit provides basic parts of the OpenPGP message
       format
