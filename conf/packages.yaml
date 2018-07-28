@@ -22,7 +22,7 @@ spkg:
   cddlib:
     descr: Double description method of Motzkin et al.
     name: cddlib
-    url: http://www.ifor.math.ethz.ch/~fukuda/cdd_home/
+    url: https://www.inf.ethz.ch/personal/fukudak/cdd_home/
   cephes:
     descr: Cephes mathematical library
     name: Cephes
@@ -38,7 +38,7 @@ spkg:
   cvxopt:
     descr: Convex optimization, linear programming, least squares, etc.
     name: CVXOPT
-    url: http://abel.ee.ucla.edu/cvxopt/
+    url: https://cvxopt.org/
   cython:
     descr: C-Extensions for Python
     name: Cython
@@ -74,7 +74,7 @@ spkg:
     descr: A LGPL-2.1+ source code library for dense linear algebra over word-size
       finite fields.
     name: FFLAS-FFPACK
-    url: http://linalg.org/projects/fflas-ffpack
+    url: http://linbox-team.github.io/fflas-ffpack/
   flint:
     descr: Fast Library for Number Theory
     name: FLINT
@@ -125,7 +125,7 @@ spkg:
   givaro:
     descr: C++ library for arithmetic and algebraic computations
     name: Givaro
-    url: http://ljk.imag.fr/CASYS/LOGICIELS/givaro/
+    url: https://casys.gricad-pages.univ-grenoble-alpes.fr/givaro/
   glpk:
     descr: GNU Linear Programming Kit
     name: GLPK
@@ -155,12 +155,8 @@ spkg:
     descr: Interactive computing environment with an enhanced interactive Python shell
     name: IPython
     url: http://ipython.scipy.org
-  jinja:
-    descr: State of the art, general purpose template engine; slightly outdated version
-    name: Jinja
-    url: http://jinja.pocoo.org
   jinja2:
-    descr: State of the art, general purpose template engine; awesome version
+    descr: State of the art, general purpose template engine
     name: Jinja2
     url: http://jinja.pocoo.org
   jmol:
@@ -174,7 +170,7 @@ spkg:
   lcalc:
     descr: Michael Rubinstein's L-function calculator
     name: lcalc
-    url: http://pmmac03.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/
+    url: ''
   libfplll:
     descr: Euclidean lattice reduction
     name: fplll
@@ -194,11 +190,11 @@ spkg:
   libm4ri:
     descr: A library for fast arithmetic with dense matrices over GF(2)
     name: M4RI
-    url: http://m4ri.sagemath.org
+    url: https://bitbucket.org/malb/m4ri
   libm4rie:
     descr: A library for fast arithmetic with dense matrices over GF(2^e)
     name: M4RI(e)
-    url: http://m4ri.sagemath.org
+    url: https://bitbucket.org/malb/m4rie
   libpng:
     descr: Bitmap image support
     name: libpng
@@ -225,7 +221,7 @@ spkg:
   mercurial:
     descr: Free, distributed source control management tool
     name: Mercurial
-    url: http://mercurial.selenic.com
+    url: https://www.mercurial-scm.org/
   moin:
     descr: The MoinMoin wiki engine
     name: MoinMoin
@@ -260,7 +256,7 @@ spkg:
     descr: Python package for the creation, manipulation, and study of the structure,
       dynamics, and functions of complex networks
     name: NetworkX
-    url: http://networkx.lanl.gov
+    url: http://networkx.github.io/
   ntl:
     descr: A library for doing number theory
     name: NTL
@@ -268,7 +264,7 @@ spkg:
   numpy:
     descr: Package for scientific computing with Python
     name: NumPy
-    url: http://numpy.scipy.org
+    url: http://www.numpy.org/
   opencdk:
     descr: Open Crypto Development Kit provides basic parts of the OpenPGP message
       format
@@ -290,7 +286,7 @@ spkg:
     descr: Pure Python module that makes Python a better tool for controlling and
       automating other programs
     name: Pexpect
-    url: http://www.noah.org/wiki/Pexpect
+    url: http://pexpect.readthedocs.io/en/stable/
   pil:
     descr: Python Imaging Library
     name: PIL
@@ -351,11 +347,11 @@ spkg:
   rubiks:
     descr: Optimal Rubik's cube solver
     name: Rubik
-    url: http://www.math.ucf.edu/~reid/Rubik/optimal_solver.html
+    url: http://www.cflmath.com/~reid/Rubik/optimal_solver.html
   sagenb:
     descr: The Sage Notebook server
     name: SageNB
-    url: http://nb.sagemath.org
+    url: https://github.com/sagemath/sagenb
   sagetex:
     descr: The SageTeX package allows you to embed code, results of computations,
       and plots from the Sage mathematics software suite into LaTeX documents
@@ -422,10 +418,6 @@ spkg:
     descr: Event-driven networking engine written in Python
     name: Twisted
     url: http://twistedmatrix.com/trac
-  weave:
-    descr: Tools for including C/C++ code within Python
-    name: weave
-    url: http://www.scipy.org/Weave
   zlib:
     descr: Data compression library
     name: zlib
@@ -433,7 +425,7 @@ spkg:
   zn_poly:
     descr: C library for polynomial arithmetic in Z/nZ[x]
     name: zn_poly
-    url: http://cims.nyu.edu/~harvey/code/zn_poly/
+    url: http://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/
   zodb3:
     descr: Native object database for Python
     name: ZODB
