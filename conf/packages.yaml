@@ -170,7 +170,7 @@ spkg:
   lcalc:
     descr: Michael Rubinstein's L-function calculator
     name: lcalc
-    url: ''
+    url: http://oto.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/
   libfplll:
     descr: Euclidean lattice reduction
     name: fplll
