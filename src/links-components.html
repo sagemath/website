@@ -12,7 +12,11 @@
 <ol>
 {% for spkg in spkgs %}
 <li>
+    {% if spkg.url %}
     <a href="{{ spkg.url }}">{{ spkg.name }}</a>: {{ spkg.descr }}
+    {% else %}
+    <a title="Website for this package is unavailable"><i>{{ spkg.name }}</i></a>: {{ spkg.descr }}
+    {% endif %}
 </li>
 {% endfor %}
 </ol>
