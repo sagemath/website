@@ -414,7 +414,7 @@ spkg:
   tachyon:
     descr: Parallel/multiprocessor ray tracing system
     name: Tachyon
-    url: http://jedi.ks.uiuc.edu/~johns/raytracer/
+    url: http://www.photonlimited.com/~johns/raytracer/
   termcap:
     descr: Simplifies the process of writing portable text mode applications
     name: Termcap
