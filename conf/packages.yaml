@@ -218,10 +218,6 @@ spkg:
     descr: System for manipulating symbolic and numerical expressions
     name: Maxima
     url: http://maxima.sourceforge.net
-  mercurial:
-    descr: Free, distributed source control management tool
-    name: Mercurial
-    url: https://www.mercurial-scm.org/
   moin:
     descr: The MoinMoin wiki engine
     name: MoinMoin
