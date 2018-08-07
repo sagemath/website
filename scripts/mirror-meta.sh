@@ -101,7 +101,7 @@ for f in `eval $FINDCMD`; do
  # -s tests, if file exists and has size >0
  if [ ! -s $TORFILE ]
  then
-   pushd $METADIR 
+   pushd $METADIR
    cd ..
      #ctorrent -t -u "udp://tracker.openbittorrent.com:80" -l 1025000 -s meta/$FILE.torrent $FILE 
      P=`pwd`
@@ -116,8 +116,8 @@ for f in `eval $FINDCMD`; do
      WEBSEEDS=${WEBSEEDS#,} # delete , at the start
      WEBSEEDS=${WEBSEEDS%,} # delete , at the end
      mktorrent -v  \
-             -a "udp://tracker.openbittorrent.com:80"  \
-             -a "udp://tracker.ccc.de:80/announce"     \
+             -a "udp://tracker.opentrackr.org:1337/announce" \
+             -a "udp://tracker.coppersurfer.tk:6969/announce"  \
              -l 20 -c "$COMMENT" -w $WEBSEEDS          \
              -o meta/$FILE.torrent $FILE
    popd
