@@ -34,10 +34,10 @@ var sage = {
     */
 
     downloadUrl: function() {
-        if (isWindows) return "download-windows.html";
-        if (isMac)     return "download-mac.html";
-        if (isLinux)   return "download-linux.html";
-        return "download.html";
+        if (isWindows) return "/download-windows.html";
+        if (isMac)     return "/download-mac.html";
+        if (isLinux)   return "/download-linux.html";
+        return "/download.html";
     },
 
     setDownloadUrls: function () {
