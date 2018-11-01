@@ -50,7 +50,7 @@
   flag: br
   name: 'Universidade Federal do Paraná, Brazil'
   url: http://sagemath.c3sl.ufpr.br/
-- active: true
+- active: false
   cat: e
   country: ch
   flag: ch
