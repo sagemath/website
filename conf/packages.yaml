@@ -3,18 +3,18 @@ spkg:
     descr: Automatically Tuned Linear Algebra Software
     name: ATLAS
     url: http://math-atlas.sourceforge.net
-  blas:
-    descr: Basic Fortan 77 linear algebra routines
-    name: BLAS
-    url: http://www.netlib.org/blas/
   boehm_gc:
     descr: The Boehm-Demers-Weiser conservative garbage collector
     name: boehm_gc
-    url: http://www.hpl.hp.com/personal/Hans_Boehm/gc/
+    url: http://www.hboehm.info/gc/
   boost_cropped:
     descr: Free peer-reviewed portable C++ source libraries
     name: Boost
-    url: http://www.boost.org
+    url: https://www.boost.org
+  brial:
+    descr: Boolean Ring Algebra, fork of PolyBoRi (Boolean Polynomial Ring)
+    name: BRiAl
+    url: https://github.com/BRiAl/BRiAl
   bzip2:
     descr: High-quality data compressor
     name: bzip2
@@ -23,18 +23,14 @@ spkg:
     descr: Double description method of Motzkin et al.
     name: cddlib
     url: https://www.inf.ethz.ch/personal/fukudak/cdd_home/
-  cephes:
-    descr: Cephes mathematical library
-    name: Cephes
-    url: http://www.moshier.net
   cliquer:
     descr: Routines for clique searching
     name: Cliquer
-    url: http://users.tkk.fi/pat/cliquer.html
+    url: https://users.aalto.fi/~pat/cliquer.html
   conway_polynomials:
     descr: Frank L\"ubeck's tables of Conway polynomials over finite fields
     name: conway_polynomials
-    url: http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/index.html
+    url: http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/
   cvxopt:
     descr: Convex optimization, linear programming, least squares, etc.
     name: CVXOPT
@@ -42,7 +38,7 @@ spkg:
   cython:
     descr: C-Extensions for Python
     name: Cython
-    url: http://www.cython.org
+    url: https://cython.org
   docutils:
     descr: Open-source text processing system for processing plaintext documentation
       into useful formats, such as HTML or LaTeX
@@ -52,12 +48,12 @@ spkg:
     descr: Embeddable Common-Lisp, an implementation of the Common Lisp language as
       defined by the ANSI X3J13 specification
     name: ECL
-    url: http://ecls.sourceforge.net
+    url: https://common-lisp.net/project/ecl/
   eclib:
     descr: John Cremona's programs for enumerating and computing with elliptic curves
       defined over the rational numbers
     name: eclib
-    url: http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/index.html
+    url: http://homepages.warwick.ac.uk/staff/J.E.Cremona/mwrank/
   ecm:
     descr: Elliptic curve method for integer factorization
     name: GMP-ECM
@@ -65,11 +61,7 @@ spkg:
   elliptic_curves:
     descr: Cremona's mini tables of elliptic curves
     name: elliptic_curves
-    url: http://www.warwick.ac.uk/~masgaj/ftp/data/
-  f2c:
-    descr: Converts Fortran 77 to C code
-    name: f2c
-    url: http://www.netlib.org/f2c/
+    url: http://johncremona.github.io/ecdata/
   fflas_ffpack:
     descr: A LGPL-2.1+ source code library for dense linear algebra over word-size
       finite fields
@@ -84,15 +76,14 @@ spkg:
       factorization
     name: flintqs
     url: http://www.friedspace.com/QS/
-  fortran:
-    descr: A stable, production Fortran 95 compiler available for multiple CPU architectures
-      and operating systems
-    name: G95
-    url: http://www.g95.org
+  fplll:
+    descr: Euclidean lattice reduction
+    name: fplll
+    url: https://github.com/fplll/fplll
   freetype:
     descr: A free, high-quality, and portable font engine
     name: FreeType
-    url: http://freetype.sourceforge.net/index2.html
+    url: https://www.freetype.org/
   gap:
     descr: Groups, Algorithms, Programming - a system for computational discrete algebra
     name: GAP
@@ -100,19 +91,7 @@ spkg:
   gcc:
     descr: GCC, the GNU Compiler Collection
     name: gcc
-    url: http://gcc.gnu.org/
-  gd:
-    descr: Dynamic graphics generation tool
-    name: GD
-    url: http://www.libgd.org
-  gdmodule:
-    descr: A Python interface to the GD library
-    name: gdmodule
-    url: http://newcenturycomputers.net/projects/gdmodule.html
-  genus2reduction:
-    descr: Curve data computation
-    name: genus2reduction
-    url: http://www.math.u-bordeaux.fr/~liu/G2R/
+    url: https://gcc.gnu.org/
   gf2x:
     descr: A C/C++ software package containing routines for fast arithmetic in GF(2)[x]
       (multiplication, squaring, GCD) and searching for irreducible/primitive trinomials
@@ -121,7 +100,11 @@ spkg:
   gfan:
     descr: Gr\"obner fans and tropical varieties
     name: Gfan
-    url: http://www.math.tu-berlin.de/~jensen/software/gfan/gfan.html
+    url: http://home.math.au.dk/jensen/software/gfan/gfan.html
+  gfortran:
+    descr: Fortran compiler from the GNU compiler collection
+    name: GFortran
+    url: https://gcc.gnu.org/fortran/
   givaro:
     descr: C++ library for arithmetic and algebraic computations
     name: Givaro
@@ -129,32 +112,28 @@ spkg:
   glpk:
     descr: GNU Linear Programming Kit
     name: GLPK
-    url: http://www.gnu.org/software/glpk/glpk.html
-  gnutls:
-    descr: The GNU Transport Layer Security Library
-    name: GnuTLS
-    url: http://www.gnu.org/software/gnutls/
+    url: https://www.gnu.org/software/glpk/glpk.html
   graphs:
     descr: A database of combinatorial graphs
     name: graphs
-    url: http://jasongrout.org/graph_database
+    url: https://jasongrout.org/graph_database
   gsl:
     descr: The GNU Scientific Library
     name: GSL
-    url: http://www.gnu.org/software/gsl/
+    url: https://www.gnu.org/software/gsl/
   iconv:
     descr: A library to enable different languages with different characters to be
       handled properly
     name: libiconv
-    url: http://www.gnu.org/software/libiconv/
+    url: https://www.gnu.org/software/libiconv/
   iml:
     descr: Integer Matrix Library
     name: IML
-    url: http://www.cs.uwaterloo.ca/~astorjoh/iml.html
+    url: https://cs.uwaterloo.ca/~astorjoh/iml.html
   ipython:
     descr: Interactive computing environment with an enhanced interactive Python shell
     name: IPython
-    url: http://ipython.scipy.org
+    url: http://ipython.org
   jinja2:
     descr: State of the art, general purpose template engine
     name: Jinja2
@@ -163,42 +142,22 @@ spkg:
     descr: Java viewer for chemical structures in 3D
     name: Jmol
     url: http://jmol.sourceforge.net
-  lapack:
-    descr: Linear Algebra PACKage written in Fortran
-    name: LAPACK
-    url: http://www.netlib.org/lapack/
   lcalc:
     descr: Michael Rubinstein's L-function calculator
     name: lcalc
-    url: http://oto.math.uwaterloo.ca/~mrubinst/L_function_public/CODE/
-  libfplll:
-    descr: Euclidean lattice reduction
-    name: fplll
-    url: http://perso.ens-lyon.fr/damien.stehle/index.html#software
+    url: http://oto.math.uwaterloo.ca/~mrubinst/L_function_public/L.html
   libgap:
     descr: LibGAP is essentially a fork of the upstream GAP kernel
     name: LibGAP
     url: https://bitbucket.org/vbraun/libgap
-  libgcrypt:
-    descr: General purpose cryptographic library based on the code from GnuPG
-    name: Libgcrypt
-    url: http://directory.fsf.org/project/libgcrypt/
-  libgpg_error:
-    descr: A small library that defines common error values for all GnuPG components
-    name: Libgpg-error
-    url: http://www.gnupg.org/related_software/libgpg-error/
-  libm4ri:
-    descr: A library for fast arithmetic with dense matrices over GF(2)
-    name: M4RI
-    url: https://bitbucket.org/malb/m4ri
-  libm4rie:
-    descr: A library for fast arithmetic with dense matrices over GF(2^e)
-    name: M4RI(e)
-    url: https://bitbucket.org/malb/m4rie
+  libgd:
+    descr: Dynamic graphics generation tool
+    name: GD
+    url: https://libgd.github.io
   libpng:
     descr: Bitmap image support
     name: libpng
-    url: http://www.libpng.org/pub/png/libpng.html
+    url: https://libpng.sourceforge.io
   linbox:
     descr: C++ template library for exact, high-performance linear algebra computation
       with dense, sparse, and structured matrices over the integers and over finite
@@ -208,25 +167,29 @@ spkg:
   lrcalc:
     descr: Littlewood-Richardson Calculator
     name: lrcalc
-    url: http://math.rutgers.edu/~asbuch/lrcalc/
+    url: http://sites.math.rutgers.edu/~asbuch/lrcalc/
+  m4ri:
+    descr: A library for fast arithmetic with dense matrices over GF(2)
+    name: M4RI
+    url: https://bitbucket.org/malb/m4ri
+  m4rie:
+    descr: A library for fast arithmetic with dense matrices over GF(2^e)
+    name: M4RI(e)
+    url: https://bitbucket.org/malb/m4rie
   matplotlib:
     descr: Python plotting library which produces publication quality figures in a
       variety of hardcopy formats and interactive environments across platforms
     name: matplotlib
-    url: http://matplotlib.sourceforge.net
+    url: https://matplotlib.org
   maxima:
     descr: System for manipulating symbolic and numerical expressions
     name: Maxima
     url: http://maxima.sourceforge.net
-  moin:
-    descr: The MoinMoin wiki engine
-    name: MoinMoin
-    url: http://www.moinmo.in
   mpc:
     descr: C library for the arithmetic of complex numbers with arbitrarily
       high precision and correct rounding of the result
     name: GNU MPC
-    url: http://www.multiprecision.org/
+    url: http://www.multiprecision.org/mpc/
   mpfi:
     descr: Multiple precision interval arithmetic library based on MPFR
     name: MPFI
@@ -234,7 +197,7 @@ spkg:
   mpfr:
     descr: C library for multiple-precision floating-point computations with correct rounding
     name: GNU MPFR
-    url: http://www.mpfr.org
+    url: https://www.mpfr.org
   mpir:
     descr: Multiple Precision Integers and Rationals
     name: MPIR
@@ -242,7 +205,7 @@ spkg:
   mpmath:
     descr: Pure Python library for multiprecision floating-point arithmetic
     name: mpmath
-    url: http://mpmath.org/
+    url: http://mpmath.org
   ncurses:
     descr: A library of functions that manage an application's display on character-cell
       terminals (e.g., VT100)
@@ -252,25 +215,20 @@ spkg:
     descr: Python package for the creation, manipulation, and study of the structure,
       dynamics, and functions of complex networks
     name: NetworkX
-    url: http://networkx.github.io/
+    url: http://networkx.github.io
   ntl:
     descr: A library for doing number theory
     name: NTL
-    url: http://www.shoup.net/ntl/
+    url: https://www.shoup.net/ntl/
   numpy:
     descr: Package for scientific computing with Python
     name: NumPy
-    url: http://www.numpy.org/
+    url: http://www.numpy.org
   openblas:
     descr: An optimized open library implementing the Basic Linear Algebra Subprograms
       (BLAS) specification
     name: OpenBLAS
-    url: https://www.openblas.net/
-  opencdk:
-    descr: Open Crypto Development Kit provides basic parts of the OpenPGP message
-      format
-    name: OpenCDK
-    url: http://www.gnu.org/software/gnutls/
+    url: https://www.openblas.net
   palp:
     descr: A package for analyzing lattice polytopes
     name: PALP
@@ -287,30 +245,22 @@ spkg:
     descr: Pure Python module that makes Python a better tool for controlling and
       automating other programs
     name: Pexpect
-    url: http://pexpect.readthedocs.io/en/stable/
-  pil:
+    url: https://pexpect.readthedocs.io
+  pillow:
     descr: Python Imaging Library
-    name: PIL
-    url: http://www.pythonware.com/library/
-  polybori:
-    descr: Polynomials over Boolean Rings
-    name: PolyBoRi
-    url: http://polybori.sourceforge.net
+    name: Pillow
+    url: https://python-pillow.org/
   polytopes_db:
     descr: Reflexive Polytopes Databases that include lists of 2- and 3-dimensional
       reflexive polytopes
     name: polytopes_db
-    url: ''
+    url: http://hep.itp.tuwien.ac.at/~kreuzer/CY/CYpalp.html
   ppl:
     descr: The Parma Polyhedra Library (PPL) provides numerical abstractions especially
       targeted at applications in the field of analysis and verification of complex
       systems
     name: PPL
-    url: http://bugseng.com/products/ppl/
-  pycrypto:
-    descr: The Python Cryptography Toolkit
-    name: PyCrypto
-    url: http://www.dlitz.net/software/pycrypto/
+    url: https://www.bugseng.com/ppl
   pygments:
     descr: Generic syntax highlighter
     name: Pygments
@@ -322,15 +272,11 @@ spkg:
   python:
     descr: The Python programming language
     name: Python
-    url: http://www.python.org
-  python_gnutls:
-    descr: Python wrapper for the GNUTLS library
-    name: python-gnutls
-    url: http://pypi.python.org/pypi/python-gnutls/
+    url: https://www.python.org
   r:
     descr: A free software environment for statistical computing and graphics
     name: R
-    url: http://www.r-project.org
+    url: https://www.r-project.org
   ratpoints:
     descr: Find rational points on hyperelliptic curves
     name: Ratpoints
@@ -344,7 +290,7 @@ spkg:
     descr: Provides a low-level interface to R, a proposed high-level interface, including
       wrappers to graphical libraries, as well as R-like structures and functions
     name: RPy2
-    url: http://rpy.sourceforge.net/rpy2.html
+    url: https://rpy2.bitbucket.io
   rubiks:
     descr: Optimal Rubik's cube solver
     name: Rubik
@@ -357,44 +303,34 @@ spkg:
     descr: The SageTeX package allows you to embed code, results of computations,
       and plots from the Sage mathematics software suite into LaTeX documents
     name: SageTeX
-    url: http://bitbucket.org/ddrake/sagetex
+    url: https://github.com/sagemath/sagetex
   scipy:
     descr: Scientific tools for Python
     name: SciPy
-    url: http://www.scipy.org
-  scipy_sandbox:
-    descr: This package builds some of the optional/experimental SciPy packages, currently
-      including arpack and delaunay
-    name: scipy_sandbox
-    url: ''
+    url: https://www.scipy.org
   scons:
     descr: An open source software construction tool
     name: SCons
-    url: http://www.scons.org
+    url: https://www.scons.org
   setuptools:
     descr: Download, build, install, upgrade, and uninstall Python packages -- easily!
     name: setuptools
-    url: http://pypi.python.org/pypi/setuptools/
-  singular-3-1:
+    url: https://pypi.org/project/setuptools/
+  singular:
     descr: Computer algebra system for polynomial computations, with special emphasis
       on commutative and non-commutative algebra, algebraic geometry, and singularity
       theory
     name: Singular
-    url: http://www.singular.uni-kl.de
+    url: https://www.singular.uni-kl.de
   sphinx:
     descr: A tool that makes it easy to create intelligent and beautiful documentation
     name: Sphinx
-    url: http://sphinx.pocoo.org
-  sqlalchemy:
-    descr: Python SQL toolkit and Object Relational Mapper that gives application
-      developers the full power and flexibility of SQL
-    name: SQLAlchemy
-    url: http://www.sqlalchemy.org
+    url: http://www.sphinx-doc.org
   sqlite:
     descr: Software library that implements a self-contained, serverless, zero-configuration,
       transactional SQL database engine
     name: SQLite
-    url: http://www.sqlite.org
+    url: https://www.sqlite.org
   symmetrica:
     descr: Collection of C routines for representation theory
     name: Symmetrica
@@ -402,23 +338,19 @@ spkg:
   sympow:
     descr: Package to compute special values of symmetric power elliptic curve L-functions
     name: SYMPOW
-    url: ''
+    url: https://gitlab.com/rezozer/forks/sympow
   sympy:
     descr: Python library for symbolic mathematics
     name: SymPy
-    url: http://www.sympy.org
+    url: https://www.sympy.org
   tachyon:
     descr: Parallel/multiprocessor ray tracing system
     name: Tachyon
     url: http://www.photonlimited.com/~johns/raytracer/
-  termcap:
-    descr: Simplifies the process of writing portable text mode applications
-    name: Termcap
-    url: http://www.catb.org/~esr/terminfo/
   twisted:
     descr: Event-driven networking engine written in Python
     name: Twisted
-    url: http://twistedmatrix.com/trac
+    url: https://twistedmatrix.com/trac
   zlib:
     descr: Data compression library
     name: zlib
@@ -426,21 +358,17 @@ spkg:
   zn_poly:
     descr: C library for polynomial arithmetic in Z/nZ[x]
     name: zn_poly
-    url: http://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/
-  zodb3:
-    descr: Native object database for Python
-    name: ZODB
-    url: http://www.zodb.org
+    url: https://web.maths.unsw.edu.au/~davidharvey/code/zn_poly/
 spkg_embedded:
-  jsmath:
-    descr: JavaScript implementation of LaTeX
-    name: jsMath
-    url: http://www.math.union.edu/~dpvc/jsMath/
+  mathjax:
+    descr: a JavaScript library for displaying mathematical formulas
+    name: MathJax
+    url: https://www.mathjax.org
   mwrank:
     descr: Program for computing Mordell-Weil groups of elliptic curves over Q via
       2-descent. Since November 2007 mwrank has formed part of the eclib package
     name: mwrank
-    url: http://www.warwick.ac.uk/staff/J.E.Cremona/mwrank/
+    url: http://homepages.warwick.ac.uk/staff/J.E.Cremona/mwrank/
   rpy:
     descr: Simple and efficient access to R from Python
     name: RPy
