@@ -1,6 +1,0 @@
-AUTHOR: Robert Miller
-REFEREE: Robert Bradshaw
-
-Added Tachyon 3d graph and digraph plotting.  Also added feature so
-tachyon graphs can be shown from the command line (they pop up in a
-window).

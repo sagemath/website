@@ -1,7 +1,0 @@
-AUTHOR: Nils Bruin
-REFEREE: Martin Albrecht
-
-This is a new routine for enumerating the rationals.  A proof of its
-correctness is usually attributed to Sam Vandervelde and Don Zagier
-[A002487], but a better reference for the origin of this formula would
-be welcome.
