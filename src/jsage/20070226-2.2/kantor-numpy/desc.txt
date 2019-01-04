@@ -1,7 +1,0 @@
-AUTHOR: Josh Kantor
-REFEREE: Robert Bradshaw
-
-Added probability distribution generating points randomly on surface
-of sphere.  I also fix some bugs and add more support for numpy. Now
-the matrix and vector constructors accept numpy arrays and vectors and
-matrices can produce numpy versions of themselves. 

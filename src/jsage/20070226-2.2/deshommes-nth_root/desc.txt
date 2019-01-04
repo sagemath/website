@@ -1,4 +1,0 @@
-AUTHOR: Didier Deshommess
-REFEREE: David Harvey
-
-Add function to return the nth root of a mpfr real number.

@@ -1,8 +1,0 @@
-AUTHOR:  Carl Witty
-REFEREE: Nick Alexander
-
-This patch implements a couple more MPFI functions (magnitude and
-intersection).  It implements a new comparison framework, where
-partially ordered sets can implement comparison operators consistent
-with the partial ordering.  It also adds access to a few more Pari
-features in gen.pyx (polred, rnfequation, nffactor, modreverse).
