@@ -1,0 +1,483 @@
+﻿Sage 8.5 was released on 22 December 2018. It is available in
+source and binary form from:
+
+  * http://www.sagemath.org/download.html
+
+Sage (http://www.sagemath.org/) is developed by volunteers and combines
+over 90 open source packages. For instructions about installing Sage, see
+
+  * http://doc.sagemath.org/html/en/installation/index.html
+
+The following page lists the platforms on which Sage should work:
+
+  * http://wiki.sagemath.org/SupportedPlatforms
+
+If you have any questions and/or problems, please report them to any of
+these Google groups:
+
+  * sage-support: http://groups.google.com/group/sage-support
+  * sage-devel: http://groups.google.com/group/sage-devel
+
+You can also drop by in #sagemath on freenode or post your questions
+at http://ask.sagemath.org/
+
+The following 63 people contributed to this release. Of those, 4 made
+their first contribution to Sage:
+
+  - Alejandra Alvarado
+  - Alex J. Best
+  - Andrew Mathas
+  - Andrey Novoseltsev
+  - Angelos Koutsianas
+  - Anne Schilling
+  - Antonio Rojas
+  - Ben Hutz
+  - Beth Malmskog
+  - Bruce Westbury
+  - Bryan Gin-ge Chen
+  - Chris Rasmussen
+  - Christelle Vincent
+  - Christian Stump
+  - Clemens Heuberger
+  - Daniel Bump
+  - Daniel Krenn
+  - David Coudert
+  - David Roe
+  - Dima Pasechnik
+  - Eric Gourgoulhon
+  - Erik Bray
+  - Florentin Jaffredo
+  - François Bissey
+  - Friedrich Wiemer
+  - Frédéric Chapoton
+  - Jeroen Demeyer
+  - Joey van Langen [first contribution]
+  - John Cremona
+  - John Palmieri
+  - Jori Mäntysalo
+  - Julian Rüth
+  - Kiran Kedlaya
+  - Konrad K. Dabrowski
+  - Manon Stipulanti
+  - Marc Mezzarobba
+  - Marco Mancini
+  - Markus Wageringel [first contribution]
+  - Martin Rubey
+  - Matthias Koeppe
+  - Mckenzie West
+  - Odile Bénassy [first contribution]
+  - Paul Mercat
+  - Peter Bruin
+  - Raghukul Raman
+  - Ralf Stephan
+  - Rusydi H. Makarim
+  - Salvatore Stella
+  - Samuel Lelièvre
+  - Sebastian Oehms
+  - Simon Brandhorst
+  - Simon King
+  - Steven Trogdon
+  - Sébastien Labbé
+  - Thibaut Verron [first contribution]
+  - Thierry Monteil
+  - Tim Dumol
+  - Timo Kaufmann
+  - Travis Scrimshaw
+  - Vincent Delecroix
+  - Vincent Klein
+  - Volker Braun
+  - Xavier Caruso
+
+* Release manager: Volker Braun.
+
+* We closed 363 tickets in this release.
+
+Merged in sage-8.5.beta0:
+
+#23432: Jeroen Demeyer: Type debugger [Reviewed by Travis Scrimshaw]
+#24692: Jeroen Demeyer: Upgrade GDB [Reviewed by Dima Pasechnik]
+#25017: Frédéric Chapoton: bug in substitution of free group element [Reviewed by Vincent Delecroix]
+#25260: Timo Kaufmann, Julian Rüth, Bryan Gin-ge Chen: Upgrade to NumPy 1.15.2 [Reviewed by Travis Scrimshaw]
+#25270: Julian Rüth: Add option to only run short doctests [Reviewed by Erik Bray]
+#25382: John Palmieri: py3: do not include the notebook documentation in sage [Reviewed by Dima Pasechnik]
+#25684: Simon Brandhorst: FGP_module - add a transformation from and to the user defined generators. [Reviewed by Travis Scrimshaw]
+#25765: Friedrich Wiemer: Add some more SBox constructions [Reviewed by Rusydi H. Makarim]
+#25857: Erik Bray: Toolchain dependencies that have circular self-dependencies should not be uninstalled before reinstalling/upgrading them [Reviewed by Dima Pasechnik, Jeroen Demeyer]
+#25869: Florentin Jaffredo: Add manifold catalog [Reviewed by Eric Gourgoulhon, Travis Scrimshaw]
+#25875: Simon Brandhorst: Construct a genus from a list of symbols. [Reviewed by Travis Scrimshaw, Simon Brandhorst]
+#26099: Frédéric Chapoton: trim lattices [Reviewed by Jori Mäntysalo]
+#26175: Frédéric Chapoton: another typo ticket (2018-09) [Reviewed by Jori Mäntysalo]
+#26266: Erik Bray, Frédéric Chapoton: py3: @interact is broken [Reviewed by Odile Bénassy]
+#26306: Erik Bray: py3: sort group elements for generating OperationTables [Reviewed by Travis Scrimshaw]
+#26348: Martin Rubey: 3 other internet doctests failing in findstat.py [Reviewed by Sébastien Labbé, Frédéric Chapoton]
+#26388: Vincent Klein: Bug in comparison of integers and libgap integers [Reviewed by Frédéric Chapoton, Vincent Delecroix]
+#26389: Jeroen Demeyer: Listing meataxe matrices with zero rows is broken [Reviewed by Travis Scrimshaw]
+#26391: Frédéric Chapoton: py3: partial cure for multiset_partition_into_sets_ordered [Reviewed by Travis Scrimshaw]
+#26396: Jeroen Demeyer: Upgrade to cypari2-1.3.1 [Reviewed by Travis Scrimshaw]
+#26400: Frédéric Chapoton: py3 fix all doctests in groups/matrix_gps [Reviewed by Travis Scrimshaw]
+#26414: Jeroen Demeyer: Various fixes to rational_power_parts() [Reviewed by Travis Scrimshaw]
+#26415: Erik Bray: py3: use sage_getargspec more consistently [Reviewed by Travis Scrimshaw]
+#26417: Frédéric Chapoton: py3: more robust doctests in one thematic tutorial [Reviewed by Travis Scrimshaw]
+#26418: Erik Bray: py3: fix int argument check in Matrix_integer_dense.__pow__ [Reviewed by Frédéric Chapoton]
+#26419: Frédéric Chapoton: py3: fix hash for trees [Reviewed by Travis Scrimshaw]
+#26424: Travis Scrimshaw: Bugs in inverses of Yokonuma-Hecke algebras [Reviewed by Frédéric Chapoton]
+#26427: Thierry Monteil: add doctest to charpoly method of symbolic matrices [Reviewed by Frédéric Chapoton]
+#26428: David Coudert: improve is_weakly_chordal [Reviewed by Travis Scrimshaw]
+#26430: Frédéric Chapoton: py3: fix some doctests in combinat/designs [Reviewed by Vincent Klein]
+#26431: Frédéric Chapoton: py3: not sorting vertices on some graph functions [Reviewed by Travis Scrimshaw, David Coudert]
+#26432: David Coudert: clean graph.py [Reviewed by Travis Scrimshaw]
+#26433: Xavier Caruso, Travis Scrimshaw: Slowness in generic quo_rem [Reviewed by Travis Scrimshaw]
+#26435: Matthias Koeppe: polytopes.simplex: Add base_ring keyword, allow exact computation with project=True [Reviewed by Travis Scrimshaw]
+#26436: Travis Scrimshaw: Force input of affine permutation groups to be elements of ZZ [Reviewed by Andrew Mathas]
+#26437: David Coudert: clean partial_cube.py [Reviewed by Frédéric Chapoton]
+#26439: David Coudert: clean matchpoly.pyx [Reviewed by Travis Scrimshaw]
+#26444: David Coudert: Use maximal cliques iterator for line graph [Reviewed by Travis Scrimshaw]
+#26447: Frédéric Chapoton: py3: do not sort vertices in static graphs [Reviewed by David Coudert]
+#26448: David Coudert: clean hyperbolicity.pyx [Reviewed by Travis Scrimshaw]
+#26452: Daniel Krenn: cartesian products of MonomialGrowthGroup related to number fields [Reviewed by Clemens Heuberger]
+#26453: Julian Rüth: Relicense sphinxify.py [Reviewed by Tim Dumol]
+#26455: Frédéric Chapoton: remove deprecated call method for symbolic matrices [Reviewed by Travis Scrimshaw]
+#26456: Frédéric Chapoton: remove deprecated zero_element [Reviewed by Travis Scrimshaw]
+#26458: Vincent Klein: Py3: Fix DeprecationWarning: generator X raised StopIteration for combinat/words [Reviewed by Frédéric Chapoton]
+#26461: Frédéric Chapoton: adding new Catalan semilattices [Reviewed by Travis Scrimshaw]
+#26463: Jeroen Demeyer: gen_to_sage: make imports global [Reviewed by John Cremona, Travis Scrimshaw]
+#26464: Frédéric Chapoton: some cleanup in fan.py [Reviewed by Travis Scrimshaw]
+#26465: Frédéric Chapoton: remove deprecated stuff in polyhedron/plot [Reviewed by Travis Scrimshaw]
+#26466: Vincent Klein: Py3: Fix DeprecationWarning: generator X raised StopIteration [Reviewed by Frédéric Chapoton]
+#26467: David Coudert: clean hypergraph_generators.py [Reviewed by Travis Scrimshaw]
+#26469: David Coudert: avoid sorting vertex labels in graph_plot.py [Reviewed by Travis Scrimshaw]
+#26473: Sébastien Labbé: py3: fix doctests failures of sage/combinat/words/word_*datatype* [Reviewed by Vincent Klein]
+#26475: Eric Gourgoulhon: py3: make all tests in manifolds passed [Reviewed by Frédéric Chapoton]
+#26476: Frédéric Chapoton: refine the category of Symmetric groups [Reviewed by Travis Scrimshaw]
+#26477: Frédéric Chapoton: remove deprecated stuff in polynomial_element [Reviewed by Travis Scrimshaw]
+#26483: David Coudert: clean graph_database.py [Reviewed by Travis Scrimshaw]
+#26484: David Coudert: clean graph_coloring.py [Reviewed by Travis Scrimshaw]
+#26485: David Coudert: clean genus.pyx [Reviewed by Travis Scrimshaw]
+#26486: David Coudert: clean distances_all_pairs.pyx [Reviewed by Sébastien Labbé]
+#26488: Antonio Rojas: Remove one usage of SAGE_ROOT in doctests [Reviewed by François Bissey]
+#26493: Jeroen Demeyer: element_pari_ffelt: use PARI clones instead of deepcopy_to_python_heap() [Reviewed by Peter Bruin]
+#26494: Frédéric Chapoton: faster f-polynomial and zeta-polynomial for posets [Reviewed by Travis Scrimshaw]
+#26500: Travis Scrimshaw: Add is_derangements method to Permutation [Reviewed by Anne Schilling]
+#26502: Samuel Lelièvre: failing optional internet doctests in sage/combinat/designs [Reviewed by Frédéric Chapoton]
+
+Merged in sage-8.5.beta1:
+
+#25609: Christian Stump: have libgap permutation to sage use permutation instead of permutation group element [Reviewed by Travis Scrimshaw]
+#25936: Florentin Jaffredo: Improvements to integrated curves and geodesics on manifolds [Reviewed by Travis Scrimshaw, Eric Gourgoulhon]
+#26174: Bryan Gin-ge Chen: Upgrade jupyter notebook to 5.7.0 [Reviewed by François Bissey, Jeroen Demeyer]
+#26176: Julian Rüth: SageKernelSpec doctests fail in non-standard setups [Reviewed by Jeroen Demeyer]
+#26314: Vincent Klein: py3: Fix interfaces module for python3 [Reviewed by Frédéric Chapoton]
+#26416: Erik Bray: Improve implementation of sage.databases.cremona.split_code [Reviewed by Frédéric Chapoton]
+#26422: Frédéric Chapoton: some details in the master reference file [Reviewed by John Palmieri]
+#26429: Frédéric Chapoton: py3: fix some doctests in game_theory [Reviewed by Travis Scrimshaw]
+#26438: David Coudert: clean orientations.py [Reviewed by Frédéric Chapoton]
+#26445: Frédéric Chapoton: some work on doc of Dyck path [Reviewed by Travis Scrimshaw]
+#26446: David Coudert: clean lovasz_theta, isgci, independent_set [Reviewed by Travis Scrimshaw]
+#26454: Julian Rüth: Do not check for random output of cusps_nf.py [Reviewed by Travis Scrimshaw]
+#26459: Frédéric Chapoton: remove deprecated stuff in sloane.py [Reviewed by Thierry Monteil]
+#26468: Vincent Klein: Py3: Some fixes in combinat/finite_state_machine.py [Reviewed by Frédéric Chapoton]
+#26478: David Coudert: clean graph_plot_js.py, graph_list.py and graph_input.py [Reviewed by Travis Scrimshaw]
+#26479: Xavier Caruso: padic printer does not support latex names [Reviewed by David Roe, Frédéric Chapoton]
+#26480: David Coudert: clean graph_latex.py [Reviewed by Frédéric Chapoton]
+#26491: Clemens Heuberger: Maximum recursion depth exceeded when dumping a large Finite State Machines [Reviewed by Daniel Krenn]
+#26499: Dima Pasechnik: sagenb 1.1.0 [Reviewed by François Bissey]
+#26505: David Coudert: clean and improve convexity_properties.pyx [Reviewed by Travis Scrimshaw]
+#26506: David Coudert: clean cliquer.pyx [Reviewed by Travis Scrimshaw]
+#26507: Xavier Caruso: Remove \mathbb in the documentation [Reviewed by Simon Brandhorst]
+#26514: David Coudert: clean centrality.pyx [Reviewed by Travis Scrimshaw]
+#26515: David Coudert: clean bipartite_graph.py [Reviewed by Travis Scrimshaw]
+#26517: Frédéric Chapoton: py3: some details about map and filter [Reviewed by Travis Scrimshaw]
+#26518: Frédéric Chapoton: py3: fix for zip in nilpotent Lie groups [Reviewed by Travis Scrimshaw]
+#26519: Frédéric Chapoton, Vincent Klein: py3: care for islice [Reviewed by Frédéric Chapoton, Vincent Klein]
+#26521: Frédéric Chapoton: fix invalid escape sequences in sboxes [Reviewed by Travis Scrimshaw]
+#26523: Frédéric Chapoton: fix one doctest in hecke triangle group [Reviewed by Travis Scrimshaw]
+#26524: Frédéric Chapoton: py3: minor fix in misc/misc [Reviewed by Travis Scrimshaw]
+#26525: Frédéric Chapoton: py3 fix doctest in btquotient [Reviewed by Travis Scrimshaw]
+#26528: David Coudert: avoid using .vertices() in comparability, hyperbolicity and distances_all_pairs [Reviewed by Travis Scrimshaw]
+#26529: Frédéric Chapoton: py3 fix elliptic curve L-series [Reviewed by John Cremona]
+#26530: Frédéric Chapoton: cleanup of the category of Coxeter groups [Reviewed by Travis Scrimshaw]
+#26531: David Coudert: avoid using .vertices() in asteroidal_triples [Reviewed by Travis Scrimshaw]
+#26533: David Coudert: clean trees.pyx [Reviewed by Frédéric Chapoton]
+#26534: David Coudert: avoid using .vertices() in weakly_chordal.pyx [Reviewed by Frédéric Chapoton]
+#26535: Frédéric Chapoton: py3: fix doctests in Hillman-Grassl file [Reviewed by Travis Scrimshaw]
+#26536: Frédéric Chapoton: py3: fix doctest in the file kraus.py [Reviewed by John Cremona]
+#26539: Frédéric Chapoton: py3: fix doctests in power series [Reviewed by Travis Scrimshaw]
+#26540: Frédéric Chapoton: py3: fixing some doctests in combinat and structure [Reviewed by Travis Scrimshaw]
+#26541: Frédéric Chapoton: py3: fix doctests in cachefunc.pyx [Reviewed by Travis Scrimshaw]
+#26542: Frédéric Chapoton: py3: fix some doctests in Cartan types [Reviewed by Travis Scrimshaw]
+#26543: Frédéric Chapoton: py3: fix doctests in sat/ [Reviewed by Travis Scrimshaw]
+#26547: David Coudert: clean spanning_tree.pyx [Reviewed by Travis Scrimshaw]
+#26553: Frédéric Chapoton: remove deprecated incomplete_gamma [Reviewed by Travis Scrimshaw]
+#26554: David Coudert: improve boost_graph.pyx [Reviewed by Travis Scrimshaw]
+#26555: Frédéric Chapoton: remove a deprecated method in matrix_space [Reviewed by Travis Scrimshaw]
+
+Merged in sage-8.5.beta2:
+
+#940: Thierry Monteil: read large output from octave (and probably matlab) takes *forever* [Reviewed by Vincent Delecroix]
+#3330: Thierry Monteil: multivariate polynomial GCD should work over more base rings [Reviewed by Vincent Delecroix]
+#24798: Konrad K. Dabrowski: Missing dependencies cause sagetex to fail to build when SAGE_CHECK=yes [Reviewed by John Palmieri]
+#25084: Vincent Delecroix: change _invert_unit to inverse_of_unit on integer matrices [Reviewed by Frédéric Chapoton]
+#25188: Erik Bray: Repeated configure run with gcc already installed treats gcc as not installed [Reviewed by Volker Braun, Julian Rüth, Dima Pasechnik]
+#25198: Erik Bray: Improve handling of GCC_DEP variable in Makefile [Reviewed by Dima Pasechnik]
+#26147: Frédéric Chapoton: py3: replace tests for attribute iteritems [Reviewed by Clemens Heuberger]
+#26423: John Palmieri: Move some references from combinat to master reference file [Reviewed by Travis Scrimshaw]
+#26440: Daniel Bump: Fusion algebras from Weyl Character Rings [Reviewed by Travis Scrimshaw]
+#26449: John Palmieri: Python 3 vs. Sphinx [Reviewed by Erik Bray]
+#26460: Frédéric Chapoton: Modify the banner for Python3-based Sage [Reviewed by Jeroen Demeyer]
+#26510: Vincent Klein: Py3: Fix combinat.subset.py for python3 [Reviewed by Frédéric Chapoton]
+#26545: Vincent Klein: Py3: Many python3 fixes in categories [Reviewed by Frédéric Chapoton]
+#26556: Frédéric Chapoton: multiplicative order for square matrices over ZZ [Reviewed by Travis Scrimshaw]
+#26561: David Coudert: clean static_sparse_graph.pyx [Reviewed by Travis Scrimshaw]
+#26562: Frédéric Chapoton: small cleanup of one  file in modular symbols [Reviewed by Travis Scrimshaw]
+#26565: David Coudert: clean static_sparse_backend [Reviewed by Travis Scrimshaw]
+#26566: David Coudert: clean static_dense_graph.pyx [Reviewed by Travis Scrimshaw]
+#26567: David Coudert: clean dense_graph.pyx [Reviewed by Travis Scrimshaw]
+#26569: Frédéric Chapoton: py3: fix manifolds again [Reviewed by Travis Scrimshaw]
+#26570: Frédéric Chapoton: py3: fix some doctests in elliptic curves [Reviewed by David Roe]
+#26571: Frédéric Chapoton: py3: fix the hash for shifted prime tableaux [Reviewed by Travis Scrimshaw]
+#26572: Frédéric Chapoton: py3: some care for some hash functions [Reviewed by David Roe]
+#26573: Frédéric Chapoton: py3: some more care for islice [Reviewed by David Roe]
+#26576: David Roe: py3: Fix issues in sage/rings/padics [Reviewed by Frédéric Chapoton]
+#26577: David Coudert: clean graph_backends.pyx [Reviewed by Travis Scrimshaw]
+#26578: David Coudert: clean digraph.py [Reviewed by Travis Scrimshaw]
+#26580: Frédéric Chapoton: remove deprecated stuff in asymptotic/ [Reviewed by Daniel Krenn]
+#26581: David Coudert: clean connectivity.pyx (part 1) [Reviewed by Travis Scrimshaw]
+#26582: Frédéric Chapoton: remove deprecated stuff in quadratic forms automorphisms [Reviewed by Travis Scrimshaw]
+#26583: Frédéric Chapoton: remove some deprecated stuff in plot [Reviewed by Travis Scrimshaw]
+#26584: Frédéric Chapoton: py3: partial fix for crystals/alcove_path [Reviewed by David Roe]
+#26585: Erik Bray: Calling openblas_set_num_threads in the main process of Sage can lead to segfaults [Reviewed by Erik Bray]
+#26590: Sébastien Labbé: py3: all tests pass in combinat/words [Reviewed by Frédéric Chapoton]
+#26593: Vincent Delecroix: bug in QQbar comparisons [Reviewed by David Roe]
+#26594: Frédéric Chapoton: py3: fix round in sha_tate [Reviewed by David Roe]
+#26595: Frédéric Chapoton: py3: fix doctest in arithgroup [Reviewed by David Roe]
+#26599: Frédéric Chapoton: py3: fix one doctests in polyhedron constructor file [Reviewed by Travis Scrimshaw]
+#26600: Frédéric Chapoton: py3: fix doctests in ribbon tableaux [Reviewed by Travis Scrimshaw]
+#26601: Marco Mancini: py3: make all tests in src/sage/tensor passed [Reviewed by Eric Gourgoulhon]
+#26602: Dima Pasechnik: remove cephes package [Reviewed by Frédéric Chapoton]
+#26609: Frédéric Chapoton: remove deprecated stuff in manifolds [Reviewed by Eric Gourgoulhon]
+#26610: Frédéric Chapoton: py3: fix most doctests in combinat/species [Reviewed by Travis Scrimshaw]
+
+Merged in sage-8.5.beta3:
+
+#23214: Vincent Delecroix: enhance sparse integer matrix with linbox (+ cleaning) [Reviewed by Travis Scrimshaw, Vincent Klein]
+#24758: Erik Bray: py3: minor fixes to sage.functions [Reviewed by Frédéric Chapoton]
+#24919: Erik Bray: Generic mechanism for system package checks at configure time [Reviewed by John Palmieri, Dima Pasechnik]
+#25261: Dima Pasechnik: Upgrade to GSL 2.5 [Reviewed by François Bissey]
+#25874: Joey van Langen: Conversions between S unit group and number field are not each others inverse [Reviewed by Peter Bruin]
+#25888: Simon Brandhorst: Bug in equivalence testing of binary quadratic forms [Reviewed by Peter Bruin]
+#26146: Daniel Krenn: py3: doctests AsymptoticRing [Reviewed by Frédéric Chapoton]
+#26190: Matthias Koeppe: Upgrade latte_int to 1.7.5 [Reviewed by Dima Pasechnik, Travis Scrimshaw]
+#26195: Xavier Caruso, Thibaut Verron: Tate algebras [Reviewed by David Roe]
+#26276: Erik Bray: py3: misc fixes for sage.modules [Reviewed by Travis Scrimshaw]
+#26279: Erik Bray: Improve comparisons of PolyDicts [Reviewed by Frédéric Chapoton]
+#26487: Jeroen Demeyer: Document that isogenies_prime_degree() only finds separable isogenies [Reviewed by Peter Bruin]
+#26527: Frédéric Chapoton: py3 work on automorphism groups of graphs [Reviewed by David Coudert]
+#26559: Paul Mercat: Bug in DiGraph.spectral_radius() [Reviewed by David Coudert]
+#26568: David Coudert: clean c_graph.pyx [Reviewed by Travis Scrimshaw]
+#26575: David Roe: Doctest results starting with ... [Reviewed by Xavier Caruso]
+#26579: Antonio Rojas: Fix ecl.pyx doctests with threaded ecl [Reviewed by François Bissey]
+#26603: Daniel Bump: Bugfix in bruhat_lower_covers [Reviewed by Travis Scrimshaw]
+#26605: Frédéric Chapoton: fix some magma/groebner log failing doctests [Reviewed by Travis Scrimshaw]
+#26607: Frédéric Chapoton: small cleanup of the doc of Weyl character ring [Reviewed by Travis Scrimshaw]
+#26611: Frédéric Chapoton: py3: fix hypergeometric motives [Reviewed by Vincent Klein]
+#26613: Konrad K. Dabrowski: sagenb fails to build due to missing dependencies [Reviewed by Jeroen Demeyer, François Bissey]
+#26614: Frédéric Chapoton: turn Kruskal algo for min spanning tree into an iterator [Reviewed by David Coudert]
+#26617: Frédéric Chapoton: py3: some care for division in range [Reviewed by Travis Scrimshaw]
+#26618: David Coudert: avoid using .vertices() in centrality.pyx [Reviewed by Travis Scrimshaw]
+#26621: David Coudert: clean bliss.pyx [Reviewed by Travis Scrimshaw, Dima Pasechnik]
+#26622: David Coudert: avoid using .vertices() in convexity_properties.pyx [Reviewed by Frédéric Chapoton]
+#26624: David Coudert: clean generic_graph.py (part 1) [Reviewed by Frédéric Chapoton]
+#26626: Frédéric Chapoton: py3: fix doctests in misc/c3_controlled [Reviewed by Travis Scrimshaw]
+#26627: David Coudert: clean generic_graph.py (part 2) [Reviewed by Travis Scrimshaw]
+#26629: Frédéric Chapoton: py3: cleanup of cyclic sieving [Reviewed by Travis Scrimshaw]
+#26631: Frédéric Chapoton: py3 minor fixes in numerical [Reviewed by Travis Scrimshaw]
+#26632: David Coudert: improve method distance_matrix [Reviewed by Travis Scrimshaw]
+#26636: Frédéric Chapoton: py3: fix doctests in geometry/cone [Reviewed by Andrey Novoseltsev]
+#26637: David Coudert: clean generic_graph.py (part 6) [Reviewed by Travis Scrimshaw]
+#26638: Frédéric Chapoton: py3: one fix in rigged configurations [Reviewed by Travis Scrimshaw]
+#26641: Jeroen Demeyer: Repackage sagenb [Reviewed by John Palmieri, Dima Pasechnik]
+#26642: Jeroen Demeyer: Errors when copying files ignored [Reviewed by Frédéric Chapoton]
+#26643: François Bissey: Upgrade to NumPy 1.15.4 [Reviewed by Travis Scrimshaw]
+#26645: Frédéric Chapoton: py3: some fixes in graph generators [Reviewed by David Coudert]
+#26646: Frédéric Chapoton: py3: fix doctests in Weyl algebra [Reviewed by Travis Scrimshaw]
+#26647: Frédéric Chapoton: more trac and remove deprecated alias for matrix inverse [Reviewed by Travis Scrimshaw]
+#26648: Frédéric Chapoton: py3: fix doctests in diamond_cutting [Reviewed by Travis Scrimshaw]
+#26649: Vincent Klein: Py3: Fixes in combinat/root_system module [Reviewed by Frédéric Chapoton]
+#26651: Frédéric Chapoton: py3: fix repr of callable dict [Reviewed by David Coudert, Vincent Klein]
+#26652: Frédéric Chapoton: py3: sortkey for affine weight spaces [Reviewed by Travis Scrimshaw]
+#26653: David Coudert: clean connectivity.pyx (part 2) [Reviewed by Travis Scrimshaw]
+#26656: Frédéric Chapoton: py3: keep reduce in global namespace [Reviewed by Erik Bray]
+#26658: David Coudert: clean generic_graph.py (part 7) - planarity [Reviewed by Travis Scrimshaw]
+#26660: Erik Bray: Fix changes from #25857 that were accidentally reverted by #25188 [Reviewed by Dima Pasechnik]
+
+Merged in sage-8.5.beta4:
+
+#16931: Jeroen Demeyer: Elliptic curve point counting over F_q using PARI [Reviewed by David Roe, John Cremona]
+#24065: Peter Bruin: p-adic polynomial - factorization with pari fails. [Reviewed by Alex J. Best]
+#25885: Markus Wageringel: Fixes for outdated Macaulay2 interface [Reviewed by Dima Pasechnik]
+#26172: Bruce Westbury: Plot standard tableau with descents [Reviewed by Travis Scrimshaw]
+#26550: François Bissey: Upgrade to SymPy 1.3 [Reviewed by Jeroen Demeyer]
+#26558: John Palmieri: doc-pdf fails due to conflict with new babel.sty [Reviewed by Steven Trogdon]
+#26659: Vincent Klein: py3: Fix some doctests errors in sets module for python3 [Reviewed by Sébastien Labbé]
+#26662: Frédéric Chapoton: pep cleanup of Weierstrass covering [Reviewed by Travis Scrimshaw]
+#26664: Frédéric Chapoton: py3: fix tensor operations for Klyachko bundles [Reviewed by Travis Scrimshaw]
+#26665: François Bissey: python3: 'filter' object is not subscriptable in libs/gap/util.pyx [Reviewed by Travis Scrimshaw]
+#26666: David Coudert: clean generic_graph.py (part 9) - edge and vertex handlers [Reviewed by Travis Scrimshaw]
+#26669: Peter Bruin: Error when factoring constant p-adic polynomials [Reviewed by Alex J. Best]
+#26670: Frédéric Chapoton: py3: cleanup of toy d basis [Reviewed by Travis Scrimshaw]
+#26671: Frédéric Chapoton: py3: fix doctests in latin squares [Reviewed by Travis Scrimshaw]
+#26672: David Coudert: clean generic_graph.py (part 10) - degree [Reviewed by Travis Scrimshaw]
+#26673: Frédéric Chapoton: py3: make some doctests of modular symbols more robust [Reviewed by Travis Scrimshaw]
+#26674: Frédéric Chapoton: py3: fix doctests in weak dict [Reviewed by Travis Scrimshaw]
+#26677: Alex J. Best: rational_points for some elliptic curves fails [Reviewed by Ben Hutz]
+#26683: Frédéric Chapoton: py3: various fixes in combinat [Reviewed by Travis Scrimshaw]
+#26684: Frédéric Chapoton: py3: fixing round in random graph generator [Reviewed by David Coudert]
+#26685: Frédéric Chapoton: fix a bad import in abstract trees [Reviewed by Travis Scrimshaw]
+#26686: Konrad K. Dabrowski: sagenb docs fail to build [Reviewed by Dima Pasechnik]
+#26688: Frédéric Chapoton: py3: some fixes in quaternion algebras [Reviewed by Travis Scrimshaw]
+#26689: Frédéric Chapoton: py3: fix doctests in misc_c.pyx [Reviewed by Travis Scrimshaw]
+#26690: Frédéric Chapoton: some work on cluster mutation [Reviewed by Travis Scrimshaw]
+#26691: Frédéric Chapoton: fixing some invalid escape sequences [Reviewed by Travis Scrimshaw]
+#26692: Frédéric Chapoton: py3: fix Tate algebras [Reviewed by Vincent Klein]
+#26693: Frédéric Chapoton: remove one deprecated function in octave interface [Reviewed by Travis Scrimshaw]
+#26694: Frédéric Chapoton: remove a deprecated special function [Reviewed by Travis Scrimshaw]
+#26695: Frédéric Chapoton: pyflakes cleanup for Coxeter groups as matrix groups [Reviewed by Travis Scrimshaw]
+#26696: Frédéric Chapoton: py3: fixing Kleber trees [Reviewed by Travis Scrimshaw]
+#26698: Frédéric Chapoton: py3: fix some doctests in eta products [Reviewed by Travis Scrimshaw]
+#26700: Frédéric Chapoton: minor changes in doctest control [Reviewed by Travis Scrimshaw]
+#26701: Eric Gourgoulhon: Simplifications in the computation of the inverse of a transition map [Reviewed by Travis Scrimshaw]
+#26703: Sébastien Labbé: py3: action.pyx and spanning_tree.pyx [Reviewed by Vincent Klein]
+
+Merged in sage-8.5.beta5:
+
+#23341: Dima Pasechnik, François Bissey: port lcalc to C++11 [Reviewed by Dima Pasechnik, François Bissey, Jeroen Demeyer, Ralf Stephan]
+#23547: Vincent Delecroix: isl + polylib + barvinok packages [Reviewed by Vincent Klein, Sébastien Labbé]
+#25443: Martin Rubey: bijections for set partitions [Reviewed by Christian Stump]
+#25473: Sébastien Labbé: 20 internet doctests failed in sage/finance/stock.py [Reviewed by Frédéric Chapoton]
+#25519: Jeroen Demeyer, Vincent Klein: Upgrade gmpy2 [Reviewed by Jeroen Demeyer]
+#25708: Friedrich Wiemer: Rename SBox methods for difference_distribution_matrix and similar to _table [Reviewed by Rusydi H. Makarim]
+#26026: Erik Bray: Updates to Huffman codings [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
+#26168: Marco Mancini: Add parallelism for two tensor calculus functions [Reviewed by Frédéric Chapoton, Eric Gourgoulhon, Samuel Lelièvre]
+#26405: Xavier Caruso: Root finding for p-adic polynomials [Reviewed by David Roe]
+#26420: Simon Brandhorst: More flexible constructor of  GroupHomomorphisms [Reviewed by Sebastian Oehms]
+#26560: Frédéric Chapoton: remove deprecated stuff in element wrapper [Reviewed by Travis Scrimshaw]
+#26574: Frédéric Chapoton: remove deprecated stuff in integer lists [Reviewed by Travis Scrimshaw]
+#26596: Timo Kaufmann: Replace expect r interface with rpy2 [Reviewed by François Bissey]
+#26597: François Bissey: Update boost/boost_cropped to 1.66.0 [Reviewed by Volker Braun]
+#26630: David Coudert: clean generic_graph.py (part 3) [Reviewed by Frédéric Chapoton]
+#26661: Frédéric Chapoton: pep cleanup of old integer lists [Reviewed by Travis Scrimshaw]
+#26667: Jeroen Demeyer: distutils no longer shows compiler commands [Reviewed by Julian Rüth, Volker Braun]
+#26702: Vincent Klein: Py3: Fix database/sql_db module for python3 [Reviewed by Frédéric Chapoton]
+#26704: Vincent Klein: Py3 : database.oeis  implement __getitem__ to replace __getslice__ [Reviewed by Frédéric Chapoton]
+#26705: Travis Scrimshaw: Fix is_formal for hyperplane arrangements with no cycles [Reviewed by Frédéric Chapoton]
+#26708: David Coudert: clean connectivity.pyx (part 3) [Reviewed by Travis Scrimshaw]
+#26709: Bryan Gin-ge Chen: Upgrade to jupyter notebook 5.7.1 [Reviewed by Volker Braun]
+#26711: David Coudert: avoid .vertices() in graph_coloring.py [Reviewed by Frédéric Chapoton]
+#26712: David Coudert: avoid .vertices() in independent_sets.pyx [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#26715: François Bissey: build/pkgs/gfortran/spkg-configure.m4 works incorrectly if CC and CXX are already there [Reviewed by Erik Bray]
+#26717: Frédéric Chapoton: converting some http to https in install instructions [Reviewed by Travis Scrimshaw]
+#26719: Frédéric Chapoton: py3: fix doctests in symmetric group algebra [Reviewed by Travis Scrimshaw]
+#26720: Frédéric Chapoton: py3: some fixes for misc/abstract_method [Reviewed by Travis Scrimshaw]
+#26721: Frédéric Chapoton: py3: fix function fields [Reviewed by Travis Scrimshaw]
+#26723: Frédéric Chapoton: remove deprecated stuff in posets and Hasse [Reviewed by Travis Scrimshaw]
+#26724: Frédéric Chapoton: py3: one small fix for elliptic curves over number fields [Reviewed by John Cremona]
+#26726: Vincent Klein: Py3: Some python3 fixes in geometry module. [Reviewed by Frédéric Chapoton]
+#26728: Martin Rubey: Remove ellipsis in one findstat doctest [Reviewed by Frédéric Chapoton]
+#26729: Dima Pasechnik: update curl to 7.62 [Reviewed by Travis Scrimshaw]
+#26732: Julian Rüth: Docker image fails to start jupyter notebook [Reviewed by Erik Bray]
+#26734: Frédéric Chapoton: small cleanup for alternating sign matrices [Reviewed by Travis Scrimshaw]
+#26736: Frédéric Chapoton: some work on cluster mutation again [Reviewed by Travis Scrimshaw]
+#26737: Frédéric Chapoton: py3: some work on finite state machines [Reviewed by Vincent Klein]
+#26738: Frédéric Chapoton: py3: fix all doctests in game_theory [Reviewed by Vincent Klein]
+#26739: Frédéric Chapoton: py3: some fixes in Monsky-Washnitzer [Reviewed by Travis Scrimshaw]
+#26742: Frédéric Chapoton: py3: fix threejs viewer interface [Reviewed by Eric Gourgoulhon]
+#26743: Frédéric Chapoton: cyclotomic_part should not include powers of x [Reviewed by Kiran Kedlaya]
+#26744: Frédéric Chapoton: remove a bunch of deprecated renamed keywords [Reviewed by Vincent Klein]
+#26745: Frédéric Chapoton: py3: fix doctest in Grossman-Larsson [Reviewed by Travis Scrimshaw]
+#26746: Martin Rubey: provide translation of fresnel to fricas [Reviewed by Frédéric Chapoton]
+#26747: Frédéric Chapoton: py3: final fixes for cluster_algebra.py [Reviewed by Salvatore Stella]
+#26748: David Coudert: clean graph_generators_pyx.pyx [Reviewed by Frédéric Chapoton]
+
+Merged in sage-8.5.beta6:
+
+#19945: Jeroen Demeyer: Fix Rational.__pow__ [Reviewed by Travis Scrimshaw]
+#22148: Beth Malmskog, Chris Rasmussen, Angelos Koutsianas, Alejandra Alvarado, Christelle Vincent, Mckenzie West: Solving S-unit equations over number fields [Reviewed by David Roe]
+#23807: Ben Hutz, Peter Bruin, Raghukul Raman: different affine patches are the same object in memory [Reviewed by Ben Hutz, Travis Scrimshaw]
+#24500: Jeroen Demeyer: Implement actions using _act_ instead of _call_ [Reviewed by Travis Scrimshaw]
+#25292: Jeroen Demeyer: Upgrade to Cython 0.29.1 [Reviewed by Timo Kaufmann]
+#25766: Friedrich Wiemer: SBox.boomerang_uniformity [Reviewed by Travis Scrimshaw]
+#25826: Manon Stipulanti: Adding a note in the doc of the method delta() available in combinat/words/finite_word [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#26052: François Bissey: Update to OpenBLAS 0.3.3 [Reviewed by Erik Bray]
+#26154: Jeroen Demeyer: Omit period when printing real numbers in scientific notation with 1 digit [Reviewed by Bryan Gin-ge Chen]
+#26509: Jeroen Demeyer: (-1).sqrt(extend=False, all=True) raises an exception [Reviewed by Travis Scrimshaw]
+#26548: Thierry Monteil: Upgrade openssl to LTS 1.1.1 [Reviewed by Travis Scrimshaw]
+#26633: David Coudert: clean generic_graph.py (part 4) [Reviewed by Frédéric Chapoton]
+#26687: Peter Bruin: Remove some unused imports and variables in sage.schemes [Reviewed by Frédéric Chapoton]
+#26716: Frédéric Chapoton: py3: some small care for matrix [Reviewed by Jeroen Demeyer, Vincent Klein]
+#26730: David Coudert: random chordal graphs generator [Reviewed by Travis Scrimshaw]
+#26751: Frédéric Chapoton: py3: some fixes for calculus/ [Reviewed by Travis Scrimshaw]
+#26757: David Coudert: py3: fixing round in graph_latex.py [Reviewed by Travis Scrimshaw]
+#26758: Timo Kaufmann: Fix gap_root doctest [Reviewed by François Bissey, Erik Bray]
+#26759: Frédéric Chapoton: remove a big bunch of deprecated stuff [Reviewed by Travis Scrimshaw]
+#26760: Frédéric Chapoton: py3: one fix in infinite polynomial ring [Reviewed by Travis Scrimshaw]
+#26761: David Coudert: py3: fix BlanusaSecondSnarkGraph [Reviewed by Frédéric Chapoton]
+#26762: David Coudert: py3: fix HortonGraph generator [Reviewed by Frédéric Chapoton]
+#26763: David Coudert: py3: fix SzekeresSnarkGraph generator [Reviewed by Frédéric Chapoton]
+#26764: Frédéric Chapoton: py3: fix doctests in rings/function_field (final) [Reviewed by Travis Scrimshaw]
+#26765: Frédéric Chapoton: py3: fix last 2 doctests in coding [Reviewed by Vincent Klein]
+#26766: Frédéric Chapoton: py3: some fixes for algebras [Reviewed by Travis Scrimshaw]
+#26767: Frédéric Chapoton: py3: some care for matroids [Reviewed by Travis Scrimshaw]
+#26768: Frédéric Chapoton: py3: caring for structure/ doctests [Reviewed by Travis Scrimshaw]
+#26772: Frédéric Chapoton: remove some deprecated lazy imports [Reviewed by Travis Scrimshaw]
+#26773: Frédéric Chapoton: remove another bunch of deprecated rename_keyword [Reviewed by Travis Scrimshaw]
+#26777: Marco Mancini: Bug in parallelization on manifolds [Reviewed by Eric Gourgoulhon]
+#26778: Frédéric Chapoton: py3: more fixes for KR crystals [Reviewed by Vincent Klein]
+#26780: Frédéric Chapoton: py3: fix noncrossing partitions lattices [Reviewed by Travis Scrimshaw]
+#26781: Vincent Klein: Py3: Fix several combinat files for python3 [Reviewed by Frédéric Chapoton]
+#26783: Frédéric Chapoton: fixing some details for elliptic curves over QQ [Reviewed by John Cremona]
+#26789: Jeroen Demeyer: Drop support for old-style division in coercion model [Reviewed by Frédéric Chapoton, Erik Bray]
+#26793: Frédéric Chapoton: removing some "import sage" [Reviewed by Travis Scrimshaw]
+#26794: Martin Rubey: Memory leak in breadth_first_search [Reviewed by Jori Mäntysalo]
+
+Merged in sage-8.5.rc0:
+
+#26286: Erik Bray, Dima Pasechnik: more system package checks [Reviewed by Erik Bray, Dima Pasechnik]
+#26360: Timo Kaufmann: Upgrade arb to 2.15.1 [Reviewed by Marc Mezzarobba]
+#26546: Jeroen Demeyer: matrix_gfpn_dense: refactor field_to_int() [Reviewed by Simon King]
+#26619: Frédéric Chapoton: py3: one fix in bdd_height.py [Reviewed by Travis Scrimshaw]
+#26634: David Coudert: clean generic_graph.py (part 5) [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#26657: Sebastian Oehms: Adapt unitary burau matrix to Sage convention [Reviewed by Travis Scrimshaw]
+#26663: David Coudert: clean generic_graph.py (part 8) - connectivity [Reviewed by Jori Mäntysalo]
+#26675: David Coudert: clean generic_graph.py (part 11) - substructures [Reviewed by Travis Scrimshaw]
+#26680: David Coudert: clean generic_graph.py (part 14) - visualization [Reviewed by Frédéric Chapoton]
+#26725: Jeroen Demeyer: Upgrade to PARI-2.11.1 [Reviewed by François Bissey]
+#26756: Frédéric Chapoton: py3: some care for integer.pyx [Reviewed by Travis Scrimshaw, Erik Bray]
+#26776: Jeroen Demeyer: MonoDict/TripleDict: optimize use of KeyedRef [Reviewed by Travis Scrimshaw]
+#26779: David Coudert: py3: fix graph_input.py and hypergraph_generators.py [Reviewed by Frédéric Chapoton]
+#26782: François Bissey: boost 1.66 does not compile [Reviewed by Volker Braun]
+#26795: Dima Pasechnik: Some memory leaks [Reviewed by Jori Mäntysalo]
+#26796: Martin Rubey: memory leaks in IndependentSets [Reviewed by Jori Mäntysalo]
+#26798: Frédéric Chapoton: remove deprecated stuff in sage_object [Reviewed by Travis Scrimshaw]
+#26799: Frédéric Chapoton: py3: some care for abelian groups [Reviewed by Travis Scrimshaw]
+#26801: David Coudert: py3: change sorting of neighbors labels in static_sparse_graph.pyx [Reviewed by Travis Scrimshaw, Frédéric Chapoton]
+#26803: David Coudert: Error message in szeged_index() [Reviewed by Jori Mäntysalo]
+#26804: Frédéric Chapoton: more lazy imports in combinat.all [Reviewed by Travis Scrimshaw]
+#26806: Dima Pasechnik: Memory leak _is_relaxation() [Reviewed by Jori Mäntysalo]
+#26808: David Coudert: fix bug in RandomChordalGraph [Reviewed by Frédéric Chapoton]
+#26812: David Coudert: py3: fix doctest in graph_generators.py [Reviewed by Frédéric Chapoton]
+#26813: David Coudert: improve cluster_triangles [Reviewed by Frédéric Chapoton]
+#26824: David Coudert: pep8 in wiener_index and average_distance [Reviewed by Jori Mäntysalo]
+#26826: David Coudert: improve method _path_length [Reviewed by Frédéric Chapoton]
+#26830: David Coudert: avoid .vertices() and .edges() in graph_products.pyx [Reviewed by Frédéric Chapoton]
+#26833: David Coudert: avoid using .vertices() in vertex_separation.pyx [Reviewed by Frédéric Chapoton]
+#26836: Frédéric Chapoton: some enhancements to cluster quiver interact [Reviewed by Travis Scrimshaw]
+#26837: Vincent Klein: py3: Fix combinat.designs module for python3 (final) [Reviewed by Frédéric Chapoton]
+#26838: Frédéric Chapoton: some fixes for SymmetricGroup as Coxeter group [Reviewed by Travis Scrimshaw]
+#26842: Markus Wageringel: Index error in FreeAbelianMonoid constructor [Reviewed by John Palmieri]
+#26845: Frédéric Chapoton: py3: tiny fix for Lie algebras [Reviewed by Travis Scrimshaw]
+#26850: Markus Wageringel: Small fix for unicode_art of IndexedFreeModuleElement [Reviewed by Frédéric Chapoton]
+
+Merged in sage-8.5.rc1:
+
+#25668: John Palmieri: Run relocate-once.py with Sage's Python2 and with error checking [Reviewed by Jeroen Demeyer, Volker Braun]
+#26586: Jeroen Demeyer: Failing doctest in poset_examples [Reviewed by Volker Braun, Frédéric Chapoton]
