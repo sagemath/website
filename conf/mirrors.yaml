@@ -48,20 +48,20 @@
   cat: sa
   country: br
   flag: br
-  name: 'Universidade Federal do Paraná, Brazil'
+  name: "Universidade Federal do Paraná, Brazil"
   url: http://sagemath.c3sl.ufpr.br/
 - active: false
   cat: e
   country: ch
   flag: ch
-  name: 'SWITCHmirror, Zurich, Switzerland'
+  name: "SWITCHmirror, Zurich, Switzerland"
   priority: 90
   url: http://mirror.switch.ch/mirror/sagemath/
 - active: true
   cat: e
   country: de
   flag: de
-  name: 'Four Dots OpenSource Initiative, Saxony, Germany'
+  name: "Four Dots OpenSource Initiative, Saxony, Germany"
   url: https://fourdots.com/mirror/sagemath/
 - active: false
   cat: e
@@ -73,7 +73,7 @@
   cat: e
   country: de
   flag: de
-  name: 'Freie Universität Berlin, Germany'
+  name: "Freie Universität Berlin, Germany"
   url: ftp://ftp.fu-berlin.de/unix/misc/sage/
 - active: false
   cat: aus
@@ -157,7 +157,7 @@
   cat: e
   country: gr
   flag: gr
-  name: 'Εθνικό Μετσόβιο Πολυτεχνείο, Greece'
+  name: "Εθνικό Μετσόβιο Πολυτεχνείο, Greece"
   url: http://ftp.ntua.gr/pub/sagemath/
 - active: true
   cat: af
@@ -169,7 +169,7 @@
   cat: a
   country: tr
   flag: tr
-  name: 'Yaşar Üniversitesi, Turkey'
+  name: "Yaşar Üniversitesi, Turkey"
   url: http://sage.yasar.edu.tr/
 - active: true
   cat: a
@@ -177,17 +177,17 @@
   flag: in
   name: Indian Institute of Technology Madras, India
   url: http://ftp.iitm.ac.in/sage/
-- active: true
+- active: false # disabled 2019-01-18 due to a faulty file
   cat: e
   country: fr
   flag: fr
-  name: 'Université Pierre et Marie Curie, Paris, France'
+  name: "Université Pierre et Marie Curie, Paris, France"
   url: http://www-ftp.lip6.fr/pub/math/sagemath/
 - active: false
   cat: na
   country: ca
   flag: ca
-  name: 'Université du Québec à Montréal, Québec, Canada'
+  name: "Université du Québec à Montréal, Québec, Canada"
   url: http://mirror.clibre.uqam.ca/sage/
 - active: false
   cat: af
@@ -235,7 +235,7 @@
   cat: sa
   country: br
   flag: br
-  name: 'University of São Paulo, Brazil'
+  name: "University of São Paulo, Brazil"
   url: http://linorg.usp.br/sage/
 - active: true
   cat: a
