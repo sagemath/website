@@ -177,7 +177,7 @@
   flag: in
   name: Indian Institute of Technology Madras, India
   url: http://ftp.iitm.ac.in/sage/
-- active: false # disabled 2019-01-18 due to a faulty file
+- active: true # re-enabled 2019-01-22, they sync from master and checked all their files
   cat: e
   country: fr
   flag: fr
