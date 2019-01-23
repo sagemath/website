@@ -1,262 +1,334 @@
 {% extends 'base.html' %}
 {% set title = "Development Groups" %}
-
 {% block content %}
- <h1>Development Discussion Groups</h1>
+<h1>
+  Development Discussion Groups
+</h1>
 
- <table class="top wide">
+<table class="top wide">
   <colgroup>
-   <col width="50%" />
-   <col width="50%" />
+    <col width="50%">
+    <col width="50%">
   </colgroup>
 
   <tbody>
-   <tr>
-    <td class="leftpadding">
-     <h2><a href="http://groups.google.com/group/sage-devel/"
-       >sage-devel</a></h2>
+    <tr>
+      <td class="leftpadding">
+        <h2>
+          <a href="http://groups.google.com/group/sage-devel/">sage-devel</a>
+        </h2>
 
-     <div class="txt leftpadding">
-      This discussion group talks about development of {{ sage }}. This includes bugs, new features,
-      {{ sage }}&#39;s future and more.
-     </div>
+        <div class="txt leftpadding">
+          This discussion group talks about development of {{ sage }}. This
+          includes bugs, new features, {{ sage }}'s future and more.
+        </div>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-devel/"
-        >sage-devel</a> – online</li>
+        <ul>
+          <li>
+            <a href="http://groups.google.com/group/sage-devel/">sage-devel</a>
+            – online
+          </li>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-      <li><a href="http://groups.google.com/group/sage-devel/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-devel/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+      <td class="rightpadding">
+        <h2>
+          <a href=
+          "http://groups.google.com/group/sage-combinat-devel/">sage-combinat-devel</a>
+        </h2>
 
-    <td class="rightpadding">
-     <h2><a href="http://groups.google.com/group/sage-combinat-devel/"
-       >sage-combinat-devel</a></h2>
+        <div class="rightpadding txt">
+          The combinatorics discussion group is about developing algorithms.
+        </div>
 
-     <div class="rightpadding txt">
-      The combinatorics discussion group is about developing algorithms.
-     </div>
+        <ul>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-combinat-devel/">sage-combinat-devel</a>
+            – online
+          </li>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-combinat-devel/"
-        >sage-combinat-devel</a> – online</li>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-combinat-devel/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
 
-      <li><a href="http://groups.google.com/group/sage-combinat-devel/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-   </tr>
+    <tr>
+      <td class="leftpadding">
+        <div id="develfeed">
+        </div>
+      </td>
+      <td class="rightpadding">
+        <div id="combinatfeed">
+        </div>
+      </td>
+    </tr>
 
-   <tr>
-    <td class="leftpadding">
-     <div id="develfeed"></div>
-    </td>
+    <tr>
+      <td class="leftpadding">
+        <h2>
+          <a href="http://groups.google.com/group/sage-nt/">sage-nt</a>
+        </h2>
 
-    <td class="rightpadding">
-     <div id="combinatfeed"></div>
-    </td>
-   </tr>
+        <div class="txt leftpadding">
+          Number Theory development.
+        </div>
 
-   <tr>
-    <td class="leftpadding">
-     <h2><a href="http://groups.google.com/group/sage-nt/"
-       >sage-nt</a></h2>
+        <ul>
+          <li>
+            <a href="http://groups.google.com/group/sage-nt/">sage-nt</a> –
+            online
+          </li>
 
-     <div class="txt leftpadding">
-      Number Theory development.
-     </div>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-nt/"
-        >sage-nt</a> – online</li>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-nt/feed/atom_v1_0_msgs.xml">RSS
+            Feed</a>
+          </li>
+        </ul>
+      </td>
+      <td class="rightpadding">
+        <h2>
+          <a href=
+          "http://groups.google.com/group/sage-windows/">sage-windows</a>
+        </h2>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+        <div class="txt leftpadding">
+          Windows port development.
+        </div>
 
-      <li><a href="http://groups.google.com/group/sage-nt/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
+        <ul>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-windows/">sage-windows</a> –
+            online
+          </li>
 
-    <td class="rightpadding">
-     <h2><a href="http://groups.google.com/group/sage-windows/"
-       >sage-windows</a></h2>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-     <div class="txt leftpadding">
-      Windows port development.
-     </div>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-windows/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-windows/"
-        >sage-windows</a> – online</li>
+    <tr>
+      <td class="leftpadding">
+        <div id="ntfeed">
+        </div>
+      </td>
+      <td class="rightpadding">
+        <div id="winfeed">
+        </div>
+      </td>
+    </tr>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+    <tr>
+      <td class="leftpadding">
+        <h2>
+          <a href=
+          "http://groups.google.com/group/sage-release/">sage-release</a>
+        </h2>
 
-      <li><a href="http://groups.google.com/group/sage-windows/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-   </tr>
+        <div class="txt leftpadding">
+          Release Management.
+        </div>
 
-   <tr>
-    <td class="leftpadding">
-     <div id="ntfeed"></div>
-    </td>
+        <ul>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-release/">sage-release</a> –
+            online
+          </li>
 
-    <td class="rightpadding">
-     <div id="winfeed"></div>
-    </td>
-   </tr>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-   <tr>
-    <td class="leftpadding">
-     <h2><a href="http://groups.google.com/group/sage-release/"
-       >sage-release</a></h2>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-release/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+      <td class="rightpadding">
+        <h2>
+          <a href=
+          "http://groups.google.com/group/sage-coding-theory/">sage-coding-theory</a>
+        </h2>
 
-     <div class="txt leftpadding">
-      Release Management.
-     </div>
+        <div class="txt leftpadding">
+          Error-correcting codes.
+        </div>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-release/"
-        >sage-release</a> – online</li>
+        <ul>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-coding-theory/">sage-coding-theory</a>
+            – online
+          </li>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-      <li><a href="http://groups.google.com/group/sage-release/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-coding-theory/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
 
-    <td class="rightpadding">
-     <h2><a href="http://groups.google.com/group/sage-coding-theory/"
-       >sage-coding-theory</a></h2>
+    <tr>
+      <td class="leftpadding">
+        <h2>
+          <a href=
+          "http://groups.google.com/group/sage-finance/">sage-finance</a>
+        </h2>
 
-     <div class="txt leftpadding">
-      Error-correcting codes.
-     </div>
+        <div class="txt leftpadding">
+          Finance Mathematics.
+        </div>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-coding-theory/"
-        >sage-coding-theory</a> – online</li>
+        <ul>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-finance/">sage-finance</a> –
+            online
+          </li>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-      <li><a href="http://groups.google.com/group/sage-coding-theory/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-    
-    <td class="rightpadding">
-     <h2><a href="http://groups.google.com/group/sage-finance/"
-       >sage-finance</a></h2>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-finance/feed/atom_v1_0_msgs.xml">
+            RSS Feed</a>
+          </li>
+        </ul>
+      </td>
+      <td class="rightpadding">
+      </td>
+    </tr>
 
-     <div class="txt leftpadding">
-      Finance Mathematics.
-     </div>
+    <tr>
+      <td class="leftpadding">
+        <div id="releasefeed">
+        </div>
+      </td>
+      <td class="rightpadding">
+        <div id="financefeed">
+        </div>
+      </td>
+    </tr>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-finance/"
-        >sage-finance</a> – online</li>
+    <tr>
+      <td class="leftpadding">
+        <h2>
+          <a href="http://groups.google.com/group/sage-edu/">sage-edu</a>
+        </h2>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+        <div class="txt leftpadding">
+          {{ sage }} in Education.
+        </div>
 
-      <li><a href="http://groups.google.com/group/sage-finance/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-   </tr>
+        <ul>
+          <li>
+            <a href="http://groups.google.com/group/sage-edu/">sage-edu</a> –
+            online
+          </li>
 
-   <tr>
-    <td class="leftpadding">
-     <div id="releasefeed"></div>
-    </td>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-    <td class="rightpadding">
-     <div id="financefeed"></div>
-    </td>
-   </tr>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-edu/feed/atom_v1_0_msgs.xml">RSS
+            Feed</a>
+          </li>
+        </ul>
+      </td>
+      <td class="rightpadding">
+        <h2>
+          <a href="http://groups.google.com/group/sage-grid/">sage-grid</a>
+        </h2>
 
-   <tr>
-    <td class="leftpadding">
-     <h2><a href="http://groups.google.com/group/sage-edu/"
-       >sage-edu</a></h2>
+        <div class="txt leftpadding">
+          Scientific Grid Computing.
+        </div>
 
-     <div class="txt leftpadding">
-       {{ sage }} in Education.
-     </div>
+        <ul>
+          <li>
+            <a href="http://groups.google.com/group/sage-grid/">sage-grid</a> –
+            online
+          </li>
 
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-edu/"
-        >sage-edu</a> – online</li>
+          <li>If you have problems subscribing, <a href=
+          "./contact.html">contact us</a>.
+          </li>
 
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
+          <li>
+            <a href=
+            "http://groups.google.com/group/sage-grid/feed/atom_v1_0_msgs.xml">RSS
+            Feed</a>
+          </li>
+        </ul>
+      </td>
+    </tr>
 
-      <li><a href="http://groups.google.com/group/sage-edu/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-
-    <td class="rightpadding">
-     <h2><a href="http://groups.google.com/group/sage-grid/"
-       >sage-grid</a></h2>
-
-     <div class="txt leftpadding">
-      Scientific Grid Computing.
-     </div>
-
-     <ul>
-      <li><a href="http://groups.google.com/group/sage-grid/"
-        >sage-grid</a> – online</li>
-
-      <li>
-      If you have problems subscribing, <a href="./contact.html">contact us</a>.
-      </li>
-
-      <li><a href="http://groups.google.com/group/sage-grid/feed/atom_v1_0_msgs.xml">RSS
-      Feed</a></li>
-     </ul>
-    </td>
-   </tr>
-
-   <tr>
-    <td class="leftpadding">
-     <div id="edufeed"></div>
-    </td>
-
-    <td class="rightpadding">
-     <div id="gridfeed"></div>
-    </td>
-   </tr>
+    <tr>
+      <td class="leftpadding">
+        <div id="edufeed">
+        </div>
+      </td>
+      <td class="rightpadding">
+        <div id="gridfeed">
+        </div>
+      </td>
+    </tr>
   </tbody>
- </table><script type="text/javascript"
-       src=
-       "http://www.google.com/jsapi?key=ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w">
-</script><script src="http://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js"
-       type="text/javascript">
-</script><script type="text/javascript">
-//<![CDATA[
- function initialize() {
+</table>
+<!-- feed api retired? -->
+<!--
+<script src=
+"https://www.google.com/jsapi?key=ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w"
+type="text/javascript">
+</script>
+<script src="https://www.google.com/uds/solutions/dynamicfeed/gfdynamicfeedcontrol.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+function initialize() {
  var feeddev = ["http://groups.google.com/group/sage-devel/feed/atom_v1_0_topics.xml"];
  var feedcomb= ["http://groups.google.com/group/sage-combinat-devel/feed/atom_v1_0_topics.xml"];
  var feednt = ["http://groups.google.com/group/sage-nt/feed/atom_v1_0_topics.xml"];
@@ -282,6 +354,7 @@
  }
  google.load('feeds', '1');
  google.setOnLoadCallback(initialize);
- //]]>
- </script>
+</script>
+-->
+
 {% endblock %}
