@@ -141,7 +141,7 @@
   flag: za
   name: University of Cape Town, South Africa
   url: http://ftp.leg.uct.ac.za/pub/packages/sage/
-- active: false # faulty files 2019-01-24
+- active: true
   cat: e
   country: uk
   flag: gb
