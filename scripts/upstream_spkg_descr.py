@@ -1,7 +1,8 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*-
+# -*- coding: utf-8 -*-
 # this script moves all the the SPKG.txt descriptions to the
 # spkg/upstream/*/ directories.
+from __future__ import print_function
 
 import os
 import cgi
@@ -32,7 +33,7 @@ os.system("git reset --hard origin/develop")
 src_dir = os.path.expanduser("~/sage-git/build/pkgs/")
 targ_dir = os.path.expanduser("~/files/spkg/upstream/")
 os.chdir(targ_dir)
-print "starting"
+print("starting")
 for dirname in glob("*"):
   if not os.path.isdir(dirname): continue
   # check if index.html exists (if not, also create md5sums.txt)
@@ -41,10 +42,10 @@ for dirname in glob("*"):
       os.system("touch %s" % os.path.join(dirname, auxfn))
   spkg_txt = os.path.join(src_dir, dirname, "SPKG.txt")
   if not os.path.exists(spkg_txt):
-    print "WARNING: %s does not exist" % spkg_txt
+    print("WARNING: %s does not exist" % spkg_txt)
     continue
   spkg_target = os.path.join(targ_dir, dirname, "notes.txt")
-  print "%-25s" % dirname, 
+  print("%-25s" % dirname, end="")
   #print spkg_txt,
   txt = open(spkg_txt, "rb").read()#.decode("utf8")
   f = open(spkg_target, "wb")
@@ -54,4 +55,4 @@ for dirname in glob("*"):
     f.write(NOTES_TMPL_2)
   finally:
     f.close()
-  print "ok"
+  print("ok")

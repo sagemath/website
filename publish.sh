@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env bash
 # After the website has been built successfully, it is in the "www" subdirectory.
 # This script synchronizes this build with the Git repository at GitHub.
 # From there, the website is served.
@@ -25,4 +25,3 @@ $GIT reset --soft github/master # <- non destructive
 $GIT add -A -- .
 $GIT commit -m "auto publish `date -u --rfc-3339=seconds`"
 $GIT push github master -f
-

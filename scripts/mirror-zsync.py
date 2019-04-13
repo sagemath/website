@@ -7,7 +7,7 @@
 import os
 import sys
 
-print "zsync doesn't work ... this file is just for reference"
+print("zsync doesn't work ... this file is just for reference")
 sys.exit(1)
 
 # script uses relative paths, switch to its
@@ -36,19 +36,19 @@ for root in roots:
     for dir, dirs, files in os.walk(root):
         if not 'meta' in dirs:
             continue
-        print 'Directory %s' % dir
+        print('Directory %s' % dir)
         for fn in files:
             f = os.path.join(dir, fn)
             if fn.endswith('zsync'):
                 continue
             z = os.path.join(dir, 'meta', fn) + '.zsync'
             if os.path.exists(z):
-                print 'skipped file already exists: %s' % z
+                print('skipped file already exists: %s' % z)
                 continue
             if os.path.getsize(f) < 1024 * 1024 * 10:
                 continue
-            print 'Calling zsync on ', f
+            print('Calling zsync on ', f)
             m = mirrorcmd(dir, fn)
             cmd = basecmd + m + ' ' + f + ' -o ' + z
-            # print 'executing:', cmd
+            # print('executing:', cmd)
             os.system(cmd)

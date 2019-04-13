@@ -293,11 +293,12 @@ def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     outfile.write(htmlcontent)
     outfile.close()
 
+
 def usage():
     """
     Print the usage information for this script.
     """
-    print "".join(["Usage: ", sys.argv[0], " /path/to/SAGE_ROOT/"])
+    print("".join(["Usage: ", sys.argv[0], " /path/to/SAGE_ROOT/"]))
     sys.stdout.flush()
 
 

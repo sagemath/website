@@ -17,7 +17,6 @@ import pyinotify
 IN_MODIFY = pyinotify.IN_MODIFY
 IN_CREATE = pyinotify.IN_CREATE
 IN_DELETE = pyinotify.IN_DELETE
-from os.path import exists, abspath
 import time
 
 
@@ -71,7 +70,7 @@ def autocompile(paths, cmd):
                  IN_MODIFY,  # but still all?!
                  rec=True,
                  auto_add=True)
-    print '==> Start monitoring %s (type CTRL-c to exit)' % paths
+    print('==> Start monitoring %s (type CTRL-c to exit)' % paths)
 
     try:
         notifier.loop()

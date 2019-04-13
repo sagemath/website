@@ -8,11 +8,10 @@ Archive is the directory of outdated files, which are moved there.
 Rewritten based on an old generator file by Harald Schilly, 2008.
 """
 
-from os.path import *
+from os.path import join, makedirs, exists
 import os
 import sys
 from glob import glob
-import xml.dom.minidom as minidom
 from xml.dom.minidom import parse
 
 # script uses relative paths, switch to its
@@ -49,27 +48,27 @@ def archive_all_but_newest(F, D):
     if not exists(F):
         return
     if not exists(packages['archive']):
-        print 'mkdir: %s' % makedirs(packages['archive'])
+        print('mkdir: %s' % makedirs(packages['archive']))
     name = package_name(F)
     versions = sorted([(os.path.getmtime(m), m) for m in D if os.path.exists(m) and package_name(m) == name])
     for G in versions[:-1]:
-        print "Archiving %s..." % G[1]
+        print("Archiving %s..." % G[1])
         cmd = "mv %s.* %s" % (G[1][:-5], packages['archive'])
-        print cmd
+        print(cmd)
         # system(cmd)
 
 
 for P, DIR in packages.items():
 
-    print 'P:%s - DIR:%s' % (P, DIR)
+    print('P:%s - DIR:%s' % (P, DIR))
     FILES = glob(join(DIR, end_spkg))
     for F in FILES:
-        print 'F', F
+        print('F', F)
         if DIR != packages['archive']:
             archive_all_but_newest(F, FILES)
         DESC = F.replace(end_spkg[1:], end_desc[1:])
         if exists(DESC):
-            print 'DESC:', DESC
+            print('DESC:', DESC)
             O = open(DESC).read()
             i = O.find('\n')
             if i != -1:
@@ -78,5 +77,5 @@ for P, DIR in packages.items():
             else:
                 DESC_txt = O
                 DESC_det = ""
-            print 'DESC_txt =', DESC_txt
-            print 'DESC_det =', DESC_det
+            print('DESC_txt =', DESC_txt)
+            print('DESC_det =', DESC_det)

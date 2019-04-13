@@ -3,7 +3,7 @@
 Populate all the source code releases inside download-source.html
 """
 
-print "no longer used"
+print("no longer used")
 import sys
 sys.exit(0)
 
@@ -23,7 +23,7 @@ SRC_PATTERN = 'sage-*.tar*'
 table_body = None
 
 if not os.path.exists(src_html):
-    print 'File Not Found: %s' % src_html
+    print('File Not Found: %s' % src_html)
     sys.exit(1)
 
 source_xml = minidom.parse(src_html) 
@@ -34,14 +34,14 @@ for d in divs:
         source = d
 
 if source is None:
-    print '<div id="source">...</div> not found!'
+    print('<div id="source">...</div> not found!')
     sys.exit(1)
 
 def initContent():
     global table_body
     #delete everything
     for o in source_xml.getElementsByTagName(r'table'):
-       print "deleting", o
+       print("deleting", o)
        o.parentNode.removeChild(o)
     table = source_xml.createElement(r'table')
     table.setAttribute(r'class', 'xsmall')
@@ -81,7 +81,7 @@ def writeToSource():
        tr = source_xml.createElement(r'tr')
        if first:
            tr.setAttribute(r'class','first')
-	   first = False
+           first = False
        elif release % 2 == 0:
            tr.setAttribute(r'class', 'even')
        else:
@@ -92,7 +92,7 @@ def writeToSource():
        tr.appendChild(td)
    
        td = source_xml.createElement(r'td')
-       print name 
+       print(name)
        a = source_xml.createElement(r'a')
        a.setAttribute(r'href', F.replace(os.path.sep + r'www', ''))
        a.appendChild(source_xml.createTextNode(name))
@@ -135,7 +135,7 @@ def writeToSource():
        tr.appendChild(td)
    
        td = source_xml.createElement(r'td')
-       print name, F
+       print(name, F)
        a = source_xml.createElement(r'a')
        a.setAttribute(r'href', 'http://www.sagemath.org/src-old' + F.replace(src_old, ''))
        a.appendChild(source_xml.createTextNode(name))
@@ -156,7 +156,7 @@ def writeToSource():
 initContent()
 writeToSource()
 
-#print source_xml.toxml()
+#print(source_xml.toxml())
 #xml.dom.ext.PrettyPrint(source_xml, open(src_html, 'w'))
 
 source_xml.writexml(utils.UnicodeFileWriter( open(src_html, "w")))

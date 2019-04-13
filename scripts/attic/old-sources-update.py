@@ -17,10 +17,10 @@ F = os.popen("cd %s; ls -1t sage-*"%PATH).read().split('\n')
 
 #F = os.listdir(PATH)
 #G = [(os.path.getctime(f), f) for f in F]
-#print G
+#print(G)
 #G.sort(reverse=True)
-#print "-----\n\n"
-#print G
+#print("-----\n\n")
+#print(G)
 #F = [f for _, f in G]
 
 #F.sort()
@@ -68,7 +68,7 @@ for x in F:
     size = int(os.path.getsize(PATH + "/" + x)/1000000)
     if x == "sage.tar.bz2" or not x[:5] == 'sage-':
         continue
-    print x
+    print(x)
     name = x.replace("_"," ").replace("sage-","")
     i = name.find("-src")
     if i != -1:

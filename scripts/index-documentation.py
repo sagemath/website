@@ -50,7 +50,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "fix":
 
     for link in sp.Popen("find -type l -name _static".split(), stdout=sp.PIPE).stdout:
         d = os.path.normpath(os.path.join(ROOT, link.rsplit("/", 1)[0]))
-        print d
+        print(d)
         os.chdir(d)
         os.system(
             r'find -type f -name "*.html" -exec sed -i "s/_static/..\/_static/" {} \;')

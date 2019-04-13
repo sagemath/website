@@ -10,11 +10,7 @@ import os
 import sys
 from os.path import join, normpath, exists, islink, basename, splitext
 from glob import glob
-import datetime
-import shutil
-import yaml
 import jinja2 as j2
-import multiprocessing as mp
 import markdown
 
 from scripts import log

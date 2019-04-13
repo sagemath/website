@@ -1,7 +1,6 @@
 # coding: utf8
 import yaml
-from os.path import join, dirname, splitext, split
-from glob import glob
+from os.path import join, dirname
 
 config = mirrors = packages = None
 

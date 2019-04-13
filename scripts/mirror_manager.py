@@ -31,9 +31,8 @@ import time
 from threading import Thread
 import string
 import os
-from os.path import join, normpath
+from os.path import join
 import sys
-import time
 import yaml
 import codecs
 
@@ -108,7 +107,6 @@ class Mirror(object):
         if not isinstance(active, bool):
             raise RuntimeError('type(active) is not bool')
         self.name = unicode(name)
-        assert cat in CATEGORY.keys()
         self.cat = cat
         assert url.endswith("/")
         self.url = url
