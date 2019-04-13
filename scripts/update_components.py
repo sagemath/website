@@ -25,7 +25,7 @@
 
 import copy
 import os
-from os.path import abspath, normpath, join
+from os.path import abspath, join
 from subprocess import PIPE, Popen
 import sys
 import yaml
@@ -165,7 +165,7 @@ def usage():
     """
     Print the usage information for this script.
     """
-    print "".join(["Usage: ", sys.argv[0]])
+    print("".join(["Usage: ", sys.argv[0]]))
     sys.stdout.flush()
 
 ##############################

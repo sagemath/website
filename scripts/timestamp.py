@@ -8,11 +8,11 @@ This script prints a timestamp into the timestamp.html file for the mirrors
 copyright: Harald Schilly <harald.schilly@gmail.com>, 2008, Vienna, Austria
 license: gpl v2+
 """
+from __future__ import print_function
+
 import os
 import sys
 import time
-import re
-from hashlib import md5
 
 # script uses relative paths, switch to its
 # os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
@@ -36,7 +36,7 @@ def getMirrorHash():
     #      if st.st_size < 10**6:
     #         continue
     #      m = st.st_mtime
-    #      print os.path.join(r, f)
+    #      print(os.path.join(r, f))
     #      hash.update(str(m))
     #      hash.update(f)
     # return hash.hexdigest()
@@ -97,7 +97,7 @@ p,div,pre {padding: 0; margin: 0;}
     F.write("""</pre></body></html>""")
     F.close()
 
-    print 'Stamp written:', stampstring
+    print('Stamp written:', stampstring)
 
 if __name__ == '__main__':
     import sys
@@ -105,7 +105,7 @@ if __name__ == '__main__':
 #   if len(sys.argv) >= 1:
 #      msg += " / " + " ".join(sys.argv[1:])
     msg += ' / ' + getMirrorHash() + ' / ' + getSpkgHash()
-    print 'Message:', msg
+    print('Message:', msg)
     # WARNING: check if second publishing path is in sync with ./go_live.sh and the general layout!!!
     stampfiles = [os.path.join(".", "files", "zzz", "timestamp.html")]
     #stampfiles = [os.path.join('.', 'www', 'mirror', 'zzz', 'timestamp.html'),

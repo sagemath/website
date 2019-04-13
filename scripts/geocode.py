@@ -12,6 +12,7 @@ and not too fast (we slow things down!)
 BUGS:
  * devcloud tag get's shortend, firefox&co cannot cope with it :( ... make it full again
 """
+from __future__ import print_function
 
 import xml.dom.minidom as minidom
 from xml.dom.minidom import parse, parseString
@@ -180,9 +181,9 @@ def getGeo(loc):
     """
     loc = loc.replace(" ", "+")
     loc = urllib2.quote(loc.encode('UTF-8'))
-    print loc, ">>>",
+    print(loc, ">>>", end="")
     global timeout
-    print "[doing query, %s secs break] >>>" % timeout,
+    print("[doing query, %s secs break] >>>" % timeout, end="")
     sys.stdout.flush()
     time.sleep(timeout)
     #url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
@@ -199,7 +200,7 @@ def getGeo(loc):
     loc = geo["results"][0]["geometry"]["location"]
     lng = str(loc["lng"])
     lat = str(loc["lat"])
-    print acc, lat, lng
+    print(acc, lat, lng)
     return "200", acc, lng, lat
 
 
@@ -209,19 +210,19 @@ def addGeo(place):
     if not lcache:
         geo = getGeo(place)
         while geo is None and attempts > 0:
-            print "[no result, trying again] >>>",
+            print("[no result, trying again] >>>", end="")
             sys.stdout.flush()
             geo = getGeo(place)
             attempts -= 1
         if geo is None and attempts == 0:
-            print "FAILURE AFTER TOO MANY ATTEMPTS"
+            print("FAILURE AFTER TOO MANY ATTEMPTS")
             return
         g = outxml.createElement("loc")
         statuscode = geo[0]
         # http://code.google.com/apis/maps/documentation/reference.html#GGeoStatusCode
         # 620 means too fast, we need to slow down!
         if "620" == statuscode:
-            print "we were too fast, error code 620 by google!"
+            print("we were too fast, error code 620 by google!")
             global timeout
             timeout *= 2
             addGeo(place)
@@ -234,7 +235,7 @@ def addGeo(place):
             g.setAttribute("loclat", geo[3])
             out.appendChild(g)
     else:
-        print "cache"
+        print("cache")
         out.appendChild(lcache)
 
 
@@ -247,34 +248,34 @@ def getStatistics():
     #        c.replaceChild(devmap.createTextNode(str(nbContribs)), c.childNodes[0])
     #    elif c.getAttribute("id") == "contrib-places":
     #        c.replaceChild(devmap.createTextNode(str(nbPlaces)), c.childNodes[0])
-    print "contributors =", str(nbContribs), "places =", str(nbPlaces)
+    print("contributors =", str(nbContribs), "places =", str(nbPlaces))
     return nbContribs, nbPlaces
 
 # read through ack.xml
 for c in ack.getElementsByTagName("contributor"):
-    print c.getAttribute("name"), ">>>",
+    print(c.getAttribute("name"), ">>>", end="")
     if c.hasAttribute("location"):
         addGeo(c.getAttribute("location"))
     else:
-        print "  <--- UNKNOWN LOCATION !!!"
+        print("  <--- UNKNOWN LOCATION !!!")
 
 
-print
-print "This is now written to file %s:" % geocode_xml_outfn
-print out.toprettyxml()
+print()
+print("This is now written to file %s:" % geocode_xml_outfn)
+print(out.toprettyxml())
 
 #xml.dom.ext.PrettyPrint(out, open(geocode_xml_outfn, "w"))
 out.writexml(utils.UnicodeFileWriter(open(geocode_xml_outfn, "w")), newl="\n")
 
-print
-print "calculating statistics and writing to description"
+print()
+print("calculating statistics and writing to description")
 nbContribs, nbPlaces = getStatistics()
 
-print
-print "now writing table entries for search engines and javascript disabled ones"
+print()
+print("now writing table entries for search engines and javascript disabled ones")
 writeToDevmap()
 
-print "file written to %s" % devmap_tmpl
+print("file written to %s" % devmap_tmpl)
 #xml.dom.ext.PrettyPrint(devmap, open(devmap_xml, "w"))
 #devmap.writexml(utils.UnicodeFileWriter(open(devmap_tmpl, "w")), newl="\n")
 # utils.delFirstLine(devmap_xml)

@@ -11,6 +11,7 @@
 #            changed files are not recognized!!!
 #
 #
+from __future__ import print_function
 
 import xml.dom.minidom as minidom
 import os
@@ -41,12 +42,12 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 if len(sys.argv) == 2: # not old!
   # run the indexer for meta files
-  print "now running meta file indexing, torrents, metalink, or more ..."
-  print "by calling ./mirror-meta.sh"
-  print
+  print("now running meta file indexing, torrents, metalink, or more ...")
+  print("by calling ./mirror-meta.sh")
+  print()
   os.system('./mirror-meta.sh %s' % ROOT)
-  print "mirror-meta.sh finished"
-  print
+  print("mirror-meta.sh finished")
+  print()
 
 
 # output filename in each directory
@@ -67,7 +68,7 @@ def create_meta(root):
 
   DON'T USE THIS, should replace mirror-meta.sh someday
   """
-  print "DON'T USE THIS, it's replaced by mirror-meta.sh"
+  print("DON'T USE THIS, it's replaced by mirror-meta.sh")
   return
   root = os.path.abspath(root)
   base = os.path.abspath(root.split(os.path.sep)[-1])
@@ -77,10 +78,9 @@ def create_meta(root):
     for fn in files:
       f = os.path.join(dir,fn)
       if os.path.getsize(f) < MIN_SIZE * 1024 * 1024: continue
-      print ">>> create_meta:", reldir, f
+      print(">>> create_meta:", reldir, f)
 
   sys.exit(1)
-
 
 
 def index(root, strip):
@@ -92,7 +92,7 @@ def index(root, strip):
     in the end, writes the index.html files for each dir
     """
     for dir, dirs, files in os.walk(root):
-        print 'Directory %s' % dir
+        print('Directory %s' % dir)
         if dir == '.' or dir.endswith('meta'):
            continue
 
@@ -156,9 +156,9 @@ def index(root, strip):
         output_file = os.path.join(dir, listfile)
         if os.path.exists(output_file):
           listxml.writexml(utils.UnicodeFileWriter( open(output_file, "w")))
-          print 'written to: %s' % output_file
+          print('written to: %s' % output_file)
         else:
-          print 'WARNING: file %s does not exist and hence directory information is not written to it' % output_file
+          print('WARNING: file %s does not exist and hence directory information is not written to it' % output_file)
         #utils.delFirstLine(output_file)
 
 def trackPageView(xml, shortdir):
@@ -176,7 +176,7 @@ def delMd5Entry(dir, fn):
      """
      deletes a md5entry if it has to be recalculated
      """
-     print 'del md5 entry', fn
+     print('del md5 entry', fn)
      fn_in = os.path.join(dir, md5file)
      fn_out = os.path.join(dir, md5file + '.tmp')
      md5in = file(fn_in, 'r')
@@ -194,7 +194,7 @@ def calcMd5(dir, fn):
      """
      md5out = file(os.path.join(dir, md5file), 'a')
      f = file(os.path.join(dir, fn))
-     print 'calculating md5 sum of', f.name
+     print('calculating md5 sum of', f.name)
      hash = md5()
      while True:
         s = f.read(1048576)
@@ -202,7 +202,7 @@ def calcMd5(dir, fn):
         if s == "":
            break
      f.close()
-     print fn, hash.hexdigest()
+     print(fn, hash.hexdigest())
      md5out.write('%s  %s\n' %(hash.hexdigest(), fn))
      md5out.close()
      return hash.hexdigest()
@@ -215,23 +215,21 @@ def readMD5(path):
      i.e. you need to create an empty $md5sum file for a
      new directory!!!
      Additionally, the key "__MTIME__" contains the creation time
-     of them md5sum file.
+     of the md5sum file.
      """
      f = os.path.join(path, md5file)
      if not os.path.isfile(f):
         return  None
      ret = []
      created = os.path.getmtime(f)
-     mtime = time.gmtime(created)
      ret.append(('__MTIME__', created))
-     t = time.strftime('%Y-%m-%d %H:%M', (mtime))
-     #print '  + md5sum file: %s (%s)' % (f, t)
      for line in open(f, 'r').readlines():
         match = md5line.match(line)
         if not match:
             continue
         ret.append((match.group(2), match.group(1)))
      return dict(ret)
+
 
 def getNotesText(xml, dir):
      """
@@ -316,7 +314,7 @@ def getTableRow(xml, f, fn, shortdir, even):
      created = os.path.getmtime(f)
      size = os.path.getsize(f) / 1024.0 / 1024.0
      t = time.strftime('%Y-%m-%d %H:%M', (time.gmtime(created)))
-     #print '  + file: %s (%.2f mb, %s)' % (fn, size, t)
+     #print('  + file: %s (%.2f mb, %s)' % (fn, size, t))
 
      tr = xml.createElement(u'tr')
      tr.setAttribute(u'class', 'even' if even else 'odd') 
@@ -415,7 +413,6 @@ if __name__=='__main__':
 
     os.chdir(ROOT)
 
-    import sys
     if len(sys.argv) == 3 and sys.argv[2] == "old":
        os.chdir(ROOT)
        index(os.path.abspath(os.curdir), "src-old")
@@ -424,7 +421,6 @@ if __name__=='__main__':
       for d in map(os.path.abspath, [ './osx/', './win/', './livecd/', './ova/',
             './linux/', './solaris/', './src/', './devel/', './spkg/upstream/']):
          os.chdir(d)
-         print os.path.abspath(os.curdir).center(100, "=")
+         print(os.path.abspath(os.curdir).center(100, "="))
          strip = d.split(os.path.sep)[-1]
          index(os.path.abspath(os.curdir), strip)
-

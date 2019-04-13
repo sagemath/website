@@ -8,16 +8,13 @@
 import Image
 import ImageDraw
 import ImageFont
-import colorsys
 import time
 import math
 import csv
 import os
 import sys
-from random import randint as rint
 import random
-import urllib2
-#from random import randint as rint
+
 
 # script uses relative paths, switch to its
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))

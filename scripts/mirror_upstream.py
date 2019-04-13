@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*-
+# -*- coding: utf-8 -*-
 import sys, os
 from glob import glob
 
@@ -19,7 +19,6 @@ for ext in [ "*.tar.gz", "*.tar.bz2", "*.tar" ]:
     targ_fn = os.path.join(TARG_DIR, subdir, fn)
     if os.path.exists(targ_fn):
       if os.stat(targ_fn).st_ctime >= os.stat(f).st_ctime:
-        print "WARNING %s already exists" % targ_fn
+        print("WARNING %s already exists" % targ_fn)
         continue
     os.system("cp -av %s %s" % (f, targ_fn))
-

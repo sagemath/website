@@ -51,7 +51,7 @@ def usage():
     """
     Print the usage information for this script.
     """
-    print "".join(["Usage: ", sys.argv[0], " /path/to/SAGE_ROOT/"])
+    print("".join(["Usage: ", sys.argv[0], " /path/to/SAGE_ROOT/"]))
     sys.stdout.flush()
 
 ##############################

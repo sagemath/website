@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf8 -*-
+# -*- coding: utf-8 -*-
 """
 This file parses the boxen specific apache logfiles for www_sagemath_org
 It generates a statistic for all SPKGes, which are not standard and
@@ -73,7 +73,7 @@ def apachetime(s):
 
 
 def analyze(logfile):
-    print 'scanning', logfile
+    print('scanning', logfile)
 
     for line_no, line in enumerate(file(logfile, 'r')):
         # check if there is a newer line (newer than in the Data (data_fn) dump)
