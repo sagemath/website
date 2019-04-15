@@ -1,10 +1,13 @@
 TY  - COMP
-T1  - Sage Mathematics Software
-J2  - Sage
-AU  - Stein,William
-AU  - et al.
-PB  - Sage Development Team
+T1  - SageMath, the Sage Mathematics Software System
+ST  - Sage
+AU  - The Sage Developers
+PB  - The Sage Developers
 DA  - 2012-01-01
-UR  - http://sagemath.org
+KW  - mathematics
+KW  - software
+KW  - open source
+M1  - 8.7
+UR  - https://www.sagemath.org
 ER  - 
 
