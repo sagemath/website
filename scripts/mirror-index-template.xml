@@ -10,8 +10,8 @@
     <meta http-equiv="no-cache" /> 
     <meta http-equiv="Expires" content="-1" /> 
     <meta http-equiv="Cache-Control" content="no-cache" /> 
-    <link rel="shortcut icon" href="http://www.sagemath.org/pix/sageicon.png" type="image/x-icon" />
-    <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="http://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
+    <link rel="shortcut icon" href="https://www.sagemath.org/pix/sageicon.png" type="image/x-icon" />
+    <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="https://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
     <title></title>
     <style type="text/css">
 /*<![CDATA[*/
@@ -86,19 +86,19 @@ pageTracker._trackPageview();
     </script>
 
     <div class="center">
-      <a href="http://www.sagemath.org">
+      <a href="https://www.sagemath.org">
         <img src="http://files.sagemath.org/sage_logo_new_l.png" alt="SageMath Logo"/>
       </a>
     </div>
 
     <div>
       This is a mirror of <a href=
-      "http://www.sagemath.org">SageMath - Open Source Mathematics Software</a>.
+      "https://www.sagemath.org">SageMath - Open Source Mathematics Software</a>.
       Here, you can download SageMath for your system and platform. Not sure what
       to download? Then follow the <a target="_blank" href=
-      "http://wiki.sagemath.org/DownloadAndInstallationGuide">
+      "https://wiki.sagemath.org/DownloadAndInstallationGuide">
       <strong>download guide</strong></a>. For more information, visit the
-      <a href="http://www.sagemath.org/">SageMath website</a>.
+      <a href="https://www.sagemath.org/">SageMath website</a>.
     </div>
 
     <h1>Files</h1>
@@ -109,7 +109,7 @@ pageTracker._trackPageview();
 
     <div id="output"></div>
 
-    <div id="footer">This is a Mirror of <a href="http://www.sagemath.org/">SageMath Mathematical Software System</a>.</div>
+    <div id="footer">This is a Mirror of <a href="https://www.sagemath.org/">SageMath Mathematical Software System</a>.</div>
 
   </body>
 </html>
