@@ -1,4 +1,4 @@
-# cat = category: na: north america, sa: south america, e: europe, a: asia, g: global (CDN)
+# cat = category: na: north america, sa: south america, e: europe, a: asia, af: africa, g: global (CDN)
 - active: true
   cat: na
   country: us
@@ -322,3 +322,9 @@
   country: hk
   name: KoDDoS Mirror, Hong Kong
   url: https://mirror-hk.koddos.net/sagemath/
+- active: true
+  cat: af
+  country: ma
+  flag: ma
+  name: MARWAN, Morocco
+  url: https://mirror.marwan.ma/sage/
