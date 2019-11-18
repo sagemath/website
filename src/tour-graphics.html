@@ -119,7 +119,7 @@ A <em>Multiedge Graph</em> visualizing all pairs of characters in the sentence "
 <pre class="code">
 sage: stnc = 'I am a cool multiedge graph with loops'
 sage: g = DiGraph({}, loops=True, multiedges=True)
-sage: for a,b in [(stnc[i], stnc[i+1]) for i in xrange(len(stnc)-1)]:
+sage: for a,b in [(stnc[i], stnc[i + 1]) for i in range(len(stnc) - 1)]:
 ....:    g.add_edge(a, b, b)
 sage: g.plot(color_by_label=True, edge_style='solid').show(figsize=(8,8))
 </pre></div>
