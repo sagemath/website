@@ -42,8 +42,8 @@ function metatorrent () {
       echo "$line" >> $OUTPUT
     done 
     # write content
-    echo "<h1>$2 for <a href='http://www.sagemath.org/'>SageMath</a></h1>" >> $OUTPUT
-    echo '<div><strong>Read more <a href="http://wiki.sagemath.org/DownloadAndInstallationGuide">in the Download Guide</a></strong></div>' >> $OUTPUT
+    echo "<h1>$2 for <a href='https://www.sagemath.org/'>SageMath</a></h1>" >> $OUTPUT
+    echo '<div><strong>Read more <a href="https://wiki.sagemath.org/DownloadAndInstallationGuide">in the Download Guide</a></strong></div>' >> $OUTPUT
     echo '<div><table>' >> $OUTPUT
     for f in `eval $FINDCMD`; do
      f=${f:2}
