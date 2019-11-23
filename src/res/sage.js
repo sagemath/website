@@ -149,13 +149,6 @@ function initMathjax() {
   head.appendChild(script);
 }
 
-/* G+ */
-function initGplus() {
-  var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-  po.src = 'https://apis.google.com/js/plusone.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-}
-
 /* Twitter */
 function initTwitter(d,s,id){
   var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
@@ -218,7 +211,6 @@ $(googleAnalytics);
 $(sage.tracklinks);
 $(initHistats);
 $(initMathjax);
-$(initGplus);
 $(function() { initTwitter(document, 'script', 'twitter-wjs');});
 $(function() { initFacebook(document, 'script', 'facebook-jssdk');});
 $(initClustermap);
