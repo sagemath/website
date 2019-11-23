@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-   <loc>http://www.sagemath.org/</loc>
+   <loc>https://www.sagemath.org/</loc>
    <changefreq>weekly</changefreq>
    <priority>1.0</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/download.html</loc>
+   <loc>https://www.sagemath.org/download.html</loc>
    <changefreq>weekly</changefreq>
    <priority>0.85</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/download-mac.html</loc>
+   <loc>https://www.sagemath.org/download-mac.html</loc>
    <changefreq>weekly</changefreq>
    <priority>0.5</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/download-linux.html</loc>
+   <loc>https://www.sagemath.org/download-linux.html</loc>
    <changefreq>weekly</changefreq>
    <priority>0.5</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/tour.html</loc>
+   <loc>https://www.sagemath.org/tour.html</loc>
    <changefreq>monthly</changefreq>
    <priority>0.8</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/help.html</loc>
+   <loc>https://www.sagemath.org/help.html</loc>
    <changefreq>monthly</changefreq>
    <priority>0.7</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/library.html</loc>
+   <loc>https://www.sagemath.org/library.html</loc>
    <changefreq>monthly</changefreq>
    <priority>0.6</priority>
 </url>
 <url>
-   <loc>http://www.sagemath.org/library-stories.html</loc>
+   <loc>https://www.sagemath.org/library-stories.html</loc>
    <changefreq>monthly</changefreq>
    <priority>0.7</priority>
 </url>
