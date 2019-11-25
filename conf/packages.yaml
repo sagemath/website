@@ -163,7 +163,7 @@ spkg:
       with dense, sparse, and structured matrices over the integers and over finite
       fields
     name: LinBox
-    url: http://www.linalg.org
+    url: https://linalg.org/
   lrcalc:
     descr: Littlewood-Richardson Calculator
     name: lrcalc
@@ -210,7 +210,7 @@ spkg:
     descr: A library of functions that manage an application's display on character-cell
       terminals (e.g., VT100)
     name: ncurses
-    url: http://invisible-island.net/ncurses
+    url: https://invisible-island.net/ncurses
   networkx:
     descr: Python package for the creation, manipulation, and study of the structure,
       dynamics, and functions of complex networks
@@ -223,7 +223,7 @@ spkg:
   numpy:
     descr: Package for scientific computing with Python
     name: NumPy
-    url: http://www.numpy.org
+    url: https://numpy.org/
   openblas:
     descr: An optimized open library implementing the Basic Linear Algebra Subprograms
       (BLAS) specification
@@ -264,7 +264,7 @@ spkg:
   pygments:
     descr: Generic syntax highlighter
     name: Pygments
-    url: http://pygments.org
+    url: https://pygments.org
   pynac:
     descr: Symbolic computation with Python objects
     name: Pynac
