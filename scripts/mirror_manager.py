@@ -132,7 +132,7 @@ class Mirror(object):
         return x
 
 
-MIRRORS = [Mirror(**m) for m in yaml.load(codecs.open(MIRROR_YAML, "r", "utf8"))]
+MIRRORS = [Mirror(**m) for m in yaml.load(codecs.open(MIRROR_YAML, "r", "utf8"), Loader=yaml.SafeLoader)]
 
 TOTAL_NUMBER = len(MIRRORS)
 
