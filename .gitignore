@@ -33,3 +33,4 @@ templates/all-mirrors.html
 templates/mirrorselector-src.html
 templates/mirrorselector.html
 
+mirror/
