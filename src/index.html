@@ -13,6 +13,7 @@
    background: #efefff;
  }
  div.announce input {font-size: 95%;}
+ div.announce > p {margin: 5px 0 5px 0;}
 </style>
 {% endblock %}
 
@@ -64,17 +65,17 @@ or directly via interfaces or wrappers.
 #}
 
 <div class="narrow center txt announce">
-Do you want to learn how to use {{ sage }}?<br/>
-Read
-<a href="http://gregorybard.com/Sage.html">Sage for Undergraduates</a> by Gregory Bard
-or
-<br/>
-<a href="http://sagebook.gforge.inria.fr/english.html">Mathematical Computation with Sage</a>
-by Paul Zimmermann et al.
-<br/>
-translations: <a href="http://sagebook.gforge.inria.fr/">Calcul mathématique avec Sage</a> (French),
-<a href="https://members.loria.fr/PZimmermann/sagebook/CalculDeutsch.pdf">Rechnen mit Sage</a> (German),
-and <a href="http://www.sage-para-estudiantes.com/">Sage para Estudiantes de Pregrado</a> (Spanish)
+  <p>Learn how to use {{ sage }}:</p>
+  <p>
+    <a href="http://gregorybard.com/Sage.html">Sage for Undergraduates</a> by Gregory Bard
+    (Spanish: <a href="http://www.sage-para-estudiantes.com/">Sage para Estudiantes de Pregrado</a>)
+  </p>
+  <p>
+    <a href="http://sagebook.gforge.inria.fr/english.html">Mathematical Computation with Sage</a>
+by Paul Zimmermann et al.<br/>
+    (French: <a href="http://sagebook.gforge.inria.fr/">Calcul mathématique avec Sage</a>,
+German: <a href="https://members.loria.fr/PZimmermann/sagebook/CalculDeutsch.pdf">Rechnen mit Sage</a>)
+  </p>
 </div>
 
 {#
