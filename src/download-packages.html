@@ -10,11 +10,16 @@
   framework. Please have a look at the <a href="https://wiki.sagemath.org/spkg">{{ sage }}
   Wiki tracking SPKGs</a>. There is also a <a href="links-components.html">list of links of {{ sage }}
   components</a>.
+  The installation scripts of the {{ sage }} distribution will download the necessary package archives
+  from one of the following mirrors automatically.
+  
   <!-- There is also an <a href="http://old.files.sagemath.org/spkg/archive">archive of old SPKGs</a>. -->
  </div>
 
 <div class="narrow txt">
-Please use one of the mirrors:
+Most {{ sage }} users will not need to download any package archives manually.  
+{{ sage }} developers who need to access a specific version of a package (including old-style packages), 
+please use one of the mirrors:
 {{ mirrors("spkg") }}
 </div>
 {% endblock %}
