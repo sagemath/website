@@ -69,12 +69,6 @@
   flag: cz
   name: Technical University, Prague, Czech
   url: http://ftp.sh.cvut.cz/MIRRORS/sagemath/
-- active: true
-  cat: e
-  country: de
-  flag: de
-  name: "Freie Universität Berlin, Germany"
-  url: ftp://ftp.fu-berlin.de/unix/misc/sage/
 - active: false
   cat: aus
   country: au
