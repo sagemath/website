@@ -810,6 +810,12 @@ contributor
  url="http://www.vincent-knight.com/"
  trac="vinceknight"/>
 <contributor
+    name="Matthias Köppe"
+    work="Professor, UC Davis"
+    location="Davis, CA, USA"
+    description="build system (2016–2020); continuous integration (2020); polyhedral geometry (2015–2020); optimization (2015–2020)"
+    trac="mkoeppe"/>
+<contributor
  name="David Kohel"
  work="Professor, University of Sydney"
  location="163 Avenue de Luminy 13009 Marseille, France"
