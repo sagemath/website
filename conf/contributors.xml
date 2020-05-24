@@ -10,8 +10,7 @@ contributor
  - work = university, institute, ...
  - description = <item>[;<item>]* ... delimiter ";" is converted into a break or list
  - url = webpage, when clicking on name
- - size = default:100, inserts a font-size:xxx% into the style, so, choose values between 80 and 130 here.
- - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/" should store them locally
+ - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally
  - jitter = float as string, multiplicated in jitter function, 0 to disable
  - trac = trac nickname for the search (also searched for the name, but the trac name is often different!)
 -->
@@ -107,7 +106,8 @@ contributor
  work="Postdoctoral fellow, UC-Davis"
  location="Davis, CA, USA"
  description="combinat package"
- url="http://www.math.ucdavis.edu/~jbandlow/" pix="./pix/bandlow.png"
+ url="http://www.math.ucdavis.edu/~jbandlow/"
+ pix="./pix/people/bandlow.png"
  trac="jbandlow"/>
 <contributor
  name="Gregory Bard"
@@ -116,7 +116,7 @@ contributor
 <contributor
  name="Sébastien Barthélemy"
  work="UPMC - Université Pierre et Marie Curie"
- location="4 place jussieu, 75005 Paris, France"
+ location="Paris, France"
  description="documentation; cddlib update; bug fixes"
  trac="sbarthelemy"/>
 <contributor
@@ -147,7 +147,7 @@ contributor
  url="http://math.tulane.edu/~ebeyerstedt"
  trac="ebeyerstedt"/>
 <contributor
- name="Francois Bissey"
+ name="François Bissey"
  work="University of Canterbury, New Zealand"
  location="University of Canterbury, New Zealand"
  description="various QA; sage-on-gentoo"
@@ -166,7 +166,7 @@ contributor
 <contributor
  name="Nicolas Borie"
  work="maître de conférences, LIGM, Universite Paris-Est Marne-la-Vallée"
- location="5 boulevard Descartes, 77420 Champs-sur-Marne, France"
+ location="Champs-sur-Marne, France"
  description="combinat (root systems, invariant theory)"
  url="http://igm.univ-mlv.fr/~borie/"
  trac="nborie"/>
@@ -292,7 +292,8 @@ contributor
  work="high school student"
  location="Seattle, WA, USA"
  description="Notebook; misc."
- url="http://timothyclemans.com/" pix="./pix/tclemans.jpg"/>
+ url="http://timothyclemans.com/"
+ pix="./pix/people/tclemans.jpg"/>
 <contributor
  name="Alex Clemesha"
  work="employee, University of Washington"
@@ -302,7 +303,7 @@ contributor
  name="Nathann Cohen"
  work="CNRS researcher"
  location="University Paris-Sud, France"
- url="http://www-sop.inria.fr/members/Nathann.Cohen/"
+ url="https://www.steinertriples.fr/ncohen/"
  description="Graph Theory;Linear Programming;documentation"
  trac="ncohen" />
 <contributor
@@ -402,7 +403,8 @@ contributor
  location="Manila, Philippines"
  description="Sage Notebook improvements; Reviews; Minor fixes"
  trac="timdumol"
- url="http://timdumol.com" pix="http://gravatar.com/avatar/7009e6e9ae26c2b3119e97531ef2cc12&amp;s=512"  />
+ url="https://timdumol.com"
+ pix="http://gravatar.com/avatar/7009e6e9ae26c2b3119e97531ef2cc12&amp;s=512"  />
 <contributor
  name="Nathan Dunfield"
  description="small patches; improvements to algdep; documentation"
@@ -452,7 +454,7 @@ contributor
  work="Telecom ParisTech"
  location="46 Rue Barrault, 75013 Paris, France"
  description="documentation"
- url="http://perso.telecom-paristech.fr/~flori/"
+ url="https://perso.telecom-paristech.fr/~flori/"
  trac="jpflori"/>
 <contributor
  name="Evan Fosmark"
@@ -481,7 +483,8 @@ contributor
  url="http://www.im.pwr.wroc.pl/~giniew/"
  work="Ph.D. student, Institute of Mathematics and Computer Science, Wroclaw University of Technology"
  location="Wroclaw, Poland"
- description="small build fixes" pix="http://www.sagemath.org/pix/aginiewicz.jpg"
+ description="small build fixes"
+ pix="./pix/people/aginiewicz.jpg"
  trac="aginiewicz"/>
 <contributor
  name="Alain Giorgetti"
@@ -490,9 +493,9 @@ contributor
 <contributor
  name="Samuele Giraudo"
  work="PhD student, Université de Paris-Est (Marne-la-Vallée)"
- location="6 Bd DesCartes, 77420 CHAMPS SUR MARNE, France"
+ location="Champs-sur-Marne, France"
  description="combinatorics"
- url="http://igm.univ-mlv.fr/~giraudo/"
+ url="https://igm.univ-mlv.fr/~giraudo/"
  trac="giraudo"/>
 <contributor
  name="Amy Glen"
@@ -595,7 +598,8 @@ contributor
  work="Minnesota Duluth"
  location="Duluth, MN, USA"
  description="gfan interface; polyhedra; phcpack interface and spkg; biopython package maintainer"
- url="http://www.d.umn.edu/~mhampton/index.html" pix="./pix/mhampton.jpeg"
+ url="http://www.d.umn.edu/~mhampton/index.html"
+ pix="./pix/people/mhampton.jpeg"
  trac="mhampton"/>
 <contributor
  name="Jon Hanke"
@@ -757,7 +761,8 @@ contributor
  url="http://www.ruhr-uni-bochum.de/lmi/kallweit/"
  work="Ruhr-Universität Bochum, Deutschland"
  location="Bochum, Germany"
- description="Graph Theory fixes; miscellaneous bug fixes" pix="./pix/michael_kallweit.jpg" />
+ description="Graph Theory fixes; miscellaneous bug fixes"
+ pix="./pix/people/michael_kallweit.jpg" />
 <contributor
  name="Josh Kantor"
  url="http://www.math.washington.edu/~jkantor/"
@@ -1166,7 +1171,7 @@ contributor
  work="The Institute of Mathematical Sciences"
  trac="amri"
  description="contributed vector partitions and similarity class types to sage.combinat"
- pix="http://sagemath.org/pix/prasad.jpeg" />
+ pix="./pix/people/prasad.jpeg" />
 <contributor
     name="Punarbasu Purkayastha"
     work="Research Fellow, Nanyang Technological University, Singapore"
@@ -1303,7 +1308,7 @@ contributor
  work="University of Vienna"
  location="Vienna, Austria"
  description="webmaster; R/Sage interface; marketing;management"
- pix="./pix/schilly.jpeg"
+ pix="./pix/people/schilly.jpeg"
  trac="schilly" />
 <contributor
  name="Jack Schmidt"
@@ -1392,7 +1397,8 @@ contributor
  work="Professor, University of Washington"
  location="1212 E Barclay Ct, Seattle, WA 98122, USA"
  description="project leader; community manager; software architect; started Sage project"
- url="https://wstein.org/" size="130" pix="https://wstein.org/william.jpg" jitter="0"
+ url="https://wstein.org/"
+ pix="https://wstein.org/william.jpg" jitter="0"
  trac="was"/>
 <contributor
  name="Armin Straub"
@@ -1456,9 +1462,9 @@ contributor
  url="http://www.loria.fr/~thevenyp/"
  trac="thevenyp"/>
 <contributor
- name="Nicolas Thiery"
+ name="Nicolas Thiéry"
  work="Université Paris Sud, Faculty"
- location="University Paris-Sud, France"
+ location="Orsay, France"
  description="Crystals code, combinatorics design"
  url="http://nicolas.thiery.name/"
  trac="nthiery"/>
@@ -1476,7 +1482,7 @@ contributor
  work="Researcher, INRIA"
  location="Nancy, France"
  description="number fields"
- url="http://www.loria.fr/~thome/"
+ url="https://members.loria.fr/EThome/"
  trac="thome"/>
 <contributor
  name="John Thurber"
