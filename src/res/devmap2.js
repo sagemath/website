@@ -6,7 +6,7 @@
 
 var markerClusterer = null;
 var map = null;
-var imageUrl = "pix/sagepin.png";
+var imageUrl = "pix/developer_map/sagepin.png";
 var contributors_xml  = "res/contributors.xml";
 var contributors = null;
 var geocode_xml       = "res/geocode.xml";
@@ -188,7 +188,7 @@ function refreshMap() {
       markerClusterer = new MarkerClusterer(map, markers, {
         //maxZoom: zoom,
         gridSize: 20,
-        imagePath: 'pix/m',
+        imagePath: 'pix/developer_map/m',
         //styles: styles[style]
       });
 
