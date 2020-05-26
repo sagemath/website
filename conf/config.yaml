@@ -4,10 +4,10 @@ logo: "pix/logo_sagemath+icon_oldstyle.png"
 version: "9.1"
 version_solaris_bin: None
 version_src: "9.1"
-git: "http://git.sagemath.org/sage.git/"
+git: "https://git.sagemath.org/sage.git/"
 git_website: "https://github.com/sagemath/website"
 webmaster_href: "mailto:harald+smo@schil.ly"
 
 # the docroot is the base URL for the documentation.
 # the directory structure is (more or less) the same as in SageMath's "output" directory in doc
-docroot: "http://doc.sagemath.org"
+docroot: "https://doc.sagemath.org"
