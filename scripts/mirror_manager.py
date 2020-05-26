@@ -444,7 +444,7 @@ def build_mirrorselector(mirrors, TS, best_mirror):
  <li style="font-size: 90%%;">
     <a href="http://files.sagemath.org/metalinks.html">Metalinks</a> &mdash;
      provide fast, stable and resumeable downloads via a
-     <a href="http://www.metalinker.org/samples.html">download client</a> (<a href="http://en.wikipedia.org/wiki/Metalink">read more</a>).
+     <a href="http://www.metalinker.org/samples.html">download client</a> (<a href="https://en.wikipedia.org/wiki/Metalink">read more</a>).
  </li>
 </ul>
 -->
