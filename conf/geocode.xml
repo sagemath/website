@@ -10,14 +10,12 @@
 <loc location="21.0488082, -89.6416569" loclat="21.0470726" loclng="-89.6425521"/>
 <loc location="Vancouver, Canada" loclat="49.2827291" loclng="-123.1207375"/>
 <loc location="Nevada State College, NV, USA" loclat="36.0300884" loclng="-114.9789399"/>
-<loc location="4 place jussieu, 75005 Paris, France" loclat="48.8464111" loclng="2.3548468"/>
 <loc location="1500 N Warner, Tacoma, WA, 98416 USA" loclat="47.2636459" loclng="-122.4802292"/>
 <loc location="Bordeaux, France" loclat="44.837789" loclng="-0.57918"/>
 <loc location="Montreal, QC, Canada" loclat="45.5016889" loclng="-73.567256"/>
 <loc location="823 St Charles Ave, New Orleans, LA 70118, United States" loclat="29.9454621" loclng="-90.0718307"/>
 <loc location="University of Canterbury, New Zealand" loclat="-43.5235375" loclng="172.5839233"/>
 <loc location="MI 48109, USA" loclat="42.3053253" loclng="-83.6694169"/>
-<loc location="5 boulevard Descartes, 77420 Champs-sur-Marne, France" loclat="48.839249" loclng="2.5871491"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5043186" loclng="8.4717852"/>
@@ -49,7 +47,7 @@
 <loc location="Amity, Oregon, USA" loclat="45.1156724" loclng="-123.2073257"/>
 <loc location="Utah, USA" loclat="39.3209801" loclng="-111.0937311"/>
 <loc location="Wroclaw, Poland" loclat="51.1078852" loclng="17.0385376"/>
-<loc location="6 Bd DesCartes, 77420 CHAMPS SUR MARNE, France" loclat="48.8400064" loclng="2.5868556"/>
+<loc location="Champs-sur-Marne, France" loclat="48.839249" loclng="2.5871491"/>
 <loc location="90 South Street, Murdoch, Western Australia, Australia" loclat="-32.067778" loclng="115.835766"/>
 <loc location="San Diego, CA, USA" loclat="32.715738" loclng="-117.1610838"/>
 <loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
@@ -68,6 +66,7 @@
 <loc location="Seattle, WA, USA" loclat="47.6062095" loclng="-122.3320708"/>
 <loc location="NYU, NY, USA" loclat="40.7298919" loclng="-73.997979"/>
 <loc location="Boulder, Colorado, USA" loclat="40.0149856" loclng="-105.2705456"/>
+<loc location="University Paris-Sud, France" loclat="48.782095" loclng="2.2856441"/>
 <loc location="Ottawa, ON, Canada" loclat="45.4215296" loclng="-75.6971931"/>
 <loc location="Vigo, Spain" loclat="42.2405989" loclng="-8.7207268"/>
 <loc location="IISER, Kolkata, India" loclat="22.9638419" loclng="88.5245023"/>
@@ -166,7 +165,7 @@
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
 <loc location="University of Washington, WA, USA" loclat="47.6553351" loclng="-122.3035199"/>
 <loc location="Santander, Spain" loclat="43.4623057" loclng="-3.8099803"/>
-<loc location="University Paris-Sud, France" loclat="48.782095" loclng="2.2856441"/>
+<loc location="Orsay, France" loclat="48.702806" loclng="2.1719323"/>
 <loc location="LaCIM, UQAM, Montréal, Québec, Canada" loclat="45.5125995" loclng="-73.5605955"/>
 <loc location="Nancy, France" loclat="48.692054" loclng="6.184417"/>
 <loc location="La Grande, Oregon, USA" loclat="45.3245771" loclng="-118.0877188"/>
