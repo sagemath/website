@@ -81,11 +81,9 @@ sage: <strong>R = RealIntervalField(100)</strong>
 sage: <strong>R</strong>
 Real Interval Field with 100 bits of precision
 sage: <strong>a = R((-1,0)); a</strong>
-[-1.0000000000000000000000000000000 ..
-           0.00000000000000000000000000000000]
+-1.?
 sage: <strong>b = sin(a); b</strong>
-[-0.84147098480789650665250232163084 ..
-           0.00000000000000000000000000000000]
+-1.?
 sage: <strong>c = a*b; c.diameter()</strong>
 0.84147098480789650665250232163
 </pre>
@@ -120,17 +118,15 @@ sage: <strong>c = a*b; c.diameter()</strong>
     <td class="leftpadding">
      <pre class="code">
 sage: <strong>c.diameter?</strong>
-Type:        builtin_function_or_method
-Base Class:  &lt;type &#39;builtin_function_or_method&#39;&gt;
-String Form: &lt;built-in method diameter ...&gt;
-Namespace:   Interactive
 Docstring:
-  If (0 in self), returns self.absolute_diameter(),
-  otherwise self.relative_diameter().
-  EXAMPLES:
-    sage: RIF(1, 2).diameter()
-    0.666666666666667
-    ...
+   If 0 is in "self", then return "absolute_diameter()", otherwise
+   return "relative_diameter()".
+
+   EXAMPLES:
+
+      sage: RIF(1, 2).diameter()
+      0.666666666666667
+      ...
 </pre>
     </td>
 
@@ -138,7 +134,7 @@ Docstring:
      <div class="justify txt">
       The example above shows that there are thousands of functions and methods. {{ sage }} comes with
       <a href="{{ docroot }}/html/en/tutorial/interactive_shell.html#integrated-help-system"
-          >a built-in help system</a> and you don&#39;t have to memorize them all.
+          >a built-in help system</a> and you do not have to memorize them all.
            Entering a question mark after a method shows the description and additional information
            about that method. The example on the left shows the documentation for the <span class=
            "code">diameter</span> method from the previous example.
@@ -156,11 +152,11 @@ Docstring:
     <td class="leftpadding">
      <pre class="code">
 sage: <strong>f = 1 - sin(x)^2</strong>
-sage: <strong>print(f)</strong>
+sage: <strong>f</strong>
 -sin(x)^2 + 1
-sage: <strong>print(maxima(f))  # pretty printing</strong>
-                                         2
-                                  1 - sin (x)
+sage: <strong>unicode_art(f)  # pretty printing</strong>
+       2
+1 - sin (x)
 sage: <strong>f.simplify_trig()</strong>
 cos(x)^2
 sage: <strong>f(x=pi/2)</strong>
@@ -169,16 +165,16 @@ sage: <strong>f(x=pi/3)</strong>
 1/4
 sage: <strong>integrate(f, x).simplify_trig()</strong>
 1/2*sin(x)*cos(x) + 1/2*x
-sage: <strong>print(maxima(integrate(f, x).simplify_trig()))</strong>
-                               cos(x) sin(x)   x
-                               ------------- + -
-                                     2         2
+sage: <strong>unicode_art(integrate(f, x).simplify_trig())</strong>
+x   sin(x)⋅cos(x)
+─ + ─────────────
+2         2
 sage: <strong>f.differentiate(2).substitute({x: 3/pi})</strong>
 2*sin(3/pi)^2 - 2*cos(3/pi)^2
-sage: <strong>print(maxima(f.differentiate(2).substitute({x: 3/pi})))</strong>
-                                2  3          2  3
-                           2 sin (---) - 2 cos (---)
-                                  %pi           %pi
+sage: <strong>unicode_art(f.differentiate(2).substitute({x: 3/pi}))</strong>
+       2⎛3⎞        2⎛3⎞
+- 2⋅cos ⎜─⎟ + 2⋅sin ⎜─⎟
+        ⎝π⎠         ⎝π⎠
 </pre>
     </td>
 
@@ -209,12 +205,12 @@ sage: <strong>var(&#39;x y z&#39;)</strong>
 (x, y, z)
 
 sage: <strong>f = (1 + (y+x^2)^2 + (1+z+y^2)^2)^2</strong>
-sage: <strong>print(f)</strong>
+sage: <strong>f</strong>
 
             2     2         2 2     2
      ((z + y  + 1)  + (y + x )  + 1)
 
-sage: <strong>minimize(f,[1,2,3],disp=1,algorithm=&#39;powell&#39;)</strong>
+sage: <strong>minimize(f,[1,2,3],algorithm=&#39powell&#39,verbose=1)</strong>
 Optimization terminated successfully.
      Current function value: 1.000059
      Iterations: 2
