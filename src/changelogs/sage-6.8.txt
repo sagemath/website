@@ -502,7 +502,7 @@ Merged in sage-6.8.rc1:
 #16672: Frédéric Chapoton: Fix typo in linear algebra docs. [Reviewed by Nathann Cohen]
 #17321: Ralf Stephan: doctest fixed Pynac RuntimeErrors [Reviewed by Jeroen Demeyer]
 #18878: Clemens Heuberger: Update reference HKP2015 [Reviewed by Jori Mäntysalo]
-#18897: Simon King: Memory leak in sage.misc.binary_tree.BinareeTree [Reviewed by Sébastien Labbé, Dima Pasechnik]
+#18897: Simon King: Memory leak in sage.misc.binary_tree.BinaryTree [Reviewed by Sébastien Labbé, Dima Pasechnik]
 #18908: Jeroen Demeyer: Fix math-readline script [Reviewed by Nathann Cohen, Sébastien Labbé, Salvatore Stella, Dima Pasechnik]
 #18909: Ralf Stephan: fuzzy output of sage -dev makes doctests fail [Reviewed by Volker Braun]
 #18911: Nathann Cohen: Doctest failure in LocalMcLaughlinGraph [Reviewed by Jeroen Demeyer]
