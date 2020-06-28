@@ -1,4 +1,4 @@
-﻿-*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 
 Hi folks,
 
@@ -221,7 +221,7 @@ Merged in sage-4.3.4.alpha1:
 #7943: Mitesh Patel: move docbuild commands to their own targets in SAGE_ROOT/makefile [Reviewed by Minh Van Nguyen, John Palmieri]
 #7993: Willem Jan Palenstijn: whitespace error in doctest causes A Mysterious Error. [Reviewed by Paul Zimmermann]
 #8112: Jaap Spies: flint fails to build in Open Solaris x64 as 64 bit since FLINT_TUNE is not set [Reviewed by David Kirkby]
-#8233: Sébastien Labbé: concatenation of words should preserve the data type represention when possible [Reviewed by Alexandre Blondin Massé]
+#8233: Sébastien Labbé: concatenation of words should preserve the data type representation when possible [Reviewed by Alexandre Blondin Massé]
 #8261: Mike Hansen: cygwin: mpfr fails 1 test in its test suite on windows [Reviewed by Minh Van Nguyen]
 #8266: Sébastien Labbé: Improve documentation for word objects [Reviewed by Alexandre Blondin Massé]
 #8283: Yann Laigle-Chapuy: A better Carmichael lambda function [Reviewed by David Joyner, Minh Van Nguyen]

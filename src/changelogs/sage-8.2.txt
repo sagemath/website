@@ -352,7 +352,7 @@ Merged in sage-8.2.beta3:
 #24463: Frédéric Chapoton: correct some typos [Reviewed by Jori Mäntysalo]
 #24464: Vincent Delecroix: ZZ is complete [Reviewed by Travis Scrimshaw]
 #24465: Vincent Delecroix: Let the completion functor prints the precision [Reviewed by Travis Scrimshaw]
-#24466: Jeroen Demeyer: Fix widget.descriprion [Reviewed by Travis Scrimshaw]
+#24466: Jeroen Demeyer: Fix widget.description [Reviewed by Travis Scrimshaw]
 #24467: Jeroen Demeyer: Refactor IntegerMulAction [Reviewed by Travis Scrimshaw]
 #24468: Simon King: Fix unpickling old pickles of MeatAxe matrices [Reviewed by Jeroen Demeyer]
 #24470: Frédéric Chapoton: py3: do not import replace [Reviewed by Jeroen Demeyer]

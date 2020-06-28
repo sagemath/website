@@ -179,7 +179,7 @@ Merged in sage-4.4.2.rc0:
 Merged in sage-4.4.2.final:
 
 #8915: Mike Zabrocki: improve documentation on combinat.dyck_words [Reviewed by Minh Van Nguyen, Sébastien Labbé]
-#8919: William Laffin: documetation error in super_categories for Sets [Reviewed by Minh Van Nguyen]
+#8919: William Laffin: documentation error in super_categories for Sets [Reviewed by Minh Van Nguyen]
 #8964: Jason Grout: Two small typos [Reviewed by Francis Clarke]
 #8979: André-Patrick Bubel: spelling mistake in sage/gsl/ode.pyx [Reviewed by Minh Van Nguyen]
 #8990: Georg S. Weber: update MPIR 1.2.2 license information as requested by upstream [Reviewed by Minh Van Nguyen]

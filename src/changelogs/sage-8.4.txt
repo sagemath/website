@@ -524,7 +524,7 @@ Merged in sage-8.4.beta5:
 #26200: David Coudert: deprecate import of  all_max_clique, max_clique and clique_number in global namespace [Reviewed by Frédéric Chapoton]
 #26201: David Coudert: Remove deprecation warnings introduced in #18938 [Reviewed by Bryan Gin-ge Chen]
 #26204: Frédéric Chapoton: py3: care for xrange in src/doc [Reviewed by Jeroen Demeyer, Travis Scrimshaw]
-#26205: Vincent Klein: py3: Add rich comparision to LatticePolytopeClass [Reviewed by Frédéric Chapoton]
+#26205: Vincent Klein: py3: Add rich comparison to LatticePolytopeClass [Reviewed by Frédéric Chapoton]
 #26207: Frédéric Chapoton: py3: fix doctests for universal cyclotomic field [Reviewed by Vincent Klein]
 #26208: Frédéric Chapoton: py3: fix doctests in arith/ [Reviewed by Vincent Klein]
 #26209: Frédéric Chapoton: py3: doctests in database/conway and tests/py3_syntax [Reviewed by Travis Scrimshaw]

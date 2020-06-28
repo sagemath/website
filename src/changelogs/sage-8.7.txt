@@ -444,7 +444,7 @@ Merged in sage-8.7.beta6:
 #27344: Frédéric Chapoton: py3: fix some doctests about hash for real and complex double [Reviewed by Jeroen Demeyer]
 #27345: Frédéric Chapoton: details in quasisymmetric functions [Reviewed by Travis Scrimshaw]
 #27349: Jori Mäntysalo: py3 compatible test for the category of finite posets [Reviewed by Frédéric Chapoton]
-#27353: Nils Bruin: Coerce_dict deprecations and documention updates [Reviewed by Jeroen Demeyer]
+#27353: Nils Bruin: Coerce_dict deprecations and documentation updates [Reviewed by Jeroen Demeyer]
 #27355: Frédéric Chapoton: remove deprecated stuff in pbori.pyx [Reviewed by Travis Scrimshaw]
 #27356: Frédéric Chapoton: remove one deprecated file in species [Reviewed by Travis Scrimshaw]
 #27357: Frédéric Chapoton: remove deprecation in finite state machines [Reviewed by Travis Scrimshaw]

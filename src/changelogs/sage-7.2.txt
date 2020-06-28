@@ -164,7 +164,7 @@ Merged in sage-7.2.beta0:
 #20237: Jeroen Demeyer: Drop -std=c99 from C++ extensions [Reviewed by François Bissey]
 #20242: Thierry Monteil: $SAGE_ROOT/build/bin/sage-uncompress-spkg looks for a wrong number of arguments when dealing with zip files [Reviewed by Dima Pasechnik]
 #20245: David Roe: ZpCA addition giving too much output [Reviewed by Marc Masdeu]
-#20251: Immi Halupczok: Typos in the documenation of "symbolic expression" [Reviewed by Jori Mäntysalo]
+#20251: Immi Halupczok: Typos in the documentation of "symbolic expression" [Reviewed by Jori Mäntysalo]
 
 Merged in sage-7.2.beta1:
 

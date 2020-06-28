@@ -207,7 +207,7 @@ Merged in Sage 3.2.alpha3:
 #4438: Michael Abshoff: Sage 3.2.a2: numerical noise in sage/calculus/functional.py and wester.py [Reviewed by Craig Citro]
 #4439: Michael Abshoff: Sage 3.2.a2: make three doctests from #788 random again [Reviewed by Craig Citro]
 #4441: Goerg Weber: remove two obsolete entries from modabvar documentation [Reviewed by Michael Abshoff]
-#4442: Goerg Weber: fix documetation build issue with congroup.py [Reviewed by Michael Abshoff]
+#4442: Goerg Weber: fix documentation build issue with congroup.py [Reviewed by Michael Abshoff]
 #4445: Robert Miller: is_isomorphic throws an error when the graph is compared to itself [Reviewed by Jason Grout]
 #4449: Franco Soliola: sage-combinat install script doesn't work with 3.2.alpha2 [Reviewed by Michael Abshoff]
 

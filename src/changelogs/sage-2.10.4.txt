@@ -99,7 +99,7 @@ This
    well as a whole class of user-defined symmetric functions 
    which can characterized by orthogonality and triangularity 
    conditions. Support for working with ribbon tableaux was 
-   also added as part of these updates. In addtition, many 
+   also added as part of these updates. In addition, many
    doctests were added and subtle bugs fixed.
 
  * Notebook Updates Tom Boothby and William Stein and 

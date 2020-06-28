@@ -494,7 +494,7 @@ Merged in alpha0:
 #2738: Martin Albrecht: LaTeX description environment in docstrings
 #2742: Jason Bandlow, Dan Bump, Mike Hansen, Anne Schilling, Nicolas 
        Thiery, Justin Walker: add crystals to the main branch of Sage
-#2747: Tim Abbott: fix SAGE doctest import errors due to introdution 
+#2747: Tim Abbott: fix SAGE doctest import errors due to introduction
        of $SAGE_TESTDIR
 #2752: Michael Kallweit:  Speedup for all_paths()
 #2756: Tim Abbott: Debianize GAP spkg
