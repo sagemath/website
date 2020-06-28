@@ -215,7 +215,7 @@ Merged in sage-7.2.beta2:
 #19911: Dima Pasechnik, Volker Braun: Update to gap-4.8.3 [Reviewed by Dima Pasechnik, Volker Braun]
 #20152: Ben Hutz: add monomial functions to MPolynomialRing_polydict [Reviewed by Bruno Grenet]
 #20157: François Bissey: make numpy and scipy use pkg-config to find blas/lapack [Reviewed by Volker Braun]
-#20168: Ben Hutz: small imporvement to projective morphisms [Reviewed by Rebecca Lauren Miller]
+#20168: Ben Hutz: small improvement to projective morphisms [Reviewed by Rebecca Lauren Miller]
 #20198: Charles Prior: `LinearCode(C)` for some code `C` should construct a code [Reviewed by Johan Sebastian Rosenkilde Nielsen]
 #20219: Jeroen Demeyer: Remove redundant functions from gen.pyx [Reviewed by Vincent Delecroix]
 #20287: Jeroen Demeyer: Implement the Moore–Penrose matrix pseudoinverse [Reviewed by Frédéric Chapoton]

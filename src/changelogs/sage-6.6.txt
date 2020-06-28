@@ -340,7 +340,7 @@ Merged in sage-6.6.beta6:
 #17967: Jeroen Demeyer: Replace *, foo imports [Reviewed by Travis Scrimshaw]
 #17972: Jeroen Demeyer: Make database_pari a new-style package [Reviewed by Travis Scrimshaw]
 #17973: David Lucas: Better Sage consistency for naming and calling in linear_code [Reviewed by Nathann Cohen]
-#17975: Franco Saliola: syntatic error: fix typo in documentation of DescentAlgebra [Reviewed by Nicolas M. Thiéry]
+#17975: Franco Saliola: syntactic error: fix typo in documentation of DescentAlgebra [Reviewed by Nicolas M. Thiéry]
 #17976: Frédéric Chapoton: typo in documentation for Permutation [Reviewed by Jan Keitel]
 #17977: Jessica Striker, James Campbell, Kevin Dilks: Corner sum matrix ASM method has incorrect output [Reviewed by James Campbell, Vince Knight]
 #17980: Volker Braun: show in the IPython nb [Reviewed by Jan Keitel]

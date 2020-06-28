@@ -45,7 +45,7 @@ changes compared to 2.8.15 are:
  * Integration of R 2.6.1 and rpy
  * Update to FLINT 1.02
  * Update to Symmetrica 2.0
- * Much faster permutation arithmatic
+ * Much faster permutation arithmetic
  * Very fast rubik's cube solvers
  * Many build fixes applied and many bugs squashed
 
@@ -230,7 +230,7 @@ Merged in alpha5:
       for now, BooleanRing is missing]
 #1189: Ondrej Certik: SymPy <-> SAGE automatic conversion
 #1235: William Stein: doctest fixes for 32 bit Linux
-#1296: Robert Bradshaw: Fast permutation arithmatic [with bugfixes 
+#1296: Robert Bradshaw: Fast permutation arithmetic [with bugfixes
        and debugging by William Stein, Michael Abshoff, Carl Witty 
        and Mike Hansen - this was a real team effort :)]
 #1394: Robert Miller: make plot documentation readable in graph.py
@@ -315,4 +315,4 @@ Reviewers: Carl Witty, William Stein, Mike Hansen, Robert Miller,
            Craig Citro, Michael Abshoff; apologies to anybody I
            forgot.
 
-Feeback: Jaap Spies, apologies to anybody I forgot.
+Feedback: Jaap Spies, apologies to anybody I forgot.

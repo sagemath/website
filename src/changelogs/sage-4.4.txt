@@ -207,7 +207,7 @@ Merged in sage-4.4.alpha0:
 #8572: Florent Hivert: Doc of poset appear as void if called from the console. [Reviewed by John Palmieri]
 #8576: Nicolas M. Thiéry: Categories for QQ, CC, RR and friends [Reviewed by John Cremona]
 #8579: Nicolas M. Thiéry: Add the categories of magmas and additive magmas [Reviewed by Robert Beezer, Florent Hivert]
-#8580: Martin Albrecht: bug in matrix_mod2_dense (m4ri wrapper?): exhibited by bug in coercing into a 0-dimensional qotient vector space [Reviewed by William Stein]
+#8580: Martin Albrecht: bug in matrix_mod2_dense (m4ri wrapper?): exhibited by bug in coercing into a 0-dimensional quotient vector space [Reviewed by William Stein]
 #8584: David Loeffler: implement latex'ing of Dirichlet characters [Reviewed by Chris Wuthrich]
 #8595: Sébastien Labbé: Fixed point of word morphism is broken on some tuple input [Reviewed by Vincent Delecroix]
 #8599: Sébastien Labbé: Allow size as an argument for point2d [Reviewed by Jason Grout]
