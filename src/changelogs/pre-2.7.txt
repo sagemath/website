@@ -621,7 +621,7 @@ Thu Sep 28 21:40:49 2006
 ------------------------
 1.4:     * W. Stein -- Complex double field (CDF)
          * D. Harvey -- improvements to elliptic curve arithmetic
-         * T. Boothby -- Implementd Real double field  (RDF)
+         * T. Boothby -- Implemented Real double field  (RDF)
          * Make PARI library always build the shared version mode,
            so Pyrex modules can share a single running instance of PARI.
 

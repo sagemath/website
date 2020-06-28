@@ -175,7 +175,7 @@ Merged in Sage 4.0.rc0:
 #5944: Burcin Erocal: fix a nasty pynac bug in exp [Reviewed by Mike Hansen]
 #5954: Jon Hanke: Added documentation/doctests for all quadratic form genus symbol routines [Reviewed by Gonzalo Tornaria]
 #6029: Robert Bradshaw: bug in floor() for python types [Reviewed by Mike Hansen]
-#6035: Wilfried Huss: Don't draw vertical asympotes [Reviewed by Marshall Hampton]
+#6035: Wilfried Huss: Don't draw vertical asymptotes [Reviewed by Marshall Hampton]
 #6036: Kwankyu Lee: a bug in polynomial() for PolynomialRing(GF(5),2) [Reviewed by Mike Hansen]
 #6037: Jon Hanke: Major Upgrade to QuadraticForm Local Density Routines [Reviewed by Gonzalo Tornaria]
 #6040: Jon Hanke: Added Doctests for QuadraticForms methods [Reviewed by Gonzalo Tornaria]

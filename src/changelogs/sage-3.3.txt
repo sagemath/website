@@ -258,7 +258,7 @@ Merged in Sage 3.3.rc0:
 #5210: Bill Hart, Gonzalo Tornaria, Michael Abshoff:  gmp-mpir-0.9.rc3: make check failure on various OSX boxen [Reviewed by Nick Alexander]
 #5215: Michael Abshoff: Remove ipython1-20070130.spkg from Sage [Reviewed by Mike Hansen]
 #5212: Nick Alexander: bug with numbers in names in sage.structure.parent_gens.normalize_names [Reviewed by David Roe]
-#5222: William Stein: wrap FLINTs pseudo-division algorithm for univariate polynoials over ZZ [Reviewed by Burcin Erocal]
+#5222: William Stein: wrap FLINTs pseudo-division algorithm for univariate polynomials over ZZ [Reviewed by Burcin Erocal]
 #5224: Robert Miller: speed up isomorphism testing for graphs which are c_graphs [Reviewed by Michael Abshoff]
 #5231: Nick Alexander: make relative number fields lazy [Reviewed by David Roe]
 #5232: William Stein: interact -- major bug in interact ranges due to str versus repr [Reviewed by Mike Hansen]

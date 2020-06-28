@@ -259,7 +259,7 @@ Merged in sage-5.9.beta3:
 #14369: Jeroen Demeyer: Misc doctesting improvements [Reviewed by David Roe]
 #14370: Jeroen Demeyer, Volker Braun: Run IPython tests with --colors=NoColor [Reviewed by John Palmieri, David Roe]
 #14376: John Palmieri: Add doctest directory to the reference manual [Reviewed by Jeroen Demeyer]
-#14379: R. Andrew Ohana: remove unused head in polybori mecurial repository [Reviewed by Jeroen Demeyer]
+#14379: R. Andrew Ohana: remove unused head in polybori mercurial repository [Reviewed by Jeroen Demeyer]
 #14380: Jean-Pierre Flori: Add $SAGE_LOCAL/bin to LD_LIBRARY_PATH on Cygwin [Reviewed by Karl-Dieter Crisman]
 #14383: Jeroen Demeyer: Use wget -nv instead of wget --no-verbose [Reviewed by R. Andrew Ohana]
 #14386: Jean-Pierre Flori: Fix Cygwin inline fortran issue [Reviewed by Karl-Dieter Crisman]

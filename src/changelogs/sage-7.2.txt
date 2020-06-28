@@ -180,7 +180,7 @@ Merged in sage-7.2.beta1:
 #19884: Jori Mäntysalo: LatticePosets: Add is_relatively_complemented() [Reviewed by Travis Scrimshaw]
 #20098: Ralf Stephan: doctest fix for: Re/Im(tanh) wrong formula [Reviewed by Marc Mezzarobba]
 #20174: Travis Scrimshaw: Avoid recomputing vacancy numbers for rigged configurations [Reviewed by Anne Schilling]
-#20220: Bruno Grenet: GCD of polyomials over polynomial rings [Reviewed by Aly Deines]
+#20220: Bruno Grenet: GCD of polynomials over polynomial rings [Reviewed by Aly Deines]
 #20234: Jeroen Demeyer: Fix typos in "algorithm" [Reviewed by Frédéric Chapoton]
 #20235: Jeroen Demeyer: Enable warnings when compiling Sage library [Reviewed by André Apitzsch]
 #20236: Jeroen Demeyer: Use sagelib-VERSION.log for Sage library log [Reviewed by André Apitzsch]
