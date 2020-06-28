@@ -433,7 +433,7 @@ def build_mirrorselector(mirrors, TS, best_mirror):
     Then your download is balanced across all servers,
     resumeable, and the checksum of the data is automatically verified.
     This gives you optimal speed and protection against corrupt/malicious data.
-    Either install a libitorrent based client like <a href="http://deluge-torrent.org/">Deluge</a>
+    Either install a libtorrent based client like <a href="https://deluge-torrent.org/">Deluge</a>
     or <a href="http://aria2.sourceforge.net/">Aria2</a> for the command-line
     (e.g. <code>sudo apt-get install aria2</code> and then <code>$ aria2c http://...*.torrent</code>).
     <a href="%(server)s">Download here</a>.
@@ -465,7 +465,7 @@ def build_mirror_list(good):
     ret += '# python usage:\n'
     ret += '# import urllib\n'
     ret += '# eval(urllib.urlopen(\'http://www.sagemath.org/mirror_list\').read())\n'
-    ret += '[' + ','.join(['"%s"' % m.url for m in sorted(good, key=lambda x: x.url)]) + ']'
+    ret += '[' + ','.join('"%s"' % m.url for m in sorted(good, key=lambda x: x.url)) + ']'
     OUTPUT += ret + '\n'
     return ret
 
