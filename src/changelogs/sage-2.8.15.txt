@@ -10,7 +10,7 @@ The following people contributed this release:
  - Dan Drake
  - David Harvey
  - Michael Abshoff
- - Martin Albreecht
+ - Martin Albrecht
  - Jen Balakrishnan
  - Robert Bradshaw
  - Jason Grout
@@ -79,7 +79,7 @@ alpha2 - Merged:
        $SAGE_LOCAL/bin (Solaris related)
 #1184: Michael Abshoff: OSX 10.4: moving sage breaks recompile -> NTL
        related
-#1201: William Stein: add gramm-schmidt to sage
+#1201: William Stein: add gram-schmidt to sage
 #1208: Jaap Spies: Faster _choose in matrix2.py
 #1211: David Harvey: NTL crash in polynomial remainder over ZZ
 #1222: Josh Kantor: cvxopt import trouble on PPC OSX 10.4
@@ -108,7 +108,7 @@ alpha1 - Merged:
 #1214: Mike Hansen: error in polynomial ideal membership testing
 #1249: Robert Miller: fixes bug in graph plotting with partitions
 #1265: Paul Zimmermann: documentation typos
-#1279: Martin Abrecht: LLL on "tall" matrices immediately crashes sage
+#1279: Martin Albrecht: LLL on "tall" matrices immediately crashes sage
 #1280: Mike Hansen: make Permutation(range(10)).random() fast instead
        of dog slow.
 #1333: William Stein: fix a major inefficiency in floating point
@@ -129,7 +129,7 @@ alpha0 - Merged:
 #1107: William Stein: add minkowski bound function for number fields
 #1111: Mike Hansen: Symbolic equation expand left and right
 #1134: David Harvey: optimize creating elements of orders and number
-       fields by coercing in lists [I left this ticket open fow now
+       fields by coercing in lists [I left this ticket open for now
        - see comment]
 #1141: Joel Mohler: improve Number Field elements arithmetic speed
 #1268: Carl Witty: new version of MPFI.spkg
@@ -150,7 +150,7 @@ alpha0 - Merged:
 Reviewers: Carl Witty, William Stein, Mike Hansen, Robert Miller,
           Michael Abshoff; apologies to anybody I forgot.
 
-Feeback: Jaap Spies, Justin Walker, apologies to anybody I forgot.
+Feedback: Jaap Spies, Justin Walker, apologies to anybody I forgot.
 
 * Known Issues with 2.8.15
 
