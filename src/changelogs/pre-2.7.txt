@@ -8,7 +8,7 @@ bug tracker as possible. Only a very limited number of features
 have been added and to some extend the portability of Sage to
 Solaris has been improved. While we haven't crossed the finish
 line for Solaris yet we have gotten very close. Unfortunately
-some of the fixes caused problems on other architectues, so we
+some of the fixes caused problems on other architectures, so we
 will revisit those problems in the future, hopefully for 2.9
 
 The total number of tickets closed was 47. Considering that now
@@ -50,7 +50,7 @@ and
 2.8.1:
 -----
 These are the release notes for sage-2.8.1, though there never was an
-offical release.  The reason it was never officially released was that
+official release.  The reason it was never officially released was that
 2.8.1 was the basis of the first Sage Bug Squashing day that is about
 to be wrapped up.  
 
@@ -88,7 +88,7 @@ Detailed changes:
 * w stein, d deshommes, m abshoff: linbox build fixes, lround
            workaround, build against gsl blas on solaris
 
-* w stein, k minolta: gfortran binary on Solaris, add SAGE_FORTRAN
+* w stein, k minola: gfortran binary on Solaris, add SAGE_FORTRAN
                      environment variable.
 
 * w stein: make f2c use gcc instead of cc on Solaris
@@ -105,7 +105,7 @@ Detailed changes:
 
 * w stein, m abshoff, d deshomees: stdint.h fix for Solaris
 
-* w stein: update gmp package, so that the resulting gmp is nuch more
+* w stein: update gmp package, so that the resulting gmp is much more
 portable  (and possible resolve some other bugs -- old version was
 building with certain patches preapplied).
 
@@ -139,7 +139,7 @@ Thu Aug  2 21:18:23 2007
 2.7.3: 
        * r bradshaw: bug fixes
        * j bober: vastly optimized number_of_partitions
-       * c citro: bug fixes and optimization of computing eisenstein series. 
+       * c citro: bug fixes and optimization of computing Eisenstein series. 
        * d kohel: bug fixes; improved free modules
        * w stein: upgraded to jsmath-3.4c
        * w stein: many misc bug fixes; speed up bell_number
@@ -171,7 +171,7 @@ Tue Jul 24 16:41:34 2007
        * w stein & d deshommes: putting all spkg's under revision control; 
                reorganize package structure
        * w stein: upgrade to pari-2.3.2
-       * w stein: upgarde to ZODB-3.7.0
+       * w stein: upgrade to ZODB-3.7.0
        * c wuthrich: supersingular p-adic birch and swinnerton-dyer code
 
 Thu Jul 19 21:45:41 2007
@@ -207,7 +207,7 @@ Sat Jun  2 22:37:01 2007
                               commutative algebra bugfixes
         * m albrecht, w stein, and j kantor: added a "backslash solve 
                               operator" like in Octave/Matlab. 
-        * t boothby (ref by r bradshaw): major optimization of univariate polynomial evalution
+        * t boothby (ref by r bradshaw): major optimization of univariate polynomial evaluation
         * r bradshaw: massively speed up point enumeration on curves over finite fields;  
                       hyperelliptic curve point counting; sqrt improvements;
                       2-descent over number fields (via Denis Simon's program)
@@ -248,7 +248,7 @@ Sun May 20 10:05:31 2007
          * j cremona: install doc improvement
          * d harvey and w stein: updated ntl and switched to using an optimized build: 
             building takes longer, but the result is much much better
-         * e kirkman: new sqllite graph database functionalikty
+         * e kirkman: new sqllite graph database functionality
          * w stein: misc bug fixes
          * m vandenbergh (refereed by w stein): greatly improved functionality for 
                   multivariate polynomials over number fields; bug fixes
@@ -256,7 +256,7 @@ Sun May 20 10:05:31 2007
 
 Sat May 19 09:49:49 2007
 ------------------------
-2.5.1:   * m albrecht: massively speed up multivariae polynomial arithmetic over QQ and GF(p)
+2.5.1:   * m albrecht: massively speed up multivariate polynomial arithmetic over QQ and GF(p)
          * d roe (refereed by r bradshaw): massively speed up the p-adics
          * d harvey: massively speed up computation of matrix of frobenius for hyperelliptic curves.
          * m abshoff: build improvements
@@ -328,7 +328,7 @@ Tue Mar 27 09:21:10 2007
 Sun Mar 25 18:13:00 2007
 ------------------------
 2.4:
-         * m albrecht: c-library wrapper for linbox that is seperate from main sage library.
+         * m albrecht: c-library wrapper for linbox that is separate from main sage library.
          * m albrecht and g bard: implementation of the method of 4
            russians, i.e., fast dense echelon form and matrix
            multiplication over GF(2).
@@ -399,7 +399,7 @@ Tue Feb 27 07:37:47 2007
 Fri Feb  9 00:57:45 2007
 ------------------------
 2.1:     * william stein -- elliptic curve p-adic L-functions 
-         * didider deshommes -- quad double real field
+         * didier deshommes -- quad double real field
          * david harvey -- substantial update to p-adic height code.
          * david kohel -- misc bugfixes
          * stein, pernet, albrecht -- inclusion of linbox in SAGE, which vastly
@@ -423,7 +423,7 @@ Sat Jan 27 00:08:26 2007
          * carl witty -- mpfi updates
          * robert bradshaw -- fixed subtle bug in sagex; matrix arithmetic. 
          * stein -- notebook: stylistic changes; tons of doctests;
-                    sagex'd integer_ring; sparse power and laurant series.
+                    sagex'd integer_ring; sparse power and laurent series.
          * ifti b -- improve programming guide 
          * yi qiang -- dsage improvements
 
@@ -448,9 +448,8 @@ Mon Jan 22 14:09:24 2007
 
 Mon Jan 22 13:20:22 2007
 ------------------------
-1.8:     * New sage-cleaner: Greatly improved cleanup of tmp and killing of orphaned pro
-cesses.
-         * lots of updates to David Kohel's crypto package.
+1.8:     * New sage-cleaner: Greatly improved cleanup of tmp and killing of orphaned processes.
+         * lots of updates to David Cowls crypto package.
 
 Wed Jan 17 18:55:33 2007
 ------------------------
@@ -525,7 +524,7 @@ Sat Nov 25 10:41:56 2006
 Fri Nov 24 16:22:35 2006
 ------------------------
 1.5.0:   * included Martin A's improved signal handling code.
-         * notbook improvements:
+         * notebook improvements:
                - faster switching between worksheets (doesn't pop up new tab or start new SAGE session)
                - Got rid of boxes around everything</li>
                - When cursor enters new box it is at *top* instead of bottom
@@ -603,7 +602,7 @@ Oct  1-5
               library.  Unfortunately it breaks unpickling many things
               that may have been saved.  This had to be done; I
               couldn't organize things correctly at the beginning
-              because of defficienies in Pyrex (that I fixed).
+              because of defficiencies in Pyrex (that I fixed).
               There will be one more break when I switch to the new matrix
               class hierarchy that we recently wrote.  In general, since
               the thrust for SAGE 2.0 is pyrexing all types, pickling
@@ -654,7 +653,7 @@ Fri Jul 28 11:33:31 2006
         * stein: moinmoin wiki interface for SAGE
         * david harvey -- added bernoulli_mod_p
         * tom boothby -- lots of improvements to notebook 
-        * martin albrech -- some givaro wrapper code; restructing matrix code,etc.
+        * martin albrecht -- some givaro wrapper code; restructuring matrix code,etc.
 
 Thu Jul 20 12:26:56 2006
 ------------------------
@@ -873,7 +872,7 @@ Thu Apr 20 20:26:47 2006
        * groebner_fan() function for multivariate-ideals; provides
          very nice access to most of the functionality of Groebner Fan,
          which is now included by default with SAGE.
-       * Changed so that multi-variate polynomials rings get numered
+       * Changed so that multi-variate polynomials rings get numbered
          variables called x0,x1,x2,x3 (or whatever) instead of 
          x_0,x_1,x_2,x_3.  This is because (1) there were some
          problems with _ variables and Singular, and (2) in ASCII
@@ -941,12 +940,12 @@ March 2006:
                                of finite fields via singular; etc. 
           * Didier Deshommes -- added ntl random numbers: 
                                 ntl.ZZ_random  and ntl.ZZ_random_bits
-          * Gonzalo Tornario -- wrote a "darcs with SAGE" howto
+          * Gonzalo Tornaria -- wrote a "darcs with SAGE" howto
           * W. Stein -- improvement to prime enumeration using PARI
           * W. Stein -- fixed mpfr rounding mode creation bug (and 
                         changes lots of examples to reflect this)
-          * W. Stein -- change real number behavoir some
-          * Gonzalo Tornario -- fixed randomness in ZZ hash; also some linalg,
+          * W. Stein -- change real number behavior some
+          * Gonzalo Tornaria -- fixed randomness in ZZ hash; also some linalg,
              smith forms for nonsquare matrices, ZZ.quotient( ... ) fix.
 
 
@@ -963,7 +962,7 @@ Thu Mar  9 04:15:34 2006
 
 Tue Mar  7 03:54:48 2006
 ------------------------
-1.0.9: * Gonzalo Tornari -- large numbers of patches to improve performance,
+1.0.9: * Gonzalo Tornaria -- large numbers of patches to improve performance,
          especially PARI <--> SAGE number conversions, etc.
 
 Mon Mar  6 20:33:19 2006
@@ -1143,7 +1142,7 @@ Sun Feb 12 00:49:45 2006
 
 Sat Feb 11 23:58:26 2006
 ------------------------
-1.0.2   * macaualy2 interface bugfixes
+1.0.2   * macaulay2 interface bugfixes
         * created a new latex and html session log facility.  
           type "log_dvi?" and "log_html?" for more details.
           (using this led to many improvements in the latexing
@@ -1226,7 +1225,7 @@ Fri Jan 27 01:14:48 2006
 0.10.11   I've added a new option for sage0.10.11 to make it easier to hunt
           down something you remember from the SAGE source code.  Just type
                 "sage -grep <string>"
-          to find all occurences of <string> in the SAGE source code. 
+          to find all occurrences of <string> in the SAGE source code. 
 
 
 Thu Jan 26 20:49:24 2006
@@ -1309,7 +1308,7 @@ Mon Jan 23 20:48:18 2006
 
 Mon Jan 23 12:32:18 2006
 ------------------------
-0.10.5 -- martin albrecht's improvments to finite field coercion 
+0.10.5 -- martin albrecht's improvements to finite field coercion 
 
 Sun Jan 22 20:30:18 2006
 ------------------------
@@ -1413,7 +1412,7 @@ Wed Jan 11 01:03:14 2006
 Tue Jan 10 02:56:27 2006
 ------------------------
 0.9.33 -- polynomial factorization over general finite fields (via pari);
-          also slighly changed representation of elements of general finite
+          also slightly changed representation of elements of general finite
           fields for robustness.
 
 
@@ -1794,7 +1793,7 @@ Mon Oct 31 10:49:21 2005
 
 Thu Oct 27 01:31:30 2005
 ------------------------
- 0.8.4: * Added some functions submitted by Dadid Joyner.
+ 0.8.4: * Added some functions submitted by David Joyner.
         * Fixed x^n when x is a float and n is an integer. 
 
 Tue Oct 25 06:09:05 2005
@@ -1986,7 +1985,7 @@ Sat Oct  1 01:06:29 2005
 Fri Sep 30 23:33:03 2005
 ------------------------
 0.7.6: Added source and building of ZEN-3-0r7 to SAGE 
-       source distribution.   (This addes 2-3 minutes
+       source distribution.   (This adds 2-3 minutes
        to the total build time.)
 
 
@@ -2264,7 +2263,7 @@ to vector_spaces.
 
 Tue Aug 30 22:22:49 2005
 ------------------------
-Added complete class for computing with quotients of univariet
+Added complete class for computing with quotients of univariate
 polynomial rings in general.  E.g., 
     sage: R = PolynomialRing(RationalField(), 'x'); x = R.gen()
     sage: S = R.quotient(x^3-2, 'a'); a = S.gen()
@@ -2663,11 +2662,11 @@ arithmetic ring is named IntervalRing().  This is useful in
 computations related to the BSD conjecture.
 
 After "upgrading" to PARI 2.2.10-alpha, which fixed some annoying bugs
-in PARI2.2.9-alpha, I discovered that 2.2.10-alpha is also too bugy.
+in PARI2.2.9-alpha, I discovered that 2.2.10-alpha is also too buggy.
 For example, it computes the Lseries at 1 and sign of functional
 equation for the curve defined by [0,1,0,-6,4] incorrectly.  So, I
 switched to PARI 2.2.7-alpha, which has none of the bugs I've
-discoved, and for some reason seems to be the last "stable" 2.2.x
+discovered, and for some reason seems to be the last "stable" 2.2.x
 release.  Even the documentation is messed up in 2.2.n for n > 7,
 i.e., the C-library sections are missing. But in 2.2.7-alpha they're
 there.   
@@ -2681,7 +2680,7 @@ Sun Apr 24 09:33:03 2005
 Improved prime iteration and enumeration in sage/rings/arith.py
 by incorporating the function from 
    http://aspn.activestate.com/ASPN/Cookbook/Python/Recipe/366178
-and polishing some releated code.  
+and polishing some related code.  
 
 Sat Apr 23 15:21:24 2005
 ------------------------
@@ -2745,7 +2744,7 @@ it just prints and error and executes the unparsed line.
 
 Sat Apr 16 23:29:44 2005
 ------------------------
-Added general finite fields.  Improved the commmand-line preprocessor
+Added general finite fields.  Improved the command-line preprocessor
 further.
 
 
