@@ -240,7 +240,7 @@ Merged in sage-6.9.beta3:
 #19007: Michele Borassi: Refactor Closeness Centrality [Reviewed by David Coudert]
 #19009: Vincent Delecroix: upgrade flint to 2.5.2 [Reviewed by François Bissey]
 #19014: Michele Borassi: Tarjan Strongly Connected Components Algorithm [Reviewed by David Coudert]
-#19018: Nathann Cohen: More SRGs using Regular Symmetric Hadamard matric with Constant Diagonal [Reviewed by Dima Pasechnik]
+#19018: Nathann Cohen: More SRGs using Regular Symmetric Hadamard matrices with Constant Diagonal [Reviewed by Dima Pasechnik]
 #19019: Nathann Cohen: Very careless typoes in strongly_regular_db [Reviewed by Dima Pasechnik]
 #19021: Kwankyu Lee: Now the default ipython profile location is "profile_default" not "profile_sage" [Reviewed by Volker Braun]
 #19026: Vincent Delecroix: better matrix generic dense [Reviewed by Marc Mezzarobba]

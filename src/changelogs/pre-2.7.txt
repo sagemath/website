@@ -2163,7 +2163,7 @@ v0.6.4: reorganized Generators and Rings in Pyrex.
 Sat Sep 17 14:28:49 2005
 ------------------------
 Fixed segfaults which were caused by the PARI C-library changing the
-GMP malloc funciton.  (More precisely: Comment out the call to
+GMP malloc function.  (More precisely: Comment out the call to
 mp_set_memory_functions in pari_kernel_init in the file
 src/kernel/gmp/mp.c).  I also switched SAGE's GMP to use Python's malloc
 instead of the C malloc, by adding an line in sage/ext/_integer.pyx

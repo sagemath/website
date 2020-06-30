@@ -270,7 +270,7 @@ Merged in sage-6.4.beta3:
 #16827: Jeroen Demeyer: Use atomic_write in sage-preparse [Reviewed by Volker Braun]
 #16838: Ben Hutz: make affine and projective dehomogenize and homogenize work together [Reviewed by Joao Alberto de Faria]
 #16851: Travis Scrimshaw: Implement direct sum and tensor products for chain complexes and Koszul complexes [Reviewed by John Palmieri]
-#16853: André Apitzsch: Replace some cmp parameters by key paramters [Reviewed by Frédéric Chapoton]
+#16853: André Apitzsch: Replace some cmp parameters by key parameters [Reviewed by Frédéric Chapoton]
 #16858: Jeroen Demeyer: Print RDF and CDF elements with more digits [Reviewed by Volker Braun]
 #16879: Nathann Cohen: OA caching in C [Reviewed by Vincent Delecroix]
 #16881: Peter Bruin: Rename number field __pari_* attributes to _pari_* [Reviewed by Jeroen Demeyer]

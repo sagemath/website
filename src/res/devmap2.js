@@ -49,7 +49,7 @@ function getPointFromLoc(loc) {
       return new google.maps.LatLng(l.getAttribute("loclat"), l.getAttribute("loclng"));
     }
   }
-  console.log("Locaton: " + loc + " not found in geocode.xml!");
+  console.log("Location: " + loc + " not found in geocode.xml!");
   return null;
 }
 

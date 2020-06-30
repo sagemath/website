@@ -123,7 +123,7 @@ Closed tickets:
 #3320: Gap <-> Sage interface for Dense Matrices over GF(2) [Reviewed by Travis Scrimshaw]
 #3355: invoke the libdir rewrite script on "sage -upgrade" [Reviewed by Jeroen Demeyer]
 #4259: use Modular<float> instead of Modular<double> for small primes in LinBox [Reviewed by Martin Albrecht]
-#5084: speed regression in number of partitons [Reviewed by Travis Scrimshaw]
+#5084: speed regression in number of partitions [Reviewed by Travis Scrimshaw]
 #6415: "sage -t foo.pyx" should not by default dynamically build foo.so [Reviewed by David Roe]
 #7026: linbox 1.1.6.p0 says GMP is not installed, even though MPIR is [Reviewed by Jeroen Demeyer]
 #7185: bug in FFT object in Sage -- segfault [Reviewed by Travis Scrimshaw]

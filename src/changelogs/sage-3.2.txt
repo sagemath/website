@@ -51,7 +51,7 @@ The following 39 people contributed to this release:
  * Jaap Spies
  * William Stein
  * Nicolas Thiery
- * Gonzalo Tonaria
+ * Gonzalo Tornaria
  * John Voight
  * Georg Weber
  * Paul Zimmermann
@@ -79,7 +79,7 @@ Michael Abshoff (release chair), William Stein
  * Robert Bradshaw: update to Cython 0.10
  * Jason Grout: make numpy the backend for matrices over CDF and RDF
  * Jason Grout:  much more robust planarity testing code for graphs
- * Robert Bradshaw, Gonzalo Tonaria, Craig Citro: massively cleaned up and faster setup.py
+ * Robert Bradshaw, Gonzalo Tornaria, Craig Citro: massively cleaned up and faster setup.py
 
 For details see the Sage 3.2 Release Tour at
 
@@ -129,7 +129,7 @@ Merged in Sage 3.2.rc2:
 
 #3223: William Stein: notebook -- it is now broken on the iphone [Reviewed by Tom Boothby]
 #3900: William Stein: make testing an official pickle jar a part of "make check" [Reviewed by Jaap Spies, Michael Abshoff]
-#4312: William Stein: major @paralllel (hence pyprocessing) new bug in 3.1.3, still in 3.1.4 [Reviewed by Craig Citro]
+#4312: William Stein: major @parallel (hence pyprocessing) new bug in 3.1.3, still in 3.1.4 [Reviewed by Craig Citro]
 #4469: Craig Citro: Sage 3.2.a3: output ordering randomness in sage/rings/number_field/number_field.py [Reviewed by Michael Abshoff]
 #4472: Georg Weber: Sage 3.2.a3: more numerical noise in sage/calculus/wester.py [Reviewed by Michael Abshoff]
 #4502: Georg Weber: numerical noise in matrix_double_dense on intel mac os X 10.5: inverting a singular matrix [Reviewed by Michael Abshoff]
@@ -148,7 +148,7 @@ Merged in Sage 3.2.rc1:
 #4392: John Cremona: smallest_integer() is broken [Reviewed by David Loeffler]
 #4466: William Stein: fix det in linbox case to fail if proof=False isn't also set [Reviewed by Robert Bradshaw]
 #4447: Jason Grout: graph attributes (_boundary, _pos, etc.) are not updated properly [Reviewed by Robert Miller]
-#4480: Robert Bradshaw, Gonzalo Tonaria, Craig Citro: cython dependancy checking is too slow [Reviewed by Robert Bradshaw, Michael Abshoff]
+#4480: Robert Bradshaw, Gonzalo Tornaria, Craig Citro: cython dependancy checking is too slow [Reviewed by Robert Bradshaw, Michael Abshoff]
 #4485: Robert Bradshaw: notebook -- implicit multiplication is broken in the notebook but works on the command line [Reviewed by William Stein]
 #4499: Mike Hansen: Fix latex for sech and csch [Reviewed by William Stein]
 #4500: Craig Citro: cython files missing from build directory after install [Reviewed by Georg Weber, Michael Abshoff, Robert Bradshaw]
@@ -168,7 +168,7 @@ Merged in Sage 3.2.rc1:
 
 Merged in Sage 3.2.rc0:
 
-#3310: Craig Citro,  Gonzalo Tonaria: sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc} [Reviewed by Michael Abshoff]
+#3310: Craig Citro,  Gonzalo Tornaria: sage -b fails after touching sage/libs/mwrank/{mwrank.pyx,wrap.cc} [Reviewed by Michael Abshoff]
 #3476: Nick Alexander, Mike Hansen: save timeit information with sage -t -timeit [Reviewed by Mike Hansen, Michael Abshoff]
 #3498: Jason Grout: make numpy the backend for matrices over CDF and RDF [Reviewed by Mike Hansen, Robert Bradshaw, Michael Abshoff]
 #3580: Craig Citro, John Voight: ensure that totallyreal does not import numpy on startup [Reviewed by John Voight, Craig Citro]

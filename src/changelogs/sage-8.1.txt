@@ -678,7 +678,7 @@ Merged in sage-8.1.beta8:
 #23634: Simon Brandhorst: A base class for integral quadratic forms seen as modules with a bilinear form. [Reviewed by David Roe]
 #23642: Julian Rüth: Factorization over some quotient rings incorrect [Reviewed by Jean-Pierre Flori, David Roe]
 #23671: Frédéric Chapoton, Kiran Kedlaya: hypergeometric motives [Reviewed by David Roe]
-#23713: Jeroen Demeyer: Support SAGE_NUM_THREADS everywhere for parallellism [Reviewed by Florent Hivert]
+#23713: Jeroen Demeyer: Support SAGE_NUM_THREADS everywhere for parallelism [Reviewed by Florent Hivert]
 #23734: Travis Scrimshaw: Implement iterator for generic permutations in Cython [Reviewed by Vincent Delecroix]
 #23800: Koen van Woerden: Add O method for Laurent series rings [Reviewed by Vincent Delecroix, Kiran Kedlaya]
 #23815: Jeroen Demeyer: Upgrade to Python 2.7.14 [Reviewed by Volker Braun]

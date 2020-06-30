@@ -174,7 +174,7 @@ Closed tickets:
 #4651: re-enable caching of cython dependencies during build [Reviewed by Jeroen Demeyer]
 #4664: Move Cython dependency checking code into upstream Cython [Reviewed by Jeroen Demeyer]
 #6378: [with second patch, needs review] make sage -merge more user-friendly [Reviewed by Jeroen Demeyer]
-#6550: We need to be able to save itermediate files - particulary for ATLAS [Reviewed by Jeroen Demeyer]
+#6550: We need to be able to save intermediate files - particularly for ATLAS [Reviewed by Jeroen Demeyer]
 #6743: cygwin metaticket: port Sage to Microsoft Windows (via Cygwin): stage 1 -- make building Sage automatic [Reviewed by Jean-Pierre Flori, Dmitrii Pasechnik, Karl-Dieter Crisman, Mike Hansen, William Stein, Luis Felipe Tabera Alonso]
 #7174: ghmm redirects compiler warnings to /dev/null [Reviewed by Jeroen Demeyer]
 #7645: 'set -e' used inappropriately in python-2.6.2.p4 [Reviewed by Jeroen Demeyer]

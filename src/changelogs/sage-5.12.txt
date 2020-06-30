@@ -62,8 +62,7 @@ their first contribution to Sage:
   - Florent Hivert
   - François Bissey
   - François Maltey [first contribution]
-  - Frederic Chapoton [first contribution]
-  - Frédéric Chapoton
+  - Frédéric Chapoton [first contribution]
   - George H. Seelinger [first contribution]
   - Georg Weber
   - Gregg Musiker
@@ -276,7 +275,7 @@ Merged in sage-5.12.beta2:
 #13198: David Loeffler: old_submodule on modular symbols gives wrong answer [Reviewed by Alex Ghitza]
 #13212: Alejandro Argaez: discriminant of Hecke algebra is broken [Reviewed by Alex Ghitza]
 #13438: Julian Rueth: univariate polynomial _xgcd only over fields [Reviewed by Travis Scrimshaw, Michiel Kosters]
-#14136: Darij Grinberg: P-partition enumerators in QSym [Reviewed by Frederic Chapoton, Travis Scrimshaw]
+#14136: Darij Grinberg: P-partition enumerators in QSym [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
 #14405: Volker Braun, Jean-Pierre Flori: Replace termcap with ncurses [Reviewed by Volker Braun, Jean-Pierre Flori, Jeroen Demeyer]
 #14434: Nathann Cohen: feedback_vertex_set for graphs [Reviewed by Vincent Delecroix]
 #14445: Gregg Musiker: Implement Greedy bases for rank two cluster algebras [Reviewed by Frédéric Chapoton]

@@ -301,7 +301,7 @@ Merged in sage-6.3.beta3:
 #15386: Karl-Dieter Crisman: Maxima is confused about limits at infinity [Reviewed by Travis Scrimshaw]
 #15438: Peter Müller: Fix elias_upper_bound [Reviewed by Punarbasu Purkayastha]
 #15545: Ralf Stephan: TypeError in matching_polynomial [Reviewed by Nathann Cohen]
-#15683: Viviane Pons: Interval-posets of Tamari [Reviewed by Darij Grinberg, Frederic Chapoton, Travis Scrimshaw]
+#15683: Viviane Pons: Interval-posets of Tamari [Reviewed by Darij Grinberg, Frédéric Chapoton, Travis Scrimshaw]
 #15768: Travis Scrimshaw: Cleanup logic documentation [Reviewed by Frédéric Chapoton]
 #15976: Martin Albrecht: IntegerLattice class [Reviewed by Daniel Krenn, Travis Scrimshaw]
 #16078: André Apitzsch: Python 3 preparation: reduce() is no more a builtin function [Reviewed by Wilfried Luebbe]
