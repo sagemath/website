@@ -235,7 +235,7 @@ Merged in alpha5:
        and Mike Hansen - this was a real team effort :)]
 #1394: Robert Miller: make plot documentation readable in graph.py
 #1450: William Stein: update the error message for using maple/
-       mathmatica from sage
+       mathematica from sage
 #1453: William Stein: fix cython dependency computation for new files
        [later reverted, due to issues with #1366]
 #1455: Michael Abshoff: Fix OSX doctest failures due to numerical
