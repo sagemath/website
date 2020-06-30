@@ -139,7 +139,7 @@ Merged in Sage 3.2.2.rc0:
 #4792: Mike Hansen: Sage 3.2.1 + interactive gdb or valgrind are broken [Reviewed by Michael Abshoff]
 #4796: Craig Citro: Remove bugs.py in sage/modular/modform [Reviewed by Michael Abshoff]
 #4798: Robert Bradshaw: Update Cython to 0.10.2.p0 [Reviewed by Michael Abshoff]
-#4799: Nicolas Thiery, Mike Hansen: Add mapped CombinatorialClasses [Reviewed by Mike Hansen, Nicolas Theiry]
+#4799: Nicolas Thiery, Mike Hansen: Add mapped CombinatorialClasses [Reviewed by Mike Hansen, Nicolas Thiery]
 #4800: Nicolas Thiery: Add a strongly connected components method to graphs [Reviewed by Mike Hansen]
 #4801: Nicolas Thiery: Add a flag when starting MuPAD so that it can tell when it's being run from Sage [Reviewed by Mike Hansen]
 #4802: Nicolas Thiery: Add an on the fly ranker to Sage [Reviewed by Mike Hansen]

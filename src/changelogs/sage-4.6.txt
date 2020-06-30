@@ -1,4 +1,4 @@
-﻿-*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 
 Sage 4.6 was released on 31 October 2010. It is available at
 
@@ -167,7 +167,7 @@ Merged in sage-4.6.alpha1:
 #9504: Andrey Novoseltsev: Add support for toric sublattices [Reviewed by Volker Braun]
 #9603: David Kirkby, Leif Leonhardy: Build iconv in parallel, install it on HP-UX and make it work properly on Solaris 64-bit. [Reviewed by Peter Jeremy, Leif Leonhardy, David Kirkby]
 #9650: Joris Vankerschaver: Adding support for differential forms [Reviewed by Niles Johnson]
-#9652: Maarten Derickx: Unnecesary and buggy code in arith.py [Reviewed by Marco Streng, John Cremona, Luis Felipe Tabera]
+#9652: Maarten Derickx: Unnecessary and buggy code in arith.py [Reviewed by Marco Streng, John Cremona, Luis Felipe Tabera]
 #9674: Yann Laigle-Chapuy: fix SBox __init__ (again) [Reviewed by Martin Albrecht]
 #9676: Ed Scheinerman: Random Tree constructor for graphs section [Reviewed by Nathann Cohen]
 #9684: Pin-Hung Kao, Armin Straub, Charlie Turner: Make use of _tidy_model() optional [Reviewed by John Cremona]

@@ -246,7 +246,7 @@ Merged in Sage 4.1.1.rc0:
 #6302: William Stein: make openopt an optional spkg [Reviewed by David Joyner, Harald Schilly]
 #6497: Robert Bradshaw: symbolic functions should understand numpy arrays [Reviewed by Burcin Erocal]
 #6506: Robert Bradshaw, Jason Grout: further numpy type conversions [Reviewed by Jason Grout, Robert Bradshaw, Minh Van Nguyen]
-#6542: Marshall Hampton: tachyon ouput seems broken in sage-4.1 [Reviewed by Tim Dumol]
+#6542: Marshall Hampton: tachyon output seems broken in sage-4.1 [Reviewed by Tim Dumol]
 #6554: Jason Grout: plotting sparse matrices converts the matrix to a dense matrix [Reviewed by David Joyner]
 #6639: Peter McNamara: Documentation for Lyndon words [Reviewed by Jason Bandlow]
 #6644: John Palmieri: fix doctest error for lazy_attribute and abstract_method [Reviewed by Minh Van Nguyen]

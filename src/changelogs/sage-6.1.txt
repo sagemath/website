@@ -230,7 +230,7 @@ Merged in sage-6.1.beta3:
 #15566: Volker Braun: The -sync-build option is broken [Reviewed by Nathann Cohen]
 #15570: R. Andrew Ohana: sage-fix-pkg-checksums doesn't properly handle uncompressed tarballs [Reviewed by Volker Braun]
 #15579: Volker Braun: Commandline jmol (3-d plots) broken, black window [Reviewed by Nathann Cohen]
-#15581: Travis Scrimshaw: Shorter long tests for KR tableaux and rigged configruations. [Reviewed by Volker Braun]
+#15581: Travis Scrimshaw: Shorter long tests for KR tableaux and rigged configurations. [Reviewed by Volker Braun]
 #15596: Volker Braun, Jeroen Demeyer: Sdist fails with capital-P illow [Reviewed by R. Andrew Ohana]
 #15602: Travis Scrimshaw: Fix rigged_configurations.py documentation [Reviewed by Nathann Cohen]
 
