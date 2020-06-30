@@ -367,7 +367,7 @@ Merged in alpha1:
 #1874: Robert Miller: implement bipartite graphs
 #1878: Paul Zimmermann: add new function from mpfr-2.3.0
 #1880: Michael Abshoff: qqbar numerical doctest failure
-#1881: Michael Abshoff: tut.tex doctes failure with factorize()
+#1881: Michael Abshoff: tut.tex doctest failure with factorize()
 #1883: Michael Abshoff: Sage distribution includes Windows 
        executables
 

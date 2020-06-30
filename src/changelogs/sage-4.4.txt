@@ -166,7 +166,7 @@ Merged in sage-4.4.alpha0:
 #7914: Jason Bandlow: Implementation of triangular morphisms for modules with basis [Reviewed by Nicolas M. Thiéry]
 #8018: Rob Beezer: Eigenvalues sorted, but not eigenvectors, in modular/modform/numerical.py [Reviewed by Alex Ghitza]
 #8071: Rob Beezer: Trivial kernel of a matrix over non-fields are broken [Reviewed by Martin Albrecht]
-#8133: Chris Wuthrich: changing the string representation of Dirichlet charachters [Reviewed by John Cremona]
+#8133: Chris Wuthrich: changing the string representation of Dirichlet characters [Reviewed by John Cremona]
 #8218: David Roe: Finite Field move [Reviewed by David Loeffler]
 #8242: Marc Mezzarobba: Fix duplicate citation warnings when building the French-language tutorial [Reviewed by Paul Zimmermann, Minh Van Nguyen]
 #8281: Alex Ghitza: bug in hecke_operator_on_basis over finite fields [Reviewed by David Loeffler]

@@ -154,7 +154,7 @@ Closed tickets:
 #12104: Cygwin import problem with randstate [Reviewed by Dmitrii Pasechnik, Karl-Dieter Crisman]
 #1634: update zodb to 3.8.1 [Reviewed by Keshav Kini]
 #5323: "./sage -t" gives misleading error message when doctesting non-existing file with absolute patch [Reviewed by Michael Orlitzky]
-#5938: graph plotting -- ploting of graphs (networks) is somehow messed up/scaled wrong/cropped wrong since it doesn't work with graphics_array [Reviewed by Jason Grout]
+#5938: graph plotting -- plotting of graphs (networks) is somehow messed up/scaled wrong/cropped wrong since it doesn't work with graphics_array [Reviewed by Jason Grout]
 #5970: Weak references in Polynomial Ring cache [Reviewed by Simon King]
 #6439: doctests beginning with Sage: are silently ignored [Reviewed by Michael Orlitzky]
 #11325: Multiple line cells generation in live help broken, lots of samples unusable [Reviewed by Jeroen Demeyer, Peter Story]

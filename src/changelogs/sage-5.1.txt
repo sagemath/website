@@ -194,7 +194,7 @@ Merged in sage-5.1.beta1:
 #11919: Michael Orlitzky: Issue when pickling a formal function [Reviewed by Nils Bruin, Burcin Erocal]
 #12445: John Palmieri, Jeroen Demeyer: revise Sage banner, help message [Reviewed by Jeroen Demeyer, Karl-Dieter Crisman]
 #12614: John Palmieri: prereq should clean up its build directory [Reviewed by Keshav Kini]
-#12663: Travis Scrimshaw: Partitions(-1).list() goes into infinte recursion [Reviewed by Tom Denton]
+#12663: Travis Scrimshaw: Partitions(-1).list() goes into infinite recursion [Reviewed by Tom Denton]
 #12770: David Coudert: cartesian product of directed graphs [Reviewed by Frédéric Chapoton, Nicolas M. Thiéry]
 #12816: Nathann Cohen: Documentation and list of Graph functions [Reviewed by David Coudert]
 #12823: John Perry, Nathann Cohen: Allow constants for objective function & deletion of rows in MixedIntegerLinearProgram [Reviewed by David Coudert, Nathann Cohen]

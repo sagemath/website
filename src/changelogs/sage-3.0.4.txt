@@ -103,7 +103,7 @@ Overall weighted coverage score:  53.6%
 
 Merged in Sage 3.0.4.rc3:
 
-#3620: William Stein: minpoly absurdly slow for elements of finte 
+#3620: William Stein: minpoly absurdly slow for elements of finite
        fields [Reviewed by Mike Hansen]
 #3627: William Stein: illegal instruction on modular/modsym/subspace.py 
        on P4 3.4Ghz with 3.0.4.rc0 [Reviewed by Michael Abshoff]
