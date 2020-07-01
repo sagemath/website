@@ -119,7 +119,7 @@ Potential features (which is also the goal for 3.0) include:
  * OSX 10.5 support in 64 bit mode [this will depend on fixing
    a vexing segfault in libSingular and getting disutils to
    play nice with numpy]
- * Pexpect interace to R
+ * Pexpect interface to R
 
 * Doctesting Coverage
 
@@ -278,7 +278,7 @@ Merged in rc0:
 
 #37: William Stein: preparser doesn't parse hex input
 #874: Jason Grout: Implement Jordan and Rational Canonical Form
-#1151: Martin Albrecgh: Bug in creating elements in 
+#1151: Martin Albrecht: Bug in creating elements in 
        multivariate quotient rings that cannot be coerced 
        to singular
 #1186: Alex Gitza, Mike Hansen: Charpoly of a matrix of 
