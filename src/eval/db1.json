@@ -25,7 +25,7 @@
     "f = sin(2*x)*(x+cos(x))",
     "g = integrate(f, x)",
     "html('$f(x) = %s$' % latex(f))",
-    "print",
+    "print()",
     "html('$\\int f(x) d\\mathrm{x} = %s$' % latex(g))",
     "",
     "iv = (-2*pi,4*pi)",
@@ -42,7 +42,7 @@
     "f = sin(2*x)*(x+cos(x))",
     "g = diff(f, x)",
     "html('$f(x) = %s$' % latex(f))",
-    "print",
+    "print()",
     "html('$\\\\frac{\\partial}{\\partial x} f(x) = %s$' % latex(g))",
     "",
     "iv = (-2*pi,4*pi)",
@@ -65,28 +65,28 @@
     "robjects.globalEnv['weight'] = weight",
     "robjects.globalEnv['group'] = group",
     "lm_D9 = r.lm('weight ~ group')",
-    "print r.anova(lm_D9)",
-    "print",
-    "print lm_D9.r['fitted.values']"
+    "print(r.anova(lm_D9))",
+    "print()",
+    "print(lm_D9.r['fitted.values'])"
   ]
  }, 
 
 "Normal Subgroup?" : {
   "cat" : [ "Algebra", "Groups" ],
-  "descr" : "Checking normality (<a href='http://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups'>read more here</a>)",
+  "descr" : "Checking normality (<a href='https://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups'>read more here</a>)",
   "code" : [
-   "# see http://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups",
+   "# see https://sagemath.org/doc/thematic_tutorials/group_theory.html#normal-subgroups",
    "A4 = AlternatingGroup(4)",
-   "print A4",
-   "print 'Elements of A4:'",
-   "print A4.list()",
+   "print(A4)",
+   "print('Elements of A4:')",
+   "print(A4.list())",
    "r1 = A4('(1,2) (3,4)')",
    "r2 = A4('(1,3) (2,4)')",
    "r3 = A4('(1,4) (2,3)')",
    "H = A4.subgroup([r1, r2, r3])",
-   "print H",
-   "print 'Elements of H:'", 
-   "print H.list()",
+   "print(H)",
+   "print('Elements of H:')", 
+   "print(H.list())",
    "H.is_normal(A4)"
   ]
  },
@@ -99,12 +99,13 @@
    "G = graphs.WheelGraph(N)",
    "for idx, i in enumerate(range(0, N, 2)):",
    "  G.add_edge(idx + 1, i)",
-   "print 'order:', G.order()",
+   "print('order:', G.order())",
    "ngbs = sorted(G.neighbors(N-1))",
-   "print 'neighbors of %d: %s' % (N-1, ngbs)",
+   "print('neighbors of %d: %s' % (N-1, ngbs))",
    "G.show()"
  ]
 },
+
 "Density Plot" : {
   "cat" : [ "Graphics", "Plot 2D" ],
   "descr" : "This is a density plot.",
@@ -156,7 +157,7 @@
    "         if abs(z) > 2:",
    "            return z",
    "      return z",
-   "    print 'z <- z^%s + c' % expo",
+   "    print('z <- z^%s + c' % expo)",
    "    ",
    "    # calling ff three times, otherwise it fast_callable exceeds a recursion limit",
    "    if formula is 'ff':",
@@ -171,24 +172,24 @@
 
 "Permutation Group" : {
  "cat" : ["Algebra" , "Groups" ],
- "descr" : "<a href='http://sagemath.org/doc/reference/sage/groups/perm_gps/permgroup.html'>see documentation</a>",
+ "descr" : "<a href='https://sagemath.org/doc/reference/sage/groups/perm_gps/permgroup.html'>see documentation</a>",
  "code" : [
    "G = PermutationGroup([[(1,5,7),(3,2)], [(1,3,5)]])",
    "html('<h3>Elements of %s</h3>' % G)",
    "html('%s' % G.list())",
    "",
    "html('<h3>Properties and more</h3>')",
-   "print 'order:', G.order()",
-   "print 'degree:', G.degree()",
-   "print 'center:', G.center()",
-   "print 'non-fixed points:', G.non_fixed_points()",
+   "print('order:', G.order())",
+   "print('degree:', G.degree())",
+   "print('center:', G.center())",
+   "print('non-fixed points:', G.non_fixed_points())",
    "",
    "n = G([(2,5)])",
    "html( '<h3>Normalizer of %s in G:</h3>'%n)",
-   "print G.normalizer(n)",
+   "print(G.normalizer(n))",
    "",
    "html('<h3>Character Table</h3>')",
-   "print G.character_table()"
+   "print(G.character_table())"
  ]
 },
 
@@ -199,46 +200,46 @@
    "P = PolynomialRing(RDF, 'x')",
    "x = P.gen(0)",
    "p1 = 2*x+x^2-1",
-   "print p1, 'evaluated at x=1.:', p1.subs({x : 1.})",
+   "print(p1, 'evaluated at x=1.:', p1.subs({x : 1.}))",
    "",
    "P2.<x> = PolynomialRing(GF(2))",
-   "print '3*x^2+2*x+1 in GF(2) =', 3*x^2+2*x+1",
-   "print 'P2.characteristic() = ', P2.characteristic()",
+   "print('3*x^2+2*x+1 in GF(2) =', 3*x^2+2*x+1)",
+   "print('P2.characteristic() = ', P2.characteristic())",
    "",
    "P3 = P2.change_ring(ZZ)",
    "y = P3.gen(0)",
    "p3 = 3*y^2+2*y+1",
-   "print 'in ZZ:', p3",
+   "print('in ZZ:', p3)",
    "",
-   "print 'p1(p3) =', p1(p3) "
+   "print('p1(p3) =', p1(p3))"
   ]
 },
 "Infinite Polynomial Ring" : {
   "cat" : ["Algebra", "Polynomials" ],
-  "descr" : "<a href='http://sagemath.org/doc/reference/polynomial_rings_infinite.html'>see documentation</a>",
+  "descr" : "<a href='https://sagemath.org/doc/reference/polynomial_rings_infinite.html'>see documentation</a>",
   "code" : [
    "A.<alpha,beta> = InfinitePolynomialRing(QQ,implementation='sparse')",
-   "print A",
+   "print(A)",
    "p1 = 2*alpha[3]-3*alpha[11]*beta[1]^2",
    "p2 = beta[11]^4+1",
-   "print 'p1:', p1",
-   "print 'p2:', p2",
-   "print 'p1+p2 =', p1+p2",
-   "print 'p1*p2 =', p1*p2",
-   "print 'p1*alpha[11]^(-1) = ', p1 * alpha[11]^(-1)"
+   "print('p1:', p1)",
+   "print('p2:', p2)",
+   "print('p1+p2 =', p1+p2)",
+   "print('p1*p2 =', p1*p2)",
+   "print('p1*alpha[11]^(-1) = ', p1 * alpha[11]^(-1))"
   ]
 },
 
 "Points on an Elliptic Curve" : {
  "cat" : ["Algebra", "Elliptic Curves"],
- "descr" : "see <a href='http://sagemath.org/doc/reference/sage/schemes/elliptic_curves/ell_point.html'>documentation</a>",
+ "descr" : "see <a href='https://sagemath.org/doc/reference/sage/schemes/elliptic_curves/ell_point.html'>documentation</a>",
  "code" :[
    "R.<x> = GF(101^3)",
    "E = EllipticCurve(R, [1,0,3,-1,1])",
-   "print E",
-   "print E.cardinality()",
-   "print 'point with x=1:', E.lift_x(1)",
-   "print 'on E?', E(1,43,1) in E"
+   "print(E)",
+   "print(E.cardinality())",
+   "print('point with x=1:', E.lift_x(1))",
+   "print('on E?', E(1,43,1) in E)"
  ]
 },
 
@@ -247,11 +248,11 @@
  "descr" : "",
  "code" : [
    "E = EllipticCurve(RDF, [-2,2,0,-1,0])",
-   "print E",
+   "print(E)",
    "@interact",
    "def _(x=slider(-3,2,0.1,1)):",
    "  x1 = E.lift_x(x)",
-   "  print 'point at x=%.2f:'%x, x1",
+   "  print('point at x=%.2f:'%x, x1)",
    "  p1 = E.plot()",
    "  p2 = point2d(x1.xy(), color='red', size=30)",
    "  show(p1+p2)"
