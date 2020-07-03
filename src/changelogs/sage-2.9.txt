@@ -199,7 +199,7 @@ Merged in alpha7:
 #1487: Michael Abshoff: ATLAS breaks with parallel make
 #1488: William Stein: fix output of symbolic vectors
 #1489: William Stein: serious bug in calculus maxima parsing
-#1490: Michael Abhsoff: fix numerical noise doctest failure in
+#1490: Michael Abshoff: fix numerical noise doctest failure in
        numerical/test.py
 #1492: Yi Qiang: update sqlite.spkg to 3.5.3.p1 [this also closes
        #1152, #1202]

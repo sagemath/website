@@ -88,7 +88,7 @@ alpha1:
  - sqrt for complex intervals
 #1380 - Martin Albrecht
  - R.<x,y>=QQ[]; x.subs(x=1/y); now works
-#1421 - Paul Zimmerman, Craig Citro
+#1421 - Paul Zimmermann, Craig Citro
  - finer control in ECM interface
 #1432 - William Stein
  - plotting examples

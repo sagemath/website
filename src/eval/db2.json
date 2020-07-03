@@ -64,7 +64,7 @@
 
 "MILP Program": {
   "cat" : [ "Numerics", "Optimization" ],
-  "descr": "Mixed Integer Linear Program. <a href='http://sagemath.org/doc/reference/sage/numerical/mip.html'>see documentation</a>",
+  "descr": "Mixed Integer Linear Program. <a href='https://sagemath.org/doc/reference/sage/numerical/mip.html'>see documentation</a>",
   "code" : [
     "@interact",
     "def _(w3min = slider(-5,15,1,1), f2=slider(10,30,1,14)):",
@@ -81,46 +81,46 @@
     "  p.show() ",
     "  try:",
     "    sol = p.solve()",
-    "    print 'Objective Value:', sol",
+    "    print('Objective Value:', sol)",
     "    for i, v in p.get_values(w).iteritems():",
-    "      print 'w_%s = %s' % (i, int(round(v)))",
+    "      print('w_%s = %s' % (i, int(round(v))))",
     "  except Exception as e:",
-    "    print 'ERROR:', e"
+    "    print('ERROR:', e)"
   ]
 },
 
 "Arbitrary Precision": {
   "cat" : [ "Numerics", "Numbers" ],
-  "descr" : "Example for arbitrary precision real numbers. <a href='http://sagemath.org/doc/reference/sage/rings/real_mpfr.html'>documentation</a>",
+  "descr" : "Example for arbitrary precision real numbers. <a href='https://sagemath.org/doc/reference/sage/rings/real_mpfr.html'>documentation</a>",
   "code" : [
     "R = RealField(300)",
     "x = R(1) + R(10)^-50",
-    "print 'x:   ', x",
-    "print 'x*pi:', x * R.pi()",
+    "print('x:   ', x)",
+    "print('x*pi:', x * R.pi())",
     "y = x.sin() / R(1e25) + 1",
-    "print 'y:   ', y",
-    "print 'precision of y:', y.prec()",
+    "print('y:   ', y)",
+    "print('precision of y:', y.prec())",
     "z = y^1000",
-    "print 'z:   ', z",
+    "print('z:   ', z)",
     "a = z.nth_root(1000)",
-    "print 'a:   ', a",
-    "print 'y-a: ', y-a"
+    "print('a:   ', a)",
+    "print('y-a: ', y-a)"
   ]
 },
 
 "Hidden Markov Model" : {
- "cat" : [ "Statistics" , "Baysian Network" ],
- "descr" : "Some fun with <a href='http://sagemath.org/doc/reference/sage/stats/hmm/hmm.html'>HMMs</a>",
+ "cat" : [ "Statistics" , "Bayesian Network" ],
+ "descr" : "Some fun with <a href='https://sagemath.org/doc/reference/sage/stats/hmm/hmm.html'>HMMs</a>",
  "code" : [
   "A = random_matrix(RDF,4,min=.1, max=.9)",
   "B = random_matrix(RDF,4,2,min=.1, max=.9)",
   "m = hmm.DiscreteHiddenMarkovModel(A, B, [.2,.1,.1,.6])",
-  "print m",
-  "print 'Log Likelihood:', m.log_likelihood([0,1,0,1,0,1])",
-  "print 'Viterbi:', m.viterbi([1,1,0,1])",
-  "print 'Baum-Welch:', m.baum_welch([1,1,0,1])",
-  "print '20 Samples:', m.sample(20)",
-  "print m",
+  "print(m)",
+  "print('Log Likelihood:', m.log_likelihood([0,1,0,1,0,1]))",
+  "print('Viterbi:', m.viterbi([1,1,0,1]))",
+  "print('Baum-Welch:', m.baum_welch([1,1,0,1]))",
+  "print('20 Samples:', m.sample(20))",
+  "print(m)",
   "m.graph().show()"
  ]
 }
