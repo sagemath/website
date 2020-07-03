@@ -172,6 +172,7 @@ def trackPageView(xml, shortdir):
      script.appendChild(js)
      return script
 
+
 def delMd5Entry(dir, fn):
      """
      deletes a md5entry if it has to be recalculated
@@ -179,13 +180,14 @@ def delMd5Entry(dir, fn):
      print('del md5 entry', fn)
      fn_in = os.path.join(dir, md5file)
      fn_out = os.path.join(dir, md5file + '.tmp')
-     md5in = file(fn_in, 'r')
-     md5out = file(fn_out, 'a')
-     for line in md5in:
-        if not line.split()[1] == fn:
-            md5out.write(line)
+     with open(fn_in, 'r') as md5in:
+       with open(fn_out, 'a') as md5out:
+         for line in md5in:
+           if not line.split()[1] == fn:
+             md5out.write(line)
      os.remove(fn_in)
      os.rename(fn_out, fn_in)
+
 
 def calcMd5(dir, fn):
      """

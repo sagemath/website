@@ -64,7 +64,7 @@
     "      ):",
     "    vs = [d[1:] for d in dV.split()]",
     "    vs.reverse()",
-    "    V = map(SR, vs)",
+    "    V = [SR(v) for v in vs]",
     "    v0, v1, v2 = (SR.var(v) for v in vs)",
     "    limits = [eval(\"[v%d, SR(bot%d), SR(top%d)]\" % (i, i, i)) for i in range(3)]",
     "    f(v0, v1, v2) = SR(f)",
