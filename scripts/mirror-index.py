@@ -194,20 +194,19 @@ def calcMd5(dir, fn):
      if there is no entry in for the given file, it is calculated
      and immediately written to the md5sum file (new line appended)
      """
-     md5out = file(os.path.join(dir, md5file), 'a')
-     f = file(os.path.join(dir, fn))
-     print('calculating md5 sum of', f.name)
-     hash = md5()
-     while True:
-        s = f.read(1048576)
-        hash.update(s)
-        if s == "":
-           break
-     f.close()
-     print(fn, hash.hexdigest())
-     md5out.write('%s  %s\n' %(hash.hexdigest(), fn))
-     md5out.close()
+     with open(os.path.join(dir, md5file), 'a') as md5out:
+       with open(os.path.join(dir, fn)) as f:
+         print('calculating md5 sum of', f.name)
+         hash = md5()
+         while True:
+            s = f.read(1048576)
+            hash.update(s)
+            if s == "":
+               break
+       print(fn, hash.hexdigest())
+       md5out.write('%s  %s\n' %(hash.hexdigest(), fn))
      return hash.hexdigest()
+
 
 def readMD5(path):
      """
