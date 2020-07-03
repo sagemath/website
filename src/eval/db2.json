@@ -35,16 +35,16 @@
 
 "Differential EQ" :{
   "cat" : [ "Calculus", "ODE" ],
-  "descr" : "These examples solve ordinary differential equations. <a href='http://sagemath.org/doc/constructions/calculus.html#ordinary-differential-equations'>see documentation</a>",
+  "descr" : "These examples solve ordinary differential equations. <a href='https://sagemath.org/doc/constructions/calculus.html#ordinary-differential-equations'>see documentation</a>",
   "code" : [
     "y=function('y',x)",
-    "print desolve(diff(y,x,2) + 3*x == y, dvar = y, ics = [1,1,1])",
-    "print desolve(diff(y,x,2) + 3*x == y, dvar = y)",
-    "print desolve(diff(y,x) + 3*x == y, dvar = y)",
+    "print(desolve(diff(y,x,2) + 3*x == y, dvar = y, ics = [1,1,1]))",
+    "print(desolve(diff(y,x,2) + 3*x == y, dvar = y))",
+    "print(desolve(diff(y,x) + 3*x == y, dvar = y))",
     "",
     "f=function('f',x);",
-    "print desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f, ics = [0,1,2])",
-    "print desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f)"
+    "print(desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f, ics = [0,1,2]))",
+    "print(desolve_laplace(diff(f,x,2) == 2*diff(f,x)-f, dvar = f))"
   ]
 },
 
@@ -56,9 +56,9 @@
     "from sympy import exp,log,Symbol,Rational,sin,limit,oo",
     "x=sympy.Symbol('x')",
     "y=sympy.Symbol('y')",
-    "print 'Limit:', limit(sqrt(x**2-5*x+6)-x, x, oo)",
-    "print 'Differentiate:', ((x**2+2*y*sin(x))**2).diff(x)",
-    "print 'Expansion:', ((x**2+y**3)**4).expand()"
+    "print('Limit:', limit(sqrt(x**2-5*x+6)-x, x, oo))",
+    "print('Differentiate:', ((x**2+2*y*sin(x))**2).diff(x))",
+    "print('Expansion:', ((x**2+y**3)**4).expand())"
   ]
 }, 
 
