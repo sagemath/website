@@ -92,7 +92,7 @@ Detailed changes:
 
 * w stein: pari build fixes on Solaris and Itanium
 
-* w stein: fix problem wirh matplotlib when linking in the wrong libz
+* w stein: fix problem with matplotlib when linking in the wrong libz
           in /usr/local/lib
 
 * w stein: new mpfi package
@@ -102,7 +102,7 @@ Detailed changes:
 
 * w stein, m abshoff, d deshomees: stdint.h fix for Solaris
 
-* w stein: update gmp package, so that the resulting gmp is nuch more
+* w stein: update gmp package, so that the resulting gmp is much more
 portable  (and possible resolve some other bugs -- old version was
 building with certain patches preapplied).
 

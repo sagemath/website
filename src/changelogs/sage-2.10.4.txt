@@ -22,7 +22,7 @@ left unanswered due to people posting to the wrong group.
 The following 32 people contributed code to this release:
 
  * Michael Abshoff
- * Martin Alrecht
+ * Martin Albrecht
  * Nick Alexander
  * Tom Boothby
  * Robert Bradshaw
@@ -183,7 +183,7 @@ Merged in final:
 #2492: Mike Hansen: Reference Manual: 18.2 Functions that 
        compute some of the sequences in Sloane's tables
 #2532: David Roe: various padic bugfixes
-#2550: Martin Alrecht: remove UTF-8 garbage from SBox file
+#2550: Martin Albrecht: remove UTF-8 garbage from SBox file
 #2552: Mike Hansen: fix problems in the combinat reference 
        manual caused by #2432
 #2561: John Cremona: serious inefficiency in order of points 

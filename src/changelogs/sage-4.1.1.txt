@@ -321,7 +321,7 @@ Merged in Sage 4.1.1.alpha0:
 #6396: David Loeffler: primes_of_degree_one is broken for relative extensions [Reviewed by Nick Alexander, Minh Van Nguyen]
 #6422: Burcin Erocal: make sage.symbolic.expression.Expression.__init__ usable [Reviewed by Alex Ghitza]
 #6433: John Palmieri: fix %html [Reviewed by Adam Webb, Mike Hansen]
-#6443: David Kirkby: A GNUism in zn_poly-0.9.p0 causes linking problems wiith Sun's linker [Reviewed by Minh Van Nguyen]
+#6443: David Kirkby: A GNUism in zn_poly-0.9.p0 causes linking problems with Sun's linker [Reviewed by Minh Van Nguyen]
 #6445: David Kirkby: pari 2.3.3.p0 problem on 't2' but not my home machine (similar setups!!) [Reviewed by Minh Van Nguyen]
 #6450: Yann Laigle-Chapuy: add generic group functions to the documentation [Reviewed by John Cremona]
 #6451: David Kirkby: Flint uses a non-portable option to 'cp' which fails on Solaris. [Reviewed by Bill Hart, John Cremona]

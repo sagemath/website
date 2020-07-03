@@ -95,7 +95,7 @@ Detailed changes:
 
 * w stein: pari build fixes on Solaris and Itanium
 
-* w stein: fix problem wirh matplotlib when linking in the wrong libz
+* w stein: fix problem with matplotlib when linking in the wrong libz
           in /usr/local/lib
 
 * w stein: new mpfi package
@@ -299,7 +299,7 @@ Tue May  8 20:29:40 2007
          * y qiang:    important dsage bug fixes; improved unit testing. 
          * w stein and b moretti: major new symbolic calculus functionality
          * w stein:    rewrite of SAGE/maxima interface.
-         * c witty:    (refereed by n alexandar) a new algebraic reals field 
+         * c witty:    (refereed by n alexander) a new algebraic reals field 
                        (Qbar meet RR!).  mpfr improvements
 
 Thu Apr 12 23:08:01 2007
