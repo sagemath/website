@@ -82,7 +82,7 @@
     "  try:",
     "    sol = p.solve()",
     "    print('Objective Value:', sol)",
-    "    for i, v in p.get_values(w).iteritems():",
+    "    for i, v in p.get_values(w).items():",
     "      print('w_%s = %s' % (i, int(round(v))))",
     "  except Exception as e:",
     "    print('ERROR:', e)"

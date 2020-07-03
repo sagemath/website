@@ -22,10 +22,10 @@ for path in glob("*/*"):
 
 output.append("<h1>Documentation</h1>")
 
-for what in pages.keys():
+for what in pages:
     output.append("<h2>%s</h2>" % what.upper())
     output.append("<ul>")
-    for lang, entries in pages[what].iteritems():
+    for lang, entries in pages[what].items():
         output.append("<li>%s</li>" % LANG.get(lang, lang))
         output.append("<ul>")
         for entry in entries:

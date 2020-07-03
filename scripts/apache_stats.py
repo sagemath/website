@@ -60,7 +60,7 @@ class Data(object):
 
 # used for reading the apache logfile timestamp
 month_map = dict([(k, i + 1) for i, k in enumerate(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])])
-month_map_inv = dict((v, k) for k, v in month_map.iteritems())
+month_map_inv = {v: k for k, v in month_map.items()}
 
 # grayscale map, should be 99 to FF in hex
 grays = [hex(_)[2:4] for _ in range(0x99, 0xFF + 1)][::-1]
@@ -173,7 +173,7 @@ def output_spkg():
     def thead_stats(f):
         f.write("<tr><td></td><th>&Sigma;</th>")
         sums = [sum(v for _, v in
-                    filter(lambda _:_[0][0] == t, db.spkg_stats.iteritems()))
+                    filter(lambda _:_[0][0] == t, db.spkg_stats.items()))
                 for t in timespan()]
         scale = (len(grays) - 1) / float(max(sums))
         for s in sums:
@@ -229,7 +229,7 @@ table tbody td { text-align: right; }
         # sort by popularity, then by name
 
         rowsums = [sum(v for _, v in
-                       filter(lambda _:_[0][1] == spkg, db.spkg_stats.iteritems()))
+                       filter(lambda _:_[0][1] == spkg, db.spkg_stats.items()))
                    for spkg in names]
         rowsum_scale = (len(grays) - 1) / float(max(rowsums))
         for spkg, rowsum in zip(names, rowsums):
@@ -336,7 +336,7 @@ div.cont { min-height: 0; float: none; margin: 5px;}
         totpvpd = totpv / perday
         f.write('<div>Number of total Pageviews: %d (= %.2f / day)</div>' % (totpv, totpvpd))
         f.write('<div>Number of unique IPs: %d (= %.2f / day)</div>' % (nbuip, nbuippd))
-        data = [(k, v) for k, v in db.doc_stats.iteritems()]
+        data = list(db.doc_stats.items())
         data = sorted(data, key=category)
         toc(groupby(data, category))
         map(lambda _: write_table(*_), groupby(data, category))

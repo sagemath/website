@@ -101,7 +101,7 @@ for s in content[-1][1:-1]:
 # print mirrors
 draw.text((off_txt - 20, 0), time.strftime('Sage Mirrors (%Y/week %U)', time.gmtime()), font=f, fill=black)
 length = len(content)  # redefined
-for key, value in pos.iteritems():
+for key, value in pos.items():
     p = 100 * float(value[2]) / length
     txt = '%5.1f%% %s' % (p, key)
     draw.rectangle((off_txt - math.floor(p / 5) - 4, 21 + value[0], off_txt - 3, 29 + value[0]), fill=value[1])

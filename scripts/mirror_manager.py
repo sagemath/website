@@ -235,7 +235,7 @@ def mirrors_html():
     # now building the list
     LIST = ""
     sm = sorted(MIRRORS, key=lambda x: x.name)
-    for c in sorted(CATEGORY.iteritems(), key=lambda x: x[1]):
+    for c in sorted(CATEGORY.items(), key=lambda x: x[1]):
         selected_mirrors = [entry.substitute(URL=m.url, NAME=m.name) for m in sm if m.cat == c[0]]
         if len(selected_mirrors) > 0:
             LIST += section.substitute(NAME=c[1])
@@ -338,7 +338,7 @@ def find_reference(TS):
     global OUTPUT
     # instead of return TS[MASTER][2]
     # of all timstaps, sort them by date, get the *last* one and return the hashcode
-    ref = sorted(TS.iteritems(), key=lambda _: _[1][3])[-1]
+    ref = sorted(TS.items(), key=lambda _: _[1][3])[-1]
     OUTPUT += '%s @ %s selected\n' % (ref[0].name, ref[0].url)
     return ref[1][2], ref[1][4]
 
@@ -405,7 +405,7 @@ def build_mirrorselector(mirrors, TS, best_mirror):
     #    page += TS_NEW
     page += '\n<table id="mirror">\n'
     # category by name
-    for c in sorted(CATEGORY.iteritems(), key=lambda x: x[1]):
+    for c in sorted(CATEGORY.items(), key=lambda x: x[1]):
         OUTPUT += c[1] + ' : '
         # per category, mirrors sorted by name (re-enabled!)
         ms = [m.entry() for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]]
@@ -415,7 +415,7 @@ def build_mirrorselector(mirrors, TS, best_mirror):
         ## -> no longer shuffle, rather, make it stable to avoid unnecessary commits&pushes
         # import random
         # random.shuffle(ms)
-        OUTPUT += ', '.join([m.name for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]]) + '\n'
+        OUTPUT += ', '.join(m.name for m in sorted(mirrors, key=lambda x: x.name) if m.cat == c[0]) + '\n'
         if len(ms) > 0:
             page += '<tr>\n'
             page += '<td>' + c[1] + '</td><td>\n'
