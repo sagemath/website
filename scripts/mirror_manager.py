@@ -7,7 +7,7 @@ Featues:
  - tests if they are online
  - tests if they are in sync
  - generates suiteable download page for the website + python list
- 
+
  Aim:
  - don't present outdated or offline mirrors to the downloader
  - provide list of up-to-date mirrors (i.e. eval(urllib.urlopen(...).read())
@@ -448,7 +448,7 @@ def build_mirrorselector(mirrors, TS, best_mirror):
  </li>
 </ul>
 -->
-''' % {"server" : os.path.join(best_mirror.url, "torrents.html")}
+''' % {"server": os.path.join(best_mirror.url, "torrents.html")}
     page += TS_OUTRO
     return page
 

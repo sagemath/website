@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # index for the documentation
+import sys
 from glob import glob
 from collections import defaultdict
 
@@ -38,7 +39,7 @@ for what in pages:
 with open("index.html", "w") as index:
     index.write("\n".join(output))
 
-import sys
+
 if len(sys.argv) > 1 and sys.argv[1] == "fix":
             # fixes the static links in sphinx
             # !!! ONLY RUN THIS ONCE !!!

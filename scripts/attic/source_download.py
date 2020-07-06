@@ -156,9 +156,9 @@ def writeToSource():
 initContent()
 writeToSource()
 
-#print(source_xml.toxml())
-#xml.dom.ext.PrettyPrint(source_xml, open(src_html, 'w'))
+# print(source_xml.toxml())
+# xml.dom.ext.PrettyPrint(source_xml, open(src_html, 'w'))
 
-source_xml.writexml(utils.UnicodeFileWriter( open(src_html, "w")))
+source_xml.writexml(utils.UnicodeFileWriter(open(src_html, "w")))
 
-#utils.delFirstLine(src_html)
+# utils.delFirstLine(src_html)

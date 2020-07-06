@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-import os, time
+import os
+import time
 
 
 #### Create the README file.
@@ -15,10 +16,10 @@ PATH=os.path.abspath('.')
 
 F = os.popen("ls -1t sage-*").read().split('\n')
 
-F = [x for x in F if os.path.isfile(x) and x.find(".py") == -1 and \
-     x.find(".html") == -1 and x != "sageonly.tar.gz" and \
-     x.find("build_times") == -1 and x.find("README")==-1 and \
-     not ('mindist' in x) ]
+F = [x for x in F if os.path.isfile(x) and x.find(".py") == -1 and
+     x.find(".html") == -1 and x != "sageonly.tar.gz" and
+     x.find("build_times") == -1 and x.find("README")==-1 and
+     'mindist' not in x]
 
 G = [x for x in F if not ('mindist' in x)]
 
@@ -26,7 +27,7 @@ open("LATEST",'w').write(G[0])
 
 g = open(PATH+"/index.html","w")
 g.write("""<html><head><meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><title>Sage Source Distribution</title>
-<LINK REL=STYLESHEET TYPE="text/css" 
+<LINK REL=STYLESHEET TYPE="text/css"
       HREF="/was.css" TITLE="was">
 </head>
 <body>
@@ -48,7 +49,7 @@ Please read the <a href="README.txt">README.txt</a>.
 
 <li> There is a very high level <a href="changelog.txt">changelog</a>.
 
-<li> You can 
+<li> You can
 <a href="http://www.sagemath.org/hg/">browse all the
 tracked source code repositories</a> and see exactly what's going on, and
 who did what when.
@@ -90,4 +91,3 @@ g.write('</table>')
 g.write('<hr><center><a href="http://modular.ucsd.edu/sage_old">Click for old version archive.</a></center>')
 
 g.write('</body></html>')
-    

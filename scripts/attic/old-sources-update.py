@@ -3,7 +3,6 @@
 import os
 
 
-
 #### Create the README file.
 
 r = open('README.txt.in').read()
@@ -30,7 +29,7 @@ F = [x for x in F if x.find(".py") == -1 and x.find(".html") == -1 and x != "sag
 
 g = open(PATH+"/index.html","w")
 g.write("""<html><head><meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><title>SAGE Source Distribution</title>
-<LINK REL=STYLESHEET TYPE="text/css" 
+<LINK REL=STYLESHEET TYPE="text/css"
       HREF="/was.css" TITLE="was">
 </head>
 <body>
@@ -79,4 +78,3 @@ for x in F:
 g.write('</table>')
 
 g.write('</body></html>')
-    
