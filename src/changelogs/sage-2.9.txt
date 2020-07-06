@@ -213,7 +213,7 @@ Merged in alpha7:
 
 Merged in alpha6:
 
-#469: Burcin Erocal: Add BoolenPolynomialRing to global namespace. 
+#469: Burcin Erocal: Add BooleanPolynomialRing to global namespace. 
       With this patch PolyBoRi's integration should be finished
 #823: Josh Kantor, Michael Abshoff: make atlas standard in Sage
 #1430: Josh Kantor: sparse eigenvalues and splines [scipy sandbox]

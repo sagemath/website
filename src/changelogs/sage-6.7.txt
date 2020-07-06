@@ -159,7 +159,7 @@ Merged in sage-6.7.beta0:
 #18084: Jeroen Demeyer: Fix bad library uses of var() [Reviewed by Ralf Stephan, Karl-Dieter Crisman]
 #18093: Jeroen Demeyer: Improve deprecation doc [Reviewed by Nathann Cohen]
 #18095: Jeroen Demeyer: Use src/Makefile for building Sage [Reviewed by Marc Mezzarobba]
-#18096: Nils Bruin: Libsingular conversion of (signed?) int to sage might have a muisunderstanding about bitlength [Reviewed by Jeroen Demeyer]
+#18096: Nils Bruin: Libsingular conversion of (signed?) int to sage might have a misunderstanding about bitlength [Reviewed by Jeroen Demeyer]
 #18097: David Lucas: Parity check matrix-related methods [Reviewed by Vincent Delecroix]
 #18098: Ralf Stephan: improve constructions/calculus.rst on power series [Reviewed by Frédéric Chapoton]
 #18107: Johan Sebastian Rosenkilde Nielsen: The codes collection should describe how to import it as a real module [Reviewed by Nathann Cohen, Volker Braun]

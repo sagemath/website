@@ -287,7 +287,7 @@ Merged in Sage 3.0.4.alpha1:
        Qiang, William Stein]
 #3467: Yi Qiang: implements @parallel decorator using dsage [Reviewed 
        by Mike Hansen]
-#3470: Mike Hansen, Tom Boothby: add pyprocessing (=multiproccessing) 
+#3470: Mike Hansen, Tom Boothby: add pyprocessing (=multiprocessing) 
        to sage [Reviewed by Yi Qiang]
 #3472: Craig Citro: Running sage from a non-existent directory pretends 
        to work [Reviewed by Michael Abshoff]
