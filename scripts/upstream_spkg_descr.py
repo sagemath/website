@@ -7,7 +7,7 @@ from __future__ import print_function
 import os
 import cgi
 from glob import glob
-#import codecs
+# import codecs
 
 NOTES_TMPL_1 = """
 <div>
@@ -15,7 +15,7 @@ NOTES_TMPL_1 = """
 pre#spkg {
   max-height: 23em;
   overflow-y: auto;
-  white-space: pre-wrap; 
+  white-space: pre-wrap;
 }
 </style>
 <pre id="spkg">
@@ -47,8 +47,8 @@ for dirname in glob("*"):
     continue
   spkg_target = os.path.join(targ_dir, dirname, "notes.txt")
   print("%-25s" % dirname, end="")
-  #print spkg_txt,
-  txt = open(spkg_txt, "rb").read()#.decode("utf8")
+  # print spkg_txt,
+  txt = open(spkg_txt, "rb").read()  # .decode("utf8")
   with open(spkg_target, "wb") as f:
     f.write(NOTES_TMPL_1)
     f.write(cgi.escape(txt))

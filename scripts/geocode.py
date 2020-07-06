@@ -18,6 +18,7 @@ import xml.dom.minidom as minidom
 from xml.dom.minidom import parse, parseString
 import os
 from os.path import join
+import codecs
 import sys
 import urllib
 import urllib2
@@ -156,6 +157,7 @@ def checkXML():
             if a not in goodKeys:
                 raise Exception("wrong Key: %s" % a)
 
+
 checkXML()
 
 
@@ -165,6 +167,7 @@ def locExists(loc):
         if l.getAttribute("location") == loc:
             return l
     return None
+
 
 outxml = minidom.Document()
 outxml.appendChild(outxml.createElement("locations"))
@@ -186,8 +189,8 @@ def getGeo(loc):
     print("[doing query, %s secs break] >>>" % timeout, end="")
     sys.stdout.flush()
     time.sleep(timeout)
-    #url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
-    #url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
+    # url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
+    # url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
     url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s' % loc
     geo = (urllib.urlopen(url)).read()
     import json
@@ -240,7 +243,9 @@ def addGeo(place):
 
 
 def getStatistics():
-        # get statistics for description
+    """
+    get statistics for description
+    """
     nbContribs = len(ack.getElementsByTagName("contributor"))
     nbPlaces = len(out.getElementsByTagName("loc"))
     # for c in devmap.getElementsByTagName('span'):
@@ -250,6 +255,7 @@ def getStatistics():
     #        c.replaceChild(devmap.createTextNode(str(nbPlaces)), c.childNodes[0])
     print("contributors =", str(nbContribs), "places =", str(nbPlaces))
     return nbContribs, nbPlaces
+
 
 # read through ack.xml
 for c in ack.getElementsByTagName("contributor"):
@@ -264,7 +270,7 @@ print()
 print("This is now written to file %s:" % geocode_xml_outfn)
 print(out.toprettyxml())
 
-#xml.dom.ext.PrettyPrint(out, open(geocode_xml_outfn, "w"))
+# xml.dom.ext.PrettyPrint(out, open(geocode_xml_outfn, "w"))
 out.writexml(utils.UnicodeFileWriter(open(geocode_xml_outfn, "w")), newl="\n")
 
 print()
@@ -276,10 +282,10 @@ print("now writing table entries for search engines and javascript disabled ones
 writeToDevmap()
 
 print("file written to %s" % devmap_tmpl)
-#xml.dom.ext.PrettyPrint(devmap, open(devmap_xml, "w"))
-#devmap.writexml(utils.UnicodeFileWriter(open(devmap_tmpl, "w")), newl="\n")
+# xml.dom.ext.PrettyPrint(devmap, open(devmap_xml, "w"))
+# devmap.writexml(utils.UnicodeFileWriter(open(devmap_tmpl, "w")), newl="\n")
 # utils.delFirstLine(devmap_xml)
-import codecs
+
 with codecs.open(devmap_tmpl, "w", "utf8") as outf:
     outf.write("{% macro number() %}" + str(nbContribs) + "{% endmacro %}")
     outf.write("{% macro places() %}" + str(nbPlaces) + "{% endmacro %}")

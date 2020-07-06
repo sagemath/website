@@ -59,7 +59,11 @@ class Data(object):
         self.ts_first, self.ts_last = datetime.fromtimestamp(2 ** 32), datetime.fromtimestamp(0)  # first and last timestamp
 
 # used for reading the apache logfile timestamp
-month_map = dict([(k, i + 1) for i, k in enumerate(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'])])
+
+
+month_map = {k: i + 1 for i, k in enumerate(['Jan', 'Feb', 'Mar', 'Apr',
+                                             'May', 'Jun', 'Jul', 'Aug',
+                                             'Sep', 'Oct', 'Nov', 'Dec'])}
 month_map_inv = {v: k for k, v in month_map.items()}
 
 # grayscale map, should be 99 to FF in hex
@@ -275,7 +279,7 @@ def output_doc(th=3, limit=15):
             if freq < th:
                 continue  # don't break b/c of total
             tokens = path.split("/")
-            #path_short = '/'.join(tokens[(-1 if len(tokens) <= 3 else -2):])[:-5]
+            # path_short = '/'.join(tokens[(-1 if len(tokens) <= 3 else -2):])[:-5]
             path_short = tokens[-1][:-5]
             url = '<a href="http://sagemath.org/doc%s">%s</a>' % (path, path_short)
             c = grays[int(log(1 + scale * freq) * log_scale)]
@@ -341,6 +345,7 @@ div.cont { min-height: 0; float: none; margin: 5px;}
         toc(groupby(data, category))
         map(lambda _: write_table(*_), groupby(data, category))
         f.write('<div style="clear:both;">generated: %s UTC</div>' % datetime.utcnow())
+
 
 if __name__ == "__main__":
     # logfiles on boxen, they are logrotated as text only files with a timestamp in the end

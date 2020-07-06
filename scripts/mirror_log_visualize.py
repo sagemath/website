@@ -26,7 +26,7 @@ if len(sys.argv) > 1:
 dir = './mirror-log/'
 file = dir + 'mirror_manager_%s.log' % ts
 output = dir + 'mirror_manager_%s.png' % ts
-#website = urllib2.urlopen('http://sage.math.washington.edu/home/schilly/mm/mirror_manager.log')
+# website = urllib2.urlopen('http://sage.math.washington.edu/home/schilly/mm/mirror_manager.log')
 website = open(file)
 content = list(csv.reader(website, delimiter=';'))
 length = len(content) + 10
@@ -39,7 +39,12 @@ black = (0, 0, 0)
 grey1 = (50, 50, 50)
 grey2 = (120, 120, 120)
 grey3 = (200, 200, 200)
-grey = lambda c, x: ((c - x) % 255, (c - x) % 255, (c - x) % 255)
+
+
+def grey(c, x):
+    cx = (c - x) % 255
+    return (cx, cx, cx)
+
 
 if len(sys.argv) == 1:  # no logfile given
     symlink = dir + 'mirror_manager.png'
@@ -50,7 +55,7 @@ if len(sys.argv) == 1:  # no logfile given
 img = Image.new("RGB", (800, max(length, 600)), "#FFFFFF")
 draw = ImageDraw.Draw(img)
 f = ImageFont.load_default()
-#f = ImageFont.truetype("/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf", 8)
+# f = ImageFont.truetype("/usr/share/fonts/truetype/ttf-dejavu/DejaVuSansMono.ttf", 8)
 
 # holds position data and statistics
 # key=servername=entry
