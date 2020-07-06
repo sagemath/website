@@ -35,7 +35,8 @@ targ_dir = os.path.expanduser("~/files/spkg/upstream/")
 os.chdir(targ_dir)
 print("starting")
 for dirname in glob("*"):
-  if not os.path.isdir(dirname): continue
+  if not os.path.isdir(dirname):
+    continue
   # check if index.html exists (if not, also create md5sums.txt)
   if not os.path.exists(os.path.join(dirname, "index.html")):
     for auxfn in ["index.html", "md5sums.txt"]:
@@ -48,11 +49,8 @@ for dirname in glob("*"):
   print("%-25s" % dirname, end="")
   #print spkg_txt,
   txt = open(spkg_txt, "rb").read()#.decode("utf8")
-  f = open(spkg_target, "wb")
-  try:
+  with open(spkg_target, "wb") as f:
     f.write(NOTES_TMPL_1)
     f.write(cgi.escape(txt))
     f.write(NOTES_TMPL_2)
-  finally:
-    f.close()
   print("ok")

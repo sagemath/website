@@ -13,11 +13,11 @@
 import subprocess
 import multiprocessing as mp
 import sys
+import time
 import pyinotify
 IN_MODIFY = pyinotify.IN_MODIFY
 IN_CREATE = pyinotify.IN_CREATE
 IN_DELETE = pyinotify.IN_DELETE
-import time
 
 
 class ChangeHandler(pyinotify.ProcessEvent):
@@ -66,7 +66,7 @@ def autocompile(paths, cmd):
     notifier = pyinotify.Notifier(wm, default_proc_fun=handler)
     wm.add_watch(paths,
                  # pyinotify.ALL_EVENTS,
-                 #IN_CREATE | IN_MODIFY | IN_DELETE,
+                 # IN_CREATE | IN_MODIFY | IN_DELETE,
                  IN_MODIFY,  # but still all?!
                  rec=True,
                  auto_add=True)

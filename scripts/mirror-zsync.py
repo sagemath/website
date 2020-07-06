@@ -34,7 +34,7 @@ def mirrorcmd(p, fn):
 
 for root in roots:
     for dir, dirs, files in os.walk(root):
-        if not 'meta' in dirs:
+        if 'meta' not in dirs:
             continue
         print('Directory %s' % dir)
         for fn in files:

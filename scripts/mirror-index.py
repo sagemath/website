@@ -77,7 +77,8 @@ def create_meta(root):
     reldir = dir[len(base):]
     for fn in files:
       f = os.path.join(dir,fn)
-      if os.path.getsize(f) < MIN_SIZE * 1024 * 1024: continue
+      if os.path.getsize(f) < MIN_SIZE * 1024 * 1024:
+        continue
       print(">>> create_meta:", reldir, f)
 
   sys.exit(1)
@@ -128,7 +129,7 @@ def index(root, strip):
 
           knownMd5 = readMD5(dir) #reads file
 
-          even = True # even/odd for different backgrounds of table rows
+          even = True  # even/odd for different backgrounds of table rows
           filesKey = lambda fn:os.path.getmtime(os.path.join(dir,fn))
           for fn in sorted(files, reverse=True, key = filesKey):
               even = not even
@@ -240,7 +241,7 @@ def getNotesText(xml, dir):
      if os.path.exists(fn):
        try:
          notes = parse(fn).firstChild
-       except:
+       except:  # should use a precise exception
          # likely UTF8 error, instead link to file
          notes = xml.createElement(u"a")
          notes.setAttribute(u"href", "notes.txt")
@@ -252,6 +253,7 @@ def getNotesText(xml, dir):
        td.setAttribute(u'colspan', '4')
        tr.appendChild(td)
        return tr
+
 
 def getTableHeaderDir(xml, dir):
      """

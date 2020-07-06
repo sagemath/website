@@ -9,7 +9,7 @@
 import os
 import sys
 from os.path import join, normpath, exists, islink, basename, splitext
-#import multiprocessing as mp
+# import multiprocessing as mp
 from glob import glob
 import jinja2 as j2
 import markdown
@@ -25,6 +25,7 @@ TARG = "www"  # assumption: completely empty www
 TARG_FILES = join(TARG, "files")
 j2env = None
 
+
 def index_changelogs():
     log("indexing changelogs")
     logs = [basename(_) for _ in glob(join("changelogs", "*.txt"))]
@@ -35,7 +36,8 @@ def index_changelogs():
         key.extend(int(_) for _ in version.split("."))
         return key
 
-    return reversed(sorted(logs, key = sortlogs))
+    return reversed(sorted(logs, key=sortlogs))
+
 
 def copy_aux_files():
     """
@@ -79,7 +81,7 @@ def render_task(arg):
     src = join(root, fn)
     dst = normpath(join("..", TARG, src))
     lvl = root.count(os.sep)
-    #log("processing/f: %s" % src, nl=False)
+    # log("processing/f: %s" % src, nl=False)
     if fn.endswith(".html"):
         # we ignore html files starting with "_" (e.g. language specific templates)
         # except the ones in doc, which might be __init__.html
@@ -152,7 +154,8 @@ def render():
     j2env.globals.update(config)
     j2env.globals["changelogs"] = index_changelogs()
     j2env.globals["packages"] = packages
-    j2env.globals['spkgs'] = sorted(packages['spkg'].values(), key = lambda x : x['name'].lower())
+    j2env.globals['spkgs'] = sorted(packages['spkg'].values(),
+                                    key=lambda x: x['name'].lower())
 
     j2env.filters["prefix"] = filter_prefix
     j2env.filters["markdown"] = filter_markdown
@@ -176,19 +179,19 @@ def render():
             src = join(root, path)
             dst = normpath(join("..", TARG, src))
 
-            #log("processing/d: %s" % src, nl=False)
+            # log("processing/d: %s" % src, nl=False)
 
             # we have to take care of symlinks here, too!
             if islink(src):
-                #log("SYMLINK/paths: %s" % src)
+                # log("SYMLINK/paths: %s" % src)
                 os.symlink(os.readlink(src), dst)
 
             elif not exists(dst):
-                #log("mkdir %s" % dst)
+                # log("mkdir %s" % dst)
                 os.makedirs(dst)
 
         # bad error handling, disabled parallelization
-        #pool.map(render_task, [(_, root) for _ in filenames])
+        # pool.map(render_task, [(_, root) for _ in filenames])
         for task in [(_, root) for _ in filenames]:
             render_task(task)
 

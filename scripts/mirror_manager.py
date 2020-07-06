@@ -295,7 +295,7 @@ def extract_timestamps(TS):
     for mirror in sorted(TS.keys(), key=lambda m: m.name):
         ts = TS[mirror]
         t = TIMESTAMP_RE.search(ts)
-        if not t is None and len(t.groups()) > 0:
+        if t is not None and len(t.groups()) > 0:
             OUTPUT += "%-20s %s\n" % (mirror.name, t.group(1))
             ret[mirror] = t.group(1)
         else:
@@ -314,7 +314,7 @@ def dissect_timestamps(TS):
     ret = {}
     for mirror in sorted(TS.keys(), key=lambda m: m.name):
         tokens = DELIM_RE.split(TS[mirror])
-        if not tokens is None and len(tokens) >= 3:
+        if tokens is not None and len(tokens) >= 3:
             time = datetime.strptime(tokens[0], '%Y-%m-%d %H:%M %Z')
             if len(tokens) == 3:
                 OUTPUT += "%-20s %-5s %-5s \n" % (mirror.name, tokens[1], tokens[2])
