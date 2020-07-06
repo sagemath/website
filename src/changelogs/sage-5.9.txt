@@ -278,7 +278,7 @@ Merged in sage-5.9.beta4:
 #13989: Alexander Dreyer: Updating PolyBoRi to release 0.8.3 [Reviewed by Martin Albrecht, Julien Puydt, Jean-Pierre Flori]
 #14081: Miguel Marco: Solve bug in BraidGroup [Reviewed by Travis Scrimshaw, Volker Braun]
 #14152: Jeroen Demeyer: Add sig_on_count() check check [Reviewed by David Roe]
-#14179: Jean-Pierre Flori: Increase harcoded timeouts default values [Reviewed by Jeroen Demeyer]
+#14179: Jean-Pierre Flori: Increase hardcoded timeouts default values [Reviewed by Jeroen Demeyer]
 #14220: Mike Zabrocki: Cleanup of symmetric function code [Reviewed by Frédéric Chapoton]
 #14226: R. Andrew Ohana: add SAGE_SPKG_INST environment variable [Reviewed by Robert Bradshaw, Leif Leonhardy, Jeroen Demeyer]
 #14264: Simon King: Fix negation of Jacobian morphisms [Reviewed by Travis Scrimshaw]

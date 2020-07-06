@@ -116,7 +116,7 @@ Merged in Sage 3.0.6.rc0:
 #3681: William Stein: modulus() randomly broken for gf2e fields 
        [Reviewed by John Cremona, Michael Abshoff]
 #3695: Ondrej Certik, John Cremona: Improve factor documentation 
-       [Reviewedby William Stein, Martin Albrecht]
+       [Reviewed by William Stein, Martin Albrecht]
 #3696: Michael Abshoff: Fix gmp.spkg build issue on Solaris
        [Reviewed by William Stein]
 #3700: Michael Abshoff: Solaris: Fix ntl build issue 

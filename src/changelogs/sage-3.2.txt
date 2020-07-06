@@ -182,7 +182,7 @@ Merged in Sage 3.2.rc0:
 #4452: William Stein: optimize next_prime [Reviewed by Robert Bradshaw]
 #4455: Nicolas Thiery: bug in Coxeter matrix for type G2 [Reviewed by Mike Hansen]
 #4462: John Perry, Jason Grout: contour_plot defaults changed to fill, affects implicit_plot [Reviewed by Mike Hansen]
-#4467: Michael Abshoff: removed unused hanke library code [Reviwed by Jon Hanke]
+#4467: Michael Abshoff: removed unused hanke library code [Reviewed by Jon Hanke]
 #4473: William Stein: loading file.sage that has a line "load foo.py" is broken due to a missing import [Reviewed by Michael Abshoff]
 #4476: Robert Bradshaw: Update to Cython 0.10 [Reviewed by Michael Abshoff]
 #4479: Timothy Clemans: sage/logic/logic.py contains a trivial typo: " varaiable" [Reviewed by Minh Nguyen]
@@ -243,7 +243,7 @@ Merged in Sage 3.2.alpha2:
 #4394: William Stein: Sage 3.1.4: magma related optional doctest failure in sage/rings/polynomial/polynomial_element.pyx [Reviewed by Michael Abshoff]
 #4398: William Stein: Sage 3.1.4: magma related optional doctest failure in sage/sage/modules/free_module.py [Reviewed by Michael Abshoff]
 #4409: Robert Bradshaw: ellipsis_range throws exception [Reviewed by Craig Citro]
-#4410: Burcin Erocal: Map.__pow__ should return identity for power 0 [Reviwed by Michael Abshoff]
+#4410: Burcin Erocal: Map.__pow__ should return identity for power 0 [Reviewed by Michael Abshoff]
 
 Merged in Sage 3.2.alpha1:
 

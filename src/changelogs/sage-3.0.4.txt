@@ -344,7 +344,7 @@ Merged in Sage 3.0.4.alpha0:
 #3240: Timothy Clemans: notebook -- implement page dedicated 
        to worksheet publishing [Reviewed by Tom Boothby]
 #3262: Marshall Hampton: interact selector breaks if there are too 
-       many options [Reviwed by William Stein]
+       many options [Reviewed by William Stein]
 #3341: Mike Hansen: fix minor issue with creating skew partitions 
         by dividing partitions [Reviewed by Martin Albrecht]
 #3347: John Palmieri: lots of changes to the tutorial [Reviewed by 

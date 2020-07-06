@@ -124,8 +124,8 @@ William Stein: Fix a critical notebook unpickling bug
 Merged in Sage 3.1.final:
 
 #3875: William Stein: matrix/matrix_cyclo_dense.pyx segfault [Reviewed by Michael Abshoff]
-#3878: Franco Saliola: Constructing a c_graph from a DiGraph doubles the edges [Reviwed by Robert Miller]
-#3881: Michael Abshoff: Quiet three MPolynomialRing deprecation warnings [Reviwed by Robert Miller]
+#3878: Franco Saliola: Constructing a c_graph from a DiGraph doubles the edges [Reviewed by Robert Miller]
+#3881: Michael Abshoff: Quiet three MPolynomialRing deprecation warnings [Reviewed by Robert Miller]
 
 Merged in Sage 3.1.rc0:
 
