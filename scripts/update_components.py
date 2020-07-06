@@ -36,7 +36,7 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 raise Exception("update_components is half/half broken. It did rely on the spkges but what still should work is the list of components from the yaml config file.")
 
 COMP_PAGE = abspath(join("..", "templates", "components.html"))
-#STANDARD_DIR = abspath("../www/packages/standard")
+# STANDARD_DIR = abspath("../www/packages/standard")
 PACKAGES_YAML = yaml.load(open(join("..", "conf", "packages.yaml")))
 # dictionaries of current packages
 # Each package is described by the format
@@ -172,13 +172,14 @@ def usage():
 # the script starts here
 ##############################
 
+
 if __name__ == "__main__":
     # sanity checks
     if len(sys.argv) != 1:
         # this script currently doesn't accept any argument
         usage()
         sys.exit(1)
-    #if not os.path.isdir(STANDARD_DIR):
+    # if not os.path.isdir(STANDARD_DIR):
     #    print("Invalid standard spkg repository directory %s. Exiting..." % STANDARD_DIR)
     #    sys.stdout.flush()
     #    sys.exit(1)

@@ -29,9 +29,7 @@ F = os.popen("cd %s; ls -1t sage-*"%PATH).read().split('\n')
 F = [x for x in F if x.find(".py") == -1 and x.find(".html") == -1 and x != "sageonly.tar.gz" and x.find("build_times") == -1 and x.find("README")==-1]
 
 g = open(PATH+"/index.html","w")
-g.write("""<html><head>
-	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-	<title>SAGE Source Distribution</title>
+g.write("""<html><head><meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><title>SAGE Source Distribution</title>
 <LINK REL=STYLESHEET TYPE="text/css" 
       HREF="/was.css" TITLE="was">
 </head>

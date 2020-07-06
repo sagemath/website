@@ -142,14 +142,13 @@ def index(root, strip):
                 isNewer = os.path.getmtime(f) > knownMd5['__MTIME__']
                 if isNewer:
                   delMd5Entry(dir, fn)
-                if knownMd5.has_key(fn) and not isNewer:
+                if fn in knownMd5 and not isNewer:
                   trMd5 = getMd5Row(listxml, knownMd5[fn], shortdir, fn, f)
                 else:
                   trMd5 = getMd5Row(listxml, calcMd5(dir, fn), shortdir, fn, f)
               else:
                 trMd5 = getMd5Row(listxml, None, shortdir, fn, f)
               table.appendChild(trMd5)
-
 
         output.appendChild(table)
         output.appendChild(trackPageView(listxml, shortdir))

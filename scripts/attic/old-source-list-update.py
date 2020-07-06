@@ -25,9 +25,7 @@ G = [x for x in F if not ('mindist' in x)]
 open("LATEST",'w').write(G[0])
 
 g = open(PATH+"/index.html","w")
-g.write("""<html><head>
-	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
-	<title>Sage Source Distribution</title>
+g.write("""<html><head><meta http-equiv="content-type" content="text/html;charset=iso-8859-1"><title>Sage Source Distribution</title>
 <LINK REL=STYLESHEET TYPE="text/css" 
       HREF="/was.css" TITLE="was">
 </head>

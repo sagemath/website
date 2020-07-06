@@ -13,7 +13,9 @@ class CheckTemplates(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.templates = []
-        ishtml = lambda _: _.endswith(".html")
+
+        def ishtml(f):
+            return f.endswith(".html")
         for root, _, files in os.walk(SRC):
             cls.templates.extend(filter(ishtml, files))
 

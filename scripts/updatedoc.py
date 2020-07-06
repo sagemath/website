@@ -88,6 +88,7 @@ SAGE_ROOT = None
 SAGE_SAGE = None
 SAGE_VERSION = None
 
+
 def delete_previous_doc(target_dir):
     """
     Delete the previous version of the Sage standard documentation.
@@ -110,6 +111,7 @@ def delete_previous_doc(target_dir):
     os.system("rm -rf doc-bz2")
     os.system("rm -rf doc-zip")
     os.system("rm html pdf")
+
 
 def update_doc(current_dir, target_dir, doc_tarball, filename, sage_version):
     """

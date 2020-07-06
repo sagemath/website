@@ -26,7 +26,7 @@ if not os.path.exists(src_html):
     print('File Not Found: %s' % src_html)
     sys.exit(1)
 
-source_xml = minidom.parse(src_html) 
+source_xml = minidom.parse(src_html)
 source = None #this is the target <div id="source">...</div>
 divs = source_xml.getElementsByTagName(r'div')
 for d in divs:
@@ -77,7 +77,7 @@ def writeToSource():
        size = int(os.path.getsize(F)/(2**20))
        date = time.strftime('%Y-%m-%d', FnD[0])
        name = F.split(os.path.sep)[-1]
-   
+
        tr = source_xml.createElement(r'tr')
        if first:
            tr.setAttribute(r'class','first')
@@ -86,27 +86,27 @@ def writeToSource():
            tr.setAttribute(r'class', 'even')
        else:
            tr.setAttribute(r'class', 'odd')
-   
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode(str(release)))
        tr.appendChild(td)
-   
+
        td = source_xml.createElement(r'td')
        print(name)
        a = source_xml.createElement(r'a')
        a.setAttribute(r'href', F.replace(os.path.sep + r'www', ''))
        a.appendChild(source_xml.createTextNode(name))
        td.appendChild(a)
-       tr.appendChild(td) 
-       
+       tr.appendChild(td)
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode('%s MB'%size))
        tr.appendChild(td)
-   
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode(date))
        tr.appendChild(td)
-   
+
        table_body.appendChild(tr)
        release -= 1
 
@@ -123,33 +123,33 @@ def writeToSource():
        size = int(os.path.getsize(F)/(2**20))
        date = time.strftime('%Y-%m-%d', FnD[0])
        name = F.split(os.path.sep)[-1]
-   
+
        tr = source_xml.createElement(r'tr')
        if release % 2 == 0:
            tr.setAttribute(r'class', 'even')
        else:
            tr.setAttribute(r'class', 'odd')
- 
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode(str(release)))
        tr.appendChild(td)
-   
+
        td = source_xml.createElement(r'td')
        print(name, F)
        a = source_xml.createElement(r'a')
        a.setAttribute(r'href', 'http://www.sagemath.org/src-old' + F.replace(src_old, ''))
        a.appendChild(source_xml.createTextNode(name))
        td.appendChild(a)
-       tr.appendChild(td) 
-       
+       tr.appendChild(td)
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode('%s MB'%size))
        tr.appendChild(td)
-   
+
        td = source_xml.createElement(r'td')
        td.appendChild(source_xml.createTextNode(date))
        tr.appendChild(td)
-   
+
        table_body.appendChild(tr)
        release -= 1
 
@@ -161,6 +161,4 @@ writeToSource()
 
 source_xml.writexml(utils.UnicodeFileWriter( open(src_html, "w")))
 
-
 #utils.delFirstLine(src_html)
-
