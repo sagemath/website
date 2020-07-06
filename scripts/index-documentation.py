@@ -4,10 +4,8 @@ import sys
 from glob import glob
 from collections import defaultdict
 
-LANG = {
-    "en": "english",
-  "hu": "hungarian"
-}
+LANG = {"en": "english",
+        "hu": "hungarian"}
 
 output = ["<!DOCTYPE html><body>"]
 

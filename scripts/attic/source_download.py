@@ -100,7 +100,7 @@ def writeToSource():
        tr.appendChild(td)
 
        td = source_xml.createElement(r'td')
-       td.appendChild(source_xml.createTextNode('%s MB'%size))
+       td.appendChild(source_xml.createTextNode('%s MB' % size))
        tr.appendChild(td)
 
        td = source_xml.createElement(r'td')
@@ -143,7 +143,7 @@ def writeToSource():
        tr.appendChild(td)
 
        td = source_xml.createElement(r'td')
-       td.appendChild(source_xml.createTextNode('%s MB'%size))
+       td.appendChild(source_xml.createTextNode('%s MB' % size))
        tr.appendChild(td)
 
        td = source_xml.createElement(r'td')
