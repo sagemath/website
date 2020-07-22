@@ -322,3 +322,8 @@
   flag: ma
   name: MARWAN, Morocco
   url: https://mirror.marwan.ma/sage/
+- active: true
+  cat: a
+  flag: cn
+  name: eScience Center, Nanjing University, Jiangsu, China
+  url: https://mirrors.nju.edu.cn/sagemath/
