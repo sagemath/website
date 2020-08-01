@@ -93,7 +93,7 @@
   flag: ru
   name: Yandex, Russia
   url: http://mirror.yandex.ru/mirrors/sage.math.washington.edu/
-- active: true
+- active: false
   cat: a
   country: kr
   flag: kr
