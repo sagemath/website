@@ -331,7 +331,7 @@ Merged in sage-6.10.beta4:
 #19437: Daniel Krenn: SR.symbol: correct parent in inherting classes of SymbolicRing [Reviewed by Jeroen Demeyer]
 #19441: Frédéric Chapoton: broken interact for cluster seeds [Reviewed by Christian Stump]
 #19485: Michael Orlitzky: Legible legends [Reviewed by Jori Mäntysalo, Karl-Dieter Crisman]
-#19494: Vincent Delecroix, Sébastien Labbé: Make finite word method nb_subword_occurences_in much faster [Reviewed by Sébastien Labbé, Vincent Delecroix]
+#19494: Vincent Delecroix, Sébastien Labbé: Make finite word method nb_subword_occurrences_in much faster [Reviewed by Sébastien Labbé, Vincent Delecroix]
 #19497: Jeroen Demeyer: Improve comparison framework [Reviewed by Vincent Delecroix]
 #19512: Grayson Jorgenson: is_morphism for maps of products of projective spaces [Reviewed by Ben Hutz]
 #19522: Jeroen Demeyer: Change default for MILP variables to nonnegative=False [Reviewed by Nathann Cohen]

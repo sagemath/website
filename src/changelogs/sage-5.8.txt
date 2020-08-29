@@ -179,7 +179,7 @@ Merged in sage-5.8.beta1:
 #13894: Michael Orlitzky, Jean-Pierre Flori: Fix ArithmeticError: 0^0 in rings/finite_rings/integer_mod.pyx [Reviewed by Travis Scrimshaw]
 #14011: Florent Hivert: Add various new sphinx roles [Reviewed by Frédéric Chapoton]
 #14041: Christian Nassau: Give the SteenrodAlgebra a proper basis object [Reviewed by John Palmieri]
-#14098: Francois Bissey, David Harvey: zn_poly-0.9.p9 fails at least one its tests on power7 [Reviewed by Paul Zimmermann, Jeroen Demeyer]
+#14098: François Bissey, David Harvey: zn_poly-0.9.p9 fails at least one its tests on power7 [Reviewed by Paul Zimmermann, Jeroen Demeyer]
 #14108: Robert Miller: bug in is_isomorphic with multiple edges [Reviewed by Paul Zimmermann]
 #14118: Jean-Pierre Flori: Compiling universal_cyclotomic_field_c.pyx  fails on Cygwin [Reviewed by Dmitrii Pasechnik]
 #14122: Nathann Cohen: Tournament and directed path constructors [Reviewed by David Coudert]

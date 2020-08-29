@@ -1,4 +1,4 @@
-﻿-*- coding: utf-8 -*-
+-*- coding: utf-8 -*-
 
 Sage 4.6.1 was released on 13 January 2011. It is available at
 
@@ -293,4 +293,4 @@ Merged in sage-4.6.1.rc1:
 #10528: Robert Bradshaw: sage0.py doctest failures on sage.math [Reviewed by Maarten Derickx]
 #10533: Eviatar Bach: Add digraph_generators.py to the documentation [Reviewed by Nathann Cohen]
 #10569: John Thurber: documentation formatting fix in schemes/hyperelliptic_curves/hyperelliptic_finite_field.html [Reviewed by Aly Deines]
-#10580: Jeroen Demeyer: Bump maximum number of occurances of the word "tree" in sage/misc/sagedoc.py [Reviewed by Volker Braun]
+#10580: Jeroen Demeyer: Bump maximum number of occurrences of the word "tree" in sage/misc/sagedoc.py [Reviewed by Volker Braun]

@@ -20,7 +20,7 @@ The following 23 people contributed to this release:
  * Michael Abshoff
  * Martin Albrecht
  * Jason Bandlow
- * Francois Bissey
+ * François Bissey
  * Tom Boothby
  * Robert Bradshaw
  * Craig Citro
@@ -154,7 +154,7 @@ Merged in Sage 3.0.3.alpha1:
        errors in pbuild
 #3325: John Palmieri: small error in argument to dvipng in latex.py
 #3327: Carl Witty: missing .divides() implementation for FieldElement
-#3328: Francois Bissey, Michael Abshoff: set correct RHOME for rpy
+#3328: François Bissey, Michael Abshoff: set correct RHOME for rpy
 #3331: Gary Furnish: Disable --incref-local-binop in pbuild
 #3333: Martin Albrecht: Matrix_mod2_dense randomize endianess issue
 #3334: Martin Albrecht: Matrix_mod2_dense may crash due to missing 

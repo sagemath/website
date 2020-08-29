@@ -47,7 +47,7 @@ and
 2.8.1:
 -----
 These are the release notes for sage-2.8.1, though there never was an
-offical release.  The reason it was never officially released was that
+official release.  The reason it was never officially released was that
 2.8.1 was the basis of the first Sage Bug Squashing day that is about
 to be wrapped up.  
 

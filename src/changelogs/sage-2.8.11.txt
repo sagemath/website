@@ -44,7 +44,7 @@ The following 33 tickets have been closed during the 2.8.11 release cycle:
 #969: cvxopt miscompiled on OSX ppc (Josh Kantor, fixes by Michael Abshoff)
 #971: update Sympy.spkg to 0.5.6, add some minimal doctests (Carl Witty, 
       Ondrej Certik)
-#973: Unhandled SIGSEGV: A segmentation fault occured running dance(10
+#973: Unhandled SIGSEGV: A segmentation fault occurred running dance(10
        (Michael Abshoff, Carl Witty)
 #993: Pari's gp interpreter has built-in library search path (Carl Witty)
 #1011: MagmaElement.__nonzero__ (Martin Albrecht)

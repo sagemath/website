@@ -406,7 +406,7 @@ Merged in sage-6.2.beta6:
 #15969: Alan J.X. Guo (郭嘉祥): New class method: Kazhdan-Lusztig R_tilde polynomial [Reviewed by Frédéric Chapoton]
 #15972: John Palmieri: IPython ProfileDirError if IPython was never run [Reviewed by Volker Braun]
 #15982: Wilfried Luebbe: Python 3 preparation: Change the syntax of the except clause [Reviewed by Travis Scrimshaw]
-#15988: Wilfried Luebbe: Python 3 preparation: Add missing parentheses in list comprension [Reviewed by Travis Scrimshaw]
+#15988: Wilfried Luebbe: Python 3 preparation: Add missing parentheses in list comprehension [Reviewed by Travis Scrimshaw]
 #15991: Frédéric Chapoton: Python 3 preparation: Rename sys.maxint to sys.maxsize [Reviewed by Wilfried Luebbe]
 #15992: Wilfried Luebbe: Python 3 preparation: Change backticks into repr() [Reviewed by Frédéric Chapoton, Travis Scrimshaw]
 #15997: Frédéric Chapoton: a typo in stirling1 numbers [Reviewed by Nathann Cohen]

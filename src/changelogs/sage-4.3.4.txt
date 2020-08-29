@@ -34,7 +34,7 @@ their first contribution to Sage:
  * Florent Hivert
  * Francis Clarke
  * Franco Saliola
- * Francois Maltey [first contribution]
+ * François Maltey [first contribution]
  * Fredrik Johansson
  * Gonzalo Tornaria
  * Harald Schilly
@@ -172,7 +172,7 @@ Merged in sage-4.3.4.alpha0:
 #8037: Marc Mezzarobba: add sagetex to the french tutorial [Reviewed by Dan Drake]
 #8039: Jaap Spies: ATLAS libs fail to build on Open Solaris 64 bit due to wrong LDFLAG -melf_x86_64 [Reviewed by David Kirkby]
 #8131: Francis Clarke: Catalan numbers are integers [Reviewed by Nicolas Borie]
-#8157: Francois Maltey, Paul Zimmermann: why the bit limit of 2^24 in RealField? [Reviewed by Alex Ghitza]
+#8157: François Maltey, Paul Zimmermann: why the bit limit of 2^24 in RealField? [Reviewed by Alex Ghitza]
 #8159: Fredrik Johansson: Updated Cython backend for mpmath [Reviewed by Harald Schilly]
 #8178: Jaap Spies: zn_poly fails to build in Open Solaris x64 as 64 bit even if SAGE64=yes [Reviewed by David Kirkby]
 #8187: Sébastien Labbé: improve equality tests for words [Reviewed by Alexandre Blondin Massé]
