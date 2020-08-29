@@ -246,14 +246,16 @@ if (data) {
  </div>
 
 
-<div class="narrow center txt" style="margin-bottom: 50px;font-weight:bold;">
-    Help {{ sage }} by becoming a <iframe src="https://github.com/sponsors/sagemath/button" title="Sponsor sagemath" height="35" width="116" style="border: 0;"></iframe>
+<div class="narrow center txt announce" style="margin-top: 50px; font-weight:bold;">
+  Help {{ sage }} by becoming a
+  <iframe src="https://github.com/sponsors/sagemath/button" title="Sponsor sagemath" height="35" width="116" style="border: 0; vertical-align: middle;"></iframe>
+  <br/>
  Donations are handled via SageMath <a href="https://github.com/sagemath">GitHub Organization</a>
  with <a href="https://opencollective.com/sage_math">Open Collective</a> as fiscal host.
 </div>
 
 
-
+{#
 <div id="random"
      track="index-random"
      class="narrow center txt random"
@@ -287,6 +289,7 @@ var random_link = function () {
 }
 $(function () { random_link(); setInterval(random_link, 10000); });
 </script>
+#}
 
 {% endblock %}
 
