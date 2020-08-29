@@ -145,7 +145,7 @@ Merged in sage-7.5.beta0:
 #21634: Eric Gourgoulhon: Let the new option 'export' appear in some notebook documentation [Reviewed by Marc Mezzarobba]
 #21637: Jeroen Demeyer: Bug with PARI interface gen.eval on Cygwin [Reviewed by Erik Bray]
 #21644: Carlos R. Mafra: Bug in derivatives of some functions to the index var [Reviewed by Ralf Stephan]
-#21711: Salvatore Stella: Fix regresion introduced by #21670 [Reviewed by Volker Braun]
+#21711: Salvatore Stella: Fix regression introduced by #21670 [Reviewed by Volker Braun]
 
 Merged in sage-7.5.beta1:
 

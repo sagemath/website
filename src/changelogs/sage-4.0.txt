@@ -184,7 +184,7 @@ Merged in Sage 4.0.rc0:
 #6049: Jason Grout: bitset complement zeroes out last word if the bitset is a multiple of the word size [Reviewed by Carl Witty]
 #6052: Gonzalo Tornaria: partial_fraction_decomposition is broken for irreducible denominators [Reviewed by Mike Hansen]
 #6054: Mike Hansen: fix display2d with ecl on OSX [Reviewed by Michael Abshoff]
-#6059: Gonzalo Tornaria: speed regresion in hilbert_symbol after #5834 [Reviewed by John Cremona]
+#6059: Gonzalo Tornaria: speed regression in hilbert_symbol after #5834 [Reviewed by John Cremona]
 #6060: Fredrik Johansson: divmod fails when one argument is Integer and the other is a Python int [Reviewed by Mike Hansen]
 #6061: William Stein: refresh the pickle jar [Reviewed by Michael Abshoff]
 #6062: Gonzalo Tornaria: QQ method is_padic_square fails when argument is python int [Reviewed John Cremona]

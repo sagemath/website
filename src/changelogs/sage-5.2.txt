@@ -172,7 +172,7 @@ Merged in sage-5.2.beta1:
 
 Merged in sage-5.2.rc0:
 
-#10607: Marshall Hampton, John Palmieri: Update phcpack to latest verson [Reviewed by Marshall Hampton, John Palmieri]
+#10607: Marshall Hampton, John Palmieri: Update phcpack to latest version [Reviewed by Marshall Hampton, John Palmieri]
 #11563: Nicolas M. Thiéry: Make lrcalc a standard package [Reviewed by Anne Schilling, Jeroen Demeyer, John Palmieri]
 #11996: Johan Bosman: Bug in LaTeX representation of subgroups of permutation groups [Reviewed by Samuel Gonshaw]
 #12343: Luis Felipe Tabera Alonso: Cleanup unexisting methods after #10263 [Reviewed by André Apitzsch]

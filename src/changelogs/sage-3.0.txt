@@ -169,7 +169,7 @@ Merged in rc0:
 #1642: William Stein: search for common Fortran compiles if 
        no binary is present
 #2344: Michael Abshoff: python -- upgrade to version 2.5.2
-#2955: Michael Abshoff: GFortran autodection on Linux/Itanium
+#2955: Michael Abshoff: GFortran autodetection on Linux/Itanium
 #2958: William Stein: twist.py -- doctest failures in 
        sage-3.0.alpha6 on some test machines
 #2959: Craig Citro: bug in DirichletGroup over a finite base 

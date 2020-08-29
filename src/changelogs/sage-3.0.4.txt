@@ -134,7 +134,7 @@ Merged in Sage 3.0.4.rc0:
        message [Reviewed by William Stein]
 #3519: Michael Abshoff: Update clisp to 2.46 release [Reviewed by 
        William Stein]
-#3581: William Stein: The new pbuild pyhon files are not copied on sdist 
+#3581: William Stein: The new pbuild python files are not copied on sdist
        [Reviewed by Michael Abshoff]
 #3582: Michael Abshoff: clisp 2.46 cannot deal with parallel make 
        [Reviewed by William Stein]

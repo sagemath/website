@@ -419,7 +419,7 @@ Merged in sage-8.0.beta5:
 #22897: Jeroen Demeyer: QuotientRing_nc.ideal() should not call CommutativeRing.ideal [Reviewed by Travis Scrimshaw]
 #22898: Elisabeth Gaar, Daniel Krenn: has_perfect_matching for graphs [Reviewed by David Coudert]
 #22899: Vincent Delecroix: backport some doctests from cypari2 [Reviewed by Travis Scrimshaw]
-#22901: Jori Mäntysalo: Poset: Add crosslinks to weaker and stronger properies [Reviewed by Travis Scrimshaw]
+#22901: Jori Mäntysalo: Poset: Add crosslinks to weaker and stronger properties [Reviewed by Travis Scrimshaw]
 #22902: Frédéric Chapoton: cleanup of galois_group.py [Reviewed by Travis Scrimshaw]
 #22903: Vincent Delecroix: rich comparison for ideals in fin dim algebras [Reviewed by Travis Scrimshaw]
 #22904: François Bissey: numerical noise in sage/matrix/matrix_double_dense.pyx [Reviewed by Steven Trogdon]

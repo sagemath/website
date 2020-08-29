@@ -1019,7 +1019,7 @@ Cluster.prototype.updateIcon = function() {
  *     'anchor': (Array) The anchor position of the label text.
  *     'textColor': (string) The text color.
  *     'textSize': (number) The text size.
- *     'backgroundPosition: (string) The background postition x, y.
+ *     'backgroundPosition: (string) The background position x, y.
  * @param {number=} opt_padding Optional padding to apply to the cluster icon.
  * @constructor
  * @extends google.maps.OverlayView
