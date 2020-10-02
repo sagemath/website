@@ -30,7 +30,7 @@ For example:
 
 ### Ubuntu Packages
 
-To get started on Ubuntu:
+Getting started on Ubuntu:
 
     sudo apt-get install -y pybtex python-jinja2 python-markdown python-yaml
 
@@ -62,7 +62,7 @@ For your convenience, there is a continuous build mode available: `make cont`
 
 It depends on
 
-* [pyInotify](https://github.com/seb-m/pyinotify) - `pip install --user pyinotify` -
+*  [pyInotify] (https://github.com/seb-m/pyinotify) - `pip install --user pyinotify` -
   to pick up any changes in your local file-system.
 
 * [xdotool](http://www.semicomplete.com/projects/xdotool/) - `apt-get install xdotool` -
@@ -92,7 +92,7 @@ like the rest of the Sage documentation pages.
 The included scripts have their appropriate licensing
 explained at the top of their respective source files.
 If no licensing information can be found,
-regard it as [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
+regard it as  [Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0.html).
 
 ### markerclusterer.js
 
@@ -102,6 +102,6 @@ That's copied from https://github.com/googlemaps/js-marker-clusterer
 Google Cloud Storage Notes
 --------------------------
 
-* RSync: `gsutil -m rsync -d -r www gs://www.sagemath.org`
-* Publish all files: `gsutil -m acl ch -r -u AllUsers:R gs://www.sagemath.org`
-* Cache-Control 10 minutes: `gsutil -m setmeta -r -h "Cache-Control:public, max-age=600" gs://www.sagemath.org`
+* RSync:  `gsutil -m rsync -d -r www gs://www.sagemath.org`
+* Publish all files:  `gsutil -m acl ch -r -u AllUsers:R gs://www.sagemath.org`
+* Cache-Control 10 minutes:  `gsutil -m setmeta -r -h "Cache-Control:public, max-age=600" gs://www.sagemath.org`
