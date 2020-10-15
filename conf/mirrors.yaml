@@ -306,6 +306,12 @@
   name: KoDDoS Mirror
   url: https://mirror.koddos.net/sagemath/
 - active: true
+  cat: e
+  country: nl
+  flag: nl
+  name: LyraHosting
+  url: https://mirror.lyrahosting.com/sagemath/
+- active: true
   cat: na
   country: us
   flag: us
