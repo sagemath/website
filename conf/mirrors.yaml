@@ -327,3 +327,9 @@
   flag: cn
   name: eScience Center, Nanjing University, Jiangsu, China
   url: https://mirrors.nju.edu.cn/sagemath/
+- active: true
+  cat: na
+  country: ca
+  flag: ca
+  url: https://mirror.csclub.uwaterloo.ca/sage/
+  name: University of Waterloo, ON, Canada
