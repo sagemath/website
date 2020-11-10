@@ -339,3 +339,9 @@
   flag: ca
   url: https://mirror.csclub.uwaterloo.ca/sage/
   name: University of Waterloo, ON, Canada
+- active: true
+  cat: e
+  flag: de
+  country: de
+  url: "https://mirror.dogado.de/sage/"
+  name: dogado GmbH, Germany
