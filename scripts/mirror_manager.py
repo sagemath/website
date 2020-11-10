@@ -540,5 +540,5 @@ if __name__ == '__main__':
     metalink_helper(MIRRORS)
     one_good_mirror = [gm for gm in good if not gm.url.startswith("ftp")][0]
     publish(good, good_spkg, TS, one_good_mirror)
-    # calling visualization
-    os.system("python mirror_log_visualize.py")
+    # calling visualization -- disabled, we don't use this any more
+    #os.system("python mirror_log_visualize.py")
