@@ -36,7 +36,7 @@ import sys
 import yaml
 import codecs
 
-# safeguad, don't run script two times at the same time
+# safeguard, don't run script two times at the same time
 # there is something very odd, probably nfs file system and
 # vm ware and stuff like that -> no, it was the open socket
 # problem, that's not exposed in urllib, see below.
@@ -106,7 +106,7 @@ class Mirror(object):
             raise RuntimeError('category %s does not exist' % cat)
         if not isinstance(active, bool):
             raise RuntimeError('type(active) is not bool')
-        self.name = unicode(name)
+        self.name = str(name)
         self.cat = cat
         assert url.endswith("/")
         self.url = url
