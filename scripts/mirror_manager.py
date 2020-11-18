@@ -24,7 +24,7 @@ COPYRIGHT: Harald Schilly <harald.schilly@gmail.com>, 2009, Vienna, Austria
 LICENSE: GPL2+
 '''
 from __future__ import unicode_literals
-import urllib2
+import urllib
 # import subprocess #we use curl, urllib2.urlopen doesn't work :(
 import re
 import time
@@ -237,7 +237,7 @@ def mirrors_html():
     sm = sorted(MIRRORS, key=lambda x: x.name)
     for c in sorted(CATEGORY.items(), key=lambda x: x[1]):
         selected_mirrors = [entry.substitute(URL=m.url, NAME=m.name) for m in sm if m.cat == c[0]]
-        if len(selected_mirrors) > 0:
+        if selected_mirrors:
             LIST += section.substitute(NAME=c[1])
             # per category, mirrors sorted by name
             LIST += '\n'.join(selected_mirrors)
@@ -261,12 +261,12 @@ def fetch_timestamps():
         global OUTPUT
         time1 = time.time()
         try:
-            response = urllib2.urlopen(mirror.url + TIMESTAMP_SUFFIX)
+            response = urllib.request.urlopen(mirror.url + TIMESTAMP_SUFFIX)
             ret[mirror] = response.read()
             m = '%8.2f [ms] %s\n' % ((time.time() - time1) * 1000.0, mirror.name)
             OUTPUT += m
             stdout(m)
-        except Exception as err:  # urllib2.URLError, err:
+        except Exception as err:  # urllib.error.URLError, err:
             if True:  # err_count > 5:
                 m = '%8.2f [ms] %s' % ((time.time() - time1) * 1000.0, mirror.name)
                 m += " -> %s\n" % str(err)
