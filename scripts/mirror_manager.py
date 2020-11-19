@@ -181,7 +181,7 @@ def info(txt, width=127):
     """
     global OUTPUT
     OUTPUT += '\n' + '=' * width + '\n'
-    OUTPUT += ' ' + string.center(txt, width - 4) + '\n'
+    OUTPUT += ' ' + txt.center(width - 4) + '\n'
     OUTPUT += '-' * width + '\n'
 
 
