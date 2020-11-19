@@ -2,5 +2,5 @@
 
 cd `dirname "$0"`
 
-flock -xn ./mirror_manager.lock python mirror_manager.py RUNME
+flock -xn ./mirror_manager.lock python3 mirror_manager.py RUNME
 
