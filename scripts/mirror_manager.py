@@ -262,7 +262,7 @@ def fetch_timestamps():
         time1 = time.time()
         try:
             response = urlopen(mirror.url + TIMESTAMP_SUFFIX)
-            ret[mirror] = response.read()
+            ret[mirror] = response.read().decode('utf-8')
             m = '%8.2f [ms] %s\n' % ((time.time() - time1) * 1000.0, mirror.name)
             OUTPUT += m
             stdout(m)
