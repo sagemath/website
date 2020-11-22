@@ -12,13 +12,10 @@ def delFirstLine(fn):
     deletes first line
     @fn: string of file name
     """
-    f = open(fn, 'r')
-    lines = f.readlines()
-    f.close()
-
-    f = open(fn, 'w')
-    f.write('\n'.join(lines[1:]))
-    f.close()
+    with open(fn, 'r') as f:
+        lines = f.readlines()
+    with open(fn, 'w') as f:
+        f.write('\n'.join(lines[1:]))
 
 
 class UnicodeFileWriter:
@@ -27,4 +24,4 @@ class UnicodeFileWriter:
         self._file = file
 
     def write(self, data):
-        self._file.write(data.encode('utf-8'))
+        self._file.write(data)
