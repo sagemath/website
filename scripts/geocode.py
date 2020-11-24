@@ -20,8 +20,11 @@ import os
 from os.path import join
 import codecs
 import sys
-import urllib
-import urllib2
+try:  # python3
+    from urllib.request import urlopen
+    from urllib.parse import quote
+except ImportError:  # python2
+    from urllib2 import urlopen, quote
 import time
 import utils
 
@@ -183,7 +186,7 @@ def getGeo(loc):
     [retcode,accuracy,lng,lat]
     """
     loc = loc.replace(" ", "+")
-    loc = urllib2.quote(loc.encode('UTF-8'))
+    loc = quote(loc.encode('UTF-8'))
     print(loc, ">>>", end="")
     global timeout
     print("[doing query, %s secs break] >>>" % timeout, end="")
@@ -192,7 +195,7 @@ def getGeo(loc):
     # url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
     # url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
     url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s' % loc
-    geo = (urllib.urlopen(url)).read()
+    geo = urlopen(url).read()
     import json
     geo = json.loads(geo)
     acc = "6"  # no idea

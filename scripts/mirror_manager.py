@@ -24,7 +24,10 @@ COPYRIGHT: Harald Schilly <harald.schilly@gmail.com>, 2009, Vienna, Austria
 LICENSE: GPL2+
 '''
 from __future__ import unicode_literals
-import urllib2
+try:  # python3
+    from urllib.request import urlopen
+except ImportError:  # python2
+    from urllib2 import urlopen
 # import subprocess #we use curl, urllib2.urlopen doesn't work :(
 import re
 import time
@@ -36,7 +39,7 @@ import sys
 import yaml
 import codecs
 
-# safeguad, don't run script two times at the same time
+# safeguard, don't run script two times at the same time
 # there is something very odd, probably nfs file system and
 # vm ware and stuff like that -> no, it was the open socket
 # problem, that's not exposed in urllib, see below.
@@ -106,7 +109,7 @@ class Mirror(object):
             raise RuntimeError('category %s does not exist' % cat)
         if not isinstance(active, bool):
             raise RuntimeError('type(active) is not bool')
-        self.name = unicode(name)
+        self.name = str(name)
         self.cat = cat
         assert url.endswith("/")
         self.url = url
@@ -181,22 +184,19 @@ def info(txt, width=127):
     """
     global OUTPUT
     OUTPUT += '\n' + '=' * width + '\n'
-    OUTPUT += ' ' + string.center(txt, width - 4) + '\n'
+    OUTPUT += ' ' + txt.center(width - 4) + '\n'
     OUTPUT += '-' * width + '\n'
 
 
 def log(mirrors):
     ts = '%4s%2s%2s-%2s:%2s:%2s' % time.gmtime()[0:6]
-    f = codecs.open(LOGFILE, 'a', "utf8")
-    try:
+    with codecs.open(LOGFILE, 'a', "utf8") as f:
         f.write(ts)
         f.write(';')
         for m in sorted(mirrors, key=lambda x: x.name):
             f.write(m.name)
             f.write(';')
         f.write('\n')
-    finally:
-        f.close()
 
 
 def mirrors_html():
@@ -237,7 +237,7 @@ def mirrors_html():
     sm = sorted(MIRRORS, key=lambda x: x.name)
     for c in sorted(CATEGORY.items(), key=lambda x: x[1]):
         selected_mirrors = [entry.substitute(URL=m.url, NAME=m.name) for m in sm if m.cat == c[0]]
-        if len(selected_mirrors) > 0:
+        if selected_mirrors:
             LIST += section.substitute(NAME=c[1])
             # per category, mirrors sorted by name
             LIST += '\n'.join(selected_mirrors)
@@ -261,12 +261,12 @@ def fetch_timestamps():
         global OUTPUT
         time1 = time.time()
         try:
-            response = urllib2.urlopen(mirror.url + TIMESTAMP_SUFFIX)
-            ret[mirror] = response.read()
+            response = urlopen(mirror.url + TIMESTAMP_SUFFIX)
+            ret[mirror] = response.read().decode('utf-8')
             m = '%8.2f [ms] %s\n' % ((time.time() - time1) * 1000.0, mirror.name)
             OUTPUT += m
             stdout(m)
-        except Exception as err:  # urllib2.URLError, err:
+        except Exception as err:  # URLError, err:
             if True:  # err_count > 5:
                 m = '%8.2f [ms] %s' % ((time.time() - time1) * 1000.0, mirror.name)
                 m += " -> %s\n" % str(err)
@@ -287,7 +287,7 @@ def fetch_timestamps():
 
 def extract_timestamps(TS):
     """
-    extracts the actual timestamp from timestamp.html
+    Extract the actual timestamp from timestamp.html
     """
     info("extracting timestamps")
     ret = {}
