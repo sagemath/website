@@ -249,6 +249,12 @@ a.index-menu {
 #index-sagenb:hover {
     background-position: -100px -600px;
 }
+#index-cocalc {
+    background-position: 0px -700px;
+}
+#index-cocalc:hover {
+    background-position: -100px -700px;
+}
 
 .bluebg {
     background: #eff9ef;
