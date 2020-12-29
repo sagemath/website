@@ -1,49 +1,4 @@
 spkg:
-  atlas:
-    descr: Automatically Tuned Linear Algebra Software
-    name: ATLAS
-    url: http://math-atlas.sourceforge.net
-  boehm_gc:
-    descr: The Boehm-Demers-Weiser conservative garbage collector
-    name: boehm_gc
-    url: http://www.hboehm.info/gc/
-  boost_cropped:
-    descr: Free peer-reviewed portable C++ source libraries
-    name: Boost
-    url: https://www.boost.org
-  brial:
-    descr: Boolean Ring Algebra, fork of PolyBoRi (Boolean Polynomial Ring)
-    name: BRiAl
-    url: https://github.com/BRiAl/BRiAl
-  bzip2:
-    descr: High-quality data compressor
-    name: bzip2
-    url: http://www.bzip.org
-  cddlib:
-    descr: Double description method of Motzkin et al.
-    name: cddlib
-    url: https://www.inf.ethz.ch/personal/fukudak/cdd_home/
-  cliquer:
-    descr: Routines for clique searching
-    name: Cliquer
-    url: https://users.aalto.fi/~pat/cliquer.html
-  conway_polynomials:
-    descr: Frank L\"ubeck's tables of Conway polynomials over finite fields
-    name: conway_polynomials
-    url: http://www.math.rwth-aachen.de/~Frank.Luebeck/data/ConwayPol/
-  cvxopt:
-    descr: Convex optimization, linear programming, least squares, etc.
-    name: CVXOPT
-    url: https://cvxopt.org/
-  cython:
-    descr: C-Extensions for Python
-    name: Cython
-    url: https://cython.org
-  docutils:
-    descr: Open-source text processing system for processing plaintext documentation
-      into useful formats, such as HTML or LaTeX
-    name: Docutils
-    url: http://docutils.sourceforge.net
   ecl:
     descr: Embeddable Common-Lisp, an implementation of the Common Lisp language as
       defined by the ANSI X3J13 specification
