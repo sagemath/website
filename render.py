@@ -15,7 +15,7 @@ import jinja2 as j2
 import markdown
 
 from scripts import log
-from conf import config, mirrors, packages
+from conf import config, mirrors
 
 # go to where the script is to get relative paths right
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
@@ -57,8 +57,7 @@ def copy_aux_files():
     os.chdir("..")
 
     # contributors for the devmap
-    for xml in [join("conf", "geocode.xml"),
-                join("conf", "contributors.xml")]:
+    for xml in [join("conf", "geocode.xml"), join("conf", "contributors.xml")]:
         dst = join(TARG, "res", basename(xml))
         if exists(dst):
             os.remove(dst)
@@ -138,9 +137,9 @@ def render():
     if not exists("www"):
         os.mkdir("www")
 
-    log("config: {} version {} @ {}, {} mirrors and {} spkgs".format(
+    log("config: {} version {} @ {}, {} mirrors and".format(
         config["sage"], config["version"], config["releasedate"],
-        len(mirrors), len(packages["spkg"])))
+        len(mirrors)))
     # for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
     #    log("    %s" % line)
 
@@ -153,9 +152,6 @@ def render():
     j2env = j2.Environment(loader=j2loader, undefined=j2.StrictUndefined)
     j2env.globals.update(config)
     j2env.globals["changelogs"] = index_changelogs()
-    j2env.globals["packages"] = packages
-    j2env.globals['spkgs'] = sorted(packages['spkg'].values(),
-                                    key=lambda x: x['name'].lower())
 
     j2env.filters["prefix"] = filter_prefix
     j2env.filters["markdown"] = filter_markdown
@@ -196,7 +192,9 @@ def render():
             render_task(task)
 
         if nb_walks % (len_walks // 27) == 0:
-            log("processing: %5.1f%% of %d documents" % (100. * nb_walks / len_walks, len_walks), nl=False)
+            log("processing: %5.1f%% of %d documents" %
+                (100. * nb_walks / len_walks, len_walks),
+                nl=False)
         nb_walks += 1
 
     log("processing: done", nl=False)
@@ -222,9 +220,12 @@ def reload():
                 check_output(["xdotool", "search", "--name", "%s" % browser])
             except CalledProcessError:
                 continue
-            print("RELOAD ==> detected '%s' and sending Shift+Ctrl+R" % browser)
-            call(['xdotool', 'search', "--name", "%s" % browser,
-                  'key', '--clearmodifiers', 'ctrl+shift+r'])
+            print("RELOAD ==> detected '%s' and sending Shift+Ctrl+R" %
+                  browser)
+            call([
+                'xdotool', 'search', "--name",
+                "%s" % browser, 'key', '--clearmodifiers', 'ctrl+shift+r'
+            ])
             break
         else:
             print("==> sorry, could not find your browser?")
