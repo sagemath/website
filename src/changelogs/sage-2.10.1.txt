@@ -89,7 +89,7 @@ Potential features include:
  * John Voight's code for enumerating totally real fields [with 
    generalizations for not-totally real fields]
  * OS X 10.5 support in 64-bit mode [this will depend on fixing
-   a vexing segfault in libSingular and getting disutils to
+   a vexing segfault in libSingular and getting distutils to
    play nice with numpy]
  * GCC 4.3 support out of the box
  * FreeBSD support out of the box
