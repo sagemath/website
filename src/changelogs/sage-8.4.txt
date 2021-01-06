@@ -674,7 +674,7 @@ Merged in sage-8.4.rc0:
 #26362: Frédéric Chapoton: py3: some care for islice in words [Reviewed by Travis Scrimshaw]
 #26365: Matthias Koeppe: Library of polytopes should allow specifying backend=... (follow-up) [Reviewed by Travis Scrimshaw]
 #26369: David Coudert: Improve triconnectivity algorithm: some cythonization [Reviewed by Travis Scrimshaw]
-#26370: Jesper Noordsij: Move invariant theory to seperate subfolder [Reviewed by Travis Scrimshaw]
+#26370: Jesper Noordsij: Move invariant theory to separate subfolder [Reviewed by Travis Scrimshaw]
 #26371: Frédéric Chapoton: py3: wrapping some map(...) in manifolds [Reviewed by Vincent Klein]
 #26372: Frédéric Chapoton: py3: fix some bad range (again and again) [Reviewed by Travis Scrimshaw]
 #26373: Frédéric Chapoton: py3: some fixes in strongly regular graphs [Reviewed by Travis Scrimshaw]

@@ -137,7 +137,7 @@ drawOptions.setSearchFormRoot(document.getElementById("googlesearchform"));
 // Tell the searcher to draw itself and tell it where to attach
 searchControl.draw(document.getElementById("googlesearch"), drawOptions);
 
-// Execute an inital search
+// Execute an initial search
 if (urlQuery != null) searchControl.execute(urlQuery.split("=").pop());
 }
 

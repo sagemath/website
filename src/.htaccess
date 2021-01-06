@@ -20,7 +20,7 @@ AddType application/metalink+xml .metalink
 AddType text/plain .bib
 AddType application/vnd.openxmlformats-officedocument.wordprocessingml.document .docx   
 
-# the custom 404, all others are defalt
+# the custom 404, all others are default
 ErrorDocument 404 /404error.html
 
 # deflate compression except for the given ones

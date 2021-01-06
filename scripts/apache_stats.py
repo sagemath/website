@@ -10,7 +10,7 @@ for 'reference', also one level deeper).
 The logfiles are expected to be uncompressed text and rotated via logrotate
 on a daily basis. e.g. <filename>.<epoch long timestamp>.
 
-It also has a persistant storage for the statistical data in a *.dump file,
+It also has a persistent storage for the statistical data in a *.dump file,
 where it stores the current state. The analyzer function only parses those
 lines, where the timestamp is larger than the last one it has seen in the
 previous run (note, that this means that lines with exactly the same timestamp
@@ -225,7 +225,7 @@ table tbody td { text-align: right; }
         nbuippd = nbuip / perday
         totdl = sum(db.spkg_stats.values())
         totdlpd = totdl / perday
-        f.write('<div>Total number of downlods: %d (= %.2f / day)</div>' % (totdl, totdlpd))
+        f.write('<div>Total number of downloads: %d (= %.2f / day)</div>' % (totdl, totdlpd))
         f.write('<div>Number of unique IPs: %d (= %.2f / day)</div>' % (nbuip, nbuippd))
         f.write('<table>\n')
         thead(f)

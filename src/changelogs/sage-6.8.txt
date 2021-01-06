@@ -402,7 +402,7 @@ Merged in sage-6.8.beta7:
 #15412: Robert Bradshaw, Jeroen Demeyer: Simplify cythonization of sage/combinat. [Reviewed by Nathann Cohen, Jean-Pierre Flori]
 #17392: Vince Knight, James Campbell: Make list of built-in normal form games [Reviewed by Karl-Dieter Crisman, Travis Scrimshaw]
 #17574: Nathann Cohen: Empty hypergraph and __str__ function [Reviewed by Dima Pasechnik]
-#18159: Vincent Delecroix: cardinality must output Infinty or a Sage integer [Reviewed by Jean-Pierre Flori]
+#18159: Vincent Delecroix: cardinality must output Infinity or a Sage integer [Reviewed by Jean-Pierre Flori]
 #18167: Marc Mezzarobba, Frédéric Chapoton: Ref: add various missing modules to r/schemes and r/plane_curves [Reviewed by Vincent Delecroix]
 #18577: Thierry Monteil: Extend MathJax MAXBUFFER to allow larger equations to be displayed [Reviewed by Volker Braun]
 #18592: André Apitzsch: Changing some .next() to next(...) [Reviewed by Wilfried Luebbe]

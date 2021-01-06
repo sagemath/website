@@ -3,10 +3,10 @@
 '''
 This script manages Sage Mirrors
 
-Featues:
+Features:
  - tests if they are online
  - tests if they are in sync
- - generates suiteable download page for the website + python list
+ - generates suitable download page for the website + python list
 
  Aim:
  - don't present outdated or offline mirrors to the downloader
@@ -299,7 +299,7 @@ def extract_timestamps(TS):
             OUTPUT += "%-20s %s\n" % (mirror.name, t.group(1))
             ret[mirror] = t.group(1)
         else:
-            OUTPUT += "%-20s %s\n" % (mirror.name, "TIMESTAMP RETRIVAL ERROR (404 page, garbage, ...)")
+            OUTPUT += "%-20s %s\n" % (mirror.name, "TIMESTAMP RETRIEVAL ERROR (404 page, garbage, ...)")
     return ret
 
 
@@ -359,7 +359,7 @@ def good_mirrors(TS, ref):
     OUTPUT += '\n'
     # remove master (Seattle), if we have more than half synced mirrors in North America
     # AND the number of all synced mirrors is more than half of all mirrors
-    # saves bandwidth for all the other serivces hosted there.
+    # saves bandwidth for all the other services hosted there.
     # if len([m for m in good if m.cat=='na']) > len([m for m in MIRRORS if m.cat=='na'])/2 and len(good) > TOTAL_NUMBER/2:
     # option B, remove MASTER, if there is another one in North America, more aggressive...
     # if len([m for m in good if m.cat=='na']) >= 2:
@@ -499,7 +499,7 @@ def publish(good, good_spkg, TS, best_mirror):
 
 def metalink_helper(M):
     info("metalink helper file")
-    # also includes master with prority 1, reversed(M[1:]) to avoid master completely
+    # also includes master with priority 1, reversed(M[1:]) to avoid master completely
     out = '\n'.join([' '.join([m.country, str(m.priority), ' % ', m.url]) for m in reversed(M)])
     out += '\n'
     for MF in METALINK_FILE:

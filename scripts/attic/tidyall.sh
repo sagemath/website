@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script simply searches for all html files and runs tidy with
-# the suiteable options file on them 
+# the suitable options file on them 
 
 
 

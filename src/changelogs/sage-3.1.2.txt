@@ -135,7 +135,7 @@ Merged in Sage 3.1.2.rc4:
 #925: Michael Abshoff: valgrind options to sage (sage -valgrind, sage -callgrind, etc.) should be more customizable [Reviewed by Robert Miller]
 #1915: Alex Ghitza: infinity doesn't behave well [Reviewed by John Cremona]
 #3563: Michael Abshoff: make "def atlas()" deal with the Accelerate Framework on OSX [Reviewed by Robert Miller]
-#3675: Michael Abshoff: upgrade optinal valgrind.spkg to the 3.3.1 release [Reviewed by Robert Miller]
+#3675: Michael Abshoff: upgrade optional valgrind.spkg to the 3.3.1 release [Reviewed by Robert Miller]
 #3847: Alex Ghitza: can't make vector of ints [Reviewed by John Cremona]
 #4097: Robert Miller: matrix automorphism groups [Reviewed by David Joyner]
 #4119: Martin Albrecht: doctests + fixes for SymbolicData interface [Reviewed by Mike Hansen]

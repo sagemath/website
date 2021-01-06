@@ -58,7 +58,7 @@
  *       'anchor': (Array) The anchor position of the label text.
  *       'textColor': (string) The text color.
  *       'textSize': (number) The text size.
- *       'backgroundPosition': (string) The position of the backgound x, y.
+ *       'backgroundPosition': (string) The position of the background x, y.
  *       'iconAnchor': (Array) The anchor position of the icon x, y.
  * @constructor
  * @extends google.maps.OverlayView
@@ -203,7 +203,7 @@ MarkerClusterer.prototype.MARKER_CLUSTER_IMAGE_EXTENSION_ = 'png';
 
 
 /**
- * Extends a objects prototype by anothers.
+ * Extends a objects prototype by another.
  *
  * @param {Object} obj1 The object to be extended.
  * @param {Object} obj2 The object to extend with.
@@ -221,7 +221,7 @@ MarkerClusterer.prototype.extend = function(obj1, obj2) {
 
 
 /**
- * Implementaion of the interface method.
+ * Implementation of the interface method.
  * @ignore
  */
 MarkerClusterer.prototype.onAdd = function() {
@@ -229,7 +229,7 @@ MarkerClusterer.prototype.onAdd = function() {
 };
 
 /**
- * Implementaion of the interface method.
+ * Implementation of the interface method.
  * @ignore
  */
 MarkerClusterer.prototype.draw = function() {};
@@ -640,7 +640,7 @@ MarkerClusterer.prototype.getExtendedBounds = function(bounds) {
 
 
 /**
- * Determins if a marker is contained in a bounds.
+ * Determines if a marker is contained in a bounds.
  *
  * @param {google.maps.Marker} marker The marker to check.
  * @param {google.maps.LatLngBounds} bounds The bounds to check against.
@@ -814,7 +814,7 @@ function Cluster(markerClusterer) {
 }
 
 /**
- * Determins if a marker is already added to the cluster.
+ * Determines if a marker is already added to the cluster.
  *
  * @param {google.maps.Marker} marker The marker to check.
  * @return {boolean} True if the marker is already added.

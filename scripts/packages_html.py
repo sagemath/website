@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 """
 This script goes through all package directories.
-It links to them togehter with a description on the website
-There is also a list file listing them
+It links to them together with a description on the website.
+There is also a list file listing them.
 Archive is the directory of outdated files, which are moved there.
 
 Rewritten based on an old generator file by Harald Schilly, 2008.

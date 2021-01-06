@@ -199,7 +199,7 @@ Merged in Sage 4.1.alpha2:
 #5740: Minh Van Nguyen: typo in docstring for taylor series (really easy!) [Reviewed by Burcin Erocal]
 #5971: Minh Van Nguyen: fix dumb error message when modding out by 0: Mod(10,0) [Reviewed by Karl-Dieter Crisman]
 #6097: Nicolas Thiery: Implements a mantra for declaring abstract methods [Reviewed by Robert Bradshaw]
-#6162: David Joyner: plot_histogram improvments [Reviewed by Chris Swierczewski]
+#6162: David Joyner: plot_histogram improvements [Reviewed by Chris Swierczewski]
 #6164: Minh Van Nguyen: Phan's Mini-AES for educational purposes [Reviewed by Martin Albrecht]
 #6269: Karl-Dieter Crisman: Coloring odds and ends [Reviewed by Nick Alexander]
 #6372: Karl-Dieter Crisman: Move a few 3d plot files into plot3d [Reviewed by Minh Van Nguyen]

@@ -84,7 +84,7 @@ drawOptions.setDrawMode(google.search.SearchControl.DRAW_MODE_TABBED);
 // Tell the searcher to draw itself and tell it where to attach
 searchControl.draw(document.getElementById("searchdevel"), drawOptions);
 
-// Execute an inital search
+// Execute an initial search
 if (urlQuery != null) searchControl.execute(urlQuery.split("=")[1]);
 }
 

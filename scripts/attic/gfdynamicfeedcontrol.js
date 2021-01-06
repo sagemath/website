@@ -118,7 +118,7 @@ GFdynamicFeedControl.prototype.parseOptions_ = function(options) {
     }
   }
   
-  // Cant be collapseable unless stacked
+  // Cannot be collapseable unless stacked
   if(!this.options.stacked) {
     this.options.collapseable = false;
   }
