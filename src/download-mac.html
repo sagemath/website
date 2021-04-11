@@ -1,24 +1,27 @@
 {% extends 'base.html' %}
-{% set title = "Download Binaries for Apple Mac OSX" %}
+{% set title = "Download Binaries for Apple's macOS" %}
 {% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
 
- <h1 class="narrow">Download Binaries for Apple Mac OSX</h1>
+ <h1 class="narrow">Download Binaries for Apple's macOS</h1>
 
  <div class="txt narrow">
-  These binaries are for OS X version 10.4 and higher.
-  Usually the binary for a version or two before yours should work, e.g. 10.7 should work on 10.8.
-  For more information <a href="http://files.sagemath.org/osx/README.txt">read the installation instructions</a>.
+   These binaries are for all recent versions of macOS.  Usually the
+   binary for a version or two before yours should work, e.g. 10.13
+   should work on 10.15.  For more information
+   <a href="https://doc.sagemath.org/html/en/installation/binary.html#macos">
+   read the installation instructions</a>.
  </div>
 
-<div class="narrow txt small round large" style="background: #faa; padding: 15px;">
-    <div style=" font-size: 110%; font-weight: bold;">
-        On OS X version 10.11 (El Capitan),
-        you need at least sage-6.10.
-        It does not work with older versions of {{ sage }}.
-    </div>
-</div>
+ <div class="narrow xlarge txt bluebg round"> <strong>Note: </strong>
+   For the currently recommended <strong>macOS</strong> binaries see the <a
+   href="https://github.com/3-manifolds/Sage_macOS/releases">GitHub
+   releases page</a>.  </div>
+
+ <div class="narrow large txt">
+   Below are raw binaries for expert users:
+ </div>
 
  <div class="narrow txt small">
  Click <a href="./download.html">here for other systems</a>
