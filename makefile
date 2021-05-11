@@ -7,7 +7,7 @@ MIRROR_FILES := scripts/mirror_list scripts/metalink.helper scripts/torrent.help
 default: clean render
 
 clean:
-	- cd www && find -P -delete
+	- mkdir -p www && cd www && find -P -delete
 
 devmap: templates/devs.html
 

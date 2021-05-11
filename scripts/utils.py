@@ -24,4 +24,8 @@ class UnicodeFileWriter:
         self._file = file
 
     def write(self, data):
-        self._file.write(data.encode('utf8'))
+        try:
+            # silly fallback
+            self._file.write(data)
+        except:
+            self._file.write(data.encode('utf8'))
