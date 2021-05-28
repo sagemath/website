@@ -51,3 +51,8 @@ cont:
 
 publish: default
 	bash publish.sh
+
+pullpub:
+	cd publications && git pull --ff-only && cd .. && git add publications && git commit -m "update publications" && git push
+
+updpub: pullpub publish
