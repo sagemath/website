@@ -107,7 +107,7 @@ def render_task(arg):
         os.link(src, dst)
 
 
-@j2.contextfilter
+@j2.pass_context
 def filter_prefix(ctx, link):
     """
     Prepend level-times "../" to the given string.
@@ -126,7 +126,7 @@ def filter_prefix(ctx, link):
 md = markdown.Markdown()
 
 
-@j2.evalcontextfilter
+@j2.pass_eval_context
 def filter_markdown(eval_ctx, text):
     if eval_ctx.autoescape:
         return md.convert(j2.escape(text))
