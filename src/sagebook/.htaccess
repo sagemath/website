@@ -1,5 +1,0 @@
-Options +MultiViews +Indexes
-AddLanguage en .en
-AddLanguage fr .fr
-LanguagePriority en fr
-AddDefaultCharset UTF-8
