@@ -345,3 +345,8 @@
   country: de
   url: "https://mirror.dogado.de/sage/"
   name: dogado GmbH, Germany
+- active: true
+  cat: a
+  flag: cn
+  name: Alibaba Cloud
+  url: https://mirrors.aliyun.com/sagemath/
