@@ -348,5 +348,11 @@
 - active: true
   cat: a
   flag: cn
-  name: Alibaba Cloud
+  name: Alibaba Cloud, China
   url: https://mirrors.aliyun.com/sagemath/
+- active: true
+  cat: a
+  flag: ir
+  country: ir
+  name: Bardia Tech, Iran
+  url: https://mirror.bardia.tech/sage/
