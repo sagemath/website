@@ -80,8 +80,6 @@ Redirect 301 /library/ http://www.sagemath.org/library.html
 Redirect 301 /src http://www.sagemath.org/download-source.html
 Redirect 301 /bin http://www.sagemath.org/download.html
 Redirect 301 /en/ http://www.sagemath.org/
-Redirect 301 /src-old http://boxen.math.washington.edu/home/sagemath/www-files/src-old/
-Redirect 301 /src-old/ http://boxen.math.washington.edu/home/sagemath/www-files/src-old/
 
 # old wrong doc directory rewrite
 RewriteCond %{HTTP_HOST} ^www.sagemath.org$ [NC]
