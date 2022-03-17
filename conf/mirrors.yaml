@@ -134,7 +134,7 @@
   country: za
   flag: za
   name: University of Cape Town, South Africa
-  url: https://ftp.leg.uct.ac.za/pub/packages/sage/
+  url: http://ftp.leg.uct.ac.za/pub/packages/sage/
 - active: true
   cat: e
   country: uk
@@ -230,7 +230,7 @@
   country: br
   flag: br
   name: "University of São Paulo, Brazil"
-  url: https://linorg.usp.br/sage/
+  url: http://linorg.usp.br/sage/
 - active: true
   cat: a
   country: cn
