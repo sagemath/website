@@ -5,7 +5,7 @@
   flag: us
   name: University of Washington, Seattle, WA, USA
   priority: 1
-  url: https://files.sagemath.org/
+  url: http://files.sagemath.org/
 - active: false
   cat: na
   country: us
