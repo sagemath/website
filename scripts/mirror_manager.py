@@ -32,7 +32,6 @@ except ImportError:  # python2
 import re
 import time
 from threading import Thread
-import string
 import os
 from os.path import join
 import sys
@@ -130,7 +129,7 @@ class Mirror(object):
         return e
 
     def __unicode__(self):
-        x =  u"Mirror '{name}' in {country}".format(**self.__dict__)
+        x = u"Mirror '{name}' in {country}".format(**self.__dict__)
         #.encode("utf8")
         return x
 
@@ -515,6 +514,7 @@ def metalink_helper(M):
         with codecs.open(TF, "w", "utf8") as F:
             F.write(out)
     OUTPUT += out
+
 
 ############### main program and logic ###################
 # split into blocks for easier understanding and editing #

@@ -29,7 +29,7 @@ for what in pages:
         output.append("<ul>")
         for entry in entries:
             output.append("<li><a href='{path}'>{fn}</a></li>".format(
-                          path=entry, lang=LANG.get(lang, lang), fn="/".join(entry.split("/")[-2:])))
+                          path=entry, fn="/".join(entry.split("/")[-2:])))
         output.append("</ul>")
     output.append("</ul>")
     output.append("</body>")
@@ -39,8 +39,8 @@ with open("index.html", "w") as index:
 
 
 if len(sys.argv) > 1 and sys.argv[1] == "fix":
-            # fixes the static links in sphinx
-            # !!! ONLY RUN THIS ONCE !!!
+    # fixes the static links in sphinx
+    # !!! ONLY RUN THIS ONCE !!!
 
     import os
     import subprocess as sp
