@@ -11,7 +11,6 @@
     <meta http-equiv="Expires" content="-1" /> 
     <meta http-equiv="Cache-Control" content="no-cache" /> 
     <link rel="shortcut icon" href="https://www.sagemath.org/pix/sageicon.png" type="image/x-icon" />
-    <link rel="alternate" type="application/rss+xml" title="SageMath RSS News Feed" href="https://groups.google.com/group/sage-announce/feed/atom_v1_0_msgs.xml" />
     <title></title>
     <style type="text/css">
 /*<![CDATA[*/
