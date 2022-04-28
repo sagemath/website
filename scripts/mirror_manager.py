@@ -428,14 +428,16 @@ def build_mirrorselector(mirrors, TS, best_mirror):
  <li style="font-size: 90%%;">
 -->
 <div>
-    Consider downloading via <b><a href="%(server)s">BitTorrent web-seed files</a></b>!
-    Then your download is balanced across all servers,
-    resumeable, and the checksum of the data is automatically verified.
-    This gives you optimal speed and protection against corrupt/malicious data.
-    Either install a libtorrent based client like <a href="https://deluge-torrent.org/">Deluge</a>
-    or <a href="http://aria2.sourceforge.net/">Aria2</a> for the command-line
-    (e.g. <code>sudo apt-get install aria2</code> and then <code>$ aria2c http://...*.torrent</code>).
-    <a href="%(server)s">Download here</a>.
+    Consider downloading via Torrent using <b><a href="%(server)s">BitTorrent web-seed files</a></b>!
+    This automatically balances and parallelizes the download across all servers,
+    makes it resumable, and the checksum is automatically verified.
+    This gives you maximum speed and protection against corrupt/malicious data.
+    Either install a libtorrent based client like <a href="https://deluge-torrent.org/">Deluge</a>,
+    <a href="https://transmissionbt.com/about/">Transmission</a> (default in many Linux distributions),
+    <a href="https://www.vuze.com/">Vuze</a>,
+    or <a href="http://aria2.sourceforge.net/">Aria2</a> for the command-line.
+    (Install Aria2 via <code>sudo apt-get install aria2</code> and then <code>$ aria2c http://...*.torrent</code>).
+    <a href="%(server)s">Sage web-seed files</a>.
 </div>
 
 <!--
