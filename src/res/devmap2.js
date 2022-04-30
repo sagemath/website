@@ -178,7 +178,9 @@ function refreshMap() {
             point = jitterPoint(pointOrig, jitter);
           }
           var m = pinMarker(dev,loc,point,work,descr,url,pix,trac);
-          addDevCloud(dev,loc,point,m,work,descr,url,pix,size,trac);
+          // broken: clicking on the a does not zoom to the right place
+          // also too much text anyway.
+          //addDevCloud(dev,loc,point,m,work,descr,url,pix,size,trac);
           if (m != null) {
              markers.push(m);
              points.push(pointOrig);
