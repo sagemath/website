@@ -1,12 +1,20 @@
 {% extends 'download-tmpl.html' %}
-{% set title = "Development Release" %}
+{% set title = "Source Code Distribution (devel)" %}
 {% from "mirrorselector.html" import mirrors %}
 
 {% block content %}
-<div class="txt large narrow bluebg round border" style="font-size:200%; background: red; font-color: white;">
-  Unstable release for development only.
-  Do <strong>not</strong> use for your every day work.
-</div>
+<h1 class="narrow">Download source code distribution (devel)</h1>
+
+<div class="narrow txt">
+  <p>This is the most recent development release (beta or release candidate).</p>
+  <p>Downloading this source tarball gives you the same version as cloning
+    <a href="https://github.com/sagemath/sage">the "develop" branch
+      of the main Sage repository</a> on GitHub.
+  </p>
+  <p>Thanks to rigorous integration testing by the Release Manager,
+    development releases are generally safe to use, but be aware that
+    occasionally some breakage occurs.</p>
+  <p>New development releases are published every 1 to 2 weeks.</p>
 
  <div class="txt large narrow bluebg round">
  <div class="txt border">
@@ -19,14 +27,5 @@
    {{ mirrors("devel") }}
  </div>
  </div>
-
-<div>&nbsp;</div>
-
- <h2 class="narrow">Warning</h2>
-
- <div class="narrow txt">
-  Here you can download the source code of the latest development release.
-  This release is for development only and should <strong>not</strong> be used
-  for your every day work.
- </div>
+</div>
 {% endblock %}
