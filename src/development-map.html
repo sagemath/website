@@ -12,18 +12,28 @@
 {% block content %}
 <h1>{{ title }}</h1>
 
+<div class="narrow">
+See also:
+<ul>
+  <li><a href="https://trac.sagemath.org/#AccountNamesMappedtoRealNames">Developers on Trac</a>
+  <li><a href="changelogs/">Changelogs, listing developers' contributions</a>
+  <li>Developers' activity on Trac: <a href="https://trac.sagemath.org/report/89?max=500">all time</a>, <a href="https://trac.sagemath.org/report/91?max=150">last 5 years</a>, <a href="https://trac.sagemath.org/report/45?max=100">last year</a>; <a href="https://trac.sagemath.org/report/33">recent activity</a>
+  <li>Developers' contributions according to GitHub: <a href="https://github.com/sagemath/sage/graphs/contributors">all time</a>
+</ul>
+</div>
+
 <div class="padding center narrow">
     This map shows many contributors of the {{ sage }} project from all around the world.<br/>
-    There are currently <span id="contrib-nb">{{ devs.number() }}</span> in
-    <span id="contrib-places">{{ devs.places() }}</span> different places.
+    {% There are currently <span id="contrib-nb">{{ devs.number() }}</span> in
+    <span id="contrib-places">{{ devs.places() }}</span> different places. %}
 </div>
 
 <div class="mapzoom" id="mapzoom">
     Map Zoom:
     <a href="javascript:;" onclick="zoomTo(&quot;ALL&quot;);">Earth</a> -
-    <a href="javascript:;" onclick="zoomTo(&quot;USA&quot;);">USA</a> (
-    <a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);">UW</a>,
-    <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);">West </a> ,
+    <a href="javascript:;" onclick="zoomTo(&quot;USA&quot;);">USA</a>
+    (<a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);">UW</a>,
+    <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);">West</a>,
     <a href="javascript:;" onclick="zoomTo(&quot;USAE&quot;);">East</a>) -
     <a href="javascript:;" onclick="zoomTo(&quot;Europe&quot;);">Europe</a> -
     <a href="javascript:;" onclick="zoomTo(&quot;Africa&quot;);">Africa</a> -
@@ -45,18 +55,6 @@
 <div id="devcloud"></div>
 </div>
  
-<h2>
-{{ sage }} Developers
-</h2>
-
-See also:
-<ul>
-  <li><a href="https://trac.sagemath.org/#AccountNamesMappedtoRealNames">Developers on Trac</a>
-  <li><a href="changelogs/">Changelogs, listing developers' contributions</a>
-  <li>Developers' activity on Trac: <a href="https://trac.sagemath.org/report/89?max=500">all time</a>, <a href="https://trac.sagemath.org/report/91?max=150">last 5 years</a>, <a href="https://trac.sagemath.org/report/45?max=100">last year</a>; <a href="https://trac.sagemath.org/report/33">recent activity</a>
-  <li>Developers' contributions according to GitHub: <a href="https://github.com/sagemath/sage/graphs/contributors">all time</a>
-</ul>
-
 <table class="devlist">
   <colgroup>
 <col width="25%"/>
