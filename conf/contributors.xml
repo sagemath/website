@@ -13,6 +13,8 @@ contributor
  - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally
  - jitter = float as string, multiplicated in jitter function, 0 to disable
  - trac = trac nickname for the search (also searched for the name, but the trac name is often different!)
+
+Please keep the list in alphabetical order by last name!
 -->
 <contributors>
 <contributor
@@ -1212,6 +1214,12 @@ contributor
  description="quadratic forms"
  trac="gdrama"/>
 <contributor
+ name="Raghukul Raman"
+ location="Rajasthan, India"
+ work="Indian Institute of Technology, Kanpur"
+ description="rational point algorithms for schemes"
+ url="https://raghukul01.github.io" />
+<contributor
  name="Jens Rasch"
  description="calculus"
  trac="jrasch"
@@ -1623,10 +1631,4 @@ contributor
  location="Changsha, Hunan, China"
  description="documentation"
  url="http://www.ai7.org" />
-<contributor
- name="Raghukul Raman"
- location="Rajasthan, India"
- work="Indian Institute of Technology, Kanpur"
- description="rational point algorithms for schemes"
- url="https://raghukul01.github.io" />
 </contributors>
