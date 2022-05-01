@@ -818,7 +818,8 @@ contributor
     name="Matthias Köppe"
     work="Professor, UC Davis"
     location="Davis, CA, USA"
-    description="build system (2016-2020); continuous integration (2020); polyhedral geometry (2015-2020); optimization (2015-2020)"
+    description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022)"
+    url="https://www.math.ucdavis.edu/~mkoeppe/"
     trac="mkoeppe"/>
 <contributor
  name="David Kohel"
