@@ -3,56 +3,98 @@
 {% block bottom %}
 
 <h2 class="narrow">
-Source
+Other {{ sage }} downloads
 </h2>
-<div class="narrow txt border">
-<a href="./download-source.html">Download complete source code.</a>
 
+<div class="narrow txt">
+  <a href="https://7896a56df78170d5bab0f306d1a7230986a4206a--sagemath-tobias.netlify.app/installation/index.html">Installation guide: What/how to download</a>
 </div>
 
-{#
-<h2 class="narrow">
-DVD
-</h2>
-<div class="narrow txt border">
-<div class="txt">
-      You can also get a <a href="http://www.lulu.com/content/2461899"
-           target="_blank">copy of {{ sage }} on DVD</a>.
-     </div>
+<table class="narrow justify top" id="download">
+  <colgroup>
+    <col width="25%">
+    <col width="75%">
+  </colgroup>
 
-     <div>
-      It includes the full source code, binaries for the VMWare Player, macOS and Linux and as
-      well the documentation. Additionally, in the spirit of open-source you are allowed to copy
-      and distribute this DVD freely! It may not contain the latest version, please check it on the
-      website.
-     </div>
+  <tbody>
+    <tr>
+      <th>
+        Source (stable)
+      </th>
+      <td>
+        <div class="txt">
+          <a href="./download-source.html">Download complete source</a>
+        </div>
+      </td>
+    </tr>
 
-</div>
-#}
+    <tr>
+      <th>
+        Source (devel)
+      </th>
+      <td>
+        <div class="txt">
+          The <a href="./download-latest.html">latest development release</a>.
+        </div>
 
-{#
-<h2 class="narrow">
-Additional Packages
-</h2>
-<div class="narrow txt border">
-<div class="txt">
-      <a href="./download-packages.html">Download additional packages</a>
+        <div>
+          To get the source of the latest development release, choose a
+          download mirror and follow relevant instructions on the mirror page.
+        </div>
+      </td>
+    </tr>
 
-     </div>
+    <tr>
+      <th>
+        Apple macOS
+      </th>
+      <td>
+        <div class="txt">
+          <a href="https://github.com/3-manifolds/Sage_macOS/releases">Download macOS binaries</a> (3-manifolds)
+        </div>
+      </td>
+    </tr>
 
-     <div>
-      {{ sage }} consists of a selected set of packages which are well tested and integrated into the
-      {{ sage }} framework. There are also other less integrated or unstable packages additionally
-      available. Click <a href="./download-packages.html">here</a> to get an overview of all
-      available packages.
-     </div>
+    <tr>
+      <th>
+        Microsoft Windows
+      </th>
+      <td>
+        <div class="txt">
+          <a href="https://github.com/sagemath/sage-windows/releases">Download Windows binaries</a> (sage-windows)
+        </div>
+      </td>
+    </tr>
 
-</div>
-#}
+    <tr>
+      <th>
+        Docker image
+      </th>
+      <td>
+        <div class="txt">
+          <a href= "https://hub.docker.com/u/sagemath/">SageMath Docker images</a>
+        </div>
+      </td>
+    </tr>
 
-<h2 class="narrow">
+    <tr>
+      <th>
+        Source (old)
+      </th>
+      <td>
+        <div class="txt">
+          <a href="http://old.files.sagemath.org/src-old/"><strong>Older Versions</strong> of {{ sage }}
+        </div>
+
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+<h3 class="narrow">
 Utilities
-</h2>
+</h3>
 <div class="narrow txt border">
 <div class="txt">
       Useful utilities when working with {{ sage }}
@@ -60,10 +102,10 @@ Utilities
 
      <div>
       <ul>
-       <li><a href="https://github.com/sagemath/sage-shell-mode">{{ sage }} Emacs Mode</a> — helps to work with
+       <li><a href="https://github.com/sagemath/sage-shell-mode">Emacs sage-shell-mode</a> — helps to work with
        {{ sage }} in Emacs.</li>
 
-       <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">SageTex LaTeX
+       <li><a href="http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">SageTeX LaTeX
        style</a> — this LaTeX style file allows to embed and process {{ sage }} code inside TeX files.
        <a href="./tour-research.html#latex">read more</a></li>
       </ul>

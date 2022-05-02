@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'download-tmpl.html' %}
 {% set title = "Download Binaries" %}
 {% from "mirrorselector.html" import mirrors %}
 {% block content %}
@@ -46,7 +46,7 @@
       </th>
       <td>
         <div class="txt">
-          <a href="./download-windows.html">Download Windows binaries</a>
+          <a href="https://github.com/sagemath/sage-windows/releases">Download Windows binaries</a> (sage-windows)
         </div>
       </td>
     </tr>
@@ -68,7 +68,7 @@
       </th>
       <td>
         <div class="txt">
-          <a href="./download-mac.html">Download macOS binaries</a>
+          <a href="https://github.com/3-manifolds/Sage_macOS/releases">Download macOS binaries</a> (3-manifolds)
         </div>
       </td>
     </tr>
@@ -79,21 +79,14 @@
       </th>
       <td>
         <div class="txt">
-          <a href=
-          "https://github.com/sagemath/docker-images/blob/master/README.md">Docker
-          setup README.md</a>
-        </div>
-
-        <div>
-          Follow the instructions in the README.md file to download and run it
-          inside a <a href="https://www.docker.com/">docker container</a>.
+          <a href= "https://hub.docker.com/u/sagemath/">SageMath Docker images</a>
         </div>
       </td>
     </tr>
 
     <tr>
       <th>
-        Source
+        Source (stable)
       </th>
       <td>
         <div class="txt">
@@ -104,7 +97,7 @@
 
     <tr>
       <th>
-        Development
+        Source (devel)
       </th>
       <td>
         <div class="txt">
@@ -118,50 +111,6 @@
       </td>
     </tr>
 
-    <tr>
-      <th>
-        {{ sage }} Live USB Key
-      </th>
-      <td>
-        <div class="txt">
-          <a href="./download-liveusb.html">Download {{ sage }} Live USB
-          Key</a>
-        </div>
-
-        <div>
-          This Live USB Key lets you run {{ sage }} directly from a bootable
-          USB Key.
-        </div>
-      </td>
-    </tr>
-
-    <tr>
-      <th>
-        Utilities
-      </th>
-      <td>
-        <div class="txt">
-          Useful utilities when working with {{ sage }}
-        </div>
-
-        <div>
-          <ul>
-            <li>
-              <a href="https://github.com/sagemath/sage-shell-mode">{{ sage }}
-              Emacs Mode</a> — helps to work with {{ sage }} in Emacs.
-            </li>
-
-            <li>
-              <a href=
-              "http://www.ctan.org/tex-archive/macros/latex/contrib/sagetex/">{{
-              sage }}Tex LaTeX style</a> — this LaTeX style file allows to
-              embed and process {{ sage }} code inside TeX files. <a href=
-              "./tour-research.html#latex">read more</a>
-            </li>
-          </ul>
-        </div>
-      </td>
-    </tr>
   </tbody>
 </table>
 {% endblock %}
