@@ -1,14 +1,23 @@
 {% extends 'download-tmpl.html' %}
-{% set title = "Source Code Distribution" %}
+{% set title = "Source Code Distribution (stable)" %}
 {% from "mirrorselector-src.html" import mirrors %}
 
 {% block content %}
- <h1 class="narrow">Source Code Distribution</h1>
+ <h1 class="narrow">Download source code distribution (stable)</h1>
+
+ <div class="narrow txt">
+  Thank you for your interest in {{ sage }}! You can get the complete source for {{ sage }} to compile it on
+  your own Linux, macOS, or Cygwin system. {{ sage }} lives in an isolated directory and does not interfere with
+  your surrounding system. It ships together with everything necessary to develop {{ sage }}, the source
+  code and all its standard dependencies.
+ </div>
+
+
 
  <div class="txt large narrow bluebg round">
  <!--<a href="./src/">Download Source Code</a>-->
  <div class="txt border">
-  <strong>The newest source code release is {{ version_src }}. 
+  <strong>The newest stable release is {{ version_src }}. 
   </strong>   
   <br/>
    {{ mirrors("src") }}
@@ -16,23 +25,6 @@
  </div>
 
 <div>&nbsp;</div>
-
- <div class="txt narrow bluebg round">
- <div class="center border">
-  You can also download <a href="http://old.files.sagemath.org/src-old/">
-	<strong>Older Versions</strong> of {{ sage }}
-  </a>.
- </div>
- </div>
-
- <h2 class="narrow">Information</h2>
-
- <div class="narrow txt">
-  Thank you for your interest in {{ sage }}! You can get the complete source for {{ sage }} to compile it on
-  your own Linux or macOS system. {{ sage }} lives in an isolated directory and does not interfere with
-  your surrounding system. It ships together with everything necessary to develop {{ sage }}, the source
-  code and all its standard dependencies.
- </div>
 
  <div class="txt narrow">
 
