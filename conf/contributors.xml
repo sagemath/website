@@ -981,6 +981,13 @@ Please keep the list in alphabetical order by last name!
  url="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html"
  trac="mmeulien"/>
 <contributor
+ name="Marc Mezzarobba"
+ work="researcher, CNRS"
+ location="LIX, 1 rue Honoré d'Estienne d'Orves, 91120 Palaiseau, France"
+ description="basic arithmetic, algebra, rigorous numerics"
+ url="http://marc.mezzarobba.net/"
+ trac="mmezzarobba"/>
+<contributor
  name="Robert Miller"
  url="http://www.rlmiller.org/"
  work="graduate student, University of Washington"
