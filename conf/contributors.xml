@@ -530,7 +530,8 @@ Please keep the list in alphabetical order by last name!
  name="Jan Groenewald"
  work="IT Manager; African Institute for Mathematical Sciences"
  location="AIMS; Muizenberg; Cape Town; South Africa"
- description="Advocacy; Bug fixes; Build; Documentation; Feedback; Ubuntu support"/>
+ trac="pipedream"
+ description="Advocacy; Bug fixes; Build; Documentation; Feedback; Debian and Ubuntu support"/>
 <contributor
  name="Rob Gross" />
 <contributor
