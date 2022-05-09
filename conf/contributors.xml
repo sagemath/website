@@ -384,6 +384,11 @@ Please keep the list in alphabetical order by last name!
  location="University of Washington, WA, USA"
  description="graph theory"
  trac="rdingman"/>
+<contributor="Linden Disney-Hogg"
+ work="University of Edinburgh"
+ location="Edinburgh, United Kingdom"
+ description="Algebraic geometry"
+ trac="gh-DisneyHogg"/>
 <contributor
  name="Dan Drake"
  work="Korea Advanced Institute of Science and Technology (KAIST)"
