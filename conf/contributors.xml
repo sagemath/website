@@ -1403,9 +1403,9 @@ Please keep the list in alphabetical order by last name!
  description="combinatorics"/>
 <contributor
  name="William Stein"
- work="Professor, University of Washington"
- location="1212 E Barclay Ct, Seattle, WA 98122, USA"
- description="project leader; community manager; software architect; started Sage project"
+ work="CEO, SageMath, Inc."
+ location="17725 SE 123rd Place, Renton WA 98059"
+ description="community manager; software architect; started Sage project"
  url="https://wstein.org/"
  pix="https://wstein.org/william.jpg" jitter="0"
  trac="was"/>
