@@ -861,6 +861,13 @@ Please keep the list in alphabetical order by last name!
  description="documentation"
  trac="rossk"/>
 <contributor
+ name="Jean-Philippe Labbé"
+ work="Maître d'enseignement, École de Technologie Supérieure"
+ location="Université du Québec, Montréal, Québec, Canada"
+ description="algebraic combinatorics; discrete geometry; Coxeter groups;"
+ url="https://jplab.github.io/"
+ trac="jipilab" />
+<contributor
  name="Sébastien Labbé"
  work="CNRS researcher, LaBRI, Université de Bordeaux"
  location="LaBRI, Université de Bordeaux, Bordeaux, France"
