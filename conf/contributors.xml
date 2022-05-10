@@ -85,7 +85,7 @@ Please keep the list in alphabetical order by last name!
  name="David Ayotte"
  work="Concordia University"
  location="Montreal, Canada"
- description="Quasimodular forms, bug fixes, tickets reviews"
+ description="Quasimodular forms; ring of modular forms; bug fixes; tickets reviews"
  trac="gh-DavidAyotte"
  url="https://davidayotte.github.io"/>
 <contributor
