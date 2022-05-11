@@ -318,10 +318,10 @@ Please keep the list in alphabetical order by last name!
  description="elliptic curves" />
 <contributor
  name="David Coudert"
- work="Researcher, INRIA"
+ work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
  description="Graph Theory; Linear programming"
- url="http://www-sop.inria.fr/members/David.Coudert"
+ url="https://www-sop.inria.fr/members/David.Coudert"
  trac="dcoudert" />
 <contributor
  name="John Cremona"
