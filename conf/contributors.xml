@@ -35,9 +35,10 @@ Please keep the list in alphabetical order by last name!
  name="Antti Ajanki" />
 <contributor
  name="Martin Albrecht"
- work="graduate student, Information Security Group, Royal Holloway, University of London"
+ work="Chair of Information Security, Information Security Group, Royal Holloway, University of London"
  location="London, UK"
- description="release manager; sage.crypto.mq; commutative algebra (Singular interface, libSingular, PolyBoRi); efficient low-level arithmetic; dense linear algebra, especially over GF(2)"
+ description="Euclidean lattices (FPLLL, FPyLLL, discrete Gaussians), sage.crypto.mq; commutative algebra (Singular interface, libSingular, PolyBoRi); low-level arithmetic; dense linear algebra over finite fields"
+ url="https://malb.io"
  trac="malb"/>
 <contributor
  name="Nick Alexander"
