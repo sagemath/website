@@ -83,6 +83,13 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="number field ideal utilities"
  trac="mtaranes"/>
+ <contributor
+ name="David Ayotte"
+ work="Concordia University"
+ location="Montreal, Canada"
+ description="Quasimodular forms; ring of modular forms; bug fixes; tickets reviews"
+ trac="gh-DavidAyotte"
+ url="https://davidayotte.github.io"/>
 <contributor
  name="Oscar Gerardo Lazo Arjona"
  work="Student, Universidad Autónoma de Yucatán"
