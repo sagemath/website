@@ -7,6 +7,7 @@
 <loc location="Lehi, Utah, USA" loclat="40.3916172" loclng="-111.8507662"/>
 <loc location="Madrid, Spain" loclat="40.4167754" loclng="-3.7037902"/>
 <loc location="Magdeburg, Germany" loclat="52.1205333" loclng="11.6276237"/>
+<loc location="Montreal, Canada" loclng="-73.567256" loclat="45.5016889"/>
 <loc location="21.0488082, -89.6416569" loclat="21.0470726" loclng="-89.6425521"/>
 <loc location="Vancouver, Canada" loclat="49.2827291" loclng="-123.1207375"/>
 <loc location="BU, Boston, USA" loclng="-71.1053991" loclat="42.3504997"/>
@@ -36,6 +37,7 @@
 <loc location="One Shields Avenue, Davis, CA 95616, USA" loclat="38.5391079" loclng="-121.7542621"/>
 <loc location="Rapenburg 70 2311 EZ Leiden, Netherlands" loclat="52.1566622" loclng="4.4867594"/>
 <loc location="Cary, NC, USA" loclat="35.79154" loclng="-78.7811169"/>
+<loc location="Edinburgh, United Kingdom" loclng="-3.188267" loclat="55.953252"/>
 <loc location="Daejeon, South Korea" loclat="36.3504119" loclng="127.3845475"/>
 <loc location="Kaiserslautern, Germany" loclat="49.4400657" loclng="7.7491265"/>
 <loc location="Manila, Philippines" loclat="14.5995124" loclng="120.9842195"/>
@@ -93,6 +95,7 @@
 <loc location="Ohio, USA" loclat="40.4172871" loclng="-82.907123"/>
 <loc location="Klagenfurt, Austria" loclat="46.6364598" loclng="14.3122246"/>
 <loc location="Parkville, Melbourne, Australia" loclat="-37.7945414" loclng="144.9567011"/>
+<loc location="Université du Québec, Montréal, Québec, Canada" loclng="-73.567256" loclat="45.5016889"/>
 <loc location="LaBRI, Université de Bordeaux, Bordeaux, France" loclat="44.808375" loclng="-0.596705"/>
 <loc location="Rocquencourt, Paris, France" loclat="48.8002322" loclng="2.1389298"/>
 <loc location="Hradec Kralove, Czech Republic" loclat="50.2103605" loclng="15.825211"/>
@@ -108,6 +111,7 @@
 <loc location="University Dr, Irvine, CA 92697, United States" loclat="33.6491978" loclng="-117.8406148"/>
 <loc location="Kansas, USA" loclat="39.011902" loclng="-98.4842465"/>
 <loc location="123, avenue Albert Thomas, 87060 Limoges Cedex, France" loclat="45.8355066" loclng="1.2426994"/>
+<loc location="LIX, 1 rue Honoré d'Estienne d'Orves, 91120 Palaiseau, France" loclng="2.2058645" loclat="48.7151071"/>
 <loc location="College Park, MD, USA" loclat="38.9896967" loclng="-76.93776"/>
 <loc location="Berlin, Germany" loclat="52.5200066" loclng="13.404954"/>
 <loc location="Bethlehem, PA, USA" loclat="40.6259316" loclng="-75.3704579"/>
@@ -162,7 +166,7 @@
 <loc location="Stuttgart, Germany" loclat="48.7758459" loclng="9.1829321"/>
 <loc location="Barcelona, Spain" loclat="41.3850639" loclng="2.1734035"/>
 <loc location="Prague, Czech Republic" loclat="50.0755381" loclng="14.4378005"/>
-<loc location="1212 E Barclay Ct, Seattle, WA 98122, USA" loclat="47.6069595" loclng="-122.3160401"/>
+<loc location="17725 SE 123rd Place, Renton WA 98059, USA" loclng="-122.103335" loclat="47.4913883"/>
 <loc location="6823 St. Charles Avenue, New Orleans, LA 70118, United States" loclat="29.9354056" loclng="-90.1227564"/>
 <loc location="VU University, Amsterdam" loclat="52.3337568" loclng="4.8657199"/>
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
