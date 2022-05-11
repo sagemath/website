@@ -1,6 +1,6 @@
 <locations>
 <!--ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY scripts/geocode.py-->
-<loc location="Massachusetts, USA" loclat="42.4072107" loclng="-71.3824374"/>
+<loc location="San Francisco, CA, USA" loclng="-122.4194155" loclat="37.7749295"/>
 <loc location="Dortmund, Germany" loclat="51.5135872" loclng="7.4652981"/>
 <loc location="Irvine, CA 92697, USA" loclat="33.6471239" loclng="-117.8421325"/>
 <loc location="3201 Burton Street, Southeast Grand Rapids, MI 49546, USA" loclat="42.9332749" loclng="-85.5842852"/>
@@ -9,13 +9,15 @@
 <loc location="Magdeburg, Germany" loclat="52.1205333" loclng="11.6276237"/>
 <loc location="21.0488082, -89.6416569" loclat="21.0470726" loclng="-89.6425521"/>
 <loc location="Vancouver, Canada" loclat="49.2827291" loclng="-123.1207375"/>
+<loc location="BU, Boston, USA" loclng="-71.1053991" loclat="42.3504997"/>
 <loc location="Nevada State College, NV, USA" loclat="36.0300884" loclng="-114.9789399"/>
+<loc location="Stout, WI, USA" loclng="-91.9267041" loclat="44.8716186"/>
 <loc location="1500 N Warner, Tacoma, WA, 98416 USA" loclat="47.2636459" loclng="-122.4802292"/>
 <loc location="Bordeaux, France" loclat="44.837789" loclng="-0.57918"/>
 <loc location="Montreal, QC, Canada" loclat="45.5016889" loclng="-73.567256"/>
 <loc location="823 St Charles Ave, New Orleans, LA 70118, United States" loclat="29.9454621" loclng="-90.0718307"/>
 <loc location="University of Canterbury, New Zealand" loclat="-43.5235375" loclng="172.5839233"/>
-<loc location="MI 48109, USA" loclat="42.3053253" loclng="-83.6694169"/>
+<loc location="Bristol, UK" loclng="-2.58791" loclat="51.454513"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5043186" loclng="8.4717852"/>
@@ -133,12 +135,13 @@
 <loc location="Singapore, SG" loclat="1.2800945" loclng="103.8509491"/>
 <loc location="Grenoble, France" loclat="45.188529" loclng="5.724524"/>
 <loc location="Auckland, New Zealand" loclat="-36.8484597" loclng="174.7633315"/>
+<loc location="Rajasthan, India" loclat="27.0238036" loclng="74.2179326"/>
 <loc location="Zurich, Switzerland" loclat="47.3686498" loclng="8.5391825"/>
 <loc location="San Diego, CA 92093, USA" loclat="32.8843552" loclng="-117.2338066"/>
 <loc location="Graz, Austria" loclat="47.070714" loclng="15.439504"/>
 <loc location="Tangerang, Indonesia" loclat="-6.178306" loclng="106.631889"/>
 <loc location="Waterloo, Ontario, Canada" loclat="43.4642578" loclng="-80.5204096"/>
-<loc location="Cambridge, MA, USA" loclat="42.3736158" loclng="-71.1097335"/>
+<loc location="MIT, Cambridge, MA, USA" loclng="-71.0928603" loclat="42.35704390000001"/>
 <loc location="Aarhus, Denmark" loclat="56.162939" loclng="10.203921"/>
 <loc location="Minsk, Belarus" loclat="53.9045398" loclng="27.5615244"/>
 <loc location="Montreal, Quebec, Canada" loclat="45.5016889" loclng="-73.567256"/>
@@ -189,5 +192,4 @@
 <loc location="France" loclat="46.227638" loclng="2.213749"/>
 <loc location="Villers les Nancy, France" loclat="48.673218" loclng="6.153496"/>
 <loc location="Changsha, Hunan, China" loclat="28.228209" loclng="112.938814"/>
-<loc location="Rajasthan, India" loclat="27.0238036" loclng="74.2179326"/>
 </locations>

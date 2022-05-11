@@ -22,7 +22,7 @@ Please keep the list in alphabetical order by last name!
  work="Zulip"
  url="http://web.mit.edu/tabbott/www/"
  description="Full debianization of Sage"
- location="San Francisco, CA"
+ location="San Francisco, CA, USA"
  trac="tabbott"/>
 <contributor
  name="Michael Abshoff"
@@ -115,7 +115,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Gregory Bard"
  work="Professor, University of Wisconsin-Stout"
- location="Stout, WI"
+ location="Stout, WI, USA"
  description="dense linear algebra over GF(2)"
  url="http://www.gregorybard.com/home.html"/>
 <contributor
