@@ -200,7 +200,9 @@ def getGeo(loc):
     geo = urlopen(url).read()
     import json
     geo = json.loads(geo)
-    acc = "6"  # no idea
+    # TODO use the (newer) geometry.bounds coordinates to estimate the accuracy of the result
+    # based on that, the point's jitter on the map should decrease with increased accuracy
+    acc = "6"
     # no results? (new error in 2018)
     if len(geo["results"]) == 0:
         return None
