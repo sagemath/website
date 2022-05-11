@@ -31,13 +31,15 @@ import utils
 # script uses relative paths, switch to its
 os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
-# google key for sagemath.org - got free from their maps api website
-#gkey   = "ABQIAAAA9l-aWy6wHEH5peWCry_l4hQm4J-jBIjYt60ld8MMTn6uhPOgVhSg6NCleXrEpyNFs6aDpgXODBd72w"
-#gkey = "AIzaSyCh9JDXJE7BsdfT105pRP_dusAzxadA_kc"
-gkey = "AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA"
+# google key for sagemath.org - no longer a free one available
+# this is an "api key" credential for GCP's "Geocode API"
+gkey = open(os.path.expanduser("~/geocode.key")).read().strip()
 
 # allowed attributes in source xml, for checkXML
-goodKeys = ["name", "location", "work", "description", "url", "pix", "size", "jitter", "trac"]
+goodKeys = [
+    "name", "location", "work", "description", "url", "pix", "size", "jitter",
+    "trac"
+]
 
 # point to datafiles in local path, ./www/res/... should be best
 ack = parse(join("..", "conf", "contributors.xml"))
@@ -60,7 +62,7 @@ else:
     locxml = minidom.Document()
 
 loclist = locxml.getElementsByTagName("loc")
-timeout = 30  # in secs, timeout between each request to avoid error 620
+timeout = 1  # in secs, timeout between each request to avoid error 620
 
 
 def writeToDevmap():
@@ -176,7 +178,9 @@ outxml = minidom.Document()
 outxml.appendChild(outxml.createElement("locations"))
 out = outxml.firstChild
 
-comment = outxml.createComment("ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY " + sys.argv[0])
+comment = outxml.createComment(
+    "ATTENTION: DON'T EDIT THESE LOCATIONS. AUTOMATICALLY CREATED BY " +
+    sys.argv[0])
 out.appendChild(comment)
 
 
@@ -192,9 +196,7 @@ def getGeo(loc):
     print("[doing query, %s secs break] >>>" % timeout, end="")
     sys.stdout.flush()
     time.sleep(timeout)
-    # url = 'http://maps.google.com/maps/geo?q=%s&output=csv&key=%s' % (loc, gkey)
-    # url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s&key=%s' % (loc, gkey)
-    url = ' https://maps.googleapis.com/maps/api/geocode/json?address=%s' % loc
+    url = f'https://maps.googleapis.com/maps/api/geocode/json?address={loc}&key={gkey}'
     geo = urlopen(url).read()
     import json
     geo = json.loads(geo)
@@ -206,7 +208,7 @@ def getGeo(loc):
     loc = geo["results"][0]["geometry"]["location"]
     lng = str(loc["lng"])
     lat = str(loc["lat"])
-    print(acc, lat, lng)
+    print(f"location of {loc} is {lat=} {lng=}")
     return "200", acc, lng, lat
 
 
@@ -233,7 +235,9 @@ def addGeo(place):
             timeout *= 2
             addGeo(place)
         elif "200" != statuscode:
-            raise Exception("Status Code was not 200, but %s\nPlace: %s\nGeo: %s" % (statuscode, place, ",".join(geo)))
+            raise Exception(
+                "Status Code was not 200, but %s\nPlace: %s\nGeo: %s" %
+                (statuscode, place, ",".join(geo)))
         else:  # code must be 200!
             # insert the same for matching later
             g.setAttribute("location", place)
@@ -268,7 +272,6 @@ for c in ack.getElementsByTagName("contributor"):
     else:
         print("  <--- UNKNOWN LOCATION !!!")
 
-
 print()
 print("This is now written to file %s:" % geocode_xml_outfn)
 print(out.toprettyxml())
@@ -281,7 +284,9 @@ print("calculating statistics and writing to description")
 nbContribs, nbPlaces = getStatistics()
 
 print()
-print("now writing table entries for search engines and javascript disabled ones")
+print(
+    "now writing table entries for search engines and javascript disabled ones"
+)
 writeToDevmap()
 
 print("file written to %s" % devmap_tmpl)
@@ -294,7 +299,8 @@ with codecs.open(devmap_tmpl, "w", "utf8") as outf:
     outf.write("{% macro places() %}" + str(nbPlaces) + "{% endmacro %}")
     outf.write("""{% macro devs() %}
     """)
-    x = devmap.toprettyxml(encoding="utf8", indent=" ", newl="\n").decode("utf8")
+    x = devmap.toprettyxml(encoding="utf8", indent=" ",
+                           newl="\n").decode("utf8")
     x = x.split("\n", 1)[1]
     outf.write(x)
     outf.write("""{% endmacro %}
