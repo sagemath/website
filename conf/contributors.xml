@@ -19,9 +19,10 @@ Please keep the list in alphabetical order by last name!
 <contributors>
 <contributor
  name="Tim Abbott"
- work="MIT"
+ work="Zulip"
+ url="http://web.mit.edu/tabbott/www/"
  description="Full debianization of Sage"
- location="Massachusetts, USA"
+ location="San Francisco, CA"
  trac="tabbott"/>
 <contributor
  name="Michael Abshoff"
@@ -94,8 +95,8 @@ Please keep the list in alphabetical order by last name!
  trac="eviatarbach" />
 <contributor
  name="Jennifer Balakrishnan"
- work="PhD student, MIT"
- location="Cambridge, USA"
+ work="Professor, Boston University"
+ location="BU, Boston, USA"
  description="LaTeX mode for MAGMA; work on computation of p-adic heights" />
 <contributor
   name="Serge Ballif"
@@ -113,6 +114,8 @@ Please keep the list in alphabetical order by last name!
  trac="jbandlow"/>
 <contributor
  name="Gregory Bard"
+ work="Professor, University of Wisconsin-Stout"
+ location="Stout, WI"
  description="dense linear algebra over GF(2)"
  url="http://www.gregorybard.com/home.html"/>
 <contributor
@@ -156,8 +159,8 @@ Please keep the list in alphabetical order by last name!
  trac="fbissey"/>
 <contributor
  name="Jonathan Bober"
- work="graduate student, University of Michigan"
- location="MI 48109, USA"
+ work="University of Bristol"
+ location="Bristol, UK"
  description="highly optimized partition function" />
 <contributor
  name="Tom Boothby"
@@ -1256,9 +1259,10 @@ Please keep the list in alphabetical order by last name!
  description="automated testing of SAGE_ROOT/examples; bug fixes, etc" />
 <contributor
  name="David Roe"
- work="graduate student, Harvard University"
- location="Cambridge, MA, USA"
- description="Macaulay 2 interface; optimized p-adics; and so so much more"
+ work="MIT"
+ location="MIT, Cambridge, MA, USA"
+ description="p-adics, finite fields, number theory"
+ url="https://math.mit.edu/~roed"
  trac="roed"/>
 <contributor
  name="Bjarke Hammersholt Roune"
