@@ -1323,10 +1323,11 @@ Please keep the list in alphabetical order by last name!
  trac="saliola"/>
 <contributor
  name="Ben Salisbury"
- work="Assistant Professor, Central Michigan University"
+ work="Professor, Central Michigan University"
  location="Mount Pleasant, MI, USA"
  description="crystals; representation theory; combinatorics"
- trac="bsalisbury1" />
+ url="https://bsalisbury1.github.io"
+ trac="bsalisbury1"/>
 <contributor
  name="Leonardo Sampaio"
  work="PhD student, INRIA/I3S (CNRS, UNS)"
