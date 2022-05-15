@@ -1,29 +1,37 @@
-{% extends 'download-tmpl.html' %}
-{% set title = "Download Binaries" %}
-{% from "mirrorselector.html" import mirrors %}
-{% block content %}
+{% extends 'download-tmpl.html' %} {% set title = "Download Binaries" %} {%
+from "mirrorselector.html" import mirrors %} {% block content %}
 <h1 class="narrow">
   Download Binaries
 </h1>
 
 <div class="narrow xlarge txt bluebg round">
-  General information about <strong><a href=
-  "https://wiki.sagemath.org/Distribution">Distribution and packaging of
-  SageMath</a></strong>
-  <br>
-  <strong>Note:</strong> <strong>Linux</strong> binaries have been discontinued.
-  See the <a href="https://7896a56df78170d5bab0f306d1a7230986a4206a--sagemath-tobias.netlify.app/installation/index.html">Installation guide</a>
-  for alternatives.
-  The binaries of old versions are offered for archival purposes and legacy deployments only.
-  <br>
-  <strong>Note:</strong> For <strong>Windows</strong> installer binaries see
-  the Windows <a href=
-  "https://github.com/sagemath/sage-windows/releases">GitHub releases page</a>.
-  <br>
-  <strong>Note:</strong> For the recommended <strong>macOS</strong> binaries
-  see the macOS <a href=
-  "https://github.com/3-manifolds/Sage_macOS/releases">GitHub releases
-  page</a>.
+  <p>
+    General information about <strong><a href=
+    "https://trac.sagemath.org/wiki/Distribution">Distribution and packaging of
+    SageMath</a></strong>
+  </p>
+
+  <p>
+    <strong>Note:</strong> <strong>Linux</strong> binaries have been
+    discontinued. See the <a href=
+    "https://7896a56df78170d5bab0f306d1a7230986a4206a--sagemath-tobias.netlify.app/installation/index.html">
+    Installation guide</a> for alternatives. The binaries of old versions are
+    offered for archival purposes and legacy deployments only.
+  </p>
+
+  <p>
+    <strong>Note:</strong> For <strong>Windows</strong> installer binaries see
+    the Windows <a href=
+    "https://github.com/sagemath/sage-windows/releases">GitHub releases
+    page</a>.
+  </p>
+
+  <p>
+    <strong>Note:</strong> For the recommended <strong>macOS</strong> binaries
+    see the macOS <a href=
+    "https://github.com/3-manifolds/Sage_macOS/releases">GitHub releases
+    page</a>.
+  </p>
 </div>
 
 <div class="narrow txt border bluebg round">
@@ -37,5 +45,4 @@
   "https://wiki.sagemath.org/DownloadAndInstallationGuide"><strong>download and
   install guide</strong></a>.
 </div>
-{# #}
-{% endblock %}
+{# #} {% endblock %}
