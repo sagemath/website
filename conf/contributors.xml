@@ -1117,7 +1117,7 @@ Please keep the list in alphabetical order by last name!
   trac="novoselt" />
 <contributor
  name="Sebastian Oehms"
- work="S&P Computersysteme GmbH"
+ work="S&amp;P Computersysteme GmbH"
  location="Stuttgart, Germany"
  description="algebra; knot theory; interfaces"
  trac="soehms"
