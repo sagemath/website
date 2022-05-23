@@ -1116,6 +1116,13 @@ Please keep the list in alphabetical order by last name!
   url="http://www.math.ualberta.ca/~novoseltsev/"
   trac="novoselt" />
 <contributor
+ name="Sebastian Oehms"
+ work="S&P Computersysteme GmbH"
+ location="Stuttgart, Germany"
+ description="algebra; knot theory; interfaces"
+ trac="soehms"
+ url="https://soehms.github.io/"/>
+<contributor
  name="Christopher Olah"
  work="hacklab.to"
  location="Toronto, Canada"
