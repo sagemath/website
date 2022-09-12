@@ -1204,6 +1204,12 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.bme.hu/~morap"
  trac="mora"/>
 <contributor
+ name="Guillermo Moreno-Socías"
+ work="Univ. Versailles"
+ location="Versailles, France"
+ description="newbie"
+ github="GMS103"/>
+<contributor
  name="Bobby Moretti"
  work="undergraduate student employee, University of Washington"
  location="University of Washington, WA, USA"
