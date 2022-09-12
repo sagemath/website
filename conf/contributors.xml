@@ -609,6 +609,10 @@ Please keep the list in alphabetical order by last name!
  trac="goreckc"/>
 <contributor
  name="Eric Gourgoulhon"
+ work="CNRS research scientist, Laboratoire Univers et Théories"
+ location="Observatoire de Paris, Meudon, France"
+ url="https://luth.obspm.fr/~luthier/gourgoulhon/en/"
+ description="differentiable manifolds, graphics, ask.sagemath"
  trac="egourgoulhon"
  github="egourgoulhon"/>
 <contributor
