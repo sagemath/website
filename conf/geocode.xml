@@ -83,7 +83,7 @@
 <loc location="Athens, Clarke County, Georgia 30602, United States" loclat="33.954258" loclng="-83.3749322"/>
 <loc location="Turku, Finland" loclat="60.4518126" loclng="22.2666303"/>
 <loc location="Portland, OR, USA" loclat="45.5230622" loclng="-122.6764816"/>
-<loc location="Annapolis, MD, USA" loclat="38.9784453" loclng="-76.4921829"/>
+<loc location="Ocean City, MD, USA" loclng="-75.0849058" loclat="38.3365032"/>
 <loc location="Bochum, Germany" loclat="51.4818445" loclng="7.2162363"/>
 <loc location="Cambridge, USA" loclat="42.3736158" loclng="-71.1097335"/>
 <loc location="Tyndall Avenue, Bristol BS8 1TH, UK" loclat="51.4588493" loclng="-2.6029398"/>
@@ -120,6 +120,7 @@
 <loc location="Budafoki ut 3 1117 XI. kerulet, Budapest, Hungary" loclat="47.4828498" loclng="19.0536899"/>
 <loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
 <loc location="55122, Mainz, Germany" loclat="50.0017921" loclng="8.2361563"/>
+<loc location="Frankfurt, Germany" loclng="8.6821267" loclat="50.1109221"/>
 <loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
 <loc location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark" loclat="55.785955" loclng="12.524138"/>
 <loc location="Melbourne, Australia" loclat="-37.814107" loclng="144.96328"/>
