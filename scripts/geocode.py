@@ -38,7 +38,7 @@ gkey = open(os.path.expanduser("~/geocode.key")).read().strip()
 # allowed attributes in source xml, for checkXML
 goodKeys = [
     "name", "location", "work", "description", "url", "pix", "size", "jitter",
-    "trac"
+    "trac", "github", "gitlab"
 ]
 
 # point to datafiles in local path, ./www/res/... should be best
