@@ -1686,6 +1686,14 @@ Please keep the list in alphabetical order by last name!
  url="http://personales.unican.es/taberalf/"
  trac="lftabera"/>
 <contributor
+ name="Jeremy Tan Jie Rui"
+ work="National University of Singapore"
+ location="Singapore, Singapore"
+ description="combinatorics; graph theory"
+ url="https://parclytaxel.art"
+ github="Parcly-Taxel"
+ gitlab="parclytaxel"/>
+<contributor
  name="Glenn Tarbox"
  work="THG Holdings"
  location="Seattle, USA"
