@@ -850,8 +850,8 @@ Please keep the list in alphabetical order by last name!
  trac="benjaminfjones"/>
 <contributor
  name="David Joyner"
- work="Professor, US Naval Academy"
- location="Annapolis, MD, USA"
+ work="Professor, US Naval Academy (retired)"
+ location="Ocean City, MD, USA"
  description="feedback; documentation (tutorial, install guide) and code"
  trac="wdj"
  github="wdjoyner"/>
