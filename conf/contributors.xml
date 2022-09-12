@@ -480,6 +480,7 @@ Please keep the list in alphabetical order by last name!
  name="Nathan Dunfield"
  description="small patches; improvements to algdep; documentation"
  location="Urbana-Champaign, Illinois, USA"
+ github="NathanDunfield"
  trac="dunfield"/>
 <contributor
  name="Gabriel Ebner"
