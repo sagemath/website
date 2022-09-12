@@ -1068,7 +1068,8 @@ Please keep the list in alphabetical order by last name!
   location="ICERM, 121 South Main Street, Providence, RI 02903, USA"
   description="analytic number theory; complex function visualization"
   url="https://davidlowryduda.com"
-  trac="DavidLowry"/>
+  trac="DavidLowry"
+  github="davidlowryduda"/>
 <contributor
   name="Jori Mäntysalo"
   trac="jmantysalo"
