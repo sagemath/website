@@ -217,7 +217,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="E. M. Bray"
  trac="embray"
- github="embray">
+ github="embray" />
 <contributor
  name="Michael Brickenstein"
  work="Mathematisches Forschungsinstitut Oberwolfach"
@@ -234,7 +234,7 @@ Please keep the list in alphabetical order by last name!
  github="nbruin"/>
 <contributor
  name="Peter Bruin"
- ​trac="pbruin"
+ trac="pbruin"
  github="pjbruin"/>
 <contributor
  name="André-Patrick Bubel"
@@ -279,7 +279,7 @@ Please keep the list in alphabetical order by last name!
  trac="jcampbell"
  github="theref"/>
 <contributor
- name="​Xavier Caruso"
+ name="Xavier Caruso"
  trac="caruso"
  github="xcaruso"/>
 <contributor
@@ -299,10 +299,10 @@ Please keep the list in alphabetical order by last name!
  name="Frédéric Chapoton"
  url="https://irma.math.unistra.fr/~chapoton/"
  trac="chapoton"
- github="fchapoton">
+ github="fchapoton"/>
 <contributor
  name="Emmanuel Charpentier"
- trac="​charpent"
+ trac="charpent"
  github="EmmanuelCharpentier"/>
 <contributor
  name="Wilson Cheung"
@@ -524,7 +524,7 @@ Please keep the list in alphabetical order by last name!
  url="https://perso.telecom-paristech.fr/~flori/"
  trac="jpflori"/>
 <contributor
- name="​Marcelo Forets"
+ name="Marcelo Forets"
  trac="mforets"
  github="mforets"/>
 <contributor
@@ -592,7 +592,7 @@ Please keep the list in alphabetical order by last name!
  trac="goreckc"/>
 <contributor
  name="Eric Gourgoulhon"
- trac="​egourgoulhon"
+ trac="egourgoulhon"
  github="egourgoulhon"/>
 <contributor
  name="Bruno Grenet"
@@ -604,7 +604,7 @@ Please keep the list in alphabetical order by last name!
  github="bgrenet"/>
 <contributor
  name="Darij Grinberg"
- trac="​darij"
+ trac="darij"
  github="darijgr"/>
 <contributor
  name="Jan Groenewald"
@@ -812,7 +812,7 @@ Please keep the list in alphabetical order by last name!
  description="porting packages to FreeBSD"
  trac="pjeremy" />
 <contributor
- name="​Jonas Jermann"
+ name="Jonas Jermann"
  trac="jj"
  github="jjermann"/>
 <contributor
@@ -1052,8 +1052,8 @@ Please keep the list in alphabetical order by last name!
   trac="DavidLowry"/>
 <contributor
   name="Jori Mäntysalo"
-  trac="​jmantysalo"
-  github="jm58660">
+  trac="jmantysalo"
+  github="jm58660"/>
 <contributor
  name="Miguel Marco"
  location="Zaragoza, Spain"
@@ -1081,7 +1081,7 @@ Please keep the list in alphabetical order by last name!
  location="Harrisonburg, VA, USA"
  description="GMP assembly code improvements; linear algebra; work on Sage 64-bit build" />
 <contributor
- name="​Marc Masdeu"
+ name="Marc Masdeu"
  trac="mmasdeu"
  github="mmasdeu"/>
 <contributor
@@ -1092,7 +1092,7 @@ Please keep the list in alphabetical order by last name!
  trac="abmasse"
  url="http://www.lacim.uqam.ca/~blondin/"/>
 <contributor
- name="​Paul Masson"
+ name="Paul Masson"
  trac="paulmasson"
  github="paulmasson"/>
 <contributor
@@ -1103,7 +1103,7 @@ Please keep the list in alphabetical order by last name!
  url="http://www.maths.usyd.edu.au/u/mathas/"
  trac="andrew.mathas" />
 <contributor
- name="​Arpit Merchant"
+ name="Arpit Merchant"
  trac="arpitdm"
  github="arpitdm"/>
 <contributor
@@ -1454,7 +1454,7 @@ Please keep the list in alphabetical order by last name!
  trac="roed"
  github="roed314"/>
 <contributor
- name="​Antonio Rojas"
+ name="Antonio Rojas"
  trac="arojas"
  github="antonio-rojas"/>
 <contributor
@@ -1473,7 +1473,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Martin Rubey"
  trac="mantepse"
- github="mantepse">
+ github="mantepse" />
 <contributor
  name="Serge A. Salamanka"
  work="National Academy of Sciences, UIIP"
@@ -1555,7 +1555,7 @@ Please keep the list in alphabetical order by last name!
   trac="tscrim"
   github="tscrim"/>
 <contributor
- name="​George H. Seelinger"
+ name="George H. Seelinger"
  trac="ghseeli"
  github="ghseeli"/>
 <contributor
@@ -1624,7 +1624,7 @@ Please keep the list in alphabetical order by last name!
  trac="was"
  github="williamstein"/>
 <contributor
- name="​Ralf Stephan"
+ name="Ralf Stephan"
  trac="rws"
  github="rwst"/>
 <contributor
@@ -1810,7 +1810,7 @@ Please keep the list in alphabetical order by last name!
  location="Bethesda, MD, USA"
  description="design discussion; bug reports; code (e.g., for MAGMA-like constructors)" />
 <contributor
- name="​Friedrich Wiemer"
+ name="Friedrich Wiemer"
  trac="asante"
  github="pfasante"/>
 <contributor
@@ -1845,14 +1845,14 @@ Please keep the list in alphabetical order by last name!
  description="bug fixes"
  url="http://garsia.math.yorku.ca/~zabrocki/"
  github="zabrocki"
- trac="​zabrocki"/>
+ trac="zabrocki"/>
 <contributor
  name="Bin Zhang"
  location="France"
  description="ATLAS.spkg fixes for Linux and PPC"/>
 <contributor
- name="​Yuan Zhou"
- trac="​yzh"
+ name="Yuan Zhou"
+ trac="yzh"
  github="yuan-zhou"/>
 <contributor
  name="Paul Zimmermann"
