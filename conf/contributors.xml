@@ -1316,6 +1316,11 @@ Please keep the list in alphabetical order by last name!
  trac="jhpalmieri"
  github="jhpalmieri"/>
 <contributor
+ name="Lorenz Panny"
+ url="https://yx7.cc"
+ trac="lorenz"
+ github="yyyyx4"/>
+<contributor
  name="Dmitrii Pasechnik"
  work="Department of Computer Science, Oxford University"
  location="Oxford, UK"
