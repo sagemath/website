@@ -264,6 +264,15 @@ Please keep the list in alphabetical order by last name!
  description="feedback; code; examples; supersingular module"
  trac="burhanud"/>
 <contributor
+ name="Ricardo Buring"
+ work="Johannes Gutenberg-Universität Mainz"
+ location="Mainz, Germany"
+ description="bug fixes; bug reports; reviews"
+ url="https://www.rburing.nl"
+ trac="rburing"
+ github="rburing"
+ gitlab="rburing"/>
+<contributor
  name="Paul Butler"
  work="University of Waterloo"
  location="200 University Avenue West, Waterloo, Ontario, Canada"
