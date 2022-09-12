@@ -519,6 +519,14 @@ Please keep the list in alphabetical order by last name!
  work="Professor Emeritus, Department of Electrical Engineering and Computer Sciences, University of California at Berkeley"
  location="Berkeley, California 94720-1776, USA"/>
 <contributor
+ name="Isuru Fernando"
+ work="University of Illinois at Urbana-Champaign"
+ url="https://github.com/isuruf"
+ location="Urbana, IL, USA"
+ trac="isuruf"
+ github="isuruf"
+ gitlab="isuruf"/>
+<contributor
  name="Moritz Firsching"
  trac="moritz"
  github="mo271"/>
