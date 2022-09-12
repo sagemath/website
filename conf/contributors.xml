@@ -611,6 +611,7 @@ Please keep the list in alphabetical order by last name!
  work="IT Manager; African Institute for Mathematical Sciences"
  location="AIMS; Muizenberg; Cape Town; South Africa"
  trac="pipedream"
+ github="pipedream"
  description="Advocacy; Bug fixes; Build; Documentation; Feedback; Debian and Ubuntu support"/>
 <contributor
  name="Rob Gross" />
