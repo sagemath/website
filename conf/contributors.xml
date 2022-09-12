@@ -1235,6 +1235,12 @@ Please keep the list in alphabetical order by last name!
  description="contributions to the finance module"
  trac="brettnak"/>
 <contributor
+ name="Pablo De Nápoli"
+ work="University of Buenos Aires"
+ location="Buenos Aires, Argentina"
+ description="bug fixes"
+ trac="pdenapo"/>
+<contributor
  name="Christian Nassau"
  work="Software developer, Frankfurt"
  location="Frankfurt, Germany"
@@ -1242,12 +1248,6 @@ Please keep the list in alphabetical order by last name!
  github="cnassau"
  url="https://nullhomotopie.de"
  trac="cnassau"/>
-<contributor
- name="Pablo De Nápoli"
- work="University of Buenos Aires"
- location="Buenos Aires, Argentina"
- description="bug fixes"
- trac="pdenapo"/>
 <contributor
  name="Johan Sebastian Rosenkilde Nielsen"
  work="Technical University of Denmark"
