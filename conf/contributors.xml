@@ -1656,6 +1656,14 @@ Please keep the list in alphabetical order by last name!
  trac="was"
  github="williamstein"/>
 <contributor
+ name="Salvatore Stella"
+ work="RTD-b -- Università dell'Aquila -- DISIM"
+ location="Università degli Studi dell'Aquila, edificio Coppito 1, Via Vetoio, 67100 Coppito AQ"
+ url="http://people.disim.univaq.it/~salvatore.stella/"
+ trac="etn40ff"
+ github="etn40ff"
+ gitlab="etn40ff"/>
+<contributor
  name="Ralf Stephan"
  trac="rws"
  github="rwst"/>
