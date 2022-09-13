@@ -1218,6 +1218,11 @@ Please keep the list in alphabetical order by last name!
  description="Singular interface improvements"
  trac="gmoroz"/>
 <contributor
+ name="Dave Morris"
+ github="DaveWitteMorris"
+ work="University of Lethbridge, Canada"
+/>
+<contributor
  name="Gregg Musiker"
  work="graduate student, UCSD"
  location="San Diego, CA 92093, USA"
