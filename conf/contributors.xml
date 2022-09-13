@@ -460,7 +460,8 @@ Please keep the list in alphabetical order by last name!
  work="University of Edinburgh"
  location="Edinburgh, United Kingdom"
  description="Algebraic geometry"
- trac="gh-DisneyHogg"/>
+ trac="gh-DisneyHogg"
+ github="DisneyHogg"/>
 <contributor
  name="Dan Drake"
  work="Korea Advanced Institute of Science and Technology (KAIST)"
