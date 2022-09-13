@@ -89,6 +89,14 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="number field ideal utilities"
  trac="mtaranes"/>
+<contributor
+ name="Enrique Artal"
+ work="Professor, IUMA, Universidad de Zaragoza"
+ location="Zaragoza, Spain"
+ description="topology, algebraic geometry, singularities"
+ trac="enriqueartal"
+ github="enriqueartal"
+ url="https://riemann.unizar.es/~artal"/>
  <contributor
  name="David Ayotte"
  work="Concordia University"
