@@ -695,7 +695,8 @@ Please keep the list in alphabetical order by last name!
  location="Oshkosh, Wisconsin, USA"
  description="graphics"
  trac="gutow"
- url="http://www.uwosh.edu/facstaff/gutow"/>
+ github = "gutow"
+ url="https://cms.gutow.uwosh.edu/Gutow"/>
 <contributor
  name="Jose Guzman"
  work="Institute of Science and Technology Austria"
