@@ -372,6 +372,14 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="elliptic curves" />
 <contributor
+ name="Edgar Costa"
+ work="MIT"
+ location="MIT, Cambridge, MA, USA"
+ description="finite fields, number theory"
+ url="https://edgarcosta.org/"
+ trac="edgarcosta"
+ github="edgarcosta"/>
+<contributor
  name="David Coudert"
  work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
