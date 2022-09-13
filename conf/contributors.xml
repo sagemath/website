@@ -1897,9 +1897,10 @@ Please keep the list in alphabetical order by last name!
  trac="cwitty"/>
 <contributor
  name="Cristian Wuthrich"
- work="Nottingham"
+ work="University of Nottingham"
  location="Nottingham, UK"
- description="p-adic L-functions; Tate curves"
+ description="elliptic curves; p-adic L-functions; Tate curves"
+ url="https://www.maths.nottingham.ac.uk/plp/pmzcw/"
  trac="wuthrich"
  github="categorie"/>
 <contributor
