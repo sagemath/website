@@ -372,14 +372,6 @@ Please keep the list in alphabetical order by last name!
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="elliptic curves" />
 <contributor
- name="Edgar Costa"
- work="MIT"
- location="MIT, Cambridge, MA, USA"
- description="finite fields, number theory"
- url="https://edgarcosta.org/"
- trac="edgarcosta"
- github="edgarcosta"/>
-<contributor
  name="David Coudert"
  work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
@@ -617,10 +609,6 @@ Please keep the list in alphabetical order by last name!
  trac="goreckc"/>
 <contributor
  name="Eric Gourgoulhon"
- work="CNRS research scientist, Laboratoire Univers et Théories"
- location="Observatoire de Paris, Meudon, France"
- url="https://luth.obspm.fr/~luthier/gourgoulhon/en/"
- description="differentiable manifolds, graphics, ask.sagemath"
  trac="egourgoulhon"
  github="egourgoulhon"/>
 <contributor
@@ -1217,12 +1205,6 @@ Please keep the list in alphabetical order by last name!
  description="internationalization bug fixes"
  url="http://www.math.bme.hu/~morap"
  trac="mora"/>
-<contributor
- name="Guillermo Moreno-Socías"
- work="Univ. Versailles"
- location="Versailles, France"
- description="newbie"
- github="GMS103"/>
 <contributor
  name="Bobby Moretti"
  work="undergraduate student employee, University of Washington"
@@ -1882,9 +1864,10 @@ Please keep the list in alphabetical order by last name!
  trac="cwitty"/>
 <contributor
  name="Cristian Wuthrich"
- work="Nottingham"
+ work="University of Nottingham"
  location="Nottingham, UK"
  description="p-adic L-functions; Tate curves"
+ url="https://www.maths.nottingham.ac.uk/plp/pmzcw/"
  trac="wuthrich"
  github="categorie"/>
 <contributor
