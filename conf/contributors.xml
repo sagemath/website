@@ -865,10 +865,11 @@ Please keep the list in alphabetical order by last name!
  description="posets package" />
 <contributor
  name="Fredrik Johansson"
- work="Chalmers University of Technology"
- location="Sven Hultins gata 6, 41258 Goeteborg, Sweden"
+ work="Inria Bordeaux"
+ location="Talence, France"
  description="bug fixes; basic arithmetics"
- url="http://www.dd.chalmers.se/~frejohl"
+ url="https://fredrikj.net"
+ github="fredrik-johansson"
  trac="fredrik.johansson"/>
 <contributor
  name="Niles Johnson"
