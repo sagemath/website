@@ -56,6 +56,7 @@
 <loc location="Champs-sur-Marne, France" loclat="48.839249" loclng="2.5871491"/>
 <loc location="90 South Street, Murdoch, Western Australia, Australia" loclat="-32.067778" loclng="115.835766"/>
 <loc location="San Diego, CA, USA" loclat="32.715738" loclng="-117.1610838"/>
+<loc location="Observatoire de Paris, Meudon, France" loclng="2.2266969" loclat="48.8050079"/>
 <loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
 <loc location="AIMS; Muizenberg; Cape Town; South Africa" loclat="-34.105" loclng="18.471667"/>
 <loc location="Ames, Iowa, USA" loclat="42.034722" loclng="-93.62"/>
@@ -120,6 +121,7 @@
 <loc location="Bethlehem, PA, USA" loclat="40.6259316" loclng="-75.3704579"/>
 <loc location="Villetaneuse, France" loclat="48.963476" loclng="2.347354"/>
 <loc location="Budafoki ut 3 1117 XI. kerulet, Budapest, Hungary" loclat="47.4828498" loclng="19.0536899"/>
+<loc location="Versailles, France" loclng="2.130122" loclat="48.801408"/>
 <loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
 <loc location="55122, Mainz, Germany" loclat="50.0017921" loclng="8.2361563"/>
 <loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
@@ -171,6 +173,7 @@
 <loc location="Barcelona, Spain" loclat="41.3850639" loclng="2.1734035"/>
 <loc location="Prague, Czech Republic" loclat="50.0755381" loclng="14.4378005"/>
 <loc location="17725 SE 123rd Place, Renton WA 98059, USA" loclng="-122.103335" loclat="47.4913883"/>
+<loc location="Università degli Studi dell'Aquila, edificio Coppito 1, Via Vetoio, 67100 Coppito AQ" loclng="13.3505271" loclat="42.3685354"/>
 <loc location="6823 St. Charles Avenue, New Orleans, LA 70118, United States" loclat="29.9354056" loclng="-90.1227564"/>
 <loc location="VU University, Amsterdam" loclat="52.3337568" loclng="4.8657199"/>
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
