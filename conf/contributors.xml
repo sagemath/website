@@ -744,10 +744,11 @@ Please keep the list in alphabetical order by last name!
  name="Clemens Heuberger"
  work="Alpen-Adria-Universität Klagenfurt"
  location="Klagenfurt, Austria"
- description="Finite State Machines"
+ description="Finite State Machines; Asymptotic Ring"
  trac="cheuberg"
  url="http://wwwu.aau.at/cheuberg/"
- github="cheuberg"/>
+ github="cheuberg"
+ gitlab="cheuberg"/>
 <contributor
  name="Jason B Hill"
  work="University of Colorado Boulder"
