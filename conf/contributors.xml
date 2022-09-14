@@ -979,12 +979,12 @@ Please keep the list in alphabetical order by last name!
  trac="jipsen"/>
 <contributor
  name="Fredrik Johansson"
- work="Chalmers University of Technology"
- location="Sven Hultins gata 6, 41258 Goeteborg, Sweden"
+ work="Inria Bordeaux"
+ location="Talence, France"
  description="bug fixes; basic arithmetics"
- url="http://www.dd.chalmers.se/~frejohl"
- trac="fredrik.johansson"
- github="fredrik-johansson"/>
+ url="https://fredrikj.net"
+ github="fredrik-johansson"
+ trac="fredrik.johansson"/>
 <contributor
  name="Niles Johnson"
  location="Athens, Clarke County, Georgia 30602, United States"
@@ -1395,7 +1395,7 @@ Please keep the list in alphabetical order by last name!
  trac="mora"/>
 <contributor
  name="Guillermo Moreno-Socías"
- work="Univ. Versailles"
+ work="Université de Versailles"
  location="Versailles, France"
  description="newbie"
  github="GMS103"/>
