@@ -1594,7 +1594,8 @@ Please keep the list in alphabetical order by last name!
  location="Vienna, Austria"
  description="webmaster; R/Sage interface; marketing;management"
  pix="./pix/people/schilly.jpeg"
- trac="schilly" />
+ trac="schilly"
+ github="haraldschilly"/>
 <contributor
  name="Jack Schmidt"
  work="University of Kentucky"
