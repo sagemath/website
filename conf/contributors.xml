@@ -1355,7 +1355,8 @@ Please keep the list in alphabetical order by last name!
  description="basic arithmetic, algebra, rigorous numerics"
  url="http://marc.mezzarobba.net/"
  trac="mmezzarobba"
- github="mezzarobba"/>
+ github="mezzarobba"
+ gitlab="mezzarobba"/>
 <contributor
  name="Peleg Michaeli"
  trac="pelegm"
