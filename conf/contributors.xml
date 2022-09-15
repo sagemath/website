@@ -1246,6 +1246,13 @@ Please keep the list in alphabetical order by last name!
  trac="klui"
  github="kevinywlui"/>
 <contributor
+  name="Sverre Lunøe-Nielsen"
+  work="University of Agder, Dept. of Engineering Sciences"
+  location="Jon Lilletuns vei, Grimstad, Norway"
+  description="Modules over the Steenrod algebra"
+  url="https://www.uia.no/en/kk/profile/sverreal"
+  github="sverre320"/>
+<contributor
  name="Rusydi H. Makarim"
  trac="ruhm"
  github="rusydi"/>
