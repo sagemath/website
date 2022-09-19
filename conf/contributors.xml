@@ -1883,8 +1883,10 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Jaap Spies"
  location="Emmen, Netherlands"
- description="permanents of general matrices; Sloane functions; bug fixes"
- trac="jsp"/>
+ description="permanents of general matrices; Sloane functions; various other functions; bug fixes"
+ url="https://www.jaapspies.nl"
+ trac="jsp"
+ github="jaapspies"/>
 <contributor
  name="Jonathan Spreer"
  work="University of Stuttgart"
