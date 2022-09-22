@@ -495,6 +495,14 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.leidenuniv.nl/~mderickx/"
  trac="mderickx"
  github="koffie"/>
+ <contributor
+ name="Aram Dermenjian"
+ work="University of Manchester"
+ location="Manchester, United Kingdom"
+ description="combinatorics"
+ url="http://www.dermenjian.com"
+ trac="aram.dermenjian"
+ github="thecaligarmo"/>
 <contributor
  name="Didier Deshommes"
  location="Cary, NC, USA"
