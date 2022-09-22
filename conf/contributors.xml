@@ -163,6 +163,11 @@ Please keep the list in alphabetical order by last name!
  description="documentation; cddlib update; bug fixes"
  trac="sbarthelemy"/>
 <contributor
+ name="Tomer Bauer"
+ trac="mathzeta2"
+ gitlab="mathzeta2"
+ github="mathzeta"/>
+<contributor
  name="Rob Beezer"
  work="Professor, University of Puget Sound"
  location="1500 N Warner, Tacoma, WA, 98416 USA"
