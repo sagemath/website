@@ -1495,10 +1495,8 @@ Please keep the list in alphabetical order by last name!
  github="jnoordsij"/>
 <contributor
   name="Andrey Novoseltsev"
-  work="University of Alberta, postdoc"
   location="Edmonton, Canada"
-  description="toric geometry"
-  url="http://www.math.ualberta.ca/~novoseltsev/"
+  description="SageMathCell; toric geometry"
   trac="novoselt"
   github="novoselt"/>
 <contributor
