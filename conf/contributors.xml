@@ -1784,7 +1784,8 @@ Please keep the list in alphabetical order by last name!
  location="Mount Pleasant, MI, USA"
  description="crystals; representation theory; combinatorics"
  url="https://bsalisbury1.github.io"
- trac="bsalisbury1"/>
+ trac="bsalisbury1"
+ github="bsalisbury1"/>
 <contributor
  name="Leonardo Sampaio"
  work="PhD student, INRIA/I3S (CNRS, UNS)"
