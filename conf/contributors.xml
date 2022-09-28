@@ -2249,4 +2249,11 @@ Please keep the list in alphabetical order by last name!
  url="https://rusydi.makarim.id"
  trac="ruhm"
  github="rusydi"/> 
+<contributor
+ name="Emmanuel Charpentier"
+ work="Assistance Publique - Hôpitaux de Paris"
+ location="Paris, France"
+ description="Various low-level fixes/additions"
+ trac="charpent"             
+ github="EmmanuelCharpentier"/>
 </contributors>
