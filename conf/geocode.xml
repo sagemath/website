@@ -124,7 +124,6 @@
 <loc location="Villetaneuse, France" loclat="48.963476" loclng="2.347354"/>
 <loc location="Budafoki ut 3 1117 XI. kerulet, Budapest, Hungary" loclat="47.4828498" loclng="19.0536899"/>
 <loc location="Versailles, France" loclng="2.130122" loclat="48.801408"/>
-<loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
 <loc location="55122, Mainz, Germany" loclat="50.0017921" loclng="8.2361563"/>
 <loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
 <loc location="Frankfurt, Germany" loclng="8.6821267" loclat="50.1109221"/>
@@ -206,4 +205,5 @@
 <loc location="France" loclat="46.227638" loclng="2.213749"/>
 <loc location="Villers les Nancy, France" loclat="48.673218" loclng="6.153496"/>
 <loc location="Changsha, Hunan, China" loclat="28.228209" loclng="112.938814"/>
+<loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
 </locations>
