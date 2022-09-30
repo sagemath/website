@@ -56,7 +56,6 @@
 <loc location="Wroclaw, Poland" loclat="51.1078852" loclng="17.0385376"/>
 <loc location="Champs-sur-Marne, France" loclat="48.839249" loclng="2.5871491"/>
 <loc location="90 South Street, Murdoch, Western Australia, Australia" loclat="-32.067778" loclng="115.835766"/>
-<loc location="San Diego, CA, USA" loclat="32.715738" loclng="-117.1610838"/>
 <loc location="Observatoire de Paris, Meudon, France" loclng="2.2266969" loclat="48.8050079"/>
 <loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
 <loc location="AIMS; Muizenberg; Cape Town; South Africa" loclat="-34.105" loclng="18.471667"/>
@@ -130,6 +129,7 @@
 <loc location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark" loclat="55.785955" loclng="12.524138"/>
 <loc location="Melbourne, Australia" loclat="-37.814107" loclng="144.96328"/>
 <loc location="Edmonton, Canada" loclat="53.544389" loclng="-113.4909267"/>
+<loc location="San Diego, CA, USA" loclat="32.715738" loclng="-117.1610838"/>
 <loc location="Toronto, Canada" loclat="43.653226" loclng="-79.3831843"/>
 <loc location="Karlsruhe, Germany" loclat="49.0068901" loclng="8.4036527"/>
 <loc location="Brazil" loclat="-14.235004" loclng="-51.92528"/>
