@@ -1509,6 +1509,9 @@ Please keep the list in alphabetical order by last name!
  github="soehms"/>
 <contributor
  name="R. Andrew Ohana"
+ work="ESI North America"
+ location="San Diego, CA, USA"
+ description="migration from mecurial to git; number theory"
  trac="ohanar"
  github="ohanar"/>
 <contributor
