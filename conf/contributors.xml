@@ -453,6 +453,14 @@ Please keep the list in alphabetical order by last name!
  location="200 University Avenue, West Waterloo, Ontario, Canada"
  description="LaTeX output for combinatorial graphs"
  trac="fidelbarrera"/>
+ <contributor
+ name="Marc Culler"
+ work="Professor Emeritus, University of Illinois at Chicago"
+ location="Chicago, IL, USA"
+ description="macOS binary distributions"
+ github="culler"
+ github="3-manifolds"
+ url="http://marc-culler.info/"/>
 <contributor
  name="Clifton Cunningham"
  trac="Clifton"
