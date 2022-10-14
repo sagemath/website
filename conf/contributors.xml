@@ -2103,6 +2103,7 @@ Please keep the list in alphabetical order by last name!
  trac="mkohlhase"/>
 <contributor
  name="Matthias Köppe"
+ altnames="Matthias Koeppe"
  work="Professor, UC Davis"
  location="Davis, CA, USA"
  description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022)"
@@ -2176,11 +2177,6 @@ Please keep the list in alphabetical order by last name!
  url="https://jplab.github.io/"
  trac="jipilab"
  github="jplab"/>
-<contributor
- name="Jean-Philippe Labbé"
- location="BMS-Freie Universitat, Berlin, Germany"
- url="http://page.mi.fu-berlin.de/labbe"
- trac="jipilab"/>
 <contributor
  name="Sébastien Labbé"
  work="CNRS researcher, LaBRI, Université de Bordeaux"
