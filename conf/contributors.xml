@@ -35,7 +35,21 @@ Please keep the list in alphabetical order by last name!
  url="http://wiki.sagemath.org/MichaelAbshoff"
  trac="mabshoff"/>
 <contributor
+ name="Chaman Agrawal"
+ location="Indian Institute of Technology, Kanpur, India"
+ url="https://github.com/ChamanAgrawal/"
+ github="ChamanAgrawal"/>
+<contributor
+ name="Durgesh Agrawal"
+ location="Indian Institute of Technology, Kanpur, India"
+ url="https://durgeshra.github.io/"
+ github="durgeshra"/>
+<contributor
  name="Antti Ajanki"/>
+<contributor
+ name="Mark V. Albert"
+ location="Loyola University Chicago"
+ trac="markvalbert"/>
 <contributor
  name="Martin Albrecht"
  work="Chair of Information Security, Information Security Group, Royal Holloway, University of London"
@@ -45,27 +59,63 @@ Please keep the list in alphabetical order by last name!
  trac="malb"
  github="malb"/>
 <contributor
+ name="Martin Albrecht"
+ location="Royal Holloway, University of London"
+ trac="malb"/>
+<contributor
  name="Nick Alexander"
  work="UC Irvine graduate student"
  location="Irvine, CA 92697, USA"
  trac="ncalexan"
  github="ncalexan"/>
 <contributor
+ name="Alfaro"
+ location="University of Michigan-Flint, Flint, Michigan, USA"
+ url="Ricardo"
+ trac="ralfaro"/>
+<contributor
  name="Bill Allombert"
  description="help with PARI and GP2C integration"
  location="Bordeaux, France"/>
 <contributor
+ name="Josh Alman"
+ location="MIT"
+ url="http://www.joshalman.com/"
+ trac="jalman"/>
+<contributor
+ name="Luis Felipe Tabera Alonso"
+ work="Universidad de Cantabria"
+ location="Santander, Spain"
+ description="algebra; basic arithmetic; number fields"
+ url="http://personales.unican.es/taberalf/"
+ trac="lftabera"/>
+<contributor
+ name="Luis Felipe Tabera Alonso"
+ location="Universidad de Cantabria, Spain"
+ url="http://personales.unican.es/taberalf"
+ trac="lftabera"/>
+<contributor
+ name="Amitabh Anand"
+ location="amitabh009 at gmail dot com"
+ trac="aanand"/>
+<contributor
  name="Ethan Van Andel"
- work="Calvin College, MI"
+ work="Calvin College, MI, USA"
  location="3201 Burton Street, Southeast Grand Rapids, MI 49546, USA"
  description="calculus"
  trac="evanandel"/>
+<contributor
+ name="Paulo César Pereira de Andrade"
+ work="Mandriva Linux"
+ location="Curitiba, Brazil"
+ description="packages"
+ trac="pcpa"/>
 <contributor
  name="Ivan Andrus"
  work="Adobe Systems Inc."
  location="Lehi, Utah, USA"
  description="OS X app; iPhone app; sage-mode for Emacs"
- trac="iandrus" 
+ trac="iandrus"
  github="gvol"/>
 <contributor
  name="Pablo Angulo"
@@ -76,7 +126,9 @@ Please keep the list in alphabetical order by last name!
  url="http://www.uam.es/personal_pdi/ciencias/pangulo/"/>
 <contributor
  name="Benjamin Antieau"
- description="bug fixes"/>
+ description="bug fixes"
+ location="UIC"
+ trac="bantieau"/>
 <contributor
  name="André Apitzsch"
  work="Otto-von-Guericke-Universität Magdeburg"
@@ -97,7 +149,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Oscar Gerardo Lazo Arjona"
  work="Student, Universidad Autónoma de Yucatán"
- location="21.0488082, -89.6416569"
+ location="Universidad Autónoma de Yucatán, Yucatán, México"
  description="3-D plotting"
  trac="olazo"/>
 <contributor
@@ -113,6 +165,18 @@ Please keep the list in alphabetical order by last name!
  trac="assaferan"
  github="assaferan"/>
 <contributor
+ name="Daniel Augot"
+ location="INRIA"
+ url="http://pages.saclay.inria.fr/daniel.augot/index-eng.html"
+ trac="danielaugot"/>
+<contributor
+ name="Shaun Ault"
+ location="Fordham"
+ trac="sault"/>
+<contributor
+ name="Kevin Youren, Melbourne, Australia"
+ github="kyouren"/>
+<contributor
  name="David Ayotte"
  work="Concordia University"
  location="Montreal, Canada"
@@ -121,11 +185,37 @@ Please keep the list in alphabetical order by last name!
  github="DavidAyotte"
  url="https://davidayotte.github.io"/>
 <contributor
+ name="Arvind Ayyer"
+ location="Indian Institute of Science, Bangalore, India"
+ url="http://www.math.iisc.ernet.in/~arvind"
+ trac="ayyer"/>
+<contributor
+ name="Jernej Azarija"
+ location="University of Ljubljana"
+ url="http://azi.dev.si"
+ trac="azi"/>
+<contributor
+ name="Angelica Babei"
+ location="Dartmouth College"
+ trac="ababei"/>
+<contributor
  name="Eviatar Bach"
  location="Vancouver, Canada"
  description="Combinatorics; bug fixes"
- trac="eviatarbach" 
+ trac="eviatarbach"
  github="eviatarbach"/>
+<contributor
+ name="Eviatar Bach"
+ location="University of Maryland, College Park"
+ url="http://eviatarbach.com/"
+ trac="eviatarbach"/>
+<contributor
+ name="Kirby Baker"
+ trac="kbaker"/>
+<contributor
+ name="Shashank Balaji"
+ location="Indian Institute of Technology, Bombay, India"
+ github="shashankbalaji02"/>
 <contributor
  name="Jennifer Balakrishnan"
  work="Professor, Boston University"
@@ -135,11 +225,16 @@ Please keep the list in alphabetical order by last name!
  github="jbalakrishnan"
  url="https://math.bu.edu/people/jbala/"/>
 <contributor
-  name="Serge Ballif"
-  work="Nevada State College"
-  location="Nevada State College, NV, USA"
-  description="latin square functions"
-  trac="sergeballif" />
+ name="Jennifer Balakrishnan"
+ location="Boston University"
+ url="http://math.bu.edu/people/jbala"
+ trac="jen"/>
+<contributor
+ name="Serge Ballif"
+ work="Nevada State College"
+ location="Nevada State College, NV, USA"
+ description="latin square functions"
+ trac="sergeballif"/>
 <contributor
  name="Jason Bandlow"
  work="Postdoctoral fellow, UC-Davis"
@@ -150,6 +245,13 @@ Please keep the list in alphabetical order by last name!
  trac="jbandlow"
  github="jbandlow"/>
 <contributor
+ name="Jason Bandlow"
+ location="University of Pennsylvania, Philadelphia"
+ trac="jbandlow"/>
+<contributor
+ name="Itai Bar-Natan"
+ trac="itaibn"/>
+<contributor
  name="Gregory Bard"
  work="Professor, University of Wisconsin-Stout"
  location="Stout, WI, USA"
@@ -157,10 +259,26 @@ Please keep the list in alphabetical order by last name!
  url="http://www.gregorybard.com/home.html"
  trac="gregorybard"/>
 <contributor
+ name="Mary Barker"
+ location="Tarleton State University"
+ trac="maryb"/>
+<contributor
+ name="Fidel Barrera-Cruz"
+ location="University of Waterloo, Ontario, Canada"
+ trac="fidelbarrera"/>
+<contributor
+ name="Ben Barros"
+ location="Saint Louis University"
+ trac="bbarros"/>
+<contributor
  name="Sébastien Barthélemy"
  work="UPMC - Université Pierre et Marie Curie"
  location="Paris, France"
  description="documentation; cddlib update; bug fixes"
+ trac="sbarthelemy"/>
+<contributor
+ name="Sébastien Barthélemy"
+ location="upmc, Paris"
  trac="sbarthelemy"/>
 <contributor
  name="Tomer Bauer"
@@ -168,17 +286,35 @@ Please keep the list in alphabetical order by last name!
  gitlab="mathzeta2"
  github="mathzeta"/>
 <contributor
+ name="Monique van Beek"
+ location="University of Cambridge"
+ trac="MvanBeek"/>
+<contributor
  name="Rob Beezer"
  work="Professor, University of Puget Sound"
- location="1500 N Warner, Tacoma, WA, 98416 USA"
+ location="Univ of Puget Sound, Tacoma, WA, USA"
  description="linear algebra; graph theory; group theory; education"
  url="http://buzzard.ups.edu"
  trac="rbeezer"
  github="rbeezer"/>
 <contributor
+ name="Michal Bejger"
+ location="N. Copernicus Astronomical Center, Poland"
+ url="http://users.camk.edu.pl/bejger"
+ trac="mbejger"/>
+<contributor
  name="Karim Belabas"
  location="Bordeaux, France"
  url="https://www.math.u-bordeaux.fr/~kbelabas/"/>
+<contributor
+ name="Odile Bénassy"
+ location="Université Paris Sud"
+ trac="zerline"/>
+<contributor
+ name="Chris Berg"
+ location=" Université du Québec à Montréal, Montréal, Canada"
+ url="http://www.thales.math.uqam.ca/~cberg/"
+ trac="chrisjamesberg"/>
 <contributor
  name="Arnaud Bergeron"
  work="Université de Montréal"
@@ -186,19 +322,37 @@ Please keep the list in alphabetical order by last name!
  description="bug fixes;plotting improvements"
  trac="abergeron"/>
 <contributor
+ name="Nantel Bergeron"
+ location="York University, Canada"
+ url="http://www.math.yorku.ca/bergeron/"
+ trac="nantel"/>
+<contributor
  name="Luis Berlioz"
  description="bug fix; optimize basis matrix for ambient modules"
  trac="LBerlioz"/>
 <contributor
+ name="Alberto Besana"
+ trac="alberto"/>
+<contributor
  name="Alex J Best"
  trac="alexjbest"
  github="alexjbest"/>
+<contributor
+ name="Alex J. Best"
+ location="Boston University, USA"
+ url="https://alexjbest.github.io/"
+ trac="alexjbest"/>
 <contributor
  name="Erin Beyerstedt"
  work="PhD student, Mathematics Department, Tulane University"
  location="823 St Charles Ave, New Orleans, LA 70118, United States"
  description="elliptic curves"
  url="http://math.tulane.edu/~ebeyerstedt"
+ trac="ebeyerstedt"/>
+<contributor
+ name="Erin Beyerstedt"
+ location="Tulane University"
+ url="http://129.81.170.14/~ebeyerstedt/"
  trac="ebeyerstedt"/>
 <contributor
  name="François Bissey"
@@ -208,17 +362,38 @@ Please keep the list in alphabetical order by last name!
  trac="fbissey"
  github="kiwifb"/>
 <contributor
+ name="Gaetan Bisson"
+ url="http://www.loria.fr/~bissogae/"
+ trac="bisson"/>
+<contributor
+ name="Jeffrey Blakeslee"
+ trac="jblakeslee"/>
+<contributor
+ name="Florian Block"
+ trac="florianblock"/>
+<contributor
  name="Jonathan Bober"
  work="University of Bristol"
  location="Bristol, UK"
- description="highly optimized partition function" 
+ description="highly optimized partition function"
  trac="bober"/>
+<contributor
+ name="Olaf Bochmann"
+ location="Complex Systems Lab"
+ url="http://Bochmann.ComplexLab.org"
+ trac="bochmann"/>
+<contributor
+ name="Michel Boerner"
+ trac="boerner"/>
 <contributor
  name="Tom Boothby"
  work="undergraduate student employee, University of Washington"
  location="University of Washington, WA, USA"
  description="the Sage Notebook; fast polynomial evaluation"
  trac="boothby"/>
+<contributor
+ name="Michael Boratko"
+ trac="mboratko"/>
 <contributor
  name="Nicolas Borie"
  work="maître de conférences, LIGM, Universite Paris-Est Marne-la-Vallée"
@@ -233,6 +408,27 @@ Please keep the list in alphabetical order by last name!
  description="algebra"
  url="https://www.tudelft.nl/en/staff/j.g.bosman/"
  trac="johanbosman"/>
+<contributor
+ name="Johan Bosman"
+ location="University of Warwick, UK"
+ url="http://www.warwick.ac.uk/~masjam/"
+ trac="johanbosman"/>
+<contributor
+ name="Charles Bouillaguet"
+ location="University of Lille-1"
+ url="http://www.di.ens.fr/~bouillaguet"
+ trac="Bouillaguet"/>
+<contributor
+ name="François Boulier"
+ location="University Lille I, France"
+ url="http://www.lifl.fr/~boulier"
+ trac="boulier"/>
+<contributor
+ name="Adrien Boussicault"
+ trac="boussica"/>
+<contributor
+ name="Florian Bouyer"
+ trac="florian"/>
 <contributor
  name="Robert Bradshaw"
  work="University of Washington"
@@ -249,15 +445,27 @@ Please keep the list in alphabetical order by last name!
  trac="vbraun"
  github="vbraun"/>
 <contributor
- name="E. M. Bray"
+ name="Volker Braun"
+ location="Dublin Institute for Advanced Studies"
+ trac="vbraun"/>
+<contributor
+ name="Judith Braunsteiner"
+ location="TU Wien, Austria"
+ trac="JBraunsteiner"/>
+<contributor
+ name="Erik Bray"
+ location="Université Paris Sud XI, Orsay, France"
  trac="embray"
- github="embray" />
+ github="embray"/>
 <contributor
  name="Michael Brickenstein"
  work="Mathematisches Forschungsinstitut Oberwolfach"
  location="Oberwolfach-Walke, Germany"
  description="PolyBoRi author (high-level algorithms, primary designer)"
- url="http://www.mfo.de/organisation/institute/brickenstein/" />
+ url="http://www.mfo.de/organisation/institute/brickenstein/"/>
+<contributor
+ name="Adrien Brochier"
+ trac="Adrien"/>
 <contributor
  name="Nils Bruin"
  work="Department of Mathematics, Simon Fraser University"
@@ -268,8 +476,19 @@ Please keep the list in alphabetical order by last name!
  github="nbruin"/>
 <contributor
  name="Peter Bruin"
+ location="Universiteit Leiden"
+ url="http://pub.math.leidenuniv.nl/~bruinpj/"
  trac="pbruin"
  github="pjbruin"/>
+<contributor
+ name="Nils Bruin"
+ location="Simon Fraser University, Canada"
+ trac="nbruin"/>
+<contributor
+ name="Paul Bryan"
+ location="Australian National University, ACT, Australia"
+ url="http://www.maths.anu.edu.au/~paul/"
+ trac="pabryan"/>
 <contributor
  name="André-Patrick Bubel"
  work="student, Universität Heidelberg"
@@ -278,6 +497,17 @@ Please keep the list in alphabetical order by last name!
  url="http://www.andre-bubel.de"
  trac="Moredread"/>
 <contributor
+ name="André-Patrick Bubel"
+ trac="Moredread"/>
+<contributor
+ name="Anders S. Buch"
+ location="Rutgers"
+ url="http://www.math.rutgers.edu/~asbuch"
+ trac="asbuch"/>
+<contributor
+ name="Tomasz Buchert"
+ trac="tombuc"/>
+<contributor
  name="Stanislav Bulygin"
  work="Postdoctoral fellow, Center for Advanced Security Research Darmstadt (CASED)"
  location="64293 Darmstadt, Germany"
@@ -285,7 +515,12 @@ Please keep the list in alphabetical order by last name!
  url="http://www.cased.de/personen/s_bulygin.html"
  trac="sbulygin"/>
 <contributor
- name="Dan Bump"
+ name="Stanislav Bulygin"
+ location="University of Kaiserslautern"
+ url="http://www.mathematik.uni-kl.de/~bulygin/"
+ trac="sbulygin"/>
+<contributor
+ name="Daniel Bump"
  work="Stanford University"
  location="Stanford, CA, USA"
  description="combinatorics and representation theory"
@@ -314,6 +549,14 @@ Please keep the list in alphabetical order by last name!
  url="http://www.paulbutler.org"
  trac="pbutler"/>
 <contributor
+ name="Paul Butler"
+ location="University of Waterloo, Ontario"
+ trac="pbutler"/>
+<contributor
+ name="Sergey Bykov"
+ location="captaintrunky at gmail dot com, Moscow Institute of Physics and Technology, Russia"
+ trac="captaintrunky"/>
+<contributor
  name="James Campbell"
  work="Student, Cardiff University"
  location="Cardiff, United Kingdom"
@@ -322,15 +565,39 @@ Please keep the list in alphabetical order by last name!
  trac="jcampbell"
  github="theref"/>
 <contributor
+ name="Jorge Caravantes"
+ location="Universidad Complutense de Madrid, Spain"
+ url="http://www.mat.ucm.es/~jcaravan"
+ trac="caravantes"/>
+<contributor
+ name="Nathan Carter"
+ location="Bentley University, Waltham, MA"
+ url="http://web.bentley.edu/empl/c/ncarter"
+ trac="ncarter"/>
+<contributor
  name="Xavier Caruso"
  trac="caruso"
  github="xcaruso"/>
+<contributor
+ name="Xavier Caruso"
+ location="Université de Bordeaux"
+ url="http://xavier.toonywood.org/"
+ trac="caruso"/>
 <contributor
  name="Oriol Castejón"
  work="Universitat Politècnica de Catalunya"
  location="C/ Jordi Girona, 31 08034 Barcelona, Spain"
  description="calculus; packaging"
  trac="uri"/>
+<contributor
+ name="Bill Cauchois"
+ location="University of Washington, Seattle"
+ url="http://cs.washington.edu/homes/wcauchoi/"
+ trac="wcauchois"/>
+<contributor
+ name="Turku Ozlum Celik"
+ location="Université de Rennes 1, France"
+ trac="turkuozlum"/>
 <contributor
  name="Ondrej Certik"
  work="graduate physics student, Charles University"
@@ -340,12 +607,27 @@ Please keep the list in alphabetical order by last name!
  trac="certik"
  github="certik"/>
 <contributor
+ name="Georgia Channing"
+ location="University of Tennessee, Knoxville"
+ url="https://globalcomputing.group/people.html"
+ github="georgiachanning"/>
+<contributor
  name="Frédéric Chapoton"
  url="https://irma.math.unistra.fr/~chapoton/"
  trac="chapoton"
  github="fchapoton"/>
 <contributor
+ name="Sara Chari"
+ location="Dartmouth College"
+ trac="schari"/>
+<contributor
+ name="David Sanchez Charles"
+ trac="dscharles"/>
+<contributor
  name="Emmanuel Charpentier"
+ work="Assistance Publique - Hôpitaux de Paris"
+ location="Paris, France"
+ description="Various low-level fixes/additions"
  trac="charpent"
  github="EmmanuelCharpentier"/>
 <contributor
@@ -353,10 +635,18 @@ Please keep the list in alphabetical order by last name!
  trac="g.chatel"
  github="rodgzilla"/>
 <contributor
+ name="Emily Chen"
+ trac="emchennyc"/>
+<contributor
  name="Wilson Cheung"
  work="sysadmin, UCSD"
  location="San Diego, CA 92093, USA"
- description="compilation of Sage on Solaris; discussion of Sage build process" />
+ description="compilation of Sage on Solaris; discussion of Sage build process"/>
+<contributor
+ name="Sarah Chisholm"
+ location="University of Calgary, Canada"
+ url="http://math.ucalgary.ca/~sachisho"
+ trac="schisholm"/>
 <contributor
  name="Dan Christensen"
  work="Associate Professor, Department of Mathematics, The University of Western Ontario"
@@ -379,6 +669,10 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.ru.is/anders/"
  trac="aclaesson"/>
 <contributor
+ name="Anders Claesson"
+ location="Reykjavik University"
+ trac="aclaesson"/>
+<contributor
  name="Francis Clarke"
  work="Department of Mathematics, University of Wales"
  location="Swansea, UK"
@@ -386,9 +680,17 @@ Please keep the list in alphabetical order by last name!
  url="http://www-maths.swan.ac.uk/staff/fwc/"
  trac="fwclarke"/>
 <contributor
+ name="Keith Clawson"
+ location="Washington State University, Pullman, WA"
+ trac="kclawson"/>
+<contributor
  name="Nico Van Cleemput"
  trac="nvcleemp"
  github="nvcleemp"/>
+<contributor
+ name="Nico Van Cleemput"
+ location="Universiteit Gent, Ghent, Belgium"
+ trac="nvcleemp"/>
 <contributor
  name="Timothy Clemans"
  work="high school student"
@@ -401,7 +703,22 @@ Please keep the list in alphabetical order by last name!
  name="Alex Clemesha"
  work="employee, University of Washington"
  location="University of Washington, WA, USA"
- description="Sage's 2-D plotting functionality; design; examples; constants.py" />
+ description="Sage's 2-D plotting functionality; design; examples; constants.py"/>
+<contributor
+ name="Tom Coates"
+ location="Imperial College London"
+ trac="tomc"/>
+<contributor
+ name="Flávio Codeço Coelho"
+ location="Instituto Gulbenkian de Ciência"
+ trac="fccoelho"/>
+<contributor
+ name="Thomas Coffee"
+ location="Massachusetts Institute of Technology, USA"
+ trac="tcoffee"/>
+<contributor
+ name="Marco Cognetta"
+ trac="mcognetta"/>
 <contributor
  name="Nathann Cohen"
  work="CNRS researcher"
@@ -411,10 +728,15 @@ Please keep the list in alphabetical order by last name!
  trac="ncohen"
  github="nathanncohen"/>
 <contributor
+ name="Nathann Cohen"
+ location="Laboratoire de Recherche en Informatique, Orsay, France"
+ url="http://steinertriples.fr/ncohen/"
+ trac="ncohen"/>
+<contributor
  name="Jenny Cooley"
  work="undergraduate student, University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
- description="elliptic curves" 
+ description="elliptic curves"
  trac="JCooley"/>
 <contributor
  name="Edgar Costa"
@@ -425,6 +747,11 @@ Please keep the list in alphabetical order by last name!
  trac="edgarcosta"
  github="edgarcosta"/>
 <contributor
+ name="Edgar Costa"
+ location="Dartmouth College, NH, USA"
+ url="https://math.dartmouth.edu/~edgarcosta/"
+ trac="edgarcosta"/>
+<contributor
  name="David Coudert"
  work="Senior Researcher, INRIA"
  location="Sophia Antipolis, France"
@@ -432,6 +759,19 @@ Please keep the list in alphabetical order by last name!
  url="https://www-sop.inria.fr/members/David.Coudert"
  trac="dcoudert"
  github="dcoudert"/>
+<contributor
+ name="David Coudert"
+ location="INRIA, I3S(CNRS/UNS), Sophia Antipolis, France"
+ url="http://www-sop.inria.fr/members/David.Coudert/"
+ trac="dcoudert"/>
+<contributor
+ name="Thierry Coulbois"
+ url="http://www.i2m.univ-amu.fr/perso/thierry.coulbois/"
+ trac="coulbois"/>
+<contributor
+ name="Julien Courtiel"
+ location="University of British Colombia, Canada"
+ trac="jcourtie"/>
 <contributor
  name="John Cremona"
  work="Professor, University of Warwick"
@@ -445,6 +785,7 @@ Please keep the list in alphabetical order by last name!
  work="Gordon College"
  location="Wenham, MA, USA"
  description="Documentation; Symbolics"
+ url="http://www.math.gordon.edu/~kcrisman/"
  trac="kcrisman"
  github="kcrisman"/>
 <contributor
@@ -461,20 +802,45 @@ Please keep the list in alphabetical order by last name!
  github="culler"
  url="http://marc-culler.info/"/>
 <contributor
+ name="Marc Culler"
+ location="University of Illinois at Chicago"
+ trac="culler"/>
+<contributor
  name="Clifton Cunningham"
  trac="Clifton"
  github="CliftonCunningham"/>
 <contributor
+ name="Eva Curry"
+ location="Acadia University, Canada"
+ url="http://www.acadiau.ca/~ecurry"
+ trac="ecurry"/>
+<contributor
  name="Doug Cutrell"
  work="graduate student, UCSD"
  location="San Diego, CA, USA"
- description="created the Sage Microsoft Windows installer" />
+ description="created the Sage Microsoft Windows installer"/>
 <contributor
- name="Luca De Feo"
- trac="defeo"
- github="defeo"/>
+ name="Fangan DOSSO"
+ trac="fdosso48"/>
 <contributor
- name="Alyson Deines" 
+ name="Konrad K. Dąbrowski"
+ location="Durham University"
+ url="http://community.dur.ac.uk/konrad.dabrowski/"
+ trac="Konrad127123"/>
+<contributor
+ name="Anthony David"
+ trac="adavid"/>
+<contributor
+ name="Damek Davis"
+ location="UCLA"
+ url="http://www.math.ucla.edu/~damek"
+ trac="damek"/>
+<contributor
+ name="Paul-Olivier Dehaye"
+ location="Universitat Zurich, Switzerland"
+ trac="pdehaye"/>
+<contributor
+ name="Alyson Deines"
  trac="aly.deines"
  github="adeines"/>
 <contributor
@@ -500,6 +866,10 @@ Please keep the list in alphabetical order by last name!
  description="non-symmetric Macdonald polynomials with permuted basements"
  url="http://www.math.ucdavis.edu/~sdenton"/>
 <contributor
+ name="Tom Denton"
+ url="http://inventingsituations.net"
+ trac="sdenton"/>
+<contributor
  name="Maarten Derickx"
  work="University of Leiden"
  location="Rapenburg 70 2311 EZ Leiden, Netherlands"
@@ -507,7 +877,15 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.leidenuniv.nl/~mderickx/"
  trac="mderickx"
  github="koffie"/>
- <contributor
+<contributor
+ name="Maarten Derickx"
+ url="http://github.com/koffie"
+ github="koffie"/>
+<contributor
+ name="Maarten Derickx"
+ url="http://www.mderickx.nl"
+ trac="mderickx"/>
+<contributor
  name="Aram Dermenjian"
  work="University of Manchester"
  location="Manchester, United Kingdom"
@@ -516,17 +894,45 @@ Please keep the list in alphabetical order by last name!
  trac="aram.dermenjian"
  github="thecaligarmo"/>
 <contributor
+ name="Aram Dermenjian"
+ trac="aram.dermenjian"/>
+<contributor
+ name="Karan Desai"
+ url="https://www.github.com/karandesai-96"
+ trac="karandesai-96"/>
+<contributor
  name="Didier Deshommes"
  location="Cary, NC, USA"
  description="documentation; optimizations; quaddouble wrapper; spkg restructuring; porting Sage to NexentasOS"
  trac="dfdeshom"
  github="dfdeshom"/>
 <contributor
+ name="Jennet Dickinson"
+ location="Columbia University"
+ trac="jdickinson"/>
+<contributor
+ name="Florian Diebold"
+ trac="fdiebold"/>
+<contributor
+ name="Matthieu Dien"
+ location="Université Pierre et Marie Curie, France"
+ trac="MatthieuDien"/>
+<contributor
+ name="Dilks"
+ location="NDSU"
+ url="Kevin"
+ trac="kdilks"/>
+<contributor
  name="Ryan Dingman"
  work="University of Washington"
  location="University of Washington, WA, USA"
  description="graph theory"
  trac="rdingman"/>
+<contributor
+ name="Sette Diop"
+ location="L2S, CNRS, Supelec, Univ. Paris Sud Orsay, Gif sur Yvette, France"
+ url="http://www.lss.supelec.fr"
+ trac="diop"/>
 <contributor
  name="Linden Disney-Hogg"
  work="University of Edinburgh"
@@ -535,16 +941,35 @@ Please keep the list in alphabetical order by last name!
  trac="gh-DisneyHogg"
  github="DisneyHogg"/>
 <contributor
+ name="Stephen Doty"
+ location="Loyola University Chicago"
+ url="http://doty.math.luc.edu"
+ trac="s.r.doty"/>
+<contributor
+ name="Douglas"
+ trac="dsm"/>
+<contributor
+ name="John R. Doyle"
+ location="Louisiana Tech University"
+ url="http://www2.latech.edu/~jdoyle/"
+ trac="jdoyle"/>
+<contributor
  name="Dan Drake"
  work="Korea Advanced Institute of Science and Technology (KAIST)"
  location="Daejeon, South Korea"
  description="Rencontres numbers; inverse trigonometry; Wronskian function; docstrings; logging; SageTex"
+ url="http://mathsci.kaist.ac.kr/~drake"
  trac="ddrake"
  github="dandrake"/>
 <contributor
  name="Tom Draper"
  description="support is_primitive() method for polynomials over Finite Fields"
  trac="TomDraper"/>
+<contributor
+ name="Simon Drewitz"
+ location="Université de Fribourg, Switzerland"
+ url="http://homeweb.unifr.ch/drewitzs/Pub/"
+ trac="sdrewitz"/>
 <contributor
  name="Alexander Dreyer"
  work="Fraunhofer ITWM"
@@ -553,6 +978,11 @@ Please keep the list in alphabetical order by last name!
  url="http://www.itwm.fhg.de/de/as__asemployees__dreyer/dreyer/"
  trac="AlexanderDreyer"
  github="alexanderdreyer"/>
+<contributor
+ name="Niels Duif"
+ location="Netherlands"
+ url="http://nielsduif.nl"
+ trac="Niels"/>
 <contributor
  name="Tim Dumol"
  work="HS Student"
@@ -563,13 +993,31 @@ Please keep the list in alphabetical order by last name!
  pix="http://gravatar.com/avatar/7009e6e9ae26c2b3119e97531ef2cc12&amp;s=512"
  github="TimDumol"/>
 <contributor
+ name="Tim Dumol"
+ location="University of the Philippines, Diliman"
+ url="http://timdumol.com"
+ trac="timdumol"/>
+<contributor
+ name="Thierry Dumont"
+ location="Université Lyon 1,  Villeurbanne, France"
+ url="http://math.univ-lyon1.fr"
+ trac="tdumont"/>
+<contributor
+ name="Furkan Semih Dündar"
+ location="Amasya University, Amasya, Turkey"
+ url="http://fsemih.org"
+ github="fsdundar"/>
+<contributor
  name="Nathan Dunfield"
  description="small patches; improvements to algdep; documentation"
  location="Urbana-Champaign, Illinois, USA"
+ url="http://dunfield.info"
  github="NathanDunfield"
  trac="dunfield"/>
 <contributor
  name="Taylor Dupuy"
+ location="University of Vermont"
+ url="https://www.uvm.edu/~tdupuy"
  trac="tdupu"
  github="tdupu"/>
 <contributor
@@ -590,9 +1038,45 @@ Please keep the list in alphabetical order by last name!
  description="graph theory"
  trac="bedwards"/>
 <contributor
+ name="Ben Edwards"
+ location="bedwards at cs dot unm dot edu"
+ trac="bedwards"/>
+<contributor
+ name="Stephan Ehlen"
+ trac="ehlen"/>
+<contributor
+ name="Geoffrey Ehrman"
+ location="University of New Hampshire"
+ url="http://euclid.unh.edu/~ehrman"
+ trac="gbe"/>
+<contributor
+ name="Einstein"
+ location="University of Massachusetts Lowell - Lowell Mass"
+ url="David"
+ trac="deinst"/>
+<contributor
+ name="Birk Eisermann"
+ trac="eisermbi"/>
+<contributor
+ name="David Eklund"
+ trac="davideklund"/>
+<contributor
  name="Sophia Elia"
+ location="Freie Universität Berlin"
  trac="selia"
  github="sophiasage"/>
+<contributor
+ name="Andreas Enge"
+ url="https://www.math.u-bordeaux.fr/~aenge/"
+ trac="aenge"/>
+<contributor
+ name="Jeremias Epperlein"
+ location="TU Dresden, Germany"
+ trac="jepperlein"/>
+<contributor
+ name="Samuel Erickson"
+ location="MSUM"
+ trac="ericksosam"/>
 <contributor
  name="Dana Ernst"
  work="Assistant Professor, Mathematics Department, Plymouth State University"
@@ -601,10 +1085,16 @@ Please keep the list in alphabetical order by last name!
  url="http://oz.plymouth.edu/~dcernst/"
  trac="DanaErnst"/>
 <contributor
+ name="Dana Ernst"
+ location="Northern Arizona University"
+ url="http://oz.plymouth.edu/~dcernst/"
+ trac="DanaErnst"/>
+<contributor
  name="Burcin Erocal"
  work="PhD student, RISC - Linz"
  location="48.366126, 14.513884"
  description="integrating the PolyBoRi framework"
+ url="http://erocal.org/burcin/"
  trac="burcin"
  github="burcin"/>
 <contributor
@@ -614,9 +1104,37 @@ Please keep the list in alphabetical order by last name!
  description="bug fix; documentation"
  url="http://math.ucsd.edu/~revans"/>
 <contributor
+ name="Justine Falque"
+ location="Université Paris-Sud, France"
+ trac="falque"/>
+<contributor
+ name="J. Miguel Farto"
+ location="Universidad de Valladolid, Spain"
+ url="http://farto.eis.uva.es/"
+ trac="migeruhito"/>
+<contributor
  name="Richard J. Fateman"
  work="Professor Emeritus, Department of Electrical Engineering and Computer Sciences, University of California at Berkeley"
  location="Berkeley, California 94720-1776, USA"/>
+<contributor
+ name="Amy Feaver"
+ location="The King's University, Edmonton, AB"
+ url="http://math.colorado.edu/~keighley"
+ trac="amy"/>
+<contributor
+ name="Gabe Feinberg"
+ location="Washington College, Chestertown, MD"
+ trac="gfeinberg"/>
+<contributor
+ name="Luca De Feo"
+ location="Université de Versailles - Saint-Quentin, France"
+ url="http://defeo.lu/"
+ trac="defeo"
+ github="defeo"/>
+<contributor
+ name="Valentin Féray"
+ location="LaBRI, Bordeaux, France"
+ trac="vferay"/>
 <contributor
  name="Isuru Fernando"
  work="University of Illinois at Urbana-Champaign"
@@ -626,16 +1144,43 @@ Please keep the list in alphabetical order by last name!
  github="isuruf"
  gitlab="isuruf"/>
 <contributor
+ name="Isuru Fernando"
+ location="University of Moratuwa, Sri Lanka"
+ trac="isuruf"/>
+<contributor
+ name="Thomas Feulner"
+ location="University of Bayreuth, Germany"
+ url="http://www.algorithm.uni-bayreuth.de/de/team/Feulner_Thomas/index.html"
+ trac="tfeulner"/>
+<contributor
+ name="Johannes Klaus Fichte"
+ location="Vienna University of Technology"
+ trac="fichtejo"/>
+<contributor
+ name="Joseph E. Fields"
+ location="Southern Connecticut State University, New Haven, CT"
+ url="http://www.southernct.edu/~fields/"
+ trac="jfields"/>
+<contributor
  name="Tara Fife"
  trac="tara"
  github="TaraFife"/>
 <contributor
+ name="Luis Finotti"
+ location="University of Tennessee, USA"
+ url="http://www.math.utk.edu/~finotti"
+ trac="finotti"/>
+<contributor
  name="Moritz Firsching"
+ url="http://page.mi.fu-berlin.de/moritz/"
  trac="moritz"
  github="mo271"/>
 <contributor
  name="Lars Fischer"
  trac="lars.fischer"/>
+<contributor
+ name="Andrew Fleckenstein"
+ trac="afleckenstein"/>
 <contributor
  name="Jean-Pierre Flori"
  work="Telecom ParisTech"
@@ -644,14 +1189,26 @@ Please keep the list in alphabetical order by last name!
  url="https://perso.telecom-paristech.fr/~flori/"
  trac="jpflori"/>
 <contributor
+ name="Jean-Pierre Flori"
+ trac="jpflori"/>
+<contributor
  name="Marcelo Forets"
  trac="mforets"
  github="mforets"/>
+<contributor
+ name="Marcelo Forets"
+ location="UTEC, Uruguay"
+ url="http://marcelo-forets.fr"
+ trac="mforets"/>
 <contributor
  name="Evan Fosmark"
  location="Amity, Oregon, USA"
  description="Sage notebook"
  url="http://www.evanfosmark.com"/>
+<contributor
+ name="Charles Fougeron"
+ location="Université Paris 7"
+ trac="Fougeroc"/>
 <contributor
  name="Laurent Fousse"
  work="Debian Project"
@@ -659,6 +1216,11 @@ Please keep the list in alphabetical order by last name!
  description="calculus"
  url="http://komite.net/laurent/"
  trac="lfousse"/>
+<contributor
+ name="Jim Fowler"
+ location="Ohio State University"
+ url="http://www.math.osu.edu/~fowler.291/"
+ trac="kisonecat"/>
 <contributor
  name="Gary Furnish"
  work="University of Utah"
@@ -671,14 +1233,56 @@ Please keep the list in alphabetical order by last name!
  trac="gagern"
  github="gagern"/>
 <contributor
+ name="Martin von Gagern"
+ location="TU München, Germany"
+ trac="gagern"/>
+<contributor
  name="Thomas Gagne"
+ location="University of Puget Sound, Tacoma"
  trac="tgagne"
  github="ThomasGagne"/>
+<contributor
+ name="Andrew Gainer-Dewar"
+ location="Hobart and William Smith Colleges"
+ trac="agd"/>
+<contributor
+ name="Tyler Gaona"
+ location="Duquesne University"
+ trac="tgaona"/>
+<contributor
+ name="Elisa Lorenzo Garcia"
+ location="Universite de Rennes 1, France"
+ trac="elorenzogarcia"/>
+<contributor
+ name="Rolando Garza"
+ location="Monterrey, NL, Mexico"
+ trac="rolandog"/>
+<contributor
+ name="Joanna Gaski"
+ location="University of Washington, Seattle"
+ trac="jgaski"/>
+<contributor
+ name="Thomas Gerber"
+ url="http://www.math.rwth-aachen.de/~Thomas.Gerber/"
+ trac="thomgerber"/>
+<contributor
+ name="Robert Gerbicz"
+ location="ELTE, Hungary"
+ trac="gerbicz"/>
+<contributor
+ name="Robert Gerbicz"
+ location="ELTE, Hungary"
+ trac="gerrob"/>
+<contributor
+ name="Zachary Gershkoff"
+ location="Louisiana State University"
+ trac="zgershkoff"/>
 <contributor
  name="Alex Ghitza"
  work="The University of Melbourne"
  location="Parkville, Melbourne, Australia"
  description="pari interface; modular forms, elliptic curves, number fields; miscellaneous algebra; documentation"
+ url="http://www.ms.unimelb.edu.au/~aghitza/"
  trac="AlexGhitza"
  github="aghitza"/>
 <contributor
@@ -687,6 +1291,7 @@ Please keep the list in alphabetical order by last name!
  github="bgillesp"/>
 <contributor
  name="Maria Monks Gillespie"
+ location="Graduate Student, UC Berkeley"
  trac="MariaMonks"
  github="MariaMonks"/>
 <contributor
@@ -709,6 +1314,10 @@ Please keep the list in alphabetical order by last name!
  url="https://igm.univ-mlv.fr/~giraudo/"
  trac="giraudo"/>
 <contributor
+ name="Samuele Giraudo"
+ location="université de Marne-la-Vallée Paris-Est"
+ trac="giraudo"/>
+<contributor
  name="Amy Glen"
  work="Lecturer in Mathematics, School of Chemical and Mathematical Sciences, Murdoch University"
  location="90 South Street, Murdoch, Western Australia, Australia"
@@ -716,9 +1325,28 @@ Please keep the list in alphabetical order by last name!
  url="http://wwwstaff.murdoch.edu.au/~aglen"
  trac="amyglen"/>
 <contributor
+ name="Amy Glen"
+ location="Reykjavík University, Iceland"
+ url="http://www.ru.is/kennarar/amy"
+ trac="amyglen"/>
+<contributor
+ name="Charlie Godfrey"
+ location="University of Washington-Seattle"
+ url="https://www.math.washington.edu/~cgodfrey"
+ github="godfrey-cw"/>
+<contributor
  name="Matthias Goerner"
  trac="mgoerner"
  github="unhyperbolic"/>
+<contributor
+ name="Samuel Gonshaw"
+ location="Imperial College London"
+ trac="sjg10"/>
+<contributor
+ name="Javier Honrubia González"
+ location="Vigo, Spain"
+ description="various bug fixes; documentation"
+ trac="jhonrubia6"/>
 <contributor
  name="Daniel Gordon"
  work="researcher, IDA Center For Communications Research"
@@ -733,6 +1361,10 @@ Please keep the list in alphabetical order by last name!
  description="Sage's logic package"
  trac="goreckc"/>
 <contributor
+ name="Robert Goss"
+ location="University of Warwick, UK"
+ trac="robert_goss"/>
+<contributor
  name="Eric Gourgoulhon"
  work="CNRS research scientist, Laboratoire Univers et Théories"
  location="Observatoire de Paris, Meudon, France"
@@ -740,6 +1372,27 @@ Please keep the list in alphabetical order by last name!
  description="differentiable manifolds, graphics, ask.sagemath"
  trac="egourgoulhon"
  github="egourgoulhon"/>
+<contributor
+ name="Asier Eiguren Goyenechea"
+ url="https://www.ehu.eus/es/web/computational-many-body-theory/home"
+ github="eiguren"/>
+<contributor
+ name="Peter Graef"
+ location="University of Heidelberg"
+ url="http://www1.iwr.uni-heidelberg.de/groups/arith-geom/home/members/peter-graef/"
+ trac="pgraef"/>
+<contributor
+ name="Georg Grafendorfer"
+ location="ETH Zürich, Switzerland"
+ trac="ggrafendorfer"/>
+<contributor
+ name="Håkan Granath"
+ location="Karlstad University, Sweden"
+ trac="hgranath"/>
+<contributor
+ name="Daniel R. Grayson"
+ url="http://www.math.uiuc.edu/~dan/"
+ trac="dangrayson"/>
 <contributor
  name="Bruno Grenet"
  work="Université de Montpellier"
@@ -749,9 +1402,19 @@ Please keep the list in alphabetical order by last name!
  trac="bruno"
  github="bgrenet"/>
 <contributor
+ name="Bruno Grenet"
+ location="LIRMM, France"
+ url="http://www.lirmm.fr/~grenet/"
+ trac="bruno"/>
+<contributor
  name="Darij Grinberg"
  trac="darij"
  github="darijgr"/>
+<contributor
+ name="Darij Grinberg"
+ location="Drexel University, Philadelphia, USA"
+ url="http://www.cip.ifi.lmu.de/~grinberg/"
+ trac="darij"/>
 <contributor
  name="Jan Groenewald"
  work="IT Manager; African Institute for Mathematical Sciences"
@@ -761,7 +1424,7 @@ Please keep the list in alphabetical order by last name!
  gitlab="pipedream"
  description="Advocacy; Bug fixes; Build; Documentation; Feedback; Debian and Ubuntu support"/>
 <contributor
- name="Rob Gross" />
+ name="Rob Gross"/>
 <contributor
  name="Jason Grout"
  work="Postdoctoral fellow, Iowa State University"
@@ -776,6 +1439,11 @@ Please keep the list in alphabetical order by last name!
  description="graphics"
  trac="ryan"/>
 <contributor
+ name="Jason Grout"
+ location="Bloomberg"
+ url="http://jasongrout.org"
+ trac="jason"/>
+<contributor
  name="Mathieu Guay-Paquet"
  work="University of Waterloo"
  location="200 University Avenue, West Waterloo, ON N2L 3G1, Canada"
@@ -789,8 +1457,14 @@ Please keep the list in alphabetical order by last name!
  trac="goodok.alex"/>
 <contributor
  name="Emily Gunawan"
+ location="University of Connecticut"
  trac="egunawan"
  github="egunawan"/>
+<contributor
+ name="Alan J.X. Guo"
+ work="Tianjin University, China"
+ location="郭嘉祥"
+ trac="AJXGuo"/>
 <contributor
  name="Vipul Gupta"
  trac="vipul73921"
@@ -802,13 +1476,22 @@ Please keep the list in alphabetical order by last name!
  description="build system"
  trac="logix"/>
 <contributor
+ name="Harold Gutch"
+ location="Max Planck Institute for Dynamics and Self-Organization, Göttingen, Germany"
+ trac="logix"/>
+<contributor
  name="Jonathan Gutow"
  work="Chemistry Department, University of Wisconsin Oshkosh"
  location="Oshkosh, Wisconsin, USA"
  description="graphics"
  trac="gutow"
- github = "gutow"
+ github="gutow"
  url="https://cms.gutow.uwosh.edu/Gutow"/>
+<contributor
+ name="Jonathan Gutow"
+ location="Univ. Wisc. Oshkosh"
+ url="http://www.uwosh.edu/facstaff/gutow"
+ trac="gutow"/>
 <contributor
  name="Jose Guzman"
  work="Institute of Science and Technology Austria"
@@ -824,6 +1507,11 @@ Please keep the list in alphabetical order by last name!
  url="http://wwwu.aau.at/behackl/"
  github="behackl"/>
 <contributor
+ name="Hosein Hadipour"
+ location="University of Tehran, Iran"
+ url="https://github.com/hadipourh"
+ github="hadipourh"/>
+<contributor
  name="Anna Haensch"
  location="Duquesne University, Pittsburgh, Pennsylvania 15282"
  work="Assistant Professor, Duquesne University"
@@ -832,12 +1520,19 @@ Please keep the list in alphabetical order by last name!
  trac="annahaensch"
  github="annahaensch"/>
 <contributor
+ name="Kevin Halasz"
+ location="University of Puget Sound, Tacoma, WA"
+ trac="khalasz"/>
+<contributor
  name="Carlo Hamalainen"
  url="http://carlo-hamalainen.net"
  work="Eduard Čech Center, Charles University, Prague"
  location="Prague, Czech Republic"
  description="Latin squares; dancing links C++ code; bug fixes; bug reports"
  trac="carlohamalainen"/>
+<contributor
+ name="Alia Hamieh"
+ trac="aliashamieh"/>
 <contributor
  name="Marshall Hampton"
  work="Minnesota Duluth"
@@ -847,7 +1542,12 @@ Please keep the list in alphabetical order by last name!
  pix="./pix/people/mhampton.jpeg"
  trac="mhampton"/>
 <contributor
- name="Jon Hanke"
+ name="Frederic Han"
+ location="Université Paris 7"
+ url="http://webusers.imj-prg.fr/~frederic.han"
+ trac="frederichan"/>
+<contributor
+ name="Jonathan Hanke"
  work="UGA Faculty"
  location="Athens, GA, USA"
  description="quadratic forms package; quadratic_forms directory"
@@ -868,14 +1568,43 @@ Please keep the list in alphabetical order by last name!
  trac="mhansen"
  github="mwhansen"/>
 <contributor
+ name="David Møller Hansen"
+ location="DTU, Denmark"
+ url="http://www.mollerhansen.com"
+ trac="dmhansen"/>
+<contributor
+ name="Tobias Hansen"
+ location="Debian"
+ trac="thansen"/>
+<contributor
+ name="Neal Harris"
+ location="University of California, San Diego, USA"
+ url="http://math.ucsd.edu/~rnharris"
+ trac="nharris"/>
+<contributor
+ name="Martin Ames Harrison"
+ location="Grad, UCSB"
+ trac="martinharrison"/>
+<contributor
  name="Robert Harron"
+ location="University of Hawaiʻi at Mānoa"
+ url="http://www.math.hawaii.edu/~rharron/"
  trac="robharron"
  github="rharron"/>
 <contributor
  name="Bill Hart"
  work="University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
- description="complete implementation of quadratic sieve; created FLINT (fast arithmetic library)" />
+ description="complete implementation of quadratic sieve; created FLINT (fast arithmetic library)"/>
+<contributor
+ name="William Hart"
+ location="University of Warwick"
+ url="http://maths.warwick.ac.uk/~masfaw"
+ trac="wbhart"/>
+<contributor
+ name="Stephen Hartke"
+ location="University of Nebraska-Lincoln"
+ trac="hartke"/>
 <contributor
  name="David Harvey"
  work="NYU"
@@ -883,9 +1612,37 @@ Please keep the list in alphabetical order by last name!
  description="p-adic heights; arithmetic architecture; Bernoulli numbers mod p; FLINT; other random things"
  trac="dmharvey"/>
 <contributor
+ name="David Harvey"
+ location="University of New South Wales, NSW, Australia"
+ trac="dmharvey"/>
+<contributor
+ name="Jonathan Hayase"
+ trac="PythonNut"/>
+<contributor
+ name="Ivo Hedtke"
+ location="Martin-Luther-University Halle-Wittenberg, Germany"
+ url="http://users.informatik.uni-halle.de/~hedtke/"
+ trac="hedtke"/>
+<contributor
+ name="Loreno Heer"
+ trac="lorhe"/>
+<contributor
+ name="Jonas Heinrich"
+ location="KIT, Karlsruhe, Germany"
+ trac="onny"/>
+<contributor
  name="Reimundo Heluani"
  trac="heluani"
  github="heluani"/>
+<contributor
+ name="Ralf Hemmecke"
+ location="RISC, Johannes Kepler University Linz"
+ trac="hemmecke"/>
+<contributor
+ name="Anna Somoza Henares"
+ location="Universitat Politècnica de Catalunya, Spain / Universiteit Leiden, The Netherlands"
+ url="https://mat-web.upc.edu/people/anna.somoza/"
+ trac="annasomoza"/>
 <contributor
  name="Clemens Heuberger"
  work="Alpen-Adria-Universität Klagenfurt"
@@ -896,34 +1653,60 @@ Please keep the list in alphabetical order by last name!
  github="cheuberg"
  gitlab="cheuberg"/>
 <contributor
+ name="Clemens Heuberger"
+ location="Alpen-Adria-Universität Klagenfurt"
+ url="http://wwwu.aau.at/cheuberg"
+ trac="cheuberg"/>
+<contributor
  name="Jason B Hill"
  work="University of Colorado Boulder"
  location="Boulder, Colorado, USA"
  description="permutation groups; notebook; shell scripting"
- trac="jasonbhill" />
+ trac="jasonbhill"/>
 <contributor
- name="Leif Hille" />
+ name="Jason B. Hill"
+ location="SpotX Video Advertising, Broomfield, CO"
+ url="http://www.jasonbhill.com/"
+ trac="jasonbhill"/>
+<contributor
+ name="Leif Hille"/>
+<contributor
+ name="Ryan Hinton"
+ location="University of Virginia"
+ trac="rhinton"
+ github="rhinton"/>
 <contributor
  name="Florent Hivert"
  work="Professor, Laboratoire de Recherche en Informatique"
  location="University Paris-Sud, France"
  description="combinatorics (design and code); various bug fixes"
- trac="hivert" 
+ trac="hivert"
  github="hivert"/>
 <contributor
- name="Ryan Hinton"
- trac="rhinton"
- github="rhinton"/>
+ name="Anne M. Ho"
+ location="Coastal Carolina University"
+ trac="annemho"/>
+<contributor
+ name="John Hoebing"
+ location="UCSD, USA"
+ trac="john.hoebing"/>
 <contributor
  name="Neal Holtz"
  work="Carleton University"
  location="Ottawa, ON, Canada"
- description="Newton-Raphson Root Finding interact demonstration" />
+ description="Newton-Raphson Root Finding interact demonstration"/>
 <contributor
- name="Javier Honrubia González"
- location="Vigo, Spain"
- description="various bug fixes; documentation"
- trac="jhonrubia6" />
+ name="Daniel Georg Holzfeind"
+ location="Alpen-Adria-Universität Klagenfurt, Austria"
+ trac="daholzfeind"/>
+<contributor
+ name="Sam Hopkins"
+ location="University of Washington, Seattle"
+ trac="samhop"/>
+<contributor
+ name="Kevin Horton"
+ location="Ottawa, Canada"
+ trac="khorton"/>
 <contributor
  name="Golam Mortuza Hossain"
  work="Postdoctoral fellow, Indian Institute of Science Education and Research"
@@ -932,10 +1715,33 @@ Please keep the list in alphabetical order by last name!
  url="http:///www.math.unb.ca/~ghossain"
  trac="gmhossain"/>
 <contributor
+ name="Golam Mortuza Hossain"
+ location="UNB, Canada"
+ url="http://www.math.unb.ca/~ghossain/"
+ trac="gmhossain"/>
+<contributor
+ name="Asutosh Hota"
+ location="CET, Bhubaneswar, India"
+ trac="asutosh7hota"/>
+<contributor
+ name="Andrew Hou"
+ location="UW Undergrad"
+ trac="amhou"/>
+<contributor
  name="Sean Howe"
  work="University of Washington REU"
  location="University of Washington, WA, USA"
- description="Bruhat ordering of the symmetric group" />
+ description="Bruhat ordering of the symmetric group"/>
+<contributor
+ name="Johannes Huisman"
+ location="University of Brest, France"
+ url="http://pageperso.univ-brest.fr/~huisman/"
+ trac="johanneshuisman"/>
+<contributor
+ name="Jonathan Hunt"
+ location="University of Queensland, Australia"
+ url="http://www.42quarks.com"
+ trac="jjh"/>
 <contributor
  name="Alexander Hupfer"
  work="Universität Regensburg"
@@ -944,33 +1750,77 @@ Please keep the list in alphabetical order by last name!
  url="http://sonium.blogspot.com"
  trac="ahupfer"/>
 <contributor
+ name="Alexander Hupfer"
+ trac="ahupfer"/>
+<contributor
  name="Wilfried Huss"
  work="PhD student, Graz University of Technology"
  location="TU Gratz, Austria"
  description="calculus bug fixes; additions to the Maxima interface"
  trac="whuss"/>
 <contributor
-  name="Benjamin Hutz"
-  work="Assistant Professor of Mathematics, Florida Institute of Technology"
-  location="Melbourne, FL USA"
-  description="arithmetic dynamics; complex dynamics; projective/affine schemes"
-  url="http://www.fit.edu/~bhutz"
-  trac="bhutz"
-  github="bhutz"/>
+ name="Wilfried Huss"
+ location="Graz University of Technology, Austria"
+ trac="whuss"/>
+<contributor
+ name="Benjamin Hutz"
+ work="Assistant Professor of Mathematics, Florida Institute of Technology"
+ location="Melbourne, FL USA"
+ description="arithmetic dynamics; complex dynamics; projective/affine schemes"
+ url="http://www.fit.edu/~bhutz"
+ trac="bhutz"
+ github="bhutz"/>
+<contributor
+ name="Brian Hwang"
+ location="Caltech"
+ url="http://hwang.caltech.edu/"
+ trac="bwh"/>
 <contributor
  name="Tobenna Peter Igwe"
  trac="ptigwe"
  github="ptigwe"/>
+<contributor
+ name="Tobenna Peter Igwe"
+ location="University of Liverpool"
+ url="http://www.csc.liv.ac.uk/~ptigwe"
+ trac="ptigwe"/>
+<contributor
+ name="Mee Seong Im"
+ location="United States Military Academy"
+ url="https://sites.google.com/site/meeseongim/"
+ trac="meeseongim"/>
+<contributor
+ name="Engineering College Palakkad, Kerala, India"
+ url="Govt."
+ trac="CharlsMathew"/>
+<contributor
+ name="Sorina Ionica"
+ location="Université de Picardie"
+ trac="ionisorus"/>
+<contributor
+ name="Evgeniya Ishchukova"
+ location="Southern Federal University, Russia"
+ trac="jekky82"/>
+<contributor
+ name="Paul Ivanov"
+ location="UC Berkeley"
+ url="http://pirsquared.org"
+ trac="pi"/>
 <contributor
  name="Hamish Ivey-Law"
  work="Université de la Méditerranée, France; University of Sydney, Australia"
  description="bug fixes"
  trac="hlaw"/>
 <contributor
+ name="Robert Jacobson"
+ location="Roger Williams University, Bristol, RI"
+ url="https://rljacobson.github.io/"
+ trac="RobertJacobson"/>
+<contributor
  name="Naqi Jaffery"
  work="UCSD undergraduate student"
  location="San Diego, CA 92093, USA"
- description="Examples" />
+ description="Examples"/>
 <contributor
  name="Lokesh Jain"
  trac="jlokesh"
@@ -983,19 +1833,33 @@ Please keep the list in alphabetical order by last name!
  trac="amitjamadagni"
  github="amitjamadagni"/>
 <contributor
+ name="Scott Janke"
+ trac="sjanke"/>
+<contributor
+ name="David Jao"
+ location="University of Waterloo, Canada"
+ url="http://www.math.uwaterloo.ca/~djao/"
+ trac="djao"/>
+<contributor
  name="Peter Jeremy"
  location="Sydney, Australia"
  description="porting packages to FreeBSD"
- trac="pjeremy" />
+ trac="pjeremy"/>
+<contributor
+ name="Peter Jeremy"
+ trac="pjeremy"/>
 <contributor
  name="Jonas Jermann"
  trac="jj"
  github="jjermann"/>
 <contributor
+ name="Jonas Jermann"
+ trac="jj"/>
+<contributor
  name="Peter Jipsen"
  work="Professor, Chapman University"
  location="Orange, California, USA"
- description="posets package" 
+ description="posets package"
  trac="jipsen"/>
 <contributor
  name="Fredrik Johansson"
@@ -1006,6 +1870,11 @@ Please keep the list in alphabetical order by last name!
  github="fredrik-johansson"
  trac="fredrik.johansson"/>
 <contributor
+ name="John St. John"
+ location="University of California Santa Cruz, Santa Cruz, CA"
+ url="http://www.johnstjohn.com"
+ trac="jstjohn"/>
+<contributor
  name="Niles Johnson"
  location="Athens, Clarke County, Georgia 30602, United States"
  description="algebra; basic arithmetic; documentation; symbolics"
@@ -1013,10 +1882,19 @@ Please keep the list in alphabetical order by last name!
  trac="niles"
  github="nilesjohnson"/>
 <contributor
+ name="Niles Johnson"
+ location="Ohio State University, USA"
+ url="http://www.nilesjohnson.net"
+ trac="niles"/>
+<contributor
  name="Timo Jolivet"
  work="PhD student: LIAFA, Paris, France; University of Turku, Finland"
  location="Turku, Finland"
  description="combinatorics"
+ url="http://jolivet.org/timo/"
+ trac="tjolivet"/>
+<contributor
+ name="Timo Jolivet"
  url="http://jolivet.org/timo/"
  trac="tjolivet"/>
 <contributor
@@ -1028,9 +1906,26 @@ Please keep the list in alphabetical order by last name!
  trac="benjaminfjones"
  github="benjaminfjones"/>
 <contributor
- name="Søren Fuglede Jørgensen"
- trac="fuglede"
- github="fuglede"/>
+ name="Benjamin Jones"
+ location="University of Wisconsin-Stout"
+ url="http://www3.uwstout.edu/faculty/jonesbe"
+ trac="benjaminfjones"/>
+<contributor
+ name="Brant Jones"
+ url="http://educ.jmu.edu/~jones3bc/"
+ trac="brant"/>
+<contributor
+ name="Anders Jonsson"
+ location="Umeå University, Sweden"
+ trac="AJonsson"/>
+<contributor
+ name="Mark Jordan"
+ location="Undergraduate at University of Washington"
+ trac="mjordan7"/>
+<contributor
+ name="Matthieu Josuat-Vergès"
+ location="Université Paris-Est Marne-la-Vallée"
+ trac="josuat"/>
 <contributor
  name="David Joyner"
  work="Professor, US Naval Academy (retired)"
@@ -1039,13 +1934,32 @@ Please keep the list in alphabetical order by last name!
  trac="wdj"
  github="wdjoyner"/>
 <contributor
+ name="Tom Judson"
+ location="Stephen F. Austin State University, Nacogdoches TX, USA"
+ url="http://faculty.sfasu.edu/judsontw/"
+ trac="twjudson"/>
+<contributor
+ name="Søren Fuglede Jørgensen"
+ trac="fuglede"
+ github="fuglede"/>
+<contributor
+ name="Syamkrishnan C K"
+ trac="syam.in"/>
+<contributor
+ name="Tevin Joseph K.O"
+ trac="tevinjoseph"/>
+<contributor
  name="Michael Kallweit"
  url="http://www.ruhr-uni-bochum.de/lmi/kallweit/"
  work="Ruhr-Universität Bochum, Deutschland"
  location="Bochum, Germany"
  description="Graph Theory fixes; miscellaneous bug fixes"
- pix="./pix/people/michael_kallweit.jpg" 
+ pix="./pix/people/michael_kallweit.jpg"
  trac="vgermrk"/>
+<contributor
+ name="Tomáš Kalvoda"
+ location="Czech Technical University in Prague, Czech Republic"
+ trac="kalvotom"/>
 <contributor
  name="Josh Kantor"
  url="http://www.math.washington.edu/~jkantor/"
@@ -1054,9 +1968,24 @@ Please keep the list in alphabetical order by last name!
  description="3-D interactive graphics (via soya3d); integrating Fortran software"
  trac="jkantor"/>
 <contributor
+ name="Jeff Kantor"
+ location="University of Notre Dame"
+ trac="jeff.kantor"/>
+<contributor
  name="Trevor Karn"
  trac="tkarn"
  github="trevorkarn"/>
+<contributor
+ name="Marcin Kasperski"
+ url="http://mekk.waw.pl"
+ trac="mkasperski"/>
+<contributor
+ name="Alexander Kass"
+ trac="alexjkass"/>
+<contributor
+ name="Manuel Kauers"
+ url="http://www.kauers.de"
+ trac="mkauers"/>
 <contributor
  name="Timo Kaufmann"
  trac="timokau"
@@ -1069,12 +1998,33 @@ Please keep the list in alphabetical order by last name!
  trac="kedlaya"
  github="kedlaya"/>
 <contributor
+ name="Kiran Kedlaya"
+ location="UCSD"
+ url="http://math.mit.edu/~kedlaya"
+ trac="kedlaya"/>
+<contributor
+ name="Jan Keitel"
+ location="Max-Planck-Institute for Physics, Germany"
+ trac="jkeitel"/>
+<contributor
+ name="Beni Keller"
+ trac="navigium"/>
+<contributor
  name="Lloyd Kilford"
  work="Research Fellow, University of Bristol"
  location="Tyndall Avenue, Bristol BS8 1TH, UK"
  description="bug fix; modular forms"
  url="http://www.maths.bris.ac.uk/~maljpk"
  trac="ljpk"/>
+<contributor
+ name="Kilian Kilger"
+ location="University of Heidelberg"
+ url="http://www.mathi.uni-heidelberg.de/~kilian"
+ trac="kkilger"/>
+<contributor
+ name="Tasha J. Kim"
+ location="Brown University"
+ trac="tashakim"/>
 <contributor
  name="Simon King"
  work="Friedrich-Schiller-Universität Jena"
@@ -1085,7 +2035,7 @@ Please keep the list in alphabetical order by last name!
  github="simon-king-jena"/>
 <contributor
  name="Keshav Kini"
- work="Graduate Student, UT Austin"
+ work="Graduate Student, University of Texas at Austin"
  location="Austin, USA"
  description="documentation"
  url="http://www1.spms.ntu.edu.sg/~krkini/"
@@ -1102,15 +2052,22 @@ Please keep the list in alphabetical order by last name!
  description="documentation; graph theory"
  trac="ekirkman"/>
 <contributor
+ name="Rado Kirov"
+ trac="rkirov"/>
+<contributor
  name="Vincent Klein"
+ location="LaBRI, Bordeaux, France"
  trac="vklein"
  github="vinklein"/>
 <contributor
  name="Jonathan Kliem"
+ location="Freie Universität Berlin"
+ url="https://www.mi.fu-berlin.de/math/groups/discgeom/members/kliem.html"
  trac="kliem"
  github="kliem"/>
 <contributor
  name="Timo Kluck"
+ location="Utrecht University, Netherlands"
  trac="tkluck"
  github="tkluck"/>
 <contributor
@@ -1122,13 +2079,10 @@ Please keep the list in alphabetical order by last name!
  trac="vinceknight"
  github="drvinceknight"/>
 <contributor
-    name="Matthias Köppe"
-    work="Professor, UC Davis"
-    location="Davis, CA, USA"
-    description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022)"
-    url="https://www.math.ucdavis.edu/~mkoeppe/"
-    trac="mkoeppe"
-    github="mkoeppe"/>
+ name="Vince Knight"
+ location="Cardiff, UK"
+ url="https://vknight.org/"
+ trac="vinceknight"/>
 <contributor
  name="David Kohel"
  work="Professor, University of Sydney"
@@ -1136,18 +2090,51 @@ Please keep the list in alphabetical order by last name!
  description="substantial design discussion and code"
  trac="kohel"/>
 <contributor
-   name="Przemysław Koprowski"
-   work="University of Silesia, Faculty of Mathematics"
-   location="Poland, Katowice"
-   description="(computational) theory of quadratic forms; real algebraic geometry; computational number theory"
-   trac="pkoprowski" />
+ name="David Kohel"
+ location="Institut de Mathematiques de Luminy, Marseille"
+ url="http://iml.univ-mrs.fr/~kohel"
+ trac="kohel"/>
+<contributor
+ name="Karen T. Kohl"
+ location="University of Southern Mississippi - Gulf Coast, Long Beach, MS"
+ url="http://www.karentkohl.org/"
+ trac="ktkohl"/>
+<contributor
+ name="Michael Kohlhase"
+ location="Jacobs University Bremen"
+ url="http://kwarc.info/kohlhase"
+ trac="mkohlhase"/>
+<contributor
+ name="Matthias Köppe"
+ work="Professor, UC Davis"
+ location="Davis, CA, USA"
+ description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022)"
+ url="https://www.math.ucdavis.edu/~mkoeppe/"
+ trac="mkoeppe"
+ github="mkoeppe"/>
+<contributor
+ name="Przemysław Koprowski"
+ work="University of Silesia, Faculty of Mathematics"
+ location="Poland, Katowice"
+ description="(computational) theory of quadratic forms; real algebraic geometry; computational number theory"
+ trac="pkoprowski"/>
 <contributor
  name="Ted Kosan"
  location="Ohio, USA"
  work="Shawnee State University"
  description="Sage/Java/Applet integration; Sage for newbies book; marketing"
  trac="tkosan"/>
-<contributor name="Daniel Krenn"
+<contributor
+ name="Michiel Kosters"
+ location="Universiteit Leiden, The Netherlands"
+ url="http://www.math.leidenuniv.nl/~mkosters"
+ trac="mkosters"/>
+<contributor
+ name="Richard B. Kreckel"
+ url="http://www.ginac.de/~kreckel/"
+ trac="rbk"/>
+<contributor
+ name="Daniel Krenn"
  work="TU Graz, Austria"
  location="Graz, Austria"
  description="misc; bug fixes"
@@ -1155,12 +2142,29 @@ Please keep the list in alphabetical order by last name!
  trac="dkrenn"
  github="dkrenn"/>
 <contributor
+ name="Daniel Krenn"
+ location="Alpen-Adria-Universität Klagenfurt"
+ trac="dkrenn"/>
+<contributor
+ name="Jakob Kroeker"
+ location="University of Hannover"
+ url="http://www.iag.uni-hannover.de/kroeker.html"
+ trac="jakobkroeker"/>
+<contributor
  name="Sara Kropf"
  work="Alpen-Adria-Universität Klagenfurt"
  location="Klagenfurt, Austria"
  description="Finite State Machines"
  trac="skropf"
  url="http://wwwu.aau.at/skropf/"/>
+<contributor
+ name="David Krumm"
+ location="University of Georgia, USA"
+ url="http://www.math.uga.edu/~dkrumm/"
+ trac="dkrumm"/>
+<contributor
+ name="Christian Kuper"
+ trac="christiankuper"/>
 <contributor
  name="Ross Kyprianou"
  work="PhD student, The University of Melbourne"
@@ -1176,6 +2180,11 @@ Please keep the list in alphabetical order by last name!
  trac="jipilab"
  github="jplab"/>
 <contributor
+ name="Jean-Philippe Labbé"
+ location="BMS-Freie Universitat, Berlin, Germany"
+ url="http://page.mi.fu-berlin.de/labbe"
+ trac="jipilab"/>
+<contributor
  name="Sébastien Labbé"
  work="CNRS researcher, LaBRI, Université de Bordeaux"
  location="LaBRI, Université de Bordeaux, Bordeaux, France"
@@ -1184,6 +2193,23 @@ Please keep the list in alphabetical order by last name!
  trac="slabbe"
  github="seblabbe"/>
 <contributor
+ name="Patxi Laborde-Zubieta"
+ location="LaBRI, University of Bordeaux, France"
+ trac="patxiku"/>
+<contributor
+ name="William Laffin"
+ location="Michigan Technological University"
+ url="http://www.mathlab.mtu.edu/~wjlaffin/"
+ trac="wjlaffin"/>
+<contributor
+ name="Nadia Lafrenière"
+ location="Dartmouth College, Hanover, NH, USA"
+ url="https://nadialafreniere.github.io/home.html"
+ trac="nadialafreniere"/>
+<contributor
+ name="Tim Lahey"
+ trac="tjlahey"/>
+<contributor
  name="Yann Laigle-Chapuy"
  work="PhD student, INRIA"
  location="Rocquencourt, Paris, France"
@@ -1191,16 +2217,56 @@ Please keep the list in alphabetical order by last name!
  url="http://www-rocq.inria.fr/secret/Yann.Laigle-Chapuy"
  trac="ylchapuy"/>
 <contributor
+ name="Tanja Lange"
+ location="Technische Universiteit Eindhoven"
+ url="https://www.hyperelliptic.org/tanja/"
+ trac="tanja"/>
+<contributor
  name="Lukáš Lánský"
  work="Charles University, Prague"
  location="Hradec Kralove, Czech Republic"
  trac="brunellus"
  url="http://kam.mff.cuni.cz/~lansky/"
- description="graph theory; combinatorial game theory" />
+ description="graph theory; combinatorial game theory"/>
+<contributor
+ name="Lukáš Lánský"
+ location="MFF UK, Prague"
+ url="http://kam.mff.cuni.cz/~lansky/"
+ trac="brunellus"/>
+<contributor
+ name="Mélodie Lapointe"
+ location="LaCIM, Université du Québec à Montréal, Canada"
+ trac="mlapointe"/>
+<contributor
+ name="Greg Laun"
+ location="University of Maryland"
+ trac="glaun"
+ github="greglaun"/>
 <contributor
  name="Aaron Lauve"
+ location="Loyola University Chicago"
+ url="http://webpages.math.luc.edu/~lauve/"
  trac="alauve"
  github="alauve"/>
+<contributor
+ name="Syed ahmad Lavasani"
+ location=" University of Calgary, Canada"
+ url="http://math.ucalgary.ca/profiles/seyed-lavasani"
+ trac="sydahmad"/>
+<contributor
+ name="Felix Lawrence"
+ location="University of Sydney, Australia"
+ trac="flawrence"/>
+<contributor
+ name="Andrea Lazzarotto"
+ location="Student at Ca' Foscari University, Venice, Italy"
+ url="http://andrealazzarotto.com/"
+ trac="lazza"/>
+<contributor
+ name="Thierry Lecroq"
+ location="LITIS EA 4108, University of Rouen, France"
+ url="http://monge.univ-mlv.fr/~lecroq"
+ trac="lecroq"/>
 <contributor
  name="Kwankyu Lee"
  work="Chosun University"
@@ -1208,6 +2274,14 @@ Please keep the list in alphabetical order by last name!
  description="coding theory; algebraic curves; documentation; bug fixes"
  trac="klee"
  github="kwankyu"/>
+<contributor
+ name="Kyu-Hwan Lee"
+ location="University of Connecticut, Storrs, CT"
+ trac="khlee"/>
+<contributor
+ name="Jerome Lefebvre"
+ location="University of British Columbia, Vancouver"
+ trac="jlefebvre"/>
 <contributor
  name="Samuel Lelièvre"
  work="Laboratoire de mathématique d'Orsay, UMR 8628 CNRS / Université Paris-Sud"
@@ -1217,9 +2291,23 @@ Please keep the list in alphabetical order by last name!
  trac="slelievre"
  github="slel"/>
 <contributor
+ name="Samuel Lelièvre"
+ url="http://www.math.u-psud.fr/~lelievre"
+ trac="slelievre"/>
+<contributor
+ name="Mariah Lenox"
+ trac="mariah"/>
+<contributor
+ name="Alex Leone"
+ location="UW"
+ trac="acleone"/>
+<contributor
  name="Leif Leonhardy"
  trac="leif"
  github="nexttime"/>
+<contributor
+ name="Leif Leonhardy"
+ trac="leif"/>
 <contributor
  name="Julien Leroy"
  work="LAMFA, Université de Picardie Jules Verne"
@@ -1227,12 +2315,47 @@ Please keep the list in alphabetical order by last name!
  description="combinatorics"
  trac="jleroy"/>
 <contributor
+ name="Julien Leroy"
+ location="Université de Picardie Jules Verne, France"
+ trac="jleroy"/>
+<contributor
+ name="Stefano Leucci"
+ location="Italy"
+ trac="steven"/>
+<contributor
+ name="Stephen Lewis"
+ location="University of Washington, Seattle"
+ url="http://math.washington.edu/~stedalew"
+ trac="slewis"/>
+<contributor
+ name="Kelvin Li"
+ location="Undergraduate at UC Berkeley"
+ trac="ltw"/>
+<contributor
+ name="Hang Liao"
+ location="Carnegie Mellon University, USA"
+ trac="ikaros"/>
+<contributor
  name="Richard Lindner"
  work="Technische Universität Darmstadt"
  location="Karolinenplatz 5, 64289 Darmstadt, Germany"
  description="cryptography"
  url="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/rlindner.html"
  trac="rlindner"/>
+<contributor
+ name="Sebastian Lindner"
+ location="University of Calgary"
+ trac="slindner"/>
+<contributor
+ name="Gabriel F. Lipnik"
+ location="Graz University of Technology, Austria"
+ url="https://www.gabriellipnik.at"
+ trac="galipnik"/>
+<contributor
+ name="Robert Lipshitz"
+ location="Columbia University, New York, NY"
+ url="http://math.columbia.edu/~lipshitz/"
+ trac="lipshitz"/>
 <contributor
  name="David Loeffler"
  work="University of Warwick"
@@ -1242,23 +2365,52 @@ Please keep the list in alphabetical order by last name!
  trac="davidloeffler"
  github="loefflerd"/>
 <contributor
-  name="David Lowry-Duda"
-  work="ICERM"
-  location="ICERM, 121 South Main Street, Providence, RI 02903, USA"
-  description="analytic number theory; complex function visualization"
-  url="https://davidlowryduda.com"
-  trac="DavidLowry"
-  github="davidlowryduda"/>
+ name="David Loeffler"
+ location="University of Warwick, UK"
+ url="http://www2.warwick.ac.uk/fac/sci/maths/people/staff/david_loeffler/"
+ trac="davidloeffler"/>
 <contributor
- name="Greg Laun"
- trac="glaun"
- github="greglaun"/>
+ name="Carlos Lopez"
+ location="Del Valle University, Guatemala"
+ trac="kmels"/>
+<contributor
+ name="Thomas Loruenser"
+ location="AIT Austrian Institute of Technology, Vienna, Austria"
+ trac="loruenser"/>
+<contributor
+ name="Sami Losoi"
+ location="Espoo, Finland"
+ trac="slosoi"/>
+<contributor
+ name="David Lowry-Duda"
+ work="ICERM"
+ location="ICERM, 121 South Main Street, Providence, RI 02903, USA"
+ description="analytic number theory; complex function visualization"
+ url="https://davidlowryduda.com"
+ trac="DavidLowry"
+ github="davidlowryduda"/>
+<contributor
+ name="Richard L Lozes"
+ trac="rllozes"/>
+<contributor
+ name="Frank Lübeck"
+ location="RWTH Aachen"
+ url="http://www.math.rwth-aachen.de/~Frank.Luebeck/"
+ trac="luebeck"/>
 <contributor
  name="David Lubicz"
  trac="lubicz"
  github="dlubicz"/>
 <contributor
+ name="Arthur Lubovsky"
+ trac="alubovsky"/>
+<contributor
+ name="David Lucas"
+ location="Inria Saclay - LIX, France"
+ trac="dlucas"/>
+<contributor
  name="Wilfried Luebbe"
+ location="Germany"
  trac="wluebbe"
  github="wluebbe"/>
 <contributor
@@ -1266,24 +2418,81 @@ Please keep the list in alphabetical order by last name!
  trac="klui"
  github="kevinywlui"/>
 <contributor
-  name="Sverre Lunøe-Nielsen"
-  work="University of Agder, Dept. of Engineering Sciences"
-  location="Jon Lilletuns vei, Grimstad, Norway"
-  description="Modules over the Steenrod algebra"
-  url="https://www.uia.no/en/kk/profile/sverreal"
-  github="sverre320"/>
+ name="Sverre Lunøe-Nielsen"
+ work="University of Agder, Dept. of Engineering Sciences"
+ location="Jon Lilletuns vei, Grimstad, Norway"
+ description="Modules over the Steenrod algebra"
+ url="https://www.uia.no/en/kk/profile/sverreal"
+ github="sverre320"/>
+<contributor
+ name="Sverre Lunøe-Nielsen"
+ location="University of Agder, Norway"
+ github="sverre320"/>
+<contributor
+ name="Ximin Luo"
+ url="https://github.com/infinity0"
+ trac="infinity0"/>
+<contributor
+ name="Matt Macauley"
+ location="Clemson University"
+ url="http://www.math.clemson.edu/~macaule/"
+ trac="mattmacauley"/>
+<contributor
+ name="Kamalakshya Mahatab"
+ location="Institute of Mathematical Sciences, Chennai, India"
+ trac="mkamalakshya"/>
 <contributor
  name="Rusydi H. Makarim"
  trac="ruhm"
  github="rusydi"/>
 <contributor
+ name="Rusydi H. Makarim"
+ description="Boolean functions and S-Boxes"
+ url="https://rusydi.makarim.id"
+ trac="ruhm"
+ github="rusydi"/>
+
+<contributor
+ name="Rusydi H. Makarim"
+ location="Universiteit Leiden and CWI Cryptology Group"
+ url="http://pub.math.leidenuniv.nl/~makarimrh"
+ trac="ruhm"/>
+<contributor
+ name="Olivier Mallet"
+ location="Université de Rouen, France"
+ trac="mallet"/>
+<contributor
  name="Marco Mancini"
  trac="mmancini"
  github="man74cio"/>
 <contributor
-  name="Jori Mäntysalo"
-  trac="jmantysalo"
-  github="jm58660"/>
+ name="Marco Mancini"
+ location="Observatoire de Paris, France"
+ trac="mmancini"/>
+<contributor
+ name="Scott Mancuso"
+ location="Brigham Young University, Utah, USA"
+ url="https://math.byu.edu/home/node/133"
+ trac="scmancuso"/>
+<contributor
+ name="Michelle Manes"
+ location="University of Hawaii at Manoa"
+ url="http://math.hawaii.edu/~mmanes"
+ trac="mmanes"/>
+<contributor
+ name="Brian Manion"
+ location="University of Washington, Seattle"
+ trac="bmanion"/>
+<contributor
+ name="Brian Manion"
+ location="University of Washington, Seattle"
+ trac="Zaxis"/>
+<contributor
+ name="Jori Mäntysalo"
+ location="University of Tampere, Finland"
+ url="http://www.uta.fi/~jm58660"
+ trac="jmantysalo"
+ github="jm58660"/>
 <contributor
  name="Miguel Marco"
  location="Zaragoza, Spain"
@@ -1310,11 +2519,19 @@ Please keep the list in alphabetical order by last name!
  name="Jason Martin"
  work="James Madison University"
  location="Harrisonburg, VA, USA"
- description="GMP assembly code improvements; linear algebra; work on Sage 64-bit build" />
+ description="GMP assembly code improvements; linear algebra; work on Sage 64-bit build"/>
+<contributor
+ name="Robin Martinjak"
+ trac="rmartinjak"/>
 <contributor
  name="Marc Masdeu"
  trac="mmasdeu"
  github="mmasdeu"/>
+<contributor
+ name="Marc Masdeu"
+ location="Columbia University, NY"
+ url="http://math.columbia.edu/~masdeu"
+ trac="mmasdeu"/>
 <contributor
  name="Alexandre Blondin Massé"
  work="Associate professor; Laboratoire de combinatoire et d'informatique mathématique (LaCIM), Université du Québec à Montréal; Laboratoire de mathématique (LAMA), Université de Savoie"
@@ -1324,24 +2541,42 @@ Please keep the list in alphabetical order by last name!
  url="http://www.lacim.uqam.ca/~blondin/"/>
 <contributor
  name="Paul Masson"
+ location="San Francisco, CA"
  trac="paulmasson"
  github="paulmasson"/>
+<contributor
+ name="Erik Massop"
+ trac="emassop"/>
+<contributor
+ name="Mitja Mastnak"
+ url="http://cs.smu.ca/~mmastnak"
+ trac="mmastnak"/>
 <contributor
  name="Andrew Mathas"
  description="algebraic combinatorics; partitions; tableaux; Specht modules; ..."
  work="University of Sydney"
  location="Sydney, Australia"
  url="http://www.maths.usyd.edu.au/u/mathas/"
- trac="andrew.mathas" />
+ trac="andrew.mathas"/>
 <contributor
- name="Arpit Merchant"
- trac="arpitdm"
- github="arpitdm"/>
+ name="Gura Matus"
+ location="Czech Technical University, Prague"
+ trac="guramatus"/>
+<contributor
+ name="Alasdair McAndrew"
+ location="Australia"
+ url="http://amca01.wordpress.com"
+ trac="amca01"/>
 <contributor
  name="Peter McNamara"
  work="Department of Mathematics, Bucknell University"
  location="Lewisburg, PA 17837, USA"
  description="combinatorics"
+ url="http://www.facstaff.bucknell.edu/pm040"
+ trac="pmcnamara"/>
+<contributor
+ name="Peter McNamara"
+ location="Bucknell University, Pennsylvania, USA"
  url="http://www.facstaff.bucknell.edu/pm040"
  trac="pmcnamara"/>
 <contributor
@@ -1354,6 +2589,12 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Chase Meadors"
  github="cemulate"/>
+<contributor
+ name="Arpit Merchant"
+ location="International Institute of Information Technology, Hyderabad, India"
+ url="https://researchweb.iiit.ac.in/~arpit.merchant/"
+ trac="arpitdm"
+ github="arpitdm"/>
 <contributor
  name="Jason Merrill"
  work="Yale University"
@@ -1369,6 +2610,14 @@ Please keep the list in alphabetical order by last name!
  url="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html"
  trac="mmeulien"/>
 <contributor
+ name="Matthias Meulien"
+ url="http://unilim.fr/pages_perso/matthias.meulien"
+ trac="mmeulien"/>
+<contributor
+ name="Lucas Meyers"
+ location="Louisiana State University"
+ trac="lmeyers"/>
+<contributor
  name="Marc Mezzarobba"
  work="researcher, CNRS"
  location="LIX, 1 rue Honoré d'Estienne d'Orves, 91120 Palaiseau, France"
@@ -1382,6 +2631,11 @@ Please keep the list in alphabetical order by last name!
  trac="pelegm"
  github="pelegm"/>
 <contributor
+ name="Jean Michel"
+ location="University Paris VII, France"
+ url="http://www.math.jussieu.fr/~jmichel"
+ trac="jmichel"/>
+<contributor
  name="Robert Miller"
  url="http://www.rlmiller.org/"
  work="graduate student, University of Washington"
@@ -1390,10 +2644,31 @@ Please keep the list in alphabetical order by last name!
  trac="rlm"
  github="rlmill"/>
 <contributor
+ name="Robert Miller"
+ location="MSRI, Berkeley, CA"
+ url="http://rlmiller.org"
+ trac="rlm"/>
+<contributor
+ name="Rebecca Lauren Miller"
+ trac="rlmiller"/>
+<contributor
+ name="Victor Miller"
+ location="Princeton, NJ"
+ url="http://sage.math.washington.edu/home/victor"
+ trac="victor"/>
+<contributor
+ name="Luis F. Villegas, Minnesota"
+ location="Just a SAGE aficionado"
+ trac="Loufer"/>
+<contributor
  name="Kate Minola"
  work="University of Maryland"
  location="College Park, MD, USA"
- description="improvement on building Sage components" />
+ description="improvement on building Sage components"/>
+<contributor
+ name="Greg Minshall"
+ location="University of Michigan"
+ trac="minshall"/>
 <contributor
  name="Moritz Minzlaff"
  work="PhD student, Technische Universität Berlin"
@@ -1402,11 +2677,19 @@ Please keep the list in alphabetical order by last name!
  trac="minz"
  url="http://www.math.tu-berlin.de/~minzlaff/"/>
 <contributor
+ name="Moritz Minzlaff"
+ url="http://www.minzlaff.de/moritz/math/"
+ trac="minz"/>
+<contributor
  name="Joel Mohler"
  work="Lehigh"
  location="Bethlehem, PA, USA"
  description="extensive improvements all over; especially to basic arithmetic, number theory; etc"
  trac="jbmohler"/>
+<contributor
+ name="Hartmut Monien"
+ location="Universität Bonn, Germany"
+ trac="hmonien"/>
 <contributor
  name="Thierry Monteil"
  work="research fellow, CNRS"
@@ -1435,7 +2718,7 @@ Please keep the list in alphabetical order by last name!
  trac="moretti"
  github="bobmoretti"/>
 <contributor
- name="Rich Morin" />
+ name="Rich Morin"/>
 <contributor
  name="Guillaume Moroz"
  work="LIP6/INRIA"
@@ -1444,20 +2727,49 @@ Please keep the list in alphabetical order by last name!
  trac="gmoroz"/>
 <contributor
  name="Dave Morris"
- github="DaveWitteMorris"
  work="University of Lethbridge, Canada"
-/>
+ trac="simon"
+ github="DaveWitteMorris"/>
+<contributor
+ name="Hiroto Mulia"
+ location="NTU"
+ trac="hirotowu"/>
+<contributor
+ name="Peter Müller"
+ location="Universität Würzburg, Germany"
+ url="http://www.mathematik.uni-wuerzburg.de/~mueller"
+ trac="pmueller"/>
+<contributor
+ name="Riccardo Murri"
+ location="GC3, University of Zurich"
+ url="http://www.gc3.uzh.ch/people/rm"
+ trac="riccardomurri"/>
 <contributor
  name="Gregg Musiker"
  work="graduate student, UCSD"
  location="San Diego, CA 92093, USA"
- description="Maple interface; documentation; design" />
+ description="Maple interface; documentation; design"/>
+<contributor
+ name="Gregg Musiker"
+ location="University of Minnesota"
+ trac="gmoose05"/>
+<contributor
+ name="Andrew Musselman"
+ trac="akm"/>
+<contributor
+ name="Émile Nadeau"
+ location="Reykjavik University"
+ trac="enadeau"/>
 <contributor
  name="Tobias Nagel"
  work="Universität Mainz"
  location="55122, Mainz, Germany"
  description="point counting code"
  trac="tnagel"/>
+<contributor
+ name="Akshar Nair"
+ location="University of Bath"
+ trac="anair"/>
 <contributor
  name="Brett Nakashima"
  work="University of Washington"
@@ -1479,17 +2791,17 @@ Please keep the list in alphabetical order by last name!
  url="https://nullhomotopie.de"
  trac="cnassau"/>
 <contributor
+ name="Vincent Neiger"
+ location="Limoges, France"
+ url="https://people.compute.dtu.dk/vinn/"
+ trac="vneiger"/>
+<contributor
+ name="Vincent Neri"
+ trac="Vincent.Neri"/>
+<contributor
  name="Hoa Nguyen"
  trac="hoanguyen"
  github="takekoputa"/>
-<contributor
- name="Johan Sebastian Rosenkilde Nielsen"
- work="Technical University of Denmark"
- location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark"
- description="algebra; documentation; miscellaneous"
- url="http://www.mat.dtu.dk/English/Service/Phonebook.aspx&#63;lg=showcommon&amp;id=27218&amp;type=person"
- trac="jsrn"
- github="johanrosenkilde"/>
 <contributor
  name="Minh Van Nguyen"
  location="Melbourne, Australia"
@@ -1497,23 +2809,49 @@ Please keep the list in alphabetical order by last name!
  url="http://sage.math.washington.edu/home/mvngu/"
  trac="mvngu"/>
 <contributor
+ name="Johan Sebastian Rosenkilde Nielsen"
+ work="Technical University of Denmark"
+ location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark"
+ description="algebra; documentation; miscellaneous"
+ url="http://www.mat.dtu.dk/English/Service/Phonebook.aspx?lg=showcommon&amp;id=27218&amp;type=person"
+ trac="jsrn"
+ github="johanrosenkilde"/>
+<contributor
+ name="Jordan Noble"
+ location="Imperial College London"
+ trac="jn610"/>
+<contributor
  name="Jesper Noordsij"
+ location="Universiteit Leiden, The Netherlands"
  trac="jnoordsij"
  github="jnoordsij"/>
 <contributor
-  name="Andrey Novoseltsev"
-  location="Edmonton, Canada"
-  description="SageMathCell; toric geometry"
-  trac="novoselt"
-  github="novoselt"/>
+ name="Andy Novocin"
+ location="University of Waterloo"
+ url="http://andy.novocin.com/pro"
+ trac="anovocin"/>
+<contributor
+ name="Andrey Novoseltsev"
+ location="University of Alberta, Edmonton, Canada"
+ description="SageMathCell; toric geometry"
+ trac="novoselt"
+ github="novoselt"/>
+<contributor
+ name="Yasuhide Numata"
+ location="Shinshu University, Japan"
+ trac="numata"/>
 <contributor
  name="Sebastian Oehms"
  work="S&amp;P Computersysteme GmbH"
  location="Stuttgart, Germany"
  description="algebra; knot theory; interfaces"
- trac="soehms"
  url="https://soehms.github.io/"
+ trac="soehms"
  github="soehms"/>
+<contributor
+ name="Can Ozan Oğuz"
+ url="https://dornsife.usc.edu/canozanoguz"
+ github="canozanoguz"/>
 <contributor
  name="R. Andrew Ohana"
  work="ESI North America"
@@ -1522,14 +2860,20 @@ Please keep the list in alphabetical order by last name!
  trac="ohanar"
  github="ohanar"/>
 <contributor
+ name="R. Andrew Ohana"
+ location="University of Washington, Seattle"
+ trac="ohanar"/>
+<contributor
  name="Christopher Olah"
  work="hacklab.to"
  location="Toronto, Canada"
  description="miscellaneous"
- trac="colah"
- url="http://christopherolah.wordpress.com"/>
+ url="http://christopherolah.wordpress.com"
+ trac="colah"/>
 <contributor
  name="Michael Orlitzky"
+ location="Baltimore, MD"
+ url="http://michael.orlitzky.com/"
  trac="mjo"
  github="orlitzky"/>
 <contributor
@@ -1539,6 +2883,16 @@ Please keep the list in alphabetical order by last name!
  description="documentation"
  trac="joudinet"
  url="http://johan.oudinet.fr"/>
+<contributor
+ name="Johan Oudinet"
+ location="KIT, Karlsruhe, Germany"
+ url="http://johan.oudinet.fr"
+ trac="joudinet"/>
+<contributor
+ name="Akhilesh P."
+ location="Harish-Chandra Research Institute (HRI), Allahabad, INDIA"
+ url="http://www.hri.res.in/~akhi/"
+ trac="akhi"/>
 <contributor
  name="Bill Page"
  description="Sage's AXIOM interface"
@@ -1556,6 +2910,13 @@ Please keep the list in alphabetical order by last name!
  trac="wjp"
  github="wjp"/>
 <contributor
+ name="Willem Jan Palenstijn"
+ trac="wjp"/>
+<contributor
+ name="Elisa Palezzato"
+ location="Hokkaido University, Japan"
+ trac="epalezzato"/>
+<contributor
  name="John Palmieri"
  work="Department of Mathematics, University of Washington"
  location="University of Washington, WA, USA"
@@ -1564,10 +2925,19 @@ Please keep the list in alphabetical order by last name!
  trac="jhpalmieri"
  github="jhpalmieri"/>
 <contributor
+ name="Sebastian Pancratz"
+ location="Oxford University"
+ trac="spancratz"/>
+<contributor
  name="Lorenz Panny"
  url="https://yx7.cc"
  trac="lorenz"
  github="yyyyx4"/>
+<contributor
+ name="Bernard Parisse"
+ location="Institut Fourier, Universite Grenoble Alpes, France"
+ url="https://www-fourier.ujf-grenoble.fr/~parisse"
+ trac="parisse"/>
 <contributor
  name="Dmitrii Pasechnik"
  work="Department of Computer Science, Oxford University"
@@ -1577,13 +2947,23 @@ Please keep the list in alphabetical order by last name!
  trac="dimpase"
  github="dimpase"/>
 <contributor
+ name="Irene Pasquinelli"
+ location="Durham University, UK"
+ url="http://www.maths.dur.ac.uk/users/irene.pasquinelli/"
+ trac="ipasquinelli"/>
+<contributor
  name="Mitesh Patel"
  trac="mpatel"
  github="qed777"/>
 <contributor
  name="Oliver Pechenik"
+ location="University of Illinois at Urbana-Champaign"
  trac="opechenik"
  github="opechenik"/>
+<contributor
+ name="Christoph Pegel"
+ url="http://www.math.uni-bremen.de/~pegel/"
+ trac="cpegel"/>
 <contributor
  name="Javier López Peña"
  work="Mathematics Research Centre, Queen Mary University of London"
@@ -1591,11 +2971,19 @@ Please keep the list in alphabetical order by last name!
  description="categories"
  url="http://www.maths.qmul.ac.uk/~jlopez"/>
 <contributor
- name="Paulo César Pereira de Andrade"
- work="Mandriva Linux"
- location="Curitiba, Brazil"
- description="packages"
- trac="pcpa"/>
+ name="Javier López Peña"
+ location="University College London, UK"
+ url="http://www.ucl.ac.uk/~ucahjlo/"
+ trac="jlopez"/>
+<contributor
+ name="Rudi Pendavingh"
+ location="Eindhoven University of Technology, Netherlands"
+ trac="Rudi"/>
+<contributor
+ name="Martin Pépin"
+ location="Université Paris Cité"
+ url="https://wkerl.me"
+ trac="MartinPepin"/>
 <contributor
  name="David Perkinson"
  work="Professor, Department of Mathematics, Reed College"
@@ -1612,6 +3000,10 @@ Please keep the list in alphabetical order by last name!
  trac="cpernet"
  github="ClementPernet"/>
 <contributor
+ name="Clément Pernet"
+ url="http://membres-liglab.imag.fr/pernet/"
+ trac="cpernet"/>
+<contributor
  name="John Perry"
  work="University of Southern Mississippi"
  location="Hattiesburg, MS, USA"
@@ -1625,9 +3017,48 @@ Please keep the list in alphabetical order by last name!
  description="optimized multinomial coefficient computation"
  url="http://cens.ioc.ee/~pearu"/>
 <contributor
+ name="James Pfeiffer"
+ trac="jrp"/>
+<contributor
+ name="Markus Pfeiffer"
+ location="University of St Andrews"
+ trac="markuspf"/>
+<contributor
+ name="Vincent Pilaud"
+ location="École Polytechnique, Palaiseau, France"
+ url="http://www.lix.polytechnique.fr/~pilaud/"
+ trac="vpilaud"/>
+<contributor
+ name="Basile Pillet"
+ location="Université de Rennes 1, France"
+ url="http://perso.univ-rennes1.fr/basile.pillet/"
+ trac="bpillet"/>
+<contributor
+ name="Manos Pitsidianakis"
+ location="National Technical University of Athens"
+ trac="epilys"/>
+<contributor
  name="David Poetzsch-Heffter"
  description="notebook"
  trac="dpoetzsch"/>
+<contributor
+ name="David Poetzsch-Heffter"
+ location="Saarland University, Germany"
+ trac="dpoetzsch"/>
+<contributor
+ name="Robert Pollak"
+ location="Johannes Kepler University, Linz, Austria"
+ url="https://www.flll.jku.at/staff/pollak"
+ trac="jondo"/>
+<contributor
+ name="Federico Poloni"
+ url="http://fph.altervista.org"
+ trac="f.poloni"/>
+<contributor
+ name="Wai Yan Pong"
+ location="CSU Dominguez-Hills"
+ url="http://csudh.edu/math/wpong"
+ trac="pong"/>
 <contributor
  name="Viviane Pons"
  work="PhD student, Maitre de Conférence, LRI, Université Paris-Sud Orsay"
@@ -1637,24 +3068,53 @@ Please keep the list in alphabetical order by last name!
  trac="VivianePons"
  github="VivianePons"/>
 <contributor
+ name="Viviane Pons"
+ location="Univ. Paris-Sud, France"
+ url="https://www.lri.fr/~pons/"
+ trac="VivianePons"/>
+<contributor
+ name="Yann Ponty"
+ location="CNRS-Ecole Polytechnique"
+ url="http://www.lix.polytechnique.fr/~ponty"
+ trac="yponty"/>
+<contributor
+ name="Pablo Portilla"
+ location="ICMAT, Spain"
+ url="https://www.icmat.es/pablo.portilla"
+ trac="pportilla"/>
+<contributor
+ name="Jan Pöschko"
+ location="TU Graz, Austria"
+ url="http://www.poeschko.com"
+ trac="poeschko"/>
+<contributor
+ name="Adrien Poteaux"
+ location="University Lille 1"
+ url="http://www.lifl.fr/~poteaux/"
+ trac="poteaux"/>
+<contributor
  name="Amritanshu Prasad"
  location="Chennai, India"
  url="http://www.imsc.res.in"
  work="The Institute of Mathematical Sciences"
  trac="amri"
  description="contributed vector partitions and similarity class types to sage.combinat"
- pix="./pix/people/prasad.jpeg" 
+ pix="./pix/people/prasad.jpeg"
  github="amritanshu-prasad"/>
 <contributor
-    name="Punarbasu Purkayastha"
-    work="Research Fellow, Nanyang Technological University, Singapore"
-    location="Singapore, SG"
-    description="plot; coding theory"
-    url="http://punarbasu.appspot.com"
-    trac="ppurka"
-    github="ppurka"/>
+ name="Amritanshu Prasad"
+ location="IMSc, Chennai"
+ trac="amri"/>
 <contributor
- name="Bill Purvis" />
+ name="Punarbasu Purkayastha"
+ work="Research Fellow, Nanyang Technological University, Singapore"
+ location="Singapore, SG"
+ description="plot; coding theory"
+ url="http://punarbasu.appspot.com"
+ trac="ppurka"
+ github="ppurka"/>
+<contributor
+ name="Bill Purvis"/>
 <contributor
  name="Julien Puydt"
  location="Grenoble, France"
@@ -1672,14 +3132,14 @@ Please keep the list in alphabetical order by last name!
  location="Barcelona, Spain"
  work="Universitat Politecnica de Catalunya"
  description="modular symbols and dimension formulas for congruence subgroups Gamma_H(N)"
- url="http://www-ma2.upc.es/~quer/" />
+ url="http://www-ma2.upc.es/~quer/"/>
 <contributor
  name="Alex Raichev"
  work="University of Auckland"
  location="Auckland, New Zealand"
  url="http://www.cs.auckland.ac.nz/~raichev"
  description="Analytic combinatorics"
- trac="araichev" />
+ trac="araichev"/>
 <contributor
  name="Gustavo Rama"
  work="Universidad de la República"
@@ -1691,14 +3151,32 @@ Please keep the list in alphabetical order by last name!
  location="Rajasthan, India"
  work="Indian Institute of Technology, Kanpur"
  description="rational point algorithms for schemes"
- url="https://raghukul01.github.io" 
+ url="https://raghukul01.github.io"
  trac="raghukul01"
  github="raghukul01"/>
+<contributor
+ name="Raghukul Raman"
+ location="Indian Institute of Technology, Kanpur, India"
+ url="https://www.cse.iitk.ac.in/users/raghukul/"
+ trac="raghukul01"/>
+<contributor
+ name="Niels Ranosch"
+ url="http://sage-citation.blogspot.com/"
+ trac="ranosch"/>
+<contributor
+ name="Biswajit Ransingh"
+ location="IMSc, Chennai"
+ trac="bransingh"/>
 <contributor
  name="Jens Rasch"
  description="calculus"
  trac="jrasch"
  url="http://6dime.blogspot.com"/>
+<contributor
+ name="Laith Rastanawi"
+ location="Freie Universität Berlin"
+ url="https://www.mi.fu-berlin.de/en/math/groups/discgeom/members/rastanawi.html"
+ github="LaisRast"/>
 <contributor
  name="Martin Raum"
  work="ETH Zürich"
@@ -1707,14 +3185,31 @@ Please keep the list in alphabetical order by last name!
  url="http://www.raum-brothers.eu/martin/"
  trac="mraum"/>
 <contributor
+ name="Martin Raum"
+ location="MPIM Bonn, Germany"
+ trac="mraum"/>
+<contributor
+ name="Ajeesh Ravindran"
+ trac="ajeeshr"/>
+<contributor
  name="Dorian Raymer"
  work="UCSD"
  location="San Diego, CA 92093, USA"
- description="The notebook's documentation browser" />
+ description="The notebook's documentation browser"/>
+<contributor
+ name="Jean-Florent Raymond"
+ location="CNRS, Université Clermont Auvergne, France"
+ url="https://perso.limos.fr/~jfraymon"
+ github="jfraymond"/>
 <contributor
  name="Meghana M Reddy"
  trac="meghanamreddy"
  github="meghanamreddy"/>
+<contributor
+ name="Thomas Rehn"
+ location="Universität Rostock, Germany"
+ url="http://www.math.uni-rostock.de/~rehn/"
+ trac="trehn"/>
 <contributor
  name="Stefan Reiterer"
  work="University of Graz"
@@ -1722,11 +3217,23 @@ Please keep the list in alphabetical order by last name!
  description="packaging"
  trac="maldun"/>
 <contributor
+ name="Matthew Rennekamp"
+ trac="mrennekamp"/>
+<contributor
+ name="Tania Richmond"
+ location="IMATH, Univ. of Toulon, La Garde, France"
+ url="https://sites.google.com/site/taniarichmondnc/"
+ trac="richmond"/>
+<contributor
+ name="Vivien Ripoll"
+ location="Universität Wien, Vienna, Austria"
+ trac="vripoll"/>
+<contributor
  name="Risan"
  work="Nanyang Technological University, Singapore"
  location="Tangerang, Indonesia"
  description="Arbitrary Precision LP Solver Backend"
- trac="ptrrsn_1" />
+ trac="ptrrsn_1"/>
 <contributor
  name="R. Rishikesh"
  work="University of Waterloo"
@@ -1734,6 +3241,22 @@ Please keep the list in alphabetical order by last name!
  description="automated testing of SAGE_ROOT/examples; bug fixes, etc"
  trac="rishi"
  github="rishikesha"/>
+<contributor
+ name="Roswitha Rissner"
+ location="Graz University of Technology, Austria"
+ trac="rrissner"/>
+<contributor
+ name="Juan M. Bello Rivas"
+ location="Universidad Politécnica de Madrid, Spain"
+ trac="jmbr"/>
+<contributor
+ name="Philip Robinson"
+ url="http://probinso.dyn-o-saur.com"
+ trac="probinso"/>
+<contributor
+ name="Tom Roby"
+ location="University of Connecticut"
+ trac="troby"/>
 <contributor
  name="David Roe"
  work="MIT"
@@ -1743,9 +3266,31 @@ Please keep the list in alphabetical order by last name!
  trac="roed"
  github="roed314"/>
 <contributor
+ name="David Roe"
+ location="MIT, Cambridge, MA, USA"
+ url="http://math.mit.edu/~roed"
+ trac="roed"/>
+<contributor
  name="Antonio Rojas"
  trac="arojas"
  github="antonio-rojas"/>
+<contributor
+ name="Antonio Rojas"
+ location="University of Seville"
+ url="http://personal.us.es/arojas/"
+ trac="arojas"/>
+<contributor
+ name="Dillon Rose"
+ trac="drose"
+ github="dillonmrose"/>
+<contributor
+ name="Johan Rosenkilde"
+ trac="jsrn"/>
+<contributor
+ name="Günter Rote"
+ location="Freie Universität Berlin"
+ trac="guenterrote"
+ github="guenterrote"/>
 <contributor
  name="Bjarke Hammersholt Roune"
  work="PhD student, Department of Computer Science, University of Aarhus"
@@ -1754,27 +3299,65 @@ Please keep the list in alphabetical order by last name!
  url="http://www.broune.com/"
  trac="broune"/>
 <contributor
- name="Dillon Rose"
- trac="drose"
- github="dillonmrose"/>
+ name="Édouard Rousseau"
+ location="Télécom parisTech/Univ de Versailles, France"
+ url="http://erou.github.io"
+ trac="erousseau"/>
 <contributor
- name="Günter Rote"
- trac="guenterrote"
- github="guenterrote"/>
+ name="Christelle Rovetta"
+ location="UPMC, France"
+ url="http://www.di.ens.fr/~rovetta"
+ trac="chrisrovetta"/>
 <contributor
- name="Gordon Royle" />
+ name="Eric Rowland"
+ location="LaCIM, Université du Québec à Montréal, Canada"
+ url="http://thales.math.uqam.ca/~rowland/"
+ trac="rowland"/>
+<contributor
+ name="Gordon Royle"/>
+<contributor
+ name="Martin Rubey"
+ location="Technische Universität Wien, Austria"
+ trac="mantepse"
+ github="mantepse"/>
 <contributor
  name="Thomas Rüd"
  trac="rud"
  github="toadrush"/>
 <contributor
+ name="Jeremy Tan Jie Rui"
+ work="National University of Singapore"
+ location="Singapore, Singapore"
+ description="combinatorics; graph theory"
+ url="https://parclytaxel.art"
+ github="Parcly-Taxel"
+ gitlab="parclytaxel"/>
+<contributor
+ name="Jorge Catumba Ruiz"
+ location="National University of Colombia, Colombia"
+ url="http://twitter.com/jorgerev90"
+ trac="jcatumba"/>
+<contributor
  name="Julian Rüth"
+ location="Nicaragua"
  trac="saraedum"
  github="saraedum"/>
 <contributor
- name="Martin Rubey"
- trac="mantepse"
- github="mantepse" />
+ name="Nathan C. Ryan"
+ location="Bucknell University, Pennsylvania, USA"
+ url="http://www.unix.bucknell.edu/~ncr006"
+ trac="ncryan"/>
+<contributor
+ name="Alba Málaga S"
+ trac="ams"/>
+<contributor
+ name="Philippe Saadé"
+ location="Lyon, France"
+ trac="psaade"/>
+<contributor
+ name="Amir Sagiv"
+ location="TAU, Israel"
+ trac="amirsagiv"/>
 <contributor
  name="Serge A. Salamanka"
  work="National Academy of Sciences, UIIP"
@@ -1782,11 +3365,19 @@ Please keep the list in alphabetical order by last name!
  description="Sage-Grid project http://groups.google.com/group/sage-grid"
  url="http://sageworldmath.blogspot.com"/>
 <contributor
+ name="Felix Salfelder"
+ trac="felixs"/>
+<contributor
  name="Franco Saliola"
  work="Postdoctoral fellow, Université du Québec à Montréal"
  location="Montreal, Quebec, Canada"
  description="posets package"
  url="http://www.lacim.uqam.ca/~saliola/index.html"
+ trac="saliola"/>
+<contributor
+ name="Franco Saliola"
+ location="Université du Québec à Montréal"
+ url="http://lacim.uqam.ca/~saliola"
  trac="saliola"/>
 <contributor
  name="Ben Salisbury"
@@ -1797,6 +3388,11 @@ Please keep the list in alphabetical order by last name!
  trac="bsalisbury1"
  github="bsalisbury1"/>
 <contributor
+ name="Ben Salisbury"
+ location="Central Michigan University"
+ url="http://people.cst.cmich.edu/salis1bt"
+ trac="bsalisbury1"/>
+<contributor
  name="Leonardo Sampaio"
  work="PhD student, INRIA/I3S (CNRS, UNS)"
  location="Sophia Antipolis, 06560 Valbonne, France"
@@ -1804,10 +3400,31 @@ Please keep the list in alphabetical order by last name!
  url="http://www-sop.inria.fr/members/Leonardo.Sampaio_Rocha/"
  trac="lsampaio"/>
 <contributor
+ name="Kannappan Sampath"
+ location="University of Michigan, Ann Arbor, MI"
+ github="KPanComputes"/>
+<contributor
+ name="Koen van de Sande"
+ location="University of Amsterdam, Amsterdam"
+ url="http://koen.me/research/"
+ trac="koen"/>
+<contributor
+ name="Victor Santos"
+ url="https://github.com/padawanphysicist"
+ github="padawanphysicist"/>
+<contributor
+ name="Utpal Sarkar"
+ location="HP, Barcelona and student at the UPC, Barcelona"
+ trac="usarkar"/>
+<contributor
  name="Kyle Schalm"
  work="graduate student, University of Texas at Austin"
  location="Austin, TX, USA"
- description="feedback; bugs (and fixes); MPFR integration" />
+ description="feedback; bugs (and fixes); MPFR integration"/>
+<contributor
+ name="Stéphanie Schanck"
+ location="LaCIM, Université du Québec à Montréal, Canada"
+ trac="sschanck"/>
 <contributor
  name="Ed Scheinerman"
  work="Professor, Department of Applied Mathematics &amp; Statistics, Johns Hopkins University"
@@ -1820,6 +3437,7 @@ Please keep the list in alphabetical order by last name!
  work="Professor, UC-Davis"
  location="Davis, CA, USA"
  description="Crystals code"
+ url="http://www.math.ucdavis.edu/~anne"
  trac="aschilling"
  github="anneschilling"/>
 <contributor
@@ -1828,6 +3446,7 @@ Please keep the list in alphabetical order by last name!
  location="Vienna, Austria"
  description="webmaster; R/Sage interface; marketing;management"
  pix="./pix/people/schilly.jpeg"
+ url="http://sage.math.washington.edu/home/schilly/"
  trac="schilly"
  github="haraldschilly"/>
 <contributor
@@ -1835,7 +3454,7 @@ Please keep the list in alphabetical order by last name!
  work="University of Kentucky"
  location="Lexington, Kentucky, USA"
  description="group theory"
- url="http://www.ms.uky.edu/~jack/" />
+ url="http://www.ms.uky.edu/~jack/"/>
 <contributor
  name="Michael Schneider"
  work="PhD student, Technische Universität Darmstadt"
@@ -1843,9 +3462,21 @@ Please keep the list in alphabetical order by last name!
  description="cryptography"
  url="http://www.cdc.informatik.tu-darmstadt.de/mitarbeiter/mischnei.html"/>
 <contributor
+ name="Philipp Schneider"
+ location="Universität Erlangen-Nürnberg"
+ trac="phil"/>
+<contributor
  name="Travis Scholl"
+ location="University of Washington, Seattle"
  trac="tscholl2"
  github="tscholl2"/>
+<contributor
+ name="Michael Schraudner"
+ url="http://www.cmm.uchile.cl/~mschraudner"
+ trac="mhs"/>
+<contributor
+ name="Frithjof Schulze"
+ trac="fschulze"/>
 <contributor
  name="Christopher Schwan"
  work="Theoretical High Energy Physics (THEP), Johannes-Gutenberg-Universität Mainz"
@@ -1854,17 +3485,44 @@ Please keep the list in alphabetical order by last name!
  url="http://wwwthep.physik.uni-mainz.de/site/people/cschwan/"
  trac="cschwan"/>
 <contributor
-  name="Travis Scrimshaw"
-  work="UC Davis - PhD student"
-  location="Tracy, CA, USA"
-  description="Crystals; representation theory; programming"
-  url="https://sites.google.com/view/tscrim/home"
-  trac="tscrim"
-  github="tscrim"/>
+ name="Robert Schwarz"
+ location="Heidelberg, Germany"
+ trac="rschwarz"/>
+<contributor
+ name="Stan Schymanski"
+ location="Max Planck Institute for Biogeochemistry"
+ url="http://www.bgc-jena.mpg.de/~sschym"
+ trac="schymans"/>
+<contributor
+ name="Sam Scott"
+ location="University of Warwick, UK"
+ trac="scotts"/>
+<contributor
+ name="Travis Scrimshaw"
+ work="UC Davis - PhD student"
+ location="Tracy, CA, USA"
+ description="Crystals; representation theory; programming"
+ url="https://sites.google.com/view/tscrim/home"
+ trac="tscrim"
+ github="tscrim"/>
+<contributor
+ name="Travis Scrimshaw"
+ location="Osaka City University"
+ url="https://tscrim.github.io/"
+ trac="tscrim"/>
+<contributor
+ name="Paul Scurek"
+ location="UIC, Chicago, IL"
+ trac="pmscurek"/>
 <contributor
  name="George H. Seelinger"
+ location="University of Virginia"
+ url="https://ghseeli.github.io"
  trac="ghseeli"
  github="ghseeli"/>
+<contributor
+ name="Gagan Sekhon"
+ trac="gagansekhon"/>
 <contributor
  name="Dag Sverre Seljebotn"
  work="Master's student, Institute of Theoretical Astrophysics, University of Oslo"
@@ -1873,18 +3531,60 @@ Please keep the list in alphabetical order by last name!
  url="http://heim.ifi.uio.no/~dagss"
  trac="dagss"/>
 <contributor
+ name="Alejandro Serrano"
+ location="trupill at gmail dot com"
+ trac="a.serrano"/>
+<contributor
+ name="Yiwei She"
+ location="University of Chicago"
+ trac="yiweishe"/>
+<contributor
+ name="Heesung Shin"
+ location="Inha University, Korea"
+ url="http://hshin.info"
+ trac="ensual"/>
+<contributor
  name="Dan Shumow"
  work="University of Washington"
  location="University of Washington, WA, USA"
  description="bug fixes"
  trac="shumow"/>
 <contributor
- name="Denis Simone" />
+ name="Jason Yeo Jie Shun"
+ location="National University of Singapore, Singapore"
+ url="http://technotroph.wordpress.com"
+ trac="jyeo"/>
+<contributor
+ name="Baldur Sigurðsson"
+ location="UNAM"
+ url="https://notendur.hi.is/bas4/"
+ github="baldursigurds"/>
+<contributor
+ name="Jeroen Sijsling"
+ location="University of Warwick, UK"
+ trac="sijsling"/>
+<contributor
+ name="Andrew Silver"
+ location="University of Florida"
+ trac="andrewsilver"/>
+<contributor
+ name="Denis Simone"/>
+<contributor
+ name="John Pang NTU, Singapore"
+ trac="jpang"/>
+<contributor
+ name="Rounak Singh"
+ location="National Institute of Technology, Raipur, India"
+ trac="rsn"/>
+<contributor
+ name="Phaedon Sinis"
+ location="San Francisco, CA"
+ trac="psinis"/>
 <contributor
  name="Steven Sivek"
  work="graduate student, Princeton University"
  location="Princeton, NJ, USA"
- description="interface to Sloane's Tables; algebraic number fields" />
+ description="interface to Sloane's Tables; algebraic number fields"/>
 <contributor
  name="Nils-Peter Skoruppa"
  work="Universität Siegen"
@@ -1892,7 +3592,35 @@ Please keep the list in alphabetical order by last name!
  description="optimized binary quadratic forms computation; bug fixes"
  url="http://www.countnumber.de"
  trac="NilsSkoruppa"/>
-<contributor name="Juan Viu Sos"
+<contributor
+ name="Nils Skoruppa"
+ location="Universität Siegen, Germany"
+ trac="NilsSkoruppa"/>
+<contributor
+ name="Uroš Slana"
+ trac="slani"/>
+<contributor
+ name="Daniel Smertnig"
+ location="KFU Graz, Austria"
+ trac="daniels"/>
+<contributor
+ name="Ben Smith"
+ trac="bensmith"/>
+<contributor
+ name="Hal Snyder"
+ location="Chicago"
+ trac="hsnyder"/>
+<contributor
+ name="Mate Soos"
+ url="http://www.msoos.org"
+ trac="msoos"/>
+<contributor
+ name="Christoph Sorger"
+ location="Université de Nantes"
+ url="http://www.math.sciences.univ-nantes.fr/~sorger/"
+ trac="chsorger"/>
+<contributor
+ name="Juan Viu Sos"
  work="PhD Student, Université de Pau et des Pays de l'Adour"
  location="64000 Pau, France"
  description="polynomial rings; polyhedron; algebraic geometry"
@@ -1902,6 +3630,10 @@ Please keep the list in alphabetical order by last name!
  name="Simon Spicer"
  trac="spice"
  github="haikona"/>
+<contributor
+ name="Simon Spicer"
+ location="University of Washington, Seattle"
+ trac="spice"/>
 <contributor
  name="Jaap Spies"
  location="Emmen, Netherlands"
@@ -1922,7 +3654,24 @@ Please keep the list in alphabetical order by last name!
  location="Barcelona, Spain"
  description="algorithmic number theory; I'm actually from australia"
  url="http://theoriginaltakeaway.com/"
- trac="hds" />
+ trac="hds"/>
+<contributor
+ name="Flavia Stan"
+ location="RISC, Johannes Kepler University Linz"
+ trac="fstan"/>
+<contributor
+ name="Katherine Stange"
+ location="University of Colorado - Boulder"
+ url="http://math.katestange.net"
+ trac="katestange"/>
+<contributor
+ name="Jim Stankewicz"
+ location="University of Georgia, USA"
+ trac="stankewicz"/>
+<contributor
+ name="Jim Stark"
+ location="University of Washington"
+ trac="JStarx"/>
 <contributor
  name="Štěpán Starosta"
  work="Faculty of Information Technology, Czech Technical University in Prague"
@@ -1939,9 +3688,15 @@ Please keep the list in alphabetical order by last name!
  location="17725 SE 123rd Place, Renton WA 98059, USA"
  description="community manager; software architect; started Sage project"
  url="https://wstein.org/"
- pix="https://wstein.org/william.jpg" jitter="0"
+ pix="https://wstein.org/william.jpg"
+ jitter="0"
  trac="was"
  github="williamstein"/>
+<contributor
+ name="William Stein"
+ location="University of Washington"
+ url="http://wstein.org"
+ trac="was"/>
 <contributor
  name="Salvatore Stella"
  work="RTD-b -- Università dell'Aquila -- DISIM"
@@ -1952,8 +3707,18 @@ Please keep the list in alphabetical order by last name!
  gitlab="etn40ff"/>
 <contributor
  name="Ralf Stephan"
+ location="officially retired"
+ url="https://google.com/+RalfStephan"
  trac="rws"
  github="rwst"/>
+<contributor
+ name="Brett Stevens"
+ location="Carleton University, Ottawa, Canada"
+ url="http://www.math.carleton.ca/~brett/"
+ trac="brett"/>
+<contributor
+ name="Manon Stipulanti"
+ trac="mstipulanti"/>
 <contributor
  name="Armin Straub"
  work="Tulane University"
@@ -1963,16 +3728,28 @@ Please keep the list in alphabetical order by last name!
  trac="arminstraub"
  github="arminstraub"/>
 <contributor
+ name="Armin Straub"
+ location="University of South Alabama"
+ url="http://arminstraub.com"
+ trac="arminstraub"/>
+<contributor
  name="Marco Streng"
  work="DIAMANT-postdoc"
- location="VU University, Amsterdam"
+ location="VU University Amsterdam, The Netherlands"
  description="number fields;algebraic curves"
  url="http://www.few.vu.nl/~streng"
  trac="mstreng"/>
 <contributor
  name="Jessica Striker"
+ location="North Dakota State University"
+ url="https://www.ndsu.edu/pubweb/~striker/"
  trac="jessicapalencia"
  github="jessicapalencia"/>
+<contributor
+ name="Fredrik Strömberg"
+ location="Durham University, Durham, UK"
+ url="http://info.fredrik.stromberg.to/"
+ trac="fstromberg"/>
 <contributor
  name="Kevin Stueve"
  work="undergraduate student, University of Washington"
@@ -1988,11 +3765,27 @@ Please keep the list in alphabetical order by last name!
  trac="stumpc5"
  github="stumpc5"/>
 <contributor
+ name="Christian Stump"
+ location="Ruhr-Universität Bochum, Germany"
+ url="http://homepage.rub.de/christian.stump/"
+ trac="stumpc5"/>
+<contributor
+ name="Denis Sunko"
+ location="Department of Physics, Faculty of Science, University of Zagreb, Croatia"
+ trac="denissunko"/>
+<contributor
  name="Blair Sutton"
  location="London, UK"
  description="Bell polynomials"
  url="http://www.google.com/s2/profiles/115382656960629166023"
  trac="bsutton"/>
+<contributor
+ name="Taylor Sutton"
+ trac="tsutton"/>
+<contributor
+ name="Josh Swanson"
+ location="University of Washington"
+ trac="jpswanson"/>
 <contributor
  name="Chris Swierczewski"
  work="Graduate student in applied mathematics, University of Washington"
@@ -2002,20 +3795,17 @@ Please keep the list in alphabetical order by last name!
  trac="cswiercz"
  github="cswiercz"/>
 <contributor
- name="Luis Felipe Tabera Alonso"
- work="Universidad de Cantabria"
- location="Santander, Spain"
- description="algebra; basic arithmetic; number fields"
- url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
+ name="Holly Swisher"
+ location="Oregon State University"
+ trac="swisherh"/>
 <contributor
- name="Jeremy Tan Jie Rui"
- work="National University of Singapore"
- location="Singapore, Singapore"
- description="combinatorics; graph theory"
- url="https://parclytaxel.art"
- github="Parcly-Taxel"
- gitlab="parclytaxel"/>
+ name="Joni Syri"
+ trac="jsyri"/>
+<contributor
+ name="Tvrtko Tadic"
+ location="University of Washington, Seattle"
+ url="http://www.math.washington.edu/~tadic"
+ trac="ttadic"/>
 <contributor
  name="Glenn Tarbox"
  work="THG Holdings"
@@ -2023,6 +3813,10 @@ Please keep the list in alphabetical order by last name!
  description="bug fixes"
  url="http://www.tarbox.org"
  trac="ghtdak"/>
+<contributor
+ name="Steven Tartakovsky"
+ location="Grad, San Luis Obispo, CA"
+ trac="startakovsky"/>
 <contributor
  name="Aaditya Thakkar"
  trac="aaditya_thakkar"
@@ -2035,6 +3829,10 @@ Please keep the list in alphabetical order by last name!
  url="http://www.loria.fr/~thevenyp/"
  trac="thevenyp"/>
 <contributor
+ name="Philippe Theveny"
+ location="INRIA, France"
+ trac="thevenyp"/>
+<contributor
  name="Nicolas Thiéry"
  work="Professor, LISN, Université Paris-Saclay"
  location="Orsay, France"
@@ -2043,6 +3841,10 @@ Please keep the list in alphabetical order by last name!
  trac="nthiery"
  github="nthiery"/>
 <contributor
+ name="Nicolas M. Thiéry"
+ location="Université Paris Sud XI, Orsay, France"
+ trac="nthiery"/>
+<contributor
  name="Griffen Thoma"
  description="plotting bug fix"/>
 <contributor
@@ -2050,7 +3852,7 @@ Please keep the list in alphabetical order by last name!
  work="professor, LaCIM, Department of Mathematics, UQAM"
  location="LaCIM, UQAM, Montréal, Québec, Canada"
  url="http://www.lacim.uqam.ca/~hugh/"
- trac="hthomas" />
+ trac="hthomas"/>
 <contributor
  name="Emmanuel Thomé"
  work="Researcher, INRIA"
@@ -2058,6 +3860,10 @@ Please keep the list in alphabetical order by last name!
  description="number fields"
  url="https://members.loria.fr/EThome/"
  trac="thome"/>
+<contributor
+ name="Lola Thompson"
+ location="Oberlin College, OH"
+ trac="lola"/>
 <contributor
  name="John Thurber"
  work="Eastern Oregon University"
@@ -2072,20 +3878,31 @@ Please keep the list in alphabetical order by last name!
  trac="itolkov"/>
 <contributor
  name="Gonzalo Tornaria"
+ location="Universidad de la República, Uruguay"
  location="Montevideo, Uruguay"
  description="sage/latex style; extensive feedback; design; use of darcs system; tons of tricky C code related to the PARI interface; hashing of GMP types; etc"
+ url="http://www.cmat.edu.uy/~tornaria"
  trac="tornaria"
  github="tornaria"/>
 <contributor
-  name="Adam Towsley"
-  work="Visiting Assistant Professor, Department of Mathematics, CUNY Graduate Center"
-  location="365 5th Avenue, New York, NY"
-  description="Arithmetic Dynamics; Algebraic Number Theory; Arithmetic Geometry" 
-  trac="atowsley"/>
+ name="Jesus Torrado"
+ location="Technical University of Munich"
+ url="http://users.physik.tu-muenchen.de/ga98mup/"
+ trac="JesusTorrado"/>
+<contributor
+ name="Adam Towsley"
+ work="Visiting Assistant Professor, Department of Mathematics, CUNY Graduate Center"
+ location="365 5th Avenue, New York, NY"
+ description="Arithmetic Dynamics; Algebraic Number Theory; Arithmetic Geometry"
+ trac="atowsley"/>
 <contributor
  name="Steven Trogdon"
+ location="University of Minnesota, Duluth"
  trac="strogdon"
  github="strogdon"/>
+<contributor
+ name="Matthew Trumbell"
+ trac="mrtrumbe"/>
 <contributor
  name="Kiminori Tsukazaki"
  work="University of Warwick"
@@ -2103,8 +3920,26 @@ Please keep the list in alphabetical order by last name!
  description="algebraic geometry"
  trac="cturner"/>
 <contributor
+ name="S. R. Turner"
+ location="University of Chicago"
+ trac="turnersr"/>
+<contributor
+ name="Eleni Tzanaki"
+ location="University of Crete, Greece"
+ url="https://sites.google.com/site/tzanakel/home"
+ trac="etzanaki"/>
+<contributor
+ name="Tristan Vaccon"
+ location="Université de Limoges, France"
+ url="http://www.unilim.fr/pages_perso/tristan.vaccon/englishhome.html"
+ trac="TristanVaccon"/>
+<contributor
  name="Michel Vandenbergh"
- description="multivariate polynomials; bug fixes, other improvements" />
+ description="multivariate polynomials; bug fixes, other improvements"/>
+<contributor
+ name="Élise Vandomme"
+ location="LaCIM, Université du Québec à Montréal, Canada"
+ trac="evandomme"/>
 <contributor
  name="Joris Vankerschaver"
  location="9500 Gilman Drive, San Diego, CA 92093, United States"
@@ -2113,6 +3948,10 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.ucsd.edu/~jvankers/"
  trac="jvkersch"
  github="jvkersch"/>
+<contributor
+ name="Panupong Vichitkunakorn"
+ location="University of Illinois at Urbana-Champaign"
+ trac="vichitk1"/>
 <contributor
  name="Janoš Vidali"
  trac="jaanos"
@@ -2123,9 +3962,28 @@ Please keep the list in alphabetical order by last name!
  location="Eduardo Acevedo, Montevideo, Uruguay"
  description="algebra"/>
 <contributor
+ name="Christelle Vincent"
+ location="University of Vermont"
+ url="https://www.uvm.edu/~cvincen1/"
+ trac="christelle"/>
+<contributor
  name="Aladin Virmaux"
  trac="virmaux"
  github="avirmaux"/>
+<contributor
+ name="Aladin Virmaux"
+ location="Université Paris-Sud, LRI, France"
+ url="https://www.lri.fr/~virmaux/"
+ trac="virmaux"/>
+<contributor
+ name="Solomon Vishkautsan"
+ location="Ben-Gurion University, Israel"
+ url="http://www.wishcow.com"
+ trac="wishcow"/>
+<contributor
+ name="Quimey Vivas"
+ location="Universidad de Buenos Aires, Argentina"
+ trac="quimey"/>
 <contributor
  name="John Voight"
  work="University of Vermont"
@@ -2142,11 +4000,26 @@ Please keep the list in alphabetical order by last name!
  url="http://www.ma.utexas.edu/users/voloch/"
  trac="voloch"/>
 <contributor
- name="Steve Vonn" />
+ name="Jan Vonk"
+ location="University of Oxford, UK"
+ trac="janv"/>
+<contributor
+ name="Steve Vonn"/>
+<contributor
+ name="Corey Vorland"
+ location="North Dakota State University"
+ trac="cvorland"/>
+<contributor
+ name="Jan Wabbersen"
+ trac="jan.wabbersen"/>
 <contributor
  name="Markus Wageringel"
+ location="Osnabrück University, Germany"
  trac="mwageringel"
  github="mwageringel"/>
+<contributor
+ name="Kim Walisch"
+ trac="walki"/>
 <contributor
  name="Justin Walker"
  work="retired Apple OS X kernel developer"
@@ -2154,10 +4027,23 @@ Please keep the list in alphabetical order by last name!
  description="extensive feedback; PARI lib wrapping; use of his G5"
  trac="justin"/>
 <contributor
+ name="Justin Walker"
+ location="Stanford University, Palo Alto, CA"
+ trac="justin"/>
+<contributor
+ name="Michael Walter"
+ location="University of Amsterdam, The Netherlands"
+ url="https://staff.fnwi.uva.nl/m.walter/"
+ github="catch22"/>
+<contributor
  name="Mark Watkins"
  work="University of Sydney"
  location="University Road, 2006, NSW, Australia"
- description="ec (modular degrees); sympow (symmetric powers); feedback" />
+ description="ec (modular degrees); sympow (symmetric powers); feedback"/>
+<contributor
+ name="Adam Webb"
+ location="Canadian Light Source, Saskatoon, Canada"
+ trac="awebb"/>
 <contributor
  name="Georg S. Weber"
  location="Nuernberg, Germany"
@@ -2168,6 +4054,10 @@ Please keep the list in alphabetical order by last name!
  description="combinatorics"
  trac="QuantumKing"/>
 <contributor
+ name="Jamie Weigandt"
+ location="Purdue University"
+ trac="weigandt"/>
+<contributor
  name="Ralf-Philipp Weinmann"
  trac="rpw"/>
 <contributor
@@ -2175,9 +4065,22 @@ Please keep the list in alphabetical order by last name!
  trac="cjweir"
  github="cjweir"/>
 <contributor
+ name="Michael Welsh"
+ trac="yomcat"/>
+<contributor
  name="Mckenzie West"
  trac="mwest"
  github="mckenziewest"/>
+<contributor
+ name="Jeremy West"
+ location="University of Michigan"
+ url="http://www-personal.umich.edu/~jeremymw"
+ trac="jeremywest"/>
+<contributor
+ name="Mckenzie West"
+ location="University of Wisconsin - Eau Claire"
+ url="https://people.uwec.edu/westmr/"
+ trac="mwest"/>
 <contributor
  name="Bruce Westbury"
  trac="bruce"
@@ -2186,11 +4089,41 @@ Please keep the list in alphabetical order by last name!
  name="Joe Wetherell"
  work="CCR"
  location="Bethesda, MD, USA"
- description="design discussion; bug reports; code (e.g., for MAGMA-like constructors)" />
+ description="design discussion; bug reports; code (e.g., for MAGMA-like constructors)"/>
+<contributor
+ name="Ursula Whitcher"
+ location="University of Wisconsin - Eau Claire"
+ trac="ursula"/>
+<contributor
+ name="Glen Whitney"
+ trac="gwhitney"/>
+<contributor
+ name="Emil Widmann"
+ trac="emil"/>
 <contributor
  name="Friedrich Wiemer"
  trac="asante"
  github="pfasante"/>
+<contributor
+ name="Friedrich Wiemer"
+ location="cryptosolutions, Germany"
+ url="https://asante.dev/"
+ trac="asante"/>
+<contributor
+ name="Tom Wiesing"
+ location="Jacobs University"
+ trac="twiesing"/>
+<contributor
+ name="Cassie Williams"
+ location="James Madison University, VA"
+ trac="cassiew1"/>
+<contributor
+ name="Chad Williamson"
+ trac="dahc"/>
+<contributor
+ name="Phillip Wilt"
+ location="University of Washington, Seattle"
+ trac="philwilt"/>
 <contributor
  name="Carl Witty"
  work="Newton Labs"
@@ -2198,6 +4131,10 @@ Please keep the list in alphabetical order by last name!
  description="release manager; interval arithmetic (wrapping mpfi); complete package for real root isolation; algebraic reals"
  url="http://www.newtonlabs.com/"
  trac="cwitty"/>
+<contributor
+ name="William Wonderly"
+ location="University of Puget Sound"
+ trac="bwonderly"/>
 <contributor
  name="Cristian Wuthrich"
  work="University of Nottingham"
@@ -2207,6 +4144,18 @@ Please keep the list in alphabetical order by last name!
  trac="wuthrich"
  github="categorie"/>
 <contributor
+ name="Chris Wuthrich"
+ location="Nottingham, uk"
+ trac="wuthrich"/>
+<contributor
+ name="Sandi Xhumari"
+ location="University of Connecticut"
+ trac="xhumari"/>
+<contributor
+ name="Han Xiao"
+ location="University of Hong Kong, China"
+ trac="hnxiao"/>
+<contributor
  name="Chao Xu"
  trac="chaoxu"
  github="chaoxu"/>
@@ -2215,6 +4164,17 @@ Please keep the list in alphabetical order by last name!
  trac="tianyuan_xu"
  github="TianyuanX"/>
 <contributor
+ name="Tianyuan Xu"
+ location="University of Oregon"
+ url="http://pages.uoregon.edu/tianyuan/"
+ trac="tianyuan"/>
+<contributor
+ name="Hideyuki YASUDA"
+ trac="umedoblock"/>
+<contributor
+ name="Diane Yap"
+ trac="dianey"/>
+<contributor
  name="Soroosh Yazdani"
  trac="syazdani"
  github="syazdani77"/>
@@ -2222,10 +4182,13 @@ Please keep the list in alphabetical order by last name!
  name="Dal S. Yu"
  location="Austin, TX, USA"
  url="http://dalsyu.org/"
- description="Athlon binary build" />
+ description="Athlon binary build"/>
+<contributor
+ name="Michael Yurko"
+ trac="myurko"/>
 <contributor
  name="Gary Zablackis"
- description="created all Sage binaries for MS windows from March through November 2006; numerous bug reports and fixes" />
+ description="created all Sage binaries for MS windows from March through November 2006; numerous bug reports and fixes"/>
 <contributor
  name="Mike Zabrocki"
  work="Dept. Maths and Statistics, York University"
@@ -2235,13 +4198,45 @@ Please keep the list in alphabetical order by last name!
  github="zabrocki"
  trac="zabrocki"/>
 <contributor
+ name="Gerardo Zelaya"
+ location="University of Washington, Seattle"
+ trac="geze"/>
+<contributor
  name="Bin Zhang"
  location="France"
  description="ATLAS.spkg fixes for Linux and PPC"/>
 <contributor
+ name="Philip B. Zhang"
+ work="Nankai University, China"
+ location="张彪"
+ trac="pbzhang"/>
+<contributor
+ name="Hongli Zhao"
+ trac="honglizhaobob"/>
+<contributor
  name="Yuan Zhou"
  trac="yzh"
  github="yuan-zhou"/>
+<contributor
+ name="Ying Zhou"
+ location="Brandeis University"
+ url="http://github.com/mathyingzhou"
+ github="mathyingzhou"/>
+<contributor
+ name="Yuan Zhou"
+ location="University of Kentucky"
+ url="https://math.as.uky.edu/users/yzh392"
+ trac="yzh"/>
+<contributor
+ name="Yair Zick"
+ location="Singapore"
+ url="http://www3.ntu.edu.sg/home2009/yair0001/"
+ trac="yairzick"/>
+<contributor
+ name="Konstantin Ziegler"
+ location="University of Bonn, Germany"
+ url="http://cosec.bit.uni-bonn.de/?id=271"
+ trac="zieglerk"/>
 <contributor
  name="Paul Zimmermann"
  work="Research Fellow, INRIA Nancy"
@@ -2255,16 +4250,11 @@ Please keep the list in alphabetical order by last name!
  description="documentation"
  url="http://www.ai7.org"/>
 <contributor
- name="Rusydi H. Makarim"
- description="Boolean functions and S-Boxes"
- url="https://rusydi.makarim.id"
- trac="ruhm"
- github="rusydi"/> 
+ name="Stefan van Zwam"
+ location="Louisiana State University"
+ url="http://www.math.lsu.edu/~svanzwam/"
+ trac="Stefan"/>
 <contributor
- name="Emmanuel Charpentier"
- work="Assistance Publique - Hôpitaux de Paris"
- location="Paris, France"
- description="Various low-level fixes/additions"
- trac="charpent"             
- github="EmmanuelCharpentier"/>
+ name="王瑞期"
+ trac="shahuwang"/>
 </contributors>
