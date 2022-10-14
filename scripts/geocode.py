@@ -33,7 +33,10 @@ os.chdir(os.path.dirname(os.path.abspath(sys.argv[0])))
 
 # google key for sagemath.org - no longer a free one available
 # this is an "api key" credential for GCP's "Geocode API"
-gkey = open(os.path.expanduser("~/geocode.key")).read().strip()
+try:
+    gkey = open(os.path.expanduser("~/geocode.key")).read().strip()
+except FileNotFoundError:
+    gkey = None
 
 # allowed attributes in source xml, for checkXML
 goodKeys = [
@@ -189,6 +192,8 @@ def getGeo(loc):
     CSV Geo returns: [200,6,42.730070,-73.690570]
     [retcode,accuracy,lng,lat]
     """
+    if not gkey:
+        return None
     loc = loc.replace(" ", "+")
     loc = quote(loc.encode('UTF-8'))
     print(loc, ">>>", end="")
