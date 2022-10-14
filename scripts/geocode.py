@@ -62,7 +62,7 @@ else:
     locxml = minidom.Document()
 
 loclist = locxml.getElementsByTagName("loc")
-timeout = 1  # in secs, timeout between each request to avoid error 620
+timeout = 5  # in secs, timeout between each request to avoid error 620
 
 
 def writeToDevmap():
@@ -216,7 +216,7 @@ def getGeo(loc):
 
 def addGeo(place):
     lcache = locExists(place)
-    attempts = 5
+    attempts = 3
     if not lcache:
         geo = getGeo(place)
         while geo is None and attempts > 0:
