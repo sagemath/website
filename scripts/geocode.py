@@ -40,7 +40,7 @@ except FileNotFoundError:
 
 # allowed attributes in source xml, for checkXML
 goodKeys = [
-    "name", "location", "work", "description", "url", "pix", "size", "jitter",
+    "name", "altnames", "location", "work", "description", "url", "pix", "size", "jitter",
     "trac", "github", "gitlab"
 ]
 
@@ -98,6 +98,7 @@ def writeToDevmap():
         if c.tagName != "contributor":
             continue
         dev = c.getAttribute("name")
+        altnames = c.getAttribute("altnames")
         loc = c.getAttribute("location")
         work = c.getAttribute("work")
         descr = c.getAttribute("description")
@@ -137,14 +138,25 @@ def writeToDevmap():
                 d_el = parseString("<span>%s</span>" % d)
                 td.appendChild(d_el.firstChild)
 
-        if len(trac) == 0:
-            trac = dev
-        trac = trac.replace(" ", "%20")
         a = devmap.createElement("a")
-        a.setAttribute("href", tracSearch + trac)
+        tracQuery = f"https://trac.sagemath.org/query?"
+        for trac in trac.split(','):
+            trac = trac.strip()
+            if not trac:
+                continue
+            tracQuery += f"&or&cc=~{trac}"
+            tracQuery += f"&or&reporter=~{trac}"
+            tracQuery += f"&or&owner=~{trac}"
+        for name in [dev] + altnames.split(','):
+            name = name.strip()
+            if not name:
+                continue
+            tracQuery += f"&or&author=~{name}"
+            tracQuery += f"&or&reviewer=~{name}"
+        tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
+        a.setAttribute("href", tracQuery)
         a.setAttribute("class", "trac")
-        #a.setAttribute("target", "_blank")
-        a.appendChild(devmap.createTextNode("contributions"))
+        a.appendChild(devmap.createTextNode(f"contributions (trac: {trac})"))
         td.appendChild(devmap.createElement("br"))
         td.appendChild(a)
 
