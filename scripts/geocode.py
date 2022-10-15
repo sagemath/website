@@ -104,6 +104,7 @@ def writeToDevmap():
         descr = c.getAttribute("description")
         url = c.getAttribute("url")
         trac = c.getAttribute("trac")
+        github = c.getAttribute("github")
 
         tr = devmap.createElement("tr")
         td = devmap.createElement("td")
@@ -140,10 +141,12 @@ def writeToDevmap():
 
         a = devmap.createElement("a")
         tracQuery = f"https://trac.sagemath.org/query?"
-        for trac in trac.split(','):
-            trac = trac.strip()
-            if not trac:
-                continue
+        main_trac = None
+        trac_list = [t.strip() for t in trac.split(',') if t.strip()]
+        gh_trac_list = [f'gh-{gh.strip()}' for gh in github.split(',') if gh.strip()]
+        for trac in trac_list + gh_trac_list:
+            if not main_trac:
+                main_trac = trac
             tracQuery += f"&or&cc=~{trac}"
             tracQuery += f"&or&reporter=~{trac}"
             tracQuery += f"&or&owner=~{trac}"
@@ -156,7 +159,10 @@ def writeToDevmap():
         tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
         a.setAttribute("href", tracQuery)
         a.setAttribute("class", "trac")
-        a.appendChild(devmap.createTextNode(f"contributions (trac: {trac})"))
+        if main_trac:
+            a.appendChild(devmap.createTextNode(f"contributions (trac: {main_trac})"))
+        else:
+            a.appendChild(devmap.createTextNode(f"contributions (trac)"))
         td.appendChild(devmap.createElement("br"))
         td.appendChild(a)
 
