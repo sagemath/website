@@ -2600,12 +2600,6 @@ Please keep the list in alphabetical order by last name!
  work="Research engineer, XLIM"
  location="123, avenue Albert Thomas, 87060 Limoges Cedex, France"
  description="GAP interface bug fix"
- url="http://www.unilim.fr/pages_perso/matthias.meulien/index.en.html"
- trac="mmeulien"
- github="orontee"/>
-<contributor
- name="Matthias Meulien"
- url="http://unilim.fr/pages_perso/matthias.meulien"
  trac="mmeulien"
  github="orontee"/>
 <contributor
