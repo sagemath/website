@@ -860,13 +860,10 @@ Please keep the list in alphabetical order by last name!
  github="jdemeyer"/>
 <contributor
  name="Tom Denton"
- work="graduate student, Department of Mathematics, UC Davis"
- location="One Shields Avenue, Davis, CA 95616, USA"
- description="non-symmetric Macdonald polynomials with permuted basements"
- url="http://www.math.ucdavis.edu/~sdenton"/>
-<contributor
- name="Tom Denton"
+ work="Google Research"
+ description="Non-symmetric Macdonald polynomials with permuted basements"
  url="http://inventingsituations.net"
+ github="sdenton4"
  trac="sdenton"/>
 <contributor
  name="Maarten Derickx"
