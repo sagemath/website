@@ -4145,13 +4145,10 @@ Please keep the list in alphabetical order by last name!
  github="chaoxu"/>
 <contributor
  name="Tianyuan Xu"
- trac="tianyuan_xu"
- github="TianyuanX"/>
-<contributor
- name="Tianyuan Xu"
  location="University of Oregon"
  url="http://pages.uoregon.edu/tianyuan/"
- trac="tianyuan"/>
+ trac="tianyuan,tianyuan_xu"
+ github="TianyuanX"/>
 <contributor
  name="Hideyuki YASUDA"
  trac="umedoblock"/>
@@ -4198,10 +4195,6 @@ Please keep the list in alphabetical order by last name!
  name="Hongli Zhao"
  trac="honglizhaobob"/>
 <contributor
- name="Yuan Zhou"
- trac="yzh"
- github="yuan-zhou"/>
-<contributor
  name="Ying Zhou"
  location="Brandeis University"
  url="http://github.com/mathyingzhou"
@@ -4210,7 +4203,8 @@ Please keep the list in alphabetical order by last name!
  name="Yuan Zhou"
  location="University of Kentucky"
  url="https://math.as.uky.edu/users/yzh392"
- trac="yzh"/>
+ trac="yzh"
+ github="yuan-zhou"/>
 <contributor
  name="Yair Zick"
  location="Singapore"
