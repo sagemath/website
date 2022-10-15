@@ -72,7 +72,8 @@ Please keep the list in alphabetical order by last name!
  name="Alfaro"
  location="University of Michigan-Flint, Flint, Michigan, USA"
  url="Ricardo"
- trac="ralfaro"/>
+ trac="ralfaro"
+ github="ralfarogit"/>
 <contributor
  name="Bill Allombert"
  description="help with PARI and GP2C integration"
@@ -249,7 +250,8 @@ Please keep the list in alphabetical order by last name!
  trac="jbandlow"/>
 <contributor
  name="Itai Bar-Natan"
- trac="itaibn"/>
+ trac="itaibn"
+ github="itaibn"/>
 <contributor
  name="Gregory Bard"
  work="Professor, University of Wisconsin-Stout"
@@ -652,7 +654,8 @@ Please keep the list in alphabetical order by last name!
  location="London, Ontario N6A 5B7, Canada"
  description="optimize certain combinatorial constructions"
  url="http://jdc.math.uwo.ca"
- trac="jdc"/>
+ trac="jdc"
+ github="jdchristensen"/>
 <contributor
  name="Craig Citro"
  work="UCLA"
@@ -1572,7 +1575,8 @@ Please keep the list in alphabetical order by last name!
  trac="dmhansen"/>
 <contributor
  name="Tobias Hansen"
- trac="thansen"/>
+ trac="thansen"
+ github="tobihan"/>
 <contributor
  name="Neal Harris"
  location="University of California, San Diego, USA"
@@ -1634,7 +1638,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Ralf Hemmecke"
  location="RISC, Johannes Kepler University Linz"
- trac="hemmecke"/>
+ trac="hemmecke"
+ github="hemmecke"/>
 <contributor
  name="Anna Somoza Henares"
  location="Universitat Politècnica de Catalunya, Spain / Universiteit Leiden, The Netherlands"
@@ -2660,7 +2665,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Greg Minshall"
  location="University of Michigan"
- trac="minshall"/>
+ trac="minshall"
+ github="greg-minshall"/>
 <contributor
  name="Moritz Minzlaff"
  work="PhD student, Technische Universität Berlin"
@@ -2681,7 +2687,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Hartmut Monien"
  location="Universität Bonn, Germany"
- trac="hmonien"/>
+ trac="hmonien"
+ github="monien"/>
 <contributor
  name="Thierry Monteil"
  work="research fellow, CNRS"
@@ -3041,7 +3048,8 @@ Please keep the list in alphabetical order by last name!
  name="Robert Pollak"
  location="Johannes Kepler University, Linz, Austria"
  url="https://www.flll.jku.at/staff/pollak"
- trac="jondo"/>
+ trac="jondo"
+ github="jondo"/>
 <contributor
  name="Federico Poloni"
  url="http://fph.altervista.org"
@@ -3600,7 +3608,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Hal Snyder"
  location="Chicago"
- trac="hsnyder"/>
+ trac="hsnyder"
+ github="DrXyzzy"/>
 <contributor
  name="Mate Soos"
  url="http://www.msoos.org"
