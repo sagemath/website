@@ -157,6 +157,7 @@ def writeToDevmap():
             tracQuery += f"&or&author=~{name}"
             tracQuery += f"&or&reviewer=~{name}"
         tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
+        tracQuery = tracQuery.replace(" ", "%20")
         a.setAttribute("href", tracQuery)
         a.setAttribute("class", "trac")
         if main_trac:
