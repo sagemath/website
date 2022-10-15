@@ -943,7 +943,8 @@ Please keep the list in alphabetical order by last name!
  name="Stephen Doty"
  location="Loyola University Chicago"
  url="http://doty.math.luc.edu"
- trac="s.r.doty"/>
+ trac="s.r.doty"
+ github="srdoty"/>
 <contributor
  name="Douglas"
  trac="dsm"/>
