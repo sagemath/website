@@ -1051,7 +1051,8 @@ Please keep the list in alphabetical order by last name!
  name="Einstein"
  location="University of Massachusetts Lowell - Lowell Mass"
  url="David"
- trac="deinst"/>
+ trac="deinst"
+ github="deinst"/>
 <contributor
  name="Birk Eisermann"
  trac="eisermbi"/>
