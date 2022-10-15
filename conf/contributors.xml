@@ -2784,9 +2784,11 @@ Please keep the list in alphabetical order by last name!
  trac="cnassau"/>
 <contributor
  name="Vincent Neiger"
- location="Limoges, France"
- url="https://people.compute.dtu.dk/vinn/"
- trac="vneiger"/>
+ location="Paris, France"
+ work="Sorbonne Université, LIP6"
+ url="https://vincent.neiger.science/"
+ trac="vneiger"
+ github="vneiger"/>
 <contributor
  name="Vincent Neri"
  trac="Vincent.Neri"/>
