@@ -4218,9 +4218,10 @@ Please keep the list in alphabetical order by last name!
  trac="yairzick"/>
 <contributor
  name="Konstantin Ziegler"
- location="University of Bonn, Germany"
- url="http://cosec.bit.uni-bonn.de/?id=271"
- trac="zieglerk"/>
+ location="University of Applied Sciences Landshut, Germany"
+ url="http://zieglerk.github.io"
+ trac="zieglerk"
+ github="zieglerk"/>
 <contributor
  name="Paul Zimmermann"
  work="Research Fellow, INRIA Nancy"
