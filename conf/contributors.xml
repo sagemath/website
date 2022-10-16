@@ -1569,8 +1569,8 @@ Please keep the list in alphabetical order by last name!
  trac="PythonNut"/>
 <contributor
  name="Ivo Hedtke"
- location="Martin-Luther-University Halle-Wittenberg, Germany"
- url="http://users.informatik.uni-halle.de/~hedtke/"
+ location="Essen, Germany"
+ github="hedtke"
  trac="hedtke"/>
 <contributor
  name="Loreno Heer"
