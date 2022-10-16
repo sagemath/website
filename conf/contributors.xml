@@ -123,8 +123,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Benjamin Antieau"
  description="bug fixes"
- location="UIC"
- trac="bantieau"/>
+ location="Northwestern University"
+ trac="bantieau"
+ github="antieau"/>
 <contributor
  name="André Apitzsch"
  work="Otto-von-Guericke-Universität Magdeburg"
