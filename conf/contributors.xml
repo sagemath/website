@@ -1541,9 +1541,10 @@ Please keep the list in alphabetical order by last name!
  trac="mhampton"/>
 <contributor
  name="Frederic Han"
- location="Université Paris 7"
+ location="Université Paris Cité"
  url="http://webusers.imj-prg.fr/~frederic.han"
- trac="frederichan"/>
+ trac="frederichan"
+ github="frederichan-IMJPRG"/>
 <contributor
  name="Jonathan Hanke"
  work="UGA Faculty"
