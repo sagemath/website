@@ -3765,7 +3765,8 @@ Please keep the list in alphabetical order by last name!
  location="London, UK"
  description="Bell polynomials"
  url="http://www.google.com/s2/profiles/115382656960629166023"
- trac="bsutton"/>
+ trac="bsutton"
+ github="bsdz"/>
 <contributor
  name="Taylor Sutton"
  trac="tsutton"/>
