@@ -1955,8 +1955,12 @@ Please keep the list in alphabetical order by last name!
  trac="vgermrk"/>
 <contributor
  name="Tomáš Kalvoda"
- location="Czech Technical University in Prague, Czech Republic"
- trac="kalvotom"/>
+ work="Czech Technical University in Prague, Czech Republic"
+ location="Prague, Czech Republic"
+ url="https://kalvotom.pages.fit"
+ description="Very minor bug fixes"
+ trac="kalvotom"
+ github="kalvotom"/>
 <contributor
  name="Josh Kantor"
  url="http://www.math.washington.edu/~jkantor/"
