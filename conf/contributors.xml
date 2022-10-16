@@ -1793,7 +1793,8 @@ Please keep the list in alphabetical order by last name!
  name="David Jao"
  location="University of Waterloo, Canada"
  url="http://www.math.uwaterloo.ca/~djao/"
- trac="djao"/>
+ trac="djao"
+ github="davidjao"/>
 <contributor
  name="Peter Jeremy"
  location="Sydney, Australia"
