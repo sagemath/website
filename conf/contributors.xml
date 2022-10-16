@@ -3770,7 +3770,8 @@ Please keep the list in alphabetical order by last name!
  location="Nancy, France"
  description="number fields"
  url="https://members.loria.fr/EThome/"
- trac="thome"/>
+ trac="thome"
+ github="emmanuelthome"/>
 <contributor
  name="Lola Thompson"
  location="Oberlin College, OH"
