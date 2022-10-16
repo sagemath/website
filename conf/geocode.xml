@@ -76,10 +76,9 @@
 <loc location="Universiteit Gent, Ghent, Belgium" loclng="3.7303351" loclat="51.0500182"/>
 <loc location="Instituto Gulbenkian de Ciência" loclng="-9.315723" loclat="38.69086739999999"/>
 <loc location="Massachusetts Institute of Technology, USA" loclng="-71.09416" loclat="42.360091"/>
-<loc location="Laboratoire de Recherche en Informatique, Orsay, France" loclng="2.1689436" loclat="48.7125523"/>
+<loc location="Laboratoire de Recherche en Informatique, Université Paris-Saclay, France" loclng="2.1689436" loclat="48.7125523"/>
 <loc location="Dartmouth College, NH, USA" loclng="-72.2886934" loclat="43.7044406"/>
-<loc location="Sophia Antipolis, France" loclat="43.6163539" loclng="7.0552218"/>
-<loc location="INRIA, I3S(CNRS/UNS), Sophia Antipolis, France" loclng="7.0674433" loclat="43.6153024"/>
+<loc location="Inria, Sophia Antipolis, France" loclng="7.0552218" loclat="43.6163539"/>
 <loc location="University of British Colombia, Canada" loclng="-123.2459939" loclat="49.26060520000001"/>
 <loc location="Wenham, MA, USA" loclat="42.604261" loclng="-70.8911612"/>
 <loc location="200 University Avenue, West Waterloo, Ontario, Canada" loclat="43.4720646" loclng="-80.542944"/>
@@ -131,6 +130,7 @@
 <loc location="46 Rue Barrault, 75013 Paris, France" loclat="48.8262943" loclng="2.3464188"/>
 <loc location="UTEC, Uruguay" loclng="-58.0838285" loclat="-32.2616159"/>
 <loc location="Amity, Oregon, USA" loclat="45.1156724" loclng="-123.2073257"/>
+<loc location="Université Paris 7" loclng="2.3434592" loclat="48.8483803"/>
 <loc location="Ohio State University" loclng="-83.0304546" loclat="40.0066723"/>
 <loc location="Utah, USA" loclat="39.3209801" loclng="-111.0937311"/>
 <loc location="TU München, Germany" loclng="11.5663977" loclat="48.14997839999999"/>
@@ -164,13 +164,11 @@
 <loc location="郭嘉祥" loclng="114.00077" loclat="22.264495"/>
 <loc location="Goettingen, Germany" loclat="51.5412804" loclng="9.9158035"/>
 <loc location="Oshkosh, Wisconsin, USA" loclat="44.0247062" loclng="-88.5426136"/>
-<loc location="Univ. Wisc. Oshkosh" loclng="-88.5426136" loclat="44.0247062"/>
 <loc location="Am Campus 1, 3400 Klosterneuburg, Austria" loclat="48.3116073" loclng="16.2579739"/>
 <loc location="University of Tehran, Iran" loclng="51.4020909" loclat="35.7058075"/>
 <loc location="Duquesne University, Pittsburgh, Pennsylvania 15282" loclat="40.4372949" loclng="-79.9901728"/>
 <loc location="University of Puget Sound, Tacoma, WA" loclng="-122.4814442" loclat="47.2617495"/>
 <loc location="Duluth, MN, USA" loclat="46.7866719" loclng="-92.1004852"/>
-<loc location="Université Paris 7" loclng="2.3434592" loclat="48.8483803"/>
 <loc location="Athens, GA, USA" loclat="33.9519347" loclng="-83.357567"/>
 <loc location="Copenhagen, Denmark" loclat="55.6760968" loclng="12.5683371"/>
 <loc location="Seattle, WA, USA" loclat="47.6062095" loclng="-122.3320708"/>
@@ -223,7 +221,6 @@
 <loc location="Ocean City, MD, USA" loclng="-75.0849058" loclat="38.3365032"/>
 <loc location="Stephen F. Austin State University, Nacogdoches TX, USA" loclng="-94.64664379999999" loclat="31.6216141"/>
 <loc location="Bochum, Germany" loclat="51.4818445" loclng="7.2162363"/>
-<loc location="Czech Technical University in Prague, Czech Republic" loclng="14.3912841" loclat="50.1030364"/>
 <loc location="University of Notre Dame" loclng="-86.2353388" loclat="41.7055716"/>
 <loc location="Cambridge, USA" loclat="42.3736158" loclng="-71.1097335"/>
 <loc location="UCSD" loclng="-117.2340135" loclat="32.8800604"/>
@@ -355,6 +352,7 @@
 <loc location="National Technical University of Athens" loclng="23.7318586" loclat="37.9877159"/>
 <loc location="Saarland University, Germany" loclng="7.040975" loclat="49.2550284"/>
 <loc location="Johannes Kepler University, Linz, Austria" loclng="14.28583" loclat="48.30694"/>
+<loc location="University of Pisa, Italy" loclng="10.3988593" loclat="43.7167235"/>
 <loc location="CSU Dominguez-Hills" loclng="-118.2544108" loclat="33.8624581"/>
 <loc location="University Paris-Sud Orsay" loclat="48.6976847" loclng="2.1764839"/>
 <loc location="Univ. Paris-Sud, France" loclng="2.1658617" loclat="48.7013763"/>
@@ -508,7 +506,7 @@
 <loc location="Brandeis University" loclng="-71.2586441" loclat="42.36535689999999"/>
 <loc location="University of Kentucky" loclng="-84.5039697" loclat="38.0306511"/>
 <loc location="Singapore" loclng="103.819836" loclat="1.352083"/>
-<loc location="University of Bonn, Germany" loclng="7.0864528" loclat="50.7267806"/>
+<loc location="University of Applied Sciences Landshut, Germany" loclng="12.1978003" loclat="48.5562293"/>
 <loc location="Villers les Nancy, France" loclat="48.673218" loclng="6.153496"/>
 <loc location="Changsha, Hunan, China" loclat="28.228209" loclng="112.938814"/>
 <loc location="Louisiana State University" loclng="-91.1800023" loclat="30.4132579"/>
