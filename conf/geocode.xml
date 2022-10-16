@@ -47,10 +47,10 @@
 <loc location="University Lille I, France" loclng="3.0753193" loclat="50.6314582"/>
 <loc location="Dublin Institute for Advanced Studies" loclng="-6.245637599999999" loclat="53.3313415"/>
 <loc location="TU Wien, Austria" loclng="16.3684626" loclat="48.1986546"/>
+<loc location="Université Paris Sud XI, Orsay, France" loclng="2.1658617" loclat="48.7013763"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Universiteit Leiden" loclng="4.485209" loclat="52.1571485"/>
-<loc location="Simon Fraser University, Canada" loclng="-122.9198833" loclat="49.2780937"/>
 <loc location="Australian National University, ACT, Australia" loclng="149.1183238" loclat="-35.2812533"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5043186" loclng="8.4717852"/>
 <loc location="University Rutgers, New Jersey, USA" loclng="-74.4056612" loclat="40.0583238"/>
@@ -83,7 +83,6 @@
 <loc location="Wenham, MA, USA" loclat="42.604261" loclng="-70.8911612"/>
 <loc location="200 University Avenue, West Waterloo, Ontario, Canada" loclat="43.4720646" loclng="-80.542944"/>
 <loc location="Chicago, IL, USA" loclng="-87.6297982" loclat="41.8781136"/>
-<loc location="University of Illinois at Chicago" loclng="-87.6484497" loclat="41.8685636"/>
 <loc location="Acadia University, Canada" loclng="-64.3662494" loclat="45.0875592"/>
 <loc location="Durham University" loclng="-1.5782029" loclat="54.7649859"/>
 <loc location="UCLA" loclng="-118.4451811" loclat="34.068921"/>
@@ -176,7 +175,6 @@
 <loc location="University of California, San Diego, USA" loclng="-117.2340135" loclat="32.8800604"/>
 <loc location="Grad, UCSB" loclng="-119.848947" loclat="34.4139629"/>
 <loc location="University of Hawaiʻi at Mānoa" loclng="-157.8148228" loclat="21.299824"/>
-<loc location="University of Warwick" loclng="-1.5614704" loclat="52.3792525"/>
 <loc location="University of Nebraska-Lincoln" loclng="-96.70047629999999" loclat="40.8201966"/>
 <loc location="NYU, NY, USA" loclat="40.7298919" loclng="-73.997979"/>
 <loc location="University of New South Wales, NSW, Australia" loclng="151.2312675" loclat="-33.917347"/>
@@ -411,8 +409,7 @@
 <loc location="Heidelberg, Germany" loclng="8.6724335" loclat="49.3987524"/>
 <loc location="Max Planck Institute for Biogeochemistry" loclng="11.5667416" loclat="50.9101299"/>
 <loc location="University of Warwick, UK" loclng="-1.5614704" loclat="52.3792525"/>
-<loc location="Tracy, CA, USA" loclat="37.7396513" loclng="-121.4252227"/>
-<loc location="Osaka City University" loclng="135.5046827" loclat="34.5922748"/>
+<loc location="Sapporo, Japan" loclng="141.3544506" loclat="43.0617713"/>
 <loc location="UIC, Chicago, IL" loclng="-87.6484497" loclat="41.8685636"/>
 <loc location="University of Virginia" loclng="-78.5079772" loclat="38.0335529"/>
 <loc location="0313 Oslo, Norway" loclat="59.9424054" loclng="10.7222994"/>
@@ -450,7 +447,6 @@
 <loc location="Grad, San Luis Obispo, CA" loclng="-120.6388702" loclat="35.2536576"/>
 <loc location="INRIA, France" loclng="2.213749" loclat="46.227638"/>
 <loc location="Orsay, France" loclat="48.702806" loclng="2.1719323"/>
-<loc location="Université Paris Sud XI, Orsay, France" loclng="2.1658617" loclat="48.7013763"/>
 <loc location="LaCIM, UQAM, Montréal, Québec, Canada" loclat="45.5125995" loclng="-73.5605955"/>
 <loc location="Nancy, France" loclat="48.692054" loclng="6.184417"/>
 <loc location="Oberlin College, OH" loclng="-82.22108899999999" loclat="41.2958696"/>
