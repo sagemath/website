@@ -3746,7 +3746,8 @@ Please keep the list in alphabetical order by last name!
  work="professor, LaCIM, Department of Mathematics, UQAM"
  location="LaCIM, UQAM, Montréal, Québec, Canada"
  url="http://www.lacim.uqam.ca/~hugh/"
- trac="hthomas"/>
+ trac="hthomas"
+ github="hughrthomas"/>
 <contributor
  name="Emmanuel Thomé"
  work="Researcher, INRIA"
