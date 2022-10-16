@@ -2497,12 +2497,8 @@ Please keep the list in alphabetical order by last name!
  location="Lewisburg, PA 17837, USA"
  description="combinatorics"
  url="http://www.facstaff.bucknell.edu/pm040"
- trac="pmcnamara"/>
-<contributor
- name="Peter McNamara"
- location="Bucknell University, Pennsylvania, USA"
- url="http://www.facstaff.bucknell.edu/pm040"
- trac="pmcnamara"/>
+ trac="pmcnamara"
+ github="peter-mcnamara"/>
 <contributor
  name="Gregory McWhirter"
  work="graduate student, Department of Logic and Philosophy of Science, University of California at Irvine"
