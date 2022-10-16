@@ -166,7 +166,12 @@ def writeToDevmap():
             a.appendChild(devmap.createTextNode(f"contributions (trac)"))
         td.appendChild(devmap.createElement("br"))
         td.appendChild(a)
-
+        if github:
+            a = devmap.createElement("a")
+            a.setAttribute("href", f'https://github.com/sagemath/sage/commits?author={github}')
+            a.setAttribute("class", "trac")
+            a.appendChild(devmap.createTextNode(f"commits (gh: {github})"))
+            td.appendChild(a)
         td.setAttribute("class", "description")
         tr.appendChild(td)
         devlist.appendChild(tr)
