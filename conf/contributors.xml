@@ -5,14 +5,15 @@ Sage contributors
 + mandatory / - optional
 
 contributor
- + name
+ + name = full name
+ - altnames = comma-separated list of alternate full names
  - location = something which returns the correct location when entered in maps.google.com
  - work = university, institute, ...
  - description = <item>[;<item>]* ... delimiter ";" is converted into a break or list
  - url = webpage, when clicking on name
  - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally
  - jitter = float as string, multiplicated in jitter function, 0 to disable
- - trac = trac nickname for the search (also searched for the name, but the trac name is often different!)
+ - trac = trac nickname for the search (also searched for the name, but the trac name is often different!). comma-separated list of several trac account names ok.
  - github = github.com account name
  - gitlab = gitlab.com account name
 
@@ -4047,13 +4048,10 @@ Please keep the list in alphabetical order by last name!
  github="chaoxu"/>
 <contributor
  name="Tianyuan Xu"
- trac="tianyuan_xu"
- github="TianyuanX"/>
-<contributor
- name="Tianyuan Xu"
  location="University of Oregon"
  url="http://pages.uoregon.edu/tianyuan/"
- trac="tianyuan"/>
+ trac="tianyuan,tianyuan_xu"
+ github="TianyuanX"/>
 <contributor
  name="Hideyuki YASUDA"
  trac="umedoblock"/>
@@ -4100,10 +4098,6 @@ Please keep the list in alphabetical order by last name!
  name="Hongli Zhao"
  trac="honglizhaobob"/>
 <contributor
- name="Yuan Zhou"
- trac="yzh"
- github="yuan-zhou"/>
-<contributor
  name="Ying Zhou"
  location="Brandeis University"
  url="http://github.com/mathyingzhou"
@@ -4112,7 +4106,8 @@ Please keep the list in alphabetical order by last name!
  name="Yuan Zhou"
  location="University of Kentucky"
  url="https://math.as.uky.edu/users/yzh392"
- trac="yzh"/>
+ trac="yzh"
+ github="yuan-zhou"/>
 <contributor
  name="Yair Zick"
  location="Singapore"
