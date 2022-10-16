@@ -2751,6 +2751,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Émile Nadeau"
  location="Reykjavik University"
+ github="enadeau"
+ gitlab="enadeau"
  trac="enadeau"/>
 <contributor
  name="Tobias Nagel"
