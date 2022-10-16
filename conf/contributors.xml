@@ -3562,7 +3562,8 @@ Please keep the list in alphabetical order by last name!
  name="Katherine Stange"
  location="University of Colorado - Boulder"
  url="http://math.katestange.net"
- trac="katestange"/>
+ trac="katestange"
+ github="katestange"/>
 <contributor
  name="Jim Stankewicz"
  location="University of Georgia, USA"
