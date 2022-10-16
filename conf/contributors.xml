@@ -3783,10 +3783,11 @@ Please keep the list in alphabetical order by last name!
  trac="jthurber"/>
 <contributor
  name="Igor Tolkov"
- work="University of Washington, WA, USA"
  location="Seattle, USA"
- description="work on Interact"
- trac="itolkov"/>
+ description="Interact (Google Summer of Code 2008)"
+ url="https://igor.tolkov.com"
+ trac="itolkov"
+ github="itolkov"/>
 <contributor
  name="Gonzalo Tornaria"
  location="Universidad de la República, Uruguay"
