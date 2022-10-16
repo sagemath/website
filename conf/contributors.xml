@@ -2976,7 +2976,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Federico Poloni"
  url="http://fph.altervista.org"
- trac="f.poloni"/>
+ location="University of Pisa, Italy"
+ trac="f.poloni"
+ github="fph"/>
 <contributor
  name="Wai Yan Pong"
  location="CSU Dominguez-Hills"
