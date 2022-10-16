@@ -1653,8 +1653,10 @@ Please keep the list in alphabetical order by last name!
  description="Newton-Raphson Root Finding interact demonstration"/>
 <contributor
  name="Daniel Georg Holzfeind"
- location="Alpen-Adria-Universität Klagenfurt, Austria"
- trac="daholzfeind"/>
+ location="Villach, Austria"
+ trac="daholzfeind"
+ github="daholzfeind"
+ gitlab="daholzfeind"/>
 <contributor
  name="Sam Hopkins"
  location="University of Washington, Seattle"
