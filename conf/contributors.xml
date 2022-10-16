@@ -2288,7 +2288,8 @@ Please keep the list in alphabetical order by last name!
  name="Gabriel F. Lipnik"
  location="Graz University of Technology, Austria"
  url="https://www.gabriellipnik.at"
- trac="galipnik"/>
+ trac="galipnik"
+ github="galipnik"/>
 <contributor
  name="Robert Lipshitz"
  location="Columbia University, New York, NY"
