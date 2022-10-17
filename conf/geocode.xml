@@ -317,7 +317,6 @@
 <loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
 <loc location="Frankfurt, Germany" loclng="8.6821267" loclat="50.1109221"/>
 <loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
-<loc location="Melbourne, Australia" loclat="-37.814107" loclng="144.96328"/>
 <loc location="Anker Engelunds Vej 1, 2800 Kongens Lyngby, Denmark" loclat="55.785955" loclng="12.524138"/>
 <loc location="Imperial College London" loclng="-0.1748735" loclat="51.49882220000001"/>
 <loc location="Universiteit Leiden, The Netherlands" loclng="4.485209" loclat="52.1571485"/>
@@ -494,6 +493,7 @@
 <loc location="University of Connecticut, Storrs, CT" loclng="-73.087749" loclat="41.6032207"/>
 <loc location="University of Hong Kong, China" loclng="114.1693611" loclat="22.3193039"/>
 <loc location="University of Oregon" loclng="-123.0726055" loclat="44.0448302"/>
+<loc location="Melbourne, Australia" loclat="-37.814107" loclng="144.96328"/>
 <loc location="Austin, TX, USA" loclat="30.267153" loclng="-97.7430608"/>
 <loc location="Toronto, Ontario, Canada" loclat="43.653226" loclng="-79.3831843"/>
 <loc location="University of Washington, Seattle" loclng="-122.3320708" loclat="47.6062095"/>
