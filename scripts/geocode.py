@@ -67,6 +67,30 @@ else:
 loclist = locxml.getElementsByTagName("loc")
 timeout = 5  # in secs, timeout between each request to avoid error 620
 
+# changelog scanning
+import glob
+import re
+
+logs = dict()
+for f in glob.glob(os.path.join("..", "src", "changelogs", "*.txt")):
+    match = re.search('-([0-9]+)[.][0-9.]*txt$', f)
+    if match:
+        major = match.group(1)
+        try:
+            with open(f) as log:
+                logs[major] = logs.get(major, "") + log.read()
+        except UnicodeDecodeError as e:
+            raise RuntimeError(f'error reading {f}: {e}')
+
+def changelog_contributions(names):
+    print(names)
+    versions = sorted((major
+                       for (major, log) in logs.items()
+                       if any(name in log for name in names)),
+                      key=int)
+    if versions:
+        return "Contributions to Sage " + ', '.join(f'{major}.x' for major in versions)
+    return ""
 
 def writeToDevmap():
     """
@@ -126,27 +150,17 @@ def writeToDevmap():
             td.appendChild(devmap.createTextNode(loc))
         tr.appendChild(td)
         td = devmap.createElement("td")
-        if len(descr) != 0:
-            descr = map(lambda _: _.strip(), descr.split(r';'))
-            first = True
-            for d in descr:
-                if not first:
-                    td.appendChild(devmap.createElement("br"))
-                else:
-                    first = False
-                # since there are tags in the string, we parse it
-                d = d.replace("&lt;", "<").replace("&gt;", ">")
-                d_el = parseString("<span>%s</span>" % d)
-                td.appendChild(d_el.firstChild)
 
-        a = devmap.createElement("a")
         tracQuery = f"https://trac.sagemath.org/query?"
         main_trac = None
         trac_list = [t.strip() for t in trac.split(',') if t.strip()]
         gh_trac_list = [f'gh-{gh.strip()}' for gh in github.split(',') if gh.strip()]
+        all_names = []
         for trac in trac_list + gh_trac_list:
             if not main_trac:
                 main_trac = trac
+            if trac:
+                all_names.append(trac)
             tracQuery += f"&or&cc=~{trac}"
             tracQuery += f"&or&reporter=~{trac}"
             tracQuery += f"&or&owner=~{trac}"
@@ -154,10 +168,29 @@ def writeToDevmap():
             name = name.strip()
             if not name:
                 continue
+            all_names.append(name)
             tracQuery += f"&or&author=~{name}"
             tracQuery += f"&or&reviewer=~{name}"
         tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
         tracQuery = tracQuery.replace(" ", "%20")
+
+        if not descr:
+            descr = [changelog_contributions(all_names)]
+        else:
+            descr = map(lambda _: _.strip(), descr.split(r';'))
+
+        first = True
+        for d in descr:
+            if not first:
+                td.appendChild(devmap.createElement("br"))
+            else:
+                first = False
+                # since there are tags in the string, we parse it
+                d = d.replace("&lt;", "<").replace("&gt;", ">")
+                d_el = parseString("<span>%s</span>" % d)
+                td.appendChild(d_el.firstChild)
+
+        a = devmap.createElement("a")
         a.setAttribute("href", tracQuery)
         a.setAttribute("class", "trac")
         if main_trac:

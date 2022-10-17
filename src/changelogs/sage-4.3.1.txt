@@ -54,7 +54,7 @@ their first contribution to Sage:
  * Minh Van Nguyen
  * Mitesh Patel
  * Nathann Cohen
- * Nicolas M. Thiéry
+ * Nicolas M. ThiÃ©ry
  * Nils Bruin
  * Paul Butler
  * Peter Jeremy
@@ -64,7 +64,7 @@ their first contribution to Sage:
  * Robert Marik
  * Robert Miller
  * Sebastian Pancratz
- * Sébastien Labbé
+ * SÃ©bastien LabbÃ©
  * Simon King
  * Steven Sivek
  * Tim Dumol
@@ -241,7 +241,7 @@ Merged in sage-4.3.1.alpha0:
 #7732: William Stein: remove binary files from ECL distribution [Reviewed by David Kirkby]
 #7745: Karl-Dieter Crisman: Update Maxima to 5.20.1 [Reviewed by Robert Marik]
 #7749: Steven Sivek: Add names.gz to the Sloane OEIS [Reviewed by Jaap Spies]
-#7754: Nicolas M. Thiéry: Weyl group optimizations [Reviewed by Daniel Bump]
+#7754: Nicolas M. ThiÃ©ry: Weyl group optimizations [Reviewed by Daniel Bump]
 #7768: Minh Van Nguyen: PDF version of reference manual fails to build in Sage 4.3 [Reviewed by John Palmieri]
 #7769: John Palmieri: delete some rst files [Reviewed by Minh Van Nguyen]
 #7770: Rob Beezer: Implement Tower of Hanoi graph [Reviewed by David Joyner]
@@ -284,18 +284,18 @@ Merged in sage-4.3.1.alpha2:
 #7590: Nathann Cohen: Create Bipartite Graph according to 2 degree sequences [Reviewed by Robert Miller]
 #7595: Robert Miller: Chinese Remainder Theorem for univariate polynomials over a field [Reviewed by Robert Bradshaw, John Cremona]
 #7634: Robert Miller: switch default Sage graphs over to c_graph, and split up graph.py and graph_generators.py [Reviewed by Nathann Cohen]
-#7729: Daniel Bump, Nicolas M. Thiéry: Iwahori Hecke algebras on the T basis [Reviewed by Anne Schilling]
+#7729: Daniel Bump, Nicolas M. ThiÃ©ry: Iwahori Hecke algebras on the T basis [Reviewed by Anne Schilling]
 #7739: Robert Bradshaw: Improvements to AGM [Reviewed by John Cremona]
 #7740: Nathann Cohen: Speed up MixedIntegerLinearProgram [Reviewed by Robert Miller]
 #7743: Paul Butler: Piecewise integration fixes [Reviewed by David Joyner]
-#7753: Nicolas M. Thiéry, Daniel Bump: Coxeter groups: more Bruhat and weak order features [Reviewed by Daniel Bump]
+#7753: Nicolas M. ThiÃ©ry, Daniel Bump: Coxeter groups: more Bruhat and weak order features [Reviewed by Daniel Bump]
 #7761: David Kirkby: Python 2.6.2.p4 faills to build on OpenSolaris [Reviewed by Jaap Spies]
 #7804: Nathann Cohen: Move mip_coin and mip_glpk to Sage [Reviewed by Robert Miller]
 #7809: Jason Grout: region_plot does not respect the passed variable order [Reviewed by Karl-Dieter Crisman]
 #7814: David Kirkby: eclib ignores SAGE64 if OS is not Darwin [Reviewed by Jaap Spies]
 #7819: Robert Miller: RealInterval(+infinity,+infinity).is_int() blows up [Reviewed by Karl-Dieter Crisman]
 #7836: John Cremona: Clean up the CRT_* functions [Reviewed by Robert Miller]
-#7842: Nicolas M. Thiéry: Let attrcall objects accept further arguments [Reviewed by Mike Hansen]
+#7842: Nicolas M. ThiÃ©ry: Let attrcall objects accept further arguments [Reviewed by Mike Hansen]
 #7845: Mitesh Patel: Failed browse_sage_doc doctest [Reviewed by John Palmieri]
 #7853: Nathann Cohen: block_and_cut_vertices is inconsistent when graph has one vertex [Reviewed by Robert Miller]
 #7856: William Stein: update matplotlib hack for OS X [Reviewed by John Palmieri]
@@ -312,8 +312,8 @@ Merged in sage-4.3.1.rc0:
 #7100: Gonzalo Tornaria: rounding error in QuadraticForm.vectors_by_length() [Reviewed by Mike Hansen]
 #7145: Vincent Delecroix: Interval exchange transformations [Reviewed by Sebastien Labbe]
 #7700: Ivan Andrus: Document non-text, non-image files in sage-4.3.rc0/data/extcode/sage/ext/mac-app [Reviewed by Karl-Dieter Crisman]
-#7776: Nicolas M. Thiéry: Implements sage.misc.misc.inject_variable(name, value) [Reviewed by Mike Hansen]
-#7777: Nicolas M. Thiéry: Implement SymmetricFunctions(QQ).inject_shorthands() [Reviewed by Jason Bandlow]
+#7776: Nicolas M. ThiÃ©ry: Implements sage.misc.misc.inject_variable(name, value) [Reviewed by Mike Hansen]
+#7777: Nicolas M. ThiÃ©ry: Implement SymmetricFunctions(QQ).inject_shorthands() [Reviewed by Jason Bandlow]
 #7781: David Kirkby: Update prereq to version 0.6 [Reviewed by Minh Van Nguyen]
 #7800: William Stein: dsage -- re-enable use of openssl to certificate keys, if openssl is installed  (why the notebook in secure mode is so slow to generate initial keys!) [Reviewed by Minh Van Nguyen]
 #7815: David Kirkby: Flint fails to build 64-bit on Open Solaris [Reviewed by Robert Miller]
@@ -325,9 +325,9 @@ Merged in sage-4.3.1.rc0:
 #7900: David Kirkby: Replace variables like $RM with  'rm' in Mercurial [Reviewed by Jaap Spies]
 #7901: David Kirkby: Change $MKDIR to 'mkdir' in pari [Reviewed by Jaap Spies]
 #7909: David Kirkby: Replace $MKDIR with 'mkdir' in sage-spkg [Reviewed by Jaap Spies]
-#7919: Craig Citro: Doctest in sage/misc/test_class_pickling.py doesn't test anything [Reviewed by Nicolas M. Thiéry]
+#7919: Craig Citro: Doctest in sage/misc/test_class_pickling.py doesn't test anything [Reviewed by Nicolas M. ThiÃ©ry]
 #7925: Nathann Cohen: solveGLPK and solve_coin need doctests !!! [Reviewed by Robert Miller]
-#7928: Nicolas M. Thiéry: Trivial follow up on #7776 [Reviewed by John Palmieri]
+#7928: Nicolas M. ThiÃ©ry: Trivial follow up on #7776 [Reviewed by John Palmieri]
 #7940: John Palmieri: real_mpfr: fix docstring so ref manual builds [Reviewed by Robert Miller]
 
 Merged in sage-4.3.1.rc1:
@@ -344,7 +344,7 @@ Merged in sage-4.3.1.rc1:
 #6411: Mike Hansen: sdist makes sage unable to run without building [Reviewed by Willem Jan Palenstijn]
 #6657: John Cremona: EllipticCurve(..., j=...) shouldn't ignore field argument if given. [Reviewed by Chris Wuthrich]
 #6737: Arthur Gaer: change occurrences of "Pyrex" to "Cython" [Reviewed by William Stein]
-#6936: Jason Grout: Implement generic testing from #6343 for matrices [Reviewed by Nicolas M. Thiéry]
+#6936: Jason Grout: Implement generic testing from #6343 for matrices [Reviewed by Nicolas M. ThiÃ©ry]
 #6960: William Stein: silly inconsistency in pari versus magma interface [Reviewed by Robert Miller]
 #6967: William Stein: @parallel -- dramatically improve by rewriting with fork directly, using files, timeouts, controlling interfaces, etc. [Reviewed by Robert Miller]
 #7095: Craig Citro, John Palmieri, Francis Clarke, William Stein: os x 10.6 port -- numerous mysterious errors caused by weird "abort trap" issue [Reviewed by David Kirkby, Georg S. Weber]

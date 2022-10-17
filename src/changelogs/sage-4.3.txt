@@ -40,7 +40,7 @@ their first contribution to Sage:
  * Franco Saliola
  * Georg S. Weber
  * Golam Mortuza Hossain
- * Håkan Granath
+ * HÃ¥kan Granath
  * Ivan Andrus
  * Jaap Spies
  * Jason Bandlow
@@ -61,7 +61,7 @@ their first contribution to Sage:
  * Mitesh Patel
  * Nathann Cohen
  * Nicolas Borie
- * Nicolas M. Thiéry
+ * Nicolas M. ThiÃ©ry
  * Nils Bruin
  * Qiang Wang [first contribution]
  * Ralf Hemmecke
@@ -69,7 +69,7 @@ their first contribution to Sage:
  * Robert Bradshaw
  * Robert Marik [first contribution]
  * Robert Miller
- * Sébastien Labbé
+ * SÃ©bastien LabbÃ©
  * Simon King
  * Soledad Villar [first contribution]
  * Soroosh Yazdani
@@ -218,7 +218,7 @@ Merged in Sage 4.3.rc1:
 #7314: Nathann Cohen: Average distance, Wiener Index, Szeged index [Reviewed by Robert Miller]
 #7358: Nathann Cohen: Strong orientations of 2-connected graphs [Reviewed by Robert Miller]
 #7365: Nathann Cohen: Petersen's 2-factor theorem [Reviewed by Robert Miller]
-#7400: Florent Hivert: Element does not copy its __dict__ when copied, ElementWrapper does not copy the wrapped values when copied [Reviewed by Nicolas M. Thiéry]
+#7400: Florent Hivert: Element does not copy its __dict__ when copied, ElementWrapper does not copy the wrapped values when copied [Reviewed by Nicolas M. ThiÃ©ry]
 #7452: Ivan Andrus: Make it easier to diagnose build problems by allowing copy-paste [Reviewed by Minh Van Nguyen, Mike Hansen]
 #7491: Robert Marik: solve(x==x,x) fails [Reviewed by Karl-Dieter Crisman]
 #7527: Nathann Cohen: include graph_coloring in the reference manual [Reviewed by Minh Van Nguyen]
@@ -282,7 +282,7 @@ Merged in Sage 4.3.rc0:
 #7517: William Stein: improve documentation of xgcd command [Reviewed by Alex Ghitza]
 #7546: Ivan Andrus: Update Mac OS X app and icon [Reviewed by Karl-Dieter Crisman]
 #7561: Nathann Cohen: Replaces InfinitePolynomialRing in MixedIntegerLinearProgram by 'var', and bug fixing in constraints() [Reviewed by Martin Albrecht]
-#7562: Håkan Granath: Another (new?) binomial bug [Reviewed by Karl-Dieter Crisman]
+#7562: HÃ¥kan Granath: Another (new?) binomial bug [Reviewed by Karl-Dieter Crisman]
 #7591: Martin Albrecht: Boolean Polynomial Ring coercion broken [Reviewed by Burcin Erocal]
 #7603: Burcin Erocal: add methods to query representation of symbolic expressions [Reviewed by Mike Hansen]
 #7604: Soledad Villar, Francis Clarke: Bug in continued fractions module (contfrac) [Reviewed by Mike Hansen]
@@ -320,7 +320,7 @@ Merged in Sage 4.3.alpha1:
 #7364: Nathann Cohen: Eulerian orientation of a graph [Reviewed by Florent Hivert]
 #7375: Martin Albrecht: upgrade M4RI to newest upstream release [Reviewed by David Kirkby]
 #7386: Nathann Cohen: Docstrings for graphs_generators.CubeGraph [Reviewed by Mike Hansen]
-#7405: Sébastien Labbé: Change the print of predefined words to the default behavior [Reviewed by Florent Hivert]
+#7405: SÃ©bastien LabbÃ©: Change the print of predefined words to the default behavior [Reviewed by Florent Hivert]
 #7409: Florent Hivert: Partitions(n).random_element() is extremely slow [Reviewed by Mike Hansen]
 #7457: Alex Ghitza: improvements to quotient_ring.py [Reviewed by John Palmieri]
 #7461: Robert Miller: Long doctests in partn_ref/refinement_matrices.pyx frequently timing out [Reviewed by Mike Hansen]
@@ -330,7 +330,7 @@ Merged in Sage 4.3.alpha1:
 #7504: William Stein: Magma booleans don't evaluate correctly in boolean contexts [Reviewed by Kiran Kedlaya]
 #7510: Florent Hivert: is_finite method in categories (was Primes is missing is_finite) [Reviewed by Mike Hansen]
 #7515: Florent Hivert: Improved deprecation and renaming of function and methods [Reviewed by Nathann Cohen]
-#7519: Sébastien Labbé: Allowing the choice of word datatype for images under WordMorphism [Reviewed by Franco Saliola]
+#7519: SÃ©bastien LabbÃ©: Allowing the choice of word datatype for images under WordMorphism [Reviewed by Franco Saliola]
 #7525: John H. Palmieri: developer's guide: add information about editing python files in the sage library [Reviewed by Minh Van Nguyen]
 #7526: Yann Laigle-Chapuy: polynomial_template should avoid unnecessary coercions [Reviewed by Martin Albrecht]
 #7531: Martin Albrecht: Python interface to M4RI's LQUP function [Reviewed by Yann Laigle-Chapuy]
@@ -354,16 +354,16 @@ Merged in Sage 4.3.alpha0:
 
 #1163: Karl-Dieter Crisman: make assume behave more consistently and catch inconsistent assumptions [Reviewed by Jason Grout, Robert Marik]
 #3663: Anne Schilling, Brant Jones: add support for affine crystals [Reviewed by Dan Bump]
-#4326: Nicolas M. Thiéry, Anne Schilling, Daniel Bump, Nicolas Borie, Qiang Wang, Steve Pon: Root systems improvements [Reviewed by Daniel Bump, Mike Hansen]
+#4326: Nicolas M. ThiÃ©ry, Anne Schilling, Daniel Bump, Nicolas Borie, Qiang Wang, Steve Pon: Root systems improvements [Reviewed by Daniel Bump, Mike Hansen]
 #5480: Alex Ghitza: R.quotient_by_principal_ideal() is self-contradictory [Reviewed by Mike Hansen]
 #5482: Alex Ghitza: Quotient ring can be created without generator names [Reviewed by Mike Hansen]
 #5794: Dan Bump: exceptional and reducible type branching rules [Reviewed by Brant Jones]
-#5891: Nicolas M. Thiéry: Categories for the working mathematics programmer [Reviewed by Robert Bradshaw, Craig Citro, Florent Hivert, David Kohel, David Roe, Anne Schilling, William Stein, Javier Vengoroso]
-#6136: Nicolas M. Thiéry: (Combinatorial) Free modules: cleanup, abstraction into categories, and functorial constructions [Reviewed by Florent Hivert]
-#6137: Nicolas M. Thiéry: Symmetric functions: refactoring to use coercions, categories, unique rep, and Hopf algebra framework [Reviewed by Jason Bandlow]
-#6138: Nicolas M. Thiéry: SymmetricGroupAlgebra: updates w.r.t. categories and free modules [Reviewed by Florent Hivert]
+#5891: Nicolas M. ThiÃ©ry: Categories for the working mathematics programmer [Reviewed by Robert Bradshaw, Craig Citro, Florent Hivert, David Kohel, David Roe, Anne Schilling, William Stein, Javier Vengoroso]
+#6136: Nicolas M. ThiÃ©ry: (Combinatorial) Free modules: cleanup, abstraction into categories, and functorial constructions [Reviewed by Florent Hivert]
+#6137: Nicolas M. ThiÃ©ry: Symmetric functions: refactoring to use coercions, categories, unique rep, and Hopf algebra framework [Reviewed by Jason Bandlow]
+#6138: Nicolas M. ThiÃ©ry: SymmetricGroupAlgebra: updates w.r.t. categories and free modules [Reviewed by Florent Hivert]
 #6318: Adam Webb: optional doctest failure -- axiom interface -- something doesn't work [Reviewed by Mike Hansen]
-#6354: Nicolas M. Thiéry: Advertise and improve sage -fixdoctest [Reviewed by Mike Hansen]
+#6354: Nicolas M. ThiÃ©ry: Advertise and improve sage -fixdoctest [Reviewed by Mike Hansen]
 #6517: Adam Webb, Ralf Hemmecke: FriCAS X.Y.Z [Reviewed by Jaap Spies, Adam Webb, Mike Hansen ]
 #6669: Martin Raum: Homomorphisms from matrix groups don't have to have matrix groups as codomain [Reviewed by Robert Bradshaw]
 #6760: Robert Bradshaw: error in quaternion algebra ideal basis [Reviewed by Alex Ghitza]
@@ -371,24 +371,24 @@ Merged in Sage 4.3.alpha0:
 #7023: Robert Bradshaw: Upgrade to Cython 0.11.3 [Reviewed by Mike Hansen]
 #7036: David Kirkby: rubiks ignores CXX and uses g++ even if CXX is Sun compiler [Reviewed by Mike Hansen]
 #7190: Nathann Cohen: French translation: A Tour of Sage [Reviewed by Dan Drake, Mike Hansen]
-#7208: Florent Hivert: Refactorisation of families [Reviewed by Nicolas M. Thiéry]
+#7208: Florent Hivert: Refactorisation of families [Reviewed by Nicolas M. ThiÃ©ry]
 #7352: David Kirkby: Update prereq to version 0.5 [Reviewed by Mike Hansen]
 #7353: Dan Drake: French "Tour of Sage" should use Sphinx's French localization [Reviewed by Mike Hansen]
 #7355: Tim Dumol: Allow sage -i/-f to install packages without stating version number [Reviewed by Dan Drake]
 #7371: Alex Ghitza: rename quotient_group() to quotient() in groups/perm_gps/permgroup.py [Reviewed by Mike Hansen]
-#7395: Florent Hivert: The enumerated set of non negative integers [Reviewed by Nicolas M. Thiéry]
-#7396: Florent Hivert: Disjoint unions of enumerated sets [Reviewed by Nicolas M. Thiéry]
-#7397: Florent Hivert: Updated Primes to the category system [Reviewed by Nicolas M. Thiéry]
-#7403: Florent Hivert: adds FiniteEnumeratedSet [Reviewed by Nicolas M. Thiéry]
-#7420: Mike Hansen: Fix uncaught infinite loop in coercion discovery [Reviewed by Nicolas M. Thiéry, Robert Bradshaw]
-#7421: Nicolas M. Thiéry: Weaker precondition for registering a new coercion [Reviewed by Robert Bradshaw]
-#7443: Florent Hivert: List all categories in the reference manual [Reviewed by Nicolas M. Thiéry]
+#7395: Florent Hivert: The enumerated set of non negative integers [Reviewed by Nicolas M. ThiÃ©ry]
+#7396: Florent Hivert: Disjoint unions of enumerated sets [Reviewed by Nicolas M. ThiÃ©ry]
+#7397: Florent Hivert: Updated Primes to the category system [Reviewed by Nicolas M. ThiÃ©ry]
+#7403: Florent Hivert: adds FiniteEnumeratedSet [Reviewed by Nicolas M. ThiÃ©ry]
+#7420: Mike Hansen: Fix uncaught infinite loop in coercion discovery [Reviewed by Nicolas M. ThiÃ©ry, Robert Bradshaw]
+#7421: Nicolas M. ThiÃ©ry: Weaker precondition for registering a new coercion [Reviewed by Robert Bradshaw]
+#7443: Florent Hivert: List all categories in the reference manual [Reviewed by Nicolas M. ThiÃ©ry]
 #7449: William Stein: Some doc request hangs sage eating all memory [Reviewed by Florent Hivert]
 #7450: Alex Ghitza: implement is_prime() for ideals [Reviewed by Martin Albrecht]
 #7460: William Stein: numerical noise on itanium (iras) [Reviewed by Mike Hansen]
 #7462: Kwankyu Lee: magma interface -- huge number of doctest failures [Reviewed by Georg S. Weber]
 #7463: William Stein: document memory management for the magma interface [Reviewed by Georg Weber]
 #7474: Martin Raum: Expose some more functionality of fmz_poly [Reviewed by Mike Hansen]
-#7478: Florent Hivert, Nicolas M. Thiéry: TestSuite improvements [Reviewed by Nicolas M. Thiéry, Florent Hivert]
+#7478: Florent Hivert, Nicolas M. ThiÃ©ry: TestSuite improvements [Reviewed by Nicolas M. ThiÃ©ry, Florent Hivert]
 #7479: Mike Hansen: sage fails to integrate identity [Reviewed by Karl-Dieter Crisman]
 #7488: William Stein: plot3d? doesn't document plot_points option [Reviewed by Mike Hansen]
