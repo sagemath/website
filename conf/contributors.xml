@@ -1251,16 +1251,10 @@ Please keep the list in alphabetical order by last name!
  trac="giraudo"/>
 <contributor
  name="Amy Glen"
- work="Lecturer in Mathematics, School of Chemical and Mathematical Sciences, Murdoch University"
- location="90 South Street, Murdoch, Western Australia, Australia"
+ location="Perth, Western Australia"
  description="SageWords co-author"
- url="http://wwwstaff.murdoch.edu.au/~aglen"
- trac="amyglen"/>
-<contributor
- name="Amy Glen"
- location="Reykjavík University, Iceland"
- url="http://www.ru.is/kennarar/amy"
- trac="amyglen"/>
+ url="https://amyglen.wordpress.com"
+ trac="amy-glen"/>
 <contributor
  name="Charlie Godfrey"
  location="University of Washington-Seattle"
