@@ -170,7 +170,7 @@ def writeToDevmap():
             a = devmap.createElement("a")
             a.setAttribute("href", f'https://github.com/sagemath/sage/commits?author={github}')
             a.setAttribute("class", "trac")
-            a.appendChild(devmap.createTextNode(f"commits (gh: {github})"))
+            a.appendChild(devmap.createTextNode(f"commits (github: {github})"))
             td.appendChild(a)
         td.setAttribute("class", "description")
         tr.appendChild(td)
