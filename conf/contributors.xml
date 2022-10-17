@@ -5389,4 +5389,12 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="王瑞期"
  trac="shahuwang"/>
+<contributor
+ name="Martin Pépin"
+ work="Université Sorbonne Paris Nord"
+ description="combinatorics"
+ url="https://wkerl.me"
+ trac="MartinPepin"
+ github="Kerl13"
+ gitlab="Kerl"/>
 </contributors>
