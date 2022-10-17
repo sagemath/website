@@ -1862,7 +1862,8 @@ Please keep the list in alphabetical order by last name!
  location="Bochum, Germany"
  description="Graph Theory fixes; miscellaneous bug fixes"
  pix="./pix/people/michael_kallweit.jpg"
- trac="vgermrk"/>
+ trac="vgermrk"
+ github="m-r-k"/>
 <contributor
  name="Tomáš Kalvoda"
  work="Czech Technical University in Prague, Czech Republic"
