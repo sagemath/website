@@ -356,3 +356,8 @@
   country: ir
   name: Bardia Tech, Iran
   url: https://mirror.bardia.tech/sage/
+- active: true
+  cat: e
+  flag: ch
+  name: Metanet, Switzerland
+  url: https://mirror.metanet.ch/sage/
