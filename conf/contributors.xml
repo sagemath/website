@@ -4042,9 +4042,10 @@ Please keep the list in alphabetical order by last name!
  name="Harry Richman"/>
 <contributor
  name="Tania Richmond"
- location="IMATH, Univ. of Toulon, La Garde, France"
+ location="DGA-MI, France"
  url="https://sites.google.com/site/taniarichmondnc/"
- trac="richmond"/>
+ trac="richmond"
+ github="TaniaRichmond"/>
 <contributor
  name="Ed Richmond"/>
 <contributor
