@@ -3099,9 +3099,10 @@ Please keep the list in alphabetical order by last name!
  trac="mrennekamp"/>
 <contributor
  name="Tania Richmond"
- location="IMATH, Univ. of Toulon, La Garde, France"
+ location="DGA-MI, France"
  url="https://sites.google.com/site/taniarichmondnc/"
- trac="richmond"/>
+ trac="richmond"
+ github="TaniaRichmond"/>
 <contributor
  name="Vivien Ripoll"
  location="Universität Wien, Vienna, Austria"
