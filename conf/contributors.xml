@@ -3425,7 +3425,7 @@ Please keep the list in alphabetical order by last name!
  location="Universität Würzburg, Germany"
  url="http://www.mathematik.uni-wuerzburg.de/~mueller"
  trac="pmueller"
- github="ypfmde"/>
+ github="ypfmde" />
 <contributor
  name="Greg Muller"/>
 <contributor
@@ -3439,7 +3439,7 @@ Please keep the list in alphabetical order by last name!
  name="Gregg Musiker"
  location="University of Minnesota"
  description="Maple interface; documentation; design"
- trac="gmoose05">
+ trac="gmoose05" />
 <contributor
  name="Andrew Musselman"
  trac="akm"/>
