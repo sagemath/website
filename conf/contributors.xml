@@ -354,8 +354,6 @@ Please keep the list in alphabetical order by last name!
  trac="rbeezer"
  github="rbeezer"/>
 <contributor
- name="Robert Beezer"/>
-<contributor
  name="J Beier"/>
 <contributor
  name="Michal Bejger"
@@ -662,8 +660,6 @@ Please keep the list in alphabetical order by last name!
  description="combinatorics and representation theory"
  trac="bump"
  github="dwbump"/>
-<contributor
- name="Dan Bump"/>
 <contributor
  name="Reg Burgess"/>
 <contributor
@@ -1271,6 +1267,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Amaury Durand"/>
 <contributor
+ name="Madison Van Dyk"/>
+<contributor
  name="Gabriel Ebner"
  work="undergraduate student, Technical University of Vienna"
  location="Vienna, Austria"
@@ -1362,8 +1360,6 @@ Please keep the list in alphabetical order by last name!
  name="Nicolas Estibals"/>
 <contributor
  name="Diego de Estrada"/>
-<contributor
- name="Gerardo E Zelaya Eufemia"/>
 <contributor
  name="Gerardo Zelaya Eufemia"/>
 <contributor
@@ -2189,8 +2185,6 @@ Please keep the list in alphabetical order by last name!
  trac="bhutz"
  github="bhutz"/>
 <contributor
- name="Ben  Hutz"/>
-<contributor
  name="Ben Hutz"/>
 <contributor
  name="Brian Hwang"
@@ -2289,8 +2283,6 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.uwaterloo.ca/~djao/"
  trac="djao"
  github="davidjao"/>
-<contributor
- name="Madison Van Dyk; David Jao"/>
 <contributor
  name="Emmanuel Jeanvoine"/>
 <contributor
@@ -3095,8 +3087,6 @@ Please keep the list in alphabetical order by last name!
  trac="mallet"/>
 <contributor
  name="Beth Malmskog"/>
-<contributor
- name="Francois Maltey"/>
 <contributor
  name="François Maltey"/>
 <contributor
