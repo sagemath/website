@@ -506,7 +506,9 @@ Please keep the list in alphabetical order by last name!
  name="Michele Borassi"/>
 <contributor
  name="Michael Boratko"
- trac="mboratko"/>
+ trac="mboratko"
+ url="https://www.mboratko.com/"
+ github="mboratko"/>
 <contributor
  name="Gabor Borgulya"/>
 <contributor
