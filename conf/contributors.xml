@@ -1168,6 +1168,10 @@ Please keep the list in alphabetical order by last name!
  trac="gfurnish"
  github="garyfurnish"/>
 <contributor
+ name="Elisabeth Gaar"/>
+<contributor
+ name="Arthur Gaer"/>
+<contributor
  name="Martin von Gagern"
  location="TU München, Germany"
  trac="gagern"
@@ -1182,6 +1186,9 @@ Please keep the list in alphabetical order by last name!
  location="Hobart and William Smith Colleges"
  trac="agd"/>
 <contributor
+ name="Alexander Galarraga"
+ altnames="Alex Galarraga"/>
+<contributor
  name="Tyler Gaona"
  location="Duquesne University"
  trac="tgaona"/>
@@ -1189,6 +1196,8 @@ Please keep the list in alphabetical order by last name!
  name="Elisa Lorenzo Garcia"
  location="Universite de Rennes 1, France"
  trac="elorenzogarcia"/>
+<contributor
+ name="Alexander Garver"/>
 <contributor
  name="Rolando Garza"
  location="Monterrey, NL, Mexico"
@@ -1198,15 +1207,24 @@ Please keep the list in alphabetical order by last name!
  location="University of Washington, Seattle"
  trac="jgaski"/>
 <contributor
+ name="Serge Gaspers"/>
+<contributor
+ name="Caleb Geiger"/>
+<contributor
+ name="Antoine Genitrini"/>
+<contributor
  name="Thomas Gerber"
  url="http://www.math.rwth-aachen.de/~Thomas.Gerber/"
  trac="thomgerber"/>
+<contributor
+ name="Marius Gerbershagen"/>
 <contributor
  name="Robert Gerbicz"
  location="ELTE, Hungary"
  trac="gerbicz,gerrob"/>
 <contributor
  name="Zachary Gershkoff"
+ altnames="Zach Gershkoff"
  location="Louisiana State University"
  trac="zgershkoff"/>
 <contributor
@@ -1223,6 +1241,7 @@ Please keep the list in alphabetical order by last name!
  github="bgillesp"/>
 <contributor
  name="Maria Monks Gillespie"
+ altnames="Maria Gillespie"            
  location="Graduate Student, UC Berkeley"
  trac="MariaMonks"
  github="MariaMonks"/>
@@ -1239,15 +1258,13 @@ Please keep the list in alphabetical order by last name!
  description="documentation"
  trac="agiorgetti"/>
 <contributor
+ name="Pascal Giorgi"/>
+<contributor
  name="Samuele Giraudo"
  work="PhD student, Université de Paris-Est (Marne-la-Vallée)"
  location="Champs-sur-Marne, France"
  description="combinatorics"
  url="https://igm.univ-mlv.fr/~giraudo/"
- trac="giraudo"/>
-<contributor
- name="Samuele Giraudo"
- location="université de Marne-la-Vallée Paris-Est"
  trac="giraudo"/>
 <contributor
  name="Amy Glen"
@@ -1267,13 +1284,19 @@ Please keep the list in alphabetical order by last name!
  url="https://www.math.washington.edu/~cgodfrey"
  github="godfrey-cw"/>
 <contributor
+ name="Florian Göpfert"/>
+<contributor
  name="Matthias Goerner"
  trac="mgoerner"
  github="unhyperbolic"/>
 <contributor
+ name="Cécile Gonçalves"/>
+<contributor
  name="Samuel Gonshaw"
  location="Imperial College London"
  trac="sjg10"/>
+<contributor
+ name="Brandon Gontmacher"/>
 <contributor
  name="Javier Honrubia González"
  location="Vigo, Spain"
@@ -1281,6 +1304,7 @@ Please keep the list in alphabetical order by last name!
  trac="jhonrubia6"/>
 <contributor
  name="Daniel Gordon"
+ altnames="Dan Gordon"
  work="researcher, IDA Center For Communications Research"
  location="San Diego, CA, USA"
  description="covering design"
@@ -1296,6 +1320,8 @@ Please keep the list in alphabetical order by last name!
  name="Robert Goss"
  location="University of Warwick, UK"
  trac="robert_goss"/>
+<contributor
+ name="Sebastien Gouezel"/>
 <contributor
  name="Eric Gourgoulhon"
  work="CNRS research scientist, Laboratoire Univers et Théories"
@@ -1318,13 +1344,18 @@ Please keep the list in alphabetical order by last name!
  location="ETH Zürich, Switzerland"
  trac="ggrafendorfer"/>
 <contributor
+ name="Paul Graham"/>
+<contributor
  name="Håkan Granath"
  location="Karlstad University, Sweden"
  trac="hgranath"/>
 <contributor
  name="Daniel R. Grayson"
+ altnames="Dan Grayson"
  url="http://www.math.uiuc.edu/~dan/"
  trac="dangrayson"/>
+<contributor
+ name="David J. Green"/>
 <contributor
  name="Bruno Grenet"
  work="Université de Montpellier"
@@ -1339,11 +1370,19 @@ Please keep the list in alphabetical order by last name!
  url="http://www.lirmm.fr/~grenet/"
  trac="bruno"/>
 <contributor
+ name="Marina Gresham"/>
+<contributor
+ name="Sean Griffin"/>
+<contributor
+ name="Julien Grijalva"/>
+<contributor
  name="Darij Grinberg"
  location="Drexel University, Philadelphia, USA"
  url="http://www.cip.ifi.lmu.de/~grinberg/"
  trac="darij"
  github="darijgr"/>
+<contributor
+ name="Meghan Grip"/>
 <contributor
  name="Jan Groenewald"
  work="IT Manager; African Institute for Mathematical Sciences"
@@ -1353,7 +1392,11 @@ Please keep the list in alphabetical order by last name!
  gitlab="pipedream"
  description="Advocacy; Bug fixes; Build; Documentation; Feedback; Debian and Ubuntu support"/>
 <contributor
+ name="Johan Grönqvist"/>
+<contributor
  name="Rob Gross"/>
+<contributor
+ name="Stefan Grosser"/>
 <contributor
  name="Jason Grout"
  work="Postdoctoral fellow, Iowa State University"
@@ -1373,6 +1416,8 @@ Please keep the list in alphabetical order by last name!
  description="graphics"
  trac="ryan"/>
 <contributor
+ name="Tom Grubb"/>
+<contributor
  name="Mathieu Guay-Paquet"
  work="University of Waterloo"
  location="200 University Avenue, West Waterloo, ON N2L 3G1, Canada"
@@ -1385,15 +1430,29 @@ Please keep the list in alphabetical order by last name!
  description="interfaces"
  trac="goodok.alex"/>
 <contributor
+ name="Olivier Guichard"/>
+<contributor
+ name="Pierre Guillot"/>
+<contributor
+ name="Xavier Guitart"/>
+<contributor
+ name="Daniel Gulotta"/>
+<contributor
  name="Emily Gunawan"
  location="University of Connecticut, USA"
  trac="egunawan"
  github="egunawan"/>
 <contributor
+ name="Trevor Gunn"/>
+<contributor
  name="Alan J.X. Guo"
  work="Tianjin University, China"
  location="郭嘉祥"
  trac="AJXGuo"/>
+<contributor
+ name="Jing Guo"/>
+<contributor
+ name="Sourav San Gupta"/>
 <contributor
  name="Vipul Gupta"
  trac="vipul73921"
