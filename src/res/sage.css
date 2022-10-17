@@ -679,6 +679,8 @@ div.mdesc ul {
     padding: 3px 0 3px 1em;
     margin: 0;
 }
+
+.github,
 .trac {
     text-align: right;
     display: block;
