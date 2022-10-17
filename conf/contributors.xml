@@ -2880,7 +2880,13 @@ Please keep the list in alphabetical order by last name!
  location="Italy"
  trac="steven"/>
 <contributor
- name="Antoine Leudière"/>
+ name="Antoine Leudière"
+ location="Nancy, France"
+ work="Université de Lorraine; INRIA; CNRS"
+ description="drinfeld modules; cryptography"
+ url="https://members.loria.fr/ALeudiere/"
+ trac="antoine-leudiere"
+ github="kryzar"/>
 <contributor
  name="Duncan Levear"/>
 <contributor
