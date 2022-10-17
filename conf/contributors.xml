@@ -107,18 +107,6 @@ Please keep the list in alphabetical order by last name!
  url="http://www.joshalman.com/"
  trac="jalman"/>
 <contributor
- name="Luis Felipe Tabera Alonso"
- work="Universidad de Cantabria"
- location="Santander, Spain"
- description="algebra; basic arithmetic; number fields"
- url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
-<contributor
- name="Luis Felipe Tabera Alonso"
- location="Universidad de Cantabria, Spain"
- url="http://personales.unican.es/taberalf"
- trac="lftabera"/>
-<contributor
  name="Alejandra Alvarado"/>
 <contributor
  name="Safa Amasha"/>
@@ -4778,7 +4766,13 @@ Please keep the list in alphabetical order by last name!
  name="Joni Syri"
  trac="jsyri"/>
 <contributor
- name="Luis Felipe Tabera"/>
+ name="Luis Felipe Tabera Alonso"
+ altnames="Luis Felipe Tabera"
+ work="Universidad de Cantabria"
+ location="Santander, Spain"
+ description="algebra; basic arithmetic; number fields"
+ url="http://personales.unican.es/taberalf/"
+ trac="lftabera"/>
 <contributor
  name="Tvrtko Tadic"
  location="University of Washington, Seattle"
