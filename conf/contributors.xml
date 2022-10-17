@@ -231,7 +231,8 @@ Please keep the list in alphabetical order by last name!
  name="Arvind Ayyer"
  location="Indian Institute of Science, Bangalore, India"
  url="http://www.math.iisc.ernet.in/~arvind"
- trac="ayyer"/>
+ trac="ayyer"
+ github="ayyer"/>
 <contributor
  name="Jernej Azarija"
  location="University of Ljubljana"
@@ -631,11 +632,11 @@ Please keep the list in alphabetical order by last name!
  trac="Moredread"/>
 <contributor
  name="Anders S. Buch"
+ altnames="Anders Buch"
  location="University Rutgers, New Jersey, USA"
  url="http://www.math.rutgers.edu/~asbuch"
- trac="asbuch"/>
-<contributor
- name="Anders Buch"/>
+ trac="asbuch"
+ github="asbuch"/>
 <contributor
  name="Tomasz Buchert"
  trac="tombuc"/>
@@ -1141,7 +1142,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Matthieu Dien"
  location="Université Pierre et Marie Curie, France"
- trac="MatthieuDien"/>
+ trac="MatthieuDien"
+ github="MatthieuDien"/>
 <contributor
  name="Tobias Diez"/>
 <contributor
@@ -1379,7 +1381,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Justine Falque"
  location="Université Paris-Sud, France"
- trac="falque"/>
+ trac="falque"
+ github="falque"/>
 <contributor
  name="Joao Alberto de Faria"/>
 <contributor
@@ -1723,10 +1726,10 @@ Please keep the list in alphabetical order by last name!
  trac="hgranath"/>
 <contributor
  name="Daniel R. Grayson"
+ altnames="Dan Grayson"
  url="http://www.math.uiuc.edu/~dan/"
- trac="dangrayson"/>
-<contributor
- name="Dan Grayson"/>
+ trac="dangrayson"
+ github="DanGrayson"/>
 <contributor
  name="David J. Green"/>
 <contributor
@@ -2285,7 +2288,8 @@ Please keep the list in alphabetical order by last name!
  name="Peter Jeremy"
  location="Sydney, Australia"
  description="porting packages to FreeBSD"
- trac="pjeremy"/>
+ trac="pjeremy"
+ github="peterjeremy"/>
 <contributor
  name="Jonas Jermann"
  trac="jj"
@@ -2358,7 +2362,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Anders Jonsson"
  location="Umeå University, Sweden"
- trac="AJonsson"/>
+ trac="AJonsson"
+ github="haaninjo"/>
 <contributor
  name="Mark Jordan"
  location="University of Washington, WA, USA"
@@ -2453,7 +2458,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Manuel Kauers"
  url="http://www.kauers.de"
- trac="mkauers"/>
+ trac="mkauers"
+ github="mkauers"/>
 <contributor
  name="Timo Kaufmann"
  trac="timokau"
@@ -2654,10 +2660,10 @@ Please keep the list in alphabetical order by last name!
  name="Stefan Kraemer"/>
 <contributor
  name="Richard B. Kreckel"
+ altnames="Richard Kreckel"
  url="http://www.ginac.de/~kreckel/"
- trac="rbk"/>
-<contributor
- name="Richard Kreckel"/>
+ trac="rbk"
+ github="RBKreckel"/>
 <contributor
  name="Daniel Krenn"
  work="TU Graz, Austria"
@@ -2733,10 +2739,12 @@ Please keep the list in alphabetical order by last name!
  name="Nadia Lafrenière"
  location="Dartmouth College, Hanover, NH, USA"
  url="https://nadialafreniere.github.io/home.html"
- trac="nadialafreniere"/>
+ trac="nadialafreniere"
+ github="nadialafreniere"/>
 <contributor
  name="Tim Lahey"
- trac="tjlahey"/>
+ trac="tjlahey"
+ github="tjl"/>
 <contributor
  name="Yann Laigle-Chapuy"
  work="PhD student, INRIA"
@@ -2809,7 +2817,8 @@ Please keep the list in alphabetical order by last name!
  name="Andrea Lazzarotto"
  location="Student at Ca' Foscari University, Venice, Italy"
  url="http://andrealazzarotto.com/"
- trac="lazza"/>
+ trac="lazza"
+ github="Lazza"/>
 <contributor
  name="Ben LeVeque"/>
 <contributor
@@ -4632,7 +4641,8 @@ Please keep the list in alphabetical order by last name!
  work="Faculty of Information Technology, Czech Technical University in Prague"
  location="Prague, Czech Republic"
  description="combinatorics"
- trac="sstarosta"/>
+ trac="sstarosta"
+ github="staroste"/>
 <contributor
  name="Ander Steele"
  trac="asteele"
@@ -4697,7 +4707,8 @@ Please keep the list in alphabetical order by last name!
  location="VU University Amsterdam, The Netherlands"
  description="number fields;algebraic curves"
  url="http://www.few.vu.nl/~streng"
- trac="mstreng"/>
+ trac="mstreng"
+ github="mstreng"/>
 <contributor
  name="Jessica Striker"
  location="North Dakota State University"
@@ -5353,7 +5364,8 @@ Please keep the list in alphabetical order by last name!
  location="Villers les Nancy, France"
  description="MPFR integration; calculus bug fixes; general fixes"
  url="http://www.loria.fr/~zimmerma/"
- trac="zimmerma"/>
+ trac="zimmerma"
+ github="zimmermann6"/>
 <contributor
  name="Théo Zimmermann"/>
 <contributor
