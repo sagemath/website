@@ -4527,7 +4527,8 @@ Please keep the list in alphabetical order by last name!
  trac="NilsSkoruppa"/>
 <contributor
  name="Uroš Slana"
- trac="slani"/>
+ trac="slani"
+ github="lobiCode"/>
 <contributor
  name="Jakub Sliacan"/>
 <contributor
