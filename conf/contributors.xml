@@ -2232,9 +2232,8 @@ Please keep the list in alphabetical order by last name!
  trac="pi"/>
 <contributor
  name="Hamish Ivey-Law"
- work="Université de la Méditerranée, France; University of Sydney, Australia"
- description="bug fixes"
- trac="hlaw"/>
+ trac="hlaw"
+ github="unzvfu"/>
 <contributor
  name="Jakub Jabłoński"/>
 <contributor
