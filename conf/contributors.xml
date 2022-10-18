@@ -1326,7 +1326,8 @@ Please keep the list in alphabetical order by last name!
  trac="gebner"/>
 <contributor
  name="Alec Edgington"
- trac="alec.edgington"/>
+ trac="alec.edgington"
+ github="obtext"/>
 <contributor
  name="Ingolfur Edvardsson"
  trac="ingolfured"
