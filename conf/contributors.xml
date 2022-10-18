@@ -1247,7 +1247,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Tom Draper"
  description="support is_primitive() method for polynomials over Finite Fields"
- trac="TomDraper"/>
+ trac="TomDraper"
+ github="SmoothDragon"/>
 <contributor
  name="Simon Drewitz"
  location="Université de Fribourg, Switzerland"
@@ -1263,7 +1264,8 @@ Please keep the list in alphabetical order by last name!
  github="alexanderdreyer"/>
 <contributor
  name="Eduardo Dueñez"
- trac="eduenez"/>
+ trac="eduenez"
+ github="eduenez"/>
 <contributor
  name="Niels Duif"
  location="Netherlands"
@@ -3402,7 +3404,8 @@ Please keep the list in alphabetical order by last name!
  github="cemulate"/>
 <contributor
  name="Jan Medlock"
- trac="medlock"/>
+ trac="medlock"
+ github="janmedlock"/>
 <contributor
  name="Paolo Menegatti"
  trac="pmenegat"/>
