@@ -4080,9 +4080,12 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Julian Ritter"/>
 <contributor
- name="Juan M. Bello Rivas"
- location="Universidad Politécnica de Madrid, Spain"
- trac="jmbr"/>
+ name="Juan M. Bello-Rivas"
+ location="San Francisco Bay Area, CA"
+ work="Johns Hopkins University"
+ url="https://superadditive.com"
+ trac="jmbr"
+ github="jmbr"/>
 <contributor
  name="Marco Robado"/>
 <contributor
