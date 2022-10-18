@@ -3090,7 +3090,8 @@ Please keep the list in alphabetical order by last name!
  trac="lipshitz"/>
 <contributor
  name="Jan-Philipp Litza"
- trac="jplitza"/>
+ trac="jplitza"
+ github="jplitza"/>
 <contributor
  name="Ben Livingston"/>
 <contributor
