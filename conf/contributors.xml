@@ -5357,7 +5357,9 @@ Please keep the list in alphabetical order by last name!
  description="ec (modular degrees); sympow (symmetric powers); feedback"/>
 <contributor
  name="Adam Webb"
- location="Canadian Light Source, Saskatoon, Canada"
+ location="Saskatoon, Canada"
+ work="Canadian Light Source"
+ github="maxthemouse"            
  trac="awebb"/>
 <contributor
  name="Georg S. Weber"
