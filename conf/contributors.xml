@@ -3606,8 +3606,7 @@ Please keep the list in alphabetical order by last name!
  name="Max Murphy"/>
 <contributor
  name="Riccardo Murri"
- location="GC3, University of Zurich"
- url="http://www.gc3.uzh.ch/people/rm"
+ github="riccardomurri"
  trac="riccardomurri"/>
 <contributor
  name="Gregg Musiker"
