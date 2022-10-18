@@ -45,7 +45,8 @@ Please keep the list in alphabetical order by last name!
  name="David Ackerman"/>
 <contributor
  name="Lennart Ackermans"
- trac="lackermans"/>
+ trac="lackermans"
+ github="lennartack"/>
 <contributor
  name="Karim Van Aelst"/>
 <contributor
