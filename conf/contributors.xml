@@ -1413,7 +1413,8 @@ Please keep the list in alphabetical order by last name!
  trac="nestibal"/>
 <contributor
  name="Diego de Estrada"
- trac="ddestrada"/>
+ trac="ddestrada"
+ github="diegode"/>
 <contributor
  name="Gerardo Zelaya Eufemia"
  trac="menosgeze"/>
