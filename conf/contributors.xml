@@ -1737,7 +1737,8 @@ Please keep the list in alphabetical order by last name!
  location="Perth, Western Australia"
  description="SageWords co-author"
  url="https://amyglen.wordpress.com"
- trac="amy-glen,amyglen"/>
+ trac="amyglen"
+ github="amy-glen"/>
 <contributor
  name="Charlie Godfrey"
  location="University of Washington-Seattle"
