@@ -594,7 +594,10 @@ Please keep the list in alphabetical order by last name!
  name="Adrien Brochier"
  trac="Adrien"/>
 <contributor
- name="Paul Brouwers"/>
+ name="Paul Brouwers"
+ work="University of Canterbury"
+ location="Christchurch, New Zealand"
+ description="Maintained the Sage server hosted at U. Canterbury"/>
 <contributor
  name="Jim Brown"/>
 <contributor
@@ -741,7 +744,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Alexandre Casamayou"/>
 <contributor
- name="Matteo Casati"/>
+ name="Matteo Casati"
+ altnames="Cassa"
+ url="http://cassa-s.blogspot.com/"/>
 <contributor
  name="Oriol Castejón"
  work="Universitat Politècnica de Catalunya"
@@ -4035,7 +4040,8 @@ Please keep the list in alphabetical order by last name!
  name="Martin Rejmon"/>
 <contributor
  name="Matthew Rennekamp"
- trac="mrennekamp"/>
+ trac="mrennekamp"
+ description="Wiki maintenance (2017)"/>
 <contributor
  name="Jan Rheinländer"/>
 <contributor
