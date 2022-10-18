@@ -2459,16 +2459,11 @@ Please keep the list in alphabetical order by last name!
  github="timokau"/>
 <contributor
  name="Kiran Kedlaya"
- work="Professor, MIT"
- location="Cambridge, USA"
+ work="Professor, UCSD"
+ location="San Diego, CA, USA"
  description="Macaulay 2 interface; item for install guide; p-adics"
  trac="kedlaya"
  github="kedlaya"/>
-<contributor
- name="Kiran Kedlaya"
- location="UCSD"
- url="http://math.mit.edu/~kedlaya"
- trac="kedlaya"/>
 <contributor
  name="Jan Keitel"
  location="Max-Planck-Institute for Physics, Germany"
