@@ -83,7 +83,6 @@ for f in glob.glob(os.path.join("..", "src", "changelogs", "*.txt")):
             raise RuntimeError(f'error reading {f}: {e}')
 
 def changelog_contributions(names):
-    print(names)
     versions = sorted((major
                        for (major, log) in logs.items()
                        if any(name in log for name in names)),
@@ -185,10 +184,10 @@ def writeToDevmap():
                 td.appendChild(devmap.createElement("br"))
             else:
                 first = False
-                # since there are tags in the string, we parse it
-                d = d.replace("&lt;", "<").replace("&gt;", ">")
-                d_el = parseString("<span>%s</span>" % d)
-                td.appendChild(d_el.firstChild)
+            # since there are tags in the string, we parse it
+            d = d.replace("&lt;", "<").replace("&gt;", ">")
+            d_el = parseString("<span>%s</span>" % d)
+            td.appendChild(d_el.firstChild)
 
         a = devmap.createElement("a")
         a.setAttribute("href", tracQuery)
