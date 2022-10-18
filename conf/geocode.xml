@@ -5,8 +5,6 @@
 <loc location="Irvine, CA 92697, USA" loclat="33.6471239" loclng="-117.8421325"/>
 <loc location="University of Michigan-Flint, Flint, Michigan, USA" loclng="-83.6894611" loclat="43.0194791"/>
 <loc location="MIT" loclng="-71.09416" loclat="42.360091"/>
-<loc location="Santander, Spain" loclat="43.4623057" loclng="-3.8099803"/>
-<loc location="Universidad de Cantabria, Spain" loclng="-3.8019739" loclat="43.471704"/>
 <loc location="3201 Burton Street, Southeast Grand Rapids, MI 49546, USA" loclat="42.9332749" loclng="-85.5842852"/>
 <loc location="Curitiba, Brazil" loclat="-25.4289541" loclng="-49.267137"/>
 <loc location="Lehi, Utah, USA" loclat="40.3916172" loclng="-111.8507662"/>
@@ -49,6 +47,7 @@
 <loc location="TU Wien, Austria" loclng="16.3684626" loclat="48.1986546"/>
 <loc location="Université Paris Sud XI, Orsay, France" loclng="2.1658617" loclat="48.7013763"/>
 <loc location="Oberwolfach-Walke, Germany" loclat="48.344225" loclng="8.231172"/>
+<loc location="Christchurch, New Zealand" loclng="172.6305589" loclat="-43.5320214"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Universiteit Leiden" loclng="4.485209" loclat="52.1571485"/>
 <loc location="Australian National University, ACT, Australia" loclng="149.1183238" loclat="-35.2812533"/>
@@ -219,8 +218,6 @@
 <loc location="Stephen F. Austin State University, Nacogdoches TX, USA" loclng="-94.64664379999999" loclat="31.6216141"/>
 <loc location="Bochum, Germany" loclat="51.4818445" loclng="7.2162363"/>
 <loc location="University of Notre Dame" loclng="-86.2353388" loclat="41.7055716"/>
-<loc location="Cambridge, USA" loclat="42.3736158" loclng="-71.1097335"/>
-<loc location="UCSD" loclng="-117.2340135" loclat="32.8800604"/>
 <loc location="Max-Planck-Institute for Physics, Germany" loclng="11.6125207" loclat="48.184662"/>
 <loc location="Tyndall Avenue, Bristol BS8 1TH, UK" loclat="51.4588493" loclng="-2.6029398"/>
 <loc location="University of Heidelberg" loclng="8.6724335" loclat="49.3987524"/>
@@ -374,7 +371,7 @@
 <loc location="Tangerang, Indonesia" loclat="-6.178306" loclng="106.631889"/>
 <loc location="Waterloo, Ontario, Canada" loclat="43.4642578" loclng="-80.5204096"/>
 <loc location="Graz University of Technology, Austria" loclng="15.4503768" loclat="47.0694191"/>
-<loc location="Universidad Politécnica de Madrid, Spain" loclng="-3.7192798" loclat="40.4486372"/>
+<loc location="San Francisco Bay Area, CA" loclng="-122.2913078" loclat="37.8271784"/>
 <loc location="MIT, Cambridge, MA, USA" loclng="-71.0928603" loclat="42.35704390000001"/>
 <loc location="University of Seville" loclng="-5.9912307" loclat="37.3807579"/>
 <loc location="Freie Universität Berlin" loclng="13.2934768" loclat="52.4543245"/>
@@ -442,6 +439,7 @@
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
 <loc location="University of Washington, WA, USA" loclat="47.6553351" loclng="-122.3035199"/>
 <loc location="Oregon State University" loclng="-123.2794442" loclat="44.5637806"/>
+<loc location="Santander, Spain" loclat="43.4623057" loclng="-3.8099803"/>
 <loc location="Grad, San Luis Obispo, CA" loclng="-120.6388702" loclat="35.2536576"/>
 <loc location="INRIA, France" loclng="2.213749" loclat="46.227638"/>
 <loc location="Orsay, France" loclat="48.702806" loclng="2.1719323"/>
