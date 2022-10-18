@@ -92,14 +92,11 @@ Please keep the list in alphabetical order by last name!
  trac="ncalexan"
  github="ncalexan"/>
 <contributor
- name="Alfaro"
+ name="Ricardo Alfaro"
+ altnames="Alfaro"
  location="University of Michigan-Flint, Flint, Michigan, USA"
- url="Ricardo"
  trac="ralfaro"
  github="ralfarogit"/>
-<contributor
- name="Ricardo Alfaro"
- trac="ralfaro"/>
 <contributor
  name="Martin Allen"/>
 <contributor
@@ -111,13 +108,6 @@ Please keep the list in alphabetical order by last name!
  location="MIT"
  url="http://www.joshalman.com/"
  trac="jalman"/>
-<contributor
- name="Luis Felipe Tabera Alonso"
- work="Universidad de Cantabria"
- location="Santander, Spain"
- description="algebra; basic arithmetic; number fields"
- url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
 <contributor
  name="Alejandra Alvarado"
  trac="aalvarado2"/>
@@ -162,12 +152,11 @@ Please keep the list in alphabetical order by last name!
  trac="sanni85"/>
 <contributor
  name="Benjamin Antieau"
+ altnames="D. Benjamin Antieau"
  description="bug fixes"
  location="Northwestern University"
  trac="bantieau"
  github="antieau"/>
-<contributor
- name="D. Benjamin Antieau"/>
 <contributor
  name="André Apitzsch"
  work="Otto-von-Guericke-Universität Magdeburg"
@@ -365,12 +354,11 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="J Beier"/>
 <contributor
- name="Michal Bejger"
+ name="Michał Bejger"
+ altnames="Michal Bejger"
  location="N. Copernicus Astronomical Center, Poland"
  url="http://users.camk.edu.pl/bejger"
  trac="mbejger"/>
-<contributor
- name="Michał Bejger"/>
 <contributor
  name="Karim Belabas"
  location="Bordeaux, France"
@@ -431,10 +419,8 @@ Please keep the list in alphabetical order by last name!
  name="Lubjana Beshaj"
  trac="lbeshaj"/>
 <contributor
- name="Sebastien Besnier"
- trac="sbesnier"/>
-<contributor
  name="Sébastien Besnier"
+ altnames="Sebastien Besnier"
  trac="sbesnier"/>
 <contributor
  name="Amnon Besser"/>
@@ -450,11 +436,6 @@ Please keep the list in alphabetical order by last name!
  location="823 St Charles Ave, New Orleans, LA 70118, United States"
  description="elliptic curves"
  url="http://math.tulane.edu/~ebeyerstedt"
- trac="ebeyerstedt"/>
-<contributor
- name="Erin Beyerstedt"
- location="Tulane University"
- url="http://129.81.170.14/~ebeyerstedt/"
  trac="ebeyerstedt"/>
 <contributor
  name="Ninad Bhat"
@@ -722,12 +703,6 @@ Please keep the list in alphabetical order by last name!
  description="indefinite integration for piecewise functions; calculus bug fixes"
  url="http://www.paulbutler.org"
  trac="pbutler"/>
-<contributor
- name="Paul Butler"
- location="University of Waterloo, Ontario"
- trac="pbutler"/>
-<contributor
- name="Miguel Angel Marco Buzunariz"/>
 <contributor
  name="Sergey Bykov"
  location="Moscow Institute of Physics and Technology, Russia"
@@ -2664,10 +2639,8 @@ Please keep the list in alphabetical order by last name!
  description="documentation; graph theory"
  trac="ekirkman"/>
 <contributor
- name="Rado Kirov"
- trac="rkirov"/>
-<contributor
  name="Radoslav Kirov"
+ altnames="Rado Kirov"
  trac="rkirov"/>
 <contributor
  name="Sergey B Kirpichev"
@@ -2733,11 +2706,9 @@ Please keep the list in alphabetical order by last name!
  trac="kohel"/>
 <contributor
  name="Karen T. Kohl"
+ altnames="Karen Kohl"
  location="University of Southern Mississippi - Gulf Coast, Long Beach, MS"
  url="http://www.karentkohl.org/"
- trac="ktkohl"/>
-<contributor
- name="Karen Kohl"
  trac="ktkohl"/>
 <contributor
  name="Michael Kohlhase"
@@ -3283,10 +3254,6 @@ Please keep the list in alphabetical order by last name!
  location="University of Washington, WA, USA"
  trac="bmanion,Zaxis"/>
 <contributor
- name="Brian Manion"
- location="University of Washington, WA, USA"
- trac="Zaxis,bmanion"/>
-<contributor
  name="Jori Mäntysalo"
  location="University of Tampere, Finland"
  url="http://www.uta.fi/~jm58660"
@@ -3299,6 +3266,7 @@ Please keep the list in alphabetical order by last name!
  trac="emarberg"/>
 <contributor
  name="Miguel Marco"
+ altnames="Miguel Angel Marco Buzunariz"
  location="Zaragoza, Spain"
  work="Universidad de Zaragoza"
  description="linear algebra; polynomial rings; free and finitely presented groups; braid groups"
