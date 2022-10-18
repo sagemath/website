@@ -2469,7 +2469,11 @@ Please keep the list in alphabetical order by last name!
  trac="josuat"/>
 <contributor
  name="Philipp Jovanovic"
- trac="cosh"/>
+ work="University College London"
+ location="London, UK"
+ url="https://philipp.jovanovic.io/"
+ trac="cosh"
+ github="daeinar"/>
 <contributor
  name="David Joyner"
  work="Professor, US Naval Academy (retired)"
