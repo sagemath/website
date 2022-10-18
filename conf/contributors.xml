@@ -4553,7 +4553,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Daniel Smertnig"
  location="KFU Graz, Austria"
- trac="daniels"/>
+ trac="daniels"
+ github="dansme"/>
 <contributor
  name="Ben Smith"
  trac="bensmith"/>
