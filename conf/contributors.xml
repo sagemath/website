@@ -603,7 +603,8 @@ Please keep the list in alphabetical order by last name!
  url="http://www.mfo.de/organisation/institute/brickenstein/"/>
 <contributor
  name="Adrien Brochard"
- trac="abrochard"/>
+ trac="abrochard"
+ github="abrochard"/>
 <contributor
  name="Adrien Brochier"
  trac="Adrien"/>
