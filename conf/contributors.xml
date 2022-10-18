@@ -896,7 +896,8 @@ Please keep the list in alphabetical order by last name!
  trac="kclawson"/>
 <contributor
  name="Sam Clearman"
- trac="sam"/>
+ trac="sam"
+ github="samclearman"/>
 <contributor
  name="Nico Van Cleemput"
  location="Universiteit Gent, Ghent, Belgium"
