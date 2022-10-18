@@ -112,13 +112,6 @@ Please keep the list in alphabetical order by last name!
  url="http://www.joshalman.com/"
  trac="jalman"/>
 <contributor
- name="Luis Felipe Tabera Alonso"
- work="Universidad de Cantabria"
- location="Santander, Spain"
- description="algebra; basic arithmetic; number fields"
- url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
-<contributor
  name="Alejandra Alvarado"
  trac="aalvarado2"/>
 <contributor
@@ -5056,7 +5049,8 @@ Please keep the list in alphabetical order by last name!
  location="Santander, Spain"
  description="algebra; basic arithmetic; number fields"
  url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
+ trac="lftabera"
+ github="lftabera"/>
 <contributor
  name="Tvrtko Tadic"
  location="University of Washington, Seattle"
