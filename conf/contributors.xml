@@ -3177,7 +3177,11 @@ Please keep the list in alphabetical order by last name!
  name="Joseph Lupo"/>
 <contributor
  name="Peter Luschny"
- trac="pluschny"/>
+ url="https://github.com/PeterLuschny"
+ description="Categorization of ZZ"
+ location="Berlin, Germany"
+ trac="pluschny"
+ github="PeterLuschny"/>
 <contributor
  name="Sebastian Luther"
  trac="sluther"/>
