@@ -5028,7 +5028,8 @@ Please keep the list in alphabetical order by last name!
  location="Santander, Spain"
  description="algebra; basic arithmetic; number fields"
  url="http://personales.unican.es/taberalf/"
- trac="lftabera"/>
+ trac="lftabera"
+ github="lftabera"/>
 <contributor
  name="Tvrtko Tadic"
  location="University of Washington, Seattle"
