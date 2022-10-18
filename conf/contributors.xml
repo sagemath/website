@@ -3132,9 +3132,9 @@ Please keep the list in alphabetical order by last name!
  github="davidlowryduda"/>
 <contributor
  name="Richard L Lozes"
- trac="rllozes"/>
-<contributor
- name="Richard Lozes"/>
+ altname="Richard Lozes"             
+ trac="rllozes"
+ github="rll2021"/>
 <contributor
  name="Fiona Lu"/>
 <contributor
