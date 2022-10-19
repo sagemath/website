@@ -2203,11 +2203,12 @@ Please keep the list in alphabetical order by last name!
  trac="khorton"/>
 <contributor
  name="Golam Mortuza Hossain"
- work="Postdoctoral fellow, Indian Institute of Science Education and Research"
- location="IISER, Kolkata, India"
+ work="Indian Institute of Science Education and Research Kolkata"
+ location="IISER Kolkata, India"
  description="symbolics"
- url="http:///www.math.unb.ca/~ghossain"
- trac="gmhossain"/>
+ url="https:///www.iiserkol.ac.in/~ghossain"
+ trac="gmhossain"
+ github="golam-m-hossain"/>
 <contributor
  name="Golam Mortuza Hossain"
  location="UNB, Fredericton, New Brunswick, Canada"
