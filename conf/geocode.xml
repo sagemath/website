@@ -144,7 +144,6 @@
 <loc location="Observatoire de Paris, Meudon, France" loclng="2.2266969" loclat="48.8050079"/>
 <loc location="ETH Zürich, Switzerland" loclng="8.547628" loclat="47.37638889999999"/>
 <loc location="Karlstad University, Sweden" loclng="13.582588" loclat="59.40639900000001"/>
-<loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
 <loc location="LIRMM, France" loclng="3.8403209" loclat="43.6368829"/>
 <loc location="Drexel University, Philadelphia, USA" loclng="-75.18994409999999" loclat="39.9566127"/>
 <loc location="AIMS; Muizenberg; Cape Town; South Africa" loclat="-34.105" loclng="18.471667"/>
@@ -183,7 +182,7 @@
 <loc location="Ottawa, ON, Canada" loclat="45.4215296" loclng="-75.6971931"/>
 <loc location="Villach, Austria" loclng="13.85062" loclat="46.60856"/>
 <loc location="Ottawa, Canada" loclng="-75.69719309999999" loclat="45.4215296"/>
-<loc location="IISER, Kolkata, India" loclat="22.9638419" loclng="88.5245023"/>
+<loc location="IISER Kolkata, India" loclng="88.5245023" loclat="22.9638419"/>
 <loc location="UNB, Fredericton, New Brunswick, Canada" loclng="-66.64295109999999" loclat="45.9447513"/>
 <loc location="CET, Bhubaneswar, India" loclng="85.776639" loclat="20.275845"/>
 <loc location="University of Brest, France" loclng="-4.5074935" loclat="48.39806189999999"/>
@@ -247,6 +246,7 @@
 <loc location=" University of Calgary, Canada" loclng="-114.0718831" loclat="51.04473309999999"/>
 <loc location="University of Sydney, Australia" loclng="151.2092955" loclat="-33.8688197"/>
 <loc location="Student at Ca' Foscari University, Venice, Italy" loclng="-119.4179324" loclat="36.778261"/>
+<loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
 <loc location="LITIS EA 4108, University of Rouen, France" loclng="1.0674362" loclat="49.4584181"/>
 <loc location="Gwangju, Korea" loclat="35.1595454" loclng="126.8526012"/>
 <loc location="University of British Columbia, Vancouver" loclng="-123.2459939" loclat="49.26060520000001"/>
