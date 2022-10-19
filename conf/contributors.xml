@@ -1506,9 +1506,8 @@ Please keep the list in alphabetical order by last name!
  name="Joseph E. Fields"
  location="Southern Connecticut State University, New Haven, CT"
  url="http://www.southernct.edu/~fields/"
- trac="jfields"/>
-<contributor
- name="Joe Fields"/>
+ trac="jfields"
+ github="osj1961"/>
 <contributor
  name="Tara Fife"
  trac="tara"
