@@ -2340,8 +2340,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Robert Jacobson"
  location="Roger Williams University, Bristol, RI"
- url="https://rljacobson.github.io/"
- trac="RobertJacobson"/>
+ url="https://www.RobertJacobson.dev/"
+ trac="RobertJacobson"
+ github="rljacobson"/>
 <contributor
  name="Naqi Jaffery"
  work="UCSD undergraduate student"
