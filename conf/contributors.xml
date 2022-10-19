@@ -2890,7 +2890,11 @@ Please keep the list in alphabetical order by last name!
  name="Ben LeVeque"/>
 <contributor
  name="Romain Lebreton"
- trac="romainlebreton"/>
+ work="Université de Montpellier"
+ location="Montpellier, France"
+ url="http://www.lirmm.fr/~lebreton/"
+ trac="romainlebreton"
+ github="romainlebreton"/>
 <contributor
  name="Thierry Lecroq"
  location="LITIS EA 4108, University of Rouen, France"
