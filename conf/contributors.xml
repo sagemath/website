@@ -4987,7 +4987,8 @@ Please keep the list in alphabetical order by last name!
  trac="jpswanson"/>
 <contributor
  name="Christopher Swenson"
- trac="swenson"/>
+ trac="swenson"
+ github="swenson"/>
 <contributor
  name="Chris Swierczewski"
  work="Graduate student in applied mathematics, University of Washington"
