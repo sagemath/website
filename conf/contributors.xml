@@ -5564,7 +5564,8 @@ Please keep the list in alphabetical order by last name!
  trac="zabrocki"/>
 <contributor
  name="Zafeirakis Zafeirakopoulos"
- trac="zaf"/>
+ trac="zaf"
+ github="zafeirakopoulos"/>
 <contributor
  name="Gerardo Zelaya"
  location="University of Washington, Seattle"
