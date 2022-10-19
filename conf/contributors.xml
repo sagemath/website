@@ -4044,8 +4044,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Wai Yan Pong"
  location="CSU Dominguez-Hills"
- url="http://csudh.edu/math/wpong"
- trac="pong"/>
+ url="https://math.csudh.edu/~pong"
+ trac="pong"
+ github="wypong"/>
 <contributor
  name="Viviane Pons"
  work="PhD student, Maitre de Conférence, LRI, Université Paris-Sud Orsay"
