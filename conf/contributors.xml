@@ -1064,6 +1064,7 @@ Please keep the list in alphabetical order by last name!
  name="Lucas David-Roesler"/>
 <contributor
  name="Ewan Davies"
+ github="ed359"
  trac="gh-ed359"/>
 <contributor
  name="Damek Davis"
@@ -1301,7 +1302,8 @@ Please keep the list in alphabetical order by last name!
  trac="gebner"/>
 <contributor
  name="Alec Edgington"
- trac="alec.edgington"/>
+ trac="alec.edgington"
+ github="obtext"/>
 <contributor
  name="Ingolfur Edvardsson"
  trac="ingolfured"
@@ -1936,6 +1938,7 @@ Please keep the list in alphabetical order by last name!
  name="Christopher Hall"/>
 <contributor
  name="Immi Halupczok"
+ github="immi-h"
  trac="immi"/>
 <contributor
  name="Carlo Hamalainen"
@@ -2283,8 +2286,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Robert Jacobson"
  location="Roger Williams University, Bristol, RI"
- url="https://rljacobson.github.io/"
- trac="RobertJacobson"/>
+ url="https://www.RobertJacobson.dev/"
+ trac="RobertJacobson"
+ github="rljacobson"/>
 <contributor
  name="Naqi Jaffery"
  work="UCSD undergraduate student"
@@ -3019,7 +3023,8 @@ Please keep the list in alphabetical order by last name!
  trac="lipshitz"/>
 <contributor
  name="Jan-Philipp Litza"
- trac="jplitza"/>
+ trac="jplitza"
+ github="jplitza"/>
 <contributor
  name="Ben Livingston"/>
 <contributor
@@ -3061,8 +3066,9 @@ Please keep the list in alphabetical order by last name!
  github="davidlowryduda"/>
 <contributor
  name="Richard L Lozes"
- altnames="Richard Lozes"
- trac="rllozes"/>
+ altnames="Richard Lozes"         
+ trac="rllozes"
+ github="rll2021"/>
 <contributor
  name="Fiona Lu"/>
 <contributor
@@ -4895,7 +4901,8 @@ Please keep the list in alphabetical order by last name!
  trac="jpswanson"/>
 <contributor
  name="Christopher Swenson"
- trac="swenson"/>
+ trac="swenson"
+ github="swenson"/>
 <contributor
  name="Chris Swierczewski"
  work="Graduate student in applied mathematics, University of Washington"
@@ -4948,7 +4955,8 @@ Please keep the list in alphabetical order by last name!
  name="Vishesh Tayal"/>
 <contributor
  name="Yoora Yi Tenen"
- trac="yooyiten"/>
+ trac="yooyiten"
+ github="yooyiten"/>
 <contributor
  name="Scot Terry"/>
 <contributor
@@ -5267,7 +5275,9 @@ Please keep the list in alphabetical order by last name!
  description="ec (modular degrees); sympow (symmetric powers); feedback"/>
 <contributor
  name="Adam Webb"
- location="Canadian Light Source, Saskatoon, Canada"
+ location="Saskatoon, Canada"
+ work="Canadian Light Source"
+ github="maxthemouse"            
  trac="awebb"/>
 <contributor
  name="Georg S. Weber"
