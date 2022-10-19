@@ -1187,13 +1187,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Tobias Diez"/>
 <contributor
- name="Dilks"
- location="NDSU"
- url="Kevin"
- trac="kdilks"/>
-<contributor
  name="Kevin Dilks"
- trac="kdilks"/>
+ trac="kdilks"
+ github="kevindilks"/>
 <contributor
  name="Ryan Dingman"
  work="University of Washington"
