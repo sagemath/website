@@ -603,7 +603,8 @@ Please keep the list in alphabetical order by last name!
  url="http://www.mfo.de/organisation/institute/brickenstein/"/>
 <contributor
  name="Adrien Brochard"
- trac="abrochard"/>
+ trac="abrochard"
+ github="abrochard"/>
 <contributor
  name="Adrien Brochier"
  trac="Adrien"/>
@@ -896,7 +897,8 @@ Please keep the list in alphabetical order by last name!
  trac="kclawson"/>
 <contributor
  name="Sam Clearman"
- trac="sam"/>
+ trac="sam"
+ github="samclearman"/>
 <contributor
  name="Nico Van Cleemput"
  location="Universiteit Gent, Ghent, Belgium"
@@ -1135,7 +1137,8 @@ Please keep the list in alphabetical order by last name!
  github="thecaligarmo"/>
 <contributor
  name="Henri Derycke"
- trac="hderycke"/>
+ trac="hderycke" 
+ github="nheir"/>
 <contributor
  name="Karan Desai"
  url="https://www.github.com/karandesai-96"
@@ -1169,8 +1172,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Kevin Dilks"
  altnames="Dilks"
- location="NDSU"
- trac="kdilks"/>
+ location="NDSU, North Dakota, USA"
+ trac="kdilks"
+ github="kevindilks"/>
 <contributor
  name="Ryan Dingman"
  work="University of Washington"
@@ -1229,7 +1233,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Tom Draper"
  description="support is_primitive() method for polynomials over Finite Fields"
- trac="TomDraper"/>
+ trac="TomDraper"
+ github="SmoothDragon"/>
 <contributor
  name="Simon Drewitz"
  location="Université de Fribourg, Switzerland"
@@ -1245,7 +1250,8 @@ Please keep the list in alphabetical order by last name!
  github="alexanderdreyer"/>
 <contributor
  name="Eduardo Dueñez"
- trac="eduenez"/>
+ trac="eduenez"
+ github="eduenez"/>
 <contributor
  name="Niels Duif"
  location="Netherlands"
@@ -1478,7 +1484,8 @@ Please keep the list in alphabetical order by last name!
  altnames="Joe Fields"
  location="Southern Connecticut State University, New Haven, CT"
  url="http://www.southernct.edu/~fields/"
- trac="jfields"/>
+ trac="jfields"
+ github="osj1961"/>
 <contributor
  name="Tara Fife"
  trac="tara"
@@ -3331,7 +3338,8 @@ Please keep the list in alphabetical order by last name!
  github="cemulate"/>
 <contributor
  name="Jan Medlock"
- trac="medlock"/>
+ trac="medlock"
+ github="janmedlock"/>
 <contributor
  name="Paolo Menegatti"
  trac="pmenegat"/>
@@ -5477,7 +5485,8 @@ Please keep the list in alphabetical order by last name!
  trac="zabrocki"/>
 <contributor
  name="Zafeirakis Zafeirakopoulos"
- trac="zaf"/>
+ trac="zaf"
+ github="zafeirakopoulos"/>
 <contributor
  name="Gerardo Zelaya"
  location="University of Washington, Seattle"
