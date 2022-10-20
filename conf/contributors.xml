@@ -36,7 +36,7 @@ Please keep the list in alphabetical order by last name!
  name="Michael Abshoff"
  work="Universität Dortmund"
  location="Dortmund, Germany"
- description="contributed to release management; work on build system for Windows, OS X, and Linux; OS X installer; tons of general advice; valgrind support; Solaris and Linux PPC port"
+ description="contributed to release management; work on build system for Windows, OS X, and Linux; OS X installer; tons of general advice; valgrind support; Solaris and Linux PPC port; 2008 Spies SageMath Development Prize"
  url="http://wiki.sagemath.org/MichaelAbshoff"
  trac="mabshoff"/>
 <contributor
@@ -332,6 +332,7 @@ Please keep the list in alphabetical order by last name!
  trac="sbarthelemy"/>
 <contributor
  name="Tomer Bauer"
+ description="organized Sage Days 110"
  trac="mathzeta2"
  gitlab="mathzeta2"
  github="mathzeta"/>
@@ -386,10 +387,9 @@ Please keep the list in alphabetical order by last name!
  url="http://www.thales.math.uqam.ca/~cberg/"
  trac="chrisjamesberg"/>
 <contributor
- name="Jen Berg"
+ name="Jennifer Berg"
+ altnames="Jen Berg"
  trac="jensberg"/>
-<contributor
- name="Jennifer Berg"/>
 <contributor
  name="John Bergdall"/>
 <contributor
@@ -556,7 +556,7 @@ Please keep the list in alphabetical order by last name!
  name="Robert Bradshaw"
  work="University of Washington"
  location="University of Washington, WA, USA"
- description="Cython; number theory; linear algebra; coercion; basic arithmetic"
+ description="Cython; number theory; linear algebra; coercion; basic arithmetic; 2011 Spies SageMath Development Prize"
  url="http://www.math.washington.edu/~robertwb/"
  trac="robertwb"
  github="robertwb"/>
@@ -570,7 +570,7 @@ Please keep the list in alphabetical order by last name!
  name="Volker Braun"
  work="Mathematical Institute, Oxford University"
  location="Oxford, UK"
- description="Toric geometry package; polyhedra and PPL interface; triangulations"
+ description="Toric geometry package; polyhedra and PPL interface; triangulations; release manager (2013-); 2014 Spies SageMath Development Prize"
  trac="vbraun"
  github="vbraun"/>
 <contributor
@@ -583,7 +583,9 @@ Please keep the list in alphabetical order by last name!
  trac="JBraunsteiner"/>
 <contributor
  name="Erik Bray"
+ altnames="E. Madison Bray"
  location="Université Paris Sud XI, Orsay, France"
+ description="2015–2021 SageMath Prize"
  trac="embray"
  github="embray"/>
 <contributor
@@ -797,6 +799,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Frédéric Chapoton"
  url="https://irma.math.unistra.fr/~chapoton/"
+ description="2015–2021 SageMath Prize"
  trac="chapoton"
  github="fchapoton"/>
 <contributor
@@ -1078,7 +1081,7 @@ Please keep the list in alphabetical order by last name!
  altnames="Vinent Delecroix"
  work="researcher, CNRS"
  location="LaBRI, Université de Bordeaux, Bordeaux, France"
- description="combinatorics, documentation"
+ description="combinatorics, documentation; organized Sage Days 93"
  url="http://www.labri.fr/perso/vdelecro/"
  trac="vdelecroix"
  github="videlec"/>
@@ -1089,7 +1092,7 @@ Please keep the list in alphabetical order by last name!
  name="Jeroen Demeyer"
  work="Postdoc, Ghent University"
  location="Galglaan 2, Gent, Belgium"
- description="PARI interface; Integer factorisation; c_lib, interrupt handling"
+ description="PARI interface; Integer factorisation; c_lib, interrupt handling; release manager (2011-2013); 2013 Spies SageMath Development Prize"
  url="http://cage.ugent.be/~jdemeyer/"
  trac="jdemeyer"
  github="jdemeyer"/>
@@ -1809,16 +1812,11 @@ Please keep the list in alphabetical order by last name!
  name="Stefan Grosser"/>
 <contributor
  name="Jason Grout"
- work="Postdoctoral fellow, Iowa State University"
- location="Ames, Iowa, USA"
- description="graph theory; tidbits of the notebook; linear algebra; various other things"
+ work="Databricks"
+ location="San Francisco"
+ description="graph theory; tidbits of the notebook; linear algebra; 2012 Spies SageMath Development Prize"
  trac="jason"
  github="jasongrout"/>
-<contributor
- name="Jason Grout"
- location="Bloomberg, New York, NY"
- url="http://jasongrout.org"
- trac="jason"/>
 <contributor
  name="Ryan Grout"
  work="undergraduate student"
@@ -1966,9 +1964,10 @@ Please keep the list in alphabetical order by last name!
  github="jonhanke"/>
 <contributor
  name="Mike Hansen"
+ altnames="Michael Hansen"
  location="Seattle, WA, USA"
  work="University of Washington"
- description="Combinatorics package; bug fixes"
+ description="Combinatorics package; bug fixes; 2009 Spies SageMath Development Prize"
  trac="mhansen"
  github="mwhansen"/>
 <contributor
@@ -2666,7 +2665,7 @@ Please keep the list in alphabetical order by last name!
  altnames="Matthias Koeppe"
  work="Professor, UC Davis"
  location="Davis, CA, USA"
- description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022)"
+ description="build system (2016-2022); continuous integration (2020-2022); modularization (2020-2022); polyhedral geometry and optimization (2015-2022); manifolds (2021-2022); organized Sage Days 109, 111, 112.358; 2015–2021 SageMath Prize"
  url="https://www.math.ucdavis.edu/~mkoeppe/"
  trac="mkoeppe"
  github="mkoeppe"/>
@@ -2752,7 +2751,7 @@ Please keep the list in alphabetical order by last name!
  name="Jean-Philippe Labbé"
  work="Maître d'enseignement, École de Technologie Supérieure"
  location="Université du Québec, Montréal, Québec, Canada"
- description="algebraic combinatorics; discrete geometry; Coxeter groups;"
+ description="algebraic combinatorics; discrete geometry; Coxeter groups; organized Sage Days 112.358"
  url="https://jplab.github.io/"
  trac="jipilab,jplabbe"
  github="jplab"/>
@@ -2902,15 +2901,11 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Samuel Lelièvre"
  work="Laboratoire de mathématique d'Orsay, UMR 8628 CNRS / Université Paris-Sud"
- description="advocacy; organize Sage Days; user support; wiki"
+ description="advocacy; organized Sage Days 109, 110; user support; wiki"
  location="Institut de mathématiques d'Orsay, 91400 Orsay, France"
  url="https://wiki.sagemath.org/slelievre"
  trac="slelievre,maseam"
  github="slel"/>
-<contributor
- name="Samuel Lelièvre"
- url="http://www.math.u-psud.fr/~lelievre"
- trac="slelievre,maseam"/>
 <contributor
  name="Sergios Lenis"
  trac="Mantis"/>
@@ -3242,6 +3237,7 @@ Please keep the list in alphabetical order by last name!
  name="Marc Masdeu"
  location="Columbia University, NY"
  url="http://math.columbia.edu/~masdeu"
+ description="organized Sage Days 93"
  trac="mmasdeu"
  github="mmasdeu"/>
 <contributor
@@ -3442,7 +3438,7 @@ Please keep the list in alphabetical order by last name!
  name="Thierry Monteil"
  work="research fellow, CNRS"
  location="Villetaneuse, France"
- description="bug fixes; combinatorics (words, graphs); dynamics (translation surfaces, tilings); organized Sage Days 20 and Sage Days 28"
+ description="bug fixes; combinatorics (words, graphs); dynamics (translation surfaces, tilings); organized Sage Days 20, 28; 2015–2021 SageMath Prize"
  url="https://wiki.sagemath.org/ThierryMonteil"
  trac="tmonteil"/>
 <contributor
@@ -3605,7 +3601,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Minh Van Nguyen"
  location="Melbourne, Australia"
- description="cryptography; graph theory; release management; website maintainer; miscellaneous bug fixes; documentation work"
+ description="cryptography; graph theory; release management; website maintainer; miscellaneous bug fixes; documentation work; 2010 Spies SageMath Development Prize"
  url="http://sage.math.washington.edu/home/mvngu/"
  trac="mvngu"/>
 <contributor
@@ -3638,7 +3634,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Andrey Novoseltsev"
  location="University of Alberta, Edmonton, Canada"
- description="SageMathCell; toric geometry"
+ description="SageMathCell; toric geometry; 2015–2021 SageMath Prize"
  trac="novoselt"
  github="novoselt"/>
 <contributor
@@ -3796,7 +3792,7 @@ Please keep the list in alphabetical order by last name!
  altnames="Dmitrii Pasechnik"
  work="Department of Computer Science, Oxford University"
  location="Oxford, UK"
- description="packaging; commutative algebra; group theory"
+ description="packaging; commutative algebra; group theory; organized Sage Days 109, 111; 2015–2021 SageMath Prize"
  url="http://users.ox.ac.uk/~coml0531/"
  trac="dimpase"
  github="dimpase"/>
@@ -3951,7 +3947,7 @@ Please keep the list in alphabetical order by last name!
  name="Viviane Pons"
  work="PhD student, Maitre de Conférence, LRI, Université Paris-Sud Orsay"
  location="University Paris-Sud Orsay, France"
- description="combinatorics; multivariate polynomials algebra"
+ description="combinatorics; multivariate polynomials algebra; 2015–2021 SageMath Prize"
  trac="VivianePons"
  github="VivianePons"
  url="https://www.lri.fr/~pons/"/>
@@ -4268,6 +4264,7 @@ Please keep the list in alphabetical order by last name!
  name="Julian Rüth"
  altnames="Julian Rueth"
  location="Nicaragua"
+ description="organized Sage Days 110"
  trac="saraedum"
  github="saraedum"/>
 <contributor
@@ -4412,7 +4409,7 @@ Please keep the list in alphabetical order by last name!
  name="Harald Schilly"
  work="University of Vienna"
  location="Vienna, Austria"
- description="webmaster; R/Sage interface; marketing;management"
+ description="webmaster; R/Sage interface; marketing; management; 2015–2021 SageMath Prize"
  pix="./pix/people/schilly.jpeg"
  url="http://sage.math.washington.edu/home/schilly/"
  trac="schilly"
@@ -4493,7 +4490,7 @@ Please keep the list in alphabetical order by last name!
  work="Hokkaido University"
  location="Sapporo, Japan"
  url="https://tscrim.github.io/"
- description="Crystals; representation theory; programming"
+ description="Crystals; representation theory; programming; organized Sage Days 110; 2015–2021 SageMath Prize"
  trac="tscrim"
  github="tscrim"/>
 <contributor
@@ -4960,7 +4957,7 @@ Please keep the list in alphabetical order by last name!
  altnames="Nicolas M. Thiéry,Nicolas M. Thiery"
  work="Professor, LISN, Université Paris-Saclay"
  location="Orsay, France"
- description="(algebraic) combinatorics and categories; dissemination and funding"
+ description="(algebraic) combinatorics and categories; dissemination and funding; 2015–2021 SageMath Prize"
  url="http://nicolas.thiery.name/"
  trac="nthiery"
  github="nthiery"/>
@@ -5476,6 +5473,7 @@ Please keep the list in alphabetical order by last name!
  name="Yuan Zhou"
  location="University of Kentucky"
  url="https://math.as.uky.edu/users/yzh392"
+ description="organized Sage Days 109, 110, 112.358"
  trac="yzh"
  github="yuan-zhou"/>
 <contributor
