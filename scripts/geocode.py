@@ -88,8 +88,8 @@ def changelog_contributions(names):
                        if any(name in log for name in names)),
                       key=int)
     if versions:
-        return "Contributions to Sage " + ', '.join(f'{major}.x' for major in versions)
-    return ""
+        return ["Contributions to Sage " + ', '.join(f'{major}.x' for major in versions)]
+    return []
 
 def writeToDevmap():
     """
@@ -173,10 +173,7 @@ def writeToDevmap():
         tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
         tracQuery = tracQuery.replace(" ", "%20")
 
-        if not descr:
-            descr = [changelog_contributions(all_names)]
-        else:
-            descr = map(lambda _: _.strip(), descr.split(r';'))
+        descr = changelog_contributions(all_names) + [d.strip() for d in descr.split(r';')]
 
         first = True
         for d in descr:
