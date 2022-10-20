@@ -4784,7 +4784,8 @@ Please keep the list in alphabetical order by last name!
  name="Brett Stevens"
  location="Carleton University, Ottawa, Canada"
  url="http://www.math.carleton.ca/~brett/"
- trac="brett"/>
+ trac="brett"
+ github="brettpim"/>
 <contributor
  name="Manon Stipulanti"
  trac="mstipulanti"/>
