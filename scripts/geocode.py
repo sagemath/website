@@ -131,7 +131,9 @@ def writeToDevmap():
 
         tr = devmap.createElement("tr")
         td = devmap.createElement("td")
-        if len(url) == 0:
+        if not url and github:
+            url = f'https://www.github.com/{github}'
+        if not url:
             td.appendChild(devmap.createTextNode(dev))
         else:
             a = devmap.createElement("a")

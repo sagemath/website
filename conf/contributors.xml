@@ -10,7 +10,7 @@ contributor
  - location = something which returns the correct location when entered in maps.google.com
  - work = university, institute, ...
  - description = <item>[;<item>]* ... delimiter ";" is converted into a break or list
- - url = webpage, when clicking on name
+ - url = webpage, when clicking on name; no need to provide github profile URL
  - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally
  - jitter = float as string, multiplicated in jitter function, 0 to disable
  - trac = trac nickname for the search (also searched for the name, but the trac name is often different!). comma-separated list of several trac account names ok.
@@ -1128,7 +1128,7 @@ Please keep the list in alphabetical order by last name!
  github="nheir"/>
 <contributor
  name="Karan Desai"
- url="https://www.github.com/karandesai-96"
+ github="karandesai-96"
  trac="karandesai-96"/>
 <contributor
  name="Didier Deshommes"
@@ -1448,7 +1448,6 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Isuru Fernando"
  work="University of Illinois at Urbana-Champaign"
- url="https://github.com/isuruf"
  location="Urbana, IL, USA"
  trac="isuruf"
  github="isuruf"
@@ -1899,7 +1898,6 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Hosein Hadipour"
  location="University of Tehran, Iran"
- url="https://github.com/hadipourh"
  trac="Hadipour"
  github="hadipourh"/>
 <contributor
@@ -3098,7 +3096,7 @@ Please keep the list in alphabetical order by last name!
  github="sverre320"/>
 <contributor
  name="Ximin Luo"
- url="https://github.com/infinity0"
+ github="infinity0"
  trac="infinity0"/>
 <contributor
  name="Joey Lupo"
@@ -3107,7 +3105,6 @@ Please keep the list in alphabetical order by last name!
  name="Joseph Lupo"/>
 <contributor
  name="Peter Luschny"
- url="https://github.com/PeterLuschny"
  description="Categorization of ZZ"
  location="Berlin, Germany"
  trac="pluschny"
@@ -4370,7 +4367,6 @@ Please keep the list in alphabetical order by last name!
  trac="koen,Koen"/>
 <contributor
  name="Victor Santos"
- url="https://github.com/padawanphysicist"
  trac="vsantos"
  github="padawanphysicist"/>
 <contributor
@@ -5467,7 +5463,6 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Ying Zhou"
  location="Brandeis University"
- url="http://github.com/mathyingzhou"
  github="mathyingzhou"/>
 <contributor
  name="Yuan Zhou"
