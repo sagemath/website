@@ -2062,11 +2062,6 @@ Please keep the list in alphabetical order by last name!
  trac="hemmecke"
  github="hemmecke"/>
 <contributor
- name="Anna Somoza Henares"
- location="Universitat Politècnica de Catalunya, Spain / Universiteit Leiden, The Netherlands"
- url="https://mat-web.upc.edu/people/anna.somoza/"
- trac="annasomoza"/>
-<contributor
  name="Jordi Gutiérrez Hermoso"
  trac="jordigh"/>
 <contributor
@@ -4670,8 +4665,12 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Sara Solhjem"
  trac="ssolhjem"/>
-<contributor
- name="Anna Somoza"/>
+ <contributor
+ name="Anna Somoza"
+ url="https://anna-somoza.github.io/"
+ trac="annasomoza"
+ github="anna-somoza"
+/>
 <contributor
  name="Jieao Song"/>
 <contributor
