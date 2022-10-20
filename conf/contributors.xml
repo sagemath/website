@@ -3467,7 +3467,8 @@ Please keep the list in alphabetical order by last name!
  trac="mora"/>
 <contributor
  name="Javier Mora"
- trac="cousteau"/>
+ trac="cousteau"
+ github="cousteaulecommandant"/>
 <contributor
  name="Alejandro Morales"
  trac="ahmorales"/>
