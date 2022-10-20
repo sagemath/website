@@ -13,7 +13,7 @@ contributor
  - url = webpage, when clicking on name; no need to provide github profile URL
  - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally
  - jitter = float as string, multiplicated in jitter function, 0 to disable
- - trac = trac nickname for the search (also searched for the name, but the trac name is often different!). comma-separated list of several trac account names ok.
+ - trac = trac nickname for the search (also searched for the name, but the trac name is often different!). comma-separated list of several trac account names ok. No need to provide "gh-..." names, provide a github attribute instead.
  - github = github.com account name
  - gitlab = gitlab.com account name
 
@@ -114,7 +114,6 @@ Please keep the list in alphabetical order by last name!
  trac="aalvarado2"/>
 <contributor
  name="Saher Amasha"
- trac="gh-Saher-Amasha"
  github="Saher-Amasha"/>
 <contributor
  name="Durand Amaury"/>
@@ -1054,8 +1053,7 @@ Please keep the list in alphabetical order by last name!
  name="Lucas David-Roesler"/>
 <contributor
  name="Ewan Davies"
- github="ed359"
- trac="gh-ed359"/>
+ github="ed359"/>
 <contributor
  name="Damek Davis"
  location="UCLA"
@@ -1155,7 +1153,8 @@ Please keep the list in alphabetical order by last name!
  trac="MatthieuDien"
  github="MatthieuDien"/>
 <contributor
- name="Tobias Diez"/>
+ name="Tobias Diez"
+ github="tobiasdiez"/>
 <contributor
  name="Kevin Dilks"
  altnames="Dilks"
@@ -1178,7 +1177,6 @@ Please keep the list in alphabetical order by last name!
  work="University of Edinburgh"
  location="Edinburgh, United Kingdom"
  description="Algebraic geometry"
- trac="gh-DisneyHogg"
  github="DisneyHogg"/>
 <contributor
  name="Robert Dodier"
@@ -1739,8 +1737,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Asier Eiguren Goyenechea"
  url="https://www.ehu.eus/es/web/computational-many-body-theory/home"
- github="eiguren"
- trac="gh-eiguren"/>
+ github="eiguren"/>
 <contributor
  name="Peter Graef"
  location="University of Heidelberg"
@@ -2281,7 +2278,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Florentin Jaffredo"/>
 <contributor
- name="Dennis Jahn"/>
+ name="Dennis Jahn"
+ github="DennisJahn"/>
 <contributor
  name="Lokesh Jain"
  trac="jlokesh"
@@ -2425,7 +2423,7 @@ Please keep the list in alphabetical order by last name!
  trac="twjudson"/>
 <contributor
  name="Michael Jung"
- trac="gh-mjungmath"/>
+ github="mjungmath"/>
 <contributor
  name="Jamie Juul"/>
 <contributor
@@ -3100,9 +3098,8 @@ Please keep the list in alphabetical order by last name!
  trac="infinity0"/>
 <contributor
  name="Joey Lupo"
- trac="gh-Loops7"/>
-<contributor
- name="Joseph Lupo"/>
+ altnames="Joseph Lupo"
+ github="Loops7"/>
 <contributor
  name="Peter Luschny"
  description="Categorization of ZZ"
