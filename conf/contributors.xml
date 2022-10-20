@@ -241,15 +241,11 @@ Please keep the list in alphabetical order by last name!
  name="Brent Baccala"/>
 <contributor
  name="Eviatar Bach"
- location="Vancouver, Canada"
+ location="University of Maryland, College Park"
  description="Combinatorics; bug fixes"
  trac="eviatarbach"
  github="eviatarbach"/>
-<contributor
- name="Eviatar Bach"
- location="University of Maryland, College Park"
- url="http://eviatarbach.com/"
- trac="eviatarbach"/>
+ url="http://eviatarbach.com/"/>
 <contributor
  name="Thomas Bächler"
  trac="baechler"/>
@@ -369,7 +365,8 @@ Please keep the list in alphabetical order by last name!
  name="Sarah-Marie Belcastro"
  altnames="sarah-marie belcastro"/>
 <contributor
- name="Andrey Belgorodski"/>
+ name="Andrey Belgorodski"
+ github="sheerluck"/>
 <contributor
  name="Mark Bell"
  trac="mbell,mcbell"/>
@@ -532,12 +529,6 @@ Please keep the list in alphabetical order by last name!
  work="Postdoctoral fellow, Mathematics Institute, University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom"
  description="algebra"
- url="https://www.tudelft.nl/en/staff/j.g.bosman/"
- trac="johanbosman"/>
-<contributor
- name="Johan Bosman"
- location="University of Warwick, UK"
- url="http://www.warwick.ac.uk/~masjam/"
  trac="johanbosman"/>
 <contributor
  name="Charles Bouillaguet"
@@ -671,12 +662,6 @@ Please keep the list in alphabetical order by last name!
  work="Postdoctoral fellow, Center for Advanced Security Research Darmstadt (CASED)"
  location="64293 Darmstadt, Germany"
  description="cryptography"
- url="http://www.cased.de/personen/s_bulygin.html"
- trac="sbulygin"/>
-<contributor
- name="Stanislav Bulygin"
- location="University of Kaiserslautern"
- url="http://www.mathematik.uni-kl.de/~bulygin/"
  trac="sbulygin"/>
 <contributor
  name="Daniel Bump"
@@ -1082,10 +1067,9 @@ Please keep the list in alphabetical order by last name!
  trac="pdehaye"/>
 <contributor
  name="Alyson Deines"
+ altnames="Aly Deines"
  trac="aly.deines"
  github="adeines"/>
-<contributor
- name="Aly Deines"/>
 <contributor
  name="Bérénice Delcroix-Oger"
  trac="oger"/>
@@ -3684,15 +3668,12 @@ Please keep the list in alphabetical order by last name!
  github="canozanoguz"/>
 <contributor
  name="R. Andrew Ohana"
+ altnames="Andrew Ohana,R. Andrew Ohanar"
  work="ESI North America"
  location="San Diego, CA, USA"
  description="migration from mecurial to git; number theory"
  trac="ohanar"
  github="ohanar"/>
-<contributor
- name="Andrew Ohana"/>
-<contributor
- name="R. Andrew Ohanar"/>
 <contributor
  name="Christopher Olah"
  work="hacklab.to"
@@ -3762,9 +3743,6 @@ Please keep the list in alphabetical order by last name!
  description="Benchmarking parser; doctest timing; difficult fpLLL bug fix; and much more"
  trac="wjp"
  github="wjp"/>
-<contributor
- name="Willem Jan Palenstijn"
- trac="wjp"/>
 <contributor
  name="Elisa Palezzato"
  location="Hokkaido University, Japan"
@@ -3853,14 +3831,9 @@ Please keep the list in alphabetical order by last name!
  name="Sylvain Pelissier"/>
 <contributor
  name="Javier López Peña"
- work="Mathematics Research Centre, Queen Mary University of London"
- location="London E1 4NS UK"
  description="categories"
- url="http://www.maths.qmul.ac.uk/~jlopez"
- trac="jlopez"/>
-<contributor
- name="Javier López Peña"
- location="University College London, UK"
+ work="University College London"
+ location="London, UK"
  url="http://www.ucl.ac.uk/~ucahjlo/"
  trac="jlopez"/>
 <contributor
@@ -3930,7 +3903,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="David Philp"/>
 <contributor
- name="Nicolò Piazzalunga"/>
+ name="Nicolò Piazzalunga"
+ github="dkwo"/>
 <contributor
  name="Laurent Pierron"/>
 <contributor
@@ -3980,16 +3954,11 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Viviane Pons"
  work="PhD student, Maitre de Conférence, LRI, Université Paris-Sud Orsay"
- location="University Paris-Sud Orsay"
+ location="University Paris-Sud Orsay, France"
  description="combinatorics; multivariate polynomials algebra"
- url="http://www-igm.univ-mlv.fr/~pons/"
  trac="VivianePons"
- github="VivianePons"/>
-<contributor
- name="Viviane Pons"
- location="Univ. Paris-Sud, France"
- url="https://www.lri.fr/~pons/"
- trac="VivianePons"/>
+ github="VivianePons"
+ url="https://www.lri.fr/~pons/"/>
 <contributor
  name="Yann Ponty"
  location="CNRS-Ecole Polytechnique"
@@ -4115,14 +4084,10 @@ Please keep the list in alphabetical order by last name!
  github="LaisRast"/>
 <contributor
  name="Martin Raum"
- work="ETH Zürich"
- location="Zurich, Switzerland"
+ work="Professor, Chalmers Technical University"
+ location="Gothenburg, Sweden"
  description="algebra; modular forms; psage"
  url="http://www.raum-brothers.eu/martin/"
- trac="mraum"/>
-<contributor
- name="Martin Raum"
- location="MPIM Bonn, Germany"
  trac="mraum"/>
 <contributor
  name="Ajeesh Ravindran"
@@ -4346,10 +4311,9 @@ Please keep the list in alphabetical order by last name!
  trac="ams"/>
 <contributor
  name="Philippe Saadé"
+ altnames="Phillipe Saade"
  location="Lyon, France"
  trac="psaade"/>
-<contributor
- name="Phillipe Saade"/>
 <contributor
  name="Mark Saaltink"
  trac="msaaltink"/>
@@ -4877,13 +4841,9 @@ Please keep the list in alphabetical order by last name!
  trac="kevin.stueve"/>
 <contributor
  name="Christian Stump"
- work="Postdoctoral Fellow, Centre de Recherches Mathématiques (Université de Montréal) and Laboratoire de Combinatoire et d'Informatique Mathématique (Université du Québec à Montréal)"
+ work="Professor, Ruhr-Universität Bochum"
  description="combinatorics; graph theory"
- url="http://homepage.univie.ac.at/christian.stump/"
- trac="stumpc5"
  github="stumpc5"/>
-<contributor
- name="Christian Stump"
  location="Ruhr-Universität Bochum, Germany"
  url="http://homepage.rub.de/christian.stump/"
  trac="stumpc5"/>
@@ -5094,12 +5054,11 @@ Please keep the list in alphabetical order by last name!
  trac="mrtrumbe"/>
 <contributor
  name="Kiminori Tsukazaki"
+ altnames="Kimi Tsukazaki"
  work="University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, United Kingdom"
  description="elliptic curves"
  trac="kimi"/>
-<contributor
- name="Kimi Tsukazaki"/>
 <contributor
  name="Vít Tuček"
  trac="vittucek"
@@ -5268,10 +5227,6 @@ Please keep the list in alphabetical order by last name!
  description="extensive feedback; PARI lib wrapping; use of his G5"
  trac="justin"/>
 <contributor
- name="Justin Walker"
- location="Stanford University, Palo Alto, CA"
- trac="justin"/>
-<contributor
  name="Timothy Walsh"/>
 <contributor
  name="Michael Walter"
@@ -5280,7 +5235,8 @@ Please keep the list in alphabetical order by last name!
  github="catch22"/>
 <contributor
  name="Aedi Wang"
- altnames="Zeyi Wang"/>
+ altnames="Zeyi Wang"
+ trac="zwang"/>
 <contributor
  name="Qiang Wang"/>
 <contributor
