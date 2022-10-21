@@ -2841,7 +2841,9 @@ Please keep the list in alphabetical order by last name!
  trac="sydahmad"/>
 <contributor
  name="Julien Lavauzelle"
- trac="jlavauzelle"/>
+ trac="jlavauzelle"
+ location="University Paris 8"
+ github="jlavauzelle"/>
 <contributor
  name="Felix Lawrence"
  location="University of Sydney, Australia"
