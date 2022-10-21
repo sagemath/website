@@ -1640,11 +1640,10 @@ Please keep the list in alphabetical order by last name!
  github="bgillesp"/>
 <contributor
  name="Maria Monks Gillespie"
+ altnames="Maria Gillespie"
  location="Graduate Student, UC Berkeley"
  trac="MariaMonks"
  github="MariaMonks"/>
-<contributor
- name="Maria Gillespie"/>
 <contributor
  name="Andrzej Giniewicz"
  url="http://www.im.pwr.wroc.pl/~giniew/"
@@ -1769,11 +1768,6 @@ Please keep the list in alphabetical order by last name!
  url="http://www.lirmm.fr/~grenet/"
  trac="bruno"
  github="bgrenet"/>
-<contributor
- name="Bruno Grenet"
- location="LIRMM, France"
- url="http://www.lirmm.fr/~grenet/"
- trac="bruno"/>
 <contributor
  name="Marina Gresham"
  trac="MGresham"/>
@@ -1915,10 +1909,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Bryton T.D. Hall"/>
 <contributor
- name="Chris Hall"
+ name="Christopher Hall"
+ altnames="Chris Hall"
  trac="cjh"/>
-<contributor
- name="Christopher Hall"/>
 <contributor
  name="Immi Halupczok"
  github="immi-h"
