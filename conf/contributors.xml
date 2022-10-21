@@ -293,9 +293,8 @@ Please keep the list in alphabetical order by last name!
  trac="bbanu"/>
 <contributor
  name="Barinder Banwait"
+ altnames="Barinder S. Banwait"
  trac="barinder"/>
-<contributor
- name="Barinder S. Banwait"/>
 <contributor
  name="Itai Bar-Natan"
  trac="itaibn"
@@ -1582,9 +1581,9 @@ Please keep the list in alphabetical order by last name!
  location="Hobart and William Smith Colleges"
  trac="agd"/>
 <contributor
- name="Alex Galarraga"/>
-<contributor
- name="Alexander Galarraga"/>
+ name="Alex Galarraga"
+ altnames="Alexander Galarraga"
+ github="EnderWannabe"/>
 <contributor
  name="Tyler Gaona"
  location="Duquesne University"
@@ -2229,8 +2228,7 @@ Please keep the list in alphabetical order by last name!
  url="https://sites.google.com/site/meeseongim/"
  trac="meeseongim"/>
 <contributor
- name="Engineering College Palakkad, Kerala, India"
- url="Govt."
+ name="Charls Mathew"
  trac="CharlsMathew"/>
 <contributor
  name="Patrick Ingram"
