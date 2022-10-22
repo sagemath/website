@@ -5157,7 +5157,9 @@ Please keep the list in alphabetical order by last name!
  trac="wishcow"/>
 <contributor
  name="Quimey Vivas"
- location="Universidad de Buenos Aires, Argentina"
+ work="University of Buenos Aires"
+ location="Buenos Aires, Argentina"
+ github="quimey"
  trac="quimey"/>
 <contributor
  name="Isabel Vogt"
