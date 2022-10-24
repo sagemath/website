@@ -1452,7 +1452,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Jeffrey Ferreira"
  altnames="Jeff Ferreira"
- trac="jferreira"/>
+ location="San Mateo, CA, USA"
+ trac="jferreira"
+ github="jeffpferreira"/>
 <contributor
  name="Thomas Feulner"
  location="University of Bayreuth, Germany"
