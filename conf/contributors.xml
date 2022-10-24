@@ -631,9 +631,8 @@ Please keep the list in alphabetical order by last name!
  name="Léo Brunswic"/>
 <contributor
  name="Paul Bryan"
- location="Australian National University, ACT, Australia"
- url="http://www.maths.anu.edu.au/~paul/"
- trac="pabryan"/>
+ trac="pabryan"
+ github="pabryan"/>
 <contributor
  name="André-Patrick Bubel"
  work="student, Universität Heidelberg"
