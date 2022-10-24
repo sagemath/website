@@ -5517,4 +5517,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="王瑞期"
  trac="shahuwang"/>
+<contributor
+ name="Nicolás Sirolli"
+ url="https://mate.dm.uba.ar/~nsirolli"
+ github="nsirolli"
+ trac="nmsirolli"/>
 </contributors>
