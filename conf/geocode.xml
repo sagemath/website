@@ -49,7 +49,6 @@
 <loc location="Christchurch, New Zealand" loclng="172.6305589" loclat="-43.5320214"/>
 <loc location="Department of Mathematics, Simon Fraser University, Burnaby, BC V5A 1S6, Canada" loclat="49.2780463" loclng="-122.9151181"/>
 <loc location="Universiteit Leiden" loclng="4.485209" loclat="52.1571485"/>
-<loc location="Australian National University, ACT, Australia" loclng="149.1183238" loclat="-35.2812533"/>
 <loc location="Maybachstr. 14, 68169 Mannheim, Germany" loclat="49.5043186" loclng="8.4717852"/>
 <loc location="University Rutgers, New Jersey, USA" loclng="-74.4056612" loclat="40.0583238"/>
 <loc location="64293 Darmstadt, Germany" loclat="49.8776347" loclng="8.6285365"/>
@@ -115,6 +114,7 @@
 <loc location="Washington College, Chestertown, MD" loclng="-76.0695767" loclat="39.21824"/>
 <loc location="Université de Versailles - Saint-Quentin, France" loclng="2.0442788" loclat="48.780474"/>
 <loc location="Urbana, IL, USA" loclng="-88.2072697" loclat="40.1105875"/>
+<loc location="San Mateo, CA, USA" loclng="-122.3255254" loclat="37.5629917"/>
 <loc location="University of Bayreuth, Germany" loclng="11.5851826" loclat="49.9261858"/>
 <loc location="Vienna University of Technology" loclng="16.3684626" loclat="48.1986546"/>
 <loc location="Southern Connecticut State University, New Haven, CT" loclng="-72.94834159999999" loclat="41.3317662"/>
@@ -142,11 +142,9 @@
 <loc location="Observatoire de Paris, Meudon, France" loclng="2.2266969" loclat="48.8050079"/>
 <loc location="ETH Zürich, Switzerland" loclng="8.547628" loclat="47.37638889999999"/>
 <loc location="Karlstad University, Sweden" loclng="13.582588" loclat="59.40639900000001"/>
-<loc location="LIRMM, France" loclng="3.8403209" loclat="43.6368829"/>
 <loc location="Drexel University, Philadelphia, USA" loclng="-75.18994409999999" loclat="39.9566127"/>
 <loc location="AIMS; Muizenberg; Cape Town; South Africa" loclat="-34.105" loclng="18.471667"/>
-<loc location="Ames, Iowa, USA" loclat="42.034722" loclng="-93.62"/>
-<loc location="Bloomberg, New York, NY" loclng="-74.0059728" loclat="40.7127753"/>
+<loc location="San Francisco" loclng="-122.4194155" loclat="37.7749295"/>
 <loc location="Provo, UT, USA" loclat="40.2338438" loclng="-111.6585337"/>
 <loc location="200 University Avenue, West Waterloo, ON N2L 3G1, Canada" loclat="43.4720646" loclng="-80.542944"/>
 <loc location="107241, 19-18, Amurskaya street, Moscow, Russia" loclat="55.813564" loclng="37.788279"/>
@@ -241,6 +239,7 @@
 <loc location="University of Maryland" loclng="-76.9425543" loclat="38.9869183"/>
 <loc location="Loyola University Chicago" loclng="-87.65825919999999" loclat="41.9989483"/>
 <loc location=" University of Calgary, Canada" loclng="-114.0718831" loclat="51.04473309999999"/>
+<loc location="University Paris 8" loclng="2.3624194" loclat="48.9454164"/>
 <loc location="University of Sydney, Australia" loclng="151.2092955" loclat="-33.8688197"/>
 <loc location="Student at Ca' Foscari University, Venice, Italy" loclng="-119.4179324" loclat="36.778261"/>
 <loc location="Montpellier, France" loclat="43.610769" loclng="3.876716"/>
@@ -298,7 +297,6 @@
 <loc location="Reykjavik University" loclng="-21.9269375" loclat="64.1238339"/>
 <loc location="55122, Mainz, Germany" loclat="50.0017921" loclng="8.2361563"/>
 <loc location="University of Bath" loclng="-2.3263987" loclat="51.3782228"/>
-<loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
 <loc location="Frankfurt, Germany" loclng="8.6821267" loclat="50.1109221"/>
 <loc location="Paris, France" loclat="48.856614" loclng="2.3522219"/>
 <loc location="Imperial College London" loclng="-0.1748735" loclat="51.49882220000001"/>
@@ -385,7 +383,6 @@
 <loc location="Max Planck Institute for Biogeochemistry" loclng="11.5667416" loclat="50.9101299"/>
 <loc location="University of Warwick, UK" loclng="-1.5614704" loclat="52.3792525"/>
 <loc location="Sapporo, Japan" loclng="141.3544506" loclat="43.0617713"/>
-<loc location="UIC, Chicago, IL" loclng="-87.6484497" loclat="41.8685636"/>
 <loc location="University of Virginia" loclng="-78.5079772" loclat="38.0335529"/>
 <loc location="0313 Oslo, Norway" loclat="59.9424054" loclng="10.7222994"/>
 <loc location="National University of Singapore, Singapore" loclng="103.7763939" loclat="1.2966426"/>
@@ -442,7 +439,7 @@
 <loc location="University of Vermont" loclng="-73.1964637" loclat="44.4778528"/>
 <loc location="Université Paris-Sud, LRI, France" loclng="2.1658617" loclat="48.7013763"/>
 <loc location="Ben-Gurion University, Israel" loclng="34.7995546" loclat="31.261426"/>
-<loc location="Universidad de Buenos Aires, Argentina" loclng="-58.3815591" loclat="-34.6036844"/>
+<loc location="Buenos Aires, Argentina" loclat="-34.6037232" loclng="-58.3815931"/>
 <loc location="Burlington, VT, USA" loclat="44.4758825" loclng="-73.212072"/>
 <loc location="2100 San Jacinto Boulevard, Austin, TX 78712-1047, United States" loclat="30.2840095" loclng="-97.7335602"/>
 <loc location="University of Oxford, UK" loclng="-1.2543668" loclat="51.7548164"/>
