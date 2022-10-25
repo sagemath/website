@@ -42,6 +42,7 @@
 <loc location="Complex Systems Lab, Berlin, Germany" loclng="13.404954" loclat="52.52000659999999"/>
 <loc location="University of Lille-1" loclng="3.1417556" loclat="50.6085867"/>
 <loc location="University Lille I, France" loclng="3.0753193" loclat="50.6314582"/>
+<loc location="Redmond, WA, USA" loclng="-122.121512" loclat="47.6739881"/>
 <loc location="Dublin Institute for Advanced Studies" loclng="-6.245637599999999" loclat="53.3313415"/>
 <loc location="TU Wien, Austria" loclng="16.3684626" loclat="48.1986546"/>
 <loc location="Université Paris Sud XI, Orsay, France" loclng="2.1658617" loclat="48.7013763"/>
@@ -396,6 +397,7 @@
 <loc location="Chicago" loclng="-87.6297982" loclat="41.8781136"/>
 <loc location="Université de Nantes" loclng="-1.5559578" loclat="47.2096125"/>
 <loc location="Universidad Politecnica de Madrid" loclng="-3.7192798" loclat="40.4486372"/>
+<loc location="Google, Inc., Seattle" loclng="-122.3320708" loclat="47.6062095"/>
 <loc location="Emmen, Netherlands" loclat="52.7858037" loclng="6.8975851"/>
 <loc location="Stuttgart, Germany" loclat="48.7758459" loclng="9.1829321"/>
 <loc location="Barcelona, Spain" loclat="41.3850639" loclng="2.1734035"/>
