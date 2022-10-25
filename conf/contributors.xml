@@ -552,10 +552,9 @@ Please keep the list in alphabetical order by last name!
  trac="mboyanov"/>
 <contributor
  name="Robert Bradshaw"
- work="University of Washington"
- location="University of Washington, WA, USA"
+ work="Google"
+ location="Redmond, WA, USA"
  description="Cython; number theory; linear algebra; coercion; basic arithmetic; 2011 Spies SageMath Development Prize"
- url="http://www.math.washington.edu/~robertwb/"
  trac="robertwb"
  github="robertwb"/>
 <contributor
