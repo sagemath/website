@@ -3850,11 +3850,13 @@ Please keep the list in alphabetical order by last name!
  name="Mario Pernici"/>
 <contributor
  name="John Perry"
- work="University of Southern Mississippi"
+ altnames="Jack Perry"
+ work="University of Southern Mississippi (formerly)"
  location="Hattiesburg, MS, USA"
- description="bug fixes; the Sage wiki"
- url="http://www.math.usm.edu/perry/"
- trac="john_perry"/>
+ description="bug fixes; the Sage wiki; Singular upgrade; mixed integer linear programming; bug fixes"
+ url="http://cantanima.name/usm/"
+ trac="john_perry"
+ github="johnperry-math"/>
 <contributor
  name="Laura Peskin"
  trac="lpeskin"/>
