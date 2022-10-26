@@ -3545,7 +3545,9 @@ Please keep the list in alphabetical order by last name!
  name="Pablo De Nápoli"
  work="University of Buenos Aires"
  location="Buenos Aires, Argentina"
- description="bug fixes"
+ description="bug fixes" 
+ github="pdenapo"
+ gitlab="pdenapo"
  trac="pdenapo"/>
 <contributor
  name="Bartosz Naskrecki"
