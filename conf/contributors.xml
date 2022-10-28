@@ -5508,7 +5508,10 @@ Please keep the list in alphabetical order by last name!
  name="Reiner Zucker"/>
 <contributor
  name="Alexandre Prusch Züge"
- trac="azuge"/>
+ location="Jandaia do Sul, PR, Brazil"
+ work="Universidade Federal do Paraná"
+ trac="azuge"
+ github="azugeufpr"/>
 <contributor
  name="David Zureick-Brown"
  trac="dzb"/>
