@@ -4130,10 +4130,11 @@ Please keep the list in alphabetical order by last name!
  trac="vripoll"/>
 <contributor
  name="Risan"
- work="Nanyang Technological University, Singapore"
+ work="Nagoya University, Nagoya, Japan"
  location="Tangerang, Indonesia"
  description="Arbitrary Precision LP Solver Backend"
- trac="ptrrsn_1"/>
+ trac="ptrrsn_1"
+ github="ptrrsn"/>
 <contributor
  name="R. Rishikesh"
  altnames="Rishikesh"
