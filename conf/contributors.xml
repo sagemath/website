@@ -625,7 +625,12 @@ Please keep the list in alphabetical order by last name!
  trac="pbruin"
  github="pjbruin"/>
 <contributor
- name="Bob Bruner"/>
+ name="Bob Bruner"
+ work="Wayne State University"
+ location="Detroit, Michigan, USA"             
+ altnames="Robert Bruner"
+ github="rrbruner"
+ url="http://www.rrb.wayne.edu"/>
 <contributor
  name="Léo Brunswic"/>
 <contributor
