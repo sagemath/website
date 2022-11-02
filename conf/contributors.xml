@@ -3778,7 +3778,10 @@ Please keep the list in alphabetical order by last name!
  url="http://www.math.uni-bremen.de/~pegel/"
  trac="cpegel"/>
 <contributor
- name="Sylvain Pelissier"/>
+ name="Sylvain Pelissier"
+ github="sylvainpelissier"
+ work="Kudelski Security"
+ location="Lausanne, Switzerland"/>
 <contributor
  name="Javier López Peña"
  description="categories"
