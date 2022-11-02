@@ -320,7 +320,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Ben Barros"
  location="Saint Louis University"
- trac="bbarros"/>
+ trac="bbarros"
+ github="bbarros50"/>
 <contributor
  name="Sébastien Barthélemy"
  work="UPMC - Université Pierre et Marie Curie"
