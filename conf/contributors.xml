@@ -410,8 +410,14 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Quentin Berthet"/>
 <contributor
- name="Davide Berti"
- trac="dberti"/>
+ name="Davide Berti"            
+ altnames = "dberti"
+ location = "Cuneo, Italy"
+ work = "Istituto Professionale Grandis"
+ description = "Italian translation of Developer Guide"
+ url = "http://www.matematica-con-sage.it"
+ trac = "dberti"
+ github = "berdavcn"/>
 <contributor
  name="Alberto Besana"
  trac="alberto"/>
