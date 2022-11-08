@@ -4792,9 +4792,10 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Fredrik Strömberg"
  altnames="Fredrik Stroemberg"          
- location="Durham University, Durham, UK"
- url="http://info.fredrik.stromberg.to/"
- trac="fstromberg"/>
+ location="University of Nottingham, Nottingham, UK"
+ url="https://www.nottingham.ac.uk/mathematics/people/fredrik.stromberg"
+ trac="fstromberg"
+ github="fredstro"/>
 <contributor
  name="Michael Struwe"/>
 <contributor
