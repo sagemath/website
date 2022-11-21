@@ -3238,6 +3238,7 @@ Please keep the list in alphabetical order by last name!
  work="University of Sydney"
  location="Sydney, Australia"
  url="http://www.maths.usyd.edu.au/u/mathas/"
+ github="AndrewAtLarge"
  trac="andrew.mathas"/>
 <contributor
  name="Jacob P. Matherne"
