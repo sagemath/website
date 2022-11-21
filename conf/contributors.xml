@@ -4305,11 +4305,13 @@ Please keep the list in alphabetical order by last name!
  trac="felixs"/>
 <contributor
  name="Franco Saliola"
- work="Université du Québec à Montréal"
  location="Montreal, Quebec, Canada"
- description="posets package"
- url="http://www.lacim.uqam.ca/~saliola/index.html"
- trac="saliola"/>
+ work="Université du Québec à Montréal"
+ description="algebraic combinatorics; representation theory"
+ url="https://saliola.github.io/"
+ trac="saliola"
+ github="saliola"
+ gitlab="saliola"/>
 <contributor
  name="Ben Salisbury"
  work="Professor, Central Michigan University"
