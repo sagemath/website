@@ -2564,6 +2564,7 @@ Please keep the list in alphabetical order by last name!
  trac="rkirov"/>
 <contributor
  name="Sergey B Kirpichev"
+ github="skirpichev"
  trac="skirpichev"/>
 <contributor
  name="Adarsh Kishore"/>
@@ -3376,6 +3377,7 @@ Please keep the list in alphabetical order by last name!
  work="PhD student, Technische Universität Berlin"
  location="Berlin, Germany"
  description="algebraic geometry"
+ github="mminzlaff"
  trac="minz"/>
 <contributor
  name="Rajat Mittal"/>
@@ -3728,6 +3730,7 @@ Please keep the list in alphabetical order by last name!
  trac="panda314"/>
 <contributor
  name="Amy Pang"
+ github="amypang"
  trac="amypang"/>
 <contributor
  name="John Pang"
@@ -4651,6 +4654,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Mate Soos"
  url="http://www.msoos.org"
+ github="msoos"
  trac="msoos"/>
 <contributor
  name="Christoph Sorger"
