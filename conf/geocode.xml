@@ -83,7 +83,7 @@
 <loc location="Acadia University, Canada" loclng="-64.3662494" loclat="45.0875592"/>
 <loc location="Newcastle upon Tyne, UK" loclng="-1.61778" loclat="54.978252"/>
 <loc location="UCLA" loclng="-118.4451811" loclat="34.068921"/>
-<loc location="Universitat Zurich, Switzerland" loclng="8.585012899999999" loclat="47.401255"/>
+<loc location="Universität Zurich, Switzerland" loclng="8.550981199999999" loclat="47.3743221"/>
 <loc location="San Diego, CA" loclng="-117.1610838" loclat="32.715738"/>
 <loc location="Galglaan 2, Gent, Belgium" loclat="51.0268408" loclng="3.7198591"/>
 <loc location="Manchester, United Kingdom" loclng="-2.2426305" loclat="53.4807593"/>
@@ -410,6 +410,7 @@
 <loc location="University of South Alabama" loclng="-88.184236" loclat="30.6959406"/>
 <loc location="VU University Amsterdam, The Netherlands" loclng="4.8657199" loclat="52.3337568"/>
 <loc location="University of Nottingham, Nottingham, UK" loclng="-1.1981057" loclat="52.9387922"/>
+<loc location="Ruhr-Universität Bochum, Germany" loclng="7.2617049" loclat="51.4468863"/>
 <loc location="Department of Physics, Faculty of Science, University of Zagreb, Croatia" loclng="15.981919" loclat="45.8150108"/>
 <loc location="London, UK" loclat="51.5073509" loclng="-0.1277583"/>
 <loc location="University of Washington, WA, USA" loclat="47.6553351" loclng="-122.3035199"/>
