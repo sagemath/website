@@ -502,13 +502,12 @@ Please keep the list in alphabetical order by last name!
  name="Itay Bookstein"
  trac="ibookstein"/>
 <contributor
- name="Tom Boothby"
+ name="Kelly Boothby"
+ altnames="Tom Boothby"
  work="undergraduate student employee, University of Washington"
  location="University of Washington, WA, USA"
  description="the Sage Notebook; fast polynomial evaluation"
- trac="boothby"/>
-<contributor
- name="Kelly Boothby"
+ github="boothby"
  trac="boothby"/>
 <contributor
  name="Michele Borassi"
@@ -906,6 +905,7 @@ Please keep the list in alphabetical order by last name!
  description="Notebook; misc."
  url="http://timothyclemans.com/"
  pix="./pix/people/tclemans.jpg"
+ github="TimothyClemans"
  trac="TimothyClemans"/>
 <contributor
  name="Alex Clemesha"
@@ -1075,7 +1075,8 @@ Please keep the list in alphabetical order by last name!
  trac="freetonik"/>
 <contributor
  name="Paul-Olivier Dehaye"
- location="Universitat Zurich, Switzerland"
+ location="Universität Zurich, Switzerland"
+ github="pdehaye"
  trac="pdehaye"/>
 <contributor
  name="Alyson Deines"
@@ -1520,6 +1521,7 @@ Please keep the list in alphabetical order by last name!
  location="46 Rue Barrault, 75013 Paris, France"
  description="documentation"
  url="https://perso.telecom-paristech.fr/~flori/"
+ github="jpflori"
  trac="jpflori"/>
 <contributor
  name="Marcelo Forets"
@@ -2000,6 +2002,7 @@ Please keep the list in alphabetical order by last name!
  work="University of Warwick"
  location="Gibbet Hill Rd, Coventry CV4 7AL, UK"
  description="complete implementation of quadratic sieve; created FLINT (fast arithmetic library)"
+ github="wbhart"
  trac="wbhart"/>
 <contributor
  name="Stephen Hartke"
@@ -2561,6 +2564,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Radoslav Kirov"
  altnames="Rado Kirov"
+ github="rkirov"
  trac="rkirov"/>
 <contributor
  name="Sergey B Kirpichev"
@@ -3983,6 +3987,7 @@ Please keep the list in alphabetical order by last name!
  name="Julien Puydt"
  location="Grenoble, France"
  description="porting"
+ github="SnarkBoojum"
  trac="Snark"/>
 <contributor
  name="Yi Qiang"
@@ -4525,6 +4530,7 @@ Please keep the list in alphabetical order by last name!
  work="University of Washington"
  location="University of Washington, WA, USA"
  description="bug fixes"
+ github="shumow"
  trac="shumow"/>
 <contributor
  name="Jason Yeo Jie Shun"
@@ -4816,7 +4822,7 @@ Please keep the list in alphabetical order by last name!
  name="Christian Stump"
  work="Professor, Ruhr-Universität Bochum"
  description="combinatorics; graph theory"
- github="stumpc5"/>
+ github="stumpc5"
  location="Ruhr-Universität Bochum, Germany"
  url="http://homepage.rub.de/christian.stump/"
  trac="stumpc5"/>
