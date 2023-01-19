@@ -1676,7 +1676,8 @@ Please keep the list in alphabetical order by last name!
  location="Champs-sur-Marne, France"
  description="combinatorics"
  url="https://igm.univ-mlv.fr/~giraudo/"
- trac="giraudo"/>
+ trac="giraudo"
+ github="SamueleGiraudo"/>
 <contributor
  name="Amy Glen"
  location="Perth, Western Australia"
