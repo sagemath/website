@@ -4131,8 +4131,10 @@ Please keep the list in alphabetical order by last name!
  github="rishikesha"/>
 <contributor
  name="Roswitha Rissner"
- location="Graz University of Technology, Austria"
- trac="rrissner"/>
+ location="Alpen-Adria-Universität Klagenfurt"
+ trac="rrissner"
+ github="rosirot"            
+/>
 <contributor
  name="Julian Ritter"
  trac="nailuj"/>
