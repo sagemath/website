@@ -372,6 +372,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Odile Bénassy"
  location="Université Paris Sud"
+ github="zerline"
  trac="zerline"/>
 <contributor
  name="Heidi Benham"/>
@@ -5220,6 +5221,7 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Aedi Wang"
  altnames="Zeyi Wang"
+ github="uduse"
  trac="zwang"/>
 <contributor
  name="Qiang Wang"/>
@@ -5373,6 +5375,7 @@ Please keep the list in alphabetical order by last name!
  trac="hnxiao"/>
 <contributor
  name="Peijun Xiao"
+ github="pgxiao"
  trac="pjxiao"/>
 <contributor
  name="Chao Xu"
