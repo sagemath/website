@@ -745,6 +745,7 @@ Please keep the list in alphabetical order by last name!
  name="Nathan Carter"
  location="Bentley University, Waltham, MA"
  url="http://web.bentley.edu/empl/c/ncarter"
+ github="nathancarter"
  trac="ncarter"/>
 <contributor
  name="Xavier Caruso"
@@ -1370,6 +1371,7 @@ Please keep the list in alphabetical order by last name!
  description="calculus"
  location="Northern Arizona University"
  url="https://danaernst.com/"
+ github="dcernst"
  trac="DanaErnst"/>
 <contributor
  name="Burcin Erocal"
@@ -4779,6 +4781,7 @@ Please keep the list in alphabetical order by last name!
  name="Michael Stoll"/>
 <contributor
  name="Peter Story"
+ github="peterstory"
  trac="peter.story"/>
 <contributor
  name="Ben Strasser"/>
