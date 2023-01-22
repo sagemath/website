@@ -130,6 +130,7 @@ Please keep the list in alphabetical order by last name!
  work="Mandriva Linux"
  location="Curitiba, Brazil"
  description="packages"
+ github="pcpa"
  trac="pcpa"/>
 <contributor
  name="Ivan Andrus"
@@ -1272,6 +1273,7 @@ Please keep the list in alphabetical order by last name!
  name="Thierry Dumont"
  location="Université Lyon 1,  Villeurbanne, France"
  url="http://math.univ-lyon1.fr"
+ github="Thierry-Dumont"
  trac="tdumont"/>
 <contributor
  name="Furkan Semih Dündar"
@@ -4456,6 +4458,7 @@ Please keep the list in alphabetical order by last name!
  location="Staudingerweg 9, 55122 Mainz, Germany"
  description="build system; notebook"
  url="http://wwwthep.physik.uni-mainz.de/site/people/cschwan/"
+ github="cschwan"
  trac="cschwan"/>
 <contributor
  name="Robert Schwarz"
@@ -5216,6 +5219,7 @@ Please keep the list in alphabetical order by last name!
  work="retired Apple OS X kernel developer"
  location="Stanford, CA, USA"
  description="extensive feedback; PARI lib wrapping; use of his G5"
+ github="RalphieBoy"
  trac="justin"/>
 <contributor
  name="Timothy Walsh"/>
