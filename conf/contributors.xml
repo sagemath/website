@@ -1360,8 +1360,9 @@ Please keep the list in alphabetical order by last name!
  name="Jan Engelhardt"/>
 <contributor
  name="Jeremias Epperlein"
- location="TU Dresden, Germany"
- trac="jepperlein"/>
+ location="Universität Passau"
+ trac="jepperlein"
+ github="JeremiasE"/>
 <contributor
  name="Samuel Erickson"
  location="MSUM"
