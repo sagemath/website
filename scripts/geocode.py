@@ -91,6 +91,11 @@ def changelog_contributions(names):
         return ["Contributions to Sage " + ', '.join(f'{major}.x' for major in versions)]
     return []
 
+def convert_trac_username(origname):
+    # Mannequin accounts created by https://github.com/sagemath/trac-to-github/blob/master/migrate.py
+    username = origname.replace('.', '-').replace('_', '-').strip('-')
+    return f'sagetrac-{username}'
+
 def writeToDevmap():
     """
     we assume that everything is written to the xml file and we have all data.
@@ -152,7 +157,6 @@ def writeToDevmap():
         tr.appendChild(td)
         td = devmap.createElement("td")
 
-        tracQuery = f"https://trac.sagemath.org/query?"
         main_trac = None
         trac_list = [t.strip() for t in trac.split(',') if t.strip()]
         gh_trac_list = [f'gh-{gh.strip()}' for gh in github.split(',') if gh.strip()]
@@ -162,18 +166,10 @@ def writeToDevmap():
                 main_trac = trac
             if trac:
                 all_names.append(trac)
-            tracQuery += f"&or&cc=~{trac}"
-            tracQuery += f"&or&reporter=~{trac}"
-            tracQuery += f"&or&owner=~{trac}"
         for name in [dev] + altnames.split(','):
             name = name.strip()
-            if not name:
-                continue
-            all_names.append(name)
-            tracQuery += f"&or&author=~{name}"
-            tracQuery += f"&or&reviewer=~{name}"
-        tracQuery += "&max=500&col=id&col=summary&col=author&col=status&col=priority&col=milestone&col=reviewer&order=priority"
-        tracQuery = tracQuery.replace(" ", "%20")
+            if name:
+                all_names.append(name)
 
         descr = changelog_contributions(all_names) + [d.strip() for d in descr.split(r';')]
 
@@ -188,21 +184,22 @@ def writeToDevmap():
             d_el = parseString("<span>%s</span>" % d)
             td.appendChild(d_el.firstChild)
 
-        a = devmap.createElement("a")
-        a.setAttribute("href", tracQuery)
-        a.setAttribute("class", "trac")
-        if main_trac:
-            a.appendChild(devmap.createTextNode(f"contributions (trac: {main_trac})"))
-        else:
-            a.appendChild(devmap.createTextNode(f"contributions (trac)"))
-        td.appendChild(devmap.createElement("br"))
-        td.appendChild(a)
+        if main_trac and not github:
+            github = convert_trac_username(main_trac)
+
         if github:
+            a = devmap.createElement("a")
+            a.setAttribute("href", f'https://github.com/sagemath/sage/issues?q={github}')
+            a.setAttribute("class", "github")
+            a.appendChild(devmap.createTextNode(f"issues"))
+            td.appendChild(a)
+            td.appendChild(devmap.createTextNode(", "))
             a = devmap.createElement("a")
             a.setAttribute("href", f'https://github.com/sagemath/sage/commits?author={github}')
             a.setAttribute("class", "github")
             a.appendChild(devmap.createTextNode(f"commits (github: {github})"))
             td.appendChild(a)
+
         td.setAttribute("class", "description")
         tr.appendChild(td)
         devlist.appendChild(tr)
