@@ -213,12 +213,6 @@
   flag: bg
   name: Sofia, Bulgaria
   url: https://sage.Igor.onlineDirect.bg/
-- active: true
-  cat: a
-  country: cn
-  flag: cn
-  name: Tsinghua University, Beijing, China
-  url: https://mirrors.tuna.tsinghua.edu.cn/sagemath/
 - active: false
   cat: a
   country: jp
