@@ -4,7 +4,7 @@ logo: "pix/logo_sagemath+icon_oldstyle.png"
 version: "9.8"
 version_solaris_bin: None
 version_src: "9.8"
-git: "https://git.sagemath.org/sage.git/"
+git: "https://github.com/sagemath/sage.git"
 git_website: "https://github.com/sagemath/website"
 webmaster_href: "mailto:harald+smo@schil.ly"
 
