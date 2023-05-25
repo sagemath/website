@@ -9,18 +9,18 @@ var isWindows = navigator.platform.toUpperCase().indexOf('WIN')!==-1;
 var isLinux = navigator.platform.toUpperCase().indexOf('LINUX')!==-1;
 
 var sage = {
-    tracklinks: function () {
-        $("[track]").each(function() {
-            var $this = $(this);
-            var cat = $this.attr("track");
-            $this.children("a").each(function() {
-               var $a = $(this);
-               $a.click(function() {
-                 pageTracker._trackEvent('Clicks', cat, $a.attr("href"), 0);
-               });
-            });
-        });
-    },
+    //tracklinks: function () {
+    //    $("[track]").each(function() {
+    //        var $this = $(this);
+    //        var cat = $this.attr("track");
+    //        $this.children("a").each(function() {
+    //           var $a = $(this);
+    //           $a.click(function() {
+    //             pageTracker._trackEvent('Clicks', cat, $a.attr("href"), 0);
+    //           });
+    //        });
+    //    });
+    //},
 
     /* this variant doesn't work ...
     tracklinks: function() {
@@ -161,26 +161,26 @@ function initTwitter(d,s,id){
 }
 
 /* facebook app */
-function initFacebook(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=109731879648&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}
+//function initFacebook(d, s, id) {
+//  var js, fjs = d.getElementsByTagName(s)[0];
+//  if (d.getElementById(id)) return;
+//  js = d.createElement(s); js.id = id;
+//  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=109731879648&version=v2.0";
+//  fjs.parentNode.insertBefore(js, fjs);
+//}
 
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-66100-10']);
-_gaq.push(['_setDomainName("sagemath.org")']);
-_gaq.push(['_setAllowLinker(true)']);
-_gaq.push(['_trackPageview']);
-_gaq.push(['_trackPageLoadTime']);
-
-function googleAnalytics() {
-  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-}
+//var _gaq = _gaq || [];
+//_gaq.push(['_setAccount', 'UA-66100-10']);
+//_gaq.push(['_setDomainName("sagemath.org")']);
+//_gaq.push(['_setAllowLinker(true)']);
+//_gaq.push(['_trackPageview']);
+//_gaq.push(['_trackPageLoadTime']);
+//
+//function googleAnalytics() {
+//  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//  ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+//  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//}
 
 var _Hasync= _Hasync|| [];
 _Hasync.push(['Histats.startgif', '1,1579950,4,10051,"div#histatsC {position: absolute;top:0px;left:0px;}body>div#histatsC {position: fixed;}"']);
@@ -207,10 +207,10 @@ function initClustermap() {
 $(sage.setDownloadUrls);
 $(sage.scrollNavbarInit);
 $(sage.touchMenu);
-$(googleAnalytics);
-$(sage.tracklinks);
+//$(googleAnalytics);
+//$(sage.tracklinks);
 $(initHistats);
 $(initMathjax);
 $(function() { initTwitter(document, 'script', 'twitter-wjs');});
-$(function() { initFacebook(document, 'script', 'facebook-jssdk');});
+//$(function() { initFacebook(document, 'script', 'facebook-jssdk');});
 $(initClustermap);
