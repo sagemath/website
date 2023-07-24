@@ -355,3 +355,8 @@
   flag: ch
   name: Metanet, Switzerland
   url: https://mirror.metanet.ch/sage/
+- active: true
+  cat: e
+  name: Aristotle University of Thessaloniki, Greece
+  url: https://fosszone.csd.auth.gr/sagemath/
+  flag: gr
