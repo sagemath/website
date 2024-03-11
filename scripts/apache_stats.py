@@ -214,7 +214,7 @@ table tbody td { text-align: right; }
 </style>
 </head>
 <body>\n''')
-        f.write('<h1><a href="http://www.sagemath.org/links-components.html">SPKG</a> Statistics</h1>')
+        f.write('<h1>SPKG Statistics</h1>')
         cat_list = ', '.join('<span style="background:%s;">%s</span>' % (cat_color(_), _) for _ in cats)
         f.write('<div>Categories: %s</div>' % cat_list)
         ts_diff = db.ts_last - db.ts_first
