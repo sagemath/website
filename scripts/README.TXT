@@ -113,30 +113,6 @@ pages.
 3. To manually run the script, call ./mirror_manager_wrapper.sh
 
 
-Updating Mercurial repositories at http://hg.sagemath.org
----------------------------------------------------------
-
-1. Extract a Sage binary tarball.
-
-2. Navigate to the SAGE_ROOT of the resulting directory.
-
-3. Now issue this command:
-
-   /home/sagemath/bin/sage-pushall
-
-   This script uses Sage. If the above command doesn't work, open the
-   script in a text editor. Change all occurrences of "sage" to
-
-   SAGE_ROOT/sage
-
-   Save your changes and issue the command
-
-   /home/sagemath/bin/sage-pushall
-
-   After the script finish running, change all instances of
-   "SAGE_ROOT/sage" in the script back to "sage".
-
-
 Publications database
 ---------------------
 
