@@ -153,13 +153,6 @@ This script automates updating the online and downloadable documentation.
 See the script for more information about its usage.
 
 
-update_components.py
---------------------
-
-This script automates updating the page containing the list of components
-that Sage uses. See the script for more information about its usage.
-
-
 MOTD: Message of the day
 ------------------------
 
