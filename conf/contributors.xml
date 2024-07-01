@@ -552,6 +552,13 @@ Please keep the list in alphabetical order by last name!
  name="Adrien Boussicault"
  trac="boussica"/>
 <contributor
+ name="Cyril Bouvier"
+ location="LIRMM, Montpellier, France"
+ work="Research Engineer, CNRS"
+ url="https://bouvier.lirmm.net/"
+ trac="bouvier"
+ github="cyrilbouvier"/>
+<contributor
  name="Florian Bouyer"
  trac="florian"/>
 <contributor
