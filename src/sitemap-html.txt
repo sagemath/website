@@ -76,7 +76,6 @@ https://www.sagemath.org/ru/index.html
 https://www.sagemath.org/search.html
 https://www.sagemath.org/src-old.html
 https://www.sagemath.org/src-old/index.html
-https://www.sagemath.org/tour-benchmarks.html
 https://www.sagemath.org/tour-graphics.html
 https://www.sagemath.org/tour-quickstart.html
 https://www.sagemath.org/tour-research.html
