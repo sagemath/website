@@ -17,7 +17,6 @@ var map_max_width     = 800; // max width of map;
 var overlay_max_width = null; //this is the width of the overlay div to restrict too wide layouts
 var dx_base           = parseFloat("2"); // disturbance in degrees (=dy)
 var zoom_level        = 3;    //holds current zoom level, for jitter
-var tracSearch        = "http://trac.sagemath.org/sage_trac/search?q=";
 var markers = [];
 var points = [];
 var cld = null;
@@ -61,11 +60,6 @@ function jitterPoint(point, amount) {
     return ret;
 }
 
-// search url for contributions
-function getTracLink(trac) {
-   return "<a class='trac' href='" + tracSearch + trac + "'>search contributions</a>";
-}
-
 // this ends up inside the InfoWindow
 function getInfoText(dev,loc,work,descr,url,pix,trac) {
   var txt = "";
@@ -89,7 +83,6 @@ function getInfoText(dev,loc,work,descr,url,pix,trac) {
       descr = "<ul><li>" + descr + "</li></ul>";//always a list is prettier
       txt += "<div class='mdesc'>"+ descr+"</div>";
   }
-  txt += getTracLink(trac);
   txt += "</div>";
   return txt;
 }

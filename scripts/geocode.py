@@ -49,7 +49,6 @@ ack = parse(join("..", "conf", "contributors.xml"))
 geocode_xml_outfn = join("..", "conf", "geocode.xml")
 devmap_tmpl = os.path.join("..", "templates", "devs.html")
 devlist = None
-tracSearch = "https://trac.sagemath.org/sage_trac/search?q="
 
 devmap = minidom.Document()
 
