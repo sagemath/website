@@ -4,6 +4,10 @@
 {% block content %}
  <h1>Search Engine for Developers</h1><noscript>
 
+<div class="txt narrow">
+  See <a href="https://github.com/sagemath/sage">sagemath/sage</a> (GitHub).
+</div>
+
    <li>
     <form action="http://wiki.sagemath.org/"
           method="get">
@@ -19,15 +23,6 @@
            type="submit" /> <input type="hidden"
            name="action"
            value="fullsearch" />
-    </form>
-   </li>
-
-   <li>
-    <form action="http://trac.sagemath.org/sage_trac/search"
-          method="get">
-     Search in <a href="http://trac.sagemath.org/sage_trac/">{{ sage }} trac</a>: <input name="q"
-           type="text" />&#160;<input type="submit"
-           value="search" />
     </form>
    </li>
 
