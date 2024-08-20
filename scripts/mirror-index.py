@@ -281,7 +281,7 @@ def getTableHeader(xml):
        if i == 'Metalink':
          a = xml.createElement(u'a')
          a.appendChild(xml.createTextNode(i))
-         a.setAttribute(u'href', 'http://wiki.sagemath.org/DownloadAndInstallationGuide')
+         a.setAttribute(u'href', 'https://doc.sagemath.org/html/en/installation/index.html')
          td.appendChild(a)
        else:
          td.appendChild(xml.createTextNode(i))

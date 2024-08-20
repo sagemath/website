@@ -95,7 +95,7 @@ pageTracker._trackPageview();
       "https://www.sagemath.org">SageMath - Open Source Mathematics Software</a>.
       Here, you can download SageMath for your system and platform. Not sure what
       to download? Then follow the <a target="_blank" href=
-      "https://wiki.sagemath.org/DownloadAndInstallationGuide">
+      "https://doc.sagemath.org/html/en/installation/index.html">
       <strong>download guide</strong></a>. For more information, visit the
       <a href="https://www.sagemath.org/">SageMath website</a>.
     </div>
