@@ -3778,8 +3778,8 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Dima Pasechnik"
  altnames="Dmitrii Pasechnik"
- work="Department of Computer Science, Oxford University"
- location="Oxford, UK"
+ work="Department of Computer Science, Northwestern University"
+ location="Evanston, Illinois"
  description="packaging; commutative algebra; group theory; organized Sage Days 109, 111; 2015–2021 SageMath Prize"
  url="http://users.ox.ac.uk/~coml0531/"
  trac="dimpase"
