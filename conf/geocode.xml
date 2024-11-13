@@ -45,6 +45,7 @@
 <loc location="University Lille I, France" loclng="3.0753193" loclat="50.6314582"/>
 <loc location="LIRMM, Montpellier, France" loclng="3.8403209" loclat="43.6368829"/>
 <loc location="Redmond, WA, USA" loclng="-122.121512" loclat="47.6739881"/>
+<loc location="Oxford, UK" loclat="51.7520209" loclng="-1.2577263"/>
 <loc location="Dublin Institute for Advanced Studies" loclng="-6.245637599999999" loclat="53.3313415"/>
 <loc location="TU Wien, Austria" loclng="16.3684626" loclat="48.1986546"/>
 <loc location="Université Paris Sud XI, Orsay, France" loclng="2.1658617" loclat="48.7013763"/>
@@ -315,7 +316,7 @@
 <loc location="Hokkaido University, Japan" loclng="141.340013" loclat="43.0779575"/>
 <loc location="Oxford University" loclng="-1.2543668" loclat="51.7548164"/>
 <loc location="Institut Fourier, Universite Grenoble Alpes, France" loclng="5.7723688" loclat="45.1930955"/>
-<loc location="Oxford, UK" loclat="51.7520209" loclng="-1.2577263"/>
+<loc location="Evanston, Illinois" loclng="-87.68769689999999" loclat="42.0450722"/>
 <loc location="Durham University, UK" loclng="-1.5782029" loclat="54.7649859"/>
 <loc location="Lausanne, Switzerland" loclng="6.6322734" loclat="46.5196535"/>
 <loc location="Eindhoven University of Technology, Netherlands" loclng="5.4907148" loclat="51.44860980000001"/>
