@@ -20,7 +20,7 @@ jobs:
       - name: Verify Trigger Source
         env:
           RECIEVED_SECRET: ${{ inputs.trigger_secret }}
-          EXPECTED_SECRET: ${{ secrets.TRIGGER_SECRET }}
+          EXPECTED_SECRET: ${{ secrets.CHANGELOG_TRIGGER_SECRET }}
         run: |
           if [ "$RECIEVED_SECRET" != "$EXPECTED_SECRET" ]; then
             echo "Unauthorized trigger"
