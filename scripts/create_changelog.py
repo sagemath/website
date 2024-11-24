@@ -186,8 +186,9 @@ def save_to_file(filename, ver, date_of_release):
         file.write(f"combines hundreds of open source packages.\n\n")
         file.write(f"The following {len(all_contribs)} people contributed to this release.\n")
         file.write(f"Of those, {len(first_contribs)} made their first contribution to Sage:\n\n")
+        max_name_len = max([len(c) for c in all_contribs])
         for c in all_contribs:
-            file.write(f"  - {c}{' [First Contribution]' if c in first_contribs else ''}\n")
+            file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First Contribution]' if c in first_contribs else ''}\n")
         pr_count = sum([len(all_info[tag]) for tag in all_info])
         file.write(f"\n* We merged {pr_count} pull requests in this release.\n\n")
         sorted_tags = sorted(all_info.keys(), key=sort_tags)
