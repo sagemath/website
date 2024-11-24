@@ -182,7 +182,7 @@ def save_to_file(filename, ver, date_of_release):
     with open(filename, 'w') as file:
         file.write(f"Sage {ver} was released on {date_of_release}. It is available from:\n\n")
         file.write(f"  * https://www.sagemath.org/download-source.html\n\n")
-        file.write(f"Sage (http://www.sagemath.org/) is developed by volunteers and\n")
+        file.write(f"Sage (http://www.sagemath.org) is developed by volunteers and\n")
         file.write(f"combines hundreds of open source packages.\n\n")
         file.write(f"The following {len(all_contribs)} people contributed to this release.\n")
         file.write(f"Of those, {len(first_contribs)} made their first contribution to Sage:\n\n")
