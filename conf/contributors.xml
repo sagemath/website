@@ -242,9 +242,9 @@ Please keep the list in alphabetical order by last name!
  name="Eviatar Bach"
  location="University of Maryland, College Park"
  description="Combinatorics; bug fixes"
+ url="http://eviatarbach.com/"
  trac="eviatarbach"
  github="eviatarbach"/>
- url="http://eviatarbach.com/"/>
 <contributor
  name="Thomas Bächler"
  trac="baechler"/>
