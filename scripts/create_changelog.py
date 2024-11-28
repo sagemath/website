@@ -190,16 +190,14 @@ def save_to_file(filename, ver, date_of_release):
         for c in all_contribs:
             file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First Contribution]' if c in first_contribs else ''}\n")
         pr_count = sum([len(all_info[tag]) for tag in all_info])
-        file.write(f"\n* We merged {pr_count} pull requests in this release.\n\n")
+        file.write(f"\n* We merged {pr_count} pull requests in this release.")
         sorted_tags = sorted(all_info.keys(), key=sort_tags)
         for tag in sorted_tags:
-            file.write(f"Merged in sage-{tag}:\n\n")
+            file.write(f"\n\nMerged in sage-{tag}:\n")
             for pr in all_info[tag]:
-                file.write(f"#{pr['pr_id']}: {', '.join(pr['authors'])}: {pr['title']}")
+                file.write(f"\n#{pr['pr_id']}: {', '.join(pr['authors'])}: {pr['title']}")
                 if pr['reviewers']:
                     file.write(f" [Reviewed by {', '.join(pr['reviewers'])}]")
-                file.write('\n')
-            file.write('\n')
 
     print(f"Saved changelog to {filename}")
 
