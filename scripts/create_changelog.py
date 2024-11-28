@@ -5,7 +5,7 @@ This script is used in 'Generate Changelog' workflow, defined in the 'generate_c
 to automate the process of creating changelogs after each stable release.
 
 It fetches release data, extracts relevant pull request (PR) information, and generates a detailed changelog
-and add its to src/changelogs.
+and add it to src/changelogs.
 The script uses the GitHub REST API to collect information about contributors, PR authors, and reviewers.
 
 Additional Note:
