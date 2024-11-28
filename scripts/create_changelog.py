@@ -19,6 +19,7 @@ import os
 import argparse
 import xml.etree.ElementTree as ET
 from unidecode import unidecode
+import html
 
 load_dotenv()
 GITHUB_PAT = os.getenv('GITHUB_PAT')
@@ -39,6 +40,75 @@ first_contribs = set([])
 # Maps tag of pre-release to its info
 all_info = {}
 
+# Stores new names which didn't previously existed in conf/contributor.xml
+new_names = []
+
+
+def get_last_name(full_name):
+    return full_name.split()[-1]
+
+
+def merge_contributors(original_file, new_contributors):
+    with open(original_file, 'r',encoding='utf-8') as f:
+        original_content = f.read()
+    tree = ET.fromstring(original_content)
+
+    for new_name, github in new_contributors:
+        new_contributor = ET.Element('contributor')
+        new_contributor.set('name', new_name)
+        new_contributor.set('github', github)
+
+        tree.append(new_contributor)
+    
+    sorted_contributors = sorted(
+        tree.findall('contributor'),
+        # Items which don't have a name attribute are placed at the end 
+        key=lambda x: unidecode(get_last_name(x.get('name', '\x7F'))) # '\x7F' is highest ASCII value
+    )
+
+    for cont in tree.findall('contributor'):
+        tree.remove(cont)
+
+    for cont in sorted_contributors:
+        tree.append(cont)
+
+    xml_lines = [
+        '<?xml version="1.0" encoding="UTF-8" ?>',
+        '<!--',
+        'Sage contributors',
+        '',
+        '+ mandatory / - optional',
+        '',
+        'contributor',
+        ' + name = full name',
+        ' - altnames = comma-separated list of alternate full names',
+        ' - location = something which returns the correct location when entered in maps.google.com',
+        ' - work = university, institute, ...',
+        ' - description = <item>[;<item>]* ... delimiter ";" is converted into a break or list',
+        ' - url = webpage, when clicking on name; no need to provide github profile URL',
+        ' - pix = url to a small image (max 50x50 or something like that) .. subdirectory "./pix/people/" should store them locally',
+        ' - jitter = float as string, multiplicated in jitter function, 0 to disable',
+        ' - trac = trac nickname for the search (also searched for the name, but the trac name is often different!). comma-separated list of several trac account names ok. No need to provide "gh-..." names, provide a github attribute instead.',
+        ' - github = github.com account name',
+        ' - gitlab = gitlab.com account name',
+        '',
+        'Please keep the list in alphabetical order by last name!',
+        '-->',
+        '<contributors>'
+    ]
+
+    # Write contributors with precise formatting
+    for contributor in sorted_contributors:
+        contrib_line = '<contributor'
+        for attr, value in contributor.attrib.items():
+            contrib_line += f'\n {attr}="{html.escape(value,quote=False)}"'
+        contrib_line += '/>'
+        xml_lines.append(contrib_line)
+    xml_lines.append('</contributors>')
+    
+    with open(original_file, 'w',encoding='utf-8') as f:
+        f.write('\n'.join(xml_lines))
+
 
 def map_git_to_names():
     tree = ET.parse('conf/contributors.xml')
@@ -50,20 +120,41 @@ def map_git_to_names():
             git_to_name[git] = unidecode(name)
 
 
+def fetch_real_name(github_name):
+    print(github_name)
+    url = f"https://api.github.com/users/{github_name}"
+    try:
+        res = requests.get(url,headers=HEADERS)
+        res.raise_for_status()
+        user = res.json()
+        if not user['name']:
+            return
+        name_parts = user['name'].split()
+        if len(name_parts) < 2: # Full name is not available
+            return
+        git_to_name[github_name] = user['name']
+        new_names.append((user['name'],github_name))
+    except Exception as e:
+        print(f"Failed to fetch real name for @{github_name} : {str(e)}")
+
+
 def update_names():
     """
-    Replace the github usernames with real names. If name is not found in contributors.xml,
+    Replace the github usernames with real names. If name is not found in contributors.xml, 
     then github usernames are used in the form @<github-username>
     """
-    for tag in all_info:
-        for pr in all_info[tag]:
-            pr['creator'] = git_to_name.get(pr['creator'], f"@{pr['creator']}")
-            pr['authors'] = [git_to_name.get(a, f"@{a}") for a in pr['authors']]
-            pr['reviewers'] = [git_to_name.get(r, f"@{r}") for r in pr['reviewers']]
     global all_contribs
     global first_contribs
-    all_contribs = set([git_to_name.get(c, f"@{c}") for c in all_contribs])
-    first_contribs = set([git_to_name.get(c, f"@{c}") for c in first_contribs])
+    for c in all_contribs:
+        if c not in git_to_name:
+            fetch_real_name(c)
+    for tag in all_info:
+        for pr in all_info[tag]:
+            pr['creator'] = git_to_name.get(pr['creator'],f"@{pr['creator']}")
+            pr['authors'] = [git_to_name.get(a,f"@{a}")  for a in pr['authors']]
+            pr['reviewers'] = [git_to_name.get(r,f"@{r}") for r in pr['reviewers']]
+    all_contribs = set([git_to_name.get(c,f"@{c}") for c in all_contribs])
+    first_contribs = set([git_to_name.get(c,f"@{c}") for c in first_contribs])
 
 
 def get_release_data(tag):
@@ -243,3 +334,9 @@ if __name__ == '__main__':
         save_to_file(filepath, ver, date_of_release)
     else:
         print("No information found.")
+    
+    if new_names:
+        merge_contributors('conf/contributors.xml',new_names)
+        print("Added new contributors to conf/contributors.xml")
+    else:
+        print("No new contributors found.")
