@@ -6,9 +6,6 @@ on:
       release_tag:
         description: 'Release tag of latest release'
         required: true
-      trigger_secret:
-        description: 'Common Secret stored in both repos for Authentication'
-        required: true
 
 permissions:
       contents: write
@@ -17,16 +14,6 @@ jobs:
   process-release:
     runs-on: ubuntu-latest
     steps:
-      - name: Verify Trigger Source
-        env:
-          RECIEVED_SECRET: ${{ inputs.trigger_secret }}
-          EXPECTED_SECRET: ${{ secrets.CHANGELOG_TRIGGER_SECRET }}
-        run: |
-          if [ "$RECIEVED_SECRET" != "$EXPECTED_SECRET" ]; then
-            echo "Unauthorized trigger"
-            exit 1
-          fi
-
       - name: Checkout Repository
         uses: actions/checkout@v4
       
