@@ -156,7 +156,7 @@ def get_reviewers(pr_id, authors):
 
 
 def get_latest_tags():
-    url = f"{BASE_URL}/tags?per_page=1000"  # If per_page is not specified then very few tags are fetched
+    url = f"{BASE_URL}/tags?per_page=100"  # If per_page is not specified then very few tags are fetched
     try:
         res = requests.get(url, headers=HEADERS)
         res.raise_for_status()
