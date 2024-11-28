@@ -301,12 +301,12 @@ if __name__ == '__main__':
     is_stable = re.match(r'^\d+(\.\d+){0,3}$', ver)
     if not is_stable:
         print(f"{ver} is not a stable release. terminating....")
-        exit()
+        exit(1)
 
     filepath = f"src/changelogs/sage-{ver}.txt"
     if os.path.exists(filepath):
         print(f"{filepath} already exists. Exiting without making changes.")
-        exit()
+        exit(1)
 
     map_git_to_names()
     all_tags = get_latest_tags()
@@ -334,6 +334,7 @@ if __name__ == '__main__':
         save_to_file(filepath, ver, date_of_release)
     else:
         print("No information found.")
+        exit(1)
     
     if new_names:
         merge_contributors('conf/contributors.xml',new_names)
