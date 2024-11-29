@@ -169,8 +169,6 @@ def get_release_data(tag):
 
 
 def get_release_date(release_data):
-    if not release_data:
-        return 'N/A'
     date_time = release_data.get('published_at', '')
     if not date_time:
         return 'Unavailable'
@@ -318,7 +316,10 @@ if __name__ == '__main__':
     for tag in valid_tags:
         release_data = get_release_data(tag)
         if tag == ver:
-            date_of_release = get_release_date(release_data)
+            if release_data:
+                date_of_release = get_release_date(release_data)
+            else:
+                date_of_release = "N/A"
         if release_data is None:
             continue
         pr_info = extract_pr_info(release_data)
