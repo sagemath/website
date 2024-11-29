@@ -121,7 +121,6 @@ def map_git_to_names():
 
 
 def fetch_real_name(github_name):
-    print(github_name)
     url = f"https://api.github.com/users/{github_name}"
     try:
         res = requests.get(url,headers=HEADERS)
