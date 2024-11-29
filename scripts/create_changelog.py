@@ -27,13 +27,13 @@ BASE_URL = r"https://api.github.com/repos/sagemath/sage"
 HEADERS = {'Authorization': f'token {GITHUB_PAT}', }
 AUTOMATED_BOTS = ['dependabot[bot]', 'github-actions', 'renovate[bot]']
 
-# Maps the github username to contributer name
+# Maps the github username to contributor name
 git_to_name = {}
 
 # Stores unique names of contributors
 all_contribs = set([])
 
-# Stores unique names of contributors
+# Stores unique names of first constributors
 first_contribs = set([])
 
 # Stores information for all the prs across all pre-releases
