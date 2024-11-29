@@ -386,15 +386,15 @@ def save_to_file(filename, ver, date_of_release):
     with open(filename, 'w') as file:
         file.write(f"Sage {ver} was released on {date_of_release}. It is available from:\n\n")
         file.write(f"  * https://www.sagemath.org/download-source.html\n\n")
-        file.write(f"Sage (http://www.sagemath.org) is developed by volunteers and\n")
-        file.write(f"combines hundreds of open source packages.\n\n")
-        file.write(f"The following {len(all_contribs)} people contributed to this release.\n")
-        file.write(f"Of those, {len(first_contribs)} made their first contribution to Sage:\n\n")
+        file.write(f"Sage (http://www.sagemath.org) is developed by volunteers and combines\n")
+        file.write(f"hundreds of open source packages.\n\n")
+        file.write(f"The following {len(all_contribs)} people contributed to this release. Of those, {len(first_contribs)} made\n")
+        file.write(f"their first contribution to Sage:\n\n")
         max_name_len = max([len(c) for c in all_contribs])
         for c in all_contribs:
-            file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First Contribution]' if c in first_contribs else ''}\n")
+            file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First contribution]' if c in first_contribs else ''}\n")
         pr_count = sum([len(all_info[tag]) for tag in all_info])
-        file.write(f"\n* We merged {pr_count} pull requests in this release.")
+        file.write(f"\nWe merged {pr_count} pull requests in this release.")
         sorted_tags = sorted(all_info.keys(), key=sort_tags)
         for tag in sorted_tags:
             file.write(f"\n\nMerged in sage-{tag}:\n")
