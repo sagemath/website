@@ -49,6 +49,17 @@ def get_last_name(full_name):
 
 
 def merge_contributors(original_file, new_contributors):
+    """
+    Merge new contributors into the existing contributors XML file and sort alphabetically by last name.
+    
+    Args:
+        original_file (str): Path to the existing contributors XML file.
+        new_contributors (list): A list of tuples, each containing (full_name, github_username) 
+                                of new contributors to be added.
+    
+    Side effects:
+        - Modifies the original XML file in-place
+    """
     with open(original_file, 'r',encoding='utf-8') as f:
         original_content = f.read()
     tree = ET.fromstring(original_content)
@@ -111,6 +122,12 @@ def merge_contributors(original_file, new_contributors):
 
 
 def map_git_to_names():
+    """
+    Create a mapping between GitHub usernames and full names from the contributors XML file.
+    
+    Side effects:
+        - Populates the global git_to_name dictionary with GitHub username to full name mappings
+    """
     tree = ET.parse('conf/contributors.xml')
     root = tree.getroot()
     for c in root.findall('contributor'):
@@ -121,6 +138,16 @@ def map_git_to_names():
 
 
 def fetch_real_name(github_name):
+    """
+    Fetch the full name of a GitHub user via the GitHub API.
+    
+    Args:
+        github_name (str): GitHub username to look up.
+    
+    Side effects:
+        - Updates the global git_to_name dictionary if a full name is found
+        - Adds the full name and GitHub username to the global new_names list
+    """
     url = f"https://api.github.com/users/{github_name}"
     try:
         res = requests.get(url,headers=HEADERS)
@@ -139,8 +166,13 @@ def fetch_real_name(github_name):
 
 def update_names():
     """
-    Replace the github usernames with real names. If name is not found in contributors.xml, 
-    then github usernames are used in the form @<github-username>
+    Update contributor names by replacing GitHub usernames with real names 
+    or formatted usernames (in the form @<github_username>).
+    
+    Side effects:
+        - Attempts to fetch real names for contributors not already in global git_to_name
+        - Modifies global all_contribs and global first_contribs to use real names or formatted usernames
+        - Updates PR information in global all_info with real names or formatted usernames
     """
     global all_contribs
     global first_contribs
@@ -157,6 +189,15 @@ def update_names():
 
 
 def get_release_data(tag):
+    """
+    Fetch release data for a specific GitHub tag.
+    
+    Args:
+        tag (str): The release tag to fetch data for.
+    
+    Returns:
+        dict or None: Release data if found, otherwise None.
+    """
     url = fr"{BASE_URL}/releases/tags/{tag}"
     res = requests.get(url, headers=HEADERS)
     if res.status_code == 404:
@@ -169,6 +210,15 @@ def get_release_data(tag):
 
 
 def get_release_date(release_data):
+    """
+    Extract the publication date from release data.
+    
+    Args:
+        release_data (dict): Release data from GitHub API.
+    
+    Returns:
+        str: Formatted date of release (YYYY-MM-DD) or 'Unavailable' if no date is found.
+    """
     date_time = release_data.get('published_at', '')
     if not date_time:
         return 'Unavailable'
@@ -176,6 +226,20 @@ def get_release_date(release_data):
 
 
 def extract_pr_info(release_data):
+    """
+    Extract pull request information from release body text.
+    
+    Args:
+        release_data (dict): Release data from GitHub API.
+    
+    Returns:
+        list: A list of dictionaries, each containing PR details:
+              - title: PR title
+              - creator: GitHub username of PR creator
+              - pr_id: Pull request Id
+              - authors: List of PR authors
+              - reviewers: List of PR reviewers
+    """
     body = release_data.get('body', '')
     pr_info = []
     pattern = r"\* (.*?) by (@\S+) in https://github.com/sagemath/sage/pull/(\d+)"
@@ -197,6 +261,15 @@ def extract_pr_info(release_data):
 
 
 def update_first_contribs(release_data):
+    """
+    Update the set of first-time contributors from release body text.
+    
+    Args:
+        release_data (dict): Release data from GitHub API.
+    
+    Side effects:
+        - Adds newly identified first-time contributors to the global first_contribs set
+    """
     body = release_data.get('body', '')
     pattern = r"\* (@\S+) made their first contribution in"
     matches = re.findall(pattern, body)
@@ -206,6 +279,18 @@ def update_first_contribs(release_data):
 
 
 def get_authors(pr_id):
+    """
+    Retrieve the authors of commits for a specific pull request.
+    
+    Args:
+        pr_id (str): Pull request ID.
+    
+    Returns:
+        list: Unique GitHub usernames of PR commit authors, excluding automated bot accounts.
+    
+    Side effects:
+        - Updates the global all_contribs set with discovered authors
+    """
     url = f"{BASE_URL}/pulls/{pr_id}/commits"
     authors = []
     try:
@@ -226,6 +311,20 @@ def get_authors(pr_id):
 
 
 def get_reviewers(pr_id, authors):
+    """
+    Retrieve the reviewers of a specific pull request.
+    
+    Args:
+        pr_id (str): Pull request ID.
+        authors (list): List of PR authors to exclude from reviewers.
+    
+    Returns:
+        list: Unique GitHub usernames of PR reviewers, 
+              excluding PR authors and automated bot accounts.
+    
+    Side effects:
+        - Updates the global all_contribs set with discovered reviewers
+    """
     url = f"{BASE_URL}/pulls/{pr_id}/reviews"
     reviewers = []
     try:
@@ -257,6 +356,12 @@ def get_latest_tags():
 
 
 def sort_tags(tag):
+    """
+    Custom sorting key for release tags to prioritize in order: beta, RC, and stable versions.
+    
+    Args:
+        tag (str): Tag name to be sorted.
+    """
     name = tag.lower()
     if "beta" in name:
         return (0, name)  # Beta comes first
@@ -267,6 +372,17 @@ def sort_tags(tag):
 
 
 def save_to_file(filename, ver, date_of_release):
+    """
+    Generate and save the changelog to a text file.
+    
+    Args:
+        filename (str): Path to the output changelog file.
+        ver (str): Sage version number.
+        date_of_release (str): Date of the release.
+    
+    Side effects:
+        - Creates a changelog file with contributor and PR information
+    """
     with open(filename, 'w') as file:
         file.write(f"Sage {ver} was released on {date_of_release}. It is available from:\n\n")
         file.write(f"  * https://www.sagemath.org/download-source.html\n\n")
