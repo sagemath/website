@@ -23,7 +23,7 @@ jobs:
       - name: Run Script
         env:
           RELEASE_TAG: ${{ inputs.release_tag }}
-          GITHUB_PAT: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          GITHUB_PAT: ${{ secrets.SAGE_ACCESS_TOKEN }}
         run: python scripts/create_changelog.py "$RELEASE_TAG"
       
       - name: Commit and Push Changes
