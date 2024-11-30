@@ -1,0 +1,622 @@
+Sage 10.4 was released on 2024-07-20. It is available from:
+
+  * https://www.sagemath.org/download-source.html
+
+Sage (http://www.sagemath.org) is developed by volunteers and combines
+hundreds of open source packages.
+
+The following 71 people contributed to this release. Of those, 18 made
+their first contribution to Sage:
+
+  - Aman Moon
+  - Antonio Rojas
+  - Acadia Larsen
+  - Antoine Leudiere
+  - Andrew Mathas
+  - Cyril Bouvier
+  - David Ayotte
+  - Dima Pasechnik
+  - Dhrumil Raigagla      [First contribution]
+  - Darij Grinberg        [First contribution]
+  - David Roe
+  - David Coudert
+  - Eloi Torrents
+  - Enrique Artal
+  - Eric Gourgoulhon
+  - Frederic Chapoton
+  - Francois Bissey
+  - Giacomo Pope
+  - Gonzalo Tornaria
+  - Henry Ehrhard         [First contribution]
+  - Ivan Maidanski
+  - John Palmieri
+  - John Cremona
+  - Janmenjaya Panda      [First contribution]
+  - Jackson Walters
+  - Julian Ruth
+  - Kwankyu Lee
+  - Kiran Kedlaya
+  - Karl-Dieter Crisman
+  - Linden Disney-Hogg    [First contribution]
+  - Lorenz Panny
+  - Miguel Marco
+  - Max Alekseyev
+  - Marc Mezzarobba
+  - Marc Culler           [First contribution]
+  - Matthias Koppe
+  - Marco Perin           [First contribution]
+  - Max Horn
+  - Mumtaz Ali Shah       [First contribution]
+  - Martin Rubey
+  - Michael Orlitzky
+  - Nadia Lafreniere
+  - Nathan Dunfield
+  - Nils Bruin
+  - Peter Bruin
+  - Ryan Rueger           [First contribution]
+  - Ruchit Jagodara
+  - Sebastian Oehms
+  - Sebastian A. Spindler
+  - Saatvik Rao
+  - Seewoo Lee            [First contribution]
+  - Travis Scrimshaw
+  - Tobias Diez
+  - Trevor Karn
+  - Volker Braun
+  - Vincent Macri         [First contribution]
+  - Vincent Delecroix
+  - Xavier Caruso
+  - @vamshipy             [First contribution]
+  - @faisalfakhro         [First contribution]
+  - @yurichev
+  - @Nolord               [First contribution]
+  - @jtcc2                [First contribution]
+  - @MatteoCati
+  - @xuluze
+  - @Feyorsh              [First contribution]
+  - @grhkm21
+  - @SandwichGouda        [First contribution]
+  - @gmou3
+  - @JosePisco            [First contribution]
+  - @TheBlupper
+
+Release manager: Volker Braun
+
+We merged 534 pull requests in this release.
+
+Merged in sage-10.4:
+
+#37198: Julian Ruth, @gmou3: Translate "A Tour of Sage" into Greek
+#37251: Matthias Koppe: ntl 11.5.1 [Reviewed by Kwankyu Lee]
+#37257: @grhkm21: `sage.groups.generic`: Fix incorrect identity testing [Reviewed by Lorenz Panny]
+#37264: Matthias Koppe: PDF docbuild: Reduce verbosity [Reviewed by Kwankyu Lee]
+#37288: Ruchit Jagodara: Directly convert PermutationGroup element into sized Permutation [Reviewed by Travis Scrimshaw, @grhkm21]
+#37309: Matthias Koppe: README.md: Move all mentions of release tarballs to the installation guide [Reviewed by John Palmieri, Dima Pasechnik]
+#37315: Matthias Koppe: Reference manual: Show package list by category (math/front-end/other)
+#37322: Matthias Koppe: `sage --package create`: Attempt to bring SPKG.rst title to a common style [Reviewed by Kwankyu Lee]
+#37331: Janmenjaya Panda: Fixed the doc `sets/recursively_enumerated_set.py` [Reviewed by Travis Scrimshaw, Martin Rubey]
+#37335: Frederic Chapoton: some details in modules (ruff and pep) [Reviewed by Matthias Koppe]
+#37343: Giacomo Pope: Add simple methods to convert to and from bytes for `ZZ` and finite fields [Reviewed by Travis Scrimshaw, @grhkm21]
+#37345: : implemented function for acyclic orientations [Reviewed by David Coudert, @grhkm21, Saatvik Rao]
+#37346: Kwankyu Lee, @grhkm21: `sage.schemes.generic`: fix docs
+#36581: @grhkm21: `sage/stats/distributions`: Implement non-spherical Gaussian sampling over lattices [Reviewed by Gonzalo Tornaria, Travis Scrimshaw]
+#36741: Sebastian Oehms: Doctest hide option: Better detection of hidden packages [Reviewed by Matthias Koppe]
+#36748: Travis Scrimshaw: Implement Specht modules in the tabloid basis [Reviewed by Frederic Chapoton, Darij Grinberg, Martin Rubey]
+#36777: Michael Orlitzky, Dima Pasechnik: spkg-configure.m4 for most external Python pkgs
+#36907: Travis Scrimshaw: Implementation of the quantum oscillator algebra [Reviewed by Frederic Chapoton]
+#36970: Matthias Koppe: CI: Upload test stats as artifacts, improve output of "List Docker images" [Reviewed by Kwankyu Lee]
+#36971: Lorenz Panny: add helper method to concatenate vectors [Reviewed by Ruchit Jagodara, @grhkm21]
+#37011: Dima Pasechnik: allowing external ECM to be called gmp-ecm or ecm [Reviewed by Tobias Diez, Michael Orlitzky, Enrique Artal, Matthias Koppe, Gonzalo Tornaria]
+#37013: Travis Scrimshaw: Implement the center of a universal enveloping algebra in the PBW basis [Reviewed by Frederic Chapoton]
+#37054: Matthias Koppe: `CODE_OF_CONDUCT.md`: Do not send people to sage-flame [Reviewed by David Roe]
+#37083: Matthias Koppe, Kwankyu Lee: HTML documentation: Show preparsed doctests using inline tabs [Reviewed by Tobias Diez]
+#37100: Sebastian A. Spindler, Lorenz Panny, @jtcc2: Quaternion Algebra Fractional Ideal improvements - equivalence and reduced bases
+#37118: @grhkm21: Fix random polynomial bias [Reviewed by Travis Scrimshaw]
+#37127: Matthias Koppe: Rerun `configure` less often [Reviewed by Kwankyu Lee]
+#37184: Matthias Koppe, Tobias Diez: Improve Windows installation instructions [Reviewed by Karl-Dieter Crisman]
+#35517: David Ayotte: implement the depth of a quasimodular form [Reviewed by @grhkm21]
+#36329: Miguel Marco: Implement call method for elements in CDGA's [Reviewed by Travis Scrimshaw]
+#35029: David Ayotte: Implement basis_of_weight for rings of quasimodular forms [Reviewed by @grhkm21]
+#37622: Giacomo Pope: Ensure the `degree()` method of `Polynomial_generic_dense_inexact` returns an `Integer` [Reviewed by @grhkm21]
+#37701: Gonzalo Tornaria: Default SAGE_ECMBIN to "ecm". [Reviewed by Dima Pasechnik]
+#37702: Gonzalo Tornaria: Workaround for multiprocessing shared memory limits [Reviewed by Sebastian Oehms]
+#37465: Frederic Chapoton: use Parent for the Pari pseudo-ring [Reviewed by Matthias Koppe]
+#37483: @gmou3: Add `# long time` to `topology` [Reviewed by Travis Scrimshaw]
+#37485: Matthias Koppe: Developer Guide: Improve section on patching third-party packages [Reviewed by Kwankyu Lee]
+#37487: Matthias Koppe: src/doc/en/developer/review.rst: Update section 'Release Process' [Reviewed by Kwankyu Lee]
+#37489: Giacomo Pope: Fix failing docstring in random testing for `quaternion_algebra.py` [Reviewed by Lorenz Panny]
+#37490: Giacomo Pope: Include `random_element()` method to `LaurentPolynomialRing` [Reviewed by Nils Bruin, Travis Scrimshaw, @grhkm21]
+#37498: Matthias Koppe: build/pkgs/gnumake_tokenpool: Update to 0.0.7
+#37499: Martin Rubey: use sparse polynomials for generating functions [Reviewed by Nadia Lafreniere]
+#37501: Matthias Koppe, John Palmieri: Code of conduct changes [Reviewed by Tobias Diez, Nils Bruin, Dima Pasechnik, David Roe, Kwankyu Lee]
+#37508: Matthias Koppe: Developer guide: Recommend raw strings for all docstrings [Reviewed by Kwankyu Lee]
+#37509: Matthias Koppe: Replace broken links to sphinx material on pocoo.org [Reviewed by Kwankyu Lee]
+#37520: Eloi Torrents: Remove comment about python2 longs
+#37521: Dima Pasechnik: fix debian.txt for qhull
+#37522: Matthias Koppe: Add `mypy.ini` [Reviewed by Frederic Chapoton]
+#37538: Kwankyu Lee: Improve genus method of function fields and curves [Reviewed by Travis Scrimshaw]
+#37540: Kwankyu Lee: Update the year in README.md [Reviewed by Frederic Chapoton]
+#37542: Kwankyu Lee: Edit docstrings attached to free resolutions [Reviewed by Matthias Koppe]
+#37545: Frederic Chapoton: various list-comprehension in combinat (ruff PERF) [Reviewed by Martin Rubey]
+#37549: Henry Ehrhard: Faster chromatic symmetric function computation [Reviewed by Travis Scrimshaw, Frederic Chapoton, Martin Rubey]
+#37551: Frederic Chapoton: minor details + non-recursive algo in integer_valued_polynomials [Reviewed by Martin Rubey]
+#37552: Frederic Chapoton: convert Puiseux ring to Parent framework [Reviewed by Matthias Koppe]
+#37553: Ruchit Jagodara: A minor change in the documentation of `__hash__` function of `FreeModuleElement` class [Reviewed by Matthias Koppe]
+#37554: Sebastian A. Spindler: Implemented the (local) Hilbert symbol for global function fields [Reviewed by Kwankyu Lee]
+#37555: Frederic Chapoton: use Parent in Symbolic Ring [Reviewed by Matthias Koppe]
+#37556: Frederic Chapoton: refresh sha_tate.py [Reviewed by Sebastian A. Spindler]
+#37557: Sebastian A. Spindler: Modified quaternion algebra documentation [Reviewed by Travis Scrimshaw]
+#37561: Frederic Chapoton: enrich the test_karatsuba failure message with explicit elements [Reviewed by Martin Rubey]
+#37564: Frederic Chapoton: use Parent in infinity [Reviewed by Travis Scrimshaw]
+#37567: Giacomo Pope: Improve documentation for `degree()` method of singular multivariate polynomials [Reviewed by Nils Bruin]
+#37571: David Coudert: Improve method `_ford fulkerson chronicle` in `src/sage/combinat/posets/posets.py` [Reviewed by Frederic Chapoton]
+#37573: Matthias Koppe: Doctester: Abbreviate tracebacks in warnings [Reviewed by Frederic Chapoton]
+#37575: Matthias Koppe: Intersphinx for cvxopt, cvxpy, cypari2, cysignals, flint, fpylll, gmpy2, ipywidgets, matplotlib, mpmath, networkx, numpy, rpy2, scipy, sympy [Reviewed by David Coudert]
+#37579: Tobias Diez: Update package dependencies for Fedora and Arch distros
+#37589: Kwankyu Lee: Add links to sources in documentation [Reviewed by Gonzalo Tornaria]
+#37590: Travis Scrimshaw: Do not canonicalize generators when building a permutation group from a libGAP group [Reviewed by Enrique Artal]
+#37591: Frederic Chapoton: ruff PERF fixes in algebras/ [Reviewed by Travis Scrimshaw, Giacomo Pope]
+#37595: Giacomo Pope: Simplify computation of all points for curves over finite fields
+#37596: Lorenz Panny: fix performance regression in elliptic-curve point constructor [Reviewed by Giacomo Pope]
+#37598: Matthias Koppe: Sphinx extlinks for ecl, gap, giac, maxima, meson, ppl, qepcad, scip, singular, soplex [Reviewed by Kwankyu Lee, Max Horn]
+#37599: Frederic Chapoton: extend the definition of q-binomial coefficients to (k > 0, n < 0) [Reviewed by Travis Scrimshaw]
+#37600: Frederic Chapoton: some details in lrcalc [Reviewed by Martin Rubey]
+#37602: David Coudert: `graphs.triangulations(3)` cannot return a triangle [Reviewed by Travis Scrimshaw]
+#37604: Giacomo Pope: Remove duplicated functions from genus two hyperelliptic curves [Reviewed by Frederic Chapoton]
+#37605: Giacomo Pope: Ensure returned degree of multivariate polynomial is type `Integer` for `MPolynomialRing_libsingular` class [Reviewed by Matthias Koppe]
+#37607: Matthias Koppe: src/sage/matrix: Doctest cosmetics [Reviewed by Frederic Chapoton]
+#37608: Matthias Koppe: src/sage/modules: Doctest cosmetics [Reviewed by Frederic Chapoton]
+#37609: Matthias Koppe: src/sage/schemes: Doctest cosmetics [Reviewed by Giacomo Pope]
+#37610: Matthias Koppe: src/sage/combinat: Doctest cosmetics [Reviewed by David Coudert]
+#37611: Giacomo Pope: Ensure degree and total degree return `Integer` type for `MPolynomial_polydict` class [Reviewed by @grhkm21]
+#37613: Giacomo Pope: Fix hyperelliptic curve dynamic class construction to allow proper method inheritance [Reviewed by Kwankyu Lee]
+#37617: Mumtaz Ali Shah: Updated README.md,  added space after -p option [Reviewed by Matthias Koppe]
+#37619: Travis Scrimshaw, Frederic Chapoton: Implement the Potts representation of the partition algebra
+#37623: Matthias Koppe: src/sage/rings: Doctest cosmetics [Reviewed by David Coudert]
+#37624: Dima Pasechnik: test gap3 with gap3, not gap (gap4) [Reviewed by Gonzalo Tornaria]
+#37628: Martin Rubey: use the polynomial ring also for non-commutative baserings as _internal_poly_ring [Reviewed by Travis Scrimshaw]
+#37629: Travis Scrimshaw: Implement a __bool__ for posets [Reviewed by Frederic Chapoton]
+#37630: Antoine Leudiere: Enhance documentation of Drinfeld module Potemine j-invariants [Reviewed by David Ayotte]
+#37646: Matthias Koppe, @Feyorsh: Fix compilation with -std=c++17
+#37369: Giacomo Pope: Faster scalar multiplication for python types [Reviewed by Nils Bruin, John Cremona]
+#37377: Marc Mezzarobba: fix bad Frac(sparse polynomial ring over finite field) [Reviewed by Travis Scrimshaw]
+#37392: Matthias Koppe: `build/pkgs/pyscipopt`: Update to 4.4.0, add Cython 3 patch [Reviewed by Martin Rubey]
+#37393: Travis Scrimshaw, Frederic Chapoton: Tensor, exterior, and symmetric product of semigroup representations [Reviewed by Matthias Koppe, Trevor Karn]
+#37399: Matthias Koppe, @gmou3, Gonzalo Tornaria: Developer Guide: Document practices for data files
+#37400: Frederic Chapoton: minor ruff fixes in quadratic forms (C4, UP, PERF) [Reviewed by @grhkm21]
+#37401: Matthias Koppe: Developer Guide: Improvements to explanation of version files [Reviewed by Kwankyu Lee, Dima Pasechnik, Nathan Dunfield]
+#37403: Kwankyu Lee: Use "Issue #" for github issue links [Reviewed by Travis Scrimshaw]
+#37404: Frederic Chapoton: add a polytope method to hypergeometric motives [Reviewed by Matthias Koppe]
+#37406: Marc Mezzarobba: remove most references to Arb as an independent library [Reviewed by Matthias Koppe]
+#37411: Matthias Koppe: src/doc/en/installation/source.rst: Add section on upgrading using worktrees [Reviewed by Lorenz Panny]
+#37412: Kwankyu Lee: Add as_subscheme() method for rational points [Reviewed by Travis Scrimshaw]
+#37420: Nils Bruin: Remove long/int relic [Reviewed by @grhkm21]
+#37421: Matthias Koppe: Make `sage -b` equivalent to `make sagelib-no-deps` regarding parallelism [Reviewed by @grhkm21]
+#37422: Matthias Koppe: `sage.parallel.ncpus`: Use `os.sched_getaffinity` or `os.cpu_count`
+#37423: Marco Perin: Fix docstring for polyhedron constructor [Reviewed by Frederic Chapoton]
+#37424: Kwankyu Lee: Edit hypellfrob.pyx [Reviewed by @grhkm21]
+#37432: Matthias Koppe: `setup.py`: Remove `lazy_import_cache` use [Reviewed by Francois Bissey]
+#37433: Matthias Koppe: src/sage/misc/lazy_import.pyx: Deprecate star imports [Reviewed by Frederic Chapoton]
+#37435: Frederic Chapoton: small cleanup in monoids [Reviewed by Matthias Koppe, @grhkm21]
+#37439: Frederic Chapoton: a few details in cython files in symbolic [Reviewed by Matthias Koppe]
+#37440: Linden Disney-Hogg: Strengthen inequality in rigorous_line_integral [Reviewed by Nils Bruin]
+#37444: Matthias Koppe: Remove mention of `SPKG.txt` [Reviewed by John Palmieri]
+#37449: Frederic Chapoton: formal deprecation of old group class [Reviewed by Matthias Koppe]
+#37452: Matthias Koppe, Tobias Diez: Add config for ruff (#36503, unbundled) [Reviewed by Giacomo Pope]
+#37464: Frederic Chapoton: formal deprecation of old CommutativeAlgebra class [Reviewed by Matthias Koppe]
+#37466: Frederic Chapoton: remove almost all calls to is_Ring [Reviewed by Matthias Koppe]
+#37468: Frederic Chapoton: some list comprehensions in rings (ruff PERF401) [Reviewed by Martin Rubey]
+#37469: Frederic Chapoton: various details in permutation.py (pep8 and ruff PERF) [Reviewed by @grhkm21, Martin Rubey]
+#37478: Matthias Koppe: build/pkgs/pari_jupyter: Update to 1.4.3 (includes Cython 3 fix) [Reviewed by Kwankyu Lee]
+#37022: Matthias Koppe: `make SPKG-check` for normal and script packages [Reviewed by Kwankyu Lee]
+#37090: Peter Bruin: Move some code from Brandt modules to quaternion algebras [Reviewed by Travis Scrimshaw]
+#37172: Lorenz Panny, @grhkm21: Fix three polynomial SIGABRT bugs #37169 and #37317 [Reviewed by Giacomo Pope]
+#37689: Kwankyu Lee: Fix changes.html in doc preview
+#37699: @TheBlupper: Add `approximate_closest_vector` to `IntegerLattice`, using Babai's nearest plane algorithm [Reviewed by @grhkm21]
+#37703: Travis Scrimshaw: Implement an is_nilpotent() method for matrices [Reviewed by Frederic Chapoton, Martin Rubey]
+#37707: Travis Scrimshaw: Implement an iterator for absolute number fields [Reviewed by Matthias Koppe]
+#37712: Matthias Koppe, Frederic Chapoton: src/tox.ini (rst): Add missing Sphinx roles
+#37720: Matthias Koppe: pkgs/sagemath-repl/pyproject.toml.m4: Declare extra 'sphinx'
+#37721: @SandwichGouda: Renamed "ring" argument of matrix contructor to "base_ring" [Reviewed by Matthias Koppe]
+#37725: @faisalfakhro: Fix typo/phrasing in README.md [Reviewed by @gmou3]
+#37736: Travis Scrimshaw: Reimplementing the Witt (Sym Func) change of basis, caches, and omega involution [Reviewed by Darij Grinberg, Martin Rubey]
+#37753: Sebastian A. Spindler: Added rank check to doctest in `.gauss_on_polys` [Reviewed by Martin Rubey]
+#37755: Matthias Koppe: src/sage/graphs/graph_decompositions/tdlib.pyx: Use -std=c++11 [Reviewed by David Coudert]
+#37763: Gonzalo Tornaria: Fix tolerance for scipy 1.13 [Reviewed by Antonio Rojas]
+#37764: Volker Braun: ECM-related tests fail after an incremental build [Reviewed by Matthias Koppe, Dima Pasechnik]
+#37497: Martin Rubey: remove zombie code [Reviewed by Matthias Koppe]
+#37546: Matthias Koppe: Sphinx ext links for Sage source files [Reviewed by Kwankyu Lee, David Coudert]
+#37563: Frederic Chapoton: trying a change in unique_representation [Reviewed by Travis Scrimshaw]
+#37606: Matthias Koppe: Border matrix [Reviewed by David Coudert]
+#37634: Martin Rubey: The Glaisher-Franklin bijections on integer partitions [Reviewed by Travis Scrimshaw]
+#37637: Kwankyu Lee: Update jupyter-sphinx to version 0.5.3 and pin thebe to version 0.8.2 [Reviewed by Matthias Koppe]
+#37638: Frederic Chapoton: use strings as label in modular-decomposition trees [Reviewed by Cyril Bouvier]
+#37639: Frederic Chapoton: add Legendre transform and suspension for lazy symmetric functions [Reviewed by Travis Scrimshaw, Martin Rubey]
+#37640: Sebastian A. Spindler: Modified `.is_reduced()` of `binary_qf.py` to avoid square root computation [Reviewed by Lorenz Panny]
+#37651: Frederic Chapoton: use parent in asymptotic ring [Reviewed by Marc Mezzarobba]
+#37652: Frederic Chapoton: fix typos and no "Algebra" in the doc [Reviewed by Matthias Koppe]
+#37655: Sebastian A. Spindler: Removed caching of determinant in LLL for the `NTL:LLL`-algorithm [Reviewed by Vincent Delecroix]
+#37659: Frederic Chapoton: fix ruff codes UP012 and UP023 [Reviewed by Matthias Koppe]
+#37660: Frederic Chapoton: Fix e302 libs pyx [Reviewed by David Coudert]
+#37661: Marc Mezzarobba: some cross-references btw doc of RR, RBF, ...
+#37663: Matthias Koppe: sage/rings/{complex,real}*: Untitlecase titles, add refs to libraries [Reviewed by Marc Mezzarobba]
+#37667: Gonzalo Tornaria, Matthias Koppe: Fix noexcept clauses (#37560)
+#37668: Sebastian Oehms: Wrong results in is_isotopic method of the Link class for certain chiral link [Reviewed by Travis Scrimshaw]
+#37671: Matthias Koppe: pkgs/sagemath-standard: Support gpep517 [Reviewed by Francois Bissey]
+#37672: Matthias Koppe: src/sage/modular/quasimodform/ring.py: Fix pycodestyle warning [Reviewed by Frederic Chapoton]
+#37673: Dima Pasechnik: upgrade msolve to 0.6.5 [Reviewed by Matthias Koppe, Marc Mezzarobba]
+#37674: Frederic Chapoton: some pep8 and ruff cleanups in modules/ [Reviewed by Travis Scrimshaw]
+#37677: Frederic Chapoton: some simplifications in moment-angle complex [Reviewed by Travis Scrimshaw]
+#37679: Frederic Chapoton: simplifications in symmetric_ideal.py [Reviewed by Matthias Koppe]
+#37680: Frederic Chapoton: a few more uses of "in Fields()" [Reviewed by Matthias Koppe]
+#37683: Frederic Chapoton: some shortcuts using bool [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37688: @yurichev: typo [Reviewed by Martin Rubey]
+#36999: Matthias Koppe: Rename `install-requires.txt` to `version_requirements.txt` [Reviewed by Kwankyu Lee, Dima Pasechnik, Nathan Dunfield]
+#37120: Matthias Koppe: build/pkgs/*/distros/pyodide.txt: New, corresponding to pyodide 0.25.0 [Reviewed by Kwankyu Lee]
+#37224: Matthias Koppe: build/pkgs/python_flint: New [Reviewed by Kwankyu Lee]
+#37266: Matthias Koppe: Scipy 1.12 [Reviewed by Kwankyu Lee]
+#37332: Eloi Torrents: Cleaning in pautomorphicform.py [Reviewed by Sebastian A. Spindler, Matthias Koppe]
+#37340: @gmou3: Add class FlatsMatroid [Reviewed by Matthias Koppe]
+#37361: Gonzalo Tornaria, @gmou3, Matthias Koppe: Add iterators, Whitney numbers, characteristic polynomial, etc [Reviewed by Travis Scrimshaw]
+#37391: Matthias Koppe: Make installation of "wheel" packages less noisy [Reviewed by Kwankyu Lee]
+#37425: Matthias Koppe: Remove mention of patchbot, remove 'make buildbot-python3' [Reviewed by Frederic Chapoton]
+#36390: Lorenz Panny, Max Alekseyev: add simple function to count irreducible polynomials over 𝔽q [Reviewed by Matthias Koppe, @grhkm21, Giacomo Pope]
+#36965: Matthias Koppe: Update system package info for slackware [Reviewed by Kwankyu Lee]
+#37615: Giacomo Pope: Removed `BUG` method and include a docstring for `matrix_of_frobenius()` [Reviewed by @grhkm21]
+#37644: Sebastian A. Spindler: Corrections in `.normalize_basis_at_p` and `.maximal_order()` of `quaternion_algebra.py` [Reviewed by Matthias Koppe]
+#37648: Matthias Koppe: `sage.doctest`: Remove most uses of SAGE_SRC in doctests [Reviewed by Antonio Rojas]
+#37665: Matthias Koppe: `cypari2` 2.1.5, `memory_allocator` 0.1.4
+#37670: @gmou3: Make matroid `copy` and `deepcopy` simply return `self` [Reviewed by Matthias Koppe]
+#37682: Travis Scrimshaw: Implement the normalizer of a finite dimensional Lie algebra [Reviewed by Matthias Koppe, Frederic Chapoton]
+#37687: Martin Rubey: provide a construction functor using a single functor for families [Reviewed by Travis Scrimshaw]
+#37710: Travis Scrimshaw: Implement the Jordan decomposition of a matrix and is_semisimple() test [Reviewed by Matthias Koppe]
+#37724: Travis Scrimshaw: Implement faithful representations of nilpotent Lie algebras [Reviewed by Matthias Koppe]
+#37740: Julian Ruth: Disable most documentation notifications on GitHub [Reviewed by Kwankyu Lee, Dima Pasechnik]
+#37746: Frederic Chapoton: clean suffix tries [Reviewed by Matthias Koppe]
+#37769: Matthias Koppe: `src/sage/modules/with_basis/representation.py`: pycodestyle fix [Reviewed by Frederic Chapoton]
+#37771: Frederic Chapoton: some C4 fixes in combinat folder [Reviewed by Matthias Koppe]
+#37772: Frederic Chapoton: add links to standard errors in toric folder [Reviewed by Matthias Koppe]
+#37110: @grhkm21: Precompute orders of twists of EllipticCurve
+#37119: @grhkm21: Implement `EllipticCurve_with_order` [Reviewed by Lorenz Panny, Giacomo Pope]
+#37247: Michael Orlitzky: Miscellaneous system package updates [Reviewed by Matthias Koppe, Dima Pasechnik]
+#37291: Michael Orlitzky: Support optional debugpy [Reviewed by Matthias Koppe, Dima Pasechnik]
+#37351: Matthias Koppe: CI: Update Linux platforms / runners, remove `ubuntu-trusty`, `opensuse-{15.3,15.4}` [Reviewed by Michael Orlitzky, Kwankyu Lee, Tobias Diez, Julian Ruth]
+#37451: Martin Rubey: combinat/free module tensor construction [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37462: Travis Scrimshaw: Add Temperley-Lieb algebras to the category of cellular algebras [Reviewed by Matthias Koppe]
+#37475: : ⬆️ Bump myrotvorets/set-commit-status-action from 2.0.0 to 2.0.1
+#37506: Dhrumil Raigagla: Improving the documentation of Discrete Dynamical Systems by fixing typos and eliminating repeated sentences [Reviewed by Matthias Koppe]
+#36951: Matthias Koppe: `pkgs/sagemath-standard`: Move metadata from `setup.cfg` to `pyproject.toml` [Reviewed by Gonzalo Tornaria, Kwankyu Lee, Tobias Diez]
+#36964: Matthias Koppe: Add `# sage_setup: distribution` directives to all files, remove remaining `# coding: utf-8` [Reviewed by Kwankyu Lee, Tobias Diez, Martin Rubey]
+#37733: @Nolord: Bell polynomials univariate variable fix, complete and ordinary variants [Reviewed by Travis Scrimshaw]
+#37757: Jackson Walters: dft for symmetric group algebra when p|n! [Reviewed by Sebastian A. Spindler, Travis Scrimshaw, @grhkm21]
+#37773: Travis Scrimshaw: Allow construction of classical Lie algebras over finite fields [Reviewed by Frederic Chapoton]
+#37778: Travis Scrimshaw: Make univariate Laurent polynomials over a field pass the TestSuite [Reviewed by Enrique Artal]
+#37781: @Nolord: `SetPartition` return empty iterator instead of erroring out in degenerate cases [Reviewed by Travis Scrimshaw]
+#37783: Frederic Chapoton: various changes about is_field and is_ring [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37784: Travis Scrimshaw: Speed up symmetric group simple_module_rank() [Reviewed by Darij Grinberg]
+#37788: @gmou3: Add is_graphic/regular [Reviewed by Matthias Koppe]
+#37789: Frederic Chapoton: various ruff fixes in groups  (PERF, etc) [Reviewed by @gmou3]
+#37790: Frederic Chapoton, @gmou3: Improve docstrings in `groups` [Reviewed by Matthias Koppe]
+#37796: David Roe: Revert PR with disputed dependencies [Reviewed by Dima Pasechnik]
+#37441: Giacomo Pope: Bind to FLINT/NTL API for polynomial modular exponentiation (new version) [Reviewed by Travis Scrimshaw]
+#37474: : ⬆️ Bump actions/cache from 3 to 4
+#37486: Matthias Koppe: sagemath-{objects,categories} `pyproject.toml`: Add 'external' section according to draft PEP 725 [Reviewed by Kwankyu Lee]
+#37494: Matthias Koppe: `build/pkgs`: Update scip to 9, scip_sdp to 4.4, soplex to 7, papilo to 2.2, pyscipopt to 5, onetbb to 2021.11  [Reviewed by Kwankyu Lee]
+#37503: Matthias Koppe: GH Actions: Build macOS arm64 wheels [Reviewed by Kwankyu Lee]
+#37510: Matthias Koppe: src/doc/*/tutorial/programming.rst: Update 'standalone script' [Reviewed by Kwankyu Lee]
+#37512: Matthias Koppe: FiniteRankFreeModule.isomorphism_with_fixed_basis: Make it an actual isomorphism [Reviewed by Travis Scrimshaw, Eric Gourgoulhon]
+#37513: Giacomo Pope: Define the zero polynomial to have degree `-Infinity` for `LaurentPolynomialRing` [Reviewed by Travis Scrimshaw, Martin Rubey]
+#37514: Matthias Koppe: `MatrixSpace`: Support constructing `Hom(CombinatorialFreeModule)` [Reviewed by Travis Scrimshaw, Frederic Chapoton, @gmou3]
+#37582: Matthias Koppe: build/pkgs/{gdb,gmp,libgd,python3,symmetrica}: Reduce xz to order-only dep [Reviewed by Kwankyu Lee]
+#37675: Sebastian A. Spindler: Allow `.maximal_order()` of `quaternion_algebra.py` to extend a given order [Reviewed by Travis Scrimshaw]
+#37676: Frederic Chapoton: pep8 and ruff fixes in the plot folder [Reviewed by Matthias Koppe]
+#37684: Dima Pasechnik: fix ascii_art of empty chain complex [Reviewed by John Palmieri, Travis Scrimshaw]
+#37714: Matthias Koppe: `sage.modular`: Docstring/doctest cosmetics [Reviewed by Sebastian A. Spindler]
+#37731: Matthias Koppe: `MatrixMorphism_abstract`: Move endomorphism invariants to category [Reviewed by Travis Scrimshaw]
+#37747: Martin Rubey: be more specific when raising "not a constant polynomial" [Reviewed by Matthias Koppe]
+#37766: Martin Rubey: modules with basis/map coefficients [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37775: @gmou3: Add matroid `relabel` [Reviewed by Matthias Koppe]
+#37785: Matthias Koppe: `sage-logger`: Suppress "No such file or directory" messages [Reviewed by Gonzalo Tornaria, David Ayotte]
+#36869: Matthias Koppe: `m4/pyproject_toml_metadata.m4`: Allow Python 3.12
+#37138: David Roe, Tobias Diez: Make sage-conf optional [Reviewed by Kwankyu Lee, Dima Pasechnik]
+#37262: Aman Moon: Added automatic size labeler [Reviewed by Sebastian Oehms]
+#37287: David Roe, Tobias Diez, Gonzalo Tornaria: sagemath-standard: include sage_setup in sdist [Reviewed by Dima Pasechnik]
+#37300: Matthias Koppe: `build/pkgs/python_build`: Make it a standard wheel package [Reviewed by Francois Bissey]
+#35467: Kwankyu Lee: Attach Jacobians to function fields and curves [Reviewed by Matthias Koppe]
+#37904: @gmou3: Change `SetSystem` representation [Reviewed by Travis Scrimshaw]
+#37911: Kiran Kedlaya: Fix overflow in hypergeometric trace
+#37915: Kwankyu Lee: Replace doctests from jacobian_khuri_makdisi.py taking too long time [Reviewed by Matthias Koppe]
+#37650: Matthias Koppe: src/sage/features/sagemath.py: Add feature SAGE_SRC [Reviewed by Gonzalo Tornaria, Francois Bissey]
+#37681: @jtcc2: Quaternion Ideal Pushforwards and Pullbacks [Reviewed by Sebastian A. Spindler, Travis Scrimshaw]
+#37692: Matthias Koppe, @xuluze: `matrix`, `Graph.incidence_matrix`, `LinearMatroid.representation`: Support constructing `Hom(CombinatorialFreeModule)` elements [Reviewed by @gmou3]
+#37722: Matthias Koppe: Remove `CombinatorialClass` [Reviewed by Travis Scrimshaw, Martin Rubey]
+#37738: Matthias Koppe: CI Build&Test: Show segfaults using GitHub annotations [Reviewed by Kwankyu Lee]
+#37750: Matthias Koppe: CI Build&Test: Fix "test modularized distributions" after #37022 [Reviewed by Kwankyu Lee]
+#37792: Dima Pasechnik: remove a stray leftover in in sa2si_ZZmod()
+#37793: Frederic Chapoton: add links to standard errors in various places [Reviewed by Matthias Koppe]
+#37797: Frederic Chapoton: fix the category of quasi-modular form rings [Reviewed by Sebastian A. Spindler, Seewoo Lee]
+#37798: Frederic Chapoton: some ruff C4 fixes in combinat [Reviewed by Matthias Koppe]
+#37799: Frederic Chapoton: little details in quadratic_forms (pep8, ruff, etc) [Reviewed by Matthias Koppe]
+#37800: Frederic Chapoton: some cython-lint suggestions fixed in real rings [Reviewed by David Coudert]
+#37802: Michael Orlitzky: Add the downward monotonic cone to the cone catalogue [Reviewed by Matthias Koppe]
+#37807: @SandwichGouda: Added some documentation in the developer's guide regarding deprecation [Reviewed by Matthias Koppe]
+#37808: @SandwichGouda: Removed non-working and utterly old @rename_keyword in farey_symbol.pyx
+#37810: Matthias Koppe: build/pkgs/gambit: Remove [Reviewed by John Palmieri]
+#37822: Eric Gourgoulhon: Fix bug in TensorField.apply_map [Reviewed by Matthias Koppe]
+#37823: Eric Gourgoulhon: Fix LaTeX output of FreeModuleTensor.display_comp [Reviewed by Matthias Koppe]
+#37825: Matthias Koppe: `FiniteRankFreeModuleMorphism.display`: Show matrix decorated with basis element names [Reviewed by Eric Gourgoulhon]
+#37826: Matthias Koppe: FreeModuleAutomorphism: Add more invariants [Reviewed by Travis Scrimshaw, Eric Gourgoulhon]
+#37827: Matthias Koppe: `sage.tensor`: Tiny doc fixes [Reviewed by Eric Gourgoulhon]
+#37829: Matthias Koppe: src/sage/manifolds/differentiable: Docstring/doctest edits [Reviewed by Eric Gourgoulhon]
+#37833: Matthias Koppe: `build/pkgs/{python3,setuptools}`: Update fedora distro info [Reviewed by Enrique Artal]
+#37835: @gmou3: Optimize `DisjointSet` [Reviewed by Travis Scrimshaw, Vincent Delecroix, Martin Rubey]
+#37836: Martin Rubey: fricas/do not get inputform twice [Reviewed by Dima Pasechnik]
+#37841: Matthias Koppe: `.ci/write-dockerfile.sh`: Move here from build/bin/ [Reviewed by Kwankyu Lee]
+#37851: Sebastian Oehms: Fix issue 37587 regarding the Link class plot method
+#37853: Sebastian A. Spindler: Work around inconsistent iteration in `multi_polynomial_sequence.py` [Reviewed by Martin Rubey]
+#37855: Matthias Koppe: `sage.misc.package`: Remove deprecated code [Reviewed by Francois Bissey]
+#37856: Matthias Koppe: `sage.misc.dist`: Remove; deprecated in #30207 (2022)
+#37868: Matthias Koppe: `sage.misc.misc`: Remove deprecated code [Reviewed by Michael Orlitzky]
+#37870: Matthias Koppe: `sage.ext`: Remove deprecated code [Reviewed by Michael Orlitzky]
+#37872: Matthias Koppe: sage.{topology,homology}: Remove deprecated chomp interface
+#37882: Gonzalo Tornaria: eclib: fix doctests after 20240408 update [Reviewed by John Cremona]
+#37883: Gonzalo Tornaria: gap: don't use deprecated LaTeX() and LaTeXObj() [Reviewed by Travis Scrimshaw]
+#37277: Matthias Koppe: pip 24, setuptools 69.5.1, hatchling 1.22.5, hatch_fancy_pypi_readme 24.1.0, platformdirs 4.2.0, packaging 24.0, trove_classifiers 2024.4.10, wheel 0.43.0 [Reviewed by Kwankyu Lee]
+#37492: Gonzalo Tornaria, Antonio Rojas: make sagelib work with singular>=4.3.2.p15 (future 4.4) [Reviewed by Matthias Koppe]
+#37693: Travis Scrimshaw: Implement the hypercenter and upper central series for finite dimensional Lie algebras [Reviewed by Matthias Koppe]
+#37715: Matthias Koppe: `sage.{calculus,functions,numerical,symbolic}`: Docstring/doctest cosmetics, `# needs` [Reviewed by Kwankyu Lee]
+#36498: Matthias Koppe: CI build, doc-build: Run containers explicitly, separate jobs for pyright, build, modularized tests, long tests [Reviewed by Kwankyu Lee]
+#36768: Enrique Artal: Retrieve more information of fundamental groups of plane curves [Reviewed by Travis Scrimshaw, Frederic Chapoton]
+#36982: Matthias Koppe, Tobias Diez: Make pyproject.toml the source for build dependencies [Reviewed by Gonzalo Tornaria, Dima Pasechnik]
+#37041: Dima Pasechnik: update FriCAS to 1.3.10, allow building with sbcl [Reviewed by Martin Rubey]
+#37057: Matthias Koppe, @vamshipy: deprecated functions is_Cone, is_Polyhedron, is_LatticePolytope [Reviewed by Travis Scrimshaw]
+#37099: Matthias Koppe: GH Actions: Build platform-independent wheels of sagemath-environment, sage-setup, sage-sws2rst for PyPI [Reviewed by Kwankyu Lee]
+#35618: Matthias Koppe: Use `pypa/build` instead of `pip wheel` [Reviewed by Kwankyu Lee]
+#37839: @gmou3: Cythonize `GraphicMatroid` [Reviewed by Kwankyu Lee, Travis Scrimshaw]
+#37854: Michael Orlitzky: Maximal angles between convex cones [Reviewed by Matthias Koppe, Kwankyu Lee, Travis Scrimshaw]
+#37859: Travis Scrimshaw: Implement the ladder idempotents of the symmetric group algebra [Reviewed by Andrew Mathas]
+#37867: Matthias Koppe: `sage.misc.sageinspect`: Remove deprecated `loadable_module_extension` [Reviewed by Michael Orlitzky]
+#37869: Matthias Koppe: `sage.geometry.polyhedron`: Remove deprecated code [Reviewed by Kwankyu Lee]
+#37878: Kwankyu Lee: Run sage doc server for jupyterlab  [Reviewed by Marc Culler]
+#37881: Kiran Kedlaya: Implement hypergeometric Euler factors for tame primes [Reviewed by Travis Scrimshaw]
+#37894: Gonzalo Tornaria: sagemath-standard: some fixes in build dependencies [Reviewed by Dima Pasechnik]
+#37896: Matthias Koppe: Deprecate `is_FreeAlgebra`, `is_QuaternionAlgebra`, `is_SymmetricFunctionAlgebra` [Reviewed by Kwankyu Lee, Travis Scrimshaw]
+#37897: Matthias Koppe: Deprecate `is_Monoid`, `is_FreeMonoid`, `is_FreeAbelianMonoid` [Reviewed by Travis Scrimshaw]
+#37898: Matthias Koppe: Deprecate `is_AbelianGroup`, `is_DualAbelianGroup`, `is_MatrixGroup` [Reviewed by Vincent Delecroix, Martin Rubey]
+#37914: Marc Culler: `build/pkgs/python3`: Update to 3.11.8, remove Cygwin patches, remove pointless rpaths on macOS
+#37916: Martin Rubey: structure/coerce actions [Reviewed by Travis Scrimshaw]
+#37925: Kwankyu Lee: Fix slow substitution in piecewise symbolic function [Reviewed by Travis Scrimshaw]
+#37929: Matthias Koppe: `.gitignore`: Ignore `requirements-editable.txt` files
+#37932: Frederic Chapoton: fix the linter
+#37938: Gonzalo Tornaria, Volker Braun: Updates to linbox-1.7.0, givaro-4.2.0, fflas-ffpack-2.5.0
+#37939: Volker Braun: Fix incompatible pointer type assignment error in implicit_surface [Reviewed by Dima Pasechnik, Frederic Chapoton]
+#37940: @gmou3: Support morphisms in `Matroid` constructor [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37941: Vincent Delecroix: Revert cif fast inversion 84ab655 [Reviewed by Marc Mezzarobba]
+#37942: Matthias Koppe: Graph constructors: Remove gratuitous nondeterminism [Reviewed by Martin Rubey, David Coudert]
+#37944: : ⬆️ Bump easimon/maximize-build-space from 8 to 10
+#37947: Frederic Chapoton: various ruff suggestions fixed in schemes [Reviewed by Travis Scrimshaw]
+#37948: Frederic Chapoton: some ruff fixes in misc folder [Reviewed by David Coudert]
+#37949: Sebastian A. Spindler: Adapt length check in `sage.databases.conway` in preparation for database update [Reviewed by Michael Orlitzky]
+#37950: Matthias Koppe: CI: Handle the "p: CI Fix" label [Reviewed by Frederic Chapoton]
+#37953: Ryan Rueger: Fix trivial typo [Reviewed by Frederic Chapoton]
+#37954: David Coudert: direct implementations of some cliques related methods in `sage/graphs/graph.py` [Reviewed by Travis Scrimshaw]
+#37955: Matthias Koppe: `Graph.{[weighted_]adjacency_matrix,kirchhoff_matrix}`: Support constructing `End(CombinatorialFreeModule)` elements [Reviewed by David Coudert]
+#37956: David Coudert: faster implementation of method `sage.graphs.generators.families.BalancedTree` [Reviewed by Travis Scrimshaw]
+#37958: Frederic Chapoton: various ruff fixes in combinat [Reviewed by Matthias Koppe]
+#37965: Frederic Chapoton: some polishing for pbori (ruff and pep8 mostly) [Reviewed by Matthias Koppe]
+#37967: Sebastian A. Spindler: Modify tests in `ell_point.py` to be more generic for Conway database update
+#37970: Eric Gourgoulhon: Fix sign error in the Kerr metric of the manifold catalog [Reviewed by Travis Scrimshaw]
+#37500: Matthias Koppe, Kwankyu Lee, Marc Culler: `sage --package`, `sage-get-system-packages`: Support PURLs `pkg:pypi/DISTRO-NAME`, obtain dependencies of wheels from PyPI
+#37537: Matthias Koppe: build/pkgs/{gcc,gfortran}/spkg-configure.m4: Allow 14.x
+#37570: Gonzalo Tornaria, Antonio Rojas, Matthias Koppe: build/pkgs/singular: Update to 4.4.0 [Reviewed by Kwankyu Lee]
+#37584: Matthias Koppe: build/pkgs/cython: Update to 3.0.10
+#37713: Matthias Koppe: `sage.sets`: Doctest cosmetics [Reviewed by Martin Rubey]
+#37716: Matthias Koppe: `sage.{misc,structure}`: Doctest cosmetics [Reviewed by Kwankyu Lee]
+#37719: Frederic Chapoton: Refactor ring categories [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#37737: Sebastian Oehms: Follow up #36741: improve code structure [Reviewed by Matthias Koppe]
+#37762: Matthias Koppe: `dist.yml`: Download optional/experimental tarballs for GitHub Release assets [Reviewed by Kwankyu Lee]
+#37787: Frederic Chapoton: modernize coercion for Hecke algebras [Reviewed by Travis Scrimshaw]
+#37818: @gmou3: Bump up actions [Reviewed by Dima Pasechnik]
+#37828: Dima Pasechnik: Fix FAQ on DOIs. Put "universal" DOI to CITATION.cff* [Reviewed by Kwankyu Lee]
+#37831: Matthias Koppe: `FreeModuleHomset`: Create subclass `FreeModuleEndset`, add element methods for invariants `det`, `charpoly`, `fcp`, etc. [Reviewed by Travis Scrimshaw, Eric Gourgoulhon]
+#37861: Kiran Kedlaya: Fix segfault for Weil polynomials [Reviewed by Travis Scrimshaw]
+#37249: Ivan Maidanski: gc: update to 8.2.6
+#36269: Seewoo Lee: `coefficients` for `QuasiModularFormsElement` [Reviewed by David Ayotte]
+#37922: Matthias Koppe: Deprecate `is_Category`, `is_Endset`, `is_Homset`, `is_Parent`, `is_RingHomset`, `is_SimplicialComplexHomset` [Reviewed by Vincent Delecroix]
+#37926: Matthias Koppe: `Makefile`, `.ci/write-dockerfile.sh`: Update for `src/pyproject.toml` after #36982 [Reviewed by Kwankyu Lee]
+#37930: @gmou3: Work on `CircuitsMatroid` [Reviewed by Travis Scrimshaw]
+#37951: Dima Pasechnik: declare the last arg to GAP_CallFunc3Args volatile [Reviewed by Gonzalo Tornaria]
+#37952: Travis Scrimshaw: Adding add_bigoh methods to lazy power/Laurent series and coercions to the finite precision implementations [Reviewed by Martin Rubey]
+#37959: Matthias Koppe: `configure`: Fix "command not found" error after #36776
+#37972: Vincent Macri, Travis Scrimshaw: Fix comparison for divisors of curves (and FormalSum commutativity)
+#37973: Matthias Koppe: Remove legacy direct installation of sagelib (`configure --disable-editable --disable-wheels`)
+#37980: Sebastian A. Spindler, Travis Scrimshaw: Fix order computation for linear groups GL(n, R) and SL(n, R)
+#37984: Frederic Chapoton: Ruff details in algebras and categories [Reviewed by Matthias Koppe]
+#37986: Matthias Koppe: `.github/workflows/docker_hub.yml`: Do not fail when there are no credentials [Reviewed by Kwankyu Lee, Sebastian Oehms]
+#37993: Matthias Koppe: `sage.calculus.expr`: Split out from `sage.calculus.all` [Reviewed by John Palmieri]
+#37994: Frederic Chapoton: some care for empty lines in pyx files (pep8 codes E30) [Reviewed by Travis Scrimshaw]
+#37995: Matthias Koppe: Remove interactive confirmation for installing experimental packages
+#38005: Kwankyu Lee: Fix Help menu breakdown in external jupyterlab case
+#38008: Matthias Koppe, @faisalfakhro: `gcc`, `gfortran`: Update to 13.2.0; remove `debian-buster-gcc_spkg` from CI
+#38013: @gmou3: `DualMatroid`: Add `is_valid` and `relabel` methods [Reviewed by Travis Scrimshaw]
+#38016: @gmou3: `Arch Linux`: Remove `libgiac` and rename `texlive-collection-luatex` [Reviewed by Antonio Rojas]
+#38018: Frederic Chapoton: move Frobenius and derivations to category of Commutative Rings [Reviewed by Travis Scrimshaw]
+#38020: Volker Braun: Workaround for passing givaro library to linker on OSX
+#38021: Matthias Koppe: `build/pkgs/flint/spkg-configure.m4`: Reject broken FLINT package on homebrew [Reviewed by Kwankyu Lee]
+#38022: Matthias Koppe: `sage.schemes`: Deprecate `is_...` functions [Reviewed by Kwankyu Lee]
+#38023: Matthias Koppe: tox.ini (local-homebrew): Fix homebrew auto-update breakage [Reviewed by Kwankyu Lee]
+#38025: Matthias Koppe, Volker Braun, @faisalfakhro: `fflas_ffpack`, `linbox`: Switch to release tarballs with working libtool [Reviewed by Kwankyu Lee]
+#38027: @gmou3: Work on `FlatsMatroid` [Reviewed by Travis Scrimshaw]
+#38030: Matthias Koppe: Relative to absolute imports, `del lazy_import` in `.all` files
+#38031: Matthias Koppe: Remove remaining `# coding: utf-8` lines in `src/sage` [Reviewed by Kwankyu Lee]
+#38033: @gmou3: Avoid conflict with macro `minor`
+#38036: Frederic Chapoton: cython-lint for schemes [Reviewed by David Coudert]
+#38038: Frederic Chapoton: cython-lint in quivers/ [Reviewed by David Coudert]
+#38041: Matthias Koppe: Installation Guide: Remove some distracting wikipedia links [Reviewed by @gmou3]
+#38042: Dima Pasechnik: assign names to constructed Hadamard matrices [Reviewed by Matthias Koppe, @MatteoCati, David Coudert]
+#38045: Frederic Chapoton: simplify handling of dead oeis sequences
+#38046: Kwankyu Lee: Fix wrong urls in changes.html 
+#38049: Sebastian Oehms: Fix broken docker/Dockerfile [Reviewed by Matthias Koppe]
+#37690: Frederic Chapoton: using pathlib.Path to handle attached files [Reviewed by Kwankyu Lee]
+#37726: Matthias Koppe, @faisalfakhro: sage-bootstrap: update cryptographic hashes [Reviewed by David Roe]
+#37840: Matthias Koppe: `sage-logger`: Replace use of `/usr/bin/time` by bash keyword `time` [Reviewed by Gonzalo Tornaria, Kwankyu Lee]
+#37864: Matthias Koppe, Acadia Larsen: `sage.numerical.interactive_simplex_method`: Remove dependency on SR [Reviewed by Kwankyu Lee]
+#37873: Matthias Koppe: `sage.libs.pynac`: Remove, deprecated in #32386 (2021) [Reviewed by Kwankyu Lee]
+#37886: Marc Culler: Remove pointless rpaths on macOS; make sage-env polite when run on systems with no toolchain [Reviewed by Matthias Koppe, John Palmieri, Volker Braun]
+#37895: Matthias Koppe: `sage.modular.hecke`: Deprecate `is_Hecke...` functions [Reviewed by Kwankyu Lee, Travis Scrimshaw]
+#37924: Matthias Koppe: Deprecate `is_FGP_Module`, `is_FilteredVectorSpace`, `is_FreeQuadraticModule`, `is_FreeModule`, `is_FreeModuleHomspace`, `is_MatrixSpace`, `is_Module`, `is_VectorSpace`, `is_VectorSpaceHomspace`
+#37203: Matthias Koppe, @faisalfakhro: `build/pkgs/flint` 3.1.3 [Reviewed by Kwankyu Lee]
+#37415: Peter Bruin, Kwankyu Lee: make EllipticCurvePoint_field inherit from EllipticCurvePoint
+#37453: Matthias Koppe, Tobias Diez: tox.ini: Add environments `ruff`, `ruff-minimal`; GH Actions: run `ruff-minimal` [Reviewed by Kwankyu Lee, Frederic Chapoton]
+#37458: Matthias Koppe, @grhkm21: Improve FLINT autogen README [Reviewed by Vincent Delecroix]
+#36525: Matthias Koppe: GH Actions: Fix build of macOS x86_64 wheels, build wheels for sagemath-{bliss,coxeter3,mcqd,tdlib} for PyPI
+#38099: Matthias Koppe: Remove deprecated global imports [Reviewed by Frederic Chapoton]
+#38110: Matthias Koppe: Update `conway_polynomials`, `database_cubic_hecke`, `database_knotinfo`, `matroid_database` [Reviewed by Kwankyu Lee, @gmou3]
+#38121: Kwankyu Lee: Make "[source]" link to develop branch on github
+#37866: Matthias Koppe, Acadia Larsen: LPDictionary: Make it safe to copy dictionaries [Reviewed by Kwankyu Lee]
+#37912: Matthias Koppe: Filter "RuntimeWarning: networkx backend defined more than once for networkx" [Reviewed by Kwankyu Lee, David Coudert]
+#37919: Matthias Koppe, @faisalfakhro: Upgrades and configure fixes for macOS arm64
+#37931: Matthias Koppe, Ivan Maidanski: libatomic_ops: Update to 7.8.2
+#37988: Matthias Koppe: CI Build&Test: Replace use of `sage -t --new` [Reviewed by Kwankyu Lee]
+#37999: Matthias Koppe: Fix broken pytest integration (including CI failure in `src/conftest_test.py`) [Reviewed by Nathan Dunfield]
+#38009: Matthias Koppe: `build/pkgs/ecl`: Update to 24.5.10 [Reviewed by Kwankyu Lee]
+#38026: Matthias Koppe: Do not create `spkg-*.log`, `spkg-*.time` files [Reviewed by Kwankyu Lee]
+#38029: Matthias Koppe: Fix interaction of # 32-bit / # 64-bit tag with block-scoped doctest tags
+#38032: Matthias Koppe: `sage.combinat.finite_state_machine`: Deprecate `is_...` functions [Reviewed by Kwankyu Lee]
+#38035: Matthias Koppe: `sage.modular`: Deprecate `is_...` functions [Reviewed by Kwankyu Lee]
+#38039: Matthias Koppe: configure.ac: Check symlinks in the source tree [Reviewed by Kwankyu Lee]
+#38054: David Coudert: new iterators over the partitions of an integer [Reviewed by Travis Scrimshaw]
+#38056: @gmou3: `SetSystem`: Minor change to accommodate set input [Reviewed by Matthias Koppe]
+#38059: Matthias Koppe, @gmou3: `sage.ext.fast_callable`: Docstring cosmetics [Reviewed by Kwankyu Lee]
+#38060: Matthias Koppe: `sage.rings`: Modularization fixes for singular [Reviewed by Kwankyu Lee]
+#38061: Matthias Koppe: `sage.rings`: Modularization fixes (imports) [Reviewed by Kwankyu Lee]
+#38065: Matthias Koppe: `sage.graphs`: Doctest cosmetics [Reviewed by @gmou3]
+#38066: Matthias Koppe: `sage.geometry`: Modularization fixes (imports), `# needs` [Reviewed by Kwankyu Lee]
+#38067: Matthias Koppe: `.ci/write-dockerfile.sh`: Quoting fix for `unminimize` [Reviewed by Kwankyu Lee]
+#38068: @gmou3: Correct developer guide's function template [Reviewed by Kwankyu Lee, Julian Ruth]
+#38069: Frederic Chapoton, David Ayotte: docstrings: Change single dash to double dash after input variables [Reviewed by Kwankyu Lee]
+#38070: @MatteoCati: Add skew Hadamard matrix of order 1588 [Reviewed by Dima Pasechnik]
+#38071: Matthias Koppe: `sage.categories`: Update `# needs`, use block tags [Reviewed by Kwankyu Lee]
+#38074: Matthias Koppe: `sage.combinat`: Modularization fixes (imports), update `# needs` [Reviewed by Kwankyu Lee]
+#38078: Frederic Chapoton: remove inheritance from Algebra in FreeAlgebras [Reviewed by Matthias Koppe]
+#38079: Frederic Chapoton: fix pep8 E302 in algebras and categories (scripted) [Reviewed by Matthias Koppe]
+#38080: Frederic Chapoton: fixing superfluous empty lines in libs folder [Reviewed by Matthias Koppe]
+#38081: Antonio Rojas: Fix sage.symbolic feature after libs/pynac removal
+#38082: Kwankyu Lee: CI fix: broken livedoc
+#38086: Matthias Koppe: `all*.py` files: Use 'del lazy_import', 'del install_doc' [Reviewed by Kwankyu Lee]
+#38087: Volker Braun: Still add rpath to our own libstdc++, in case we built our own toolchain
+#38090: Matthias Koppe: CI Build&Test: Split test-long into multiple jobs, repair Coverage.py upload [Reviewed by Kwankyu Lee]
+#38091: Volker Braun: Fix doctest when the optional benzene is installed
+#38092: @gmou3: `doc`: Update `help()` outputs [Reviewed by Matthias Koppe]
+#38093: Frederic Chapoton: add doc on egf_to_ogf and inverse [Reviewed by Matthias Koppe]
+#38095: Matthias Koppe: `src/sage/algebras/steenrod/all.py`: Use lazy_import, remove deprecated global import [Reviewed by Kwankyu Lee]
+#38100: Kwankyu Lee: Remove nitpick_patch_config function
+#38104: Matthias Koppe: `sage.coding`: Update `# needs` [Reviewed by Kwankyu Lee, David Coudert]
+#38105: Travis Scrimshaw: Fixing the index set of a rank 1 Cartan matrix [Reviewed by Frederic Chapoton]
+#38111: Matthias Koppe: GH Actions: Fix upload of macOS wheels to PyPI [Reviewed by Kwankyu Lee]
+#37848: Travis Scrimshaw: Implement all G(r,p,m) complex reflection groups [Reviewed by Frederic Chapoton]
+#37857: Matthias Koppe: Replace special handling of optional extensions (bliss, coxeter3, ....) [Reviewed by Francois Bissey]
+#36538: Frederic Chapoton, David Ayotte: Implement Drinfeld modular forms [Reviewed by Antoine Leudiere, Xavier Caruso]
+#38132: Frederic Chapoton: some care for blank lines (pep E30) in groups/ and numerical/ [Reviewed by Matthias Koppe]
+#38133: Frederic Chapoton: some care for blank lines in coding and modules [Reviewed by Matthias Koppe]
+#38134: Frederic Chapoton: some care for blank lines in matrix/ [Reviewed by Matthias Koppe]
+#38136: Volker Braun: Fix building fflas, linbox on 32-bit by disabling SSE, AVX
+#38137: Frederic Chapoton: some care for blank lines in pyx in rings [Reviewed by Matthias Koppe]
+#38143: Matthias Koppe: `sage.monoids`: Modularization fixes, `# needs` [Reviewed by David Coudert]
+#38144: Matthias Koppe: CI: Fix handling of deletions/renames; Build&Test: Uninstall/build changed packages; Linux Incremental: Update platforms [Reviewed by Kwankyu Lee]
+#38145: Aman Moon, Travis Scrimshaw, @gmou3, David Coudert, Matthias Koppe: docstrings: INPUT formatting [Reviewed by Kwankyu Lee]
+#38146: Matthias Koppe: src/sage/categories/hecke_modules.py: Fix `# needs` [Reviewed by David Coudert]
+#38147: Matthias Koppe: `build/pkgs/scip` 9.0.1, `soplex` 7.0.1, `papilo` 2.2.1, `onetbb` 2021.12.0 [Reviewed by Kwankyu Lee]
+#38148: Volker Braun: Fix test failure on 32-bit where a different element is picked [Reviewed by Matthias Koppe]
+#38149: Frederic Chapoton: many pep8 fixes in misc [Reviewed by David Coudert]
+#38152: Giacomo Pope: Improve performance of computing columns of matrices over GF(2) [Reviewed by @grhkm21]
+#38156: Frederic Chapoton: just a few details in permutation.py [Reviewed by Matthias Koppe]
+#38157: Matthias Koppe: `build/pkgs/openssl`: Update to 3.2.2 [Reviewed by Kwankyu Lee]
+#37662: David Coudert: Add parameter `sort_neighbors` to method `init_short_digraph`
+#37669: Matthias Koppe, Dima Pasechnik: update (py)cryptominisat to version 5.11.21, remove no longer needed cryptominisat spkg
+#37697: Travis Scrimshaw: Implement the solvable and nil radicals of a finite dimensional Lie algebra [Reviewed by Matthias Koppe]
+#37779: Travis Scrimshaw: Implementing the faithful representation of a generic Lie algebra in positive characteristic [Reviewed by Matthias Koppe]
+#37819: Matthias Koppe: `igraph`: Update to 0.10.12, fix spkg-check; `python_igraph`: Update to 0.11.5, remove spkg-install workarounds [Reviewed by David Coudert]
+#37850: Aman Moon: Reverted changes from #36986
+#37871: Travis Scrimshaw: Construct the composition series of Garsia-Procesi modules [Reviewed by Matthias Koppe]
+#37945: : ⬆️ Bump dev-hanz-ops/install-gh-cli-action from 0.1.0 to 0.2.0
+#37977: David Coudert: Add a method to enumerate cographs [Reviewed by Travis Scrimshaw]
+#38034: Matthias Koppe: `sage.libs.giac`: Compile with std=c++11 [Reviewed by Kwankyu Lee]
+#38053: Frederic Chapoton: work on letterplace algebras [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#38057: @gmou3: `matroids`: Declare function input and return types [Reviewed by Matthias Koppe, Travis Scrimshaw]
+#38077: Matthias Koppe: Deprecate `is_Element`, ... [Reviewed by Kwankyu Lee]
+#38088: Matthias Koppe: Add `# sage_setup: distribution` directives for the files of existing distributions sagemath-{categories,...,tdlib} [Reviewed by Kwankyu Lee]
+#38103: Matthias Koppe: Deprecate `is_Map`, `is_...Morphism` [Reviewed by @grhkm21, @gmou3]
+#38114: Aman Moon: Fixed bug in size labeler [Reviewed by Matthias Koppe]
+#38117: Kwankyu Lee: Add small examples of common docstring styles [Reviewed by @gmou3]
+#38119: Darij Grinberg: Fix hashing for Weyl algebra elements [Reviewed by Travis Scrimshaw]
+#38122: Matthias Koppe: `sage.doctest.control`: In doctests, use Python floats for stats
+#38124: Matthias Koppe, Kwankyu Lee: Deprecate `is_NumberFieldOrder`, `is_AbsoluteNumberField`, `is_RelativeNumberField`, `is_NumberFieldIdeal`, `is_NumberFieldFractionalIdeal`, `is_NumberFieldFractionalIdeal_rel`
+#38125: Matthias Koppe: Deprecate `is_MutablePoset` [Reviewed by Kwankyu Lee]
+#38126: Matthias Koppe: Deprecate `is_Fan`, `is_NefPartition`, `is_PointCollection`, `is_ToricLattice`, `is_ToricLatticeElement`, `is_ToricLatticeQuotient` [Reviewed by Kwankyu Lee]
+#38127: Kwankyu Lee: Add links to the PR in doc preview  [Reviewed by Matthias Koppe]
+#38131: Frederic Chapoton: code polishing using list comprehension [Reviewed by Matthias Koppe]
+#37526: Matthias Koppe: Fix `monomial_coefficients` for submodules of free modules from sage.modules [Reviewed by Travis Scrimshaw]
+#38196: Cyril Bouvier: Use equality '==' instead of 'is' for strings comparison [Reviewed by David Coudert]
+#38197: Darij Grinberg: Column and row stabilizers for skew tableaux [Reviewed by Travis Scrimshaw]
+#38200: Matthias Koppe: build/pkgs/sagemath_{categories,environment,objects,repl}: Change to optional [Reviewed by Kwankyu Lee]
+#38206: Matthias Koppe: Lint: Install tox from ubuntu, as done in CI Build&Test etc. [Reviewed by Kwankyu Lee]
+#38212: Dima Pasechnik: bump prompt_toolkit/version_requirements.txt, more spkg-configures [Reviewed by Kwankyu Lee]
+#38213: Kwankyu Lee: Fix regex to remove spurious diffs in doc preview [Reviewed by Matthias Koppe]
+#38214: Matthias Koppe, Dima Pasechnik: test that #38159 is fixed [Reviewed by David Coudert]
+#38215: : Fix typo "sage.ring" in docstrings [Reviewed by Julian Ruth, David Coudert]
+#38225: Martin Rubey: fix trivial typos in graphs/traversals.pyx [Reviewed by @gmou3]
+#35396: Matthias Koppe: Activate/fix rpy2 tests [Reviewed by Kwankyu Lee]
+#36980: Travis Scrimshaw: Specht modules for Ariki-Koike algebras [Reviewed by Matthias Koppe]
+#37312: Matthias Koppe: `sage.plot.animate`: Use FFmpeg.absolute_filename; `sage.features`: Remove deprecated methods [Reviewed by Kwankyu Lee]
+#37430: Matthias Koppe: Refactor `bootstrap`, `bootstrap-conda`, `m4/sage_spkg_collect.m4`, `sage-spkg-info` through `sage --package properties`, `sage-get-system-packages` [Reviewed by Kwankyu Lee, Tobias Diez, Julian Ruth]
+#37801: Michael Orlitzky: Drop custom GLPK patch and error handling [Reviewed by Matthias Koppe]
+#37830: Travis Scrimshaw: Implement the Schur functors applied to semigroup representations [Reviewed by Matthias Koppe]
+#37834: Matthias Koppe: `build/pkgs/python3`: Update to 3.12.4; declare support of Python 3.12.x stable
+#38019: Lorenz Panny: find integral solutions to matrix equations over PIDs [Reviewed by Matthias Koppe]
+#38064: @JosePisco: Steinhaus-Johnson-Trotter algorithm for permutations [Reviewed by @grhkm21]
+#38084: Janmenjaya Panda: Implemented a generator for Möbius ladder graph [Reviewed by David Coudert]
+#38096: Matthias Koppe: `sage.combinat`, `sage.games`: Use more `lazy_import` in all.py files [Reviewed by Kwankyu Lee]
+#38097: Matthias Koppe: Refactor `CachedRepresentation` through new class `WithPicklingByInitArgs` [Reviewed by Travis Scrimshaw]
+#38101: Matthias Koppe: Various Python package upgrades [Reviewed by Kwankyu Lee]
+#38102: Travis Scrimshaw: Implement the intrinsic arrangement of a Specht module [Reviewed by Matthias Koppe]
+#38128: Matthias Koppe: Deprecate `is_AlgebraicNumber`, `is_AlgebraicReal`, `is_ComplexDoubleElement`, `is_ComplexIntervalFieldElement`, `is_ComplexNumber`, `is_FractionField`, `is_FractionFieldElement`, `is_Integer`, `is_IntegerMod`, `is_IntegerRing`, `is_Rational`, `is_RationalField`, `is_RealDoubleElement`, `is_RealIntervalField`, `is_RealIntervalFieldElement`, `is_RealNumber` [Reviewed by @gmou3]
+#38129: Kwankyu Lee: Fix live doc build by saving runner space [Reviewed by Matthias Koppe]
+#38140: Matthias Koppe, Travis Scrimshaw: e_antic 2.0.2, normaliz 3.10.3, pynormaliz 2.20, polymake 4.12
+#38141: Matthias Koppe, Kwankyu Lee: build/pkgs/sympy: Update to 1.12.1, change to wheel package
+#38153: Frederic Chapoton: Remove imports pyx [Reviewed by Matthias Koppe]
+#38160: Frederic Chapoton: details in partition.py (code and pep8) [Reviewed by Matthias Koppe]
+#38163: Matthias Koppe: `build/pkgs/tdlib`: Update to 0.9.3 [Reviewed by David Coudert]
+#38165: Frederic Chapoton: simplify some calls to join [Reviewed by Matthias Koppe]
+#38167: Cyril Bouvier: New methods for sparse graphs backend to enumerate neighbors in linear time [Reviewed by David Coudert]
+#38168: David Coudert: some care about the documentation of graph generators [Reviewed by Kwankyu Lee]
+#38170: Matthias Koppe: `sage.categories`: Update `# needs`, modularization fixes (imports) [Reviewed by Kwankyu Lee]
+#38171: David Coudert: fix some details in the documentation of digraph generators [Reviewed by Kwankyu Lee]
+#38176: Frederic Chapoton: fix and activate E305 in pyx files [Reviewed by Matthias Koppe]
+#38177: Frederic Chapoton: some care for blanklines in pyx in stats [Reviewed by Matthias Koppe]
+#38178: Frederic Chapoton: some care for blank lines in pyx in padics [Reviewed by Matthias Koppe]
+#38179: Matthias Koppe: `tox.ini`, `.github/workflows`, `.devcontainer`: Remove centos-stream-8 (EOL) [Reviewed by Kwankyu Lee]
+#38180: Matthias Koppe: `sage.interfaces`: More `lazy_import` [Reviewed by Kwankyu Lee]
+#38181: Matthias Koppe: `sage.plot`, `sage.repl`: Modularization fixes (imports), `# needs` [Reviewed by Kwankyu Lee]
+#38184: Matthias Koppe: Deprecate `is_FreeAlgebraQuotientElement`, ... [Reviewed by Kwankyu Lee]
+#38189: Cyril Bouvier: Improve DiGraph neighbor iterators [Reviewed by @grhkm21, David Coudert]
+#38193: Matthias Koppe: `sage.algebras`...`sage.topology`: Doctest cosmetics, `# needs`, import fixes [Reviewed by Kwankyu Lee]
+#38198: Cyril Bouvier: Improve complexity comments for graphs [Reviewed by David Coudert]
+#38209: @grhkm21: Fix infinite loop bug in doctest from #36581 [Reviewed by Travis Scrimshaw]
+#38210: Matthias Koppe: `sage.rings`: Modularization fixes (imports), `# needs` [Reviewed by Kwankyu Lee]
+#37998: Matthias Koppe: Update conda-lock files, rename macOS conda-lock files to match CI Conda, remove unexplained duplicate lock files [Reviewed by Kwankyu Lee]
+#38222: Matthias Koppe: Reject system gap 4.13
+#38260: Matthias Koppe: `build/pkgs/pynormaliz`: Fix tarball name, version_requirements.txt [Reviewed by Travis Scrimshaw]
+#38201: Matthias Koppe: Replace uses of `setup.py bdist_wheel` and direct uses of `python3 -m build`
+#38220: Kwankyu Lee: Fix doc deployment to netlify for releases [Reviewed by Matthias Koppe]
+#38274: Kwankyu Lee: Fix broken anchors in CHANGES.html of doc preview
+#38304: Matthias Koppe: Fix sagelib install with `configure --disable-editable`
+#38309: Frederic Chapoton: fixin' the ruff linter [Reviewed by Matthias Koppe]
+#38135: Antonio Rojas: Use `magick` command instead of the deprecated `convert` if available [Reviewed by Dima Pasechnik]
+#38226: Matthias Koppe: `build/pkgs/setuptools_scm`: Upgrade to 8.1.0, fix dependency typing_extensions, change some packages to `wheel` [Reviewed by Kwankyu Lee]
+#38285: Kwankyu Lee: Add version selector to doc [Reviewed by Matthias Koppe]
+#38332: Kwankyu Lee: Add announcement banner also for PRs  over stable release
+#38294: Matthias Koppe, Kwankyu Lee, Antonio Rojas: Filter out R warnings
+#38319: Matthias Koppe, Kwankyu Lee: `build/pkgs/sage_numerical_backends_coin`, `sage_numerical_backends_cplex`, `sage_numerical_backends_gurobi`: Update to 10.4 (includes fix for Cython 3)
+#38353: Kwankyu Lee: Fix a bug that breaks CHANGES.html again [Reviewed by Matthias Koppe]
+#38378: Kwankyu Lee: CI: Create doc directory regardless of develop or PR [Reviewed by Matthias Koppe]
