@@ -1,4 +1,4 @@
-Sage 10.1 was released on 2023-08-23. It is available from:
+Sage 10.1 was released on 2023-08-20. It is available from:
 
   * https://www.sagemath.org/download-source.html
 
