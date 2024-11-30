@@ -1338,6 +1338,9 @@ Please keep the list in alphabetical order by last name!
  name="Amaury Durand"
  trac="adurand"/>
 <contributor
+ name="Aaron Dwyer"
+ github="aadwyer"/>
+<contributor
  name="Madison Van Dyk"
  trac="m3vandyk"/>
 <contributor
@@ -3178,6 +3181,9 @@ Please keep the list in alphabetical order by last name!
  location="Institute of Mathematical Sciences, Chennai, India"
  trac="mkamalakshya"/>
 <contributor
+ name="Ivan Maidanski"
+ github="ivmai"/>
+<contributor
  name="Celine Maistret"/>
 <contributor
  name="Rusydi H. Makarim"
@@ -3488,6 +3494,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Stephen Montgomery-Smith"
  trac="stephen"/>
+<contributor
+ name="Pietro Monticone"
+ github="pitmonticone"/>
 <contributor
  name="David Montminy"
  trac="dmont"/>
@@ -4031,6 +4040,9 @@ Please keep the list in alphabetical order by last name!
  url="http://www.lix.polytechnique.fr/~ponty"
  trac="yponty"/>
 <contributor
+ name="Giacomo Pope"
+ github="GiacomoPope"/>
+<contributor
  name="Pablo Portilla"
  location="ICMAT, Spain"
  url="https://www.icmat.es/pablo.portilla"
@@ -4140,6 +4152,9 @@ Please keep the list in alphabetical order by last name!
  name="Biswajit Ransingh"
  location="IMSc, Chennai"
  trac="bransingh"/>
+<contributor
+ name="Saatvik Rao"
+ github="saatvikraoIITGN"/>
 <contributor
  name="Jens Rasch"
  description="calculus"
@@ -4724,6 +4739,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Kenneth Smith"/>
 <contributor
+ name="Jared Smith"
+ github="MrBanananator"/>
+<contributor
  name="Vladimir Smolyar"/>
 <contributor
  name="Hal Snyder"
@@ -4985,6 +5003,9 @@ Please keep the list in alphabetical order by last name!
  github="yooyiten"/>
 <contributor
  name="Scot Terry"/>
+<contributor
+ name="Gerald Teschl"
+ github="teschlg"/>
 <contributor
  name="Damiano Testa"/>
 <contributor
@@ -5507,6 +5528,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Kaui Yu"/>
 <contributor
+ name="Yutao Yuan"
+ github="infmagic2047"/>
+<contributor
  name="Michael Yurko"
  trac="myurko"/>
 <contributor
@@ -5537,6 +5561,9 @@ Please keep the list in alphabetical order by last name!
  work="Nankai University, China"
  location="Nankai University, China"
  trac="pbzhang"/>
+<contributor
+ name="Mark Zhang"
+ github="marklyzhang"/>
 <contributor
  name="Hongli Zhao"
  trac="honglizhaobob"/>
@@ -5602,6 +5629,9 @@ Please keep the list in alphabetical order by last name!
  location="Louisiana State University"
  url="http://www.math.lsu.edu/~svanzwam/"
  trac="Stefan"/>
+<contributor
+ name="Sourabh singh"
+ github="SouSingh"/>
 <contributor
  trac="arattan"/>
 <contributor
