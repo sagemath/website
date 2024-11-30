@@ -2,20 +2,20 @@ Sage 10.0 was released on 2023-05-20. It is available from:
 
   * https://www.sagemath.org/download-source.html
 
-Sage (http://www.sagemath.org) is developed by volunteers and
-combines hundreds of open source packages.
+Sage (http://www.sagemath.org) is developed by volunteers and combines
+hundreds of open source packages.
 
-The following 68 people contributed to this release.
-Of those, 13 made their first contribution to Sage:
+The following 68 people contributed to this release. Of those, 13 made
+their first contribution to Sage:
 
   - Antonio Rojas
   - Andrey Belgorodski
   - Alex Chandler
   - Aram Dermenjian
   - Alex J. Best
-  - Agamdeep Singh         [First Contribution]
-  - Alex Hutman            [First Contribution]
-  - Aadya Chinubhai        [First Contribution]
+  - Agamdeep Singh         [First contribution]
+  - Alex Hutman            [First contribution]
+  - Aadya Chinubhai        [First contribution]
   - Andy Howell
   - Antoine Leudiere
   - Bryan Gillespie
@@ -28,7 +28,7 @@ Of those, 13 made their first contribution to Sage:
   - David Ayotte
   - David Coudert
   - Eric Gourgoulhon
-  - Eloi Torrents          [First Contribution]
+  - Eloi Torrents          [First contribution]
   - Edgar Costa
   - Enrique Artal
   - Frederic Chapoton
@@ -45,23 +45,23 @@ Of those, 13 made their first contribution to Sage:
   - Martin Rubey
   - Moritz Firsching
   - Michael Orlitzky
-  - Marie Bonboire         [First Contribution]
+  - Marie Bonboire         [First contribution]
   - Matthias Koppe
   - Max Horn
   - Mauricio Collares
   - Marc Mezzarobba
-  - Matan Ziv-Av           [First Contribution]
+  - Matan Ziv-Av           [First contribution]
   - Miguel Marco
   - Peter Bruin
-  - Priyanshu Kumar Rai    [First Contribution]
+  - Priyanshu Kumar Rai    [First contribution]
   - Rémy Oudompheng
-  - Rohan Garg             [First Contribution]
+  - Rohan Garg             [First contribution]
   - Ralf Hemmecke
-  - Sanjay Rijal           [First Contribution]
+  - Sanjay Rijal           [First contribution]
   - Sebastien Labbe
   - Samuel Lelievre
   - Sebastian Oehms
-  - Tirthankar Mazumder    [First Contribution]
+  - Tirthankar Mazumder    [First contribution]
   - Trevor Karn
   - Travis Scrimshaw
   - Tobias Diez
@@ -70,14 +70,16 @@ Of those, 13 made their first contribution to Sage:
   - Volker Braun
   - Xavier Caruso
   - @Bruno-TT
-  - @mathcals              [First Contribution]
+  - @mathcals              [First contribution]
   - @wrongisright
   - @aritra-bhattacharya-0
   - @MatteoCati
-  - @minaminao             [First Contribution]
-  - @yukibl                [First Contribution]
+  - @minaminao             [First contribution]
+  - @yukibl                [First contribution]
 
-* We merged 292 pull requests in this release.
+Release manager: Volker Braun
+
+We merged 292 pull requests in this release.
 
 Merged in sage-10.0:
 
