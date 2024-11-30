@@ -683,7 +683,6 @@ div.mdesc ul {
 .github,
 .trac {
     text-align: left;
-    display: block;
     font-style: italic;
     font-size: 90%;
 }
