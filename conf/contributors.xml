@@ -1909,6 +1909,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Jing Guo"/>
 <contributor
+ name="Jing Guo"
+ github="guojing0"/>
+<contributor
  name="Vipul Gupta"
  trac="vipul73921"
  github="vipul79321"/>
@@ -2132,6 +2135,9 @@ Please keep the list in alphabetical order by last name!
  trac="jasonbhill"/>
 <contributor
  name="Leif Hille"/>
+<contributor
+ name="Forrest Hilton"
+ github="ForrestHilton"/>
 <contributor
  name="Ryan Hinton"
  location="University of Virginia"
@@ -2933,6 +2939,9 @@ Please keep the list in alphabetical order by last name!
  name="Jonathan Lee"
  trac="jlee"/>
 <contributor
+ name="Junhee Lee"
+ github="zk-Lee"/>
+<contributor
  name="Jerome Lefebvre"
  location="University of British Columbia, Vancouver"
  trac="jlefebvre"/>
@@ -3530,6 +3539,9 @@ Please keep the list in alphabetical order by last name!
  name="Simon Morris"
  trac="simon"/>
 <contributor
+ name="Anton Mosich"
+ github="antonmosich"/>
+<contributor
  name="Oleksandr Motsak"
  trac="OleksandrMotsak"/>
 <contributor
@@ -3939,6 +3951,9 @@ Please keep the list in alphabetical order by last name!
  name="Thomas Petiteau"
  trac="tpetiteau"/>
 <contributor
+ name="Ognjen Petrov"
+ github="OP5642"/>
+<contributor
  name="Stephan Pfannerer"
  trac="pfannerer"/>
 <contributor
@@ -3948,6 +3963,9 @@ Please keep the list in alphabetical order by last name!
  name="Markus Pfeiffer"
  location="University of St Andrews"
  trac="markuspf"/>
+<contributor
+ name="Dang Phan"
+ github="MatheMagicianPi"/>
 <contributor
  name="David Philp"/>
 <contributor
@@ -5431,6 +5449,9 @@ Please keep the list in alphabetical order by last name!
  url="https://www.maths.nottingham.ac.uk/plp/pmzcw/"
  trac="wuthrich"
  github="categorie"/>
+<contributor
+ name="Chris Wuthrich"
+ github="chriswuthrich"/>
 <contributor
  name="Sandi Xhumari"
  location="University of Connecticut, Storrs, CT"
