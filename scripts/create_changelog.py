@@ -52,12 +52,12 @@ def get_last_name(full_name):
 def merge_contributors(original_file, new_contributors):
     """
     Merge new contributors into the existing contributors XML file and sort alphabetically by last name.
-    
+
     Args:
         original_file (str): Path to the existing contributors XML file.
-        new_contributors (list): A list of tuples, each containing (full_name, github_username) 
+        new_contributors (list): A list of tuples, each containing (full_name, github_username)
                                 of new contributors to be added.
-    
+
     Side effects:
         - Modifies the original XML file in-place
     """
@@ -71,10 +71,10 @@ def merge_contributors(original_file, new_contributors):
         new_contributor.set('github', github)
 
         tree.append(new_contributor)
-    
+
     sorted_contributors = sorted(
         tree.findall('contributor'),
-        # Items which don't have a name attribute are placed at the end 
+        # Items which don't have a name attribute are placed at the end
         key=lambda x: unidecode(get_last_name(x.get('name', '\x7F'))) # '\x7F' is highest ASCII value
     )
 
@@ -117,7 +117,7 @@ def merge_contributors(original_file, new_contributors):
         contrib_line += '/>'
         xml_lines.append(contrib_line)
     xml_lines.append('</contributors>')
-    
+
     with open(original_file, 'w',encoding='utf-8') as f:
         f.write('\n'.join(xml_lines))
 
@@ -125,7 +125,7 @@ def merge_contributors(original_file, new_contributors):
 def map_git_to_names():
     """
     Create a mapping between GitHub usernames and full names from the contributors XML file.
-    
+
     Side effects:
         - Populates the global git_to_name dictionary with GitHub username to full name mappings
     """
@@ -141,10 +141,10 @@ def map_git_to_names():
 def fetch_real_name(github_name):
     """
     Fetch the full name of a GitHub user via the GitHub API.
-    
+
     Args:
         github_name (str): GitHub username to look up.
-    
+
     Side effects:
         - Updates the global git_to_name dictionary if a full name is found
         - Adds the full name and GitHub username to the global new_names list
@@ -167,9 +167,9 @@ def fetch_real_name(github_name):
 
 def update_names():
     """
-    Update contributor names by replacing GitHub usernames with real names 
+    Update contributor names by replacing GitHub usernames with real names
     or formatted usernames (in the form @<github_username>).
-    
+
     Side effects:
         - Attempts to fetch real names for contributors not already in global git_to_name
         - Modifies global all_contribs and global first_contribs to use real names or formatted usernames
@@ -192,10 +192,10 @@ def update_names():
 def get_release_data(tag):
     """
     Fetch release data for a specific GitHub tag.
-    
+
     Args:
         tag (str): The release tag to fetch data for.
-    
+
     Returns:
         dict or None: Release data if found, otherwise None.
     """
@@ -213,10 +213,10 @@ def get_release_data(tag):
 def get_release_date(release_data):
     """
     Extract the publication date from release data.
-    
+
     Args:
         release_data (dict): Release data from GitHub API.
-    
+
     Returns:
         str: Formatted date of release (YYYY-MM-DD) or 'Unavailable' if no date is found.
     """
@@ -229,10 +229,10 @@ def get_release_date(release_data):
 def extract_pr_info(release_data):
     """
     Extract pull request information from release body text.
-    
+
     Args:
         release_data (dict): Release data from GitHub API.
-    
+
     Returns:
         list: A list of dictionaries, each containing PR details:
               - title: PR title
@@ -264,10 +264,10 @@ def extract_pr_info(release_data):
 def update_first_contribs(release_data):
     """
     Update the set of first-time contributors from release body text.
-    
+
     Args:
         release_data (dict): Release data from GitHub API.
-    
+
     Side effects:
         - Adds newly identified first-time contributors to the global first_contribs set
     """
@@ -282,13 +282,13 @@ def update_first_contribs(release_data):
 def get_authors(pr_id):
     """
     Retrieve the authors of commits for a specific pull request.
-    
+
     Args:
         pr_id (str): Pull request ID.
-    
+
     Returns:
         list: Unique GitHub usernames of PR commit authors, excluding automated bot accounts.
-    
+
     Side effects:
         - Updates the global all_contribs set with discovered authors
     """
@@ -314,15 +314,15 @@ def get_authors(pr_id):
 def get_reviewers(pr_id, authors):
     """
     Retrieve the reviewers of a specific pull request.
-    
+
     Args:
         pr_id (str): Pull request ID.
         authors (list): List of PR authors to exclude from reviewers.
-    
+
     Returns:
-        list: Unique GitHub usernames of PR reviewers, 
+        list: Unique GitHub usernames of PR reviewers,
               excluding PR authors and automated bot accounts.
-    
+
     Side effects:
         - Updates the global all_contribs set with discovered reviewers
     """
@@ -359,7 +359,7 @@ def get_latest_tags():
 def sort_tags(tag):
     """
     Custom sorting key for release tags to prioritize in order: beta, RC, and stable versions.
-    
+
     Args:
         tag (str): Tag name to be sorted.
     """
@@ -375,12 +375,12 @@ def sort_tags(tag):
 def save_to_file(filename, ver, date_of_release):
     """
     Generate and save the changelog to a text file.
-    
+
     Args:
         filename (str): Path to the output changelog file.
         ver (str): Sage version number.
         date_of_release (str): Date of the release.
-    
+
     Side effects:
         - Creates a changelog file with contributor and PR information
     """
@@ -453,7 +453,7 @@ if __name__ == '__main__':
     else:
         print("No information found.")
         exit(1)
-    
+
     if new_names:
         merge_contributors('conf/contributors.xml',new_names)
         print("Added new contributors to conf/contributors.xml")
