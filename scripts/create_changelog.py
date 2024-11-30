@@ -26,6 +26,7 @@ GITHUB_PAT = os.getenv('GITHUB_PAT')
 BASE_URL = r"https://api.github.com/repos/sagemath/sage"
 HEADERS = {'Authorization': f'token {GITHUB_PAT}', }
 AUTOMATED_BOTS = ['dependabot[bot]', 'github-actions', 'renovate[bot]']
+RELEASE_MANAGER = "Volker Braun"
 
 # Maps the github username to contributor name
 git_to_name = {}
@@ -393,6 +394,7 @@ def save_to_file(filename, ver, date_of_release):
         max_name_len = max([len(c) for c in all_contribs])
         for c in all_contribs:
             file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First contribution]' if c in first_contribs else ''}\n")
+        file.write(f"\nRelease manager: {RELEASE_MANAGER}\n")
         pr_count = sum([len(all_info[tag]) for tag in all_info])
         file.write(f"\nWe merged {pr_count} pull requests in this release.")
         sorted_tags = sorted(all_info.keys(), key=sort_tags)
