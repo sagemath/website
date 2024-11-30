@@ -1,0 +1,39 @@
+name: Generate Changelog
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        description: 'Release tag of latest release'
+        required: true
+
+permissions:
+      contents: write
+
+jobs:
+  process-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+          
+      - name: Run Script
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          GITHUB_PAT: ${{ secrets.SAGE_ACCESS_TOKEN }}
+        run: python scripts/create_changelog.py "$RELEASE_TAG"
+      
+      - name: Commit and Push Changes
+        env:
+          RELEASE_TAG: ${{ inputs.release_tag }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "src/changelogs/sage-${RELEASE_TAG}.txt"
+          git add conf/contributors.xml
+          git commit -m "Added changelog for release ${{ inputs.release_tag }}"
+          git push
