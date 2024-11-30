@@ -220,7 +220,7 @@ def get_release_date(release_data):
     Returns:
         str: Formatted date of release (YYYY-MM-DD) or 'Unavailable' if no date is found.
     """
-    date_time = release_data.get('published_at', '')
+    date_time = release_data.get('created_at', '')
     if not date_time:
         return 'Unavailable'
     return date_time.split('T')[0]
