@@ -170,7 +170,7 @@ def writeToDevmap():
             if name:
                 all_names.append(name)
 
-        descr = changelog_contributions(all_names) + [d.strip() for d in descr.split(r';')]
+        descr = changelog_contributions(all_names) + [d.strip() for d in descr.split(r';') if d]
 
         for d in descr:
             # since there are tags in the string, we parse it
@@ -183,17 +183,19 @@ def writeToDevmap():
             github = convert_trac_username(main_trac)
 
         if github:
+            span = devmap.createElement("span")
             a = devmap.createElement("a")
             a.setAttribute("href", f'https://github.com/sagemath/sage/issues?q={github}')
             a.setAttribute("class", "github")
             a.appendChild(devmap.createTextNode(f"issues"))
-            td.appendChild(a)
-            td.appendChild(devmap.createTextNode(", "))
+            span.appendChild(a)
+            span.appendChild(devmap.createTextNode(", "))
             a = devmap.createElement("a")
             a.setAttribute("href", f'https://github.com/sagemath/sage/commits?author={github}')
             a.setAttribute("class", "github")
             a.appendChild(devmap.createTextNode(f"commits (github: {github})"))
-            td.appendChild(a)
+            span.appendChild(a)
+            td.appendChild(span)
 
         td.setAttribute("class", "description")
         tr.appendChild(td)
