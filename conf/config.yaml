@@ -1,9 +1,9 @@
-releasedate: "2024-07-20"
+releasedate: "2024-12-04"
 sage: "SageMath"
 logo: "pix/logo_sagemath+icon_oldstyle.png"
-version: "10.4"
+version: "10.5"
 version_solaris_bin: None
-version_src: "10.4"
+version_src: "10.5"
 git: "https://github.com/sagemath/sage.git"
 git_website: "https://github.com/sagemath/website"
 webmaster_href: "mailto:harald+smo@schil.ly"
