@@ -407,6 +407,41 @@ def save_to_file(filename, ver, date_of_release):
 
     print(f"Saved changelog to {filename}")
 
+def get_latest_stable_release():
+    """Fetch the latest stable release tag from the API.
+
+    Returns:
+        str | None: The latest release tag if successful, None if the request fails
+    """
+    url = f"{BASE_URL}/releases/latest"
+    try:
+        res = requests.get(url, headers=HEADERS)
+        res.raise_for_status()
+        res = res.json()
+        tag = res['tag_name']
+        date = get_release_date(res)
+        return {"tag":tag,"date":date}
+    except Exception as e:
+        print(f"Failed to fetch latest stable release",e)
+        return None
+
+def update_config(ver: str, release_date: str, config_file_path: str):
+    """Update version and release date in the config file.
+    
+    Args:
+        ver (str): New version to set
+        release_date (str): Release date to set
+        config_file_path (str): Path to the config file
+    """
+    with open(config_file_path, 'r') as file:
+        content = file.read()
+
+    content = re.sub(r'releasedate:\s*".*?"', f'releasedate: "{release_date}"', content)
+    content = re.sub(r'version:\s*".*?"', f'version: "{ver}"', content)
+    content = re.sub(r'version_src:\s*".*?"',f'version_src: "{ver}"',content)
+
+    with open(config_file_path, 'w') as file:
+        file.write(content)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Fetch release data from GitHub and extract PR info")
@@ -450,6 +485,9 @@ if __name__ == '__main__':
     all_contribs = sorted(all_contribs, key=lambda x: (x[0].startswith('@'), x[0]))
     if all_info:
         save_to_file(filepath, ver, date_of_release)
+        latest_release = get_latest_stable_release()
+        if latest_release:
+            update_config(latest_release['tag'],latest_release['date'],'conf/config.yaml')
     else:
         print("No information found.")
         exit(1)
