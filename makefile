@@ -7,7 +7,7 @@ MIRROR_FILES := scripts/mirror_list scripts/metalink.helper scripts/torrent.help
 default: clean render
 
 clean:
-	- mkdir -p www && cd www && find -P -delete
+	- mkdir -p www && cd www && find . -depth -mindepth 1 -delete
 
 devmap: templates/devs.html
 
@@ -27,7 +27,7 @@ render: mirrors publications devmap
 	python render.py $(ARGS)
 
 server:
-	cd www && python -m SimpleHTTPServer 8181
+	cd www && python3 -m http.server 8181
 
 show:
 	python -c 'from webbrowser import open; open("http://127.0.0.1:8181/")'
