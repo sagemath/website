@@ -436,7 +436,7 @@ def update_config(ver: str, release_date: str, config_file_path: str):
     with open(config_file_path, 'r') as file:
         content = file.read()
 
-    content = re.sub(r'releasedate:\s*".*?"', f'releasedate: "{release_date}"', content)
+    content = re.sub(r'release_date:\s*".*?"', f'release_date: "{release_date}"', content)
     content = re.sub(r'version:\s*".*?"', f'version: "{ver}"', content)
     content = re.sub(r'version_src:\s*".*?"',f'version_src: "{ver}"',content)
 
