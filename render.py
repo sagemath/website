@@ -138,7 +138,7 @@ def render():
         os.mkdir("www")
 
     log("config: {} version {} @ {}, {} mirrors and".format(
-        config["sage"], config["version"], config["releasedate"],
+        config["sage"], config["version"], config["release_date"],
         len(mirrors)))
     # for line in yaml.dump(config, indent=True, default_flow_style=False).splitlines():
     #    log("    %s" % line)
