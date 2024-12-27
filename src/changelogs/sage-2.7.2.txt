@@ -1,0 +1,9 @@
+Sat Jul 28 21:47:59 2007
+------------------------
+2.7.2:
+       * m albrecht (refereed by r bradshaw): some tiny bug fixes
+       * s behnel, w stein: cython-0.9.6 replaces sagex; this is a merge of lxml-pyrex and sagex.
+       * j bobber, b hart, w stein, et al.: fast computation of number_of_partitions
+       * w stein, j walker: misc little bug fixes
+       * w stein: added "sage -min" option to start sage without defining global vars
+       * w stein: some modular forms improvements and bug fixes
