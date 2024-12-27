@@ -61,7 +61,7 @@ def merge_contributors(original_file, new_contributors):
     Side effects:
         - Modifies the original XML file in-place
     """
-    with open(original_file, 'r',encoding='utf-8') as f:
+    with open(original_file, 'r', encoding='utf-8') as f:
         original_content = f.read()
     tree = ET.fromstring(original_content)
 
@@ -75,7 +75,7 @@ def merge_contributors(original_file, new_contributors):
     sorted_contributors = sorted(
         tree.findall('contributor'),
         # Items which don't have a name attribute are placed at the end
-        key=lambda x: unidecode(get_last_name(x.get('name', '\x7F'))) # '\x7F' is highest ASCII value
+        key=lambda x: unidecode(get_last_name(x.get('name', '\x7F')))  # '\x7F' is highest ASCII value
     )
 
     for cont in tree.findall('contributor'):
@@ -113,12 +113,12 @@ def merge_contributors(original_file, new_contributors):
     for contributor in sorted_contributors:
         contrib_line = '<contributor'
         for attr, value in contributor.attrib.items():
-            contrib_line += f'\n {attr}="{html.escape(value,quote=False)}"'
+            contrib_line += f'\n {attr}="{html.escape(value, quote=False)}"'
         contrib_line += '/>'
         xml_lines.append(contrib_line)
     xml_lines.append('</contributors>')
 
-    with open(original_file, 'w',encoding='utf-8') as f:
+    with open(original_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(xml_lines))
 
 
@@ -151,16 +151,16 @@ def fetch_real_name(github_name):
     """
     url = f"https://api.github.com/users/{github_name}"
     try:
-        res = requests.get(url,headers=HEADERS)
+        res = requests.get(url, headers=HEADERS)
         res.raise_for_status()
         user = res.json()
         if not user['name']:
             return
         name_parts = user['name'].split()
-        if len(name_parts) < 2: # Full name is not available
+        if len(name_parts) < 2:  # Full name is not available
             return
         git_to_name[github_name] = user['name']
-        new_names.append((user['name'],github_name))
+        new_names.append((user['name'], github_name))
     except Exception as e:
         print(f"Failed to fetch real name for @{github_name} : {str(e)}")
 
@@ -182,11 +182,11 @@ def update_names():
             fetch_real_name(c)
     for tag in all_info:
         for pr in all_info[tag]:
-            pr['creator'] = git_to_name.get(pr['creator'],f"@{pr['creator']}")
-            pr['authors'] = [git_to_name.get(a,f"@{a}")  for a in pr['authors']]
-            pr['reviewers'] = [git_to_name.get(r,f"@{r}") for r in pr['reviewers']]
-    all_contribs = set([git_to_name.get(c,f"@{c}") for c in all_contribs])
-    first_contribs = set([git_to_name.get(c,f"@{c}") for c in first_contribs])
+            pr['creator'] = git_to_name.get(pr['creator'], f"@{pr['creator']}")
+            pr['authors'] = [git_to_name.get(a, f"@{a}") for a in pr['authors']]
+            pr['reviewers'] = [git_to_name.get(r, f"@{r}") for r in pr['reviewers']]
+    all_contribs = set([git_to_name.get(c, f"@{c}") for c in all_contribs])
+    first_contribs = set([git_to_name.get(c, f"@{c}") for c in first_contribs])
 
 
 def get_release_data(tag):
@@ -393,7 +393,7 @@ def save_to_file(filename, ver, date_of_release):
         file.write(f"their first contribution to Sage:\n\n")
         max_name_len = max([len(c) for c in all_contribs])
         for c in all_contribs:
-            file.write(f"  - {c}{' '*(max_name_len - len(c)) + ' [First contribution]' if c in first_contribs else ''}\n")
+            file.write(f"  - {c}{' ' * (max_name_len - len(c)) + ' [First contribution]' if c in first_contribs else ''}\n")
         file.write(f"\nRelease manager: {RELEASE_MANAGER}\n")
         pr_count = sum([len(all_info[tag]) for tag in all_info])
         file.write(f"\nWe merged {pr_count} pull requests in this release.")
@@ -406,6 +406,44 @@ def save_to_file(filename, ver, date_of_release):
                     file.write(f" [Reviewed by {', '.join(pr['reviewers'])}]")
 
     print(f"Saved changelog to {filename}")
+
+
+def get_latest_stable_release():
+    """Fetch the latest stable release tag from the API.
+
+    Returns:
+        str | None: The latest release tag if successful, None if the request fails
+    """
+    url = f"{BASE_URL}/releases/latest"
+    try:
+        res = requests.get(url, headers=HEADERS)
+        res.raise_for_status()
+        res = res.json()
+        tag = res['tag_name']
+        date = get_release_date(res)
+        return {"tag": tag, "date": date}
+    except Exception as e:
+        print(f"Failed to fetch latest stable release", e)
+        return None
+
+
+def update_config(ver: str, release_date: str, config_file_path: str):
+    """Update version and release date in the config file.
+
+    Args:
+        ver (str): New version to set
+        release_date (str): Release date to set
+        config_file_path (str): Path to the config file
+    """
+    with open(config_file_path, 'r') as file:
+        content = file.read()
+
+    content = re.sub(r'release_date:\s*".*?"', f'release_date: "{release_date}"', content)
+    content = re.sub(r'version:\s*".*?"', f'version: "{ver}"', content)
+    content = re.sub(r'version_src:\s*".*?"', f'version_src: "{ver}"', content)
+
+    with open(config_file_path, 'w') as file:
+        file.write(content)
 
 
 if __name__ == '__main__':
@@ -450,12 +488,15 @@ if __name__ == '__main__':
     all_contribs = sorted(all_contribs, key=lambda x: (x[0].startswith('@'), x[0]))
     if all_info:
         save_to_file(filepath, ver, date_of_release)
+        latest_release = get_latest_stable_release()
+        if latest_release:
+            update_config(latest_release['tag'], latest_release['date'], 'conf/config.yaml')
     else:
         print("No information found.")
         exit(1)
 
     if new_names:
-        merge_contributors('conf/contributors.xml',new_names)
+        merge_contributors('conf/contributors.xml', new_names)
         print("Added new contributors to conf/contributors.xml")
     else:
         print("No new contributors found.")
