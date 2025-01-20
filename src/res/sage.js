@@ -149,17 +149,6 @@ function initMathjax() {
   head.appendChild(script);
 }
 
-/* Twitter */
-function initTwitter(d,s,id){
-  var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
-  if(!d.getElementById(id)){
-    js=d.createElement(s);
-    js.id=id;
-    js.src=p+'://platform.twitter.com/widgets.js';
-    fjs.parentNode.insertBefore(js,fjs);
-  }
-}
-
 /* facebook app */
 //function initFacebook(d, s, id) {
 //  var js, fjs = d.getElementsByTagName(s)[0];
@@ -211,6 +200,5 @@ $(sage.touchMenu);
 //$(sage.tracklinks);
 $(initHistats);
 $(initMathjax);
-$(function() { initTwitter(document, 'script', 'twitter-wjs');});
 //$(function() { initFacebook(document, 'script', 'facebook-jssdk');});
 $(initClustermap);
