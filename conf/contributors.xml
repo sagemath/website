@@ -210,6 +210,9 @@ Please keep the list in alphabetical order by last name!
  name="Vishal Arul"
  trac="varul"/>
 <contributor
+ name="Mohammed Ashraf"
+ github="mashraf8"/>
+<contributor
  name="Dario Asprone"
  trac="Vaush"/>
 <contributor
@@ -245,6 +248,9 @@ Please keep the list in alphabetical order by last name!
  url="http://azi.dev.si"
  trac="azi"/>
 <contributor
+ name="Jean-François B."
+ github="jfbu"/>
+<contributor
  name="Angelica Babei"
  location="Dartmouth College"
  trac="ababei"/>
@@ -262,6 +268,9 @@ Please keep the list in alphabetical order by last name!
  trac="baechler"/>
 <contributor
  name="Jason Badlaw"/>
+<contributor
+ name="Spencer Bagley"
+ github="rhinopotamus"/>
 <contributor
  name="Jin-yeong Bak"/>
 <contributor
@@ -2192,6 +2201,9 @@ Please keep the list in alphabetical order by last name!
  name="Kyle Hofmann"
  github="kylehofmann"/>
 <contributor
+ name="Lennard Hofmann"
+ github="Ordoviz"/>
+<contributor
  name="Mike Hogan"/>
 <contributor
  name="Chris Holdsworth"
@@ -2626,6 +2638,9 @@ Please keep the list in alphabetical order by last name!
  name="Saad Khalid"
  trac="zonova"/>
 <contributor
+ name="Aditya Khambete"
+ github="AdityaK1729"/>
+<contributor
  name="Lloyd Kilford"
  altnames="L. J. P. Kilford"
  work="Research Fellow, University of Bristol"
@@ -2889,11 +2904,17 @@ Please keep the list in alphabetical order by last name!
  url="http://www-rocq.inria.fr/secret/Yann.Laigle-Chapuy"
  trac="ylchapuy"/>
 <contributor
+ name="Pierre Lairez"
+ github="lairez"/>
+<contributor
  name="Thomas Lam"
  trac="tfylam"/>
 <contributor
  name="Matthew Lancellotti"
  trac="mvlancellotti"/>
+<contributor
+ name="Caleb Van't Land"
+ github="pyrusbrawler64"/>
 <contributor
  name="Jaclyn Lang"
  trac="jlang"/>
@@ -3007,6 +3028,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Seewoo Lee"
  github="seewoo5"/>
+<contributor
+ name="Kwankyu Lee"
+ github="ekwankyu"/>
 <contributor
  name="Jerome Lefebvre"
  location="University of British Columbia, Vancouver"
@@ -3446,6 +3470,9 @@ Please keep the list in alphabetical order by last name!
  trac="medlock"
  github="janmedlock"/>
 <contributor
+ name="Shriya Meenakshisundaram"
+ github="25shriya"/>
+<contributor
  name="Paolo Menegatti"
  trac="pmenegat"/>
 <contributor
@@ -3648,6 +3675,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Greg Muller"
  trac="gmuller"/>
+<contributor
+ name="Rubén Muñoz--Bertrand"
+ github="r-mb"/>
 <contributor
  name="Max Murphy"/>
 <contributor
@@ -3958,6 +3988,9 @@ Please keep the list in alphabetical order by last name!
  url="http://www.maths.dur.ac.uk/users/irene.pasquinelli/"
  trac="ipasquinelli"/>
 <contributor
+ name="Hugo Passe"
+ github="HugoPasse"/>
+<contributor
  name="Mitesh Patel"
  trac="mpatel"
  github="qed777"/>
@@ -4237,6 +4270,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Somindu Chaya Ramanna"
  trac="somindu"/>
+<contributor
+ name="Soham Rane"
+ github="soham30rane"/>
 <contributor
  name="Niels Ranosch"
  url="http://sage-citation.blogspot.com/"
@@ -4664,6 +4700,9 @@ Please keep the list in alphabetical order by last name!
  name="Robert Schwarz"
  location="Heidelberg, Germany"
  trac="rschwarz"/>
+<contributor
+ name="Ludovic Schwob"
+ github="Siegfried68"/>
 <contributor
  name="Stan Schymanski"
  location="Max Planck Institute for Biogeochemistry"
@@ -5333,6 +5372,9 @@ Please keep the list in alphabetical order by last name!
  name="Kartik Venkatram"
  trac="kartikv"/>
 <contributor
+ name="Eduardo Venturini"
+ github="ventu06"/>
+<contributor
  name="Thibaut Verron"/>
 <contributor
  name="John Verzani"/>
@@ -5344,6 +5386,9 @@ Please keep the list in alphabetical order by last name!
  name="Janoš Vidali"
  trac="jaanos"
  github="jaanos"/>
+<contributor
+ name="Fabien Vignes-Tourneret"
+ github="fabien-vignes"/>
 <contributor
  name="Santiago Vila"
  trac="sanvila"/>
@@ -5599,6 +5644,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Weixin Wu"
  trac="w.wu"/>
+<contributor
+ name="Henry Wu"
+ github="HenryWu2101"/>
 <contributor
  name="Chris Wuthrich"
  altnames="Cristian Wuthrich"

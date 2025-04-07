@@ -1,0 +1,584 @@
+Sage 10.6 was released on 2025-03-31. It is available from:
+
+  * https://www.sagemath.org/download-source.html
+
+Sage (http://www.sagemath.org) is developed by volunteers and combines
+hundreds of open source packages.
+
+The following 75 people contributed to this release. Of those, 24 made
+their first contribution to Sage:
+
+  - Aram Dermenjian
+  - Antonio Rojas
+  - Aditya Khambete          [First contribution]
+  - Antoine Leudiere
+  - Benjamin Hackl           [First contribution]
+  - Benjamin Hutz            [First contribution]
+  - Caleb Van't Land         [First contribution]
+  - Cyril Bouvier
+  - David Ayotte
+  - David Coudert
+  - Dima Pasechnik
+  - Dave Morris
+  - Eloi Torrents
+  - Enrique Artal
+  - Eduardo Venturini        [First contribution]
+  - Edgar Costa
+  - Frederic Chapoton
+  - Fabien Vignes-Tourneret  [First contribution]
+  - Francois Bissey
+  - Gonzalo Tornaria
+  - Hugo Passe               [First contribution]
+  - Henry Wu                 [First contribution]
+  - Julian Ruth
+  - Janmenjaya Panda
+  - Jackson Walters
+  - Jean-François B.         [First contribution]
+  - John Cremona
+  - John Palmieri
+  - Julien Lavauzelle        [First contribution]
+  - Jean-Philippe Labbe      [First contribution]
+  - Kwankyu Lee              [First contribution]
+  - Lorenz Panny
+  - Lennard Hofmann          [First contribution]
+  - Ludovic Schwob
+  - Marc Culler
+  - Miguel Marco
+  - Martin Rubey
+  - Marc Mezzarobba
+  - M Bussonnier
+  - Michael Orlitzky
+  - Mohammed Ashraf          [First contribution]
+  - Matthias Koppe
+  - Nils Bruin
+  - Pierre Lairez            [First contribution]
+  - Rubén Muñoz--Bertrand
+  - Rusydi H. Makarim
+  - Seewoo Lee
+  - Sebastien Labbe
+  - Sebastian Oehms
+  - Soham Rane               [First contribution]
+  - Sebastian A. Spindler
+  - Shriya Meenakshisundaram
+  - Spencer Bagley
+  - Tomer Bauer
+  - Tobias Diez
+  - Travis Scrimshaw
+  - Vincent Macri
+  - Vincent Delecroix
+  - Vincent Neiger
+  - Xavier Caruso
+  - @mklss                   [First contribution]
+  - @AurelPage
+  - @gmou3
+  - @schmittj
+  - @maple3142               [First contribution]
+  - @keltecc                 [First contribution]
+  - @Oscfon                  [First contribution]
+  - @JosePisco
+  - @Noel-Roemmele           [First contribution]
+  - @user202729
+  - @ymusleh
+  - @camille-garnier         [First contribution]
+  - @grhkm21
+  - @AndreasEnge             [First contribution]
+  - @MercedesHaiech          [First contribution]
+
+Release manager: Volker Braun
+
+We merged 457 pull requests in this release.
+
+Merged in sage-10.6.beta0:
+
+#38987: Frederic Chapoton: some work on deformed Burau matrix [Reviewed by Travis Scrimshaw]
+#39019: Lorenz Panny: simplify isogeny-enumeration code following #35949 [Reviewed by Sebastian A. Spindler]
+#39020: Frederic Chapoton: one more method in FHM-triangles [Reviewed by Travis Scrimshaw]
+#39022: Frederic Chapoton: fix all ruff warnings SIM101 [Reviewed by Martin Rubey, Kwankyu Lee]
+#39023: Michael Orlitzky: Fix the right-border on unicode tables [Reviewed by Martin Rubey, @user202729]
+#39024: Soham Rane: Automated the generation of changelogs in text format [Reviewed by Kwankyu Lee]
+#39028: @user202729: Numerical evaluation of modular form & implement conversion of more modular form spaces to Pari [Reviewed by Travis Scrimshaw]
+#39031: Tobias Diez: Remove pipfile [Reviewed by Frederic Chapoton]
+#39043: @user202729: Some documentation clean-up [Reviewed by Travis Scrimshaw]
+#39044: Martin Rubey: provide default argument for monomial_coefficients [Reviewed by Marc Mezzarobba]
+#39048: Frederic Chapoton: pep8 cleanup in libs [Reviewed by Travis Scrimshaw]
+#39049: Travis Scrimshaw: Fixing typo with $g_i^{-1}$ implementation in Yokonuma-Hecke algebras. [Reviewed by Frederic Chapoton, @user202729]
+#39050: @user202729: Fix exactify caching when interrupted [Reviewed by Travis Scrimshaw]
+#39053: Frederic Chapoton: small-scale refresh for the sandpile file [Reviewed by David Coudert]
+#39054: Frederic Chapoton: pep8 cleanup for structure/ [Reviewed by David Coudert]
+#39055: Frederic Chapoton: pep8 cleanup in repl/ and sat/ [Reviewed by David Coudert]
+#39056: Frederic Chapoton: miscellanous pep8 cleanup [Reviewed by @gmou3]
+#39059: @user202729: Make multivariate ideal reduce() work on integer [Reviewed by Travis Scrimshaw]
+#39066: Kwankyu Lee: Add degree checks for Jacobian models [Reviewed by @user202729, Vincent Macri]
+#39067: Dima Pasechnik: unbreak "--disable-sage_conf" [Reviewed by Kwankyu Lee]
+#39074: Kwankyu Lee: Fix the issue number format in deprecation comment [Reviewed by Frederic Chapoton]
+#39084: Frederic Chapoton: linting : some fixes for pyx files in modular [Reviewed by Martin Rubey]
+#39087: Frederic Chapoton: remove final empty lines in pxd/pxi files [Reviewed by Martin Rubey]
+#37446: Tobias Diez: Add dependency groups to `pyproject.toml` [Reviewed by Dima Pasechnik]
+#38161: Benjamin Hutz: fix green function in projective_ds [Reviewed by Travis Scrimshaw]
+#38508: Travis Scrimshaw, Frederic Chapoton: Hashing affine group elements [Reviewed by Matthias Koppe]
+#38686: Michael Orlitzky: Use the faster libgiac interface for "giac" integration [Reviewed by Dima Pasechnik, Tobias Diez]
+#38834: @user202729: Fast conversion from numpy ndarray to vector [Reviewed by Travis Scrimshaw]
+#38843: @maple3142: Improve Matrix_mod2_dense solve_right performance [Reviewed by @user202729]
+#38874: Tobias Diez: Remove imports from `gsl.all` [Reviewed by Kwankyu Lee]
+#38883: Martin Rubey: provide the tilde species of a species [Reviewed by Frederic Chapoton]
+#38887: Miguel Marco: libbraiding version bump [Reviewed by Travis Scrimshaw, Enrique Artal]
+#38892: Janmenjaya Panda: Implemented methods pertaining to the canonical partition of a matching covered graph [Reviewed by David Coudert]
+#38895: Kwankyu Lee: Remove jupyter_execute directory after doc build finishes [Reviewed by Martin Rubey]
+#38909: Tobias Diez: Fix ruff issues in `manifolds` [Reviewed by Frederic Chapoton]
+#38920: Frederic Chapoton: check for E302 [Reviewed by Martin Rubey, David Coudert]
+#38927: Frederic Chapoton: moving "is_integrally_closed" to the category setup. [Reviewed by Vincent Macri]
+#38935: Michael Orlitzky: src/sage/env.py: don't pass if mismatched SAGE_ROOT is None [Reviewed by Kwankyu Lee]
+#38940: @user202729: Fix flaky simplicial set test [Reviewed by Tobias Diez]
+#38945: @user202729: Allow specifying arguments to Cython cell_magic [Reviewed by Kwankyu Lee]
+#38952: Frederic Chapoton: adding the ring of quantum-valued polynomials [Reviewed by Travis Scrimshaw]
+#38955: Janmenjaya Panda: Overwrote methods concerning loops for a matching covered graph [Reviewed by David Coudert]
+#38956: Michael Orlitzky: Hide GAP finiteness warnings during isomorphism check  [Reviewed by David Coudert]
+#38958: Benjamin Hackl: Allow powers of SignGroup elements to live in other parents [Reviewed by Frederic Chapoton]
+#38970: Dave Morris: Do not allow order of AbelianGroup generator to be negative [Reviewed by Martin Rubey]
+#38972: Antonio Rojas: Fix build of meataxe extension with meson [Reviewed by Tobias Diez]
+#38974: Martin Rubey: allow incomparable labels in SetPartition [Reviewed by Frederic Chapoton]
+#38975: Martin Rubey, Travis Scrimshaw: support left and right actions for species
+#38976: Frederic Chapoton: a few PERF4 suggestions by ruff fixed [Reviewed by David Coudert]
+#38977: Frederic Chapoton: minor details in some pyx files in sets [Reviewed by David Coudert]
+#38978: Frederic Chapoton: avoid using isinstance IntegralDomain in modules [Reviewed by Martin Rubey]
+#38980: Dave Morris: Allow python ints in sage.groups.generic.has_order [Reviewed by Lorenz Panny]
+#38983: Tobias Diez: Use meson as backend for numpy.f2py [Reviewed by Dima Pasechnik]
+#38984: Antonio Rojas: Fix detection of tdlib and mcqd with meson [Reviewed by Travis Scrimshaw]
+#38989: Frederic Chapoton: tentative of free-Algebra functor [Reviewed by Travis Scrimshaw]
+#38991: Dave Morris: many single-backticks should be double-backticks [Reviewed by @user202729, David Coudert]
+#39001: @user202729: Fix crash when specify invalid base for RR and RIF construction [Reviewed by Travis Scrimshaw, @JosePisco]
+#39014: Tobias Diez: Fix a few minor typos [Reviewed by @gmou3]
+#39021: Frederic Chapoton: hot-fix for ruff linter [Reviewed by Martin Rubey]
+
+Merged in sage-10.6.beta1:
+
+#37447: Tobias Diez: Replace bootstrap-conda by grayskull and update conda lock files [Reviewed by Dima Pasechnik, Julian Ruth]
+#38474: @user202729: Implement period_lattice for elliptic curves over RealField, ComplexField, etc. [Reviewed by John Cremona]
+#38844: Dima Pasechnik: remove a spurious adding of the same constraint twice [Reviewed by David Coudert]
+#38936: David Coudert: use `sig_realloc` in method `OP_make_set` [Reviewed by @gmou3]
+#38943: @user202729, Kwankyu Lee: Some documentation improvement
+#38973: Dave Morris: is_t_design needs to verify that every t-tuple is in at least one block [Reviewed by David Coudert]
+#38990: : ⬆️ Bump codecov/codecov-action from 4 to 5 [Reviewed by Kwankyu Lee]
+#38997: @user202729: Document RealIntervalField default printing configuration [Reviewed by Travis Scrimshaw]
+#38998: @user202729: Allow construct RIF element from question-style string [Reviewed by Travis Scrimshaw]
+#39036: Lorenz Panny: implement elliptic-curve point addition for general rings [Reviewed by Vincent Macri]
+#39038: Cyril Bouvier: graphs: implementation of linear-time algorithm for modular decomposition [Reviewed by David Coudert]
+#39045: Frederic Chapoton: partial pep8 cleanup in plot and plot3d [Reviewed by David Coudert]
+#39091: @user202729: Replace Python 2 'long' with Python 3 'int' [Reviewed by Martin Rubey]
+#39094: Dave Morris: Fix numerical_integral with parameters [Reviewed by Travis Scrimshaw]
+#39095: Frederic Chapoton: hot-fix for the linter [Reviewed by Martin Rubey, @user202729]
+#39101: @user202729: Add cython.binding(True) to occurrences of sage_wraps [Reviewed by Tobias Diez]
+#39103: Julien Lavauzelle: Bugfix for erasure decoder of Reed-Solomon codes [Reviewed by Travis Scrimshaw]
+#39105: Frederic Chapoton: two more ruff checks activated [Reviewed by Tobias Diez]
+#39109: Frederic Chapoton: cython-lint fixes in misc/ [Reviewed by David Coudert]
+#39111: Michael Orlitzky: build/pkgs/planarity/spkg-configure.m4: update header check [Reviewed by Frederic Chapoton]
+#39113: Frederic Chapoton: cython-lint cleanup for one pxi file in matrix [Reviewed by David Coudert]
+#39114: @user202729: Remove unnecessary dummy lines in doctests [Reviewed by Kwankyu Lee]
+#39115: Frederic Chapoton: first step of removal of IntegralDomain [Reviewed by Martin Rubey]
+#39121: Dima Pasechnik: more spkg-config.m4 and metadata for python packages [Reviewed by Michael Orlitzky]
+
+Merged in sage-10.6.beta2:
+
+#35403: Tobias Diez: Adopt the “time window-based” policy for support of Python versions from Spec-0 [Reviewed by Dima Pasechnik]
+#38207: @grhkm21, Martin Rubey: Rename PolynomialRing_general to PolynomialRing_generic [Reviewed by Travis Scrimshaw, Kwankyu Lee, Matthias Koppe]
+#39046: David Coudert: add a pairing heap data structure [Reviewed by Cyril Bouvier, @user202729]
+#39075: @user202729: Allow more rings to be used with libsingular & rework signal detection system [Reviewed by Martin Rubey]
+#39108: Frederic Chapoton: cython-lint cleanup in matroids [Reviewed by Kwankyu Lee]
+#39110: Julien Lavauzelle: Fix a crash when trying to build very large Reed-Muller codes [Reviewed by @grhkm21, David Coudert]
+#39119: @gmou3: `build/pkgs/ccache`: Update to 4.10.2 [Reviewed by Kwankyu Lee]
+#39120: @gmou3: `build/pkgs/cmake`: Update to 3.31.2 [Reviewed by Kwankyu Lee]
+#39125: Frederic Chapoton: some care for pep8 E262 (comments) [Reviewed by David Coudert]
+#39129: @user202729: More information on build from source using meson [Reviewed by Tobias Diez]
+#39131: Frederic Chapoton: avoid some imports of rings.Ring [Reviewed by Martin Rubey]
+#39132: Frederic Chapoton: fixing pep8 E203 in pyx files [Reviewed by David Coudert]
+#39133: Frederic Chapoton: Even less integral domain [Reviewed by Martin Rubey]
+#39134: Frederic Chapoton: a few details in master reference file [Reviewed by David Coudert]
+#39135: Dave Morris: Fix ginac's ratlog method so log(int(0),2) does not hang [Reviewed by Lorenz Panny]
+#39139: Dima Pasechnik, Tobias Diez: Meson: install `__init__` files
+#39140: Tobias Diez: Fix meson github check [Reviewed by Dima Pasechnik]
+#39143: Frederic Chapoton: fix linter warnings in sage_setup and sage_docbuild
+#39145: Antonio Rojas: Don't use count as a positional argument in re.sub [Reviewed by Frederic Chapoton]
+#39149: @user202729: Remove executable flags from many Python files
+#39150: Kwankyu Lee: Fix a bug in Khuri-Makdisi small model of Jacobian [Reviewed by Vincent Macri]
+#39174: @user202729: Return True instead of None to avoid cachefunc being useless [Reviewed by Martin Rubey]
+
+Merged in sage-10.6.beta3:
+
+#38946: @user202729: Allow Cython compilation to open a web browser containing the annotated HTML file [Reviewed by Kwankyu Lee]
+#38993: Tobias Diez: Meson: find more dependencies via pkg-config [Reviewed by Dima Pasechnik, Antonio Rojas]
+#39011: Tobias Diez: Correctly print import errors in `sage.all` [Reviewed by Dima Pasechnik]
+#39027: @user202729: Make Sequence pretty-printed in IPython [Reviewed by Tobias Diez]
+#39099: Tobias Diez: Fix more ruff issues in ̀ sage.manifolds` [Reviewed by @gmou3]
+#39127: @user202729: Minor docfix of interpolation() method [Reviewed by Martin Rubey]
+#39146: Frederic Chapoton: simplify some call of isinstance in pyx files [Reviewed by Martin Rubey]
+#39157: @user202729: Mark artin_symbol doctest as random to avoid failure [Reviewed by Tobias Diez]
+#39175: @gmou3: `build/pkgs`: Remove `libtheora` [Reviewed by Kwankyu Lee]
+#39176: Tobias Diez: Improve Meson CI workflow [Reviewed by Dima Pasechnik, @user202729]
+#39178: Antonio Rojas: Fix test failure with giac 1.9.0.998
+#39179: Kwankyu Lee: Fix CremonaDatabase constructor [Reviewed by Marc Culler, @user202729, Tobias Diez]
+#39187: Antonio Rojas: Fix tests output for Python 3.13 [Reviewed by Tobias Diez]
+#39190: Kwankyu Lee: Update the copyright year in README.md [Reviewed by Dima Pasechnik]
+#39193: @user202729: Some improvements to findstat._submit [Reviewed by Martin Rubey]
+#39194: Kwankyu Lee: Reimplement release creation workflow [Reviewed by Soham Rane]
+#39206: Tobias Diez: Pytest: Improve doctest integration [Reviewed by Dima Pasechnik]
+#39209: Tobias Diez: Fix docstring formatting to use raw string literals in multiple files [Reviewed by Martin Rubey]
+#39210: Tobias Diez: Switch devcontainer to use meson [Reviewed by Dima Pasechnik]
+#39217: David Coudert: improve graph traversal methods [Reviewed by Travis Scrimshaw]
+#39219: @user202729: Faster conversion from numpy array to matrix mod 2 [Reviewed by Travis Scrimshaw]
+#39222: Lennard Hofmann: Remove outdated note from docstring of `cliques_maximal` [Reviewed by David Coudert]
+#39227: Frederic Chapoton: deprecate fully the auld class IntegralDomain [Reviewed by Martin Rubey]
+#39229: Frederic Chapoton: fixing pycodestyle E222 in many cython files [Reviewed by David Coudert]
+#39230: Frederic Chapoton: refresh MacMahon Omega file [Reviewed by David Coudert]
+#39231: Frederic Chapoton: fix and activate some checks in ruff-minimal [Reviewed by Martin Rubey]
+#39232: Frederic Chapoton: minor tweaks in Ore polynomials [Reviewed by David Coudert]
+#39235: Frederic Chapoton: fixing a few typos [Reviewed by David Coudert]
+#39236: Frederic Chapoton: minor details in modular symbols / boundary [Reviewed by David Coudert]
+#39238: @user202729: Modify build using meson guideline [Reviewed by Tobias Diez]
+
+Merged in sage-10.6.beta4:
+
+#39302: Frederic Chapoton: adding the category keyword to padic rings and fields classes [Reviewed by Kwankyu Lee]
+#39306: Frederic Chapoton: simplify many range(0,n) to range(n) [Reviewed by David Coudert]
+#39325: Jean-François B.: [DOC] Allow Sphinx PDF build to reflow long decimal expansions in code-blocks to avoid them extending beyond page limits [Reviewed by Kwankyu Lee]
+#39332: Frederic Chapoton: some changes about dict in combinat (ruff PLC0206) [Reviewed by David Coudert]
+#39333: Frederic Chapoton: some ruff suggestions in algebras/ [Reviewed by David Coudert]
+#38823: Aram Dermenjian: Graph Plotting updates [Reviewed by David Coudert]
+#38904: Martin Rubey: provide a class for partitions with bounded length and minimal part [Reviewed by Frederic Chapoton, Travis Scrimshaw]
+#38965: Frederic Chapoton: adding an example of semiring [Reviewed by Travis Scrimshaw]
+#39008: Tobias Diez: Add Meson-specific settings to vscode settings [Reviewed by Dima Pasechnik]
+#39123: Frederic Chapoton, Kwankyu Lee: change ore_algebra package to latest version
+#39147: Antonio Rojas: Fix doctesting with Python 3.13 [Reviewed by Gonzalo Tornaria, @user202729]
+#39151: David Coudert: add parameter `forbidden_vertices` to some connectivity methods [Reviewed by Frederic Chapoton]
+#39153: @user202729: Mark several tests as random to avoid test failure [Reviewed by Tobias Diez]
+#39164: Dima Pasechnik, Tobias Diez: Update conda to use Python 3.12, drop 3.9 and 3.10
+#39168: Shriya Meenakshisundaram: Addition of Kähler algebras as a category [Reviewed by Travis Scrimshaw]
+#39182: Antonio Rojas: Define __iter__ method in iterator types [Reviewed by @user202729]
+#39184: @user202729: Refactor produce_latex_macro
+#39185: Antonio Rojas: Fix find_replacements with Python 3.13 [Reviewed by @user202729]
+#39188: Antonio Rojas: Declare Python 3.13 as supported in sagelib [Reviewed by Tobias Diez]
+#39201: Gonzalo Tornaria: Fix `spyx_tmp()` cleanup. [Reviewed by Antonio Rojas]
+#39220: David Coudert: some care in `src/sage/graphs/comparability.pyx` [Reviewed by Frederic Chapoton]
+#39228: David Coudert: faster bidirectional dijkstra using pairing heap [Reviewed by @gmou3]
+#39233: Frederic Chapoton: add some typing annotations to gens methods (-> tuple) [Reviewed by Tobias Diez]
+#39252: Frederic Chapoton: minor annotation details in posets to please mypy [Reviewed by David Coudert]
+#39253: Frederic Chapoton: some type annotations in modular folder [Reviewed by Tobias Diez]
+#39261: Antonio Rojas: Fix tests with scipy 1.15 [Reviewed by Gonzalo Tornaria, Francois Bissey]
+#39263: Tobias Diez: Remove old deprecations in `algebras` and `categories` [Reviewed by Travis Scrimshaw]
+#39264: David Coudert: add parameter immutable to generators in `sage/graphs/digraph_generators.py` (part 1) [Reviewed by Frederic Chapoton]
+#39268: Tobias Diez: Upgrade dependency requirements in accordance with Spec 0 [Reviewed by Dima Pasechnik]
+#39271: David Coudert: return correct error message when trying to add/delete vertex/edge from a static graph [Reviewed by Travis Scrimshaw]
+#39277: Tobias Diez: Fix import duplication in `sage.rings.all` [Reviewed by Dima Pasechnik]
+#39278: Tobias Diez: Meson: build groups even without gap [Reviewed by Dima Pasechnik]
+#39281: Frederic Chapoton: fix and activate the ruff check for F811 [Reviewed by Tobias Diez]
+#39282: @user202729: Fix tests for Python 3.13 [Reviewed by Frederic Chapoton]
+#39284: Tobias Diez: Remove failing modular ci tests [Reviewed by Dima Pasechnik]
+#39288: Kwankyu Lee: Fix the new release workflow by escaping special characters [Reviewed by Soham Rane]
+#39291: @user202729: Workaround to allow flint to be compiled with numpy 2 [Reviewed by Tobias Diez]
+#39293: @user202729: Fix segmentation fault in singular interface code [Reviewed by Marc Mezzarobba]
+#39298: Frederic Chapoton: small cleanup in tropical files [Reviewed by David Coudert]
+#39301: Enrique Artal: Using a new functions in libbraiding in zariski_vankampen [Reviewed by Travis Scrimshaw]
+#39303: Frederic Chapoton: let the categories handle "is_commutative" for rings [Reviewed by Travis Scrimshaw]
+#39305: Frederic Chapoton: fixing some ruff PLR warnings [Reviewed by David Coudert]
+#39312: David Coudert: use memory allocator in `sage/coding/binary_code.pyx` [Reviewed by Kwankyu Lee]
+#39315: Frederic Chapoton: partial pep8 cleanup in Lie conformal algebras [Reviewed by David Coudert]
+#39316: David Coudert: use memory allocator in `sage/combinat/designs/` [Reviewed by Kwankyu Lee]
+#39322: Rusydi H. Makarim: Implement the chi function in sage.crypto.sboxes [Reviewed by Kwankyu Lee]
+#39324: Frederic Chapoton: less use of ParentWithGens
+#39330: Frederic Chapoton: fix a bunch of typos and add some spaces after commas [Reviewed by Vincent Macri]
+
+Merged in sage-10.6.beta5:
+
+#39377: @user202729: Mark test as random to avoid failure
+#38924: Martin Rubey: avoid unnecessary divisions and calls to gcd [Reviewed by Travis Scrimshaw, Tomer Bauer]
+#39013: Kwankyu Lee, Tobias Diez: Replace `os.killpg` on Windows
+#39018: @user202729, Kwankyu Lee: Fix Singular polynomial comparison
+#39124: David Coudert: unify and simplify orientation methods [Reviewed by Travis Scrimshaw]
+#39138: Dave Morris, Kwankyu Lee: Fix comment on ginac NegInfinity constant
+#39155: Kwankyu Lee, @gmou3: Salvage work on gammoids
+#39223: David Coudert: avoid some conversions to `short_digraph` in `distances_all_pairs.pyx` [Reviewed by Frederic Chapoton]
+#39226: Kwankyu Lee, @gmou3: Unpoison `http_proxy` for optional pkgs [Reviewed by Dima Pasechnik]
+#39247: David Coudert: add parameter immutable to generators in `src/sage/graphs/graph_generators.py` [Reviewed by Frederic Chapoton]
+#39254: Frederic Chapoton, Kwankyu Lee: some details in string_ops
+#39300: David Coudert: faster method `__mul__` for graphs [Reviewed by Frederic Chapoton]
+#39304: Frederic Chapoton: ignoring one more ruff check [Reviewed by David Coudert]
+#39310: Martin Rubey: expand and explain doctest of _preprocess_intertwining_relations [Reviewed by David Coudert]
+#39311: Frederic Chapoton: move krull_dimension to the category framework [Reviewed by Kwankyu Lee]
+#39313: Martin Rubey: Bijectionist/improve init [Reviewed by David Coudert]
+#39317: David Coudert: add parameter immutable to all methods in `sage/graphs/generators/basic.py` [Reviewed by Dima Pasechnik]
+#39326: Jean-François B.: [DOC] src/doc/fr/tutorial/conf.py: remove obsolete latex work-around [Reviewed by Kwankyu Lee]
+#39327: Frederic Chapoton: totally trivial space adding ticket [Reviewed by Vincent Macri]
+#39335: Frederic Chapoton: fixes ruff PLC in categories [Reviewed by David Coudert]
+#39337: Frederic Chapoton: a few fixes for ruff PLC [Reviewed by Martin Rubey, David Coudert]
+#39339: Frederic Chapoton: fixing most of ruff-minimal outside of src/sage [Reviewed by Kwankyu Lee]
+#39340: Frederic Chapoton: fix pycodestyle E115 and activate this check in the linter [Reviewed by David Coudert]
+#39341: David Coudert: add an iterator over the minimal separators of a graph [Reviewed by Dima Pasechnik]
+#39342: Frederic Chapoton: simplify some .extend in combinat [Reviewed by David Coudert]
+#39343: Frederic Chapoton: use Parent in Laurent series [Reviewed by Travis Scrimshaw]
+#39344: Antonio Rojas: Fix broken sat solvers feature tests [Reviewed by Dima Pasechnik]
+#39346: Frederic Chapoton: some fixes after cython-lint [Reviewed by Dima Pasechnik, Kwankyu Lee]
+#39348: Frederic Chapoton: fix details in q_numbers [Reviewed by David Coudert]
+#39349: Frederic Chapoton: fix bug for zero-dimension Ehrhart polynomial [Reviewed by Dima Pasechnik]
+#39352: : ⬆️ Bump dev-hanz-ops/install-gh-cli-action from 0.2.0 to 0.2.1 [Reviewed by Dima Pasechnik]
+#39354: Frederic Chapoton: some fixes for PLR1716 [Reviewed by Martin Rubey]
+#39358: David Coudert: upgrade `igraph` to 0.10.15 and `python_igraph` to 0.11.8 [Reviewed by Frederic Chapoton]
+#39360: Frederic Chapoton: doc tweaks in padics [Reviewed by David Coudert]
+#39367: @user202729: Shorten pickle for matrix_mod2_dense [Reviewed by David Coudert]
+#39368: Gonzalo Tornaria: fix doctests for singular 4.4.1 [Reviewed by Antonio Rojas]
+#39375: Frederic Chapoton: adding some annotations in polyhedral complex [Reviewed by David Coudert]
+
+Merged in sage-10.6.beta6:
+
+#39392: John Palmieri: Test that the Sage git repo is clean.
+#39393: Frederic Chapoton: breaking lines after else: in pyx files [Reviewed by Kwankyu Lee, David Coudert]
+#39403: Frederic Chapoton: conversion of symmetric functions to and from magma [Reviewed by Travis Scrimshaw]
+#39405: @gmou3: Resolve error in `transversal_matroid.pyx` [Reviewed by Frederic Chapoton]
+#39415: Travis Scrimshaw: Implementation of the general Burau representation for Artin groups [Reviewed by Sebastian Oehms, Enrique Artal]
+#39418: Dima Pasechnik: more spkg-configures (new/fixes) [Reviewed by Michael Orlitzky]
+#39422: Frederic Chapoton: fix one optional internet doctest in oeis.py [Reviewed by David Coudert]
+#39424: @user202729: Fix bug with sage_getfile in meson editable install [Reviewed by Tobias Diez]
+#39425: @user202729: Fix basis of multivariate polynomial ring [Reviewed by Travis Scrimshaw]
+#39429: @gmou3: Declare `del_edge` as `cpdef` [Reviewed by David Coudert]
+#39430: Michael Orlitzky: Delay LaTeX feature tests as long as possible [Reviewed by @user202729, Kwankyu Lee]
+#39431: : Fixed FFT setting function that assumed that values were uninitialized
+#39432: : Fixed randomly failing test in bigraphical hyperplane function
+#39435: Dima Pasechnik: bump GAP to 4.14.0 [Reviewed by Marc Culler]
+#39438: Frederic Chapoton: enhanced details in link.py [Reviewed by David Coudert]
+#39439: Frederic Chapoton: using next in isogeny plotting [Reviewed by David Coudert]
+#39440: Frederic Chapoton: introduce the alias "is_congruence_uniform" in lattices [Reviewed by David Coudert]
+#39441: Frederic Chapoton: some details in KR crystals [Reviewed by David Coudert]
+#39451: Caleb Van't Land: Fixes incorrect behaviour when taking the derivative of a constant matrix
+#39457: Tobias Diez: Remove all__sagemath_categories [Reviewed by Dima Pasechnik]
+#39461: Frederic Chapoton: remove old deprecation in modular symbols [Reviewed by David Coudert]
+#39462: Frederic Chapoton: remove a deprecation simplicial complexes [Reviewed by David Coudert]
+#39463: Frederic Chapoton: remove deprecated stuff in cremona_database [Reviewed by David Coudert]
+#39465: Frederic Chapoton: remove deprecated stuff in polyhedron plot [Reviewed by David Coudert]
+#39468: @user202729: Fix documentation of integral_points
+#39469: David Coudert: small improvement in `classically_highest_weight_vectors` [Reviewed by Frederic Chapoton]
+#35944: @grhkm21: Fix incorrect exponentiation of modular forms [Reviewed by David Ayotte]
+#38794: Frederic Chapoton: convert magma power series rings [Reviewed by Travis Scrimshaw]
+#39012: Tobias Diez: Remove SAGE_DB from public interface [Reviewed by Michael Orlitzky]
+#39065: Janmenjaya Panda: Implemented methods concerning bricks and braces of a matching covered graph [Reviewed by @user202729, David Coudert]
+#39137: @user202729: Minor refactor for is_exact [Reviewed by Frederic Chapoton]
+#39142: @user202729: Fix alarm tests [Reviewed by Tobias Diez]
+#39160: @user202729: Add _make_named_class_key for several categories, miscellaneous changes [Reviewed by Tobias Diez]
+#39186: @user202729: Remove backslash hack in doctest [Reviewed by Tobias Diez]
+#39242: @user202729: Make tests compatible with numpy 2.1 [Reviewed by Tobias Diez]
+#39265: Tobias Diez: Replace `pari.all` imports by direct imports from pari and cypari
+#39275: @user202729: Specify use_sources=True in cython compilation [Reviewed by Tobias Diez]
+#39280: David Coudert: add parameter `immutable` to some graph operations in `sage/graphs/generic_graph.py` [Reviewed by Frederic Chapoton]
+#39285: David Coudert: add parameter `immutable` to some graph products in `sage/graphs/generic_graph.py` [Reviewed by Frederic Chapoton]
+#39297: David Coudert: more care about parameter `immutable` in `sage/graphs/generic_graph.py` [Reviewed by Kwankyu Lee]
+#39347: Frederic Chapoton: activate check for ruff PLW0127 [Reviewed by Kwankyu Lee]
+#39353: Dima Pasechnik: bump fpylll to 0.6.3, fplll to 5.5.0
+#39362: Dave Morris: Add doctest that integral of 0 function is 0
+#39374: @Noel-Roemmele: Updated random_diagonal_matrix function so it works for any ring
+#39378: @user202729: Fix build with meson documentation
+#39380: Frederic Chapoton: inline an inner function in random two-sphere (for speed) [Reviewed by David Coudert]
+#39382: @gmou3: Correct method `is_sparse_paving` [Reviewed by Travis Scrimshaw]
+#39384: Frederic Chapoton: fixing PLW0120 [Reviewed by Vincent Macri]
+#39385: Frederic Chapoton: use the faster binomial in combinat [Reviewed by Vincent Macri]
+#39387: Frederic Chapoton: minor changes about faster binomial in modular [Reviewed by David Coudert]
+#39388: Frederic Chapoton: using the binomial method in categories + cleanup [Reviewed by David Coudert]
+#39389: Frederic Chapoton: minor detail in combin. polyhedron [Reviewed by David Coudert]
+#39390: @gmou3: `matroids/database_collections.py`: Single quotes
+#39391: Pierre Lairez: Add wrapper for FLINT's `acb_dirichlet_zeta_zeros` [Reviewed by Marc Mezzarobba]
+#39394: Frederic Chapoton: move methods into category of fields [Reviewed by Vincent Macri]
+#39402: @user202729: Simplify __invert__ for polynomial quotient ring element
+
+Merged in sage-10.6.beta7:
+
+#39061: @user202729: Fix some errors in documentation of cachefunc [Reviewed by Nils Bruin, Julian Ruth]
+#39212: @user202729: Refactor period lattice [Reviewed by Kwankyu Lee]
+#39214: Xavier Caruso: Add keyword prec for exponential and logarithm of Drinfeld modules [Reviewed by Antoine Leudiere, Martin Rubey]
+#39251: Tobias Diez: Require Python 3.11 or newer; remove outdated workarounds [Reviewed by Dima Pasechnik]
+#39266: David Coudert: add parameter immutable to generators in `sage/graphs/digraph_generators.py` (part 2) [Reviewed by Frederic Chapoton]
+#39365: @user202729: Allow coercion from Frac(QQ[x]) to LaurentSeriesRing(QQ)
+#39366: @user202729: Add documentation to LaurentSeries point to accessors [Reviewed by Kwankyu Lee]
+#39381: Antonio Rojas: Allow system python 3.13 [Reviewed by Dima Pasechnik]
+#39397: Frederic Chapoton: details in braid groups [Reviewed by Travis Scrimshaw]
+#39423: @user202729: Use import_module instead of find_spec [Reviewed by Tobias Diez]
+#39449: Frederic Chapoton: Magma padics [Reviewed by Xavier Caruso]
+#39454: Frederic Chapoton: remove deprecated stuff in permutation.py [Reviewed by Travis Scrimshaw]
+#39456: Spencer Bagley: Trivial simplifications for arccos [Reviewed by Travis Scrimshaw]
+#39466: Frederic Chapoton: remove some deprecations in groups [Reviewed by David Coudert]
+#39473: Frederic Chapoton: add tuple typing to gens methods in algebras [Reviewed by Vincent Macri]
+#39474: Frederic Chapoton: convert gens method in modular to return tuple [Reviewed by Vincent Macri]
+#39476: Frederic Chapoton: typing annotation for gens method in rings and groups (pyx files) [Reviewed by Vincent Macri]
+#39477: Frederic Chapoton: typing and details in tableaux files [Reviewed by Travis Scrimshaw]
+#39479: @Noel-Roemmele: Fixed crash when exp(0) of p-adic numbers is called
+#39481: @Noel-Roemmele: Fixed issue in list_plot where it assumed data had been enumerated when it might not have been
+#39482: Frederic Chapoton: fix one typo [Reviewed by @camille-garnier]
+#39485: @user202729: Implement conversion from laurent series to rational function field [Reviewed by Travis Scrimshaw]
+#39486: @user202729: Finish changing Rational's round method default rounding to even [Reviewed by Vincent Neiger]
+#39487: @MercedesHaiech: Improvement of the rendering of the documentation in polynomial sequence [Reviewed by Travis Scrimshaw]
+#39488: Hugo Passe: Fix issue on matrix construction over integer mod ring for large coefficients [Reviewed by Vincent Neiger]
+#39489: Frederic Chapoton: fix several oeis related doctests
+#39491: Sebastien Labbe: fixing doctests failures in misc/latex*.py [Reviewed by Frederic Chapoton]
+#39494: @user202729: Fix more doctests in meson_editable install [Reviewed by Tobias Diez]
+#39495: Kwankyu Lee: Add documentation of Gabidulin codes in the reference manual
+#39496: Sebastien Labbe, Frederic Chapoton, Jean-Philippe Labbe: Add deformation cones and checking for regularity for Point Configurations and normal fans of Polyhedra
+#39497: Frederic Chapoton: moving random_element to category of rings [Reviewed by Travis Scrimshaw]
+#39498: @user202729: Apply sort and filter of walk_packages consistently [Reviewed by Tobias Diez]
+#39499: @user202729: Improve sage_getfile by looking at __init__
+#39504: : Implement im_gens in the class fraction_field_FpT
+#39505: Dave Morris: Improve handling of strings supplied as matrix entries
+#39506: Ludovic Schwob: New algorithm for cuts of a Poset [Reviewed by Frederic Chapoton]
+#39508: @user202729: Fix some typo [Reviewed by Frederic Chapoton]
+#39509: @user202729: Add a doctest for HomsetsCategory._make_named_class_key
+#39510: Rubén Muñoz--Bertrand, @camille-garnier: add of the function rank_support_of_vector  [Reviewed by Frederic Chapoton, Xavier Caruso]
+#39513: @user202729: Show test failures of ci-meson as annotations [Reviewed by Tobias Diez]
+#39518: Fabien Vignes-Tourneret: line_graph for multigraphs [Reviewed by Frederic Chapoton, David Coudert]
+#39521: Martin Rubey: rename also set-like species [Reviewed by Travis Scrimshaw]
+#39523: Martin Rubey: multi polynomial element/repr [Reviewed by Travis Scrimshaw]
+#39527: @user202729: Test on CI that update-meson is properly ran [Reviewed by Tobias Diez]
+#39530: @user202729: Improvement to flint_autogen reader [Reviewed by Frederic Chapoton]
+#39533: Michael Orlitzky, John Cremona: build/pkgs: update eclib to version 20250122
+#39536: @user202729: Fix a nonfunctional long time doctest tag [Reviewed by David Coudert]
+#39541: M Bussonnier: Remove dead mailing lists. [Reviewed by Frederic Chapoton]
+#37158: Frederic Chapoton, Martin Rubey: use Parent in quotient rings too
+#37173: Sebastian A. Spindler: Implemented `.ramified_places` and modified further methods to extend quaternion algebra functionality to number fields [Reviewed by @grhkm21, Frederic Chapoton, Matthias Koppe, @AurelPage]
+#38108: Travis Scrimshaw, Martin Rubey: Implicit function solver for lazy series
+#38650: Xavier Caruso, @ymusleh: Add support for pseudomorphisms [Reviewed by Kwankyu Lee]
+#38824: Sebastian A. Spindler: Turn some doctests in `ell_rational_field.py` into long tests [Reviewed by Frederic Chapoton]
+#38986: @user202729: Allow CRT_list() to be called with one argument [Reviewed by Travis Scrimshaw]
+#39025: @mklss: Add reseed_rng option to p_iter_fork [Reviewed by Kwankyu Lee]
+#39092: @user202729: Remove erroneous member declaration in farey_symbol [Reviewed by Julian Ruth]
+#39093: @user202729: Improve hack used in debug_options [Reviewed by Kwankyu Lee]
+#39128: @user202729, Julian Ruth: Add note about makeflags and ninja parallelism
+#39215: Xavier Caruso: Class polynomial for Drinfeld modules [Reviewed by Antoine Leudiere]
+#39248: Frederic Chapoton, Kwankyu Lee: introduce new apozeta polynomial for posets
+#37214: @ymusleh: Add Pseudomorphism Implementation for Free Modules [Reviewed by Xavier Caruso]
+
+Merged in sage-10.6.beta8:
+
+#39309: Rusydi H. Makarim: Add inversion function for sage.crypto.sboxes [Reviewed by Kwankyu Lee]
+#39376: Michael Orlitzky: Replace sage.libs.giac with new optional package sagemath-giac [Reviewed by Francois Bissey, Tobias Diez]
+#39417: Frederic Chapoton: adding the super delta continued fractions, after G.-N. Han [Reviewed by Kwankyu Lee]
+#39420: @user202729: Replace reproducible_repr() with usage of displayhook [Reviewed by Tobias Diez]
+#39426: Tobias Diez: Minor code improvement in `sage.doctest` [Reviewed by Sebastien Labbe]
+#39427: Tobias Diez: Remove deprecated sage-cython script
+#39445: Frederic Chapoton, @Noel-Roemmele: Fixed issue causing random elements of a quadratic field to always be integral
+#39464: Frederic Chapoton: remove deprecated method in normal_form_game [Reviewed by David Coudert]
+#39483: Caleb Van't Land: Improved Efficiency of mutually_orthogonal_latin_squares function
+#39484: Caleb Van't Land: Implemented error when incorrect bounds cause discrete_log to give incorrect answer
+#39492: Dima Pasechnik: update meson and meson-python to the latest versions,  1.7.0 and 0.7.1 [Reviewed by Tobias Diez]
+#39516: Vincent Neiger: Add minimal relation bases for univariate polynomial matrices [Reviewed by Hugo Passe]
+#39522: Martin Rubey: infinite polynomial element/gcd [Reviewed by Travis Scrimshaw]
+#39542: @user202729: Hide more chronic diff on CI [Reviewed by Frederic Chapoton]
+#39547: @Noel-Roemmele: Fixed issue causing logarithm of base 0 to not give either of the possible correct answers. [Reviewed by Sebastian A. Spindler]
+#39549: @user202729: Add Ideal.radical and Ring.nilradical [Reviewed by Travis Scrimshaw]
+#39550: Frederic Chapoton: no meaning for gp in pari/gp [Reviewed by @gmou3]
+#39551: @AndreasEnge: Correct an error message. [Reviewed by Travis Scrimshaw]
+#39552: Frederic Chapoton: fix and activate the check for pep E272 [Reviewed by David Coudert]
+#39553: Frederic Chapoton: make algdep always an alias for algebraic_dependency [Reviewed by Travis Scrimshaw]
+#39555: Caleb Van't Land: Added option to return explicit polynomial in .in_subalgebra [Reviewed by Travis Scrimshaw]
+#39556: @Noel-Roemmele: Fixed issue where Partitions() was caching results when an error happens. [Reviewed by Travis Scrimshaw]
+#39557: @Noel-Roemmele: Fixed issue where insert_row in dense integer matrices would not accept python integers. [Reviewed by Travis Scrimshaw]
+#39558: Frederic Chapoton: cleaning the maximal orders in rational function fields [Reviewed by Kwankyu Lee]
+#39564: Frederic Chapoton: some fixes for E114 [Reviewed by David Coudert]
+#39565: Frederic Chapoton: remove many unused imports [Reviewed by David Coudert]
+#39566: Frederic Chapoton: some fixes for E272 in pyx files [Reviewed by David Coudert]
+#39567: @user202729: Make test deterministic to fix CI [Reviewed by Frederic Chapoton]
+#39568: Frederic Chapoton: simplify empty sets [Reviewed by David Coudert]
+#39570: Dima Pasechnik: bump python to at least 3.11 in spkg-configure.m4
+#39572: Caleb Van't Land: Change some instances of "gens" method to return tuples [Reviewed by Vincent Macri]
+#39573: Caleb Van't Land: Doctest for defining multivariate polynomial ring over InfinityRing
+#39575: Frederic Chapoton: full cython-lint cleanup in data_structure pyx files [Reviewed by David Coudert]
+#39577: Francois Bissey: py3.9 support cleanup in sage_autodoc and sphinx bump [Reviewed by Kwankyu Lee, Tobias Diez]
+#39578: Frederic Chapoton: adding some type annotations in lattices [Reviewed by Vincent Macri]
+#39584: Frederic Chapoton: pep8 and mypy cleanup of arith/misc.py
+#39589: Frederic Chapoton: Enhance poset factor [Reviewed by David Coudert]
+#39216: David Coudert: avoid some conversions to `short_digraph` when the input is an instance of `StaticSparseBackend` [Reviewed by Frederic Chapoton]
+
+Merged in sage-10.6.beta9:
+
+#39610: Frederic Chapoton: adding the check for pycodestyle E222 in pyx files [Reviewed by David Coudert]
+#39613: Frederic Chapoton: some typing in Permutation [Reviewed by Travis Scrimshaw]
+#39617: Eduardo Venturini: Fixed _positive_roots_reflections for index_set different from {1, 2, …, n} [Reviewed by Travis Scrimshaw]
+#39619: Frederic Chapoton: remove unused imports in rings [Reviewed by Martin Rubey]
+#39621: @user202729: Fix documentation diff for cython() [Reviewed by Travis Scrimshaw]
+#39624: Aditya Khambete: Fix Commutator subgroup of permutation group [Reviewed by Frederic Chapoton]
+#39625: Frederic Chapoton: some fixes by ruff about nested max [Reviewed by David Coudert]
+#39631: Frederic Chapoton: remove pkg combinatorial_designs [Reviewed by David Coudert]
+#39634: Frederic Chapoton: some details in lean_matrix [Reviewed by David Coudert]
+#39635: Frederic Chapoton: removing some unused imports in pyx files [Reviewed by David Coudert]
+#38455: Jackson Walters: unitary DFT for symmetric group algebra [Reviewed by Travis Scrimshaw]
+#38749: Gonzalo Tornaria, Antonio Rojas: Upgrade to pari 2.17.1, cypari 2.2.1, cysignals 1.12.3 [Reviewed by Dima Pasechnik]
+#39102: @user202729: Show continuation lines when doctest crashes [Reviewed by Julian Ruth]
+#39256: @keltecc: Add check for zero monomial in monomial_coefficient [Reviewed by Travis Scrimshaw]
+#39269: David Coudert: add parameter immutable to generators in `sage/graphs/digraph_generators.py` (part 3) [Reviewed by Frederic Chapoton]
+#39286: Tobias Diez: Migrate pyright workflow to use conda [Reviewed by Dima Pasechnik]
+#39287: David Coudert: add parameter `immutable` to transitive closure methods in `sage/graphs/generic_graph.py` [Reviewed by Frederic Chapoton]
+#39369: @user202729: Test pip editable install with meson [Reviewed by Tobias Diez]
+#39413: Gonzalo Tornaria: Fix compilation and doctests with flintlib 3.2 [Reviewed by @user202729, Tobias Diez]
+#39467: Tobias Diez: Disable broken and outdated CI [Reviewed by Dima Pasechnik, @user202729, Kwankyu Lee]
+#39519: Frederic Chapoton, @Oscfon: Provide an iterative version on some functions on trees [Reviewed by Martin Rubey]
+#39546: @Noel-Roemmele: Fixes error causing period function in BinaryRecurrenceSequence to stall and added enhancement
+#39559: Frederic Chapoton, @user202729: Remove defining ideal hack
+#39562: Tobias Diez: Meson: Remove unused build dependencies ppl and fplll [Reviewed by Gonzalo Tornaria, Michael Orlitzky]
+#39571: Dima Pasechnik: Bump pillow and cffi [Reviewed by Kwankyu Lee, David Coudert]
+#39579: Frederic Chapoton: some details in schemes, typing annotation for gens [Reviewed by Vincent Macri]
+#39593: David Coudert: remove traces of experimental package `modular_decomposition` [Reviewed by Frederic Chapoton]
+#39594: Frederic Chapoton: fix latex code in one crystal file [Reviewed by Travis Scrimshaw]
+#39597: Sebastien Labbe: extract _front_back_facets method out of _tikz_3d_in_3d polyhedron method [Reviewed by Frederic Chapoton]
+#39602: Dima Pasechnik: bump executing to 2.2.0
+#39605: Frederic Chapoton: minor details in boolean_polynomials [Reviewed by David Coudert]
+#39606: Frederic Chapoton: minor details in invariant_theory (pep8) [Reviewed by David Coudert]
+#39607: Frederic Chapoton: add missing parenthesis in magma conversion file [Reviewed by Dima Pasechnik]
+#39609: Frederic Chapoton: some minor details in fusion_double [Reviewed by David Coudert]
+#39611: Frederic Chapoton: remove unused import + pep8 cleanup in modform/element [Reviewed by David Coudert]
+#39612: Julian Ruth: Improve documentation of discrete valuations [Reviewed by Travis Scrimshaw]
+#39623: @user202729: Fix spacing for documentation [Reviewed by Frederic Chapoton]
+#39626: @Noel-Roemmele: Fixed issue the caused random element in for Tuples to stall by adding unrank method. [Reviewed by Travis Scrimshaw]
+#39629: Frederic Chapoton: add magma as optional algorithm for Coxeter polynomial of posets [Reviewed by Travis Scrimshaw]
+#39632: Travis Scrimshaw: Implement matrix Schubert variety ideals [Reviewed by Frederic Chapoton]
+
+Merged in sage-10.6.rc0:
+
+#37189: Frederic Chapoton, Sebastian A. Spindler, Eloi Torrents: Constructor quaternion algebra over number fields from ramification [Reviewed by @AurelPage]
+#38703: Frederic Chapoton, Xavier Caruso: Implementation of Ore modules [Reviewed by Rubén Muñoz--Bertrand]
+#38879: Tobias Diez: Run meson-ci for MacOS [Reviewed by Dima Pasechnik]
+#39069: @user202729: Mention .coerce() method in coercion tour [Reviewed by Frederic Chapoton]
+#39141: Tobias Diez: Add developer tools to conda environment
+#39221: David Coudert: new implementation of method `is_transitive` with linear memory space [Reviewed by Frederic Chapoton]
+#39234: Frederic Chapoton: more uses of cached_method in modular folder [Reviewed by Edgar Costa]
+#39274: Tobias Diez: Remove `--fiximports` helper
+#39296: David Coudert: fix the behavior for immutable graphs in methods related to isomorphisms in `sage/graphs/generic_graph.py` [Reviewed by Frederic Chapoton]
+#39444: @user202729: Improve is_empty and is_finite in a few cases [Reviewed by Travis Scrimshaw]
+#39574: @Noel-Roemmele: Fixed issue causing the quotient of vector subspaces to throw an exception when divisor is the zero space [Reviewed by Frederic Chapoton]
+#39622: @user202729: Fix CI documentation diff [Reviewed by Kwankyu Lee, Tobias Diez]
+#39637: Frederic Chapoton: large cleanup in one cluster file [Reviewed by David Coudert]
+#39638: Frederic Chapoton: fix typo in ladder_idempotent [Reviewed by David Coudert]
+#39645: Tobias Diez: Remove deprecated PseudoQuaternionicProjectivePlane alias [Reviewed by Frederic Chapoton]
+#39652: Dima Pasechnik: pythran 0.17.0, switch to wheel [Reviewed by David Coudert]
+#39653: Matthias Koppe: ninja_build: Update to 1.12.1 [Reviewed by David Coudert]
+#39654: Dima Pasechnik, Matthias Koppe: Pybind11, version 2.13.6 [Reviewed by David Coudert]
+#39655: Dima Pasechnik, @user202729, Matthias Koppe: update numpy to 2.2.3, scipy to 1.15.2 [Reviewed by David Coudert]
+#39664: @user202729: Add some 'not tested' marks to avoid CI failure
+#39665: : Added example in digits function to showcase that the sum of digits can be computed
+#39670: Tobias Diez: CI: Remove broken Linux Mint and openSUSE runs [Reviewed by Dima Pasechnik]
+#39673: Michael Orlitzky: en/thematic_tutorials/profiling.rst: update runsnake docs [Reviewed by Dima Pasechnik, Tobias Diez]
+#39675: Dima Pasechnik: update trove_classifiers to 2025.3.3
+#39676: Dima Pasechnik, @user202729, Matthias Koppe, David Coudert: update networkx to 3.4.2
+#39678: Mohammed Ashraf: Optimize MatchingCoveredGraph’s add_edge method [Reviewed by Janmenjaya Panda, David Coudert]
+#39680: Dima Pasechnik: sphinxcontrib-htmlhelp 2.1.0
+#39683: Frederic Chapoton: spaces around modulo in combinat and rings [Reviewed by David Coudert]
+#39685: Frederic Chapoton: handling a few unused variables in geometry,graphs,numerical,structure [Reviewed by David Coudert]
+#39686: Francois Bissey: update sphinxcontrib packages
+#39693: Henry Wu: Added the rank method under ModulesWithBasis.ParentMethod. [Reviewed by Travis Scrimshaw]
+#39699: Frederic Chapoton: Fixing the ruff linting [Reviewed by Travis Scrimshaw]
+#39700: Antonio Rojas: Fix typo in SAGE_PARI_MINVER [Reviewed by Dima Pasechnik]
+#39701: Tobias Diez: Use uv for linter workflow [Reviewed by Dima Pasechnik]
+#39711: @user202729: Allow negative shift for flint rational polynomial [Reviewed by Travis Scrimshaw]
+#39722: : ⬆️ Bump tj-actions/changed-files from 45 to 46
+#39724: Travis Scrimshaw: Fixing the cartesian product of a CFM and a generic object. [Reviewed by Frederic Chapoton]
+#39732: Seewoo Lee: Update docstring on E2 [Reviewed by Frederic Chapoton]
+#39738: Dima Pasechnik: update msolve to version 7.5 [Reviewed by Frederic Chapoton]
+#39739: Frederic Chapoton: minor details in the quivers folder [Reviewed by David Coudert]
+#39671: Vincent Delecroix: fix overflow in Matrix_modn_dense [Reviewed by Dima Pasechnik, @schmittj]
+
+Merged in sage-10.6.rc1:
+
+#39616: Antonio Rojas: Fix tests with IPython 9 [Reviewed by Gonzalo Tornaria, Francois Bissey]
+
+Merged in sage-10.6:
