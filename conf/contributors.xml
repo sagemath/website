@@ -3677,6 +3677,10 @@ Please keep the list in alphabetical order by last name!
  trac="gmuller"/>
 <contributor
  name="Rubén Muñoz--Bertrand"
+ location="Besançon, France"
+ work="CNRS, Université Marie &amp; Louis Pasteur, Laboratoire de Mathématiques de Besançon"
+ description="Witt vectors"
+ url="https://rubenmunozbertrand.pages.math.cnrs.fr"
  github="r-mb"/>
 <contributor
  name="Max Murphy"/>
