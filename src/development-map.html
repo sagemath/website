@@ -3,7 +3,7 @@
 {% import 'devs.html' as devs %}
 
 {% block header %}
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA"  type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key={{ maps_api_key }}"  type="text/javascript"></script>
 <script src="res/markerclusterer.js" type="text/javascript"></script>
 <script src="res/devmap2.js" type="text/javascript"></script>
 {% endblock %}
@@ -30,9 +30,11 @@ See also:
     Map Zoom:
     <a href="javascript:;" onclick="zoomTo(&quot;ALL&quot;);">Earth</a> -
     <a href="javascript:;" onclick="zoomTo(&quot;USA&quot;);">USA</a>
-    (<a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);">UW</a>,
-    <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);">West</a>,
-    <a href="javascript:;" onclick="zoomTo(&quot;USAE&quot;);">East</a>) -
+    <span>
+        <a href="javascript:;" onclick="zoomTo(&quot;UW&quot;);">UW</a> -
+        <a href="javascript:;" onclick="zoomTo(&quot;USAW&quot;);">West</a> -
+        <a href="javascript:;" onclick="zoomTo(&quot;USAE&quot;);">East</a>
+    </span> -
     <a href="javascript:;" onclick="zoomTo(&quot;Europe&quot;);">Europe</a> -
     <a href="javascript:;" onclick="zoomTo(&quot;Africa&quot;);">Africa</a> -
     <a href="javascript:;" onclick="zoomTo(&quot;Asia&quot;);">Asia</a> -

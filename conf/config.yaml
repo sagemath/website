@@ -11,3 +11,7 @@ webmaster_href: "mailto:harald+smo@schil.ly"
 # the docroot is the base URL for the documentation.
 # the directory structure is (more or less) the same as in SageMath's "output" directory in doc
 docroot: "https://doc.sagemath.org"
+
+# Google Maps API key - can be overridden by GOOGLE_MAPS_API_KEY environment variable
+# For production, set GOOGLE_MAPS_API_KEY environment variable
+maps_api_key: "AIzaSyB3YiQ---yL6-QfoW9heq4-VbrAQzerhhA"

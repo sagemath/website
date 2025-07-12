@@ -1,0 +1,28 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/sagemath/website.svg?branch=master)](https://travis-ci.org/sagemath/website) # [Sagemath.org](https://www.sagemath.org/) Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "./build_tailwind.sh",
+    "watch:css": "echo \"Watch mode not implemented yet - run ./build_tailwind.sh manually\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaishcodescape/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/vaishcodescape/website/issues"
+  },
+  "homepage": "https://github.com/vaishcodescape/website#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^4.1.11"
+  }
+}
