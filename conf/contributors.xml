@@ -161,6 +161,9 @@ Please keep the list in alphabetical order by last name!
  trac="pang"
  url="http://www.uam.es/personal_pdi/ciencias/pangulo/"/>
 <contributor
+ name="Trinh Quoc Anh"
+ github="tqa236"/>
+<contributor
  name="Samuele Anni"
  trac="sanni85"/>
 <contributor
@@ -889,6 +892,9 @@ Please keep the list in alphabetical order by last name!
  trac="g.chatel"
  github="rodgzilla"/>
 <contributor
+ name="Rishav Ray Chaudhury"
+ github="PinotNoir04"/>
+<contributor
  name="Tejasvi Chebrolu"/>
 <contributor
  name="Emily Chen"
@@ -1182,6 +1188,9 @@ Please keep the list in alphabetical order by last name!
  name="Matthieu Deneufchâtel"
  trac="deneufchatel"/>
 <contributor
+ name="Jacob Dennerlein"
+ github="nielrenned"/>
+<contributor
  name="Tom Denton"
  work="Google Research"
  description="Non-symmetric Macdonald polynomials with permuted basements"
@@ -1315,6 +1324,9 @@ Please keep the list in alphabetical order by last name!
  url="http://www.itwm.fhg.de/de/as__asemployees__dreyer/dreyer/"
  trac="AlexanderDreyer"
  github="alexanderdreyer"/>
+<contributor
+ name="Krishna Dubey"
+ github="Krishnadubey1008"/>
 <contributor
  name="Eduardo Dueñez"
  trac="eduenez"
@@ -1844,6 +1856,9 @@ Please keep the list in alphabetical order by last name!
  location="Karlstad University, Sweden"
  trac="hgranath"/>
 <contributor
+ name="Håkan Granath"
+ github="hgranath"/>
+<contributor
  name="Daniel R. Grayson"
  altnames="Dan Grayson"
  url="http://www.math.uiuc.edu/~dan/"
@@ -2341,6 +2356,9 @@ Please keep the list in alphabetical order by last name!
  name="Patrick Ingram"
  trac="pingram"/>
 <contributor
+ name="Yuta Inoue"
+ github="kappybar"/>
+<contributor
  name="Riccardo Invernizzi"
  github="r98inver"/>
 <contributor
@@ -2395,6 +2413,9 @@ Please keep the list in alphabetical order by last name!
  name="Lokesh Jain"
  trac="jlokesh"
  github="lokeshj1703"/>
+<contributor
+ name="Sahil Jain"
+ github="whoami730"/>
 <contributor
  name="Amit Jamadagni"
  work="Student, Dept. Mathematics, BITS Pilani"
@@ -2664,6 +2685,9 @@ Please keep the list in alphabetical order by last name!
  name="Sangwook Kim"
  trac="swkim"/>
 <contributor
+ name="Minsun Kim"
+ github="soon-haari"/>
+<contributor
  name="Simon King"
  work="Friedrich-Schiller-Universität Jena"
  location="Friedrich-Schiller-University Jena, Germany"
@@ -2916,6 +2940,9 @@ Please keep the list in alphabetical order by last name!
  name="Caleb Van't Land"
  github="pyrusbrawler64"/>
 <contributor
+ name="Caleb Van't Land"
+ github="CalebVL"/>
+<contributor
  name="Jaclyn Lang"
  trac="jlang"/>
 <contributor
@@ -2957,6 +2984,9 @@ Please keep the list in alphabetical order by last name!
  url="https://www.math.brown.edu/elarso19/"
  github="elarson314"
  trac="elarson3"/>
+<contributor
+ name="Aleksei Latyshev"
+ github="alex-700"/>
 <contributor
  name="Alan Lauder"/>
 <contributor
@@ -3111,6 +3141,9 @@ Please keep the list in alphabetical order by last name!
  trac="luran"/>
 <contributor
  name="Yueqi Li"/>
+<contributor
+ name="Aolong Li"
+ github="local-ring"/>
 <contributor
  name="Hang Liao"
  location="Carnegie Mellon University, USA"
@@ -3444,6 +3477,9 @@ Please keep the list in alphabetical order by last name!
  name="Thomas McConville"
  trac="thomas"/>
 <contributor
+ name="Joe McDonough"
+ github="jmcdonough98"/>
+<contributor
  name="Mark McLure"/>
 <contributor
  name="Peter McNamara"
@@ -3773,6 +3809,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="ThanhVu Nguyen"
  trac="tnv"/>
+<contributor
+ name="Eddie Nguyen"
+ github="eddie788"/>
 <contributor
  name="Chris Nicholls"
  trac="cgnicholls"/>
@@ -4167,6 +4206,9 @@ Please keep the list in alphabetical order by last name!
  name="Giacomo Pope"
  github="GiacomoPope"/>
 <contributor
+ name="Evan Porter"
+ github="evanwporter"/>
+<contributor
  name="Pablo Portilla"
  location="ICMAT, Spain"
  url="https://www.icmat.es/pablo.portilla"
@@ -4257,6 +4299,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Dhrumil Raigagla"
  github="Dhrumil07"/>
+<contributor
+ name="Ashutosh Rajora"
+ github="EigenVector22"/>
 <contributor
  name="Gustavo Rama"
  work="Universidad de la República"
@@ -4495,6 +4540,9 @@ Please keep the list in alphabetical order by last name!
  url="http://twitter.com/jorgektu"
  trac="jcatumba"
  github="jcatumba"/>
+<contributor
+ name="Juan M. Lazaro Ruiz"
+ github="juan-mlr"/>
 <contributor
  name="Lauri Ruotsalainen"/>
 <contributor
@@ -4842,6 +4890,9 @@ Please keep the list in alphabetical order by last name!
  name="Agamdeep Singh"
  github="jnash10"/>
 <contributor
+ name="Vidip Singh"
+ github="vidipsingh"/>
+<contributor
  name="Steve Singleton"/>
 <contributor
  name="Phaedon Sinis"
@@ -4956,6 +5007,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Padmavathi Srinivasan"
  trac="padma_sk"/>
+<contributor
+ name="Devansh Srivastava"
+ github="devansh-srv"/>
 <contributor
  name="Hayden Stainsby"
  work="PhD student, Universitat Autònoma de Barcelona"
@@ -5096,6 +5150,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Brian Sun"/>
 <contributor
+ name="PARK Sunho"
+ github="shpark1104"/>
+<contributor
  name="Denis Sunko"
  location="Department of Physics, Faculty of Science, University of Zagreb, Croatia"
  trac="denissunko"/>
@@ -5150,6 +5207,9 @@ Please keep the list in alphabetical order by last name!
  description="bug fixes"
  url="http://www.tarbox.org"
  trac="ghtdak"/>
+<contributor
+ name="Ziad Tarek"
+ github="zezoo050"/>
 <contributor
  name="Mihail Tarigradschi"/>
 <contributor
@@ -5307,6 +5367,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Jan Tuitman"
  trac="jantuitman"/>
+<contributor
+ name="Niccolo Turillo"
+ github="nturillo"/>
 <contributor
  name="Charlie Turner"
  work="University of Warwick"
@@ -5760,6 +5823,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Hongli Zhao"
  trac="honglizhaobob"/>
+<contributor
+ name="Chenxin Zhong"
+ github="cxzhong"/>
 <contributor
  name="Ying Zhou"
  location="Brandeis University"
