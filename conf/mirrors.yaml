@@ -1,5 +1,5 @@
 # cat = category: na: north america, sa: south america, e: europe, a: asia, af: africa, g: global (CDN)
-- active: true
+- active: false
   cat: na
   country: us
   flag: us
