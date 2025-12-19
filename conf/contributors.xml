@@ -1121,6 +1121,9 @@ Please keep the list in alphabetical order by last name!
  github="Konrad127123"
  gitlab="Konrad127123"/>
 <contributor
+ name="Reno Dakota"
+ github="paparodeo"/>
+<contributor
  name="Avinash Dalal"/>
 <contributor
  name="Andrew Dalke"/>
@@ -2140,6 +2143,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Waldek Hebish"/>
 <contributor
+ name="Brian Heckel"
+ github="Brian-Heckel"/>
+<contributor
  name="Ivo Hedtke"
  location="Essen, Germany"
  github="hedtke"
@@ -2471,6 +2477,9 @@ Please keep the list in alphabetical order by last name!
  location="Orange, California, USA"
  description="posets package"
  trac="jipsen"/>
+<contributor
+ name="Hetarth Jodha"
+ github="Hapsa21"/>
 <contributor
  name="Fredrik Johansson"
  work="Inria Bordeaux"
@@ -3266,6 +3275,9 @@ Please keep the list in alphabetical order by last name!
  github="infinity0"
  trac="infinity0"/>
 <contributor
+ name="Vincent Luo"
+ github="vluo13"/>
+<contributor
  name="Joey Lupo"
  altnames="Joseph Lupo"
  github="Loops7"/>
@@ -3778,6 +3790,9 @@ Please keep the list in alphabetical order by last name!
  trac="cnassau"/>
 <contributor
  name="Emanuele Natale"/>
+<contributor
+ name="Adnan Nazir"
+ github="adnanbhat7"/>
 <contributor
  name="Vincent Neiger"
  location="Paris, France"
@@ -5346,6 +5361,9 @@ Please keep the list in alphabetical order by last name!
  name="Nicholas Triantafillou"
  trac="ngtriant"/>
 <contributor
+ name="Veer Mani Tripathi"
+ github="veer-tripathi"/>
+<contributor
  name="Steven Trogdon"
  location="University of Minnesota, Duluth"
  trac="strogdon"
@@ -5571,6 +5589,9 @@ Please keep the list in alphabetical order by last name!
  trac="zwang"/>
 <contributor
  name="Qiang Wang"/>
+<contributor
+ name="Zihao Wang"
+ github="Jemmy1228"/>
 <contributor
  name="王瑞期"
  trac="shahuwang"/>
