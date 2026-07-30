@@ -182,17 +182,6 @@ function initHistats() {
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
 }
 
-function initClustermap() {
- function _cantload() {
-   var img = document.getElementById("clustrMapsImg");
-   img.onerror = null;
-   img.src = "https://www.clustrmaps.com/images/clustrmaps-back-soon.jpg";
-   document.getElementById("clustrMapsLink").href = "https://www.clustrmaps.com";
- }
- var img = document.getElementById("clustrMapsImg");
- img.onerror = _cantload;
-}
-
 $(sage.setDownloadUrls);
 $(sage.scrollNavbarInit);
 $(sage.touchMenu);
@@ -201,4 +190,3 @@ $(sage.touchMenu);
 $(initHistats);
 $(initMathjax);
 //$(function() { initFacebook(document, 'script', 'facebook-jssdk');});
-$(initClustermap);
