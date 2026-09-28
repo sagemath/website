@@ -104,6 +104,9 @@ Please keep the list in alphabetical order by last name!
  trac="ralfaro"
  github="ralfarogit"/>
 <contributor
+ name="Jens Alich"
+ github="jalich"/>
+<contributor
  name="Martin Allen"/>
 <contributor
  name="Bill Allombert"
@@ -126,6 +129,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Rashad Alsharpini"
  github="rashadalsharpini"/>
+<contributor
+ name="Rashad Alsharpini"
+ github="rashadrsx"/>
 <contributor
  name="Alejandra Alvarado"
  trac="aalvarado2"/>
@@ -917,6 +923,9 @@ Please keep the list in alphabetical order by last name!
  name="Hao Chen"
  trac="haochen_uw"/>
 <contributor
+ name="Samuel Chen"
+ github="sacchen"/>
+<contributor
  name="Wilson Cheung"
  work="sysadmin, UCSD"
  location="San Diego, CA 92093, USA"
@@ -1024,6 +1033,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Bruce Cohen"
  trac="bic"/>
+<contributor
+ name="Richard Carter Colina"
+ github="rhdcc"/>
 <contributor
  name="Mauricio Collares"/>
 <contributor
@@ -1343,6 +1355,9 @@ Please keep the list in alphabetical order by last name!
  name="Krishna Dubey"
  github="Krishnadubey1008"/>
 <contributor
+ name="Vivek Dubey"
+ github="vivek41-glitch"/>
+<contributor
  name="Eduardo Dueñez"
  trac="eduenez"
  github="eduenez"/>
@@ -1420,6 +1435,9 @@ Please keep the list in alphabetical order by last name!
  location="Albuquerque, NM 87131, United States"
  description="graph theory"
  trac="bedwards"/>
+<contributor
+ name="Arix Eggink"
+ github="ArixEggink"/>
 <contributor
  name="Stephan Ehlen"
  trac="ehlen"/>
@@ -1703,6 +1721,12 @@ Please keep the list in alphabetical order by last name!
  name="Alex Galarraga"
  altnames="Alexander Galarraga"
  github="EnderWannabe"/>
+<contributor
+ name="Joshua Ganschow"
+ github="GanschowJosh"/>
+<contributor
+ name="Bing Gao"
+ github="binggao1230"/>
 <contributor
  name="Tyler Gaona"
  location="Duquesne University"
@@ -2193,6 +2217,9 @@ Please keep the list in alphabetical order by last name!
  url="http://wwwu.aau.at/cheuberg/"
  github="cheuberg"
  gitlab="cheuberg"/>
+<contributor
+ name="Kobi Hikri"
+ github="kobihikri"/>
 <contributor
  name="Jason B Hill"
  altnames="Jason Hill"
@@ -3309,7 +3336,13 @@ Please keep the list in alphabetical order by last name!
  name="Sebastian Luther"
  trac="sluther"/>
 <contributor
+ name="Egor Lyfar"
+ github="lyfar"/>
+<contributor
  name="Shriya M"/>
+<contributor
+ name="Eros M"
+ github="erosm13"/>
 <contributor
  name="Doug S. MacNeil"/>
 <contributor
@@ -3329,6 +3362,9 @@ Please keep the list in alphabetical order by last name!
  name="Richard Magner"
  altnames="Ricky Magner"
  trac="rmagner"/>
+<contributor
+ name="William E. Mahaney"
+ github="wmahaney"/>
 <contributor
  name="Kamalakshya Mahatab"
  location="Institute of Mathematical Sciences, Chennai, India"
@@ -3558,6 +3594,9 @@ Please keep the list in alphabetical order by last name!
  trac="jwmerrill"
  github="jicama"/>
 <contributor
+ name="Alexander Metzger"
+ github="SanderGi"/>
+<contributor
  name="Matthias Meulien"
  altnames="Mathias  Meulien"
  work="Research engineer, XLIM"
@@ -3774,6 +3813,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Hemant Nagar"
  github="hemannt003"/>
+<contributor
+ name="Hemant Nagar"
+ github="Hemanntnagar"/>
 <contributor
  name="Tobias Nagel"
  work="Universität Mainz"
@@ -4162,6 +4204,9 @@ Please keep the list in alphabetical order by last name!
  description="optimized multinomial coefficient computation"
  url="http://cens.ioc.ee/~pearu"/>
 <contributor
+ name="Kristen Peterson"
+ github="kp-automata"/>
+<contributor
  name="Thomas Petiteau"
  trac="tpetiteau"/>
 <contributor
@@ -4290,6 +4335,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="James Propp"
  trac="jamespropp"/>
+<contributor
+ name="Xavier Provençal"
+ github="xprov"/>
 <contributor
  name="Krzysztof Pudowski"
  github="DuckyDuckme"/>
@@ -4449,6 +4497,9 @@ Please keep the list in alphabetical order by last name!
  github="TaniaRichmond"/>
 <contributor
  name="Ed Richmond"/>
+<contributor
+ name="Jens-Erik Riedel"
+ github="jeriedel24"/>
 <contributor
  name="Sanjay Rijal"
  github="zovelsanj"/>
@@ -4833,6 +4884,9 @@ Please keep the list in alphabetical order by last name!
  trac="ghseeli"
  github="ghseeli"/>
 <contributor
+ name="Devansh Sehgal"
+ github="Devansh-ops"/>
+<contributor
  name="Gagan Sekhon"
  trac="gagansekhon,sekhon"/>
 <contributor
@@ -4865,6 +4919,9 @@ Please keep the list in alphabetical order by last name!
  name="Medha Sharma"/>
 <contributor
  name="Utkarsh Sharma"/>
+<contributor
+ name="Saksham Sharma"
+ github="1sakshm"/>
 <contributor
  name="Yiwei She"
  location="University of Chicago"
@@ -5047,6 +5104,9 @@ Please keep the list in alphabetical order by last name!
  name="Sebastian A. Spindler"
  github="S17A05"/>
 <contributor
+ name="Sebastian A. Spindler"
+ github="zebastion"/>
+<contributor
  name="Jonathan Spreer"
  work="University of Stuttgart"
  location="Stuttgart, Germany"
@@ -5227,6 +5287,9 @@ Please keep the list in alphabetical order by last name!
  location="University of Washington, WA, USA"
  trac="jpswanson"/>
 <contributor
+ name="Nicolas Swanson"
+ github="Nicswansonwaterloo"/>
+<contributor
  name="Christopher Swenson"
  trac="swenson"
  github="swenson"/>
@@ -5258,6 +5321,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Henry Talbott"/>
 <contributor
+ name="Vladislav Taranchuk"
+ github="Vlad-Tar"/>
+<contributor
  name="Glenn Tarbox"
  work="THG Holdings"
  location="Seattle, USA"
@@ -5277,6 +5343,9 @@ Please keep the list in alphabetical order by last name!
  name="João Tavares"/>
 <contributor
  name="Vishesh Tayal"/>
+<contributor
+ name="Anton Tayanovskyy"
+ github="t0yv0"/>
 <contributor
  name="Yoora Yi Tenen"
  trac="yooyiten"
@@ -5484,6 +5553,9 @@ Please keep the list in alphabetical order by last name!
 <contributor
  name="Anthony Várilly-Alvarado"
  trac="avarilly"/>
+<contributor
+ name="Kabir Vashisht"
+ github="kabirvashisht4-glitch"/>
 <contributor
  name="Laurel Vasquez"
  trac="lvasquez"/>
@@ -5963,6 +6035,9 @@ Please keep the list in alphabetical order by last name!
  location="Louisiana State University"
  url="http://www.math.lsu.edu/~svanzwam/"
  trac="Stefan"/>
+<contributor
+ name="ishika jain"
+ github="ishikajain-234"/>
 <contributor
  name="Yossef moftah"
  github="Yossef-moftah-dev"/>
